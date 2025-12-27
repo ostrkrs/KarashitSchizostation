@@ -1,2 +1,2 @@
-# tgKarashitSandbox
+# KarashitSchizostation
 Just silly goober doing silly things.
