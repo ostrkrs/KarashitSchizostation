@@ -7,7 +7,7 @@
 	pressure_resistance = 2
 	resistance_flags = FLAMMABLE
 	/// The background color for tgui in hex (with a `#`)
-	var/bg_color = "#7f7f7f"
+	var/bg_color = "#9B8C78"
 	/// A typecache of the objects that can be inserted into a folder
 	var/static/list/folder_insertables = typecacheof(list(
 		/obj/item/paper,
