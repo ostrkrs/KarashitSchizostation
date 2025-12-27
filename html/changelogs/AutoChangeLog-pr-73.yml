@@ -1,0 +1,4 @@
+author: "ostrkrs"
+delete-after: True
+changes:
+  - rscdel: "Удалена нелорная еда молей, ящеров и эфириалов;"

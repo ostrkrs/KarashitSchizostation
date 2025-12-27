@@ -1,0 +1,64 @@
+"TGUI":
+  - changed-files:
+      - any-glob-to-any-file: ["tgui/**"]
+
+"🎵 Звук":
+  - changed-files:
+      - any-glob-to-any-file: ["**/*.ogg"]
+
+"🧩 Маппинг":
+  - all:
+      - changed-files:
+          - any-glob-to-any-file: ["**/*.dmm"]
+
+"🖍️ Спрайтинг":
+  - changed-files:
+      - any-glob-to-any-file: ["**/*.dmi"]
+
+"🔩 Инструменты":
+  - changed-files:
+      - any-glob-to-any-file:
+          [".github/**", "tools/**", ".vscode/**", ".bin/**"]
+
+"📝 Изменение конфига":
+  - changed-files:
+      - any-glob-to-any-file: ["config/**"]
+
+"🤓 Документация":
+  - changed-files:
+      - any-glob-to-any-file: ["**/*.md"]
+
+"📀 SQL":
+  - changed-files:
+      - any-glob-to-any-file: ["SQL/**"]
+
+"🚧 UpdatePaths":
+  - changed-files:
+      - any-glob-to-any-file: ["tools/UpdatePaths/Scripts/**"]
+
+"🩹 Фикс":
+  - head-branch: ["^fix", "fix"]
+
+"🌻 Новая фича":
+  - head-branch: ["^add", "add"]
+
+"✨ Улучшение":
+  - head-branch: ["^tweak", "tweak"]
+
+"🩻 Удаление":
+  - head-branch: ["^del", "del"]
+
+"🪞 Портирование":
+  - head-branch: ["^mirror", "mirror"]
+
+"🧶 Улучшение кода":
+  - head-branch: ["^code", "code"]
+
+"🪮 Рефакторинг кода":
+  - head-branch: ["^refactor", "refactor"]
+
+"⚖️ Баланс":
+  - head-branch: ["^balance", "balance"]
+
+"🪡 QoL":
+  - head-branch: ["^qol", "qol"]

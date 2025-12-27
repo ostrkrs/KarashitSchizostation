@@ -1,0 +1,11 @@
+GLOBAL_LIST_EMPTY(blooper_list)
+
+GLOBAL_LIST_EMPTY(blooper_list_humans)
+
+GLOBAL_LIST_EMPTY(blooper_list_silicons)
+
+GLOBAL_LIST_EMPTY(blooper_list_insects)
+
+GLOBAL_LIST_EMPTY(blooper_list_animals)
+
+GLOBAL_LIST_EMPTY(blooper_list_skeletons)

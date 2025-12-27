@@ -1,0 +1,5 @@
+author: "ostrkrs"
+delete-after: True
+changes:
+  - image: "Добавлена новая вариация пола для морозильников;"
+  - image: "Изменены спрайты circuit полов."
