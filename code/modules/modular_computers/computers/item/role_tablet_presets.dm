@@ -42,6 +42,7 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/hop"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
 	greyscale_colors = "#374f7e#a52f29#a52f29"
+	inserted_item = /obj/item/pen/fountain/hop
 	starting_programs = list(
 		/datum/computer_file/program/records/security,
 		/datum/computer_file/program/job_management,
@@ -52,7 +53,7 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/hos"
 	greyscale_config = /datum/greyscale_config/tablet/head
 	greyscale_colors = "#EA3232#0000CC"
-	inserted_item = /obj/item/pen/red/security
+	inserted_item = /obj/item/pen/fountain/hos
 	starting_programs = list(
 		/datum/computer_file/program/records/security,
 	)
@@ -62,6 +63,7 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/ce"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
 	greyscale_colors = "#D99A2E#69DBF3#FAFAFA"
+	inserted_item = /obj/item/pen/fountain/ce
 	starting_programs = list(
 		/datum/computer_file/program/atmosscan,
 		/datum/computer_file/program/alarm_monitor,
@@ -73,6 +75,7 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/cmo"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
 	greyscale_colors = "#FAFAFA#000099#3F96CC"
+	inserted_item = /obj/item/pen/fountain/cmo
 	starting_programs = list(
 		/datum/computer_file/program/maintenance/phys_scanner,
 		/datum/computer_file/program/records/medical,
@@ -83,7 +86,7 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/rd"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
 	greyscale_colors = "#FAFAFA#000099#B347BC"
-	inserted_item = /obj/item/pen/fountain
+	inserted_item = /obj/item/pen/fountain/rd
 	starting_programs = list(
 		/datum/computer_file/program/borg_monitor,
 		/datum/computer_file/program/scipaper_program,
@@ -95,7 +98,7 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/quartermaster"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
 	greyscale_colors = "#c4b787#18191e#8b4c31"
-	inserted_item = /obj/item/pen/survival
+	inserted_item = /obj/item/pen/fountain/qm
 	stored_paper = 20
 	starting_programs = list(
 		/datum/computer_file/program/shipping,
