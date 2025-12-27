@@ -27,7 +27,7 @@
 	drop_sound = 'sound/items/handling/paper_drop.ogg'
 	pickup_sound = 'sound/items/handling/paper_pickup.ogg'
 	grind_results = list(/datum/reagent/cellulose = 3)
-	color = COLOR_WHITE
+	color = COLOR_OFF_WHITE
 	item_flags = SKIP_FANTASY_ON_SPAWN
 	interaction_flags_click = NEED_DEXTERITY|NEED_HANDS|ALLOW_RESTING
 

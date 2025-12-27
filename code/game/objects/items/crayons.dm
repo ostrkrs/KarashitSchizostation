@@ -686,13 +686,17 @@
 	dye_color = DYE_BLACK
 
 /obj/item/toy/crayon/white
-	name = "stick of chalk"
-	desc = "A stark-white stick of chalk."
+	name = "white crayon"
 	icon_state = "crayonwhite"
 	paint_color = COLOR_WHITE
 	crayon_color = "white"
 	reagent_contents = list(/datum/reagent/consumable/nutriment = 0.5,  /datum/reagent/colorful_reagent/powder/white/crayon = 1.5)
 	dye_color = DYE_WHITE
+
+/obj/item/toy/crayon/white/chalk
+	name = "stick of chalk"
+	desc = "A stark-white stick of chalk."
+	icon_state = "chalk"
 	outline_strength = 1
 
 /obj/item/toy/crayon/mime
