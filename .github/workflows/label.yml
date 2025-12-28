@@ -3,6 +3,11 @@ name: "Label"
 on:
   - pull_request_target
 
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
 jobs:
   labeler:
     runs-on: ubuntu-24.04
