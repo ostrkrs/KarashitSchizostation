@@ -48,4 +48,4 @@
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /obj/item/paper/carbon_copy
-	icon_state = "cpaper"
+	color = COLOR_PINK

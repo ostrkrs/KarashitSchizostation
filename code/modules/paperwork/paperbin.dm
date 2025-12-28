@@ -4,7 +4,7 @@
 	name = "paper bin"
 	desc = "Contains all the paper you'll never need."
 	icon = 'icons/obj/service/bureaucracy.dmi'
-	icon_state = "paper_bin0"
+	icon_state = "paper_bin"
 	inhand_icon_state = "sheet-metal"
 	lefthand_file = 'icons/mob/inhands/items/sheets_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/items/sheets_righthand.dmi'
@@ -19,8 +19,6 @@
 	var/obj/item/pen/bin_pen
 	///Overlay of the pen on top of the bin.
 	var/mutable_appearance/pen_overlay
-	///Name of icon that goes over the paper overlays.
-	var/bin_overlay_string = "paper_bin_overlay"
 	///Overlay that goes over the paper overlays.
 	var/mutable_appearance/bin_overlay
 
@@ -158,7 +156,7 @@
 
 /obj/item/paper_bin/update_icon_state()
 	if(total_paper < 1)
-		icon_state = "paper_bin0"
+		icon_state = "paper_bin"
 	else
 		icon_state = "[initial(icon_state)]"
 	return ..()
@@ -172,9 +170,6 @@
 
 	if(bin_pen)
 		pen_overlay = mutable_appearance(bin_pen.icon, bin_pen.icon_state)
-
-	if(!bin_overlay)
-		bin_overlay = mutable_appearance(icon, bin_overlay_string)
 
 	if(total_paper > 0)
 		if(total_paper > length(paper_stack))
@@ -214,7 +209,6 @@
 	icon_state = "paper_stack"
 	papertype = /obj/item/paper/natural
 	resistance_flags = FLAMMABLE
-	bin_overlay_string = "paper_bundle_overlay"
 	///Cable this bundle is held together with.
 	var/obj/item/stack/cable_coil/binding_cable
 
@@ -231,7 +225,6 @@
 	qdel(src)
 
 /obj/item/paper_bin/bundlenatural/update_overlays()
-	bin_overlay = mutable_appearance(icon, bin_overlay_string)
 	bin_overlay.color = binding_cable.color
 	return ..()
 
@@ -261,9 +254,8 @@
 /obj/item/paper_bin/carbon
 	name = "carbon paper bin"
 	desc = "Contains all the paper you'll ever need, in duplicate!"
-	icon_state = "paper_bin_carbon0"
+	icon_state = "paper_bin_carbon"
 	papertype = /obj/item/paper/carbon
-	bin_overlay_string = "paper_bin_carbon_overlay"
 
 #undef PAPERS_PER_OVERLAY
 #undef PAPER_OVERLAY_PIXEL_SHIFT

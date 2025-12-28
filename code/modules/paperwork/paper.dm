@@ -27,7 +27,7 @@
 	drop_sound = 'sound/items/handling/paper_drop.ogg'
 	pickup_sound = 'sound/items/handling/paper_pickup.ogg'
 	grind_results = list(/datum/reagent/cellulose = 3)
-	color = COLOR_WHITE
+	color = COLOR_OFF_WHITE
 	item_flags = SKIP_FANTASY_ON_SPAWN
 	interaction_flags_click = NEED_DEXTERITY|NEED_HANDS|ALLOW_RESTING
 
@@ -851,12 +851,11 @@
 /obj/item/paper/construction/Initialize(mapload)
 	. = ..()
 	icon = 'icons/obj/service/bureaucracy.dmi'
-	color = pick(COLOR_RED, COLOR_LIME, COLOR_LIGHT_ORANGE, COLOR_DARK_PURPLE, COLOR_FADED_PINK, COLOR_BLUE_LIGHT)
+	color = pick(COLOR_SOFT_RED, COLOR_VERY_SOFT_YELLOW, COLOR_GREEN_GRAY, COLOR_MEDICAL_BLUE, COLOR_SCIENCE_PINK)
 	update_appearance()
 
 /obj/item/paper/natural
 	name = "natural paper"
-	color = COLOR_OFF_WHITE
 
 /obj/item/paper/crumpled
 	name = "paper scrap"

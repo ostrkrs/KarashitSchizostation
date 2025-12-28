@@ -158,6 +158,7 @@
 	dart_insert_casing_icon_state = "overlay_fountainpen"
 	dart_insert_projectile_icon_state = "overlay_fountainpen_proj"
 	can_click = FALSE
+	resistance_flags = FIRE_PROOF
 
 /obj/item/pen/charcoal
 	name = "charcoal stylus"
@@ -179,15 +180,9 @@
 
 /obj/item/pen/fountain/captain
 	name = "captain's fountain pen"
-	desc = "It's an expensive Oak fountain pen. The nib is quite sharp."
-	icon_state = "pen-fountain-o"
-	force = 5
-	throwforce = 5
-	throw_speed = 4
-	colour = "#DC143C"
+	desc = "It's an expensive Captain's fountain pen."
+	icon_state = "pen-fountain-cb"
 	custom_materials = list(/datum/material/gold = SMALL_MATERIAL_AMOUNT*7.5)
-	sharpness = SHARP_EDGED
-	resistance_flags = FIRE_PROOF
 	unique_reskin = list(
 		"Oak" = "pen-fountain-o",
 		"Gold" = "pen-fountain-g",
@@ -195,7 +190,6 @@
 		"Black and Silver" = "pen-fountain-b",
 		"Command Blue" = "pen-fountain-cb"
 	)
-	embed_type = /datum/embedding/pen/captain
 	dart_insert_casing_icon_state = "overlay_fountainpen_gold"
 	dart_insert_projectile_icon_state = "overlay_fountainpen_gold_proj"
 	var/list/overlay_reskin = list(
@@ -206,22 +200,14 @@
 		"Command Blue" = "overlay_fountainpen_gold"
 	)
 
-/datum/embedding/pen/captain
-	embed_chance = 50
-
 /obj/item/pen/fountain/captain/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/butchering, \
-	speed = 20 SECONDS, \
-	effectiveness = 115, \
-	)
-	//the pen is mightier than the sword
 	RegisterSignal(src, COMSIG_DART_INSERT_PARENT_RESKINNED, PROC_REF(reskin_dart_insert))
 
 /obj/item/pen/fountain/captain/reskin_obj(mob/M)
 	..()
 	if(current_skin)
-		desc = "It's an expensive [current_skin] fountain pen. The nib is quite sharp."
+		desc = "It's an expensive [current_skin] fountain pen."
 
 
 /obj/item/pen/fountain/captain/proc/reskin_dart_insert(datum/component/dart_insert/insert_comp)
@@ -229,6 +215,36 @@
 		return
 	insert_comp.casing_overlay_icon_state = overlay_reskin[current_skin]
 	insert_comp.projectile_overlay_icon_state = "[overlay_reskin[current_skin]]_proj"
+
+/obj/item/pen/fountain/hop
+	name = "head of personnel's fountain pen"
+	desc = "An expensive-looking pen only issued to heads of service."
+	icon_state = "pen-fountain-hop"
+
+/obj/item/pen/fountain/hos
+	name = "head of security's fountain pen"
+	desc = "An expensive-looking pen only issued to heads of security."
+	icon_state = "pen-fountain-hos"
+
+/obj/item/pen/fountain/cmo
+	name = "chief medical officer's fountain pen"
+	desc = "An expensive-looking pen only issued to heads of medical."
+	icon_state = "pen-fountain-cmo"
+
+/obj/item/pen/fountain/ce
+	name = "chief engineer's fountain pen"
+	desc = "An expensive-looking pen only issued to heads of engineering."
+	icon_state = "pen-fountain-ce"
+
+/obj/item/pen/fountain/rd
+	name = "research director's fountain pen"
+	desc = "An expensive-looking pen only issued to heads of research."
+	icon_state = "pen-fountain-rd"
+
+/obj/item/pen/fountain/qm
+	name = "quartermaster's fountain pen"
+	desc = "An expensive-looking pen only issued to heads of cargo."
+	icon_state = "pen-fountain-qm"
 
 /obj/item/pen/item_ctrl_click(mob/living/carbon/user)
 	if(loc != user)
