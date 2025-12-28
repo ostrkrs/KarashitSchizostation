@@ -744,6 +744,7 @@
 	new /obj/item/toy/crayon/blue(src)
 	new /obj/item/toy/crayon/purple(src)
 	new /obj/item/toy/crayon/black(src)
+	new /obj/item/toy/crayon/white(src)
 	update_appearance()
 
 /obj/item/storage/crayons/update_overlays()
