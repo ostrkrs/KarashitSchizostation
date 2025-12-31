@@ -751,6 +751,20 @@
 	attack_verb_continuous = list("gnaws", "gnashes", "chews")
 	attack_verb_simple = list("gnaw", "gnash", "chew")
 
+/obj/item/toy/plush/serpentide
+	name = "serpentide plushie"
+	desc = "A plushie depicting a somewhat cartoonish serpentide."
+	lefthand_file = 'icons/mob/inhands/items/plushes_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/items/plushes_righthand.dmi'
+	icon_state = "serpen"
+	inhand_icon_state = "serpen"
+	attack_verb_continuous = list("gnaws", "chews", "pinches")
+	attack_verb_simple = list("gnaw", "chew", "pinch")
+	squeak_override = list(
+		'sound/mobs/non-humanoids/insect/chitter_1.ogg' = 1,
+		'sound/mobs/non-humanoids/insect/chitter_2.ogg' = 1,
+	)
+
 /obj/item/toy/plush/donkpocket
 	name = "donk pocket plushie"
 	desc = "The stuffed companion of choice for the seasoned traitor."
