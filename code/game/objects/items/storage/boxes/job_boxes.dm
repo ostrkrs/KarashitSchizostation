@@ -11,7 +11,7 @@
 	/// Which internals tank are we going to use for this box?
 	var/internal_type = /obj/item/tank/internals/emergency_oxygen
 	/// What medipen should be present in this box?
-	var/medipen_type = /obj/item/reagent_containers/hypospray/medipen
+	var/medipen_type = /obj/item/reagent_containers/hypospray/medipen/ekit
 	/// What food should be present in this box?
 	var/ration_type = /obj/item/food/rationpack
 	/// Are we crafted?
