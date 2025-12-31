@@ -72,25 +72,17 @@
 	name = "Plush (Moth)"
 	item_path = /obj/item/toy/plush/moth
 
-/datum/loadout_item/pocket_items/plush/nukie
-	name = "Plush (Nukie)"
-	item_path = /obj/item/toy/plush/nukeplushie
-
 /datum/loadout_item/pocket_items/plush/peacekeeper
 	name = "Plush (Peacekeeper)"
 	item_path = /obj/item/toy/plush/pkplush
 
-/datum/loadout_item/pocket_items/plush/plasmaman
-	name = "Plush (Plasmaman)"
-	item_path = /obj/item/toy/plush/plasmamanplushie
+/datum/loadout_item/pocket_items/plush/shark
+	name = "Plush (Shark)"
+	item_path = /obj/item/toy/plush/shark
 
-/datum/loadout_item/pocket_items/plush/human
-	name = "Plush (human)"
-	item_path = /obj/item/toy/plush/human
-
-/datum/loadout_item/pocket_items/plush/rouny
-	name = "Plush (Rouny)"
-	item_path = /obj/item/toy/plush/rouny
+/datum/loadout_item/pocket_items/plush/serpentide
+	name = "Plush (Serpentide)"
+	item_path = /obj/item/toy/plush/serpentide
 
 /datum/loadout_item/pocket_items/plush/snake
 	name = "Plush (Snake)"
