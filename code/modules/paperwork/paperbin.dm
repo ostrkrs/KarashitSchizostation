@@ -19,8 +19,6 @@
 	var/obj/item/pen/bin_pen
 	///Overlay of the pen on top of the bin.
 	var/mutable_appearance/pen_overlay
-	///Overlay that goes over the paper overlays.
-	var/mutable_appearance/bin_overlay
 
 /obj/item/paper_bin/Initialize(mapload)
 	. = ..()
@@ -189,11 +187,8 @@
 			. += paper_overlay
 			if(paper_number == total_paper) //this is our top paper
 				. += current_paper.overlays //add overlays only for top paper
-				if(istype(src, /obj/item/paper_bin/bundlenatural))
-					bin_overlay.pixel_z = paper_overlay.pixel_z //keeps binding centred on stack
 				if(bin_pen)
 					pen_overlay.pixel_z = paper_overlay.pixel_z //keeps pen on top of stack
-		. += bin_overlay
 
 	if(bin_pen)
 		. += pen_overlay
@@ -223,10 +218,6 @@
 	binding_cable.forceMove(droppoint)
 	binding_cable = null
 	qdel(src)
-
-/obj/item/paper_bin/bundlenatural/update_overlays()
-	bin_overlay.color = binding_cable.color
-	return ..()
 
 /obj/item/paper_bin/bundlenatural/attack_hand(mob/user, list/modifiers)
 	. = ..()
