@@ -28,8 +28,6 @@
 	mail_goodies = list(
 		/obj/item/reagent_containers/cup/glass/bottle/holywater = 30,
 		/obj/item/grenade/chem_grenade/holy = 5,
-		/obj/item/toy/plush/narplush = 2,
-		/obj/item/toy/plush/ratplush = 1
 	)
 	rpg_title = "Paladin"
 	job_flags = STATION_JOB_FLAGS

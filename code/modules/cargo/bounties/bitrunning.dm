@@ -1,17 +1,3 @@
-/datum/bounty/item/bitrunning/abductor_plush
-	name = "Abductor Plush"
-	description = "Rear Admiral Raynes' child won't stop bothering him for one of those little plush aliens. You can get one from the Abductor Ship domain."
-	reward = CARGO_CRATE_VALUE * 6
-	required_count = 1
-	wanted_types = list(/obj/item/toy/plush/abductor/agent = TRUE)
-
-/datum/bounty/item/bitrunning/bubblegum
-	name = "Bubblegum Plush"
-	description = "Some of the miners have been talking about the breakroom being too sterile. We need something cute to spruce the place up a bit."
-	reward = CARGO_CRATE_VALUE * 10
-	required_count = 1
-	wanted_types = list(/obj/item/toy/plush/bubbleplush = TRUE)
-
 /datum/bounty/item/bitrunning/honk
 	name = "Bike Horn"
 	description = "Bonbon the Clown lost his bike horn when Rear Admiral Raynes hurled him out an airlock for slipping him. Can you get us a replacement?"
@@ -39,10 +25,3 @@
 	reward = CARGO_CRATE_VALUE * 3
 	required_count = 1
 	wanted_types = list(/obj/item/clothing/head/costume/ushanka/polar = TRUE)
-
-/datum/bounty/item/bitrunning/syndicate
-	name = "Syndicate Plush"
-	description = "We're aware of some contraband that's made it aboard some of our stations that depict Syndicate agents as cute, marketable plushies. Please send us one so we can further investigate."
-	reward = CARGO_CRATE_VALUE * 8
-	required_count = 1
-	wanted_types = list(/obj/item/toy/plush/nukeplushie = 1)

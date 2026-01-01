@@ -205,6 +205,12 @@
 	cost = PAYCHECK_CREW * 5
 	contains = list(/obj/item/toy/plush/shark)
 
+/datum/supply_pack/goody/serpplush
+	name = "Serpentide Plushie"
+	desc = "Your cute buddy to chitter-chat with."
+	cost = PAYCHECK_CREW * 5
+	contains = list(/obj/item/toy/plush/serpentide)
+
 /datum/supply_pack/goody/horseplush
 	name = "Horse Plushie"
 	desc = "A horse friend to keep you company. You're basically a cowboy now."
