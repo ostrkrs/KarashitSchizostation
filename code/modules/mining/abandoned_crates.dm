@@ -232,11 +232,9 @@
 			new /obj/item/katana(src)
 		if(93)
 			new /obj/item/dnainjector/xraymut(src)
-		if(94)
+		if(94 to 95)
 			new /mob/living/basic/mimic/crate(src)
 			qdel_on_open = TRUE
-		if(95)
-			new /obj/item/toy/plush/nukeplushie(src)
 		if(96)
 			new /obj/item/banhammer(src)
 			for(var/i in 1 to 3)

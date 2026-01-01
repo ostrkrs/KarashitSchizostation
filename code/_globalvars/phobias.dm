@@ -433,6 +433,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/item/clothing/suit/hooded/bee_costume,
 		/obj/item/toy/plush/beeplushie,
 		/obj/item/toy/plush/moth,
+		/obj/item/toy/plush/serpentide,
 		/obj/structure/beebox,
 	)),
 	"lizards" = typecacheof(list(
