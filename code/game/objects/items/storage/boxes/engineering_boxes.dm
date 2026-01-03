@@ -77,8 +77,6 @@
 /obj/item/storage/box/stickers/chief_engineer
 	name = "CE approved sticker pack"
 	desc = "With one of these stickers, inform the crew that the contraption in the corridor is COMPLETELY SAFE!"
-	icon_state = "engbox"
-	illustration = "writing"
 
 /obj/item/storage/box/stickers/chief_engineer/PopulateContents()
 	for(var/i in 1 to 3)
