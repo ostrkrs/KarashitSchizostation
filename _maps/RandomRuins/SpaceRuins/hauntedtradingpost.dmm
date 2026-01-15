@@ -5815,10 +5815,6 @@
 	pixel_y = -2;
 	pixel_x = -12
 	},
-/obj/item/reagent_containers/cup/glass/mug/britcup{
-	pixel_x = -11;
-	pixel_y = 7
-	},
 /obj/item/pinata/donk,
 /obj/item/radio/intercom/directional/north{
 	frequency = 1463

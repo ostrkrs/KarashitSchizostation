@@ -36,10 +36,6 @@
 	name = "Cap (Blue)"
 	item_path = /obj/item/clothing/head/soft/blue
 
-/datum/loadout_item/head/delinquent_cap
-	name = "Cap (Delinquent)"
-	item_path = /obj/item/clothing/head/costume/delinquent
-
 /datum/loadout_item/head/green_cap
 	name = "Cap (Green)"
 	item_path = /obj/item/clothing/head/soft/green
@@ -92,14 +88,6 @@
 	name = "Cap (Mail)"
 	item_path = /obj/item/clothing/head/costume/mailman
 
-/datum/loadout_item/head/kitty_ears
-	name = "Kitty Ears"
-	item_path = /obj/item/clothing/head/costume/kitty
-
-/datum/loadout_item/head/rabbit_ears
-	name = "Rabbit Ears"
-	item_path = /obj/item/clothing/head/costume/rabbitears
-
 /datum/loadout_item/head/bandana
 	name = "Bandana Thin"
 	item_path = /obj/item/clothing/head/costume/tmc
@@ -116,12 +104,8 @@
 	name = "Bowler Hat"
 	item_path = /obj/item/clothing/head/hats/bowler
 
-/datum/loadout_item/head/bear_pelt
-	name = "Bear Pelt"
-	item_path = /obj/item/clothing/head/costume/bearpelt
-
 /datum/loadout_item/head/ushanka
-	name ="Ushanka"
+	name = "Ushanka"
 	item_path = /obj/item/clothing/head/costume/ushanka
 
 /datum/loadout_item/head/plague_doctor

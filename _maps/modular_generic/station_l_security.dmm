@@ -8,7 +8,6 @@
 	pixel_x = -5;
 	pixel_y = 7
 	},
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen,
 /turf/open/floor/plating,
 /area/template_noop)
 "aP" = (

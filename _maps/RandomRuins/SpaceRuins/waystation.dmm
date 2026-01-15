@@ -2948,10 +2948,6 @@
 	pixel_x = -5;
 	pixel_y = 4
 	},
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen{
-	pixel_x = 6;
-	pixel_y = -1
-	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/waystation/securestorage)
 "ZP" = (

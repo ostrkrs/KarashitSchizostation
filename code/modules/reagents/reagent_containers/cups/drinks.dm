@@ -186,12 +186,6 @@
 	resistance_flags = FREEZE_PROOF
 	custom_price = PAYCHECK_CREW * 1.2
 
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen
-	name = "\improper Nanotrasen mug"
-	desc = "A mug to display your corporate pride."
-	icon_state = "mug_nt_empty"
-	base_icon_state = "mug_nt"
-
 /obj/item/reagent_containers/cup/glass/coffee_cup
 	name = "coffee cup"
 	desc = "A heat-formed plastic coffee cup. Can theoretically be used for other hot drinks, if you're feeling adventurous."
@@ -512,11 +506,3 @@
 
 /obj/item/reagent_containers/cup/glass/flask/det/minor
 	list_reagents = list(/datum/reagent/consumable/applejuice = 30)
-
-/obj/item/reagent_containers/cup/glass/mug/britcup
-	name = "cup"
-	desc = "A cup with the British flag emblazoned on it."
-	icon = 'icons/obj/drinks/coffee.dmi'
-	icon_state = "britcup_empty"
-	base_icon_state = "britcup"
-	volume = 30

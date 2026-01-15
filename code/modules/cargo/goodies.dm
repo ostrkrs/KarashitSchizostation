@@ -351,12 +351,6 @@
 	cost = PAYCHECK_LOWER
 	contains = list(/obj/item/reagent_containers/cup/glass/mug)
 
-/datum/supply_pack/goody/nt_mug
-	name = "Nanotrasen Coffee Mug Single-Pack"
-	desc = "A blue mug bearing the logo of your corporate masters. Usually given out at inductions or events, we'll send one out special for a nominal fee."
-	cost = PAYCHECK_LOWER
-	contains = list(/obj/item/reagent_containers/cup/glass/mug/nanotrasen)
-
 /datum/supply_pack/goody/coffee_cartridge
 	name = "Coffee Cartridge Single-Pack"
 	desc = "A basic cartridge for a coffeemaker. Makes 4 pots."

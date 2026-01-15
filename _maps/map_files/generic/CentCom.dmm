@@ -220,9 +220,6 @@
 	pixel_x = 6;
 	pixel_y = 1
 	},
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen{
-	pixel_x = -7
-	},
 /turf/open/floor/iron/dark/herringbone,
 /area/centcom/central_command_areas/evacuation/ship)
 "bd" = (
@@ -7402,7 +7399,6 @@
 /obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = -8
 	},
-/obj/item/reagent_containers/cup/glass/mug/britcup,
 /obj/effect/turf_decal/bot,
 /obj/item/clothing/head/utility/chefhat{
 	pixel_y = 11;
@@ -10414,7 +10410,6 @@
 "Xa" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/firedoor,
-/obj/item/reagent_containers/cup/glass/mug/britcup,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,

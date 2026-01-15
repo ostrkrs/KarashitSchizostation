@@ -3420,7 +3420,6 @@
 /area/awaymission/cabin/snowforest)
 "xo" = (
 /obj/structure/table/wood,
-/obj/item/reagent_containers/cup/glass/mug/britcup,
 /turf/open/floor/carpet,
 /area/awaymission/cabin)
 "xq" = (

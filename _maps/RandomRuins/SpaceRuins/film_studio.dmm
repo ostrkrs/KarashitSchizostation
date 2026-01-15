@@ -1386,10 +1386,6 @@
 /area/ruin/space/has_grav/film_studio/solars)
 "Aa" = (
 /obj/structure/table,
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen{
-	pixel_x = -8;
-	pixel_y = 8
-	},
 /obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/iron/white/smooth_half{
 	dir = 8
@@ -2412,9 +2408,6 @@
 	pixel_x = 6;
 	pixel_y = 3
 	},
-/obj/item/reagent_containers/cup/glass/mug/britcup{
-	pixel_x = -5
-	},
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/film_studio/stage)
 "Pf" = (
@@ -2606,10 +2599,6 @@
 /obj/structure/table,
 /obj/item/food/sandwich/blt{
 	pixel_y = 5
-	},
-/obj/item/reagent_containers/cup/glass/mug/britcup{
-	pixel_x = -4;
-	pixel_y = -1
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/film_studio/starboard)
@@ -2951,10 +2940,6 @@
 /area/ruin/space/has_grav/film_studio/dorms)
 "XB" = (
 /obj/structure/table,
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen{
-	pixel_x = 4;
-	pixel_y = 8
-	},
 /obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/iron/white/smooth_half,
 /area/ruin/space/has_grav/film_studio/stage)

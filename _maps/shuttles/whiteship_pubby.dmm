@@ -213,10 +213,6 @@
 	pixel_y = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen{
-	pixel_y = 9;
-	pixel_x = 10
-	},
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned)
 "jT" = (
