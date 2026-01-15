@@ -411,9 +411,6 @@
 "mc" = (
 /obj/structure/table/reinforced,
 /obj/item/borg_restart_board,
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen{
-	pixel_x = -11
-	},
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 1
 	},

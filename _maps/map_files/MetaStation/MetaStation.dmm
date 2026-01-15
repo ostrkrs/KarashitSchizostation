@@ -20216,7 +20216,6 @@
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "haZ" = (
-/obj/item/reagent_containers/cup/glass/mug/britcup,
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
@@ -68684,9 +68683,6 @@
 "xxQ" = (
 /obj/structure/table,
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/item/reagent_containers/cup/glass/mug/britcup{
-	pixel_y = 2
-	},
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron,

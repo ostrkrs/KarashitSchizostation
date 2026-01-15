@@ -47,10 +47,6 @@
 /obj/effect/decal/cleanable/shreds,
 /turf/open/floor/plating/airless,
 /area/ruin/space/space_ghost_restaurant)
-"gg" = (
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen,
-/turf/open/floor/iron/cafeteria/airless,
-/area/ruin/space/space_ghost_restaurant)
 "gS" = (
 /obj/item/food/mashed_potatoes,
 /obj/structure/lattice,
@@ -448,7 +444,7 @@ NK
 Hx
 dI
 yt
-gg
+kf
 Xc
 JC
 BA

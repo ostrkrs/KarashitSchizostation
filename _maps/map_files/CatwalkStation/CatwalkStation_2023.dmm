@@ -17635,14 +17635,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood/large,
 /area/station/hallway/secondary/service)
-"fhw" = (
-/obj/structure/table/reinforced/rglass,
-/obj/item/reagent_containers/cup/glass/mug/nanotrasen{
-	pixel_x = -4;
-	pixel_y = 4
-	},
-/turf/open/floor/carpet/executive,
-/area/station/ai_monitored/turret_protected/aisat_interior)
 "fhA" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance,
@@ -22775,10 +22767,6 @@
 "gBE" = (
 /obj/structure/chair/sofa/right/brown{
 	dir = 8
-	},
-/obj/item/clothing/accessory/pride{
-	pixel_x = -3;
-	pixel_y = -6
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/port/greater)
@@ -50886,13 +50874,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
-"oEI" = (
-/obj/structure/table/reinforced,
-/obj/item/reagent_containers/cup/glass/mug/britcup{
-	pixel_y = 2
-	},
-/turf/open/floor/engine/vacuum,
-/area/station/science/ordnance/bomb)
 "oEL" = (
 /obj/structure/lattice/catwalk,
 /obj/item/stack/rods,
@@ -51999,10 +51980,6 @@
 "oUE" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing,
-/obj/item/clothing/accessory/pride{
-	pixel_x = 1;
-	pixel_y = 12
-	},
 /obj/item/flashlight/flare/candle/infinite{
 	pixel_x = -7;
 	pixel_y = 11
@@ -143557,7 +143534,7 @@ bWY
 vFR
 vFR
 jQO
-oEI
+egD
 kTi
 kTi
 kTi
@@ -205171,7 +205148,7 @@ xAn
 xAn
 jEm
 jyI
-fhw
+eBc
 wCZ
 tUu
 nlm

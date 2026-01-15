@@ -14465,10 +14465,6 @@
 	pixel_x = -1;
 	pixel_y = 5
 	},
-/obj/item/reagent_containers/cup/glass/mug/britcup{
-	pixel_x = 8;
-	pixel_y = 1
-	},
 /obj/item/pen/blue{
 	pixel_y = -2
 	},
