@@ -104,12 +104,8 @@
 	name = "Bowler Hat"
 	item_path = /obj/item/clothing/head/hats/bowler
 
-/datum/loadout_item/head/bear_pelt
-	name = "Bear Pelt"
-	item_path = /obj/item/clothing/head/costume/bearpelt
-
 /datum/loadout_item/head/ushanka
-	name ="Ushanka"
+	name = "Ushanka"
 	item_path = /obj/item/clothing/head/costume/ushanka
 
 /datum/loadout_item/head/plague_doctor
