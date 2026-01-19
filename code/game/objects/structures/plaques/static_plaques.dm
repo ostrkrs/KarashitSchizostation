@@ -36,6 +36,13 @@
 	icon_state = "commission_nt"
 	layer = BELOW_OPEN_DOOR_LAYER
 
+// Started working on /TG/Voyagers Oct 3, 2025
+/obj/structure/plaque/static_plaque/golden/voyager
+	name = "Golden Disk"
+	desc = "Spinward Sector Science Vessel\n'Voyager' Class Ship\nCommissioned 03/10/2256\n'Dedicated to the Pioneers'"
+	icon_state = "voyager_disk"
+	layer = BELOW_OPEN_DOOR_LAYER
+
 //Current stations
 
 // Birdshot: added Apr 29, 2023 (#74371)
