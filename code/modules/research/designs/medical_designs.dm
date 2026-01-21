@@ -561,11 +561,6 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/design/cyberimp_xray/moth
-	name = "Moth X-ray Eyes"
-	id = "ci-xray-moth"
-	build_path = /obj/item/organ/eyes/robotic/xray/moth
-
 /datum/design/cyberimp_thermals
 	name = "Thermal Eyes"
 	desc = "These cybernetic eyes will give you Thermal vision. Vertical slit pupil included."
@@ -585,11 +580,6 @@
 		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ORGANS_COMBAT
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
-
-/datum/design/cyberimp_thermals/moth
-	name = "Moth Thermal Eyes"
-	id = "ci-thermals-moth"
-	build_path = /obj/item/organ/eyes/robotic/thermals/moth
 
 /datum/design/cyberimp_antidrop
 	name = "Anti-Drop Implant"
@@ -1073,11 +1063,6 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/design/cybernetic_eyes/moth
-	name = "Basic Cybernetic Moth Eyes"
-	id = "cybernetic_eyes_moth"
-	build_path = /obj/item/organ/eyes/robotic/basic/moth
-
 /datum/design/cybernetic_eyes/improved
 	name = "Cybernetic Eyes"
 	desc = "A pair of cybernetic eyes."
@@ -1087,11 +1072,6 @@
 		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ORGANS_2
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
-
-/datum/design/cybernetic_eyes/improved/moth
-	name = "Cybernetic Moth Eyes"
-	id = "cybernetic_eyes_improved_moth"
-	build_path = /obj/item/organ/eyes/robotic/moth
 
 /datum/design/cyberimp_welding
 	name = "Welding Shield Eyes"
@@ -1106,11 +1086,6 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/design/cyberimp_welding/moth
-	name = "Welding Shield Moth Eyes"
-	id = "ci-welding-moth"
-	build_path = /obj/item/organ/eyes/robotic/shield/moth
-
 /datum/design/cyberimp_gloweyes
 	name = "Luminescent Eyes"
 	desc = "A pair of cybernetic eyes that can emit multicolored light"
@@ -1123,11 +1098,6 @@
 		RND_CATEGORY_CYBERNETICS + RND_SUBCATEGORY_CYBERNETICS_ORGANS_3
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
-
-/datum/design/cyberimp_gloweyes/moth
-	name = "Luminescent Moth Eyes"
-	id = "ci-gloweyes-moth"
-	build_path = /obj/item/organ/eyes/robotic/glow/moth
 
 /////////////////////
 ///Surgery Designs///
@@ -1345,13 +1315,6 @@
 	id = "surgery_zombie"
 	surgery = /datum/surgery/advanced/necrotic_revival
 	research_icon_state = "surgery_head"
-
-/datum/design/surgery/wing_reconstruction
-	name = "Wing Reconstruction"
-	desc = "An experimental surgical procedure that reconstructs the damaged wings of moth people. Requires Synthflesh."
-	id = "surgery_wing_reconstruction"
-	surgery = /datum/surgery/advanced/wing_reconstruction
-	research_icon_state = "surgery_chest"
 
 /datum/design/surgery/advanced_plastic_surgery
 	name = "Advanced Plastic Surgery"
