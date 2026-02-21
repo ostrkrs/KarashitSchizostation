@@ -1,6 +1,5 @@
 #define SILICON_MALE "He/Him"
 #define SILICON_FEMALE "She/Her"
-#define SILICON_PLURAL "They/Them"
 #define SILICON_NEUTER "It/Its"
 
 /datum/preference/choiced/silicon_gender
@@ -12,7 +11,6 @@
 	var/static/list/pronouns_to_genders = list(
 		"[SILICON_MALE]" = MALE,
 		"[SILICON_FEMALE]" = FEMALE,
-		"[SILICON_PLURAL]" = PLURAL,
 		"[SILICON_NEUTER]" = NEUTER,
 	)
 
@@ -21,7 +19,6 @@
 		use_character_gender,
 		SILICON_MALE,
 		SILICON_FEMALE,
-		SILICON_PLURAL,
 		SILICON_NEUTER,
 	)
 
@@ -33,5 +30,4 @@
 
 #undef SILICON_MALE
 #undef SILICON_FEMALE
-#undef SILICON_PLURAL
 #undef SILICON_NEUTER
