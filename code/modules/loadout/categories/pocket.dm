@@ -275,58 +275,9 @@
 	name = "Card Deck (Wizoff)"
 	item_path = /obj/item/toy/cards/deck/wizoff
 
-/datum/loadout_item/pocket_items/plushies_n_toys/ai
-	name = "Toy AI"
-	item_path = /obj/item/toy/talking/ai
-
 /datum/loadout_item/pocket_items/plushies_n_toys/eightball
 	name = "Magic Eightball"
 	item_path = /obj/item/toy/eightball
-
-//MARK: SMOKES
-/datum/loadout_item/pocket_items/smokes
-	group = "Smokes"
-	abstract_type = /datum/loadout_item/pocket_items/smokes
-
-/datum/loadout_item/pocket_items/smokes/cheap_lighter
-	name = "Cheap Lighter"
-	item_path = /obj/item/lighter/greyscale
-
-/datum/loadout_item/pocket_items/smokes/matches
-	name = "Matchbox"
-	item_path = /obj/item/storage/box/matches
-
-/datum/loadout_item/pocket_items/smokes/cigs_dromedaryco
-	name = "Cigarettes (DromedaryCo)"
-	item_path = /obj/item/storage/fancy/cigarettes/dromedaryco
-
-/datum/loadout_item/pocket_items/smokes/cigs_uplift
-	name = "Cigarettes (Uplift Smooth)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_uplift
-
-/datum/loadout_item/pocket_items/smokes/cigs_robust
-	name = "Cigarettes (Robust)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_robust
-
-/datum/loadout_item/pocket_items/smokes/cigs_carp
-	name = "Cigarettes (Carp Classic)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_carp
-
-/datum/loadout_item/pocket_items/smokes/cigs_midori
-	name = "Cigarettes (Midori Tabako)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_midori
-
-/datum/loadout_item/pocket_items/smokes/cigs_candy
-	name = "Cigarettes (Candy)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_candy
-
-/datum/loadout_item/pocket_items/smokes/cigs_shadyjims
-	name = "Cigarettes (Shady Jim's)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_shadyjims
-
-/datum/loadout_item/pocket_items/smokes/cigar
-	name = "Cigar"
-	item_path = /obj/item/cigarette/cigar
 
 //MARK: DICE
 /datum/loadout_item/pocket_items/dice
@@ -384,6 +335,51 @@
 /datum/loadout_item/pocket_items/dice/d00
 	name = "D00"
 	item_path = /obj/item/dice/d00
+
+//MARK: SMOKES
+/datum/loadout_item/pocket_items/smokes
+	group = "Smokes"
+	abstract_type = /datum/loadout_item/pocket_items/smokes
+
+/datum/loadout_item/pocket_items/smokes/cheap_lighter
+	name = "Cheap Lighter"
+	item_path = /obj/item/lighter/greyscale
+
+/datum/loadout_item/pocket_items/smokes/matches
+	name = "Matchbox"
+	item_path = /obj/item/storage/box/matches
+
+/datum/loadout_item/pocket_items/smokes/cigs_dromedaryco
+	name = "Cigarettes (DromedaryCo)"
+	item_path = /obj/item/storage/fancy/cigarettes/dromedaryco
+
+/datum/loadout_item/pocket_items/smokes/cigs_uplift
+	name = "Cigarettes (Uplift Smooth)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_uplift
+
+/datum/loadout_item/pocket_items/smokes/cigs_robust
+	name = "Cigarettes (Robust)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_robust
+
+/datum/loadout_item/pocket_items/smokes/cigs_carp
+	name = "Cigarettes (Carp Classic)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_carp
+
+/datum/loadout_item/pocket_items/smokes/cigs_midori
+	name = "Cigarettes (Midori Tabako)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_midori
+
+/datum/loadout_item/pocket_items/smokes/cigs_candy
+	name = "Cigarettes (Candy)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_candy
+
+/datum/loadout_item/pocket_items/smokes/cigs_shadyjims
+	name = "Cigarettes (Shady Jim's)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_shadyjims
+
+/datum/loadout_item/pocket_items/smokes/cigar
+	name = "Cigar"
+	item_path = /obj/item/cigarette/cigar
 
 //MARK: ART AND STATIONERY
 /datum/loadout_item/pocket_items/art_n_stuff
