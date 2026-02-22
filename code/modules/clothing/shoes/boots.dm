@@ -43,7 +43,7 @@
 
 /obj/item/clothing/shoes/jackboots
 	name = "jackboots"
-	desc = "Nanotrasen-issue Security combat boots for combat scenarios or combat situations. All combat, all the time."
+	desc = "Combat boots for combat scenarios or combat situations. All combat, all the time."
 	icon_state = "jackboots"
 	inhand_icon_state = "jackboots"
 	supports_variations_flags = CLOTHING_DIGITIGRADE_MASK
@@ -67,6 +67,7 @@
 
 /obj/item/clothing/shoes/jackboots/sec
 	icon_state = "jackboots_sec"
+	desc = "Security combat boots for combat scenarios or combat situations. All combat, all the time."
 
 /obj/item/clothing/shoes/jackboots/floortile
 	name = "floortile camouflage jackboots"
@@ -131,7 +132,7 @@
 
 /obj/item/clothing/shoes/workboots
 	name = "work boots"
-	desc = "Nanotrasen-issue Engineering lace-up work boots for the especially blue-collar."
+	desc = "Lace-up work boots to protect the average blue-collar worker from stepping on hazards."
 	icon_state = "workboots"
 	inhand_icon_state = "jackboots"
 	armor_type = /datum/armor/shoes_workboots
