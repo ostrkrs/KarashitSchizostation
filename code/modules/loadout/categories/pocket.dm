@@ -92,6 +92,52 @@
 	name = "Plush (Horse)"
 	item_path = /obj/item/toy/plush/horse
 
+
+/datum/loadout_item/pocket_items/smokes
+	group = "Smokes"
+	abstract_type = /datum/loadout_item/pocket_items/smokes
+
+/datum/loadout_item/pocket_items/smokes/cheap_lighter
+	name = "Cheap Lighter"
+	item_path = /obj/item/lighter/greyscale
+
+/datum/loadout_item/pocket_items/smokes/cheap_lighter
+	name = "Matchbox"
+	item_path = /obj/item/storage/box/matches
+
+/datum/loadout_item/pocket_items/smokes/cigs_dromedaryco
+	name = "Cigarettes (DromedaryCo)"
+	item_path = /obj/item/storage/fancy/cigarettes/dromedaryco
+
+/datum/loadout_item/pocket_items/smokes/cigs_uplift
+	name = "Cigarettes (Uplift Smooth)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_uplift
+
+/datum/loadout_item/pocket_items/smokes/cigs_robust
+	name = "Cigarettes (Robust)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_robust
+
+/datum/loadout_item/pocket_items/smokes/cigs_carp
+	name = "Cigarettes (Carp Classic)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_carp
+
+/datum/loadout_item/pocket_items/smokes/cigs_midori
+	name = "Cigarettes (Midori Tabako)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_midori
+
+/datum/loadout_item/pocket_items/smokes/cigs_candy
+	name = "Cigarettes (Candy)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_candy
+
+/datum/loadout_item/pocket_items/smokes/cigs_shadyjims
+	name = "Cigarettes (Shady Jim's)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_shadyjims
+
+/datum/loadout_item/pocket_items/smokes/cigar
+	name = "Cigar"
+	item_path = /obj/item/cigarette/cigar
+
+
 /datum/loadout_item/pocket_items/dice
 	group = "Dice"
 	abstract_type = /datum/loadout_item/pocket_items/dice
@@ -147,6 +193,15 @@
 /datum/loadout_item/pocket_items/dice/d00
 	name = "D00"
 	item_path = /obj/item/dice/d00
+
+
+/datum/loadout_item/pocket_items/crayons
+	name = "Box of crayons"
+	item_path = /obj/item/storage/crayons
+
+/datum/loadout_item/pocket_items/candles
+	name = "Box of Candles"
+	item_path = /obj/item/storage/fancy/candle_box
 
 /datum/loadout_item/pocket_items/card_binder
 	name = "Card Binder"
@@ -236,10 +291,6 @@
 			return TRUE // Update UI
 
 	return ..()
-
-/datum/loadout_item/pocket_items/lighter
-	name = "Zippo Lighter"
-	item_path = /obj/item/lighter
 
 /datum/loadout_item/pocket_items/flask
 	name = "Pocket Flask"
@@ -336,7 +387,3 @@
 	UnregisterSignal(source, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
 	var/datum/record/crew/record = find_record(source.real_name)
 	record?.medical_notes += new /datum/medical_note("Central Command", "Patient is a registered brain donor for Robotics research.", null)
-
-/datum/loadout_item/pocket_items/candles
-	name = "Box of Candles"
-	item_path = /obj/item/storage/fancy/candle_box
