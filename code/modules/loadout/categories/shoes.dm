@@ -3,7 +3,7 @@
 	category_name = "Shoes"
 	category_ui_icon = FA_ICON_SHOE_PRINTS
 	type_to_generate = /datum/loadout_item/shoes
-	tab_order = 1
+	tab_order = 6
 
 /datum/loadout_item/shoes
 	abstract_type = /datum/loadout_item/shoes
