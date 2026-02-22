@@ -101,7 +101,7 @@
 	name = "Cheap Lighter"
 	item_path = /obj/item/lighter/greyscale
 
-/datum/loadout_item/pocket_items/smokes/cheap_lighter
+/datum/loadout_item/pocket_items/smokes/matches
 	name = "Matchbox"
 	item_path = /obj/item/storage/box/matches
 
