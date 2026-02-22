@@ -1,11 +1,11 @@
 /// Pocket items (Moved to backpack)
 /datum/loadout_category/pocket
-	category_name = "Other"
-	category_ui_icon = FA_ICON_QUESTION
+	category_name = "Pocket"
+	category_ui_icon = FA_ICON_ENVELOPES_BULK
 	type_to_generate = /datum/loadout_item/pocket_items
-	tab_order = /datum/loadout_category/head::tab_order + 5
+	tab_order = 8
 	/// How many pocket items are allowed
-	VAR_PRIVATE/max_allowed = 2
+	VAR_PRIVATE/max_allowed = 4
 
 /datum/loadout_category/pocket/New()
 	. = ..()
@@ -43,55 +43,76 @@
 
 	return ..()
 
-
-/datum/loadout_item/pocket_items/plush
-	group = "Plushies"
-	abstract_type = /datum/loadout_item/pocket_items/plush
+//MARK: PLUSHIES AND TOYS
+/datum/loadout_item/pocket_items/plushies_n_toys
+	group = "Plushies and Toys"
+	abstract_type = /datum/loadout_item/pocket_items/plushies_n_toys
 	can_be_named = TRUE
 
-/datum/loadout_item/pocket_items/plush/bee
+/datum/loadout_item/pocket_items/plushies_n_toys/bee
 	name = "Plush (Bee)"
 	item_path = /obj/item/toy/plush/beeplushie
 
-/datum/loadout_item/pocket_items/plush/carp
+/datum/loadout_item/pocket_items/plushies_n_toys/carp
 	name = "Plush (Carp)"
 	item_path = /obj/item/toy/plush/carpplushie
 
-/datum/loadout_item/pocket_items/plush/lizard_greyscale
+/datum/loadout_item/pocket_items/plushies_n_toys/lizard_greyscale
 	name = "Plush (Lizard, Colorable)"
 	item_path = /obj/item/toy/plush/lizard_plushie/greyscale
 
-/datum/loadout_item/pocket_items/plush/lizard_random
+/datum/loadout_item/pocket_items/plushies_n_toys/lizard_random
 	name = "Plush (Lizard, Random)"
 	can_be_greyscale = DONT_GREYSCALE
 	ui_icon = 'icons/obj/fluff/previews.dmi'
 	ui_icon_state = "plushie_lizard_random"
 	item_path = /obj/item/toy/plush/lizard_plushie
 
-/datum/loadout_item/pocket_items/plush/moth
+/datum/loadout_item/pocket_items/plushies_n_toys/moth
 	name = "Plush (Moth)"
 	item_path = /obj/item/toy/plush/moth
 
-/datum/loadout_item/pocket_items/plush/peacekeeper
+/datum/loadout_item/pocket_items/plushies_n_toys/peacekeeper
 	name = "Plush (Peacekeeper)"
 	item_path = /obj/item/toy/plush/pkplush
 
-/datum/loadout_item/pocket_items/plush/shark
+/datum/loadout_item/pocket_items/plushies_n_toys/shark
 	name = "Plush (Shark)"
 	item_path = /obj/item/toy/plush/shark
 
-/datum/loadout_item/pocket_items/plush/serpentide
+/datum/loadout_item/pocket_items/plushies_n_toys/serpentide
 	name = "Plush (Serpentide)"
 	item_path = /obj/item/toy/plush/serpentide
 
-/datum/loadout_item/pocket_items/plush/snake
+/datum/loadout_item/pocket_items/plushies_n_toys/snake
 	name = "Plush (Snake)"
 	item_path = /obj/item/toy/plush/snakeplushie
 
-/datum/loadout_item/pocket_items/plush/horse
+/datum/loadout_item/pocket_items/plushies_n_toys/horse
 	name = "Plush (Horse)"
 	item_path = /obj/item/toy/plush/horse
 
+/datum/loadout_item/pocket_items/plushies_n_toys/card_binder
+	name = "Card Binder"
+	item_path = /obj/item/storage/card_binder
+
+/datum/loadout_item/pocket_items/plushies_n_toys/card_deck
+	name = "Card Deck (Poker)"
+	item_path = /obj/item/toy/cards/deck
+
+/datum/loadout_item/pocket_items/plushies_n_toys/kotahi_deck
+	name = "Card Deck (Kotahi)"
+	item_path = /obj/item/toy/cards/deck/kotahi
+
+/datum/loadout_item/pocket_items/plushies_n_toys/wizoff_deck
+	name = "Card Deck (Wizoff)"
+	item_path = /obj/item/toy/cards/deck/wizoff
+
+/datum/loadout_item/pocket_items/plushies_n_toys/eightball
+	name = "Magic Eightball"
+	item_path = /obj/item/toy/eightball
+
+//MARK: DICE
 /datum/loadout_item/pocket_items/dice
 	group = "Dice"
 	abstract_type = /datum/loadout_item/pocket_items/dice
@@ -148,132 +169,130 @@
 	name = "D00"
 	item_path = /obj/item/dice/d00
 
-/datum/loadout_item/pocket_items/card_binder
-	name = "Card Binder"
-	item_path = /obj/item/storage/card_binder
+//MARK: SMOKES
+/datum/loadout_item/pocket_items/smokes
+	group = "Smokes"
+	abstract_type = /datum/loadout_item/pocket_items/smokes
 
-/datum/loadout_item/pocket_items/card_deck
-	name = "Playing Card Deck"
-	item_path = /obj/item/toy/cards/deck
+/datum/loadout_item/pocket_items/smokes/cheap_lighter
+	name = "Cheap Lighter"
+	item_path = /obj/item/lighter/greyscale
 
-/datum/loadout_item/pocket_items/kotahi_deck
-	name = "Kotahi Deck"
-	item_path = /obj/item/toy/cards/deck/kotahi
+/datum/loadout_item/pocket_items/smokes/matches
+	name = "Matchbox"
+	item_path = /obj/item/storage/box/matches
 
-/datum/loadout_item/pocket_items/wizoff_deck
-	name = "Wizoff Deck"
-	item_path = /obj/item/toy/cards/deck/wizoff
+/datum/loadout_item/pocket_items/smokes/cigs_dromedaryco
+	name = "Cigarettes (DromedaryCo)"
+	item_path = /obj/item/storage/fancy/cigarettes/dromedaryco
 
-/datum/loadout_item/pocket_items/lipstick
-	name = "Lipstick"
-	item_path = /obj/item/lipstick
+/datum/loadout_item/pocket_items/smokes/cigs_uplift
+	name = "Cigarettes (Uplift Smooth)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_uplift
 
-/datum/loadout_item/pocket_items/lipstick/get_item_information()
-	. = ..()
-	.[FA_ICON_PALETTE] = "Recolorable"
+/datum/loadout_item/pocket_items/smokes/cigs_robust
+	name = "Cigarettes (Robust)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_robust
 
-/datum/loadout_item/pocket_items/lipstick/on_equip_item(
-	obj/item/lipstick/equipped_item,
-	datum/preferences/preference_source,
-	list/preference_list,
-	mob/living/carbon/human/equipper,
-	visuals_only,
-)
-	. = ..()
-	var/picked_style = style_to_style(preference_list[item_path]?[INFO_LAYER])
-	var/picked_color = preference_list[item_path]?[INFO_GREYSCALE] || /obj/item/lipstick::lipstick_color
-	if(istype(equipped_item)) // can be null for visuals_only
-		equipped_item.style = picked_style
-		equipped_item.lipstick_color = picked_color
-	equipper.update_lips(picked_style, picked_color)
+/datum/loadout_item/pocket_items/smokes/cigs_carp
+	name = "Cigarettes (Carp Classic)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_carp
 
-/// Converts style (readable) to style (internal)
-/datum/loadout_item/pocket_items/lipstick/proc/style_to_style(style)
-	switch(style)
-		if(UPPER_LIP)
-			return "lipstick_upper"
-		if(LOWER_LIP)
-			return "lipstick_lower"
-	return "lipstick"
+/datum/loadout_item/pocket_items/smokes/cigs_midori
+	name = "Cigarettes (Midori Tabako)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_midori
 
-/datum/loadout_item/pocket_items/lipstick/get_ui_buttons()
-	. = ..()
-	UNTYPED_LIST_ADD(., list(
-		"label" = "Style",
-		"act_key" = "select_lipstick_style",
-		"button_icon" = FA_ICON_ARROWS_ROTATE,
-		"active_key" = INFO_LAYER,
-	))
-	UNTYPED_LIST_ADD(., list(
-		"label" = "Color",
-		"act_key" = "select_lipstick_color",
-		"button_icon" = FA_ICON_PALETTE,
-		"active_key" = INFO_GREYSCALE,
-	))
+/datum/loadout_item/pocket_items/smokes/cigs_candy
+	name = "Cigarettes (Candy)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_candy
 
-	return .
+/datum/loadout_item/pocket_items/smokes/cigs_shadyjims
+	name = "Cigarettes (Shady Jim's)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_shadyjims
 
-/datum/loadout_item/pocket_items/lipstick/handle_loadout_action(datum/preference_middleware/loadout/manager, mob/user, action, params)
-	switch(action)
-		if("select_lipstick_style")
-			var/list/their_loadout = manager.preferences.read_preference(/datum/preference/loadout)
-			var/old_style = their_loadout?[item_path]?[INFO_LAYER] || MIDDLE_LIP
-			var/chosen = tgui_input_list(user, "Pick a lipstick style. (This determines where it sits on your sprite.)", "Pick a style", list(UPPER_LIP, MIDDLE_LIP, LOWER_LIP), old_style)
-			their_loadout = manager.preferences.read_preference(/datum/preference/loadout) // after sleep: sanity check
-			if(their_loadout?[item_path]) // Validate they still have it equipped
-				their_loadout[item_path][INFO_LAYER] = chosen
-				manager.preferences.update_preference(GLOB.preference_entries[/datum/preference/loadout], their_loadout)
-			return TRUE // Update UI
+/datum/loadout_item/pocket_items/smokes/cigar
+	name = "Cigar"
+	item_path = /obj/item/cigarette/cigar
 
-		if("select_lipstick_color")
-			var/list/their_loadout = manager.preferences.read_preference(/datum/preference/loadout)
-			var/old_color = their_loadout?[item_path]?[INFO_GREYSCALE] || /obj/item/lipstick::lipstick_color
-			var/chosen = input(user, "Pick a lipstick color.", "Pick a color", old_color) as color|null
-			their_loadout = manager.preferences.read_preference(/datum/preference/loadout) // after sleep: sanity check
-			if(their_loadout?[item_path]) // Validate they still have it equipped
-				their_loadout[item_path][INFO_GREYSCALE] = chosen
-				manager.preferences.update_preference(GLOB.preference_entries[/datum/preference/loadout], their_loadout)
-			return TRUE // Update UI
+//MARK: ART AND STATIONERY
+/datum/loadout_item/pocket_items/art_n_stuff
+	group = "Art and Stationery"
+	abstract_type = /datum/loadout_item/pocket_items/art_n_stuff
 
-	return ..()
+/datum/loadout_item/pocket_items/art_n_stuff/crayons
+	name = "Box of Crayons"
+	item_path = /obj/item/storage/crayons
 
-/datum/loadout_item/pocket_items/lighter
-	name = "Zippo Lighter"
-	item_path = /obj/item/lighter
+/datum/loadout_item/pocket_items/art_n_stuff/candles
+	name = "Box of Candles"
+	item_path = /obj/item/storage/fancy/candle_box
 
-/datum/loadout_item/pocket_items/flask
-	name = "Pocket Flask"
-	item_path = /obj/item/reagent_containers/cup/glass/flask
-
-/datum/loadout_item/pocket_items/clipboard
+/datum/loadout_item/pocket_items/art_n_stuff/clipboard
 	name = "Clipboard"
 	item_path = /obj/item/clipboard
 
-/datum/loadout_item/pocket_items/dye
+/datum/loadout_item/pocket_items/art_n_stuff/fountain_pen
+	name = "Fountain Pen"
+	item_path = /obj/item/pen/fountain
+
+/datum/loadout_item/pocket_items/art_n_stuff/fourcolor_pen
+	name = "Multicolor Pen"
+	item_path = /obj/item/pen/fourcolor
+
+/datum/loadout_item/pocket_items/art_n_stuff/spraycan
+	name = "Spray Can"
+	item_path = /obj/item/toy/crayon/spraycan
+
+/datum/loadout_item/pocket_items/art_n_stuff/bundlenatural
+	name = "Natural Paper Bundle"
+	item_path = /obj/item/paper_bin/bundlenatural
+
+/datum/loadout_item/pocket_items/art_n_stuff/folder
+	name = "Folder"
+	item_path = /obj/item/folder
+
+/datum/loadout_item/pocket_items/art_n_stuff/photo_album
+	name = "Photo Album"
+	item_path = /obj/item/storage/photo_album
+
+/datum/loadout_item/pocket_items/art_n_stuff/camera
+	name = "Polaroid Camera"
+	item_path = /obj/item/camera
+
+//MARK: MISC.
+/datum/loadout_item/pocket_items/misc
+	group = "Misc."
+	abstract_type = /datum/loadout_item/pocket_items/misc
+
+/datum/loadout_item/pocket_items/misc/flask
+	name = "Pocket Flask"
+	item_path = /obj/item/reagent_containers/cup/glass/flask
+
+/datum/loadout_item/pocket_items/misc/dye
 	name = "Hair Dye"
 	item_path = /obj/item/dyespray
 
-/datum/loadout_item/pocket_items/poster
+/datum/loadout_item/pocket_items/misc/poster
 	name = "Poster (Contraband)"
 	item_path = /obj/item/poster/random_contraband
 
-/datum/loadout_item/pocket_items/poster_pinup
+/datum/loadout_item/pocket_items/misc/poster_pinup
 	name = "Poster (Pinup)"
 	item_path = /obj/item/poster/random_contraband/pinup
 
-/datum/loadout_item/pocket_items/holodisk
+/datum/loadout_item/pocket_items/misc/holodisk
 	name = "Holodisk"
 	item_path = /obj/item/disk/holodisk
 
 // The wallet loadout item is special, and puts the player's ID and other small items into it on initialize (fancy!)
-/datum/loadout_item/pocket_items/wallet
+/datum/loadout_item/pocket_items/misc/wallet
 	name = "Wallet"
 	item_path = /obj/item/storage/wallet
 
-/datum/loadout_item/pocket_items/wallet/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE)
+/datum/loadout_item/pocket_items/misc/wallet/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE)
 	return
 
-/datum/loadout_item/pocket_items/wallet/on_equip_item(
+/datum/loadout_item/pocket_items/misc/wallet/on_equip_item(
 	obj/item/equipped_item,
 	datum/preferences/preference_source,
 	list/preference_list,
@@ -285,12 +304,12 @@
 		RegisterSignal(equipper, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED, PROC_REF(apply_after_setup), override = TRUE)
 	return NONE
 
-/datum/loadout_item/pocket_items/wallet/proc/apply_after_setup(mob/living/carbon/human/source, ...)
+/datum/loadout_item/pocket_items/misc/wallet/proc/apply_after_setup(mob/living/carbon/human/source, ...)
 	SIGNAL_HANDLER
 	equip_wallet(source)
 	UnregisterSignal(source, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
 
-/datum/loadout_item/pocket_items/wallet/proc/equip_wallet(mob/living/carbon/human/equipper)
+/datum/loadout_item/pocket_items/misc/wallet/proc/equip_wallet(mob/living/carbon/human/equipper)
 	var/obj/item/card/id/advanced/id_card = equipper.get_item_by_slot(ITEM_SLOT_ID)
 	if(istype(id_card, /obj/item/storage/wallet)) // Wallets station trait guard
 		return
@@ -315,10 +334,84 @@
 		wallet.atom_storage.attempt_insert(thing, override = TRUE, force = STORAGE_FULLY_LOCKED, messages = FALSE)
 
 
-/datum/loadout_item/pocket_items/borg_me_dogtag
+/datum/loadout_item/pocket_items/misc/lipstick
+	name = "Lipstick"
+	item_path = /obj/item/lipstick
+
+/datum/loadout_item/pocket_items/misc/lipstick/get_item_information()
+	. = ..()
+	.[FA_ICON_PALETTE] = "Recolorable"
+
+/datum/loadout_item/pocket_items/misc/lipstick/on_equip_item(
+	obj/item/lipstick/equipped_item,
+	datum/preferences/preference_source,
+	list/preference_list,
+	mob/living/carbon/human/equipper,
+	visuals_only,
+)
+	. = ..()
+	var/picked_style = style_to_style(preference_list[item_path]?[INFO_LAYER])
+	var/picked_color = preference_list[item_path]?[INFO_GREYSCALE] || /obj/item/lipstick::lipstick_color
+	if(istype(equipped_item)) // can be null for visuals_only
+		equipped_item.style = picked_style
+		equipped_item.lipstick_color = picked_color
+	equipper.update_lips(picked_style, picked_color)
+
+/// Converts style (readable) to style (internal)
+/datum/loadout_item/pocket_items/misc/lipstick/proc/style_to_style(style)
+	switch(style)
+		if(UPPER_LIP)
+			return "lipstick_upper"
+		if(LOWER_LIP)
+			return "lipstick_lower"
+	return "lipstick"
+
+/datum/loadout_item/pocket_items/misc/lipstick/get_ui_buttons()
+	. = ..()
+	UNTYPED_LIST_ADD(., list(
+		"label" = "Style",
+		"act_key" = "select_lipstick_style",
+		"button_icon" = FA_ICON_ARROWS_ROTATE,
+		"active_key" = INFO_LAYER,
+	))
+	UNTYPED_LIST_ADD(., list(
+		"label" = "Color",
+		"act_key" = "select_lipstick_color",
+		"button_icon" = FA_ICON_PALETTE,
+		"active_key" = INFO_GREYSCALE,
+	))
+
+	return .
+
+/datum/loadout_item/pocket_items/misc/lipstick/handle_loadout_action(datum/preference_middleware/loadout/manager, mob/user, action, params)
+	switch(action)
+		if("select_lipstick_style")
+			var/list/their_loadout = manager.preferences.read_preference(/datum/preference/loadout)
+			var/old_style = their_loadout?[item_path]?[INFO_LAYER] || MIDDLE_LIP
+			var/chosen = tgui_input_list(user, "Pick a lipstick style. (This determines where it sits on your sprite.)", "Pick a style", list(UPPER_LIP, MIDDLE_LIP, LOWER_LIP), old_style)
+			their_loadout = manager.preferences.read_preference(/datum/preference/loadout) // after sleep: sanity check
+			if(their_loadout?[item_path]) // Validate they still have it equipped
+				their_loadout[item_path][INFO_LAYER] = chosen
+				manager.preferences.update_preference(GLOB.preference_entries[/datum/preference/loadout], their_loadout)
+			return TRUE // Update UI
+
+		if("select_lipstick_color")
+			var/list/their_loadout = manager.preferences.read_preference(/datum/preference/loadout)
+			var/old_color = their_loadout?[item_path]?[INFO_GREYSCALE] || /obj/item/lipstick::lipstick_color
+			var/chosen = input(user, "Pick a lipstick color.", "Pick a color", old_color) as color|null
+			their_loadout = manager.preferences.read_preference(/datum/preference/loadout) // after sleep: sanity check
+			if(their_loadout?[item_path]) // Validate they still have it equipped
+				their_loadout[item_path][INFO_GREYSCALE] = chosen
+				manager.preferences.update_preference(GLOB.preference_entries[/datum/preference/loadout], their_loadout)
+			return TRUE // Update UI
+
+	return ..()
+
+
+/datum/loadout_item/pocket_items/misc/borg_me_dogtag
 	item_path = /obj/item/clothing/accessory/dogtag/borg_ready
 
-/datum/loadout_item/pocket_items/borg_me_dogtag/on_equip_item(
+/datum/loadout_item/pocket_items/misc/borg_me_dogtag/on_equip_item(
 	obj/item/equipped_item,
 	datum/preferences/preference_source,
 	list/preference_list,
@@ -330,13 +423,9 @@
 		RegisterSignal(equipper, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED, PROC_REF(apply_after_setup), override = TRUE)
 	return NONE
 
-/datum/loadout_item/pocket_items/borg_me_dogtag/proc/apply_after_setup(mob/living/carbon/human/source, ...)
+/datum/loadout_item/pocket_items/misc/borg_me_dogtag/proc/apply_after_setup(mob/living/carbon/human/source, ...)
 	SIGNAL_HANDLER
 
 	UnregisterSignal(source, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
 	var/datum/record/crew/record = find_record(source.real_name)
 	record?.medical_notes += new /datum/medical_note("Central Command", "Patient is a registered brain donor for Robotics research.", null)
-
-/datum/loadout_item/pocket_items/candles
-	name = "Box of Candles"
-	item_path = /obj/item/storage/fancy/candle_box

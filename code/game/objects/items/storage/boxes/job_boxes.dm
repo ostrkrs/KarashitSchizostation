@@ -18,7 +18,7 @@
 	var/crafted = FALSE
 	/// Should we contain an escape hook on maps with z-levels?
 	var/give_hook = TRUE
-	/// Do we get to benefit from Nanotrasen's largesse?
+	/// Do we get to benefit from corportion's largesse?
 	var/give_premium_goods = TRUE
 
 /obj/item/storage/box/survival/create_storage(max_slots, max_specific_storage, max_total_storage, list/canhold, list/canthold, storage_type)
