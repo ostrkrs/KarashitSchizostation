@@ -5,7 +5,7 @@
 	type_to_generate = /datum/loadout_item/pocket_items
 	tab_order = /datum/loadout_category/head::tab_order + 6
 	/// How many pocket items are allowed
-	VAR_PRIVATE/max_allowed = 2
+	VAR_PRIVATE/max_allowed = 4
 
 /datum/loadout_category/pocket/New()
 	. = ..()
@@ -43,181 +43,76 @@
 
 	return ..()
 
+//MARK: OTHER
+/datum/loadout_item/pocket_items/flask
+	name = "Pocket Flask"
+	item_path = /obj/item/reagent_containers/cup/glass/flask
 
-/datum/loadout_item/pocket_items/plush
-	group = "Plushies"
-	abstract_type = /datum/loadout_item/pocket_items/plush
-	can_be_named = TRUE
+/datum/loadout_item/pocket_items/dye
+	name = "Hair Dye"
+	item_path = /obj/item/dyespray
 
-/datum/loadout_item/pocket_items/plush/bee
-	name = "Plush (Bee)"
-	item_path = /obj/item/toy/plush/beeplushie
+/datum/loadout_item/pocket_items/poster
+	name = "Poster (Contraband)"
+	item_path = /obj/item/poster/random_contraband
 
-/datum/loadout_item/pocket_items/plush/carp
-	name = "Plush (Carp)"
-	item_path = /obj/item/toy/plush/carpplushie
+/datum/loadout_item/pocket_items/poster_pinup
+	name = "Poster (Pinup)"
+	item_path = /obj/item/poster/random_contraband/pinup
 
-/datum/loadout_item/pocket_items/plush/lizard_greyscale
-	name = "Plush (Lizard, Colorable)"
-	item_path = /obj/item/toy/plush/lizard_plushie/greyscale
+/datum/loadout_item/pocket_items/holodisk
+	name = "Holodisk"
+	item_path = /obj/item/disk/holodisk
 
-/datum/loadout_item/pocket_items/plush/lizard_random
-	name = "Plush (Lizard, Random)"
-	can_be_greyscale = DONT_GREYSCALE
-	ui_icon = 'icons/obj/fluff/previews.dmi'
-	ui_icon_state = "plushie_lizard_random"
-	item_path = /obj/item/toy/plush/lizard_plushie
+// The wallet loadout item is special, and puts the player's ID and other small items into it on initialize (fancy!)
+/datum/loadout_item/pocket_items/wallet
+	name = "Wallet"
+	item_path = /obj/item/storage/wallet
 
-/datum/loadout_item/pocket_items/plush/moth
-	name = "Plush (Moth)"
-	item_path = /obj/item/toy/plush/moth
+/datum/loadout_item/pocket_items/wallet/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE)
+	return
 
-/datum/loadout_item/pocket_items/plush/peacekeeper
-	name = "Plush (Peacekeeper)"
-	item_path = /obj/item/toy/plush/pkplush
+/datum/loadout_item/pocket_items/wallet/on_equip_item(
+	obj/item/equipped_item,
+	datum/preferences/preference_source,
+	list/preference_list,
+	mob/living/carbon/human/equipper,
+	visuals_only = FALSE,
+)
+	// Do this at the very end of the setup process so we can insert quirk items and such
+	if(!visuals_only && !isdummy(equipper))
+		RegisterSignal(equipper, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED, PROC_REF(apply_after_setup), override = TRUE)
+	return NONE
 
-/datum/loadout_item/pocket_items/plush/shark
-	name = "Plush (Shark)"
-	item_path = /obj/item/toy/plush/shark
+/datum/loadout_item/pocket_items/wallet/proc/apply_after_setup(mob/living/carbon/human/source, ...)
+	SIGNAL_HANDLER
+	equip_wallet(source)
+	UnregisterSignal(source, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
 
-/datum/loadout_item/pocket_items/plush/serpentide
-	name = "Plush (Serpentide)"
-	item_path = /obj/item/toy/plush/serpentide
+/datum/loadout_item/pocket_items/wallet/proc/equip_wallet(mob/living/carbon/human/equipper)
+	var/obj/item/card/id/advanced/id_card = equipper.get_item_by_slot(ITEM_SLOT_ID)
+	if(istype(id_card, /obj/item/storage/wallet)) // Wallets station trait guard
+		return
 
-/datum/loadout_item/pocket_items/plush/snake
-	name = "Plush (Snake)"
-	item_path = /obj/item/toy/plush/snakeplushie
+	var/obj/item/storage/wallet/wallet = new(equipper)
+	if(!istype(id_card))
+		// They must have a PDA or some other thing in their ID slot, abort
+		if(!equipper.equip_to_storage(wallet, ITEM_SLOT_BACK, indirect_action = TRUE))
+			wallet.forceMove(equipper.drop_location())
+		return
 
-/datum/loadout_item/pocket_items/plush/horse
-	name = "Plush (Horse)"
-	item_path = /obj/item/toy/plush/horse
+	equipper.temporarilyRemoveItemFromInventory(id_card, force = TRUE)
+	equipper.equip_to_slot_if_possible(wallet, ITEM_SLOT_ID, initial = TRUE)
+	id_card.forceMove(wallet)
 
+	for(var/obj/item/thing in equipper?.back)
+		// leaves a slot free for whatever they may want
+		if(length(wallet.contents) >= wallet.atom_storage.max_slots - 1)
+			break
+		if(thing.w_class > wallet.atom_storage.max_specific_storage)
+			continue
+		wallet.atom_storage.attempt_insert(thing, override = TRUE, force = STORAGE_FULLY_LOCKED, messages = FALSE)
 
-/datum/loadout_item/pocket_items/smokes
-	group = "Smokes"
-	abstract_type = /datum/loadout_item/pocket_items/smokes
-
-/datum/loadout_item/pocket_items/smokes/cheap_lighter
-	name = "Cheap Lighter"
-	item_path = /obj/item/lighter/greyscale
-
-/datum/loadout_item/pocket_items/smokes/matches
-	name = "Matchbox"
-	item_path = /obj/item/storage/box/matches
-
-/datum/loadout_item/pocket_items/smokes/cigs_dromedaryco
-	name = "Cigarettes (DromedaryCo)"
-	item_path = /obj/item/storage/fancy/cigarettes/dromedaryco
-
-/datum/loadout_item/pocket_items/smokes/cigs_uplift
-	name = "Cigarettes (Uplift Smooth)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_uplift
-
-/datum/loadout_item/pocket_items/smokes/cigs_robust
-	name = "Cigarettes (Robust)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_robust
-
-/datum/loadout_item/pocket_items/smokes/cigs_carp
-	name = "Cigarettes (Carp Classic)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_carp
-
-/datum/loadout_item/pocket_items/smokes/cigs_midori
-	name = "Cigarettes (Midori Tabako)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_midori
-
-/datum/loadout_item/pocket_items/smokes/cigs_candy
-	name = "Cigarettes (Candy)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_candy
-
-/datum/loadout_item/pocket_items/smokes/cigs_shadyjims
-	name = "Cigarettes (Shady Jim's)"
-	item_path = /obj/item/storage/fancy/cigarettes/cigpack_shadyjims
-
-/datum/loadout_item/pocket_items/smokes/cigar
-	name = "Cigar"
-	item_path = /obj/item/cigarette/cigar
-
-
-/datum/loadout_item/pocket_items/dice
-	group = "Dice"
-	abstract_type = /datum/loadout_item/pocket_items/dice
-
-/datum/loadout_item/pocket_items/dice/dice_bag
-	name = "Dice Bag"
-	item_path = /obj/item/storage/dice
-
-/datum/loadout_item/pocket_items/dice/d1
-	name = "D1"
-	item_path = /obj/item/dice/d1
-
-/datum/loadout_item/pocket_items/dice/d2
-	name = "D2"
-	item_path = /obj/item/dice/d2
-
-/datum/loadout_item/pocket_items/dice/d4
-	name = "D4"
-	item_path = /obj/item/dice/d4
-
-/datum/loadout_item/pocket_items/dice/d6
-	name = "D6"
-	item_path = /obj/item/dice/d6
-
-/datum/loadout_item/pocket_items/dice/d6_ebony
-	name = "D6 (Ebony)"
-	item_path = /obj/item/dice/d6/ebony
-
-/datum/loadout_item/pocket_items/dice/d6_space
-	name = "D6 (Space)"
-	item_path = /obj/item/dice/d6/space
-
-/datum/loadout_item/pocket_items/dice/d8
-	name = "D8"
-	item_path = /obj/item/dice/d8
-
-/datum/loadout_item/pocket_items/dice/d10
-	name = "D10"
-	item_path = /obj/item/dice/d10
-
-/datum/loadout_item/pocket_items/dice/d12
-	name = "D12"
-	item_path = /obj/item/dice/d12
-
-/datum/loadout_item/pocket_items/dice/d20
-	name = "D20"
-	item_path = /obj/item/dice/d20
-
-/datum/loadout_item/pocket_items/dice/d100
-	name = "D100"
-	item_path = /obj/item/dice/d100
-
-/datum/loadout_item/pocket_items/dice/d00
-	name = "D00"
-	item_path = /obj/item/dice/d00
-
-
-/datum/loadout_item/pocket_items/crayons
-	name = "Box of crayons"
-	item_path = /obj/item/storage/crayons
-
-/datum/loadout_item/pocket_items/candles
-	name = "Box of Candles"
-	item_path = /obj/item/storage/fancy/candle_box
-
-/datum/loadout_item/pocket_items/card_binder
-	name = "Card Binder"
-	item_path = /obj/item/storage/card_binder
-
-/datum/loadout_item/pocket_items/card_deck
-	name = "Playing Card Deck"
-	item_path = /obj/item/toy/cards/deck
-
-/datum/loadout_item/pocket_items/kotahi_deck
-	name = "Kotahi Deck"
-	item_path = /obj/item/toy/cards/deck/kotahi
-
-/datum/loadout_item/pocket_items/wizoff_deck
-	name = "Wizoff Deck"
-	item_path = /obj/item/toy/cards/deck/wizoff
 
 /datum/loadout_item/pocket_items/lipstick
 	name = "Lipstick"
@@ -292,79 +187,6 @@
 
 	return ..()
 
-/datum/loadout_item/pocket_items/flask
-	name = "Pocket Flask"
-	item_path = /obj/item/reagent_containers/cup/glass/flask
-
-/datum/loadout_item/pocket_items/clipboard
-	name = "Clipboard"
-	item_path = /obj/item/clipboard
-
-/datum/loadout_item/pocket_items/dye
-	name = "Hair Dye"
-	item_path = /obj/item/dyespray
-
-/datum/loadout_item/pocket_items/poster
-	name = "Poster (Contraband)"
-	item_path = /obj/item/poster/random_contraband
-
-/datum/loadout_item/pocket_items/poster_pinup
-	name = "Poster (Pinup)"
-	item_path = /obj/item/poster/random_contraband/pinup
-
-/datum/loadout_item/pocket_items/holodisk
-	name = "Holodisk"
-	item_path = /obj/item/disk/holodisk
-
-// The wallet loadout item is special, and puts the player's ID and other small items into it on initialize (fancy!)
-/datum/loadout_item/pocket_items/wallet
-	name = "Wallet"
-	item_path = /obj/item/storage/wallet
-
-/datum/loadout_item/pocket_items/wallet/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE)
-	return
-
-/datum/loadout_item/pocket_items/wallet/on_equip_item(
-	obj/item/equipped_item,
-	datum/preferences/preference_source,
-	list/preference_list,
-	mob/living/carbon/human/equipper,
-	visuals_only = FALSE,
-)
-	// Do this at the very end of the setup process so we can insert quirk items and such
-	if(!visuals_only && !isdummy(equipper))
-		RegisterSignal(equipper, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED, PROC_REF(apply_after_setup), override = TRUE)
-	return NONE
-
-/datum/loadout_item/pocket_items/wallet/proc/apply_after_setup(mob/living/carbon/human/source, ...)
-	SIGNAL_HANDLER
-	equip_wallet(source)
-	UnregisterSignal(source, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
-
-/datum/loadout_item/pocket_items/wallet/proc/equip_wallet(mob/living/carbon/human/equipper)
-	var/obj/item/card/id/advanced/id_card = equipper.get_item_by_slot(ITEM_SLOT_ID)
-	if(istype(id_card, /obj/item/storage/wallet)) // Wallets station trait guard
-		return
-
-	var/obj/item/storage/wallet/wallet = new(equipper)
-	if(!istype(id_card))
-		// They must have a PDA or some other thing in their ID slot, abort
-		if(!equipper.equip_to_storage(wallet, ITEM_SLOT_BACK, indirect_action = TRUE))
-			wallet.forceMove(equipper.drop_location())
-		return
-
-	equipper.temporarilyRemoveItemFromInventory(id_card, force = TRUE)
-	equipper.equip_to_slot_if_possible(wallet, ITEM_SLOT_ID, initial = TRUE)
-	id_card.forceMove(wallet)
-
-	for(var/obj/item/thing in equipper?.back)
-		// leaves a slot free for whatever they may want
-		if(length(wallet.contents) >= wallet.atom_storage.max_slots - 1)
-			break
-		if(thing.w_class > wallet.atom_storage.max_specific_storage)
-			continue
-		wallet.atom_storage.attempt_insert(thing, override = TRUE, force = STORAGE_FULLY_LOCKED, messages = FALSE)
-
 
 /datum/loadout_item/pocket_items/borg_me_dogtag
 	item_path = /obj/item/clothing/accessory/dogtag/borg_ready
@@ -387,3 +209,223 @@
 	UnregisterSignal(source, COMSIG_HUMAN_CHARACTER_SETUP_FINISHED)
 	var/datum/record/crew/record = find_record(source.real_name)
 	record?.medical_notes += new /datum/medical_note("Central Command", "Patient is a registered brain donor for Robotics research.", null)
+
+//MARK: PLUSHIES AND TOYS
+/datum/loadout_item/pocket_items/plushies_n_toys_n_toys
+	group = "Plushies and Toys"
+	abstract_type = /datum/loadout_item/pocket_items/plushies_n_toys
+	can_be_named = TRUE
+
+/datum/loadout_item/pocket_items/plushies_n_toys/bee
+	name = "Plush (Bee)"
+	item_path = /obj/item/toy/plush/beeplushie
+
+/datum/loadout_item/pocket_items/plushies_n_toys/carp
+	name = "Plush (Carp)"
+	item_path = /obj/item/toy/plush/carpplushie
+
+/datum/loadout_item/pocket_items/plushies_n_toys/lizard_greyscale
+	name = "Plush (Lizard, Colorable)"
+	item_path = /obj/item/toy/plush/lizard_plushie/greyscale
+
+/datum/loadout_item/pocket_items/plushies_n_toys/lizard_random
+	name = "Plush (Lizard, Random)"
+	can_be_greyscale = DONT_GREYSCALE
+	ui_icon = 'icons/obj/fluff/previews.dmi'
+	ui_icon_state = "plushie_lizard_random"
+	item_path = /obj/item/toy/plush/lizard_plushie
+
+/datum/loadout_item/pocket_items/plushies_n_toys/moth
+	name = "Plush (Moth)"
+	item_path = /obj/item/toy/plush/moth
+
+/datum/loadout_item/pocket_items/plushies_n_toys/peacekeeper
+	name = "Plush (Peacekeeper)"
+	item_path = /obj/item/toy/plush/pkplush
+
+/datum/loadout_item/pocket_items/plushies_n_toys/shark
+	name = "Plush (Shark)"
+	item_path = /obj/item/toy/plush/shark
+
+/datum/loadout_item/pocket_items/plushies_n_toys/serpentide
+	name = "Plush (Serpentide)"
+	item_path = /obj/item/toy/plush/serpentide
+
+/datum/loadout_item/pocket_items/plushies_n_toys/snake
+	name = "Plush (Snake)"
+	item_path = /obj/item/toy/plush/snakeplushie
+
+/datum/loadout_item/pocket_items/plushies_n_toys/horse
+	name = "Plush (Horse)"
+	item_path = /obj/item/toy/plush/horse
+
+/datum/loadout_item/pocket_items/plushies_n_toys/card_binder
+	name = "Card Binder"
+	item_path = /obj/item/storage/card_binder
+
+/datum/loadout_item/pocket_items/plushies_n_toys/card_deck
+	name = "Card Deck (Poker)"
+	item_path = /obj/item/toy/cards/deck
+
+/datum/loadout_item/pocket_items/plushies_n_toys/kotahi_deck
+	name = "Card Deck (Kotahi)"
+	item_path = /obj/item/toy/cards/deck/kotahi
+
+/datum/loadout_item/pocket_items/plushies_n_toys/wizoff_deck
+	name = "Card Deck (Wizoff)"
+	item_path = /obj/item/toy/cards/deck/wizoff
+
+/datum/loadout_item/pocket_items/plushies_n_toys/ai
+	name = "Toy AI"
+	item_path = /obj/item/toy/talking/ai
+
+/datum/loadout_item/pocket_items/plushies_n_toys/eightball
+	name = "Magic Eightball"
+	item_path = /obj/item/toy/eightball
+
+//MARK: SMOKES
+/datum/loadout_item/pocket_items/smokes
+	group = "Smokes"
+	abstract_type = /datum/loadout_item/pocket_items/smokes
+
+/datum/loadout_item/pocket_items/smokes/cheap_lighter
+	name = "Cheap Lighter"
+	item_path = /obj/item/lighter/greyscale
+
+/datum/loadout_item/pocket_items/smokes/matches
+	name = "Matchbox"
+	item_path = /obj/item/storage/box/matches
+
+/datum/loadout_item/pocket_items/smokes/cigs_dromedaryco
+	name = "Cigarettes (DromedaryCo)"
+	item_path = /obj/item/storage/fancy/cigarettes/dromedaryco
+
+/datum/loadout_item/pocket_items/smokes/cigs_uplift
+	name = "Cigarettes (Uplift Smooth)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_uplift
+
+/datum/loadout_item/pocket_items/smokes/cigs_robust
+	name = "Cigarettes (Robust)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_robust
+
+/datum/loadout_item/pocket_items/smokes/cigs_carp
+	name = "Cigarettes (Carp Classic)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_carp
+
+/datum/loadout_item/pocket_items/smokes/cigs_midori
+	name = "Cigarettes (Midori Tabako)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_midori
+
+/datum/loadout_item/pocket_items/smokes/cigs_candy
+	name = "Cigarettes (Candy)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_candy
+
+/datum/loadout_item/pocket_items/smokes/cigs_shadyjims
+	name = "Cigarettes (Shady Jim's)"
+	item_path = /obj/item/storage/fancy/cigarettes/cigpack_shadyjims
+
+/datum/loadout_item/pocket_items/smokes/cigar
+	name = "Cigar"
+	item_path = /obj/item/cigarette/cigar
+
+//MARK: DICE
+/datum/loadout_item/pocket_items/dice
+	group = "Dice"
+	abstract_type = /datum/loadout_item/pocket_items/dice
+
+/datum/loadout_item/pocket_items/dice/dice_bag
+	name = "Dice Bag"
+	item_path = /obj/item/storage/dice
+
+/datum/loadout_item/pocket_items/dice/d1
+	name = "D1"
+	item_path = /obj/item/dice/d1
+
+/datum/loadout_item/pocket_items/dice/d2
+	name = "D2"
+	item_path = /obj/item/dice/d2
+
+/datum/loadout_item/pocket_items/dice/d4
+	name = "D4"
+	item_path = /obj/item/dice/d4
+
+/datum/loadout_item/pocket_items/dice/d6
+	name = "D6"
+	item_path = /obj/item/dice/d6
+
+/datum/loadout_item/pocket_items/dice/d6_ebony
+	name = "D6 (Ebony)"
+	item_path = /obj/item/dice/d6/ebony
+
+/datum/loadout_item/pocket_items/dice/d6_space
+	name = "D6 (Space)"
+	item_path = /obj/item/dice/d6/space
+
+/datum/loadout_item/pocket_items/dice/d8
+	name = "D8"
+	item_path = /obj/item/dice/d8
+
+/datum/loadout_item/pocket_items/dice/d10
+	name = "D10"
+	item_path = /obj/item/dice/d10
+
+/datum/loadout_item/pocket_items/dice/d12
+	name = "D12"
+	item_path = /obj/item/dice/d12
+
+/datum/loadout_item/pocket_items/dice/d20
+	name = "D20"
+	item_path = /obj/item/dice/d20
+
+/datum/loadout_item/pocket_items/dice/d100
+	name = "D100"
+	item_path = /obj/item/dice/d100
+
+/datum/loadout_item/pocket_items/dice/d00
+	name = "D00"
+	item_path = /obj/item/dice/d00
+
+//MARK: ART AND STATIONERY
+/datum/loadout_item/pocket_items/art_n_stuff
+	group = "Art and Stationery"
+	abstract_type = /datum/loadout_item/pocket_items/art_n_stuff
+
+/datum/loadout_item/pocket_items/art_n_stuff/crayons
+	name = "Box of Crayons"
+	item_path = /obj/item/storage/crayons
+
+/datum/loadout_item/pocket_items/art_n_stuff/candles
+	name = "Box of Candles"
+	item_path = /obj/item/storage/fancy/candle_box
+
+/datum/loadout_item/pocket_items/art_n_stuff/clipboard
+	name = "Clipboard"
+	item_path = /obj/item/clipboard
+
+/datum/loadout_item/pocket_items/art_n_stuff/fountain_pen
+	name = "Fountain Pen"
+	item_path = /obj/item/pen/fountain
+
+/datum/loadout_item/pocket_items/art_n_stuff/fourcolor_pen
+	name = "Multicolor Pen"
+	item_path = /obj/item/pen/fourcolor
+
+/datum/loadout_item/pocket_items/art_n_stuff/spraycan
+	name = "Spray Can"
+	item_path = /obj/item/toy/crayon/spraycan
+
+/datum/loadout_item/pocket_items/art_n_stuff/bundlenatural
+	name = "Natural Paper Bundle"
+	item_path = /obj/item/paper_bin/bundlenatural
+
+/datum/loadout_item/pocket_items/art_n_stuff/folder
+	name = "Folder"
+	item_path = /obj/item/folder
+
+/datum/loadout_item/pocket_items/art_n_stuff/photo_album
+	name = "Photo Album"
+	item_path = /obj/item/storage/photo_album
+
+/datum/loadout_item/pocket_items/art_n_stuff/camera
+	name = "Polaroid Camera"
+	item_path = /obj/item/camera

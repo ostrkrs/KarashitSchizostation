@@ -121,8 +121,8 @@
 	colour = COLOR_WHITE
 
 /obj/item/pen/fourcolor
+	name = "multicolor pen"
 	desc = "It's a fancy four-color ink pen, set to black."
-	name = "four-color pen"
 	icon_state = "pen_4color"
 	colour = COLOR_BLACK
 	can_click = FALSE
