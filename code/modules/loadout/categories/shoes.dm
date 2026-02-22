@@ -39,6 +39,18 @@
 	name = "Boots (Cowboy, Black)"
 	item_path = /obj/item/clothing/shoes/cowboy/black/laced
 
-/datum/loadout_item/shoes/jackboots
+/datum/loadout_item/shoes/workboots_black
 	name = "Workboots (Black)"
 	item_path = /obj/item/clothing/shoes/workboots/black
+
+/datum/loadout_item/shoes/workboots_brown
+	name = "Workboots (Brown)"
+	item_path = /obj/item/clothing/shoes/workboots
+
+/datum/loadout_item/shoes/jackboots
+	name = "Jackboots"
+	item_path = /obj/item/clothing/shoes/jackboots
+
+/datum/loadout_item/shoes/winterboots
+	name = "Winter boots"
+	item_path = /obj/item/clothing/shoes/winterboots
