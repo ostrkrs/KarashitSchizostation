@@ -211,7 +211,7 @@
 	record?.medical_notes += new /datum/medical_note("Central Command", "Patient is a registered brain donor for Robotics research.", null)
 
 //MARK: PLUSHIES AND TOYS
-/datum/loadout_item/pocket_items/plushies_n_toys_n_toys
+/datum/loadout_item/pocket_items/plushies_n_toys
 	group = "Plushies and Toys"
 	abstract_type = /datum/loadout_item/pocket_items/plushies_n_toys
 	can_be_named = TRUE
