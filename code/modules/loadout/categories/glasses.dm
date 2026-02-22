@@ -54,7 +54,7 @@
 	item_path = /obj/item/clothing/glasses/eyepatch
 
 /datum/loadout_item/glasses/eyepatch/medical
-	name = "Medical Eyepatch"
+	name = "Eyepatch (Medical)"
 	item_path = /obj/item/clothing/glasses/eyepatch/medical
 
 /datum/loadout_item/glasses/kim
