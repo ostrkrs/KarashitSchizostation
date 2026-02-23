@@ -16,7 +16,7 @@
 	name = "Poly"
 	desc = "Poly the Parrot. An expert on quantum cracker theory."
 	gold_core_spawnable = NO_SPAWN
-	speech_probability_rate = 6
+	speech_probability_rate = 1
 
 	/// Callback to save our memory at the end of the round.
 	var/datum/callback/roundend_callback = null
@@ -196,7 +196,6 @@
 	status_flags = NONE
 	butcher_results = list(/obj/item/ectoplasm = 1)
 	ai_controller = /datum/ai_controller/basic_controller/parrot/ghost
-	speech_probability_rate = 1
 	resistance_flags = parent_type::resistance_flags | SHUTTLE_CRUSH_PROOF
 
 /mob/living/basic/parrot/poly/ghost/Initialize(mapload)
