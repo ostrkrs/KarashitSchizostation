@@ -2,7 +2,7 @@
 //IT SUCKS A BIT LESS -GIACOM
 
 /obj/item/paint
-	gender= PLURAL
+	gender = PLURAL
 	name = "paint"
 	desc = "Used to recolor floors and walls. Can be removed by the janitor."
 	icon = 'icons/obj/art/paint.dmi'
