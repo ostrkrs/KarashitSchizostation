@@ -41,6 +41,9 @@
 		return
 	variant = rand(1,3)
 
+/obj/machinery/griddle/IsContainedAtomAccessible(atom/contained, atom/movable/user)
+	return ..() || (contained in griddled_objects)
+
 /obj/machinery/griddle/proc/on_expose_reagent(atom/parent_atom, datum/reagent/exposing_reagent, reac_volume, methods)
 	SIGNAL_HANDLER
 

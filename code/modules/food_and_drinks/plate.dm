@@ -44,6 +44,9 @@
 	AddToPlate(tool, user)
 	return ITEM_INTERACT_SUCCESS
 
+/obj/item/plate/IsContainedAtomAccessible(atom/contained, atom/movable/user)
+	return TRUE
+
 /obj/item/plate/pre_attack(atom/target, mob/living/user, list/modifiers, list/attack_modifiers)
 	if(!iscarbon(target))
 		return

@@ -237,6 +237,13 @@
 
 	return FALSE
 
+/// Returns TRUE if an atom contained within our contents is reachable.
+/atom/proc/IsContainedAtomAccessible(atom/contained, atom/movable/user)
+	return TRUE
+
+/atom/movable/IsContainedAtomAccessible(atom/contained, atom/movable/user)
+	return !!atom_storage
+
 /atom/proc/DirectAccess()
 	return list(src, loc)
 

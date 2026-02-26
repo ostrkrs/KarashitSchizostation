@@ -174,6 +174,9 @@ GLOBAL_LIST_INIT(mystery_fishing, list(
 /obj/structure/mystery_box/proc/generate_valid_types()
 	valid_types = get_sane_item_types(selectable_base_type)
 
+/obj/structure/mystery_box/IsContainedAtomAccessible(atom/contained, atom/movable/user)
+	return TRUE
+
 /// The box has been activated, play the sound and spawn the prop item
 /obj/structure/mystery_box/proc/activate(mob/living/user)
 	box_state = MYSTERY_BOX_CHOOSING

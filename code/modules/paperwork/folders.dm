@@ -193,3 +193,6 @@
 			if(istype(Item))
 				usr.examinate(Item)
 				. = TRUE
+
+/obj/item/folder/IsContainedAtomAccessible(atom/contained, atom/movable/user)
+	return TRUE

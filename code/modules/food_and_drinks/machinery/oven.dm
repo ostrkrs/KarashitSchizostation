@@ -46,6 +46,9 @@
 		remove_shared_particles(particle_type)
 	return ..()
 
+/obj/machinery/oven/IsContainedAtomAccessible(atom/contained, atom/movable/user)
+	return ..() || istype(contained, /obj/item/plate/oven_tray)
+
 /// Used to determine if the oven appears active and cooking, or offline.
 /obj/machinery/oven/proc/appears_active()
 	return !open && length(used_tray?.contents) && !(machine_stat & (BROKEN|NOPOWER))
