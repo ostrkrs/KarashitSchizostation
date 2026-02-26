@@ -1066,7 +1066,6 @@
 /area/awaymission/snowdin/post/dorm)
 "eb" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/east,
 /obj/structure/table/wood,
 /obj/item/paper_bin,
 /turf/open/floor/carpet,

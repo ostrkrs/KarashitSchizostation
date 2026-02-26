@@ -59532,7 +59532,6 @@
 /area/station/security/brig)
 "qLg" = (
 /obj/effect/spawner/random/contraband/narcotics,
-/obj/structure/sign/poster/contraband/syndiemoth/directional/west,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/station/security/prison/safe)
@@ -61914,10 +61913,6 @@
 /obj/effect/spawner/random/structure/steam_vent,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
-"rsh" = (
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/north,
-/turf/open/floor/plating/snowed/icemoon,
-/area/icemoon/surface/outdoors/less_spawns)
 "rsw" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -69256,7 +69251,6 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/north,
-/obj/structure/sign/poster/contraband/moffuchis_pizza/directional/east,
 /obj/machinery/status_display/evac/directional/north,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/service/kitchen)
@@ -84502,7 +84496,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/light/warm/directional/south,
-/obj/structure/sign/poster/contraband/lizard/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/service/hydroponics)
 "xTQ" = (
@@ -253391,7 +253384,7 @@ jbC
 kRP
 gDp
 cvS
-rsh
+kDs
 qwF
 qwF
 qwF

@@ -1404,8 +1404,6 @@
 	pixel_x = -2;
 	pixel_y = 14
 	},
-/obj/structure/sign/poster/contraband/mothic_rations/directional/west,
-/obj/structure/sign/poster/official/moth_piping/directional/north,
 /obj/structure/broken_flooring/pile/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
@@ -7664,7 +7662,6 @@
 "clF" = (
 /obj/structure/table,
 /obj/effect/spawner/random/bureaucracy/paper,
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/west,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "clG" = (
@@ -12976,7 +12973,6 @@
 /turf/open/floor/wood,
 /area/station/command/heads_quarters/rd)
 "dNR" = (
-/obj/structure/sign/poster/abductor/ayy,
 /turf/closed/wall/r_wall,
 /area/station/security/brig)
 "dNT" = (
@@ -28270,7 +28266,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/lesser)
 "ifC" = (
-/obj/structure/sign/poster/contraband/blood_geometer,
 /turf/closed/wall,
 /area/station/maintenance/port)
 "ifF" = (
@@ -32708,7 +32703,6 @@
 /obj/item/stack/rods{
 	pixel_y = 3
 	},
-/obj/structure/sign/poster/contraband/lizard/directional/south,
 /turf/open/openspace,
 /area/station/maintenance/starboard/fore)
 "jsK" = (
@@ -43259,7 +43253,6 @@
 	name = "Flutty The Ravager Moffy";
 	pixel_x = 5
 	},
-/obj/structure/sign/poster/contraband/moffuchis_pizza/directional/north,
 /obj/item/toy/plush/moth{
 	name = "Sporg Asbord";
 	pixel_x = -8;
@@ -45211,7 +45204,6 @@
 /turf/open/floor/plating,
 /area/space/nearstation)
 "mYy" = (
-/obj/structure/sign/poster/contraband/power/directional/north,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/wood,
 /area/station/maintenance/starboard/lesser)
@@ -56424,7 +56416,6 @@
 	},
 /obj/effect/turf_decal/tile/purple/opposingcorners,
 /obj/effect/spawner/random/maintenance,
-/obj/structure/sign/poster/official/moth_hardhat/directional/west,
 /turf/open/floor/iron,
 /area/station/maintenance/starboard/aft)
 "qjt" = (
@@ -58407,7 +58398,6 @@
 	icon_state = "radio";
 	name = "old radio"
 	},
-/obj/structure/sign/poster/contraband/kss13/directional/west,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "qNq" = (
@@ -59707,7 +59697,6 @@
 /turf/open/openspace,
 /area/station/hallway/primary/starboard)
 "rhF" = (
-/obj/structure/sign/poster/official/moth_delam/directional/east,
 /obj/item/toy/plush/moth{
 	name = "Morffeus";
 	pixel_x = 2;
@@ -62778,7 +62767,6 @@
 	dir = 1
 	},
 /obj/effect/spawner/random/maintenance,
-/obj/structure/sign/poster/contraband/lizard/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/starboard/fore)
 "sbP" = (
@@ -64016,10 +64004,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/lobby)
-"suJ" = (
-/obj/structure/sign/poster/official/moth_meth/directional/east,
-/turf/open/floor/plating,
-/area/station/maintenance/port/greater)
 "suP" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 8
@@ -76005,7 +75989,6 @@
 "vRp" = (
 /obj/effect/spawner/random/structure/closet_maintenance,
 /obj/item/clothing/mask/bandana/skull/black,
-/obj/structure/sign/poster/contraband/lizard/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/port/fore)
 "vRz" = (
@@ -76340,11 +76323,6 @@
 "vWe" = (
 /turf/open/floor/iron/freezer,
 /area/station/commons/toilet/restrooms)
-"vWi" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/moth_meth/directional/north,
-/turf/open/floor/iron/smooth_large,
-/area/station/maintenance/department/medical)
 "vWj" = (
 /obj/machinery/computer/operating{
 	dir = 1
@@ -77145,7 +77123,6 @@
 /obj/effect/turf_decal/tile/purple/opposingcorners{
 	dir = 1
 	},
-/obj/structure/sign/poster/contraband/bojack/directional/east,
 /turf/open/floor/iron,
 /area/station/science/research)
 "whZ" = (
@@ -82266,7 +82243,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/solars/starboard/fore)
 "xLB" = (
-/obj/structure/sign/poster/abductor/ayy_cops,
 /turf/closed/wall,
 /area/station/maintenance/port)
 "xLF" = (
@@ -104412,7 +104388,7 @@ xut
 rba
 dFu
 gAU
-suJ
+tDy
 tDy
 oFQ
 iVW
@@ -107026,7 +107002,7 @@ dcE
 heR
 gmt
 uIO
-vWi
+jVY
 pim
 mnp
 lIr

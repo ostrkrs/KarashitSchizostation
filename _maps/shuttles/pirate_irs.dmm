@@ -1226,7 +1226,6 @@
 /area/shuttle/pirate)
 "IU" = (
 /obj/structure/table/wood/poker,
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/north,
 /obj/item/toy/cards/deck,
 /turf/open/floor/wood,
 /area/shuttle/pirate)

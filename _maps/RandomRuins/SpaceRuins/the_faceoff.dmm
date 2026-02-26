@@ -449,10 +449,6 @@
 /obj/structure/cable,
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
-"rG" = (
-/obj/structure/sign/poster/official/moth_meth,
-/turf/closed/wall/mineral/plastitanium/nodiagonal,
-/area/ruin/space)
 "rU" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/item/ammo_casing/c357/spent{
@@ -1706,7 +1702,7 @@ UM
 UM
 gq
 ED
-rG
+ED
 ED
 ED
 Er

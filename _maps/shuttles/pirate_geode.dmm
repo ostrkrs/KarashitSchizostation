@@ -474,7 +474,6 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "xS" = (
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/north,
 /obj/item/stack/ore/silver,
 /turf/open/misc/dirt/station,
 /area/shuttle/pirate)

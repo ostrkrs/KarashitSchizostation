@@ -186,7 +186,6 @@
 /area/template_noop)
 "V" = (
 /obj/machinery/light/directional/east,
-/obj/structure/sign/poster/official/moth_hardhat/directional/east,
 /obj/item/clothing/head/utility/hardhat{
 	pixel_y = 11;
 	pixel_x = 1

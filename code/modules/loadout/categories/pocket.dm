@@ -278,7 +278,7 @@
 
 /datum/loadout_item/pocket_items/misc/poster_pinup
 	name = "Poster (Pinup)"
-	item_path = /obj/item/poster/random_contraband/pinup
+	item_path = /obj/item/poster/random_pinup
 
 /datum/loadout_item/pocket_items/misc/holodisk
 	name = "Holodisk"

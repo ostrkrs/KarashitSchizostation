@@ -191,7 +191,6 @@
 /obj/item/poster/traitor,
 /obj/effect/spawner/random/contraband/cannabis,
 /obj/effect/spawner/random/contraband/permabrig_weapon,
-/obj/structure/sign/poster/abductor/random/directional/north,
 /turf/open/floor/plating,
 /area/shuttle/escape/brig)
 "L" = (

@@ -1109,7 +1109,6 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "pi" = (
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/west,
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted{
 	dir = 8
 	},
@@ -1723,7 +1722,6 @@
 	pixel_y = 13
 	},
 /obj/item/paper/fluff/ruins/dangerous_research/beaches_journal_1,
-/obj/structure/sign/poster/contraband/tea_over_tizira/directional/east,
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted{
 	dir = 4
 	},
@@ -2383,11 +2381,6 @@
 	},
 /turf/open/misc/asteroid/airless,
 /area/space)
-"DX" = (
-/obj/structure/sign/poster/official/moth_piping/directional/north,
-/obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark,
-/area/ruin/space/has_grav/dangerous_research/dorms)
 "DY" = (
 /obj/structure/table,
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -3516,7 +3509,6 @@
 /area/ruin/space/has_grav/dangerous_research/dorms)
 "TH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/syndiemoth/directional/north,
 /obj/effect/turf_decal/tile/dark_red/half{
 	dir = 1
 	},
@@ -4428,7 +4420,7 @@ AO
 Rt
 HF
 ts
-DX
+Ny
 bu
 Ij
 Ny

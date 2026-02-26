@@ -27,7 +27,6 @@
 /turf/open/floor/iron/white,
 /area/centcom/basketball)
 "cz" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph,
 /obj/structure/alien/resin/wall/immovable,
 /turf/open/floor/engine,
 /area/centcom/basketball)
@@ -413,10 +412,6 @@
 /obj/effect/landmark/basketball/team_spawn/away,
 /turf/open/floor/engine,
 /area/centcom/basketball)
-"Lu" = (
-/obj/structure/alien/resin/wall/immovable,
-/turf/open/floor/engine,
-/area/centcom/basketball)
 "LI" = (
 /obj/item/bodypart/arm/right/monkey,
 /turf/open/floor/engine,
@@ -508,11 +503,6 @@
 	dir = 5
 	},
 /turf/open/floor/iron/white,
-/area/centcom/basketball)
-"Qi" = (
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6,
-/obj/structure/alien/resin/wall/immovable,
-/turf/open/floor/engine,
 /area/centcom/basketball)
 "Ql" = (
 /obj/structure/alien/weeds,
@@ -633,21 +623,21 @@ tO
 tO
 tO
 tO
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
 cz
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
 tO
 tO
 tO
@@ -660,7 +650,7 @@ tO
 tO
 tO
 tO
-Lu
+cz
 fi
 YH
 Vr
@@ -674,7 +664,7 @@ qU
 Vr
 Vr
 AU
-Lu
+cz
 tO
 tO
 tO
@@ -687,7 +677,7 @@ tO
 tO
 tO
 tO
-Lu
+cz
 Vr
 Vr
 Vr
@@ -701,7 +691,7 @@ Vr
 oh
 Vr
 Vr
-Lu
+cz
 tO
 tO
 tO
@@ -711,10 +701,10 @@ Hu
 (5,1,1) = {"
 Hu
 tO
-Lu
-Lu
-Lu
-Lu
+cz
+cz
+cz
+cz
 at
 Vr
 Cw
@@ -728,17 +718,17 @@ Cw
 Cw
 kc
 uW
-Lu
-Lu
-Lu
-Lu
+cz
+cz
+cz
+cz
 tO
 Hu
 "}
 (6,1,1) = {"
 Hu
 tO
-Lu
+cz
 Oj
 Oj
 PU
@@ -758,14 +748,14 @@ Vr
 CV
 Vr
 AC
-Lu
+cz
 tO
 Hu
 "}
 (7,1,1) = {"
 Hu
 tO
-Lu
+cz
 Oj
 pu
 PU
@@ -785,14 +775,14 @@ Vr
 zy
 tX
 tX
-Lu
+cz
 tO
 Hu
 "}
 (8,1,1) = {"
 Hu
-Lu
-Lu
+cz
+cz
 lR
 Oj
 PU
@@ -812,13 +802,13 @@ Vr
 Ax
 gq
 lh
-Lu
-Lu
+cz
+cz
 Hu
 "}
 (9,1,1) = {"
 Hu
-Lu
+cz
 Tc
 ly
 AI
@@ -840,12 +830,12 @@ WK
 WK
 PW
 WK
-Lu
+cz
 Hu
 "}
 (10,1,1) = {"
 Hu
-Lu
+cz
 JM
 Dt
 Gi
@@ -867,7 +857,7 @@ PN
 kT
 dr
 IA
-Lu
+cz
 Hu
 "}
 (11,1,1) = {"
@@ -894,12 +884,12 @@ WK
 LI
 kp
 fu
-Lu
+cz
 Hu
 "}
 (12,1,1) = {"
 Hu
-Lu
+cz
 Se
 OB
 Vr
@@ -921,7 +911,7 @@ WK
 wZ
 Gh
 Oj
-Lu
+cz
 Hu
 "}
 (13,1,1) = {"
@@ -948,12 +938,12 @@ zZ
 my
 Xm
 Oj
-Lu
+cz
 Hu
 "}
 (14,1,1) = {"
 Hu
-Lu
+cz
 JM
 eS
 dM
@@ -975,12 +965,12 @@ be
 hB
 Oj
 Uv
-Lu
+cz
 Hu
 "}
 (15,1,1) = {"
 Hu
-Lu
+cz
 Uq
 ly
 rU
@@ -1002,13 +992,13 @@ WK
 WK
 WK
 WK
-Lu
+cz
 Hu
 "}
 (16,1,1) = {"
 Hu
-Lu
-Lu
+cz
+cz
 nE
 Oj
 PU
@@ -1028,14 +1018,14 @@ Vr
 lD
 LU
 fj
-Lu
-Lu
+cz
+cz
 Hu
 "}
 (17,1,1) = {"
 Hu
 tO
-Lu
+cz
 Oj
 ZM
 PU
@@ -1055,14 +1045,14 @@ Vr
 zy
 sb
 sb
-Lu
+cz
 tO
 Hu
 "}
 (18,1,1) = {"
 Hu
 tO
-Lu
+cz
 Oj
 Oj
 PU
@@ -1082,17 +1072,17 @@ kc
 hf
 CD
 Vr
-Lu
+cz
 tO
 Hu
 "}
 (19,1,1) = {"
 Hu
 tO
-Lu
-Lu
-Lu
-Lu
+cz
+cz
+cz
+cz
 at
 Vr
 Cw
@@ -1106,10 +1096,10 @@ Cw
 Cw
 Vr
 uW
-Lu
-Lu
-Lu
-Lu
+cz
+cz
+cz
+cz
 tO
 Hu
 "}
@@ -1119,7 +1109,7 @@ tO
 tO
 tO
 tO
-Lu
+cz
 eU
 Vr
 kc
@@ -1133,7 +1123,7 @@ Vr
 Vr
 Vr
 Vr
-Lu
+cz
 tO
 tO
 tO
@@ -1146,7 +1136,7 @@ tO
 tO
 tO
 tO
-Lu
+cz
 AU
 Vr
 Vr
@@ -1160,7 +1150,7 @@ Ic
 tU
 Vr
 fi
-Lu
+cz
 tO
 tO
 tO
@@ -1173,21 +1163,21 @@ tO
 tO
 tO
 tO
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
-Qi
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
-Lu
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
+cz
 tO
 tO
 tO

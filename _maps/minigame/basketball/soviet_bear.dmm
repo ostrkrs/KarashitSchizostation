@@ -643,7 +643,6 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "WM" = (
-/obj/structure/sign/poster/contraband/kss13,
 /turf/closed/indestructible/reinforced/titanium,
 /area/centcom/basketball)
 "Xm" = (

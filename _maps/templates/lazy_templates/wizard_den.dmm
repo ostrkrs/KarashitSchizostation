@@ -786,7 +786,6 @@
 /obj/structure/destructible/cult/item_dispenser/altar{
 	desc = "An altar dedicated to the Wizard Federation."
 	},
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/north,
 /turf/open/floor/engine/cult,
 /area/centcom/wizard_station)
 "Tl" = (

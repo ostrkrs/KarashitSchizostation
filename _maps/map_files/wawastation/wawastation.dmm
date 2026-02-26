@@ -9492,7 +9492,6 @@
 	dir = 1;
 	name = "couch"
 	},
-/obj/structure/sign/poster/contraband/blood_geometer/directional/east,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted,
@@ -12773,7 +12772,6 @@
 /obj/machinery/netpod,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/station/cargo/bitrunning/den)
 "exk" = (
@@ -17301,7 +17299,6 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/broken_floor,
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/west,
 /turf/open/floor/iron,
 /area/station/maintenance/department/medical/central)
 "gaI" = (
@@ -27977,7 +27974,6 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/central/greater)
 "jIY" = (
@@ -56634,7 +56630,6 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/maintenance/department/medical/central)
@@ -63574,7 +63569,6 @@
 "vQT" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/structure/sign/poster/official/moth_hardhat/directional/north,
 /obj/structure/table,
 /obj/item/storage/toolbox/emergency,
 /turf/open/floor/iron,
@@ -64520,12 +64514,6 @@
 "wjC" = (
 /turf/open/floor/iron/showroomfloor,
 /area/station/cargo/storage)
-"wjI" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/plating,
-/area/station/maintenance/central/greater)
 "wjJ" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/red/half/contrasted,
@@ -155787,10 +155775,10 @@ gYW
 slb
 gYW
 vFg
-wjI
-wjI
-wjI
-wjI
+jIU
+jIU
+jIU
+jIU
 gYW
 lDQ
 lDQ
@@ -156043,7 +156031,7 @@ mVU
 gYW
 gYW
 gYW
-wjI
+jIU
 gYW
 gYW
 gYW
@@ -156551,13 +156539,13 @@ wAv
 gYW
 gYW
 gYW
-wjI
-wjI
-wjI
-wjI
-wjI
-wjI
-wjI
+jIU
+jIU
+jIU
+jIU
+jIU
+jIU
+jIU
 gYW
 cYC
 jCP
@@ -157322,7 +157310,7 @@ qIP
 gYW
 fET
 miV
-wjI
+jIU
 gYW
 aLN
 aLN
@@ -157579,7 +157567,7 @@ ofc
 gYW
 gYW
 gYW
-wjI
+jIU
 oTe
 aLN
 aLN
@@ -158093,7 +158081,7 @@ qwM
 gYW
 gYW
 gYW
-wjI
+jIU
 oTe
 aLN
 aLN
@@ -158350,7 +158338,7 @@ eiZ
 gYW
 bXD
 gYW
-wjI
+jIU
 gYW
 aLN
 aLN
@@ -158607,7 +158595,7 @@ poj
 yib
 lan
 gYW
-wjI
+jIU
 gYW
 aLN
 aLN
@@ -159121,9 +159109,9 @@ yfw
 mfh
 tiB
 gYW
-wjI
-wjI
-wjI
+jIU
+jIU
+jIU
 eHU
 nzk
 dRq
@@ -159381,7 +159369,7 @@ gYW
 wPn
 gYW
 cjp
-wjI
+jIU
 nzk
 qAh
 mwx
@@ -160152,7 +160140,7 @@ tAa
 tAa
 gYW
 gYW
-wjI
+jIU
 nzk
 nzk
 nzk
@@ -160409,11 +160397,11 @@ eyf
 tAa
 tAa
 gYW
-wjI
-wjI
+jIU
+jIU
 xiM
-wjI
-wjI
+jIU
+jIU
 gYW
 fqg
 uXZ
@@ -160670,7 +160658,7 @@ tXp
 gYW
 veh
 ewr
-wjI
+jIU
 gYW
 frd
 oCB
@@ -160927,7 +160915,7 @@ pLE
 gYW
 vOa
 tUn
-wjI
+jIU
 gYW
 gYW
 wpJ
@@ -161955,7 +161943,7 @@ mne
 gYW
 cjp
 gYW
-wjI
+jIU
 gYW
 vKR
 kSO
@@ -162212,7 +162200,7 @@ fne
 gYW
 kIB
 pEO
-wjI
+jIU
 gYW
 cnT
 kSO
@@ -162726,7 +162714,7 @@ wAv
 wAv
 mpZ
 wAv
-wjI
+jIU
 gYW
 dDb
 kSO
@@ -162983,7 +162971,7 @@ kIB
 gYW
 gYW
 gYW
-wjI
+jIU
 gYW
 fle
 kSO
@@ -163240,7 +163228,7 @@ gYW
 gYW
 uSe
 cjp
-wjI
+jIU
 gYW
 gYW
 urx
@@ -163497,8 +163485,8 @@ vxX
 gYW
 uSe
 cjp
-wjI
-wjI
+jIU
+jIU
 azV
 hPk
 mnP

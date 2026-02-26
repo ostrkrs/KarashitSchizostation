@@ -296,7 +296,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/ripped, 32)
 	random_basetype = /obj/structure/sign/poster
 	blacklisted_types = list(
 		/obj/structure/sign/poster/traitor,
-		/obj/structure/sign/poster/abductor,
 	)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/random, 32)

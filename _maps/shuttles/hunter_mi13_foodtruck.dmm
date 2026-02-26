@@ -314,7 +314,6 @@
 /area/shuttle/hunter/mi13_foodtruck)
 "lX" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/structure/sign/poster/contraband/kss13/directional/north,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/circuit/red/off,
 /area/shuttle/hunter/mi13_foodtruck)

@@ -98,13 +98,6 @@ GLOBAL_LIST_INIT(abductor_gear, subtypesof(/datum/abductor_gear))
 	build_path = list(/mob/living/basic/cow = 1, /obj/item/food/grown/wheat = 3)
 	category = CATEGORY_MISC_GEAR
 
-/datum/abductor_gear/posters
-	name = "Decorative Posters"
-	description = "Some posters, to decorate the walls of the Mothership (or even the station) with."
-	id = "poster"
-	build_path = list(/obj/item/poster/random_abductor = 2)
-	category = CATEGORY_MISC_GEAR
-
 #undef CATEGORY_BASIC_GEAR
 #undef CATEGORY_ADVANCED_GEAR
 #undef CATEGORY_MISC_GEAR

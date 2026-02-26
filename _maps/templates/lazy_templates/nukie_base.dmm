@@ -183,7 +183,6 @@
 	pixel_x = 9;
 	pixel_y = -7
 	},
-/obj/structure/sign/poster/contraband/lizard/directional/west,
 /obj/structure/sign/poster/contraband/kudzu/directional/north,
 /obj/item/reagent_containers/spray/plantbgone{
 	pixel_x = 10;
@@ -269,7 +268,6 @@
 	pixel_x = 9;
 	pixel_y = 18
 	},
-/obj/structure/sign/poster/contraband/syndiemoth/directional/west,
 /obj/item/storage/box/beakers{
 	pixel_x = -4;
 	pixel_y = 17
@@ -499,7 +497,6 @@
 "fw" = (
 /obj/structure/frame/computer,
 /obj/effect/decal/cleanable/cobweb,
-/obj/structure/sign/poster/contraband/syndiemoth/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership)
 "fx" = (
@@ -618,7 +615,6 @@
 /obj/item/stack/sheet/iron/fifty,
 /obj/item/stack/ducts/fifty,
 /obj/item/construction/plumbing,
-/obj/structure/sign/poster/contraband/power/directional/north,
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
 "gL" = (
@@ -715,7 +711,6 @@
 	desc = "Static fills the screen. If you can find the VCR, you might be able to watch those old Heist Movies again.";
 	name = "\improper Static Filled Tube(TM) Television"
 	},
-/obj/structure/sign/poster/contraband/rip_badger/directional/east,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron,
 /area/centcom/syndicate_mothership/control)
@@ -929,7 +924,6 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/centcom/syndicate_mothership/control)
 "km" = (
-/obj/structure/sign/poster/contraband/lizard/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/centcom/syndicate_mothership/control)
 "kq" = (
@@ -1221,7 +1215,6 @@
 "nH" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/structure/closet/syndicate/personal,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
 /obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark/textured_half{
 	dir = 8
@@ -1368,7 +1361,6 @@
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
 "pa" = (
 /obj/machinery/light/small/directional/south,
-/obj/structure/sign/poster/contraband/moffuchis_pizza/directional/west,
 /turf/open/floor/mineral/titanium,
 /area/centcom/syndicate_mothership/control)
 "pe" = (
@@ -2005,7 +1997,6 @@
 /area/centcom/syndicate_mothership/expansion_bioterrorism)
 "vV" = (
 /obj/machinery/chem_heater/withbuffer,
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/north,
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
 "vX" = (
@@ -2288,7 +2279,6 @@
 /obj/structure/closet/crate/freezer{
 	name = "pantry crate"
 	},
-/obj/structure/sign/poster/contraband/moffuchis_pizza/directional/south,
 /obj/item/reagent_containers/condiment/rice{
 	pixel_y = 12
 	},
@@ -3275,7 +3265,6 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 5
 	},
-/obj/structure/sign/poster/contraband/rip_badger/directional/east,
 /obj/machinery/biogenerator,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_mothership/expansion_bioterrorism)
@@ -3526,11 +3515,6 @@
 	dir = 4
 	},
 /area/centcom/syndicate_mothership/expansion_bombthreat)
-"Mn" = (
-/obj/structure/sign/poster/contraband/syndiemoth/directional/east,
-/obj/effect/turf_decal/tile/bar/opposingcorners,
-/turf/open/floor/iron,
-/area/centcom/syndicate_mothership/control)
 "Mo" = (
 /obj/structure/fence/cut/medium{
 	dir = 4
@@ -3644,7 +3628,6 @@
 /area/centcom/syndicate_mothership/expansion_bombthreat)
 "ND" = (
 /obj/machinery/griddle,
-/obj/structure/sign/poster/contraband/syndiemoth/directional/north,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron,
 /area/centcom/syndicate_mothership/control)
@@ -4106,7 +4089,6 @@
 /area/centcom/syndicate_mothership/expansion_bombthreat)
 "RQ" = (
 /obj/structure/closet/cardboard,
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/east,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/centcom/syndicate_mothership/control)
 "RT" = (
@@ -4715,14 +4697,6 @@
 /obj/item/reagent_containers/cup/bucket,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_mothership/expansion_bioterrorism)
-"XX" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/orange/hidden/layer5,
-/turf/open/floor/iron/smooth_half{
-	dir = 1
-	},
-/area/centcom/syndicate_mothership/control)
 "Yd" = (
 /obj/machinery/camera/autoname/directional/south{
 	network = list("nukie")
@@ -4899,9 +4873,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership)
-"ZZ" = (
-/turf/open/floor/mineral/titanium,
-/area/centcom/syndicate_mothership/control)
 
 (1,1,1) = {"
 sU
@@ -6803,7 +6774,7 @@ qU
 uT
 VK
 qE
-ZZ
+km
 Lx
 uX
 uX
@@ -6905,7 +6876,7 @@ PN
 bT
 VK
 Pc
-ZZ
+km
 DZ
 gE
 my
@@ -7006,8 +6977,8 @@ uT
 uT
 VK
 VK
-ZZ
-ZZ
+km
+km
 jC
 oR
 Js
@@ -7108,7 +7079,7 @@ uT
 GA
 VK
 Io
-ZZ
+km
 iG
 DZ
 Su
@@ -7210,8 +7181,8 @@ PN
 uT
 VK
 YP
-ZZ
-ZZ
+km
+km
 uK
 ld
 ld
@@ -7312,8 +7283,8 @@ GA
 uT
 VK
 rk
-ZZ
-ZZ
+km
+km
 cF
 OD
 rG
@@ -7414,8 +7385,8 @@ bT
 PN
 VK
 YP
-ZZ
-ZZ
+km
+km
 uK
 No
 No
@@ -7636,7 +7607,7 @@ DZ
 KW
 gS
 Ca
-XX
+gS
 KW
 DZ
 To
@@ -9460,7 +9431,7 @@ FR
 TC
 TC
 hb
-ZZ
+km
 Me
 wc
 wG
@@ -9562,7 +9533,7 @@ TC
 FR
 TC
 qJ
-ZZ
+km
 Me
 wc
 wG
@@ -9868,7 +9839,7 @@ uX
 uX
 uX
 RA
-ZZ
+km
 Me
 wc
 wG
@@ -9965,7 +9936,7 @@ qw
 qw
 AN
 LS
-Mn
+uX
 uX
 ZH
 LN
@@ -10177,8 +10148,8 @@ DZ
 pK
 pg
 VK
-ZZ
-ZZ
+km
+km
 dn
 qN
 qN
@@ -10279,8 +10250,8 @@ DZ
 CM
 FN
 VK
-ZZ
-ZZ
+km
+km
 IV
 tv
 WR
@@ -10382,7 +10353,7 @@ DZ
 eg
 tL
 bp
-ZZ
+km
 IV
 IL
 Hs
@@ -10480,11 +10451,11 @@ Ld
 ol
 zo
 VK
-ZZ
-ZZ
+km
+km
 Me
-ZZ
-ZZ
+km
+km
 IV
 rb
 au
@@ -10576,7 +10547,7 @@ qw
 qw
 qw
 VH
-ZZ
+km
 DZ
 Tc
 Ib
@@ -10585,8 +10556,8 @@ en
 xj
 xj
 Me
-ZZ
-ZZ
+km
+km
 IV
 Fm
 Lk
@@ -10684,11 +10655,11 @@ Ld
 XL
 RQ
 VK
-ZZ
-ZZ
+km
+km
 Me
-ZZ
-ZZ
+km
+km
 il
 dV
 dV
@@ -10790,7 +10761,7 @@ DZ
 VK
 Se
 VK
-ZZ
+km
 pr
 oh
 vv

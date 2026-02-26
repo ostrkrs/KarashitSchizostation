@@ -67,7 +67,6 @@
 /area/shuttle/escape)
 "fm" = (
 /obj/effect/turf_decal/bot,
-/obj/structure/sign/poster/official/moth_hardhat/directional/north,
 /obj/structure/closet/crate/medical,
 /obj/item/lazarus_injector,
 /obj/item/storage/medkit/emergency,

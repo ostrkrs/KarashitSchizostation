@@ -52,7 +52,6 @@
 /turf/open/floor/iron/freezer,
 /area/virtual_domain/safehouse)
 "z" = (
-/obj/structure/sign/poster/abductor/random/directional/east,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/iron/freezer,
 /area/virtual_domain/safehouse)

@@ -13201,7 +13201,6 @@
 	icon_state = "oldcomp";
 	name = "Gamer Computer"
 	},
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/west,
 /obj/item/toy/katana{
 	desc = "As seen in your favourite Japanese cartoon.";
 	name = "anime katana"
@@ -22612,7 +22611,6 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/obj/structure/sign/poster/official/moth_piping/directional/north,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance)
 "hSr" = (
@@ -56934,7 +56932,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/box,
 /obj/effect/spawner/random/maintenance/two,
-/obj/structure/sign/poster/contraband/lizard/directional/west,
 /obj/item/toy/plush/lizard_plushie/green{
 	name = "Tends-the-Wounds"
 	},
@@ -66823,7 +66820,6 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "wQz" = (
-/obj/structure/sign/poster/contraband/busty_backdoor_xeno_babes_6/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/landmark/generic_maintenance_landmark,
 /turf/open/floor/plating,

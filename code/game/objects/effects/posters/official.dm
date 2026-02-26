@@ -272,14 +272,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/wtf_is_co2, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/dick_gum, 32)
 
-/obj/structure/sign/poster/official/there_is_no_gas_giant
-	name = "There Is No Gas Giant"
-	desc = "Nanotrasen has issued posters, like this one, to all stations reminding them that rumours of a gas giant are false."
-	// And yet people still believe...
-	icon_state = "there_is_no_gas_giant"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/there_is_no_gas_giant, 32)
-
 /obj/structure/sign/poster/official/periodic_table
 	name = "Periodic Table of the Elements"
 	desc = "A periodic table of the elements, from Hydrogen to Oganesson, and everything inbetween."
@@ -305,13 +297,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/periodic_table, 
 	return .
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/plasma_effects, 32)
-
-/obj/structure/sign/poster/official/terragov
-	name = "TerraGov: United for Humanity"
-	desc = "A poster depicting TerraGov's logo and motto, reminding viewers of who's looking out for humankind."
-	icon_state = "terragov"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/terragov, 32)
 
 /obj/structure/sign/poster/official/corporate_perks_vacation
 	name = "Nanotrasen Corporate Perks: Vacation"
@@ -355,59 +340,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/tactical_game_ca
 	icon_state = "midtown_slice"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/midtown_slice, 32)
-
-//SafetyMoth Original PR at https://github.com/BeeStation/BeeStation-Hornet/pull/1747 (Also pull/1982)
-//SafetyMoth art credit goes to AspEv
-/obj/structure/sign/poster/official/moth_hardhat
-	name = "Safety Moth - Hardhats"
-	desc = "This informational poster uses Safety Moth™ to tell the viewer to wear hardhats in cautious areas. \"It's like a lamp for your head!\""
-	icon_state = "aspev_hardhat"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/moth_hardhat, 32)
-
-/obj/structure/sign/poster/official/moth_piping
-	name = "Safety Moth - Piping"
-	desc = "This informational poster uses Safety Moth™ to tell atmospheric technicians correct types of piping to be used. \"Pipes, not Pumps! Proper pipe placement prevents poor performance!\""
-	icon_state = "aspev_piping"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/moth_piping, 32)
-
-/obj/structure/sign/poster/official/moth_meth
-	name = "Safety Moth - Methamphetamine"
-	desc = "This informational poster uses Safety Moth™ to tell the viewer to seek CMO approval before cooking methamphetamine. \"Stay close to the target temperature, and never go over!\" ...You shouldn't ever be making this."
-	icon_state = "aspev_meth"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/moth_meth, 32)
-
-/obj/structure/sign/poster/official/moth_epi
-	name = "Safety Moth - Epinephrine"
-	desc = "This informational poster uses Safety Moth™ to inform the viewer to help injured/deceased crewmen with their epinephrine injectors. \"Prevent organ rot with this one simple trick!\""
-	icon_state = "aspev_epi"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/moth_epi, 32)
-
-/obj/structure/sign/poster/official/moth_delam
-	name = "Safety Moth - Delamination Safety Precautions"
-	desc = "This informational poster uses Safety Moth™ to tell the viewer to hide in lockers when the Supermatter Crystal has delaminated, to prevent hallucinations. Evacuating might be a better strategy."
-	icon_state = "aspev_delam"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/moth_delam, 32)
-
-//End of AspEv posters
-
-/obj/structure/sign/poster/fluff/lizards_gas_payment
-	name = "Please Pay"
-	desc = "A crudely-made poster asking the reader to please pay for any items they may wish to leave the station with."
-	icon_state = "gas_payment"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/fluff/lizards_gas_payment, 32)
-
-/obj/structure/sign/poster/fluff/lizards_gas_power
-	name = "Conserve Power"
-	desc = "A crudely-made poster asking the reader to turn off the power before they leave. Hopefully, it's turned on for their re-opening."
-	icon_state = "gas_power"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/fluff/lizards_gas_power, 32)
 
 /obj/structure/sign/poster/official/festive
 	name = "Festive Notice Poster"

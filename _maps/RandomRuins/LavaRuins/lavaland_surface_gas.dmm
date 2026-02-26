@@ -314,14 +314,6 @@
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
 /area/ruin/thelizardsgas_lavaland)
-"nc" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
-/obj/structure/sign/poster/fluff/lizards_gas_payment/directional/west,
-/turf/open/floor/iron{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
-	},
-/area/ruin/thelizardsgas_lavaland)
 "ng" = (
 /obj/structure/cable,
 /obj/structure/railing{
@@ -368,7 +360,6 @@
 "qk" = (
 /obj/structure/cable,
 /obj/effect/spawner/random/structure/closet_maintenance,
-/obj/structure/sign/poster/fluff/lizards_gas_power/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/smooth{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -1008,13 +999,6 @@
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
 /area/ruin/thelizardsgas_lavaland)
-"Qb" = (
-/obj/structure/cable,
-/obj/structure/sign/poster/contraband/moffuchis_pizza/directional/north,
-/turf/open/floor/iron{
-	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
-	},
-/area/ruin/thelizardsgas_lavaland)
 "Qt" = (
 /obj/structure/sign/poster/contraband/jumbo_bar/directional/east,
 /obj/structure/cable,
@@ -1483,7 +1467,7 @@ Gv
 Bf
 vH
 Bf
-nc
+vH
 vH
 Kl
 FA
@@ -1547,7 +1531,7 @@ PS
 Eh
 mn
 RA
-Qb
+Dw
 Bz
 vb
 jY

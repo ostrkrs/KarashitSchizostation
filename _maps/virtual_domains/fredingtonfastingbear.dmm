@@ -54,7 +54,6 @@
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "dl" = (
-/obj/structure/sign/poster/contraband/blood_geometer/directional/south,
 /obj/effect/landmark/bitrunning/cache_spawn,
 /turf/open/floor/wood,
 /area/virtual_domain)
@@ -163,7 +162,6 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "jE" = (
-/obj/structure/sign/poster/abductor/ayy_over_tizira,
 /obj/structure/sign/poster/official/the_owl,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain/protected_space/fullbright)
@@ -499,12 +497,6 @@
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
-"xv" = (
-/obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/structure/sign/poster/official/moth_hardhat/directional/west,
-/turf/open/floor/iron/kitchen,
-/area/virtual_domain)
 "xY" = (
 /obj/effect/decal/cleanable/insectguts,
 /turf/open/floor/iron/kitchen,
@@ -814,7 +806,6 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "NE" = (
-/obj/structure/sign/poster/abductor/ayy_cops/directional/north,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "Od" = (
@@ -1970,7 +1961,7 @@ NA
 NA
 NA
 NA
-xv
+NA
 NA
 NA
 NA

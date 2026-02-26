@@ -113,7 +113,6 @@
 "dd" = (
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /obj/machinery/stasis,
-/obj/structure/sign/poster/official/moth_epi/directional/north,
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -572,7 +571,6 @@
 	color = "#A47449";
 	dir = 4
 	},
-/obj/structure/sign/poster/contraband/blood_geometer/directional/north,
 /turf/open/water,
 /area/shuttle/escape)
 "kU" = (
@@ -2031,7 +2029,6 @@
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "LB" = (
-/obj/structure/sign/poster/official/there_is_no_gas_giant/directional/south,
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/wood,
 /area/shuttle/escape)

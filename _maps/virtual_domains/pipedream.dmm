@@ -1834,7 +1834,6 @@
 	pixel_y = 4
 	},
 /obj/machinery/light/small/dim/directional/south,
-/obj/structure/sign/poster/official/moth_hardhat/directional/west,
 /turf/open/floor/plating,
 /area/virtual_domain)
 "Yt" = (

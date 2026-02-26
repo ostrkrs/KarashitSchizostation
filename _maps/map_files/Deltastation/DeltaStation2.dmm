@@ -17217,7 +17217,6 @@
 /obj/item/clothing/head/cone,
 /obj/item/clothing/head/cone,
 /obj/item/clothing/head/cone,
-/obj/structure/sign/poster/official/moth_delam/directional/south,
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "eos" = (
@@ -20284,7 +20283,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/moth_piping/directional/west,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter/room)
@@ -22640,7 +22638,6 @@
 /turf/open/floor/plating,
 /area/station/service/abandoned_gambling_den)
 "fEV" = (
-/obj/structure/sign/poster/official/moth_epi/directional/west,
 /obj/effect/turf_decal/bot,
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -24784,7 +24781,6 @@
 "geR" = (
 /obj/machinery/vending/engivend,
 /obj/effect/turf_decal/delivery,
-/obj/structure/sign/poster/official/moth_hardhat/directional/east,
 /turf/open/floor/iron,
 /area/station/engineering/main)
 "geU" = (
@@ -71293,13 +71289,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/hidden/layer5,
 /turf/open/floor/iron,
 /area/station/maintenance/department/medical/morgue)
-"rIv" = (
-/obj/structure/sign/poster/official/moth_meth/directional/west,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
-	dir = 8
-	},
-/turf/open/floor/iron/white,
-/area/station/medical/chemistry)
 "rID" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 8
@@ -83710,7 +83699,6 @@
 "uFH" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/spawner/random/maintenance,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
 /obj/item/circuitboard/machine/holopad,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
@@ -92365,7 +92353,6 @@
 "wOw" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/portable_atmospherics/pipe_scrubber,
-/obj/structure/sign/poster/official/there_is_no_gas_giant/directional/east,
 /turf/open/floor/iron/textured_large,
 /area/station/engineering/atmos/project)
 "wOz" = (
@@ -133004,7 +132991,7 @@ tbd
 doe
 qya
 lEj
-rIv
+qya
 xIz
 swY
 qpq

@@ -413,11 +413,6 @@
 /obj/structure/chair/wood/wings,
 /turf/open/floor/engine/cult,
 /area/deathmatch)
-"zN" = (
-/obj/structure/mystery_box/wands,
-/obj/structure/sign/poster/contraband/the_big_gas_giant_truth/directional/north,
-/turf/open/floor/engine/cult,
-/area/deathmatch)
 "zO" = (
 /obj/structure/closet,
 /turf/open/floor/engine/cult,
@@ -1132,7 +1127,7 @@ gn
 gn
 gn
 Jm
-zN
+vh
 ph
 ph
 Jm

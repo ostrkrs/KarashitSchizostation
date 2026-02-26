@@ -598,7 +598,6 @@
 	},
 /obj/effect/turf_decal/bot_red,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/kss13/directional/south,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
 "Uu" = (

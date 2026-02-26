@@ -43,10 +43,6 @@
 /area/virtual_domain)
 "gO" = (
 /obj/structure/table/abductor,
-/obj/item/poster/random_abductor{
-	pixel_x = 9;
-	pixel_y = 3
-	},
 /turf/open/floor/plating/abductor,
 /area/virtual_domain)
 "ih" = (

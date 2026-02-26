@@ -27,7 +27,6 @@
 "ay" = (
 /obj/structure/table,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/north,
 /obj/item/flashlight/flare/candle{
 	pixel_x = 7;
 	pixel_y = 4

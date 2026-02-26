@@ -3111,7 +3111,6 @@
 /area/ruin/syndibiodome)
 "Ly" = (
 /obj/structure/aquarium/prefilled,
-/obj/structure/sign/poster/contraband/blood_geometer/directional/west,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark/small,
 /area/ruin/syndibiodome)

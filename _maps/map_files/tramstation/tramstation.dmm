@@ -43207,7 +43207,6 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/security/lockers)
 "nZW" = (
-/obj/structure/sign/poster/contraband/lusty_xenomorph/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 1
 	},
