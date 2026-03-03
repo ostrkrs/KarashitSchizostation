@@ -9,7 +9,7 @@
 	abstract_type = /datum/loadout_item/uniform
 
 /datum/loadout_item/uniform/insert_path_into_outfit(datum/outfit/outfit, mob/living/carbon/human/equipper, visuals_only = FALSE)
-	LAZYADD(outfit.backpack_contents, equipper.w_uniform)
+	LAZYADD(outfit.backpack_contents, outfit.uniform)
 	outfit.uniform = item_path
 
 /datum/loadout_item/uniform/casual
