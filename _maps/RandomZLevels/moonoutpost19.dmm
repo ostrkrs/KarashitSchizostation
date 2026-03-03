@@ -4428,7 +4428,7 @@
 /obj/item/fuel_pellet{
 	pixel_y = 8
 	},
-/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/under/shorts/athletic/black,
 /turf/open/floor/plastic,
 /area/awaymission/moonoutpost19/arrivals/shed)
 "CF" = (

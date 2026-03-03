@@ -511,7 +511,7 @@
 /area/ruin/space/has_grav/the_outlet/storefront)
 "nx" = (
 /obj/structure/rack,
-/obj/item/clothing/under/shorts/blue,
+/obj/item/clothing/under/shorts/athletic/blue,
 /obj/item/clothing/shoes/sneakers/blue,
 /obj/item/clothing/glasses/regular,
 /obj/structure/window/reinforced/spawner/directional/east,

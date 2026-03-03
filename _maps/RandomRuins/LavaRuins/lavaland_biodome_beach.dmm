@@ -925,7 +925,7 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/chair/stool/directional/south,
 /obj/item/storage/backpack/duffelbag,
-/obj/item/clothing/under/shorts/red,
+/obj/item/clothing/under/shorts/athletic/red,
 /obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
@@ -1184,7 +1184,7 @@
 "RB" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/backpack/duffelbag,
-/obj/item/clothing/under/shorts/blue,
+/obj/item/clothing/under/shorts/athletic/blue,
 /obj/item/clothing/suit/costume/wellworn_shirt/graphic/ian,
 /obj/item/clothing/shoes/sandal/beach,
 /obj/item/clothing/glasses/sunglasses,
@@ -1357,7 +1357,7 @@
 "Wy" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/backpack/duffelbag,
-/obj/item/clothing/under/shorts/purple,
+/obj/item/clothing/under/shorts/athletic/purple,
 /obj/item/clothing/shoes/cookflops{
 	desc = "A very fashionable pair of flip flops.";
 	name = "flip-flops"

@@ -108,7 +108,7 @@
 /datum/outfit/beachbum/lifeguard
 	name = "Beach Lifeguard"
 	id_trim = /datum/id_trim/lifeguard
-	uniform = /obj/item/clothing/under/shorts/red
+	uniform = /obj/item/clothing/under/shorts/athletic/red
 
 /obj/effect/mob_spawn/ghost_role/human/bartender
 	name = "bartender sleeper"

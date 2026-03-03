@@ -476,7 +476,7 @@
 "xJ" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/backpack/duffelbag,
-/obj/item/clothing/under/shorts/blue,
+/obj/item/clothing/under/shorts/athletic/blue,
 /obj/item/clothing/shoes/sandal{
 	desc = "A very fashionable pair of flip-flops.";
 	name = "flip-flops"
@@ -490,7 +490,7 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/chair/stool/directional/south,
 /obj/item/storage/backpack/duffelbag,
-/obj/item/clothing/under/shorts/red,
+/obj/item/clothing/under/shorts/athletic/red,
 /obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
@@ -941,7 +941,7 @@
 "RL" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/backpack/duffelbag,
-/obj/item/clothing/under/shorts/purple,
+/obj/item/clothing/under/shorts/athletic/purple,
 /obj/item/clothing/shoes/cookflops{
 	desc = "A very fashionable pair of flip flops.";
 	name = "flip-flops"

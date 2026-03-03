@@ -63,7 +63,7 @@
 /datum/outfit/basketball/nanotrasen
 	name = "Basketball NT Team"
 	undershirt = /datum/sprite_accessory/undershirt/bluejersey
-	uniform = /obj/item/clothing/under/shorts/blue
+	uniform = /obj/item/clothing/under/shorts/athletic/blue
 	suit = /obj/item/clothing/suit/jacket/letterman_nanotrasen
 	shoes = /obj/item/clothing/shoes/sneakers/black
 
@@ -132,6 +132,6 @@
 	undershirt = /datum/sprite_accessory/undershirt/nude
 	underwear = /datum/sprite_accessory/underwear/nude
 	socks = /datum/sprite_accessory/socks/nude
-	uniform = /obj/item/clothing/under/shorts/red
+	uniform = /obj/item/clothing/under/shorts/athletic/red
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/sandal

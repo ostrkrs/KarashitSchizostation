@@ -19,7 +19,7 @@
 
 	granted_items = list(
 		/obj/item/clothing/gloves/boxing/evil,
-		/obj/item/clothing/under/shorts/red,
+		/obj/item/clothing/under/shorts/athletic/red,
 		/obj/item/reagent_containers/condiment/protein,
 		/obj/item/reagent_containers/cup/glass/drinkingglass/filled/protein_blend,
 	)

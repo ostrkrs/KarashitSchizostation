@@ -12,7 +12,7 @@
 	outfit.neck = item_path
 
 /datum/loadout_item/neck/scarf_greyscale
-	name = "Scarf (Colorable)"
+	name = "Scarf (Colourable)"
 	item_path = /obj/item/clothing/neck/scarf
 
 /datum/loadout_item/neck/greyscale_large
@@ -24,7 +24,7 @@
 	item_path = /obj/item/clothing/neck/infinity_scarf
 
 /datum/loadout_item/neck/necktie
-	name = "Necktie (Colorable)"
+	name = "Necktie (Colourable)"
 	item_path = /obj/item/clothing/neck/tie
 
 /datum/loadout_item/neck/necktie_disco

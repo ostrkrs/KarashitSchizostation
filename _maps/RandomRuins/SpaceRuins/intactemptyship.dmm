@@ -130,7 +130,7 @@
 /area/ruin/space/has_grav/powered/authorship)
 "R" = (
 /obj/structure/table/wood,
-/obj/item/clothing/under/shorts/black,
+/obj/item/clothing/under/shorts/athletic/black,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/mineral/titanium/purple,
 /area/ruin/space/has_grav/powered/authorship)

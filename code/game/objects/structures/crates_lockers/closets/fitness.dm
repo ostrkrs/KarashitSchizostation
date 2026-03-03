@@ -5,12 +5,12 @@
 
 /obj/structure/closet/athletic_mixed/PopulateContents()
 	..()
-	new /obj/item/clothing/under/shorts/purple(src)
-	new /obj/item/clothing/under/shorts/grey(src)
-	new /obj/item/clothing/under/shorts/black(src)
-	new /obj/item/clothing/under/shorts/red(src)
-	new /obj/item/clothing/under/shorts/blue(src)
-	new /obj/item/clothing/under/shorts/green(src)
+	new /obj/item/clothing/under/shorts/athletic/purple(src)
+	new /obj/item/clothing/under/shorts/athletic/grey(src)
+	new /obj/item/clothing/under/shorts/athletic/black(src)
+	new /obj/item/clothing/under/shorts/athletic/red(src)
+	new /obj/item/clothing/under/shorts/athletic/blue(src)
+	new /obj/item/clothing/under/shorts/athletic/green(src)
 	new /obj/item/clothing/under/costume/jabroni(src)
 
 

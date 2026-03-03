@@ -17,11 +17,11 @@
 		outfit.mask = item_path
 
 /datum/loadout_item/face/facescarf
-	name = "Facescarf (Colorable)"
+	name = "Facescarf (Colourable)"
 	item_path = /obj/item/clothing/mask/facescarf
 
 /datum/loadout_item/face/bandana
-	name = "Bandana (Colorable)"
+	name = "Bandana (Colourable)"
 	item_path = /obj/item/clothing/mask/bandana
 
 /datum/loadout_item/face/striped_bandana

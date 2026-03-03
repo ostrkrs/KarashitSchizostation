@@ -190,7 +190,7 @@
 	l_pocket = /obj/item/knife/shiv/carrot
 	r_pocket = /obj/item/flashlight/lantern
 	head = /obj/item/food/grown/ambrosia/gaia
-	uniform = /obj/item/clothing/under/shorts/green
+	uniform = /obj/item/clothing/under/shorts/athletic/green
 	mask = /obj/item/clothing/mask/gas/tiki_mask
 	glasses = /obj/item/clothing/glasses/thermal
 	gloves = /obj/item/clothing/gloves/botanic_leather

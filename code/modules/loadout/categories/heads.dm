@@ -96,7 +96,7 @@
 	abstract_type = /datum/loadout_item/head/misc
 
 /datum/loadout_item/head/misc/beanie
-	name = "Beanie (Colorable)"
+	name = "Beanie (Colourable)"
 	item_path = /obj/item/clothing/head/beanie
 
 /datum/loadout_item/head/misc/rastafarian
@@ -104,11 +104,11 @@
 	item_path = /obj/item/clothing/head/rasta
 
 /datum/loadout_item/head/misc/fancy_cap
-	name = "Fancy Hat (Colorable)"
+	name = "Fancy Hat (Colourable)"
 	item_path = /obj/item/clothing/head/costume/fancy
 
 /datum/loadout_item/head/misc/red_beret
-	name = "Red Beret (Colorable)"
+	name = "Red Beret (Colourable)"
 	item_path = /obj/item/clothing/head/beret
 
 /datum/loadout_item/head/misc/flatcap

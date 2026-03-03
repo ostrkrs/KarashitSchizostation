@@ -89,6 +89,10 @@
 /obj/item/clothing/under/syndicate/tacticool/proc/special_wash(obj/item/clothing/under/syndicate/our_jumpsuit)
 	new our_jumpsuit(loc)
 
+/// Used as loadout item
+/obj/item/clothing/under/syndicate/tacticool/fake
+	armor_type = /datum/armor/clothing_under
+
 /obj/item/clothing/under/syndicate/tacticool/skirt
 	name = "tacticool skirtleneck"
 	desc = "Just looking at it makes you want to buy an SKS, go into the woods, and -operate-."
@@ -97,6 +101,9 @@
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+/obj/item/clothing/under/syndicate/tacticool/skirt/fake
+	armor_type = /datum/armor/clothing_under
 
 /obj/item/clothing/under/syndicate/sniper
 	name = "tactical turtleneck suit"
