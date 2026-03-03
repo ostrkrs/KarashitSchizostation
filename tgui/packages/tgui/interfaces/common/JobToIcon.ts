@@ -39,7 +39,7 @@ export const JOB2ICON = {
   Mime: 'comment-slash',
   Paramedic: 'truck-medical',
   'Personal AI': 'mobile-alt',
-  Prisoner: 'lock',
+  Prisoner: 'handcuffs',
   Psychologist: 'brain',
   Quartermaster: 'clipboard-check',
   'Research Director': 'graduation-cap',
