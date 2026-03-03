@@ -3,7 +3,7 @@
 	category_name = "Inhand"
 	category_ui_icon = FA_ICON_BRIEFCASE
 	type_to_generate = /datum/loadout_item/inhand
-	tab_order = 7
+	tab_order = 8
 
 /datum/loadout_item/inhand
 	abstract_type = /datum/loadout_item/inhand

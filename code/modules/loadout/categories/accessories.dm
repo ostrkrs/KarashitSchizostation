@@ -3,7 +3,7 @@
 	category_name = "Accessory"
 	category_ui_icon = FA_ICON_VEST
 	type_to_generate = /datum/loadout_item/accessory
-	tab_order = 5
+	tab_order = 6
 
 /datum/loadout_item/accessory
 	abstract_type = /datum/loadout_item/accessory
