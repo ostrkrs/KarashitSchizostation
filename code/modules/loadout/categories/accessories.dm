@@ -1,7 +1,7 @@
 /// Accessory Items (Moves overrided items to backpack)
 /datum/loadout_category/accessories
 	category_name = "Accessory"
-	category_ui_icon = FA_ICON_VEST
+	category_ui_icon = FA_ICON_RIBBON
 	type_to_generate = /datum/loadout_item/accessory
 	tab_order = 6
 
