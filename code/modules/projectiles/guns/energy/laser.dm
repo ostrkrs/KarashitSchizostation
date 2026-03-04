@@ -1,6 +1,7 @@
 /obj/item/gun/energy/laser
 	name = "laser gun"
 	desc = "A basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal."
+	icon = 'icons/obj/weapons/guns/wide_guns.dmi'
 	icon_state = "laser"
 	inhand_icon_state = "laser"
 	w_class = WEIGHT_CLASS_BULKY
@@ -27,6 +28,11 @@
 		overlay_x = 18, \
 		overlay_y = 12)
 
+/obj/item/gun/energy/laser/brand
+	name = "Irix Flashpoint V"
+	desc = "A laser gun produced by Irix corporation. You see, \"shooting people\" is quite a broad term, so they have to satisfy the demand of entire audience somehow... Don't forget to say \"cheese\"!"
+	icon_state = "laser-irix"
+
 /obj/item/gun/energy/laser/practice
 	name = "practice laser gun"
 	desc = "A modified version of the basic laser gun, this one fires less concentrated energy bolts designed for target practice."
@@ -37,13 +43,22 @@
 
 /obj/item/gun/energy/laser/retro
 	name ="retro laser gun"
-	icon_state = "retro"
 	desc = "An older model of the basic lasergun, no longer used by Nanotrasen's private security or military forces. Nevertheless, it is still quite deadly and easy to maintain, making it a favorite amongst pirates and other outlaws."
+	icon = 'icons/obj/weapons/guns/energy.dmi'
+	icon_state = "retro"
+	ammo_x_offset = 3
+
+/obj/item/gun/energy/laser/retro/old
+	name ="laser gun"
+	icon_state = "retro"
+	desc = "First generation lasergun, developed by Nanotrasen. Suffers from ammo issues but its unique ability to recharge its ammo without the need of a magazine helps compensate. You really hope someone has developed a better lasergun while you were in cryo."
+	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/old)
 	ammo_x_offset = 3
 
 /obj/item/gun/energy/laser/carbine
 	name = "laser carbine"
 	desc = "A modified laser gun which can shoot far faster, but each shot is far less damaging."
+	icon = 'icons/obj/weapons/guns/energy.dmi'
 	icon_state = "laser_carbine"
 	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/carbine)
 
@@ -71,25 +86,20 @@
 	item_flags = NONE
 	gun_flags = NOT_A_REAL_GUN
 
-/obj/item/gun/energy/laser/retro/old
-	name ="laser gun"
-	icon_state = "retro"
-	desc = "First generation lasergun, developed by Nanotrasen. Suffers from ammo issues but its unique ability to recharge its ammo without the need of a magazine helps compensate. You really hope someone has developed a better lasergun while you were in cryo."
-	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/old)
-	ammo_x_offset = 3
-
 /obj/item/gun/energy/laser/hellgun
 	name ="hellfire laser gun"
 	desc = "A relic of a weapon, built before NT began installing regulators on its laser weaponry. This pattern of laser gun became infamous for the gruesome burn wounds it caused, and was quietly discontinued once it began to affect NT's reputation."
+	icon = 'icons/obj/weapons/guns/energy.dmi'
 	icon_state = "hellgun"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hellfire)
 
 /obj/item/gun/energy/laser/captain
 	name = "antique laser gun"
+	desc = "This is an antique laser gun. All craftsmanship is of the highest quality. It is decorated with assistant leather and chrome. The object menaces with spikes of energy. On the item is an image of Space Station 13. The station is exploding."
+	icon = 'icons/obj/weapons/guns/energy.dmi'
 	icon_state = "caplaser"
 	w_class = WEIGHT_CLASS_NORMAL
 	inhand_icon_state = null
-	desc = "This is an antique laser gun. All craftsmanship is of the highest quality. It is decorated with assistant leather and chrome. The object menaces with spikes of energy. On the item is an image of Space Station 13. The station is exploding."
 	force = 10
 	ammo_x_offset = 3
 	selfcharge = 1
@@ -99,16 +109,17 @@
 
 /obj/item/gun/energy/laser/captain/scattershot
 	name = "scatter shot laser rifle"
+	desc = "An industrial-grade heavy-duty laser rifle with a modified laser lens to scatter its shot into multiple smaller lasers. The inner-core can self-charge for theoretically infinite use."
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter, /obj/item/ammo_casing/energy/laser)
 	icon_state = "lasercannon"
 	w_class = WEIGHT_CLASS_BULKY
 	inhand_icon_state = "laser"
-	desc = "An industrial-grade heavy-duty laser rifle with a modified laser lens to scatter its shot into multiple smaller lasers. The inner-core can self-charge for theoretically infinite use."
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter, /obj/item/ammo_casing/energy/laser)
 	shaded_charge = FALSE
 
 /obj/item/gun/energy/laser/cyborg
-	can_charge = FALSE
 	desc = "An energy-based laser gun that draws power from the cyborg's internal energy cell directly. So this is what freedom looks like?"
+	icon = 'icons/obj/weapons/guns/energy.dmi'
+	can_charge = FALSE
 	use_cyborg_cell = TRUE
 
 /obj/item/gun/energy/laser/cyborg/Initialize(mapload)
@@ -118,6 +129,7 @@
 /obj/item/gun/energy/laser/scatter
 	name = "scatter laser gun"
 	desc = "A laser gun equipped with a refraction kit that spreads bolts."
+	icon = 'icons/obj/weapons/guns/energy.dmi'
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/scatter, /obj/item/ammo_casing/energy/laser)
 
 /obj/item/gun/energy/laser/scatter/shotty
@@ -181,8 +193,9 @@
 
 /obj/item/gun/energy/laser/bluetag
 	name = "laser tag gun"
-	icon_state = "bluetag"
 	desc = "A retro laser gun modified to fire harmless blue beams of light. Sound effects included!"
+	icon = 'icons/obj/weapons/guns/energy.dmi'
+	icon_state = "bluetag"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/bluetag)
 	item_flags = NONE
 	clumsy_check = FALSE
@@ -196,8 +209,9 @@
 
 /obj/item/gun/energy/laser/redtag
 	name = "laser tag gun"
-	icon_state = "redtag"
 	desc = "A retro laser gun modified to fire harmless beams red of light. Sound effects included!"
+	icon = 'icons/obj/weapons/guns/energy.dmi'
+	icon_state = "redtag"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/redtag)
 	item_flags = NONE
 	clumsy_check = FALSE

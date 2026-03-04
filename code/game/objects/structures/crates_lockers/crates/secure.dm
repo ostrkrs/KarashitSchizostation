@@ -146,6 +146,12 @@
 		if(prob(30))
 			new /obj/item/storage/bag/trash/filled(src)
 
+/obj/structure/closet/crate/secure/photo
+	name = "\improper Irix weapons crate"
+	desc = "An armaments crate of Irix brand. Apparently, they're into more than just cameras..."
+	icon_state = "photo_secure"
+	base_icon_state = "photo_secure"
+
 /obj/structure/closet/crate/secure/owned
 	name = "private crate"
 	desc = "A crate cover designed to only open for who purchased its contents."

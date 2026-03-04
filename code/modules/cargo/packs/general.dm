@@ -17,6 +17,21 @@
 	crate_name = "art supply crate"
 	crate_type = /obj/structure/closet/crate/wooden
 
+/datum/supply_pack/misc/photos
+	name = "Photography Supplies"
+	desc = "Capture and store your memories across the space with high-quality Irix photographing gear!"
+	cost = CARGO_CRATE_VALUE * 1.8
+	access_view = ACCESS_MORGUE
+	contains = list(/obj/item/camera/brand,
+					/obj/item/camera/brand,
+					/obj/item/camera_film,
+					/obj/item/camera_film,
+					/obj/item/camera_film,
+					/obj/item/camera_film,
+				)
+	crate_name = "photography supply crate"
+	crate_type = /obj/structure/closet/crate/photo
+
 /datum/supply_pack/misc/tattoo_kit
 	name = "Tattoo Kit"
 	desc = "A tattoo kit with some extra starting ink."
@@ -99,7 +114,6 @@
 		a paper bin, a carbon paper bin, three folders, a laser pointer, two clipboards and two stamps."
 	cost = CARGO_CRATE_VALUE * 3.2
 	contains = list(/obj/structure/filingcabinet/chestdrawer/wheeled,
-					/obj/item/camera_film,
 					/obj/item/hand_labeler,
 					/obj/item/hand_labeler_refill = 2,
 					/obj/item/paper_bin,
@@ -190,6 +204,7 @@
 	cost = CARGO_CRATE_VALUE * 2
 	contains = list(/obj/item/toner = 6)
 	crate_name = "toner crate"
+	crate_type = /obj/structure/closet/crate/photo
 
 /datum/supply_pack/misc/toner_large
 	name = "Toner Crate (Large)"
@@ -198,6 +213,7 @@
 	cost = CARGO_CRATE_VALUE * 6
 	contains = list(/obj/item/toner/large = 6)
 	crate_name = "large toner crate"
+	crate_type = /obj/structure/closet/crate/photo
 
 /datum/supply_pack/misc/training_toolbox
 	name = "Training Toolbox Crate"

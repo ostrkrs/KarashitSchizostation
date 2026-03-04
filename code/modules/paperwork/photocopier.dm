@@ -73,6 +73,7 @@ GLOBAL_LIST_INIT(paper_blanks, init_paper_blanks())
 	var/max_paper_capacity
 	/// How long it takes to print something in seconds
 	var/time_to_print
+	var/print_time_modifier = 1
 	/// How efficent our toner is when printing
 	var/toner_efficiency
 	/// A reference to a mob on top of the photocopier trying to copy their ass. Null if there is no mob.
@@ -146,7 +147,7 @@ GLOBAL_LIST_INIT(paper_blanks, init_paper_blanks())
 	for(var/datum/stock_part/micro_laser/micro_laser in component_parts)
 		toner_efficiency += micro_laser.tier
 
-	time_to_print = 5 SECONDS
+	time_to_print = 5 SECONDS * print_time_modifier
 	for(var/datum/stock_part/scanning_module/scanning_module in component_parts)
 		time_to_print -= (scanning_module.tier SECONDS)
 
@@ -651,7 +652,7 @@ GLOBAL_LIST_INIT(paper_blanks, init_paper_blanks())
 
 /obj/machinery/photocopier/screwdriver_act(mob/living/user, obj/item/tool)
 	. = ..()
-	if(default_deconstruction_screwdriver(user, "photocopier2", "photocopier", tool))
+	if(default_deconstruction_screwdriver(user, "[src.icon_state]2", "[src.icon_state]", tool))
 		return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/photocopier/crowbar_act(mob/living/user, obj/item/tool)
@@ -774,7 +775,7 @@ GLOBAL_LIST_INIT(paper_blanks, init_paper_blanks())
 	object_copy = object
 	object.forceMove(src)
 	balloon_alert(user, "copy object inserted")
-	flick("photocopier1", src)
+	flick("[icon_state]1", src)
 
 /obj/machinery/photocopier/atom_break(damage_flag)
 	. = ..()
@@ -860,6 +861,17 @@ GLOBAL_LIST_INIT(paper_blanks, init_paper_blanks())
 
 /obj/machinery/photocopier/gratis/prebuilt
 	starting_toner = /obj/item/toner
+	starting_paper = 30
+
+/obj/machinery/photocopier/brand
+	name = "Irix-brand photocopier"
+	desc = "A high-quality photocopier, also known as DocMaster. Premium piece of office tech that spits papers so fast like there's no tomorrow."
+	icon_state = "photocopier-irix"
+	usage_cost = PHOTOCOPIER_FEE * 1.5
+	print_time_modifier = 0.5
+
+/obj/machinery/photocopier/brand/prebuilt
+	starting_toner = /obj/item/toner/large
 	starting_paper = 30
 
 /*

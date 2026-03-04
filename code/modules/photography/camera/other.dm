@@ -1,3 +1,14 @@
+/obj/item/camera/brand
+	name = "Irix-brand camera"
+	desc = "A high-quality polaroid camera produced by Irix corporation. Make memories, keep memories. It has wider lens."
+	icon_state = "camera-irix"
+	custom_price = PAYCHECK_CREW * 2.5
+	cooldown = 4 SECONDS
+	state_on = "camera-irix"
+	state_off = "camera-irix_off"
+	picture_size_x_max = 5
+	picture_size_y_max = 5
+
 /obj/item/camera/spooky
 	name = "camera obscura"
 	desc = "A polaroid camera, some say it can see ghosts!"

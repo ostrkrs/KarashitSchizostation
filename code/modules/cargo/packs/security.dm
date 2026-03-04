@@ -50,7 +50,7 @@
 	access_view = ACCESS_MORGUE
 	contains = list(/obj/item/detective_scanner,
 					/obj/item/storage/box/evidence,
-					/obj/item/camera,
+					/obj/item/camera/detective,
 					/obj/item/taperecorder,
 					/obj/item/toy/crayon/white,
 					/obj/item/clothing/head/fedora/det_hat,
@@ -246,7 +246,7 @@
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/gun/energy/laser = 3)
 	crate_name = "laser crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_type = /obj/structure/closet/crate/secure/photo
 
 /datum/supply_pack/security/armory/laser_carbine
 	name = "Laser Carbine Crate"
@@ -254,7 +254,7 @@
 	cost = CARGO_CRATE_VALUE * 9
 	contains = list(/obj/item/gun/energy/laser/carbine = 3)
 	crate_name = "laser carbine crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_type = /obj/structure/closet/crate/secure/photo
 
 /datum/supply_pack/security/armory/disabler_smg
 	name = "Disabler SMG Crate"
@@ -333,7 +333,7 @@
 	cost = CARGO_CRATE_VALUE * 5
 	contains = list(/obj/item/clothing/suit/armor/laserproof = 2)
 	crate_name = "reflector vest crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_type = /obj/structure/closet/crate/secure/photo
 
 /datum/supply_pack/security/armory/riotarmor
 	name = "Riot Armor Crate"

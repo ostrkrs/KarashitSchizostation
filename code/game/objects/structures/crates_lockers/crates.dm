@@ -498,3 +498,9 @@
 	icon_state = "lavender"
 	base_icon_state = "lavender"
 	glitter_color = "#db80ff"
+
+/obj/structure/closet/crate/photo
+	name = "irix photography crate"
+	desc = "A Irix brand crate of photographing and filming supplies."
+	icon_state = "photo"
+	base_icon_state = "photo"

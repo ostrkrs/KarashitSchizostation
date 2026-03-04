@@ -161,7 +161,7 @@
 	new /obj/item/radio/entertainment/speakers/physical(src)
 	new /obj/item/clipboard(src)
 	new /obj/item/taperecorder(src)
-	new /obj/item/camera(src)
+	new /obj/item/camera/brand(src)
 	new /obj/item/wallframe/telescreen/entertainment(src)
 
 /obj/item/storage/box/holy

@@ -3,8 +3,8 @@
 
 /obj/item/camera
 	name = "camera"
+	desc = "A polaroid camera. Just click the button and the photo is right in your hands! Very convenient."
 	icon = 'icons/obj/art/camera.dmi'
-	desc = "A polaroid camera."
 	icon_state = "camera"
 	inhand_icon_state = "camera"
 	worn_icon_state = "camera"
