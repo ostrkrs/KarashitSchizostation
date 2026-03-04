@@ -118,7 +118,6 @@
 
 /obj/item/gun/energy/laser/cyborg
 	desc = "An energy-based laser gun that draws power from the cyborg's internal energy cell directly. So this is what freedom looks like?"
-	icon = 'icons/obj/weapons/guns/energy.dmi'
 	can_charge = FALSE
 	use_cyborg_cell = TRUE
 
