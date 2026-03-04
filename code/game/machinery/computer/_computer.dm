@@ -59,6 +59,19 @@
 
 /obj/machinery/computer/update_overlays()
 	. = ..()
+	// Connecting multiple computers in a row
+	if(initial(icon_state) == "computer")
+		var/left = turn(dir, 90)
+		var/right = turn(dir, -90)
+		var/turf/L = get_step(src, left)
+		var/turf/R = get_step(src, right)
+		var/obj/machinery/computer/LC = locate() in L
+		var/obj/machinery/computer/RC = locate() in R
+		if(LC && LC.dir == dir && initial(LC.icon_state) == "computer")
+			. += mutable_appearance(icon, "computer-left")
+		if(RC && RC.dir == dir && initial(RC.icon_state) == "computer")
+			. += mutable_appearance(icon, "computer-right")
+
 	if(icon_keyboard)
 		if(keyboard_change_icon && (machine_stat & NOPOWER))
 			. += "[icon_keyboard]_off"

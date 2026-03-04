@@ -21,6 +21,8 @@
 	var/icon_state_unpowered = "console-off"
 	///Icon state when the computer is turned on.
 	var/icon_state_powered = "console"
+	///Icon state when the computer is broken.
+	var/icon_state_broken = "console_broken"
 	///Icon state overlay when the computer is turned on, but no program is loaded that would override the screen.
 	var/screen_icon_state_menu = "menu"
 	///Icon state overlay when the computer is powered, but not 'switched on'.
@@ -100,6 +102,9 @@
 		icon_state = icon_state_unpowered
 	else
 		icon_state = icon_state_powered
+
+	if(cpu.get_integrity() <= cpu.integrity_failure * cpu.max_integrity || machine_stat & BROKEN)
+		icon_state = icon_state_broken
 	return ..()
 
 /obj/machinery/modular_computer/update_overlays()
@@ -114,7 +119,6 @@
 
 	if(cpu.get_integrity() <= cpu.integrity_failure * cpu.max_integrity)
 		. += "bsod"
-		. += "broken"
 	return .
 
 /// Eats the "source" arg because update_icon actually expects args now.
