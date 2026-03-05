@@ -118,7 +118,7 @@
 
 	cut_overlays()
 	if(cards.len <= 1)
-		icon_state = null // we want an error icon to appear if this doesn't get qdel
+		icon_state = "nothing"
 		return
 
 	var/starting_card_pos = max(0, cards.len - CARDS_MAX_DISPLAY_LIMIT) + 1 // only display the top cards in the cardhand, +1 because list indexes start at 1
