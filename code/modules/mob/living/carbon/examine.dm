@@ -640,5 +640,23 @@
 
 	return span_notice("[p_They()] appear[p_s()] to be [age_text].")
 
+/mob/living/carbon/human/examine_title(mob/user, thats = FALSE)
+	. = ..()
+	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
+
+	var/species_visible
+	var/species_name_string
+	if(skipface || get_visible_name() == "Unknown")
+		species_visible = FALSE
+	else
+		species_visible = TRUE
+
+	if(!species_visible)
+		species_name_string = ""
+	else
+		species_name_string = ", [prefix_a_or_an(dna.species.name)] <EM>[dna.species.name]</EM>"
+
+	. += species_name_string
+
 #undef ADD_NEWLINE_IF_NECESSARY
 #undef CARBON_EXAMINE_EMBEDDING_MAX_DIST

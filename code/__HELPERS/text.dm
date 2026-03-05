@@ -429,6 +429,7 @@ GLOBAL_LIST_INIT(alphabet_upper, list("A","B","C","D","E","F","G","H","I","J","K
 GLOBAL_LIST_INIT(numerals, list("1","2","3","4","5","6","7","8","9","0"))
 GLOBAL_LIST_INIT(space, list(" "))
 GLOBAL_LIST_INIT(binary, list("0","1"))
+
 /proc/random_string(length, list/characters)
 	. = ""
 	for(var/i in 1 to length)
@@ -1272,3 +1273,12 @@ GLOBAL_LIST_INIT(binary, list("0","1"))
 	if(lowercase_regex.Find(input))
 		return FALSE
 	return TRUE
+
+/proc/prefix_a_or_an(text)
+	var/start = LOWER_TEXT(text[1])
+	if(!start)
+		return "a"
+	if(start == "a" || start == "e" || start == "i" || start == "o" || start == "u")
+		return "an"
+	else
+		return "a"
