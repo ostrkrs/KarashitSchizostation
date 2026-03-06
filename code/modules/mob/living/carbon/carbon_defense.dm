@@ -56,7 +56,7 @@
 	return null
 
 /mob/living/carbon/is_ears_covered()
-	for(var/obj/item/worn_thing as anything in get_equipped_items())
+	for(var/obj/item/worn_thing as anything in get_equipped_items(INCLUDE_ABSTRACT))
 		if(worn_thing.flags_cover & EARS_COVERED)
 			return worn_thing
 
@@ -706,7 +706,7 @@
 	if (picked_user_part && BODYTYPE_CAN_BE_BIOSCRAMBLED(picked_user_part.bodytype))
 		changed_something = TRUE
 		new_part = new new_part()
-		new_part.replace_limb(src, special = TRUE)
+		new_part.replace_limb(src)
 		if (picked_user_part)
 			qdel(picked_user_part)
 

@@ -948,13 +948,12 @@ Basically, we fill the time between now and 2s from now with hands based off the
 	metabolized_traits = list(TRAIT_ANALGESIA)
 	tox_damage = 0
 
-/datum/reagent/inverse/krokodil/expose_mob(mob/living/carbon/exposed_carbon, methods=TOUCH, reac_volume)
+/datum/reagent/inverse/krokodil/expose_mob(mob/living/exposed_mob, methods=TOUCH, reac_volume)
 	. = ..()
 	if(!(methods & (TOUCH|VAPOR|PATCH)))
 		return
 
-	for(var/datum/surgery/surgery as anything in exposed_carbon.surgeries)
-		surgery.speed_modifier = min(0.7, surgery.speed_modifier)
+	exposed_mob.add_surgery_speed_mod(type, 0.7, min(reac_volume * 1 MINUTES, 5 MINUTES))
 
 /datum/reagent/inverse/krokodil/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
@@ -1254,7 +1253,7 @@ Basically, we fill the time between now and 2s from now with hands based off the
 	var/picked_color = pick(random_color_list)
 	var/color_filter = color_transition_filter(picked_color, SATURATION_OVERRIDE)
 	if (can_color_clothing && (methods & (TOUCH|VAPOR|INHALE)))
-		var/include_flags = INCLUDE_HELD|INCLUDE_ACCESSORIES
+		var/include_flags = INCLUDE_HELD|INCLUDE_ACCESSORIES|INCLUDE_PROSTHETICS|INCLUDE_ABSTRACT
 		if (methods & (VAPOR|INHALE) || touch_protection >= 1)
 			include_flags |= INCLUDE_POCKETS
 		for (var/obj/item/to_color in exposed_mob.get_equipped_items(include_flags))
