@@ -33,15 +33,6 @@
 		allowing you to copy the appearance of any individual - \
 		provided you have a photo of them in your offhand during the surgery.")
 
-/obj/item/disk/surgery/advanced_plastic_surgery/Initialize(mapload)
-	. = ..()
-	AddElement(/datum/element/examine_lore, \
-		lore = "Most forms of plastic surgery became obsolete due in no small part to advances in genetics technology. \
-			Very basic methods still remain in use, but scarcely, and primarily to reverse a patient's disfigurements. \
-			As a consequence, this item became an antique to many collectors - \
-			though some back alley surgeons still seek one out for its now uncommon knowledge." \
-	)
-
 /obj/item/disk/surgery/brainwashing
 	name = "brainwashing surgery disk"
 	desc = "Provides instructions on how to impress an order on a brain, making it the primary objective of the patient."

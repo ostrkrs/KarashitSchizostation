@@ -989,9 +989,6 @@
 	forceMove(owner)
 	RegisterSignal(src, COMSIG_MOVABLE_MOVED, PROC_REF(on_forced_removal)) //this must be set after we moved, or we insta gib
 
-	if(LIMB_HAS_SURGERY_STATE(src, ALL_SURGERY_FISH_STATES(body_zone)))
-		owner.AddComponent(/datum/component/fishing_spot, /datum/fish_source/surgery)
-
 /// Called on addition of a bodypart
 /obj/item/bodypart/proc/on_adding(mob/living/carbon/new_owner)
 	SHOULD_CALL_PARENT(TRUE)
@@ -1647,8 +1644,6 @@
 		return "metal"
 	if (biological_state & BIO_FLESH)
 		return "shreds of ligaments"
-	if (biological_state & BIO_WOOD)
-		return "splinters of wood"
 	if (biological_state & BIO_CHITIN)
 		return "fragments of chitin"
 
@@ -1708,10 +1703,6 @@
 	if(isnull(owner))
 		return
 	SEND_SIGNAL(owner, COMSIG_LIVING_UPDATING_SURGERY_STATE, old_state, surgery_state, changed_states)
-	if(HAS_SURGERY_STATE(surgery_state, ALL_SURGERY_FISH_STATES(body_zone)))
-		owner.AddComponent(/datum/component/fishing_spot, /datum/fish_source/surgery) // no-op if they already have one
-	else if(HAS_SURGERY_STATE(old_state, ALL_SURGERY_FISH_STATES(body_zone)))
-		qdel(owner.GetComponent(/datum/component/fishing_spot))
 
 /obj/item/bodypart/vv_edit_var(vname, vval)
 	if(vname != NAMEOF(src, surgery_state))
