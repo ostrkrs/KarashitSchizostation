@@ -65,7 +65,7 @@
 /datum/surgery_operation/limb/debride/on_success(obj/item/bodypart/limb, mob/living/surgeon, obj/item/tool, list/operation_args, default_display_results = FALSE)
 	limb.receive_damage(3, wound_bonus = CANT_WOUND, sharpness = tool.get_sharpness(), damage_source = tool)
 	var/datum/wound/burn/flesh/wound = locate() in limb.wounds
-	wound?.infection -= infestation_removed
+	wound?.infestation -= infestation_removed
 	wound?.sanitization += sanitization_added
 	display_results(
 		surgeon,
