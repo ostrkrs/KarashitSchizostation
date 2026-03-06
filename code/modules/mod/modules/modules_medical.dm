@@ -423,5 +423,4 @@
 /obj/item/surgical_processor/mod/emergency
 	loaded_surgeries = list(
 		/datum/surgery_operation/basic/tend_wounds/combo/upgraded/master,
-		/datum/surgery_operation/organ/fix_wings,
 	)

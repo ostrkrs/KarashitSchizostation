@@ -1314,11 +1314,6 @@
 	surgery = /datum/surgery_operation/limb/bionecrosis
 	research_icon_state = "surgery_head"
 
-/datum/design/surgery/wing_reconstruction
-	id = "surgery_wing_reconstruction"
-	surgery = /datum/surgery_operation/organ/fix_wings
-	research_icon_state = "surgery_chest"
-
 /datum/design/surgery/experimental_dissection
 	id = "surgery_oldstation_dissection"
 	surgery = /datum/surgery_operation/basic/dissection

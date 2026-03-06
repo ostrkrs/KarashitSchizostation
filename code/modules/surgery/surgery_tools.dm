@@ -332,10 +332,11 @@
 	attack_verb_simple = list("slap")
 	drop_sound = SFX_CLOTH_DROP
 	pickup_sound = SFX_CLOTH_PICKUP
+	gender = PLURAL
 
 /obj/item/surgical_drapes/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/surgery_initiator)
+	AddElement(/datum/element/surgery_aid, name)
 
 /obj/item/surgical_drapes/cyborg
 	icon = 'icons/mob/silicon/robot_items.dmi'
@@ -354,7 +355,7 @@
 
 /obj/item/surgical_processor/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/surgery_initiator)
+	AddElement(/datum/element/surgery_aid, /obj/item/surgical_drapes::name) // i guess it's a drape dispenser
 
 /obj/item/surgical_processor/examine(mob/user)
 	. = ..()
@@ -362,22 +363,20 @@
 	. += span_boldnotice("Advanced surgeries available:")
 	//list of downloaded surgeries' names
 	var/list/surgeries_names = list()
-	for(var/datum/surgery/downloaded_surgery as anything in loaded_surgeries)
-		if(initial(downloaded_surgery.replaced_by) in loaded_surgeries) //if a surgery has a better version replacing it, we don't include it in the list
-			continue
-		surgeries_names += "[initial(downloaded_surgery.name)]"
+	for(var/datum/surgery_operation/downloaded_surgery as anything in GLOB.operations.get_instances_from(loaded_surgeries))
+		surgeries_names += "[capitalize(downloaded_surgery.name)]"
 	. += span_notice("[english_list(surgeries_names)]")
 
 /obj/item/surgical_processor/equipped(mob/user, slot, initial)
 	. = ..()
 	if(!(slot & ITEM_SLOT_HANDS))
-		UnregisterSignal(user, COMSIG_SURGERY_STARTING)
+		UnregisterSignal(user, COMSIG_LIVING_OPERATING_ON)
 		return
-	RegisterSignal(user, COMSIG_SURGERY_STARTING, PROC_REF(check_surgery))
+	RegisterSignal(user, COMSIG_LIVING_OPERATING_ON, PROC_REF(check_surgery))
 
 /obj/item/surgical_processor/dropped(mob/user, silent)
 	. = ..()
-	UnregisterSignal(user, COMSIG_SURGERY_STARTING)
+	UnregisterSignal(user, COMSIG_LIVING_OPERATING_ON)
 
 /obj/item/surgical_processor/interact_with_atom(atom/design_holder, mob/living/user, list/modifiers)
 	if(!istype(design_holder, /obj/item/disk/surgery) && !istype(design_holder, /obj/machinery/computer/operating))
@@ -402,13 +401,10 @@
 	if(downloaded)
 		. += mutable_appearance(src.icon, "+downloaded")
 
-/obj/item/surgical_processor/proc/check_surgery(mob/user, datum/surgery/surgery, mob/patient)
+/obj/item/surgical_processor/proc/check_surgery(datum/source, mob/living/patient, list/operations)
 	SIGNAL_HANDLER
 
-	if(surgery.replaced_by in loaded_surgeries)
-		return COMPONENT_CANCEL_SURGERY
-	if(surgery.type in loaded_surgeries)
-		return COMPONENT_FORCE_SURGERY
+	operations |= loaded_surgeries
 
 /obj/item/scalpel/advanced
 	name = "laser scalpel"
@@ -428,6 +424,7 @@
 	light_power = 0.4
 	light_color = LIGHT_COLOR_BLUE
 	sharpness = SHARP_EDGED
+	item_flags = parent_type::item_flags | NO_BLOOD_ON_ITEM
 
 /obj/item/scalpel/advanced/get_all_tool_behaviours()
 	return list(TOOL_SAW, TOOL_SCALPEL)

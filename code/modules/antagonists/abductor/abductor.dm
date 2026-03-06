@@ -147,7 +147,6 @@
 		ayy_operations += /datum/surgery_operation/limb/organ_manipulation/internal/abductor
 		ayy_operations += /datum/surgery_operation/limb/retract_skin/abductor
 		ayy_operations += /datum/surgery_operation/limb/unclamp_bleeders/abductor
-		ayy_operations += /datum/surgery_operation/organ/fix_wings // i guess
 		ayy_operations += typesof(/datum/surgery_operation/limb/bioware)
 		ayy_operations += typesof(/datum/surgery_operation/organ/brainwash)
 		ayy_operations += typesof(/datum/surgery_operation/organ/lobotomy)
