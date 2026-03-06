@@ -65,9 +65,7 @@
 /mob/living/carbon/proc/get_visible_items()
 	var/list/visible_items = list()
 	var/obscured_item_slots = hidden_slots_to_inventory_slots(obscured_slots)
-	for (var/obj/item/held in held_items)
-		visible_items += held
-	for(var/obj/item/thing in get_equipped_items())
+	for(var/obj/item/thing in get_equipped_items(INCLUDE_HELD|INCLUDE_PROSTHETICS))
 		if(!(get_slot_by_item(thing) & obscured_item_slots))
 			visible_items += thing
 	return visible_items

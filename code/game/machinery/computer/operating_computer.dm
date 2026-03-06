@@ -158,7 +158,7 @@
 
 /obj/machinery/computer/operating/ui_data(mob/user)
 	var/list/data = list()
-	ata["has_table"] = !!table
+	data["has_table"] = !!table
 	data["target_zone"] = target_zone
 	if(isnull(table?.patient))
 		return data

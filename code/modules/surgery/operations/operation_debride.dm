@@ -30,14 +30,14 @@
 
 /datum/surgery_operation/limb/debride/state_check(obj/item/bodypart/limb)
 	var/datum/wound/burn/flesh/wound = locate() in limb.wounds
-	return wound?.infection > 0
+	return wound?.infestation > 0
 
 /// To give the surgeon a heads up how much work they have ahead of them
 /datum/surgery_operation/limb/debride/proc/get_progress(datum/wound/burn/flesh/wound)
-	if(wound?.infection <= 0)
+	if(wound?.infestation <= 0)
 		return null
 
-	var/estimated_remaining_steps = wound.infection / infestation_removed
+	var/estimated_remaining_steps = wound.infestation / infestation_removed
 	var/progress_text
 
 	switch(estimated_remaining_steps)
