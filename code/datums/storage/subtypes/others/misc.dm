@@ -181,7 +181,6 @@
 	set_holdable(
 		can_hold_list = list(
 			/obj/item/stack/spacecash,
-			/obj/item/holochip,
 			/obj/item/card,
 			/obj/item/cigarette,
 			/obj/item/clothing/accessory/dogtag,

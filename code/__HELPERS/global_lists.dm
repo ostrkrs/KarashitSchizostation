@@ -204,7 +204,6 @@ GLOBAL_LIST_INIT(WALLITEMS_EXTERIOR, typecacheof(list(
 /// A static typecache of all the money-based items that can be actively used as currency.
 GLOBAL_LIST_INIT(allowed_money, typecacheof(list(
 	/obj/item/coin,
-	/obj/item/holochip,
 	/obj/item/stack/spacecash,
 )))
 

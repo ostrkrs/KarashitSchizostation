@@ -158,7 +158,7 @@
 	to_chat(user, span_notice("You loaded [restocked] items in [src][credits_contained > 0 ? ", and are rewarded [credits_contained] credits." : "."]"))
 	var/datum/bank_account/cargo_account = SSeconomy.get_dep_account(ACCOUNT_CAR)
 	cargo_account.adjust_money(round(credits_contained * 0.5), "Vending: Restock")
-	var/obj/item/holochip/payday = new(src, credits_contained)
+	var/obj/item/stack/spacecash/payday = new(src, credits_contained)
 	try_put_in_hand(payday, user)
 	credits_contained = 0
 
@@ -207,10 +207,10 @@
 
 	if(credits_contained > 0)
 		var/credits_to_remove = min(CREDITS_DUMP_THRESHOLD, round(credits_contained))
-		var/obj/item/holochip/holochip = new(loc, credits_to_remove)
+		var/obj/item/stack/spacecash/cash = new(loc, credits_to_remove)
 		playsound(src, 'sound/effects/cashregister.ogg', 40, TRUE)
 		credits_contained = max(0, credits_contained - credits_to_remove)
-		SSblackbox.record_feedback("amount", "vending machine looted", holochip.credits)
+		SSblackbox.record_feedback("amount", "vending machine looted", cash.value)
 
 /obj/machinery/vending/attacked_by(obj/item/attacking_item, mob/living/user, list/modifiers, list/attack_modifiers)
 	. = ..()

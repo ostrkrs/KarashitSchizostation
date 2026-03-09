@@ -50,5 +50,5 @@
 	SIGNAL_HANDLER
 	if(plunder_stored == 0)
 		return
-	new /obj/item/holochip(get_turf(parent), plunder_stored)
+	new /obj/item/stack/spacecash(get_turf(parent), plunder_stored)
 	plunder_stored = 0

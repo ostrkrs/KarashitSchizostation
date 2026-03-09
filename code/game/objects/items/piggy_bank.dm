@@ -41,7 +41,7 @@
 	AddElement(/datum/element/beauty, 500)
 	if(!persistence_id)
 		if(initial_value)
-			new /obj/item/holochip(src, initial_value)
+			new /obj/item/stack/spacecash(src, initial_value)
 		return
 
 	SSpersistence.load_piggy_bank(src)
@@ -49,12 +49,12 @@
 	SSticker.OnRoundend(persistence_cb)
 
 	if(initial_value && initial_value + calculate_dosh_amount() <= maximum_value)
-		var/obj/item/holochip/chip = locate() in src
-		if(!chip)
-			new /obj/item/holochip(src, initial_value)
+		var/obj/item/stack/spacecash/cash = locate() in src
+		if(!cash)
+			new /obj/item/stack/spacecash(src, initial_value)
 		else
-			chip.credits += initial_value
-			chip.update_appearance()
+			cash.value += initial_value
+			cash.update_appearance()
 
 	if(maximum_savings_per_shift)
 		maximum_value = calculate_dosh_amount() + maximum_savings_per_shift
@@ -70,7 +70,7 @@
 	var/contents_len = length(contents)
 	if(contents_len <= MAXIMUM_PIGGY_BANK_CONTENTS_LENGTH)
 		return
-	// that +1 is to make space for the holochip with the collected amount
+	// that +1 is to make space for the cash with the collected amount
 	var/iterations = contents_len + 1 - MAXIMUM_PIGGY_BANK_CONTENTS_LENGTH
 	var/creds_amount = 0
 	for(var/i in 1 to iterations)
@@ -80,7 +80,7 @@
 		creds_amount += money.get_item_credit_value()
 		qdel(money)
 	if(creds_amount)
-		new /obj/item/holochip(src, creds_amount)
+		new /obj/item/stack/spacecash(src, creds_amount)
 
 #undef MAXIMUM_PIGGY_BANK_CONTENTS_LENGTH
 

@@ -1,9 +1,6 @@
 /// Fallback time if none of the config entries are set for USE_LOW_LIVING_HOUR_INTERN
 #define INTERN_THRESHOLD_FALLBACK_HOURS 15
 
-/// Max time interval between projecting holopays
-#define HOLOPAY_PROJECTION_INTERVAL (7 SECONDS)
-
 /* Cards
  * Contains:
  * DATA CARD
@@ -74,27 +71,6 @@
 	/// Linked bank account.
 	var/datum/bank_account/registered_account
 
-	/// Linked holopay.
-	var/obj/structure/holopay/my_store
-	/// Cooldown between projecting holopays
-	COOLDOWN_DECLARE(last_holopay_projection)
-	/// List of logos available for holopay customization - via font awesome 5
-	var/static/list/available_logos = list("angry", "ankh", "bacon", "band-aid", "cannabis", "cat", "cocktail", "coins", "comments-dollar",
-	"cross", "cut", "dog", "donate", "dna", "fist-raised", "flask", "glass-cheers", "glass-martini-alt", "hamburger", "hand-holding-usd",
-	"hat-wizard", "head-side-cough-slash", "heart", "heart-broken",  "laugh-beam", "leaf", "money-check-alt", "music", "piggy-bank",
-	"pizza-slice", "prescription-bottle-alt", "radiation", "robot", "smile", "skull-crossbones", "smoking", "space-shuttle", "tram",
-	"trash", "user-ninja", "utensils", "wrench")
-	/// Replaces the "pay whatever" functionality with a set amount when non-zero.
-	var/holopay_fee = 0
-	/// The holopay icon chosen by the user
-	var/holopay_logo = "donate"
-	/// Maximum forced fee. It's unlikely for a user to encounter this type of money, much less pay it willingly.
-	var/holopay_max_fee = 5000
-	/// Minimum forced fee for holopay stations. Registers as "pay what you want."
-	var/holopay_min_fee = 0
-	/// The holopay name chosen by the user
-	var/holopay_name = "holographic pay stand"
-
 	/// Registered owner's age.
 	var/registered_age = 30
 
@@ -141,6 +117,8 @@
 /obj/item/card/id/Initialize(mapload)
 	. = ..()
 
+	AddElement(/datum/element/item_scaling, 0.7, 1)
+
 	var/datum/bank_account/blank_bank_account = new("Unassigned", SSjob.get_job_type(/datum/job/unassigned), player_account = FALSE)
 	registered_account = blank_bank_account
 	registered_account.replaceable = TRUE
@@ -166,8 +144,6 @@
 /obj/item/card/id/Destroy()
 	if (registered_account)
 		registered_account.bank_cards -= src
-	if (my_store)
-		QDEL_NULL(my_store)
 	if (isitem(loc))
 		UnregisterSignal(loc, list(COMSIG_ITEM_EQUIPPED, COMSIG_ITEM_DROPPED))
 	return ..()
@@ -522,35 +498,13 @@
 		user.visible_message(span_notice("[user] shows you: [icon2html(src, viewers(user))] [src.name][minor]."), span_notice("You show \the [src.name][minor]."))
 	add_fingerprint(user)
 
-/obj/item/card/id/interact_with_atom_secondary(atom/interacting_with, mob/living/user, list/modifiers)
-	if(!check_allowed_items(interacting_with) || !isfloorturf(interacting_with))
-		return NONE
-	try_project_paystand(user, interacting_with)
-	return ITEM_INTERACT_SUCCESS
-
-/obj/item/card/id/attack_self_secondary(mob/user, modifiers)
-	. = ..()
-	if(. == SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
-		return
-	try_project_paystand(user)
-	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
-
 /obj/item/card/id/add_context(atom/source, list/context, obj/item/held_item, mob/user)
 	. = ..()
 
-	context[SCREENTIP_CONTEXT_RMB] = "Project pay stand"
-
 	if(isnull(held_item) || (held_item == src))
 		context[SCREENTIP_CONTEXT_LMB] = "Show ID"
-	else if(iscash(held_item) || istype(held_item, /obj/item/storage/bag/money))
-		context[SCREENTIP_CONTEXT_LMB] = "Insert"
-	else if(istype(held_item, /obj/item/rupee))
-		context[SCREENTIP_CONTEXT_LMB] = "Insert?"
-
 	if(isnull(registered_account) || registered_account.replaceable) //Same check we use when we check if we can assign an account
 		context[SCREENTIP_CONTEXT_ALT_RMB] = "Assign account"
-	else if(registered_account.account_balance > 0)
-		context[SCREENTIP_CONTEXT_ALT_LMB] = "Withdraw credits"
 	if(trim && length(trim.honorifics))
 		context[SCREENTIP_CONTEXT_CTRL_LMB] = "Toggle honorific"
 	return CONTEXTUAL_SCREENTIP_SET
@@ -560,98 +514,6 @@
 	if(iscash(target))
 		context[SCREENTIP_CONTEXT_LMB] = "Insert into card"
 		return CONTEXTUAL_SCREENTIP_SET
-
-/obj/item/card/id/proc/try_project_paystand(mob/user, turf/target)
-	if(!COOLDOWN_FINISHED(src, last_holopay_projection))
-		balloon_alert(user, "still recharging")
-		return
-	if(!can_be_used_in_payment(user))
-		balloon_alert(user, "no account!")
-		to_chat(user, span_warning("You need a valid bank account to do this."))
-		return
-	/// Determines where the holopay will be placed based on tile contents
-	var/turf/projection
-	var/turf/step_ahead = get_step(user, user.dir)
-	var/turf/user_loc = user.loc
-	if(target && can_proj_holopay(target))
-		projection = target
-	else if(can_proj_holopay(step_ahead))
-		projection = step_ahead
-	else if(can_proj_holopay(user_loc))
-		projection = user_loc
-	if(!projection)
-		balloon_alert(user, "no space")
-		to_chat(user, span_warning("You need to be standing on or near an open tile to do this."))
-		return
-	/// Success: Valid tile for holopay placement
-	if(my_store)
-		my_store.dissipate()
-	var/obj/structure/holopay/new_store = new(projection)
-	if(new_store?.assign_card(projection, src))
-		COOLDOWN_START(src, last_holopay_projection, HOLOPAY_PROJECTION_INTERVAL)
-		playsound(projection, 'sound/effects/empulse.ogg', 40, TRUE)
-		my_store = new_store
-
-/**
- * Determines whether a new holopay can be placed on the given turf.
- * Checks if there are dense contents, too many contents, or another
- * holopay already exists on the turf.
- *
- * Arguments:
- * * turf/target - The target turf to be checked for dense contents
- * Returns:
- * * TRUE if the target is a valid holopay location, FALSE otherwise.
- */
-/obj/item/card/id/proc/can_proj_holopay(turf/target)
-	if(!isfloorturf(target))
-		return FALSE
-	if(target.density)
-		return FALSE
-	if(length(target.contents) > 5)
-		return FALSE
-	for(var/obj/checked_obj in target.contents)
-		if(checked_obj.density)
-			return FALSE
-		if(istype(checked_obj, /obj/structure/holopay))
-			return FALSE
-	return TRUE
-
-/**
- * Setter for the shop logo on linked holopays
- *
- * Arguments:
- * * new_logo - The new logo to be set.
- */
-/obj/item/card/id/proc/set_holopay_logo(new_logo)
-	if(!available_logos.Find(new_logo))
-		CRASH("User input a holopay shop logo that didn't exist.")
-	holopay_logo = new_logo
-
-/**
- * Setter for changing the force fee on a holopay.
- *
- * Arguments:
- * * new_fee - The new fee to be set.
- */
-/obj/item/card/id/proc/set_holopay_fee(new_fee)
-	if(!isnum(new_fee))
-		CRASH("User input a non number into the holopay fee field.")
-	if(new_fee < holopay_min_fee || new_fee > holopay_max_fee)
-		CRASH("User input a number outside of the valid range into the holopay fee field.")
-	holopay_fee = new_fee
-
-/**
- * Setter for changing the holopay name.
- *
- * Arguments:
- * * new_name - The new name to be set.
- */
-/obj/item/card/id/proc/set_holopay_name(name)
-	if(length(name) < 3 || length(name) > MAX_NAME_LEN)
-		to_chat(usr, span_warning("Must be between 3 - 42 characters."))
-	else
-		holopay_name = html_encode(trim(name, MAX_NAME_LEN))
-
 
 /obj/item/card/id/vv_edit_var(var_name, var_value)
 	. = ..()
@@ -663,83 +525,6 @@
 			if(NAMEOF(src, trim))
 				if(ispath(trim))
 					SSid_access.apply_trim_to_card(src, trim)
-
-/obj/item/card/id/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
-	if(istype(tool, /obj/item/rupee))
-		to_chat(user, span_warning("Your ID smartly rejects the strange shard of glass. Who knew, apparently it's not ACTUALLY valuable!"))
-		return ITEM_INTERACT_BLOCKING
-	else if(iscash(tool))
-		return insert_money(tool, user) ? ITEM_INTERACT_SUCCESS : ITEM_INTERACT_BLOCKING
-	else if(istype(tool, /obj/item/storage/bag/money))
-		var/obj/item/storage/bag/money/money_bag = tool
-		var/list/money_contained = money_bag.contents
-		var/money_added = mass_insert_money(money_contained, user)
-		if(!money_added)
-			return ITEM_INTERACT_BLOCKING
-		to_chat(user, span_notice("You stuff the contents into the card! They disappear in a puff of bluespace smoke, adding [money_added] worth of credits to the linked account."))
-		return ITEM_INTERACT_SUCCESS
-	return NONE
-
-/**
- * Insert credits or coins into the ID card and add their value to the associated bank account.
- *
- * Returns TRUE if the money was successfully inserted, FALSE otherwise.
- * Arguments:
- * money - The item to attempt to convert to credits and insert into the card.
- * user - The user inserting the item.
- * physical_currency - Boolean, whether this is a physical currency such as a coin and not a holochip.
- */
-/obj/item/card/id/proc/insert_money(obj/item/money, mob/user)
-	var/physical_currency
-	if(istype(money, /obj/item/stack/spacecash) || istype(money, /obj/item/coin) || istype(money, /obj/item/poker_chip))
-		physical_currency = TRUE
-
-	if(!registered_account)
-		to_chat(user, span_warning("[src] doesn't have a linked account to deposit [money] into!"))
-		return FALSE
-	var/cash_money = money.get_item_credit_value()
-	if(!cash_money)
-		to_chat(user, span_warning("[money] doesn't seem to be worth anything!"))
-		return FALSE
-	registered_account.adjust_money(cash_money, "System: Deposit")
-	SSblackbox.record_feedback("amount", "credits_inserted", cash_money)
-	log_econ("[cash_money] credits were inserted into [src] owned by [src.registered_name]")
-	if(physical_currency)
-		to_chat(user, span_notice("You stuff [money] into [src]. It disappears in a small puff of bluespace smoke, adding [cash_money] credits to the linked account."))
-	else
-		to_chat(user, span_notice("You insert [money] into [src], adding [cash_money] credits to the linked account."))
-
-	to_chat(user, span_notice("The linked account now reports a balance of [registered_account.account_balance] cr."))
-	qdel(money)
-	return TRUE
-
-/**
- * Insert multiple money or money-equivalent items at once.
- *
- * Arguments:
- * money - List of items to attempt to convert to credits and insert into the card.
- * user - The user inserting the items.
- */
-/obj/item/card/id/proc/mass_insert_money(list/money, mob/user)
-	if(!registered_account)
-		to_chat(user, span_warning("[src] doesn't have a linked account to deposit into!"))
-		return FALSE
-
-	if (!money || !length(money))
-		return FALSE
-
-	var/total = 0
-
-	for (var/obj/item/physical_money in money)
-		total += physical_money.get_item_credit_value()
-		CHECK_TICK
-
-	registered_account.adjust_money(total, "System: Deposit")
-	SSblackbox.record_feedback("amount", "credits_inserted", total)
-	log_econ("[total] credits were inserted into [src] owned by [src.registered_name]")
-	QDEL_LIST(money)
-
-	return total
 
 /// Helper proc. Can the user alt-click the ID?
 /obj/item/card/id/proc/alt_click_can_use_id(mob/living/user)
@@ -775,47 +560,7 @@
 	to_chat(user, span_notice("The provided account has been linked to this ID card. It contains [account.account_balance] credits."))
 	return TRUE
 
-/obj/item/card/id/click_alt(mob/living/user)
-	if(!alt_click_can_use_id(user))
-		return NONE
-	if(registered_account.account_debt)
-		var/choice = tgui_alert(user, "Choose An Action", "Bank Account", list("Withdraw", "Pay Debt"))
-		if(!choice || QDELETED(user) || QDELETED(src) || !alt_click_can_use_id(user) || loc != user)
-			return CLICK_ACTION_BLOCKING
-		if(choice == "Pay Debt")
-			pay_debt(user)
-			return CLICK_ACTION_SUCCESS
-	if (registered_account.being_dumped)
-		registered_account.bank_card_talk(span_warning("内部服务器错误"), TRUE)
-		return CLICK_ACTION_SUCCESS
-	if(loc != user)
-		to_chat(user, span_warning("You must be holding the ID to continue!"))
-		return CLICK_ACTION_BLOCKING
-	if(registered_account.replaceable && !registered_account.account_balance)
-		var/choice = tgui_alert(user, "This card's account is unassigned. Would you like to link a bank account?", "Bank Account", list("Link Account", "Leave Unassigned"))
-		if(!choice || QDELETED(user) || QDELETED(src) || !alt_click_can_use_id(user) || loc != user)
-			return CLICK_ACTION_BLOCKING
-		if(choice == "Link Account")
-			set_new_account(user)
-			return CLICK_ACTION_SUCCESS
-	var/amount_to_remove = tgui_input_number(user, "How much do you want to withdraw? (Max: [registered_account.account_balance] cr)", "Withdraw Funds", max_value = registered_account.account_balance)
-	if(!amount_to_remove || QDELETED(user) || QDELETED(src) || issilicon(user) || loc != user)
-		return CLICK_ACTION_BLOCKING
-	if(!alt_click_can_use_id(user))
-		return CLICK_ACTION_BLOCKING
-	if(registered_account.adjust_money(-amount_to_remove, "System: Withdrawal"))
-		var/obj/item/holochip/holochip = new (user.drop_location(), amount_to_remove)
-		user.put_in_hands(holochip)
-		to_chat(user, span_notice("You withdraw [amount_to_remove] credits into a holochip."))
-		SSblackbox.record_feedback("amount", "credits_removed", amount_to_remove)
-		log_econ("[amount_to_remove] credits were removed from [src] owned by [src.registered_name]")
-		return CLICK_ACTION_SUCCESS
-	else
-		var/difference = amount_to_remove - registered_account.account_balance
-		registered_account.bank_card_talk(span_warning("ERROR: The linked account requires [difference] more credit\s to perform that withdrawal."), TRUE)
-		return CLICK_ACTION_BLOCKING
-
-/obj/item/card/id/click_alt_secondary(mob/user)
+/obj/item/card/id/click_alt(mob/user)
 	if(!alt_click_can_use_id(user))
 		return
 	if(!registered_account || registered_account.replaceable)
@@ -889,10 +634,8 @@
 			var/datum/bank_account/D = SSeconomy.get_dep_account(registered_account.account_job.paycheck_department)
 			if(D)
 				. += "The [D.account_holder] reports a balance of [D.account_balance] cr."
-		. += span_info("Alt-Click the ID to pull money from the linked account in the form of holochips.")
-		. += span_info("You can insert credits into the linked account by pressing holochips, cash, or coins against the ID.")
 		if(registered_account.replaceable)
-			. += span_info("Alt-Right-Click the ID to change the linked bank account.")
+			. += span_info("Alt-Click the ID to change the linked bank account.")
 		if(registered_account.civilian_bounty)
 			. += span_info("<b>There is an active civilian bounty.</b>")
 			. += span_info("<i>[registered_account.bounty_text()]</i>")
@@ -978,11 +721,6 @@
 /// Returns the trim sechud icon state.
 /obj/item/card/id/proc/get_trim_sechud_icon_state()
 	return trim?.sechud_icon_state || SECHUD_UNKNOWN
-
-/obj/item/card/id/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
-	if(iscash(interacting_with))
-		return insert_money(interacting_with, user) ? ITEM_INTERACT_SUCCESS : ITEM_INTERACT_BLOCKING
-	return NONE
 
 /obj/item/card/id/item_ctrl_click(mob/user)
 	if(!in_contents_of(user) || user.incapacitated) //Check if the ID is in the ID slot, so it can be changed from there too.
@@ -1478,7 +1216,7 @@
 
 /obj/item/card/id/advanced/debug/alt_click_can_use_id(mob/living/user)
 	. = ..()
-	if(!. || isnull(user.client?.holder)) // admins only as a safety so people don't steal all the dollars. spawn in a holochip if you want them to get some dosh
+	if(!. || isnull(user.client?.holder)) // admins only as a safety so people don't steal all the dollars. spawn in a cash if you want them to get some dosh
 		registered_account.bank_card_talk(span_warning("Only authorized representatives of Nanotrasen may use this card."), force = TRUE)
 		return FALSE
 
@@ -2035,7 +1773,6 @@
 	icon_state = "ctf_green"
 
 #undef INTERN_THRESHOLD_FALLBACK_HOURS
-#undef HOLOPAY_PROJECTION_INTERVAL
 
 #define INDEX_NAME_COLOR 1
 #define INDEX_ASSIGNMENT_COLOR 2

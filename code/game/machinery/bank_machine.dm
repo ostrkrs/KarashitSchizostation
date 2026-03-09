@@ -48,9 +48,6 @@
 	if(istype(weapon, /obj/item/stack/spacecash))
 		var/obj/item/stack/spacecash/inserted_cash = weapon
 		value = inserted_cash.value * inserted_cash.amount
-	else if(istype(weapon, /obj/item/holochip))
-		var/obj/item/holochip/inserted_holochip = weapon
-		value = inserted_holochip.credits
 	else if(istype(weapon, /obj/item/coin))
 		var/obj/item/coin/inserted_coin = weapon
 		value = inserted_coin.value
@@ -132,7 +129,7 @@
 	siphoning = FALSE
 	unauthorized = FALSE
 	if(syphoning_credits > 0)
-		new /obj/item/holochip(drop_location(), syphoning_credits) //get the loot
+		new /obj/item/stack/spacecash(drop_location(), syphoning_credits) //get the loot
 	syphoning_credits = 0
 
 /obj/machinery/computer/bank_machine/proc/start_siphon(mob/living/carbon/user)

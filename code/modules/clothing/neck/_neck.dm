@@ -516,7 +516,7 @@
 	icon_state = "bling"
 
 /obj/item/clothing/neck/necklace/dope/merchant
-	desc = "Don't ask how it works, the proof is in the holochips!"
+	desc = "Don't ask how it works, the proof is in the cash!"
 	/// scales the amount received in case an admin wants to emulate taxes/fees.
 	var/profit_scaling = 1
 	/// toggles between sell (TRUE) and get price post-fees (FALSE)
@@ -537,7 +537,7 @@
 		var/true_price = round(price*profit_scaling)
 		to_chat(user, span_notice("[selling ? "Sold" : "Getting the price of"] [interacting_with], value: <b>[true_price]</b> credits[interacting_with.contents.len ? " (exportable contents included)" : ""].[profit_scaling < 1 && selling ? "<b>[round(price-true_price)]</b> credit\s taken as processing fee\s." : ""]"))
 		if(selling)
-			new /obj/item/holochip(get_turf(user), true_price)
+			new /obj/item/stack/spacecash(get_turf(user), true_price)
 	else
 		to_chat(user, span_warning("There is no export value for [interacting_with] or any items within it."))
 

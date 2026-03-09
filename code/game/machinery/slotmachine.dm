@@ -11,8 +11,6 @@
 #define SPIN_TIME 36 //As always, deciseconds.
 #define REEL_DEACTIVATE_DELAY 4
 #define JACKPOT_SEVENS FA_ICON_7
-#define HOLOCHIP 1
-#define COIN 2
 
 /obj/machinery/computer/slot_machine
 	name = "slot machine"
@@ -30,7 +28,6 @@
 	var/working = FALSE
 	var/balance = 0 //How much money is in the machine, ready to be CONSUMED.
 	var/jackpots = 0
-	var/paymode = HOLOCHIP //toggles between HOLOCHIP/COIN, defined above
 	var/cointype = /obj/item/coin/iron //default cointype
 	/// Icons that can be displayed by the slot machine.
 	var/static/list/icons = list(
@@ -97,53 +94,23 @@
 /obj/machinery/computer/slot_machine/item_interaction(mob/living/user, obj/item/inserted, list/modifiers)
 	if(istype(inserted, /obj/item/coin))
 		var/obj/item/coin/inserted_coin = inserted
-		if(paymode == COIN)
-			if(prob(2))
-				if(!user.transfer_item_to_turf(inserted_coin, drop_location(), silent = FALSE))
-					return ITEM_INTERACT_BLOCKING
-				inserted_coin.throw_at(user, 3, 10)
-				if(prob(10))
-					balance = max(balance - SPIN_PRICE, 0)
-				to_chat(user, span_warning("[src] spits your coin back out!"))
+		if(prob(2))
+			if(!user.transfer_item_to_turf(inserted_coin, drop_location(), silent = FALSE))
 				return ITEM_INTERACT_BLOCKING
-			else
-				if(!user.temporarilyRemoveItemFromInventory(inserted_coin))
-					return ITEM_INTERACT_BLOCKING
-				balloon_alert(user, "coin inserted")
-				balance += inserted_coin.value
-				qdel(inserted_coin)
-				return ITEM_INTERACT_SUCCESS
+			inserted_coin.throw_at(user, 3, 10)
+			if(prob(10))
+				balance = max(balance - SPIN_PRICE, 0)
+			to_chat(user, span_warning("[src] spits your coin back out!"))
+			return ITEM_INTERACT_BLOCKING
 		else
-			balloon_alert(user, "holochips only!")
-		return ITEM_INTERACT_BLOCKING
-
-	if(istype(inserted, /obj/item/holochip))
-		if(paymode == HOLOCHIP)
-			var/obj/item/holochip/inserted_chip = inserted
-			if(!user.temporarilyRemoveItemFromInventory(inserted_chip))
+			if(!user.temporarilyRemoveItemFromInventory(inserted_coin))
 				return ITEM_INTERACT_BLOCKING
-			balloon_alert(user, "[inserted_chip.credits] credit[inserted_chip.credits == 1 ? "" : "s"] inserted")
-			balance += inserted_chip.credits
-			qdel(inserted_chip)
+			balloon_alert(user, "coin inserted")
+			balance += inserted_coin.value
+			qdel(inserted_coin)
 			return ITEM_INTERACT_SUCCESS
-		else
-			balloon_alert(user, "coins only!")
-		return ITEM_INTERACT_BLOCKING
-
+	return ITEM_INTERACT_BLOCKING
 	return NONE
-
-/obj/machinery/computer/slot_machine/multitool_act(mob/living/user, obj/item/tool)
-	if(balance > 0)
-		visible_message("<b>[src]</b> says, 'ERROR! Please empty the machine balance before altering paymode'") //Prevents converting coins into holocredits and vice versa
-		return ITEM_INTERACT_BLOCKING
-
-	if(paymode == HOLOCHIP)
-		paymode = COIN
-		balloon_alert(user, "now using coins")
-	else
-		paymode = HOLOCHIP
-		balloon_alert(user, "now using holochips")
-	return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/computer/slot_machine/emag_act(mob/user, obj/item/card/emag/emag_card)
 	if(obj_flags & EMAGGED)
@@ -186,7 +153,6 @@
 	data["money"] = money
 	data["plays"] = plays
 	data["jackpots"] = jackpots
-	data["paymode"] = paymode
 	return data
 
 
@@ -316,15 +282,12 @@
 			living_user.add_mood_event("slots", /datum/mood_event/slots/win/jackpot)
 		jackpots += 1
 		money = 0
-		if(paymode == HOLOCHIP)
-			new /obj/item/holochip(loc, prize)
-		else
-			for(var/i in 1 to 5)
-				cointype = pick(subtypesof(/obj/item/coin))
-				var/obj/item/coin/payout_coin = new cointype(loc)
-				random_step(payout_coin, 2, 50)
-				playsound(src, pick(list('sound/machines/coindrop.ogg', 'sound/machines/coindrop2.ogg')), 50, TRUE)
-				sleep(REEL_DEACTIVATE_DELAY)
+		for(var/i in 1 to 5)
+			cointype = pick(subtypesof(/obj/item/coin))
+			var/obj/item/coin/payout_coin = new cointype(loc)
+			random_step(payout_coin, 2, 50)
+			playsound(src, pick(list('sound/machines/coindrop.ogg', 'sound/machines/coindrop2.ogg')), 50, TRUE)
+			sleep(REEL_DEACTIVATE_DELAY)
 
 	else if(linelength == 5)
 		visible_message("<b>[src]</b> says, 'Big Winner! You win a thousand credits!'")
@@ -390,12 +353,9 @@
 	money -= amount_to_give
 	balance += surplus
 
-/// Pay out the specified amount in either coins or holochips
+/// Pay out the specified amount in either coins
 /obj/machinery/computer/slot_machine/proc/give_payout(amount)
-	if(paymode == HOLOCHIP)
-		cointype = /obj/item/holochip
-	else
-		cointype = obj_flags & EMAGGED ? /obj/item/coin/iron : /obj/item/coin/silver
+	cointype = obj_flags & EMAGGED ? /obj/item/coin/iron : /obj/item/coin/silver
 
 	if(!(obj_flags & EMAGGED))
 		amount = dispense(amount, cointype, null, 0)
@@ -410,29 +370,21 @@
 /// Dispense the given amount. If machine is set to use coins, will use the specified coin type.
 /// If throwit and target are set, will launch the payment at the target
 /obj/machinery/computer/slot_machine/proc/dispense(amount = 0, cointype = /obj/item/coin/silver, throwit = FALSE, mob/living/target)
-	if(paymode == HOLOCHIP)
-		var/obj/item/holochip/chip = new /obj/item/holochip(loc,amount)
-
+	var/value = coinvalues["[cointype]"]
+	if(value <= 0)
+		CRASH("Coin value of zero, refusing to payout in dispenser")
+	while(amount >= value)
+		var/obj/item/coin/thrown_coin = new cointype(loc) //DOUBLE THE PAIN
+		amount -= value
 		if(throwit && target)
-			chip.throw_at(target, 3, 10)
-	else
-		var/value = coinvalues["[cointype]"]
-		if(value <= 0)
-			CRASH("Coin value of zero, refusing to payout in dispenser")
-		while(amount >= value)
-			var/obj/item/coin/thrown_coin = new cointype(loc) //DOUBLE THE PAIN
-			amount -= value
-			if(throwit && target)
-				thrown_coin.throw_at(target, 3, 10)
-			else
-				random_step(thrown_coin, 2, 40)
+			thrown_coin.throw_at(target, 3, 10)
+		else
+			random_step(thrown_coin, 2, 40)
 
 	playsound(src, pick(list('sound/machines/coindrop.ogg', 'sound/machines/coindrop2.ogg')), 50, TRUE)
 	return amount
 
 #undef BIG_PRIZE
-#undef COIN
-#undef HOLOCHIP
 #undef JACKPOT
 #undef REEL_DEACTIVATE_DELAY
 #undef JACKPOT_SEVENS

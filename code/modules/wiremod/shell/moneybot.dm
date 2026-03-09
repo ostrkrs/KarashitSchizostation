@@ -16,7 +16,7 @@
 	var/locked = FALSE
 
 /obj/structure/money_bot/atom_deconstruct(disassembled = TRUE)
-	new /obj/item/holochip(drop_location(), stored_money)
+	new /obj/item/stack/spacecash(drop_location(), stored_money)
 
 /obj/structure/money_bot/proc/add_money(to_add)
 	stored_money += to_add
@@ -49,8 +49,8 @@
 	/// CD between allowing money to be dispensed
 	var/dispense_cd_length = 0.5 SECONDS
 
-	/// The maximum amount of chips to dispense in one tile
-	var/max_chips = 50
+	/// The maximum amount of cash to dispense in one tile
+	var/max_cash = 50
 
 	/// The amount of money to dispense
 	var/datum/port/input/dispense_amount
@@ -67,7 +67,7 @@
 /obj/item/circuit_component/money_dispenser/get_ui_notices()
 	. = ..()
 	. += create_ui_notice("Dispense Cooldown: [DisplayTimeText(dispense_cd_length)]", "orange", FA_ICON_STOPWATCH)
-	. += create_ui_notice("Dispense Limit: [max_chips] Holochips (per tile)", "orange", FA_ICON_MONEY_BILL_TRANSFER)
+	. += create_ui_notice("Dispense Limit: [max_cash] Cash (per tile)", "orange", FA_ICON_MONEY_BILL_TRANSFER)
 
 /obj/item/circuit_component/money_dispenser/register_shell(atom/movable/shell)
 	. = ..()
@@ -98,15 +98,15 @@
 	COOLDOWN_START(src, dispense_cd, dispense_cd_length)
 	var/atom/droploc = attached_bot.drop_location()
 	var/num_on_tile = 0
-	for(var/obj/item/holochip/chip in droploc)
+	for(var/obj/item/stack/spacecash/cash in droploc)
 		num_on_tile++
 	// at this point, clearly no one's jumping for the cash. so let's stop dispensing
-	if(num_on_tile > max_chips)
+	if(num_on_tile > max_cash)
 		on_fail.set_output(COMPONENT_SIGNAL)
 		return
 
 	attached_bot.add_money(-to_dispense)
-	new /obj/item/holochip(droploc, to_dispense)
+	new /obj/item/stack/spacecash(droploc, to_dispense)
 
 /obj/item/circuit_component/money_bot
 	display_name = "Money Bot"

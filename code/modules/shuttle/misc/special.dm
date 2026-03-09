@@ -320,11 +320,6 @@
 			break
 		payees[AM] += S.value * S.amount
 		counted_money += S
-	for(var/obj/item/holochip/H in AM.get_all_contents()) //Holocredits
-		if(payees[AM] >= threshold)
-			break
-		payees[AM] += H.credits
-		counted_money += H
 
 	if(payees[AM] < threshold && istype(AM.pulling, /obj/item/coin)) //Coins(Pulled).
 		var/obj/item/coin/C = AM.pulling
@@ -335,11 +330,6 @@
 		var/obj/item/stack/spacecash/S = AM.pulling
 		payees[AM] += S.value * S.amount
 		counted_money += S
-
-	else if(payees[AM] < threshold && istype(AM.pulling, /obj/item/holochip)) //Holocredits(pulled).
-		var/obj/item/holochip/H = AM.pulling
-		payees[AM] += H.credits
-		counted_money += H
 
 	if(payees[AM] < threshold) //Suggestions for those with no arms/simple animals.
 		var/armless
@@ -353,7 +343,7 @@
 		if(armless)
 			if(!AM.pulling || !iscash(AM.pulling) && !istype(AM.pulling, /obj/item/card/id))
 				if(!check_times[AM] || check_times[AM] < world.time) //Let's not spam the message
-					to_chat(AM, span_notice("Try pulling a valid ID, space cash, holochip or coin into \the [src]!"))
+					to_chat(AM, span_notice("Try pulling a valid ID, space cash or coin into \the [src]!"))
 					check_times[AM] = world.time + LUXURY_MESSAGE_COOLDOWN
 
 	if(payees[AM] >= threshold)
@@ -364,13 +354,13 @@
 		var/change = FALSE
 		if(payees[AM] > 0)
 			change = TRUE
-			var/obj/item/holochip/holocred = new /obj/item/holochip(AM.loc, payees[AM]) //Change is made in holocredits exclusively.
+			var/obj/item/stack/spacecash/cash = new /obj/item/stack/spacecash(AM.loc, payees[AM]) //Change is made in cashits exclusively.
 			if(ishuman(AM))
 				var/mob/living/carbon/human/H = AM
-				if(!H.put_in_hands(holocred))
-					AM.pulling = holocred
+				if(!H.put_in_hands(cash))
+					AM.pulling = cash
 			else
-				AM.pulling = holocred
+				AM.pulling = cash
 			payees[AM] -= payees[AM]
 
 		say("Welcome to first class, [driver_holdout ? "[driver_holdout]" : "[AM]" ]![change ? " Here is your change." : ""]")

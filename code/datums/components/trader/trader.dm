@@ -223,11 +223,9 @@ Can accept both a type path, and an instance of a datum. Type path has priority.
 ///Calculates the value of money in the hand of the buyer and spends it if it's sufficient
 /datum/component/trader/proc/spend_buyer_offhand_money(mob/customer, the_cost)
 	var/value = 0
-	var/obj/item/holochip/cash = customer.is_holding_item_of_type(/obj/item/holochip)
+	var/obj/item/stack/spacecash/cash = customer.is_holding_item_of_type(/obj/item/stack/spacecash)
 	if(cash)
-		value += cash.credits
-	if((value >= the_cost) && cash)
-		return cash.spend(the_cost)
+		value += cash.value
 	return FALSE //Purchase unsuccessful
 
 /**
@@ -348,12 +346,12 @@ Can accept both a type path, and an instance of a datum. Type path has priority.
 /**
  * Creates an item equal to the value set by the proc and puts it in the user's hands if possible
  * Arguments:
- * * value - A number; The amount of cash that will be on the holochip
- * * customer - Reference to a mob; The mob we put the holochip in hands of
+ * * value - A number; The amount of cash
+ * * customer - Reference to a mob; The mob we put the cash in hands of
  */
 /datum/component/trader/proc/generate_cash(value, mob/customer)
-	var/obj/item/holochip/chip = new /obj/item/holochip(get_turf(customer), value)
-	customer.put_in_hands(chip)
+	var/obj/item/stack/spacecash/cash = new /obj/item/stack/spacecash(get_turf(customer), value)
+	customer.put_in_hands(cash)
 
 ///Talk about what items are being sold/wanted by the trader and in what quantity or lore
 /datum/component/trader/proc/discuss(mob/customer)

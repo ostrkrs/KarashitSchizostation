@@ -97,7 +97,7 @@
 
 		if(armless)
 			if(!user.pulling || !iscash(user.pulling) && !istype(user.pulling, /obj/item/card/id))
-				to_chat(user, span_notice("Try pulling a valid ID, space cash, holochip or coin while using \the [parent]!"))
+				to_chat(user, span_notice("Try pulling a valid ID, space cash or coin while using \the [parent]!"))
 				return FALSE
 		return FALSE
 
@@ -108,18 +108,6 @@
 		qdel(cash_object)
 	physical_cash_total -= total_cost
 
-	if(physical_cash_total > 0)
-		var/obj/item/holochip/holochange = new /obj/item/holochip(user.loc, physical_cash_total) //Change is made in holocredits exclusively.
-		holochange.name = "[holochange.credits] credit holochip"
-		if(ishuman(user))
-			var/mob/living/carbon/human/paying_customer = user
-			var/successfully_put_in_hands
-			ASYNC //Put_in_hands can sleep, we don't want that to block this proc.
-				successfully_put_in_hands = paying_customer.put_in_hands(holochange)
-			if(!successfully_put_in_hands)
-				user.pulling = holochange
-		else
-			user.pulling = holochange
 	log_econ("[total_cost] credits were spent on [parent] by [user].")
 	to_chat(user, span_notice("Purchase completed with held credits."))
 	playsound(user, 'sound/effects/cashregister.ogg', 20, TRUE)

@@ -61,10 +61,10 @@
 		research_server.emp_act(EMP_LIGHT)
 		new /obj/effect/temp_visual/emp(get_turf(research_server))
 
-/// Handles expelling all the siphoned credits as holochips
+/// Handles expelling all the siphoned credits
 /obj/machinery/shuttle_scrambler/proc/dump_loot(mob/user)
-	if(credits_stored) // Prevents spamming empty holochips
-		new /obj/item/holochip(drop_location(), credits_stored)
+	if(credits_stored) // Prevents spamming empty cash
+		new /obj/item/stack/spacecash(drop_location(), credits_stored)
 		to_chat(user,span_notice("You retrieve the siphoned credits!"))
 		credits_stored = 0
 	else
@@ -478,12 +478,3 @@
 /datum/export/pirate/cash/get_cost(obj/exported_item)
 	var/obj/item/stack/spacecash/cash = exported_item
 	return cash.value * cash.amount
-
-/datum/export/pirate/holochip
-	cost = 1
-	unit_name = "holochip"
-	export_types = list(/obj/item/holochip)
-
-/datum/export/pirate/holochip/get_cost(atom/movable/exported_item)
-	var/obj/item/holochip/chip = exported_item
-	return chip.credits

@@ -1,4 +1,4 @@
-///This proc is used to initialize holochips, cash and coins inside our persistent piggy bank.
+///This proc is used to initialize cash and coins inside our persistent piggy bank.
 /datum/controller/subsystem/persistence/proc/load_piggy_bank(obj/item/piggy_bank/piggy)
 	if(isnull(piggy_banks_database))
 		piggy_banks_database = new("data/piggy_banks.json")
@@ -12,13 +12,7 @@
 		if(!money_path) //For a reason or another, it was removed.
 			continue
 		var/obj/item/spawned
-		if(ispath(money_path, /obj/item/holochip))
-			//We want to safely access the assoc of this position and not that of last key that happened to match this one.
-			var/list/key_and_assoc = data.Copy(iteration, iteration + 1)
-			var/amount = key_and_assoc["[money_path]"]
-			spawned = new money_path (piggy, amount)
-		//the operations are identical to those of chips, but they're different items, so I'll keep them separated.
-		else if(ispath(money_path, /obj/item/stack/spacecash))
+		if(ispath(money_path, /obj/item/stack/spacecash))
 			var/list/key_and_assoc = data.Copy(iteration, iteration + 1)
 			var/amount = key_and_assoc["[money_path]"]
 			spawned = new money_path (piggy, amount)
@@ -44,10 +38,7 @@
 	var/list/data = list()
 	for(var/obj/item/item as anything in piggy.contents)
 		var/piggy_value = 1
-		if(istype(item, /obj/item/holochip))
-			var/obj/item/holochip/chip = item
-			piggy_value = chip.credits
-		else if(istype(item, /obj/item/stack/spacecash))
+		if(istype(item, /obj/item/stack/spacecash))
 			var/obj/item/stack/spacecash/cash = item
 			piggy_value = cash.amount
 		else if(!istype(item, /obj/item/coin))

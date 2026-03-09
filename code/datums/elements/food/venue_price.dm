@@ -34,7 +34,7 @@
 	return TRANSACTION_SUCCESS
 
 /datum/element/venue_price/proc/produce_cash(mob/living/basic/robot_customer/sold_to, obj/item/container)
-	new /obj/item/holochip(get_turf(container), venue_price)
+	new /obj/item/stack/spacecash(get_turf(container), venue_price)
 	playsound(container, 'sound/effects/cashregister.ogg', 60, TRUE)
 
 	var/datum/venue/venue_to_pay = sold_to.ai_controller.blackboard[BB_CUSTOMER_ATTENDING_VENUE]

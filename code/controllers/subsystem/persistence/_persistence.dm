@@ -41,7 +41,7 @@ SUBSYSTEM_DEF(persistence)
 	var/list/obj/item/storage/photo_album/queued_photo_albums
 
 	/// A json_database to data/piggy banks.json
-	/// Schema is persistence_id => array of coins, space cash and holochips.
+	/// Schema is persistence_id => array of coins and space cash.
 	var/datum/json_database/piggy_banks_database
 	/// List of persistene ids which piggy banks.
 	var/list/queued_broken_piggy_ids

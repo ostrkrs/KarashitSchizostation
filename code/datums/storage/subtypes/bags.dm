@@ -309,7 +309,6 @@
 	set_holdable(list(
 		/obj/item/coin,
 		/obj/item/stack/spacecash,
-		/obj/item/holochip,
 		/obj/item/poker_chip,
 		/obj/item/stack/sheet/mineral/diamond, // Precious gems and stones are something a sophisticated french thief might put in his thief bag.
 		/obj/item/stack/sheet/mineral/gold, // This is money, the only real money actually, if you ask a Ron Paul-style guy.

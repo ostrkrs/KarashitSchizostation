@@ -196,14 +196,10 @@
 		playsound(src, 'sound/machines/buzz/buzz-sigh.ogg', 40, FALSE)
 		return ITEM_INTERACT_BLOCKING
 
-	if(istype(tool, /obj/item/holochip))
-		var/obj/item/holochip/chip = tool
-		chip.spend(restock_cost)
-	else
-		qdel(tool)
-		if(creds_value != restock_cost)
-			var/obj/item/holochip/change = new(loc, creds_value - restock_cost)
-			user.put_in_hands(change)
+	qdel(tool)
+	if(creds_value != restock_cost)
+		var/obj/item/stack/spacecash/change = new(loc, creds_value - restock_cost)
+		user.put_in_hands(change)
 
 	SSmarket.restock()
 	restock_cost *= 2

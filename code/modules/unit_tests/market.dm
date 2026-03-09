@@ -32,10 +32,10 @@
 	TEST_ASSERT_EQUAL(item.stock, 1, "The unit test market item is incorrectly stocked. Only one should be in stock")
 
 	var/mob/living/user = allocate(/mob/living)
-	var/obj/item/holochip/chip = allocate(/obj/item/holochip, run_loc_floor_bottom_left, INFINITY)
+	var/obj/item/stack/spacecash/cash = allocate(/obj/item/stack/spacecash, run_loc_floor_bottom_left, INFINITY)
 	var/obj/machinery/ltsrbt/pad = allocate(/obj/machinery/ltsrbt)
 
-	pad.item_interaction(user, chip)
+	pad.item_interaction(user, cash)
 
 	TEST_ASSERT_EQUAL(item, category_items[category_items[1]], "The unit test market item has been replaced during restock")
 	TEST_ASSERT_EQUAL(item.stock, 2, "The unit test market item is incorrectly stocked after restock. There should be two in stock")

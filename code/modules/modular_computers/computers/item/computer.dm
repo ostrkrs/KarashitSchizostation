@@ -906,9 +906,6 @@
 	if(isidcard(tool))
 		return insert_id(tool, user) ? ITEM_INTERACT_SUCCESS : ITEM_INTERACT_BLOCKING
 
-	if(iscash(tool))
-		return money_act(user, tool)
-
 	if(istype(tool, /obj/item/pai_card))
 		return pai_act(user, tool)
 
@@ -934,13 +931,6 @@
 		return computer_disk_act(user, tool)
 
 	return NONE
-
-/obj/item/modular_computer/proc/money_act(mob/user, obj/item/money)
-	var/obj/item/card/id/inserted_id = stored_id?.GetID()
-	if(!inserted_id)
-		balloon_alert(user, "no ID!")
-		return ITEM_INTERACT_BLOCKING
-	return inserted_id.insert_money(money, user) ? ITEM_INTERACT_SUCCESS : ITEM_INTERACT_BLOCKING
 
 /obj/item/modular_computer/proc/pai_act(mob/user, obj/item/pai_card/card)
 	if(inserted_pai)

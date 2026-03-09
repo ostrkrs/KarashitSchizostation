@@ -178,7 +178,7 @@
 
 	var/datum/venue/venue_to_pay = sold_to.ai_controller?.blackboard[BB_CUSTOMER_ATTENDING_VENUE]
 
-	new /obj/item/holochip(get_turf(source), venue_price)
+	new /obj/item/stack/spacecash(get_turf(source), venue_price)
 	venue_to_pay.total_income += venue_price
 	playsound(get_turf(source), 'sound/effects/cashregister.ogg', 60, TRUE)
 

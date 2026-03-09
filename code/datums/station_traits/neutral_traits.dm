@@ -352,9 +352,9 @@
 
 	id_card.forceMove(wallet)
 
-	var/holochip_amount = id_card.registered_account.account_balance
-	new /obj/item/holochip(wallet, holochip_amount)
-	id_card.registered_account.adjust_money(-holochip_amount, "System: Withdrawal")
+	var/cash_amount = id_card.registered_account.account_balance
+	new /obj/item/stack/spacecash(wallet, cash_amount)
+	id_card.registered_account.adjust_money(-cash_amount, "System: Withdrawal")
 
 	new /obj/effect/spawner/random/entertainment/wallet_storage(wallet)
 

@@ -37,23 +37,10 @@ GLOBAL_VAR_INIT(fax_autoprinting, FALSE)
 		/obj/item/canvas,
 		/obj/item/paper,
 		/obj/item/photo,
-		/obj/item/tcgcard,
 	)
 	/// List of types which should be allowed to be faxed if hacked
 	var/static/list/exotic_types = list(
-		/obj/item/card,
-		/obj/item/folder/biscuit,
-		/obj/item/food/breadslice,
-		/obj/item/food/chapslice,
-		/obj/item/food/cookie,
-		/obj/item/food/grilled_chapslice,
-		/obj/item/food/pizza/flatbread,
-		/obj/item/food/pizzaslice,
-		/obj/item/food/root_flatbread,
-		/obj/item/food/salami,
-		/obj/item/holochip,
 		/obj/item/stack/spacecash,
-		/obj/item/throwing_star,
 	)
 	/// List with a fake-networks(not a fax actually), for request manager.
 	var/list/special_networks = list(
@@ -440,16 +427,6 @@ GLOBAL_VAR_INIT(fax_autoprinting, FALSE)
 		return "[state_prefix]_photo"
 	if (iscash(item))
 		return "[state_prefix]_cash"
-	if (istype(item, /obj/item/card))
-		return "[state_prefix]_id"
-	if (istype(item, /obj/item/food))
-		return "[state_prefix]_food"
-	if (istype(item, /obj/item/throwing_star))
-		return "[state_prefix]_star"
-	if (istype(item, /obj/item/tcgcard))
-		return "[state_prefix]_tcg"
-	if (istype(item, /obj/item/folder/biscuit))
-		return "[state_prefix]_pbiscuit"
 	return "[state_prefix]_paper"
 
 /**
