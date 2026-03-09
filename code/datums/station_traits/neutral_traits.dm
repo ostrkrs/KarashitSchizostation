@@ -297,7 +297,7 @@
 	weight = 2
 	cost = STATION_TRAIT_COST_LOW
 	show_in_report = TRUE
-	report_message = "Nanotrasen has chosen your station for an experiment - everyone has free scryers! Use these to talk to other people easily and privately."
+	report_message = "Corporation has chosen your crew for an experiment - everyone has free scryers! Use these to talk to other people easily and privately."
 
 /datum/station_trait/scryers/New()
 	. = ..()
@@ -321,46 +321,6 @@
 	new_scryer.update_name()
 
 	spawned.equip_to_slot_or_del(new_scryer, ITEM_SLOT_NECK, initial = FALSE)
-
-/datum/station_trait/wallets
-	name = "Wallets!"
-	trait_type = STATION_TRAIT_NEUTRAL
-	show_in_report = TRUE
-	weight = 5
-	cost = STATION_TRAIT_COST_MINIMAL
-	report_message = "It has become temporarily fashionable to use a wallet, so everyone on the station has been issued one."
-
-/datum/station_trait/wallets/New()
-	. = ..()
-	RegisterSignal(SSdcs, COMSIG_GLOB_JOB_AFTER_SPAWN, PROC_REF(on_job_after_spawn))
-
-/datum/station_trait/wallets/proc/on_job_after_spawn(datum/source, datum/job/job, mob/living/living_mob, mob/M, joined_late)
-	SIGNAL_HANDLER
-
-	var/obj/item/card/id/advanced/id_card = living_mob.get_item_by_slot(ITEM_SLOT_ID)
-	if(!istype(id_card))
-		return
-
-	living_mob.temporarilyRemoveItemFromInventory(id_card, force=TRUE)
-
-	// "Doc, what's wrong with me?"
-	var/obj/item/storage/wallet/wallet = new(src)
-	// "You've got a wallet embedded in your chest."
-	wallet.add_fingerprint(living_mob, ignoregloves = TRUE)
-
-	living_mob.equip_to_slot_if_possible(wallet, ITEM_SLOT_ID, initial=TRUE)
-
-	id_card.forceMove(wallet)
-
-	var/cash_amount = id_card.registered_account.account_balance
-	new /obj/item/stack/spacecash(wallet, cash_amount)
-	id_card.registered_account.adjust_money(-cash_amount, "System: Withdrawal")
-
-	new /obj/effect/spawner/random/entertainment/wallet_storage(wallet)
-
-	// Put our filthy fingerprints all over the contents
-	for(var/obj/item/item in wallet)
-		item.add_fingerprint(living_mob, ignoregloves = TRUE)
 
 /// Tells the area map generator to ADD MORE TREEEES
 /datum/station_trait/forested
