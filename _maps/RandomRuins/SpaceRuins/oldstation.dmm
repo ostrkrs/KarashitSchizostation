@@ -5204,7 +5204,7 @@
 	pixel_x = 4
 	},
 /obj/item/hemostat,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/scalpel{
 	pixel_y = 12
 	},

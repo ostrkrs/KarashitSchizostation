@@ -57,7 +57,7 @@ GLOBAL_LIST_INIT(tool_to_image, list(
 	TOOL_CAUTERY = image(/obj/item/cautery),
 	TOOL_DRILL = image(/obj/item/surgicaldrill),
 	TOOL_SCALPEL = image(/obj/item/scalpel),
-	TOOL_SAW = image(/obj/item/circular_saw),
+	TOOL_SAW = image(/obj/item/saw),
 	TOOL_BONESET = image(/obj/item/bonesetter),
 	TOOL_KNIFE = image(/obj/item/knife/kitchen),
 	TOOL_BLOODFILTER = image(/obj/item/blood_filter),

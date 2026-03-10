@@ -62,7 +62,7 @@ GLOBAL_LIST_INIT(mystery_box_extended, list(
 	/obj/item/defibrillator/compact/combat/loaded/nanotrasen,
 	/obj/item/melee/energy/sword/saber,
 	/obj/item/spear,
-	/obj/item/circular_saw,
+	/obj/item/saw,
 ))
 
 GLOBAL_LIST_INIT(mystery_magic, list(

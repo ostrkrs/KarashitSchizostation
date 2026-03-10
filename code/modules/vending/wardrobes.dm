@@ -366,7 +366,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/retractor/cruel = 1,
 		/obj/item/scalpel/cruel = 1,
 		/obj/item/surgicaldrill/cruel = 1,
-		/obj/item/circular_saw/cruel = 1,
+		/obj/item/saw/cruel = 1,
 		/obj/item/bonesetter/cruel = 1,
 		/obj/item/blood_filter/cruel = 1,
 		/obj/item/storage/backpack/coroner = 1,

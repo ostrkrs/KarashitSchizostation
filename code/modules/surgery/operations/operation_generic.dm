@@ -302,7 +302,7 @@
 	)
 	time = 5.4 SECONDS
 	preop_sound = list(
-		/obj/item/circular_saw = 'sound/items/handling/surgery/saw.ogg',
+		/obj/item/saw = 'sound/items/handling/surgery/saw.ogg',
 		/obj/item/melee/arm_blade = 'sound/items/handling/surgery/scalpel1.ogg',
 		/obj/item/fireaxe = 'sound/items/handling/surgery/scalpel1.ogg',
 		/obj/item/hatchet = 'sound/items/handling/surgery/scalpel1.ogg',
@@ -318,7 +318,7 @@
 	return "Any sharp edged item with decent force"
 
 /datum/surgery_operation/limb/saw_bones/get_default_radial_image()
-	return image(/obj/item/circular_saw)
+	return image(/obj/item/saw)
 
 /datum/surgery_operation/limb/saw_bones/tool_check(obj/item/tool)
 	// Require edged sharpness and sufficient force OR a tool behavior match

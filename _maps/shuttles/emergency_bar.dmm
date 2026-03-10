@@ -355,7 +355,7 @@
 /area/shuttle/escape)
 "bz" = (
 /obj/structure/table,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/hemostat,
 /obj/item/retractor,
 /obj/item/scalpel,

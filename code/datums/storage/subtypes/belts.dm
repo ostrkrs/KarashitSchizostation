@@ -22,7 +22,7 @@
 		/obj/item/blood_filter,
 		/obj/item/bonesetter,
 		/obj/item/cautery,
-		/obj/item/circular_saw,
+		/obj/item/saw,
 		/obj/item/clothing/glasses,
 		/obj/item/clothing/gloves,
 		/obj/item/clothing/neck/stethoscope,

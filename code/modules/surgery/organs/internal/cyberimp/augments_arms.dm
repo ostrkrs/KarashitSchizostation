@@ -386,7 +386,7 @@
 		/obj/item/cautery/augment,
 		/obj/item/surgicaldrill/augment,
 		/obj/item/scalpel/augment,
-		/obj/item/circular_saw/augment,
+		/obj/item/saw/circular/augment,
 		/obj/item/surgical_drapes,
 	)
 
@@ -400,7 +400,7 @@
 		/obj/item/cautery/augment,
 		/obj/item/surgicaldrill/augment,
 		/obj/item/scalpel/augment,
-		/obj/item/circular_saw/augment,
+		/obj/item/saw/circular/augment,
 		/obj/item/surgical_drapes,
 		/obj/item/knife/combat/cyborg,
 	)
@@ -417,7 +417,7 @@
 		/obj/item/cautery/cruel/augment,
 		/obj/item/surgicaldrill/cruel/augment,
 		/obj/item/scalpel/cruel/augment,
-		/obj/item/circular_saw/cruel/augment,
+		/obj/item/saw/cruel/augment,
 		/obj/item/surgical_drapes,
 	)
 

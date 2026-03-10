@@ -595,7 +595,7 @@
 "cF" = (
 /obj/structure/table,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/scalpel{
 	pixel_y = 12
 	},

@@ -260,43 +260,45 @@
 	desc = "Ultra-sharp blade attached directly to your bone for extra-accuracy."
 	toolspeed = 0.5
 
-/obj/item/circular_saw
-	name = "circular saw"
-	desc = "For heavy duty cutting."
+/obj/item/saw
+	name = "bonesaw"
+	desc = "Let's go practice medicine."
 	icon = 'icons/obj/medical/surgery_tools.dmi'
 	icon_state = "saw"
 	inhand_icon_state = "saw"
 	icon_angle = 180
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	hitsound = 'sound/items/weapons/circsawhit.ogg'
-	mob_throw_hit_sound = 'sound/items/weapons/pierce.ogg'
-	obj_flags = CONDUCTS_ELECTRICITY
-	item_flags = SURGICAL_TOOL
-	force = 15
-	w_class = WEIGHT_CLASS_NORMAL
-	throwforce = 9
+	hitsound = 'sound/items/weapons/bladeslice.ogg'
+	force = 10
+	throwforce = 8
 	throw_speed = 2
 	throw_range = 5
-	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*5, /datum/material/glass = SHEET_MATERIAL_AMOUNT*3)
-	attack_verb_continuous = list("attacks", "slashes", "saws", "cuts")
-	attack_verb_simple = list("attack", "slash", "saw", "cut")
+	obj_flags = CONDUCTS_ELECTRICITY
+	item_flags = SURGICAL_TOOL
+	w_class = WEIGHT_CLASS_NORMAL
 	sharpness = SHARP_EDGED
 	tool_behaviour = TOOL_SAW
-	toolspeed = 1
-	wound_bonus = 15
-	exposed_wound_bonus = 10
+	toolspeed = 0.75
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*4, /datum/material/glass = SHEET_MATERIAL_AMOUNT*1)
+	attack_verb_continuous = list("attacks", "slashes", "saws", "cuts")
+	attack_verb_simple = list("attack", "slash", "saw", "cut")
+	wound_bonus = 10
+	exposed_wound_bonus = 5
+	/// What noise it makes when we butcher bodies with it?
+	var/butcher_sound = 'sound/effects/butcher.ogg'
 	/// How this looks when placed in a surgical tray
 	var/surgical_tray_overlay = "saw_normal"
 
-/obj/item/circular_saw/Initialize(mapload)
+/obj/item/saw/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/butchering, \
 	speed = 4 SECONDS * toolspeed, \
 	effectiveness = 100, \
 	bonus_modifier = 5, \
-	butcher_sound = 'sound/items/weapons/circsawhit.ogg', \
+	butcher_sound = butcher_sound, \
 	)
+
 	//saws are very accurate and fast at butchering
 	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/chainsaw)
 
@@ -305,15 +307,31 @@
 		slapcraft_recipes = slapcraft_recipe_list,\
 	)
 
-/obj/item/circular_saw/get_surgery_tool_overlay(tray_extended)
+/obj/item/saw/get_surgery_tool_overlay(tray_extended)
 	return surgical_tray_overlay
 
-/obj/item/circular_saw/cyborg
+/obj/item/saw/circular
+	name = "circular saw"
+	desc = "For heavy duty cutting."
+	icon_state = "saw_adv"
+	inhand_icon_state = "saw_adv"
+	surgical_tray_overlay = "saw_adv"
+	hitsound = 'sound/items/weapons/circsawhit.ogg'
+	butcher_sound = 'sound/items/weapons/circsawhit.ogg'
+	mob_throw_hit_sound = 'sound/items/weapons/pierce.ogg'
+	force = 15
+	throwforce = 9
+	toolspeed = 1
+	wound_bonus = 15
+	exposed_wound_bonus = 10
+	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*5, /datum/material/glass = SHEET_MATERIAL_AMOUNT*1.5, /datum/material/titanium = SHEET_MATERIAL_AMOUNT*1.5)
+
+/obj/item/saw/circular/cyborg
 	icon = 'icons/mob/silicon/robot_items.dmi'
 	icon_state = "toolkit_medborg_saw"
 	icon_angle = 0
 
-/obj/item/circular_saw/augment
+/obj/item/saw/circular/augment
 	desc = "A small but very fast spinning saw. It rips and tears until it is done."
 	w_class = WEIGHT_CLASS_SMALL
 	toolspeed = 0.5
@@ -736,12 +754,11 @@
 	surgical_tray_overlay = "drill_cruel"
 	item_flags = SURGICAL_TOOL | CRUEL_IMPLEMENT
 
-/obj/item/circular_saw/cruel
+/obj/item/saw/cruel
 	name = "jagged bonesaw"
 	desc = "A twisted blade for twisted purpose. Rip sinew and bone until your work is done."
 	icon_state = "cruelsaw"
 	inhand_icon_state = "cruelsaw"
-	hitsound = 'sound/items/weapons/bladeslice.ogg'
 	surgical_tray_overlay = "saw_cruel"
 	item_flags = SURGICAL_TOOL | CRUEL_IMPLEMENT
 
@@ -783,7 +800,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	toolspeed = 0.5
 
-/obj/item/circular_saw/cruel/augment
+/obj/item/saw/cruel/augment
 	desc = "A jagged sawblade built for grisly work."
 	w_class = WEIGHT_CLASS_SMALL
 	toolspeed = 0.5

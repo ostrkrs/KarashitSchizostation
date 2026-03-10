@@ -175,12 +175,12 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SCIENCE
 
-/datum/design/circular_saw
-	name = "Circular Saw"
-	id = "circular_saw"
+/datum/design/bonesaw
+	name = "Bonesaw"
+	id = "bonesaw"
 	build_type = AUTOLATHE | PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5, /datum/material/glass = SHEET_MATERIAL_AMOUNT * 3)
-	build_path = /obj/item/circular_saw
+	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*4, /datum/material/glass = SHEET_MATERIAL_AMOUNT*1)
+	build_path = /obj/item/saw
 	category = list(
 		RND_CATEGORY_INITIAL,
 		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_MEDICAL,

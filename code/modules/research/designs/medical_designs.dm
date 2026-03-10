@@ -448,6 +448,18 @@
 	build_path = /obj/item/flesh_shears/medical
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
+/datum/design/circular_saw
+	name = "Circular Saw"
+	desc = "For cases when your patients are not afraid enough of regular saws."
+	id = "circular_saw"
+	build_type = PROTOLATHE | AWAY_LATHE
+	build_path = /obj/item/saw/circular
+	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*5, /datum/material/glass = SHEET_MATERIAL_AMOUNT*1.5, /datum/material/titanium = SHEET_MATERIAL_AMOUNT*1.5)
+	category = list(
+		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_MEDICAL_ADVANCED,
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL | DEPARTMENT_BITFLAG_SCIENCE
+
 /////////////////////////////////////////
 //////////Cybernetic Implants////////////
 /////////////////////////////////////////

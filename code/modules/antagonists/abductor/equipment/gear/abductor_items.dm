@@ -586,7 +586,7 @@ Return to step 11 of normal process."}
 	icon_angle = 180
 	toolspeed = 0.25
 
-/obj/item/circular_saw/alien
+/obj/item/saw/alien
 	name = "alien saw"
 	desc = "Do the aliens also lose this, and need to find an alien hatchet?"
 	icon = 'icons/obj/antags/abductor.dmi'

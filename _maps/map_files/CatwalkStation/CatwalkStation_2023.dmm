@@ -34871,8 +34871,8 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/blue/filled/mid_joiner,
-/obj/item/circular_saw,
-/obj/item/circular_saw{
+/obj/item/saw,
+/obj/item/saw{
 	pixel_y = 4
 	},
 /obj/item/scalpel{

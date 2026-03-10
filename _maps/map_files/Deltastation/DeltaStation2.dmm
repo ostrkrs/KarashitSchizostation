@@ -59971,7 +59971,7 @@
 /obj/item/scalpel{
 	pixel_y = 8
 	},
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/cautery,
 /obj/structure/sign/departments/medbay/alt/directional/south,
 /obj/machinery/status_display/evac/directional/east,

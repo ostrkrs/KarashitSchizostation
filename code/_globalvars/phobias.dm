@@ -132,7 +132,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 	"aliens" = typecacheof(list(
 		/obj/item/abductor,
 		/obj/item/cautery/alien,
-		/obj/item/circular_saw/alien,
+		/obj/item/saw/alien,
 		/obj/item/clothing/head/helmet/abductor,
 		/obj/item/clothing/mask/facehugger,
 		/obj/item/clothing/suit/armor/abductor,
@@ -344,7 +344,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 	)),
 	"doctors" = typecacheof(list(
 		/obj/item/cautery,
-		/obj/item/circular_saw,
+		/obj/item/saw,
 		/obj/item/clothing/head/bio_hood/plague,
 		/obj/item/clothing/mask/gas/plaguedoctor,
 		/obj/item/clothing/suit/bio_suit/plaguedoctorsuit,

@@ -6278,7 +6278,7 @@
 /obj/item/scalpel{
 	pixel_y = 12
 	},
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/razor{
 	pixel_y = 5
 	},
@@ -6857,7 +6857,7 @@
 /area/awaymission/moonoutpost19/research)
 "TB" = (
 /obj/item/stack/sheet/mineral/wood,
-/obj/item/circular_saw,
+/obj/item/saw,
 /turf/open/misc/asteroid/moon{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
 	},

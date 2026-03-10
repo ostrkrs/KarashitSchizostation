@@ -80,7 +80,7 @@
 		/obj/item/scalpel,
 		/obj/item/hemostat,
 		/obj/item/retractor,
-		/obj/item/circular_saw,
+		/obj/item/saw,
 		/obj/item/surgicaldrill,
 		/obj/item/cautery,
 		/obj/item/bonesetter,
@@ -102,7 +102,7 @@
 		/obj/item/scalpel/alien,
 		/obj/item/hemostat/alien,
 		/obj/item/retractor/alien,
-		/obj/item/circular_saw/alien,
+		/obj/item/saw/alien,
 		/obj/item/surgicaldrill/alien,
 		/obj/item/cautery/alien,
 	)

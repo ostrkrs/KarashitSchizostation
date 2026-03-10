@@ -63,8 +63,8 @@
 	blacklist += list(
 		/obj/item/cautery/augment,
 		/obj/item/cautery/cruel/augment,
-		/obj/item/circular_saw/augment,
-		/obj/item/circular_saw/cruel/augment,
+		/obj/item/saw/circular/augment,
+		/obj/item/saw/cruel/augment,
 		/obj/item/crowbar/cyborg,
 		/obj/item/hemostat/augment,
 		/obj/item/hemostat/cruel/augment,

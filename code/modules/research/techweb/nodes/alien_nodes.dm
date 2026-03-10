@@ -14,7 +14,7 @@
 	required_items_to_unlock = list(
 		/obj/item/stack/sheet/mineral/abductor,
 		/obj/item/cautery/alien,
-		/obj/item/circular_saw/alien,
+		/obj/item/saw/alien,
 		/obj/item/crowbar/abductor,
 		/obj/item/gun/energy/alien,
 		/obj/item/gun/energy/shrink_ray,
@@ -90,7 +90,7 @@ ABDUCTOR_SUBTYPE_UNLOCKS(/datum/techweb_node/alien_engi)
 	)
 	required_items_to_unlock = list(
 		/obj/item/cautery/alien,
-		/obj/item/circular_saw/alien,
+		/obj/item/saw/alien,
 		/obj/item/crowbar/abductor,
 		/obj/item/gun/energy/alien,
 		/obj/item/gun/energy/shrink_ray,

@@ -80,6 +80,7 @@
 /obj/item/tank/internals/anesthetic/pure
 	desc = "A tank with pure N2O. There is a warning sticker crudely slapped onto the tank."
 	icon_state = "anesthetic_warning"
+	tank_holder_icon_state = "holder_anesthetic_warning"
 
 /obj/item/tank/internals/anesthetic/pure/populate_gas()
 	air_contents.assert_gases(/datum/gas/nitrous_oxide)

@@ -97,7 +97,7 @@
 /obj/item/cautery/alien{
 	pixel_y = 15
 	},
-/obj/item/circular_saw/alien{
+/obj/item/saw/alien{
 	pixel_y = -2
 	},
 /turf/open/floor/plating/abductor,

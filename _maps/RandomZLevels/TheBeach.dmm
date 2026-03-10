@@ -1680,7 +1680,7 @@
 	},
 /area/awaymission/beach)
 "uZ" = (
-/obj/item/circular_saw{
+/obj/item/saw{
 	pixel_y = 4
 	},
 /obj/item/scalpel{

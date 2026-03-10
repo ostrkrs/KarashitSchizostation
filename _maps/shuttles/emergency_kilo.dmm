@@ -650,7 +650,7 @@
 /area/shuttle/escape)
 "lU" = (
 /obj/structure/table,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/scalpel{
 	pixel_y = 16
 	},

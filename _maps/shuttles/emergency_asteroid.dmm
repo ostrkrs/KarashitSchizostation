@@ -293,7 +293,7 @@
 /area/shuttle/escape)
 "bH" = (
 /obj/structure/table,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/cautery{
 	pixel_x = 4
 	},

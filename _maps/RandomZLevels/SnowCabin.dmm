@@ -158,7 +158,7 @@
 "aJ" = (
 /obj/structure/table,
 /obj/item/surgicaldrill,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/cautery,
 /obj/item/surgical_drapes,
 /obj/item/scalpel,

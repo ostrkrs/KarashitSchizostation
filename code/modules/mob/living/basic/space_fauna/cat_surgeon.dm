@@ -34,12 +34,12 @@
 	/// The stuff we drop on death.
 	var/static/list/drop_on_death = list(
 		/obj/effect/mob_spawn/corpse/human/cat_butcher,
-		/obj/item/circular_saw,
+		/obj/item/saw,
 	)
 
 /mob/living/basic/cat_butcherer/Initialize(mapload)
 	. = ..()
-	apply_dynamic_human_appearance(src, mob_spawn_path = /obj/effect/mob_spawn/corpse/human/cat_butcher, l_hand = /obj/item/circular_saw, bloody_slots = ITEM_SLOT_GLOVES|ITEM_SLOT_OCLOTHING)
+	apply_dynamic_human_appearance(src, mob_spawn_path = /obj/effect/mob_spawn/corpse/human/cat_butcher, l_hand = /obj/item/saw, bloody_slots = ITEM_SLOT_GLOVES|ITEM_SLOT_OCLOTHING)
 	AddElement(/datum/element/ai_retaliate)
 	AddElement(/datum/element/death_drops, drop_on_death)
 	RegisterSignal(src, COMSIG_HOSTILE_POST_ATTACKINGTARGET, PROC_REF(after_attack))

@@ -13,7 +13,7 @@
 		"retractor",
 		"hemostat",
 		"cautery",
-		"circular_saw",
+		"bonesaw",
 		"surgicaldrill",
 		"bonesetter",
 		"blood_filter",
@@ -85,6 +85,7 @@
 		"piercesyringe",
 		"diode_disk_healing",
 		"diode_disk_sanity",
+		"circular_saw",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 	required_experiments = list(/datum/experiment/scanning/reagent/haloperidol)

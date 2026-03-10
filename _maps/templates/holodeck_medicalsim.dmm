@@ -504,7 +504,7 @@
 /obj/item/scalpel{
 	pixel_y = 10
 	},
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},

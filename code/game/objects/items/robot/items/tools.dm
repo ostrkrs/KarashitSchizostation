@@ -298,7 +298,7 @@
 		/obj/item/hemostat/cyborg,
 		/obj/item/retractor/cyborg,
 		/obj/item/cautery/cyborg,
-		/obj/item/circular_saw/cyborg,
+		/obj/item/saw/circular/cyborg,
 		/obj/item/bonesetter/cyborg,
 	)
 

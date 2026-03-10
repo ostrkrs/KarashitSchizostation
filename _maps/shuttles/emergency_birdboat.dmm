@@ -22,7 +22,7 @@
 /obj/structure/table,
 /obj/item/cautery,
 /obj/item/surgicaldrill,
-/obj/item/circular_saw{
+/obj/item/saw{
 	pixel_y = 9
 	},
 /turf/open/floor/mineral/titanium/white,

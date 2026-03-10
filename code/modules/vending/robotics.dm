@@ -16,7 +16,7 @@
 		/obj/item/assembly/signaler = 3,
 		/obj/item/healthanalyzer = 3,
 		/obj/item/scalpel = 2,
-		/obj/item/circular_saw = 2,
+		/obj/item/saw = 2,
 		/obj/item/bonesetter = 2,
 		/obj/item/tank/internals/anesthetic = 2,
 		/obj/item/clothing/mask/breath/medical = 5,

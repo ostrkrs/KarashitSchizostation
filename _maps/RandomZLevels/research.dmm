@@ -2097,7 +2097,7 @@
 /area/awaymission/research/interior/medbay)
 "km" = (
 /obj/structure/table,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 1
 	},

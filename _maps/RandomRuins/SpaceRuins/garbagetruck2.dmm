@@ -222,7 +222,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "ue" = (
 /obj/effect/decal/cleanable/blood/gibs/robot_debris/down,
-/obj/item/circular_saw,
+/obj/item/saw,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "uo" = (

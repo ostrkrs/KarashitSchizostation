@@ -71,7 +71,7 @@
 	)
 	time = 5.4 SECONDS
 	preop_sound = list(
-		/obj/item/circular_saw = 'sound/items/handling/surgery/saw.ogg',
+		/obj/item/saw = 'sound/items/handling/surgery/saw.ogg',
 		/obj/item/melee/arm_blade = 'sound/items/handling/surgery/scalpel1.ogg',
 		/obj/item/fireaxe = 'sound/items/handling/surgery/scalpel1.ogg',
 		/obj/item/hatchet = 'sound/items/handling/surgery/scalpel1.ogg',
@@ -91,7 +91,7 @@
 	return ..() + list("The patient must not have complex anatomy")
 
 /datum/surgery_operation/basic/saw_bone/get_default_radial_image()
-	return image(/obj/item/circular_saw)
+	return image(/obj/item/saw)
 
 /datum/surgery_operation/basic/saw_bone/state_check(mob/living/patient)
 	return !patient.has_limbs // Only for limbless mobs

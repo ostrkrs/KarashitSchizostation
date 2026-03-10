@@ -25,7 +25,7 @@
 		/obj/item/blood_filter,
 		/obj/item/bonesetter,
 		/obj/item/cautery,
-		/obj/item/circular_saw,
+		/obj/item/saw,
 		/obj/item/clothing/mask/surgical,
 		/obj/item/hemostat,
 		/obj/item/razor,

@@ -368,7 +368,7 @@
 	name = "Alien Circular Saw"
 	desc = "An advanced surgical saw obtained through Abductor technology."
 	id = "alien_saw"
-	build_path = /obj/item/circular_saw/alien
+	build_path = /obj/item/saw/alien
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT*5, /datum/material/silver =SHEET_MATERIAL_AMOUNT*1.25, /datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/titanium =HALF_SHEET_MATERIAL_AMOUNT * 1.5)
 	category = list(

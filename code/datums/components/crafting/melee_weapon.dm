@@ -82,7 +82,7 @@
 	name = "Chainsaw"
 	result = /obj/item/chainsaw
 	reqs = list(
-		/obj/item/circular_saw = 1,
+		/obj/item/saw/circular = 1,
 		/obj/item/stack/cable_coil = 3,
 		/obj/item/stack/sheet/plasteel = 5,
 	)

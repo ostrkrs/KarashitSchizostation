@@ -738,7 +738,7 @@
 	pixel_x = -7;
 	pixel_y = 5
 	},
-/obj/item/circular_saw{
+/obj/item/saw{
 	pixel_y = 2
 	},
 /obj/effect/turf_decal/tile/dark_blue/anticorner{
@@ -1183,7 +1183,7 @@
 "MA" = (
 /obj/structure/table/reinforced/rglass,
 /obj/item/scalpel,
-/obj/item/circular_saw{
+/obj/item/saw{
 	pixel_y = 8
 	},
 /obj/item/boxcutter/extended{

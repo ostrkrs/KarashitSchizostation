@@ -1,7 +1,7 @@
 /datum/unit_test/amputation/Run()
 	var/mob/living/carbon/human/patient = allocate(/mob/living/carbon/human/consistent)
 	var/mob/living/carbon/human/user = allocate(/mob/living/carbon/human/consistent)
-	var/obj/item/circular_saw/saw = allocate(/obj/item/circular_saw)
+	var/obj/item/saw/saw = allocate(/obj/item/saw)
 
 	TEST_ASSERT_EQUAL(patient.get_missing_limbs().len, 0, "Patient is somehow missing limbs before surgery")
 

@@ -1588,7 +1588,7 @@
 "mE" = (
 /obj/structure/table/reinforced,
 /obj/item/scalpel,
-/obj/item/circular_saw{
+/obj/item/saw{
 	pixel_y = 9
 	},
 /obj/effect/decal/cleanable/dirt,

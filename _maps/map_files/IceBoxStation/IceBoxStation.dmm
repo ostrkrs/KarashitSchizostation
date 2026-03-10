@@ -32241,7 +32241,7 @@
 /area/station/maintenance/port/greater)
 "jeB" = (
 /obj/structure/table,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/scalpel{
 	pixel_y = 12
 	},

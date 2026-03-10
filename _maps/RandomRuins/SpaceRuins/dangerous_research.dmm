@@ -3786,7 +3786,7 @@
 	dir = 4
 	},
 /obj/item/hemostat,
-/obj/item/circular_saw,
+/obj/item/saw,
 /obj/item/surgical_drapes,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8

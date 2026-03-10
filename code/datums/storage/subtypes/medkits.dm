@@ -10,7 +10,7 @@
 		//surgery tools
 		/obj/item/surgical_drapes,
 		/obj/item/scalpel,
-		/obj/item/circular_saw,
+		/obj/item/saw,
 		/obj/item/bonesetter,
 		/obj/item/surgicaldrill,
 		/obj/item/retractor,

@@ -30,7 +30,7 @@
 				/obj/item/assembly/flash,
 				/obj/item/card/id/advanced/gold/captains_spare,
 				/obj/item/card/emag,
-				/obj/item/circular_saw,
+				/obj/item/saw,
 				/obj/item/codex_cicatrix,
 				/obj/item/grenade/c4,
 				/obj/item/gun/ballistic/revolver,

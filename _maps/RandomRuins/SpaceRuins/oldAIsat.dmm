@@ -543,7 +543,7 @@
 /area/ruin/space/tcommsat_oldaisat)
 "cg" = (
 /obj/structure/table,
-/obj/item/circular_saw,
+/obj/item/saw,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/tcommsat_oldaisat)
 "ch" = (

@@ -815,7 +815,7 @@
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/blue
 	belt = /obj/item/storage/belt/medical/paramedic
 	shoes = /obj/item/clothing/shoes/sneakers/white
-	l_hand = /obj/item/circular_saw
+	l_hand = /obj/item/saw/circular
 
 	back = /obj/item/storage/backpack/medic
 

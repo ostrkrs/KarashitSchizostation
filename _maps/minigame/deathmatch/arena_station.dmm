@@ -776,7 +776,7 @@
 "Fg" = (
 /obj/effect/turf_decal/tile/blue/full,
 /obj/structure/table/glass,
-/obj/item/circular_saw,
+/obj/item/saw,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
 "Gv" = (

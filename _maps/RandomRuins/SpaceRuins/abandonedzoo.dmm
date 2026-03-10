@@ -400,7 +400,7 @@
 /obj/item/surgical_drapes,
 /obj/item/retractor,
 /obj/item/cautery,
-/obj/item/circular_saw,
+/obj/item/saw,
 /turf/open/floor/iron/dark/side,
 /area/ruin/space/has_grav/abandonedzoo)
 "Gh" = (
