@@ -28,6 +28,8 @@
 	var/lit = FALSE
 	/// Whether the lighter is fancy. Fancy lighters have fancier flavortext and won't burn thumbs.
 	var/fancy = TRUE
+	/// TRUE if need oxygen to lit
+	var/need_oxygen = TRUE
 	/// The engraving overlay used by this lighter.
 	var/overlay_state
 	/// A list of possible engraving overlays.
@@ -227,9 +229,17 @@
 		return FALSE
 	return TRUE
 
+/// Checks that we have enough oxygen to sustain flame
+/obj/item/lighter/proc/check_oxydizer()
+	var/datum/gas_mixture/air = return_air()
+	if(!isnull(air) && (air.has_gas(/datum/gas/oxygen, 1) || air.has_gas(/datum/gas/nitrous_oxide, 1)))
+		return TRUE
+
 /obj/item/lighter/process(seconds_per_tick)
 	if(lit)
 		burned_fuel_for += seconds_per_tick
+		if(need_oxygen && !check_oxydizer(src.loc))
+			set_lit(FALSE)
 		if(burned_fuel_for >= TOOL_FUEL_BURN_INTERVAL)
 			use(used = 0.25)
 
@@ -304,6 +314,7 @@
 	light_color = LIGHT_COLOR_CYAN
 	overlay_state = "engraved"
 	grind_results = list(/datum/reagent/iron = 1, /datum/reagent/fuel = 5, /datum/reagent/medicine/pyroxadone = 5)
+	need_oxygen = FALSE
 
 /obj/item/lighter/slime/create_lighter_overlay()
 	var/mutable_appearance/lighter_overlay = ..()

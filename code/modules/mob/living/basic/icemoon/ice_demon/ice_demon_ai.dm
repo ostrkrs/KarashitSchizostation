@@ -3,7 +3,7 @@
 		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
 		BB_RANGED_SKIRMISH_MAX_DISTANCE = 7,
 		BB_LIST_SCARY_ITEMS = list(
-			/obj/item/weldingtool,
+			/obj/item/weldingtool/fueled,
 			/obj/item/flashlight/flare,
 		),
 	)

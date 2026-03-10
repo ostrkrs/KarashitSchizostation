@@ -13,7 +13,7 @@
 	force = 5
 	throwforce = 7
 	demolition_mod = 1.25
-	w_class = WEIGHT_CLASS_SMALL
+	w_class = WEIGHT_CLASS_NORMAL
 	usesound = 'sound/items/tools/ratchet.ogg'
 	operating_sound = list('sound/items/tools/ratchet_fast.ogg', 'sound/items/tools/ratchet_slow.ogg')
 	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*1.5)
@@ -104,6 +104,7 @@
 	attack_verb_continuous = list("devastates", "brutalizes", "commits a war crime against", "obliterates", "humiliates")
 	attack_verb_simple = list("devastate", "brutalize", "commit a war crime against", "obliterate", "humiliate")
 	tool_behaviour = null
+	w_class = WEIGHT_CLASS_SMALL
 
 /obj/item/wrench/combat/Initialize(mapload)
 	. = ..()
@@ -137,4 +138,3 @@
 	icon_state = "bolter_wrench"
 	inhand_icon_state = "bolter_wrench"
 	icon_angle = -90
-	w_class = WEIGHT_CLASS_NORMAL

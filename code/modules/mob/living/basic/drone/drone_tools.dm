@@ -17,7 +17,7 @@
 	builtintools += new /obj/item/crowbar/drone(src)
 	builtintools += new /obj/item/screwdriver/drone(src)
 	builtintools += new /obj/item/wrench/drone(src)
-	builtintools += new /obj/item/weldingtool/drone(src)
+	builtintools += new /obj/item/weldingtool/fueled/drone(src)
 	builtintools += new /obj/item/wirecutters/drone(src)
 	builtintools += new /obj/item/multitool/drone(src)
 	builtintools += new /obj/item/pipe_dispenser/drone(src)
@@ -64,13 +64,14 @@
 	icon_angle = 0
 	item_flags = NO_MAT_REDEMPTION
 
-/obj/item/weldingtool/drone
+/obj/item/weldingtool/fueled/drone
 	name = "built-in welding torch"
 	desc = "A welding tool built into your chassis."
 	icon = 'icons/obj/items_cyborg.dmi'
 	icon_state = "indwelder_cyborg"
 	item_flags = NO_MAT_REDEMPTION
 	integrated_tank = TRUE
+	need_oxygen = FALSE
 
 /obj/item/wirecutters/drone
 	name = "built-in wirecutters"
@@ -80,6 +81,8 @@
 	inhand_icon_state = "cutters"
 	item_flags = NO_MAT_REDEMPTION
 	random_color = FALSE
+	greyscale_config = null
+	greyscale_colors = null
 
 /obj/item/multitool/drone
 	name = "built-in multitool"

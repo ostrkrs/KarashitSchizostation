@@ -48,7 +48,7 @@ GLOBAL_LIST_INIT(tool_to_image, list(
 	TOOL_SCREWDRIVER = image(/obj/item/screwdriver),
 	TOOL_WIRECUTTER = image(/obj/item/wirecutters),
 	TOOL_WRENCH = image(/obj/item/wrench),
-	TOOL_WELDER = image(/obj/item/weldingtool/mini),
+	TOOL_WELDER = image(/obj/item/weldingtool/fueled/mini),
 	TOOL_ANALYZER = image(/obj/item/analyzer),
 	TOOL_MINING = image(/obj/item/pickaxe),
 	TOOL_SHOVEL = image(/obj/item/shovel),

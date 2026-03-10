@@ -109,7 +109,7 @@
 	..()
 	new /obj/item/crowbar/red(src)
 	new /obj/item/screwdriver/red(src)
-	new /obj/item/weldingtool/mini(src)
+	new /obj/item/weldingtool/fueled/mini(src)
 	new /obj/item/paper/fluff/operative(src)
 
 /obj/item/storage/box/survival/centcom

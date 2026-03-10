@@ -3,6 +3,7 @@
 	desc = "A traditional red fire extinguisher."
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "fire_extinguisher0"
+	base_icon_state = "fire_extinguisher"
 	worn_icon_state = "fire_extinguisher"
 	inhand_icon_state = "fire_extinguisher"
 	icon_angle = 90
@@ -40,8 +41,8 @@
 		/obj/structure/reagent_dispensers/plumbed,
 		/obj/structure/reagent_dispensers/water_cooler,
 	)
-	/// something that should be replaced with base_icon_state
-	var/sprite_name = "fire_extinguisher"
+	/// Used for randomized appearance
+	var/randomized_appearance = TRUE
 	/// Maximum distance launched water will travel.
 	var/power = 5
 	/// By default, turfs picked from a spray are random, set to TRUE to make it always have at least one water effect per row.
@@ -62,6 +63,11 @@
 		/datum/element/slapcrafting,\
 		slapcraft_recipes = slapcraft_recipe_list,\
 	)
+
+	if(randomized_appearance)
+		cut_overlays()
+		var/image/I = new(icon, "[base_icon_state]O[rand(1,5)]")
+		add_overlay(I)
 
 	register_context()
 
@@ -145,8 +151,9 @@
 	force = 3
 	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT* 0.5, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.4)
 	max_water = 30
-	sprite_name = "miniFE"
+	base_icon_state = "miniFE"
 	dog_fashion = null
+	randomized_appearance = FALSE
 
 /obj/item/extinguisher/mini/empty
 	starting_water = FALSE
@@ -164,14 +171,15 @@
 	force = 3
 	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 0.5, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.4)
 	max_water = 30
-	sprite_name = "coolant"
+	base_icon_state = "coolant"
 	dog_fashion = null
 	cooling_power = 1.5
 	power = 3
+	randomized_appearance = FALSE
 
 /obj/item/extinguisher/crafted/attack_self(mob/user)
 	safety = !safety
-	icon_state = "[sprite_name][!safety]"
+	icon_state = "[base_icon_state][!safety]"
 	to_chat(user, "[safety ? "You remove the straw and put it on the side of the cool canister" : "You insert the straw, readying it for use"].")
 
 /obj/item/extinguisher/proc/refill()
@@ -205,7 +213,7 @@
 		/obj/structure/reagent_dispensers/foamtank,
 		/obj/structure/reagent_dispensers/plumbed,
 	)
-	sprite_name = "foam_extinguisher"
+	base_icon_state = "foam_extinguisher"
 	precision = TRUE
 
 /obj/item/extinguisher/advanced/empty
@@ -225,7 +233,7 @@
 
 /obj/item/extinguisher/attack_self(mob/user)
 	safety = !safety
-	src.icon_state = "[sprite_name][!safety]"
+	src.icon_state = "[base_icon_state][!safety]"
 	balloon_alert(user, "safety [safety ? "on" : "off"]")
 	return
 

@@ -148,7 +148,7 @@
 		/obj/item/assembly/igniter = 1,
 		/obj/item/stack/sheet/iron = 2,
 		/obj/item/knife = 1,
-		/obj/item/weldingtool = 1,
+		/obj/item/weldingtool/fueled = 1,
 		/obj/item/roulette_wheel_beacon = 1,
 	)
 	time = 10 SECONDS

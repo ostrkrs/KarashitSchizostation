@@ -1689,7 +1689,7 @@
 	network = list("ss13","rd")
 	},
 /obj/structure/reagent_dispensers/fueltank,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/clothing/head/utility/welding,
 /obj/item/clothing/glasses/welding,
 /turf/open/floor/iron/dark/small,
@@ -21733,7 +21733,7 @@
 	},
 /obj/structure/rack,
 /obj/item/storage/belt/utility,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/wrench,
 /obj/item/clothing/head/utility/welding,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -53807,7 +53807,7 @@
 	dir = 4
 	},
 /obj/structure/rack,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/wrench,
 /obj/item/clothing/head/utility/welding,
 /obj/machinery/firealarm/directional/west,
@@ -66250,7 +66250,7 @@
 	pixel_x = -3;
 	pixel_y = -5
 	},
-/obj/item/weldingtool/mini/empty{
+/obj/item/weldingtool/fueled/mini/empty{
 	pixel_y = 6;
 	pixel_x = 5
 	},
@@ -69135,7 +69135,7 @@
 "kkV" = (
 /obj/structure/rack,
 /obj/item/wrench,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/clothing/head/utility/welding{
 	pixel_x = -3;
 	pixel_y = 5
@@ -70803,7 +70803,7 @@
 /area/station/cargo/storage)
 "kvd" = (
 /obj/structure/table/reinforced,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/clothing/head/utility/welding,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/glasses/welding,
@@ -91794,7 +91794,7 @@
 "nId" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/clothing/glasses/welding,
 /turf/open/floor/plating,
 /area/station/maintenance/port/central)
@@ -100333,7 +100333,7 @@
 "oSs" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/clothing/glasses/welding,
 /obj/structure/sign/calendar/directional/north,
 /obj/machinery/camera/autoname/directional/north,
@@ -161112,7 +161112,7 @@
 /area/station/maintenance/port/fore)
 "xYw" = (
 /obj/structure/table/reinforced,
-/obj/item/weldingtool,
+/obj/item/weldingtool/fueled,
 /obj/item/wrench,
 /obj/item/clothing/head/utility/welding,
 /turf/open/floor/iron/dark/textured_large,

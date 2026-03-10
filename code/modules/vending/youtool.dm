@@ -8,8 +8,9 @@
 	products = list(
 		/obj/item/stack/cable_coil = 10,
 		/obj/item/crowbar = 5,
-		/obj/item/weldingtool = 3,
+		/obj/item/weldingtool/fueled = 3,
 		/obj/item/welder_tank = 5,
+		/obj/item/weldingtool/electric/high_cell = 3,
 		/obj/item/wirecutters = 5,
 		/obj/item/wrench = 5,
 		/obj/item/analyzer = 5,

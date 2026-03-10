@@ -458,17 +458,17 @@ GLOBAL_VAR_INIT(disposals_animals_spawned, 0)
 		var/obj/item/dest_tagger/new_tagger = weapon
 		if(mounted_tagger)
 			balloon_alert(user, "already has a tagger!")
-			return
+			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 		if(HAS_TRAIT(new_tagger, TRAIT_NODROP) || !user.transferItemToLoc(new_tagger, src))
 			balloon_alert(user, "stuck to your hand!")
-			return
+			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 		new_tagger.moveToNullspace()
 		user.visible_message(span_notice("[user] snaps \the [new_tagger] onto [src]!"))
 		balloon_alert(user, "tagger returned")
 		playsound(src, 'sound/machines/click.ogg', 50, TRUE)
 		mounted_tagger = new_tagger
 		update_appearance()
-		return
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	else
 		return ..()
 

@@ -32,9 +32,15 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	/// If the match is broken
 	var/broken = FALSE
 
+/// Checks that we have enough oxygen to sustain flame
+/obj/item/match/proc/check_oxydizer()
+	var/datum/gas_mixture/air = return_air()
+	if(!isnull(air) && (air.has_gas(/datum/gas/oxygen, 1) || air.has_gas(/datum/gas/nitrous_oxide, 1)))
+		return TRUE
+
 /obj/item/match/process(seconds_per_tick)
 	smoketime -= seconds_per_tick * (1 SECONDS)
-	if(smoketime <= 0)
+	if(smoketime <= 0 || !check_oxydizer(src.loc))
 		matchburnout()
 	else
 		open_flame(heat)
