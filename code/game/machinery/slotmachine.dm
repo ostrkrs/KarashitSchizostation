@@ -110,7 +110,6 @@
 			qdel(inserted_coin)
 			return ITEM_INTERACT_SUCCESS
 	return ITEM_INTERACT_BLOCKING
-	return NONE
 
 /obj/machinery/computer/slot_machine/emag_act(mob/user, obj/item/card/emag/emag_card)
 	if(obj_flags & EMAGGED)
