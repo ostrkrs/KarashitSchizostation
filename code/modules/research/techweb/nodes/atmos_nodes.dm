@@ -12,12 +12,9 @@
 		"generic_tank",
 		"oxygen_tank",
 		"plasma_tank",
-		"plasmaman_tank_belt",
-		"plasmarefiller",
 		"extinguisher",
 		"pocketfireextinguisher",
 		"gas_filter",
-		"plasmaman_gas_filter",
 		"analyzer",
 		"pipe_painter",
 	)

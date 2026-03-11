@@ -178,18 +178,6 @@
 	category = list(RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_MEDICAL)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 
-/datum/design/plasmarefiller
-	name = "Plasmaman Jumpsuit Refill"
-	desc = "A refill pack for the auto-extinguisher on Plasma-man suits."
-	id = "plasmarefiller" //Why did this have no plasmatech
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*2, /datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT)
-	build_path = /obj/item/extinguisher_refill
-	category = list(
-		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_GAS_TANKS_EQUIPMENT
-	)
-	departmental_flags = ALL
-
 /datum/design/crewpinpointer
 	name = "Crew Pinpointer"
 	desc = "Allows tracking of someone's location if their suit sensors are turned to tracking beacon."
