@@ -1641,7 +1641,7 @@
 	if(!after_input_check(user))
 		return TRUE
 	if(input_name)
-		input_name = sanitize_name(input_name, allow_numbers = TRUE)
+		input_name = sanitize_name(input_name)
 	if(!input_name)
 		// Invalid/blank names give a randomly generated one.
 		if(user.gender == MALE)
@@ -1825,7 +1825,7 @@
 	switch(popup_input)
 		if("Name")
 			var/raw_input = tgui_input_text(user, "What name would you like to put on this card?", "Cardboard card name", scribbled_name || (ishuman(user) ? user.real_name : user.name), max_length = MAX_NAME_LEN)
-			var/input_name = sanitize_name(raw_input, allow_numbers = TRUE)
+			var/input_name = sanitize_name(raw_input)
 			if(!after_input_check(user, item, input_name, scribbled_name))
 				return
 			playsound(src, SFX_WRITING_PEN, 50, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, SOUND_FALLOFF_EXPONENT + 3, ignore_walls = FALSE)

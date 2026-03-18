@@ -19,6 +19,23 @@
 
 	return sentence
 
+/datum/language/serpentid/get_random_name(
+	gender = NEUTER,
+	name_count = default_name_count,
+	syllable_min = default_name_syllable_min,
+	syllable_max = default_name_syllable_max,
+	unique = FALSE,
+	force_use_syllables = FALSE,
+)
+
+	if(force_use_syllables)
+		return ..()
+
+	if(prob(50))
+		return "[pick(GLOB.serpentid_prefix)]-[rand(1, 999)]"
+	else
+		return "[capitalize(ascii2text(rand(97, 122)) + ascii2text(rand(97, 122)))]-[rand(1, 999)]"
+
 /datum/language_holder/serpentid
 	understood_languages = list(
 		/datum/language/common = list(LANGUAGE_MIND),
@@ -33,7 +50,6 @@
 	name = "sol speech synthesizer implant"
 	actions_types = null
 	// Implant gets damaged evevy emp_act(). If 0 - its fine. 1 - it stops working. Any more damage will give burn damage
-	// TODO: add more stages
 	var/emp_damage = 0
 
 /obj/item/implant/serp_sol_speaker/get_data()

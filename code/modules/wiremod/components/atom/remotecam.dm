@@ -164,7 +164,7 @@
 		current_camera_name = ""
 	else if(current_camera_name != parent.display_name)
 		current_camera_name = parent.display_name
-		var/new_cam_name = reject_bad_name(current_camera_name, allow_numbers = TRUE, ascii_only = FALSE, strict = TRUE, cap_after_symbols = FALSE)
+		var/new_cam_name = reject_bad_name(current_camera_name, ascii_only = FALSE, strict = TRUE, cap_after_symbols = FALSE)
 		//Set camera name using parent circuit name
 		if(new_cam_name)
 			shell_camera.c_tag = "[camera_prefix]: [new_cam_name] #[c_tag_random]"

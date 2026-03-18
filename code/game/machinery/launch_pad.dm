@@ -404,7 +404,7 @@
 			. = TRUE
 		if("rename")
 			. = TRUE
-			var/new_name = reject_bad_name(params["name"], allow_numbers = TRUE, max_length = MAX_NAME_LEN, cap_after_symbols = FALSE)
+			var/new_name = reject_bad_name(params["name"], max_length = MAX_NAME_LEN, cap_after_symbols = FALSE)
 			if(!new_name)
 				return
 			our_pad.display_name = new_name

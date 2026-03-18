@@ -95,7 +95,7 @@
 		if("add_note")
 			if(!params["content"])
 				return FALSE
-			var/content = reject_bad_name(params["content"], allow_numbers = TRUE, max_length = MAX_MESSAGE_LEN, strict = TRUE, cap_after_symbols = FALSE)
+			var/content = reject_bad_name(params["content"], max_length = MAX_MESSAGE_LEN, strict = TRUE, cap_after_symbols = FALSE)
 			if(!content)
 				return FALSE
 

@@ -11,9 +11,6 @@
 	/// These will be grouped together on the preferences menu
 	var/group
 
-	/// Whether or not to allow numbers in the person's name
-	var/allow_numbers = FALSE
-
 	/// If the highest priority job matches this, will prioritize this name in the UI
 	var/relevant_job
 
@@ -24,17 +21,17 @@
 
 
 /datum/preference/name/deserialize(input, datum/preferences/preferences)
-	return reject_bad_name("[input]", allow_numbers)
+	return reject_bad_name("[input]")
 
 
 /datum/preference/name/serialize(input)
 	// `is_valid` should always be run before `serialize`, so it should not
 	// be possible for this to return `null`.
-	return reject_bad_name(input, allow_numbers)
+	return reject_bad_name(input)
 
 
 /datum/preference/name/is_valid(value)
-	return istext(value) && !isnull(reject_bad_name(value, allow_numbers))
+	return istext(value) && !isnull(reject_bad_name(value))
 
 
 /// A character's real name
@@ -61,14 +58,19 @@
 	if (!input)
 		return input
 
-	if (CONFIG_GET(flag/humans_need_surnames) && preferences.read_preference(/datum/preference/choiced/species) == /datum/species/human)
+	var/datum/species/species_type = preferences.read_preference(/datum/preference/choiced/species)
+
+	if (CONFIG_GET(flag/humans_need_surnames) && species_type == /datum/species/human)
 		var/first_space = findtext(input, " ")
 		if(!first_space) //we need a surname
 			input += " [pick(GLOB.last_names)]"
 		else if(first_space == length(input))
 			input += "[pick(GLOB.last_names)]"
 
-	return reject_bad_name(input, allow_numbers)
+	if(!species_type.allow_numbers_in_names)
+		return reject_bad_name(input, allow_numbers = FALSE)
+	else
+		return reject_bad_name(input)
 
 /// The name for a backup human, when nonhumans are made into head of staff
 /datum/preference/name/backup_human
@@ -101,10 +103,7 @@
 
 /datum/preference/name/cyborg
 	savefile_key = "cyborg_name"
-
-	allow_numbers = TRUE
 	can_randomize = FALSE
-
 	explanation = "Cyborg name"
 	group = "silicons"
 	relevant_job = /datum/job/cyborg
@@ -114,8 +113,6 @@
 
 /datum/preference/name/ai
 	savefile_key = "ai_name"
-
-	allow_numbers = TRUE
 	explanation = "AI name"
 	group = "silicons"
 	relevant_job = /datum/job/ai
@@ -125,9 +122,6 @@
 
 /datum/preference/name/religion
 	savefile_key = "religion_name"
-
-	allow_numbers = TRUE
-
 	explanation = "Religion name"
 	group = "religion"
 
@@ -136,10 +130,7 @@
 
 /datum/preference/name/deity
 	savefile_key = "deity_name"
-
-	allow_numbers = TRUE
 	can_randomize = FALSE
-
 	explanation = "Deity name"
 	group = "religion"
 
@@ -148,10 +139,7 @@
 
 /datum/preference/name/bible
 	savefile_key = "bible_name"
-
-	allow_numbers = TRUE
 	can_randomize = FALSE
-
 	explanation = "Bible name"
 	group = "religion"
 
@@ -161,7 +149,6 @@
 /// The first name given to nuclear operative antagonists. The last name will be chosen by the team leader.
 /datum/preference/name/operative_alias
 	savefile_key = "operative_alias"
-	allow_numbers = TRUE //You can get a little wacky with your alias nobody will judge you
 	explanation = "Operative Alias"
 	group = "antagonists"
 

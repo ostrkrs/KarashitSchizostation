@@ -523,7 +523,7 @@ GLOBAL_LIST_EMPTY(virtual_pets_list)
 			else
 				pet.add_atom_colour(chosen_color, FIXED_COLOUR_PRIORITY)
 
-			var/input_name = sanitize_name(params["chosen_name"], allow_numbers = TRUE)
+			var/input_name = sanitize_name(params["chosen_name"])
 			pet.name = (input_name ? input_name : initial(pet.name))
 			new /obj/effect/temp_visual/guardian/phase(pet.loc)
 

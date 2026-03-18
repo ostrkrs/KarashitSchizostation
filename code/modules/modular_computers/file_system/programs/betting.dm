@@ -68,8 +68,8 @@ GLOBAL_LIST_EMPTY_TYPED(active_bets, /datum/active_bet)
 		return
 	switch(action)
 		if("create_bet")
-			var/title = reject_bad_name(params["title"], allow_numbers = TRUE, max_length = MAX_LENGTH_TITLE, cap_after_symbols = FALSE)
-			var/description = reject_bad_name(params["description"], allow_numbers = TRUE, max_length = MAX_LENGTH_DESCRIPTION, cap_after_symbols = FALSE)
+			var/title = reject_bad_name(params["title"], max_length = MAX_LENGTH_TITLE, cap_after_symbols = FALSE)
+			var/description = reject_bad_name(params["description"], max_length = MAX_LENGTH_DESCRIPTION, cap_after_symbols = FALSE)
 			if(isnull(title) || isnull(description))
 				return
 			var/list/options = list(params["option1"], params["option2"], params["option3"], params["option4"])
@@ -79,7 +79,7 @@ GLOBAL_LIST_EMPTY_TYPED(active_bets, /datum/active_bet)
 				if(isnull(option) || option == "" || options.Find(option))
 					continue
 				options += option
-				option = reject_bad_name(option, allow_numbers = TRUE, max_length = MAX_LENGTH_TITLE, cap_after_symbols = FALSE)
+				option = reject_bad_name(option, max_length = MAX_LENGTH_TITLE, cap_after_symbols = FALSE)
 			if(length(options) < 2)
 				to_chat(user, span_danger("2 options minimum required to start a bet."))
 				return

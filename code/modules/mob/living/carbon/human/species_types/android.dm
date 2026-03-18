@@ -23,7 +23,7 @@
 		TRAIT_RESISTLOWPRESSURE,
 		TRAIT_TOXIMMUNE,
 	)
-
+	allow_numbers_in_names = TRUE
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
 	exotic_bloodtype = BLOOD_TYPE_OIL
 	meat = null

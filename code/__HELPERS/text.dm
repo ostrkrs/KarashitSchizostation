@@ -22,11 +22,11 @@
 
 
 ///returns nothing with an alert instead of the message if it contains something in the ic filter, and sanitizes normally if the name is fine. It returns nothing so it backs out of the input the same way as if you had entered nothing.
-/proc/sanitize_name(target, allow_numbers = FALSE, cap_after_symbols = TRUE)
+/proc/sanitize_name(target, cap_after_symbols = TRUE)
 	if(is_ic_filtered(target) || is_soft_ic_filtered(target))
 		tgui_alert(usr, "You cannot set a name that contains a word prohibited in IC chat!")
 		return ""
-	var/result = reject_bad_name(target, allow_numbers = allow_numbers, strict = TRUE, cap_after_symbols = cap_after_symbols)
+	var/result = reject_bad_name(target, strict = TRUE, cap_after_symbols = cap_after_symbols)
 	if(!result)
 		tgui_alert(usr, "Invalid name.")
 		return ""
@@ -157,7 +157,7 @@
  * * allow_numbers - allows numbers and common special characters - used for silicon/other weird things names
  * * cap_after_symbols - words like Bob's will be capitalized to Bob'S by default. False is good for titles.
  */
-/proc/reject_bad_name(t_in, allow_numbers = FALSE, max_length = MAX_NAME_LEN, ascii_only = TRUE, strict = FALSE, cap_after_symbols = TRUE)
+/proc/reject_bad_name(t_in, allow_numbers = TRUE, max_length = MAX_NAME_LEN, ascii_only = TRUE, strict = FALSE, cap_after_symbols = TRUE)
 	if(!t_in)
 		return //Rejects the input if it is null
 

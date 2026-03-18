@@ -190,7 +190,7 @@
 			var/new_mines = !ai_controller.blackboard[BB_MINEBOT_PLANT_MINES]
 			ai_controller.set_blackboard_key(BB_MINEBOT_PLANT_MINES, new_mines)
 		if("set_name")
-			var/input_name = sanitize_name(params["chosen_name"], allow_numbers = TRUE)
+			var/input_name = sanitize_name(params["chosen_name"])
 			name = (input_name ? input_name : initial(name))
 		if("toggle_mode")
 			set_combat_mode(!combat_mode)

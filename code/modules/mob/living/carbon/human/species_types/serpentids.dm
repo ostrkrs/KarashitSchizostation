@@ -74,6 +74,7 @@
 		TRAIT_SIGNER,
 		TRAIT_SPACER_BORN,
 	)
+	allow_numbers_in_names = TRUE
 	digitigrade_customization = DIGITIGRADE_NEVER
 	sexes = FALSE // these goobers don't know what sex is
 	mob_size = MOB_SIZE_LARGE

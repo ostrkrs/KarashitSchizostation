@@ -41,7 +41,7 @@
 			if(!field || !(field in target?.vars))
 				return FALSE
 
-			var/value = reject_bad_name(params["value"], allow_numbers = TRUE, max_length = MAX_BROADCAST_LEN, strict = TRUE, cap_after_symbols = FALSE) || "Unknown"
+			var/value = reject_bad_name(params["value"], max_length = MAX_BROADCAST_LEN, strict = TRUE, cap_after_symbols = FALSE) || "Unknown"
 			investigate_log("[key_name(user)] changed the field: \"[field]\" with value: \"[target.vars[field]]\" to new value: \"[value]\"", INVESTIGATE_RECORDS)
 			target.vars[field] = value
 

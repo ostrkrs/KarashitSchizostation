@@ -22,6 +22,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/examine_limb_id
 	///This is the fluff name. They are displayed on health analyzers and in the character setup menu. Leave them generic for other servers to customize.
 	var/name
+	/// TRUE, if we want to sanitize names for this species from numbers
+	var/allow_numbers_in_names = FALSE
 	/**
 	 * The formatting of the name of the species in plural context. Defaults to "[name]\s" if unset.
 	 *  Ex "[Plasmamen] are weak", "[Mothmen] are strong", "[Lizardpeople] don't like", "[Golems] hate"

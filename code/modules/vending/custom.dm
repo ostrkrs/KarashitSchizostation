@@ -209,7 +209,7 @@
 		return ..()
 
 	. ITEM_INTERACT_FAILURE
-	var/new_name = reject_bad_name(tgui_input_text(user, "Set name", "Name", name, max_length = 20), allow_numbers = TRUE, strict = TRUE, cap_after_symbols = FALSE)
+	var/new_name = reject_bad_name(tgui_input_text(user, "Set name", "Name", name, max_length = 20), strict = TRUE, cap_after_symbols = FALSE)
 	if(!user.can_perform_action(src, FORBID_TELEKINESIS_REACH))
 		return
 	if (new_name)

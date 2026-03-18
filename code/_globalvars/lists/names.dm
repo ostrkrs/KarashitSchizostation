@@ -23,6 +23,7 @@ GLOBAL_LIST_INIT(megacarp_last_names, world.file2list("strings/names/megacarp2.t
 GLOBAL_LIST_INIT(mime_names, world.file2list("strings/names/mime.txt"))
 GLOBAL_LIST_INIT(moth_first, world.file2list("strings/names/moth_first.txt"))
 GLOBAL_LIST_INIT(moth_last, world.file2list("strings/names/moth_last.txt"))
+GLOBAL_LIST_INIT(serpentid_prefix, world.file2list("strings/names/serpentid_prefix.txt"))
 GLOBAL_LIST_INIT(nightmare_names, world.file2list("strings/names/nightmare.txt"))
 GLOBAL_LIST_INIT(ninja_names, world.file2list("strings/names/ninjaname.txt"))
 GLOBAL_LIST_INIT(ninja_titles, world.file2list("strings/names/ninjatitle.txt"))

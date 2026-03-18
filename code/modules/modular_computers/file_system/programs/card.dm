@@ -176,7 +176,7 @@
 				return TRUE
 
 			// However, we are going to reject bad names overall including names with invalid characters in them, while allowing numbers.
-			new_name = reject_bad_name(new_name, allow_numbers = TRUE)
+			new_name = reject_bad_name(new_name)
 
 			if(!new_name)
 				to_chat(usr, span_notice("Software error: The ID card rejected the new name as it contains prohibited characters."))

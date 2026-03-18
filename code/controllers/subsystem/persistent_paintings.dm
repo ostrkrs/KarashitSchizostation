@@ -214,7 +214,7 @@ SUBSYSTEM_DEF(persistent_paintings)
 	if(version < 3) //Reduces the allowed length of titles from 1000 characters circa to 42.
 		current_data["version"] = 3
 		var/old_title = current_data["title"]
-		var/new_title = reject_bad_name(old_title, allow_numbers = TRUE, ascii_only = FALSE, strict = TRUE, cap_after_symbols = FALSE)
+		var/new_title = reject_bad_name(old_title, ascii_only = FALSE, strict = TRUE, cap_after_symbols = FALSE)
 		current_data["title"] = new_title || "Illegibly Titled Artwork"
 
 	return current_data
