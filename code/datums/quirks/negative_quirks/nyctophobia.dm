@@ -5,6 +5,7 @@
 	value = -3
 	medical_record_text = "Patient demonstrates a fear of the dark. (Seriously?)"
 	hardcore_value = 5
+	mob_trait = TRAIT_NYCTOPHOBIA
 	mail_goodies = list(/obj/effect/spawner/random/engineering/flashlight)
 
 /datum/quirk/nyctophobia/add(client/client_source)

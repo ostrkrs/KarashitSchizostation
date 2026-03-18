@@ -206,10 +206,10 @@
 	contains = list(/obj/item/toy/plush/shark)
 
 /datum/supply_pack/goody/serpplush
-	name = "Serpentide Plushie"
+	name = "Serpentid Plushie"
 	desc = "Your cute buddy to chitter-chat with."
 	cost = PAYCHECK_CREW * 5
-	contains = list(/obj/item/toy/plush/serpentide)
+	contains = list(/obj/item/toy/plush/serpentid)
 
 /datum/supply_pack/goody/horseplush
 	name = "Horse Plushie"

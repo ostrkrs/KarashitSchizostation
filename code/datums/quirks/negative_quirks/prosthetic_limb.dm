@@ -4,6 +4,7 @@
 	icon = "tg-prosthetic-leg"
 	value = -3
 	hardcore_value = 3
+	mob_trait = TRAIT_PROSTHETIC_LIMB
 	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_CHANGES_APPEARANCE
 	mail_goodies = list(/obj/item/weldingtool/fueled/mini, /obj/item/stack/cable_coil/five)
 	/// The slot to replace, in string form

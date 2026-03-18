@@ -306,9 +306,9 @@
 	var/mob/living/carbon/human/human_mob = mymob
 	if(istype(human_mob))
 		blocked_slots |= human_mob.dna?.species?.no_equip_flags
-		if((isnull(human_mob.w_uniform) || !(human_mob.w_uniform.item_flags & IN_INVENTORY)) && !HAS_TRAIT(human_mob, TRAIT_NO_JUMPSUIT))
+		if((isnull(human_mob.w_uniform) || !(human_mob.w_uniform.item_flags & IN_INVENTORY)))
 			var/obj/item/bodypart/chest = human_mob.get_bodypart(BODY_ZONE_CHEST)
-			if(isnull(chest) || IS_ORGANIC_LIMB(chest))
+			if(isnull(chest))
 				blocked_slots |= ITEM_SLOT_ID|ITEM_SLOT_BELT
 			var/obj/item/bodypart/left_leg = human_mob.get_bodypart(BODY_ZONE_L_LEG)
 			if(isnull(left_leg) || IS_ORGANIC_LIMB(left_leg))

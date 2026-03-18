@@ -201,6 +201,8 @@
 /datum/quirk/proc/is_species_appropriate(datum/species/mob_species)
 	if(mob_trait in GLOB.species_prototypes[mob_species].inherent_traits)
 		return FALSE
+	if(mob_trait in GLOB.species_prototypes[mob_species].banned_traits)
+		return FALSE
 	return TRUE
 
 /// Subtype quirk that has some bonus logic to spawn items for the player.

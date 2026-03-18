@@ -72,7 +72,7 @@
 		return
 
 	var/mob/living/carbon/human/digitigrade_fan = arrived
-	if(HAS_TRAIT(digitigrade_fan, TRAIT_PIERCEIMMUNE))
+	if(HAS_TRAIT(digitigrade_fan, TRAIT_PIERCEIMMUNE) || HAS_TRAIT(digitigrade_fan, TRAIT_HARD_SOLES))
 		return
 
 	if((flags & CALTROP_IGNORE_WALKERS) && digitigrade_fan.move_intent == MOVE_INTENT_CREEP)

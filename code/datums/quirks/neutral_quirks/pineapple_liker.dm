@@ -3,6 +3,7 @@
 	desc = "You find yourself greatly enjoying fruits of the ananas genus. You can't seem to ever get enough of their sweet goodness!"
 	icon = FA_ICON_THUMBS_UP
 	value = 0
+	mob_trait = TRAIT_PINEAPPLE_LIKER
 	gain_text = span_notice("You feel an intense craving for pineapple.")
 	lose_text = span_notice("Your feelings towards pineapples seem to return to a lukewarm state.")
 	medical_record_text = "Patient demonstrates a pathological love of pineapple."

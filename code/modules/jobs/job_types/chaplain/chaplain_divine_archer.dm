@@ -51,6 +51,7 @@
 	strip_delay = 4 SECONDS
 	equip_delay_other = 2 SECONDS
 	resistance_flags = NONE
+	supports_variations_flags = NONE
 	armor_type = /datum/armor/chaplainsuit_armor_weaker
 
 /// boots

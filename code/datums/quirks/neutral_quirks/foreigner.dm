@@ -3,6 +3,7 @@
 	desc = "You're not from around here. You don't know Galactic Common!"
 	icon = FA_ICON_LANGUAGE
 	value = 0
+	mob_trait = TRAIT_FOREIGNER
 	gain_text = span_notice("The words being spoken around you don't make any sense.")
 	lose_text = span_notice("You've developed fluency in Galactic Common.")
 	medical_record_text = "Patient does not speak Galactic Common and may require an interpreter."

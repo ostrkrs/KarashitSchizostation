@@ -47,9 +47,6 @@
 	var/currently_flickered
 	var/obj/effect/dummy/lighting_obj/ethereal_light
 
-/datum/species/ethereal/check_roundstart_eligible()
-	return FALSE
-
 /datum/species/ethereal/Destroy(force)
 	QDEL_NULL(ethereal_light)
 	return ..()

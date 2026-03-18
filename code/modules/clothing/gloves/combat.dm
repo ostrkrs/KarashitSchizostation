@@ -34,6 +34,7 @@
 	desc = "Is it just me or is there a pair of gloves on the floor?"
 	icon_state = "ftc_gloves"
 	inhand_icon_state = "greyscale_gloves"
+	supports_variations_flags = NONE
 
 /obj/item/clothing/gloves/combat/floortile/Initialize(mapload)
 	. = ..()

@@ -405,3 +405,9 @@
 	if(maxHealth - damage <= damage_per_block)
 		return FALSE
 	return TRUE
+
+/obj/item/organ/heart/serpentid
+	name = "serpentid heart"
+	icon_state = "heart_serpentid-on"
+	base_icon_state = "heart_serpentid"
+	food_reagents = list(/datum/reagent/consumable/nutriment/organ_tissue = 10, /datum/reagent/love = 2.5) // twice more nutriments

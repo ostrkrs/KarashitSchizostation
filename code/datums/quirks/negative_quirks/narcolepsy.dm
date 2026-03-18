@@ -4,6 +4,7 @@
 	icon = FA_ICON_BED
 	value = -8
 	hardcore_value = 8
+	mob_trait = TRAIT_NARCOLEPSY
 	medical_record_text = "Patient may involuntarily fall asleep during normal activities, and feel drowsy at any given moment."
 	mail_goodies = list(
 		/obj/item/reagent_containers/cup/glass/coffee,

@@ -71,6 +71,9 @@
 	QDEL_NULL(physiology)
 	GLOB.human_list -= src
 
+	if(isserpentid(src) && !QDELETED(legcuffed))
+		QDEL_NULL(legcuffed)
+
 	if (mob_mood)
 		QDEL_NULL(mob_mood)
 
@@ -1159,3 +1162,6 @@
 
 /mob/living/carbon/human/species/zombie/infectious
 	race = /datum/species/zombie/infectious
+
+/mob/living/carbon/human/species/serpentid
+	race = /datum/species/serpentid

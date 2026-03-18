@@ -728,6 +728,8 @@
 		icon_state_to_use += "paw"
 	else if(LAZYACCESS(species_types, "bot"))
 		icon_state_to_use += "bot"
+	else if(LAZYACCESS(species_types, SPECIES_SERPENTID))
+		icon_state_to_use += "tail"
 
 	for(var/Ddir in GLOB.cardinals)
 		if(entered_dirs & Ddir)

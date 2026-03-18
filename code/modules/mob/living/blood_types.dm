@@ -395,3 +395,13 @@
 
 /datum/blood_type/random_chemical/type_key()
 	return reagent_type
+
+// Serpentid blood type
+/datum/blood_type/serpentid
+	name = BLOOD_TYPE_SERPENTID
+	desc = "Copper-based serpentid hemolymph. Toxic to humans."
+	dna_string = "Serpentid DNA"
+	color = BLOOD_COLOR_SERPENTID
+	reagent_type = /datum/reagent/blood/serpentid
+	restoration_chem = /datum/reagent/copper
+	compatible_types = list(/datum/blood_type/serpentid)

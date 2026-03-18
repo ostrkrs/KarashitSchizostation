@@ -394,7 +394,6 @@
 		</tbody>
 	</table>
 	<br/>
-	Blood types not written above can only receive from the same blood type.
 	"}
 
 	/*

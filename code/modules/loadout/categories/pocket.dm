@@ -80,9 +80,9 @@
 	name = "Plush (Shark)"
 	item_path = /obj/item/toy/plush/shark
 
-/datum/loadout_item/pocket_items/plushies_n_toys/serpentide
-	name = "Plush (Serpentide)"
-	item_path = /obj/item/toy/plush/serpentide
+/datum/loadout_item/pocket_items/plushies_n_toys/serpentid
+	name = "Plush (Serpentid)"
+	item_path = /obj/item/toy/plush/serpentid
 
 /datum/loadout_item/pocket_items/plushies_n_toys/snake
 	name = "Plush (Snake)"

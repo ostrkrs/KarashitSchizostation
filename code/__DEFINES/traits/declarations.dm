@@ -188,6 +188,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_IMMUNODEFICIENCY "immunodeficiency"
 #define TRAIT_GENELESS "geneless"
 #define TRAIT_PIERCEIMMUNE "pierce_immunity"
+#define TRAIT_HARD_SOLES "hard_soles"
 #define TRAIT_NODISMEMBER "dismember_immunity"
 #define TRAIT_NOFIRE "nonflammable"
 #define TRAIT_NOFIRE_SPREAD "no_fire_spreading"
@@ -198,6 +199,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_TOSS_GUN_HARD "toss_gun_hard"
 /// Species with this trait are genderless
 #define TRAIT_AGENDER "agender"
+/// Allergic to various substances
+#define TRAIT_ALLERGIC "allergic"
 /// Species with this trait have a blood clan mechanic
 #define TRAIT_BLOOD_CLANS "blood_clans"
 /// Species with this trait use skin tones for coloration
@@ -962,9 +965,10 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 //quirk traits
 #define TRAIT_ALCOHOL_TOLERANCE "alcohol_tolerance"
 #define TRAIT_ANOSMIA "anosmia"
-#define TRAIT_HEAVY_DRINKER "heavy_drinker"
 #define TRAIT_AGEUSIA "ageusia"
+#define TRAIT_FLUORIDE_STARE "fluoride_stare"
 #define TRAIT_HEAVY_SLEEPER "heavy_sleeper"
+#define TRAIT_HETEROCROMATIC "heterocromatic"
 #define TRAIT_NIGHT_VISION "night_vision"
 #define TRAIT_LIGHT_STEP "light_step"
 #define TRAIT_SPIRITUAL "spiritual"
@@ -990,12 +994,42 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_EXTROVERT "extrovert"
 #define TRAIT_INTROVERT "introvert"
 #define TRAIT_ANXIOUS "anxious"
+#define TRAIT_JUNKIE "junkie"
+#define TRAIT_HEAVY_DRINKER "heavy_drinker"
 #define TRAIT_SMOKER "smoker"
 #define TRAIT_POSTERBOY "poster_boy"
 #define TRAIT_THROWINGARM "throwing_arm"
 #define TRAIT_SETTLER "settler"
 #define TRAIT_STRONG_STOMACH "strong_stomach"
 #define TRAIT_VEGETARIAN "trait_vegetarian"
+#define TRAIT_GAMER "gamer"
+#define TRAIT_PROSTHETIC_LIMB "prosthetic_limb"
+#define TRAIT_QUADRUPLE_AMPUTEE "quadruple_amputee"
+#define TRAIT_BADBACK "badback"
+#define TRAIT_BLINDNESS "blindness"
+#define TRAIT_BODY_PURIST "body_purist"
+#define TRAIT_BRAINPROBLEMS "brainproblems"
+#define TRAIT_CHRONIC_ILLNESS "chronic_illness"
+#define TRAIT_FAMILY_HEIRLOOM "family_heirloom"
+#define TRAIT_FOOD_ALLERGIC "food_allergic"
+#define TRAIT_GLASS_JAW "glass_jaw"
+#define TRAIT_HEMIPLEGIC "hemiplegic"
+#define TRAIT_INDEBTED "indebted"
+#define TRAIT_INSANITY "insanity"
+#define TRAIT_NEARSIGHTED "nearsighted"
+#define TRAIT_NYCTOPHOBIA "nyctophobia"
+#define TRAIT_PARAPLEGIC "paraplegic"
+#define TRAIT_PHOTOPHOBIA "photophobia"
+#define TRAIT_TIN_MAN "tin_man"
+#define TRAIT_NARCOLEPSY "narcolepsy"
+#define TRAIT_FOREIGNER "foreigner"
+#define TRAIT_PINEAPPLE_HATER "pineapple_hater"
+#define TRAIT_PINEAPPLE_LIKER "pineapple_liker"
+#define TRAIT_TRANSHUMANIST "transhumanist"
+#define TRAIT_BILINGUAL "bilingual"
+#define TRAIT_DRUNKHEALING "drunkhealing"
+#define TRAIT_SIGNER "signer"
+#define TRAIT_SPACER_BORN "spacer_born"
 
 /// This mob always lands on their feet when they fall, for better or for worse.
 #define TRAIT_CATLIKE_GRACE "catlike_grace"
@@ -1014,9 +1048,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 
 /// Gives you the Shifty Eyes quirk, rarely making people who examine you think you examined them back even when you didn't
 #define TRAIT_SHIFTY_EYES "shifty_eyes"
-
-///Trait for the gamer quirk.
-#define TRAIT_GAMER "gamer"
 
 ///Trait for dryable items
 #define TRAIT_DRYABLE "trait_dryable"

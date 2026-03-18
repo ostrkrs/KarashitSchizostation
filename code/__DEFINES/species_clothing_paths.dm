@@ -9,7 +9,8 @@
 //DIGITIGRADE PATHS
 ///The dmi containing digitigrade uniforms
 #define DIGITIGRADE_UNIFORM_FILE 'icons/mob/human/species/misc/digitigrade.dmi'
-///The dmi containing digitigrade shoes
-#define DIGITIGRADE_SHOES_FILE 'icons/mob/human/species/misc/digitigrade_shoes.dmi'
-///The dmi containing digitigrade oversuits
-#define DIGITIGRADE_SUIT_FILE 'icons/mob/human/species/misc/digitigrade_suits.dmi'
+
+//SERPENTID PATHS
+#define SERPENTID_GLOVES_FILE 'icons/mob/clothing/species/serpentid/serpentid_gloves.dmi'
+#define SERPENTID_MASK_FILE 'icons/mob/clothing/species/serpentid/serpentid_mask.dmi'
+#define SERPENTID_BELT_FILE 'icons/mob/clothing/species/serpentid/serpentid_belt.dmi'

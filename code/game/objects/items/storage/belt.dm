@@ -43,6 +43,7 @@
 	drop_sound = 'sound/items/handling/toolbelt_drop.ogg'
 	pickup_sound = 'sound/items/handling/toolbelt_pickup.ogg'
 	storage_type = /datum/storage/utility_belt
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/utility/chief
 	name = "chief engineer's toolbelt"
@@ -205,6 +206,7 @@
 	drop_sound = 'sound/items/handling/toolbelt_drop.ogg'
 	pickup_sound = 'sound/items/handling/toolbelt_pickup.ogg'
 	storage_type = /datum/storage/medical_belt
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/medical/paramedic
 	name = "EMT belt"
@@ -269,6 +271,7 @@
 	worn_icon_state = "security"
 	content_overlays = TRUE
 	storage_type = /datum/storage/security_belt
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/security/full/PopulateContents()
 	new /obj/item/reagent_containers/spray/pepper(src)
@@ -287,6 +290,7 @@
 	content_overlays = FALSE
 	custom_premium_price = PAYCHECK_COMMAND * 3
 	storage_type = /datum/storage/security_belt/webbing
+	supports_variations_flags = NONE
 
 /obj/item/storage/belt/mining
 	name = "explorer's webbing"
@@ -348,6 +352,7 @@
 	worn_icon_state = "championbelt"
 	custom_materials = list(/datum/material/gold=SMALL_MATERIAL_AMOUNT *4)
 	storage_type = /datum/storage/champion_belt
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/champion/Initialize(mapload)
 	. = ..()
@@ -411,6 +416,7 @@
 	inhand_icon_state = "security"
 	worn_icon_state = "security"
 	content_overlays = TRUE
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/military/abductor/full/PopulateContents()
 	new /obj/item/screwdriver/abductor(src)
@@ -427,6 +433,7 @@
 	icon_state = "military"
 	inhand_icon_state = "security"
 	worn_icon_state = "military"
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/military/assault
 	name = "assault belt"
@@ -435,6 +442,7 @@
 	inhand_icon_state = "security"
 	worn_icon_state = "assault"
 	storage_type = /datum/storage/military_belt/assault
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/military/assault/full/PopulateContents()
 	generate_items_inside(list(
@@ -451,6 +459,7 @@
 	drop_sound = 'sound/items/handling/toolbelt_drop.ogg'
 	pickup_sound = 'sound/items/handling/toolbelt_pickup.ogg'
 	storage_type = /datum/storage/grenade_belt
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/grenade/full/PopulateContents()
 	generate_items_inside(list(
@@ -496,6 +505,7 @@
 	drop_sound = 'sound/items/handling/toolbelt_drop.ogg'
 	pickup_sound = 'sound/items/handling/toolbelt_pickup.ogg'
 	storage_type = /datum/storage/janitor_belt
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/janitor/full/PopulateContents()
 	new /obj/item/lightreplacer(src)
@@ -521,6 +531,7 @@
 	dying_key = DYE_REGISTRY_FANNYPACK
 	custom_price = PAYCHECK_CREW * 2
 	storage_type = /datum/storage/fanny_pack
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/storage/belt/fannypack/black
 	name = "black fannypack"
@@ -596,6 +607,7 @@
 	desc = "holds like, blades and stuff. You should not be seeing this."
 	w_class = WEIGHT_CLASS_BULKY
 	interaction_flags_click = parent_type::interaction_flags_click | NEED_DEXTERITY | NEED_HANDS
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 	var/stored_blade
 
 /obj/item/storage/belt/sheath/Initialize(mapload)
@@ -657,3 +669,4 @@
 	worn_icon_state = "plantbelt"
 	content_overlays = TRUE
 	storage_type = /datum/storage/plant_belt
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION

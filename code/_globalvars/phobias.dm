@@ -433,7 +433,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/item/clothing/suit/hooded/bee_costume,
 		/obj/item/toy/plush/beeplushie,
 		/obj/item/toy/plush/moth,
-		/obj/item/toy/plush/serpentide,
+		/obj/item/toy/plush/serpentid,
 		/obj/structure/beebox,
 	)),
 	"lizards" = typecacheof(list(
@@ -571,6 +571,7 @@ GLOBAL_LIST_INIT(phobia_species, list(
 	"insects" = typecacheof(list(
 		/datum/species/fly,
 		/datum/species/moth,
+		/datum/species/serpentid,
 	)),
 	"lizards" = typecacheof(list(/datum/species/lizard)),
 	"robots" = typecacheof(list(/datum/species/android)),

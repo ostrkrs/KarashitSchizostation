@@ -542,6 +542,8 @@ Diagnostic HUDs!
 		return
 	holder.pixel_w = -(get_cached_width() - ICON_SIZE_X) / 2
 	holder.pixel_z = get_cached_height() - ICON_SIZE_Y
+	if(isserpentid(src))
+		holder.pixel_z += 12
 
 /atom/proc/set_hud_image_state(hud_type, hud_state, x_offset = 0, y_offset = 0)
 	if (!hud_list) // Still initializing

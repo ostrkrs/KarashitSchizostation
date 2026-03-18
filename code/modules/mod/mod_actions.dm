@@ -47,6 +47,9 @@
 	if(!.)
 		return
 	var/obj/item/mod/control/mod = target
+	if(isserpentid(usr))
+		playsound(mod, 'sound/machines/scanner/scanbuzz.ogg', 25, TRUE, SILENCED_SOUND_EXTRARANGE)
+		return
 	if(trigger_flags & TRIGGER_SECONDARY_ACTION)
 		mod.quick_deploy(usr)
 	else

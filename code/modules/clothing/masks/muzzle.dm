@@ -8,6 +8,7 @@
 	flags_cover = MASKCOVERSMOUTH
 	w_class = WEIGHT_CLASS_SMALL
 	equip_delay_other = 2 SECONDS
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 
 /obj/item/clothing/mask/muzzle/Initialize(mapload)
 	. = ..()

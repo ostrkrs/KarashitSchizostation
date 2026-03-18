@@ -692,3 +692,8 @@
 	desc = "The brain of a pod person, it's a bit more plant-like than a human brain."
 	foodtype_flags = PODPERSON_ORGAN_FOODTYPES
 	color = COLOR_LIME
+
+/obj/item/organ/brain/serpentid
+	name = "serpentid brain"
+	icon_state = "brain_serpentid"
+	can_smoothen_out = FALSE

@@ -4,6 +4,7 @@
 	icon = FA_ICON_DOLLAR
 	quirk_flags = QUIRK_HUMAN_ONLY|QUIRK_HIDE_FROM_SCAN
 	value = -2
+	mob_trait = TRAIT_INDEBTED
 	medical_record_text = "Alas, the patient struggled to scrape together enough money to pay the checkup bill."
 	hardcore_value = 2
 

@@ -602,6 +602,15 @@
 	if(agetext)
 		. += agetext
 
+	if(isserpentid(src))
+		var/is_really_borked = FALSE
+		for(var/obj/item/implant/serp_sol_speaker/imp in implants)
+			var/is_borked = imp.emp_damage
+			if (is_borked > 0)
+				is_really_borked = TRUE
+		if(is_really_borked)
+			. += span_notice("[user.p_Their()] speech synthesizer emits constant silent white noise.") + "\n"
+
 /// Reports all body parts which are mismatched with the user's species
 /mob/living/carbon/human/proc/get_mismatched_limb_text()
 	var/list/covered = get_covered_body_zones()

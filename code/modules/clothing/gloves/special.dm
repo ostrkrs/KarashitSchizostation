@@ -7,6 +7,7 @@
 	equip_delay_self = 3 SECONDS
 	equip_delay_other = 4 SECONDS
 	clothing_traits = list(TRAIT_CHUNKYFINGERS)
+	supports_variations_flags = NONE
 	undyeable = TRUE
 	var/datum/weakref/pull_component_weakref
 
@@ -56,6 +57,7 @@
 	icon_state = "rapid"
 	inhand_icon_state = null
 	clothing_traits = list(TRAIT_FINGERPRINT_PASSTHROUGH)
+	supports_variations_flags = NONE
 
 /obj/item/clothing/gloves/rapid/Initialize(mapload)
 	. = ..()
@@ -152,6 +154,7 @@
 	siemens_coefficient = 0.8
 	armor_type = /datum/armor/tinker_gloves
 	clothing_traits = list(TRAIT_QUICK_BUILD)
+	supports_variations_flags = NONE
 	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT, /datum/material/silver=HALF_SHEET_MATERIAL_AMOUNT*1.5, /datum/material/gold =HALF_SHEET_MATERIAL_AMOUNT)
 	resistance_flags = NONE
 
@@ -170,6 +173,7 @@
 	siemens_coefficient = 0.3
 	clothing_traits = list(TRAIT_QUICKER_CARRY, TRAIT_CHUNKYFINGERS)
 	clothing_flags = parent_type::clothing_flags | THICKMATERIAL|STOPSPRESSUREDAMAGE
+	supports_variations_flags = NONE
 
 /obj/item/clothing/gloves/atmos/Initialize(mapload)
 	. = ..()

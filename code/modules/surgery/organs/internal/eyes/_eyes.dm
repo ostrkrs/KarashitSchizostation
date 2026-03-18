@@ -40,6 +40,7 @@
 	var/eye_color_left = null // set to a hex code to override a mob's left eye color
 	var/eye_color_right = null // set to a hex code to override a mob's right eye color
 	var/eye_icon_state = "eyes"
+	var/mutable_appearance_icon = 'icons/mob/human/human_face.dmi'
 	/// Do these eyes have blinking animations
 	var/blink_animation = TRUE
 	/// Icon state for iris overlays
@@ -263,8 +264,8 @@
 	if(isnull(eye_icon_state))
 		return list()
 
-	var/mutable_appearance/eye_left = mutable_appearance('icons/mob/human/human_face.dmi', "[eye_icon_state]_l", -EYES_LAYER, parent)
-	var/mutable_appearance/eye_right = mutable_appearance('icons/mob/human/human_face.dmi', "[eye_icon_state]_r", -EYES_LAYER, parent)
+	var/mutable_appearance/eye_left = mutable_appearance(mutable_appearance_icon, "[eye_icon_state]_l", -EYES_LAYER, parent)
+	var/mutable_appearance/eye_right = mutable_appearance(mutable_appearance_icon, "[eye_icon_state]_r", -EYES_LAYER, parent)
 	var/list/overlays = list(eye_left, eye_right)
 
 	if(overlay_ignore_lighting && !(parent.obscured_slots & HIDEEYES))
@@ -284,12 +285,12 @@
 			overlays += eyelids
 
 	if (scarring & RIGHT_EYE_SCAR)
-		var/mutable_appearance/right_scar = mutable_appearance('icons/mob/human/human_face.dmi', "eye_scar_right", -EYES_LAYER, parent)
+		var/mutable_appearance/right_scar = mutable_appearance(mutable_appearance_icon, "eye_scar_right", -EYES_LAYER, parent)
 		right_scar.color = my_head.draw_color
 		overlays += right_scar
 
 	if (scarring & LEFT_EYE_SCAR)
-		var/mutable_appearance/left_scar = mutable_appearance('icons/mob/human/human_face.dmi', "eye_scar_left", -EYES_LAYER, parent)
+		var/mutable_appearance/left_scar = mutable_appearance(mutable_appearance_icon, "eye_scar_left", -EYES_LAYER, parent)
 		left_scar.color = my_head.draw_color
 		overlays += left_scar
 
@@ -1179,3 +1180,48 @@
 	iris_overlay = null
 	foodtype_flags = PODPERSON_ORGAN_FOODTYPES
 	penlight_message = "are green and plant-like"
+
+/obj/item/organ/eyes/serpentid
+	name = "serpentid eyes"
+	desc = "Small orange orbs. With pair welding shield linses."
+	icon_state = "eyes_serpentid"
+	eye_icon_state = "eyes_serpentid"
+	iris_overlay = null
+	mutable_appearance_icon = 'icons/mob/human/species/serpentid/serpentid_eyes.dmi'
+	blink_animation = FALSE
+	flash_protect = FLASH_PROTECTION_SENSITIVE
+	pupils_name = "ommatidia"
+	actions_types = list(/datum/action/item_action/organ_action/toggle)
+	var/active = FALSE
+
+/obj/item/organ/eyes/serpentid/Initialize(mapload)
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NO_EYELIDS, INNATE_TRAIT)
+
+/obj/item/organ/eyes/serpentid/ui_action_click(mob/user, actiontype)
+	if(istype(actiontype, /datum/action/item_action/organ_action/toggle))
+		toggle_shielding()
+
+/obj/item/organ/eyes/serpentid/proc/toggle_shielding()
+	if(!owner)
+		return
+
+	active = !active
+	playsound(owner, 'sound/machines/click.ogg', 50, TRUE)
+
+	if(active)
+		flash_protect = FLASH_PROTECTION_WELDER
+		tint = 2
+		owner.update_tint()
+		owner.balloon_alert(owner, "Welder eyelids shut!")
+		return
+
+	flash_protect = FLASH_PROTECTION_SENSITIVE
+	tint = 0
+	owner.update_tint()
+	owner.balloon_alert(owner, "Welder eyelids open!")
+
+/obj/item/organ/eyes/serpentid/on_mob_remove(mob/living/carbon/eye_owner, special, movement_flags)
+	. = ..()
+	active = TRUE
+	toggle_shielding()

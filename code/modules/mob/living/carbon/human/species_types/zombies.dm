@@ -60,9 +60,6 @@
 /datum/species/zombie/body_temperature_core(mob/living/carbon/human/humi, seconds_per_tick, times_fired)
 	return
 
-/datum/species/zombie/check_roundstart_eligible()
-	return FALSE
-
 /datum/species/zombie/get_physical_attributes()
 	return "Zombies are undead, and thus completely immune to any environmental hazard, or any physical threat besides blunt force trauma and burns. \
 		Their limbs are easy to pop off their joints, but they can somehow just slot them back in."
@@ -165,9 +162,6 @@
 	REMOVE_TRAIT(was_zombie, TRAIT_COMBAT_MODE_LOCK, SPECIES_TRAIT)
 	qdel(was_zombie.GetComponent(/datum/component/mutant_hands))
 	qdel(was_zombie.GetComponent(/datum/component/regenerator))
-
-/datum/species/zombie/infectious/check_roundstart_eligible()
-	return FALSE
 
 /datum/species/zombie/infectious/spec_stun(mob/living/carbon/human/H,amount)
 	return min(2 SECONDS, amount)

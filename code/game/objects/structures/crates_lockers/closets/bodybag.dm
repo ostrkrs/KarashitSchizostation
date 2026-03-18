@@ -21,6 +21,7 @@
 	can_weld_shut = FALSE
 	door_anim_time = 0 // no animation
 	obj_flags = parent_type::obj_flags | UNIQUE_RENAME
+	max_mob_size = MOB_SIZE_HUMAN
 
 	var/foldedbag_path = /obj/item/bodybag
 	var/obj/item/bodybag/foldedbag_instance = null

@@ -3,6 +3,7 @@
 	desc = "You are the current owner of an heirloom, passed down for generations. You have to keep it safe!"
 	icon = FA_ICON_TOOLBOX
 	value = -2
+	mob_trait = TRAIT_FAMILY_HEIRLOOM
 	medical_record_text = "Patient demonstrates an unnatural attachment to a family heirloom."
 	hardcore_value = 1
 	quirk_flags = QUIRK_HUMAN_ONLY|QUIRK_PROCESSES|QUIRK_MOODLET_BASED

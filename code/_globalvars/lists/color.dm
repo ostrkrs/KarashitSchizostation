@@ -57,3 +57,11 @@ GLOBAL_LIST_INIT(color_list_lustrous, list(
 	"Dark Blue" = "#5b5beb",
 	"Bright Red" = "#fa2d2d",
 ))
+
+/// List of possible ethereal colours
+GLOBAL_LIST_INIT(color_list_serpentid, list(
+	"Green" = "#00AF3F",
+	"Teal" = "#01C07A",
+	"Cyan" = "#00A98F",
+	"Blue" = "#05b8c5",
+))

@@ -717,3 +717,16 @@
 	disliked_foodtypes = NONE //you don't care for much else besides stone
 	toxic_foodtypes = NONE //you can eat fucking uranium
 	languages_native = list(/datum/language/terrum)
+
+/obj/item/organ/tongue/serpentid
+	name = "serpentid tongue"
+	icon_state = "tongueserpentid"
+	liked_foodtypes = RAW | GORE | MEAT | BUGS
+	disliked_foodtypes = CLOTH | FRIED | TOXIC | FRUIT
+	toxic_foodtypes = DAIRY | SUGAR | JUNKFOOD
+
+/obj/item/organ/tongue/serpentid/get_possible_languages()
+	return list(
+		/datum/language/common,
+		/datum/language/serpentid,
+	)

@@ -9,3 +9,5 @@ GLOBAL_LIST_INIT(backpacklist, list(
 	GMESSENGER,
 	LSATCHEL,
 ))
+
+GLOBAL_LIST_EMPTY(species_clothing_fallback_cache)

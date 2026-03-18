@@ -276,16 +276,16 @@
 
 /obj/structure/closet/crate/freezer/blood/PopulateContents()
 	. = ..()
-	new /obj/item/reagent_containers/blood(src)
-	new /obj/item/reagent_containers/blood(src)
+	new /obj/item/reagent_containers/blood/ab_plus(src)
+	new /obj/item/reagent_containers/blood/ab_minus(src)
 	new /obj/item/reagent_containers/blood/a_minus(src)
 	new /obj/item/reagent_containers/blood/a_plus(src)
 	new /obj/item/reagent_containers/blood/b_minus(src)
 	new /obj/item/reagent_containers/blood/b_plus(src)
 	new /obj/item/reagent_containers/blood/o_minus(src)
 	new /obj/item/reagent_containers/blood/o_plus(src)
-	for(var/i in 1 to 3)
-		new /obj/item/reagent_containers/blood/random(src)
+	new /obj/item/reagent_containers/blood/serpentid(src)
+	new /obj/item/reagent_containers/blood/serpentid(src)
 	new /obj/item/paper/fluff/jobs/medical/blood_types(src)
 
 /obj/structure/closet/crate/freezer/surplus_limbs

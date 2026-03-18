@@ -27,9 +27,6 @@
 	/// UI displaying how much blood we have
 	var/atom/movable/screen/blood_level/blood_display
 
-/datum/species/human/vampire/check_roundstart_eligible()
-	return FALSE
-
 /datum/species/human/vampire/on_species_gain(mob/living/carbon/human/new_vampire, datum/species/old_species, pref_load, regenerate_icons)
 	. = ..()
 	to_chat(new_vampire, "[info_text]")

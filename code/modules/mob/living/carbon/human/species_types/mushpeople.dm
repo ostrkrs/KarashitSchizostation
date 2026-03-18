@@ -36,9 +36,6 @@
 	/// Martial art for the mushpeople
 	var/datum/martial_art/mushpunch/mush
 
-/datum/species/mush/check_roundstart_eligible()
-	return FALSE
-
 /datum/species/mush/on_species_gain(mob/living/carbon/C, datum/species/old_species, pref_load, regenerate_icons)
 	. = ..()
 	mush = new(src)

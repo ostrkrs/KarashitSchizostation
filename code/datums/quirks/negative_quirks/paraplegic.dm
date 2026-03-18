@@ -3,6 +3,7 @@
 	desc = "Your legs do not function. Nothing will ever fix this. But hey, free wheelchair!"
 	icon = FA_ICON_WHEELCHAIR
 	value = -12
+	mob_trait = TRAIT_PARAPLEGIC
 	gain_text = null // Handled by trauma.
 	lose_text = null
 	medical_record_text = "Patient has an untreatable impairment in motor function in the lower extremities."

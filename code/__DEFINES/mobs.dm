@@ -54,6 +54,7 @@
 #define BLOOD_TYPE_XENO "X*"
 #define BLOOD_TYPE_H2O "H2O"
 #define BLOOD_TYPE_SNAIL "S"
+#define BLOOD_TYPE_SERPENTID "SH"
 
 // Blood exposure behavior flag defines
 /// Add our DNA to turfs/mobs/items, does not correlate with adding decals/overlays
@@ -125,6 +126,8 @@
 #define MOB_MINING (1 << 13)
 ///The mob is a crustacean. Like crabs. Or lobsters.
 #define MOB_CRUSTACEAN (1 << 14)
+///The mob is serpy derpy!
+#define MOB_SERPENTID (1 << 15)
 
 //Lung respiration type flags
 #define RESPIRATION_OXYGEN (1 << 0)
@@ -161,6 +164,8 @@
 #define BODYSHAPE_DIGITIGRADE (1<<2)
 ///The limb is snouted.
 #define BODYSHAPE_SNOUTED (1<<3)
+///The limb fits the serpentid mold.
+#define BODYSHAPE_SERPENTID (1<<4)
 
 #define BODYTYPE_BIOSCRAMBLE_INCOMPATIBLE (BODYTYPE_ROBOTIC | BODYTYPE_LARVA_PLACEHOLDER | BODYTYPE_GOLEM | BODYTYPE_PEG)
 #define BODYTYPE_CAN_BE_BIOSCRAMBLED(bodytype) (!(bodytype & BODYTYPE_BIOSCRAMBLE_INCOMPATIBLE))
@@ -197,6 +202,7 @@
 #define SPECIES_ZOMBIE_INFECTIOUS "memezombie"
 #define SPECIES_ZOMBIE_KROKODIL "krokodil_zombie"
 #define SPECIES_VOIDWALKER "voidwalker"
+#define SPECIES_SERPENTID "serpentid"
 
 // Like species IDs, but not specifically attached a species.
 #define BODYPART_ID_ALIEN "alien"
@@ -460,6 +466,7 @@
 #define OFFSET_SUIT "suit"
 #define OFFSET_NECK "neck"
 #define OFFSET_HELD "held"
+#define OFFSET_ACCESSORY "accessory"
 
 //MINOR TWEAKS/MISC
 #define AGE_MIN 18 //youngest a character can be
@@ -1046,6 +1053,7 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 #define BUTT_SPRITE_PLASMA "plasma"
 #define BUTT_SPRITE_FUZZY "fuzzy"
 #define BUTT_SPRITE_SLIME "slime"
+#define BUTT_SPRITE_SERPENTID "serpentid"
 
 /// Distance which you can see someone's ID card
 /// Short enough that you can inspect over tables (bartender checking age)

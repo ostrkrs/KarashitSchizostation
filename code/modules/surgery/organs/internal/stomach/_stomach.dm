@@ -578,4 +578,11 @@
 	disgust_metabolism = 2.5
 	metabolism_efficiency = 0.08
 
+/obj/item/organ/stomach/serpentid
+	name = "serpentid stomach"
+	icon_state = "stomach-serpentid"
+
+	maxHealth = 1.2 * STANDARD_ORGAN_THRESHOLD
+	disgust_metabolism = 2.5
+
 #undef STOMACH_METABOLISM_CONSTANT

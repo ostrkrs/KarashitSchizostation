@@ -702,7 +702,7 @@
 
 /atom/movable/screen/alert/status_effect/washing_regen/hater
 	desc = "Waaater... Fuck this WATER!!"
-	icon_state = "shower_regen_catgirl"
+	icon_state = "shower_regen_bad"
 
 /atom/movable/screen/alert/status_effect/washing_regen/dislike
 	desc = "This water feels dirty..."
@@ -739,7 +739,7 @@
 /atom/movable/screen/alert/status_effect/washing_regen/hotspring/hater
 	name = "Hotspring"
 	desc = "Waaater... FUCK THIS HOT WATER!!"
-	icon_state = "hotspring_regen_catgirl"
+	icon_state = "hotspring_regen_bad"
 
 #define BEAM_ALPHA 62
 

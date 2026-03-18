@@ -19,6 +19,7 @@
 	icon = FA_ICON_ROBOT
 	quirk_flags = QUIRK_HUMAN_ONLY|QUIRK_PROCESSES|QUIRK_MOODLET_BASED
 	value = 0
+	mob_trait = TRAIT_TRANSHUMANIST
 	gain_text = span_notice("You have a desire to ditch your feeble organic flesh and surround yourself with robots.")
 	lose_text = span_danger("Robots don't seem all that great anymore.")
 	medical_record_text = "Patient reports hating pathetic creatures of meat and bone."

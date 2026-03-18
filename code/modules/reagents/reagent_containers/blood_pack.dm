@@ -1,5 +1,5 @@
 /obj/item/reagent_containers/blood
-	name = "blood pack"
+	name = "IV bag"
 	desc = "Contains blood used for transfusion. Must be attached to an IV drip."
 	icon = 'icons/obj/medical/bloodpack.dmi'
 	icon_state = "bloodpack"
@@ -22,7 +22,7 @@
 /obj/item/reagent_containers/blood/update_name(updates)
 	. = ..()
 	if(!labelled)
-		name = "blood pack[blood_type ? " - [blood_type]" : ""]"
+		name = "IV bag[blood_type ? " - [blood_type]" : ""]"
 
 /obj/item/reagent_containers/blood/random
 	icon_state = "random_bloodpack"
@@ -31,6 +31,12 @@
 	icon_state = "bloodpack"
 	blood_type = pick(BLOOD_TYPE_A_PLUS, BLOOD_TYPE_A_MINUS, BLOOD_TYPE_B_PLUS, BLOOD_TYPE_B_MINUS, BLOOD_TYPE_O_PLUS, BLOOD_TYPE_O_MINUS)
 	return ..()
+
+/obj/item/reagent_containers/blood/ab_plus
+	blood_type = BLOOD_TYPE_AB_PLUS
+
+/obj/item/reagent_containers/blood/ab_minus
+	blood_type = BLOOD_TYPE_AB_MINUS
 
 /obj/item/reagent_containers/blood/a_plus
 	blood_type = BLOOD_TYPE_A_PLUS
@@ -101,7 +107,15 @@
 		return ITEM_INTERACT_SUCCESS
 
 	labelled = TRUE
-	name = "blood pack - [custom_label]"
+	name = "IV bag - [custom_label]"
 	playsound(src, SFX_WRITING_PEN, 50, TRUE, SHORT_RANGE_SOUND_EXTRARANGE, SOUND_FALLOFF_EXPONENT + 3, ignore_walls = FALSE)
 	balloon_alert(user, "new label set")
 	return ITEM_INTERACT_SUCCESS
+
+// for serpentids
+/obj/item/reagent_containers/blood/serpentid
+	blood_type = BLOOD_TYPE_SERPENTID
+
+/obj/item/reagent_containers/blood/serpentid/examine()
+	. = ..()
+	. += span_notice("Contains copper-based hemolymph meant for serpentids.")

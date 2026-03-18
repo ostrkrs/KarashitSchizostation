@@ -65,9 +65,6 @@
 
 	return MONKEY_HEIGHT_MEDIUM
 
-/datum/species/monkey/check_roundstart_eligible()
-	return FALSE
-
 /datum/species/monkey/get_scream_sound(mob/living/carbon/human/monkey)
 	return get_sfx(SFX_SCREECH)
 

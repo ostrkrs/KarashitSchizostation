@@ -380,7 +380,7 @@
 	if(istype(weapon, /obj/item/access_key))
 		var/obj/item/access_key/key = weapon
 		return key.attempt_open_door(user, src)
-	else if(!user.combat_mode && istype(weapon, /obj/item/fireaxe))
+	else if(!user.combat_mode && (istype(weapon, /obj/item/fireaxe) || istype(weapon, /obj/item/melee/serpentid_blade)))
 		try_to_crowbar(weapon, user, FALSE)
 		return TRUE
 	else if(weapon.item_flags & NOBLUDGEON || user.combat_mode)

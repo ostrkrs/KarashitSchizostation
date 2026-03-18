@@ -193,6 +193,9 @@ There are several things that need to be remembered:
 
 	var/icon_file = 'icons/mob/clothing/hands.dmi'
 
+	if((bodyshape & BODYSHAPE_SERPENTID) && (worn_item.supports_variations_flags & CLOTHING_SERPENTID_VARIATION))
+		icon_file = SERPENTID_GLOVES_FILE
+
 	var/mutable_appearance/gloves_overlay = gloves.build_worn_icon(default_layer = GLOVES_LAYER, default_icon_file = icon_file)
 
 	var/feature_y_offset = 0
@@ -391,6 +394,9 @@ There are several things that need to be remembered:
 
 		var/icon_file = 'icons/mob/clothing/belt.dmi'
 
+		if((bodyshape & BODYSHAPE_SERPENTID) && (worn_item.supports_variations_flags & CLOTHING_SERPENTID_VARIATION))
+			icon_file = SERPENTID_BELT_FILE
+
 		var/mutable_appearance/belt_overlay = belt.build_worn_icon(default_layer = BELT_LAYER, default_icon_file = icon_file)
 		var/obj/item/bodypart/chest/my_chest = get_bodypart(BODY_ZONE_CHEST)
 		my_chest?.worn_belt_offset?.apply_offset(belt_overlay)
@@ -462,6 +468,9 @@ There are several things that need to be remembered:
 			return
 
 		var/icon_file = 'icons/mob/clothing/mask.dmi'
+
+		if((bodyshape & BODYSHAPE_SERPENTID) && (worn_item.supports_variations_flags & CLOTHING_SERPENTID_VARIATION))
+			icon_file = SERPENTID_MASK_FILE
 
 		var/mutable_appearance/mask_overlay = wear_mask.build_worn_icon(default_layer = FACEMASK_LAYER, default_icon_file = icon_file)
 		my_head.worn_mask_offset?.apply_offset(mask_overlay)

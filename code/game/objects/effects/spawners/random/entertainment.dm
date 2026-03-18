@@ -274,7 +274,7 @@
 		/obj/item/toy/plush/lizard_plushie/green = 3,
 		/obj/item/toy/plush/lizard_plushie/space/green = 3,
 		/obj/item/toy/plush/shark = 3,
-		/obj/item/toy/plush/serpentide = 3,
+		/obj/item/toy/plush/serpentid = 3,
 		/obj/item/toy/plush/unicorn = 3,
 		/obj/item/toy/plush/monkey = 3,
 	)

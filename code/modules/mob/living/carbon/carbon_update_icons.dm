@@ -379,6 +379,8 @@
 	apply_overlay(BACK_LAYER)
 
 /mob/living/carbon/update_worn_legcuffs()
+	if(isserpentid(src))
+		return FALSE
 	remove_overlay(LEGCUFF_LAYER)
 	clear_alert("legcuffed")
 	if(legcuffed)

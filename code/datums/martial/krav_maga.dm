@@ -216,6 +216,7 @@
 /obj/item/clothing/gloves/krav_maga
 	abstract_type = /obj/item/clothing/gloves/krav_maga
 	clothing_traits = list(TRAIT_FAST_CUFFING)
+	supports_variations_flags = NONE
 
 /obj/item/clothing/gloves/krav_maga/Initialize(mapload)
 	. = ..()

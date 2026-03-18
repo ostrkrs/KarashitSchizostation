@@ -204,6 +204,7 @@
 	food_flags = FOOD_FINGER_FOOD
 	slot_flags = ITEM_SLOT_MASK
 	w_class = WEIGHT_CLASS_TINY
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION_NO_NEW_ICON
 
 /obj/item/food/bubblegum/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] swallows [src]! It looks like [user.p_theyre()] trying to commit suicide!"))

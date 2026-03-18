@@ -367,6 +367,7 @@
 	min_cold_protection_temperature = GLOVES_MIN_TEMP_PROTECT
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_TEMP_PROTECT
+	supports_variations_flags = NONE
 
 /obj/item/clothing/gloves/plate/red
 	icon_state = "crusader-red"

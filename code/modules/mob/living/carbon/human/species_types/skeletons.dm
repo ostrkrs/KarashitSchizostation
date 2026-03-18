@@ -45,9 +45,6 @@
 		BODY_ZONE_CHEST = /obj/item/bodypart/chest/skeleton,
 	)
 
-/datum/species/skeleton/check_roundstart_eligible()
-	return FALSE
-
 /datum/species/skeleton/get_physical_attributes()
 	return "These humerus folk lack any fleshy biology, which allows them to resist pressure, temperature, radiation, asphyxiation and even toxins. \
 		However, due to that same fact, it is quite hard to heal them as well. The calcium found in common space milk is highly effective at treating their wounds. \

@@ -435,7 +435,7 @@
 
 /datum/reagent/toxin/pestkiller/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
-	if(affected_mob.adjustToxLoss(2 * toxpwr * REM * seconds_per_tick, updating_health = FALSE, required_biotype = MOB_BUG))
+	if(affected_mob.adjustToxLoss((isserpentid(affected_mob) ? 4 : 2) * toxpwr * REM * seconds_per_tick, updating_health = FALSE, required_biotype = MOB_BUG))
 		return UPDATE_MOB_HEALTH
 
 //Pest Spray

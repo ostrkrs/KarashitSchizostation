@@ -15,6 +15,7 @@
 		/obj/item/reagent_containers/blood/b_minus,
 		/obj/item/reagent_containers/blood/o_plus,
 		/obj/item/reagent_containers/blood/o_minus,
+		/obj/item/reagent_containers/blood/serpentid = 2,
 		/obj/item/paper/fluff/jobs/medical/blood_types,
 	)
 	crate_name = "blood freezer"

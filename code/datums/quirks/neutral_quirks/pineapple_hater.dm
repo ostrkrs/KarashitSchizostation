@@ -3,6 +3,7 @@
 	desc = "You find yourself greatly detesting fruits of the ananas genus. Serious, how the hell can anyone say these things are good? And what kind of madman would even dare put it on a pizza!?"
 	icon = FA_ICON_THUMBS_DOWN
 	value = 0
+	mob_trait = TRAIT_PINEAPPLE_HATER
 	gain_text = span_notice("You find yourself pondering what kind of idiot actually enjoys pineapples...")
 	lose_text = span_notice("Your feelings towards pineapples seem to return to a lukewarm state.")
 	medical_record_text = "Patient is correct to think that pineapple is disgusting."

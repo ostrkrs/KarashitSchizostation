@@ -254,6 +254,9 @@
 	/// Can this item be placed on the floor?
 	var/floor_placeable = TRUE
 
+	/// Used for BODYSHAPE_SERPENTID: Needs to follow this syntax: a list() with the x and y coordinates of the pixel you want to get the color from. Colors are filled in as GAGs values for fallback.
+	var/list/species_clothing_color_coords[3]
+
 /obj/item/Initialize(mapload)
 	if(attack_verb_continuous)
 		attack_verb_continuous = string_list(attack_verb_continuous)

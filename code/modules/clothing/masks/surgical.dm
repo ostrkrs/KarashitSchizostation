@@ -8,6 +8,7 @@
 	flags_cover = MASKCOVERSMOUTH
 	visor_flags_inv = HIDEFACE|HIDESNOUT
 	visor_flags_cover = MASKCOVERSMOUTH
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION
 	armor_type = /datum/armor/mask_surgical
 	actions_types = list(/datum/action/item_action/adjust)
 

@@ -3,6 +3,7 @@
 	desc = "Oops! All Prosthetics! Due to some truly cruel cosmic punishment, most of your internal organs have been replaced with surplus prosthetics."
 	icon = FA_ICON_USER_GEAR
 	value = -6
+	mob_trait = TRAIT_TIN_MAN
 	medical_record_text = "During physical examination, patient was found to have numerous low-budget prosthetic internal organs. \
 		<b>Removal of these organs is known to be dangerous to the patient as well as the practitioner.</b>"
 	hardcore_value = 6

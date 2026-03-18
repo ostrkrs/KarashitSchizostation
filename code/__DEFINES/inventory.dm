@@ -174,6 +174,14 @@ DEFINE_BITFIELD(no_equip_flags, list(
 /// All variation flags which render "correctly" on a digitigrade leg setup
 #define DIGITIGRADE_VARIATIONS (CLOTHING_DIGITIGRADE_VARIATION|CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON|CLOTHING_DIGITIGRADE_MASK)
 
+/// Has a sprite for serpentids specifically.
+#define CLOTHING_SERPENTID_VARIATION (1<<1)
+/// The sprite works fine for serpentids as-is.
+#define CLOTHING_SERPENTID_VARIATION_NO_NEW_ICON (1<<2)
+
+/// All variation flags which render "correctly" on a serpentids
+#define SERPENTID_VARIATIONS (CLOTHING_SERPENTID_VARIATION|CLOTHING_SERPENTID_VARIATION_NO_NEW_ICON)
+
 //flags for covering body parts
 #define GLASSESCOVERSEYES (1<<0)
 #define MASKCOVERSEYES (1<<1) // get rid of some of the other stupidness in these flags

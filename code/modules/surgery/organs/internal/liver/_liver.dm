@@ -386,6 +386,21 @@
 
 		owner.reagents.convert_reagent(reagent.type, convert_into, ethanol_conversion)
 
+/obj/item/organ/liver/serpentid
+	name = "serpentid liver"
+	icon_state = "liver_serpentid"
+	liver_resistance = 0.8
+	alcohol_tolerance = ALCOHOL_RATE * 2
+
+/obj/item/organ/liver/serpentid/handle_chemical(mob/living/carbon/organ_owner, datum/reagent/chem, seconds_per_tick, times_fired)
+	. = ..()
+	if((. & COMSIG_MOB_STOP_REAGENT_TICK) || (organ_flags & ORGAN_FAILING))
+		return
+	if(istype(chem, /datum/reagent/drug/nicotine))
+		organ_owner.adjustToxLoss(2 * REM * seconds_per_tick)
+		organ_owner.reagents.remove_reagent(chem.type, REAGENTS_METABOLISM * seconds_per_tick)
+		return COMSIG_MOB_STOP_REAGENT_TICK
+
 #undef LIVER_DEFAULT_TOX_TOLERANCE
 #undef LIVER_DEFAULT_TOX_RESISTANCE
 #undef LIVER_FAILURE_STAGE_SECONDS

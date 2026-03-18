@@ -3,6 +3,7 @@
 	desc = "Nothing like a good drink to make you feel on top of the world. Whenever you're drunk, you slowly recover from injuries."
 	icon = FA_ICON_WINE_BOTTLE
 	value = 8
+	mob_trait = TRAIT_DRUNKHEALING
 	gain_text = span_notice("You feel like a drink would do you good.")
 	lose_text = span_danger("You no longer feel like drinking would ease your pain.")
 	medical_record_text = "Patient has unusually efficient liver metabolism and can slowly regenerate wounds by drinking alcoholic beverages."

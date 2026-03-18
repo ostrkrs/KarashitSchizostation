@@ -1128,6 +1128,37 @@
 	maxHealth = 1.2 * STANDARD_ORGAN_THRESHOLD
 	safe_oxygen_min = 8
 
+/obj/item/organ/lungs/serpentid
+	name = "serpentid lungs"
+	icon_state = "lungs-serpentid"
+	suffers_miasma = FALSE
+
+	cold_message = "You can't stand the freezing cold with every breath you take!"
+	cold_level_1_threshold = 180
+	cold_level_2_threshold = 140
+	cold_level_3_threshold = 100
+	cold_level_1_damage = COLD_GAS_DAMAGE_LEVEL_1
+	cold_level_2_damage = COLD_GAS_DAMAGE_LEVEL_1
+	cold_level_3_damage = COLD_GAS_DAMAGE_LEVEL_2
+	cold_damage_type = BRUTE
+
+	hot_message = "You can't stand the searing heat with every breath you take!"
+	heat_level_1_threshold = 300
+	heat_level_2_threshold = 440
+	heat_level_3_threshold = 600
+	heat_level_1_damage = HEAT_GAS_DAMAGE_LEVEL_2
+	heat_level_2_damage = HEAT_GAS_DAMAGE_LEVEL_3
+	heat_level_3_damage = HEAT_GAS_DAMAGE_LEVEL_3
+	heat_damage_type = BURN
+
+/obj/item/organ/lungs/serpentid/smoker
+	name = "smoker serpentid lungs"
+	desc = "A pair of lungs that look sickly, a result from smoking a lot."
+	icon_state = "lungs-serpentid-smoker"
+	breath_noise = "an unsteady, wheezing rhythm"
+	maxHealth = SMOKER_ORGAN_HEALTH
+	healing_factor = SMOKER_LUNG_HEALING
+
 #undef BREATH_RELATIONSHIP_INITIAL_GAS
 #undef BREATH_RELATIONSHIP_CONVERT
 #undef BREATH_RELATIONSHIP_MULTIPLIER

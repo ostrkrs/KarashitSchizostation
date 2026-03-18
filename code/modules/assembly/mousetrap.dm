@@ -113,7 +113,7 @@
 	var/obj/item/bodypart/affecting = null
 	if(ishuman(target))
 		var/mob/living/carbon/human/victim = target
-		if(HAS_TRAIT(victim, TRAIT_PIERCEIMMUNE))
+		if(HAS_TRAIT(victim, TRAIT_PIERCEIMMUNE) || HAS_TRAIT(victim, TRAIT_HARD_SOLES))
 			playsound(src, 'sound/effects/snap.ogg', 50, TRUE)
 			pulse()
 			return FALSE

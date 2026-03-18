@@ -98,6 +98,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	/// Flat modifier on all damage taken via [apply_damage][/mob/living/proc/apply_damage] (so being punched, shot, etc.)
 	/// IE: 10 = 10% less damage taken.
 	var/damage_modifier = 0
+	///multiplier for damage from pressure
+	var/pressuremod = 1
 	///multiplier for damage from cold temperature
 	var/coldmod = 1
 	///multiplier for damage from hot temperature
@@ -133,11 +135,13 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	/// Generic traits tied to having the species.
 	var/list/inherent_traits = list()
+	/// Traits that are not allowed to be on this species.
+	var/list/banned_traits = list()
 	/// List of biotypes the mob belongs to. Used by diseases.
 	var/inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	/// The type of respiration the mob is capable of doing. Used by adjustOxyLoss.
 	var/inherent_respiration_type = RESPIRATION_OXYGEN
-	///List of factions the mob gain upon gaining this species.
+	/// List of factions the mob gain upon gaining this species.
 	var/list/inherent_factions
 
 	///What gas does this species breathe? Used by suffocation screen alerts, most of actual gas breathing is handled by mutantlungs. See [life.dm][code/modules/mob/living/carbon/human/life.dm]
@@ -178,6 +182,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	///A list containing outfits that will be overridden in the species_equip_outfit proc. [Key = Typepath passed in] [Value = Typepath of outfit you want to equip for this specific species instead].
 	var/list/outfit_override_registry = list()
+
+	var/mob_size = MOB_SIZE_HUMAN
 
 ///////////
 // PROCS //
@@ -373,7 +379,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	SHOULD_CALL_PARENT(TRUE)
 
 	human_who_gained_species.living_flags |= STOP_OVERLAY_UPDATE_BODY_PARTS //Don't call update_body_parts() for every single bodypart overlay added.
-
+	human_who_gained_species.mob_size = mob_size
 	// Drop the items the new species can't wear
 	human_who_gained_species.mob_biotypes = inherent_biotypes
 	human_who_gained_species.mob_respiration_type = inherent_respiration_type
@@ -654,6 +660,9 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		if(ITEM_SLOT_MASK)
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
 				return FALSE
+			if(H.bodyshape & BODYSHAPE_SERPENTID)
+				if(!(I.supports_variations_flags & SERPENTID_VARIATIONS))
+					return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_NECK)
 			return TRUE
@@ -664,22 +673,18 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		if(ITEM_SLOT_GLOVES)
 			if(H.num_hands == 0)
 				return FALSE
+			if(H.bodyshape & BODYSHAPE_SERPENTID)
+				if(!(I.supports_variations_flags & SERPENTID_VARIATIONS))
+					return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_FEET)
 			if(H.num_legs < 2)
 				return FALSE
 			if((H.bodyshape & BODYSHAPE_DIGITIGRADE) && !(I.item_flags & IGNORE_DIGITIGRADE))
 				if(!(I.supports_variations_flags & DIGITIGRADE_VARIATIONS))
-					if(!disable_warning)
-						to_chat(H, span_warning("The footwear around here isn't compatible with your feet!"))
 					return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_BELT)
-			var/obj/item/bodypart/O = H.get_bodypart(BODY_ZONE_CHEST)
-			if(!H.w_uniform && !HAS_TRAIT(H, TRAIT_NO_JUMPSUIT) && (!O || IS_ORGANIC_LIMB(O)))
-				if(!disable_warning)
-					to_chat(H, span_warning("You need a jumpsuit before you can attach this [I.name]!"))
-				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_EYES)
 			if(!H.get_bodypart(BODY_ZONE_HEAD))
@@ -699,11 +704,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		if(ITEM_SLOT_ICLOTHING)
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_ID)
-			var/obj/item/bodypart/O = H.get_bodypart(BODY_ZONE_CHEST)
-			if(!H.w_uniform && !HAS_TRAIT(H, TRAIT_NO_JUMPSUIT) && (!O || IS_ORGANIC_LIMB(O)))
-				if(!disable_warning)
-					to_chat(H, span_warning("You need a jumpsuit before you can attach this [I.name]!"))
-				return FALSE
 			return equip_delay_self_check(I, H, bypass_equip_delay_self)
 		if(ITEM_SLOT_LPOCKET)
 			if(HAS_TRAIT(I, TRAIT_NODROP)) //Pockets aren't visible, so you can't move TRAIT_NODROP items into them.
@@ -1393,7 +1393,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				H.clear_alert(ALERT_PRESSURE)
 			else
 				var/pressure_damage = min(((adjusted_pressure / HAZARD_HIGH_PRESSURE) - 1) * PRESSURE_DAMAGE_COEFFICIENT, MAX_HIGH_PRESSURE_DAMAGE) * H.physiology.pressure_mod * H.physiology.brute_mod * seconds_per_tick
-				H.adjustBruteLoss(pressure_damage, required_bodytype = BODYTYPE_ORGANIC)
+				H.adjustBruteLoss(pressure_damage * pressuremod, required_bodytype = BODYTYPE_ORGANIC)
 				H.throw_alert(ALERT_PRESSURE, /atom/movable/screen/alert/highpressure, 2)
 
 		// High pressure, show an alert
@@ -1419,7 +1419,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 				H.clear_alert(ALERT_PRESSURE)
 			else
 				var/pressure_damage = LOW_PRESSURE_DAMAGE * H.physiology.pressure_mod * H.physiology.brute_mod * seconds_per_tick
-				H.adjustBruteLoss(pressure_damage, required_bodytype = BODYTYPE_ORGANIC)
+				H.adjustBruteLoss(pressure_damage * pressuremod, required_bodytype = BODYTYPE_ORGANIC)
 				H.throw_alert(ALERT_PRESSURE, /atom/movable/screen/alert/lowpressure, 2)
 
 /**

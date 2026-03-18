@@ -1,5 +1,10 @@
 
 /mob/living/carbon/human/canBeHandcuffed()
+	if(isserpentid(src))
+		var/obj/item/held = get_active_held_item()
+		var/obj/item/inactive = get_inactive_held_item()
+		if(istype((inactive || held), /obj/item/melee/serpentid_blade))
+			return FALSE
 	if(num_hands < 2)
 		return FALSE
 	return TRUE

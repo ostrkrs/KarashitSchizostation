@@ -84,6 +84,7 @@
 	desc = "You can't get enough of hard drugs."
 	icon = FA_ICON_PILLS
 	value = -6
+	mob_trait = TRAIT_JUNKIE
 	gain_text = span_danger("You suddenly feel the craving for drugs.")
 	medical_record_text = "Patient has a history of hard drugs."
 	hardcore_value = 4

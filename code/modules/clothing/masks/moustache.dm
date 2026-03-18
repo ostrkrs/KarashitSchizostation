@@ -5,6 +5,7 @@
 	alternate_worn_layer = ABOVE_BODY_FRONT_HEAD_LAYER
 	w_class = WEIGHT_CLASS_TINY
 	flags_inv = HIDEFACE
+	supports_variations_flags = CLOTHING_SERPENTID_VARIATION_NO_NEW_ICON
 	species_exception = list(/datum/species/golem)
 
 /obj/item/clothing/mask/fakemoustache/italian

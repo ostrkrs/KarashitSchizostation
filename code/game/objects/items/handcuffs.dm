@@ -556,7 +556,7 @@
 	playsound(src.loc,'sound/items/weapons/bolathrow.ogg', 75, TRUE)
 
 /obj/item/restraints/legcuffs/bola/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
-	if(..() || !iscarbon(hit_atom))//if it gets caught or the target can't be cuffed,
+	if(..() || !iscarbon(hit_atom) || isserpentid(hit_atom))//if it gets caught or the target can't be cuffed,
 		return//abort
 	//The mob has been hit, save the reference for ensnaring
 	ensnare_mob_ref = WEAKREF(hit_atom)

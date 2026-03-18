@@ -360,6 +360,8 @@
 		return get_blood_type(BLOOD_TYPE_H2O)
 	else if (mob_biotypes & MOB_REPTILE)
 		return get_blood_type(BLOOD_TYPE_LIZARD)
+	else if (mob_biotypes & MOB_SERPENTID)
+		return get_blood_type(BLOOD_TYPE_SERPENTID)
 	else if (mob_biotypes & MOB_HUMANOID)
 		// O+ as to avoid mobs bleeding all human bloodtypes under the sun, and its statistically the most common one
 		return get_blood_type(BLOOD_TYPE_O_PLUS)

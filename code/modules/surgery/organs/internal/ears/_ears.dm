@@ -279,3 +279,7 @@
 	desc = "Strangest salad you've ever seen."
 	foodtype_flags = PODPERSON_ORGAN_FOODTYPES
 	color = COLOR_LIME
+
+/obj/item/organ/ears/serpentid
+	name = "serpentid ears"
+	icon_state = "ears_serpentid"

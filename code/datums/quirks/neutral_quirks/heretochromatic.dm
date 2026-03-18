@@ -5,6 +5,7 @@
 	quirk_flags = QUIRK_HUMAN_ONLY|QUIRK_CHANGES_APPEARANCE
 	medical_record_text = "Patient's irises are different colors."
 	value = 0
+	mob_trait = TRAIT_HETEROCROMATIC
 	mail_goodies = list(/obj/item/clothing/glasses/eyepatch)
 
 /datum/quirk/heterochromatic/add(client/client_source)

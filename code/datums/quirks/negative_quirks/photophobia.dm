@@ -5,6 +5,7 @@
 	desc = "Bright lights seem to bother you more than others. Maybe it's a medical condition."
 	icon = FA_ICON_ARROWS_TO_EYE
 	value = -4
+	mob_trait = TRAIT_PHOTOPHOBIA
 	gain_text = span_danger("The safety of light feels off...")
 	lose_text = span_notice("Enlightening.")
 	medical_record_text = "Patient has acute phobia of light, and insists it is physically harmful."

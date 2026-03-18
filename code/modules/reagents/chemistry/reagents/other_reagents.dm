@@ -47,6 +47,14 @@
 		return ..()
 	return list("[blood_type] type blood" = 1)
 
+/datum/reagent/blood/serpentid
+	name = "Hemolymph"
+	description  = "Thick, viscous blood of the serpentid species."
+	color = BLOOD_COLOR_SERPENTID
+	taste_description = "metallic slime"
+	taste_mult = 1.5
+	ph = 8.2
+
 /datum/reagent/consumable/liquidgibs
 	name = "Liquid Gibs"
 	color = "#CC4633"

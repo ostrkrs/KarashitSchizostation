@@ -6,6 +6,7 @@
 	body_parts_covered = HANDS|ARMS
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	armor_type = /datum/armor/gloves_mitts
+	supports_variations_flags = NONE
 
 /obj/item/clothing/gloves/fingerless/punch_mitts/Initialize(mapload)
 	. = ..()

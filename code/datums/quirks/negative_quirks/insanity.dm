@@ -5,6 +5,7 @@
 		THIS IS NOT A LICENSE TO GRIEF."
 	icon = FA_ICON_GRIN_TONGUE_WINK
 	value = -8
+	mob_trait = TRAIT_INSANITY
 	gain_text = span_userdanger("...")
 	lose_text = span_notice("You feel in tune with the world again.")
 	medical_record_text = "Patient suffers from acute Reality Dissociation Syndrome and experiences vivid hallucinations, and may have trouble speaking."
