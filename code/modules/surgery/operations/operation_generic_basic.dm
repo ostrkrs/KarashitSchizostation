@@ -71,7 +71,8 @@
 	)
 	time = 5.4 SECONDS
 	preop_sound = list(
-		/obj/item/saw = 'sound/items/handling/surgery/saw.ogg',
+		/obj/item/saw = 'sound/items/handling/surgery/handsaw.ogg',
+		/obj/item/saw/circular = 'sound/items/handling/surgery/saw.ogg',
 		/obj/item/melee/arm_blade = 'sound/items/handling/surgery/scalpel1.ogg',
 		/obj/item/fireaxe = 'sound/items/handling/surgery/scalpel1.ogg',
 		/obj/item/hatchet = 'sound/items/handling/surgery/scalpel1.ogg',

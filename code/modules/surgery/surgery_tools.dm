@@ -292,19 +292,12 @@
 
 /obj/item/saw/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/butchering, \
-	speed = 4 SECONDS * toolspeed, \
-	effectiveness = 100, \
-	bonus_modifier = 5, \
-	butcher_sound = butcher_sound, \
-	)
-
-	//saws are very accurate and fast at butchering
-	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/chainsaw)
-
-	AddElement(
-		/datum/element/slapcrafting,\
-		slapcraft_recipes = slapcraft_recipe_list,\
+	AddComponent(
+		/datum/component/butchering, \
+		speed = 4 SECONDS * toolspeed, \
+		effectiveness = 100, \
+		bonus_modifier = 5, \
+		butcher_sound = butcher_sound, \
 	)
 
 /obj/item/saw/get_surgery_tool_overlay(tray_extended)
@@ -325,6 +318,16 @@
 	wound_bonus = 15
 	exposed_wound_bonus = 10
 	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*5, /datum/material/glass = SHEET_MATERIAL_AMOUNT*1.5, /datum/material/titanium = SHEET_MATERIAL_AMOUNT*1.5)
+
+/obj/item/saw/circular/Initialize(mapload)
+	. = ..()
+	//saws are very accurate and fast at butchering
+	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/chainsaw)
+
+	AddElement(
+		/datum/element/slapcrafting,\
+		slapcraft_recipes = slapcraft_recipe_list,\
+	)
 
 /obj/item/saw/circular/cyborg
 	icon = 'icons/mob/silicon/robot_items.dmi'

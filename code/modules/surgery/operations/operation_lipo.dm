@@ -15,7 +15,8 @@
 	time = 6.4 SECONDS
 	required_bodytype = ~BODYTYPE_ROBOTIC
 	preop_sound = list(
-		/obj/item/saw = 'sound/items/handling/surgery/saw.ogg',
+		/obj/item/saw = 'sound/items/handling/surgery/handsaw.ogg',
+		/obj/item/saw/circular = 'sound/items/handling/surgery/saw.ogg',
 		/obj/item = 'sound/items/handling/surgery/scalpel1.ogg',
 	)
 	success_sound = 'sound/items/handling/surgery/organ2.ogg'
