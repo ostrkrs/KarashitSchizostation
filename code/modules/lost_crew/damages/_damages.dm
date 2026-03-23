@@ -15,8 +15,6 @@
 	var/list/possible_character_types
 	/// Assignments that can be given to the corpse
 	var/list/possible_character_assignments
-	/// Possible flavors that can be applied to the corpse
-	var/list/possible_flavor_types
 	/// Whatever killed us
 	var/list/possible_causes_of_death
 	/// Goddamn space vultures stealing my organs
@@ -39,12 +37,6 @@
 		assignment = new assignment()
 		assignment.apply_assignment(fashion_corpse, protected_objects, recovered_items, on_revive_and_player_occupancy)
 		body_data += assignment.type
-
-	var/datum/corpse_flavor/flavor = pick_weight(possible_flavor_types)
-	if(ispath(flavor))
-		flavor = new flavor()
-		flavor?.apply_flavor(fashion_corpse, protected_objects, on_revive_and_player_occupancy)
-		body_data += flavor.type
 
 	death_lore += assignment?.job_lore
 

@@ -11,10 +11,6 @@
 		/datum/corpse_assignment/cargo = 1,
 		/datum/corpse_assignment/civillian = 1,
 		)
-	possible_flavor_types = list(
-		/datum/corpse_flavor/quirk/prosthetic_limb = 1,
-		null = 9,
-	)
 
 	possible_causes_of_death = list(
 		/datum/corpse_damage/cause_of_death/melee_weapon/esword = 1,
@@ -50,7 +46,6 @@
 	weight = 0
 	possible_character_types = list(/datum/corpse_character/morgue = 1)
 	possible_character_assignments = list()
-	possible_flavor_types = list()
 
 /// Non-roundstart species
 /datum/corpse_damage_class/station/exotic_species
