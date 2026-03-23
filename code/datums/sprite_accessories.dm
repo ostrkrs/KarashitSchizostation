@@ -1285,40 +1285,11 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	icon_state = "male_longjohns"
 	gender = MALE
 
-/datum/sprite_accessory/underwear/male_kinky
-	name = "Jockstrap"
-	icon_state = "male_kinky"
-	gender = MALE
-
-/datum/sprite_accessory/underwear/male_mankini
-	name = "Mankini"
-	icon_state = "male_mankini"
-	gender = MALE
-
 /datum/sprite_accessory/underwear/male_hearts
 	name = "Hearts Boxers"
 	icon_state = "male_hearts"
 	gender = MALE
 	use_static = TRUE
-
-/datum/sprite_accessory/underwear/male_commie
-	name = "Commie Boxers"
-	icon_state = "male_commie"
-	gender = MALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/male_usastripe
-	name = "Freedom Boxers"
-	icon_state = "male_assblastusa"
-	gender = MALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/male_uk
-	name = "UK Boxers"
-	icon_state = "male_uk"
-	gender = MALE
-	use_static = TRUE
-
 
 //FEMALE UNDERWEAR
 /datum/sprite_accessory/underwear/female_bikini
@@ -1385,42 +1356,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Halter Swimsuit"
 	icon_state = "swim_halter"
 	gender = FEMALE
-
-/datum/sprite_accessory/underwear/female_white_neko
-	name = "Neko Bikini (White)"
-	icon_state = "female_neko_white"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_black_neko
-	name = "Neko Bikini (Black)"
-	icon_state = "female_neko_black"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_commie
-	name = "Commie Bikini"
-	icon_state = "female_commie"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_usastripe
-	name = "Freedom Bikini"
-	icon_state = "female_assblastusa"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_uk
-	name = "UK Bikini"
-	icon_state = "female_uk"
-	gender = FEMALE
-	use_static = TRUE
-
-/datum/sprite_accessory/underwear/female_kinky
-	name = "Lingerie"
-	icon_state = "female_kinky"
-	gender = FEMALE
-	use_static = TRUE
 
 ////////////////////////////
 // Undershirt Definitions //
@@ -1512,29 +1447,14 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	icon_state = "ian"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/ilovent
-	name = "Shirt (I Love NT)"
-	icon_state = "ilovent"
-	gender = NEUTER
-
 /datum/sprite_accessory/undershirt/lover
 	name = "Shirt (Lover)"
 	icon_state = "lover"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/matroska
-	name = "Shirt (Matroska)"
-	icon_state = "matroska"
-	gender = NEUTER
-
 /datum/sprite_accessory/undershirt/meat
 	name = "Shirt (Meat)"
 	icon_state = "shirt_meat"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/nano
-	name = "Shirt (Nanotrasen)"
-	icon_state = "shirt_nano"
 	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/peace
@@ -1575,16 +1495,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/undershirt/tiedye
 	name = "Shirt (Tie-dye)"
 	icon_state = "shirt_tiedye"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/uk
-	name = "Shirt (UK)"
-	icon_state = "uk"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/usa
-	name = "Shirt (USA)"
-	icon_state = "shirt_assblastusa"
 	gender = NEUTER
 
 /datum/sprite_accessory/undershirt/shirt_white
@@ -1721,10 +1631,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 
 // please make sure they're sorted alphabetically and categorized
 
-/datum/sprite_accessory/socks/ace_knee
-	name = "Knee-high (Ace)"
-	icon_state = "ace_knee"
-
 /datum/sprite_accessory/socks/bee_knee
 	name = "Knee-high (Bee)"
 	icon_state = "bee_knee"
@@ -1733,18 +1639,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Knee-high (Black)"
 	icon_state = "black_knee"
 
-/datum/sprite_accessory/socks/commie_knee
-	name = "Knee-High (Commie)"
-	icon_state = "commie_knee"
-
-/datum/sprite_accessory/socks/usa_knee
-	name = "Knee-High (Freedom)"
-	icon_state = "assblastusa_knee"
-
-/datum/sprite_accessory/socks/rainbow_knee
-	name = "Knee-high (Rainbow)"
-	icon_state = "rainbow_knee"
-
 /datum/sprite_accessory/socks/striped_knee
 	name = "Knee-high (Striped)"
 	icon_state = "striped_knee"
@@ -1752,14 +1646,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/socks/thin_knee
 	name = "Knee-high (Thin)"
 	icon_state = "thin_knee"
-
-/datum/sprite_accessory/socks/trans_knee
-	name = "Knee-high (Trans)"
-	icon_state = "trans_knee"
-
-/datum/sprite_accessory/socks/uk_knee
-	name = "Knee-High (UK)"
-	icon_state = "uk_knee"
 
 /datum/sprite_accessory/socks/white_knee
 	name = "Knee-high (White)"
@@ -1825,10 +1711,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Stockings (Fishnet)"
 	icon_state = "fishnet_full"
 
-/datum/sprite_accessory/socks/ace_thigh
-	name = "Thigh-high (Ace)"
-	icon_state = "ace_thigh"
-
 /datum/sprite_accessory/socks/bee_thigh
 	name = "Thigh-high (Bee)"
 	icon_state = "bee_thigh"
@@ -1837,18 +1719,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Thigh-high (Black)"
 	icon_state = "black_thigh"
 
-/datum/sprite_accessory/socks/commie_thigh
-	name = "Thigh-high (Commie)"
-	icon_state = "commie_thigh"
-
-/datum/sprite_accessory/socks/usa_thigh
-	name = "Thigh-high (Freedom)"
-	icon_state = "assblastusa_thigh"
-
-/datum/sprite_accessory/socks/rainbow_thigh
-	name = "Thigh-high (Rainbow)"
-	icon_state = "rainbow_thigh"
-
 /datum/sprite_accessory/socks/striped_thigh
 	name = "Thigh-high (Striped)"
 	icon_state = "striped_thigh"
@@ -1856,14 +1726,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/socks/thin_thigh
 	name = "Thigh-high (Thin)"
 	icon_state = "thin_thigh"
-
-/datum/sprite_accessory/socks/trans_thigh
-	name = "Thigh-high (Trans)"
-	icon_state = "trans_thigh"
-
-/datum/sprite_accessory/socks/uk_thigh
-	name = "Thigh-high (UK)"
-	icon_state = "uk_thigh"
 
 /datum/sprite_accessory/socks/white_thigh
 	name = "Thigh-high (White)"
