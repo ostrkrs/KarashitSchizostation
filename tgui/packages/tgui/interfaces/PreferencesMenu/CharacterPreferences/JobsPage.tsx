@@ -87,24 +87,6 @@ function createCreateSetPriorityFromName(jobName: string): CreateSetPriority {
   return createSetPriority;
 }
 
-function PriorityHeaders() {
-  const className = 'PreferencesMenu__Jobs__PriorityHeader';
-
-  return (
-    <Stack>
-      <Stack.Item grow />
-
-      <Stack.Item className={className}>Off</Stack.Item>
-
-      <Stack.Item className={className}>Low</Stack.Item>
-
-      <Stack.Item className={className}>Medium</Stack.Item>
-
-      <Stack.Item className={className}>High</Stack.Item>
-    </Stack>
-  );
-}
-
 type PriorityButtonsProps = {
   createSetPriority: CreateSetPriority;
   isOverflow: boolean;
@@ -350,7 +332,6 @@ export function JobsPage() {
           <Stack fill g={1} className="PreferencesMenu__Jobs">
             <Stack.Item>
               <Stack vertical>
-                <PriorityHeaders />
                 <Department department="Engineering" />
                 <Department department="Science" />
                 <Department department="Silicon" />
@@ -359,7 +340,6 @@ export function JobsPage() {
             </Stack.Item>
             <Stack.Item mt={-5.9}>
               <Stack vertical>
-                <PriorityHeaders />
                 <Department department="Captain" />
                 <Department department="Service" />
                 <Department department="Cargo" />
@@ -367,7 +347,6 @@ export function JobsPage() {
             </Stack.Item>
             <Stack.Item>
               <Stack vertical>
-                <PriorityHeaders />
                 <Department department="Security" />
                 <Department department="Medical" />
               </Stack>
