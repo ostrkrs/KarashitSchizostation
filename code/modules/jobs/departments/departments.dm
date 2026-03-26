@@ -81,6 +81,10 @@
 	label_class = "command"
 	ui_color = "#6681a5"
 	primary_work_area = /area/station/command
+	department_delivery_areas = list(
+		/area/station/command/bridge,
+	)
+	department_access = REGION_ACCESS_COMMAND
 
 /datum/job_department/security
 	department_name = DEPARTMENT_SECURITY

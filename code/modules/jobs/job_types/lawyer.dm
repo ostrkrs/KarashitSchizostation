@@ -2,11 +2,11 @@
 	title = JOB_LAWYER
 	description = "Advocate for prisoners, create law-binding contracts, \
 		ensure Security is following protocol and Space Law."
-	department_head = list(JOB_HEAD_OF_PERSONNEL)
+	department_head = list(JOB_CAPTAIN)
 	faction = FACTION_STATION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_CAPTAIN
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "LAWYER"
 
@@ -20,7 +20,7 @@
 
 	display_order = JOB_DISPLAY_ORDER_LAWYER
 	departments_list = list(
-		/datum/job_department/service,
+		/datum/job_department/command,
 		)
 	rpg_title = "Magistrate"
 	family_heirlooms = list(/obj/item/gavelhammer, /obj/item/book/manual/wiki/security_space_law)

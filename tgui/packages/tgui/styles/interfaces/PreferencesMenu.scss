@@ -7,7 +7,7 @@ $department_map: (
   'Assistant': var(--color-gray),
   'Captain': colors.fg(var(--color-blue)),
   'Cargo': var(--color-brown),
-  'Command': var(--color-yellow),
+  'Command': var(--color-blue),
   'Security': var(--color-red),
   'Engineering': hsl(from var(--color-orange) h s calc(l + 7.5)),
   'Medical': var(--color-teal),
