@@ -273,7 +273,6 @@
 			default = real_name,
 			max_length = MAX_NAME_LEN,
 		)),
-		allow_numbers = TRUE
 	)
 	if (isnull(new_name) || QDELETED(src))
 		return
