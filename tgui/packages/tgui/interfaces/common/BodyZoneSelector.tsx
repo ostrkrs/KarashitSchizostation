@@ -118,6 +118,7 @@ type BodyZoneSelectorProps = {
   scale?: number;
   selectedZone: BodyZone | null;
   theme?: string;
+  precise?: boolean;
 };
 
 type BodyZoneSelectorState = {
