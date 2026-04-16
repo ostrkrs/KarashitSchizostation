@@ -64,6 +64,10 @@
 		QDEL_NULL(inserted_item)
 	return ..()
 
+/obj/item/modular_computer/pda/UpdateDisplay()
+	. = ..()
+	name = "[saved_identification]'s PDA ([saved_job])"
+
 /obj/item/modular_computer/pda/install_default_programs()
 	var/list/apps_to_download = list()
 	if(has_pda_programs)
