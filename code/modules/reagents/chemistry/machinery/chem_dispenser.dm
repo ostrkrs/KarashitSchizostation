@@ -657,6 +657,8 @@
 /obj/machinery/chem_dispenser/mutagensaltpeter
 	name = "botanical chemical dispenser"
 	desc = "Creates and dispenses chemicals useful for botany."
+	icon_state = "botanydispenser"
+	base_icon_state = "botanydispenser"
 	circuit = /obj/item/circuitboard/machine/chem_dispenser/mutagensaltpeter
 
 	/// The default list of dispensable reagents available in the mutagensaltpeter chem dispenser
