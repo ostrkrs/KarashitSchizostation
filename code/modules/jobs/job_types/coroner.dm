@@ -2,8 +2,10 @@
 	title = JOB_CORONER
 	alt_titles = list(
 		"Coroner",
-		"Medical Examiner",
-		"Mortician",
+		"Decedent Analyst",
+		"Diener",
+		"Postmortem Specialist",
+		"Mortuary Auditor",
 	)
 	description = "Perform Autopsies whenever needed, \
 		Update medical records accordingly, apply formaldehyde."

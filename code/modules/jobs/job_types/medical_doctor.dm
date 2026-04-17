@@ -2,6 +2,10 @@
 	title = JOB_MEDICAL_DOCTOR
 	alt_titles = list(
 		"Medical Doctor",
+		"Medical Officer",
+		"Medical Practitioner",
+		"Physician",
+		"Treatment Specialist",
 		"Nurse",
 		"Surgeon",
 	)

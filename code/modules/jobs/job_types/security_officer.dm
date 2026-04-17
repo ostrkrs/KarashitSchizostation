@@ -2,8 +2,10 @@
 	title = JOB_SECURITY_OFFICER
 	alt_titles = list(
 		"Security Officer",
-		"Security Operative",
+		"Complience Enforcer",
 		"Deck Guardian",
+		"Security Operative",
+		"Protection Officer"
 	)
 	description = "Protect company assets, follow the Standard Operating \
 		Procedure, eat donuts."

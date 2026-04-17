@@ -2,6 +2,7 @@
 	title = JOB_PARAMEDIC
 	alt_titles = list(
 		"Paramedic",
+		"Corpsman,"
 		"Emergency Medical Responder",
 		"Search and Rescue Technician",
 	)

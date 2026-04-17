@@ -3,6 +3,9 @@
 	alt_titles = list(
 		"Warden",
 		"Brig Overseer",
+		"Corrections Officer",
+		"Detention Officer",
+		"Prison Supervisor",
 	)
 	description = "Watch over the Brig and Prison Wing, release prisoners when \
 		their time is up, issue equipment to security, be a security officer when \

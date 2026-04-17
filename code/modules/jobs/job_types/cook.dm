@@ -2,9 +2,12 @@
 	title = JOB_COOK
 	alt_titles = list(
 		"Cook",
+		"Baker",
 		"Butcher",
 		"Chef",
 		"Culinary Artist",
+		"Confectioner",
+		"Gastronomist",
 	)
 	description = "Serve food, cook meat, keep the crew fed."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
