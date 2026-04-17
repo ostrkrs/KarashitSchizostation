@@ -34,21 +34,19 @@ function PriorityButton(props: PriorityButtonProps) {
   const className = `PreferencesMenu__Jobs__departments__priority`;
 
   return (
-    <Stack.Item height={PRIORITY_BUTTON_SIZE}>
-      <Button
-        className={classes([
-          className,
-          props.modifier && `${className}--${props.modifier}`,
-        ])}
-        color={props.enabled ? props.color : 'white'}
-        circular
-        onClick={props.onClick}
-        tooltip={props.name}
-        tooltipPosition="bottom"
-        height={PRIORITY_BUTTON_SIZE}
-        width={PRIORITY_BUTTON_SIZE}
-      />
-    </Stack.Item>
+    <Button
+      className={classes([
+        className,
+        props.modifier && `${className}--${props.modifier}`,
+      ])}
+      color={props.enabled ? props.color : 'white'}
+      circular
+      onClick={props.onClick}
+      tooltip={props.name}
+      tooltipPosition="bottom"
+      height={PRIORITY_BUTTON_SIZE}
+      width={PRIORITY_BUTTON_SIZE}
+    />
   );
 }
 
@@ -97,12 +95,14 @@ function PriorityButtons(props: PriorityButtonsProps) {
   const { createSetPriority, isOverflow, priority } = props;
 
   return (
-    <Stack
+    <Box
       style={{
         alignItems: 'center',
         height: '100%',
         justifyContent: 'flex-end',
         paddingLeft: '0.3em',
+        paddingTop: '0.12em',
+        paddingBottom: '0.12em',
       }}
     >
       {isOverflow ? (
@@ -154,7 +154,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
           />
         </>
       )}
-    </Stack>
+    </Box>
   );
 }
 
@@ -165,7 +165,7 @@ type JobRowProps = {
 };
 
 function JobRow(props: JobRowProps) {
-  const { data } = useBackend<PreferencesMenuData>();
+  const { data, act } = useBackend<PreferencesMenuData>(); // NOVA EDIT CHANGE - Adds act param
   const { className, job, name } = props;
 
   const isOverflow = data.overflow_role === name;
@@ -175,6 +175,10 @@ function JobRow(props: JobRowProps) {
 
   const experienceNeeded = data.job_required_experience?.[name];
   const daysLeft = data.job_days_left ? data.job_days_left[name] : 0;
+
+  const alt_title_selected = data.job_alt_titles[name]
+    ? data.job_alt_titles[name]
+    : name;
 
   let rightSide: ReactNode;
 
@@ -226,7 +230,18 @@ function JobRow(props: JobRowProps) {
               paddingLeft: '0.3em',
             }}
           >
-            {name}
+            {!job.alt_titles ? (
+              name
+            ) : (
+              <Dropdown
+                width="100%"
+                options={job.alt_titles}
+                selected={alt_title_selected}
+                onSelected={(value) =>
+                  act('set_job_title', { job: name, new_title: value })
+                }
+              />
+            )}
           </Stack.Item>
         </Tooltip>
 
@@ -340,7 +355,6 @@ export function JobsPage() {
             <Stack.Item mt={-5.9}>
               <Stack vertical>
                 <Department department="Captain" />
-                <Department department="Command" />
                 <Department department="Service" />
                 <Department department="Assistant" />
               </Stack>

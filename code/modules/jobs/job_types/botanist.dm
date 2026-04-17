@@ -1,5 +1,14 @@
 /datum/job/botanist
 	title = JOB_BOTANIST
+	alt_titles = list(
+		"Botanist",
+		"Botanical Researcher",
+		"Florist",
+		"Gardener",
+		"Herbalist",
+		"Hydroponicist",
+		"Mycologist",
+	)
 	description = "Grow plants for the cook, for medicine, and for recreation."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION

@@ -1,5 +1,10 @@
 /datum/job/chemist
 	title = JOB_CHEMIST
+	alt_titles = list(
+		"Chemist",
+		"Pharmacist",
+		"Pharmacologist",
+	)
 	description = "Supply the doctors with chemicals, make medicine, as well as \
 		less likable substances in the comfort of a fully reinforced room."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)

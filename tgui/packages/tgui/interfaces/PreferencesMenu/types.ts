@@ -81,6 +81,7 @@ export type Department = {
 export type Job = {
   description: string;
   department: string;
+  alt_titles?: string[];
 };
 
 export type Quirk = {
@@ -181,6 +182,7 @@ export type PreferencesMenuData = {
     }
   >;
   job_preferences: Record<string, JobPriority>;
+  job_alt_titles: Record<string, string>;
 
   keybindings: Record<string, string[]>;
   overflow_role: string;

@@ -1,5 +1,13 @@
 /datum/job/station_engineer
 	title = JOB_STATION_ENGINEER
+	alt_titles = list(
+		"Deck Engineer",
+		"Electrician",
+		"Engine Technician",
+		"EVA Technician",
+		"Maintenance Technician",
+		"Mechanic",
+	)
 	description = "Start the Supermatter, wire the solars, repair station hull \
 		and wiring damage."
 	department_head = list(JOB_CHIEF_ENGINEER)

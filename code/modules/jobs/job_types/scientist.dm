@@ -1,5 +1,15 @@
 /datum/job/scientist
 	title = JOB_SCIENTIST
+	alt_titles = list(
+		"Scientist",
+		"Anomalist",
+		"Circuitry Engineer",
+		"Cytologist",
+		"Lab Technician",
+		"Xenoarchaeologist",
+		"Xenobiologist",
+		"Xenobotanist",
+	)
 	description = "Do experiments, perform research, feed the slimes, make bombs."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
 	faction = FACTION_STATION

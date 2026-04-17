@@ -215,6 +215,27 @@ SUBSYSTEM_DEF(job)
 
 	return TRUE
 
+/datum/controller/subsystem/job/proc/setup_alt_job_items(mob/living/carbon/human/equipping, datum/job/job, client/player_client)
+	if(!player_client)
+		return
+
+	if(!ishuman(equipping))
+		return
+
+	var/chosen_title = player_client.prefs.alt_job_titles[job.title] || job.title
+
+	var/obj/item/card/id/card = equipping.wear_id
+	if(istype(card))
+		card.assignment = chosen_title
+		card.update_label()
+
+	// Look for PDA in belt or L pocket
+	var/obj/item/modular_computer/pda/pda = equipping.belt
+	if(!istype(pda))
+		pda = equipping.l_store
+	if(istype(pda))
+		pda.saved_job = chosen_title
+		pda.UpdateDisplay()
 
 /datum/controller/subsystem/job/proc/get_job(rank)
 	if(!length(all_occupations))
@@ -595,13 +616,15 @@ SUBSYSTEM_DEF(job)
 
 //Gives the player the stuff he should have with his rank
 /datum/controller/subsystem/job/proc/equip_rank(mob/living/equipping, datum/job/job, client/player_client)
+	var/alt_title = player_client?.prefs.alt_job_titles?[job.title] || job.title
+
 	equipping.job = job.title
 
 	SEND_SIGNAL(equipping, COMSIG_JOB_RECEIVED, job)
 
-	equipping.mind?.set_assigned_role_with_greeting(job, player_client)
+	equipping.mind?.set_assigned_role_with_greeting(job, player_client, alt_title)
 	equipping.on_job_equipping(job, player_client)
-	job.announce_job(equipping)
+	job.announce_job(equipping, alt_title)
 
 	if(player_client?.holder)
 		if(CONFIG_GET(flag/auto_deadmin_always) || (player_client.prefs?.toggles & DEADMIN_ALWAYS))
@@ -609,6 +632,7 @@ SUBSYSTEM_DEF(job)
 		else
 			handle_auto_deadmin_roles(player_client, job.title)
 
+	setup_alt_job_items(equipping, job, player_client)
 	job.after_spawn(equipping, player_client)
 
 /datum/controller/subsystem/job/proc/handle_auto_deadmin_roles(client/C, rank)

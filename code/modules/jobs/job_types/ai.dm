@@ -1,5 +1,10 @@
 /datum/job/ai
 	title = JOB_AI
+	alt_titles = list(
+		"AI",
+		"Automated Overseer",
+		"Station Intelligence",
+	)
 	description = "Assist the crew, follow your laws, coordinate your cyborgs."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON
 	faction = FACTION_STATION
