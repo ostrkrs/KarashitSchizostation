@@ -873,7 +873,7 @@
 		},
 		{
 			"id": "plasma_engi",
-			"name": "Station Engineer (Plasmaman)",
+			"name": "Deck Engineer (Plasmaman)",
 			"desc": "The ever industrious plasmamen are well suited to engineering work, due to their natural radiation resistance.",
 			"rules": "{$Immunity} to Battlefields. When this creature dies deal 1 damage to all other creatures.",
 			"icon_state": "engi_plasma",
@@ -1166,8 +1166,8 @@
 		},
 		{
 			"id": "engi",
-			"name": "Station Engineer",
-			"desc": "Station Engineers maintain the intricate and delicate web of machinery that keeps you, and everyone else aboard your station, alive. No pressure there, then.",
+			"name": "Deck Engineer",
+			"desc": "Deck Engineers maintain the intricate and delicate web of machinery that keeps you, and everyone else aboard your station, alive. No pressure there, then.",
 			"rules": "{$Graytide} Tap: Destroy or return to the hand a Battlefield card on the field.",
 			"icon_state": "engi",
 			"power": "2",
@@ -1177,7 +1177,7 @@
 			"cardtype": "Creature",
 			"cardsubtype": "Atmospherics Maintenance",
 			"rarity": "common",
-			"summon_icon_state": "Station Engineer"
+			"summon_icon_state": "Deck Engineer"
 		},
 		{
 			"id": "swarmer",

@@ -1,14 +1,6 @@
 /datum/job/doctor
 	title = JOB_MEDICAL_DOCTOR
-	alt_titles = list(
-		"Medical Doctor",
-		"Medical Officer",
-		"Medical Practitioner",
-		"Physician",
-		"Treatment Specialist",
-		"Nurse",
-		"Surgeon",
-	)
+	alt_titles = JOB_MEDICAL_DOCTOR_ALT_TITLES
 	description = "Save lives, run around the station looking for victims, \
 		scan everyone in sight"
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)

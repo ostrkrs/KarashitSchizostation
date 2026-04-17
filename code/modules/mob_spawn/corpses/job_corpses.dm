@@ -22,7 +22,7 @@
 	icon_state = "corpsescientist"
 
 /obj/effect/mob_spawn/corpse/human/engineer
-	name = JOB_STATION_ENGINEER
+	name = JOB_DECK_ENGINEER
 	outfit = /datum/outfit/job/engineer/gloved
 	icon_state = "corpseengineer"
 

@@ -1,11 +1,6 @@
 /datum/job/paramedic
 	title = JOB_PARAMEDIC
-	alt_titles = list(
-		"Paramedic",
-		"Corpsman,"
-		"Emergency Medical Responder",
-		"Search and Rescue Technician",
-	)
+	alt_titles = JOB_PARAMEDIC_ALT_TITLES
 	description = "Run around the station looking for patients, respond to \
 		emergencies, give patients a roller bed ride to medbay."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)

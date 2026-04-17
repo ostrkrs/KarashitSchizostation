@@ -46,7 +46,16 @@
 
 //No department
 #define JOB_ASSISTANT "Assistant"
+#define JOB_CIVILIAN "Civilian"
+#define JOB_INTERN "Intern"
+#define JOB_OFFDUTY "Off-Duty Crew"
+#define JOB_PASSENGER "Passenger"
+#define JOB_RETIRED "Retired"
+#define JOB_TOURIST "Tourist"
+#define JOB_VISITOR "Visitor"
+
 #define JOB_PRISONER "Prisoner"
+
 //Command
 #define JOB_CAPTAIN "Captain"
 #define JOB_HEAD_OF_PERSONNEL "Head of Personnel"
@@ -54,42 +63,128 @@
 #define JOB_RESEARCH_DIRECTOR "Research Director"
 #define JOB_CHIEF_ENGINEER "Chief Engineer"
 #define JOB_CHIEF_MEDICAL_OFFICER "Chief Medical Officer"
+#define JOB_QUARTERMASTER "Quartermaster"
 #define JOB_BRIDGE_ASSISTANT "Bridge Assistant"
 #define JOB_VETERAN_ADVISOR "Veteran Security Advisor"
+
 //Silicon
 #define JOB_AI "AI"
+
 #define JOB_CYBORG "Cyborg"
+#define JOB_DROID "Droid"
+#define JOB_ROBOT "Robot"
+
 #define JOB_PERSONAL_AI "Personal AI"
 #define JOB_HUMAN_AI "Big Brother"
+
 //Security
 #define JOB_WARDEN "Warden"
+#define JOB_ARMORY_CUSTODIAN "Armory Custodian"
+#define JOB_BRIG_OVERSEER "Brig Overseer"
+#define JOB_CORRECTIONS_OFFICER "Corrections Officer"
+#define JOB_PRISON_SUPERVISOR "Prison Supervisor"
+
 #define JOB_DETECTIVE "Detective"
+#define JOB_CRIMINAL_INVESTIGATOR "Criminal Investigator"
+#define JOB_FORENSIC_TECHNICIAN "Forensic Technician"
+
 #define JOB_SECURITY_OFFICER "Security Officer"
+#define JOB_DECK_CONSTABLE "Deck Constable"
+#define JOB_DECK_GUARDIAN "Deck Guardian"
+#define JOB_SECURITY_OPERATIVE "Security Operative"
+#define JOB_PROTECTION_OFFICER "Protection Officer"
+
 #define JOB_SECURITY_OFFICER_MEDICAL "Security Officer (Medical)"
 #define JOB_SECURITY_OFFICER_ENGINEERING "Security Officer (Engineering)"
 #define JOB_SECURITY_OFFICER_SCIENCE "Security Officer (Science)"
 #define JOB_SECURITY_OFFICER_SUPPLY "Security Officer (Cargo)"
+
 //Engineering
-#define JOB_STATION_ENGINEER "Station Engineer"
+#define JOB_DECK_ENGINEER "Deck Engineer"
+#define JOB_ELECTRICIAN "Electrician"
+#define JOB_ENGINE_TECHNICIAN "Engine Technician"
+#define JOB_EVA_TECHNICIAN "EVA Technician"
+#define JOB_REPAIR_TECHNICIAN "Repair Technician"
+#define JOB_MAINTENANCE_TECHNICIAN "Maintenance Technician"
+#define JOB_MECHANIC "Mechanic"
+
 #define JOB_ATMOSPHERIC_TECHNICIAN "Atmospheric Technician"
+#define JOB_EMERGENCY_FIRE_RESPONDER "Emergency Fire Responder"
+#define JOB_LIFE_SUPPORT_TECHNICIAN "Life Support Technician"
+#define JOB_ENVIRONMENTAL_CONTROL_SPECIALIST "Environmental Control Specialist"
+
 //Medical
 #define JOB_CORONER "Coroner"
+#define JOB_DECEDENT_ANALYST "Decedent Analyst"
+#define JOB_DIENER "Diener"
+#define JOB_POSTMORTEM_SPECIALIST "Postmortem Specialist"
+#define JOB_MORTUARY_AUDITOR "Mortuary Auditor"
+
 #define JOB_MEDICAL_DOCTOR "Medical Doctor"
+#define JOB_MEDICAL_PRACTITIONER "Medical Practitioner"
+#define JOB_PHYSICIAN "Physician"
+#define JOB_TREATMENT_SPECIALIST "Treatment Specialist"
+#define JOB_NURSE "Nurse"
+#define JOB_SURGEON "Surgeon"
+
 #define JOB_PARAMEDIC "Paramedic"
+#define JOB_CORPSMAN "Corpsman"
+#define JOB_EMERGENCY_MEDICAL_RESPONDER "Emergency Medical Responder"
+#define JOB_SEARCH_AND_RESCUE_TECHNICIAN "Search and Rescue Technician"
+
 #define JOB_CHEMIST "Chemist"
+#define JOB_PHARMACIST "Pharmacist"
+#define JOB_PHARMACOLOGIST "Pharmacologist"
+
 //Science
 #define JOB_SCIENTIST "Scientist"
+#define JOB_ANOMALIST "Anomalist"
+#define JOB_CIRCUITRY_ENGINEER "Circuitry Engineer"
+#define JOB_CYTOTOLOGIST "Cytologist"
+#define JOB_LAB_TECHNICIAN "Lab Technician"
+#define JOB_XENOARCHAEOLOGIST "Xenoarchaeologist"
+#define JOB_XENOBIOTOLOGIST "Xenobiologist"
+#define JOB_XENOBOTANIST "Xenobotanist"
+
 #define JOB_ROBOTICIST "Roboticist"
+#define JOB_BIOMECHANICAL_ENGINEER "Biomechanical Engineer"
+#define JOB_CYBERNETICIST "Cyberneticist"
+#define JOB_MECHATRONIC_ENGINEER "Mechatronic Engineer"
+
 #define JOB_GENETICIST "Geneticist"
+#define JOB_GENETIC_ENGINEER "Genetic Engineer"
+#define JOB_GENOME_RESEARCHER "Genome Researcher"
+#define JOB_MUTATION_RESEARCHER "Mutation Researcher"
+
 //Supply
-#define JOB_QUARTERMASTER "Quartermaster"
 #define JOB_CARGO_TECHNICIAN "Cargo Technician"
+#define JOB_COURIER "Courier"
+#define JOB_DECK_LOADER "Deck Loader"
+#define JOB_SUPPLY_TECHNICIAN "Supply Technician"
+#define JOB_INVENTORY_ASSOCIATE "Inventory Associate"
+#define JOB_WAREHOUSE_TECHNICIAN "Warehouse Technician"
+
 #define JOB_CARGO_GORILLA "Cargo Gorilla"
+
 #define JOB_SHAFT_MINER "Shaft Miner"
+#define JOB_SHAFT_EXCAVATION_TECHNICIAN "Excavation Technician"
+#define JOB_SHAFT_SPELUNKER "Spelunker"
+
 #define JOB_BITRUNNER "Bitrunner"
+
 //Service
 #define JOB_BARTENDER "Bartender"
+#define JOB_BARISTA "Barista"
+#define JOB_BARKEEPER "Barkeeper"
+#define JOB_MIXOLOGIST "Mixologist"
+
 #define JOB_BOTANIST "Botanist"
+#define JOB_FLORIST "Florist"
+#define JOB_GARDENER "Gardener"
+#define JOB_HERBALIST "Herbalist"
+#define JOB_HYDROPONICIST "Hydroponicist"
+#define JOB_MYCOLOGIST "Mycologist"
+
 #define JOB_COOK "Cook"
 #define JOB_CHEF "Chef" // Alternate cook title.
 #define JOB_JANITOR "Janitor"
@@ -131,8 +226,146 @@
 #define JOB_LOSTCREW_CARGO "Visiting Technician"
 #define JOB_LOSTCREW_CIVILLIAN "Visiting Civillian"
 
+/**
+ * Alt job titles, should not causing any issues if changed
+ * Just make sure to include initial job title in the top of the list
+ */
+///No department
+#define JOB_CIVILIAN_ALT_TITLES list( \
+	JOB_ASSISTANT, \
+	JOB_CIVILIAN, \
+	JOB_INTERN, \
+	JOB_OFFDUTY, \
+	JOB_PASSENGER, \
+	JOB_RETIRED, \
+	JOB_TOURIST, \
+	JOB_VISITOR, \
+)
+///Silicon
+#define JOB_CYBORG_ALT_TITLES list( \
+	JOB_CYBORG, \
+	JOB_DROID, \
+	JOB_ROBOT, \
+)
+///Security
+#define JOB_WARDEN_ALT_TITLES list( \
+	JOB_WARDEN, \
+	JOB_ARMORY_CUSTODIAN, \
+	JOB_BRIG_OVERSEER, \
+	JOB_CORRECTIONS_OFFICER, \
+	JOB_PRISON_SUPERVISOR, \
+)
+#define JOB_DETECTIVE_ALT_TITLES list( \
+	JOB_DETECTIVE, \
+	JOB_CRIMINAL_INVESTIGATOR, \
+	JOB_FORENSIC_TECHNICIAN, \
+)
+#define JOB_SECURITY_OFFICER_ALT_TITLES list( \
+	JOB_SECURITY_OFFICER, \
+	JOB_DECK_CONSTABLE, \
+	JOB_DECK_GUARDIAN, \
+	JOB_SECURITY_OPERATIVE, \
+	JOB_PROTECTION_OFFICER, \
+)
+///Engineering
+#define JOB_DECK_ENGINEER_ALT_TITLES list( \
+	JOB_DECK_ENGINEER, \
+	JOB_ELECTRICIAN, \
+	JOB_ENGINE_TECHNICIAN, \
+	JOB_EVA_TECHNICIAN, \
+	JOB_REPAIR_TECHNICIAN, \
+	JOB_MAINTENANCE_TECHNICIAN, \
+	JOB_MECHANIC, \
+)
+#define JOB_ATMOSPHERIC_TECHNICIAN_ALT_TITLES list( \
+	JOB_ATMOSPHERIC_TECHNICIAN, \
+	JOB_EMERGENCY_FIRE_RESPONDER, \
+	JOB_LIFE_SUPPORT_TECHNICIAN, \
+	JOB_ENVIRONMENTAL_CONTROL_SPECIALIST, \
+)
+///Medical
+#define JOB_CORONER_ALT_TITLES list( \
+	JOB_CORONER, \
+	JOB_DECEDENT_ANALYST, \
+	JOB_DIENER, \
+	JOB_POSTMORTEM_SPECIALIST, \
+	JOB_MORTUARY_AUDITOR, \
+)
+#define JOB_MEDICAL_DOCTOR_ALT_TITLES list( \
+	JOB_MEDICAL_DOCTOR, \
+	JOB_MEDICAL_PRACTITIONER, \
+	JOB_PHYSICIAN, \
+	JOB_TREATMENT_SPECIALIST, \
+	JOB_NURSE, \
+	JOB_SURGEON, \
+)
+#define JOB_PARAMEDIC_ALT_TITLES list( \
+	JOB_PARAMEDIC, \
+	JOB_CORPSMAN, \
+	JOB_EMERGENCY_MEDICAL_RESPONDER, \
+	JOB_SEARCH_AND_RESCUE_TECHNICIAN, \
+)
+#define JOB_CHEMIST_ALT_TITLES list( \
+	JOB_CHEMIST, \
+	JOB_PHARMACIST, \
+	JOB_PHARMACOLOGIST, \
+)
+///Science
+#define JOB_SCIENTIST_ALT_TITLES list( \
+	JOB_SCIENTIST, \
+	JOB_ANOMALIST, \
+	JOB_CIRCUITRY_ENGINEER, \
+	JOB_CYTOTOLOGIST, \
+	JOB_LAB_TECHNICIAN, \
+	JOB_XENOARCHAEOLOGIST, \
+	JOB_XENOBIOTOLOGIST, \
+	JOB_XENOBOTANIST, \
+)
+#define JOB_ROBOTICIST_ALT_TITLES list( \
+	JOB_ROBOTICIST, \
+	JOB_BIOMECHANICAL_ENGINEER, \
+	JOB_CYBERNETICIST, \
+	JOB_MECHATRONIC_ENGINEER, \
+)
+#define JOB_GENETICIST_ALT_TITLES list( \
+	JOB_GENETICIST, \
+	JOB_GENETIC_ENGINEER, \
+	JOB_GENOME_RESEARCHER, \
+	JOB_MUTATION_RESEARCHER, \
+)
+///Supply
+#define JOB_CARGO_TECHNICIAN_ALT_TITLES list( \
+	JOB_CARGO_TECHNICIAN, \
+	JOB_COURIER, \
+	JOB_DECK_LOADER, \
+	JOB_SUPPLY_TECHNICIAN, \
+	JOB_INVENTORY_ASSOCIATE, \
+	JOB_WAREHOUSE_TECHNICIAN, \
+)
+#define JOB_SHAFT_MINER_ALT_TITLES list( \
+	JOB_SHAFT_MINER, \
+	JOB_SHAFT_EXCAVATION_TECHNICIAN, \
+	JOB_SHAFT_SPELUNKER, \
+)
+///Service
+#define JOB_BARTENDER_ALT_TITLES list( \
+	JOB_BARTENDER, \
+	JOB_BARISTA, \
+	JOB_BARKEEPER, \
+	JOB_MIXOLOGIST, \
+)
+#define JOB_BOTANIST_ALT_TITLES list( \
+	JOB_BOTANIST, \
+	JOB_FLORIST, \
+	JOB_GARDENER, \
+	JOB_HERBALIST, \
+	JOB_HYDROPONICIST, \
+	JOB_MYCOLOGIST, \
+)
+
+
 #define JOB_GROUP_ENGINEERS list( \
-	JOB_STATION_ENGINEER, \
+	JOB_DECK_ENGINEER, \
 	JOB_ATMOSPHERIC_TECHNICIAN, \
 )
 

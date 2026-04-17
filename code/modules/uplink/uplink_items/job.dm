@@ -154,14 +154,14 @@
 	desc = "A disposable sentry gun deployment system cleverly disguised as a toolbox, apply wrench for functionality."
 	item = /obj/item/storage/toolbox/emergency/turret
 	cost = 11
-	restricted_roles = list(JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER)
+	restricted_roles = list(JOB_DECK_ENGINEER, JOB_CHIEF_ENGINEER)
 
 /datum/uplink_item/role_restricted/rebarxbowsyndie
 	name = "Syndicate Rebar Crossbow"
 	desc = "A much more professional version of the engineer's bootleg rebar crossbow. 3 shot mag, quicker loading, and better ammo. Owners manual included."
 	item = /obj/item/storage/box/syndie_kit/rebarxbowsyndie
 	cost = 12
-	restricted_roles = list(JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
+	restricted_roles = list(JOB_DECK_ENGINEER, JOB_CHIEF_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
 
 /datum/uplink_item/role_restricted/magillitis_serum
 	name = "Magillitis Serum Autoinjector"
@@ -403,4 +403,4 @@
 	Please note that this will halve the fire-rate of the emitter."
 	item = /obj/item/emitter_disk/blast
 	cost = 5
-	restricted_roles = list(JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER)
+	restricted_roles = list(JOB_DECK_ENGINEER, JOB_CHIEF_ENGINEER)

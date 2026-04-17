@@ -53,7 +53,7 @@
 		JOB_SECURITY_OFFICER = "Officer",
 
 		JOB_CHIEF_ENGINEER = "Chief Engineer",
-		JOB_STATION_ENGINEER = "Engineer",
+		JOB_DECK_ENGINEER = "Engineer",
 		JOB_ATMOSPHERIC_TECHNICIAN = "Technician",
 
 		JOB_CHIEF_MEDICAL_OFFICER = "C.M.O.",

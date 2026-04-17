@@ -1,13 +1,6 @@
 /datum/job/cargo_technician
 	title = JOB_CARGO_TECHNICIAN
-	alt_titles = list(
-		"Cargo Technician",
-		"Courier",
-		"Deck Loader",
-		"Supply Technician",
-		"Inventory Associate",
-		"Warehouse Technician",
-	)
+	alt_titles = JOB_CARGO_TECHNICIAN_ALT_TITLES
 	description = "Distribute supplies to the departments that ordered them, \
 		collect empty crates, load and unload the supply shuttle, \
 		ship bounty cubes."

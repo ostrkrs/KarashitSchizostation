@@ -489,12 +489,6 @@
 	honorifics = list("Cook")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/cook/chef
-	assignment = JOB_CHEF
-	sechud_icon_state = SECHUD_CHEF
-	honorifics = list("Chef")
-	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
-
 /datum/id_trim/job/coroner
 	assignment = JOB_CORONER
 	trim_state = "trim_coroner"
@@ -1236,7 +1230,7 @@
 	template_access = null
 
 /datum/id_trim/job/station_engineer
-	assignment = JOB_STATION_ENGINEER
+	assignment = JOB_DECK_ENGINEER
 	trim_state = "trim_stationengineer"
 	department_color = COLOR_ENGINEERING_ORANGE
 	subdepartment_color = COLOR_ENGINEERING_ORANGE

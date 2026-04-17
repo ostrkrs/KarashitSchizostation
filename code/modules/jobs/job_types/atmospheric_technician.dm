@@ -1,10 +1,6 @@
 /datum/job/atmospheric_technician
 	title = JOB_ATMOSPHERIC_TECHNICIAN
-	alt_titles = list(
-		"Atmospheric Technician",
-		"Emergency Fire Technician",
-		"Life Support Technician",
-	)
+	alt_titles = JOB_ATMOSPHERIC_TECHNICIAN_ALT_TITLES
 	description = "Ensure the air is breathable on the station, fill oxygen tanks, fight fires, purify the air."
 	department_head = list(JOB_CHIEF_ENGINEER)
 	faction = FACTION_STATION

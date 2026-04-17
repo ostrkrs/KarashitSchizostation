@@ -1,11 +1,6 @@
 /datum/job/bartender
 	title = JOB_BARTENDER
-	alt_titles = list(
-		"Bartender",
-		"Barista",
-		"Barkeeper",
-		"Mixologist",
-	)
+	alt_titles = JOB_BARTENDER_ALT_TITLES
 	description = "Serve booze, mix drinks, keep the crew drunk."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION

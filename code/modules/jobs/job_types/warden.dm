@@ -1,12 +1,6 @@
 /datum/job/warden
 	title = JOB_WARDEN
-	alt_titles = list(
-		"Warden",
-		"Brig Overseer",
-		"Corrections Officer",
-		"Detention Officer",
-		"Prison Supervisor",
-	)
+	alt_titles = JOB_WARDEN_ALT_TITLES
 	description = "Watch over the Brig and Prison Wing, release prisoners when \
 		their time is up, issue equipment to security, be a security officer when \
 		they all eventually die."

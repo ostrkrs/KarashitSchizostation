@@ -1,12 +1,6 @@
 /datum/job/security_officer
 	title = JOB_SECURITY_OFFICER
-	alt_titles = list(
-		"Security Officer",
-		"Complience Enforcer",
-		"Deck Guardian",
-		"Security Operative",
-		"Protection Officer"
-	)
+	alt_titles = JOB_SECURITY_OFFICER_ALT_TITLES
 	description = "Protect company assets, follow the Standard Operating \
 		Procedure, eat donuts."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY

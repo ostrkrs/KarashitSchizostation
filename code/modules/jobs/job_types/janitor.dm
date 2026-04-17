@@ -2,8 +2,9 @@
 	title = JOB_JANITOR
 	alt_titles = list(
 		"Janitor",
-		"Custodial Technician",
+		"Cleaner",
 		"Custodian",
+		"Custodial Technician",
 		"Sanitation Technician",
 	)
 	description = "Clean up trash and blood. Replace broken lights. Slip people over."

@@ -1,11 +1,6 @@
 /datum/job/roboticist
 	title = JOB_ROBOTICIST
-	alt_titles = list(
-		"Roboticist",
-		"Biomechanical Engineer",
-		"Cyberneticist",
-		"Mechatronic Engineer",
-	)
+	alt_titles = JOB_ROBOTICIST_ALT_TITLES
 	description = "Build and repair the AI and cyborgs, create mechs."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
 	faction = FACTION_STATION

@@ -5,17 +5,7 @@ Assistant
 */
 /datum/job/assistant
 	title = JOB_ASSISTANT
-	alt_titles = list(
-		"Assistant",
-		"Artist",
-		"Civilian",
-		"Entertainer",
-		"Freelancer",
-		"Tourist",
-		"Off-Duty Crew",
-		"Passenger",
-		"Visitor",
-	)
+	alt_titles = JOB_CIVILIAN_ALT_TITLES
 	description = "Get your space legs, assist people, ask the HoP to give you a job."
 	faction = FACTION_STATION
 	total_positions = 5

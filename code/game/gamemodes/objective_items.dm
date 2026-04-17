@@ -155,7 +155,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 		JOB_HEAD_OF_SECURITY,
 		JOB_QUARTERMASTER,
 		JOB_RESEARCH_DIRECTOR,
-		JOB_STATION_ENGINEER,
+		JOB_DECK_ENGINEER,
 	)
 	exists_on_map = TRUE
 	difficulty = 3
@@ -605,7 +605,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /datum/objective_item/steal/blackbox
 	name = "the Blackbox"
 	targetitem = /obj/item/blackbox
-	excludefromjob = list(JOB_CHIEF_ENGINEER, JOB_STATION_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
+	excludefromjob = list(JOB_CHIEF_ENGINEER, JOB_DECK_ENGINEER, JOB_ATMOSPHERIC_TECHNICIAN)
 	exists_on_map = TRUE
 	difficulty = 4
 	steal_hint = "The station's data Blackbox, found solely within Telecommunications."
@@ -620,8 +620,8 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /datum/objective_item/steal/traitor/insuls
 	name = "some insulated gloves"
 	targetitem = /obj/item/clothing/gloves/color/yellow
-	excludefromjob = list(JOB_CARGO_TECHNICIAN, JOB_QUARTERMASTER, JOB_ATMOSPHERIC_TECHNICIAN, JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER)
-	item_owner = list(JOB_STATION_ENGINEER, JOB_CHIEF_ENGINEER)
+	excludefromjob = list(JOB_CARGO_TECHNICIAN, JOB_QUARTERMASTER, JOB_ATMOSPHERIC_TECHNICIAN, JOB_DECK_ENGINEER, JOB_CHIEF_ENGINEER)
+	item_owner = list(JOB_DECK_ENGINEER, JOB_CHIEF_ENGINEER)
 	exists_on_map = TRUE
 	difficulty = 1
 	steal_hint = "A basic pair of insulated gloves, usually worn by Assistants, Engineers, or Cargo Technicians."
@@ -689,7 +689,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	targetitem = /obj/item/pipe_dispenser
 	excludefromjob = list(
 		JOB_ATMOSPHERIC_TECHNICIAN,
-		JOB_STATION_ENGINEER,
+		JOB_DECK_ENGINEER,
 		JOB_CHIEF_ENGINEER,
 		JOB_SCIENTIST,
 		JOB_RESEARCH_DIRECTOR,

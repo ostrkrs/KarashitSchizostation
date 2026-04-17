@@ -1,13 +1,6 @@
 /datum/job/station_engineer
-	title = JOB_STATION_ENGINEER
-	alt_titles = list(
-		"Deck Engineer",
-		"Electrician",
-		"Engine Technician",
-		"EVA Technician",
-		"Maintenance Technician",
-		"Mechanic",
-	)
+	title = JOB_DECK_ENGINEER
+	alt_titles = JOB_DECK_ENGINEER_ALT_TITLES
 	description = "Start the Supermatter, wire the solars, repair station hull \
 		and wiring damage."
 	department_head = list(JOB_CHIEF_ENGINEER)
@@ -49,7 +42,7 @@
 
 
 /datum/outfit/job/engineer
-	name = "Station Engineer"
+	name = "Deck Engineer"
 	jobtype = /datum/job/station_engineer
 
 	id_trim = /datum/id_trim/job/station_engineer
@@ -75,12 +68,12 @@
 	skillchips = list(/obj/item/skillchip/job/engineer)
 
 /datum/outfit/job/engineer/gloved
-	name = "Station Engineer (Gloves)"
+	name = "Deck Engineer (Gloves)"
 
 	gloves = /obj/item/clothing/gloves/color/yellow
 
 /datum/outfit/job/engineer/mod
-	name = "Station Engineer (MODsuit)"
+	name = "Deck Engineer (MODsuit)"
 
 	suit_store = /obj/item/tank/internals/oxygen
 	back = /obj/item/mod/control/pre_equipped/engineering

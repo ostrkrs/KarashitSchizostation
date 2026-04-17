@@ -1,12 +1,6 @@
 /datum/job/coroner
 	title = JOB_CORONER
-	alt_titles = list(
-		"Coroner",
-		"Decedent Analyst",
-		"Diener",
-		"Postmortem Specialist",
-		"Mortuary Auditor",
-	)
+	alt_titles = JOB_CORONER_ALT_TITLES
 	description = "Perform Autopsies whenever needed, \
 		Update medical records accordingly, apply formaldehyde."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
