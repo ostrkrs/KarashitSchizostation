@@ -355,6 +355,7 @@ export function JobsPage() {
             <Stack.Item mt={-5.9}>
               <Stack vertical>
                 <Department department="Captain" />
+                <Department department="Command" />
                 <Department department="Service" />
                 <Department department="Assistant" />
               </Stack>
