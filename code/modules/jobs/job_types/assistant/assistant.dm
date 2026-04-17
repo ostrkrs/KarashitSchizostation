@@ -7,7 +7,7 @@ Assistant
 	title = JOB_ASSISTANT
 	alt_titles = JOB_CIVILIAN_ALT_TITLES
 	description = "Get your space legs, assist people, ask the HoP to give you a job."
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = "absolutely everyone"
@@ -34,7 +34,7 @@ Assistant
 		/obj/item/crowbar/large = 1
 	)
 
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 	rpg_title = "Lout"
 	config_tag = "ASSISTANT"
 

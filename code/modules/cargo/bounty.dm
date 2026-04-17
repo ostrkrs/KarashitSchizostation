@@ -46,7 +46,7 @@
 				chosen_type = pick(subtypesof(/datum/bounty/item/assistant))
 			if(CIV_JOB_ROBO)
 				chosen_type = pick(subtypesof(/datum/bounty/item/mech))
-			if(CIV_JOB_CHEF)
+			if(CIV_JOB_COOK)
 				chosen_type = pick(subtypesof(/datum/bounty/item/chef) + subtypesof(/datum/bounty/reagent/chef))
 			if(CIV_JOB_SEC)
 				chosen_type = pick(subtypesof(/datum/bounty/item/security))

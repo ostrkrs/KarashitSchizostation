@@ -3,7 +3,7 @@
 	alt_titles = JOB_JANITOR_ALT_TITLES
 	description = "Clean up trash and blood. Replace broken lights. Slip people over."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOP
@@ -29,7 +29,7 @@
 		/obj/item/lightreplacer = 10
 	)
 	rpg_title = "Groundskeeper"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 	job_tone = "slip"
 

@@ -3,7 +3,7 @@
 	alt_titles = JOB_ATMOSPHERIC_TECHNICIAN_ALT_TITLES
 	description = "Ensure the air is breathable on the station, fill oxygen tanks, fight fires, purify the air."
 	department_head = list(JOB_CHIEF_ENGINEER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 3
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CE
@@ -36,7 +36,7 @@
 		/obj/item/grenade/gas_crystal/nitrous_oxide_crystal = 5,
 	)
 
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 	rpg_title = "Aeromancer"
 
 /datum/outfit/job/atmos

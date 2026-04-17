@@ -3,7 +3,7 @@
 	title = JOB_PUN_PUN
 	description = "Assist the service department by serving drinks and food and entertaining the crew."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the Bartender"
@@ -25,7 +25,7 @@
 	)
 	rpg_title = "Homunculus"
 	allow_bureaucratic_error = FALSE
-	job_flags = (STATION_JOB_FLAGS|STATION_TRAIT_JOB_FLAGS)&~JOB_ASSIGN_QUIRKS
+	job_flags = (SHIP_JOB_FLAGS|SHIP_TRAIT_JOB_FLAGS)&~JOB_ASSIGN_QUIRKS
 
 /datum/job/pun_pun/get_spawn_mob(client/player_client, atom/spawn_point)
 	if (!player_client)

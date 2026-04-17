@@ -3,7 +3,7 @@
 	alt_titles = JOB_CLOWN_ALT_TITLES
 	description = "Entertain the crew, make bad jokes, go on a holy quest to find bananium, HONK!"
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOP
@@ -35,7 +35,7 @@
 
 	family_heirlooms = list(/obj/item/bikehorn/golden)
 	rpg_title = "Jester"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 	job_tone = "honk"
 

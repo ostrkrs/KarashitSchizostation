@@ -4,7 +4,7 @@
 	description = "Start the Supermatter, wire the solars, repair station hull \
 		and wiring damage."
 	department_head = list(JOB_CHIEF_ENGINEER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 5
 	spawn_positions = 5
 	supervisors = SUPERVISOR_CE
@@ -21,7 +21,7 @@
 
 	liver_traits = list(TRAIT_ENGINEER_METABOLISM)
 
-	display_order = JOB_DISPLAY_ORDER_STATION_ENGINEER
+	display_order = JOB_DISPLAY_ORDER_DECK_ENGINEER
 	bounty_types = CIV_JOB_ENG
 	departments_list = list(
 		/datum/job_department/engineering,
@@ -38,7 +38,7 @@
 		/obj/item/clothing/head/utility/hardhat/red/upgraded = 1
 	)
 	rpg_title = "Crystallomancer"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/engineer

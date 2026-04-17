@@ -5,7 +5,7 @@
 		Procedure, eat donuts."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	spawn_positions = 5 //Handled in /datum/controller/occupations/proc/setup_officer_positions()
 	supervisors = "the Head of Security, and the head of your assigned department (if applicable)"
@@ -41,7 +41,7 @@
 		/obj/item/melee/baton/security/boomerang/loaded = 1
 	)
 	rpg_title = "Guard"
-	job_flags = STATION_JOB_FLAGS | JOB_ANTAG_PROTECTED
+	job_flags = SHIP_JOB_FLAGS | JOB_ANTAG_PROTECTED
 
 
 GLOBAL_LIST_INIT(available_depts, list(SEC_DEPT_ENGINEERING, SEC_DEPT_MEDICAL, SEC_DEPT_SCIENCE, SEC_DEPT_SUPPLY))

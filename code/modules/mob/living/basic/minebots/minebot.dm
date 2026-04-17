@@ -22,7 +22,7 @@
 	sentience_type = SENTIENCE_MINEBOT
 	speak_emote = list("states")
 	mob_biotypes = MOB_ROBOTIC
-	faction = list(FACTION_STATION, FACTION_NEUTRAL)
+	faction = list(FACTION_SHIP, FACTION_NEUTRAL)
 	death_message = "blows apart!"
 	light_system = OVERLAY_LIGHT
 	light_range = 6

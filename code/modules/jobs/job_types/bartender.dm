@@ -3,7 +3,7 @@
 	alt_titles = JOB_BARTENDER_ALT_TITLES
 	description = "Serve booze, mix drinks, keep the crew drunk."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOP
@@ -30,7 +30,7 @@
 		/obj/item/stack/sheet/mineral/uranium = 10,
 	)
 
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 	rpg_title = "Tavernkeeper"
 
 /datum/job/bartender/award_service(client/winner, award)

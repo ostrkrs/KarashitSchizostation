@@ -3,7 +3,7 @@
 	alt_titles = JOB_BOTANIST_ALT_TITLES
 	description = "Grow plants for the cook, for medicine, and for recreation."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 3
 	spawn_positions = 2
 	supervisors = SUPERVISOR_HOP
@@ -37,7 +37,7 @@
 		/obj/item/food/monkeycube/bee = 2
 	)
 
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 	rpg_title = "Gardener"
 
 /datum/outfit/job/botanist

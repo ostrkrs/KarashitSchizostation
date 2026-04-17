@@ -3,7 +3,7 @@
 	alt_titles = JOB_MIME_ALT_TITLES
 	description = "..."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOP
@@ -30,7 +30,7 @@
 		/obj/item/book/granter/action/spell/mime/mimery = 1,
 	)
 	rpg_title = "Fool"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 	voice_of_god_power = 0.5 //Why are you speaking
 	voice_of_god_silence_power = 3

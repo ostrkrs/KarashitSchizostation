@@ -4,7 +4,7 @@
 	description = "Advocate sanity, self-esteem, and teamwork on the board \
 		staffed with headcases."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Chief Medical Officer"
@@ -32,7 +32,7 @@
 		/obj/item/gun/syringe = 1
 	)
 	rpg_title = "Snake Oil Salesman"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/psychologist

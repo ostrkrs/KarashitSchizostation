@@ -6,7 +6,7 @@
 		they all eventually die."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_HOS
@@ -43,7 +43,7 @@
 		/obj/item/storage/box/lethalshot = 5
 	)
 	rpg_title = "Jailor"
-	job_flags = STATION_JOB_FLAGS | JOB_BOLD_SELECT_TEXT | JOB_ANTAG_PROTECTED
+	job_flags = SHIP_JOB_FLAGS | JOB_BOLD_SELECT_TEXT | JOB_ANTAG_PROTECTED
 
 /datum/outfit/job/warden
 	name = "Warden"

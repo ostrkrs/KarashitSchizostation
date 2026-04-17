@@ -48,7 +48,7 @@
 #define JOB_ASSISTANT "Assistant"
 #define JOB_CIVILIAN "Civilian"
 #define JOB_INTERN "Intern"
-#define JOB_OFFDUTY "Off-Duty Crew"
+#define JOB_OFFDUTY "Off-Duty"
 #define JOB_PASSENGER "Passenger"
 #define JOB_RETIRED "Retired"
 #define JOB_TOURIST "Tourist"
@@ -474,7 +474,7 @@
 #define JOB_DISPLAY_ORDER_AI 16
 #define JOB_DISPLAY_ORDER_CYBORG 17
 #define JOB_DISPLAY_ORDER_CHIEF_ENGINEER 18
-#define JOB_DISPLAY_ORDER_STATION_ENGINEER 19
+#define JOB_DISPLAY_ORDER_DECK_ENGINEER 19
 #define JOB_DISPLAY_ORDER_ATMOSPHERIC_TECHNICIAN 20
 #define JOB_DISPLAY_ORDER_QUARTERMASTER 21
 #define JOB_DISPLAY_ORDER_CARGO_TECHNICIAN 22
@@ -540,7 +540,7 @@ DEFINE_BITFIELD(departments_bitflags, list(
 #define JOB_CREW_MANIFEST (1<<1)
 /// Whether the mob is equipped through SSjob.equip_rank() on spawn.
 #define JOB_EQUIP_RANK (1<<2)
-/// Whether the job is considered a regular crew member of the station. Equipment such as AI and cyborgs not included.
+/// Whether the job is considered a regular crew member. Equipment such as AI and cyborgs not included.
 #define JOB_CREW_MEMBER (1<<3)
 /// Whether this job can be joined through the new_player menu.
 #define JOB_NEW_PLAYER_JOINABLE (1<<4)
@@ -581,15 +581,15 @@ DEFINE_BITFIELD(job_flags, list(
 	"JOB_HEAD_OF_STAFF" = JOB_HEAD_OF_STAFF,
 ))
 
-/// Combination flag for jobs which are considered regular crew members of the station.
-#define STATION_JOB_FLAGS (JOB_ANNOUNCE_ARRIVAL|JOB_CREW_MANIFEST|JOB_EQUIP_RANK|JOB_CREW_MEMBER|JOB_NEW_PLAYER_JOINABLE|JOB_REOPEN_ON_ROUNDSTART_LOSS|JOB_ASSIGN_QUIRKS|JOB_CAN_BE_INTERN)
+/// Combination flag for jobs which are considered regular crew members of the ship.
+#define SHIP_JOB_FLAGS (JOB_ANNOUNCE_ARRIVAL|JOB_CREW_MANIFEST|JOB_EQUIP_RANK|JOB_CREW_MEMBER|JOB_NEW_PLAYER_JOINABLE|JOB_REOPEN_ON_ROUNDSTART_LOSS|JOB_ASSIGN_QUIRKS|JOB_CAN_BE_INTERN)
 /// Combination flag for jobs which are considered heads of staff.
 #define HEAD_OF_STAFF_JOB_FLAGS (JOB_BOLD_SELECT_TEXT|JOB_CANNOT_OPEN_SLOTS|JOB_HEAD_OF_STAFF)
-/// Combination flag for jobs which are enabled by station traits.
-#define STATION_TRAIT_JOB_FLAGS (JOB_CANNOT_OPEN_SLOTS|JOB_HIDE_WHEN_EMPTY|JOB_LATEJOIN_ONLY&~JOB_REOPEN_ON_ROUNDSTART_LOSS)
+/// Combination flag for jobs which are enabled by ship traits.
+#define SHIP_TRAIT_JOB_FLAGS (JOB_CANNOT_OPEN_SLOTS|JOB_HIDE_WHEN_EMPTY|JOB_LATEJOIN_ONLY&~JOB_REOPEN_ON_ROUNDSTART_LOSS)
 
 #define FACTION_NONE "None"
-#define FACTION_STATION "Station"
+#define FACTION_SHIP "Ship"
 
 // Variable macros used to declare who is the supervisor for a given job, announced to the player when they join as any given job.
 #define SUPERVISOR_CAPTAIN "the Captain"

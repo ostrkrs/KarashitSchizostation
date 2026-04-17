@@ -3,7 +3,7 @@
 	alt_titles = JOB_COOK_ALT_TITLES
 	description = "Serve food, cook meat, keep the crew fed."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_HOP
@@ -21,7 +21,7 @@
 	liver_traits = list(TRAIT_CULINARY_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_COOK
-	bounty_types = CIV_JOB_CHEF
+	bounty_types = CIV_JOB_COOK
 	departments_list = list(
 		/datum/job_department/service,
 		)
@@ -48,7 +48,7 @@
 	)
 
 	rpg_title = "Tavern Chef"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 /datum/job/cook/award_service(client/winner, award)
 	winner.give_award(award, winner.mob)
@@ -65,7 +65,7 @@
 	name = "Cook"
 	jobtype = /datum/job/cook
 
-	id_trim = /datum/id_trim/job/cook/chef
+	id_trim = /datum/id_trim/job/cook
 	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
 	suit = /obj/item/clothing/suit/toggle/chef
 	backpack_contents = list(

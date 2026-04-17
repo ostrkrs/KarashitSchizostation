@@ -3,7 +3,7 @@
 	alt_titles = JOB_ROBOTICIST_ALT_TITLES
 	description = "Build and repair the AI and cyborgs, create mechs."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_RD
@@ -33,7 +33,7 @@
 
 	family_heirlooms = list(/obj/item/toy/plush/pkplush)
 	rpg_title = "Necromancer"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/job/roboticist/New()

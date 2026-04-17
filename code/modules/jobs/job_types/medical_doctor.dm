@@ -4,7 +4,7 @@
 	description = "Save lives, run around the station looking for victims, \
 		scan everyone in sight"
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 6
 	spawn_positions = 4
 	supervisors = SUPERVISOR_CMO
@@ -38,7 +38,7 @@
 		/obj/effect/spawner/random/medical/memeorgans = 1
 	)
 	rpg_title = "Cleric"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/doctor

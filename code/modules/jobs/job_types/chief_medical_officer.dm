@@ -5,7 +5,7 @@
 	department_head = list(JOB_CAPTAIN)
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	head_announce = list(RADIO_CHANNEL_MEDICAL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_CAPTAIN
@@ -42,7 +42,7 @@
 	)
 	family_heirlooms = list(/obj/item/storage/medkit/ancient/heirloom, /obj/item/scalpel, /obj/item/hemostat, /obj/item/saw, /obj/item/retractor, /obj/item/cautery, /obj/item/statuebust/hippocratic)
 	rpg_title = "High Cleric"
-	job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
 
 	human_authority = JOB_AUTHORITY_HUMANS_ONLY
 

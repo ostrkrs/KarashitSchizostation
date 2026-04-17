@@ -23,7 +23,7 @@
 	pass_flags = PASSTABLE|PASSGRILLE|PASSMOB
 	mob_size = MOB_SIZE_LARGE
 	mob_biotypes = MOB_ROBOTIC
-	faction = list(FACTION_STATION, FACTION_NEUTRAL)
+	faction = list(FACTION_SHIP, FACTION_NEUTRAL)
 	light_range = 4
 	basic_mob_flags = DEL_ON_DEATH
 	move_force = MOVE_FORCE_VERY_STRONG
