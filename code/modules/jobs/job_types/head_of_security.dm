@@ -9,6 +9,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_CAPTAIN
+	required_character_age = 35
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 300

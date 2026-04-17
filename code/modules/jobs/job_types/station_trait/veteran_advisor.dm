@@ -1,13 +1,14 @@
 /datum/job/veteran_advisor
 	title = JOB_VETERAN_ADVISOR
 	description = "Advise HoS, and Captain on matters of Security. Train green Officers. \
-		Lay back in your wheelchair and say \"I told you\" to the HoS when all of the station collapses."
+		Lay back in your wheelchair and say \"I told you\" to the HoS when all of the vessel collapses."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
 	faction = FACTION_STATION
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = SUPERVISOR_HOS
+	required_character_age = 45
 	minimal_player_age = 7
 	exp_requirements = 6000 //100 HOURS! We want really hard boiled people
 	exp_required_type = EXP_TYPE_CREW
