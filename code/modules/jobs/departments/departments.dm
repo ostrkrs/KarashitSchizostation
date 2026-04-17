@@ -202,7 +202,7 @@
 	department_experience_type = EXP_TYPE_SILICON
 	display_order = 8
 	label_class = "silicon"
-	ui_color = "#5dbda0"
+	ui_color = "#ff80d5"
 
 /datum/job_department/silicon/generate_nation_name()
 	return "United Nations" //For nations ruleset specifically, because all other sources of nation creation cannot choose silicons
