@@ -1,10 +1,6 @@
 /datum/job/lawyer
 	title = JOB_LAWYER
-	alt_titles = list(
-		"Lawyer",
-		"Defense Attorney",
-		"Public Defender",
-	)
+	alt_titles = JOB_LAWYER_ALT_TITLES
 	description = "Advocate for prisoners, create law-binding contracts, \
 		ensure Security is following protocol and Space Law."
 	department_head = list(JOB_CAPTAIN)

@@ -136,6 +136,11 @@
 #define JOB_PHARMACIST "Pharmacist"
 #define JOB_PHARMACOLOGIST "Pharmacologist"
 
+#define JOB_PSYCHOLOGIST "Psychologist"
+#define JOB_PSYCHIATRIST "Psychiatrist"
+#define JOB_THERAPIST "Therapist"
+#define JOB_MENTALIST "Mentalist"
+
 //Science
 #define JOB_SCIENTIST "Scientist"
 #define JOB_ANOMALIST "Anomalist"
@@ -186,14 +191,43 @@
 #define JOB_MYCOLOGIST "Mycologist"
 
 #define JOB_COOK "Cook"
-#define JOB_CHEF "Chef" // Alternate cook title.
+#define JOB_BAKER "Baker"
+#define JOB_BUTCHER "Butcher"
+#define JOB_CHEF "Chef"
+#define JOB_CULINARY_ARTIST "Culinary Artist"
+#define JOB_CONFECTIONER "Confectioner"
+#define JOB_GASTRONOMIST "Gastronomist"
+
 #define JOB_JANITOR "Janitor"
+#define JOB_CLEANER "Cleaner"
+#define JOB_CUSTODIAN "Custodian"
+#define JOB_CUSTODIAL_TECHNICIAN "Custodial Technician"
+#define JOB_SANITATION_TECHNICIAN "Sanitation Technician"
+
 #define JOB_CLOWN "Clown"
+#define JOB_JESTER "Jester"
+#define JOB_JOKER "Joker"
+
 #define JOB_MIME "Mime"
+#define JOB_PANTOMIMIST "Pantomimist"
+
 #define JOB_CURATOR "Curator"
+#define JOB_JOURNALIST "Journalist"
+#define JOB_LIBRARIAN "Librarian"
+#define JOB_PUBLICIST "Publicist"
+#define JOB_REPORTER "Reporter"
+
 #define JOB_LAWYER "Lawyer"
+#define JOB_DEFENSE_ATTORNEY "Defense Attorney"
+#define JOB_PUBLIC_DEFENDER "Public Defender"
+
 #define JOB_CHAPLAIN "Chaplain"
-#define JOB_PSYCHOLOGIST "Psychologist"
+#define JOB_CLERIC "Cleric"
+#define JOB_PRIEST "Priest"
+#define JOB_SPIRITUAL_AGENT "Spiritual Agent"
+#define JOB_RELIGIOUS_CONSULTANT "Religious Consultant"
+#define JOB_RITUALIST "Ritualist"
+
 #define JOB_PUN_PUN "Pun Pun"
 //ERTs
 #define JOB_ERT_DEATHSQUAD "Death Commando"
@@ -362,7 +396,57 @@
 	JOB_HYDROPONICIST, \
 	JOB_MYCOLOGIST, \
 )
-
+#define JOB_COOK_ALT_TITLES list( \
+	JOB_COOK, \
+	JOB_BAKER, \
+	JOB_BUTCHER, \
+	JOB_CHEF, \
+	JOB_CULINARY_ARTIST, \
+	JOB_CONFECTIONER, \
+	JOB_GASTRONOMIST, \
+)
+#define JOB_JANITOR_ALT_TITLES list( \
+	JOB_JANITOR, \
+	JOB_CLEANER, \
+	JOB_CUSTODIAN, \
+	JOB_CUSTODIAL_TECHNICIAN, \
+	JOB_SANITATION_TECHNICIAN, \
+)
+#define JOB_CLOWN_ALT_TITLES list( \
+	JOB_CLOWN, \
+	JOB_JESTER, \
+	JOB_JOKER, \
+)
+#define JOB_MIME_ALT_TITLES list( \
+	JOB_MIME, \
+	JOB_PANTOMIMIST, \
+)
+#define JOB_CURATOR_ALT_TITLES list( \
+	JOB_CURATOR, \
+	JOB_JOURNALIST, \
+	JOB_LIBRARIAN, \
+	JOB_PUBLICIST, \
+	JOB_REPORTER, \
+)
+#define JOB_LAWYER_ALT_TITLES list( \
+	JOB_LAWYER, \
+	JOB_DEFENSE_ATTORNEY, \
+	JOB_PUBLIC_DEFENDER, \
+)
+#define JOB_CHAPLAIN_ALT_TITLES list( \
+	JOB_CHAPLAIN, \
+	JOB_CLERIC, \
+	JOB_PRIEST, \
+	JOB_SPIRITUAL_AGENT, \
+	JOB_RELIGIOUS_CONSULTANT, \
+	JOB_RITUALIST, \
+)
+#define JOB_PSYCHOLOGIST_ALT_TITLES list( \
+	JOB_PSYCHOLOGIST, \
+	JOB_PSYCHIATRIST, \
+	JOB_THERAPIST, \
+	JOB_MENTALIST, \
+)
 
 #define JOB_GROUP_ENGINEERS list( \
 	JOB_DECK_ENGINEER, \

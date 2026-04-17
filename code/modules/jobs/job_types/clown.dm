@@ -1,10 +1,6 @@
 /datum/job/clown
 	title = JOB_CLOWN
-	alt_titles = list(
-		"Clown",
-		"Jester",
-		"Joker",
-	)
+	alt_titles = JOB_CLOWN_ALT_TITLES
 	description = "Entertain the crew, make bad jokes, go on a holy quest to find bananium, HONK!"
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION

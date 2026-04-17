@@ -1,14 +1,6 @@
 /datum/job/cook
 	title = JOB_COOK
-	alt_titles = list(
-		"Cook",
-		"Baker",
-		"Butcher",
-		"Chef",
-		"Culinary Artist",
-		"Confectioner",
-		"Gastronomist",
-	)
+	alt_titles = JOB_COOK_ALT_TITLES
 	description = "Serve food, cook meat, keep the crew fed."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
@@ -56,9 +48,6 @@
 	)
 
 	rpg_title = "Tavern Chef"
-	alternate_titles = list(
-		JOB_CHEF,
-	)
 	job_flags = STATION_JOB_FLAGS
 
 /datum/job/cook/award_service(client/winner, award)

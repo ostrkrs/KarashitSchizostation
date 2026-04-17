@@ -1,13 +1,6 @@
 /datum/job/chaplain
 	title = JOB_CHAPLAIN
-	alt_titles = list(
-		"Chaplain",
-		"Cleric",
-		"Priest",
-		"Spiritual Agent",
-		"Religious Consultant",
-		"Ritualist",
-	)
+	alt_titles = JOB_CHAPLAIN_ALT_TITLES
 	description = "Hold services and funerals, cremate people, preach your \
 		religion, protect the crew against cults."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)

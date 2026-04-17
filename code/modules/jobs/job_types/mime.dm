@@ -1,9 +1,6 @@
 /datum/job/mime
 	title = JOB_MIME
-	alt_titles = list(
-		"Mime",
-		"Pantomimist",
-	)
+	alt_titles = JOB_MIME_ALT_TITLES
 	description = "..."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION

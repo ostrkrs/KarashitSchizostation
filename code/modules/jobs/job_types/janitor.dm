@@ -1,12 +1,6 @@
 /datum/job/janitor
 	title = JOB_JANITOR
-	alt_titles = list(
-		"Janitor",
-		"Cleaner",
-		"Custodian",
-		"Custodial Technician",
-		"Sanitation Technician",
-	)
+	alt_titles = JOB_JANITOR_ALT_TITLES
 	description = "Clean up trash and blood. Replace broken lights. Slip people over."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION

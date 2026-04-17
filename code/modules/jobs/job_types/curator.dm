@@ -1,11 +1,6 @@
 /datum/job/curator
 	title = JOB_CURATOR
-	alt_titles = list(
-		"Curator",
-		"Archivist",
-		"Journalist",
-		"Librarian",
-	)
+	alt_titles = JOB_CURATOR_ALT_TITLES
 	description = "Read and write books and hand them to people, stock \
 		bookshelves, report on station news."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)

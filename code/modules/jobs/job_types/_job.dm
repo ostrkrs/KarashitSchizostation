@@ -1,6 +1,7 @@
 /datum/job
 	/// The name of the job , used for preferences, bans and more. Make sure you know what you're doing before changing this.
 	var/title = "NOPE"
+
 	/// The list of alternative job titles people can pick from, null by default.
 	var/list/alt_titles = null
 
@@ -118,9 +119,6 @@
 
 	/// RPG job names, for the memes
 	var/rpg_title
-
-	/// Alternate titles to register as pointing to this job.
-	var/list/alternate_titles
 
 	var/human_authority = JOB_AUTHORITY_NON_HUMANS_ALLOWED
 
