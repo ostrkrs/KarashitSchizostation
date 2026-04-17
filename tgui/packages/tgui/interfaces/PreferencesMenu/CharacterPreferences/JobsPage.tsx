@@ -165,7 +165,7 @@ type JobRowProps = {
 };
 
 function JobRow(props: JobRowProps) {
-  const { data, act } = useBackend<PreferencesMenuData>(); // NOVA EDIT CHANGE - Adds act param
+  const { data, act } = useBackend<PreferencesMenuData>();
   const { className, job, name } = props;
 
   const isOverflow = data.overflow_role === name;
