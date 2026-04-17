@@ -103,7 +103,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 
 
 /// Injects a record into the manifest.
-/datum/manifest/proc/inject(mob/living/carbon/human/person, atom/appearance_proxy)
+/datum/manifest/proc/inject(mob/living/carbon/human/person, atom/appearance_proxy, client/person_client)
 	set waitfor = FALSE
 	if(!(person.mind?.assigned_role.job_flags & JOB_CREW_MANIFEST))
 		return
@@ -132,7 +132,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 		gender = person_gender,
 		initial_rank = assignment,
 		name = person.real_name,
-		rank = assignment,
+		rank = chosen_assignment,
 		species = record_dna.species.name,
 		trim = assignment,
 		// Locked specifics
@@ -149,7 +149,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 		gender = person_gender,
 		initial_rank = assignment,
 		name = person.real_name,
-		rank = assignment,
+		rank = chosen_assignment,
 		species = record_dna.species.name,
 		trim = assignment,
 		// Crew specific
