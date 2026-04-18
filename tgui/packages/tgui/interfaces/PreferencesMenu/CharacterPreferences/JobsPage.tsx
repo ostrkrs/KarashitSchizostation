@@ -234,6 +234,10 @@ function JobRow(props: JobRowProps) {
               name
             ) : (
               <Dropdown
+                className={classes([
+                  'PreferencesMenu__Jobs__altTitleDropdown',
+                  `PreferencesMenu__Jobs__departments--${job.department}`,
+                ])}
                 width="100%"
                 options={job.alt_titles}
                 selected={alt_title_selected}

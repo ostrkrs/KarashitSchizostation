@@ -150,19 +150,22 @@ $department_map: (
             background: hsla(0, 0%, 0%, 0.2);
             height: 100%;
           }
+
+          .PreferencesMenu__Jobs__altTitleDropdown {
+            .Dropdown__control {
+              background: colors.fg($color-value);
+              color: black;
+              border-color: colors.fg($color-value);
+            }
+
+            .Dropdown__icon,
+            .Dropdown__selected-text {
+              color: black;
+            }
+          }
         }
 
         &--Captain {
-          border: var(--border-thickness-medium)
-            outset
-            hsla(60, 100%, 39.2%, 1);
-
-          &:first-child {
-            border-top: var(--border-thickness-medium)
-              outset
-              hsla(60, 100%, 39.2%, 1);
-          }
-
           .job-name {
             font-size: 17px;
           }
@@ -185,13 +188,6 @@ $department_map: (
           width: 2px;
         }
       }
-    }
-
-    &__PriorityHeader {
-      font-weight: bold;
-      transform: translateX(-4px) translateY(-8px) rotate(315deg);
-      white-space: nowrap;
-      width: 19px;
     }
   }
 
