@@ -5,7 +5,6 @@ import {
   useContext,
   useState,
 } from 'react';
-import nt_logo from 'tgui-core/assets/bg-nanotrasen.svg';
 import {
   BlockQuote,
   Box,
@@ -200,7 +199,6 @@ const SignalLostModal = (props) => {
       p={0}
       style={{ borderRadius: '5%' }}
     >
-      <img src={nt_logo} width={64} height={64} />
       <Box
         backgroundColor="black"
         textColor="red"
