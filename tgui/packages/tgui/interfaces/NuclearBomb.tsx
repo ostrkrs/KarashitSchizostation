@@ -118,7 +118,6 @@ export function NuclearBomb(props) {
                 <Box textAlign="center" color="#9C9987" fontSize="80px">
                   <Icon name="radiation" />
                 </Box>
-                <Box height="80px" className="NuclearBomb__NTIcon" />
               </Box>
             </Stack.Item>
           </Stack>
