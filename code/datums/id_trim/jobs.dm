@@ -536,7 +536,7 @@
 	job = /datum/job/curator
 
 /datum/id_trim/job/detective
-	assignment = JOB_DETECTIVE
+	assignment = JOB_CRIMINALIST
 	trim_state = "trim_detective"
 	department_color = COLOR_SECURITY_RED
 	subdepartment_color = COLOR_SECURITY_RED

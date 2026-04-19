@@ -246,7 +246,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /datum/objective_item/steal/traitor/det_revolver
 	name = "detective's revolver"
 	targetitem = /obj/item/gun/ballistic/revolver/c38/detective
-	excludefromjob = list(JOB_DETECTIVE)
+	excludefromjob = list(JOB_CRIMINALIST)
 	exists_on_map = TRUE
 	difficulty = 3
 	steal_hint = "A .38 special revolver found in the Detective's holder. \
@@ -675,7 +675,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /datum/objective_item/steal/traitor/space_law
 	name = "a book on space law"
 	targetitem = /obj/item/book/manual/wiki/security_space_law
-	excludefromjob = list(JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_HEAD_OF_SECURITY, JOB_LAWYER, JOB_DETECTIVE)
+	excludefromjob = list(JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_HEAD_OF_SECURITY, JOB_LAWYER, JOB_CRIMINALIST)
 	exists_on_map = TRUE
 	difficulty = 1
 	steal_hint = "Sometimes found in the possession of members of Security and Lawyers. \
@@ -718,7 +718,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 		JOB_SECURITY_OFFICER,
 		JOB_WARDEN,
 		JOB_LAWYER,
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 	)
 	exists_on_map = TRUE
 	difficulty = 1
@@ -746,7 +746,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	targetitem = /obj/item/gun/energy/disabler
 	excludefromjob = list(
 		JOB_CAPTAIN,
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -762,7 +762,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 		JOB_CAPTAIN,
 		JOB_CHIEF_ENGINEER,
 		JOB_CHIEF_MEDICAL_OFFICER,
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_QUARTERMASTER,
@@ -788,7 +788,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 		JOB_CAPTAIN,
 		JOB_CHIEF_ENGINEER,
 		JOB_CHIEF_MEDICAL_OFFICER,
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_QUARTERMASTER,
@@ -811,7 +811,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	name = "a riot shotgun"
 	targetitem = /obj/item/gun/ballistic/shotgun/riot
 	excludefromjob = list(
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -828,7 +828,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	name = "security's temperature gun"
 	targetitem = /obj/item/gun/energy/temperature/security
 	excludefromjob = list(
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -928,7 +928,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	targetitem = /obj/item/melee/baton/security
 	excludefromjob = list(
 		JOB_CAPTAIN,
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,
@@ -945,7 +945,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 	targetitem = /obj/item/melee/baton
 	excludefromjob = list(
 		JOB_CAPTAIN,
-		JOB_DETECTIVE,
+		JOB_CRIMINALIST,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
 		JOB_SECURITY_OFFICER,

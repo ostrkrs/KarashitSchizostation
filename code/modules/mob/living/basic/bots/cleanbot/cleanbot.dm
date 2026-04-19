@@ -49,7 +49,7 @@
 
 		JOB_HEAD_OF_SECURITY = "Maj.",
 		JOB_WARDEN = "Sgt.",
-		JOB_DETECTIVE = "Det.",
+		JOB_CRIMINALIST = "Det.",
 		JOB_SECURITY_OFFICER = "Officer",
 
 		JOB_CHIEF_ENGINEER = "Chief Engineer",

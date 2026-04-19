@@ -84,7 +84,7 @@
 #define JOB_CORRECTIONS_OFFICER "Corrections Officer"
 #define JOB_PRISON_SUPERVISOR "Prison Supervisor"
 
-#define JOB_DETECTIVE "Detective"
+#define JOB_CRIMINALIST "Criminalist"
 #define JOB_CRIMINAL_INVESTIGATOR "Criminal Investigator"
 #define JOB_FORENSIC_TECHNICIAN "Forensic Technician"
 
@@ -289,8 +289,8 @@
 	JOB_CORRECTIONS_OFFICER, \
 	JOB_PRISON_SUPERVISOR, \
 )
-#define JOB_DETECTIVE_ALT_TITLES list( \
-	JOB_DETECTIVE, \
+#define JOB_CRIMINALIST_ALT_TITLES list( \
+	JOB_CRIMINALIST, \
 	JOB_CRIMINAL_INVESTIGATOR, \
 	JOB_FORENSIC_TECHNICIAN, \
 )

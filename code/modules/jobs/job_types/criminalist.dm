@@ -1,5 +1,5 @@
 /datum/job/detective
-	title = JOB_DETECTIVE
+	title = JOB_CRIMINALIST
 	alt_titles = list(
 		"Detective",
 		"Criminal Investigator",
