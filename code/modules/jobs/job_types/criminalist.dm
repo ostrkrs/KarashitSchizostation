@@ -1,10 +1,6 @@
 /datum/job/detective
 	title = JOB_CRIMINALIST
-	alt_titles = list(
-		"Detective",
-		"Criminal Investigator",
-		"Forensic Technician",
-	)
+	alt_titles = JOB_CRIMINALIST_ALT_TITLES
 	description = "Investigate crimes, gather evidence, perform interrogations, \
 		look badass, smoke cigarettes."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
