@@ -22,16 +22,33 @@ function sortJobs(entries: [string, Job][], head?: string) {
 
 const PRIORITY_BUTTON_SIZE = '18px';
 
+const departmentColorDefaults: Record<string, string> = {
+  Assistant: 'grey',
+  Captain: 'blue',
+  Cargo: 'brown',
+  Command: 'blue',
+  Security: 'red',
+  Engineering: 'orange',
+  Medical: 'teal',
+  Science: 'purple',
+  Service: 'green',
+  Silicon: 'pink',
+};
+
 type PriorityButtonProps = {
   name: string;
   color: string;
   modifier?: string;
   enabled: boolean;
   onClick: () => void;
+  department?: string;
 };
 
 function PriorityButton(props: PriorityButtonProps) {
   const className = `PreferencesMenu__Jobs__departments__priority`;
+  const inactiveColor = props.department
+    ? departmentColorDefaults[props.department] ?? props.department
+    : 'light-grey';
 
   return (
     <Button
@@ -39,14 +56,12 @@ function PriorityButton(props: PriorityButtonProps) {
         className,
         props.modifier && `${className}--${props.modifier}`,
       ])}
-      color={props.enabled ? props.color : 'white'}
-      circular
+      color={props.enabled ? props.color : inactiveColor}
       onClick={props.onClick}
-      tooltip={props.name}
-      tooltipPosition="bottom"
       height={PRIORITY_BUTTON_SIZE}
-      width={PRIORITY_BUTTON_SIZE}
-    />
+    >
+      {props.name}
+    </Button>
   );
 }
 
@@ -89,10 +104,11 @@ type PriorityButtonsProps = {
   createSetPriority: CreateSetPriority;
   isOverflow: boolean;
   priority: JobPriority;
+  department?: string;
 };
 
 function PriorityButtons(props: PriorityButtonsProps) {
-  const { createSetPriority, isOverflow, priority } = props;
+  const { createSetPriority, isOverflow, priority, department } = props;
 
   return (
     <Box
@@ -113,6 +129,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="light-grey"
             enabled={!priority}
             onClick={createSetPriority(null)}
+            department={department}
           />
 
           <PriorityButton
@@ -120,6 +137,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="green"
             enabled={!!priority}
             onClick={createSetPriority(JobPriority.High)}
+            department={department}
           />
         </>
       ) : (
@@ -130,6 +148,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="light-grey"
             enabled={!priority}
             onClick={createSetPriority(null)}
+            department={department}
           />
 
           <PriorityButton
@@ -137,13 +156,15 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="red"
             enabled={priority === JobPriority.Low}
             onClick={createSetPriority(JobPriority.Low)}
+            department={department}
           />
 
           <PriorityButton
-            name="Medium"
+            name="Med"
             color="yellow"
             enabled={priority === JobPriority.Medium}
             onClick={createSetPriority(JobPriority.Medium)}
+            department={department}
           />
 
           <PriorityButton
@@ -151,6 +172,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="green"
             enabled={priority === JobPriority.High}
             onClick={createSetPriority(JobPriority.High)}
+            department={department}
           />
         </>
       )}
@@ -162,11 +184,12 @@ type JobRowProps = {
   className?: string;
   job: Job;
   name: string;
+  department: string;
 };
 
 function JobRow(props: JobRowProps) {
   const { data, act } = useBackend<PreferencesMenuData>();
-  const { className, job, name } = props;
+  const { className, job, name, department } = props;
 
   const isOverflow = data.overflow_role === name;
   const priority = data.job_preferences[name];
@@ -215,6 +238,7 @@ function JobRow(props: JobRowProps) {
         createSetPriority={createSetPriority}
         isOverflow={isOverflow}
         priority={priority}
+        department={department}
       />
     );
   }
@@ -297,6 +321,7 @@ function Department(props: DepartmentProps) {
               key={name}
               job={job}
               name={name}
+              department={name}
             />
           );
         })}

@@ -174,19 +174,6 @@ $department_map: (
 
       &__priority {
         border: var(--border-thickness-tiny) solid hsla(0, 0%, 0%, 0.3);
-
-        &--off::after {
-          content: '';
-
-          background: hsla(0, 0%, 0%, 0.2);
-          display: block;
-          height: 80%;
-          left: 50%;
-          position: relative;
-          top: 50%;
-          transform: translateX(-50%) translateY(-50%) rotate(40deg);
-          width: 2px;
-        }
       }
     }
   }
