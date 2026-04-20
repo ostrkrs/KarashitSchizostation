@@ -89,15 +89,8 @@
 #define JOB_FORENSIC_TECHNICIAN "Forensic Technician"
 
 #define JOB_SECURITY_OFFICER "Security Officer"
-#define JOB_DECK_CONSTABLE "Deck Constable"
 #define JOB_DECK_GUARDIAN "Deck Guardian"
 #define JOB_SECURITY_OPERATIVE "Security Operative"
-#define JOB_PROTECTION_OFFICER "Protection Officer"
-
-#define JOB_SECURITY_OFFICER_MEDICAL "Security Officer (Medical)"
-#define JOB_SECURITY_OFFICER_ENGINEERING "Security Officer (Engineering)"
-#define JOB_SECURITY_OFFICER_SCIENCE "Security Officer (Science)"
-#define JOB_SECURITY_OFFICER_SUPPLY "Security Officer (Cargo)"
 
 //Engineering
 #define JOB_DECK_ENGINEER "Deck Engineer"
@@ -296,10 +289,8 @@
 )
 #define JOB_SECURITY_OFFICER_ALT_TITLES list( \
 	JOB_SECURITY_OFFICER, \
-	JOB_DECK_CONSTABLE, \
 	JOB_DECK_GUARDIAN, \
 	JOB_SECURITY_OPERATIVE, \
-	JOB_PROTECTION_OFFICER, \
 )
 ///Engineering
 #define JOB_DECK_ENGINEER_ALT_TITLES list( \

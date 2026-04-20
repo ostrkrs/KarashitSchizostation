@@ -1134,7 +1134,7 @@
 		access |= elevated_access
 
 /datum/id_trim/job/security_officer/supply
-	assignment = JOB_SECURITY_OFFICER_SUPPLY
+	department_color = COLOR_CARGO_BROWN
 	subdepartment_color = COLOR_CARGO_BROWN
 	department_access = list(
 		ACCESS_BIT_DEN,
@@ -1148,7 +1148,7 @@
 	)
 
 /datum/id_trim/job/security_officer/engineering
-	assignment = JOB_SECURITY_OFFICER_ENGINEERING
+	department_color = COLOR_ENGINEERING_ORANGE
 	subdepartment_color = COLOR_ENGINEERING_ORANGE
 	department_access = list(
 		ACCESS_ATMOSPHERICS,
@@ -1162,7 +1162,7 @@
 	)
 
 /datum/id_trim/job/security_officer/medical
-	assignment = JOB_SECURITY_OFFICER_MEDICAL
+	department_color = COLOR_MEDICAL_BLUE
 	subdepartment_color = COLOR_MEDICAL_BLUE
 	department_access = list(
 		ACCESS_MEDICAL,
@@ -1177,7 +1177,7 @@
 	honorifics = list("Orderly", "Officer")
 
 /datum/id_trim/job/security_officer/science
-	assignment = JOB_SECURITY_OFFICER_SCIENCE
+	department_color = COLOR_SCIENCE_PINK
 	subdepartment_color = COLOR_SCIENCE_PINK
 	department_access = list(
 		ACCESS_RESEARCH,
