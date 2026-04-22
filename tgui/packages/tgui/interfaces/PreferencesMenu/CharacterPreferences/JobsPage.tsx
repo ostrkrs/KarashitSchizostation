@@ -47,7 +47,7 @@ type PriorityButtonProps = {
 function PriorityButton(props: PriorityButtonProps) {
   const className = `PreferencesMenu__Jobs__departments__priority`;
   const inactiveColor = props.department
-    ? departmentColorDefaults[props.department] ?? props.department
+    ? (departmentColorDefaults[props.department] ?? props.department)
     : 'light-grey';
 
   return (
@@ -55,6 +55,7 @@ function PriorityButton(props: PriorityButtonProps) {
       className={classes([
         className,
         props.modifier && `${className}--${props.modifier}`,
+        props.enabled && 'active',
       ])}
       color={props.enabled ? props.color : inactiveColor}
       onClick={props.onClick}
@@ -134,7 +135,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
 
           <PriorityButton
             name="On"
-            color="green"
+            color="good"
             enabled={!!priority}
             onClick={createSetPriority(JobPriority.High)}
             department={department}
@@ -153,7 +154,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
 
           <PriorityButton
             name="Low"
-            color="red"
+            color="bad"
             enabled={priority === JobPriority.Low}
             onClick={createSetPriority(JobPriority.Low)}
             department={department}
@@ -161,7 +162,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
 
           <PriorityButton
             name="Med"
-            color="yellow"
+            color="average"
             enabled={priority === JobPriority.Medium}
             onClick={createSetPriority(JobPriority.Medium)}
             department={department}
@@ -169,7 +170,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
 
           <PriorityButton
             name="High"
-            color="green"
+            color="good"
             enabled={priority === JobPriority.High}
             onClick={createSetPriority(JobPriority.High)}
             department={department}
@@ -249,7 +250,7 @@ function JobRow(props: JobRowProps) {
         <Tooltip content={job.description} position="bottom-start">
           <Stack.Item
             className="job-name"
-            width="50%"
+            width="40%"
             style={{
               paddingLeft: '0.3em',
             }}
