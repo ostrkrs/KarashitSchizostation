@@ -251,9 +251,6 @@
 	/// Do we apply a click cooldown when resisting this object if it is restraining them?
 	var/resist_cooldown = CLICK_CD_BREAKOUT
 
-	/// Can this item be placed on the floor?
-	var/floor_placeable = TRUE
-
 	/// Used for BODYSHAPE_SERPENTID: Needs to follow this syntax: a list() with the x and y coordinates of the pixel you want to get the color from. Colors are filled in as GAGs values for fallback.
 	var/list/species_clothing_color_coords[3]
 
@@ -270,9 +267,6 @@
 
 	if(!greyscale_config && greyscale_colors && (greyscale_config_worn || greyscale_config_belt || greyscale_config_inhand_right || greyscale_config_inhand_left))
 		update_greyscale()
-
-	if(floor_placeable)
-		AddElement(/datum/element/floor_placeable)
 
 	. = ..()
 
