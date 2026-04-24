@@ -345,7 +345,6 @@
 
 	var/x_offset = rand(-6, 6)
 	var/y_offset = rand(-6, 6)
-	SEND_SIGNAL(src, COMSIG_MOB_DROPPING_ITEM)
 	if(!transfer_item_to_turf(to_drop, drop_location(), x_offset, y_offset, force, silent, invdrop))
 		return
 
@@ -361,6 +360,7 @@
 	silent = FALSE,
 	drop_item_inventory = TRUE,
 )
+	SEND_SIGNAL(src, COMSIG_MOB_DROPPING_ITEM)
 	if(!doUnEquip(to_transfer, force, new_loc, no_move = FALSE, invdrop = drop_item_inventory, silent = silent))
 		return FALSE
 	if(QDELETED(to_transfer)) // Some items may get deleted upon getting unequipped.

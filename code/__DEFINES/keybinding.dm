@@ -94,7 +94,7 @@
 #define COMSIG_KB_SILICON_TOGGLEMODULETWO_DOWN "keybinding_silicon_togglemoduletwo_down"
 #define COMSIG_KB_SILICON_TOGGLEMODULETHREE_DOWN "keybinding_silicon_togglemodulethree_down"
 #define COMSIG_KB_SILICON_UNEQUIPMODULE_DOWN "keybinding_silicon_unequipmodule_down"
-#define COMSIG_KB_SILION_UNDEPLOY_DOWN "keybinding_silicon_undeploy_down"
+#define COMSIG_KB_SILICON_UNDEPLOY_DOWN "keybinding_silicon_undeploy_down"
 #define COMSIG_KB_SILICON_RECONNECT_DOWN "keybinding_silicon_reconnect_down"
 
 //Movement
