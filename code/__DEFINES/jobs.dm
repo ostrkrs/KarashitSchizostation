@@ -66,6 +66,8 @@
 #define JOB_QUARTERMASTER "Quartermaster"
 #define JOB_BRIDGE_ASSISTANT "Bridge Assistant"
 #define JOB_VETERAN_ADVISOR "Veteran Security Advisor"
+// #define JOB_EXPLORATION_LEADER "Exploration Leader" - TODO: exploration department and jobs
+// #define JOB_SERVICE_STEWARD "Service Steward" - TODO: steward as service supervisor
 
 //Silicon
 #define JOB_AI "AI"
@@ -89,8 +91,14 @@
 #define JOB_FORENSIC_TECHNICIAN "Forensic Technician"
 
 #define JOB_SECURITY_OFFICER "Security Officer"
-#define JOB_DECK_GUARDIAN "Deck Guardian"
+#define JOB_SECURITY_GUARD "Security Guard"
 #define JOB_SECURITY_OPERATIVE "Security Operative"
+
+/* - TODO: security cadet job
+#define JOB_SECURITY_CADET "Security Cadet"
+#define JOB_SECURITY_ASSISTANT "Security Assistant"
+#define JOB_SECURITY_RECRUIT "Security Recruit"
+*/
 
 //Engineering
 #define JOB_DECK_ENGINEER "Deck Engineer"
@@ -156,10 +164,9 @@
 
 //Supply
 #define JOB_CARGO_TECHNICIAN "Cargo Technician"
-#define JOB_COURIER "Courier"
 #define JOB_DECK_LOADER "Deck Loader"
+#define JOB_DELIVERER "Deliverer"
 #define JOB_SUPPLY_TECHNICIAN "Supply Technician"
-#define JOB_INVENTORY_ASSOCIATE "Inventory Associate"
 #define JOB_WAREHOUSE_TECHNICIAN "Warehouse Technician"
 
 #define JOB_CARGO_GORILLA "Cargo Gorilla"
@@ -170,10 +177,31 @@
 
 #define JOB_BITRUNNER "Bitrunner"
 
+/* - TODO: exploration department and jobs
+//Exploration
+#define JOB_EXPLORATION_PILOT "Exploration Pilot"
+#define JOB_EXPEDITIONARY_HELMSMAN "Expeditionary Helmsman"
+#define JOB_EXPLORATION_NAVIGATOR "Exploration Navigator"
+
+#define JOB_EXPLORER "Explorer"
+#define JOB_FIELD_RESEARCHER "Field Researcher"
+#define JOB_EXPEDITIONEER "Expeditioneer"
+#define JOB_SALVAGE_TECHNICIAN "Salvage Technician"
+
+#define JOB_EXPLORATION_MEDIC "Exploration Medic"
+#define JOB_FIELD_MEDIC "Field Medic"
+#define JOB_EXPEDITION_CORPSMAN "Expeditionary Corpsman"
+
+#define JOB_EXPLORATION_ENGINEER "Exploration Engineer"
+#define JOB_FIELD_ENGINEER "Field Engineer"
+#define JOB_EXPEDITION_ENGINEER "Expeditionary Repairsman"
+*/
+
 //Service
 #define JOB_BARTENDER "Bartender"
 #define JOB_BARISTA "Barista"
 #define JOB_BARKEEPER "Barkeeper"
+#define JOB_BREWER "Brewer"
 #define JOB_MIXOLOGIST "Mixologist"
 
 #define JOB_BOTANIST "Botanist"
@@ -222,6 +250,7 @@
 #define JOB_RITUALIST "Ritualist"
 
 #define JOB_PUN_PUN "Pun Pun"
+
 //ERTs
 #define JOB_ERT_DEATHSQUAD "Death Commando"
 #define JOB_ERT_COMMANDER "Emergency Response Team Commander"
@@ -231,6 +260,7 @@
 #define JOB_ERT_CHAPLAIN "Religious Response Officer"
 #define JOB_ERT_JANITOR "Janitorial Response Officer"
 #define JOB_ERT_CLOWN "Entertainment Response Officer"
+
 //CentCom
 #define JOB_CENTCOM "Central Command"
 #define JOB_CENTCOM_OFFICIAL "CentCom Official"
@@ -289,7 +319,7 @@
 )
 #define JOB_SECURITY_OFFICER_ALT_TITLES list( \
 	JOB_SECURITY_OFFICER, \
-	JOB_DECK_GUARDIAN, \
+	JOB_SECURITY_GUARD, \
 	JOB_SECURITY_OPERATIVE, \
 )
 ///Engineering
@@ -361,10 +391,9 @@
 ///Supply
 #define JOB_CARGO_TECHNICIAN_ALT_TITLES list( \
 	JOB_CARGO_TECHNICIAN, \
-	JOB_COURIER, \
 	JOB_DECK_LOADER, \
+	JOB_DELIVERER, \
 	JOB_SUPPLY_TECHNICIAN, \
-	JOB_INVENTORY_ASSOCIATE, \
 	JOB_WAREHOUSE_TECHNICIAN, \
 )
 #define JOB_SHAFT_MINER_ALT_TITLES list( \
@@ -377,6 +406,7 @@
 	JOB_BARTENDER, \
 	JOB_BARISTA, \
 	JOB_BARKEEPER, \
+	JOB_BREWER, \
 	JOB_MIXOLOGIST, \
 )
 #define JOB_BOTANIST_ALT_TITLES list( \
