@@ -112,6 +112,9 @@
 	greyscale_colors = "#50E193#18191e#8b4c31"
 	inserted_item = /obj/item/pen/fountain
 	stored_paper = 20
+	starting_programs = list(
+		/datum/computer_file/program/restock_tracker,
+	)
 
 /**
  * Security
