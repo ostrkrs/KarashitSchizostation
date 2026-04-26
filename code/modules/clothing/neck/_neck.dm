@@ -37,6 +37,11 @@
 	greyscale_colors = "#151516ff"
 	flags_1 = IS_PLAYER_COLORABLE_1
 
+/obj/item/clothing/neck/bowtie/green
+	name = "green bow tie"
+	icon_state = "/obj/item/clothing/neck/bowtie/green"
+	greyscale_colors = "#2e8b45ff"
+
 /obj/item/clothing/neck/bowtie/rainbow
 	name = "rainbow bow tie"
 	desc = "An extremely large neosilk rainbow-colored bowtie."
@@ -188,6 +193,16 @@
 	greyscale_colors = "#151516ff"
 
 /obj/item/clothing/neck/tie/black/tied
+	is_tied = TRUE
+	flags_1 = parent_type::flags_1 | NO_NEW_GAGS_PREVIEW_1
+
+/obj/item/clothing/neck/tie/green
+	name = "green tie"
+	icon_state = "/obj/item/clothing/neck/tie/green"
+	post_init_icon_state = "tie_greyscale_untied"
+	greyscale_colors = "#2e8b45ff"
+
+/obj/item/clothing/neck/tie/green/tied
 	is_tied = TRUE
 	flags_1 = parent_type::flags_1 | NO_NEW_GAGS_PREVIEW_1
 

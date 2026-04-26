@@ -7,7 +7,7 @@
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_STEWARD
 	config_tag = "CURATOR"
 	exp_granted_type = EXP_TYPE_CREW
 

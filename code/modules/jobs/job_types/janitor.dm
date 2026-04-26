@@ -6,7 +6,7 @@
 	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_STEWARD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "JANITOR"
 

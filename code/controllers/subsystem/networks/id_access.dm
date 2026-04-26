@@ -193,6 +193,12 @@ SUBSYSTEM_DEF(id_access)
 			"templates" = list(),
 			"pdas" = list(),
 		),
+		"[ACCESS_STEWARD]" = list(
+			"regions" = list(REGION_GENERAL),
+			"head" = JOB_STEWARD,
+			"templates" = list(),
+			"pdas" = list(),
+		),
 	)
 
 	var/list/station_job_trims = subtypesof(/datum/id_trim/job)
@@ -329,6 +335,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_CENT_CAPTAIN]"] = "Code Gold"
 	desc_by_access["[ACCESS_CENT_BAR]"] = "Code Scotch"
 	desc_by_access["[ACCESS_BIT_DEN]"] = "Bitrunner Den"
+	desc_by_access["[ACCESS_STEWARD]"] = "Steward Office"
 
 /**
  * Returns the access bitflags associated with any given access level.

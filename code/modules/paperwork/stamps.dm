@@ -116,3 +116,8 @@
 
 /obj/item/stamp/attack_paw(mob/user, list/modifiers)
 	return attack_hand(user, modifiers)
+
+/obj/item/stamp/head/steward
+	name = "steward's rubber stamp"
+	icon_state = "stamp-steward"
+	dye_color = DYE_STEWARD

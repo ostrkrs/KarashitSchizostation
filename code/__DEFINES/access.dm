@@ -144,6 +144,8 @@
 #define ACCESS_JANITOR "janitor"
 /// Access to the Lawyer's office.
 #define ACCESS_LAWYER "lawyer"
+/// Access used for the Steward's personal quarters in mapping.
+#define ACCESS_STEWARD "steward"
 
 /// - - - AWAY MISSIONS - - -
 /*For generic away-mission/ruin access. Why would normal crew have access to a long-abandoned derelict
@@ -366,6 +368,7 @@
 	ACCESS_HOP, \
 	ACCESS_QM, \
 	ACCESS_RD, \
+	ACCESS_STEWARD, \
 )
 
 /// Captains private rooms. Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_CAPTAIN)
@@ -422,7 +425,7 @@
 #define REGION_ACCESS_ALL_STATION COMMON_ACCESS + COMMAND_ACCESS + PRIVATE_COMMAND_ACCESS + CAPTAIN_ACCESS
 /// Name for the General region.
 #define REGION_GENERAL "General"
-/// Used to seed the accesses_by_region list in SSid_access. A list of general service accesses that are overseen by the HoP.
+/// Used to seed the accesses_by_region list in SSid_access. A list of general service accesses that are overseen by the Steward.
 #define REGION_ACCESS_GENERAL list( \
 	ACCESS_BAR, \
 	ACCESS_CHAPEL_OFFICE, \
@@ -434,6 +437,7 @@
 	ACCESS_LIBRARY, \
 	ACCESS_SERVICE, \
 	ACCESS_THEATRE, \
+	ACCESS_STEWARD, \
 )
 /// Name for the Security region.
 #define REGION_SECURITY "Security"

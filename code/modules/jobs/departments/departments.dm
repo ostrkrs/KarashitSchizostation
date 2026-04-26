@@ -183,7 +183,7 @@
 /datum/job_department/service
 	department_name = DEPARTMENT_SERVICE
 	department_bitflags = DEPARTMENT_BITFLAG_SERVICE
-	department_head = /datum/job/head_of_personnel
+	department_head = /datum/job/steward
 	department_experience_type = EXP_TYPE_SERVICE
 	display_order = 7
 	label_class = "service"
@@ -192,7 +192,7 @@
 	primary_work_area = /area/station/service
 	department_delivery_areas = list(/area/station/hallway/secondary/service, /area/station/service/bar/atrium)
 	associated_cargo_groups = list("Service", "Food & Hydroponics", "Livestock", "Costumes & Toys")
-	head_of_staff_access = ACCESS_HOP
+	head_of_staff_access = ACCESS_STEWARD
 	department_access = list(ACCESS_SERVICE)
 
 /datum/job_department/silicon

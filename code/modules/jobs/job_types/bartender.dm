@@ -6,7 +6,7 @@
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_STEWARD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "BARTENDER"
 
@@ -24,10 +24,10 @@
 	family_heirlooms = list(/obj/item/rag, /obj/item/clothing/head/hats/tophat, /obj/item/reagent_containers/cup/glass/shaker)
 
 	mail_goodies = list(
-		/obj/item/storage/box/rubbershot = 30,
-		/obj/item/reagent_containers/cup/bottle/clownstears = 10,
-		/obj/item/stack/sheet/mineral/plasma = 10,
-		/obj/item/stack/sheet/mineral/uranium = 10,
+		/obj/item/storage/box/coffeepack = 10,
+		/obj/item/storage/box/coffeepack/robusta = 5,
+		/obj/item/reagent_containers/cup/bottle/ethanol = 5,
+		/obj/item/reagent_containers/cup/glass/bottle/beer = 10
 	)
 
 	job_flags = SHIP_JOB_FLAGS

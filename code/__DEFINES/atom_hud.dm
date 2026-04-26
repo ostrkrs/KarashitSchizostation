@@ -115,6 +115,7 @@
 #define SECHUD_STATION_ENGINEER "hudstationengineer"
 #define SECHUD_VETERAN_ADVISOR "hudveteranadvisor"
 #define SECHUD_WARDEN "hudwarden"
+#define SECHUD_STEWARD "hudsteward"
 
 #define SECHUD_CHEF "hudchef"
 

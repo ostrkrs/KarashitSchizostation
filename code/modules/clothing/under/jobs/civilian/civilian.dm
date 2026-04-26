@@ -5,15 +5,33 @@
 	worn_icon = 'icons/mob/clothing/under/civilian.dmi'
 	abstract_type = /obj/item/clothing/under/rank/civilian
 
+/obj/item/clothing/under/rank/civilian/steward
+	name = "steward's uniform"
+	desc = "An elegant uniform sharply projecting professionalism of \"Steward\"."
+	icon_state = "steward"
+	inhand_icon_state = "bl_suit"
+
+/obj/item/clothing/under/rank/civilian/steward/skirt
+	name = "steward's skirt"
+	desc = "An elegant uniform and skirt sharply projecting professionalism of \"Steward\"."
+	icon_state = "steward_skirt"
+	inhand_icon_state = "bl_suit"
+	body_parts_covered = CHEST|GROIN|ARMS
+	dying_key = DYE_REGISTRY_JUMPSKIRT
+	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+
+
 /obj/item/clothing/under/rank/civilian/purple_bartender
-	desc = "It looks like it has lots of flair!"
 	name = "purple bartender's uniform"
+	desc = "It looks like it has lots of flair!"
 	icon_state = "purplebartender"
 	can_adjust = FALSE
 
+
 /obj/item/clothing/under/rank/civilian/chaplain
-	desc = "It's a black jumpsuit, often worn by religious folk."
 	name = "chaplain's jumpsuit"
+	desc = "It's a black jumpsuit, often worn by religious folk."
 	icon_state = "chaplain"
 	inhand_icon_state = "bl_suit"
 	can_adjust = FALSE
@@ -28,42 +46,10 @@
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
-/obj/item/clothing/under/rank/civilian/head_of_personnel
-	desc = "A slick uniform worn by those to earn the position of \"Head of Personnel\"."
-	name = "head of personnel's uniform"
-	icon_state = "hop"
-	inhand_icon_state = "b_suit"
-
-/obj/item/clothing/under/rank/civilian/head_of_personnel/skirt
-	name = "head of personnel's skirt"
-	desc = "A slick uniform and skirt combo worn by those to earn the position of \"Head of Personnel\"."
-	icon_state = "hop_skirt"
-	inhand_icon_state = "b_suit"
-	body_parts_covered = CHEST|GROIN|ARMS
-	dying_key = DYE_REGISTRY_JUMPSKIRT
-	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
-
-/obj/item/clothing/under/rank/civilian/head_of_personnel/suit
-	name = "head of personnel's suit"
-	desc = "A teal suit and yellow necktie. An authoritative yet tacky ensemble."
-	icon_state = "teal_suit"
-	inhand_icon_state = "g_suit"
-	can_adjust = FALSE
-
-/obj/item/clothing/under/rank/civilian/head_of_personnel/suit/skirt
-	name = "teal suitskirt"
-	desc = "A teal suitskirt and yellow necktie. An authoritative yet tacky ensemble."
-	icon_state = "teal_suit_skirt"
-	inhand_icon_state = "g_suit"
-	body_parts_covered = CHEST|GROIN|ARMS
-	dying_key = DYE_REGISTRY_JUMPSKIRT
-	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
-	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
 /obj/item/clothing/under/rank/civilian/hydroponics
-	desc = "It's a jumpsuit designed to protect against minor plant-related hazards."
 	name = "botanist's jumpsuit"
+	desc = "It's a jumpsuit designed to protect against minor plant-related hazards."
 	icon_state = "hydroponics"
 	inhand_icon_state = "g_suit"
 	armor_type = /datum/armor/clothing_under/civilian_hydroponics
@@ -81,9 +67,10 @@
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
+
 /obj/item/clothing/under/rank/civilian/janitor
-	desc = "It's the official uniform of the station's janitor. It has minor protection from biohazards."
 	name = "janitor's jumpsuit"
+	desc = "It's the official uniform of the station's janitor. It has minor protection from biohazards."
 	icon_state = "janitor"
 	inhand_icon_state = "janitor"
 	armor_type = /datum/armor/clothing_under/civilian_janitor
@@ -108,6 +95,7 @@
 	body_parts_covered = CHEST|GROIN
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	can_adjust = FALSE
+
 
 /obj/item/clothing/under/rank/civilian/lawyer
 	name = "Lawyer suit"
@@ -222,10 +210,10 @@
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
 /obj/item/clothing/under/rank/civilian/lawyer/galaxy
+	name = "blue galaxy suit"
 	icon = 'icons/obj/clothing/under/lawyer_galaxy.dmi'
 	worn_icon = 'icons/mob/clothing/under/lawyer_galaxy.dmi'
 	can_adjust = FALSE
-	name = "blue galaxy suit"
 	icon_state = "lawyer_galaxy_blue"
 	inhand_icon_state = "b_suit"
 
@@ -247,6 +235,7 @@
 	dying_key = DYE_REGISTRY_JUMPSKIRT
 	female_sprite_flags = FEMALE_UNIFORM_TOP_ONLY
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
+
 
 /obj/item/clothing/under/rank/civilian/cookjorts
 	name = "grilling shorts"

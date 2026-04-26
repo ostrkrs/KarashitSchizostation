@@ -32,7 +32,6 @@
 	..()
 	new /obj/item/dog_bone(src)
 	new /obj/item/storage/bag/garment/hop(src)
-	new /obj/item/storage/lockbox/medal/service(src)
 	new /obj/item/computer_disk/command/hop(src)
 	new /obj/item/radio/headset/heads/hop(src)
 	new /obj/item/storage/box/ids(src)

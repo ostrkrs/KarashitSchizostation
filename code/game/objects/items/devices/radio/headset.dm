@@ -346,6 +346,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	worn_icon_state = "com_headset"
 	keyslot = /obj/item/encryptionkey/heads/qm
 
+/obj/item/radio/headset/heads/steward
+	name = "\proper the steward's headset"
+	desc = "The headset of the guy who manages the service department."
+	icon_state = "com_headset"
+	worn_icon_state = "com_headset"
+	keyslot = /obj/item/encryptionkey/heads/steward
+
 /obj/item/radio/headset/headset_cargo
 	name = "supply radio headset"
 	desc = "A headset used by the QM's slaves."

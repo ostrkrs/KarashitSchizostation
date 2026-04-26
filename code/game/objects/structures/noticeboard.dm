@@ -176,6 +176,11 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/noticeboard, 32)
 	desc = "Important notices from the Quartermaster."
 	req_access = list(ACCESS_QM)
 
+/obj/structure/noticeboard/steward
+	name = "Steward's Notice Board"
+	desc = "Important notices from the Steward."
+	req_access = list(ACCESS_STEWARD)
+
 /obj/structure/noticeboard/staff
 	name = "Staff Notice Board"
 	desc = "Important notices from the heads of staff."
