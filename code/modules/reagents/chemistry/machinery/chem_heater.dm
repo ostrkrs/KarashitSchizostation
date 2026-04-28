@@ -1,12 +1,11 @@
 /obj/machinery/chem_heater
-	name = "reaction chamber" //Maybe this name is more accurate?
-	density = TRUE
-	pass_flags_self = PASSMACHINE | LETPASSTHROW
+	name = "chemical thermoregulator"
 	icon = 'icons/obj/medical/chemical.dmi'
-	icon_state = "mixer0b"
-	base_icon_state = "mixer"
+	icon_state = "chemheater1"
+	base_icon_state = "chemheater"
 	idle_power_usage = BASE_MACHINE_IDLE_CONSUMPTION * 0.4
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+	pass_flags = PASSTABLE
 	circuit = /obj/item/circuitboard/machine/chem_heater
 
 	/// The beaker inside this machine
@@ -79,9 +78,23 @@
 		else
 			. += span_notice("Its panel can be [EXAMINE_HINT("pried")] open")
 
-/obj/machinery/chem_heater/update_icon_state()
-	icon_state = "[base_icon_state][beaker ? 1 : 0]b"
-	return ..()
+/obj/machinery/chem_heater/update_overlays()
+	. = ..()
+
+	if(powered() && !(machine_stat & BROKEN))
+		. += emissive_appearance(icon, "[base_icon_state]-light-mask", src, alpha = src.alpha)
+
+		var/beaker_overlay = mutable_appearance(beaker.icon, beaker.icon_state)
+		beaker_overlay.pixel_z = 4
+		if(beaker)
+			. += mutable_appearance(icon, "[base_icon_state]-loaded")
+			. += beaker_overlay
+
+		if(processing)
+			. += mutable_appearance(icon, "[base_icon_state]-process")
+
+		else
+			. += mutable_appearance(icon, "[base_icon_state]-powered")
 
 /obj/machinery/chem_heater/RefreshParts()
 	. = ..()
@@ -120,7 +133,7 @@
 		return NONE
 
 	. = ITEM_INTERACT_BLOCKING
-	if(default_deconstruction_screwdriver(user, "mixer0b", "[base_icon_state][beaker ? 1 : 0]b", tool))
+	if(default_deconstruction_screwdriver(user, "[base_icon_state]1", "[base_icon_state]0", tool))
 		return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/chem_heater/crowbar_act(mob/living/user, obj/item/tool)
