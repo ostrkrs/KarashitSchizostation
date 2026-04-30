@@ -3,7 +3,7 @@
 	category_name = "Accessory"
 	category_ui_icon = FA_ICON_RIBBON
 	type_to_generate = /datum/loadout_item/accessory
-	tab_order = 7
+	tab_order = 8
 
 /datum/loadout_item/accessory
 	abstract_type = /datum/loadout_item/accessory
@@ -66,10 +66,6 @@
 	if(istype(equipped_item))
 		equipped_item.above_suit = !!preference_list[item_path]?[INFO_LAYER]
 		. |= (ITEM_SLOT_OCLOTHING|ITEM_SLOT_ICLOTHING)
-
-/datum/loadout_item/accessory/maid_apron
-	name = "Maid Apron"
-	item_path = /obj/item/clothing/accessory/maidapron
 
 /datum/loadout_item/accessory/waistcoat
 	name = "Waistcoat"
