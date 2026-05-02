@@ -429,6 +429,7 @@
 	/// You can set this to a list of sounds to pick from when a footstep is played rather than use the footstep types
 	/// Requires special formatting: list(list(sounds, go, here), volume, range modifier)
 	var/list/special_footstep_sounds
+	var/digitigrade_type
 
 /obj/item/bodypart/leg/Initialize(mapload)
 	. = ..()
@@ -461,6 +462,7 @@
 	px_y = 12
 	can_be_disabled = TRUE
 	bodypart_trait_source = LEFT_LEG_TRAIT
+	digitigrade_type = /obj/item/bodypart/leg/left/digitigrade
 
 /obj/item/bodypart/leg/left/apply_ownership(mob/living/carbon/new_owner)
 	if(HAS_TRAIT(new_owner, TRAIT_PARALYSIS_L_LEG))
@@ -552,6 +554,7 @@
 	px_x = 2
 	px_y = 12
 	bodypart_trait_source = RIGHT_LEG_TRAIT
+	digitigrade_type = /obj/item/bodypart/leg/right/digitigrade
 
 /obj/item/bodypart/leg/right/apply_ownership(mob/living/carbon/new_owner)
 	if(HAS_TRAIT(new_owner, TRAIT_PARALYSIS_R_LEG))

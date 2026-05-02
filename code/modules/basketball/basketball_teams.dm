@@ -60,9 +60,8 @@
 	head = /obj/item/clothing/head/soft/black
 	taller_chance = 15
 
-/datum/outfit/basketball/nanotrasen
-	name = "Basketball NT Team"
-	undershirt = /datum/sprite_accessory/undershirt/bluejersey
+/datum/outfit/basketball/solreach
+	name = "Basketball SR Team"
 	uniform = /obj/item/clothing/under/shorts/athletic/blue
 	suit = /obj/item/clothing/suit/jacket/letterman_nanotrasen
 	shoes = /obj/item/clothing/shoes/sneakers/black
@@ -129,9 +128,9 @@
 
 /datum/outfit/basketball/beach_bums
 	name = "Basketball Beach Bums"
-	undershirt = /datum/sprite_accessory/undershirt/nude
-	underwear = /datum/sprite_accessory/underwear/nude
-	socks = /datum/sprite_accessory/socks/nude
+	underwear_top = /datum/sprite_accessory/clothing/underwear_top/nude
+	underwear_bottom = /datum/sprite_accessory/clothing/underwear_bottom/nude
+	socks = /datum/sprite_accessory/clothing/socks/nude
 	uniform = /obj/item/clothing/under/shorts/athletic/red
 	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/sandal

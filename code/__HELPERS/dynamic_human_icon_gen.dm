@@ -14,8 +14,8 @@ GLOBAL_LIST_EMPTY(dynamic_human_appearances)
 	var/mob/living/carbon/human/dummy/consistent/dummy = new()
 	dummy.set_species(species_path)
 	dummy.stat = DEAD //this is to avoid side effects of mob spawners
-	dummy.underwear = "Nude"
-	dummy.undershirt = "Nude"
+	dummy.bottom_underwear = "Nude"
+	dummy.top_underwear = "Nude"
 	dummy.socks = "Nude"
 	if(outfit_path)
 		var/datum/outfit/outfit = new outfit_path()

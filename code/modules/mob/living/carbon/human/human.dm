@@ -497,7 +497,9 @@
 	else
 		set_facial_hairstyle("Shaved", update = FALSE)
 	set_hairstyle(pick("Bedhead", "Bedhead 2", "Bedhead 3"), update = FALSE)
-	underwear = "Nude"
+	bottom_underwear = "Nude"
+	top_underwear = "Nude"
+	socks = "Nude"
 	update_body(is_creating = TRUE)
 
 /mob/living/carbon/human/singularity_pull(atom/singularity, current_size)

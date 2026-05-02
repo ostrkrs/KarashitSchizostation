@@ -584,5 +584,6 @@
 
 	maxHealth = 1.2 * STANDARD_ORGAN_THRESHOLD
 	disgust_metabolism = 2.5
+	hunger_modifier = 1.3
 
 #undef STOMACH_METABOLISM_CONSTANT

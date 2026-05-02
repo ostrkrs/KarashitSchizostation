@@ -54,27 +54,27 @@
 
 	return pick(natural_hair_colors)
 
-/proc/random_underwear(gender)
-	if(length(SSaccessories.underwear_list) == 0)
+/proc/random_bottom_underwear(gender)
+	if(length(SSaccessories.bottom_underwear_list) == 0)
 		CRASH("No underwear to choose from!")
 	switch(gender)
 		if(MALE)
-			return pick(SSaccessories.underwear_m)
+			return pick(SSaccessories.bottom_underwear_m)
 		if(FEMALE)
-			return pick(SSaccessories.underwear_f)
+			return pick(SSaccessories.bottom_underwear_f)
 		else
-			return pick(SSaccessories.underwear_list)
+			return pick(SSaccessories.bottom_underwear_list)
 
-/proc/random_undershirt(gender)
-	if(length(SSaccessories.undershirt_list) == 0)
-		CRASH("No undershirts to choose from!")
+/proc/random_top_underwear(gender)
+	if(length(SSaccessories.top_underwear_list) == 0)
+		CRASH("No tops to choose from!")
 	switch(gender)
 		if(MALE)
-			return pick(SSaccessories.undershirt_m)
+			return pick(SSaccessories.top_underwear_m)
 		if(FEMALE)
-			return pick(SSaccessories.undershirt_f)
+			return pick(SSaccessories.top_underwear_f)
 		else
-			return pick(SSaccessories.undershirt_list)
+			return pick(SSaccessories.top_underwear_list)
 
 /proc/random_socks()
 	if(length(SSaccessories.socks_list) == 0)

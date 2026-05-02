@@ -51,7 +51,6 @@
 	status += "The red light is [vending_machine.shoot_inventory ? "off" : "blinking"]."
 	status += "The green light is [vending_machine.extended_inventory ? "on" : "off"]."
 	status += "A [vending_machine.scan_id ? "purple" : "yellow"] light is on."
-	status += "A white light is [vending_machine.age_restrictions ? "on" : "off"]."
 	status += "The speaker light is [vending_machine.shut_up ? "off" : "on"]. The language is set to [current_language.name]."
 	return status
 
@@ -73,8 +72,6 @@
 			language_iterator %= length(vending_languages.spoken_languages)
 			language_iterator += 1
 			vending_languages.selected_language = vending_languages.spoken_languages[language_iterator]
-		if(WIRE_AGELIMIT)
-			vending_machine.age_restrictions = !vending_machine.age_restrictions
 
 /datum/wires/vending/on_cut(wire, mend, source)
 	var/obj/machinery/vending/vending_machine = holder

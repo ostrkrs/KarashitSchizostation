@@ -128,6 +128,27 @@ Unlike normal organs, we're actually inside a persons limbs at all times
 /datum/bodypart_overlay/mutant/horns/get_global_feature_list()
 	return SSaccessories.horns_list
 
+///The boneplate of a caver! (techtically, horns)
+/obj/item/organ/horns/caver
+	name = "boneplate"
+	desc = "Bone shield that makes bumping against tight cave's ceiling with skull less harmful."
+	icon_state = "horns"
+
+	preference = "feature_caver_boneplate"
+	dna_block = /datum/dna_block/feature/horn/caver
+	restyle_flags = EXTERNAL_RESTYLE_ENAMEL
+
+	bodypart_overlay = /datum/bodypart_overlay/mutant/horns/caver
+
+/datum/bodypart_overlay/mutant/horns/caver
+	layers = EXTERNAL_ABOVE_HAIR | EXTERNAL_ADJACENT
+	feature_key = FEATURE_BONEPLATE
+	dyable = FALSE
+	color_source = NONE
+
+/datum/bodypart_overlay/mutant/horns/caver/get_global_feature_list()
+	return SSaccessories.boneplates_list
+
 ///The frills of a lizard (like weird fin ears)
 /obj/item/organ/frills
 	name = "frills"

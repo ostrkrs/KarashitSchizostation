@@ -45,7 +45,7 @@
 	//Breath damage
 	//These thresholds are checked against what amounts to total_mix_pressure * (gas_type_mols/total_mols)
 	var/safe_oxygen_min = 16 // Minimum safe partial pressure of O2, in kPa
-	var/safe_oxygen_max = 0
+	var/safe_oxygen_max = 0 // Maximum safe partial pressure of O2, in kPa
 	var/safe_nitro_min = 0
 	var/safe_co2_max = 10 // Yes it's an arbitrary value who cares?
 	var/safe_plasma_min = 0
@@ -1158,6 +1158,11 @@
 	breath_noise = "an unsteady, wheezing rhythm"
 	maxHealth = SMOKER_ORGAN_HEALTH
 	healing_factor = SMOKER_LUNG_HEALING
+
+/obj/item/organ/lungs/oxy_efficient
+	name = "oxygen-efficient lungs"
+	desc = "A pair of lungs adapted to the low-oxygen environments."
+	received_pressure_mult = 1.5
 
 #undef BREATH_RELATIONSHIP_INITIAL_GAS
 #undef BREATH_RELATIONSHIP_CONVERT

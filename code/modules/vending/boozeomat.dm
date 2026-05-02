@@ -92,7 +92,6 @@
 	light_mask = "boozeomat-light-mask"
 
 /obj/machinery/vending/boozeomat/syndicate
-	age_restrictions = FALSE
 	initial_language_holder = /datum/language_holder/syndicate
 	allow_custom = FALSE
 

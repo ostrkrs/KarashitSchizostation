@@ -171,6 +171,10 @@
 #define BODYTYPE_CAN_BE_BIOSCRAMBLED(bodytype) (!(bodytype & BODYTYPE_BIOSCRAMBLE_INCOMPATIBLE))
 
 // Defines for Species IDs. Used to refer to the name of a species, for things like bodypart names or species preferences.
+// Humans and xenohumans
+#define SPECIES_HUMAN "human"
+#define SPECIES_HUMAN_CAVER "caver"
+// Aliens
 #define SPECIES_ABDUCTOR "abductor"
 #define SPECIES_ANDROID "android"
 #define SPECIES_DULLAHAN "dullahan"
@@ -180,7 +184,6 @@
 #define SPECIES_GOLEM "golem"
 #define SPECIES_FELINE "felinid"
 #define SPECIES_FLYPERSON "fly"
-#define SPECIES_HUMAN "human"
 #define SPECIES_JELLYPERSON "jelly"
 #define SPECIES_SLIMEPERSON "slime"
 #define SPECIES_LUMINESCENT "luminescent"
@@ -208,6 +211,7 @@
 #define BODYPART_ID_ALIEN "alien"
 #define BODYPART_ID_ROBOTIC "robotic"
 #define BODYPART_ID_DIGITIGRADE "digitigrade"
+#define BODYPART_ID_DIGITIGRADE_CAVER "digicaver"
 #define BODYPART_ID_LARVA "larva"
 #define BODYPART_ID_PSYKER "psyker"
 #define BODYPART_ID_MEAT "meat"
@@ -469,9 +473,8 @@
 #define OFFSET_ACCESSORY "accessory"
 
 //MINOR TWEAKS/MISC
-#define AGE_MIN 18 //youngest a character can be
+#define AGE_MIN 21 //youngest a character can be
 #define AGE_MAX 85 //oldest a character can be
-#define AGE_MINOR 20 //legal age of space drinking and smoking
 #define WIZARD_AGE_MIN 30 //youngest a wizard can be
 #define APPRENTICE_AGE_MIN 29 //youngest an apprentice can be
 #define SHOES_SLOWDOWN 0 //How much shoes slow you down by default. Negative values speed you up
@@ -717,59 +720,61 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 /// Total number of layers for mob overlays
 /// KEEP THIS UP-TO-DATE OR SHIT WILL BREAK
 /// Also consider updating layers_to_offset
-#define TOTAL_LAYERS 39
+#define TOTAL_LAYERS 40
 /// Mutations layer - Tk headglows, cold resistance glow, etc
-#define MUTATIONS_LAYER 38
+#define MUTATIONS_LAYER 39
 /// Mutantrace features (tail when looking south) that must appear behind the body parts
-#define BODY_BEHIND_LAYER 37
+#define BODY_BEHIND_LAYER 38
 /// Layer for bodyparts that should appear behind every other bodypart - Mostly, legs when facing WEST or EAST
-#define BODYPARTS_LOW_LAYER 36
+#define BODYPARTS_LOW_LAYER 37
 /// Layer for most bodyparts, appears above BODYPARTS_LOW_LAYER and below BODYPARTS_HIGH_LAYER
-#define BODYPARTS_LAYER 35
+#define BODYPARTS_LAYER 36
 /// Mutantrace features (snout, body markings) that must appear above the body parts
-#define BODY_ADJ_LAYER 34
-/// Underwear, undershirts, socks
-#define BODY_LAYER 33
+#define BODY_ADJ_LAYER 35
+/// Underwear, tops, socks
+#define BODY_LAYER 34
 /// Eyes and eyelids
-#define EYES_LAYER 32
+#define EYES_LAYER 33
 /// Mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
-#define FRONT_MUTATIONS_LAYER 31
+#define FRONT_MUTATIONS_LAYER 32
 /// Damage indicators (cuts and burns)
-#define DAMAGE_LAYER 30
+#define DAMAGE_LAYER 31
 /// Jumpsuit clothing layer
-#define UNIFORM_LAYER 29
+#define UNIFORM_LAYER 30
 /// ID card layer
-#define ID_LAYER 28
+#define ID_LAYER 29
 /// ID card layer (might be deprecated)
-#define ID_CARD_LAYER 27
+#define ID_CARD_LAYER 28
 /// Layer for bodyparts that should appear above every other bodypart - Currently only used for hands
-#define BODYPARTS_HIGH_LAYER 26
+#define BODYPARTS_HIGH_LAYER 27
 /// Gloves layer
-#define GLOVES_LAYER 25
+#define GLOVES_LAYER 26
 /// Shoes layer
-#define SHOES_LAYER 24
+#define SHOES_LAYER 25
 /// Layer for masks that are worn below ears and eyes (like Balaclavas) (layers below hair, use flagsinv=HIDEHAIR as needed)
-#define LOW_FACEMASK_LAYER 23
+#define LOW_FACEMASK_LAYER 24
 /// Ears layer (Spessmen have ears? Wow)
-#define EARS_LAYER 22
+#define EARS_LAYER 23
 /// Layer for neck apperal that should appear below the suit slot (like neckties)
-#define LOW_NECK_LAYER 21
+#define LOW_NECK_LAYER 22
 /// Suit layer (armor, coats, etc.)
-#define SUIT_LAYER 20
+#define SUIT_LAYER 21
 /// Glasses layer
-#define GLASSES_LAYER 19
+#define GLASSES_LAYER 20
 /// Belt layer
-#define BELT_LAYER 18 //Possible make this an overlay of something required to wear a belt?
+#define BELT_LAYER 19 //Possible make this an overlay of something required to wear a belt?
 /// Suit storage layer (tucking a gun or baton underneath your armor)
-#define SUIT_STORE_LAYER 17
+#define SUIT_STORE_LAYER 18
 /// Neck layer (for wearing capes and bedsheets)
-#define NECK_LAYER 16
+#define NECK_LAYER 17
 /// Back layer (for backpacks and equipment on your back)
-#define BACK_LAYER 15
+#define BACK_LAYER 16
 /// Special layer for rendering beneath hair, for special facemasks
-#define BENEATH_HAIR_LAYER 14
+#define BENEATH_HAIR_LAYER 15
 /// Hair layer (mess with the fro and you got to go!)
-#define HAIR_LAYER 13 //TODO: make part of head layer?
+#define HAIR_LAYER 14 //TODO: make part of head layer?
+/// Above hair layer for horns and stuff
+#define ABOVE_HAIR_LAYER 13
 /// Facemask layer (gas masks, breath masks, etc.)
 #define FACEMASK_LAYER 12
 /// Head layer (hats, helmets, etc.)
@@ -851,6 +856,8 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 #define EXTERNAL_ADJACENT (1 << 1)
 /// Draws overlay on the BODY_BEHIND_LAYER
 #define EXTERNAL_BEHIND (1 << 2)
+/// Draws overlay on the ABOVE_HAIR_LAYER
+#define EXTERNAL_ABOVE_HAIR (1 << 3)
 /// Draws organ on all EXTERNAL layers
 #define ALL_EXTERNAL_OVERLAYS EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
 

@@ -868,6 +868,73 @@ generate/load female uniform sprites matching all previously decided variables
 					observers = null
 					break
 
+/mob/living/carbon/human/update_body(is_creating = FALSE)
+	update_eyes()
+	update_underwear()
+	return ..()
+
+/mob/living/carbon/human/proc/update_underwear()
+	remove_overlay(BODY_LAYER)
+	if(HAS_TRAIT(src, TRAIT_HUSK) || HAS_TRAIT(src, TRAIT_INVISIBLE_MAN) || HAS_TRAIT(src, TRAIT_NO_UNDERWEAR))
+		return
+	// Underwear, Undershirts & Socks
+	var/list/standing = list()
+	var/active_bodyshapes = get_active_bodyshapes()
+	if(bottom_underwear)
+		var/datum/sprite_accessory/clothing/underwear_bottom/bottom_accessory = SSaccessories.bottom_underwear_list[bottom_underwear]
+		var/mutable_appearance/bottom_underwear_overlay = bottom_accessory?.make_appearance(bottom_underwear_color, physique, active_bodyshapes)
+		if(bottom_underwear_overlay)
+			standing += bottom_underwear_overlay
+
+	if(top_underwear)
+		var/datum/sprite_accessory/clothing/underwear_top/top_accessory = SSaccessories.top_underwear_list[top_underwear]
+		var/mutable_appearance/top_underwear_overlay = top_accessory?.make_appearance(top_underwear_color, physique, active_bodyshapes)
+		if(top_underwear_overlay)
+			standing += top_underwear_overlay
+
+	if(socks && num_legs >= 2)
+		var/datum/sprite_accessory/clothing/socks/sock_accessory = SSaccessories.socks_list[socks]
+		var/mutable_appearance/socks_overlay = sock_accessory?.make_appearance(socks_color, physique, active_bodyshapes)
+		if(socks_overlay)
+			standing += socks_overlay
+
+	if(standing.len)
+		overlays_standing[BODY_LAYER] = standing
+
+	apply_overlay(BODY_LAYER)
+
+/mob/living/carbon/human/proc/update_eyes()
+	remove_overlay(EYES_LAYER)
+	if(HAS_TRAIT(src, TRAIT_HUSK) || HAS_TRAIT(src, TRAIT_INVISIBLE_MAN))
+		return
+	var/obj/item/bodypart/head/noggin = get_bodypart(BODY_ZONE_HEAD)
+	if(!(noggin?.head_flags & HEAD_EYESPRITES))
+		return
+	// eyes (missing eye sprites get handled by the head itself, but sadly we have to do this stupid shit here, for now)
+	var/obj/item/organ/eyes/eye_organ = get_organ_slot(ORGAN_SLOT_EYES)
+	if(eye_organ)
+		eye_organ.refresh(call_update = FALSE)
+		overlays_standing[EYES_LAYER] = eye_organ.generate_body_overlay(src)
+		apply_overlay(EYES_LAYER)
+
+/// Updates face (as of now, only eye) offsets
+/mob/living/carbon/human/update_face_offset()
+	var/list/eye_overlays = overlays_standing[EYES_LAYER]
+
+	if(HAS_TRAIT(src, TRAIT_INVISIBLE_MAN) || HAS_TRAIT(src, TRAIT_HUSK) || !length(eye_overlays))
+		return
+
+	remove_overlay(EYES_LAYER)
+
+	var/obj/item/bodypart/head/noggin = get_bodypart(BODY_ZONE_HEAD)
+	for (var/mutable_appearance/overlay as anything in eye_overlays)
+		overlay.pixel_w = 0
+		overlay.pixel_z = 0
+		noggin.worn_face_offset.apply_offset(overlay)
+
+	overlays_standing[EYES_LAYER] = eye_overlays
+	apply_overlay(EYES_LAYER)
+
 // Only renders the head of the human
 /mob/living/carbon/human/proc/update_body_parts_head_only(update_limb_data)
 	if(!dna?.species)

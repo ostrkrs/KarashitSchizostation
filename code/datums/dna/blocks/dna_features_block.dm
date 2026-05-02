@@ -18,6 +18,16 @@
 /datum/dna_block/feature/serpentid_color/apply_to_mob(mob/living/carbon/human/target, dna_hash)
 	target.dna.features[feature_key] = sanitize_hexcolor(get_block(dna_hash))
 
+/datum/dna_block/feature/caver_color
+	block_length = DNA_BLOCK_SIZE_COLOR
+	feature_key = FEATURE_CAVER_COLOR
+
+/datum/dna_block/feature/caver_color/create_unique_block(mob/living/carbon/human/target)
+	return sanitize_hexcolor(target.dna.features[FEATURE_CAVER_COLOR], include_crunch = FALSE)
+
+/datum/dna_block/feature/caver_color/apply_to_mob(mob/living/carbon/human/target, dna_hash)
+	target.dna.features[feature_key] = sanitize_hexcolor(get_block(dna_hash))
+
 /datum/dna_block/feature/ethereal_color
 	block_length = DNA_BLOCK_SIZE_COLOR
 	feature_key = FEATURE_ETHEREAL_COLOR
@@ -56,6 +66,15 @@
 
 /datum/dna_block/feature/tail_lizard/apply_to_mob(mob/living/carbon/human/target, dna_hash)
 	target.dna.features[feature_key] = SSaccessories.tails_list_lizard[deconstruct_block(get_block(dna_hash), length(SSaccessories.tails_list_lizard))]
+
+/datum/dna_block/feature/tail_caver
+	feature_key = FEATURE_TAIL_CAVER
+
+/datum/dna_block/feature/tail_caver/create_unique_block(mob/living/carbon/human/target)
+	return construct_block(SSaccessories.tails_list_caver.Find(target.dna.features[feature_key]), length(SSaccessories.tails_list_caver))
+
+/datum/dna_block/feature/tail_caver/apply_to_mob(mob/living/carbon/human/target, dna_hash)
+	target.dna.features[feature_key] = SSaccessories.tails_list_caver[deconstruct_block(get_block(dna_hash), length(SSaccessories.tails_list_caver))]
 
 /datum/dna_block/feature/tail_fish
 	feature_key = FEATURE_TAIL_FISH
@@ -159,3 +178,12 @@
 
 /datum/dna_block/feature/pod_hair/apply_to_mob(mob/living/carbon/human/target, dna_hash)
 	target.dna.features[feature_key] = SSaccessories.pod_hair_list[deconstruct_block(get_block(dna_hash), length(SSaccessories.pod_hair_list))]
+
+/datum/dna_block/feature/horn/caver
+	feature_key = FEATURE_BONEPLATE
+
+/datum/dna_block/feature/horn/caver/create_unique_block(mob/living/carbon/human/target)
+	return construct_block(SSaccessories.boneplates_list.Find(target.dna.features[feature_key]), length(SSaccessories.boneplates_list))
+
+/datum/dna_block/feature/horn/caver/apply_to_mob(mob/living/carbon/human/target, dna_hash)
+	target.dna.features[feature_key] = SSaccessories.boneplates_list[deconstruct_block(get_block(dna_hash), length(SSaccessories.boneplates_list))]

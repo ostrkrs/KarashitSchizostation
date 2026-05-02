@@ -194,7 +194,6 @@
 	spawn_type = /obj/item/cigarette/space_cigarette
 	spawn_count = 6
 	custom_price = PAYCHECK_CREW
-	age_restricted = TRUE
 	contents_tag = "cigarette"
 	storage_type = /datum/storage/cigarette_box
 	drop_sound = SFX_CIG_PACK_DROP
@@ -358,7 +357,6 @@
 	contents_tag = "candy cigarette"
 	spawn_type = /obj/item/cigarette/candy
 	candy = TRUE
-	age_restricted = FALSE
 
 /obj/item/storage/fancy/cigarettes/cigpack_candy/Initialize(mapload)
 	. = ..()
