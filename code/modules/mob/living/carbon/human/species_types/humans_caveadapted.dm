@@ -46,8 +46,9 @@
 	return features
 
 /datum/species/human/cave_adapted/prepare_human_for_preview(mob/living/carbon/human/human)
-	human.set_haircolor("#180d08", update = FALSE)
-	human.dna.features[FEATURE_MUTANT_COLOR] = "#80929D"
+	human.set_haircolor("#38180E", update = FALSE)
+	human.set_hairstyle("Ponytail (Country)", update = TRUE)
+	human.dna.features[FEATURE_MUTANT_COLOR] = "#8f969b"
 	human.update_body(is_creating = TRUE)
 
 /datum/species/human/cave_adapted/get_physical_attributes()
