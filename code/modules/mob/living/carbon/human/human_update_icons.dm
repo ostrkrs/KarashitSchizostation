@@ -316,6 +316,9 @@ There are several things that need to be remembered:
 
 		var/icon_file = DEFAULT_SHOES_FILE
 
+		if((bodyshape & BODYSHAPE_DIGITIGRADE) && (shoes.supports_variations_flags & CLOTHING_DIGITIGRADE_VARIATION))
+			icon_file = DIGITIGRADE_SHOES_FILE
+
 		var/mutable_appearance/shoes_overlay = shoes.build_worn_icon(default_layer = SHOES_LAYER, default_icon_file = icon_file)
 		if(!shoes_overlay)
 			return
