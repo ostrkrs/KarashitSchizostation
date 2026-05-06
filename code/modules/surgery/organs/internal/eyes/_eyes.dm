@@ -591,6 +591,16 @@
 	pupils_name = "photosensory openings"
 	penlight_message = "are attached to fungal stalks"
 
+/obj/item/organ/eyes/caver
+	name = "caver eyes"
+	desc = "These eyes seem to have increased sensitivity, which helps in dark environments, yet may be more harmful if exposed to bright lights."
+	icon_state = "lizard_eyes"
+	lighting_cutoff = LIGHTING_CUTOFF_LOW
+	overlay_ignore_lighting = TRUE
+	flash_protect = FLASH_PROTECTION_SENSITIVE
+	pupils_name = "slit pupils"
+	penlight_message = "have vertically slit pupils and tinted whites"
+
 /obj/item/organ/eyes/zombie
 	name = "undead eyes"
 	desc = "Somewhat counterintuitively, these half-rotten eyes actually have superior vision to those of a living human."
@@ -1015,7 +1025,7 @@
 	var/obj/item/bodypart/head/head = eye_owner.get_bodypart(BODY_ZONE_HEAD) //if we have eyes we definently have a head anyway
 	var/previous_flags = head.head_flags
 	head.head_flags = previous_flags | HEAD_EYECOLOR
-	eye_owner.dna.species.handle_body(eye_owner)
+	eye_owner.handle_bodyparts(eye_owner)
 	head.head_flags = previous_flags
 
 #undef MATCH_LIGHT_COLOR

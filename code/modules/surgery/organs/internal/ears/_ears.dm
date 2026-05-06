@@ -283,3 +283,7 @@
 /obj/item/organ/ears/serpentid
 	name = "serpentid ears"
 	icon_state = "ears_serpentid"
+
+/obj/item/organ/ears/caver
+	name = "caver ears"
+	damage_multiplier = 2

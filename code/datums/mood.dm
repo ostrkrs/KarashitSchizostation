@@ -1,6 +1,7 @@
 #define MINOR_INSANITY_PEN 5
 #define MAJOR_INSANITY_PEN 10
 #define MOOD_CATEGORY_NUTRITION "nutrition"
+#define MOOD_CATEGORY_HYDRATION "hydration"
 #define MOOD_CATEGORY_AREA_BEAUTY "area_beauty"
 
 /**
@@ -144,6 +145,26 @@
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/hungry_very)
 		if(0 to NUTRITION_LEVEL_STARVING)
 			add_mood_event(MOOD_CATEGORY_NUTRITION, /datum/mood_event/starving)
+
+	return TRUE
+
+/// Handles mood given by hydration
+/datum/mood/proc/update_hydration_moodlets()
+	if(HAS_TRAIT(mob_parent, TRAIT_NOTHIRST))
+		clear_mood_event(MOOD_CATEGORY_HYDRATION)
+		return FALSE
+
+	switch(mob_parent.hydration)
+		if(HYDRATION_LEVEL_FULL to INFINITY)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/too_wellhydrated)
+		if(HYDRATION_LEVEL_HYDRATED to HYDRATION_LEVEL_FULL)
+			clear_mood_event(MOOD_CATEGORY_HYDRATION)
+		if(HYDRATION_LEVEL_VERY_THIRSTY to HYDRATION_LEVEL_HYDRATED)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/thirsty)
+		if(HYDRATION_LEVEL_DEHYDRATED to HYDRATION_LEVEL_VERY_THIRSTY)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/thirsty_very)
+		if(0 to HYDRATION_LEVEL_DEHYDRATED)
+			add_mood_event(MOOD_CATEGORY_HYDRATION, /datum/mood_event/dehydrated)
 
 	return TRUE
 
@@ -357,6 +378,25 @@
 				msg += "[span_warning("I feel quite hungry.")]<br>"
 			if(0 to NUTRITION_LEVEL_STARVING)
 				msg += "[span_boldwarning("I'm starving!")]<br>"
+
+	if(!HAS_TRAIT(src, TRAIT_NOTHIRST))
+		msg += span_notice("My thirst: ")
+		var/hydration = mob_parent.hydration
+		switch(hydration)
+			if(HYDRATION_LEVEL_FULL to INFINITY)
+				msg += "[span_info("I'm completely quenched!")]<br>"
+			if(HYDRATION_LEVEL_WELL_HYDRATED to HYDRATION_LEVEL_FULL)
+				msg += "[span_info("I'm well hydrated!")]<br>"
+			if(HYDRATION_LEVEL_HYDRATED to HYDRATION_LEVEL_WELL_HYDRATED)
+				msg += "[span_info("I'm not thirsty.")]<br>"
+			if(HYDRATION_LEVEL_THIRSTY to HYDRATION_LEVEL_HYDRATED)
+				msg += "[span_info("I could use a drink.")]<br>"
+			if(HYDRATION_LEVEL_VERY_THIRSTY to HYDRATION_LEVEL_THIRSTY)
+				msg += "[span_warning("I'm feeling thirsty.")]<br>"
+			if(HYDRATION_LEVEL_DEHYDRATED to HYDRATION_LEVEL_VERY_THIRSTY)
+				msg += "[span_warning("I feel quite thirsty.")]<br>"
+			if(0 to HYDRATION_LEVEL_DEHYDRATED)
+				msg += "[span_boldwarning("My mouth is dry!")]<br>"
 
 	var/drunkness = mob_parent.get_drunk_amount()
 	if(drunkness >= 1)

@@ -541,10 +541,12 @@
 		LAZYADD(new_profile.quirks, new target_quirk.type)
 
 	// Clothes, of course
-	new_profile.underwear = target.underwear
-	new_profile.underwear_color = target.underwear_color
-	new_profile.undershirt = target.undershirt
+	new_profile.bottom_underwear = target.bottom_underwear
+	new_profile.bottom_underwear_color = target.bottom_underwear_color
+	new_profile.top_underwear = target.top_underwear
+	new_profile.top_underwear_color = target.top_underwear_color
 	new_profile.socks = target.socks
+	new_profile.socks_color = target.socks_color
 
 	// Grab skillchips they have
 	new_profile.skillchips = target.clone_skillchip_list(TRUE)
@@ -765,10 +767,12 @@
 
 	var/datum/dna/chosen_dna = chosen_profile.dna
 	user.real_name = chosen_profile.name
-	user.underwear = chosen_profile.underwear
-	user.underwear_color = chosen_profile.underwear_color
-	user.undershirt = chosen_profile.undershirt
+	user.bottom_underwear = chosen_profile.bottom_underwear
+	user.bottom_underwear_color = chosen_profile.bottom_underwear_color
+	user.top_underwear = chosen_profile.top_underwear
+	user.top_underwear_color = chosen_profile.top_underwear_color
 	user.socks = chosen_profile.socks
+	user.socks_color = chosen_profile.socks_color
 	user.age = chosen_profile.age
 	user.physique = chosen_profile.physique
 	user.mind?.set_level(/datum/skill/athletics, chosen_profile.athletics_level, silent = TRUE)
@@ -897,14 +901,18 @@
 	var/list/worn_icon_list = list()
 	/// Assoc list of item slot to string - stores the worn icon state of the item in that slot
 	var/list/worn_icon_state_list = list()
-	/// The underwear worn by the profile source
-	var/underwear
-	/// The colour of the underwear worn by the profile source
-	var/underwear_color
-	/// The undershirt worn by the profile source
-	var/undershirt
+	/// The bottoms worn by the profile source
+	var/bottom_underwear
+	/// The colour of the bottoms worn by the profile source
+	var/bottom_underwear_color
+	/// The top worn by the profile source
+	var/top_underwear
+	/// The colour of the top worn by the profile source
+	var/top_underwear_color
 	/// The socks worn by the profile source
 	var/socks
+	/// The colour of the socks worn by the profile source
+	var/socks_color
 	/// A list of paths for any skill chips the profile source had installed
 	var/list/skillchips = list()
 	/// What scars the profile sorce had, in string form (like persistent scars)
@@ -948,10 +956,12 @@
 	new_profile.lefthand_file_list = lefthand_file_list.Copy()
 	new_profile.righthand_file_list = righthand_file_list.Copy()
 	new_profile.inhand_icon_state_list = inhand_icon_state_list.Copy()
-	new_profile.underwear = underwear
-	new_profile.underwear_color = underwear_color
-	new_profile.undershirt = undershirt
+	new_profile.bottom_underwear = bottom_underwear
+	new_profile.bottom_underwear_color = bottom_underwear_color
+	new_profile.top_underwear = top_underwear
+	new_profile.top_underwear_color = top_underwear_color
 	new_profile.socks = socks
+	new_profile.socks_color = socks_color
 	new_profile.worn_icon_list = worn_icon_list.Copy()
 	new_profile.worn_icon_state_list = worn_icon_state_list.Copy()
 	new_profile.skillchips = skillchips.Copy()

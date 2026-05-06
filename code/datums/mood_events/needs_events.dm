@@ -1,6 +1,6 @@
 //nutrition
 /datum/mood_event/fat
-	description = "<B>I'm so fat...</B>" //muh fatshaming
+	description = "<B>I'm so fat...</B>"
 	mood_change = -6
 
 /datum/mood_event/too_wellfed
@@ -25,6 +25,23 @@
 
 /datum/mood_event/starving
 	description = "I'm starving!"
+	mood_change = -10
+
+//hydration
+/datum/mood_event/too_wellhydrated
+	description = "I think I've drank too much."
+	mood_change = 0
+
+/datum/mood_event/thirsty
+	description = "I'm getting a bit thirsty."
+	mood_change = -3
+
+/datum/mood_event/thirsty_very
+	description = "I'm thirsty!"
+	mood_change = -6
+
+/datum/mood_event/dehydrated
+	description = "I'm dying of thirst!"
 	mood_change = -10
 
 //charge

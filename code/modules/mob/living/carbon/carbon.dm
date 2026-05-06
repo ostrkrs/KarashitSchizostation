@@ -281,13 +281,14 @@
 	return ..()
 
 /// Proc that compels the mob to throw up. Returns TRUE if the mob actually threw up.
-/mob/living/carbon/proc/vomit(vomit_flags = VOMIT_CATEGORY_DEFAULT, vomit_type = /obj/effect/decal/cleanable/vomit/toxic, lost_nutrition = 10, distance = 1, purge_ratio = 0.1)
+/mob/living/carbon/proc/vomit(vomit_flags = VOMIT_CATEGORY_DEFAULT, vomit_type = /obj/effect/decal/cleanable/vomit/toxic, lost_nutrition = 10, lost_hydration = 10, distance = 1, purge_ratio = 0.1)
 	var/force = (vomit_flags & MOB_VOMIT_FORCE)
 	if((HAS_TRAIT(src, TRAIT_NOHUNGER) || HAS_TRAIT(src, TRAIT_TOXINLOVER)) && !force)
 		return FALSE
 
 	if(!force && HAS_TRAIT(src, TRAIT_STRONG_STOMACH))
 		lost_nutrition *= 0.5
+		lost_hydration *= 0.5
 
 	SEND_SIGNAL(src, COMSIG_CARBON_VOMITED, distance, force)
 
@@ -344,10 +345,12 @@
 	var/turf/location = get_turf(src)
 	if(!blood)
 		adjust_nutrition(-lost_nutrition)
+		adjust_nutrition(-lost_hydration)
 		need_mob_update += adjustToxLoss(-3, updating_health = FALSE)
 
 	for(var/i = 0 to distance)
 		if(blood)
+			adjust_nutrition(-lost_hydration)
 			if(location)
 				add_splatter_floor(location)
 			if(vomit_flags & MOB_VOMIT_HARM)

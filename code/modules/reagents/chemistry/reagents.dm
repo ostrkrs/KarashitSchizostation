@@ -28,6 +28,8 @@
 	var/mass
 	/// color it looks in containers etc
 	var/color = COLOR_BLACK // rgb: 0, 0, 0
+	/// How much hydration this reagent supplies. Look at get_hydration_factor() for an understanding.
+	var/hydration_factor = 0
 	///how fast the reagent is metabolized by the mob
 	var/metabolization_rate = REAGENTS_METABOLISM
 	/// above this overdoses happen
@@ -168,6 +170,13 @@
 /datum/reagent/proc/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	SHOULD_CALL_PARENT(TRUE)
 
+	if(!ishuman(affected_mob) || HAS_TRAIT(affected_mob, TRAIT_NOTHIRST))
+		return
+
+	var/mob/living/carbon/human/affected_human = affected_mob
+	if(affected_human.hydration <= HYDRATION_LEVEL_OVERHYDRATED)
+		affected_human.adjust_hydration((get_hydration_factor(affected_mob) / 3) * seconds_per_tick)
+
 ///Metabolizes a portion of the reagent after on_mob_life() is called
 /datum/reagent/proc/metabolize_reagent(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	if(length(reagent_removal_skip_list))
@@ -184,6 +193,9 @@
 
 	holder.remove_reagent(type, metabolizing_out)
 
+/// Gets just how much hydration this reagent supplies per server tick to the drinker
+/datum/reagent/proc/get_hydration_factor(mob/living/carbon/sipper)
+	return hydration_factor * purity
 
 /// Called in burns.dm *if* the reagent has the REAGENT_AFFECTS_WOUNDS process flag
 /datum/reagent/proc/on_burn_wound_processing(datum/wound/burn/flesh/burn_wound)

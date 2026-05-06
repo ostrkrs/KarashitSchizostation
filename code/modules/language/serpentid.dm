@@ -31,15 +31,16 @@
 	if(force_use_syllables)
 		return ..()
 
+	var/rand_letter = "[ascii2text(rand(97, 122))]"
 	if(prob(50))
 		return "[pick(GLOB.serpentid_prefix)]-[rand(1, 999)]"
 	else
-		return "[capitalize(ascii2text(rand(97, 122)) + ascii2text(rand(97, 122)))]-[rand(1, 999)]"
+		return "[rand_letter]+[capitalize(rand_letter)]-[rand(1, 999)]"
 
 /datum/language_holder/serpentid
 	understood_languages = list(
-		/datum/language/common = list(LANGUAGE_MIND),
 		/datum/language/serpentid = list(LANGUAGE_MIND),
+		/datum/language/common = list(LANGUAGE_MIND),
 	)
 	spoken_languages = list(
 		/datum/language/serpentid = list(LANGUAGE_SPECIES),

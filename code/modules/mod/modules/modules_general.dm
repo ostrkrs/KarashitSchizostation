@@ -229,12 +229,12 @@
 
 #undef FAILED_ACTIVATION_COOLDOWN
 
-///Status Readout - Puts a lot of information including health, nutrition, fingerprints, temperature to the suit TGUI.
+///Status Readout - Puts a lot of information including health, nutrition, hydration, fingerprints, temperature to the suit TGUI.
 /obj/item/mod/module/status_readout
 	name = "MOD status readout module"
 	desc = "A once-common module, this technology unfortunately went out of fashion in the safer regions of space; \
 		and found new life in the research networks of the Periphery. This particular unit hooks into the suit's spine, \
-		capable of capturing and displaying all possible biometric data of the wearer; sleep, nutrition, fitness, fingerprints, \
+		capable of capturing and displaying all possible biometric data of the wearer; sleep, nutrition, hydration, fitness, fingerprints, \
 		and even useful information such as their overall health and wellness. The vitals monitor also comes with a speaker, loud enough \
 		to alert anyone nearby that someone has, in fact, died."
 	icon_state = "status"
@@ -270,6 +270,7 @@
 		.["loss_oxy"] = mod.wearer?.getOxyLoss() || 0
 		.["body_temperature"] = mod.wearer?.bodytemperature || 0
 		.["nutrition"] = mod.wearer?.nutrition || 0
+		.["hydration"] = mod.wearer?.hydration || 0
 	if(display_dna)
 		.["dna_unique_identity"] = mod.wearer ? md5(mod.wearer.dna.unique_identity) : null
 		.["dna_unique_enzymes"] = mod.wearer?.dna.unique_enzymes

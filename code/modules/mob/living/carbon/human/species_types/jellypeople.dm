@@ -302,7 +302,7 @@
 
 	var/mob/living/carbon/human/spare = new /mob/living/carbon/human(H.loc)
 
-	spare.underwear = "Nude"
+	spare.bottom_underwear = "Nude"
 	H.dna.copy_dna(spare.dna, COPY_DNA_SE|COPY_DNA_SPECIES|COPY_DNA_MUTATIONS)
 	spare.dna.features[FEATURE_MUTANT_COLOR] = "#[pick("7F", "FF")][pick("7F", "FF")][pick("7F", "FF")]"
 	spare.dna.update_uf_block(/datum/dna_block/feature/mutant_color)

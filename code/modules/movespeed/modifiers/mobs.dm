@@ -18,6 +18,10 @@
 /datum/movespeed_modifier/golem_hunger
 	variable = TRUE
 
+/datum/movespeed_modifier/thirst
+	movetypes = GROUND|FLYING
+	variable = TRUE
+
 /datum/movespeed_modifier/slaughter
 	multiplicative_slowdown = -1
 

@@ -70,6 +70,12 @@
 		return ITEM_INTERACT_BLOCKING
 
 	if(target_mob != user)
+		if(target_mob.hydration >= HYDRATION_LEVEL_OVERHYDRATED)
+			target_mob.visible_message(
+				span_danger("[user] attempts to feed [target_mob] something from [src], but [target_mob] is too full!"),
+				span_userdanger("[user] attempts to feed you something from [src], but you're too full!"),
+			)
+			return ITEM_INTERACT_BLOCKING
 		target_mob.visible_message(
 			span_danger("[user] attempts to feed [target_mob] something from [src]."),
 			span_userdanger("[user] attempts to feed you something from [src]."),
@@ -84,6 +90,9 @@
 		)
 		log_combat(user, target_mob, "fed", reagents.get_reagent_log_string())
 	else
+		if(target_mob.hydration >= HYDRATION_LEVEL_OVERHYDRATED)
+			to_chat(user, span_warning("You're too quenched!"))
+			return ITEM_INTERACT_BLOCKING
 		to_chat(user, span_notice("You swallow a gulp of [src]."))
 
 	. = ITEM_INTERACT_SUCCESS

@@ -667,7 +667,7 @@
 	if(!species_visible)
 		species_name_string = ""
 	else
-		species_name_string = ", [prefix_a_or_an(dna.species.name)] <EM>[dna.species.name]</EM>"
+		species_name_string = ", [prefix_a_or_an(dna.species.name)] <EM><font color='[dna.species.examine_color]'>[dna.species.name]</font></EM>"
 
 	. += species_name_string
 

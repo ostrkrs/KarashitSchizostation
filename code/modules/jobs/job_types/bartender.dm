@@ -55,13 +55,6 @@
 	ears = /obj/item/radio/headset/headset_srv
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	shoes = /obj/item/clothing/shoes/laceup
+	box = /obj/item/storage/box/survival/bartender
 
 	skillchips = list(/obj/item/skillchip/drunken_brawler)
-
-/datum/outfit/job/bartender/post_equip(mob/living/carbon/human/H, visuals_only)
-	. = ..()
-
-	var/obj/item/card/id/W = H.wear_id
-	if(H.age < AGE_MINOR)
-		W.registered_age = AGE_MINOR
-		to_chat(H, span_notice("You're not technically old enough to access or serve alcohol, but your ID has been discreetly modified to display your age as [AGE_MINOR]. Try to keep that a secret!"))

@@ -124,10 +124,10 @@
 	///Should we preload some of this job's items?
 	var/preload = FALSE
 
-	/// Any undershirt. While on humans it is a string, here we use paths to stay consistent with the rest of the equips.
-	var/datum/sprite_accessory/undershirt = null
-	var/datum/sprite_accessory/underwear = null
-	var/datum/sprite_accessory/socks = null
+	/// Any underwear. While on humans it is a string, here we use paths to stay consistent with the rest of the equips.
+	var/datum/sprite_accessory/clothing/underwear_top = null
+	var/datum/sprite_accessory/clothing/underwear_bottom = null
+	var/datum/sprite_accessory/clothing/socks = null
 
 /**
  * Called at the start of the equip proc
@@ -218,11 +218,11 @@
 	if(suit_store)
 		EQUIP_OUTFIT_ITEM(suit_store, ITEM_SLOT_SUITSTORE)
 
-	if(undershirt)
-		user.undershirt = initial(undershirt.name)
+	if(underwear_top)
+		user.top_underwear = initial(underwear_top.name)
 
-	if(underwear)
-		user.underwear = initial(underwear.name)
+	if(underwear_bottom)
+		user.bottom_underwear = initial(underwear_bottom.name)
 
 	if(socks)
 		user.socks = initial(socks.name)

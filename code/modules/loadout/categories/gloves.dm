@@ -3,7 +3,7 @@
 	category_name = "Gloves"
 	category_ui_icon = FA_ICON_HANDS
 	type_to_generate = /datum/loadout_item/gloves
-	tab_order = 6
+	tab_order = 7
 
 /datum/loadout_item/gloves
 	abstract_type = /datum/loadout_item/gloves

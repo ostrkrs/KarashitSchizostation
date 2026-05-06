@@ -23,18 +23,18 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 	var/list/facial_hair_gradients_list //! stores /datum/sprite_accessory/facial_hair_gradient indexed by name
 	var/list/hair_masks_list //! stores /datum/hair_mask indexed by type
 
-	//Underwear
-	var/list/underwear_list //! stores /datum/sprite_accessory/underwear indexed by name
-	var/list/underwear_m //! stores only underwear name
-	var/list/underwear_f //! stores only underwear name
+	//Bottoms
+	var/list/bottom_underwear_list //! stores /datum/sprite_accessory/clothing/underwear_bottom indexed by name
+	var/list/bottom_underwear_m //! stores only bottom name
+	var/list/bottom_underwear_f //! stores only bottom name
 
-	//Undershirts
-	var/list/undershirt_list //! stores /datum/sprite_accessory/undershirt indexed by name
-	var/list/undershirt_m //! stores only undershirt name
-	var/list/undershirt_f //! stores only undershirt name
+	//Tops
+	var/list/top_underwear_list //! stores /datum/sprite_accessory/clothing/underwear_top indexed by name
+	var/list/top_underwear_m //! stores only top name
+	var/list/top_underwear_f //! stores only top name
 
 	//Socks
-	var/list/socks_list //! stores /datum/sprite_accessory/socks indexed by name
+	var/list/socks_list //! stores /datum/sprite_accessory/clothing/socks indexed by name
 
 	//Lizard Bits (all datum lists indexed by name)
 	var/list/lizard_markings_list
@@ -47,6 +47,7 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 	//Mutant Human bits
 	var/list/tails_list_felinid
 	var/list/tails_list_lizard
+	var/list/tails_list_caver
 	var/list/tails_list_monkey
 	var/list/tails_list_xeno
 	var/list/tails_list_fish
@@ -58,6 +59,7 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 	var/list/moth_markings_list
 	var/list/caps_list
 	var/list/pod_hair_list
+	var/list/boneplates_list
 
 /datum/controller/subsystem/accessories/PreInit() // this stuff NEEDS to be set up before GLOB for preferences and stuff to work so this must go here. sorry
 	setup_lists()
@@ -79,27 +81,29 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 	facial_hairstyles_male_list = facial_hair_lists[MALE_SPRITE_LIST]
 	facial_hairstyles_female_list = facial_hair_lists[FEMALE_SPRITE_LIST]
 
-	var/underwear_lists = init_sprite_accessory_subtypes(/datum/sprite_accessory/underwear)
-	underwear_list = underwear_lists[DEFAULT_SPRITE_LIST]
-	underwear_m = underwear_lists[MALE_SPRITE_LIST]
-	underwear_f = underwear_lists[FEMALE_SPRITE_LIST]
+	var/bottom_underwear_lists = init_sprite_accessory_subtypes(/datum/sprite_accessory/clothing/underwear_bottom)
+	bottom_underwear_list = bottom_underwear_lists[DEFAULT_SPRITE_LIST]
+	bottom_underwear_m = bottom_underwear_lists[MALE_SPRITE_LIST]
+	bottom_underwear_f = bottom_underwear_lists[FEMALE_SPRITE_LIST]
 
-	var/undershirt_lists = init_sprite_accessory_subtypes(/datum/sprite_accessory/undershirt)
-	undershirt_list = undershirt_lists[DEFAULT_SPRITE_LIST]
-	undershirt_m = undershirt_lists[MALE_SPRITE_LIST]
-	undershirt_f = undershirt_lists[FEMALE_SPRITE_LIST]
+	var/top_underwear_lists = init_sprite_accessory_subtypes(/datum/sprite_accessory/clothing/underwear_top)
+	top_underwear_list = top_underwear_lists[DEFAULT_SPRITE_LIST]
+	top_underwear_m = top_underwear_lists[MALE_SPRITE_LIST]
+	top_underwear_f = top_underwear_lists[FEMALE_SPRITE_LIST]
 
-	socks_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/socks)[DEFAULT_SPRITE_LIST]
+	socks_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/clothing/socks)[DEFAULT_SPRITE_LIST]
 
 	lizard_markings_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/lizard_markings, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
 	tails_list_felinid = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/felinid, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
 	tails_list_lizard = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/lizard)[DEFAULT_SPRITE_LIST]
+	tails_list_caver = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/caver)[DEFAULT_SPRITE_LIST]
 	tails_list_monkey = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/monkey)[DEFAULT_SPRITE_LIST]
 	tails_list_xeno = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/xeno)[DEFAULT_SPRITE_LIST]
 	//tails fo fish organ infusions, not for prefs.
 	tails_list_fish = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/fish)[DEFAULT_SPRITE_LIST]
 	snouts_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/snouts)[DEFAULT_SPRITE_LIST]
-	horns_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/horns, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
+	horns_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/horns/lizard, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
+	boneplates_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/horns/caver)[DEFAULT_SPRITE_LIST]
 	ears_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/ears, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
 	wings_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/wings, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
 	wings_open_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/wings_open)[DEFAULT_SPRITE_LIST]

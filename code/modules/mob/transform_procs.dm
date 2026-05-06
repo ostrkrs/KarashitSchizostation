@@ -79,8 +79,8 @@
 	return src
 
 /mob/living/carbon/human/finish_humanize(species = /datum/species/human)
-	underwear = "Nude"
-	undershirt = "Nude"
+	bottom_underwear = "Nude"
+	top_underwear = "Nude"
 	socks = "Nude"
 	return ..()
 

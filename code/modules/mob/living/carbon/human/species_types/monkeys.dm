@@ -3,6 +3,7 @@
 /datum/species/monkey
 	name = "\improper Monkey"
 	id = SPECIES_MONKEY
+	examine_color = COLOR_DARK_MODERATE_ORANGE
 	mutant_organs = list(
 		/obj/item/organ/tail/monkey = "Monkey",
 	)

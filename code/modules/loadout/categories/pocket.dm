@@ -3,7 +3,7 @@
 	category_name = "Pocket"
 	category_ui_icon = FA_ICON_ENVELOPES_BULK
 	type_to_generate = /datum/loadout_item/pocket_items
-	tab_order = 10
+	tab_order = 11
 	/// How many pocket items are allowed
 	VAR_PRIVATE/max_allowed = 4
 

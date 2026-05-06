@@ -55,10 +55,12 @@
 	var/physique = MALE
 
 	//consider updating /mob/living/carbon/human/copy_clothing_prefs() if adding more of these
-	var/underwear = "Nude" //Which underwear the player wants
-	var/underwear_color = COLOR_BLACK
-	var/undershirt = "Nude" //Which undershirt the player wants
+	var/bottom_underwear = "Nude" //Which bottoms the player wants
+	var/bottom_underwear_color = COLOR_BLACK
+	var/top_underwear = "Nude" //Which tops the player wants
+	var/top_underwear_color = COLOR_BLACK
 	var/socks = "Nude" //Which socks the player wants
+	var/socks_color = COLOR_BLACK
 	var/backpack = DBACKPACK //Which backpack type the player has chosen.
 	var/jumpsuit_style = PREF_SUIT //suit/skirt
 

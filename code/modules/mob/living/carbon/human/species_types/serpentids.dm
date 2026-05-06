@@ -3,6 +3,7 @@
 /datum/species/serpentid
 	name = "\improper Serpentid"
 	id = SPECIES_SERPENTID
+	examine_color = "#01C07A"
 	inherent_traits = list(
 		TRAIT_ADVANCEDTOOLUSER,
 		TRAIT_CHUNKYFINGERS,
@@ -81,7 +82,7 @@
 	hair_color_mode = USE_FIXED_MUTANT_COLOR
 	hair_alpha = 0
 	facial_hair_alpha = 0
-	payday_modifier = 0.75
+	payday_modifier = 0 // why do we pay salary to a literal biorobot
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	species_cookie = /obj/item/food/grown/cabbage
 	species_language_holder = /datum/language_holder/serpentid
@@ -147,7 +148,6 @@
 
 	features += "feature_serpcolor"
 	features -= "socks"
-	features -= "undershirt"
 	features -= "jumpsuit_style"
 
 	return features
@@ -164,45 +164,45 @@
 	perk_descriptions += list(
 		list(
 			SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
-			SPECIES_PERK_ICON = "shirt",
+			SPECIES_PERK_ICON = FA_ICON_SHIRT,
 			SPECIES_PERK_NAME = "Inhuman Bodytype",
 			SPECIES_PERK_DESC = "Because of their shape and size, serpentids cannot wear most human clothes and will not fit into mechs or body bags.",
 		),
 		list(
 			SPECIES_PERK_TYPE = SPECIES_NEGATIVE_PERK,
-			SPECIES_PERK_ICON = "mitten",
+			SPECIES_PERK_ICON = FA_ICON_MITTEN,
 			SPECIES_PERK_NAME = "Chunky Fingers",
 			SPECIES_PERK_DESC = "Serpentids have chunky fingers on their hands, which means they cannot handle weapons or other devices that have a trigger guard.",
 		),
 
 		list(
 			SPECIES_PERK_TYPE = SPECIES_NEUTRAL_PERK,
-			SPECIES_PERK_ICON = "shower",
+			SPECIES_PERK_ICON = FA_ICON_SHOWER,
 			SPECIES_PERK_NAME = "Hydrophobia",
 			SPECIES_PERK_DESC = "Serpentids don't like getting soaked with water.",
 		),
 
 		list(
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
-			SPECIES_PERK_ICON = "wind",
+			SPECIES_PERK_ICON = FA_ICON_GAUGE_HIGH,
 			SPECIES_PERK_NAME = "Pressure Resistance",
 			SPECIES_PERK_DESC = "Serpentids are less affected by pressure changes.",
 		),
 		list(
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
-			SPECIES_PERK_ICON = "hand-scissors",
+			SPECIES_PERK_ICON = FA_ICON_HAND_SCISSORS,
 			SPECIES_PERK_NAME = "Mantis Arms",
 			SPECIES_PERK_DESC = "Serpentids possesses a second pair of arms with massive sharp mantis blades. They can have only one pair active at a time and need to pump blood between them.",
 		),
 		list(
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
-			SPECIES_PERK_ICON = "eye",
+			SPECIES_PERK_ICON = FA_ICON_EYE,
 			SPECIES_PERK_NAME = "Welder Eyelids",
 			SPECIES_PERK_DESC = "Serpentids can close their second pair of eyelids to protect their eyes from welder flash.",
 		),
 		list(
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
-			SPECIES_PERK_ICON = "eye-low-vision",
+			SPECIES_PERK_ICON = FA_ICON_EYE_LOW_VISION,
 			SPECIES_PERK_NAME = "Camouflage",
 			SPECIES_PERK_DESC = "Serpentids can blend in with their surroundings and become transparent to hide from danger.",
 		),

@@ -724,9 +724,31 @@
 	liked_foodtypes = RAW | GORE | MEAT | BUGS
 	disliked_foodtypes = CLOTH | FRIED | TOXIC | FRUIT
 	toxic_foodtypes = DAIRY | SUGAR | JUNKFOOD
+	modifies_speech = TRUE
+	voice_filter = @{"[0:a] asplit [out0][out2]; [out0] asetrate=%SAMPLE_RATE%*0.9,aresample=%SAMPLE_RATE%,atempo=1/0.9,aformat=channel_layouts=mono,volume=0.2 [p0]; [out2] asetrate=%SAMPLE_RATE%*1.1,aresample=%SAMPLE_RATE%,atempo=1/1.1,aformat=channel_layouts=mono,volume=0.2[p2]; [p0][0][p2] amix=inputs=3"}
+	var/static/list/speech_replacements = list(
+		new /regex("s+", "g") = "z",
+		new /regex("S+", "g") = "Z",
+		new /regex("z+", "g") = "zzz",
+		new /regex("Z+", "g") = "ZZZ",
+		new /regex("с+", "g") = "з",
+		new /regex("С+", "g") = "З",
+		new /regex("з+", "g") = "ззз",
+		new /regex("ЗЗЗ+", "g") = "ЗЗЗ",
+	)
+
+/obj/item/organ/tongue/serpentid/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/speechmod, replacements = speech_replacements, should_modify_speech = CALLBACK(src, PROC_REF(should_modify_speech)))
 
 /obj/item/organ/tongue/serpentid/get_possible_languages()
 	return list(
 		/datum/language/common,
 		/datum/language/serpentid,
 	)
+
+/obj/item/organ/tongue/caver
+	name = "caver tongue"
+	liked_foodtypes = FRIED | VEGETABLES
+	disliked_foodtypes = GROSS | RAW | CLOTH | GORE
+	color = COLOR_PURPLE_GRAY

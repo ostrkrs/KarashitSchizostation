@@ -296,6 +296,7 @@
 	var/extra_regen = 0.25 // in addition to acting as temporary blood, also add about half this much to their actual blood per second
 	ph = 5.5
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	hydration_factor = 4.5
 
 /datum/reagent/medicine/salglu_solution/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()

@@ -219,6 +219,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_NO_AUGMENTS "no_augments"
 /// This carbon doesn't get hungry
 #define TRAIT_NOHUNGER "no_hunger"
+/// This carbon doesn't get thirsty
+#define TRAIT_NOTHIRST "no_thirst"
 /// This carbon doesn't bleed
 #define TRAIT_NOBLOOD "noblood"
 /// This just means that the carbon will always have functional liverless metabolism

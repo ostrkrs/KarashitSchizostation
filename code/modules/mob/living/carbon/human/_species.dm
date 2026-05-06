@@ -108,6 +108,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/heatmod = 1
 	///multiplier for stun durations
 	var/stunmod = 1
+	///multiplier for thirst rate
+	var/thirstmod = 1
 	///multiplier for money paid at payday
 	var/payday_modifier = 1.0
 	///Base electrocution coefficient.  Basically a multiplier for damage from electrocutions.
@@ -186,6 +188,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/list/outfit_override_registry = list()
 
 	var/mob_size = MOB_SIZE_HUMAN
+
+	var/examine_color = COLOR_LIGHT_ORANGE
 
 ///////////
 // PROCS //
@@ -493,84 +497,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	human.living_flags &= ~STOP_OVERLAY_UPDATE_BODY_PARTS
 
-/**
- * Handles the body of a human
- *
- * Handles lipstick, having no eyes, eye color, undergarnments like underwear, undershirts, and socks, and body layers.
- * Arguments:
- * * species_human - Human, whoever we're handling the body for
- */
-/datum/species/proc/handle_body(mob/living/carbon/human/species_human)
-	species_human.remove_overlay(BODY_LAYER)
-	species_human.remove_overlay(EYES_LAYER)
-
-	if(HAS_TRAIT(species_human, TRAIT_INVISIBLE_MAN))
-		return
-
-	if(!HAS_TRAIT(species_human, TRAIT_HUSK))
-		var/obj/item/bodypart/head/noggin = species_human.get_bodypart(BODY_ZONE_HEAD)
-		if(noggin?.head_flags & HEAD_EYESPRITES)
-			// eyes (missing eye sprites get handled by the head itself, but sadly we have to do this stupid shit here, for now)
-			var/obj/item/organ/eyes/eye_organ = species_human.get_organ_slot(ORGAN_SLOT_EYES)
-			if(eye_organ)
-				eye_organ.refresh(call_update = FALSE)
-				species_human.overlays_standing[EYES_LAYER] = eye_organ.generate_body_overlay(species_human)
-				species_human.apply_overlay(EYES_LAYER)
-
-	if(HAS_TRAIT(species_human, TRAIT_NO_UNDERWEAR))
-		return
-
-	// Underwear, Undershirts & Socks
-	var/list/standing = list()
-	if(species_human.underwear)
-		var/datum/sprite_accessory/underwear/underwear = SSaccessories.underwear_list[species_human.underwear]
-		var/mutable_appearance/underwear_overlay
-		if(underwear)
-			if(species_human.dna.species.sexes && species_human.physique == FEMALE && (underwear.gender == MALE))
-				underwear_overlay = mutable_appearance(wear_female_version(underwear.icon_state, underwear.icon, FEMALE_UNIFORM_FULL), layer = -BODY_LAYER)
-			else
-				underwear_overlay = mutable_appearance(underwear.icon, underwear.icon_state, -BODY_LAYER)
-			if(!underwear.use_static)
-				underwear_overlay.color = species_human.underwear_color
-			standing += underwear_overlay
-
-	if(species_human.undershirt)
-		var/datum/sprite_accessory/undershirt/undershirt = SSaccessories.undershirt_list[species_human.undershirt]
-		if(undershirt)
-			var/mutable_appearance/working_shirt
-			if(species_human.dna.species.sexes && species_human.physique == FEMALE)
-				working_shirt = mutable_appearance(wear_female_version(undershirt.icon_state, undershirt.icon), layer = -BODY_LAYER)
-			else
-				working_shirt = mutable_appearance(undershirt.icon, undershirt.icon_state, layer = -BODY_LAYER)
-			standing += working_shirt
-
-	if(species_human.socks && species_human.num_legs >= 2 && !(species_human.bodyshape & BODYSHAPE_DIGITIGRADE))
-		var/datum/sprite_accessory/socks/socks = SSaccessories.socks_list[species_human.socks]
-		if(socks)
-			standing += mutable_appearance(socks.icon, socks.icon_state, -BODY_LAYER)
-
-	if(standing.len)
-		species_human.overlays_standing[BODY_LAYER] = standing
-
-	species_human.apply_overlay(BODY_LAYER)
-
-/// Updates face (as of now, only eye) offsets
-/datum/species/proc/update_face_offset(mob/living/carbon/human/species_human)
-	var/list/eye_overlays = species_human.overlays_standing[EYES_LAYER]
-	species_human.remove_overlay(EYES_LAYER)
-
-	if(HAS_TRAIT(species_human, TRAIT_INVISIBLE_MAN) || HAS_TRAIT(species_human, TRAIT_HUSK) || !length(eye_overlays))
-		return
-
-	var/obj/item/bodypart/head/noggin = species_human.get_bodypart(BODY_ZONE_HEAD)
-	for (var/mutable_appearance/overlay as anything in eye_overlays)
-		overlay.pixel_w = 0
-		overlay.pixel_z = 0
-		noggin.worn_face_offset.apply_offset(overlay)
-
-	species_human.overlays_standing[EYES_LAYER] = eye_overlays
-	species_human.apply_overlay(EYES_LAYER)
-
 // This exists so sprite accessories can still be per-layer without having to include that layer's
 // number in their sprite name, which causes issues when those numbers change.
 /datum/species/proc/mutant_bodyparts_layertext(layer)
@@ -589,8 +515,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 ///Proc that will randomise the underwear (i.e. top, pants and socks) of a species' associated mob,
 /// but will not update the body right away.
 /datum/species/proc/randomize_active_underwear_only(mob/living/carbon/human/human_mob)
-	human_mob.undershirt = random_undershirt(human_mob.gender)
-	human_mob.underwear = random_underwear(human_mob.gender)
+	human_mob.top_underwear = random_top_underwear(human_mob.gender)
+	human_mob.bottom_underwear = random_bottom_underwear(human_mob.gender)
 	human_mob.socks = random_socks(human_mob.gender)
 
 ///Proc that will randomise the underwear (i.e. top, pants and socks) of a species' associated mob
@@ -2041,8 +1967,12 @@ GLOBAL_LIST_EMPTY(features_by_species)
 
 	var/list/final_bodypart_overrides = new_species.bodypart_overrides.Copy()
 	if((new_species.digitigrade_customization == DIGITIGRADE_OPTIONAL && target.dna.features[FEATURE_LEGS] == DIGITIGRADE_LEGS) || new_species.digitigrade_customization == DIGITIGRADE_FORCED)
-		final_bodypart_overrides[BODY_ZONE_R_LEG] = /obj/item/bodypart/leg/right/digitigrade
-		final_bodypart_overrides[BODY_ZONE_L_LEG] = /obj/item/bodypart/leg/left/digitigrade
+		var/obj/item/bodypart/leg/right/r_leg = new_species.bodypart_overrides[BODY_ZONE_R_LEG]
+		if(r_leg)
+			final_bodypart_overrides[BODY_ZONE_R_LEG] = initial(r_leg.digitigrade_type)
+		var/obj/item/bodypart/leg/left/l_leg = new_species.bodypart_overrides[BODY_ZONE_L_LEG]
+		if(l_leg)
+			final_bodypart_overrides[BODY_ZONE_L_LEG] = initial(l_leg.digitigrade_type)
 
 	for(var/obj/item/bodypart/old_part as anything in target.bodyparts)
 		if((old_part.change_exempt_flags & BP_BLOCK_CHANGE_SPECIES) || (old_part.bodypart_flags & BODYPART_IMPLANTED))

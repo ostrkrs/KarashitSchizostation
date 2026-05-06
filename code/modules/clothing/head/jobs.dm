@@ -233,9 +233,6 @@
 
 #undef CANDY_CD_TIME
 
-/obj/item/clothing/head/fedora/det_hat/minor
-	flask_path = /obj/item/reagent_containers/cup/glass/flask/det/minor
-
 ///Detectives Fedora, but like Inspector Gadget. Not a subtype to not inherit candy corn stuff
 /obj/item/clothing/head/fedora/inspector_hat
 	name = "inspector's fedora"

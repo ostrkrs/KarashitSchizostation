@@ -18,7 +18,7 @@
 	if(signal_result & COMPONENT_LIVING_CANCEL_LIFE_PROCESSING) // mmm less work
 		return
 
-	if (client)
+	if(client)
 		var/turf/T = get_turf(src)
 		if(!T)
 			move_to_error_room()
@@ -60,10 +60,9 @@
 
 		handle_gravity(seconds_per_tick, times_fired)
 
-	if(living_flags & QUEUE_NUTRITION_UPDATE)
-		mob_mood?.update_nutrition_moodlets()
-		hud_used?.hunger?.update_hunger_bar()
-		living_flags &= ~QUEUE_NUTRITION_UPDATE
+	if(ishuman(src))
+		handle_starvation(seconds_per_tick, times_fired)
+		handle_dehydration(seconds_per_tick, times_fired)
 
 	if(stat != DEAD)
 		return TRUE
@@ -93,6 +92,45 @@
 	else // this is a hot place
 		adjust_bodytemperature(min(min(temp_delta / BODYTEMP_DIVISOR, BODYTEMP_HEATING_MAX) * seconds_per_tick, temp_delta))
 
+/mob/living/proc/handle_starvation(seconds_per_tick, times_fired)
+	if(nutrition < NUTRITION_LEVEL_LIFE_THREATENING)
+		for(var/slot in list(ORGAN_SLOT_HEART, ORGAN_SLOT_LUNGS, ORGAN_SLOT_STOMACH, ORGAN_SLOT_LIVER))
+			var/obj/item/organ/starving_organs = src.get_organ_slot(slot)
+			starving_organs.apply_organ_damage(0.25 * seconds_per_tick)
+
+	if(living_flags & QUEUE_NUTRITION_UPDATE)
+		mob_mood?.update_nutrition_moodlets()
+		hud_used?.hunger?.update_hunger_bar()
+
+		living_flags &= ~QUEUE_NUTRITION_UPDATE
+
+/mob/living/proc/handle_dehydration(seconds_per_tick, times_fired)
+	if(!HAS_TRAIT(src, TRAIT_NOTHIRST))
+		var/thirst_rate = THIRST_FACTOR
+		if(iscarbon(src))
+			var/mob/living/carbon/thirstie = src
+			thirst_rate *= thirstie.dna.species.thirstmod
+		if(hydration >= HYDRATION_LEVEL_FULL)
+			thirst_rate = THIRST_FACTOR * 10
+		adjust_hydration(-thirst_rate * seconds_per_tick)
+
+	if(hydration < HYDRATION_LEVEL_LIFE_THREATENING && ishuman(src))
+		for(var/slot in list(ORGAN_SLOT_BRAIN, ORGAN_SLOT_HEART, ORGAN_SLOT_LUNGS, ORGAN_SLOT_LIVER))
+			var/obj/item/organ/drying_organs = src.get_organ_slot(slot)
+			drying_organs.apply_organ_damage(0.25 * seconds_per_tick)
+
+	var/thirst = (500 - hydration) / 5
+	if(thirst >= 70)
+		add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/thirst, multiplicative_slowdown = (thirst / 50))
+	else
+		remove_movespeed_modifier(/datum/movespeed_modifier/thirst)
+
+	if(living_flags & QUEUE_HYDRATION_UPDATE)
+		mob_mood?.update_hydration_moodlets()
+		hud_used?.thirst?.update_thirst_bar()
+
+		living_flags &= ~QUEUE_HYDRATION_UPDATE
+
 /**
  * Get the fullness of the mob
  *
@@ -109,6 +147,23 @@
 	// we add the nutrition value of what we're currently digesting
 	for(var/datum/reagent/consumable/bits in reagents.reagent_list)
 		fullness += bits.get_nutriment_factor(src) * bits.volume / bits.metabolization_rate
+	return fullness
+
+/**
+ * Get the hydration level of the mob
+ *
+ * Hydration is a representation of how much water the mob has,
+ * including the water of stuff yet to be digested (reagents in blood / stomach)
+ *
+ * Otherwise, all reagents contribute to hydration, despite not adding water as they process.
+ *
+ * Returns a number representing hydration, scaled similarly to nutrition.
+ */
+/mob/living/proc/get_hydration()
+	var/fullness = hydration
+	// we add the hydration value of what we're currently digesting
+	for(var/datum/reagent/sips in reagents.reagent_list)
+		fullness += sips.get_hydration_factor(src) * sips.volume
 	return fullness
 
 /**

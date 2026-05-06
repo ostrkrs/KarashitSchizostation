@@ -282,3 +282,22 @@
 
 /datum/bodypart_overlay/mutant/tail_spines/set_dye_color(new_color, obj/item/organ/organ)
 	dye_color = new_color //no update_body_parts() call, tail/set_dye_color will do it.
+
+
+/obj/item/organ/tail/caver
+	name = "caver tail"
+	desc = "A severed tail from a cave-adapted human."
+
+	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/caver
+
+	wag_flags = NONE
+	dna_block = /datum/dna_block/feature/tail_caver
+
+/obj/item/organ/tail/caver/get_butt_sprite()
+	return icon('icons/mob/butts.dmi', BUTT_SPRITE_LIZARD)
+
+/datum/bodypart_overlay/mutant/tail/caver
+	feature_key = FEATURE_TAIL_CAVER
+
+/datum/bodypart_overlay/mutant/tail/caver/get_global_feature_list()
+	return SSaccessories.tails_list_caver

@@ -92,6 +92,7 @@
 		alt_hud.apply_to_new_mob(src)
 
 	set_nutrition(rand(NUTRITION_LEVEL_START_MIN, NUTRITION_LEVEL_START_MAX))
+	set_hydration(rand(HYDRATION_LEVEL_START_MIN, HYDRATION_LEVEL_START_MAX))
 	. = ..()
 	setup_hud_traits()
 	update_config_movespeed()
@@ -1509,6 +1510,37 @@
 	else
 		living_flags |= QUEUE_NUTRITION_UPDATE
 
+///Force set the mob hydration
+/mob/proc/set_hydration(set_to, forced = FALSE)
+	if(HAS_TRAIT(src, TRAIT_NOTHIRST) && !forced)
+		return
+
+	hydration = max(0, set_to)
+
+/mob/living/set_hydration(set_to, forced)
+	var/old_hydration = hydration
+	. = ..()
+	if(abs(old_hydration - hydration) >= 6)
+		mob_mood?.update_hydration_moodlets()
+		hud_used?.thirst?.update_thirst_bar()
+	else
+		living_flags |= QUEUE_HYDRATION_UPDATE
+
+///Adjust the hydration of a mob
+/mob/proc/adjust_hydration(change, forced = FALSE)
+	if(HAS_TRAIT(src, TRAIT_NOTHIRST) && !forced)
+		return
+
+	hydration = max(0, hydration + change)
+
+/mob/living/adjust_hydration(change, forced)
+	. = ..()
+	if(abs(change) >= 6)
+		mob_mood?.update_hydration_moodlets()
+		hud_used?.thirst?.update_thirst_bar()
+	else
+		living_flags |= QUEUE_HYDRATION_UPDATE
+
 /// Apply a proper movespeed modifier based on items we have equipped
 /mob/proc/update_equipment_speed_mods()
 	var/speedies = 0
@@ -1553,6 +1585,9 @@
 			. = TRUE
 		if(NAMEOF(src, nutrition))
 			set_nutrition(var_value)
+			. = TRUE
+		if(NAMEOF(src, hydration))
+			set_hydration(var_value)
 			. = TRUE
 		if(NAMEOF(src, stat))
 			set_stat(var_value)
