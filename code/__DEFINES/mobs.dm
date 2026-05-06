@@ -308,9 +308,23 @@
 #define NUTRITION_LEVEL_HUNGRY 250
 #define NUTRITION_LEVEL_VERY_HUNGRY 200
 #define NUTRITION_LEVEL_STARVING 150
+#define NUTRITION_LEVEL_LIFE_THREATENING 25
 
 #define NUTRITION_LEVEL_START_MIN 250
 #define NUTRITION_LEVEL_START_MAX 400
+
+//Hydration levels for humans
+#define HYDRATION_LEVEL_OVERHYDRATED 600
+#define HYDRATION_LEVEL_FULL 550
+#define HYDRATION_LEVEL_WELL_HYDRATED 450
+#define HYDRATION_LEVEL_HYDRATED 350
+#define HYDRATION_LEVEL_THIRSTY 250
+#define HYDRATION_LEVEL_VERY_THIRSTY 200
+#define HYDRATION_LEVEL_DEHYDRATED 150
+#define HYDRATION_LEVEL_LIFE_THREATENING 25
+
+#define HYDRATION_LEVEL_START_MIN 250
+#define HYDRATION_LEVEL_START_MAX 450
 
 //Disgust levels for humans
 #define DISGUST_LEVEL_MAXEDOUT 150
@@ -482,6 +496,7 @@
 #define DOOR_CRUSH_DAMAGE 20 //the amount of damage that airlocks deal when they crush you
 
 #define HUNGER_FACTOR 0.05 //factor at which mob nutrition decreases
+#define THIRST_FACTOR 0.10 //factor at which mob hydration decreases
 #define ETHEREAL_DISCHARGE_RATE (1e-3 * STANDARD_ETHEREAL_CHARGE) // Rate at which ethereal stomach charge decreases
 /// How much nutrition eating clothes as moth gives and drains
 #define CLOTHING_NUTRITION_GAIN 15

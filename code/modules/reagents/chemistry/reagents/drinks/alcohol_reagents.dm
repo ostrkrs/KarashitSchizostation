@@ -15,6 +15,7 @@
 	default_container = /obj/item/reagent_containers/cup/glass/bottle/beer
 	fallback_icon = 'icons/obj/drinks/bottles.dmi'
 	fallback_icon_state = "beer"
+	hydration_factor = 7.5
 	/**
 	 * Boozepwr Chart
 	 *
@@ -1527,6 +1528,7 @@
 	quality = DRINK_REVOLTING
 	taste_description = "custard and alcohol"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	hydration_factor = 2.5
 
 /datum/reagent/consumable/ethanol/narsour
 	name = "Nar'Sour"

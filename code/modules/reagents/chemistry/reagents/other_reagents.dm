@@ -7,6 +7,7 @@
 	taste_mult = 1.3
 	penetrates_skin = NONE
 	ph = 7.4
+	hydration_factor = 2.5
 	default_container = /obj/item/reagent_containers/blood
 
 /datum/glass_style/shot_glass/blood
@@ -62,6 +63,7 @@
 	taste_description = "gross iron"
 	nutriment_factor = 2
 	material = /datum/material/meat
+	hydration_factor = 2.5
 	ph = 7.45
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
@@ -74,6 +76,7 @@
 	color = "#dbcdcb"
 	description = "Ground up bones, gross!"
 	taste_description = "the most disgusting grain in existence"
+	hydration_factor = -10
 
 /datum/reagent/vaccine
 	//data must contain virus type
@@ -116,6 +119,7 @@
 	description = "An ubiquitous chemical substance that is composed of hydrogen and oxygen."
 	color = "#AAAAAA77" // rgb: 170, 170, 170, 77 (alpha)
 	taste_description = "water"
+	hydration_factor = 5
 	var/cooling_temperature = 2
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_CLEANS
 	default_container = /obj/item/reagent_containers/cup/glass/waterbottle
@@ -254,6 +258,7 @@
 	cooling_temperature = 3
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_CLEANS
 	default_container = /obj/item/reagent_containers/cup/glass/waterbottle
+	hydration_factor = -5
 
 /datum/glass_style/shot_glass/water/salt
 	required_drink_type = /datum/reagent/water/salt
@@ -393,6 +398,7 @@
 	color = "#88878777"
 	taste_description = "emptyiness"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_NO_RANDOM_RECIPE
+	hydration_factor = 2.5
 
 /datum/reagent/hydrogen_peroxide
 	name = "Hydrogen Peroxide"
@@ -498,6 +504,7 @@
 	taste_description = "burning"
 	ph = 0.1
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_NO_RANDOM_RECIPE
+	hydration_factor = -10
 
 /datum/reagent/hellwater/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()

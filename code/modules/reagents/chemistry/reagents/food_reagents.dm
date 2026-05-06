@@ -475,6 +475,7 @@
 	penetrates_skin = NONE
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/saltshaker
+	hydration_factor = -2.5
 
 /datum/reagent/consumable/salt/expose_turf(turf/exposed_turf, reac_volume) //Creates an umbra-blocking salt pile
 	. = ..()
@@ -524,6 +525,7 @@
 	taste_description = "pepper"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/peppermill
+	hydration_factor = -5
 
 /datum/reagent/consumable/coco
 	name = "Coco Powder"
@@ -541,6 +543,7 @@
 	metabolization_rate = 0.15 * REAGENTS_METABOLISM
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	added_traits = list(TRAIT_GARLIC_BREATH)
+	hydration_factor = 2.5
 
 /datum/reagent/consumable/garlic/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
@@ -565,6 +568,7 @@
 	color = "#c0c9a0"
 	taste_description = "bitterness"
 	ph = 5
+	hydration_factor = 2.5
 
 /datum/reagent/consumable/tearjuice/expose_mob(mob/living/exposed_mob, methods = INGEST, reac_volume)
 	. = ..()
@@ -608,6 +612,7 @@
 	taste_description = "dry and cheap noodles"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/cup/glass/dry_ramen
+	hydration_factor = -10
 
 /datum/reagent/consumable/hot_ramen
 	name = "Hot Ramen"
@@ -617,6 +622,7 @@
 	taste_description = "wet and cheap noodles"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/cup/glass/dry_ramen
+	hydration_factor = 5
 
 /datum/reagent/consumable/nutraslop
 	name = "Nutraslop"
@@ -649,6 +655,7 @@
 	taste_description = "chalky wheat"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_AFFECTS_WOUNDS
 	default_container = /obj/item/reagent_containers/condiment/flour
+	hydration_factor = -10
 
 /datum/reagent/consumable/flour/expose_mob(mob/living/exposed_mob, methods, reac_volume)
 	. = ..()
@@ -713,6 +720,7 @@
 	taste_description = "rice"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/rice
+	hydration_factor = -5
 
 /datum/reagent/consumable/rice_flour
 	name = "Rice Flour"
@@ -720,6 +728,7 @@
 	color = COLOR_WHITE // rgb: 0, 0, 0
 	taste_description = "chalky wheat with rice"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	hydration_factor = -10
 
 /datum/reagent/consumable/vanilla
 	name = "Vanilla Powder"
@@ -729,6 +738,7 @@
 	color = "#FFFACD"
 	taste_description = "vanilla"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	hydration_factor = -5
 
 /datum/reagent/consumable/eggyolk
 	name = "Egg Yolk"
@@ -752,6 +762,7 @@
 	color = "#DBCE95"
 	taste_description = "slime"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED|REAGENT_AFFECTS_WOUNDS
+	hydration_factor = -10
 
 // Starch has similar absorbing properties to flour (Stronger here because it's rarer)
 /datum/reagent/consumable/corn_starch/expose_mob(mob/living/exposed_mob, methods, reac_volume)
@@ -1049,6 +1060,7 @@
 	taste_description = "smoke"
 	overdose_threshold = 15
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	hydration_factor = -5
 
 /datum/reagent/consumable/char/overdose_process(mob/living/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
@@ -1128,6 +1140,7 @@
 	taste_description = "earthy heat"
 	color = "#EEC39A"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	hydration_factor = -10
 
 /datum/reagent/consumable/korta_milk
 	name = "Korta Milk"
@@ -1135,6 +1148,7 @@
 	taste_description = "sugary milk"
 	color = COLOR_WHITE
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	hydration_factor = 7.5
 
 /datum/reagent/consumable/korta_nectar
 	name = "Korta Nectar"
@@ -1175,6 +1189,7 @@
 	color = "#661F1E"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/vinegar
+	hydration_factor = -5
 
 /datum/reagent/consumable/cornmeal
 	name = "Cornmeal"
@@ -1183,6 +1198,7 @@
 	color = "#ebca85"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/cornmeal
+	hydration_factor = -10
 
 /datum/reagent/consumable/yoghurt
 	name = "Yoghurt"
@@ -1215,6 +1231,7 @@
 	nutriment_factor = 1.5
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/creamer
+	hydration_factor = -5
 
 /datum/reagent/consumable/mintextract
 	name = "Mint Extract"
@@ -1253,6 +1270,7 @@
 	taste_description = "dry curry"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 	default_container = /obj/item/reagent_containers/condiment/curry_powder
+	hydration_factor = -10
 
 /datum/reagent/consumable/dashi_concentrate
 	name = "Dashi Concentrate"

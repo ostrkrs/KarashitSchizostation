@@ -1150,6 +1150,175 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/splash)
 #undef HUNGER_STATE_STARVING
 #undef HUNGER_STATE_VERY_HUNGRY
 
+
+#define THIRST_STATE_OVERHYDRATED 5
+#define THIRST_STATE_FULL 4
+#define THIRST_STATE_FINE 3
+#define THIRST_STATE_THIRSTY 2
+#define THIRST_STATE_VERY_THIRSTY 1
+#define THIRST_STATE_DEHYDRATED 0
+
+/atom/movable/screen/thirst
+	name = "thirst"
+	icon_state = "thirstbar"
+	screen_loc = ui_thirst
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	/// What state of thirst are we in?
+	VAR_PRIVATE/state
+	/// What was the last fullness we recorded?
+	VAR_PRIVATE/fullness
+	/// What drink icon do we show by the bar
+	var/drink_icon = 'icons/obj/drinks/bottles.dmi'
+	/// What drink icon state do we show by the bar
+	var/drink_icon_state = "largebottle"
+	/// The image shown by the bar.
+	VAR_PRIVATE/image/drink_image
+	/// The actual bar
+	VAR_PRIVATE/atom/movable/screen/thirst_bar/thirst_bar
+
+/atom/movable/screen/thirst/Initialize(mapload, datum/hud/hud_owner)
+	. = ..()
+	var/mob/living/thirsty = hud_owner?.mymob
+	if(!istype(thirsty))
+		return
+
+	// Bottle next to the bar
+	drink_image = image(icon = drink_icon, icon_state = drink_icon_state, pixel_x = -5)
+	drink_image.plane = plane
+	drink_image.appearance_flags |= KEEP_APART // To be unaffected by filters applied to src
+	drink_image.add_filter("simple_outline", 2, outline_filter(1, COLOR_BLACK, OUTLINE_SHARP))
+	underlays += drink_image // To be below filters applied to src
+
+	// The actual bar
+	thirst_bar = new(src, null)
+	vis_contents += thirst_bar
+
+	update_thirst_bar(instant = TRUE)
+
+/atom/movable/screen/thirst/proc/update_thirst_state()
+	var/mob/living/thirsty = hud?.mymob
+	if(!istype(thirsty))
+		return
+
+	if(HAS_TRAIT(thirsty, TRAIT_NOTHIRST))
+		fullness = HYDRATION_LEVEL_HYDRATED
+		state = THIRST_STATE_FINE
+		return
+
+	fullness = round(thirsty.get_hydration(), 0.05)
+	switch(fullness)
+		if(1 + HYDRATION_LEVEL_FULL to INFINITY)
+			state = THIRST_STATE_FULL
+		if(1 + HYDRATION_LEVEL_THIRSTY to HYDRATION_LEVEL_FULL)
+			state = THIRST_STATE_FINE
+		if(1 + HYDRATION_LEVEL_VERY_THIRSTY to HYDRATION_LEVEL_THIRSTY)
+			state = THIRST_STATE_FINE
+		if(1 + HYDRATION_LEVEL_VERY_THIRSTY to HYDRATION_LEVEL_THIRSTY)
+			state = THIRST_STATE_THIRSTY
+		if(0 to HYDRATION_LEVEL_VERY_THIRSTY)
+			state = THIRST_STATE_DEHYDRATED
+
+/atom/movable/screen/thirst/update_appearance(updates)
+	update_thirst_bar()
+	return ..()
+
+/// Updates the thirst bar's appearance.
+/// If `instant` is TRUE, the bar will update immediately rather than animating.
+/atom/movable/screen/thirst/proc/update_thirst_bar(instant = FALSE)
+	var/old_state = state
+	var/old_fullness = fullness
+	update_thirst_state()
+	if(old_state != state || old_fullness != fullness)
+		// Fades out if we ARE "fine" AND if our stomach has no food digesting
+		var/mob/living/thirsty = hud?.mymob
+		if(alpha == 255 && (state == THIRST_STATE_FINE && abs(fullness - thirsty.hydration) < 1))
+			if(instant)
+				alpha = 0
+			else
+				animate(src, alpha = 0, time = 1 SECONDS)
+		// Fades in if we WERE "fine" OR if our stomach has food digesting
+		else if(alpha == 0 && (state != THIRST_STATE_FINE || abs(fullness - thirsty.hydration) >= 1))
+			if(instant)
+				alpha = 255
+			else
+				animate(src, alpha = 255, time = 1 SECONDS)
+
+	if(old_state != state)
+		// Update filter around the bar
+		if(state == THIRST_STATE_DEHYDRATED)
+			if(!get_filter("thirst_outline"))
+				add_filter("thirst_outline", 1, list("type" = "outline", "color" = "#FF0033", "alpha" = 0, "size" = 2))
+				animate(get_filter("thirst_outline"), alpha = 200, time = 1.5 SECONDS, loop = -1)
+				animate(alpha = 0, time = 1.5 SECONDS)
+
+		else if(old_state == THIRST_STATE_DEHYDRATED)
+			remove_filter("thirst_outline")
+
+		// Update color of the food
+		if((state == THIRST_STATE_OVERHYDRATED) != (old_state == THIRST_STATE_OVERHYDRATED))
+			underlays -= drink_image
+			drink_image.color = state == THIRST_STATE_OVERHYDRATED ? COLOR_DARK : null
+			underlays += drink_image
+
+	// Update thirst bar
+	if(old_fullness != fullness)
+		// instant if invisible OR if instant is set
+		thirst_bar.update_fullness(fullness, alpha == 0 || instant)
+
+/atom/movable/screen/thirst_bar
+	icon_state = "thirstbar_bar"
+	screen_loc = ui_thirst
+	vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
+	/// Mask
+	VAR_PRIVATE/static/icon/bar_mask
+	/// Gradient used to color the bar
+	VAR_PRIVATE/static/list/thirst_gradient = list(
+		0.0, "#FF0000",
+		0.2, "#FF8000",
+		0.4, "#f0f000",
+		0.6, "#00FF00",
+		0.8, "#46daff",
+		1.0, "#2A72AA",
+		1.2, "#494949",
+	)
+	/// Offset of the mask
+	VAR_PRIVATE/bar_offset
+	/// Last "fullness" value (rounded) we used to update the bar
+	VAR_PRIVATE/last_fullness_band = -1
+
+/atom/movable/screen/thirst_bar/Initialize(mapload, datum/hud/hud_owner)
+	. = ..()
+	var/atom/movable/movable_loc = ismovable(loc) ? loc : null
+	screen_loc = movable_loc?.screen_loc
+	bar_mask ||= icon(icon, "thirstbar_mask")
+
+/atom/movable/screen/thirst_bar/proc/update_fullness(new_fullness, instant)
+	new_fullness = round(new_fullness / HYDRATION_LEVEL_FULL, 0.05)
+	if(new_fullness == last_fullness_band)
+		return
+	last_fullness_band = new_fullness
+	// Update color
+	var/new_color = gradient(thirst_gradient, clamp(new_fullness, 0, 1.2))
+	if(instant)
+		color = new_color
+	else
+		animate(src, color = new_color, 0.5 SECONDS)
+	// Update mask
+	var/old_bar_offset = bar_offset
+	bar_offset = clamp(-20 + (20 * new_fullness), -20, 0)
+	if(old_bar_offset != bar_offset)
+		if(instant || isnull(old_bar_offset))
+			add_filter("thirst_bar_mask", 1, alpha_mask_filter(0, bar_offset, bar_mask))
+		else
+			transition_filter("thirst_bar_mask", alpha_mask_filter(0, bar_offset), 0.5 SECONDS)
+
+#undef THIRST_STATE_OVERHYDRATED
+#undef THIRST_STATE_FULL
+#undef THIRST_STATE_FINE
+#undef THIRST_STATE_THIRSTY
+#undef THIRST_STATE_VERY_THIRSTY
+#undef THIRST_STATE_DEHYDRATED
+
 #define FORMAT_BLOOD_LEVEL_HUD_MAPTEXT(value) MAPTEXT("<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='#FFDDDD'>[round(value,1)]</font></div>")
 
 /**

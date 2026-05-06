@@ -18,12 +18,14 @@
 
 	//Blood regeneration if there is some space
 	if(!(sigreturn & HANDLE_BLOOD_NO_NUTRITION_DRAIN))
-		if(blood_volume < BLOOD_VOLUME_NORMAL && !HAS_TRAIT(src, TRAIT_NOHUNGER))
+		if(blood_volume < BLOOD_VOLUME_NORMAL && !HAS_TRAIT(src, TRAIT_NOHUNGER) && !HAS_TRAIT(src, TRAIT_NOTHIRST))
 			var/nutrition_ratio = round(nutrition / NUTRITION_LEVEL_WELL_FED, 0.2)
+			var/hydration_ratio = round(hydration / HYDRATION_LEVEL_WELL_HYDRATED, 0.2)
 			if(satiety > 80)
 				nutrition_ratio *= 1.25
+			adjust_hydration(-hydration_ratio * THIRST_FACTOR * seconds_per_tick)
 			adjust_nutrition(-nutrition_ratio * HUNGER_FACTOR * seconds_per_tick)
-			blood_volume = min(blood_volume + (BLOOD_REGEN_FACTOR * physiology.blood_regen_mod * nutrition_ratio * seconds_per_tick), BLOOD_VOLUME_NORMAL)
+			blood_volume = min(blood_volume + (BLOOD_REGEN_FACTOR * physiology.blood_regen_mod * nutrition_ratio * hydration_ratio * seconds_per_tick), BLOOD_VOLUME_NORMAL)
 
 	//Bloodloss from wounds
 	var/temp_bleed = 0

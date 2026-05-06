@@ -165,6 +165,7 @@
 			user.balloon_alert(user, pick(finished_message))
 
 		user.adjust_nutrition(-5) // feel the burn
+		user.adjust_hydration(-7) // remember to stay hydrated!
 
 		if(iscarbon(user))
 			var/gravity_modifier = user.has_gravity() > STANDARD_GRAVITY ? 2 : 1
