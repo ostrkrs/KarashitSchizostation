@@ -124,7 +124,6 @@ T-850
 Terminus
 THX 1138
 Tidy
-Tik-Tok
 Tobor
 Trurl
 TWA
@@ -134,8 +133,6 @@ Uniblab
 V I N CENT
 Voltes V
 W1k1
-Wikipedia
-Windows 3 1
 X-5
 XERXES
 XR
