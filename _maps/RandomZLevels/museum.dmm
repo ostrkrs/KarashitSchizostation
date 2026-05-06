@@ -2438,7 +2438,7 @@
 /turf/open/chasm,
 /area/awaymission/museum)
 "tC" = (
-/obj/structure/sign/departments/lawyer/directional/south,
+/obj/structure/sign/departments/iaa/directional/south,
 /turf/open/misc/grass,
 /area/awaymission/museum/mothroachvoid)
 "tD" = (

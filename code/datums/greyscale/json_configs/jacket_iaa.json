@@ -1,5 +1,5 @@
 {
-	"jacket_lawyer": [
+	"jacket_iaa": [
 		{
 			"type": "icon_state",
 			"icon_state": "suitjacket",
@@ -7,7 +7,7 @@
 			"color_ids": [1]
 		}
 	],
-	"jacket_lawyer_t": [
+	"jacket_iaa_t": [
 		{
 			"type": "icon_state",
 			"icon_state": "suitjacket_t",

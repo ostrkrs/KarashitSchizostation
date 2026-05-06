@@ -1,26 +1,26 @@
 // Badges, pins, and other very small items that slot onto a shirt.
-/obj/item/clothing/accessory/lawyers_badge
-	name = "attorney's badge"
-	desc = "Fills you with the conviction of JUSTICE. Lawyers tend to want to show it to everyone they meet."
-	icon_state = "lawyerbadge"
+/obj/item/clothing/accessory/iaa_badge
+	name = "IAA's badge"
+	desc = "Fills you with the conviction of JUSTICE. Internal Affairs Agents tend to want to show it to everyone they meet."
+	icon_state = "iaa_badge"
 
-/obj/item/clothing/accessory/lawyers_badge/Initialize(mapload)
+/obj/item/clothing/accessory/iaa_badge/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/bubble_icon_override, "lawyer", BUBBLE_ICON_PRIORITY_ACCESSORY)
+	AddComponent(/datum/component/bubble_icon_override, "iaa", BUBBLE_ICON_PRIORITY_ACCESSORY)
 
-/obj/item/clothing/accessory/lawyers_badge/interact(mob/user)
+/obj/item/clothing/accessory/iaa_badge/interact(mob/user)
 	. = ..()
 	if(prob(1))
 		user.say("The testimony contradicts the evidence!", forced = "[src]")
 	user.point_at(src)
 
-/obj/item/clothing/accessory/lawyers_badge/accessory_equipped(obj/item/clothing/under/clothes, mob/living/user)
+/obj/item/clothing/accessory/iaa_badge/accessory_equipped(obj/item/clothing/under/clothes, mob/living/user)
 	RegisterSignal(user, COMSIG_LIVING_SLAM_TABLE, PROC_REF(table_slam))
 
-/obj/item/clothing/accessory/lawyers_badge/accessory_dropped(obj/item/clothing/under/clothes, mob/living/user)
+/obj/item/clothing/accessory/iaa_badge/accessory_dropped(obj/item/clothing/under/clothes, mob/living/user)
 	UnregisterSignal(user, COMSIG_LIVING_SLAM_TABLE)
 
-/obj/item/clothing/accessory/lawyers_badge/proc/table_slam(mob/living/source, obj/structure/table/the_table)
+/obj/item/clothing/accessory/iaa_badge/proc/table_slam(mob/living/source, obj/structure/table/the_table)
 	SIGNAL_HANDLER
 
 	ASYNC

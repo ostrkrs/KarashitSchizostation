@@ -34,7 +34,7 @@ export const JOB2ICON = {
   'Head of Security': 'person-military-pointing',
   'Big Brother': 'eye',
   Janitor: 'broom',
-  Lawyer: 'gavel',
+  'Internal Affairs Agent': 'feather-pointed',
   'Medical Doctor': 'briefcase-medical',
   Mime: 'comment-slash',
   Paramedic: 'truck-medical',

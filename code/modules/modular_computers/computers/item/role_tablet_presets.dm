@@ -303,15 +303,15 @@
 	greyscale_config = /datum/greyscale_config/tablet/chaplain
 	greyscale_colors = "#333333#D11818"
 
-/obj/item/modular_computer/pda/lawyer
-	name = "lawyer PDA"
+/obj/item/modular_computer/pda/iaa
+	name = "internal affairs agent PDA"
 	greyscale_colors = "#4C76C8#FFE243"
 	inserted_item = /obj/item/pen/fountain
 	starting_programs = list(
 		/datum/computer_file/program/records/security,
 	)
 
-/obj/item/modular_computer/pda/lawyer/Initialize(mapload)
+/obj/item/modular_computer/pda/iaa/Initialize(mapload)
 	. = ..()
 	for(var/datum/computer_file/program/messenger/messenger_app in stored_files)
 		messenger_app.spam_mode = TRUE

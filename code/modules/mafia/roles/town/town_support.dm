@@ -1,11 +1,11 @@
-/datum/mafia_role/lawyer
-	name = "Lawyer"
+/datum/mafia_role/iaa
+	name = "Internal Affairs Agent"
 	desc = "You can choose a person to provide extensive legal advice to, preventing night actions."
-	revealed_outfit = /datum/outfit/mafia/lawyer
+	revealed_outfit = /datum/outfit/mafia/iaa
 	role_type = TOWN_SUPPORT
-	hud_icon = SECHUD_LAWYER
-	revealed_icon = "lawyer"
-	winner_award = /datum/award/achievement/mafia/lawyer
+	hud_icon = SECHUD_IAA
+	revealed_icon = "internalaffairsagent"
+	winner_award = /datum/award/achievement/mafia/iaa
 
 	role_unique_actions = list(/datum/mafia_ability/roleblock)
 

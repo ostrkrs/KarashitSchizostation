@@ -2525,9 +2525,9 @@
 "aEV" = (
 /obj/effect/landmark/start/hangover/closet,
 /obj/effect/spawner/random/structure/closet_private,
-/obj/item/clothing/suit/toggle/lawyer/black,
-/obj/item/clothing/under/rank/civilian/lawyer/black,
-/obj/item/clothing/under/rank/civilian/lawyer/black/skirt,
+/obj/item/clothing/suit/toggle/iaa/black,
+/obj/item/clothing/under/rank/civilian/iaa/black,
+/obj/item/clothing/under/rank/civilian/iaa/black/skirt,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "aFp" = (
@@ -2931,7 +2931,7 @@
 /obj/machinery/photocopier/prebuilt,
 /obj/machinery/status_display/evac/directional/east,
 /obj/machinery/camera/directional/east{
-	c_tag = "Lawyer's Office"
+	c_tag = "IAA's Office"
 	},
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
@@ -9357,7 +9357,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 1;
 	id = "lawyerprivacy";
-	name = "Lawyer's Privacy Shutter"
+	name = "IAA's Privacy Shutter"
 	},
 /turf/open/floor/plating,
 /area/station/service/lawoffice)
@@ -18959,7 +18959,7 @@
 	},
 /area/station/engineering/atmos/storage/gas)
 "eJv" = (
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/grimy,
 /area/station/service/lawoffice)
@@ -23395,7 +23395,7 @@
 /area/station/medical/break_room)
 "fPj" = (
 /obj/machinery/holopad,
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -26231,7 +26231,7 @@
 /obj/machinery/door/airlock{
 	name = "Law Office"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -34234,9 +34234,9 @@
 	},
 /obj/effect/spawner/random/structure/closet_private,
 /obj/effect/landmark/start/hangover/closet,
-/obj/item/clothing/suit/toggle/lawyer,
-/obj/item/clothing/under/rank/civilian/lawyer/beige,
-/obj/item/clothing/under/rank/civilian/lawyer/beige/skirt,
+/obj/item/clothing/suit/toggle/iaa,
+/obj/item/clothing/under/rank/civilian/iaa/beige,
+/obj/item/clothing/under/rank/civilian/iaa/beige/skirt,
 /turf/open/floor/wood,
 /area/station/commons/dorms)
 "ixd" = (
@@ -38942,7 +38942,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /turf/open/floor/iron,
 /area/station/service/lawoffice)
 "jCS" = (
@@ -45178,7 +45178,7 @@
 /area/station/hallway/primary/fore)
 "lhp" = (
 /obj/structure/sign/poster/official/report_crimes/directional/south,
-/obj/item/fish_tank/lawyer,
+/obj/item/fish_tank/iaa,
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
@@ -47821,7 +47821,7 @@
 "lMd" = (
 /obj/structure/table/wood,
 /obj/item/clipboard,
-/obj/item/toy/figure/lawyer,
+/obj/item/toy/figure/iaa,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
 "lMk" = (
@@ -51083,7 +51083,7 @@
 	},
 /obj/machinery/button/door/directional/north{
 	id = "lawyerprivacy";
-	name = "Lawyer's Privacy Control";
+	name = "IAA's Privacy Control";
 	pixel_x = 6
 	},
 /turf/open/floor/wood,
@@ -65586,7 +65586,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos/hfr_room)
 "qkf" = (
-/obj/structure/sign/departments/lawyer/directional/south,
+/obj/structure/sign/departments/iaa/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/red,
@@ -66648,7 +66648,7 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -66798,7 +66798,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/wood,

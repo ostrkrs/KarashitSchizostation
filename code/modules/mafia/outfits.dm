@@ -95,11 +95,11 @@
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/jackboots
 
-/datum/outfit/mafia/lawyer
-	name = "Mafia Lawyer"
+/datum/outfit/mafia/iaa
+	name = "Mafia Internal Affairs Agent"
 
-	uniform = /obj/item/clothing/under/rank/civilian/lawyer/bluesuit
-	suit = /obj/item/clothing/suit/toggle/lawyer
+	uniform = /obj/item/clothing/under/rank/civilian/iaa/bluesuit
+	suit = /obj/item/clothing/suit/toggle/iaa
 	shoes = /obj/item/clothing/shoes/laceup
 
 /datum/outfit/mafia/coroner

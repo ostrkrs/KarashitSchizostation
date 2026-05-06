@@ -279,7 +279,7 @@
 		/datum/job/head_of_security = /obj/item/organ/eyes/robotic/thermals,
 		/datum/job/human_ai = /obj/item/organ/brain/cybernetic,
 		/datum/job/janitor = /obj/item/organ/eyes/robotic/xray,
-		/datum/job/lawyer = /obj/item/organ/heart/cybernetic/tier2,
+		/datum/job/iaa = /obj/item/organ/heart/cybernetic/tier2,
 		/datum/job/mime = /obj/item/organ/tongue/robot, //...
 		/datum/job/paramedic = /obj/item/organ/cyberimp/eyes/hud/medical,
 		/datum/job/prisoner = /obj/item/organ/eyes/robotic/shield,

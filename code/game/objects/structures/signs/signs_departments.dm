@@ -213,13 +213,13 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/departments/holy, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/departments/holy, 32)
 
-/obj/structure/sign/departments/lawyer
+/obj/structure/sign/departments/iaa
 	name = "\improper Legal Department sign"
 	sign_change_name = "Department - Legal"
-	desc = "A sign labelling an area where the Lawyers work, apply here for arrivals shuttle whiplash settlement."
-	icon_state = "lawyer"
+	desc = "A sign labelling an area where the IAA work, apply here for arrivals shuttle whiplash settlement."
+	icon_state = "iaa"
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/departments/lawyer, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/departments/iaa, 32)
 
 /obj/structure/sign/departments/restaurant
 	name = "\improper Restaurant sign"

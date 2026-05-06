@@ -105,7 +105,7 @@
 
 /obj/item/food/spaghetti/spesslaw
 	name = "spesslaw"
-	desc = "A lawyers favourite."
+	desc = "A bureaucrats favourite."
 	icon_state = "spesslaw"
 	food_reagents = list(
 		/datum/reagent/consumable/nutriment = 4,

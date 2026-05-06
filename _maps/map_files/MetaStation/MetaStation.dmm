@@ -4280,7 +4280,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/fore/lesser)
 "byw" = (
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
 "byz" = (
@@ -6174,7 +6174,6 @@
 "ckz" = (
 /obj/effect/landmark/generic_maintenance_landmark,
 /obj/machinery/atmospherics/components/binary/pump/on/layer4{
-	dir = 2;
 	name = "Airlock Pump";
 	target_pressure = 300;
 	hide = 1
@@ -6655,7 +6654,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
 "ctg" = (
@@ -8324,7 +8323,6 @@
 /obj/effect/mapping_helpers/broken_floor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/binary/pump/on/layer4{
-	dir = 2;
 	name = "Airlock Pump";
 	target_pressure = 300;
 	hide = 1
@@ -14868,6 +14866,10 @@
 /obj/machinery/light/small/dim/directional/east,
 /turf/open/floor/plating,
 /area/station/maintenance/central)
+"fgM" = (
+/obj/structure/closet/secure_closet/steward,
+/turf/open/floor/wood,
+/area/station/commons/lounge)
 "fgN" = (
 /obj/structure/chair/stool/directional/east,
 /obj/effect/decal/cleanable/blood/old,
@@ -19930,6 +19932,12 @@
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
+"gWq" = (
+/obj/structure/chair/stool/directional/west,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/start/steward,
+/turf/open/floor/wood,
+/area/station/commons/lounge)
 "gWr" = (
 /obj/structure/cable,
 /obj/machinery/duct,
@@ -25020,7 +25028,7 @@
 	c_tag = "Locker Room Entrance"
 	},
 /obj/structure/cable,
-/obj/structure/sign/departments/lawyer/directional/north,
+/obj/structure/sign/departments/iaa/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/turf_decal/tile/neutral{
@@ -29344,7 +29352,7 @@
 /obj/machinery/light/small/directional/north,
 /obj/item/radio/intercom/directional/north,
 /obj/item/clothing/accessory/waistcoat,
-/obj/item/clothing/suit/toggle/lawyer/black,
+/obj/item/clothing/suit/toggle/iaa/black,
 /obj/item/clothing/under/suit/red,
 /obj/item/clothing/neck/tie/black,
 /obj/item/clothing/under/costume/buttondown/slacks/service,
@@ -36939,7 +36947,7 @@
 /obj/machinery/door/airlock{
 	name = "Law Office"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /turf/open/floor/wood,
 /area/station/security/courtroom)
 "mLS" = (
@@ -39443,21 +39451,11 @@
 /turf/open/floor/iron/solarpanel/airless,
 /area/station/solars/starboard/aft)
 "nBf" = (
-/obj/item/wrench,
-/obj/item/stack/sheet/glass{
-	amount = 30
-	},
-/obj/item/stack/sheet/iron{
-	amount = 30
-	},
-/obj/item/stack/cable_coil,
-/obj/item/stack/cable_coil,
-/obj/structure/closet,
-/obj/item/vending_refill/cigarette,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
 /obj/structure/extinguisher_cabinet/directional/south,
+/obj/structure/closet/secure_closet/bartender,
 /turf/open/floor/wood,
 /area/station/service/bar/backroom)
 "nBj" = (
@@ -40463,7 +40461,7 @@
 /turf/open/floor/wood,
 /area/station/commons/vacant_room/office)
 "nVy" = (
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/structure/chair/office{
 	dir = 4
 	},
@@ -50095,7 +50093,7 @@
 	},
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "rmL" = (
@@ -50974,7 +50972,7 @@
 /turf/open/floor/engine,
 /area/station/science/xenobiology)
 "rzJ" = (
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /turf/open/floor/iron,
 /area/station/security/courtroom)
 "rzM" = (
@@ -51773,6 +51771,17 @@
 /obj/machinery/holopad,
 /obj/machinery/light_switch/directional/south,
 /obj/structure/cable,
+/obj/structure/closet,
+/obj/item/vending_refill/cigarette,
+/obj/item/stack/sheet/iron{
+	amount = 30
+	},
+/obj/item/stack/cable_coil,
+/obj/item/stack/cable_coil,
+/obj/item/stack/sheet/glass{
+	amount = 30
+	},
+/obj/item/wrench,
 /turf/open/floor/wood,
 /area/station/service/bar/backroom)
 "rOP" = (
@@ -61301,7 +61310,7 @@
 	name = "Lawyer Requests Console"
 	},
 /obj/machinery/newscaster/directional/west,
-/obj/item/fish_tank/lawyer,
+/obj/item/fish_tank/iaa,
 /obj/structure/table/wood,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
@@ -64393,7 +64402,6 @@
 	},
 /obj/item/stack/package_wrap,
 /obj/structure/table/wood,
-/obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/wood,
@@ -65400,7 +65408,6 @@
 /area/station/service/theater)
 "wsp" = (
 /obj/machinery/atmospherics/components/binary/pump/on/layer4{
-	dir = 2;
 	name = "Airlock Pump";
 	target_pressure = 300;
 	hide = 1
@@ -106041,7 +106048,7 @@ bvJ
 pIz
 hNn
 fSd
-fSd
+gWq
 raT
 wxG
 qaf
@@ -106297,7 +106304,7 @@ mjs
 rac
 fWl
 pCJ
-hkG
+fgM
 qpM
 qVt
 fGH

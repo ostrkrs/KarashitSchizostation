@@ -716,11 +716,11 @@
 			"summon_icon_state": "janitor"
 		},
 		{
-			"id": "lawyer",
-			"name": "Lawyer",
-			"desc": "Nanotrasen knows the value of a good lawyer. That's why they're all working hard at our home offices defending us from frivolous labor suits from lazy no-good employees who should be working hard instead of slacking off reading trading cards.",
+			"id": "iaa",
+			"name": "Internal Affairs Agent",
+			"desc": "Nanotrasen knows the value of a good internal affairs agent. That's why they're all working hard at our home offices defending us from frivolous labor suits from lazy no-good employees who should be working hard instead of slacking off reading trading cards.",
 			"rules": "When an opponent attacks with a creature with 3 or less power, this card gains {$Taunt}.",
-			"icon_state": "lawyer",
+			"icon_state": "iaa",
 			"power": "0",
 			"resolve": "4",
 			"faction": "Service",
@@ -728,7 +728,7 @@
 			"cardtype": "Creature",
 			"cardsubtype": "Service Security",
 			"rarity": "common",
-			"summon_icon_state": "Lawyer"
+			"summon_icon_state": "Internal Affairs Agent"
 		},
 		{
 			"id": "legion",

@@ -82,7 +82,7 @@
 
 /datum/map_template/mafia/lavaland
 	name = "Lavaland Excursion"
-	description = "The station has no idea what's going down on lavaland right now, we got changelings... traitors, and worst of all... lawyers roleblocking you every night."
+	description = "The station has no idea what's going down on lavaland right now, we got changelings... traitors, and worst of all... internal affairs agents roleblocking you every night."
 	map_suffix = "mafia_lavaland.dmm"
 	custom_outfit = /datum/outfit/mafia/lavaland
 

@@ -203,8 +203,8 @@
 	desc = "A blue high-visibility vest used to distinguish <i>non-combatant</i> \"PRESS\" members, like if anyone cares."
 	icon_state = "hazard_press"
 
-//Lawyer
-/obj/item/clothing/suit/toggle/lawyer
+//Internal Affairs Agent
+/obj/item/clothing/suit/toggle/iaa
 	name = "blue formal suit jacket"
 	desc = "A professional suit jacket."
 	icon_state = "suitjacket_blue"
@@ -215,12 +215,12 @@
 	body_parts_covered = CHEST|ARMS
 	species_exception = list(/datum/species/golem)
 
-/obj/item/clothing/suit/toggle/lawyer/purple
+/obj/item/clothing/suit/toggle/iaa/purple
 	name = "purple formal suit jacket"
 	icon_state = "suitjacket_purp"
 	inhand_icon_state = null
 
-/obj/item/clothing/suit/toggle/lawyer/black
+/obj/item/clothing/suit/toggle/iaa/black
 	name = "black formal suit jacket"
 	icon_state = "suitjacket_black"
 	inhand_icon_state = "ro_suit"
@@ -264,14 +264,14 @@
 		/obj/item/melee/baton/telescopic,
 	)
 
-/obj/item/clothing/suit/toggle/lawyer/greyscale
+/obj/item/clothing/suit/toggle/iaa/greyscale
 	name = "formal suit jacket"
 	icon = 'icons/map_icons/clothing/suit/_suit.dmi'
-	icon_state = "/obj/item/clothing/suit/toggle/lawyer/greyscale"
-	post_init_icon_state = "jacket_lawyer"
+	icon_state = "/obj/item/clothing/suit/toggle/iaa/greyscale"
+	post_init_icon_state = "jacket_iaa"
 	inhand_icon_state = ""
-	greyscale_config = /datum/greyscale_config/jacket_lawyer
-	greyscale_config_worn = /datum/greyscale_config/jacket_lawyer/worn
+	greyscale_config = /datum/greyscale_config/jacket_iaa
+	greyscale_config_worn = /datum/greyscale_config/jacket_iaa/worn
 	greyscale_colors = "#ffffff"
 	flags_1 = IS_PLAYER_COLORABLE_1
 

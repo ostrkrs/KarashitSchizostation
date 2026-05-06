@@ -564,12 +564,12 @@
 	name = "Oversized Jacket (Worn)"
 	icon_file = 'icons/mob/clothing/suits/jacket.dmi'
 
-/datum/greyscale_config/jacket_lawyer
+/datum/greyscale_config/jacket_iaa
 	name = "Formal Suit Jacket"
 	icon_file = 'icons/obj/clothing/suits/jacket.dmi'
-	json_config = 'code/datums/greyscale/json_configs/jacket_lawyer.json'
+	json_config = 'code/datums/greyscale/json_configs/jacket_iaa.json'
 
-/datum/greyscale_config/jacket_lawyer/worn
+/datum/greyscale_config/jacket_iaa/worn
 	name = "Formal Suit Jacket (Worn)"
 	icon_file = 'icons/mob/clothing/suits/jacket.dmi'
 

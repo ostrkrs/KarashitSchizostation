@@ -332,9 +332,9 @@
 	access_list += ACCESS_THEATRE
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/any/service/lawyer/get_access()
+/obj/effect/mapping_helpers/airlock/access/any/service/iaa/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_LAWYER
+	access_list += ACCESS_IAA
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/any/service/steward/get_access()
@@ -803,9 +803,9 @@
 	access_list += ACCESS_THEATRE
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer/get_access()
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_LAWYER
+	access_list += ACCESS_IAA
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/all/service/steward/get_access()

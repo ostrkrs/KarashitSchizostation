@@ -8,7 +8,7 @@
 /obj/structure/chair/office/tactical{
 	dir = 4
 	},
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
@@ -18115,7 +18115,7 @@
 /obj/machinery/door/airlock{
 	name = "Law Office"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
@@ -24604,7 +24604,7 @@
 /obj/machinery/door/airlock/grunge{
 	name = "Courtroom"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/station/service/lawoffice)
@@ -32127,7 +32127,7 @@
 /area/station/ai_monitored/command/storage/eva)
 "lar" = (
 /obj/structure/table/reinforced/rglass,
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /turf/open/floor/iron/dark,
 /area/station/security/office)
 "laD" = (
@@ -45293,7 +45293,7 @@
 /area/station/asteroid)
 "pFP" = (
 /obj/structure/chair/office,
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/carpet,
 /area/station/service/lawoffice)
@@ -52265,7 +52265,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/wood,

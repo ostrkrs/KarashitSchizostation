@@ -142,8 +142,8 @@
 #define ACCESS_HYDROPONICS "hydroponics"
 /// Access to the Janitor's room, and some tablet apps for control of the station's janitorial equipment.
 #define ACCESS_JANITOR "janitor"
-/// Access to the Lawyer's office.
-#define ACCESS_LAWYER "lawyer"
+/// Access to the IAA's office.
+#define ACCESS_IAA "internal affairs agent"
 /// Access used for the Steward's personal quarters in mapping.
 #define ACCESS_STEWARD "steward"
 
@@ -310,7 +310,7 @@
 	ACCESS_HYDROPONICS, \
 	ACCESS_JANITOR, \
 	ACCESS_KITCHEN, \
-	ACCESS_LAWYER, \
+	ACCESS_IAA, \
 	ACCESS_LIBRARY, \
 	ACCESS_MAINT_TUNNELS, \
 	ACCESS_MECH_MINING, \
@@ -566,7 +566,7 @@
 	/obj/item/modular_computer/pda/bitrunner = list(REGION_SUPPLY), \
 	/obj/item/modular_computer/pda/shaftminer = list(REGION_SUPPLY), \
 	/obj/item/modular_computer/pda/chaplain = list(REGION_GENERAL), \
-	/obj/item/modular_computer/pda/lawyer = list(REGION_GENERAL), \
+	/obj/item/modular_computer/pda/iaa = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/botanist = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/roboticist = list(REGION_RESEARCH), \
 	/obj/item/modular_computer/pda/curator = list(REGION_GENERAL), \

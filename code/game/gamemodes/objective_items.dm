@@ -255,17 +255,17 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /obj/item/gun/ballistic/revolver/c38/detective/add_stealing_item_objective()
 	return add_item_to_steal(src, /obj/item/gun/ballistic/revolver/c38/detective)
 
-/datum/objective_item/steal/traitor/lawyers_badge
-	name = "the lawyer's badge"
-	targetitem = /obj/item/clothing/accessory/lawyers_badge
-	excludefromjob = list(JOB_LAWYER)
-	item_owner = list(JOB_LAWYER)
+/datum/objective_item/steal/traitor/iaa_badge
+	name = "the IAA's badge"
+	targetitem = /obj/item/clothing/accessory/iaa_badge
+	excludefromjob = list(JOB_INTERNAL_AFFAIRS_AGENT)
+	item_owner = list(JOB_INTERNAL_AFFAIRS_AGENT)
 	exists_on_map = TRUE
 	difficulty = 1
-	steal_hint = "The lawyer's badge. Usually pinned to their chest, but a spare can be obtained from their clothes vendor."
+	steal_hint = "The IAA's badge. Usually pinned to their chest, but a spare can be obtained from their clothes vendor."
 
-/obj/item/clothing/accessory/lawyers_badge/add_stealing_item_objective()
-	return add_item_to_steal(src, /obj/item/clothing/accessory/lawyers_badge)
+/obj/item/clothing/accessory/iaa_badge/add_stealing_item_objective()
+	return add_item_to_steal(src, /obj/item/clothing/accessory/iaa_badge)
 
 /datum/objective_item/steal/traitor/chief_engineer_belt
 	name = "the chief engineer's belt"
@@ -675,10 +675,10 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /datum/objective_item/steal/traitor/space_law
 	name = "a book on space law"
 	targetitem = /obj/item/book/manual/wiki/security_space_law
-	excludefromjob = list(JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_HEAD_OF_SECURITY, JOB_LAWYER, JOB_CRIMINALIST)
+	excludefromjob = list(JOB_SECURITY_OFFICER, JOB_WARDEN, JOB_HEAD_OF_SECURITY, JOB_INTERNAL_AFFAIRS_AGENT, JOB_CRIMINALIST)
 	exists_on_map = TRUE
 	difficulty = 1
-	steal_hint = "Sometimes found in the possession of members of Security and Lawyers. \
+	steal_hint = "Sometimes found in the possession of members of Security and IAAs. \
 		The courtroom and the library are also good places to look."
 
 /obj/item/book/manual/wiki/security_space_law/add_stealing_item_objective()
@@ -717,7 +717,7 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 		JOB_RESEARCH_DIRECTOR,
 		JOB_SECURITY_OFFICER,
 		JOB_WARDEN,
-		JOB_LAWYER,
+		JOB_INTERNAL_AFFAIRS_AGENT,
 		JOB_CRIMINALIST,
 	)
 	exists_on_map = TRUE
@@ -869,14 +869,14 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 		JOB_CHIEF_MEDICAL_OFFICER,
 		JOB_HEAD_OF_PERSONNEL,
 		JOB_HEAD_OF_SECURITY,
-		JOB_LAWYER,
+		JOB_INTERNAL_AFFAIRS_AGENT,
 		JOB_QUARTERMASTER,
 		JOB_RESEARCH_DIRECTOR,
 		JOB_SECURITY_OFFICER,
 		JOB_WARDEN,
 	)
 	difficulty = 1
-	steal_hint = "A pair of sunglasses. Lawyers often have a few pairs, as do some heads of staff. \
+	steal_hint = "A pair of sunglasses. IAAs often have a few pairs, as do some heads of staff. \
 		You can also obtain a pair from dissassembling hudglasses."
 
 /datum/objective_item/steal/spy/ce_modsuit

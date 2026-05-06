@@ -1072,7 +1072,7 @@
 /obj/structure/plaque/static_plaque/golden{
 	pixel_y = 32
 	},
-/obj/item/clothing/accessory/lawyers_badge{
+/obj/item/clothing/accessory/iaa_badge{
 	desc = "A badge of upmost glory.";
 	name = "thunderdome badge"
 	},

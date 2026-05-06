@@ -7611,7 +7611,7 @@
 "bFc" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/camera/directional/north{
-	c_tag = "Civilian - Lawyer's Office"
+	c_tag = "Civilian - IAA's Office"
 	},
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
@@ -19105,7 +19105,7 @@
 /area/station/ai_monitored/turret_protected/aisat/maint)
 "fEZ" = (
 /obj/structure/noticeboard/directional/north,
-/obj/item/fish_tank/lawyer,
+/obj/item/fish_tank/iaa,
 /obj/structure/table/wood,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -24972,7 +24972,7 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/machinery/newscaster/directional/west,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
@@ -33728,7 +33728,7 @@
 /obj/machinery/door/airlock{
 	name = "Law Office"
 	},
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /turf/open/floor/wood,
 /area/station/service/lawoffice)
 "kKV" = (
@@ -35101,7 +35101,7 @@
 /area/station/security/office)
 "ljC" = (
 /obj/effect/turf_decal/siding/wood,
-/obj/effect/landmark/navigate_destination/lawyer,
+/obj/effect/landmark/navigate_destination/iaa,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/grimy,
 /area/station/service/lawoffice)
@@ -53598,7 +53598,7 @@
 	name = "Law Office"
 	},
 /obj/machinery/door/firedoor,
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer,
+/obj/effect/mapping_helpers/airlock/access/all/service/iaa,
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -65161,7 +65161,7 @@
 /area/station/medical/surgery/fore)
 "vGd" = (
 /obj/machinery/firealarm/directional/south,
-/obj/effect/landmark/start/lawyer,
+/obj/effect/landmark/start/internal_affairs_agent,
 /obj/structure/chair/office{
 	dir = 1
 	},

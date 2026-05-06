@@ -628,7 +628,7 @@
 		ACCESS_EVA,
 		ACCESS_GATEWAY,
 		ACCESS_KEYCARD_AUTH,
-		ACCESS_LAWYER,
+		ACCESS_IAA,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MEDICAL,
 		ACCESS_MINERAL_STOREROOM,
@@ -738,17 +738,16 @@
 	honorifics = list("Custodian")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/lawyer
-	assignment = JOB_LAWYER
-	trim_state = "trim_lawyer"
-	department_color = COLOR_SERVICE_LIME
+/datum/id_trim/job/iaa
+	assignment = JOB_INTERNAL_AFFAIRS_AGENT
+	trim_state = "trim_iaa"
+	department_color = COLOR_COMMAND_BLUE
 	subdepartment_color = COLOR_SECURITY_RED
-	sechud_icon_state = SECHUD_LAWYER
+	sechud_icon_state = SECHUD_IAA
 	minimal_access = list(
 		ACCESS_BRIG_ENTRANCE,
 		ACCESS_COURT,
-		ACCESS_LAWYER,
-		ACCESS_SERVICE,
+		ACCESS_IAA,
 		ACCESS_COMMAND,
 		)
 	extra_access = list()
@@ -757,7 +756,7 @@
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
 		)
-	job = /datum/job/lawyer
+	job = /datum/job/iaa
 	honorifics = list(", Esq.")
 	honorific_positions = HONORIFIC_POSITION_LAST_FULL | HONORIFIC_POSITION_NONE
 
@@ -891,13 +890,12 @@
 /datum/id_trim/job/psychologist
 	assignment = JOB_PSYCHOLOGIST
 	trim_state = "trim_psychologist"
-	department_color = COLOR_SERVICE_LIME
+	department_color = COLOR_MEDICAL_BLUE
 	subdepartment_color = COLOR_MEDICAL_BLUE
 	sechud_icon_state = SECHUD_PSYCHOLOGIST
 	minimal_access = list(
 		ACCESS_MEDICAL,
 		ACCESS_PSYCHOLOGY,
-		ACCESS_SERVICE,
 	)
 	extra_access = list(
 		ACCESS_MORGUE,
@@ -907,7 +905,6 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_CMO,
-		ACCESS_HOP,
 	)
 	job = /datum/job/psychologist
 	honorifics = list(", PhD.")
@@ -1367,7 +1364,7 @@
 		ACCESS_JANITOR,
 		ACCESS_KEYCARD_AUTH,
 		ACCESS_KITCHEN,
-		ACCESS_LAWYER,
+		ACCESS_IAA,
 		ACCESS_LIBRARY,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MEDICAL,
