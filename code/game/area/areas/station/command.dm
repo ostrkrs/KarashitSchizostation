@@ -53,29 +53,68 @@
 	icon_state = "captain_private"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
+
 /area/station/command/heads_quarters/ce
 	name = "\improper Chief Engineer's Office"
 	icon_state = "ce_office"
+
+/area/station/command/heads_quarters/ce/private
+	name = "\improper Chief Engineer's Quarters"
+	icon_state = "ce_private"
+
 
 /area/station/command/heads_quarters/cmo
 	name = "\improper Chief Medical Officer's Office"
 	icon_state = "cmo_office"
 
+/area/station/command/heads_quarters/cmo/private
+	name = "\improper Chief Medical Officer's Quarters"
+	icon_state = "cmo_private"
+
+
 /area/station/command/heads_quarters/hop
 	name = "\improper Head of Personnel's Office"
 	icon_state = "hop_office"
+
+/area/station/command/heads_quarters/hop/private
+	name = "\improper Head of Personnel's Quarters"
+	icon_state = "hop_private"
+
 
 /area/station/command/heads_quarters/hos
 	name = "\improper Head of Security's Office"
 	icon_state = "hos_office"
 
+/area/station/command/heads_quarters/hos/private
+	name = "\improper Head of Security's Quarters"
+	icon_state = "hos_private"
+
+
 /area/station/command/heads_quarters/rd
 	name = "\improper Research Director's Office"
 	icon_state = "rd_office"
 
+/area/station/command/heads_quarters/rd/private
+	name = "\improper Research Director's Quarters"
+	icon_state = "rd_private"
+
+
 /area/station/command/heads_quarters/qm
 	name = "\improper Quartermaster's Office"
 	icon_state = "qm_office"
+
+/area/station/command/heads_quarters/qm/private
+	name = "\improper Quartermaster's Quarters"
+	icon_state = "qm_private"
+
+
+/area/station/command/heads_quarters/steward
+	name = "\improper Steward's Office"
+	icon_state = "steward_office"
+
+/area/station/command/heads_quarters/steward/private
+	name = "\improper Steward's Quarters"
+	icon_state = "steward_private"
 
 /*
 * Command - Teleporter
