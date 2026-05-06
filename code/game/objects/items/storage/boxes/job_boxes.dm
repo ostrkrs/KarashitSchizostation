@@ -14,6 +14,8 @@
 	var/medipen_type = /obj/item/reagent_containers/hypospray/medipen/ekit
 	/// What food should be present in this box?
 	var/ration_type = /obj/item/food/rationpack
+	/// What drink should be present in this box?
+	var/drink_type = /obj/item/reagent_containers/cup/glass/waterbottle
 	/// Are we crafted?
 	var/crafted = FALSE
 	/// Should we contain an escape hook on maps with z-levels?
@@ -42,6 +44,9 @@
 
 	if(!isnull(ration_type))
 		new ration_type(src)
+
+	if(!isnull(drink_type))
+		new drink_type(src)
 
 	if(give_premium_goods && HAS_TRAIT(SSstation, STATION_TRAIT_PREMIUM_INTERNALS))
 		new /obj/item/flashlight/flare(src)
@@ -140,6 +145,10 @@
 
 /obj/item/storage/box/survival/engineer/crafted
 	crafted = TRUE
+
+// Bartender survival box with flask
+/obj/item/storage/box/survival/bartender
+	drink_type = /obj/item/reagent_containers/cup/glass/flask/bartender
 
 //Mime spell boxes
 

@@ -58,5 +58,6 @@
 	ears = /obj/item/radio/headset/headset_srv
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	shoes = /obj/item/clothing/shoes/laceup
+	box = /obj/item/storage/box/survival/bartender
 
 	skillchips = list(/obj/item/skillchip/drunken_brawler)

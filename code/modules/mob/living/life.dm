@@ -18,7 +18,7 @@
 	if(signal_result & COMPONENT_LIVING_CANCEL_LIFE_PROCESSING) // mmm less work
 		return
 
-	if (client)
+	if(client)
 		var/turf/T = get_turf(src)
 		if(!T)
 			move_to_error_room()
@@ -60,8 +60,9 @@
 
 		handle_gravity(seconds_per_tick, times_fired)
 
-	handle_starvation(seconds_per_tick, times_fired)
-	handle_dehydration(seconds_per_tick, times_fired)
+	if(ishuman(src))
+		handle_starvation(seconds_per_tick, times_fired)
+		handle_dehydration(seconds_per_tick, times_fired)
 
 	if(stat != DEAD)
 		return TRUE
@@ -104,15 +105,19 @@
 		living_flags &= ~QUEUE_NUTRITION_UPDATE
 
 /mob/living/proc/handle_dehydration(seconds_per_tick, times_fired)
-	if(hydration < HYDRATION_LEVEL_LIFE_THREATENING)
+	if(!HAS_TRAIT(src, TRAIT_NOTHIRST))
+		var/thirst_rate = THIRST_FACTOR
+		if(iscarbon(src))
+			var/mob/living/carbon/thirstie = src
+			thirst_rate *= thirstie.dna.species.thirstmod
+		if(hydration >= HYDRATION_LEVEL_FULL)
+			thirst_rate = THIRST_FACTOR * 10
+		adjust_hydration(-thirst_rate * seconds_per_tick)
+
+	if(hydration < HYDRATION_LEVEL_LIFE_THREATENING && ishuman(src))
 		for(var/slot in list(ORGAN_SLOT_BRAIN, ORGAN_SLOT_HEART, ORGAN_SLOT_LUNGS, ORGAN_SLOT_LIVER))
 			var/obj/item/organ/drying_organs = src.get_organ_slot(slot)
 			drying_organs.apply_organ_damage(0.25 * seconds_per_tick)
-
-	var/thirst_rate = THIRST_FACTOR
-	if(hydration >= HYDRATION_LEVEL_FULL)
-		thirst_rate = THIRST_FACTOR * 10
-	adjust_hydration(-thirst_rate * seconds_per_tick)
 
 	var/thirst = (500 - hydration) / 5
 	if(thirst >= 70)
