@@ -51,10 +51,6 @@
 	id_trim = /datum/id_trim/job/bartender
 	neck = /obj/item/clothing/neck/bowtie
 	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(
-		/obj/item/storage/box/beanbag = 1,
-		)
 	belt = /obj/item/modular_computer/pda/bar
 	ears = /obj/item/radio/headset/headset_srv
 	glasses = /obj/item/clothing/glasses/sunglasses/reagent

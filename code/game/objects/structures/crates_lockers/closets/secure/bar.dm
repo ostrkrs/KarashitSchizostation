@@ -15,8 +15,6 @@
 	..()
 	for(var/i in 1 to 10)
 		new /obj/item/reagent_containers/cup/glass/bottle/beer(src)
-	new /obj/item/etherealballdeployer(src)
-	new /obj/item/roulette_wheel_beacon(src)
 
 /obj/structure/closet/secure_closet/bar/all_access
 	req_access = null
@@ -39,3 +37,17 @@
 	new /obj/item/clothing/glasses/sunglasses/reagent(src)
 	new /obj/item/clothing/suit/costume/hawaiian(src)
 	new /obj/item/clothing/shoes/sandal/beach(src)
+
+
+/obj/structure/closet/secure_closet/bartender
+	name = "bartender's locker"
+	req_access = list(ACCESS_BAR)
+	icon_state = "bartender"
+
+/obj/structure/closet/secure_closet/bartender/PopulateContents()
+	..()
+	new /obj/item/storage/box/beanbag(src)
+	new /obj/item/clothing/suit/armor/vest/alt(src)
+	new /obj/item/storage/belt/bandolier(src)
+	new /obj/item/gun/ballistic/shotgun/doublebarrel(src)
+	new /obj/item/etherealballdeployer(src)

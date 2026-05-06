@@ -46,8 +46,4 @@
 	id_trim = /datum/id_trim/job/pun_pun
 	belt = /obj/item/modular_computer/pda/pun_pun
 	uniform = /obj/item/clothing/under/suit/waiter
-	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/monkey = 1,
-		/obj/item/storage/box/beanbag = 1,
-	)
 	shoes = null //monkeys cannot equip shoes
