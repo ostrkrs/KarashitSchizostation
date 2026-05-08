@@ -61,3 +61,4 @@
 	l_hand = /obj/item/clipboard
 
 	chameleon_extras = /obj/item/stamp/head/steward
+	implants = list(/obj/item/implant/mindshield)

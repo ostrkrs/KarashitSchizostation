@@ -246,6 +246,11 @@
 	desc = "An expensive-looking pen only issued to heads of cargo."
 	icon_state = "pen-fountain-qm"
 
+/obj/item/pen/fountain/steward
+	name = "steward's fountain pen"
+	desc = "An expensive-looking pen only issued to heads of service."
+	icon_state = "pen-fountain-steward"
+
 /obj/item/pen/item_ctrl_click(mob/living/carbon/user)
 	if(loc != user)
 		to_chat(user, span_warning("You must be holding the pen to continue!"))

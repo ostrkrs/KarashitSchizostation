@@ -110,7 +110,7 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/steward"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
 	greyscale_colors = "#50E193#18191e#8b4c31"
-	inserted_item = /obj/item/pen/fountain
+	inserted_item = /obj/item/pen/fountain/steward
 	stored_paper = 20
 	starting_programs = list(
 		/datum/computer_file/program/restock_tracker,
