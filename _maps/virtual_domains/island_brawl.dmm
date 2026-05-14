@@ -1891,7 +1891,7 @@
 /turf/open/floor/wood/large,
 /area/virtual_domain)
 "yc" = (
-/obj/structure/closet/gmcloset,
+/obj/structure/closet/barcloset,
 /turf/open/floor/plastic,
 /area/virtual_domain)
 "yg" = (

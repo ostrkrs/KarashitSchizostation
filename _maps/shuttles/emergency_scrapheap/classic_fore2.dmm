@@ -177,7 +177,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "J" = (
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = 9;
 	pixel_y = -1
 	},

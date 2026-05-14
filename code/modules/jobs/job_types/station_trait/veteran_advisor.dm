@@ -77,7 +77,6 @@
 	suit = /obj/item/clothing/suit/jacket/leather_trenchcoat
 	belt = /obj/item/storage/belt/holster/detective/full/ert //M1911 pistol
 	ears = /obj/item/radio/headset/heads/hos/advisor
-	glasses = /obj/item/clothing/glasses/eyepatch
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/coin/antagtoken
 	r_pocket = /obj/item/melee/baton/telescopic

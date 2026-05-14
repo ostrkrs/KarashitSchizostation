@@ -66,15 +66,15 @@
 	starting_title = "Engineering Textbook"
 	page_link = "Guide_to_engineering"
 
-/obj/item/book/manual/wiki/security_space_law
-	name = "Space Law"
-	desc = "A set of Nanotrasen guidelines for keeping law and order on their space stations."
+/obj/item/book/manual/wiki/security_corp_law
+	name = "Corporate Law"
+	desc = "A set of Solstice Reach guidelines for keeping law and order on their space vessels."
 	icon_state = "bookSpaceLaw"
-	starting_author = "Nanotrasen"
-	starting_title = "Space Law"
+	starting_author = "Solstice Reach"
+	starting_title = "Corporate Law"
 	page_link = "Space_Law"
 
-/obj/item/book/manual/wiki/security_space_law/suicide_act(mob/living/user)
+/obj/item/book/manual/wiki/security_corp_law/suicide_act(mob/living/user)
 	user.visible_message(span_suicide("[user] pretends to read \the [src] intently... then promptly dies of laughter!"))
 	return OXYLOSS
 

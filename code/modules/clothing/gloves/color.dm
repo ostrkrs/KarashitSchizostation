@@ -21,12 +21,15 @@
 
 /obj/item/clothing/gloves/color/black/security
 	name = "security gloves"
-	desc = "These security gloves come with microchips that help the user quickly restrain suspects."
+	desc = "Convenient to quickly restrain suspects."
 	icon_state = "sec"
 	clothing_traits = list(TRAIT_FAST_CUFFING)
 
-/obj/item/clothing/gloves/color/black/security/blu
-	icon_state = "sec_blu"
+/obj/item/clothing/gloves/color/black/iso
+	name = "bodyguard's gloves"
+	desc = "Convenient to quickly restrain assaulters."
+	icon_state = "sec_red"
+	clothing_traits = list(TRAIT_FAST_CUFFING)
 
 /obj/item/clothing/gloves/fingerless
 	name = "fingerless gloves"

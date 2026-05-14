@@ -19,6 +19,13 @@
 	glass_type = /obj/machinery/door/airlock/security/glass
 	airlock_type = /obj/machinery/door/airlock/security
 
+/obj/structure/door_assembly/door_assembly_law
+	name = "law and order airlock assembly"
+	icon = 'icons/obj/doors/airlocks/station/security.dmi'
+	base_name = "security airlock"
+	glass_type = /obj/machinery/door/airlock/law/glass
+	airlock_type = /obj/machinery/door/airlock/law
+
 /obj/structure/door_assembly/door_assembly_eng
 	name = "engineering airlock assembly"
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi'

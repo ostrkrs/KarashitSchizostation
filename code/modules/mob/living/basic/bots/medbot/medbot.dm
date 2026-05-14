@@ -383,8 +383,8 @@
 /datum/id_trim/medibot
 	assignment = JOB_MEDIBOT
 	trim_state = "trim_paramedic"
-	department_color = COLOR_MEDICAL_BLUE
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	department_color = COLOR_MEDICAL_TEAL
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_PARAMEDIC
 	access = list(
 		ACCESS_BIT_DEN,
@@ -403,6 +403,7 @@
 		ACCESS_SURGERY,
 		ACCESS_VIROLOGY,
 		ACCESS_PHARMACY,
+		ACCESS_PARAMEDIC,
 		)
 	honorifics = list("Medical Robot")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE

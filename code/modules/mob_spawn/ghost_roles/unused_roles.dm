@@ -319,7 +319,7 @@
 	uniform = /obj/item/clothing/under/syndicate/combat
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/syndicate
 	ears = /obj/item/radio/headset/syndicate/alt/leader
-	head = /obj/item/clothing/head/hats/hos/beret/syndicate
+	head = /obj/item/clothing/head/beret/sec/hos/syndicate
 	r_pocket = /obj/item/knife/combat/survival
 	backpack_contents = list(
 		/obj/item/documents/syndicate/red,

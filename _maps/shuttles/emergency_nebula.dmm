@@ -3,7 +3,7 @@
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner,
+/obj/effect/turf_decal/trimline/light_blue/filled/corner,
 /turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
@@ -50,7 +50,7 @@
 /turf/open/floor/iron/dark/small,
 /area/shuttle/escape)
 "cs" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/turf_decal/siding/wideplating_new/light/end{
 	dir = 8
 	},
@@ -310,7 +310,7 @@
 /turf/open/floor/carpet/red,
 /area/shuttle/escape)
 "jy" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/turf_decal/siding/wideplating_new/light/end,
 /turf/open/floor/iron/white/small,
 /area/shuttle/escape)
@@ -501,7 +501,7 @@
 /obj/effect/turf_decal/trimline/neutral/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
@@ -676,7 +676,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/thinplating_new/light,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge,
@@ -709,7 +709,7 @@
 /turf/open/floor/iron/dark/herringbone,
 /area/shuttle/escape)
 "pi" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/turf_decal/siding/wideplating_new/light/end{
 	dir = 4
 	},
@@ -1136,7 +1136,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/light/end{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -1144,7 +1144,7 @@
 	},
 /area/shuttle/escape)
 "ze" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/turf_decal/siding/wideplating_new/light/corner,
 /obj/effect/turf_decal/siding/wideplating_new/light/corner{
 	dir = 8
@@ -1585,7 +1585,7 @@
 /obj/effect/turf_decal/trimline/neutral/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/side{
@@ -1809,7 +1809,7 @@
 /obj/machinery/door/airlock/medical/glass{
 	name = "Escape Shuttle Infirmary"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "Lv" = (
@@ -1929,7 +1929,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/light/end{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -2325,7 +2325,7 @@
 /turf/open/floor/iron/dark/small,
 /area/shuttle/escape)
 "VZ" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/turf_decal/siding/wideplating_new/light/end{
 	dir = 1
 	},

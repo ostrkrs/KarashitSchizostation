@@ -814,7 +814,7 @@
 /turf/open/floor/mineral/titanium,
 /area/centcom/syndicate_mothership/control)
 "iH" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -1434,7 +1434,7 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -1663,7 +1663,7 @@
 	},
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership/control)
 "rY" = (
@@ -2205,7 +2205,7 @@
 	dir = 9
 	},
 /obj/structure/table/glass/plasmaglass,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /obj/item/storage/medkit/regular,
@@ -4791,7 +4791,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
 /turf/open/floor/mineral/plastitanium,

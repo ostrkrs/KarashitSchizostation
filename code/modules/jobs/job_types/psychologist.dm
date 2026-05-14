@@ -7,7 +7,7 @@
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Chief Medical Officer"
+	supervisors = SUPERVISOR_CMO
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "PSYCHOLOGIST"
 
@@ -41,7 +41,7 @@
 
 	id = /obj/item/card/id/advanced
 	id_trim = /datum/id_trim/job/psychologist
-	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
+	uniform = /obj/item/clothing/under/costume/buttondown/slacks/psychologist
 	backpack_contents = list(
 		/obj/item/storage/pill_bottle/happinesspsych,
 		/obj/item/storage/pill_bottle/lsdpsych,

@@ -37,7 +37,7 @@
 /turf/closed/wall,
 /area/ruin/space/has_grav/travelers_rest)
 "bA" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
 /obj/structure/table/reinforced,
@@ -66,7 +66,7 @@
 "cr" = (
 /obj/structure/cable,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 9
 	},
 /obj/machinery/chem_dispenser,
@@ -81,10 +81,10 @@
 "gN" = (
 /obj/machinery/shower/directional/east,
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/end{
+/obj/effect/turf_decal/trimline/light_blue/end{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -139,7 +139,7 @@
 "jL" = (
 /obj/structure/cable,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
 /obj/machinery/atmospherics/components/tank/air{
@@ -162,7 +162,7 @@
 "sn" = (
 /obj/item/kirbyplants/organic/plant10,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -223,7 +223,7 @@
 /area/ruin/space/has_grav/travelers_rest)
 "Dq" = (
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -286,13 +286,13 @@
 /area/ruin/space/has_grav/travelers_rest)
 "HC" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/blue,
+/obj/effect/turf_decal/trimline/light_blue,
 /obj/machinery/light/floor,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/travelers_rest)
 "KD" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
 /turf/open/floor/iron/textured_large,
 /area/ruin/space/has_grav/travelers_rest)
 "KJ" = (
@@ -476,7 +476,7 @@
 "ZE" = (
 /obj/structure/cable,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /obj/machinery/chem_master,

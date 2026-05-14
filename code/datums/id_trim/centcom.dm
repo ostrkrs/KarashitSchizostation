@@ -178,7 +178,7 @@
 /datum/id_trim/centcom/ert/medical
 	assignment = JOB_ERT_MEDICAL_DOCTOR
 	trim_state = "trim_medicaldoctor"
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_MEDICAL_RESPONSE_OFFICER
 	big_pointer = FALSE
 	honorifics = list("Doctor", "Dr.")

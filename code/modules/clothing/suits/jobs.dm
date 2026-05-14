@@ -218,12 +218,15 @@
 /obj/item/clothing/suit/toggle/iaa/purple
 	name = "purple formal suit jacket"
 	icon_state = "suitjacket_purp"
-	inhand_icon_state = null
 
 /obj/item/clothing/suit/toggle/iaa/black
 	name = "black formal suit jacket"
 	icon_state = "suitjacket_black"
 	inhand_icon_state = "ro_suit"
+
+/obj/item/clothing/suit/toggle/iaa/red
+	name = "red formal suit jacket"
+	icon_state = "suitjacket_red"
 
 // Cargo
 
@@ -293,7 +296,7 @@
 	flags_1 = IS_PLAYER_COLORABLE_1
 
 //Security
-/obj/item/clothing/suit/jacket/officer/blue
+/obj/item/clothing/suit/jacket/officer
 	name = "security officer's jacket"
 	desc = "This jacket is for those special occasions when a security officer isn't required to wear their armor."
 	icon_state = "officerbluejacket"
@@ -307,7 +310,7 @@
 	inhand_icon_state = null
 	body_parts_covered = CHEST|ARMS
 
-/obj/item/clothing/suit/jacket/warden/blue
+/obj/item/clothing/suit/jacket/warden
 	name = "warden's jacket"
 	desc = "Perfectly suited for the warden that wants to leave an impression of style on those who visit the brig."
 	icon_state = "wardenbluejacket"
@@ -321,7 +324,7 @@
 	inhand_icon_state = null
 	body_parts_covered = CHEST|ARMS
 
-/obj/item/clothing/suit/jacket/hos/blue
+/obj/item/clothing/suit/jacket/hos
 	name = "head of security's jacket"
 	desc = "This piece of clothing was specifically designed for asserting superior authority."
 	icon_state = "hosbluejacket"

@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "az" = (
 /obj/item/chair,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -10,7 +10,7 @@
 /area/ruin/pizzeria)
 "aP" = (
 /obj/machinery/vending/cigarette,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -46,7 +46,7 @@
 "cv" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -66,7 +66,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -77,7 +77,7 @@
 "cQ" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -100,7 +100,7 @@
 /obj/effect/turf_decal/trimline/white/filled/shrink_ccw{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -130,7 +130,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -140,7 +140,7 @@
 "fF" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -166,7 +166,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -202,7 +202,7 @@
 	},
 /area/ruin/pizzeria)
 "gY" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -218,7 +218,7 @@
 /area/ruin/pizzeria/kitchen)
 "ia" = (
 /obj/effect/turf_decal/siding/blue,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/light/warm/directional/west,
@@ -228,7 +228,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -265,7 +265,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -285,7 +285,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/effect/decal/cleanable/ash,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -295,7 +295,7 @@
 /area/ruin/pizzeria)
 "kr" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -304,7 +304,7 @@
 	},
 /area/ruin/pizzeria)
 "kG" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -315,7 +315,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "lt" = (
 /obj/effect/decal/cleanable/food/egg_smudge,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -327,7 +327,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -372,7 +372,7 @@
 /obj/item/toy/plush/moth{
 	suicide_count = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -402,7 +402,7 @@
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/item/reagent_containers/condiment/cornmeal,
@@ -424,7 +424,7 @@
 /obj/effect/turf_decal/trimline/white/filled/shrink_cw{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -507,7 +507,7 @@
 /obj/effect/turf_decal/trimline/white/filled/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -529,7 +529,7 @@
 /area/ruin/pizzeria)
 "yP" = (
 /obj/machinery/vending/dinnerware,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -537,7 +537,7 @@
 "yS" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -545,7 +545,7 @@
 "zO" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -554,7 +554,7 @@
 /area/ruin/pizzeria)
 "zR" = (
 /obj/machinery/light_switch/directional/south,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -570,7 +570,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -583,7 +583,7 @@
 	dir = 4
 	},
 /obj/effect/spawner/random/vending/colavend,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -608,7 +608,7 @@
 /area/ruin/pizzeria)
 "AZ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -630,7 +630,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Moffuchi's Pizzeria"
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -643,7 +643,7 @@
 "CZ" = (
 /obj/structure/cable,
 /obj/machinery/light/cold/no_nightlight/directional/south,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/structure/closet/crate/freezer/food,
@@ -675,7 +675,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Moffuchi's Pizzeria"
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -684,7 +684,7 @@
 	},
 /area/ruin/pizzeria)
 "Dw" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -754,7 +754,7 @@
 /obj/structure/closet/crate/bin,
 /obj/item/trash/raisins,
 /obj/item/trash/syndi_cakes,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -766,7 +766,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -792,7 +792,7 @@
 /turf/open/floor/plating,
 /area/ruin/pizzeria/kitchen)
 "IR" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/airalarm/directional/south{
@@ -828,7 +828,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "Jt" = (
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -840,7 +840,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "JG" = (
 /obj/effect/spawner/random/vending/snackvend,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -856,13 +856,13 @@
 /area/ruin/pizzeria)
 "KL" = (
 /obj/structure/closet/secure_closet/freezer/meat,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
 /area/ruin/pizzeria/kitchen)
 "KU" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -899,7 +899,7 @@
 /obj/machinery/microwave{
 	pixel_y = 6
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -917,7 +917,7 @@
 /area/ruin/pizzeria)
 "MR" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side{
@@ -928,7 +928,7 @@
 /obj/effect/turf_decal/trimline/white/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -938,7 +938,7 @@
 /area/ruin/pizzeria)
 "Ny" = (
 /obj/machinery/processor,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -961,7 +961,7 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Moffuchi's Pizzeria"
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -973,7 +973,7 @@
 /area/ruin/pizzeria)
 "OE" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -1000,7 +1000,7 @@
 /obj/effect/turf_decal/siding/blue/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -1038,7 +1038,7 @@
 /area/ruin/pizzeria)
 "Qg" = (
 /obj/structure/chair/sofa/left/brown,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners{
@@ -1051,7 +1051,7 @@
 "Qm" = (
 /obj/structure/table,
 /obj/item/plate/small,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -1097,7 +1097,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "Sb" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/light/warm/directional/north,
@@ -1108,7 +1108,7 @@
 "Sc" = (
 /obj/structure/cable,
 /obj/structure/sign/departments/restroom/directional/north,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -1126,7 +1126,7 @@
 /obj/item/reagent_containers/condiment/enzyme{
 	pixel_x = -7
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/item/reagent_containers/condiment/vinegar{
@@ -1137,7 +1137,7 @@
 "Sw" = (
 /obj/structure/chair/sofa/middle/brown,
 /obj/machinery/light/small/red/directional/north,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/red/opposingcorners{
@@ -1170,7 +1170,7 @@
 "TE" = (
 /obj/machinery/oven,
 /obj/machinery/light/cold/no_nightlight/directional/north,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -1188,7 +1188,7 @@
 /obj/effect/turf_decal/trimline/white/filled/arrow_cw{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -1199,7 +1199,7 @@
 "Uo" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /obj/item/trash/energybar,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -1219,7 +1219,7 @@
 /area/ruin/pizzeria/kitchen)
 "UT" = (
 /obj/machinery/griddle,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -1283,7 +1283,7 @@
 /obj/item/kitchen/rollingpin{
 	pixel_x = 6
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/item/food/canned/tomatoes{
@@ -1353,7 +1353,7 @@
 /obj/item/plate{
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,

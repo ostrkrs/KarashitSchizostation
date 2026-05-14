@@ -117,10 +117,6 @@
 	desc = "%NAME% sees through your lies..."
 	emote_see = list("investigates the area.","sniffs around for clues.","searches for scooby snacks.","takes a candycorn from the hat.")
 
-/datum/dog_fashion/head/nurse
-	name = "Nurse %REAL_NAME%"
-	desc = "%NAME% needs 100cc of beef jerky... STAT!"
-
 /datum/dog_fashion/head/pirate
 	name = "Pirate-title Pirate-name"
 	desc = "Yaarghh!! Thar' be a scurvy dog!"

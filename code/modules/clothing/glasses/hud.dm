@@ -52,18 +52,13 @@
 		ADD_CLOTHING_TRAIT(eye_owner, hud_trait)
 	balloon_alert(eye_owner, "hud enabled")
 
+
 /obj/item/clothing/glasses/hud/health
 	name = "health scanner HUD"
 	desc = "A heads-up display that scans the humanoids in view and provides accurate data about their health status."
 	icon_state = "healthhud"
 	clothing_traits = list(TRAIT_MEDICAL_HUD)
 	glass_colour_type = /datum/client_colour/glass_colour/lightblue
-
-/obj/item/clothing/glasses/hud/medsechud
-	name = "health scanner security HUD"
-	desc = "A heads-up display that scans the humanoids in view and provides accurate data about their health status, ID status and security records."
-	icon_state = "medsechud"
-	clothing_traits = list(TRAIT_MEDICAL_HUD, TRAIT_SECURITY_HUD)
 
 /obj/item/clothing/glasses/hud/health/night
 	name = "night vision health scanner HUD"
@@ -99,7 +94,7 @@
 	flash_protect = FLASH_PROTECTION_FLASH
 	flags_cover = GLASSESCOVERSEYES
 	tint = 1
-	glass_colour_type = /datum/client_colour/glass_colour/blue
+	glass_colour_type = /datum/client_colour/glass_colour/lightblue
 
 /obj/item/clothing/glasses/hud/health/sunglasses/Initialize(mapload)
 	. = ..()
@@ -109,6 +104,7 @@
 		/datum/element/slapcrafting,\
 		slapcraft_recipes = slapcraft_recipe_list,\
 	)
+
 
 /obj/item/clothing/glasses/hud/diagnostic
 	name = "diagnostic HUD"
@@ -151,12 +147,30 @@
 		slapcraft_recipes = slapcraft_recipe_list,\
 	)
 
+
+/obj/item/clothing/glasses/hud/job
+	name = "employment HUD"
+	desc = "A heads-up display that scans the humanoids in view and provides accurate data about their job status."
+	icon_state = "jobhud"
+	clothing_traits = list(TRAIT_SECURITY_HUD_ID_ONLY)
+	glass_colour_type = /datum/client_colour/glass_colour/red
+
+/obj/item/clothing/glasses/hud/job/sunglasses
+	name = "employment HUDSunglasses"
+	desc = "Sunglasses with a employment HUD."
+	icon_state = "sunhudjob"
+	flash_protect = FLASH_PROTECTION_FLASH
+	flags_cover = GLASSESCOVERSEYES
+	tint = 1
+	glass_colour_type = /datum/client_colour/glass_colour/darkred
+
+
 /obj/item/clothing/glasses/hud/security
 	name = "security HUD"
 	desc = "A heads-up display that scans the humanoids in view and provides accurate data about their ID status and security records."
 	icon_state = "securityhud"
 	clothing_traits = list(TRAIT_SECURITY_HUD)
-	glass_colour_type = /datum/client_colour/glass_colour/red
+	glass_colour_type = /datum/client_colour/glass_colour/blue
 
 /obj/item/clothing/glasses/hud/security/chameleon
 	name = "chameleon security HUD"
@@ -183,7 +197,7 @@
 	flash_protect = FLASH_PROTECTION_FLASH
 	flags_cover = GLASSESCOVERSEYES
 	tint = 1
-	glass_colour_type = /datum/client_colour/glass_colour/darkred
+	glass_colour_type = /datum/client_colour/glass_colour/darkblue
 
 /obj/item/clothing/glasses/hud/security/sunglasses/Initialize(mapload)
 	. = ..()
@@ -202,7 +216,7 @@
 	flags_cover = GLASSESCOVERSEYES
 	// Red with a tint of green
 	color_cutoffs = list(40, 15, 10)
-	glass_colour_type = /datum/client_colour/glass_colour/lightred
+	glass_colour_type = /datum/client_colour/glass_colour/lightblue
 	actions_types = list(/datum/action/item_action/toggle_nv)
 
 /obj/item/clothing/glasses/hud/security/night/update_icon_state()
@@ -229,6 +243,7 @@
 	icon_state = "gigagar_sec"
 	force = 12
 	throwforce = 12
+
 
 /obj/item/clothing/glasses/hud/toggle
 	name = "Toggle HUD"
@@ -291,6 +306,7 @@
 		return
 	thermal_overload()
 
+
 /obj/item/clothing/glasses/hud/spacecop
 	name = "police aviators"
 	desc = "For thinking you look cool while brutalizing protestors and minorities."
@@ -299,7 +315,6 @@
 	flags_cover = GLASSESCOVERSEYES
 	tint = 1
 	glass_colour_type = /datum/client_colour/glass_colour/gray
-
 
 /obj/item/clothing/glasses/hud/spacecop/hidden // for the undercover cop
 	name = "sunglasses"

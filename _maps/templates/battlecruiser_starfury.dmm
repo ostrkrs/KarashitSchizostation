@@ -82,7 +82,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
 "an" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -94,7 +94,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
 "ap" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -373,7 +373,7 @@
 "bo" = (
 /obj/machinery/computer/message_monitor,
 /obj/item/paper/monitorkey,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
 "bp" = (
@@ -2382,7 +2382,7 @@
 	},
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare,
 /obj/item/clothing/head/hats/hos/cap/syndicate,
-/obj/item/clothing/head/hats/hos/beret/syndicate,
+/obj/item/clothing/head/beret/sec/hos/syndicate,
 /obj/item/clothing/under/syndicate/skirt,
 /obj/item/clothing/under/syndicate,
 /obj/item/storage/belt/military/assault,
@@ -3357,7 +3357,7 @@
 /area/shuttle/sbc_starfury)
 "lC" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/supply/visible,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -3409,7 +3409,7 @@
 	name = "Air Supply Pump"
 	},
 /obj/effect/turf_decal/box,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -3452,14 +3452,14 @@
 /area/shuttle/sbc_starfury)
 "mr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
 "ms" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -3711,7 +3711,7 @@
 /area/shuttle/sbc_starfury)
 "pm" = (
 /obj/machinery/computer/records/medical/syndie,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark{
@@ -4021,7 +4021,7 @@
 "vn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /obj/item/analyzer,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -4133,7 +4133,7 @@
 /area/shuttle/sbc_starfury)
 "wo" = (
 /obj/machinery/computer/crew/syndie,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
 "wC" = (
@@ -5128,7 +5128,7 @@
 /obj/machinery/portable_atmospherics/canister/air{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -5302,7 +5302,7 @@
 /obj/machinery/portable_atmospherics/canister/air{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/light/small/directional/south,
@@ -5379,7 +5379,7 @@
 /area/shuttle/sbc_starfury)
 "SE" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,

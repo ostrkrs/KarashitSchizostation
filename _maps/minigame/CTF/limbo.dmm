@@ -73,7 +73,7 @@
 /area/centcom/ctf)
 "ep" = (
 /obj/structure/barricade/security/ctf,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/cult,
 /area/centcom/ctf)
 "fs" = (
@@ -531,7 +531,7 @@
 /turf/open/floor/cult,
 /area/centcom/ctf)
 "Ez" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/cult,
 /area/centcom/ctf)
 "EE" = (
@@ -665,7 +665,7 @@
 /turf/open/floor/cult,
 /area/centcom/ctf)
 "LC" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/cult,
@@ -931,7 +931,7 @@
 /turf/open/floor/carpet/orange,
 /area/centcom/ctf)
 "ZT" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/cult,

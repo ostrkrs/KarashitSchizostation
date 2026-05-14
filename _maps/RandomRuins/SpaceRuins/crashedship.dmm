@@ -87,8 +87,8 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/crashedship/fore)
 "eh" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning,
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning,
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle{
@@ -164,8 +164,8 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/crashedship/fore)
 "hI" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning,
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning,
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
 /obj/structure/table,
@@ -418,10 +418,10 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "qB" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/structure/closet/firecloset,
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/crashedship/aft)
@@ -485,7 +485,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/corner{
@@ -724,7 +724,7 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/edge{
@@ -781,7 +781,7 @@
 	dir = 1
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/corner{
@@ -849,7 +849,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/corner{
@@ -867,10 +867,10 @@
 	},
 /area/ruin/space/has_grav/crashedship/aft)
 "Fy" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/machinery/atmospherics/components/unary/portables_connector/layer4,
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/pod/light,
@@ -881,7 +881,7 @@
 /area/ruin/space/has_grav/crashedship/fore)
 "FY" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/corner{
@@ -935,7 +935,7 @@
 	dir = 4
 	},
 /obj/item/kirbyplants/organic/plant21,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white/corner{
 	dir = 4
 	},
@@ -1157,8 +1157,8 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Pb" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning,
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning,
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
 /obj/structure/table,
@@ -1223,10 +1223,10 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "TP" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/effect/spawner/random/structure/tank_holder,
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/crashedship/aft)
@@ -1238,10 +1238,10 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/aft)
 "Uk" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/structure/chair/comfy/shuttle,
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/crashedship/aft)

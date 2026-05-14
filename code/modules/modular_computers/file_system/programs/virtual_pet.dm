@@ -62,7 +62,7 @@ GLOBAL_LIST_EMPTY(virtual_pets_list)
 		/obj/item/clothing/head/wizard/tape = 2,
 		/obj/item/clothing/head/utility/hardhat/cakehat/energycake = 2,
 		/obj/item/clothing/head/cowboy/bounty = 2,
-		/obj/item/clothing/head/hats/warden/red = 3,
+		/obj/item/clothing/head/hats/warden = 3,
 		/obj/item/clothing/head/hats/caphat = 3,
 		/obj/item/clothing/head/costume/crown/fancy = 3,
 	)

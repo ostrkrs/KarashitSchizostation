@@ -118,10 +118,10 @@
 	},
 /area/shuttle/escape)
 "ch" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -240,8 +240,8 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 6
 	},
-/obj/effect/turf_decal/tile/blue/anticorner,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue/anticorner,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -307,10 +307,10 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/effect/turf_decal/bot_white{
 	color = "#52B4E9"
 	},
@@ -386,11 +386,11 @@
 	},
 /obj/machinery/wall_healer/free/directional/east,
 /obj/item/radio/intercom/directional/south,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 6
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner,
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner,
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -466,10 +466,10 @@
 	pixel_x = 5;
 	pixel_y = -4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -483,10 +483,10 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white/smooth_corner,
 /area/shuttle/escape)
 "gT" = (
@@ -609,13 +609,13 @@
 /obj/machinery/camera/directional/north{
 	c_tag = "NTSS Independence Infirmary"
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -679,7 +679,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /obj/item/paper_bin/carbon,
@@ -715,7 +715,7 @@
 /turf/open/floor/iron/dark/small,
 /area/shuttle/escape)
 "jC" = (
-/obj/effect/turf_decal/trimline/blue/corner,
+/obj/effect/turf_decal/trimline/light_blue/corner,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "jH" = (
@@ -772,10 +772,10 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -866,7 +866,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -892,10 +892,10 @@
 	normaldoorcontrol = 1;
 	id = "cruise_med"
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -903,7 +903,7 @@
 	},
 /area/shuttle/escape)
 "lC" = (
-/obj/effect/turf_decal/trimline/blue/corner{
+/obj/effect/turf_decal/trimline/light_blue/corner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -1036,8 +1036,8 @@
 /turf/open/floor/wood/large,
 /area/shuttle/escape)
 "ni" = (
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner,
 /turf/open/floor/iron/white/smooth_edge,
 /area/shuttle/escape)
 "nk" = (
@@ -1135,10 +1135,10 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "py" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -1238,10 +1238,10 @@
 /area/shuttle/escape/brig)
 "rG" = (
 /obj/machinery/stasis,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -1366,11 +1366,11 @@
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet/directional/south,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner,
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner,
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -1597,7 +1597,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/smooth_edge{
@@ -1633,7 +1633,7 @@
 /turf/open/floor/carpet/red,
 /area/shuttle/escape)
 "xX" = (
-/obj/effect/turf_decal/trimline/blue/corner{
+/obj/effect/turf_decal/trimline/light_blue/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1662,7 +1662,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /obj/item/storage/fancy/donut_box{
@@ -1798,7 +1798,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/smooth_edge{
@@ -1806,7 +1806,7 @@
 	},
 /area/shuttle/escape)
 "Ap" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 4
 	},
 /mob/living/basic/bot/medbot/stationary{
@@ -1995,13 +1995,13 @@
 /area/shuttle/escape)
 "BP" = (
 /obj/machinery/sleeper/syndie/fullupgrade/nt,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_corner,
@@ -2021,10 +2021,10 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white/smooth_edge{
 	dir = 8
 	},
@@ -2165,7 +2165,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /obj/item/folder/blue{
@@ -2282,10 +2282,10 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -2444,7 +2444,7 @@
 /obj/effect/turf_decal/tile/red/anticorner{
 	dir = 1
 	},
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = 9;
 	pixel_y = 1
 	},
@@ -2468,7 +2468,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/smooth_edge{
@@ -2810,10 +2810,10 @@
 	},
 /area/shuttle/escape)
 "LG" = (
-/obj/effect/turf_decal/trimline/blue/end{
+/obj/effect/turf_decal/trimline/light_blue/end{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -3000,10 +3000,10 @@
 /area/shuttle/escape)
 "OH" = (
 /obj/machinery/light/cold/directional/west,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 8
 	},
 /obj/item/kirbyplants/organic/plant10,
@@ -3148,8 +3148,8 @@
 /obj/machinery/iv_drip,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south,
 /obj/effect/turf_decal/siding/wideplating_new/light,
-/obj/effect/turf_decal/tile/blue/half,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue/half,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_edge,
@@ -3162,7 +3162,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/smooth_edge{
@@ -3204,7 +3204,7 @@
 /turf/open/floor/noslip,
 /area/shuttle/escape)
 "RJ" = (
-/obj/effect/turf_decal/trimline/blue/corner{
+/obj/effect/turf_decal/trimline/light_blue/corner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -3235,8 +3235,8 @@
 /obj/machinery/atmospherics/pipe/smart/simple/orange/hidden{
 	dir = 6
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner,
 /turf/open/floor/iron/white/smooth_edge,
 /area/shuttle/escape)
 "Sp" = (
@@ -3253,7 +3253,7 @@
 /turf/open/floor/iron/dark/herringbone,
 /area/shuttle/escape/brig)
 "Sr" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "Ss" = (
@@ -3394,10 +3394,10 @@
 /area/shuttle/escape)
 "Um" = (
 /obj/structure/sink/directional/west,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_edge{
@@ -3427,13 +3427,13 @@
 	pixel_y = -4
 	},
 /obj/machinery/digital_clock/directional/east,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/mid_joiner{
+/obj/effect/turf_decal/trimline/light_blue/filled/mid_joiner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -3445,7 +3445,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/light{
 	dir = 5
 	},
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /obj/effect/turf_decal/delivery/white{
@@ -3539,10 +3539,10 @@
 	},
 /area/shuttle/escape)
 "VY" = (
-/obj/effect/turf_decal/trimline/blue/end{
+/obj/effect/turf_decal/trimline/light_blue/end{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 4
 	},
 /turf/open/floor/iron/white,

@@ -412,7 +412,7 @@
 /obj/item/coin/silver,
 /obj/item/coin/gold,
 /obj/item/coin/gold,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/pirate)
 "AS" = (
@@ -704,7 +704,7 @@
 	faction = list("pirate");
 	name = "Pegwing"
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -720,7 +720,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,

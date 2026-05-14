@@ -1398,7 +1398,7 @@
 /area/awaymission/moonoutpost19/arrivals)
 "jN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white/corner,
@@ -1837,7 +1837,7 @@
 	c_tag = "Arrivals North";
 	network = list("mo19")
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white/corner,
@@ -2201,7 +2201,7 @@
 /turf/open/floor/plating,
 /area/awaymission/moonoutpost19/research)
 "oq" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white/corner,
@@ -2322,7 +2322,7 @@
 /area/awaymission/moonoutpost19/mines)
 "px" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white/corner{
@@ -2363,10 +2363,10 @@
 /obj/structure/bedsheetbin,
 /obj/item/clothing/neck/tie/black,
 /obj/item/clothing/under/costume/buttondown/slacks/service,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/cafeteria{
@@ -4764,10 +4764,10 @@
 /area/awaymission/moonoutpost19/main)
 "Fi" = (
 /obj/machinery/washing_machine,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/cafeteria{
@@ -5537,7 +5537,7 @@
 /obj/structure/closet/crate/bin,
 /obj/item/trash/candy,
 /obj/item/trash/can,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/item/stack/sheet/mineral/plasma,
@@ -5665,7 +5665,7 @@
 /area/awaymission/moonoutpost19/main)
 "LL" = (
 /obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white/corner,
@@ -6087,7 +6087,7 @@
 	},
 /area/awaymission/moonoutpost19/main)
 "OL" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white/corner{
@@ -6510,7 +6510,7 @@
 /area/awaymission/moonoutpost19/arrivals)
 "Rl" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/machinery/computer/security/telescreen/entertainment/directional/west,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 8

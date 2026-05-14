@@ -112,7 +112,7 @@
 "v" = (
 /obj/machinery/gateway/centerstation,
 /obj/effect/turf_decal/stripes/white/box,
-/obj/effect/turf_decal/trimline/blue,
+/obj/effect/turf_decal/trimline/light_blue,
 /turf/open/indestructible/dark,
 /area/misc/testroom/gateway_room)
 "y" = (

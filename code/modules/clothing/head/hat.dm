@@ -68,12 +68,6 @@
 /datum/armor/bio_hood_plague
 	bio = 100
 
-/obj/item/clothing/head/costume/nursehat
-	name = "nurse's hat"
-	desc = "It allows quick identification of trained medical personnel."
-	icon_state = "nursehat"
-	dog_fashion = /datum/dog_fashion/head/nurse
-
 /obj/item/clothing/head/hats/bowler
 	name = "bowler-hat"
 	desc = "Gentleman, elite aboard!"
@@ -368,7 +362,6 @@
 	icon_state = "/obj/item/clothing/head/costume/ushanka/sec"
 	desc = "A warm and comfortable ushanka, dyed with 'all natural flavors' according to the tag."
 	greyscale_colors = "#C7B08B#A52F29"
-	armor_type = /datum/armor/cosmetic_sec
 	flags_1 = null
 
 /obj/item/clothing/head/costume/nightcap

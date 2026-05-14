@@ -152,7 +152,7 @@
 /obj/machinery/wall_healer/free/directional/west{
 	use_power = 0
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aB" = (
@@ -216,7 +216,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aQ" = (
@@ -224,11 +224,11 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/corner,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aS" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aT" = (
@@ -236,7 +236,7 @@
 	department = "Arrivals shuttle";
 	name = "Arrival Shuttle Requests Console"
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aU" = (
@@ -246,19 +246,19 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aV" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aX" = (
@@ -268,7 +268,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aY" = (
@@ -278,7 +278,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "aZ" = (
@@ -309,7 +309,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 "Lk" = (
@@ -318,7 +318,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/arrival)
 

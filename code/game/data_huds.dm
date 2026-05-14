@@ -34,7 +34,7 @@
 
 /// Only sees ID card job
 /datum/atom_hud/data/human/security/basic
-	hud_icons = list(ID_HUD)
+	hud_icons = list(ID_HUD, IMPLOYAL_HUD)
 
 /// Sees ID card job, implants, and wanted status
 /datum/atom_hud/data/human/security/advanced

@@ -126,7 +126,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/hats/hos/beret
+	head = /obj/item/clothing/head/beret/sec/hos
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 /datum/outfit/mafia/warden
@@ -136,7 +136,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/vest/warden/alt
 	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/hats/warden/red
+	head = /obj/item/clothing/head/hats/warden
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 //mafia

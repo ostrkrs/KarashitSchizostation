@@ -46,18 +46,12 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 	products = list(
 		/obj/item/clothing/head/beret/sec = 3,
 		/obj/item/clothing/head/soft/sec = 3,
-		/obj/item/clothing/head/costume/ushanka/sec = 3,
-		/obj/item/clothing/mask/bandana/striped/security = 3,
 		/obj/item/clothing/under/rank/security/officer = 3,
 		/obj/item/clothing/under/rank/security/officer/skirt = 3,
 		/obj/item/clothing/under/rank/security/officer/grey = 3,
-		/obj/item/clothing/under/pants/slacks = 3,
-		/obj/item/clothing/under/rank/security/officer/blueshirt = 3,
-		/obj/item/clothing/gloves/color/black/security/blu = 3,
-		/obj/item/clothing/suit/armor/vest/secjacket = 3,
-		/obj/item/clothing/suit/hooded/wintercoat/security = 3,
-		/obj/item/clothing/suit/armor/vest = 3,
+		/obj/item/clothing/under/rank/security/officer/formal = 3,
 		/obj/item/clothing/gloves/color/black/security = 3,
+		/obj/item/clothing/suit/hooded/wintercoat/security = 3,
 		/obj/item/clothing/shoes/jackboots/sec = 3,
 		/obj/item/storage/backpack/security = 3,
 		/obj/item/storage/backpack/satchel/sec = 3,
@@ -65,9 +59,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/storage/backpack/messenger/sec = 3,
 	)
 	premium = list(
-		/obj/item/clothing/under/rank/security/officer/formal = 3,
-		/obj/item/clothing/suit/jacket/officer/blue = 3,
-		/obj/item/clothing/head/beret/sec/navyofficer = 3,
+		/obj/item/clothing/suit/jacket/officer = 3,
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/sec_wardrobe
 	payment_department = ACCOUNT_SEC
@@ -84,7 +76,6 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 	vend_reply = "Thank you for using the MediDrobe!"
 	products = list(
 		/obj/item/clothing/accessory/pocketprotector = 4,
-		/obj/item/clothing/head/costume/nursehat = 4,
 		/obj/item/clothing/head/beret/medical = 4,
 		/obj/item/clothing/head/utility/surgerycap = 4,
 		/obj/item/clothing/head/utility/surgerycap/purple = 4,
@@ -529,7 +520,6 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/clothing/under/rank/civilian/iaa/black/skirt = 1,
 		/obj/item/clothing/shoes/laceup = 2,
 		/obj/item/radio/headset/headset_srv = 2,
-		/obj/item/storage/box/evidence = 2,
 		/obj/item/reagent_containers/cup/fish_feed = 1,
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/law_wardrobe

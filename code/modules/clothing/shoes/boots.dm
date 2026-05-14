@@ -67,7 +67,9 @@
 
 /obj/item/clothing/shoes/jackboots/sec
 	icon_state = "jackboots_sec"
-	desc = "Security combat boots for combat scenarios or combat situations. All combat, all the time."
+
+/obj/item/clothing/shoes/jackboots/iso
+	icon_state = "jackboots_iso"
 
 /obj/item/clothing/shoes/jackboots/floortile
 	name = "floortile camouflage jackboots"

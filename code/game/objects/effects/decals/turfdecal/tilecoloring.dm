@@ -44,9 +44,16 @@
 /// Blue tiles
 /obj/effect/turf_decal/tile/blue
 	name = "blue tile decal"
-	color = "#52B4E9"
+	color = "#4586af"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/blue)
+
+/// Light blue tiles
+/obj/effect/turf_decal/tile/light_blue
+	name = "light blue tile decal"
+	color = "#52B4E9"
+
+TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/light_blue)
 
 /// Dark blue tiles
 /obj/effect/turf_decal/tile/dark_blue
@@ -70,6 +77,14 @@ TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/green)
 	color = "#439C1E"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark_green)
+
+/// Teal tiles
+
+/obj/effect/turf_decal/tile/teal
+	name = "teal tile decal"
+	color = "#008080"
+
+TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/teal)
 
 /// Yellow tiles
 
@@ -285,11 +300,23 @@ TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/green)
 
 TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/dark_green)
 
+/// Teal Trimlines
+/obj/effect/turf_decal/trimline/teal
+	color = "#008080"
+
+TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/teal)
+
 /// Blue trimlines
 /obj/effect/turf_decal/trimline/blue
-	color = "#52B4E9"
+	color = "#4586af"
 
 TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/blue)
+
+/// Light blue trimlines
+/obj/effect/turf_decal/trimline/light_blue
+	color = "#52B4E9"
+
+TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/light_blue)
 
 /// Dark blue trimlines
 /obj/effect/turf_decal/trimline/dark_blue

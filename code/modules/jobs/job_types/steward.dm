@@ -56,7 +56,6 @@
 	uniform = /obj/item/clothing/under/rank/civilian/steward
 	belt = /obj/item/modular_computer/pda/heads/steward
 	ears = /obj/item/radio/headset/heads/steward
-	glasses = /obj/item/clothing/glasses/sunglasses
 	shoes = /obj/item/clothing/shoes/laceup
 	l_hand = /obj/item/clipboard
 

@@ -185,6 +185,13 @@
 "# Spawn Positions" = 2
 "# Total Positions" = 2
 
+[INTERNAL_SECURITY_OPERATIVE]
+"# Playtime Requirements" = 0
+"# Required Account Age" = 0
+"# Required Character Age" = 0
+"# Spawn Positions" = 2
+"# Total Positions" = 2
+
 [MEDICAL_DOCTOR]
 "# Playtime Requirements" = 0
 "# Required Account Age" = 0

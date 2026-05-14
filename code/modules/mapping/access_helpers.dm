@@ -170,6 +170,11 @@
 	access_list += ACCESS_CMO
 	return access_list
 
+/obj/effect/mapping_helpers/airlock/access/any/medical/paramedic/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_PARAMEDIC
+	return access_list
+
 /obj/effect/mapping_helpers/airlock/access/any/medical/pharmacy/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_PHARMACY
@@ -654,6 +659,11 @@
 /obj/effect/mapping_helpers/airlock/access/all/medical/cmo/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_CMO
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/medical/paramedic/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_PARAMEDIC
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/all/medical/pharmacy/get_access()

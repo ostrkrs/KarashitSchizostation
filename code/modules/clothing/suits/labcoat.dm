@@ -69,6 +69,16 @@
 	icon_state = "labgreen"
 	inhand_icon_state = null
 
+/obj/item/clothing/suit/toggle/labcoat/medical
+	name = "medical doctor's labcoat"
+	desc = "A suit that protects against minor chemical spills. Has a teal stripe on the shoulder."
+	icon = 'icons/map_icons/clothing/suit/_suit.dmi'
+	icon_state = "/obj/item/clothing/suit/toggle/labcoat/medical"
+	post_init_icon_state = "labcoat_job"
+	greyscale_config = /datum/greyscale_config/labcoat
+	greyscale_config_worn = /datum/greyscale_config/labcoat/worn
+	greyscale_colors = "#EEEEEE#7095C2#05887d#2a9c93"
+
 /obj/item/clothing/suit/toggle/labcoat/genetics
 	name = "geneticist labcoat"
 	desc = "A suit that protects against minor chemical spills. Has a blue stripe on the shoulder."

@@ -35,6 +35,7 @@ export const JOB2ICON = {
   'Big Brother': 'eye',
   Janitor: 'broom',
   'Internal Affairs Agent': 'feather-pointed',
+  'Internal Security Operative': 'chess-rook',
   'Medical Doctor': 'briefcase-medical',
   Mime: 'comment-slash',
   Paramedic: 'truck-medical',

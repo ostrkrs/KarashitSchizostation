@@ -592,14 +592,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
-"Th" = (
-/obj/effect/mob_spawn/ghost_role/human/fugitive/russian{
-	dir = 1
-	},
-/obj/effect/turf_decal/bot_red,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/pod/dark,
-/area/shuttle/hunter/russian)
 "Uu" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 1
@@ -841,7 +833,7 @@ XW
 yo
 LW
 CB
-Th
+eQ
 Me
 "}
 (7,1,1) = {"

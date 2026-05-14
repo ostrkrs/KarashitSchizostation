@@ -94,13 +94,14 @@
 #define SECHUD_COOK "hudcook"
 #define SECHUD_CORONER "hudcoroner"
 #define SECHUD_CURATOR "hudcurator"
-#define SECHUD_DETECTIVE "huddetective"
+#define SECHUD_CRIMINALIST "hudcriminalist"
 #define SECHUD_GENETICIST "hudgeneticist"
 #define SECHUD_HEAD_OF_PERSONNEL "hudheadofpersonnel"
 #define SECHUD_HEAD_OF_SECURITY "hudheadofsecurity"
 #define SECHUD_HUMAN_AI "hudhumanai"
 #define SECHUD_JANITOR "hudjanitor"
 #define SECHUD_IAA "hudinternalaffairsagent"
+#define SECHUD_ISO "hudinternalsecurityoperative"
 #define SECHUD_MEDICAL_DOCTOR "hudmedicaldoctor"
 #define SECHUD_MIME "hudmime"
 #define SECHUD_PARAMEDIC "hudparamedic"
@@ -113,11 +114,9 @@
 #define SECHUD_SCIENTIST "hudscientist"
 #define SECHUD_SHAFT_MINER "hudshaftminer"
 #define SECHUD_STATION_ENGINEER "hudstationengineer"
+#define SECHUD_STEWARD "hudsteward"
 #define SECHUD_VETERAN_ADVISOR "hudveteranadvisor"
 #define SECHUD_WARDEN "hudwarden"
-#define SECHUD_STEWARD "hudsteward"
-
-#define SECHUD_CHEF "hudchef"
 
 #define SECHUD_DEATH_COMMANDO "huddeathcommando"
 
