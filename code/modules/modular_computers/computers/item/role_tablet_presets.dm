@@ -119,7 +119,7 @@
 /obj/item/modular_computer/pda/heads/iaa
 	name = "internal affairs agent PDA"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_double
-	greyscale_colors = "#4586af#0000CC#FFF5ED"
+	greyscale_colors = "#CB0000#0000CC#FFF5ED"
 	inserted_item = /obj/item/pen/fountain
 	starting_programs = list(
 		/datum/computer_file/program/records/security,
@@ -133,7 +133,7 @@
 /obj/item/modular_computer/pda/iso
 	name = "internal security operative PDA"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick
-	greyscale_colors = "#4586af#0000CC#FFF5ED"
+	greyscale_colors = "#CB0000#0000CC#FFF5ED"
 	inserted_item = /obj/item/pen/fountain
 	starting_programs = list(
 		/datum/computer_file/program/records/security,

@@ -744,7 +744,7 @@
 	trim_state = "trim_iaa"
 	department_state = "departmenthead"
 	department_color = COLOR_COMMAND_BLUE
-	subdepartment_color = COLOR_SECURITY_BLUE
+	subdepartment_color = COLOR_LAW_RED
 	sechud_icon_state = SECHUD_IAA
 	minimal_access = list(
 		ACCESS_BRIG_ENTRANCE,
@@ -764,7 +764,7 @@
 	assignment = JOB_INTERNAL_SECURITY_OPERATIVE
 	trim_state = "trim_iso"
 	department_color = COLOR_COMMAND_BLUE
-	subdepartment_color = COLOR_SECURITY_BLUE
+	subdepartment_color = COLOR_LAW_RED
 	sechud_icon_state = SECHUD_ISO
 	minimal_access = list(
 		ACCESS_BRIG_ENTRANCE,

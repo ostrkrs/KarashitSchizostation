@@ -150,7 +150,7 @@
 /datum/id_trim/centcom/ert/security
 	assignment = JOB_ERT_OFFICER
 	trim_state = "trim_securityofficer"
-	subdepartment_color = COLOR_SECURITY_RED
+	subdepartment_color = COLOR_SECURITY_BLUE
 	sechud_icon_state = SECHUD_SECURITY_RESPONSE_OFFICER
 	big_pointer = FALSE
 	honorifics = list("Officer")
