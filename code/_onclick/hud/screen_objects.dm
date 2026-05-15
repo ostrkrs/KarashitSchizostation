@@ -1182,6 +1182,9 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/splash)
 	if(!istype(thirsty))
 		return
 
+	if(!ishuman(thirsty) || CONFIG_GET(flag/disable_human_mood))
+		screen_loc = ui_hunger // Slot in where hunger normally is if mood is disabled
+
 	// Bottle next to the bar
 	drink_image = image(icon = drink_icon, icon_state = drink_icon_state, pixel_x = -5)
 	drink_image.plane = plane
