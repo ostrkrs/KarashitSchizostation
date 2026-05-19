@@ -72,7 +72,7 @@
 	department_experience_type = EXP_TYPE_COMMAND
 	display_order = 1
 	label_class = "command"
-	ui_color = "#455a75"
+	ui_color = "#4e6f97"
 	primary_work_area = /area/station/command
 	department_delivery_areas = list(
 		/area/station/command/bridge,
@@ -86,7 +86,7 @@
 	department_experience_type = EXP_TYPE_SECURITY
 	display_order = 2
 	label_class = "security"
-	ui_color = "#54789c"
+	ui_color = "#6091c2"
 	nation_prefixes = list("Securi", "Beepski", "Shitcuri", "Stunba", "Flashbango", "Flasha", "Stanfordi")
 	primary_work_area = /area/station/security
 	department_delivery_areas = list(
@@ -109,7 +109,7 @@
 	department_experience_type = EXP_TYPE_ENGINEERING
 	display_order = 3
 	label_class = "engineering"
-	ui_color = "#d48354"
+	ui_color = "#f09661"
 	nation_prefixes = list("Atomo", "Engino", "Power", "Teleco")
 	primary_work_area = /area/station/engineering
 	department_delivery_areas = list(
@@ -127,7 +127,7 @@
 	department_experience_type = EXP_TYPE_MEDICAL
 	display_order = 4
 	label_class = "medical"
-	ui_color = "#05886c"
+	ui_color = "#0db89b"
 	nation_prefixes = list("Mede", "Healtha", "Recova", "Chemi", "Viro", "Psych")
 	primary_work_area = /area/station/medical
 	department_delivery_areas = list(
@@ -147,7 +147,7 @@
 	department_experience_type = EXP_TYPE_SCIENCE
 	display_order = 5
 	label_class = "science"
-	ui_color = "#ca62b7"
+	ui_color = "#e277cf"
 	nation_prefixes = list("Sci", "Griffa", "Geneti", "Explosi", "Mecha", "Xeno", "Nani", "Cyto")
 	primary_work_area = /area/station/science
 	department_delivery_areas = list(
@@ -179,7 +179,7 @@
 	department_experience_type = EXP_TYPE_SERVICE
 	display_order = 7
 	label_class = "service"
-	ui_color = "#62913a"
+	ui_color = "#74ac46"
 	nation_prefixes = list("Honka", "Boozo", "Fatu", "Danka", "Mimi", "Libra", "Jani", "Religi")
 	primary_work_area = /area/station/service
 	department_delivery_areas = list(/area/station/hallway/secondary/service, /area/station/service/bar/atrium)
@@ -194,7 +194,7 @@
 	department_experience_type = EXP_TYPE_SILICON
 	display_order = 8
 	label_class = "silicon"
-	ui_color = "#ff7772"
+	ui_color = "#628586"
 
 /datum/job_department/silicon/generate_nation_name()
 	return "United Nations" //For nations ruleset specifically, because all other sources of nation creation cannot choose silicons
