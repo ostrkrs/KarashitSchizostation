@@ -99,7 +99,7 @@
 	name = "wardrobe closet spawner"
 	icon_state = "locker_clothing"
 	loot = list(
-		/obj/structure/closet/gmcloset,
+		/obj/structure/closet/barcloset,
 		/obj/structure/closet/chefcloset,
 		/obj/structure/closet/jcloset,
 		/obj/structure/closet/lawcloset,
@@ -224,7 +224,6 @@
 		/obj/item/clothing/head/rasta,
 		/obj/item/clothing/head/costume/constable,
 		/obj/item/clothing/head/bio_hood/plague,
-		/obj/item/clothing/head/costume/nursehat,
 		/obj/item/clothing/head/hats/bowler,
 		/obj/item/clothing/head/costume/bearpelt,
 		/obj/item/clothing/head/flatcap,

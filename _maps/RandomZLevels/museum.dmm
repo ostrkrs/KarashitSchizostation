@@ -208,7 +208,7 @@
 	name = "Dale Knox";
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)
 "bK" = (
@@ -225,7 +225,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/awaymission/museum)
 "bQ" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)
@@ -594,7 +594,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)
@@ -1340,7 +1340,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)
 "kQ" = (
@@ -1773,7 +1773,7 @@
 /area/awaymission/museum)
 "oo" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)
 "os" = (
@@ -1877,9 +1877,9 @@
 "pi" = (
 /mob/living/basic/statue/mannequin{
 	held_item = /obj/item/clothing/neck/stethoscope;
-	hat = /obj/item/clothing/head/costume/nursehat
+	
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)
 "pp" = (
@@ -3566,7 +3566,7 @@
 "CK" = (
 /obj/item/bedsheet/medical,
 /obj/structure/bed,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)
 "CL" = (
@@ -4073,7 +4073,7 @@
 /obj/structure/table/wood,
 /obj/structure/window/spawner/directional/north,
 /obj/structure/window/spawner/directional/west,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "GU" = (
@@ -4673,7 +4673,7 @@
 	},
 /area/awaymission/museum)
 "MC" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/machinery/light/floor,
 /turf/open/floor/holofloor/white,
 /area/awaymission/museum)

@@ -238,12 +238,22 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	worn_icon_state = "medsci_headset"
 	keyslot = /obj/item/encryptionkey/headset_medsci
 
-/obj/item/radio/headset/headset_srvsec
+/obj/item/radio/headset/headset_comsec
 	name = "law and order headset"
-	desc = "In the criminal justice headset, the encryption key represents two separate but equally important groups. Sec, who investigate crime, and Service, who provide services. These are their comms."
-	icon_state = "srvsec_headset"
-	worn_icon_state = "srvsec_headset"
-	keyslot = /obj/item/encryptionkey/headset_srvsec
+	desc = "A headset allowing the wearer to communicate with command and security."
+	icon_state = "comsec_headset"
+	worn_icon_state = "comsec_headset"
+	keyslot = /obj/item/encryptionkey/headset_comsec
+
+/obj/item/radio/headset/headset_comsec/alt
+	name = "law and order bowman headset"
+	desc = "A headset allowing the wearer to communicate with command and security. Protects ears from flashbangs."
+	icon_state = "comsec_headset_alt"
+	worn_icon_state = "comsec_headset_alt"
+
+/obj/item/radio/headset/headset_comsec/alt/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection)
 
 /obj/item/radio/headset/headset_srvmed
 	name = "service medical headset"

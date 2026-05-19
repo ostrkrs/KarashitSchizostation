@@ -81,14 +81,14 @@
 	cost = CARGO_CRATE_VALUE * 3
 	access_view = ACCESS_SECURITY
 	contains = list(/obj/item/clothing/under/rank/security/officer/formal = 2,
-					/obj/item/clothing/suit/jacket/officer/blue = 2,
-					/obj/item/clothing/head/beret/sec/navyofficer = 2,
+					/obj/item/clothing/suit/jacket/officer = 2,
+					/obj/item/clothing/head/beret/sec = 2,
 					/obj/item/clothing/under/rank/security/warden/formal,
-					/obj/item/clothing/suit/jacket/warden/blue,
-					/obj/item/clothing/head/beret/sec/navywarden,
+					/obj/item/clothing/suit/jacket/warden,
+					/obj/item/clothing/head/beret/sec/warden,
 					/obj/item/clothing/under/rank/security/head_of_security/formal,
-					/obj/item/clothing/suit/jacket/hos/blue,
-					/obj/item/clothing/head/hats/hos/beret/navyhos,
+					/obj/item/clothing/suit/jacket/hos,
+					/obj/item/clothing/head/beret/sec/hos/navyhos,
 				)
 	crate_name = "security clothing crate"
 

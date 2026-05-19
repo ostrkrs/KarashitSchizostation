@@ -1,53 +1,3 @@
-/obj/structure/closet/secure_closet/captains
-	name = "captain's locker"
-	icon_state = "cap"
-	req_access = list(ACCESS_CAPTAIN)
-
-/obj/structure/closet/secure_closet/captains/PopulateContents()
-	..()
-
-	new /obj/item/storage/backpack/captain(src)
-	new /obj/item/storage/backpack/satchel/cap(src)
-	new /obj/item/storage/backpack/duffelbag/captain(src)
-	new /obj/item/storage/backpack/messenger/cap(src)
-	new /obj/item/clothing/neck/petcollar(src)
-	new /obj/item/pet_carrier(src)
-	new /obj/item/storage/bag/garment/captain(src)
-	new /obj/item/computer_disk/command/captain(src)
-	new /obj/item/radio/headset/heads/captain/alt(src)
-	new /obj/item/radio/headset/heads/captain(src)
-	new /obj/item/door_remote/captain(src)
-	new /obj/item/storage/photo_album/captain(src)
-
-/obj/structure/closet/secure_closet/captains/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
-	new /obj/item/storage/belt/sheath/sabre(src)
-
-/obj/structure/closet/secure_closet/hop
-	name = "head of personnel's locker"
-	icon_state = "hop"
-	req_access = list(ACCESS_HOP)
-
-/obj/structure/closet/secure_closet/hop/PopulateContents()
-	..()
-	new /obj/item/dog_bone(src)
-	new /obj/item/storage/bag/garment/hop(src)
-	new /obj/item/computer_disk/command/hop(src)
-	new /obj/item/radio/headset/heads/hop(src)
-	new /obj/item/storage/box/ids(src)
-	new /obj/item/storage/box/silver_ids(src)
-	new /obj/item/megaphone/command(src)
-	new /obj/item/assembly/flash/handheld(src)
-	new /obj/item/clothing/neck/petcollar(src)
-	new /obj/item/pet_carrier(src)
-	new /obj/item/door_remote/head_of_personnel(src)
-	new /obj/item/circuitboard/machine/techfab/department/service(src)
-	new /obj/item/storage/photo_album/hop(src)
-	new /obj/item/storage/lockbox/medal/hop(src)
-
-/obj/structure/closet/secure_closet/hop/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
-
 /obj/structure/closet/secure_closet/hos
 	name = "head of security's locker"
 	icon_state = "hos"
@@ -109,7 +59,7 @@
 /obj/structure/closet/secure_closet/security/PopulateContents()
 	..()
 	new /obj/item/clothing/suit/armor/vest/alt/sec(src)
-	new /obj/item/clothing/head/helmet/sec(src)
+	new /obj/item/clothing/suit/armor/vest/secjacket(src)
 	new /obj/item/radio/headset/headset_sec(src)
 	new /obj/item/radio/headset/headset_sec/alt(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses(src)

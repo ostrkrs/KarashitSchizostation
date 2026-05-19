@@ -8,7 +8,7 @@
 	empty = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -280,7 +280,7 @@
 /obj/item/storage/medkit/brute{
 	empty = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1286,14 +1286,14 @@
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood,
 /obj/item/reagent_containers/blood,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post)
 "eY" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1414,7 +1414,7 @@
 /obj/machinery/sleeper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1423,28 +1423,28 @@
 /obj/item/reagent_containers/blood,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post)
 "fy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post)
 "fz" = (
 /obj/item/flashlight/pen,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post)
 "fA" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1622,14 +1622,14 @@
 "gn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post)
 "go" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1637,13 +1637,13 @@
 "gq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post)
 "gr" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1853,7 +1853,7 @@
 /area/awaymission/snowdin/post/dorm)
 "hg" = (
 /obj/item/shard,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2047,7 +2047,7 @@
 	name = "Medbay Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/medical/surgery,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2567,7 +2567,7 @@
 "jt" = (
 /obj/structure/table,
 /obj/item/storage/medkit/fire,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -7053,13 +7053,13 @@
 /area/awaymission/snowdin/post/minipost)
 "Bk" = (
 /obj/item/clothing/neck/stethoscope,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post/minipost)
 "Bl" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -7091,7 +7091,7 @@
 /area/awaymission/snowdin/cave)
 "Bs" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -7099,7 +7099,7 @@
 "Bu" = (
 /obj/structure/table,
 /obj/item/clothing/glasses/hud/health,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -9200,7 +9200,7 @@
 /obj/item/clothing/neck/stethoscope,
 /obj/machinery/light/directional/north,
 /obj/machinery/firealarm/directional/north,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -9436,7 +9436,7 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -9464,7 +9464,7 @@
 /obj/item/storage/medkit/fire{
 	empty = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -9551,7 +9551,7 @@
 "Og" = (
 /obj/machinery/vending/wallmed/directional/north,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -9907,7 +9907,7 @@
 /obj/structure/table,
 /obj/item/clothing/glasses/hud/health,
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -10547,7 +10547,7 @@
 "Tv" = (
 /obj/structure/table,
 /obj/item/storage/medkit/ancient,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -11186,7 +11186,7 @@
 "Xw" = (
 /obj/structure/table,
 /obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -11345,7 +11345,7 @@
 /obj/item/storage/medkit/fire{
 	empty = 1
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -11496,7 +11496,7 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,

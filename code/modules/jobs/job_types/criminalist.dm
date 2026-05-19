@@ -49,7 +49,7 @@
 
 
 /datum/outfit/job/detective
-	name = "Detective"
+	name = "Criminalist"
 	jobtype = /datum/job/detective
 
 	id = /obj/item/card/id/advanced/plainclothes
@@ -66,11 +66,9 @@
 	ears = /obj/item/radio/headset/headset_sec/alt
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/fedora/det_hat
-	mask = /obj/item/cigarette
 	neck = /obj/item/clothing/neck/tie/detective
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	l_pocket = /obj/item/toy/crayon/white
-	r_pocket = /obj/item/lighter
 
 	chameleon_extras = list(
 		/obj/item/clothing/glasses/sunglasses,
@@ -79,12 +77,3 @@
 	implants = list(/obj/item/implant/mindshield)
 
 	skillchips = list(/obj/item/skillchip/job/detectives_taste)
-
-/datum/outfit/job/detective/post_equip(mob/living/carbon/human/H, visuals_only = FALSE)
-	..()
-	var/obj/item/cigarette/cig = H.wear_mask
-	if(istype(cig)) //Some species specfic changes can mess this up (plasmamen)
-		cig.light("")
-
-	if(visuals_only)
-		return

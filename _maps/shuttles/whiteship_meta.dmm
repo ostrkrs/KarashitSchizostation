@@ -424,7 +424,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -433,7 +433,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/washing_machine,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -683,14 +683,14 @@
 	req_access = null
 	},
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned/bridge)
 "cg" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 1
 	},
 /obj/machinery/computer/shuttle/white_ship/bridge{
@@ -773,7 +773,7 @@
 /area/shuttle/abandoned/bar)
 "cv" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /obj/structure/table,
@@ -865,7 +865,7 @@
 	name = "Bridge Blast Door Control";
 	pixel_x = 6
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned/bridge)
 "cG" = (
@@ -876,7 +876,7 @@
 	y_offset = -8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,

@@ -37,7 +37,7 @@
 /area/ruin/powered/shuttle/medium_1)
 "m" = (
 /obj/machinery/sleeper,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "n" = (
@@ -48,7 +48,7 @@
 /turf/open/floor/iron,
 /area/ruin/powered/shuttle/medium_1)
 "p" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "s" = (
@@ -72,7 +72,7 @@
 "E" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "R" = (

@@ -121,11 +121,16 @@
 
 /obj/item/clothing/head/soft/sec
 	name = "security cap"
-	desc = "It's a robust baseball hat in tasteful red colour."
+	desc = "It's a baseball hat in tasteful navy-blue colour."
 	icon_state = "secsoft"
 	soft_type = "sec"
-	armor_type = /datum/armor/cosmetic_sec
-	strip_delay = 6 SECONDS
+	dog_fashion = null
+
+/obj/item/clothing/head/soft/iso
+	name = "bodyguard's cap"
+	desc = "It's a baseball hat in tasteful red colour."
+	icon_state = "redsecsoft"
+	soft_type = "redsec"
 	dog_fashion = null
 
 /obj/item/clothing/head/soft/veteran
@@ -133,8 +138,6 @@
 	desc = "It's a robust baseball hat in tasteful black colour with a golden connotation to \"REMEMBER\"."
 	icon_state = "veteransoft"
 	soft_type = "veteran"
-	armor_type = /datum/armor/cosmetic_sec
-	strip_delay = 6 SECONDS
 	dog_fashion = null
 
 /obj/item/clothing/head/soft/paramedic

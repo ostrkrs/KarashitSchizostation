@@ -642,9 +642,6 @@
 /obj/effect/turf_decal/stripes/full,
 /turf/open/floor/plating,
 /area/centcom/basketball)
-"WM" = (
-/turf/closed/indestructible/reinforced/titanium,
-/area/centcom/basketball)
 "Xm" = (
 /obj/structure/table,
 /obj/item/clothing/glasses/sunglasses{
@@ -727,7 +724,6 @@ tO
 tO
 Tc
 Tc
-WM
 Tc
 Tc
 Tc
@@ -737,7 +733,8 @@ Tc
 Tc
 Tc
 Tc
-WM
+Tc
+Tc
 Tc
 Tc
 tO
@@ -1267,7 +1264,6 @@ tO
 tO
 Tc
 Tc
-WM
 Tc
 Tc
 Tc
@@ -1277,7 +1273,8 @@ Tc
 Tc
 Tc
 Tc
-WM
+Tc
+Tc
 Tc
 Tc
 tO

@@ -61,7 +61,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/folder/blue,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -119,7 +119,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/cell_charger,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/airless,
@@ -210,7 +210,7 @@
 "vu" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "vW" = (
@@ -225,7 +225,7 @@
 /obj/structure/fluff/paper/stack{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -258,7 +258,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "CC" = (
@@ -398,7 +398,7 @@
 "OK" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -416,7 +416,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "PT" = (
@@ -427,7 +427,7 @@
 "Qx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/cup/glass/mug,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "SB" = (
@@ -459,7 +459,7 @@
 /obj/item/paper_bin{
 	total_paper = 20
 	},
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -472,7 +472,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/disk/holodisk/donutstation/whiteship,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "YO" = (

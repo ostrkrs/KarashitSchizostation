@@ -138,7 +138,7 @@
 	dir = 1;
 	name = "Shuttle computer"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "am" = (
@@ -210,7 +210,7 @@
 	dir = 1;
 	name = "Shuttle computer"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "aG" = (
@@ -223,12 +223,12 @@
 /area/shuttle/arrival)
 "aI" = (
 /obj/structure/closet/wardrobe/grey,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "aK" = (
 /obj/structure/closet/wardrobe/yellow,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -273,25 +273,25 @@
 /area/shuttle/arrival)
 "aU" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "aX" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "aY" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron,
 /area/shuttle/arrival)
 "aZ" = (
 /obj/structure/chair/office,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron,

@@ -26,7 +26,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "dV" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white/corner/airless,
@@ -93,7 +93,7 @@
 /turf/open/floor/iron/white/airless,
 /area/ruin/space/has_grav)
 "jk" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/corner/airless{
@@ -252,7 +252,7 @@
 /area/ruin/space/has_grav)
 "Cc" = (
 /obj/machinery/light/broken/directional/west,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/corner/airless{
@@ -459,7 +459,7 @@
 /area/ruin/space/has_grav)
 "Si" = (
 /obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white/corner/airless{
@@ -511,7 +511,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "Yt" = (
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white/airless,
 /area/ruin/space/has_grav)
 "Yu" = (

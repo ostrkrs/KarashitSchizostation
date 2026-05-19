@@ -778,7 +778,7 @@
 /area/awaymission/research/interior/secure)
 "dP" = (
 /mob/living/basic/trooper/syndicate/ranged/smg,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "dR" = (
@@ -1835,27 +1835,27 @@
 /area/awaymission/research/interior/dorm)
 "iZ" = (
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "ja" = (
 /obj/machinery/sleeper,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jb" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jc" = (
 /obj/structure/table,
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "je" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1865,11 +1865,11 @@
 /area/awaymission/research/interior/medbay)
 "jg" = (
 /obj/structure/sink/directional/east,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jh" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jj" = (
@@ -1908,40 +1908,40 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "js" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "jt" = (
 /obj/machinery/door/airlock/medical{
 	name = "Medical"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "ju" = (
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jv" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jx" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jz" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jB" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1990,7 +1990,7 @@
 "jS" = (
 /obj/structure/table,
 /obj/item/surgical_drapes,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2055,7 +2055,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "ke" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2064,33 +2064,33 @@
 /obj/machinery/door/airlock/medical{
 	name = "Medical"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "kg" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kh" = (
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "ki" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kl" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2098,7 +2098,7 @@
 "km" = (
 /obj/structure/table,
 /obj/item/saw,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2106,13 +2106,13 @@
 "kn" = (
 /obj/structure/table,
 /obj/item/scalpel,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "ko" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2162,7 +2162,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "kw" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2172,21 +2172,21 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kz" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kA" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2217,12 +2217,12 @@
 /area/awaymission/research/interior/medbay)
 "kN" = (
 /obj/machinery/vending/cola,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kO" = (
 /obj/structure/chair/comfy/beige,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kP" = (
@@ -2231,7 +2231,7 @@
 	oxy_damage = 55
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kR" = (
@@ -2245,7 +2245,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "kW" = (
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kX" = (
@@ -2253,24 +2253,24 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kY" = (
 /obj/machinery/vending/coffee,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kZ" = (
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "la" = (
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2278,7 +2278,7 @@
 "lb" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2290,21 +2290,21 @@
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lf" = (
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lh" = (
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2312,7 +2312,7 @@
 "li" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2321,7 +2321,7 @@
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2340,7 +2340,7 @@
 /area/awaymission/research/interior/dorm)
 "lq" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2365,7 +2365,7 @@
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2373,7 +2373,7 @@
 "lx" = (
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes/dromedaryco,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2396,35 +2396,35 @@
 /area/awaymission/research/interior/dorm)
 "lC" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lD" = (
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lG" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lH" = (
 /obj/machinery/vending/cigarette,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lI" = (
 /obj/machinery/vending/snack,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2433,7 +2433,7 @@
 /obj/structure/closet/crate/bin,
 /obj/item/trash/can,
 /obj/item/trash/chips,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2916,7 +2916,7 @@
 /area/awaymission/research/interior/security)
 "qZ" = (
 /obj/structure/chair/stool/directional/west,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "rh" = (
@@ -2932,7 +2932,7 @@
 /area/awaymission/research/interior/security)
 "ry" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "rB" = (
@@ -2942,7 +2942,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "rK" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
@@ -2960,7 +2960,7 @@
 /obj/machinery/door/airlock/medical{
 	name = "Medical Storage"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "su" = (
@@ -2970,7 +2970,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "sM" = (
@@ -2991,7 +2991,7 @@
 "tv" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "tE" = (
@@ -3001,7 +3001,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -3025,7 +3025,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "ut" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "va" = (
@@ -3053,7 +3053,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "vT" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "vX" = (
@@ -3080,7 +3080,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "wN" = (
@@ -3161,7 +3161,7 @@
 /area/awaymission/research/interior)
 "yn" = (
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /obj/structure/cable,
@@ -3198,7 +3198,7 @@
 /area/awaymission/research/interior/cryo)
 "zU" = (
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /obj/structure/cable,
@@ -3216,7 +3216,7 @@
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
 /obj/item/storage/medkit/toxin,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -3224,7 +3224,7 @@
 "Bp" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Bx" = (
@@ -3274,7 +3274,7 @@
 /area/awaymission/research/interior/genetics)
 "Cu" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -3298,7 +3298,7 @@
 "CV" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "CW" = (
@@ -3340,7 +3340,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "Em" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
@@ -3375,7 +3375,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Fn" = (
@@ -3468,14 +3468,14 @@
 /area/awaymission/research/interior)
 "It" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "Iv" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "IN" = (
@@ -3604,14 +3604,14 @@
 /obj/structure/table,
 /obj/item/storage/medkit/brute,
 /obj/item/storage/medkit/fire,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Le" = (
 /obj/structure/table/optable,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Lm" = (
@@ -3663,12 +3663,12 @@
 /obj/machinery/door/airlock/medical{
 	name = "Medical Surgery"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "NF" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "NI" = (
@@ -3706,7 +3706,7 @@
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -3760,7 +3760,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -3840,7 +3840,7 @@
 	brute_damage = 200
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -3858,7 +3858,7 @@
 /area/awaymission/research/exterior)
 "Th" = (
 /mob/living/basic/trooper/syndicate,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Tj" = (
@@ -3875,7 +3875,7 @@
 /area/awaymission/research/interior/genetics)
 "TC" = (
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "TD" = (
@@ -4065,7 +4065,7 @@
 	brute_damage = 200
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Yz" = (
@@ -4092,7 +4092,7 @@
 /area/awaymission/research/interior/escapepods)
 "ZJ" = (
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 

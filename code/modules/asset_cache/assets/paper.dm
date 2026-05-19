@@ -12,6 +12,7 @@
 		"stamp-rd" = 'icons/stamp_icons/large_stamp-rd.png',
 		"stamp-cap" = 'icons/stamp_icons/large_stamp-cap.png',
 		"stamp-qm" = 'icons/stamp_icons/large_stamp-qm.png',
+		"stamp-steward" = 'icons/stamp_icons/large_stamp-steward.png',
 		"stamp-law" = 'icons/stamp_icons/large_stamp-law.png',
 		"stamp-chap" = 'icons/stamp_icons/large_stamp-chap.png',
 		"stamp-mime" = 'icons/stamp_icons/large_stamp-mime.png',

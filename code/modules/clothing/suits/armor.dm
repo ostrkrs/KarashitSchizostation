@@ -60,6 +60,9 @@
 /obj/item/clothing/suit/armor/vest/alt/sec
 	icon_state = "armor_sec"
 
+/obj/item/clothing/suit/armor/vest/alt/iso
+	icon_state = "armor_iso"
+
 /obj/item/clothing/suit/armor/vest/press
 	name = "press armor vest"
 	desc = "A blue armor vest used to distinguish <i>non-combatant</i> \"PRESS\" members, like if anyone cares."
@@ -210,12 +213,12 @@
 
 /obj/item/clothing/suit/armor/vest/warden/alt
 	name = "warden's armored jacket"
-	desc = "A red jacket with silver rank pips and body armor strapped on top."
+	desc = "A navy-blue jacket with silver rank pips and body armor strapped on top."
 	icon_state = "warden_jacket"
 
 /obj/item/clothing/suit/armor/vest/secjacket
 	name = "security jacket"
-	desc = "A red jacket in red Security colors. It has hi-vis stripes all over it."
+	desc = "A jacket in navy-blue Security colors. It has hi-vis stripes all over it."
 	icon_state = "secjacket"
 	inhand_icon_state = "armor"
 	armor_type = /datum/armor/armor_secjacket
@@ -242,7 +245,7 @@
 
 /obj/item/clothing/suit/armor/vest/leather
 	name = "security overcoat"
-	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of Nanotrasen Security."
+	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of the Security department."
 	icon_state = "leathercoat-sec"
 	inhand_icon_state = "hostrench"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS

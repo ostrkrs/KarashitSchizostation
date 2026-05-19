@@ -8,7 +8,7 @@
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Nanotrasen officials and Space Law"
+	supervisors = "the Solstice Reach Headquarters and Space Law"
 	required_character_age = 38
 	req_admin_notify = 1
 	minimal_player_age = 14
@@ -73,7 +73,6 @@
 		)
 	belt = /obj/item/modular_computer/pda/heads/captain
 	ears = /obj/item/radio/headset/heads/captain/alt
-	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/captain
 	head = /obj/item/clothing/head/hats/caphat
 	shoes = /obj/item/clothing/shoes/laceup

@@ -1931,6 +1931,12 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_sec
 	normal_integrity = 450
 
+/obj/machinery/door/airlock/law
+	name = "law and order airlock"
+	icon = 'icons/obj/doors/airlocks/station/law.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_sec
+	normal_integrity = 450
+
 /obj/machinery/door/airlock/engineering
 	name = "engineering airlock"
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi'
@@ -2024,6 +2030,12 @@
 
 /obj/machinery/door/airlock/security/glass
 	name = "security glass airlock"
+	opacity = FALSE
+	glass = TRUE
+	normal_integrity = 400
+
+/obj/machinery/door/airlock/law/glass
+	name = "law and order glass airlock"
 	opacity = FALSE
 	glass = TRUE
 	normal_integrity = 400

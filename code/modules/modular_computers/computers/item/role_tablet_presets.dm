@@ -52,7 +52,7 @@
 	name = "head of security PDA"
 	icon_state = "/obj/item/modular_computer/pda/heads/hos"
 	greyscale_config = /datum/greyscale_config/tablet/head
-	greyscale_colors = "#EA3232#0000CC"
+	greyscale_colors = "#4586af#FFF5ED"
 	inserted_item = /obj/item/pen/fountain/hos
 	starting_programs = list(
 		/datum/computer_file/program/records/security,
@@ -74,7 +74,7 @@
 	name = "chief medical officer PDA"
 	icon_state = "/obj/item/modular_computer/pda/heads/cmo"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
-	greyscale_colors = "#FAFAFA#000099#3F96CC"
+	greyscale_colors = "#FAFAFA#000099#05887d"
 	inserted_item = /obj/item/pen/fountain/cmo
 	starting_programs = list(
 		/datum/computer_file/program/maintenance/phys_scanner,
@@ -110,10 +110,33 @@
 	icon_state = "/obj/item/modular_computer/pda/heads/steward"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick/head
 	greyscale_colors = "#50E193#18191e#8b4c31"
-	inserted_item = /obj/item/pen/fountain
+	inserted_item = /obj/item/pen/fountain/steward
 	stored_paper = 20
 	starting_programs = list(
 		/datum/computer_file/program/restock_tracker,
+	)
+
+/obj/item/modular_computer/pda/heads/iaa
+	name = "internal affairs agent PDA"
+	greyscale_config = /datum/greyscale_config/tablet/stripe_double
+	greyscale_colors = "#CB0000#0000CC#FFF5ED"
+	inserted_item = /obj/item/pen/fountain
+	starting_programs = list(
+		/datum/computer_file/program/records/security,
+	)
+
+/obj/item/modular_computer/pda/heads/iaa/Initialize(mapload)
+	. = ..()
+	for(var/datum/computer_file/program/messenger/messenger_app in stored_files)
+		messenger_app.spam_mode = TRUE
+
+/obj/item/modular_computer/pda/iso
+	name = "internal security operative PDA"
+	greyscale_config = /datum/greyscale_config/tablet/stripe_thick
+	greyscale_colors = "#CB0000#0000CC#FFF5ED"
+	inserted_item = /obj/item/pen/fountain
+	starting_programs = list(
+		/datum/computer_file/program/records/security,
 	)
 
 /**
@@ -122,7 +145,7 @@
 
 /obj/item/modular_computer/pda/security
 	name = "security PDA"
-	greyscale_colors = "#EA3232#0000cc"
+	greyscale_colors = "#4586af#0000CC"
 	inserted_item = /obj/item/pen/red/security
 	starting_programs = list(
 		/datum/computer_file/program/records/security,
@@ -142,7 +165,7 @@
 	name = "warden PDA"
 	icon_state = "/obj/item/modular_computer/pda/warden"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_double
-	greyscale_colors = "#EA3232#0000CC#363636"
+	greyscale_colors = "#4586af#0000CC#FFF5ED"
 	inserted_item = /obj/item/pen/red/security
 	starting_programs = list(
 		/datum/computer_file/program/records/security,
@@ -219,21 +242,23 @@
 	name = "medical PDA"
 	icon_state = "/obj/item/modular_computer/pda/medical"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick
-	greyscale_colors = "#FAFAFA#000099#3F96CC"
+	greyscale_colors = "#FAFAFA#000099#05887d"
 	starting_programs = list(
 		/datum/computer_file/program/records/medical,
 		/datum/computer_file/program/robocontrol,
 	)
+	inserted_item = /obj/item/flashlight/pen
 
 /obj/item/modular_computer/pda/medical/paramedic
 	name = "paramedic PDA"
 	icon_state = "/obj/item/modular_computer/pda/medical/paramedic"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_double
-	greyscale_colors = "#28334D#000099#3F96CC"
+	greyscale_colors = "#073f3a#000099#05887d"
 	starting_programs = list(
 		/datum/computer_file/program/records/medical,
 		/datum/computer_file/program/radar/lifeline,
 	)
+	inserted_item = /obj/item/flashlight/pen/paramedic
 
 /obj/item/modular_computer/pda/chemist
 	name = "chemist PDA"
@@ -245,7 +270,7 @@
 	name = "coroner PDA"
 	icon_state = "/obj/item/modular_computer/pda/coroner"
 	greyscale_config = /datum/greyscale_config/tablet/stripe_thick
-	greyscale_colors = "#FAFAFA#000099#1f2026"
+	greyscale_colors = "#FAFAFA#000099#1f2626"
 	starting_programs = list(
 		/datum/computer_file/program/records/medical,
 	)
@@ -302,19 +327,6 @@
 	icon_state = "/obj/item/modular_computer/pda/chaplain"
 	greyscale_config = /datum/greyscale_config/tablet/chaplain
 	greyscale_colors = "#333333#D11818"
-
-/obj/item/modular_computer/pda/iaa
-	name = "internal affairs agent PDA"
-	greyscale_colors = "#4C76C8#FFE243"
-	inserted_item = /obj/item/pen/fountain
-	starting_programs = list(
-		/datum/computer_file/program/records/security,
-	)
-
-/obj/item/modular_computer/pda/iaa/Initialize(mapload)
-	. = ..()
-	for(var/datum/computer_file/program/messenger/messenger_app in stored_files)
-		messenger_app.spam_mode = TRUE
 
 /obj/item/modular_computer/pda/botanist
 	name = "botanist PDA"

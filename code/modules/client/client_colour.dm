@@ -241,6 +241,9 @@
 /datum/client_colour/glass_colour/lightgreen
 	color = "#ccffcc"
 
+/datum/client_colour/glass_colour/darkblue
+	color = "#8989e6"
+
 /datum/client_colour/glass_colour/blue
 	color = "#aaaaff"
 

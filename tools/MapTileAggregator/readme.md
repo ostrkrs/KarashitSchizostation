@@ -6,8 +6,8 @@ This tool aggregates or "flattens" out turf_decal tiles on a map. For example, l
 "qp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
     dir = 4
     },
 /turf/open/floor/iron{
@@ -16,13 +16,13 @@ This tool aggregates or "flattens" out turf_decal tiles on a map. For example, l
 /area/shuttle/caravan/freighter1)
 ```
 
-This tool will just turn those two separate `/obj/effect/turf_decal/tile/blue` into one `/obj/effect/turf_decal/tile/blue/half/contrasted` with the correct dir, like so:
+This tool will just turn those two separate `/obj/effect/turf_decal/tile/light_blue` into one `/obj/effect/turf_decal/tile/light_blue/half/contrasted` with the correct dir, like so:
 
 ```txt
 "qp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
     dir = 4
     },
 /turf/open/floor/iron{

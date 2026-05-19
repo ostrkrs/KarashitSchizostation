@@ -40,7 +40,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment{
@@ -52,7 +52,7 @@
 "h" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/tile/purple/half/contrasted,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/structure/closet/crate/trashcart/filled,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
@@ -103,9 +103,9 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/purple/half/contrasted,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/structure/closet/crate/trashcart/filled,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/mineral/stacking_unit_console{
 	pixel_x = 64
@@ -149,7 +149,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -171,7 +171,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /obj/effect/spawner/random/trash/mess,
@@ -249,7 +249,7 @@
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/broken_floor,
@@ -281,7 +281,7 @@
 /area/template_noop)
 "G" = (
 /obj/effect/turf_decal/tile/purple,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -305,7 +305,7 @@
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/tile/purple/half/contrasted,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/structure/sign/poster/random/directional/south,
 /obj/structure/closet/crate/trashcart/filled,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -433,7 +433,7 @@
 /area/template_noop)
 "V" = (
 /obj/effect/turf_decal/tile/purple/half/contrasted,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
 /area/template_noop)

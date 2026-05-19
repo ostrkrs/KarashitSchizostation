@@ -1093,7 +1093,7 @@
 /area/awaymission/undergroundoutpost45/central)
 "eW" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
 	dir = 8
 	},
@@ -3271,7 +3271,7 @@
 /area/awaymission/undergroundoutpost45/research)
 "mS" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 1
 	},
@@ -4357,7 +4357,7 @@
 /obj/machinery/computer/atmos_control/noreconnect{
 	atmos_chambers = list("uo45air"="Air Supply")
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -4369,7 +4369,7 @@
 /obj/machinery/atmospherics/components/trinary/mixer/airmix{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/cafeteria,
@@ -5045,7 +5045,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "sS" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 4
 	},
@@ -5146,7 +5146,7 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "tv" = (
 /obj/machinery/portable_atmospherics/pump,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer4{
@@ -5396,7 +5396,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/engineering)
 "up" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/trinary/filter/on/layer2{
@@ -5409,7 +5409,7 @@
 	atmos_chambers = list("uo45o2"="Oxygen Supply");
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /turf/open/floor/iron,

@@ -131,6 +131,23 @@
 	ambience_index = AMBIENCE_ENGI
 
 /*
+* Command - Law
+*/
+
+/area/station/command/law
+	name = "\improper Law Office"
+	icon_state = "law"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/area/station/command/law/iaa
+	name = "\improper Internal Affairs Agent's Office"
+	icon_state = "iaa"
+
+/area/station/command/law/iso
+	name = "\improper Internal Security Operative's Office"
+	icon_state = "iso"
+
+/*
 * Command - Misc
 */
 

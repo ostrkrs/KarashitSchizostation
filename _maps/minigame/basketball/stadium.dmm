@@ -7,8 +7,8 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/line,
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -24,10 +24,10 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/warning{
+/obj/effect/turf_decal/trimline/light_blue/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/arrow_ccw,
+/obj/effect/turf_decal/trimline/light_blue/filled/arrow_ccw,
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "bA" = (
@@ -65,7 +65,7 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "dJ" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 8
 	},
 /turf/open/floor/wood/parquet,
@@ -78,8 +78,8 @@
 /area/centcom/basketball)
 "dS" = (
 /obj/effect/turf_decal/stripes/white/line,
-/obj/effect/turf_decal/trimline/blue/warning,
-/obj/effect/turf_decal/trimline/blue/filled/shrink_cw{
+/obj/effect/turf_decal/trimline/light_blue/warning,
+/obj/effect/turf_decal/trimline/light_blue/filled/shrink_cw{
 	dir = 1
 	},
 /turf/open/floor/wood/parquet,
@@ -158,7 +158,7 @@
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "jr" = (
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 9
 	},
 /obj/effect/landmark/basketball/team_spawn/away,
@@ -174,7 +174,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 5
 	},
 /turf/open/floor/wood/parquet,
@@ -189,13 +189,13 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "kT" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/corner{
+/obj/effect/turf_decal/trimline/light_blue/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -208,7 +208,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 6
 	},
 /turf/open/floor/wood/parquet,
@@ -240,11 +240,11 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "nE" = (
@@ -256,17 +256,17 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 4
 	},
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "oh" = (
 /obj/effect/turf_decal/stripes/white/line,
-/obj/effect/turf_decal/trimline/blue/filled/warning,
+/obj/effect/turf_decal/trimline/light_blue/filled/warning,
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "oR" = (
@@ -293,7 +293,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
 /turf/open/floor/wood/parquet,
@@ -351,8 +351,8 @@
 /area/centcom/basketball)
 "uW" = (
 /obj/effect/turf_decal/stripes/white/line,
-/obj/effect/turf_decal/trimline/blue/warning,
-/obj/effect/turf_decal/trimline/blue/filled/arrow_cw{
+/obj/effect/turf_decal/trimline/light_blue/warning,
+/obj/effect/turf_decal/trimline/light_blue/filled/arrow_cw{
 	dir = 1
 	},
 /turf/open/floor/wood/parquet,
@@ -361,13 +361,13 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -388,13 +388,13 @@
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "zy" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -426,7 +426,7 @@
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "Bd" = (
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 10
 	},
 /obj/effect/landmark/basketball/team_spawn/away,
@@ -482,7 +482,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 4
 	},
 /obj/effect/landmark/basketball/team_spawn/away_hoop,
@@ -513,7 +513,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 9
 	},
 /turf/open/floor/wood/parquet,
@@ -577,11 +577,11 @@
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "Ma" = (
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/corner,
-/obj/effect/turf_decal/trimline/blue/filled/corner,
+/obj/effect/turf_decal/trimline/light_blue/corner,
+/obj/effect/turf_decal/trimline/light_blue/filled/corner,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "MS" = (
@@ -650,10 +650,10 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/warning{
+/obj/effect/turf_decal/trimline/light_blue/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/shrink_ccw,
+/obj/effect/turf_decal/trimline/light_blue/filled/shrink_ccw,
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "Qh" = (
@@ -710,7 +710,7 @@
 /area/centcom/basketball)
 "Uv" = (
 /obj/effect/turf_decal/stripes/white/line,
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 10
 	},
 /turf/open/floor/wood/parquet,
@@ -764,7 +764,7 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "YH" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 8
 	},
 /obj/effect/landmark/basketball/team_spawn/away,

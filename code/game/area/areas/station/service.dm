@@ -172,11 +172,6 @@
 * Misc/Unsorted Rooms
 */
 
-/area/station/service/lawoffice
-	name = "\improper Law Office"
-	icon_state = "law"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
-
 /area/station/service/janitor
 	name = "\improper Custodial Closet"
 	icon_state = "janitor"

@@ -238,10 +238,6 @@
 	},
 /turf/open/floor/plating/abductor,
 /area/virtual_domain)
-"IC" = (
-/obj/structure/table/abductor,
-/turf/open/floor/plating/abductor,
-/area/virtual_domain)
 "JC" = (
 /obj/item/organ/tail/cat,
 /turf/open/floor/plating/abductor,
@@ -516,8 +512,8 @@ YV
 kN
 lW
 uw
-IC
-IC
+gO
+gO
 uw
 lW
 kN
@@ -1301,7 +1297,7 @@ YV
 YV
 Fy
 WS
-IC
+gO
 YV
 YV
 YV

@@ -488,7 +488,7 @@
 "cl" = (
 /obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/decal/cleanable/cobweb,
 /obj/structure/sign/poster/official/periodic_table/directional/west,
 /turf/open/floor/iron/white,
@@ -568,7 +568,7 @@
 "cD" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -1101,7 +1101,7 @@
 /area/centcom/central_command_areas/courtroom)
 "eV" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/item/taperecorder,
 /turf/open/floor/iron/grimy,
 /area/centcom/central_command_areas/briefing)
@@ -1574,7 +1574,7 @@
 "ho" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -1704,7 +1704,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/item/taperecorder,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/ferry)
 "ih" = (
@@ -3495,7 +3495,7 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "qc" = (
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/item/taperecorder,
 /obj/structure/table/wood,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -5269,7 +5269,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
 "xN" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "xR" = (
@@ -5434,7 +5434,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "yA" = (
@@ -5543,7 +5543,7 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/observation)
 "yX" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
 /turf/open/floor/iron/white/textured,
@@ -5570,7 +5570,7 @@
 /area/centcom/central_command_areas/courtroom)
 "zf" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/item/taperecorder,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -5722,7 +5722,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "zG" = (
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "zH" = (
@@ -5739,7 +5739,7 @@
 /obj/item/clothing/gloves/latex,
 /obj/item/clothing/mask/surgical,
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -5747,13 +5747,13 @@
 "zI" = (
 /obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/control)
 "zJ" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -5763,7 +5763,7 @@
 	dir = 8
 	},
 /obj/machinery/firealarm/directional/east,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -5886,7 +5886,7 @@
 "Aq" = (
 /obj/structure/table/optable,
 /obj/item/surgical_drapes,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -5901,7 +5901,7 @@
 	dir = 8
 	},
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -5926,7 +5926,7 @@
 /obj/item/storage/box/bodybags{
 	pixel_x = 4
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "AC" = (
@@ -6006,7 +6006,7 @@
 	dir = 4
 	},
 /obj/machinery/status_display/ai/directional/west,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -6162,7 +6162,7 @@
 /obj/item/defibrillator/loaded,
 /obj/structure/table/reinforced,
 /obj/machinery/status_display/evac/directional/west,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -6199,7 +6199,7 @@
 	pixel_y = 8
 	},
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -6411,7 +6411,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "CH" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -6518,7 +6518,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -6577,7 +6577,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "Dv" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -6648,7 +6648,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -6740,7 +6740,7 @@
 /obj/structure/bodycontainer/morgue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "Ex" = (
@@ -7070,7 +7070,7 @@
 	pixel_x = 4;
 	pixel_y = -5
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "Gl" = (
@@ -7334,7 +7334,7 @@
 "HR" = (
 /obj/structure/bed/medical/emergency,
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
@@ -7970,7 +7970,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
 "LI" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -8260,7 +8260,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/supply)
 "Nm" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -8651,7 +8651,7 @@
 /turf/open/floor/iron/white,
 /area/centcom/tdome/observation)
 "OW" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -8852,7 +8852,7 @@
 /area/centcom/central_command_areas/ferry)
 "PJ" = (
 /obj/structure/closet/crate/freezer/blood,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -8933,7 +8933,7 @@
 "Qb" = (
 /obj/structure/table/wood,
 /obj/item/folder/red,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash/handheld,
 /obj/machinery/airalarm/directional/south,
@@ -9180,7 +9180,7 @@
 /area/centcom/tdome/observation)
 "Ri" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/item/taperecorder,
 /obj/machinery/firealarm/directional/east,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -9284,7 +9284,7 @@
 	pixel_y = 3
 	},
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -9389,7 +9389,7 @@
 /area/centcom/tdome/observation)
 "RX" = (
 /obj/item/kirbyplants/organic/plant22,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/control)
 "Sd" = (
@@ -10053,7 +10053,7 @@
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "Vi" = (
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /obj/structure/table/wood,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/dark,
@@ -10760,7 +10760,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm/directional/east,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,

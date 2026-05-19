@@ -11,7 +11,7 @@
 	},
 /area/shuttle/escape)
 "cm" = (
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_half,
@@ -30,14 +30,14 @@
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "dQ" = (
 /obj/machinery/computer/operating,
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_half,
@@ -68,14 +68,14 @@
 /area/shuttle/escape)
 "gt" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/half,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white/smooth_half,
 /area/shuttle/escape)
 "gI" = (
 /obj/effect/turf_decal/trimline/white/filled/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -96,7 +96,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_half{
@@ -119,7 +119,7 @@
 "nt" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/directional/north,
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_corner,
@@ -130,7 +130,7 @@
 /obj/effect/spawner/surgery_tray/full{
 	pixel_y = 13
 	},
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /obj/item/radio/intercom/directional/south,
@@ -190,7 +190,7 @@
 /area/shuttle/escape)
 "qK" = (
 /obj/machinery/stasis,
-/obj/effect/turf_decal/tile/blue/anticorner,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/white/smooth_corner{
 	dir = 1
 	},
@@ -214,7 +214,7 @@
 	},
 /area/shuttle/escape)
 "si" = (
-/obj/effect/turf_decal/tile/blue/half,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white/smooth_half,
 /area/shuttle/escape)
 "tq" = (
@@ -254,7 +254,7 @@
 /area/shuttle/escape)
 "xe" = (
 /obj/machinery/stasis,
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/smooth_corner{
@@ -298,7 +298,7 @@
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/shuttle/escape)
 "CZ" = (
-/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular,
 /turf/open/floor/iron/dark,
@@ -307,7 +307,7 @@
 /obj/effect/turf_decal/trimline/white/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -316,7 +316,7 @@
 /obj/machinery/computer/crew{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/end,
+/obj/effect/turf_decal/trimline/light_blue/filled/end,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Do" = (
@@ -338,7 +338,7 @@
 /area/shuttle/escape)
 "DJ" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_half,
@@ -499,7 +499,7 @@
 /area/shuttle/escape)
 "Rb" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/turf_decal/trimline/blue/filled/end{
+/obj/effect/turf_decal/trimline/light_blue/filled/end{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -576,7 +576,7 @@
 	pixel_y = -3
 	},
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/half,
+/obj/effect/turf_decal/tile/light_blue/half,
 /obj/item/storage/medkit/advanced{
 	pixel_x = 3;
 	pixel_y = 3
@@ -587,7 +587,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /obj/machinery/light/directional/east,

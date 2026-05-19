@@ -320,7 +320,7 @@
 /area/shuttle/escape)
 "qo" = (
 /obj/machinery/stasis,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -345,7 +345,7 @@
 "sg" = (
 /obj/effect/turf_decal/delivery,
 /obj/vehicle/ridden/wheelchair,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -361,7 +361,7 @@
 /area/shuttle/escape)
 "tE" = (
 /obj/structure/bed/medical/emergency,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 1
 	},
 /obj/machinery/light/directional/west,
@@ -383,7 +383,7 @@
 /obj/item/surgicaldrill,
 /obj/item/cautery,
 /obj/item/clothing/gloves/latex,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "ui" = (
@@ -509,7 +509,7 @@
 "Dx" = (
 /obj/structure/table/optable,
 /obj/item/surgical_drapes,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -542,7 +542,7 @@
 	pixel_y = -3
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "EL" = (
@@ -586,7 +586,7 @@
 /obj/machinery/shower/directional/south,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -621,7 +621,7 @@
 /area/shuttle/escape)
 "Hq" = (
 /obj/item/radio/intercom/directional/west,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -714,7 +714,7 @@
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "NO" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -752,14 +752,14 @@
 /area/shuttle/escape)
 "Ru" = (
 /obj/machinery/wall_healer/free/directional/west,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "RB" = (
 /obj/machinery/stasis,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "RL" = (
@@ -786,7 +786,7 @@
 /area/shuttle/escape)
 "TK" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = -4;
 	pixel_y = 4
 	},
@@ -807,7 +807,7 @@
 "Ub" = (
 /obj/structure/table,
 /obj/item/defibrillator/loaded,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -834,7 +834,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Uz" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/white,

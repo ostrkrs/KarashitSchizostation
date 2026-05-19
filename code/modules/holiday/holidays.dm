@@ -352,7 +352,6 @@ GLOBAL_LIST_INIT(holiday_mail, list())
 	name = "Doctor's Day"
 	begin_day = 1
 	begin_month = JULY
-	holiday_hat = /obj/item/clothing/head/costume/nursehat
 	holiday_mail = list(
 		/obj/item/stack/medical/gauze,
 		/obj/item/stack/medical/ointment,

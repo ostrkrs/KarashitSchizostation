@@ -10,8 +10,8 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/structure/mop_bucket/janitorialcart,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -25,8 +25,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "bW" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/table,
 /obj/item/food/pizza{
 	pixel_y = 6
@@ -34,8 +34,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "cn" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/item/toy/balloon{
 	pixel_x = 7;
 	pixel_y = 2
@@ -62,8 +62,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "dN" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/blood/tracks/xeno,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -78,9 +78,9 @@
 "eE" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/structure/closet/gmcloset,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/structure/closet/barcloset,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -106,8 +106,8 @@
 /turf/open/floor/iron/kitchen/small,
 /area/virtual_domain)
 "fz" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/table,
 /obj/item/pizzabox/bomb/armed{
 	pixel_x = 3;
@@ -203,8 +203,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "lS" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -215,8 +215,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "ms" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -245,9 +245,9 @@
 "nP" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/structure/closet/gmcloset,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/structure/closet/barcloset,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/item/clothing/mask/animal/small/bear/cursed,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -258,8 +258,8 @@
 "ob" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -269,8 +269,8 @@
 /turf/open/floor/wood,
 /area/virtual_domain)
 "oO" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/chair/greyscale{
 	dir = 4
 	},
@@ -343,8 +343,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain/protected_space/fullbright)
 "rY" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
@@ -354,7 +354,7 @@
 /turf/template_noop,
 /area/virtual_domain)
 "si" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/table,
 /obj/item/balloon_mallet,
 /turf/open/floor/iron/kitchen,
@@ -381,13 +381,13 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "to" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "tC" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/table,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -425,10 +425,6 @@
 /obj/structure/railing,
 /turf/open/floor/wood,
 /area/virtual_domain)
-"vm" = (
-/obj/effect/landmark/bitrunning/cache_spawn,
-/turf/open/floor/wood,
-/area/virtual_domain)
 "vs" = (
 /obj/structure/closet/secure_closet/freezer/cream_pie,
 /turf/open/floor/iron/kitchen/small,
@@ -450,8 +446,8 @@
 "vF" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/machinery/button/door/directional/west{
 	id = "door2"
 	},
@@ -462,8 +458,8 @@
 /turf/open/floor/iron/kitchen/small,
 /area/virtual_domain)
 "vR" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/table,
 /obj/item/trash/tray,
 /turf/open/floor/iron/kitchen,
@@ -504,8 +500,8 @@
 "yz" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "yB" = (
@@ -575,8 +571,8 @@
 /turf/template_noop,
 /area/template_noop)
 "Ct" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/machinery/light/built/directional/east,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -594,8 +590,8 @@
 /turf/open/floor/iron/cafeteria,
 /area/virtual_domain/protected_space/fullbright)
 "EO" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/chair/greyscale{
 	dir = 4
 	},
@@ -643,9 +639,9 @@
 "Hi" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/structure/closet/gmcloset,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/structure/closet/barcloset,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "Ho" = (
@@ -717,10 +713,6 @@
 	},
 /turf/template_noop,
 /area/virtual_domain/safehouse)
-"JW" = (
-/obj/structure/sign/poster/official/the_owl,
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain/protected_space/fullbright)
 "Ke" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -733,8 +725,8 @@
 /turf/open/floor/iron/kitchen/small,
 /area/virtual_domain)
 "Ln" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/chair/greyscale{
 	dir = 8
 	},
@@ -748,16 +740,16 @@
 "LU" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/machinery/button/door/directional/east{
 	id = "door1"
 	},
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "Mc" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
@@ -805,9 +797,6 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
-"NE" = (
-/turf/closed/indestructible/reinforced,
-/area/virtual_domain)
 "Od" = (
 /obj/structure/table/wood/poker,
 /obj/item/toy/cards/deck,
@@ -839,8 +828,8 @@
 /turf/open/floor/wood,
 /area/virtual_domain)
 "Qg" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/item/toy/balloon/heart,
 /obj/machinery/light/built/directional/west,
 /turf/open/floor/iron/kitchen,
@@ -891,8 +880,8 @@
 /turf/open/misc/dirt/jungle,
 /area/virtual_domain/fullbright)
 "TG" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/chair/greyscale{
 	dir = 8
 	},
@@ -972,8 +961,8 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "Yd" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/structure/chair/greyscale{
 	dir = 8
 	},
@@ -1026,8 +1015,8 @@
 /turf/open/floor/wood,
 /area/virtual_domain)
 "ZU" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /obj/effect/decal/cleanable/confetti,
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
@@ -1245,11 +1234,11 @@ Cm
 Cm
 Cm
 Uj
-vm
+dl
 OB
 OB
 OB
-vm
+dl
 Uj
 Cm
 Cm
@@ -1573,7 +1562,7 @@ Ux
 Wy
 ve
 ve
-NE
+ve
 Ux
 Ux
 Ux
@@ -1868,7 +1857,7 @@ ve
 sg
 sg
 sg
-JW
+jE
 ql
 BU
 ud
@@ -1985,7 +1974,7 @@ Cm
 Uj
 OB
 OB
-vm
+dl
 ve
 lS
 gL

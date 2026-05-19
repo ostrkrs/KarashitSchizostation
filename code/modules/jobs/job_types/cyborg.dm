@@ -6,7 +6,7 @@
 	faction = FACTION_SHIP
 	total_positions = 0
 	spawn_positions = 3
-	supervisors = "your laws and the AI" //Nodrak
+	supervisors = "your laws and the AI"
 	spawn_type = /mob/living/silicon/robot
 	minimal_player_age = 21
 	exp_requirements = 120

@@ -303,7 +303,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/warning{
+/obj/effect/turf_decal/trimline/light_blue/warning{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -363,7 +363,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/corner{
+/obj/effect/turf_decal/trimline/light_blue/corner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -590,7 +590,7 @@
 /obj/effect/turf_decal/trimline/yellow/filled/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/corner{
+/obj/effect/turf_decal/trimline/light_blue/corner{
 	dir = 8
 	},
 /turf/open/floor/iron,

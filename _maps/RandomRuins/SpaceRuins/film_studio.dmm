@@ -614,7 +614,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/film_studio/solars)
 "lp" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/structure/closet/crate/trashcart/laundry,
@@ -1407,7 +1407,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/film_studio/solars)
 "An" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/light/directional/west,
@@ -1474,7 +1474,7 @@
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/space/has_grav/film_studio/starboard)
 "BS" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/blue{
@@ -1898,7 +1898,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/film_studio/solars)
 "Hg" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/blue/corner,
@@ -2515,7 +2515,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/film_studio/dorms)
 "Rp" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/cafeteria,
@@ -2946,7 +2946,7 @@
 /turf/closed/wall,
 /area/ruin/space/has_grav/film_studio/dorms)
 "XN" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/structure/table,
@@ -2990,7 +2990,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/film_studio)
 "Yi" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/washing_machine,

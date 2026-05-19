@@ -89,6 +89,8 @@
 #define ACCESS_PSYCHOLOGY "psychology"
 /// Access for the Chief Medical Officer's personal quarters in mapping, as well as some other CMO-related things.
 #define ACCESS_CMO "cmo"
+/// Access to the Paramedic's areas and lockers.
+#define ACCESS_PARAMEDIC "paramedic"
 
 /// General access for Cargo, allows for entry to Cargo Bay and Cargo's Office.
 #define ACCESS_CARGO "cargo"
@@ -144,6 +146,8 @@
 #define ACCESS_JANITOR "janitor"
 /// Access to the IAA's office.
 #define ACCESS_IAA "internal affairs agent"
+/// Access to the ISO's office.
+#define ACCESS_ISO "internal security operative"
 /// Access used for the Steward's personal quarters in mapping.
 #define ACCESS_STEWARD "steward"
 
@@ -327,6 +331,7 @@
 	ACCESS_NETWORK, \
 	ACCESS_ORDNANCE, \
 	ACCESS_ORDNANCE_STORAGE, \
+	ACCESS_PARAMEDIC, \
 	ACCESS_PHARMACY, \
 	ACCESS_PLUMBING, \
 	ACCESS_PSYCHOLOGY, \
@@ -466,6 +471,7 @@
 	ACCESS_PSYCHOLOGY, \
 	ACCESS_SURGERY, \
 	ACCESS_VIROLOGY, \
+	ACCESS_PARAMEDIC, \
 )
 /// Name for the Research region.
 #define REGION_RESEARCH "Research"
@@ -555,6 +561,7 @@
 	/obj/item/modular_computer/pda/warden = list(REGION_SECURITY), \
 	/obj/item/modular_computer/pda/janitor = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/science = list(REGION_RESEARCH), \
+	/obj/item/modular_computer/pda/heads/steward = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/heads/quartermaster = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/hop = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/hos = list(REGION_COMMAND), \
@@ -562,11 +569,12 @@
 	/obj/item/modular_computer/pda/heads/ce = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/rd = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/captain = list(REGION_COMMAND), \
+	/obj/item/modular_computer/pda/heads/iaa = list(REGION_COMMAND), \
+	/obj/item/modular_computer/pda/iso = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/cargo = list(REGION_SUPPLY), \
 	/obj/item/modular_computer/pda/bitrunner = list(REGION_SUPPLY), \
 	/obj/item/modular_computer/pda/shaftminer = list(REGION_SUPPLY), \
 	/obj/item/modular_computer/pda/chaplain = list(REGION_GENERAL), \
-	/obj/item/modular_computer/pda/iaa = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/botanist = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/roboticist = list(REGION_RESEARCH), \
 	/obj/item/modular_computer/pda/curator = list(REGION_GENERAL), \

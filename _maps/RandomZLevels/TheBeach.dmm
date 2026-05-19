@@ -3751,7 +3751,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Vc" = (
-/obj/structure/closet/gmcloset,
+/obj/structure/closet/barcloset,
 /turf/open/floor/plastic,
 /area/awaymission/beach)
 "Vd" = (

@@ -15,7 +15,7 @@
 /turf/open/indestructible/large,
 /area/deathmatch)
 "aY" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/item/reagent_containers/syringe,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
@@ -89,7 +89,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "dV" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/structure/table/glass,
 /obj/item/stack/medical/mesh,
 /turf/open/indestructible/white,
@@ -120,7 +120,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "eV" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/epinephrine,
 /turf/open/indestructible/white,
@@ -238,7 +238,7 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "iH" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/machinery/light/directional/west,
 /obj/structure/table/glass,
 /obj/item/stack/medical/suture,
@@ -248,7 +248,7 @@
 /obj/machinery/stasis{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/item/reagent_containers/cup/beaker/large,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
@@ -297,13 +297,13 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "my" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/contraband/krokodil,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "mz" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/contraband/morphine,
 /turf/open/indestructible/white,
@@ -339,7 +339,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "oq" = (
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /obj/structure/table/glass,
@@ -353,18 +353,18 @@
 /area/deathmatch)
 "oL" = (
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/spawner/random/medical/surgery_tool,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "pU" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/multiver,
 /turf/open/indestructible/white,
@@ -437,13 +437,13 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "rw" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/vehicle/ridden/wheelchair{
 	dir = 1
 	},
@@ -486,7 +486,7 @@
 /area/deathmatch)
 "sl" = (
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /obj/item/reagent_containers/syringe/contraband/morphine,
@@ -519,7 +519,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "tl" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
 "tm" = (
@@ -550,7 +550,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ub" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/stack/medical/bone_gel,
 /turf/open/indestructible/white/smooth_large,
@@ -594,7 +594,7 @@
 /turf/open/indestructible/large,
 /area/deathmatch)
 "vS" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/contraband/bath_salts,
 /turf/open/indestructible/white,
@@ -644,7 +644,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "zK" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "Ax" = (
@@ -700,7 +700,7 @@
 /turf/open/indestructible/large,
 /area/deathmatch)
 "Co" = (
-/obj/effect/turf_decal/tile/blue/anticorner{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/indestructible/white/smooth_large,
@@ -711,7 +711,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "CX" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/structure/bed/medical/emergency,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -739,7 +739,7 @@
 /turf/open/floor/glass/reinforced/plasma,
 /area/deathmatch)
 "Et" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -769,12 +769,12 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "EZ" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/item/reagent_containers/syringe/plasma,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "Fg" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/saw,
 /turf/open/indestructible/white/smooth_large,
@@ -813,7 +813,7 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "Iw" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/structure/bed/medical/emergency,
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible/white,
@@ -870,7 +870,7 @@
 /area/deathmatch)
 "Ky" = (
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/item/reagent_containers/syringe/calomel,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -892,7 +892,7 @@
 /turf/open/floor/glass/reinforced/plasma,
 /area/deathmatch)
 "KM" = (
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe,
 /turf/open/indestructible/white,
@@ -1151,7 +1151,7 @@
 /obj/machinery/stasis{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
 "VG" = (
@@ -1174,7 +1174,7 @@
 /turf/open/indestructible/large,
 /area/deathmatch)
 "Xk" = (
-/obj/effect/turf_decal/tile/blue/anticorner,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
 "Xn" = (
@@ -1212,7 +1212,7 @@
 /area/deathmatch)
 "Yg" = (
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/blue/full,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/item/reagent_containers/syringe/contraband/saturnx,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
@@ -1232,11 +1232,11 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Za" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /obj/vehicle/ridden/wheelchair{

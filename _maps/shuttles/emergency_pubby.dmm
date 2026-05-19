@@ -256,7 +256,7 @@
 /obj/machinery/stasis{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -265,7 +265,7 @@
 /turf/open/floor/iron/cafeteria,
 /area/shuttle/escape)
 "bb" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -286,7 +286,7 @@
 /area/shuttle/escape)
 "be" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -300,7 +300,7 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/structure/table/glass,
 /obj/item/defibrillator/loaded,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -310,7 +310,7 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/table/glass,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -593,7 +593,7 @@
 /obj/machinery/wall_healer/free/directional/north{
 	use_power = 0
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/white,

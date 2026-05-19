@@ -107,7 +107,7 @@
 "bp" = (
 /obj/machinery/light/small/directional/south,
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
 /turf/open/floor/iron/white,
 /area/deathmatch)
 "br" = (
@@ -130,7 +130,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "bI" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/red/filled/corner{
@@ -218,10 +218,10 @@
 /area/deathmatch)
 "dq" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/structure/cable,
 /obj/item/shield/riot{
 	pixel_x = 3;
@@ -248,10 +248,10 @@
 /turf/open/floor/iron,
 /area/deathmatch)
 "dA" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/indestructible/dark,
@@ -266,7 +266,7 @@
 "eB" = (
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/bodycontainer/morgue,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -348,10 +348,10 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "gd" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /obj/structure/cable,
@@ -432,7 +432,7 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
 /turf/open/floor/iron/white,
@@ -536,7 +536,7 @@
 	pixel_y = 2
 	},
 /obj/item/healthanalyzer,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -637,7 +637,7 @@
 /obj/structure/table,
 /obj/item/clothing/mask/surgical,
 /obj/item/reagent_containers/spray/cleaner,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 9
 	},
 /turf/open/floor/iron/white,
@@ -838,11 +838,11 @@
 /area/deathmatch)
 "nH" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/indestructible/dark,
@@ -879,11 +879,11 @@
 /area/deathmatch)
 "oh" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/machinery/light/directional/west,
@@ -1011,7 +1011,7 @@
 /turf/open/floor/plating,
 /area/deathmatch)
 "ph" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -1046,14 +1046,14 @@
 /area/deathmatch)
 "pF" = (
 /obj/structure/rack,
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = -5;
 	pixel_y = 7
 	},
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_y = 4
 	},
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = 5;
 	pixel_y = 2
 	},
@@ -1137,7 +1137,7 @@
 /obj/item/reagent_containers/cup/bottle/epinephrine,
 /obj/item/reagent_containers/cup/bottle/multiver,
 /obj/item/reagent_containers/syringe,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1276,7 +1276,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "sZ" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
@@ -1469,8 +1469,8 @@
 "vU" = (
 /obj/structure/rack,
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/structure/cable,
@@ -1657,7 +1657,7 @@
 /obj/item/folder/red,
 /obj/item/poster/random_official,
 /obj/structure/cable,
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = -3;
 	pixel_y = 5
 	},
@@ -1914,8 +1914,8 @@
 /area/deathmatch)
 "CP" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/item/weldingtool/fueled,
@@ -1990,7 +1990,7 @@
 	pixel_y = 7
 	},
 /obj/item/pen,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /turf/open/floor/carpet,
 /area/deathmatch)
 "DL" = (
@@ -2140,7 +2140,7 @@
 /turf/open/floor/iron/grimy,
 /area/deathmatch)
 "Fx" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /turf/open/indestructible,
@@ -2317,10 +2317,10 @@
 /area/deathmatch)
 "HV" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/item/gun/ballistic/shotgun/riot,
 /obj/item/gun/ballistic/shotgun/riot{
 	pixel_y = 3
@@ -2348,10 +2348,10 @@
 /area/deathmatch)
 "IL" = (
 /obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/indestructible/dark,
@@ -2448,8 +2448,8 @@
 /area/deathmatch)
 "JM" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /obj/item/soap/nanotrasen,
@@ -2680,15 +2680,15 @@
 /area/deathmatch)
 "MP" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "MS" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2804,8 +2804,8 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "OF" = (
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/indestructible/dark,
@@ -3064,7 +3064,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
 /turf/open/floor/iron/white,
 /area/deathmatch)
 "SF" = (
@@ -3150,8 +3150,8 @@
 /area/deathmatch)
 "Ui" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/item/storage/toolbox/mechanical/old{
@@ -3185,8 +3185,8 @@
 /area/deathmatch)
 "UD" = (
 /obj/structure/rack,
-/obj/effect/turf_decal/tile/blue,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/effect/spawner/random/contraband/armory,
@@ -3273,7 +3273,7 @@
 /area/deathmatch)
 "VR" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 10
 	},
 /turf/open/floor/iron/white,
@@ -3439,7 +3439,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "XX" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
 /obj/structure/cable,
@@ -3548,7 +3548,7 @@
 	pixel_y = -2
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 6
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{

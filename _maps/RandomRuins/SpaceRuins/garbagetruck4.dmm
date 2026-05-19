@@ -568,7 +568,6 @@
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/suit/costume/whitedress,
 /obj/structure/broken_flooring/singular,
-/obj/item/clothing/head/costume/nursehat,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/toystore)

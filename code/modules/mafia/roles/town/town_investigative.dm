@@ -5,7 +5,7 @@
 	role_type = TOWN_INVEST
 	winner_award = /datum/award/achievement/mafia/detective
 
-	hud_icon = SECHUD_DETECTIVE
+	hud_icon = SECHUD_CRIMINALIST
 	revealed_icon = "detective"
 
 	role_unique_actions = list(/datum/mafia_ability/investigate)

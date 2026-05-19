@@ -11,38 +11,6 @@
 	name = "captain's garment bag"
 	desc = "A bag for storing extra clothes and shoes. This one belongs to the captain."
 
-/obj/item/storage/bag/garment/hos
-	name = "head of security's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the head of security."
-
-/obj/item/storage/bag/garment/warden
-	name = "warden's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the warden."
-
-/obj/item/storage/bag/garment/hop
-	name = "head of personnel's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the head of personnel."
-
-/obj/item/storage/bag/garment/research_director
-	name = "research director's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the research director."
-
-/obj/item/storage/bag/garment/chief_medical
-	name = "chief medical officer's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the chief medical officer."
-
-/obj/item/storage/bag/garment/engineering_chief
-	name = "chief engineer's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the chief engineer."
-
-/obj/item/storage/bag/garment/quartermaster
-	name = "quartermasters's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the quartermaster."
-
-/obj/item/storage/bag/garment/steward
-	name = "steward's garment bag"
-	desc = "A bag for storing extra clothes and shoes. This one belongs to the steward."
-
 /obj/item/storage/bag/garment/captain/PopulateContents()
 	new /obj/item/clothing/under/rank/captain(src)
 	new /obj/item/clothing/under/rank/captain/skirt(src)
@@ -59,15 +27,10 @@
 	new /obj/item/clothing/neck/cloak/cap(src)
 	new /obj/item/clothing/shoes/laceup(src)
 
-/obj/item/storage/bag/garment/hop/PopulateContents()
-	new /obj/item/clothing/under/rank/civilian/head_of_personnel(src)
-	new /obj/item/clothing/under/rank/civilian/head_of_personnel/skirt(src)
-	new /obj/item/clothing/suit/armor/vest/hop(src)
-	new /obj/item/clothing/suit/hooded/wintercoat/hop(src)
-	new /obj/item/clothing/glasses/sunglasses(src)
-	new /obj/item/clothing/head/hats/hopcap(src)
-	new /obj/item/clothing/neck/cloak/hop(src)
-	new /obj/item/clothing/shoes/laceup(src)
+
+/obj/item/storage/bag/garment/hos
+	name = "head of security's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the head of security."
 
 /obj/item/storage/bag/garment/hos/PopulateContents()
 	new /obj/item/clothing/under/rank/security/head_of_security/skirt(src)
@@ -83,22 +46,46 @@
 	new /obj/item/clothing/suit/armor/vest/leather(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses/eyepatch(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses/gars/giga(src)
-	new /obj/item/clothing/head/hats/hos/beret(src)
+	new /obj/item/clothing/head/beret/sec/hos(src)
 	new /obj/item/clothing/head/hats/hos/cap(src)
 	new /obj/item/clothing/mask/gas/sechailer/swat(src)
 	new /obj/item/clothing/neck/cloak/hos(src)
 
+
+/obj/item/storage/bag/garment/warden
+	name = "warden's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the warden."
+
 /obj/item/storage/bag/garment/warden/PopulateContents()
 	new /obj/item/clothing/suit/armor/vest/warden(src)
 	new /obj/item/clothing/head/hats/warden(src)
-	new /obj/item/clothing/head/hats/warden/drill(src)
-	new /obj/item/clothing/head/beret/sec/navywarden(src)
+	new /obj/item/clothing/head/beret/sec/warden(src)
 	new /obj/item/clothing/suit/armor/vest/warden/alt(src)
 	new /obj/item/clothing/under/rank/security/warden/formal(src)
 	new /obj/item/clothing/under/rank/security/warden/skirt(src)
 	new /obj/item/clothing/gloves/krav_maga/sec(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses(src)
 	new /obj/item/clothing/mask/gas/sechailer(src)
+
+
+/obj/item/storage/bag/garment/hop
+	name = "head of personnel's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the head of personnel."
+
+/obj/item/storage/bag/garment/hop/PopulateContents()
+	new /obj/item/clothing/under/rank/civilian/head_of_personnel(src)
+	new /obj/item/clothing/under/rank/civilian/head_of_personnel/skirt(src)
+	new /obj/item/clothing/suit/armor/vest/hop(src)
+	new /obj/item/clothing/suit/hooded/wintercoat/hop(src)
+	new /obj/item/clothing/glasses/sunglasses(src)
+	new /obj/item/clothing/head/hats/hopcap(src)
+	new /obj/item/clothing/neck/cloak/hop(src)
+	new /obj/item/clothing/shoes/laceup(src)
+
+
+/obj/item/storage/bag/garment/research_director
+	name = "research director's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the research director."
 
 /obj/item/storage/bag/garment/research_director/PopulateContents()
 	new /obj/item/clothing/under/rank/rnd/research_director(src)
@@ -112,6 +99,11 @@
 	new /obj/item/clothing/gloves/color/black(src)
 	new /obj/item/clothing/neck/cloak/rd(src)
 	new /obj/item/clothing/shoes/jackboots(src)
+
+
+/obj/item/storage/bag/garment/chief_medical
+	name = "chief medical officer's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the chief medical officer."
 
 /obj/item/storage/bag/garment/chief_medical/PopulateContents()
 	new /obj/item/clothing/under/rank/medical/chief_medical_officer(src)
@@ -127,6 +119,11 @@
 	new /obj/item/clothing/neck/cloak/cmo(src)
 	new /obj/item/clothing/shoes/sneakers/blue (src)
 
+
+/obj/item/storage/bag/garment/engineering_chief
+	name = "chief engineer's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the chief engineer."
+
 /obj/item/storage/bag/garment/engineering_chief/PopulateContents()
 	new /obj/item/clothing/under/rank/engineering/chief_engineer(src)
 	new /obj/item/clothing/under/rank/engineering/chief_engineer/skirt(src)
@@ -140,6 +137,11 @@
 	new /obj/item/clothing/neck/cloak/ce(src)
 	new /obj/item/clothing/shoes/sneakers/brown(src)
 
+
+/obj/item/storage/bag/garment/quartermaster
+	name = "quartermasters's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the quartermaster."
+
 /obj/item/storage/bag/garment/quartermaster/PopulateContents()
 	new /obj/item/clothing/under/rank/cargo/qm(src)
 	new /obj/item/clothing/under/rank/cargo/qm/skirt(src)
@@ -152,6 +154,11 @@
 	new /obj/item/clothing/neck/cloak/qm(src)
 	new /obj/item/clothing/shoes/sneakers/brown(src)
 
+
+/obj/item/storage/bag/garment/steward
+	name = "steward's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the steward."
+
 /obj/item/storage/bag/garment/steward/PopulateContents()
 	new /obj/item/clothing/under/rank/civilian/steward(src)
 	new /obj/item/clothing/under/rank/civilian/steward/skirt(src)
@@ -163,3 +170,35 @@
 	new /obj/item/clothing/neck/bowtie/green(src)
 	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/clothing/shoes/sneakers/black(src)
+
+
+/obj/item/storage/bag/garment/iso
+	name = "internal security operative's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the internal security operative."
+
+/obj/item/storage/bag/garment/iso/PopulateContents()
+	new /obj/item/clothing/under/rank/security/iso(src)
+	new /obj/item/clothing/gloves/color/black/iso(src)
+	new /obj/item/clothing/head/soft/iso(src)
+	new /obj/item/clothing/head/beret/iso(src)
+	new /obj/item/clothing/glasses/hud/security/sunglasses(src)
+	new /obj/item/clothing/neck/tie/red(src)
+	new /obj/item/clothing/shoes/jackboots/iso(src)
+
+
+/obj/item/storage/bag/garment/iaa
+	name = "internal affairs agent's garment bag"
+	desc = "A bag for storing extra clothes and shoes. This one belongs to the internal affairs agent."
+
+/obj/item/storage/bag/garment/iaa/PopulateContents()
+	new /obj/item/clothing/under/rank/civilian/iaa/red(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/red/skirt(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/blue(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/blue/skirt(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/black(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/black/skirt(src)
+	new /obj/item/clothing/glasses/hud/job/sunglasses(src)
+	new /obj/item/clothing/accessory/iaa_badge(src)
+	new /obj/item/clothing/neck/tie/red(src)
+	new /obj/item/clothing/neck/tie/black(src)
+	new /obj/item/clothing/shoes/laceup(src)

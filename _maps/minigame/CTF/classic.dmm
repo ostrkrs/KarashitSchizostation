@@ -55,7 +55,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -64,14 +64,14 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "gz" = (
 /obj/structure/trap/ctf/blue,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "hf" = (
@@ -88,7 +88,7 @@
 /turf/open/floor/circuit/red,
 /area/centcom/ctf)
 "iP" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -109,7 +109,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -185,7 +185,7 @@
 /turf/open/floor/plating,
 /area/centcom/ctf)
 "sc" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -234,12 +234,12 @@
 /turf/open/floor/circuit,
 /area/centcom/ctf)
 "vU" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "wZ" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "xD" = (
@@ -288,7 +288,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "BV" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "Cc" = (
@@ -309,7 +309,7 @@
 /area/centcom/ctf)
 "EC" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -336,7 +336,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -374,7 +374,7 @@
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "HI" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -399,7 +399,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "Jh" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -414,7 +414,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -423,7 +423,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -445,7 +445,7 @@
 /turf/open/floor/iron/bluespace,
 /area/centcom/ctf)
 "Mb" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -455,7 +455,7 @@
 /turf/open/floor/circuit/red,
 /area/centcom/ctf)
 "MR" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron,
 /area/centcom/ctf)
 "Nu" = (
@@ -477,7 +477,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "NE" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -492,11 +492,11 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "Ps" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -512,7 +512,7 @@
 /area/centcom/ctf)
 "PN" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "Qm" = (
@@ -554,7 +554,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "UY" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -575,13 +575,13 @@
 /turf/open/floor/circuit,
 /area/centcom/ctf)
 "WW" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "WY" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "Xh" = (
@@ -598,14 +598,14 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "XC" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -618,7 +618,7 @@
 /area/centcom/ctf)
 "XT" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -631,7 +631,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "Yt" = (
@@ -641,7 +641,7 @@
 /turf/open/floor/circuit/green/off,
 /area/centcom/ctf)
 "Yw" = (
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/dark,
 /area/centcom/ctf)
 "Za" = (
@@ -666,7 +666,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,

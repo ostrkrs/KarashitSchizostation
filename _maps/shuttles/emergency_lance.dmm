@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "af" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -41,7 +41,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "bj" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -364,7 +364,7 @@
 	},
 /area/shuttle/escape)
 "kt" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -500,7 +500,7 @@
 	},
 /area/shuttle/escape)
 "oe" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -523,7 +523,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "pb" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -937,7 +937,7 @@
 	pixel_y = -26;
 	req_access = list("command")
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "ET" = (
@@ -1004,7 +1004,7 @@
 /area/shuttle/escape)
 "Gt" = (
 /obj/machinery/recharge_station,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1067,7 +1067,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1095,7 +1095,7 @@
 /area/shuttle/escape)
 "JS" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = 1;
 	pixel_y = 9
 	},
@@ -1189,7 +1189,7 @@
 	pixel_y = 6;
 	req_access = list("command")
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -1222,7 +1222,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -1392,7 +1392,7 @@
 "QP" = (
 /obj/structure/fireaxecabinet/directional/south,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Rj" = (
@@ -1557,7 +1557,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1603,7 +1603,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Yt" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners,
+/obj/effect/turf_decal/tile/light_blue/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "YM" = (
