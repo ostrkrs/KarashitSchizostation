@@ -378,7 +378,6 @@ export function JobsPage() {
               <Stack vertical>
                 <Department department="Command" />
                 <Department department="Service" />
-                <Department department="Assistant" />
               </Stack>
             </Stack.Item>
             <Stack.Item>
@@ -386,6 +385,7 @@ export function JobsPage() {
                 <Department department="Security" />
                 <Department department="Engineering" />
                 <Department department="Cargo" />
+                <Department department="Assistant" />
               </Stack>
             </Stack.Item>
           </Stack>
