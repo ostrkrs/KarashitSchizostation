@@ -1,5 +1,5 @@
 import { sortBy } from 'es-toolkit';
-import type { PropsWithChildren, ReactNode } from 'react';
+import type { CSSProperties, PropsWithChildren, ReactNode } from 'react';
 import { useBackend } from 'tgui/backend';
 import { Box, Button, Dropdown, Stack, Tooltip } from 'tgui-core/components';
 import { classes } from 'tgui-core/react';
@@ -22,33 +22,18 @@ function sortJobs(entries: [string, Job][], head?: string) {
 
 const PRIORITY_BUTTON_SIZE = '18px';
 
-const departmentColorDefaults: Record<string, string> = {
-  Assistant: 'grey',
-  Captain: 'blue',
-  Cargo: 'brown',
-  Command: 'blue',
-  Security: 'red',
-  Engineering: 'orange',
-  Medical: 'teal',
-  Science: 'purple',
-  Service: 'green',
-  Silicon: 'pink',
-};
-
 type PriorityButtonProps = {
   name: string;
   color: string;
   modifier?: string;
   enabled: boolean;
   onClick: () => void;
-  department?: string;
+  departmentColor?: string;
 };
 
 function PriorityButton(props: PriorityButtonProps) {
   const className = `PreferencesMenu__Jobs__departments__priority`;
-  const inactiveColor = props.department
-    ? (departmentColorDefaults[props.department] ?? props.department)
-    : 'light-grey';
+  const inactiveColor = props.departmentColor ?? 'light-grey';
 
   return (
     <Button
@@ -105,11 +90,11 @@ type PriorityButtonsProps = {
   createSetPriority: CreateSetPriority;
   isOverflow: boolean;
   priority: JobPriority;
-  department?: string;
+  departmentColor?: string;
 };
 
 function PriorityButtons(props: PriorityButtonsProps) {
-  const { createSetPriority, isOverflow, priority, department } = props;
+  const { createSetPriority, isOverflow, priority, departmentColor } = props;
 
   return (
     <Box
@@ -130,7 +115,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="light-grey"
             enabled={!priority}
             onClick={createSetPriority(null)}
-            department={department}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
@@ -138,7 +123,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="good"
             enabled={!!priority}
             onClick={createSetPriority(JobPriority.High)}
-            department={department}
+            departmentColor={departmentColor}
           />
         </>
       ) : (
@@ -149,7 +134,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="light-grey"
             enabled={!priority}
             onClick={createSetPriority(null)}
-            department={department}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
@@ -157,7 +142,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="bad"
             enabled={priority === JobPriority.Low}
             onClick={createSetPriority(JobPriority.Low)}
-            department={department}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
@@ -165,7 +150,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="average"
             enabled={priority === JobPriority.Medium}
             onClick={createSetPriority(JobPriority.Medium)}
-            department={department}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
@@ -173,7 +158,7 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="good"
             enabled={priority === JobPriority.High}
             onClick={createSetPriority(JobPriority.High)}
-            department={department}
+            departmentColor={departmentColor}
           />
         </>
       )}
@@ -186,11 +171,12 @@ type JobRowProps = {
   job: Job;
   name: string;
   department: string;
+  departmentColor?: string;
 };
 
 function JobRow(props: JobRowProps) {
   const { data, act } = useBackend<PreferencesMenuData>();
-  const { className, job, name, department } = props;
+  const { className, job, name, department, departmentColor } = props;
 
   const isOverflow = data.overflow_role === name;
   const priority = data.job_preferences[name];
@@ -239,7 +225,7 @@ function JobRow(props: JobRowProps) {
         createSetPriority={createSetPriority}
         isOverflow={isOverflow}
         priority={priority}
-        department={department}
+        departmentColor={departmentColor}
       />
     );
   }
@@ -308,9 +294,14 @@ function Department(props: DepartmentProps) {
     Object.entries(jobs).filter(([_, job]) => job.department === name),
     department.head,
   );
+  const deptColor = department.ui_color || department.color || undefined;
+
+  const departmentStyle: CSSProperties | undefined = deptColor
+    ? ({ ['--department-color']: deptColor } as CSSProperties)
+    : undefined;
 
   return (
-    <Box>
+    <Box className="PreferencesMenu__Jobs__departments" style={departmentStyle}>
       <Stack fill vertical g={0}>
         {jobsForDepartment.map(([name, job]) => {
           return (
@@ -323,6 +314,7 @@ function Department(props: DepartmentProps) {
               job={job}
               name={name}
               department={name}
+              departmentColor={deptColor}
             />
           );
         })}

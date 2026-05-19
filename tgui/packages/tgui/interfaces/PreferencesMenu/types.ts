@@ -76,6 +76,8 @@ export type Perk = {
 
 export type Department = {
   head?: string;
+  color?: string;
+  ui_color?: string;
 };
 
 export type Job = {
