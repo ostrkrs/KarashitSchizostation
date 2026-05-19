@@ -68,18 +68,10 @@
 	chosen_spawn_point.used = TRUE
 	return chosen_spawn_point
 
-/datum/job/ai/special_check_latejoin(client/C)
-	for(var/obj/structure/ai_core/latejoin_inactive/latejoin_core as anything in GLOB.latejoin_ai_cores)
-		if(latejoin_core.is_available())
-			return TRUE
-	return FALSE
-
-
 /datum/job/ai/announce_job(mob/living/joining_mob)
 	. = ..()
 	if(SSticker.HasRoundStarted())
 		minor_announce("[joining_mob] has been downloaded to an empty bluespace-networked AI core at [AREACOORD(joining_mob)].")
-
 
 /datum/job/ai/config_check()
 	return CONFIG_GET(flag/allow_ai)
