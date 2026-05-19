@@ -369,14 +369,13 @@ export function JobsPage() {
           <Stack fill g={1} className="PreferencesMenu__Jobs">
             <Stack.Item>
               <Stack vertical>
-                <Department department="Engineering" />
                 <Department department="Science" />
                 <Department department="Medical" />
+                <Department department="Silicon" />
               </Stack>
             </Stack.Item>
-            <Stack.Item mt={-5.9}>
+            <Stack.Item>
               <Stack vertical>
-                <Department department="Captain" />
                 <Department department="Command" />
                 <Department department="Service" />
                 <Department department="Assistant" />
@@ -385,8 +384,8 @@ export function JobsPage() {
             <Stack.Item>
               <Stack vertical>
                 <Department department="Security" />
+                <Department department="Engineering" />
                 <Department department="Cargo" />
-                <Department department="Silicon" />
               </Stack>
             </Stack.Item>
           </Stack>

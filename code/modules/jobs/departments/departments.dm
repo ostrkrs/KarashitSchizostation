@@ -65,13 +65,6 @@
 	var/nomadic_name = pick("roving clans", "barbaric tribes", "tides", "bandit kingdom", "tribal society", "marauder clans", "horde")
 	return "The [nomadic_name] of [..()]"
 
-/// A special captain only department, for use by the preferences menu
-/datum/job_department/captain
-	department_name = DEPARTMENT_CAPTAIN
-	department_bitflags = DEPARTMENT_BITFLAG_CAPTAIN
-	department_head = /datum/job/captain
-	primary_work_area = /area/station/command
-
 /datum/job_department/command
 	department_name = DEPARTMENT_COMMAND
 	department_bitflags = DEPARTMENT_BITFLAG_COMMAND
