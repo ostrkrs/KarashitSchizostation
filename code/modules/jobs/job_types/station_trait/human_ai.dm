@@ -74,12 +74,6 @@
 	chosen_spawn_point.used = TRUE
 	return chosen_spawn_point
 
-/datum/job/human_ai/special_check_latejoin(client/latejoin_client)
-	for(var/obj/structure/ai_core/latejoin_inactive/latejoin_core as anything in GLOB.latejoin_ai_cores)
-		if(latejoin_core.is_available())
-			return TRUE
-	return FALSE
-
 /datum/job/human_ai/announce_job(mob/living/joining_mob)
 	. = ..()
 	if(SSticker.HasRoundStarted())
