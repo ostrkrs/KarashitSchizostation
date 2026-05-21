@@ -265,17 +265,17 @@
 	name = "\improper Cybersun crate"
 
 /obj/structure/closet/crate/secure/syndicate/cybersun/dawn
-	desc = "A secure crate from Cybersun Industries. It has distinct orange-green colouring, probably of some departament or division, but you cannot tell what is it."
+	desc = "A secure crate from Cybersun Industries. It has distinct orange-green colouring, probably of some department or division, but you cannot tell what is it."
 	icon_state = "cyber_dawncrate"
 	base_icon_state = "cyber_dawncrate"
 
 /obj/structure/closet/crate/secure/syndicate/cybersun/noon
-	desc = "A secure crate from Cybersun Industries. It has distinct yellow-orange colouring, probably of some departament or division, but you cannot tell what is it."
+	desc = "A secure crate from Cybersun Industries. It has distinct yellow-orange colouring, probably of some department or division, but you cannot tell what is it."
 	icon_state = "cyber_nooncrate"
 	base_icon_state = "cyber_nooncrate"
 
 /obj/structure/closet/crate/secure/syndicate/cybersun/dusk
-	desc = "A secure crate from Cybersun Industries. It has distinct purple-green colouring, probably of some departament or division, but you cannot tell what is it."
+	desc = "A secure crate from Cybersun Industries. It has distinct purple-green colouring, probably of some department or division, but you cannot tell what is it."
 	icon_state = "cyber_duskcrate"
 	base_icon_state = "cyber_duskcrate"
 
