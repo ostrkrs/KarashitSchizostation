@@ -234,6 +234,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	rest_icon = null
 	sleep_icon = null
 	floor_change = null
+
 	hand_slots.Cut()
 
 	QDEL_LIST(toggleable_inventory)
@@ -488,7 +489,9 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 		var/atom/movable/screen/inventory/hand/H = hand_slots[h]
 		if(H)
 			static_inventory -= H
+
 	hand_slots = list()
+
 	var/atom/movable/screen/inventory/hand/hand_box
 	for(var/i in 1 to mymob.held_items.len)
 		hand_box = new /atom/movable/screen/inventory/hand(null, src)
@@ -500,6 +503,15 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 		hand_slots["[i]"] = hand_box
 		static_inventory += hand_box
 		hand_box.update_appearance()
+
+		// Create a separate screen object for the wide hand overlay
+		var/atom/movable/screen/inventory/hand/wide_hand = new(null, src)
+		wide_hand.name = mymob.get_held_index_name(i)
+		wide_hand.icon = ui_style
+		wide_hand.icon_state = "hand2_[mymob.held_index_to_dir(i)]"
+		wide_hand.screen_loc = ui_widehand_position(i)
+		wide_hand.held_index = i
+		static_inventory += wide_hand
 
 	var/num_of_swaps = 0
 	for(var/atom/movable/screen/swap_hand/swap_hands in static_inventory)
@@ -513,6 +525,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 		swap_hands.screen_loc = ui_swaphand_position(mymob, hand_ind)
 		hand_num += 1
 	hand_num = 1
+
 	for(var/atom/movable/screen/drop/swap_hands in static_inventory)
 		var/hand_ind = LEFT_HANDS
 		if (num_of_swaps > 1)

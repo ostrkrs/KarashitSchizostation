@@ -52,12 +52,12 @@
 #define ui_xenobiodisplay "WEST:6,CENTER:-4"
 
 //Lower center, persistent menu
-#define ui_sstore1 "CENTER-5:10,SOUTH:5"
-#define ui_id "CENTER-4:12,SOUTH:5"
-#define ui_belt "CENTER-3:14,SOUTH:5"
-#define ui_back "CENTER-2:14,SOUTH:5"
-#define ui_storage1 "CENTER+1:18,SOUTH:5"
-#define ui_storage2 "CENTER+2:20,SOUTH:5"
+#define ui_sstore1 "CENTER-6:10,SOUTH:5"
+#define ui_id "CENTER-5:12,SOUTH:5"
+#define ui_belt "CENTER-4:14,SOUTH:5"
+#define ui_back "CENTER-3:14,SOUTH:5"
+#define ui_storage1 "CENTER+2:18,SOUTH:5"
+#define ui_storage2 "CENTER+3:20,SOUTH:5"
 #define ui_combo "CENTER+4:24,SOUTH+1:7" //combo meter for martial arts
 
 //Lower right, persistent menu
@@ -85,14 +85,13 @@
 #define ui_palette_scroll_offset(north_offset) ("WEST+1:8,NORTH-[6+north_offset]:28")
 
 //Middle right (status indicators)
-#define ui_healthdoll "EAST-1:28,CENTER-2:17"
-#define ui_health "EAST-1:28,CENTER-1:19"
+#define ui_healthdoll "EAST-1:28,CENTER-1:19"
+#define ui_health "EAST-1:28,CENTER:21"
 #define ui_internal "EAST-1:28,CENTER+1:21"
-#define ui_mood "EAST-1:28,CENTER:21"
-#define ui_hunger "EAST-1:2,CENTER:21"
-#define ui_thirst "EAST-1:2,CENTER-1:21"
+#define ui_mood "EAST-1:28,CENTER-1:19"
+#define ui_hunger_thirst "EAST-1:28,CENTER-3:14"
+#define ui_stamina_pain "EAST-1:28,CENTER-2:17"
 #define ui_spacesuit "EAST-1:28,CENTER-4:14"
-#define ui_stamina "EAST-1:28,CENTER-3:14"
 
 //Pop-up inventory
 #define ui_shoes "WEST+1:8,SOUTH:5"

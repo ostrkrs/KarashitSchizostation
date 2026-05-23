@@ -1489,7 +1489,7 @@
 	// Queue update if change is small enough (6 is 1% of nutrition softcap)
 	if(abs(change) >= 6)
 		mob_mood?.update_nutrition_moodlets()
-		hud_used?.hunger?.update_hunger_bar()
+		hud_used?.hunger?.update_appearance()
 	else
 		living_flags |= QUEUE_NUTRITION_UPDATE
 
@@ -1506,7 +1506,7 @@
 	// Queue update if change is small enough (6 is 1% of nutrition softcap)
 	if(abs(old_nutrition - nutrition) >= 6)
 		mob_mood?.update_nutrition_moodlets()
-		hud_used?.hunger?.update_hunger_bar()
+		hud_used?.hunger?.update_appearance()
 	else
 		living_flags |= QUEUE_NUTRITION_UPDATE
 
@@ -1522,7 +1522,7 @@
 	. = ..()
 	if(abs(old_hydration - hydration) >= 6)
 		mob_mood?.update_hydration_moodlets()
-		hud_used?.thirst?.update_thirst_bar()
+		hud_used?.thirst?.update_appearance()
 	else
 		living_flags |= QUEUE_HYDRATION_UPDATE
 
@@ -1537,7 +1537,7 @@
 	. = ..()
 	if(abs(change) >= 6)
 		mob_mood?.update_hydration_moodlets()
-		hud_used?.thirst?.update_thirst_bar()
+		hud_used?.thirst?.update_appearance()
 	else
 		living_flags |= QUEUE_HYDRATION_UPDATE
 
