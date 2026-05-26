@@ -1,6 +1,6 @@
 /obj/item/mmi
 	name = "\improper Man-Machine Interface"
-	desc = "The Warrior's bland acronym, MMI, obscures the true horror of this monstrosity, that nevertheless has become standard-issue on Nanotrasen stations."
+	desc = "A brain container that allows it to be connected to a mechanical body. How cruel."
 	icon = 'icons/obj/devices/assemblies.dmi'
 	icon_state = "mmi_off"
 	base_icon_state = "mmi"
@@ -174,10 +174,12 @@
 		radio.set_on(!radio.is_on())
 		to_chat(user, span_notice("You toggle [src]'s radio system [radio.is_on() == TRUE ? "on" : "off"]."))
 	else
+		if(tgui_alert(user, "Ejecting the brain will damage it to non-functional. Continue?", "Eject Brain", list("Eject", "Cancel")) != "Eject")
+			return
 		eject_brain(user)
 		update_appearance()
 		name = initial(name)
-		to_chat(user, span_notice("You unlock and upend [src], spilling the brain onto the floor."))
+		to_chat(user, span_warning("You unlock and upend [src], spilling the brain."))
 
 /obj/item/mmi/proc/eject_brain(mob/user)
 	if(brainmob)
@@ -190,6 +192,7 @@
 		user.log_message("has ejected the brain of [key_name(brainmob)] from an MMI", LOG_GAME)
 		brainmob = null //Set mmi brainmob var to null
 	brain.forceMove(drop_location())
+	brain.set_organ_damage(brain.maxHealth)
 	if(Adjacent(user))
 		user.put_in_hands(brain)
 	brain.organ_flags &= ~ORGAN_FROZEN

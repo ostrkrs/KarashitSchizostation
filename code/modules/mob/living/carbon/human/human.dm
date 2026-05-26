@@ -952,6 +952,31 @@
 		return FALSE
 	return ..()
 
+/mob/living/carbon/human/update_stat()
+	if(HAS_TRAIT(src, TRAIT_GODMODE))
+		return
+
+	var/obj/item/organ/brain/our_brain = get_organ_slot(ORGAN_SLOT_BRAIN)
+	var/obj/item/bodypart/head/our_head = get_bodypart(BODY_ZONE_HEAD)
+	if(stat != DEAD)
+		if((our_brain.damage >= BRAIN_DAMAGE_DEATH || our_head.get_damage() >= our_head.max_damage) && !HAS_TRAIT(src, TRAIT_NODEATH))
+			death()
+			return
+		if(HAS_TRAIT_FROM(src, TRAIT_DISSECTED, AUTOPSY_TRAIT))
+			REMOVE_TRAIT(src, TRAIT_DISSECTED, AUTOPSY_TRAIT)
+		if(health <= hardcrit_threshold && !HAS_TRAIT(src, TRAIT_NOHARDCRIT))
+			set_stat(HARD_CRIT)
+		else if(HAS_TRAIT(src, TRAIT_KNOCKEDOUT))
+			set_stat(UNCONSCIOUS)
+		else if(health <= crit_threshold && !HAS_TRAIT(src, TRAIT_NOSOFTCRIT))
+			set_stat(SOFT_CRIT)
+		else
+			set_stat(CONSCIOUS)
+	update_damage_hud()
+	update_health_hud()
+	update_stamina_hud()
+	med_hud_set_status()
+
 /mob/living/carbon/human/updatehealth()
 	. = ..()
 	var/health_deficiency = max((maxHealth - health), staminaloss)
@@ -1074,6 +1099,9 @@
 
 /mob/living/carbon/human/species/dullahan
 	race = /datum/species/dullahan
+
+/mob/living/carbon/human/species/cave_adapted
+	race = /datum/species/human/cave_adapted
 
 /mob/living/carbon/human/species/cave_adapted
 	race = /datum/species/human/cave_adapted

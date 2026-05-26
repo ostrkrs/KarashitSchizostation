@@ -122,7 +122,6 @@
 	var/list/allowed_medicine = list(
 		/datum/reagent/medicine/c2/synthflesh,
 		/datum/reagent/medicine/adminordrazine,
-		/datum/reagent/medicine/strange_reagent,
 		// include a random medicine
 		pick(subtypesof(/datum/reagent/medicine)),
 	)

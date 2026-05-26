@@ -59,7 +59,6 @@ GLOBAL_LIST_INIT(mystery_box_extended, list(
 	/obj/item/knife/combat,
 	/obj/item/melee/baton/security/loaded,
 	/obj/item/reagent_containers/hypospray/combat,
-	/obj/item/defibrillator/compact/combat/loaded/nanotrasen,
 	/obj/item/melee/energy/sword/saber,
 	/obj/item/spear,
 	/obj/item/saw,
@@ -87,7 +86,6 @@ GLOBAL_LIST_INIT(mystery_magic, list(
 
 GLOBAL_LIST_INIT(mystery_fishing, list(
 	/obj/item/storage/toolbox/fishing/master,
-	/obj/item/storage/box/fish_revival_kit,
 	/obj/item/fishing_rod/telescopic/master,
 	/obj/item/bait_can/super_baits,
 	/obj/item/storage/fish_case/tiziran,

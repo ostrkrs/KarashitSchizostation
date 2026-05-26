@@ -6336,7 +6336,6 @@
 #include "code\modules\surgery\operations\operation_pump.dm"
 #include "code\modules\surgery\operations\operation_puncture.dm"
 #include "code\modules\surgery\operations\operation_replace_limb.dm"
-#include "code\modules\surgery\operations\operation_revival.dm"
 #include "code\modules\surgery\operations\operation_virus.dm"
 #include "code\modules\surgery\operations\operation_zombie.dm"
 #include "code\modules\surgery\organs\_organ.dm"

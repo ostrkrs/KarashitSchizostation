@@ -227,7 +227,6 @@
 		/obj/item/clothing/head/costume/kitty = 1,
 		/obj/item/food/meat/slab = 3,
 		/datum/reagent/blood = 50,
-		/datum/reagent/medicine/strange_reagent = 5
 	)
 	result = /mob/living/basic/pet/cat/breadcat
 	category = CAT_BREAD

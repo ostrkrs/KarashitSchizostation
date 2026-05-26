@@ -226,12 +226,6 @@
 /area/shuttle/escape/brig)
 "dE" = (
 /obj/structure/table/reinforced/rglass,
-/obj/item/defibrillator/compact/combat/loaded/nanotrasen{
-	combat = 0;
-	safety = 1;
-	pixel_x = -3;
-	pixel_y = 5
-	},
 /obj/item/healthanalyzer/advanced{
 	pixel_x = 4;
 	pixel_y = -1

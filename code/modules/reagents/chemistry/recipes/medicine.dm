@@ -243,26 +243,6 @@
 	required_reagents = list(/datum/reagent/phenol = 1, /datum/reagent/acetone = 1, /datum/reagent/diethylamine = 1, /datum/reagent/oxygen = 1, /datum/reagent/chlorine = 1, /datum/reagent/hydrogen = 1)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_BRUTE |REACTION_TAG_BURN | REACTION_TAG_TOXIN | REACTION_TAG_OXY | REACTION_TAG_OTHER
 
-/datum/chemical_reaction/medicine/strange_reagent
-	results = list(/datum/reagent/medicine/strange_reagent = 3)
-	required_reagents = list(/datum/reagent/medicine/omnizine = 1, /datum/reagent/water/holywater = 1, /datum/reagent/toxin/mutagen = 1)
-	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_OTHER
-
-/datum/chemical_reaction/medicine/strange_reagent/alt
-	results = list(/datum/reagent/medicine/strange_reagent = 2)
-	required_reagents = list(/datum/reagent/medicine/omnizine/protozine = 1, /datum/reagent/water/holywater = 1, /datum/reagent/toxin/mutagen = 1)
-	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_PLANT | REACTION_TAG_OTHER
-
-/datum/chemical_reaction/medicine/fishy_reagent
-	results = list(/datum/reagent/medicine/strange_reagent/fishy_reagent = 3)
-	required_reagents = list(/datum/reagent/medicine/omnizine = 1, /datum/reagent/water/salt = 1, /datum/reagent/toxin/carpotoxin = 1)
-	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_OTHER
-
-/datum/chemical_reaction/medicine/fishy_reagent/alt
-	results = list(/datum/reagent/medicine/strange_reagent/fishy_reagent = 6)
-	required_reagents = list(/datum/reagent/medicine/omnizine = 1, /datum/reagent/water/salt = 1, /datum/reagent/toxin/tetrodotoxin = 1)
-	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_OTHER
-
 /datum/chemical_reaction/medicine/mannitol
 	results = list(/datum/reagent/medicine/mannitol = 3)
 	required_reagents = list(/datum/reagent/consumable/sugar = 1, /datum/reagent/hydrogen = 1, /datum/reagent/water = 1)

@@ -66,7 +66,7 @@
 	/// Status Effects that are given to the holder of the organ.
 	var/list/organ_effects
 	/// String displayed when the organ has decayed.
-	var/failing_desc = "has decayed for too long, and has turned a sickly color. It probably won't work without repairs."
+	var/failing_desc = "has decayed for too long, and has turned a sickly color."
 	/// Assoc list of alternate zones where this can organ be slotted to organ slot for that zone
 	var/list/valid_zones = null
 	/// The cell line we can spawn on us

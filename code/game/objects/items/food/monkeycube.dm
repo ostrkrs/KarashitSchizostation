@@ -86,7 +86,6 @@
 	bite_consumption = 20
 	food_reagents = list(
 		/datum/reagent/monkey_powder = 30,
-		/datum/reagent/medicine/strange_reagent = 5,
 	)
 	tastes = list("the jungle" = 1, "bananas" = 1, "jimmies" = 1)
 	spawned_mob = /mob/living/basic/gorilla
@@ -97,7 +96,6 @@
 	bite_consumption = 20
 	food_reagents = list(
 		/datum/reagent/consumable/eggyolk = 30,
-		/datum/reagent/medicine/strange_reagent = 1,
 	)
 	tastes = list("chicken" = 1, "the country" = 1, "chicken bouillon" = 1)
 	spawned_mob = /mob/living/basic/chicken
@@ -109,7 +107,6 @@
 	food_reagents = list(
 		/datum/reagent/consumable/honey = 10,
 		/datum/reagent/toxin = 5,
-		/datum/reagent/medicine/strange_reagent = 1,
 	)
 	tastes = list("buzzing" = 1, "honey" = 1, "regret" = 1)
 	spawned_mob = /mob/living/basic/bee
@@ -120,7 +117,6 @@
 	bite_consumption = 10
 	food_reagents = list(
 		/datum/reagent/toxin = 15,
-		/datum/reagent/medicine/strange_reagent = 1,
 	)
 	tastes = list("the loss of 5 TC" = 1, "eaten friend" = 1)
 	spawned_mob = /mob/living/basic/pony/dangerous
@@ -130,7 +126,6 @@
 	desc = "A cube that, when water is added, creates a random creature. Who knows what's inside?"
 	food_reagents = list(
 		/datum/reagent/toxin = 15,
-		/datum/reagent/medicine/strange_reagent = 1,
 	)
 
 /obj/item/food/monkeycube/random/Initialize(mapload)
