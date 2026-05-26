@@ -1848,10 +1848,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Default"
 	icon_state = "default"
 
-/datum/sprite_accessory/horns/caver/smaller
-	name = "Smaller"
-	icon_state = "smaller"
-
 /datum/sprite_accessory/horns/caver/broad
 	name = "Broad"
 	icon_state = "broad"
