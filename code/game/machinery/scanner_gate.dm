@@ -41,9 +41,9 @@
 	///List of species that can be scanned by the gate. Supports adding more species' IDs during in-game.
 	var/static/list/available_species = list(
 		SPECIES_HUMAN,
+		SPECIES_HUMAN_CAVER,
 		SPECIES_LIZARD,
 		SPECIES_FLYPERSON,
-		SPECIES_FELINE,
 		SPECIES_PLASMAMAN,
 		SPECIES_MOTH,
 		SPECIES_JELLYPERSON,

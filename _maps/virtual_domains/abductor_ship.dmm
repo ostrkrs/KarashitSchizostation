@@ -238,10 +238,6 @@
 	},
 /turf/open/floor/plating/abductor,
 /area/virtual_domain)
-"JC" = (
-/obj/item/organ/tail/cat,
-/turf/open/floor/plating/abductor,
-/area/virtual_domain)
 "JR" = (
 /obj/machinery/door/airlock/abductor{
 	name = "Experimentation Lab"
@@ -1208,7 +1204,7 @@ MC
 uw
 YV
 Mr
-JC
+WS
 uw
 YV
 YV

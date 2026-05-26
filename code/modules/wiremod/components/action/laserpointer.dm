@@ -52,7 +52,6 @@
 	if(get_dist(current_turf, target) > max_range || current_turf.z != target.z)
 		return
 
-	// only has cyborg flashing since felinid moving spikes time dilation when spammed and the other two features of laserpointers would be unbalanced when spammed
 	if(iscyborg(target))
 		var/mob/living/silicon/silicon = target
 		log_combat(shell, silicon, "shone in the sensors", src)

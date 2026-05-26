@@ -17,9 +17,6 @@
 	if(ishuman(user))
 		add_atom_colour(user.hair_color, FIXED_COLOUR_PRIORITY)
 
-/obj/item/clothing/head/costume/kitty/genuine
-	desc = "A pair of kitty ears. A tag on the inside says \"Hand made from real cats.\""
-
 /obj/item/clothing/head/costume/rabbitears
 	name = "rabbit ears"
 	desc = "Wearing these makes you look useless, and only good for your sex appeal."

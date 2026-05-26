@@ -158,7 +158,6 @@
 #define VV_HK_MOD_MUTATIONS "quirkmut"
 #define VV_HK_MOD_QUIRKS "quirkmod"
 #define VV_HK_SET_SPECIES "setspecies"
-#define VV_HK_PURRBATION "purrbation"
 #define VV_HK_APPLY_DNA_INFUSION "apply_dna_infusion"
 #define VV_HK_TURN_INTO_MMI "turn_into_mmi"
 

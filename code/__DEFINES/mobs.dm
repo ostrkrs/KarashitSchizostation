@@ -182,7 +182,6 @@
 #define SPECIES_ETHEREAL_LUSTROUS "lustrous"
 #define SPECIES_GHOST "ghost"
 #define SPECIES_GOLEM "golem"
-#define SPECIES_FELINE "felinid"
 #define SPECIES_FLYPERSON "fly"
 #define SPECIES_JELLYPERSON "jelly"
 #define SPECIES_SLIMEPERSON "slime"

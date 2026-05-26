@@ -165,7 +165,6 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/structure/table/optable/abductor,
 	)),
 	"anime" = typecacheof(list(
-		/obj/item/clothing/head/costume/kitty/genuine,
 		/obj/item/clothing/mask/gas/ninja,
 		/obj/item/clothing/under/syndicate/ninja,
 		/obj/item/clothing/under/costume/seifuku,
@@ -563,7 +562,6 @@ GLOBAL_LIST_INIT(phobia_species, list(
 		/datum/species/pod,
 		/datum/species/shadow,
 	)),
-	"anime" = typecacheof(list(/datum/species/human/felinid)),
 	"conspiracies" = typecacheof(list(
 		/datum/species/abductor,
 		/datum/species/lizard,

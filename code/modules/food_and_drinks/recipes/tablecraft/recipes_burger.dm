@@ -267,18 +267,6 @@
 	added_foodtypes = TOXIC
 	category = CAT_BURGER
 
-/datum/crafting_recipe/food/catburger
-	name = "Cat burger"
-	reqs = list(
-		/obj/item/food/bun = 1,
-		/obj/item/food/patty/plain = 1,
-		/obj/item/organ/ears/cat = 1,
-		/obj/item/organ/tail/cat = 1,
-	)
-	result = /obj/item/food/burger/catburger
-	added_foodtypes = GORE
-	category = CAT_BURGER
-
 /datum/crafting_recipe/food/crabburger
 	name = "Crab Burger"
 	reqs = list(

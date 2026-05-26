@@ -2787,15 +2787,6 @@
 	taste_description = "sweet nectar of the gods"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/consumable/ethanol/nekomimosa
-	name = "Nekomimosa"
-	description = "An overly sweet cocktail, made with melon liqueur, melon juice, and champagne (which contains no melon, unfortunately)."
-	boozepwr = 17
-	color = "#FF0C8D"
-	quality = DRINK_GOOD
-	taste_description = "MELON"
-	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
-
 /datum/reagent/consumable/ethanol/sentai_quencha //melon soda, triple citrus, shochu, blue curacao
 	name = "Sentai Quencha"
 	description = "Based on the galaxy-famous \"Kyūkyoku no Ninja Pawā Sentai\", the Sentai Quencha is a favourite at anime conventions and weeb bars."

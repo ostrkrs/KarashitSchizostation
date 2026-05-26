@@ -209,7 +209,7 @@
 		if(!HAS_TRAIT(exposed_mob, TRAIT_WATER_HATER) || HAS_TRAIT(exposed_mob, TRAIT_WATER_ADAPTATION))
 			return
 
-		exposed_mob.incapacitate(1) // startles the felinid, canceling any do_after
+		exposed_mob.incapacitate(1)
 		exposed_mob.add_mood_event("watersprayed", /datum/mood_event/watersprayed)
 
 	if(methods & (TOUCH|VAPOR)) // wakey wakey eggs and bakey

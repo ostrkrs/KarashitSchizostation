@@ -263,16 +263,6 @@
 	reqs = list(/obj/item/stack/sheet/animalhide/lizard = 1)
 	category = CAT_CLOTHING
 
-/datum/crafting_recipe/kittyears
-	name = "Kitty Ears"
-	result = /obj/item/clothing/head/costume/kitty/genuine
-	time = 1 SECONDS
-	reqs = list(
-		/obj/item/organ/tail/cat = 1,
-		/obj/item/organ/ears/cat = 1,
-	)
-	category = CAT_CLOTHING
-
 /datum/crafting_recipe/bonearmor
 	name = "Bone Armor"
 	result = /obj/item/clothing/suit/armor/bone

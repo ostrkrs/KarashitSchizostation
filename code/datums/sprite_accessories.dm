@@ -1697,12 +1697,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	icon_state = "short"
 	spine_key = NONE
 
-/datum/sprite_accessory/tails/felinid/cat
-	name = "Cat"
-	icon = 'icons/mob/human/cat_features.dmi'
-	icon_state = "default"
-	color_src = HAIR_COLOR
-
 /datum/sprite_accessory/tails/monkey
 
 /datum/sprite_accessory/tails/monkey/none
@@ -1732,7 +1726,7 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	dimension_x = 64
 
 /datum/sprite_accessory/tails/caver
-	icon = 'icons/mob/human/species/human_subspecies/caver/caver_tails.dmi'
+	icon = 'icons/mob/human/species/human_subtypes/caver/caver_tails.dmi'
 
 /datum/sprite_accessory/tails/caver/none
 	name = SPRITE_ACCESSORY_NONE
@@ -1842,7 +1836,7 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	em_block = TRUE
 
 /datum/sprite_accessory/horns/caver
-	icon = 'icons/mob/human/species/human_subspecies/caver/caver_boneplates.dmi'
+	icon = 'icons/mob/human/species/human_subtypes/caver/caver_boneplates.dmi'
 
 /datum/sprite_accessory/horns/caver/default
 	name = "Default"

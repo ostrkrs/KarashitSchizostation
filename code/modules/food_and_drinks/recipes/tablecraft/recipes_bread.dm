@@ -224,8 +224,7 @@
 	name = "Bread cat/bread hybrid"
 	reqs = list(
 		/obj/item/food/bread/plain = 1,
-		/obj/item/organ/ears/cat = 1,
-		/obj/item/organ/tail/cat = 1,
+		/obj/item/clothing/head/costume/kitty = 1,
 		/obj/item/food/meat/slab = 3,
 		/datum/reagent/blood = 50,
 		/datum/reagent/medicine/strange_reagent = 5

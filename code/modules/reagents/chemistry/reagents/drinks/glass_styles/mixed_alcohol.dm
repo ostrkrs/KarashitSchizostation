@@ -946,13 +946,6 @@
 	icon = 'icons/obj/drinks/mixed_drinks.dmi'
 	icon_state = "amaterasu"
 
-/datum/glass_style/drinking_glass/nekomimosa
-	required_drink_type = /datum/reagent/consumable/ethanol/nekomimosa
-	name = "Nekomimosa"
-	desc = "A syrupy mess of a cocktail, dedicated to a felinid popstar that took Mars by storm a few years ago."
-	icon = 'icons/obj/drinks/mixed_drinks.dmi'
-	icon_state = "nekomimosa"
-
 /datum/glass_style/drinking_glass/sentai_quencha
 	required_drink_type = /datum/reagent/consumable/ethanol/sentai_quencha
 	name = "Sentai Quencha"

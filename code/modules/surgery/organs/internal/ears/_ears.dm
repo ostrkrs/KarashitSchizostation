@@ -239,7 +239,6 @@
 	name = "whisper-sensitive cybernetic ears"
 	icon_state = "ears-c-u"
 	desc = "Allows the user to more easily hear whispers. The user becomes extra vulnerable to loud noises, however"
-	// Same sensitivity as felinid ears
 	damage_multiplier = 2
 
 // The original idea was to use signals to do this not traits. Unfortunately, the star effect used for whispers applies before any relevant signals
@@ -257,7 +256,6 @@
 	name = "wall-penetrating cybernetic ears"
 	icon_state = "ears-c-u"
 	desc = "Through the power of modern engineering, allows the user to hear speech through walls. The user becomes extra vulnerable to loud noises, however"
-	// Same sensitivity as felinid ears
 	damage_multiplier = 2
 
 /obj/item/organ/ears/cybernetic/xray/on_mob_insert(mob/living/carbon/ear_owner)

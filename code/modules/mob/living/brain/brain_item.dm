@@ -493,17 +493,6 @@
 	organ_owner.gain_trauma(/datum/brain_trauma/special/bluespace_prophet, TRAUMA_RESILIENCE_ABSOLUTE)
 	organ_owner.AddElement(/datum/element/tenacious)
 
-/obj/item/organ/brain/felinid //A bit smaller than average
-	brain_size = 0.8
-
-// Sometimes, felinids go a bit haywire and bite people. Based entirely on mania and hunger.
-/obj/item/organ/brain/felinid/get_attacking_limb(mob/living/carbon/human/target)
-	var/starving_cat_bonus = owner.nutrition <= NUTRITION_LEVEL_HUNGRY ? 1 : 10
-	var/crazy_feral_cat = clamp((starving_cat_bonus * owner.mob_mood?.sanity_level), 0, 100)
-	if(prob(crazy_feral_cat) || HAS_TRAIT(owner, TRAIT_FERAL_BITER))
-		return owner.get_bodypart(BODY_ZONE_HEAD) || ..()
-	return ..()
-
 /obj/item/organ/brain/lizard
 	name = "lizard brain"
 	desc = "This juicy piece of meat has a oversized brain stem and cerebellum, with not much of a limbic system to speak of at all. You would expect its owner to be pretty cold blooded."

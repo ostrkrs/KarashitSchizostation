@@ -59,7 +59,6 @@
 #define FEATURE_SERPENTID_COLOR "serpcolor"
 #define FEATURE_CAVER_COLOR "cavercolor"
 #define FEATURE_EARS "ears"
-#define FEATURE_TAIL "tail_cat"
 #define FEATURE_TAIL_LIZARD "tail_lizard"
 #define FEATURE_TAIL_CAVER "tail_caver"
 #define FEATURE_TAIL_FISH "fish_tail"

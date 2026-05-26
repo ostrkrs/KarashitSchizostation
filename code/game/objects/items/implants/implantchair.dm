@@ -165,9 +165,8 @@
 /obj/machinery/implantchair/genepurge/implant_action(mob/living/carbon/human/human, mob/user)
 	if(!istype(human))
 		return FALSE
-	human.dna.remove_all_mutations()//hulks out
-	human.set_species(/datum/species/human, 1)//lizards go home
-	purrbation_remove(human)//remove cats
+	human.dna.remove_all_mutations()
+	human.set_species(/datum/species/human, 1)
 	return TRUE
 
 

@@ -300,7 +300,7 @@ GLOBAL_LIST_INIT(skin_tone_names, list(
 			. = TRUE
 
 /// Returns if the given target is a human. Like, a REAL human.
-/// Not a moth, not a felinid (which are human subtypes), but a human.
+/// Not a moth, not a caver (which are human subtypes), but a human.
 /proc/ishumanbasic(target)
 	if (!ishuman(target))
 		return FALSE

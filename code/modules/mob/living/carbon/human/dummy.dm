@@ -123,7 +123,6 @@ INITIALIZE_IMMEDIATE(/mob/living/carbon/human/dummy)
 	target.dna.features[FEATURE_MOTH_WINGS] = get_consistent_feature_entry(SSaccessories.moth_wings_list)
 	target.dna.features[FEATURE_SNOUT] = get_consistent_feature_entry(SSaccessories.snouts_list)
 	target.dna.features[FEATURE_SPINES] = get_consistent_feature_entry(SSaccessories.spines_list)
-	target.dna.features[FEATURE_TAIL] = get_consistent_feature_entry(SSaccessories.tails_list_felinid) // it's a lie
 	target.dna.features[FEATURE_TAIL_LIZARD] = get_consistent_feature_entry(SSaccessories.tails_list_lizard)
 	target.dna.features[FEATURE_TAIL_CAVER] = get_consistent_feature_entry(SSaccessories.tails_list_caver)
 	target.dna.features[FEATURE_TAIL_MONKEY] = get_consistent_feature_entry(SSaccessories.tails_list_monkey)

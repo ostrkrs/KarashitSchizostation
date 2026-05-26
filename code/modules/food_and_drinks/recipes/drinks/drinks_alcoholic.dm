@@ -609,10 +609,6 @@
 	results = list(/datum/reagent/consumable/ethanol/amaterasu = 10)
 	required_reagents = list(/datum/reagent/consumable/ethanol/shochu = 1, /datum/reagent/consumable/ethanol/vodka = 1, /datum/reagent/consumable/grenadine = 1, /datum/reagent/consumable/berryjuice = 2, /datum/reagent/consumable/sodawater = 5)
 
-/datum/chemical_reaction/drink/nekomimosa
-	results = list(/datum/reagent/consumable/ethanol/nekomimosa = 5)
-	required_reagents = list(/datum/reagent/consumable/ethanol/yuyake = 2, /datum/reagent/consumable/watermelonjuice = 2, /datum/reagent/consumable/ethanol/champagne = 1)
-
 /datum/chemical_reaction/drink/sentai_quencha
 	results = list(/datum/reagent/consumable/ethanol/sentai_quencha = 5)
 	required_reagents = list(/datum/reagent/consumable/ethanol/shochu = 1, /datum/reagent/consumable/ethanol/curacao = 1, /datum/reagent/consumable/triple_citrus = 1, /datum/reagent/consumable/melon_soda = 2)
@@ -680,11 +676,11 @@
 	results = list(/datum/reagent/consumable/ethanol/amaretto_sour = 15)
 	required_reagents = list(/datum/reagent/consumable/ethanol/amaretto = 10, /datum/reagent/consumable/lemonjuice = 5, /datum/reagent/consumable/eggwhite = 2)
 	mix_message = "A frothy head forms over the mixture."
-	
+
 /datum/chemical_reaction/drink/ramos_gin_fizz
 	results = list(/datum/reagent/consumable/ethanol/ramos_gin_fizz = 25)
 	//yes, this is intentionally a pain in the ass
-	required_reagents = list(/datum/reagent/consumable/ethanol/ginfizz = 12, /datum/reagent/consumable/lemonjuice = 3, /datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/eggwhite = 3, /datum/reagent/consumable/cream = 3, /datum/reagent/consumable/ethanol/triple_sec = 1) 
+	required_reagents = list(/datum/reagent/consumable/ethanol/ginfizz = 12, /datum/reagent/consumable/lemonjuice = 3, /datum/reagent/consumable/sugar = 3, /datum/reagent/consumable/eggwhite = 3, /datum/reagent/consumable/cream = 3, /datum/reagent/consumable/ethanol/triple_sec = 1)
 	mix_message = "The drink forms a rising head of foam that begins to creep out of the top of the glass."
 
 /datum/chemical_reaction/drink/french_75
@@ -707,7 +703,7 @@
 
 /datum/chemical_reaction/drink/tizirian_sour
 	results = list(/datum/reagent/consumable/ethanol/tizirian_sour = 8)
-	required_reagents = list(/datum/reagent/consumable/ethanol/bitters = 3, /datum/reagent/consumable/lemonjuice = 2, /datum/reagent/consumable/korta_nectar = 2, /datum/reagent/consumable/sugar = 1)	
+	required_reagents = list(/datum/reagent/consumable/ethanol/bitters = 3, /datum/reagent/consumable/lemonjuice = 2, /datum/reagent/consumable/korta_nectar = 2, /datum/reagent/consumable/sugar = 1)
 
 /datum/chemical_reaction/drink/daiquiri
 	results = list(/datum/reagent/consumable/ethanol/daiquiri = 6)

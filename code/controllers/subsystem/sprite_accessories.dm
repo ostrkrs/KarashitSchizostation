@@ -45,7 +45,6 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 	var/list/tail_spines_list
 
 	//Mutant Human bits
-	var/list/tails_list_felinid
 	var/list/tails_list_lizard
 	var/list/tails_list_caver
 	var/list/tails_list_monkey
@@ -94,7 +93,6 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 	socks_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/clothing/socks)[DEFAULT_SPRITE_LIST]
 
 	lizard_markings_list = init_sprite_accessory_subtypes(/datum/sprite_accessory/lizard_markings, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
-	tails_list_felinid = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/felinid, add_blank = TRUE)[DEFAULT_SPRITE_LIST]
 	tails_list_lizard = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/lizard)[DEFAULT_SPRITE_LIST]
 	tails_list_caver = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/caver)[DEFAULT_SPRITE_LIST]
 	tails_list_monkey = init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/monkey)[DEFAULT_SPRITE_LIST]
@@ -134,7 +132,7 @@ SUBSYSTEM_DEF(accessories) // just 'accessories' for brevity
 		hair_masks_list[path] = mask
 
 /// This reads the applicable sprite accessory datum's subtypes and adds it to the subsystem's list of sprite accessories.
-/// The boolean `add_blank` argument just adds a "None" option to the list of sprite accessories, like if a felinid doesn't want a tail or something, typically good for gated-off things.
+/// The boolean `add_blank` argument just adds a "None" option to the list of sprite accessories.
 /datum/controller/subsystem/accessories/proc/init_sprite_accessory_subtypes(prototype, add_blank = FALSE)
 	RETURN_TYPE(/list)
 	var/returnable_list = list(

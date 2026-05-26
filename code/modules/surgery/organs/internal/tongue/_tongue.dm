@@ -89,7 +89,6 @@
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
 		/datum/language/terrum,
-		/datum/language/nekomimetic,
 	)
 
 /obj/item/organ/tongue/proc/handle_speech(datum/source, list/speech_args)
@@ -616,45 +615,6 @@
 // Ethereal tongues can speak all default + voltaic
 /obj/item/organ/tongue/ethereal/get_possible_languages()
 	return ..() + /datum/language/voltaic
-
-/obj/item/organ/tongue/cat
-	name = "felinid tongue"
-	desc = "A fleshy muscle mostly used for meowing. Or biting."
-	say_mod = "meows"
-	liked_foodtypes = SEAFOOD | ORANGES | BUGS | GORE
-	disliked_foodtypes = GROSS | CLOTH | RAW
-	organ_traits = list(TRAIT_WOUND_LICKER, TRAIT_FISH_EATER, TRAIT_CARPOTOXIN_IMMUNE)
-	languages_native = list(/datum/language/nekomimetic)
-	actions_types = list(/datum/action/item_action/organ_action/go_feral)
-	var/feral_mode = FALSE
-
-/obj/item/organ/tongue/cat/on_bodypart_insert(obj/item/bodypart/head)
-	. = ..()
-	head.unarmed_damage_low += 4
-	head.unarmed_damage_high += 7
-	head.unarmed_effectiveness += 10
-	head.unarmed_pummeling_bonus += 0.5
-	head.unarmed_attack_effect = ATTACK_EFFECT_BITE
-	head.unarmed_sharpness = SHARP_EDGED
-	if(feral_mode)
-		add_organ_trait(TRAIT_FERAL_BITER)
-
-/obj/item/organ/tongue/cat/on_bodypart_remove(obj/item/bodypart/head)
-	. = ..()
-	head.unarmed_damage_low -= 4
-	head.unarmed_damage_high -= 7
-	head.unarmed_effectiveness -= 10
-	head.unarmed_pummeling_bonus -= 0.5
-	head.unarmed_attack_effect = initial(head.unarmed_attack_effect)
-	head.unarmed_sharpness = initial(head.unarmed_sharpness)
-	remove_organ_trait(TRAIT_FERAL_BITER)
-
-/obj/item/organ/tongue/cat/proc/toggle_feral()
-	feral_mode = !feral_mode
-	if(feral_mode)
-		add_organ_trait(TRAIT_FERAL_BITER)
-	else
-		remove_organ_trait(TRAIT_FERAL_BITER)
 
 /obj/item/organ/tongue/jelly
 	name = "jelly tongue"

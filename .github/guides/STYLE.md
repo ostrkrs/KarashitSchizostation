@@ -21,12 +21,10 @@ Do not use tabs/spaces for indentation in the middle of a code line. Not only is
 // Bad
 #define SPECIES_MOTH			"moth"
 #define SPECIES_LIZARDMAN		"lizardman"
-#define SPECIES_FELINID			"felinid"
 
 // Good
 #define SPECIES_MOTH "moth"
 #define SPECIES_LIZARDMAN "lizardman"
-#define SPECIES_FELINID "felinid"
 ```
 
 ### Control statements

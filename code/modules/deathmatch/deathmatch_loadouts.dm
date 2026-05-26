@@ -796,7 +796,6 @@
 		// reclaiming lizard racism
 		/obj/item/reagent_containers/cup/glass/bottle/lizardwine,
 		/obj/item/tailclub,
-		/obj/item/melee/chainofcommand/tailwhip,
 		/obj/item/reagent_containers/cup/glass/coffee
 	)
 
@@ -880,24 +879,6 @@
 		/obj/item/storage/medkit/fire,
 		/obj/item/reagent_containers/syringe/plasma
 	)
-
-/datum/outfit/deathmatch_loadout/felinid
-	name = "Deathmatch: Felinid Species"
-	display_name = "Felinids"
-	desc = "Strictly inferior to humans in every way."
-	species_override = /datum/species/human/felinid
-
-	head = /obj/item/clothing/head/soft/rainbow
-	glasses = null
-	ears = /obj/item/radio/headset
-	neck = /obj/item/clothing/neck/petcollar
-	//suit
-	uniform = /obj/item/clothing/under/color/rainbow
-	l_pocket = /obj/item/toy/cattoy
-	r_pocket = /obj/item/restraints/handcuffs/fake
-	gloves = /obj/item/clothing/gloves/color/rainbow
-	belt = /obj/item/melee/curator_whip
-	shoes = /obj/item/clothing/shoes/sneakers/rainbow
 
 //spleef
 

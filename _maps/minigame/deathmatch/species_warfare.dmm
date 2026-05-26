@@ -1016,10 +1016,6 @@
 /obj/effect/turf_decal/tile/yellow,
 /turf/open/indestructible,
 /area/deathmatch)
-"JX" = (
-/obj/item/melee/chainofcommand/tailwhip/kitty,
-/turf/open/floor/wood,
-/area/deathmatch)
 "Ka" = (
 /obj/machinery/door/airlock{
 	id_tag = "Cabin7";
@@ -1325,7 +1321,6 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Yo" = (
-/mob/living/basic/cat_butcherer,
 /obj/structure/bed,
 /obj/item/bedsheet/runtime,
 /obj/machinery/light/small/blacklight/directional/north,
@@ -2060,7 +2055,7 @@ rV
 rV
 zJ
 Yo
-JX
+sJ
 zJ
 Ia
 uq
