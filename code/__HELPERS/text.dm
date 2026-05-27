@@ -401,7 +401,7 @@
 
 /proc/stringpercent(text,character = "*")
 //This proc returns the number of chars of the string that is the character
-//This is used for detective work to determine fingerprint completion.
+//This is used for criminalist work to determine fingerprint completion.
 	if(!text || !character)
 		return 0
 	var/count = 0

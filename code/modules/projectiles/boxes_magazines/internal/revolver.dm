@@ -1,5 +1,5 @@
 /obj/item/ammo_box/magazine/internal/cylinder/rev38
-	name = "detective revolver cylinder"
+	name = ".38 revolver cylinder"
 	ammo_type = /obj/item/ammo_casing/c38
 	caliber = CALIBER_38
 	max_ammo = 6

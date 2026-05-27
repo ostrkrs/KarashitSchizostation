@@ -400,16 +400,16 @@
 	if (prob(hit_reflect_chance))
 		return TRUE
 
-/obj/item/clothing/suit/armor/vest/det_suit
-	name = "detective's flak vest"
-	desc = "An armored vest with a detective's badge on it."
+/obj/item/clothing/suit/armor/vest/criminalist
+	name = "criminalist's flak vest"
+	desc = "An armored vest with a criminalist's badge on it."
 	icon_state = "detective-armor"
 	resistance_flags = FLAMMABLE
 	dog_fashion = null
 
-/obj/item/clothing/suit/armor/vest/det_suit/Initialize(mapload)
+/obj/item/clothing/suit/armor/vest/criminalist/Initialize(mapload)
 	. = ..()
-	allowed = GLOB.detective_vest_allowed
+	allowed = GLOB.criminalist_vest_allowed
 
 /obj/item/clothing/suit/armor/swat
 	name = "MK.I SWAT Suit"

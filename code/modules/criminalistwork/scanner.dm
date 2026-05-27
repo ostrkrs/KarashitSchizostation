@@ -1,6 +1,6 @@
-//CONTAINS: Detective's Scanner
+//CONTAINS: Criminalist's Scanner
 
-/obj/item/detective_scanner
+/obj/item/criminalist_scanner
 	name = "forensic scanner"
 	desc = "Used to remotely scan objects and biomass for DNA and fingerprints. Can print a report of the findings."
 	icon = 'icons/obj/devices/scanner.dmi'
@@ -20,7 +20,7 @@
 	var/view_check = TRUE
 	var/forensicPrintCount = 0
 
-/obj/item/detective_scanner/interact(mob/user)
+/obj/item/criminalist_scanner/interact(mob/user)
 	. = ..()
 	if(user.stat != CONSCIOUS || !user.can_read(src) || user.is_blind())
 		return ITEM_INTERACT_BLOCKING
@@ -32,11 +32,11 @@
  *
  * Calls print_report(), and should a runtime occur within we can still reset the 'busy' state
  */
-/obj/item/detective_scanner/proc/safe_print_report()
+/obj/item/criminalist_scanner/proc/safe_print_report()
 	print_report()
 	scanner_busy = FALSE
 
-/obj/item/detective_scanner/proc/print_report()
+/obj/item/criminalist_scanner/proc/print_report()
 	// Create our paper
 	var/obj/item/paper/report_paper = new(get_turf(src))
 
@@ -99,13 +99,13 @@
 	// Clear the logs
 	log_data = list()
 
-/obj/item/detective_scanner/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
+/obj/item/criminalist_scanner/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
 	if(SHOULD_SKIP_INTERACTION(interacting_with, src, user))
 		return NONE // lets us put our scanner away without trying to scan the bag
 	safe_scan(user, interacting_with)
 	return ITEM_INTERACT_SUCCESS
 
-/obj/item/detective_scanner/ranged_interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
+/obj/item/criminalist_scanner/ranged_interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
 	safe_scan(user, interacting_with)
 	return ITEM_INTERACT_SUCCESS
 
@@ -114,7 +114,7 @@
  *
  * calls scan(), and should a runtime occur within we can still reset the 'busy' state
  */
-/obj/item/detective_scanner/proc/safe_scan(mob/user, atom/atom_to_scan)
+/obj/item/criminalist_scanner/proc/safe_scan(mob/user, atom/atom_to_scan)
 	set waitfor = FALSE
 	if(scanner_busy)
 		balloon_alert(user, "scanner busy!")
@@ -128,7 +128,7 @@
  *
  * This should always return TRUE barring a runtime
  */
-/obj/item/detective_scanner/proc/scan(mob/user, atom/scanned_atom)
+/obj/item/criminalist_scanner/proc/scan(mob/user, atom/scanned_atom)
 	if(loc != user)
 		return TRUE
 	// Can scan items we hold and store
@@ -206,33 +206,33 @@
 			LAZYADD(log_entry_data[DETSCAN_CATEGORY_ACCESS][region], english_list(access_names))
 
 	// sends it off to be modified by the items
-	SEND_SIGNAL(scanned_atom, COMSIG_DETECTIVE_SCANNED, user, log_entry_data)
+	SEND_SIGNAL(scanned_atom, COMSIG_CRIMINALIST_SCANNED, user, log_entry_data)
 
 	stoplag(3 SECONDS)
 	log_data += list(log_entry_data)
 	return TRUE
 
-/obj/item/detective_scanner/click_alt(mob/living/user)
+/obj/item/criminalist_scanner/click_alt(mob/living/user)
 	return clear_logs()
 
-/obj/item/detective_scanner/examine(mob/user)
+/obj/item/criminalist_scanner/examine(mob/user)
 	. = ..()
 	if(LAZYLEN(log_data) && !scanner_busy)
 		. += span_notice("Alt-click to clear scanner logs.")
 
 
-/obj/item/detective_scanner/ui_interact(mob/user, datum/tgui/ui)
+/obj/item/criminalist_scanner/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "ForensicScanner", "Forensic Scanner")
 		ui.open()
 
-/obj/item/detective_scanner/ui_data(mob/user)
+/obj/item/criminalist_scanner/ui_data(mob/user)
 	var/list/data = list()
 	data["log_data"] = log_data
 	return data
 
-/obj/item/detective_scanner/ui_act(action, params, datum/tgui/ui)
+/obj/item/criminalist_scanner/ui_act(action, params, datum/tgui/ui)
 	. = ..()
 	if(.)
 		return
@@ -262,7 +262,7 @@
 			balloon_alert(ui.user, "printing report...")
 			addtimer(CALLBACK(src, PROC_REF(safe_print_report)), 3 SECONDS)
 
-/obj/item/detective_scanner/proc/clear_logs(mob/living/user)
+/obj/item/criminalist_scanner/proc/clear_logs(mob/living/user)
 	if(!LAZYLEN(log_data))
 		balloon_alert(user, "no logs!")
 		return CLICK_ACTION_BLOCKING

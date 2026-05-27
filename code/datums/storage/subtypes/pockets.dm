@@ -45,9 +45,9 @@
 		/obj/item/gun/ballistic/automatic/tommygun,
 	))
 
-///Fedora detective pockets
-/datum/storage/pockets/small/fedora/detective
-	attack_hand_interact = TRUE // so the detectives would discover pockets in their hats
+///Fedora criminalist pockets
+/datum/storage/pockets/small/fedora/criminalist
+	attack_hand_interact = TRUE // so the criminalists would discover pockets in their hats
 	click_alt_open = FALSE
 
 ///Chef hat pocket

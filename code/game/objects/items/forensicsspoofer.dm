@@ -1,13 +1,13 @@
 /obj/item/forensics_spoofer
-	name = /obj/item/detective_scanner::name
+	name = /obj/item/criminalist_scanner::name
 	desc = "Used to adjacently scan objects and biomass for fibers and fingerprints. Can replicate the findings."
-	icon = /obj/item/detective_scanner::icon
-	icon_state = /obj/item/detective_scanner::icon_state
+	icon = /obj/item/criminalist_scanner::icon
+	icon_state = /obj/item/criminalist_scanner::icon_state
 	w_class = WEIGHT_CLASS_SMALL
-	inhand_icon_state = /obj/item/detective_scanner::inhand_icon_state
-	worn_icon_state = /obj/item/detective_scanner::worn_icon_state
-	lefthand_file = /obj/item/detective_scanner::lefthand_file
-	righthand_file = /obj/item/detective_scanner::righthand_file
+	inhand_icon_state = /obj/item/criminalist_scanner::inhand_icon_state
+	worn_icon_state = /obj/item/criminalist_scanner::worn_icon_state
+	lefthand_file = /obj/item/criminalist_scanner::lefthand_file
+	righthand_file = /obj/item/criminalist_scanner::righthand_file
 	obj_flags = CONDUCTS_ELECTRICITY
 	item_flags = NOBLUDGEON
 	slot_flags = ITEM_SLOT_BELT

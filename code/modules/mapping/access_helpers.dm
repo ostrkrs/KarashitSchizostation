@@ -268,9 +268,9 @@
 	access_list += ACCESS_ARMORY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/any/security/detective/get_access()
+/obj/effect/mapping_helpers/airlock/access/any/security/criminalist/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_DETECTIVE
+	access_list += ACCESS_CRIMINALIST
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/any/security/court/get_access()
@@ -749,9 +749,9 @@
 	access_list += ACCESS_ARMORY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/all/security/detective/get_access()
+/obj/effect/mapping_helpers/airlock/access/all/security/criminalist/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_DETECTIVE
+	access_list += ACCESS_CRIMINALIST
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/all/security/court/get_access()

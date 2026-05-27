@@ -79,15 +79,15 @@
 	icon_state = "evidence"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
-/area/station/security/detectives_office
-	name = "\improper Detective's Office"
-	icon_state = "detective"
+/area/station/security/criminalist_office
+	name = "\improper Criminalist's Office"
+	icon_state = "criminalist"
 	ambientsounds = list(
 		'sound/ambience/security/ambidet1.ogg',
 		'sound/ambience/security/ambidet2.ogg',
 		)
 
-/area/station/security/detectives_office/private_investigators_office
+/area/station/security/criminalist_office/private_investigators_office
 	name = "\improper Private Investigator's Office"
 	icon_state = "investigate_office"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR

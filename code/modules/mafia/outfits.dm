@@ -58,12 +58,12 @@
 /datum/outfit/mafia/detective
 	name = "Mafia Detective"
 
-	uniform = /obj/item/clothing/under/rank/security/detective
-	neck = /obj/item/clothing/neck/tie/detective
+	uniform = /obj/item/clothing/under/rank/security/criminalist
+	neck = /obj/item/clothing/neck/tie/criminalist
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/toggle/jacket/det_trench
+	suit = /obj/item/clothing/suit/toggle/jacket/criminalist_trench
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/fedora/det_hat
+	head = /obj/item/clothing/head/fedora/criminalist
 	mask = /obj/item/cigarette
 
 /datum/outfit/mafia/psychologist

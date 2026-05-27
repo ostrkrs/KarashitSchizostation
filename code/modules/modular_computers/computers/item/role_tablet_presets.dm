@@ -152,8 +152,8 @@
 		/datum/computer_file/program/robocontrol,
 	)
 
-/obj/item/modular_computer/pda/detective
-	name = "detective PDA"
+/obj/item/modular_computer/pda/criminalist
+	name = "criminalist PDA"
 	greyscale_colors = "#805A2F#990202"
 	inserted_item = /obj/item/pen/red/security
 	starting_programs = list(

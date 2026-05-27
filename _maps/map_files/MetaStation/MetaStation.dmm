@@ -1747,7 +1747,7 @@
 	},
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "aHt" = (
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -1947,7 +1947,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "aKb" = (
 /turf/closed/wall,
 /area/station/maintenance/central)
@@ -3501,7 +3501,7 @@
 /obj/structure/filingcabinet,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "bla" = (
 /obj/effect/spawner/random/vending/snackvend,
 /turf/open/floor/wood,
@@ -4782,7 +4782,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "bHQ" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/sorting/mail{
@@ -6238,7 +6238,7 @@
 /area/station/maintenance/port)
 "clq" = (
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "clE" = (
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -8581,7 +8581,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "dbk" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -11729,7 +11729,7 @@
 	pixel_y = -2
 	},
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "eeT" = (
 /obj/machinery/vending/hydroseeds{
 	slogan_delay = 700
@@ -15973,7 +15973,7 @@
 /area/station/maintenance/starboard/lesser)
 "fAL" = (
 /turf/closed/wall,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "fAP" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 4
@@ -16116,7 +16116,7 @@
 "fEn" = (
 /obj/structure/window/reinforced/spawner/directional/north,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "fEC" = (
 /obj/structure/table/wood,
 /obj/item/cigbutt/cigarbutt{
@@ -16260,7 +16260,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/mapping_helpers/airlock/access/all/security/detective,
+/obj/effect/mapping_helpers/airlock/access/all/security/criminalist,
 /turf/open/floor/plating,
 /area/station/maintenance/fore)
 "fGH" = (
@@ -20796,9 +20796,9 @@
 	name = "detective's office shutters control";
 	req_access = list("detective")
 	},
-/obj/structure/detectiveboard/directional/east,
+/obj/structure/criminalistboard/directional/east,
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "hlq" = (
 /obj/structure/chair{
 	dir = 4
@@ -22284,7 +22284,7 @@
 /obj/item/storage/box/evidence,
 /obj/item/flashlight/seclite,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "hMQ" = (
 /obj/machinery/camera/directional/south{
 	c_tag = "Holodeck Control"
@@ -25259,7 +25259,7 @@
 /obj/structure/disposalpipe/sorting/mail{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/mail_sorting/security/detectives_office,
+/obj/effect/mapping_helpers/mail_sorting/security/criminalists_office,
 /turf/open/floor/iron,
 /area/station/security/brig)
 "iMr" = (
@@ -25440,7 +25440,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "iPb" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -27662,7 +27662,7 @@
 	},
 /obj/machinery/newscaster/directional/east,
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "jzp" = (
 /turf/closed/wall,
 /area/station/commons/vacant_room/office)
@@ -27761,7 +27761,7 @@
 	dir = 9
 	},
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "jAT" = (
 /obj/structure/cable,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -28446,7 +28446,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "jML" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
@@ -33645,10 +33645,10 @@
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "lGj" = (
-/obj/machinery/vending/wardrobe/det_wardrobe,
+/obj/machinery/vending/wardrobe/criminalist,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "lGL" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
@@ -35143,7 +35143,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "mhD" = (
 /obj/machinery/atmospherics/pipe/smart/simple/purple/visible{
 	dir = 9
@@ -37066,7 +37066,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "mOD" = (
 /obj/effect/spawner/random/structure/crate,
 /turf/open/floor/plating,
@@ -44364,9 +44364,9 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
-/obj/effect/mapping_helpers/airlock/access/all/security/detective,
+/obj/effect/mapping_helpers/airlock/access/all/security/criminalist,
 /turf/open/floor/iron,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "pqb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/engineering/glass{
@@ -45538,7 +45538,7 @@
 /obj/item/pen,
 /obj/item/book/manual/wiki/security_corp_law,
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "pKv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/grimy,
@@ -48291,7 +48291,7 @@
 	c_tag = "Detective's Office"
 	},
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "qJd" = (
 /obj/machinery/status_display/ai/directional/north,
 /obj/machinery/computer/station_alert,
@@ -51408,7 +51408,7 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/secure_safe/directional/west,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "rJk" = (
 /obj/machinery/door/airlock{
 	name = "Theater Backstage"
@@ -54530,9 +54530,9 @@
 /obj/structure/table/wood,
 /obj/item/folder/red,
 /obj/item/hand_labeler,
-/obj/item/camera/detective,
+/obj/item/camera/criminalist,
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "sOn" = (
 /obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 8
@@ -55150,7 +55150,7 @@
 /area/station/maintenance/port/aft)
 "sWV" = (
 /turf/closed/wall/r_wall,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "sXe" = (
 /obj/effect/landmark/start/station_engineer,
 /obj/machinery/light/directional/west,
@@ -58960,7 +58960,7 @@
 	},
 /obj/item/restraints/handcuffs,
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "unL" = (
 /turf/closed/wall,
 /area/station/maintenance/starboard/greater)
@@ -60337,7 +60337,7 @@
 /obj/structure/table/wood,
 /obj/item/storage/fancy/cigarettes,
 /turf/open/floor/carpet,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "uJx" = (
 /obj/machinery/button/door/directional/north{
 	id = "hop";
@@ -65236,7 +65236,7 @@
 "woV" = (
 /obj/machinery/door/window/left/directional/north,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "woY" = (
 /obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
@@ -69494,7 +69494,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "xNq" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
@@ -70075,9 +70075,9 @@
 /area/station/command/teleporter)
 "xXC" = (
 /obj/effect/landmark/blobstart,
-/obj/structure/closet/secure_closet/detective,
+/obj/structure/closet/secure_closet/criminalist,
 /turf/open/floor/iron/grimy,
-/area/station/security/detectives_office)
+/area/station/security/criminalist_office)
 "xXG" = (
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible/layer5{

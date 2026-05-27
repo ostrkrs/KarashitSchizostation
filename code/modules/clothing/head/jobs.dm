@@ -148,34 +148,34 @@
 
 #define CANDY_CD_TIME 2 MINUTES
 
-//Detective
-/obj/item/clothing/head/fedora/det_hat
-	name = "detective's fedora"
+//Criminalist
+/obj/item/clothing/head/fedora/criminalist
+	name = "criminalist's fedora"
 	desc = "There's only one man who can sniff out the dirty stench of crime, and he's likely wearing this hat."
 	icon_state = "detective"
 	interaction_flags_click = NEED_DEXTERITY|NEED_HANDS|ALLOW_RESTING
-	dog_fashion = /datum/dog_fashion/head/detective
+	dog_fashion = /datum/dog_fashion/head/investigator
 	/// Path for the flask that spawns inside their hat roundstart
 	var/flask_path = /obj/item/reagent_containers/cup/glass/flask/det
 	/// Cooldown for retrieving precious candy corn with rmb
 	COOLDOWN_DECLARE(candy_cooldown)
 
-/obj/item/clothing/head/fedora/det_hat/Initialize(mapload)
+/obj/item/clothing/head/fedora/criminalist/Initialize(mapload)
 	. = ..()
 
-	create_storage(storage_type = /datum/storage/pockets/small/fedora/detective)
+	create_storage(storage_type = /datum/storage/pockets/small/fedora/criminalist)
 
 	register_context()
 
 	new flask_path(src)
 
 
-/obj/item/clothing/head/fedora/det_hat/examine(mob/user)
+/obj/item/clothing/head/fedora/criminalist/examine(mob/user)
 	. = ..()
 	. += span_notice("Alt-click to take a candy corn.")
 
 
-/obj/item/clothing/head/fedora/det_hat/add_context(atom/source, list/context, obj/item/held_item, mob/user)
+/obj/item/clothing/head/fedora/criminalist/add_context(atom/source, list/context, obj/item/held_item, mob/user)
 	. = ..()
 
 	context[SCREENTIP_CONTEXT_ALT_LMB] = "Candy Time"
@@ -184,7 +184,7 @@
 
 
 /// Now to solve where all these keep coming from
-/obj/item/clothing/head/fedora/det_hat/click_alt(mob/user)
+/obj/item/clothing/head/fedora/criminalist/click_alt(mob/user)
 	if(!COOLDOWN_FINISHED(src, candy_cooldown))
 		to_chat(user, span_warning("A candy corn was just taken! You should wait a couple minutes, lest you burn through the stash."))
 		return CLICK_ACTION_BLOCKING
@@ -199,12 +199,11 @@
 
 #undef CANDY_CD_TIME
 
-///Detectives Fedora, but like Inspector Gadget. Not a subtype to not inherit candy corn stuff
 /obj/item/clothing/head/fedora/inspector_hat
 	name = "inspector's fedora"
 	desc = "There's only one man can try to stop an evil villain."
 	icon_state = "detective"
-	dog_fashion = /datum/dog_fashion/head/detective
+	dog_fashion = /datum/dog_fashion/head/investigator
 	interaction_flags_click = FORBID_TELEKINESIS_REACH|ALLOW_RESTING
 	///prefix our phrases must begin with
 	var/prefix = "go go gadget"

@@ -846,7 +846,7 @@
 "dz" = (
 /obj/item/clipboard,
 /obj/structure/table/reinforced,
-/obj/item/detective_scanner,
+/obj/item/criminalist_scanner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},

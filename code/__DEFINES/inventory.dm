@@ -236,8 +236,8 @@ GLOBAL_LIST_INIT(any_suit_storage, typecacheof(list(
 
 //Allowed equipment lists for security vests.
 
-GLOBAL_LIST_INIT(detective_vest_allowed, list(
-	/obj/item/detective_scanner,
+GLOBAL_LIST_INIT(criminalist_vest_allowed, list(
+	/obj/item/criminalist_scanner,
 	/obj/item/flashlight,
 	/obj/item/gun/ballistic,
 	/obj/item/gun/energy,
@@ -249,7 +249,7 @@ GLOBAL_LIST_INIT(detective_vest_allowed, list(
 	/obj/item/taperecorder,
 	/obj/item/tank/internals/emergency_oxygen,
 	/obj/item/tank/internals/plasmaman,
-	/obj/item/storage/belt/holster/detective,
+	/obj/item/storage/belt/holster/criminalist,
 	/obj/item/storage/belt/holster/nukie,
 	/obj/item/storage/belt/holster/energy,
 	/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
@@ -265,7 +265,7 @@ GLOBAL_LIST_INIT(security_vest_allowed, list(
 	/obj/item/restraints/handcuffs,
 	/obj/item/tank/internals/emergency_oxygen,
 	/obj/item/tank/internals/plasmaman,
-	/obj/item/storage/belt/holster/detective,
+	/obj/item/storage/belt/holster/criminalist,
 	/obj/item/storage/belt/holster/nukie,
 	/obj/item/storage/belt/holster/energy,
 	/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
@@ -278,7 +278,7 @@ GLOBAL_LIST_INIT(security_wintercoat_allowed, list(
 	/obj/item/melee/baton,
 	/obj/item/reagent_containers/spray/pepper,
 	/obj/item/restraints/handcuffs,
-	/obj/item/storage/belt/holster/detective,
+	/obj/item/storage/belt/holster/criminalist,
 	/obj/item/storage/belt/holster/nukie,
 	/obj/item/storage/belt/holster/energy,
 	/obj/item/gun/ballistic/shotgun/automatic/combat/compact,

@@ -1996,7 +1996,7 @@
 /obj/effect/turf_decal/siding/wood,
 /obj/item/paper_bin,
 /obj/item/pen/fountain,
-/obj/item/camera/detective{
+/obj/item/camera/criminalist{
 	desc = "A polaroid camera with extra capacity for social media marketing.";
 	name = "Professional camera"
 	},

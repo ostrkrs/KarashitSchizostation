@@ -382,9 +382,9 @@
 	l_hand = /obj/item/melee/curator_whip
 	l_pocket = /obj/item/lighter
 	accessory = /obj/item/clothing/accessory/vest_sheriff
-	uniform = /obj/item/clothing/under/rank/security/detective
+	uniform = /obj/item/clothing/under/rank/security/criminalist
 	shoes = /obj/item/clothing/shoes/cowboy
-	belt = /obj/item/storage/belt/holster/detective/full
+	belt = /obj/item/storage/belt/holster/criminalist/full
 	head = /obj/item/clothing/head/cowboy/brown
 
 /// wizards

@@ -6,8 +6,8 @@
 #define EVIDENCE_TYPE_PHOTO "photo"
 #define EVIDENCE_TYPE_PAPER "paper"
 
-/obj/structure/detectiveboard
-	name = "detective notice board"
+/obj/structure/criminalistboard
+	name = "criminalist notice board"
 	desc = "A board for linking evidence to crimes."
 	icon = 'icons/obj/wallmounts.dmi'
 	icon_state = "noticeboard"
@@ -24,9 +24,9 @@
 	/// Index of viewing case in cases array
 	var/current_case = 1
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/criminalistboard, 32)
 
-/obj/structure/detectiveboard/Initialize(mapload)
+/obj/structure/criminalistboard/Initialize(mapload)
 	. = ..()
 
 	if(mapload)
@@ -40,7 +40,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 
 /// Attaching evidences: photo and papers
 
-/obj/structure/detectiveboard/attackby(obj/item/item, mob/user, list/modifiers, list/attack_modifiers)
+/obj/structure/criminalistboard/attackby(obj/item/item, mob/user, list/modifiers, list/attack_modifiers)
 	if(istype(item, /obj/item/paper) || istype(item, /obj/item/photo))
 		if(!cases.len)
 			to_chat(user, "There are no cases!")
@@ -50,10 +50,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 			to_chat(user, "You already attaching evidence!")
 			return
 		attaching_evidence = TRUE
-		var/name = tgui_input_text(user, "Please enter the evidence name", "Detective's Board", max_length = MAX_NAME_LEN)
+		var/name = tgui_input_text(user, "Please enter the evidence name", "Criminalist's Board", max_length = MAX_NAME_LEN)
 		if(!name)
 			name = item.name
-		var/desc = tgui_input_text(user, "Please enter the evidence description", "Detective's Board", max_length = MAX_DESC_LEN)
+		var/desc = tgui_input_text(user, "Please enter the evidence description", "Criminalist's Board", max_length = MAX_DESC_LEN)
 		if(!desc)
 			desc = item.desc
 
@@ -63,13 +63,13 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 		cases[current_case].notices++
 		var/datum/evidence/evidence = new (name, desc, item)
 		cases[current_case].evidences += evidence
-		to_chat(user, span_notice("You pin the [item] to the detective board."))
+		to_chat(user, span_notice("You pin the [item] to the criminalist board."))
 		attaching_evidence = FALSE
 		update_appearance(UPDATE_ICON)
 		return
 	return ..()
 
-/obj/structure/detectiveboard/wrench_act_secondary(mob/living/user, obj/item/tool)
+/obj/structure/criminalistboard/wrench_act_secondary(mob/living/user, obj/item/tool)
 	. = ..()
 	balloon_alert(user, "[anchored ? "un" : ""]securing...")
 	tool.play_tool_sound(src)
@@ -79,16 +79,16 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 		deconstruct()
 		return TRUE
 
-/obj/structure/detectiveboard/ui_state(mob/user)
+/obj/structure/criminalistboard/ui_state(mob/user)
 	return GLOB.physical_state
 
-/obj/structure/detectiveboard/ui_interact(mob/user, datum/tgui/ui)
+/obj/structure/criminalistboard/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
 		ui = new(user, src, "DetectiveBoard", name, 1200, 800)
 		ui.open()
 
-/obj/structure/detectiveboard/ui_data(mob/user)
+/obj/structure/criminalistboard/ui_data(mob/user)
 	var/list/data = list()
 	var/list/data_cases = list()
 	for(var/datum/case/case in cases)
@@ -132,10 +132,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 	data["current_case"] = current_case
 	return data
 
-/obj/structure/detectiveboard/proc/get_pin_position(datum/evidence/evidence)
+/obj/structure/criminalistboard/proc/get_pin_position(datum/evidence/evidence)
 	return list("x" =  evidence.x + 15, "y" =  evidence.y + 15)
 
-/obj/structure/detectiveboard/ui_act(action, params, datum/tgui/ui, datum/ui_state/state)
+/obj/structure/criminalistboard/ui_act(action, params, datum/tgui/ui, datum/ui_state/state)
 	. = ..()
 	if(.)
 		return
@@ -144,10 +144,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 		if("add_case")
 			if(cases.len == MAX_CASES)
 				return FALSE
-			var/new_case = tgui_input_text(user, "Please enter the case name", "Detective's Board", max_length = MAX_NAME_LEN)
+			var/new_case = tgui_input_text(user, "Please enter the case name", "Criminalist's Board", max_length = MAX_NAME_LEN)
 			if(!new_case)
 				return FALSE
-			var/case_color = tgui_input_list(user, "Please choose case color", "Detective's Board", case_colors)
+			var/case_color = tgui_input_list(user, "Please choose case color", "Criminalist's Board", case_colors)
 			if(!case_color)
 				return FALSE
 
@@ -171,7 +171,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 				update_appearance(UPDATE_ICON)
 				return TRUE
 		if("rename_case")
-			var/new_name = tgui_input_text(user, "Please enter the new name for the case",  "Detective's Board", max_length = MAX_NAME_LEN)
+			var/new_name = tgui_input_text(user, "Please enter the new name for the case",  "Criminalist's Board", max_length = MAX_NAME_LEN)
 			if(new_name)
 				var/datum/case/case = locate(params["case_ref"]) in cases
 				case.name = new_name
@@ -225,7 +225,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 
 	return FALSE
 
-/obj/structure/detectiveboard/update_overlays()
+/obj/structure/criminalistboard/update_overlays()
 	. = ..()
 	if(!cases.len)
 		return
@@ -240,7 +240,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
  * * item - The item that is to be removed
  * * user - The mob that is trying to get the item removed, if there is one
  */
-/obj/structure/detectiveboard/proc/remove_item(obj/item/item, mob/user)
+/obj/structure/criminalistboard/proc/remove_item(obj/item/item, mob/user)
 	item.forceMove(drop_location())
 	if(user)
 		user.put_in_hands(item)
@@ -248,16 +248,16 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 	cases[current_case].notices--
 	update_appearance(UPDATE_ICON)
 
-/obj/structure/detectiveboard/atom_deconstruct(disassembled = TRUE)
+/obj/structure/criminalistboard/atom_deconstruct(disassembled = TRUE)
 	if(!disassembled)
 		new /obj/item/stack/sheet/mineral/wood(loc)
 	else
-		new /obj/item/wallframe/detectiveboard(loc)
+		new /obj/item/wallframe/criminalistboard(loc)
 	for(var/obj/item/content in contents)
 		remove_item(content)
 
-/obj/item/wallframe/detectiveboard
-	name = "detective notice board"
+/obj/item/wallframe/criminalistboard
+	name = "criminalist notice board"
 	desc = "A board for linking evidence to crimes."
 	icon = 'icons/obj/wallmounts.dmi'
 	icon_state = "noticeboard"
@@ -265,7 +265,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/detectiveboard, 32)
 		/datum/material/wood = SHEET_MATERIAL_AMOUNT,
 	)
 	resistance_flags = FLAMMABLE
-	result_path = /obj/structure/detectiveboard
+	result_path = /obj/structure/criminalistboard
 	pixel_shift = 32
 
 /datum/evidence

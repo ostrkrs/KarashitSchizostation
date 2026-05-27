@@ -136,7 +136,7 @@
 	suit = null
 	ears = /obj/item/radio/headset/syndicate/alt/leader
 	head = null
-	belt = /obj/item/storage/belt/holster/detective/full/ert
+	belt = /obj/item/storage/belt/holster/criminalist/full/ert
 
 /datum/outfit/pirate/lustrous
 	name = "Lustrous Scintillant"

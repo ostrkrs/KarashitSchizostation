@@ -228,9 +228,9 @@
 	greyscale_config_worn = null
 	greyscale_colors = null
 
-/obj/item/clothing/neck/tie/detective
+/obj/item/clothing/neck/tie/criminalist
 	name = "loose tie"
-	desc = "A loosely tied necktie, a perfect accessory for the over-worked detective."
+	desc = "A loosely tied necktie, a perfect accessory for the over-worked criminal investigator."
 	icon = 'icons/obj/clothing/neck.dmi'
 	icon_state = "detective"
 	post_init_icon_state = null

@@ -221,7 +221,7 @@
 		DetDrobe and LawDrobe."
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/vending_refill/wardrobe/sec_wardrobe,
-					/obj/item/vending_refill/wardrobe/det_wardrobe,
+					/obj/item/vending_refill/wardrobe/criminalist_wardrobe,
 					/obj/item/vending_refill/wardrobe/law_wardrobe,
 				)
 	crate_name = "security department supply crate"

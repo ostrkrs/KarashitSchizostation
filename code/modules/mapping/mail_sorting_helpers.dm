@@ -44,8 +44,8 @@
 /obj/effect/mapping_helpers/mail_sorting/security/hos_office
 	sort_type = SORT_TYPE_HOS_OFFICE
 
-/obj/effect/mapping_helpers/mail_sorting/security/detectives_office
-	sort_type = SORT_TYPE_DETECTIVES_OFFICE
+/obj/effect/mapping_helpers/mail_sorting/security/criminalists_office
+	sort_type = SORT_TYPE_CRIMINALISTS_OFFICE
 
 /obj/effect/mapping_helpers/mail_sorting/medbay
 	icon_state = "sort_type_helper_med"

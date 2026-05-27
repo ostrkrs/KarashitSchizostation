@@ -100,26 +100,26 @@
 	new /obj/item/clothing/accessory/armband/medblue(src)
 	new /obj/item/encryptionkey/headset_med(src)
 
-/obj/structure/closet/secure_closet/detective
-	name = "\improper detective's cabinet"
+/obj/structure/closet/secure_closet/criminalist
+	name = "\improper criminalist's cabinet"
 	icon_state = "cabinet"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
 	door_anim_time = 0 // no animation
 	open_sound = 'sound/machines/closet/wooden_closet_open.ogg'
 	close_sound = 'sound/machines/closet/wooden_closet_close.ogg'
-	req_access = list(ACCESS_DETECTIVE)
+	req_access = list(ACCESS_CRIMINALIST)
 
-/obj/structure/closet/secure_closet/detective/PopulateContents()
+/obj/structure/closet/secure_closet/criminalist/PopulateContents()
 	..()
 	new /obj/item/storage/box/evidence(src)
 	new /obj/item/radio/headset/headset_sec(src)
-	new /obj/item/detective_scanner(src)
+	new /obj/item/criminalist_scanner(src)
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/holosign_creator/security(src)
 	new /obj/item/reagent_containers/spray/pepper(src)
-	new /obj/item/clothing/suit/armor/vest/det_suit(src)
-	new /obj/item/storage/belt/holster/detective/full(src)
+	new /obj/item/clothing/suit/armor/vest/criminalist(src)
+	new /obj/item/storage/belt/holster/criminalist/full(src)
 	new /obj/item/pinpointer/crew(src)
 	new /obj/item/binoculars(src)
 	new /obj/item/storage/box/rxglasses/spyglasskit(src)
@@ -179,7 +179,7 @@
 /obj/structure/closet/secure_closet/evidence
 	anchored = TRUE
 	name = "secure evidence closet"
-	req_one_access = list(ACCESS_ARMORY, ACCESS_DETECTIVE)
+	req_one_access = list(ACCESS_ARMORY, ACCESS_CRIMINALIST)
 
 /obj/structure/closet/secure_closet/brig/PopulateContents()
 	..()

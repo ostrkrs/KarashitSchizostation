@@ -539,16 +539,16 @@
 		)
 	job = /datum/job/curator
 
-/datum/id_trim/job/detective
+/datum/id_trim/job/criminalist
 	assignment = JOB_CRIMINALIST
-	trim_state = "trim_detective"
+	trim_state = "trim_criminalist"
 	department_color = COLOR_SECURITY_BLUE
 	subdepartment_color = COLOR_SECURITY_BLUE
 	sechud_icon_state = SECHUD_CRIMINALIST
 	minimal_access = list(
 		ACCESS_BRIG_ENTRANCE,
 		ACCESS_COURT,
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MECH_SECURITY,
 		ACCESS_MORGUE,
@@ -564,11 +564,11 @@
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOS,
 	)
-	job = /datum/job/detective
+	job = /datum/job/criminalist
 	honorifics = list("Detective", "Investigator")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/detective/refresh_trim_access()
+/datum/id_trim/job/criminalist/refresh_trim_access()
 	. = ..()
 
 	if(!.)
@@ -673,7 +673,7 @@
 		ACCESS_COMMAND,
 		ACCESS_CONSTRUCTION,
 		ACCESS_COURT,
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_ENGINEERING,
 		ACCESS_EVA,
 		ACCESS_GATEWAY,
@@ -1086,7 +1086,7 @@
 		ACCESS_WEAPONS,
 		)
 	extra_access = list(
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MORGUE,
 		)
@@ -1295,7 +1295,7 @@
 		ACCESS_WEAPONS,
 		) // See /datum/job/warden/get_access()
 	extra_access = list(
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MORGUE,
 		)

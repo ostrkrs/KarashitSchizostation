@@ -4,9 +4,9 @@
 	icon = FA_ICON_ADJUST
 	value = 0
 	medical_record_text = "Patient is afflicted with almost complete color blindness."
-	mail_goodies = list( // Noir detective wannabe
-		/obj/item/clothing/suit/toggle/jacket/det_trench/noir,
-		/obj/item/clothing/suit/jacket/det_suit/noir,
+	mail_goodies = list(
+		/obj/item/clothing/suit/toggle/jacket/criminalist_trench/noir,
+		/obj/item/clothing/suit/jacket/criminalist_suit/noir,
 		/obj/item/clothing/head/fedora/beige,
 		/obj/item/clothing/head/fedora/white,
 	)
@@ -15,7 +15,7 @@
 	quirk_holder.add_client_colour(/datum/client_colour/monochrome, QUIRK_TRAIT)
 
 /datum/quirk/monochromatic/post_add()
-	if(is_detective_job(quirk_holder.mind.assigned_role))
+	if(is_criminalist_job(quirk_holder.mind.assigned_role))
 		to_chat(quirk_holder, span_bolddanger("Mmm. Nothing's ever clear on this station. It's all shades of gray..."))
 		quirk_holder.playsound_local(quirk_holder, 'sound/ambience/security/ambidet1.ogg', 50, FALSE)
 

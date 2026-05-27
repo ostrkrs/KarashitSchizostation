@@ -47,8 +47,8 @@
 #define ACCESS_WEAPONS "weapons"
 /// Access used for the Head of Security's personal quarters in mapping, as well as other HoS-related things.
 #define ACCESS_HOS "hos"
-/// Access for the detective to get into their office, the medical data console, and some other detective-related stuff.
-#define ACCESS_DETECTIVE "detective"
+/// Access for the criminalist to get into their office, the medical data console, and some other criminalist-related stuff.
+#define ACCESS_CRIMINALIST "criminalist"
 
 /// Engineering General Access, grants access to the standard parts of engineering (as well as the Supermatter and related equipment).
 #define ACCESS_ENGINEERING "engineering"
@@ -304,7 +304,7 @@
 	ACCESS_CONSTRUCTION, \
 	ACCESS_COURT, \
 	ACCESS_CREMATORIUM, \
-	ACCESS_DETECTIVE, \
+	ACCESS_CRIMINALIST, \
 	ACCESS_ENGINE_EQUIP, \
 	ACCESS_ENGINEERING, \
 	ACCESS_EVA, \
@@ -451,7 +451,7 @@
 	ACCESS_BRIG, \
 	ACCESS_BRIG_ENTRANCE, \
 	ACCESS_COURT, \
-	ACCESS_DETECTIVE, \
+	ACCESS_CRIMINALIST, \
 	ACCESS_HOS, \
 	ACCESS_MECH_SECURITY, \
 	ACCESS_SECURITY, \
@@ -557,7 +557,7 @@
 	/obj/item/modular_computer/pda/coroner = list(REGION_MEDBAY), \
 	/obj/item/modular_computer/pda/engineering = list(REGION_ENGINEERING), \
 	/obj/item/modular_computer/pda/security = list(REGION_SECURITY), \
-	/obj/item/modular_computer/pda/detective = list(REGION_SECURITY), \
+	/obj/item/modular_computer/pda/criminalist = list(REGION_SECURITY), \
 	/obj/item/modular_computer/pda/warden = list(REGION_SECURITY), \
 	/obj/item/modular_computer/pda/janitor = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/science = list(REGION_RESEARCH), \

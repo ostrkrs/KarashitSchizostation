@@ -35,14 +35,14 @@
 	desc = "A polaroid camera, some say it can see ghosts! It seems to have an extra magnifier on the end."
 	see_ghosts = CAMERA_SEE_GHOSTS_ORBIT
 
-/obj/item/camera/detective
-	name = "detective's camera"
+/obj/item/camera/criminalist
+	name = "criminalist's camera"
 	desc = "A silent polaroid camera with extra capacity for crime investigations."
 	flash_enabled = FALSE
 	silent = TRUE
 	pictures_max = 30
 	pictures_left = 30
 
-/obj/item/camera/detective/after_picture(mob/user, datum/picture/picture)
+/obj/item/camera/criminalist/after_picture(mob/user, datum/picture/picture)
 	. = ..()
 	user.playsound_local(get_turf(src), SFX_POLAROID, 35, TRUE)

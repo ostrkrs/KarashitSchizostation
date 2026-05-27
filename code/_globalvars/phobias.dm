@@ -461,7 +461,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 	)),
 	"security" = typecacheof(list(
 		/obj/effect/client_image_holder/securitron,
-		/obj/item/clothing/under/rank/security/detective,
+		/obj/item/clothing/under/rank/security/criminalist,
 		/obj/item/clothing/under/rank/security/head_of_security,
 		/obj/item/clothing/under/rank/security/officer,
 		/obj/item/clothing/under/rank/security/warden,

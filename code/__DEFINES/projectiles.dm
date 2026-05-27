@@ -22,7 +22,7 @@
 #define CALIBER_10MM "10mm"
 /// The caliber used by most revolver variants.
 #define CALIBER_357 ".357"
-/// The caliber used by the detective's revolver.
+/// The caliber used by the criminalist's revolver.
 #define CALIBER_38 ".38"
 /// The caliber used by the C-20r SMG, the tommygun, and the M1911 pistol.
 #define CALIBER_45 ".45"

@@ -889,7 +889,7 @@
 
 /datum/reagent/consumable/ethanol/manhattan
 	name = "Manhattan"
-	description = "The Detective's undercover drink of choice. He never could stomach gin..."
+	description = "The Criminalist's undercover drink of choice. He never could stomach gin..."
 	color = "#ff3300" // rgb: 255,51,0
 	boozepwr = 30
 	quality = DRINK_NICE

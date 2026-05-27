@@ -655,50 +655,38 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 /obj/item/vending_refill/wardrobe/viro_wardrobe
 	machine_name = "ViroDrobe"
 
-/obj/machinery/vending/wardrobe/det_wardrobe
-	name = "\improper DetDrobe"
-	desc = "A machine for all your detective needs, as long as you need clothes."
+/obj/machinery/vending/wardrobe/criminalist
+	name = "\improper InvestDrobe"
+	desc = "A machine for all your criminalistic needs, as long as you need clothes."
 	icon_state = "detdrobe"
 	product_ads = "Apply your brilliant deductive methods in style!"
 	vend_reply = "Thank you for using the DetDrobe!"
 	products = list(
-		/obj/item/clothing/head/fedora/det_hat = 2,
-		/obj/item/clothing/under/rank/security/detective = 2,
-		/obj/item/clothing/under/rank/security/detective/skirt = 2,
-		/obj/item/clothing/suit/toggle/jacket/det_trench = 2,
-		/obj/item/clothing/suit/jacket/det_suit = 2,
+		/obj/item/clothing/head/fedora/criminalist = 2,
+		/obj/item/clothing/under/rank/security/criminalist = 2,
+		/obj/item/clothing/under/rank/security/criminalist/skirt = 2,
+		/obj/item/clothing/suit/toggle/jacket/criminalist_trench = 2,
+		/obj/item/clothing/suit/jacket/criminalist_suit = 2,
 		/obj/item/clothing/shoes/sneakers/brown = 2,
 		/obj/item/clothing/gloves/latex = 2,
 		/obj/item/clothing/gloves/color/black = 2,
 		/obj/item/clothing/accessory/waistcoat = 2,
-		/obj/item/clothing/under/rank/security/detective/noir = 2,
-		/obj/item/clothing/under/rank/security/detective/noir/skirt = 2,
+		/obj/item/clothing/under/rank/security/criminalist/noir = 2,
+		/obj/item/clothing/under/rank/security/criminalist/noir/skirt = 2,
 		/obj/item/clothing/shoes/laceup = 2,
 		/obj/item/clothing/head/fedora = 2,
-		/obj/item/clothing/suit/toggle/jacket/det_trench/noir = 1,
-		/obj/item/clothing/suit/jacket/det_suit/noir = 1,
-		/obj/item/clothing/neck/tie/disco = 1,
-		/obj/item/clothing/under/rank/security/detective/disco = 1,
-		/obj/item/clothing/suit/jacket/det_suit/disco = 1,
-		/obj/item/clothing/shoes/discoshoes = 1,
-		/obj/item/clothing/glasses/regular/kim = 1,
-		/obj/item/clothing/under/rank/security/detective/kim = 1,
-		/obj/item/clothing/suit/jacket/det_suit/kim = 1,
-		/obj/item/clothing/gloves/kim = 1,
-		/obj/item/clothing/shoes/kim = 1,
-		/obj/item/reagent_containers/cup/glass/flask/det = 2,
-		/obj/item/storage/fancy/cigarettes = 5,
-		/obj/item/storage/fancy/cigarettes/cigpack_candy = 5,
+		/obj/item/clothing/suit/toggle/jacket/criminalist_trench/noir = 1,
+		/obj/item/clothing/suit/jacket/criminalist_suit/noir = 1,
 	)
 	premium = list(
 		/obj/item/clothing/head/flatcap = 1,
 		/obj/item/clothing/glasses/sunglasses/noir = 1,
 	)
-	refill_canister = /obj/item/vending_refill/wardrobe/det_wardrobe
+	refill_canister = /obj/item/vending_refill/wardrobe/criminalist_wardrobe
 	extra_price = PAYCHECK_COMMAND * 1.75
 	payment_department = ACCOUNT_SEC
 
-/obj/item/vending_refill/wardrobe/det_wardrobe
+/obj/item/vending_refill/wardrobe/criminalist_wardrobe
 	machine_name = "DetDrobe"
 
 /obj/machinery/vending/wardrobe/cent_wardrobe

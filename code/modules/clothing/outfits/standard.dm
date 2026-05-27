@@ -58,10 +58,10 @@
 /datum/outfit/tournament/gangster
 	name = "tournament gangster"
 
-	uniform = /obj/item/clothing/under/rank/security/detective
-	suit = /obj/item/clothing/suit/toggle/jacket/det_trench
+	uniform = /obj/item/clothing/under/rank/security/criminalist
+	suit = /obj/item/clothing/suit/toggle/jacket/criminalist_trench
 	glasses = /obj/item/clothing/glasses/thermal/monocle
-	head = /obj/item/clothing/head/fedora/det_hat
+	head = /obj/item/clothing/head/fedora/criminalist
 	l_hand = /obj/item/gun/ballistic
 	l_hand = null
 	r_pocket = /obj/item/ammo_box/c10mm

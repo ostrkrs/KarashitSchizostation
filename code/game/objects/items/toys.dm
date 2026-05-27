@@ -1279,8 +1279,8 @@
 	icon_state = "ian"
 	toysay = "Arf!"
 
-/obj/item/toy/figure/detective
-	name = "\improper Detective action figure"
+/obj/item/toy/figure/criminalist
+	name = "\improper Criminalist action figure"
 	icon_state = "detective"
 	toysay = "This airlock has grey jumpsuit and insulated glove fibers on it."
 

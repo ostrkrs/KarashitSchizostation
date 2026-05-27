@@ -10,7 +10,7 @@
 	name = ".50AE bullet"
 	damage = 60
 
-// .38 (Detective's Gun)
+// .38
 
 /obj/projectile/bullet/c38
 	name = ".38 bullet"

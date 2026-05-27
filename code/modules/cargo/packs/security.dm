@@ -43,18 +43,18 @@
 
 /datum/supply_pack/security/forensics
 	name = "Forensics Crate"
-	desc = "Stay hot on the criminal's heels with Nanotrasen's Detective Essentials™. \
-		Contains a forensics scanner, six evidence bags, camera, special board for evidences, tape recorder, stick of chalk, \
-		and of course, a fedora."
+	desc = "Stay hot on the criminal's heels with Forensics Essentials™. \
+		Contains a forensics scanner, six evidence bags, camera, special board for evidences, \
+		tape recorder, stick of chalk, and of course, a fedora."
 	cost = CARGO_CRATE_VALUE * 2.5
 	access_view = ACCESS_MORGUE
-	contains = list(/obj/item/detective_scanner,
+	contains = list(/obj/item/criminalist_scanner,
 					/obj/item/storage/box/evidence,
-					/obj/item/camera/detective,
+					/obj/item/camera/criminalist,
 					/obj/item/taperecorder,
 					/obj/item/toy/crayon/white,
-					/obj/item/clothing/head/fedora/det_hat,
-					/obj/item/wallframe/detectiveboard
+					/obj/item/clothing/head/fedora/criminalist,
+					/obj/item/wallframe/criminalistboard
 				)
 	crate_name = "forensics crate"
 

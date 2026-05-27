@@ -518,8 +518,8 @@
 #define COMSIG_SPEED_POTION_APPLIED "speed_potion"
 	#define SPEED_POTION_STOP (1<<0)
 
-/// from /obj/item/detective_scanner/scan(): (mob/user, list/extra_data)
-#define COMSIG_DETECTIVE_SCANNED "det_scanned"
+/// from /obj/item/criminalist_scanner/scan(): (mob/user, list/extra_data)
+#define COMSIG_CRIMINALIST_SCANNED "crim_scanned"
 
 /// from /obj/plunger_act when an object is being plungered
 #define COMSIG_PLUNGER_ACT "plunger_act"

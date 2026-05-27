@@ -42,11 +42,11 @@
 
 	return ..()
 
-///Detective holster
-/datum/storage/holster/detective
+///Criminalist holster
+/datum/storage/holster/criminalist
 	max_slots = 3
 
-/datum/storage/holster/detective/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound, list/holdables)
+/datum/storage/holster/criminalist/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound, list/holdables)
 	holdables = list(
 		/obj/item/gun/ballistic/automatic/pistol,
 		/obj/item/ammo_box/magazine/m9mm, // Pistol magazines.

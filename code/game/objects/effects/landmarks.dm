@@ -129,9 +129,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Captain"
 	icon_state = "Captain"
 
-/obj/effect/landmark/start/detective
-	name = "Detective"
-	icon_state = "Detective"
+/obj/effect/landmark/start/criminalist
+	name = "Criminalist"
+	icon_state = "Criminalist"
 
 /obj/effect/landmark/start/warden
 	name = "Warden"
@@ -604,7 +604,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	location = "Security"
 
 /obj/effect/landmark/navigate_destination/det
-	location = "Detective's Office"
+	location = "Criminalist's Office"
 
 /obj/effect/landmark/navigate_destination/research
 	location = "Research"
