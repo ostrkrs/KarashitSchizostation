@@ -753,7 +753,7 @@
 /atom/movable/screen/healths/blob
 	name = "blob health"
 	icon_state = "block"
-	screen_loc = ui_internal
+	screen_loc = ui_blobhealth
 
 /atom/movable/screen/healths/blob/overmind
 	name = "overmind health"
