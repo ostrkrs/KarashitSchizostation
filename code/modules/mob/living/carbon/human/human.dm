@@ -959,9 +959,13 @@
 	var/obj/item/organ/brain/our_brain = get_organ_slot(ORGAN_SLOT_BRAIN)
 	var/obj/item/bodypart/head/our_head = get_bodypart(BODY_ZONE_HEAD)
 	if(stat != DEAD)
-		if((our_brain.damage >= BRAIN_DAMAGE_DEATH || our_head.get_damage() >= our_head.max_damage) && !HAS_TRAIT(src, TRAIT_NODEATH))
-			death()
-			return
+		if(!HAS_TRAIT(src, TRAIT_NODEATH))
+			if(our_brain && our_brain.damage >= BRAIN_DAMAGE_DEATH)
+				death()
+				return
+			if(our_head.get_damage() >= our_head.max_damage)
+				death()
+				return
 		if(HAS_TRAIT_FROM(src, TRAIT_DISSECTED, AUTOPSY_TRAIT))
 			REMOVE_TRAIT(src, TRAIT_DISSECTED, AUTOPSY_TRAIT)
 		if(health <= hardcrit_threshold && !HAS_TRAIT(src, TRAIT_NOHARDCRIT))
