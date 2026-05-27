@@ -27,74 +27,13 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
-/datum/design/c38_hotshot
-	name = "Speed Loader (.38 Hot Shot) (Very Lethal)"
-	desc = "Designed to quickly reload revolvers. Hot Shot bullets contain an incendiary payload."
-	id = "c38_hotshot"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT * 3,
-		/datum/material/plasma = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-	)
-	build_path = /obj/item/ammo_box/speedloader/c38/hotshot
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/c38_iceblox
-	name = "Speed Loader (.38 Iceblox) (Lethal/Very Lethal (Lizardpeople))"
-	desc = "Designed to quickly reload revolvers. Iceblox bullets contain a cryogenic payload."
-	id = "c38_iceblox"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT * 3,
-		/datum/material/plasma = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-	)
-	build_path = /obj/item/ammo_box/speedloader/c38/iceblox
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
 /datum/design/c38_rubber
 	name = "Speed Loader (.38 Rubber) (Less Lethal)"
 	desc = "Designed to quickly reload revolvers. Rubber bullets are bouncy and less-than-lethal."
 	id = "c38_rubber"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT * 3)
-	build_path = /obj/item/ammo_box/speedloader/c38/match/bouncy
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/c38_true
-	name = "Speedloader (.38 True Strike) (Lethal)"
-	desc = "Designed to quickly reload revolvers. Bullets bounce towards new targets with surprising accuracy."
-	id = "c38_true_strike"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT * 3,
-		/datum/material/bluespace = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-	)
-	build_path = /obj/item/ammo_box/speedloader/c38/true
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/c38_flare
-	name = "Speedloader (.38 Flare) (VERY Lethal)"
-	desc = "Designed to quickly reload revolvers. Flare casings launch a concentrated particle beam towards a target, lighting them up for everyone to see."
-	id = "c38_flare"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT * 3,
-		/datum/material/uranium = HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/gold = HALF_SHEET_MATERIAL_AMOUNT,
-	)
-	build_path = /obj/item/ammo_box/speedloader/c38/flare
+	build_path = /obj/item/ammo_box/speedloader/c38/rubber
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
 	)
@@ -134,38 +73,6 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
-/datum/design/c38_hotshot_mag
-	name = "Magazine (.38 Hot Shot) (Very Lethal)"
-	desc = "Designed to tactically reload a NT BR-38 Battle Rifle. Hot Shot bullets contain an incendiary payload."
-	id = "c38_hotshot_mag"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
-		/datum/material/plasma = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-		/datum/material/plastic = HALF_SHEET_MATERIAL_AMOUNT * 4,
-	)
-	build_path = /obj/item/ammo_box/magazine/m38/hotshot
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/c38_iceblox_mag
-	name = "Magazine (.38 Iceblox) (Lethal/Very Lethal (Lizardpeople))"
-	desc = "Designed to tactically reload a NT BR-38 Battle Rifle. Iceblox bullets contain a cryogenic payload."
-	id = "c38_iceblox_mag"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
-		/datum/material/plasma = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-		/datum/material/plastic = HALF_SHEET_MATERIAL_AMOUNT * 4,
-	)
-	build_path = /obj/item/ammo_box/magazine/m38/iceblox
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
 /datum/design/c38_rubber_mag
 	name = "Magazine (.38 Rubber) (Less Lethal)"
 	desc = "Designed to tactically reload a NT BR-38 Battle Rifle. Rubber bullets are bouncy and less-than-lethal."
@@ -175,41 +82,7 @@
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
 		/datum/material/plastic = HALF_SHEET_MATERIAL_AMOUNT * 4,
 	)
-	build_path = /obj/item/ammo_box/magazine/m38/match/bouncy
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/c38_true_mag
-	name = "Magazine (.38 True Strike) (Lethal)"
-	desc = "Designed to tactically reload a NT BR-38 Battle Rifle. Bullets bounce towards new targets with surprising accuracy."
-	id = "c38_true_strike_mag"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
-		/datum/material/plastic = HALF_SHEET_MATERIAL_AMOUNT * 4,
-		/datum/material/bluespace = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-	)
-	build_path = /obj/item/ammo_box/magazine/m38/true
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/c38_flare_mag
-	name = "Magazine (.38 Flare) (VERY Lethal)"
-	desc = "Designed to tactically reload a NT BR-38 Battle Rifle. Flare casings launch a concentrated particle beam towards a target, lighting them up for everyone to see."
-	id = "c38_flare_mag"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(
-		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
-		/datum/material/plastic = HALF_SHEET_MATERIAL_AMOUNT * 4,
-		/datum/material/uranium = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-		/datum/material/gold = HALF_SHEET_MATERIAL_AMOUNT * 1.5,
-
-	)
-	build_path = /obj/item/ammo_box/magazine/m38/flare
+	build_path = /obj/item/ammo_box/magazine/m38/rubber
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
 	)
@@ -263,7 +136,7 @@
 	id = "mag_autorifle"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 2)
-	build_path = /obj/item/ammo_box/magazine/wt550m9
+	build_path = /obj/item/ammo_box/magazine/smg46mm_wt550
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
 	)
@@ -274,7 +147,7 @@
 	desc = "A 20 round armour piercing magazine for the out of date WT-550 Autorifle."
 	id = "mag_autorifle_ap"
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 3, /datum/material/silver = SMALL_MATERIAL_AMOUNT * 6)
-	build_path = /obj/item/ammo_box/magazine/wt550m9/wtap
+	build_path = /obj/item/ammo_box/magazine/smg46mm_wt550/wtap
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
 /datum/design/mag_autorifle/ic_mag
@@ -282,7 +155,7 @@
 	desc = "A 20 round armour piercing magazine for the out of date WT-550 Autorifle."
 	id = "mag_autorifle_ic"
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 3, /datum/material/silver = SMALL_MATERIAL_AMOUNT * 6, /datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT)
-	build_path = /obj/item/ammo_box/magazine/wt550m9/wtic
+	build_path = /obj/item/ammo_box/magazine/smg46mm_wt550/wtic
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
 /datum/design/pin_testing
@@ -549,22 +422,9 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
-/datum/design/donkflechette
-	name = "Donk Co. 'Donk Spike' Flechette Shotgun Shell (Lethal)"
-	desc = "A shotgun casing filled with small plastic darts. That's right, plastic. Do you really think plastic is that scary? Sure, it would hurt to be \
-		shot by this, but is it really going to do that much damage? You decide, pal, I'm not your mother. I'm just a computer."
-	id = "donkshell"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 3, /datum/material/plastic = SMALL_MATERIAL_AMOUNT * 2)
-	build_path = /obj/item/ammo_casing/shotgun/flechette/donk
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
 /datum/design/suppressor
 	name = "Suppressor"
-	desc = "A reverse-engineered suppressor that fits on most small arms with threaded barrels."
+	desc = "A suppressor that fits on most small arms with threaded barrels."
 	id = "suppressor"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT, /datum/material/silver =SMALL_MATERIAL_AMOUNT*5)
@@ -608,15 +468,6 @@
 	build_path = /obj/item/melee/cleric_mace
 	category = list(RND_CATEGORY_IMPORTED)
 
-/datum/design/liberator_gun
-	name = "The Liberator"
-	desc = "A dirt cheap 3D printed gun. Only holds one bullet, and is infamous for sometimes exploding on it's user."
-	id = "liberator_gun"
-	build_type = AUTOLATHE
-	materials = list(/datum/material/plastic = SHEET_MATERIAL_AMOUNT * 2, /datum/material/iron = SMALL_MATERIAL_AMOUNT * 15)
-	build_path = /obj/item/gun/ballistic/automatic/pistol/doorhickey
-	category = list(RND_CATEGORY_IMPORTED)
-
 /datum/design/stun_boomerang
 	name = "OZtek Boomerang"
 	desc = "Uses reverse flow gravitodynamics to flip its personal gravity back to the thrower mid-flight. Also functions similar to a stun baton."
@@ -626,17 +477,5 @@
 	build_path = /obj/item/melee/baton/security/boomerang
 	category = list(
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_RANGED
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/photon_cannon
-	name = "Photon Cannon Part Kit (Nonlethal)"
-	desc = "A kit to reverse-engineer a photon cannon, a weapon that generates a shortly-lived miniature sun. Technically brightens up the room, effectively blinds everyone in it. Requires a flux anomaly core to finish."
-	id = "photon_cannon"
-	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 3, /datum/material/glass = SHEET_MATERIAL_AMOUNT * 7, /datum/material/gold = SHEET_MATERIAL_AMOUNT * 5)
-	build_path = /obj/item/weaponcrafting/gunkit/photon
-	category = list(
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_KITS
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY

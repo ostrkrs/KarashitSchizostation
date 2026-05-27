@@ -1,12 +1,12 @@
 /obj/item/gun/energy/laser
 	name = "laser gun"
 	desc = "A basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal."
-	icon = 'icons/obj/weapons/guns/wide_guns.dmi'
+	icon = 'icons/obj/weapons/guns/wide/energy.dmi'
 	icon_state = "laser"
 	inhand_icon_state = "laser"
 	w_class = WEIGHT_CLASS_BULKY
 	custom_materials = list(/datum/material/iron=SHEET_MATERIAL_AMOUNT)
-	ammo_type = list(/obj/item/ammo_casing/energy/lasergun)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser)
 	ammo_x_offset = 1
 	shaded_charge = 1
 
@@ -28,14 +28,16 @@
 		overlay_x = 18, \
 		overlay_y = 12)
 
-/obj/item/gun/energy/laser/brand
+/obj/item/gun/energy/laser/brand/irix
 	name = "Irix Flashpoint V"
 	desc = "A laser gun produced by Irix corporation. You see, \"shooting people\" is quite a broad term, so they have to satisfy the demand of entire audience somehow... Don't forget to say \"cheese\"!"
 	icon_state = "laser-irix"
+	manufacturer = CORPORATION_IRIX
 
 /obj/item/gun/energy/laser/practice
 	name = "practice laser gun"
 	desc = "A modified version of the basic laser gun, this one fires less concentrated energy bolts designed for target practice."
+	icon_state = "laser-practice"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/practice)
 	clumsy_check = FALSE
 	item_flags = NONE
@@ -52,39 +54,8 @@
 	name ="laser gun"
 	icon_state = "retro"
 	desc = "First generation lasergun, developed by Nanotrasen. Suffers from ammo issues but its unique ability to recharge its ammo without the need of a magazine helps compensate. You really hope someone has developed a better lasergun while you were in cryo."
-	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/old)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/old)
 	ammo_x_offset = 3
-
-/obj/item/gun/energy/laser/carbine
-	name = "laser carbine"
-	desc = "A modified laser gun which can shoot far faster, but each shot is far less damaging."
-	icon = 'icons/obj/weapons/guns/energy.dmi'
-	icon_state = "laser_carbine"
-	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/carbine)
-
-/obj/item/gun/energy/laser/carbine/Initialize(mapload)
-	. = ..()
-	AddComponent(/datum/component/automatic_fire, 0.15 SECONDS, allow_akimbo = FALSE)
-
-/obj/item/gun/energy/laser/carbine/cybersun
-	name = "\improper Cybersun S-120"
-	desc = "A laser gun primarily used by syndicate security guards. It fires a rapid spray of low-power plasma beams."
-	icon_state = "cybersun_s120"
-	inhand_icon_state = "s120"
-	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/carbine/cybersun)
-	spread = 14
-	pin = /obj/item/firing_pin/implant/pindicate
-
-/obj/item/gun/energy/laser/carbine/cybersun/unrestricted
-	pin = /obj/item/firing_pin
-
-/obj/item/gun/energy/laser/carbine/practice
-	name = "practice laser carbine"
-	desc = "A modified version of the laser carbine, this one fires even less concentrated energy bolts designed for target practice."
-	ammo_type = list(/obj/item/ammo_casing/energy/lasergun/carbine/practice)
-	clumsy_check = FALSE
-	item_flags = NONE
-	gun_flags = NOT_A_REAL_GUN
 
 /obj/item/gun/energy/laser/hellgun
 	name ="hellfire laser gun"
@@ -106,6 +77,18 @@
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/hellfire)
+
+/obj/item/gun/energy/laser/hos
+	name = "\improper X-01 MultiPhase Energy Gun"
+	desc = "This is an expensive, modern recreation of an antique laser gun. This gun has several unique firemodes, but lacks the ability to recharge over time."
+	cell_type = /obj/item/stock_parts/power_store/cell/hos_gun
+	icon_state = "hoslaser"
+	w_class = WEIGHT_CLASS_NORMAL
+	force = 10
+	ammo_type = list(/obj/item/ammo_casing/energy/electrode, /obj/item/ammo_casing/energy/laser/hos, /obj/item/ammo_casing/energy/ion/hos)
+	ammo_x_offset = 4
+	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
+	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
 
 /obj/item/gun/energy/laser/captain/scattershot
 	name = "scatter shot laser rifle"
@@ -232,3 +215,18 @@
 	name = "luxurious laser gun"
 	desc = "A laser gun modified to cost 20 credits to fire. Point towards poor people."
 	pin = /obj/item/firing_pin/paywall/luxury
+
+/obj/item/gun/energy/laser/turret
+	name = "hybrid turret gun"
+	desc = "A heavy hybrid energy cannon with two settings: Stun and kill."
+	icon_state = "turretlaser"
+	inhand_icon_state = "turretlaser"
+	slot_flags = null
+	w_class = WEIGHT_CLASS_HUGE
+	ammo_type = list(/obj/item/ammo_casing/energy/electrode/ai_turrets, /obj/item/ammo_casing/energy/laser)
+	weapon_weight = WEAPON_HEAVY
+	trigger_guard = TRIGGER_GUARD_NONE
+	ammo_x_offset = 2
+
+/obj/item/gun/energy/laser/turret/add_seclight_point()
+	return

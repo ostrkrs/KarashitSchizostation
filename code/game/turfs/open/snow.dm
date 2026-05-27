@@ -8,6 +8,7 @@
 	planetary_atmos = TRUE
 	initial_gas_mix = FROZEN_ATMOS
 	slowdown = 2
+	bullet_bounce_sound = FALSE
 	bullet_sizzle = TRUE
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND

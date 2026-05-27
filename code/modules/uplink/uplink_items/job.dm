@@ -373,18 +373,6 @@
 	restricted = TRUE
 	refundable = TRUE
 
-/datum/uplink_item/role_restricted/monkey_supplies
-	name = "Simian Agent Supplies"
-	desc = "Sometimes you need a bit more firepower than a rabid monkey. Such as a rabid, armed monkey! \
-		Monkeys can unpack this kit to receive a bag with a bargain-bin gun, ammunition, and some miscellaneous supplies."
-	item = /obj/item/storage/toolbox/guncase/monkeycase
-	cost = 4
-	limited_stock = 3
-	restricted_roles = list(JOB_ASSISTANT, JOB_MIME, JOB_CLOWN, JOB_PUN_PUN)
-	restricted = TRUE
-	refundable = FALSE
-
-
 /datum/uplink_item/role_restricted/reticence
 	name = "Reticence Cloaked Assasination exosuit"
 	desc = "A silent, fast, and nigh-invisible but exceptionally fragile miming exosuit! \

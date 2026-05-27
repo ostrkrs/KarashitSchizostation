@@ -1122,7 +1122,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain)
 "jC" = (
-/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
 /turf/open/floor/plating,
 /area/virtual_domain)
 "jD" = (
@@ -1132,9 +1132,7 @@
 /area/virtual_domain)
 "jF" = (
 /obj/machinery/holopad/secure,
-/obj/item/storage/box/lethalshot{
-	pixel_y = 7
-	},
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/floor/carpet,
 /area/virtual_domain)
 "jG" = (
@@ -4821,7 +4819,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain)
 "Oj" = (
-/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/virtual_domain)

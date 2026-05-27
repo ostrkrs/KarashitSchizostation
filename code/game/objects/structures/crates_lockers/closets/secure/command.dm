@@ -20,7 +20,7 @@
 	new /obj/item/storage/photo_album/captain(src)
 
 /obj/structure/closet/secure_closet/captains/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
+	new /obj/item/gun/energy/laser(src)
 	new /obj/item/storage/belt/sheath/sabre(src)
 
 
@@ -47,7 +47,7 @@
 	new /obj/item/storage/lockbox/medal/hop(src)
 
 /obj/structure/closet/secure_closet/hop/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
+	new /obj/item/gun/energy/laser(src)
 
 
 /obj/structure/closet/secure_closet/iso
@@ -65,7 +65,7 @@
 	new /obj/item/storage/bag/garment/iso(src)
 
 /obj/structure/closet/secure_closet/iso/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
+	new /obj/item/gun/energy/laser(src)
 	new /obj/item/gun/energy/taser(src)
 
 

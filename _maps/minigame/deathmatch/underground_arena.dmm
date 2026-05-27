@@ -32,9 +32,9 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "bw" = (
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/structure/table/reinforced,
-/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "bC" = (
@@ -94,10 +94,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/indestructible/dark/smooth_large,
-/area/deathmatch)
-"ek" = (
-/obj/item/gun/ballistic/shotgun/sc_pump,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "eC" = (
@@ -442,18 +438,6 @@
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/chasm/true,
 /area/deathmatch)
-"Db" = (
-/obj/item/gun/ballistic/revolver/nagant,
-/obj/effect/turf_decal/siding/wideplating/dark{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/indestructible/vault,
-/area/deathmatch)
-"Dp" = (
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/turf/open/indestructible/dark/smooth_large,
-/area/deathmatch)
 "DC" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -665,7 +649,6 @@
 /area/deathmatch)
 "QY" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "Rq" = (
@@ -1221,7 +1204,7 @@ nI
 nI
 nI
 nI
-ek
+nI
 nI
 nI
 yA
@@ -1564,7 +1547,7 @@ aI
 WE
 nI
 rc
-Dp
+nI
 nI
 Uv
 Uv
@@ -1662,7 +1645,7 @@ nI
 qH
 qa
 ZR
-Db
+ZR
 qa
 nI
 yA

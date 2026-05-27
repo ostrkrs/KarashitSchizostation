@@ -856,7 +856,7 @@
 	icon_state = "floor5-old"
 	},
 /obj/item/ammo_casing/spent,
-/obj/item/gun/ballistic/automatic/smartgun,
+/obj/item/gun/ballistic/automatic/smg/smartgun,
 /obj/effect/mob_spawn/corpse/human/syndicatepilot,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/infested_frigate)
@@ -2434,7 +2434,6 @@
 	pixel_x = 5
 	},
 /obj/item/suppressor,
-/obj/item/gun/energy/e_gun/mini,
 /obj/structure/closet/crate/secure/weapon{
 	req_access = list("syndicate")
 	},

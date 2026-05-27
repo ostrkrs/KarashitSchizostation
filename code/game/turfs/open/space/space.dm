@@ -66,9 +66,8 @@ GLOBAL_LIST_EMPTY(starlight)
 	light_height = LIGHTING_HEIGHT_SPACE
 	light_on = FALSE
 	space_lit = TRUE
-	bullet_bounce_sound = null
 	vis_flags = VIS_INHERIT_ID //when this be added to vis_contents of something it be associated with something on clicking, important for visualisation of turf in openspace and interraction with openspace that show you turf.
-
+	bullet_bounce_sound = FALSE
 	force_no_gravity = TRUE
 
 /turf/open/space/basic

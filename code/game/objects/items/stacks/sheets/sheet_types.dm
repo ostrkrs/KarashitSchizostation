@@ -665,9 +665,9 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 		new /datum/stack_recipe("cigar case", /obj/item/storage/fancy/cigarettes/cigars, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		null, \
 
-		new /datum/stack_recipe("lethal ammo box", /obj/item/storage/box/lethalshot, crafting_flags = NONE, category = CAT_CONTAINERS), \
-		new /datum/stack_recipe("rubber shot ammo box", /obj/item/storage/box/rubbershot, crafting_flags = NONE, category = CAT_CONTAINERS), \
-		new /datum/stack_recipe("bean bag ammo box", /obj/item/storage/box/beanbag, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("lethal ammo box", /obj/item/storage/box/ammo/buckshot, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("rubber shot ammo box", /obj/item/storage/box/ammo/rubbershot, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("bean bag ammo box", /obj/item/storage/box/ammo/beanbags, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("flashbang box", /obj/item/storage/box/flashbangs, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("flashes box", /obj/item/storage/box/flashes, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("handcuffs box", /obj/item/storage/box/handcuffs, crafting_flags = NONE, category = CAT_CONTAINERS), \

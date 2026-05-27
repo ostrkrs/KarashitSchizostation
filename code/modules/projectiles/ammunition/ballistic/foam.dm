@@ -6,6 +6,7 @@
 	icon = 'icons/obj/weapons/guns/toy.dmi'
 	icon_state = "foamdart"
 	base_icon_state = "foamdart"
+	casing_sound = NONE
 	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 0.1125)
 	harmful = FALSE
 	newtonian_force = 0.5

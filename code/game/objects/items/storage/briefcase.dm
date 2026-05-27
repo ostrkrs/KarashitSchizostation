@@ -110,7 +110,7 @@
 /// A briefcase that contains various sought-after spoils
 /obj/item/storage/briefcase/secure/riches/PopulateContents()
 	new /obj/item/clothing/suit/armor/vest(src)
-	new /obj/item/gun/ballistic/automatic/pistol(src)
+	new /obj/item/gun/ballistic/automatic/pistol/wt23(src)
 	new /obj/item/suppressor(src)
 	new /obj/item/melee/baton/telescopic(src)
 	new /obj/item/clothing/mask/balaclava(src)

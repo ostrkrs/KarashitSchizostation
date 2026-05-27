@@ -61,7 +61,7 @@
 
 /obj/structure/closet/secure_closet/bartender/PopulateContents()
 	..()
-	new /obj/item/storage/box/beanbag(src)
+	new /obj/item/storage/box/ammo/beanbags(src)
 	new /obj/item/clothing/suit/armor/vest/alt(src)
 	new /obj/item/storage/belt/bandolier(src)
 	new /obj/item/gun/ballistic/shotgun/doublebarrel(src)

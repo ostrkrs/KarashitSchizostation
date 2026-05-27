@@ -772,8 +772,8 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "UM" = (
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/c8mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/structure/closet/crate/secure/syndicate/gorlex/weapons,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
@@ -808,14 +808,6 @@
 /area/ruin/syndielab)
 "Wo" = (
 /obj/structure/table/wood,
-/obj/item/ammo_casing/shotgun/flechette/donk{
-	pixel_y = 6
-	},
-/obj/item/ammo_casing/shotgun/flechette/donk{
-	pixel_x = 8;
-	pixel_y = 6
-	},
-/obj/item/gun/ballistic/shotgun/musket,
 /turf/open/floor/carpet/red,
 /area/ruin/syndielab)
 "WO" = (

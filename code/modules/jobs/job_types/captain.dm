@@ -85,7 +85,7 @@
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
+		/obj/item/gun/energy/laser,
 		/obj/item/stamp/head/captain,
 		)
 	implants = list(/obj/item/implant/mindshield)

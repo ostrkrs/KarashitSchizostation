@@ -116,17 +116,10 @@
 	access = ACCESS_ARMORY
 	access_view = ACCESS_ARMORY
 	contains = list(
-		/obj/item/storage/box/lethalshot = 3,
+		/obj/item/storage/box/ammo/buckshot = 3,
 	)
 	crate_name = "shotgun shell crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
-
-/datum/supply_pack/imports/error
-	name = "NULL_ENTRY"
-	desc = "(*!&@#OKAY, OPERATIVE, WE SEE HOW MUCH MONEY YOU'RE FLAUNTING. FINE. HAVE THIS, AND GOOD LUCK PUTTING IT TOGETHER!#@*$"
-	cost = CARGO_CRATE_VALUE * 100
-	hidden = TRUE
-	contains = list(/obj/item/book/granter/crafting_recipe/regal_condor)
 
 /datum/supply_pack/imports/mafia
 	name = "Cosa Nostra Starter Pack"
@@ -155,33 +148,6 @@
 	)
 	crate_name = "crate"
 	test_ignored = TRUE
-
-/datum/supply_pack/imports/wt550
-	name = "Smuggled WT-550 Autorifle Crate"
-	desc = "(*!&@#GOOD NEWS, OPERATIVE! WE CAN'T GET YOU THE BIG LEAGUE AUTOMATIC WEAPONS. BUT, BY \
-		SMUGGLING THIS CRATE THROUGH A FEW OUTDATED CUSTOMS CHECKPOINTS, WE'VE THE NEXT BEST THING! \
-		SERVICE AUTORIFLES. DON'T WORRY, THE RUMORS ABOUT THE GUN MELTING YOU ARE JUST THAT! RUMORS! \
-		THESE THINGS WORK FINE! MIGHT BE SLIGHTLY DIRTY.!#@*$"
-	hidden = TRUE
-	cost = CARGO_CRATE_VALUE * 7
-	contains = list(
-		/obj/item/gun/ballistic/automatic/wt550 = 2,
-		/obj/item/ammo_box/magazine/wt550m9 = 2,
-	)
-	crate_type = /obj/structure/closet/crate/secure/syndicate/gorlex/weapons/bustedlock
-
-/datum/supply_pack/imports/wt550ammo
-	name = "Smuggled WT-550 Ammo Crate"
-	desc = "(*!&@#OPERATIVE, YOU LIKE THAT WT-550? THEN WHY NOT EQUIP YOURSELF WITH SOME MORE AMMO!!#@*$"
-	hidden = TRUE
-	cost = CARGO_CRATE_VALUE * 4
-	contains = list(
-		/obj/item/ammo_box/magazine/wt550m9 = 2,
-		/obj/item/ammo_box/magazine/wt550m9/wtap = 2,
-		/obj/item/ammo_box/magazine/wt550m9/wtic = 2,
-	)
-	crate_name = "emergency crate"
-	crate_type = /obj/structure/closet/crate/secure/syndicate/gorlex/weapons/bustedlock
 
 /datum/supply_pack/imports/shocktrooper
 	name = "Shocktrooper Crate"

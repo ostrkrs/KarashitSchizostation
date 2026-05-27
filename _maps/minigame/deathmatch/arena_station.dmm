@@ -274,7 +274,6 @@
 /area/deathmatch)
 "kC" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun/mini,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "kD" = (

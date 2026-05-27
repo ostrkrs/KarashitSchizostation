@@ -2073,32 +2073,6 @@
 /obj/item/ammo_box/a40mm{
 	icon_state = "40mm-4"
 	},
-/obj/item/ammo_box/magazine/m223{
-	icon_state = "5.56m-30";
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/m223{
-	icon_state = "5.56m-30";
-	pixel_x = 2;
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/m223{
-	icon_state = "5.56m-30"
-	},
-/obj/item/ammo_box/magazine/m223{
-	icon_state = "5.56m-30"
-	},
-/obj/item/ammo_box/magazine/m223{
-	icon_state = "5.56m-30";
-	pixel_x = -2;
-	pixel_y = -4
-	},
-/obj/item/ammo_box/magazine/m223{
-	icon_state = "5.56m-30";
-	pixel_x = -2;
-	pixel_y = -4
-	},
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
@@ -2222,22 +2196,12 @@
 	},
 /obj/item/ammo_box/c10mm,
 /obj/item/ammo_box/speedloader/c357{
-	icon_state = "357-7";
+	icon_state = "357-6";
 	pixel_y = 3
 	},
 /obj/item/ammo_box/speedloader/c357{
-	icon_state = "357-7";
+	icon_state = "357-6";
 	pixel_x = 2
-	},
-/obj/item/ammo_box/magazine/m10mm{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/ammo_box/magazine/m10mm{
-	pixel_y = 3
-	},
-/obj/item/ammo_box/magazine/m10mm{
-	pixel_x = 3
 	},
 /obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/pod/light,
@@ -2377,7 +2341,7 @@
 	req_access = list("syndicate_leader")
 	},
 /obj/item/ammo_box/speedloader/c357{
-	icon_state = "357-7";
+	icon_state = "357-6";
 	pixel_x = 2
 	},
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare,
@@ -2391,16 +2355,6 @@
 /area/shuttle/sbc_starfury)
 "iv" = (
 /obj/structure/table,
-/obj/item/ammo_box/magazine/m10mm{
-	pixel_x = -3;
-	pixel_y = 6
-	},
-/obj/item/ammo_box/magazine/m10mm{
-	pixel_y = 3
-	},
-/obj/item/ammo_box/magazine/m10mm{
-	pixel_x = 3
-	},
 /obj/item/assembly/flash/handheld,
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/thinplating_new/dark{

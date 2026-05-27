@@ -980,8 +980,8 @@
 /obj/structure/rack{
 	dir = 8
 	},
-/obj/item/storage/box/lethalshot,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
+/obj/item/storage/box/ammo/buckshot,
 /obj/effect/turf_decal/bot,
 /obj/item/gun/ballistic/shotgun/doublebarrel/slugs,
 /turf/open/floor/pod/dark,

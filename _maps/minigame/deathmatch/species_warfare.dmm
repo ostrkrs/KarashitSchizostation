@@ -961,7 +961,6 @@
 "Iq" = (
 /obj/effect/turf_decal/tile/dark_blue/full,
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun/mini/practice_phaser,
 /obj/machinery/light/built/directional/north,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)

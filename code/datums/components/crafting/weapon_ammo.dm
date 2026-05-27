@@ -55,7 +55,7 @@
 	category = CAT_WEAPON_AMMO
 
 /datum/crafting_recipe/dragonsbreath
-	name = "Dragonsbreath Shell"
+	name = "Dragon's breath Shell"
 	result = /obj/item/ammo_casing/shotgun/dragonsbreath
 	reqs = list(
 		/obj/item/ammo_casing/shotgun/techshell = 1,

@@ -210,24 +210,12 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
-/datum/design/c45
-	name = "Ammo Box (.45) (Lethal)"
-	id = "c45"
+/datum/design/c8mm
+	name = "Ammo Box (8mm) (Lethal)"
+	id = "c8mm"
 	build_type = AUTOLATHE
 	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT * 300)
-	build_path = /obj/item/ammo_box/c45
-	category = list(
-		RND_CATEGORY_HACKED,
-		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO,
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
-
-/datum/design/c9mm
-	name = "Ammo Box (9mm) (Lethal)"
-	id = "c9mm"
-	build_type = AUTOLATHE
-	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT * 300)
-	build_path = /obj/item/ammo_box/c9mm
+	build_path = /obj/item/ammo_box/c8mm
 	category = list(
 		RND_CATEGORY_HACKED,
 		RND_CATEGORY_WEAPONS + RND_SUBCATEGORY_WEAPONS_AMMO,

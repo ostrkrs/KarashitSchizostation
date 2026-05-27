@@ -58,7 +58,7 @@ DEFINE_BITFIELD(turret_flags, list(
 	/// If the turret responds to control panels
 	var/controllock = FALSE
 	/// The type of weapon installed by default
-	var/installation = /obj/item/gun/energy/e_gun/turret
+	var/installation = /obj/item/gun/energy/laser/turret
 	/// What stored gun is in the turret
 	var/obj/item/gun/stored_gun = null
 	/// The charge of the gun when retrieved from wreckage
@@ -1186,7 +1186,7 @@ DEFINE_BITFIELD(turret_flags, list(
 	.["shot_delay"] = 30
 	.["team_color"] = "red"
 
-/obj/item/gun/energy/e_gun/turret/get_turret_properties()
+/obj/item/gun/energy/laser/turret/get_turret_properties()
 	. = ..()
 
 /obj/machinery/porta_turret/lasertag

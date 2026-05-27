@@ -304,12 +304,12 @@
 /area/virtual_domain)
 "Rg" = (
 /obj/structure/table/abductor,
-/obj/item/ammo_box/magazine/smgm45,
-/obj/item/ammo_box/magazine/smgm45{
+/obj/item/ammo_box/magazine/smgm8mm_c20r,
+/obj/item/ammo_box/magazine/smgm8mm_c20r{
 	pixel_x = 9;
 	pixel_y = 3
 	},
-/obj/item/gun/ballistic/automatic/c20r/unrestricted{
+/obj/item/gun/ballistic/automatic/smg/c20r/unrestricted{
 	pixel_x = -5;
 	pixel_y = -5
 	},
@@ -383,7 +383,7 @@
 	pixel_x = -5;
 	pixel_y = 2
 	},
-/obj/item/gun/ballistic/automatic/c20r/unrestricted{
+/obj/item/gun/ballistic/automatic/smg/c20r/unrestricted{
 	pixel_x = 8;
 	pixel_y = -6
 	},

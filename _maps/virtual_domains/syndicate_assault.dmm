@@ -502,7 +502,7 @@
 	req_access = list("syndicate");
 	secure = 1
 	},
-/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c8mm,
 /obj/item/gun/ballistic/automatic/pistol,
 /turf/open/floor/mineral/plastitanium/red,
 /area/virtual_domain)
@@ -599,7 +599,7 @@
 	req_access = list("syndicate");
 	secure = 1
 	},
-/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c8mm,
 /turf/open/floor/mineral/plastitanium/red,
 /area/virtual_domain)
 "xS" = (
@@ -691,9 +691,6 @@
 	secure = 1
 	},
 /obj/item/crowbar/red,
-/obj/item/ammo_box/magazine/m9mm_aps,
-/obj/item/ammo_box/magazine/m9mm_aps,
-/obj/item/gun/ballistic/automatic/pistol/aps,
 /turf/open/floor/carpet/royalblack,
 /area/virtual_domain)
 "Cn" = (
@@ -735,10 +732,10 @@
 /area/virtual_domain)
 "Dj" = (
 /obj/structure/table/reinforced,
-/obj/item/ammo_box/magazine/smgm45,
-/obj/item/ammo_box/magazine/smgm45,
-/obj/item/ammo_box/magazine/smgm45,
-/obj/item/gun/ballistic/automatic/c20r/unrestricted,
+/obj/item/ammo_box/magazine/smgm8mm_c20r,
+/obj/item/ammo_box/magazine/smgm8mm_c20r,
+/obj/item/ammo_box/magazine/smgm8mm_c20r,
+/obj/item/gun/ballistic/automatic/smg/c20r/unrestricted,
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain/protected_space)
 "DA" = (
@@ -843,7 +840,7 @@
 /area/virtual_domain)
 "Im" = (
 /obj/structure/table/reinforced,
-/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c8mm,
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
 "Io" = (
@@ -932,8 +929,8 @@
 	secure = 1
 	},
 /obj/item/crowbar/red,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/gun/ballistic/automatic/pistol,
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
@@ -1081,8 +1078,8 @@
 	secure = 1
 	},
 /obj/item/crowbar/red,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/machinery/light/small/directional/north,
 /obj/item/gun/ballistic/automatic/pistol,
 /turf/open/floor/mineral/plastitanium,

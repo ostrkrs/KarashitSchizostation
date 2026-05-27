@@ -14718,7 +14718,6 @@
 /obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
 	},
-/obj/effect/spawner/random/armory/disablers,
 /obj/effect/mapping_helpers/requests_console/supplies,
 /obj/effect/mapping_helpers/requests_console/assistance,
 /obj/machinery/requests_console/directional/west{
@@ -15414,7 +15413,6 @@
 /obj/effect/turf_decal/tile/red/half/contrasted{
 	dir = 8
 	},
-/obj/effect/spawner/random/armory/e_gun,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "fnT" = (
@@ -15607,7 +15605,7 @@
 "frt" = (
 /obj/structure/rack,
 /obj/item/gun/energy/ionrifle,
-/obj/item/gun/ballistic/automatic/battle_rifle{
+/obj/item/gun/ballistic/automatic/assault_rifle/battle_rifle{
 	pixel_y = 3
 	},
 /obj/item/gun/energy/temperature/security,
@@ -31216,10 +31214,6 @@
 /area/station/engineering/supermatter/room)
 "kKp" = (
 /obj/structure/rack,
-/obj/item/gun/energy/laser/carbine/practice{
-	pixel_x = 2;
-	pixel_y = 5
-	},
 /obj/item/gun/energy/laser/practice{
 	pixel_x = 2;
 	pixel_y = 1
@@ -32897,7 +32891,6 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/west,
-/obj/effect/spawner/random/armory/dragnet,
 /turf/open/floor/iron/dark,
 /area/station/ai_monitored/security/armory)
 "lpo" = (
@@ -43301,7 +43294,6 @@
 /obj/item/storage/backpack/duffelbag/syndie/hitman,
 /obj/item/card/id/advanced/silver/reaper,
 /obj/item/lazarus_injector,
-/obj/item/gun/energy/disabler,
 /obj/item/gun/ballistic/revolver/russian,
 /obj/item/ammo_box/speedloader/c357,
 /obj/item/clothing/neck/stethoscope,

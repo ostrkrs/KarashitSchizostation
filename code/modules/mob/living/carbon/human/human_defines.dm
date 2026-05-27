@@ -13,6 +13,7 @@
 	can_be_shoved_into = TRUE
 	initial_language_holder = /datum/language_holder/empty // We get stuff from our species
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
+	living_flags = STOP_OVERLAY_UPDATE_BODY_PARTS
 	max_grab = GRAB_KILL
 	examine_thats = "This is"
 

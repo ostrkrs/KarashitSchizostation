@@ -427,6 +427,18 @@
 	},
 /turf/open/floor/iron/cafeteria,
 /area/station/medical/medbay)
+"cL" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/automatic/smg/wt550{
+	pixel_x = -2;
+	pixel_y = 10
+	},
+/obj/item/gun/ballistic/automatic/smg/wt550/brand/ward_takahashi{
+	pixel_x = -2;
+	pixel_y = -4
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "cN" = (
 /turf/closed/wall/r_wall,
 /area/station/construction)
@@ -995,6 +1007,15 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit/departure_lounge)
+"fW" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/revolver/golden{
+	pixel_x = -1;
+	pixel_y = 10
+	},
+/obj/item/gun/ballistic/revolver/cowboy,
+/turf/open/floor/plating,
+/area/station/construction)
 "fX" = (
 /obj/structure/sign/directions/supply{
 	dir = 4;
@@ -1056,6 +1077,13 @@
 /obj/item/debug/omnitool,
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
+"gj" = (
+/obj/structure/closet/secure_closet/armory4{
+	locked = 0;
+	req_access = null
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "gk" = (
 /obj/structure/sign/departments/evac,
 /turf/closed/wall/r_wall,
@@ -1154,7 +1182,10 @@
 /turf/open/floor/iron,
 /area/station/command/bridge)
 "iX" = (
-/obj/effect/light_emitter/fake_outdoors,
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/obj/item/clothing/glasses/hud/health,
 /turf/open/floor/plating,
 /area/station/construction)
 "jg" = (
@@ -1170,6 +1201,24 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
+"jw" = (
+/obj/item/storage/box/ammo/beanbags{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/obj/item/storage/box/ammo/rubbershot{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/obj/item/storage/box/ammo/flechettes{
+	pixel_x = 8
+	},
+/obj/item/storage/box/ammo/large_darts{
+	pixel_x = -8
+	},
+/obj/structure/table,
+/turf/open/floor/plating,
+/area/station/construction)
 "jz" = (
 /obj/structure/table/glass,
 /obj/item/disk/surgery/debug,
@@ -1241,6 +1290,32 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"lB" = (
+/obj/machinery/light/floor,
+/obj/structure/table,
+/obj/item/storage/box/ammo/slugs{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/obj/item/storage/box/ammo/manstoppers{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/obj/item/storage/box/ammo/buckshot{
+	pixel_x = -8
+	},
+/obj/item/storage/box/ammo/birdshot{
+	pixel_x = 8
+	},
+/turf/open/floor/plating,
+/area/station/construction)
+"lN" = (
+/obj/structure/closet/secure_closet/armory2{
+	locked = 0;
+	req_access = null
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "mb" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
@@ -1255,6 +1330,22 @@
 "mC" = (
 /turf/open/floor/iron/dark,
 /area/station/medical/medbay)
+"mS" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/rifle/boltaction/pipegun{
+	pixel_x = -7;
+	pixel_y = 12
+	},
+/obj/item/gun/ballistic/rifle/lionhunter,
+/turf/open/floor/plating,
+/area/station/construction)
+"mV" = (
+/obj/structure/closet/secure_closet/armory1{
+	locked = 0;
+	req_access = null
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "nb" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -1433,6 +1524,21 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
+"rR" = (
+/obj/structure/table,
+/obj/item/storage/box/ammo/incendiary{
+	pixel_x = -8;
+	pixel_y = 11
+	},
+/obj/item/storage/box/ammo/breacher_slugs{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/obj/item/storage/box/ammo/dragons_breath{
+	pixel_x = 8
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "rT" = (
 /turf/open/floor/circuit/green,
 /area/station/cargo/bitrunning/den)
@@ -1453,6 +1559,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/engineering/main)
+"sU" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/revolver/mateba{
+	pixel_x = -1;
+	pixel_y = 9
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "tj" = (
 /obj/structure/cable,
 /obj/machinery/light/directional/east,
@@ -1740,6 +1854,17 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/iron,
 /area/station/construction)
+"zf" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/automatic/smg/c20r/unrestricted{
+	pixel_y = -6
+	},
+/obj/item/gun/ballistic/automatic/smg/c20r/brand/scarborough{
+	pixel_x = -1;
+	pixel_y = 6
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "zg" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1766,6 +1891,11 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/commons/storage/primary)
+"Ae" = (
+/obj/effect/turf_decal/delivery,
+/obj/effect/landmark/start/assistant,
+/turf/open/floor/plating,
+/area/station/construction)
 "Aj" = (
 /obj/structure/cable,
 /obj/machinery/light/directional/east,
@@ -1845,6 +1975,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
+"Cs" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/rifle/boltaction/pipegun/pistol{
+	pixel_x = -4;
+	pixel_y = 5
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "Ct" = (
 /obj/structure/closet/syndicate/resources/everything,
 /turf/open/floor/iron,
@@ -1897,6 +2035,20 @@
 /obj/structure/rack,
 /turf/open/floor/iron/dark,
 /area/station/science/explab)
+"Dh" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating,
+/area/station/construction)
+"Dw" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/revolver{
+	pixel_y = -2
+	},
+/obj/item/gun/ballistic/revolver/badass{
+	pixel_y = 9
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "DC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/stripes/corner,
@@ -2025,6 +2177,18 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
+"Ga" = (
+/obj/effect/turf_decal/delivery,
+/turf/open/floor/plating,
+/area/station/construction)
+"Gl" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/rifle/boltaction,
+/obj/item/gun/ballistic/rifle/sks{
+	pixel_y = 9
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "GC" = (
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
@@ -2191,6 +2355,14 @@
 /obj/item/reagent_containers/cup/watering_can/advanced,
 /turf/open/floor/iron,
 /area/station/service/hydroponics)
+"KY" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/automatic/smg/smartgun{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "Lb" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -2257,6 +2429,13 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/station/science)
+"MD" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/automatic/smg/c20r/brand/solstice_reach{
+	pixel_y = -1
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "ME" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -2381,7 +2560,10 @@
 /area/station/commons/storage/primary)
 "Pe" = (
 /obj/effect/landmark/event_spawn,
-/obj/effect/light_emitter/fake_outdoors,
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/obj/item/debug/human_spawner,
 /turf/open/floor/plating,
 /area/station/construction)
 "Pk" = (
@@ -2461,6 +2643,18 @@
 	},
 /turf/open/floor/iron,
 /area/station/cargo/storage)
+"QS" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/shotgun/automatic/combat{
+	pixel_x = -4;
+	pixel_y = 8
+	},
+/obj/item/gun/ballistic/shotgun/automatic/combat/compact{
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "QV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -2609,6 +2803,18 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/aft)
+"Uc" = (
+/obj/structure/table,
+/obj/item/gun/ballistic/shotgun/riot{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/gun/ballistic/shotgun/doublebarrel{
+	pixel_x = -6;
+	pixel_y = -2
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "Ue" = (
 /turf/closed/wall/r_wall,
 /area/station/cargo/bitrunning/den)
@@ -2616,6 +2822,13 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /turf/open/floor/iron,
 /area/station/medical/medbay)
+"Ut" = (
+/obj/structure/closet/secure_closet/armory3{
+	locked = 0;
+	req_access = null
+	},
+/turf/open/floor/plating,
+/area/station/construction)
 "Uy" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
 /obj/effect/turf_decal/stripes/line{
@@ -2787,6 +3000,10 @@
 /obj/machinery/camera/autoname/directional/south,
 /turf/open/floor/iron,
 /area/station/cargo/miningoffice)
+"YR" = (
+/obj/machinery/light/floor,
+/turf/open/floor/plating,
+/area/station/construction)
 "Zd" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/unlocked,
@@ -6285,15 +6502,15 @@ xK
 Mh
 cN
 yV
+rR
 dn
+KY
 dn
+MD
 dn
+Dw
 dn
-dn
-dn
-dn
-dn
-dn
+Gl
 dn
 dL
 sr
@@ -6377,15 +6594,15 @@ QV
 FA
 Hb
 Es
+jw
 dn
+Uc
 dn
+zf
 dn
+fW
 dn
-dn
-dn
-dn
-dn
-dn
+Cs
 dn
 dL
 cN
@@ -6469,15 +6686,15 @@ QV
 bE
 ef
 cY
+lB
 dn
+QS
 dn
+cL
 dn
-dn
-dn
-dn
-dn
-dn
-dn
+sU
+YR
+mS
 dn
 dL
 tE
@@ -6563,10 +6780,10 @@ cN
 bV
 dn
 dn
+mV
 dn
-dn
-dn
-dn
+Ga
+Ae
 dn
 dn
 dn
@@ -6655,7 +6872,7 @@ cN
 ZW
 dn
 dn
-dn
+lN
 dn
 Pe
 iX
@@ -6747,10 +6964,10 @@ cN
 PB
 qf
 dn
+Ut
 dn
 dn
-iX
-iX
+dn
 dn
 dn
 dn
@@ -6839,7 +7056,7 @@ cN
 vs
 dn
 dn
-dn
+gj
 dn
 dn
 dn
@@ -6931,12 +7148,12 @@ cN
 yL
 dn
 dn
-dn
-dn
-dn
-dn
-dn
-dn
+YR
+Dh
+Dh
+Dh
+Dh
+YR
 dn
 dn
 dL

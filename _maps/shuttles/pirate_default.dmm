@@ -837,7 +837,7 @@
 /obj/structure/rack{
 	dir = 8
 	},
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /obj/item/gun/ballistic/shotgun/automatic/combat{
 	pixel_x = -2;
 	pixel_y = 2

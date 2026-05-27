@@ -601,7 +601,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/ballistic/automatic/pistol,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/ammo_box/speedloader/strilka310,
 /obj/item/crowbar,
 /turf/open/floor/pod/dark,

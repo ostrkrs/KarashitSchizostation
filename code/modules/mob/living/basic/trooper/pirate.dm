@@ -80,7 +80,7 @@
 	minimum_survivable_temperature = 0
 	corpse = /obj/effect/mob_spawn/corpse/human/pirate/ranged/space
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/pirate/ranged/space
-	r_hand = /obj/item/gun/energy/e_gun/lethal
+	r_hand = /obj/item/gun/energy/laser
 
 /mob/living/basic/trooper/pirate/ranged/space/Initialize(mapload)
 	. = ..()

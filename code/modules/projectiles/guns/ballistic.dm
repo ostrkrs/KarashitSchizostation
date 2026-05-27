@@ -2,7 +2,7 @@
 ///This has a shitload of vars on it, and I'm sorry for that, but it does make making new subtypes really easy
 /obj/item/gun/ballistic
 	name = "projectile gun"
-	desc = "Now comes in flavors like GUN. Uses 10mm ammo, for some reason."
+	desc = "Now comes in flavors like GUN."
 	icon_state = "debug"
 	abstract_type = /obj/item/gun/ballistic
 	w_class = WEIGHT_CLASS_NORMAL
@@ -10,6 +10,7 @@
 	drop_sound = 'sound/items/handling/gun/gun_drop.ogg'
 	sound_vary = TRUE
 	unique_reskin_changes_base_icon_state = TRUE
+	min_recoil = 0.1
 
 	///sound when inserting magazine
 	var/load_sound = 'sound/items/weapons/gun/general/magazine_insert_full.ogg'
@@ -791,7 +792,7 @@ GLOBAL_LIST_INIT(gun_saw_types, typecacheof(list(
 	worn_icon_state = "gun"
 	slot_flags &= ~ITEM_SLOT_BACK //you can't sling it on your back
 	slot_flags |= ITEM_SLOT_BELT //but you can wear it on your belt (poorly concealed under a trenchcoat, ideally)
-	recoil = SAWN_OFF_RECOIL
+	recoil = RECOIL_SAWN_OFF
 	update_appearance()
 	return TRUE
 
@@ -864,7 +865,7 @@ GLOBAL_LIST_INIT(gun_saw_types, typecacheof(list(
 
 /obj/item/suppressor
 	name = "suppressor"
-	desc = "A syndicate small-arms suppressor for maximum espionage."
+	desc = "A small-arms suppressor."
 	icon = 'icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "suppressor"
 	w_class = WEIGHT_CLASS_TINY

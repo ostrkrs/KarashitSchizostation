@@ -175,7 +175,7 @@
 "gJ" = (
 /obj/structure/table/wood,
 /obj/item/seeds/potato,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/listeningstation)
 "hk" = (

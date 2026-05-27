@@ -1,36 +1,19 @@
 /obj/item/ammo_casing/energy/laser
 	projectile_type = /obj/projectile/beam/laser
-	e_cost = LASER_SHOTS(12, STANDARD_CELL_CHARGE)
+	e_cost = LASER_SHOTS(10, STANDARD_CELL_CHARGE)
 	select_name = "kill"
 
 /obj/item/ammo_casing/energy/laser/hellfire
 	projectile_type = /obj/projectile/beam/laser/hellfire
-	e_cost = LASER_SHOTS(10, STANDARD_CELL_CHARGE)
 	select_name = "maim"
 
-/obj/item/ammo_casing/energy/lasergun
-	projectile_type = /obj/projectile/beam/laser
-	e_cost = LASER_SHOTS(16, STANDARD_CELL_CHARGE)
-	select_name = "kill"
-
-/obj/item/ammo_casing/energy/lasergun/carbine
-	projectile_type = /obj/projectile/beam/laser/carbine
-	e_cost = LASER_SHOTS(40, STANDARD_CELL_CHARGE)
-	select_name = "kill"
-	fire_sound = 'sound/items/weapons/laser2.ogg'
-
-/obj/item/ammo_casing/energy/lasergun/carbine/cybersun
-	projectile_type = /obj/projectile/beam/laser/carbine/cybersun
-	e_cost = LASER_SHOTS(54, STANDARD_CELL_CHARGE)
-	select_name = "rapid fire"
-	fire_sound = 'sound/items/weapons/laser2.ogg'
-
-/obj/item/ammo_casing/energy/lasergun/carbine/practice
-	projectile_type = /obj/projectile/beam/laser/carbine/practice
+/obj/item/ammo_casing/energy/laser/practice
+	projectile_type = /obj/projectile/beam/laser/practice
 	select_name = "practice"
+	e_cost = LASER_SHOTS(25, STANDARD_CELL_CHARGE)
 	harmful = FALSE
 
-/obj/item/ammo_casing/energy/lasergun/old
+/obj/item/ammo_casing/energy/laser/old
 	projectile_type = /obj/projectile/beam/laser
 	e_cost = LASER_SHOTS(5, STANDARD_CELL_CHARGE)
 	select_name = "kill"
@@ -46,11 +29,6 @@
 	projectile_type = /obj/projectile/beam/laser/musket/prime
 	pellets = 3
 	variance = 10
-
-/obj/item/ammo_casing/energy/laser/practice
-	projectile_type = /obj/projectile/beam/practice
-	select_name = "practice"
-	harmful = FALSE
 
 /obj/item/ammo_casing/energy/chameleon
 	projectile_type = /obj/projectile/energy/chameleon

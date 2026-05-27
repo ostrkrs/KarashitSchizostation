@@ -24,22 +24,6 @@
 	name = ".310 Strilka phasic bullet casing"
 	desc = "A phasic .310 Strilka bullet casing."
 	projectile_type = /obj/projectile/bullet/strilka310/phasic
-// .223 (M-90gl Carbine)
-
-/obj/item/ammo_casing/a223
-	name = ".223 bullet casing"
-	desc = "A .223 bullet casing."
-	icon_state = "223-casing"
-	caliber = CALIBER_A223
-	projectile_type = /obj/projectile/bullet/a223
-
-/obj/item/ammo_casing/a223/phasic
-	name = ".223 phasic bullet casing"
-	desc = "A .223 phasic bullet casing."
-	projectile_type = /obj/projectile/bullet/a223/phasic
-
-/obj/item/ammo_casing/a223/weak
-	projectile_type = /obj/projectile/bullet/a223/weak
 
 // 40mm (Grenade Launcher)
 

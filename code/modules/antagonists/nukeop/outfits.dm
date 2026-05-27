@@ -9,7 +9,7 @@
 	l_pocket = /obj/item/modular_computer/pda/nukeops
 	r_pocket = /obj/item/pen/edagger
 	id = /obj/item/card/id/advanced/chameleon/elite
-	belt = /obj/item/gun/ballistic/automatic/pistol/clandestine
+	belt = /obj/item/gun/ballistic/automatic/pistol/wt23
 
 	skillchips = list(/obj/item/skillchip/disk_verifier)
 	box = /obj/item/storage/box/survival/syndie
@@ -74,7 +74,7 @@
 	belt = /obj/item/storage/belt/military
 	r_hand = /obj/item/gun/ballistic/shotgun/bulldog
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/pistol/clandestine = 1,
+		/obj/item/gun/ballistic/automatic/pistol/wt23 = 1,
 		/obj/item/pen/edagger = 1,
 		/obj/item/ammo_box/magazine/m12g = 3,
 	)
@@ -102,7 +102,7 @@
 	name = "Syndicate Operative - Reinforcement"
 	tc = 0
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/smartgun = 1,
+		/obj/item/gun/ballistic/automatic/smg/smartgun = 1,
 		/obj/item/ammo_box/magazine/smartgun = 2,
 	)
 	var/faction = "The Syndicate"

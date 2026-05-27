@@ -498,7 +498,7 @@
 	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 0.1, /datum/material/glass= SMALL_MATERIAL_AMOUNT * 0.1)
 	attack_verb_continuous = list("strikes", "pistol whips", "hits", "bashes")
 	attack_verb_simple = list("strike", "pistol whip", "hit", "bash")
-	var/bullets = 7
+	var/bullets = 6
 
 /obj/item/toy/gun/examine(mob/user)
 	. = ..()
@@ -507,20 +507,20 @@
 /obj/item/toy/gun/attackby(obj/item/toy/ammo/gun/A, mob/user, list/modifiers, list/attack_modifiers)
 
 	if(istype(A, /obj/item/toy/ammo/gun))
-		if (src.bullets >= 7)
+		if (src.bullets >= 6)
 			to_chat(user, span_warning("It's already fully loaded!"))
 			return 1
 		if (A.amount_left <= 0)
 			to_chat(user, span_warning("There are no more caps!"))
 			return 1
-		if (A.amount_left < (7 - src.bullets))
+		if (A.amount_left < (6 - src.bullets))
 			src.bullets += A.amount_left
 			to_chat(user, span_notice("You reload [A.amount_left] cap\s."))
 			A.amount_left = 0
 		else
-			to_chat(user, span_notice("You reload [7 - src.bullets] cap\s."))
-			A.amount_left -= 7 - src.bullets
-			src.bullets = 7
+			to_chat(user, span_notice("You reload [6 - src.bullets] cap\s."))
+			A.amount_left -= 6 - src.bullets
+			src.bullets = 6
 		A.update_appearance()
 		return 1
 	else
@@ -547,15 +547,15 @@
 
 /obj/item/toy/ammo/gun
 	name = "capgun ammo"
-	desc = "Make sure to recycle the box in an autolathe when it gets empty."
+	desc = "Make sure to recycle it in an autolathe when it gets empty."
 	icon = 'icons/obj/weapons/guns/ammo.dmi'
-	icon_state = "357OLD-7"
+	icon_state = "speedloader_toy_38-6"
 	w_class = WEIGHT_CLASS_TINY
 	custom_materials = list(/datum/material/iron= SMALL_MATERIAL_AMOUNT * 0.1, /datum/material/glass= SMALL_MATERIAL_AMOUNT * 0.1)
-	var/amount_left = 7
+	var/amount_left = 6
 
 /obj/item/toy/ammo/gun/update_icon_state()
-	icon_state = "357OLD-[amount_left]"
+	icon_state = "speedloader_toy_38-[amount_left]"
 	return ..()
 
 /obj/item/toy/ammo/gun/examine(mob/user)

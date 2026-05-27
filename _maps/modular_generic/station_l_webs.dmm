@@ -388,7 +388,7 @@
 /obj/effect/decal/cleanable/glass,
 /obj/structure/guncase/wt550,
 /obj/structure/fireaxecabinet/empty/directional/south,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},

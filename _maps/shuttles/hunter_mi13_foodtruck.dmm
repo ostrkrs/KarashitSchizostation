@@ -268,15 +268,15 @@
 /area/shuttle/hunter/mi13_foodtruck)
 "kj" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/ammo_box/c9mm{
+/obj/item/ammo_box/c8mm{
 	pixel_x = 5;
 	pixel_y = 8
 	},
-/obj/item/ammo_box/magazine/m9mm/ap{
+/obj/item/ammo_box/magazine/m10mm/ap{
 	pixel_x = -7
 	},
-/obj/item/ammo_box/magazine/m9mm/ap,
-/obj/item/ammo_box/magazine/m9mm/ap{
+/obj/item/ammo_box/magazine/m10mm/ap,
+/obj/item/ammo_box/magazine/m10mm/ap{
 	pixel_x = 7
 	},
 /obj/effect/turf_decal/siding/dark_red{

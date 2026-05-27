@@ -227,7 +227,6 @@
 	loot = list(
 
 		/obj/item/vending_refill/magivend = 1,
-		/obj/item/vending_refill/liberation = 1,
 		/obj/item/vending_refill/wardrobe/cent_wardrobe = 1,
 
 	)

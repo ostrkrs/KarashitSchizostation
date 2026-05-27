@@ -74,6 +74,7 @@
 	brain.Remove(source)
 
 	var/turf/source_turf = get_turf(source)
+	brain.set_organ_damage(brain.maxHealth)
 	brain.forceMove(source_turf)
 	brain.throw_at(get_step(source_turf, source.dir), 1, 1)
 

@@ -6,6 +6,7 @@
 	base_icon_state = "srm-8"
 	projectile_type = /obj/projectile/bullet/rocket
 	newtonian_force = 2
+	casing_sound = NONE
 
 /obj/item/ammo_casing/rocket/Initialize(mapload)
 	. = ..()

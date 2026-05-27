@@ -24,7 +24,7 @@
 	. = ..()
 
 	// Traitor steal objectives
-	new /obj/item/gun/energy/e_gun/hos(src)
+	new /obj/item/gun/energy/laser/hos(src)
 	new /obj/item/pinpointer/nuke(src)
 
 /obj/structure/closet/secure_closet/warden
@@ -215,7 +215,7 @@
 	anchored = TRUE
 
 /obj/structure/closet/secure_closet/armory1
-	name = "armory armor locker"
+	name = "riot armor locker"
 	icon_state = "armory"
 	req_access = list(ACCESS_ARMORY)
 
@@ -235,7 +235,7 @@
 	new /obj/item/clothing/suit/hooded/ablative(src)
 
 /obj/structure/closet/secure_closet/armory2
-	name = "armory ballistics locker"
+	name = "riot shotguns locker"
 	icon_state = "tac"
 	icon_door = "armory_shotgun"
 	req_access = list(ACCESS_ARMORY)
@@ -244,14 +244,16 @@
 	..()
 	new /obj/item/storage/box/firingpins(src)
 	for(var/i in 1 to 3)
-		new /obj/item/storage/box/rubbershot(src)
+		new /obj/item/storage/box/ammo/rubbershot(src)
+	for(var/i in 1 to 2)
+		new /obj/item/storage/box/ammo/manstoppers(src)
 
 /obj/structure/closet/secure_closet/armory2/populate_contents_immediate()
 	for(var/i in 1 to 3)
 		new /obj/item/gun/ballistic/shotgun/riot(src)
 
 /obj/structure/closet/secure_closet/armory3
-	name = "armory energy gun locker"
+	name = "energy guns locker"
 	icon_state = "tac"
 	icon_door = "armory_energy"
 	req_access = list(ACCESS_ARMORY)
@@ -260,14 +262,27 @@
 	..()
 	new /obj/item/storage/box/firingpins(src)
 	new /obj/item/gun/energy/ionrifle(src)
-	for(var/i in 1 to 3)
-		new /obj/item/gun/energy/laser/thermal(src)
 
 /obj/structure/closet/secure_closet/armory3/populate_contents_immediate()
 	for(var/i in 1 to 3)
-		new /obj/item/gun/energy/e_gun(src)
+		new /obj/item/gun/energy/laser/brand/irix(src)
+
+/obj/structure/closet/secure_closet/armory4
+	name = "SMGs locker"
+	icon_state = "tac"
+	icon_door = "armory_ballistic"
+	req_access = list(ACCESS_ARMORY)
+
+/obj/structure/closet/secure_closet/armory4/PopulateContents()
+	..()
+	new /obj/item/storage/box/firingpins(src)
+	new /obj/item/storage/toolbox/ammobox/smg8mm_c20r(src)
+	new /obj/item/storage/toolbox/ammobox/smg8mm_c20r_hp(src)
+
+/obj/structure/closet/secure_closet/armory4/populate_contents_immediate()
 	for(var/i in 1 to 3)
-		new /obj/item/gun/energy/laser(src)
+		new /obj/item/gun/ballistic/automatic/smg/c20r/brand/solstice_reach(src)
+
 
 /obj/structure/closet/secure_closet/tac
 	name = "armory tac locker"
@@ -276,7 +291,7 @@
 
 /obj/structure/closet/secure_closet/tac/PopulateContents()
 	..()
-	new /obj/item/gun/ballistic/automatic/wt550(src)
+	new /obj/item/gun/ballistic/automatic/smg/c20r/brand/solstice_reach(src)
 	new /obj/item/clothing/head/helmet/alt(src)
 	new /obj/item/clothing/mask/gas/sechailer(src)
 	new /obj/item/clothing/suit/armor/bulletproof(src)

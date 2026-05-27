@@ -22,10 +22,9 @@
 /mob/living/basic/trooper/russian/ranged
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/russian/ranged
-	r_hand = /obj/item/gun/ballistic/automatic/pistol
+	r_hand = /obj/item/gun/ballistic/automatic/pistol/wt23
 	corpse = /obj/effect/mob_spawn/corpse/human/russian/ranged
-	loot = list(/obj/item/gun/ballistic/revolver/nagant)
-	var/casingtype = /obj/item/ammo_casing/n762
+	var/casingtype = /obj/item/ammo_casing/c10mm
 	var/projectilesound = 'sound/items/weapons/gun/revolver/shot.ogg'
 
 /mob/living/basic/trooper/russian/ranged/Initialize(mapload)

@@ -62,7 +62,6 @@
 	name = "lush grass"
 	desc = "Looking at the luscious field, you suddenly feel homesick."
 	icon_state = "grass0"
-	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 
 /turf/open/floor/holofloor/grass/Initialize(mapload)
@@ -75,7 +74,6 @@
 	desc = "This is better than a vacation, since you're still getting paid."
 	icon = 'icons/turf/sand.dmi'
 	icon_state = "sand"
-	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 
 /turf/open/floor/holofloor/beach/coast
@@ -139,7 +137,6 @@
 	desc = "Gives the impression of moving at hyper-speed, without moving. May induce motion sickness."
 	icon = 'icons/turf/space.dmi'
 	icon_state = "speedspace_ns_1"
-	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 
 /turf/open/floor/holofloor/hyperspace/Initialize(mapload)
@@ -160,7 +157,6 @@
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_TURF_OPEN + SMOOTH_GROUP_CARPET
 	canSmoothWith = SMOOTH_GROUP_CARPET
-	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 
 /turf/open/floor/holofloor/carpet/Initialize(mapload)
@@ -185,7 +181,6 @@
 	icon_state = "snow"
 	slowdown = 2
 	bullet_sizzle = TRUE
-	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 
 /turf/open/floor/holofloor/dark

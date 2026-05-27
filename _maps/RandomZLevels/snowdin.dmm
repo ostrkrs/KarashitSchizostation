@@ -2121,7 +2121,7 @@
 	},
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash,
-/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/ammo/rubbershot,
 /obj/structure/fireaxecabinet/directional/north,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/secpost)
@@ -4636,11 +4636,8 @@
 /area/awaymission/snowdin/post/cavern2)
 "qK" = (
 /obj/structure/rack,
-/obj/item/storage/box/lethalshot,
-/obj/item/storage/box/lethalshot{
-	pixel_x = 2;
-	pixel_y = 2
-	},
+/obj/item/storage/box/ammo/buckshot,
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/floor/iron/dark,
 /area/awaymission/snowdin/post/secpost)
 "qL" = (
@@ -5998,13 +5995,6 @@
 	},
 /turf/closed/wall/ice,
 /area/awaymission/snowdin/post/mining_main/mechbay)
-"xs" = (
-/obj/item/gun/energy/e_gun{
-	dead_cell = 1
-	},
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/post/mining_dock)
 "xt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -10385,9 +10375,6 @@
 	anchored = 1;
 	name = "Officer Norm"
 	},
-/obj/item/gun/energy/e_gun/mini{
-	pixel_y = -5
-	},
 /obj/item/clothing/head/helmet{
 	pixel_y = 8
 	},
@@ -11175,12 +11162,9 @@
 /area/awaymission/snowdin/outside)
 "Xt" = (
 /obj/structure/rack,
-/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/ammo/rubbershot,
 /obj/machinery/light/small/directional/south,
-/obj/item/storage/box/rubbershot{
-	pixel_x = 2;
-	pixel_y = 2
-	},
+/obj/item/storage/box/ammo/rubbershot,
 /turf/open/floor/iron/dark,
 /area/awaymission/snowdin/post/secpost)
 "Xw" = (
@@ -62365,7 +62349,7 @@ eJ
 wD
 wT
 xe
-xs
+xe
 xA
 xI
 xN

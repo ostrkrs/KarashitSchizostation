@@ -33,7 +33,6 @@
 		"photobooth",
 		"scanner_gate",
 		"pepperspray",
-		"dragnet_beacon",
 		"inspector",
 		"evidencebag",
 		"zipties",
@@ -81,14 +80,8 @@
 	description = "Specialized bullets designed to ignite, freeze, and inflict various other effects on targets, expanding combat capabilities."
 	prereq_ids = list(TECHWEB_NODE_EXPLOSIVES)
 	design_ids = list(
-		"c38_hotshot",
-		"c38_hotshot_mag",
-		"c38_iceblox",
-		"c38_iceblox_mag",
 		"c38_trac",
 		"c38_trac_mag",
-		"c38_true_strike",
-		"c38_true_strike_mag",
 		"techshotshell",
 		"flechetteshell",
 	)
@@ -118,8 +111,6 @@
 	design_ids = list(
 		"xray_laser",
 		"nuclear_gun",
-		"c38_flare",
-		"c38_flare_mag",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_4_POINTS)
 	announce_channels = list(RADIO_CHANNEL_SECURITY)

@@ -72,9 +72,9 @@
 	display_name = "Ranged Operative"
 	desc = "A syndicate operative with a gun and a knife."
 
-	l_hand = /obj/item/gun/ballistic/automatic/pistol
+	l_hand = /obj/item/gun/ballistic/automatic/pistol/wt23
 	l_pocket = /obj/item/knife/combat
-	backpack_contents = list(/obj/item/ammo_box/magazine/m9mm = 5)
+	backpack_contents = list(/obj/item/ammo_box/magazine/m10mm = 5)
 
 /datum/outfit/deathmatch_loadout/operative/melee
 	name = "Deathmatch: Melee Operative"
@@ -102,7 +102,7 @@
 	head = /datum/outfit/job/security::head
 	shoes = /datum/outfit/job/security::shoes
 	l_pocket = /obj/item/flashlight/seclite
-	l_hand = /obj/item/gun/energy/disabler
+	l_hand = /obj/item/gun/energy/taser
 	r_pocket = /obj/item/knife/combat/survival
 	back = /datum/outfit/job/security::backpack
 	box = /datum/outfit/job/security::box
@@ -498,7 +498,7 @@
 	display_name = "Gunmancer"
 	desc = "Magic is lame."
 
-	l_hand = /obj/item/gun/ballistic/automatic/pistol/m1911
+	l_hand = /obj/item/gun/ballistic/revolver/badass
 	suit = /obj/item/clothing/suit/wizrobe/tape
 	head = /obj/item/clothing/head/wizard/tape
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -565,7 +565,7 @@
 	suit = /obj/item/clothing/suit/armor/hos/hos_formal
 	suit_store = /obj/item/gun/ballistic/shotgun/automatic/combat/compact
 	gloves = /obj/item/clothing/gloves/tackler/combat
-	belt = /obj/item/gun/energy/e_gun/hos
+	belt = /obj/item/gun/energy/laser/hos
 	r_hand = /obj/item/melee/baton/security/loaded
 	l_hand = /obj/item/shield/riot/tele
 	l_pocket = /obj/item/grenade/flashbang
@@ -580,7 +580,7 @@
 	ears = /obj/item/radio/headset/heads/captain/alt
 	uniform = /obj/item/clothing/under/rank/captain
 	suit = /obj/item/clothing/suit/armor/vest/capcarapace/captains_formal
-	suit_store = /obj/item/gun/energy/e_gun
+	suit_store = /obj/item/gun/energy/laser/captain
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/bedsheet/captain
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -616,7 +616,7 @@
 	uniform = /obj/item/clothing/under/syndicate/tacticool
 	back = /obj/item/mod/control/pre_equipped/nuclear
 	r_hand = /obj/item/gun/ballistic/shotgun/bulldog/unrestricted
-	belt = /obj/item/gun/ballistic/automatic/pistol/clandestine
+	belt = /obj/item/gun/ballistic/automatic/pistol/wt23
 	r_pocket = /obj/item/reagent_containers/hypospray/medipen/stimulants
 	l_pocket = /obj/item/grenade/syndieminibomb
 	implants = list(/obj/item/implant/explosive)
@@ -717,9 +717,9 @@
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/cup/glass/bottle/bottleofnothing,
-		/obj/item/gun/ballistic/automatic/pistol,
+		/obj/item/gun/ballistic/automatic/pistol/wt23,
 		/obj/item/suppressor,
-		/obj/item/ammo_box/c9mm,
+		/obj/item/ammo_box/c8mm,
 		/obj/item/food/croissant/throwing = 2,
 		)
 
@@ -768,7 +768,7 @@
 	id_trim = /datum/id_trim/job/bridge_assistant // half tider half command
 	id = /obj/item/card/id/advanced/chameleon
 	uniform = /obj/item/clothing/under/trek/command/next
-	l_pocket = /obj/item/gun/energy/e_gun/mini // they are thej best race in the end. not as impactful as you may think
+	l_pocket = /obj/item/gun/energy/laser // they are thej best race in the end. not as impactful as you may think
 	r_pocket = /obj/item/extinguisher/mini
 	gloves = /obj/item/clothing/gloves/fingerless
 	belt = /obj/item/storage/belt/utility/full/inducer

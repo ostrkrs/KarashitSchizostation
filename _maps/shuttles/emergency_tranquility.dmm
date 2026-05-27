@@ -2658,9 +2658,6 @@
 /area/shuttle/escape)
 "ZW" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/e_gun/mini{
-	pixel_y = 5
-	},
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
 

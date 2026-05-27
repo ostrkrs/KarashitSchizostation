@@ -11,7 +11,7 @@
 	name = "Dart Pistol"
 	desc = "A miniaturized version of a normal syringe gun. It is very quiet when fired and can fit into any \
 			space a small item can."
-	item = /obj/item/gun/syringe/syndicate
+	item = /obj/item/gun/syringe/compact
 	cost = 4
 	surplus = 50
 	purchasable_from = ~UPLINK_ALL_SYNDIE_OPS
@@ -46,7 +46,7 @@
 
 /datum/uplink_item/stealthy_weapons/suppressor
 	name = "Suppressor"
-	desc = "This suppressor will silence the shots of the weapon it is attached to for increased stealth and superior ambushing capability. It is compatible with many small ballistic guns including the Makarov, Stechkin APS and C-20r, but not revolvers or energy guns."
+	desc = "This suppressor will silence the shots of the weapon it is attached to for increased stealth and superior ambushing capability. It is compatible with many small ballistic guns, but not revolvers or energy guns."
 	item = /obj/item/suppressor
 	cost = 1
 	surplus = 10

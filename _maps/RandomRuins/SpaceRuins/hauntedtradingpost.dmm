@@ -2094,7 +2094,6 @@
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/effect/spawner/random/exotic/technology,
 /obj/effect/mapping_helpers/apc/syndicate_access,
-/obj/item/gun/energy/laser/carbine/cybersun,
 /obj/effect/mapping_helpers/apc/full_charge,
 /obj/machinery/power/apc/auto_name/directional/south{
 	cable_layer = 1
@@ -2709,9 +2708,6 @@
 	pixel_x = 4
 	},
 /obj/machinery/duct,
-/obj/item/gun/ballistic/shotgun/musket{
-	pixel_y = -7
-	},
 /turf/open/floor/carpet/donk,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/workstation)
 "xs" = (
@@ -4031,18 +4027,6 @@
 	},
 /obj/effect/decal/cleanable/blood/oil/slippery,
 /obj/item/trash/popcorn/salty,
-/obj/item/ammo_casing/shotgun/flechette/donk{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/item/ammo_casing/shotgun/flechette/donk{
-	pixel_x = -2;
-	pixel_y = -7
-	},
-/obj/item/ammo_casing/shotgun/flechette/donk{
-	pixel_x = -4;
-	pixel_y = 6
-	},
 /obj/machinery/camera/xray/directional/east,
 /turf/open/floor/carpet/donk,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/workstation)
@@ -4741,7 +4725,6 @@
 /obj/item/pet_carrier,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/food/ready_donk/donkrange_chicken,
-/obj/item/gun/ballistic/rifle/boltaction/donkrifle,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /turf/open/floor/wood/large,
 /area/ruin/space/has_grav/hauntedtradingpost/office)

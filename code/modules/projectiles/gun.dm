@@ -24,6 +24,9 @@
 	attack_verb_simple = list("strike", "hit", "bash")
 	action_slots = ALL
 
+	var/manufacturer = null
+	var/licensor = null
+
 	var/gun_flags = NONE
 	var/fire_sound = 'sound/items/weapons/gun/pistol/shot.ogg'
 	var/vary_fire_sound = TRUE
@@ -36,7 +39,7 @@
 	var/suppressed_volume = 60
 	/// whether a gun can be unsuppressed. for ballistics, also determines if it generates a suppressor overlay
 	var/can_unsuppress = TRUE
-	var/recoil = 0 //boom boom shake the room
+
 	var/clumsy_check = TRUE
 	var/obj/item/ammo_casing/chambered = null
 	trigger_guard = TRIGGER_GUARD_NORMAL //trigger guard on the weapon, hulks can't fire them with their big meaty fingers
@@ -60,10 +63,8 @@
 
 	/// Just 'slightly' snowflakey way to modify projectile damage for projectiles fired from this gun.
 	var/projectile_damage_multiplier = 1
-
 	/// Even snowflakier way to modify projectile wounding bonus/potential for projectiles fired from this gun.
 	var/projectile_wound_bonus = 0
-
 	/// The most reasonable way to modify projectile speed values for projectile fired from this gun. Honest.
 	/// Lower values are worse, higher values are better.
 	var/projectile_speed_multiplier = 1
@@ -82,6 +83,16 @@
 	var/ammo_y_offset = 0
 
 	var/pb_knockback = 0
+
+	///Screen shake when the weapon is fired
+	var/recoil = 0
+	///a multiplier of the duration the recoil takes to go back to normal view, this is (recoil*recoil_backtime_multiplier)+1
+	var/recoil_backtime_multiplier = 1.5
+	///this is how much deviation the gun recoil can have, recoil pushes the screen towards the reverse angle you shot + some deviation which this is the max.
+	var/recoil_deviation = 20
+	/// Used as the min value when calculating recoil
+	/// Often utilized as a "purely visual" form of recoil (as it can be disabled)
+	var/min_recoil = 0
 
 	/// Cooldown for the visible message sent from gun flipping.
 	COOLDOWN_DECLARE(flip_cooldown)
@@ -160,6 +171,11 @@
 
 /obj/item/gun/examine(mob/user)
 	. = ..()
+	if(manufacturer && licensor)
+		. += "It's manufactured by <b>[manufacturer]</b> under license from <b>[licensor]</b>."
+	else if(manufacturer)
+		. += "It's manufactured by <b>[manufacturer]</b>."
+
 	if(!pinless)
 		if(pin)
 			. += "It has \a [pin] installed."
@@ -206,8 +222,9 @@
 		playsound(src, fire_sound, fire_sound_volume, vary_fire_sound)
 
 /obj/item/gun/proc/shoot_live_shot(mob/living/user, pointblank = FALSE, atom/pbtarget = null, message = TRUE)
-	if(recoil && !tk_firing(user))
-		shake_camera(user, recoil + 1, recoil)
+	if(!tk_firing(user))
+		var/actual_angle = get_angle((user || get_turf(src)), pbtarget)
+		simulate_recoil(user, recoil, actual_angle)
 	fire_sounds()
 	if(suppressed || !message)
 		return FALSE
@@ -253,6 +270,21 @@
 	if(chambered?.integrity_damage)
 		take_damage(chambered.integrity_damage, sound_effect = FALSE)
 	return TRUE
+
+/**
+ * Simulates firearm recoil and applies camera feedback when firing.
+ *
+ * Arguments:
+ * * user - The mob firing the gun. Used for recoil calculation and camera shake.
+ * * recoil_amount - The base recoil value before modifiers.
+ * * firing_angle - The firing direction used to determine camera kick direction.
+ */
+/obj/item/gun/proc/simulate_recoil(mob/living/user, recoil_amount = 0, firing_angle)
+	var/actual_angle = firing_angle + rand(-recoil_deviation, recoil_deviation) + 180
+	if(actual_angle > 360)
+		actual_angle -= 360
+	if(recoil)
+		recoil_camera(user, recoil + 1, (recoil * recoil_backtime_multiplier)+1, recoil, actual_angle)
 
 /obj/item/gun/atom_destruction(damage_flag)
 	if(!isliving(loc))
@@ -613,7 +645,7 @@
 
 	fire_cd = TRUE
 
-	if(!bypass_timer && (!do_after(user, 12 SECONDS, target) || user.zone_selected != BODY_ZONE_PRECISE_MOUTH))
+	if(!bypass_timer && (!do_after(user, 5 SECONDS, target) || user.zone_selected != BODY_ZONE_PRECISE_MOUTH))
 		if(user)
 			if(user == target)
 				user.visible_message(span_notice("[user] decided not to shoot."))

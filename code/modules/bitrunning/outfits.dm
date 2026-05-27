@@ -34,20 +34,15 @@
 	var/list/ranged_weaps = list(
 		/obj/item/gun/ballistic/automatic/pistol,
 		/obj/item/gun/ballistic/rifle/boltaction,
-		/obj/item/gun/ballistic/automatic/mini_uzi,
-		/obj/item/gun/ballistic/automatic/pistol/deagle,
+		/obj/item/gun/ballistic/revolver/mateba,
 		/obj/item/gun/ballistic/rocketlauncher/unrestricted,
-		/obj/item/gun/ballistic/automatic/ar,
-
 	)
 	/// Corresponding ammo
 	var/list/corresponding_ammo = list(
-		/obj/item/ammo_box/magazine/m9mm,
+		/obj/item/ammo_box/magazine/m10mm,
 		/obj/item/ammo_box/speedloader/strilka310,
-		/obj/item/ammo_box/magazine/uzim9mm,
-		/obj/item/ammo_box/magazine/m50,
+		/obj/item/ammo_box/speedloader/c357,
 		/obj/item/food/pizzaslice/dank, // more silly, less destructive
-		/obj/item/ammo_box/magazine/m223,
 	)
 
 

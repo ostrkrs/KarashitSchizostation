@@ -13,7 +13,6 @@
 		/obj/item/toy/sword = 12,
 		/obj/item/toy/foamblade = 12,
 		/obj/item/gun/ballistic/automatic/pistol/toy = 8,
-		/obj/item/gun/ballistic/automatic/toy = 8,
 		/obj/item/gun/ballistic/shotgun/toy = 8,
 		/obj/item/ammo_box/foambox/mini = 20,
 	)
@@ -26,7 +25,7 @@
 	premium = list(
 		/obj/item/dualsaber/toy = 4,
 		/obj/item/storage/box/fakesyndiesuit = 4,
-		/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted = 4,
+		/obj/item/gun/ballistic/automatic/smg/c20r/toy/unrestricted = 4,
 		/obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted = 4,
 	)
 	refill_canister = /obj/item/vending_refill/donksoft

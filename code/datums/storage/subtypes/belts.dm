@@ -35,7 +35,7 @@
 		/obj/item/extinguisher/mini,
 		/obj/item/flashlight/pen,
 		/obj/item/geiger_counter,
-		/obj/item/gun/syringe/syndicate,
+		/obj/item/gun/syringe/compact,
 		/obj/item/healthanalyzer,
 		/obj/item/hemostat,
 		/obj/item/holosign_creator/medical,

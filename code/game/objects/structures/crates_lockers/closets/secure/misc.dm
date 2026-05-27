@@ -9,14 +9,9 @@
 	new /obj/item/storage/medkit/regular(src)
 	new /obj/item/storage/box/handcuffs(src)
 	new /obj/item/assembly/flash/handheld(src)
-	if(prob(50))
-		new /obj/item/ammo_box/magazine/m50(src)
-		new /obj/item/ammo_box/magazine/m50(src)
-		new /obj/item/gun/ballistic/automatic/pistol/deagle(src)
-	else
-		new /obj/item/ammo_box/speedloader/c357(src)
-		new /obj/item/ammo_box/speedloader/c357(src)
-		new /obj/item/gun/ballistic/revolver/mateba(src)
+	new /obj/item/ammo_box/speedloader/c357(src)
+	new /obj/item/ammo_box/speedloader/c357(src)
+	new /obj/item/gun/ballistic/revolver/mateba(src)
 
 /obj/structure/closet/secure_closet/ert_com/populate_contents_immediate()
 	. = ..()

@@ -2493,7 +2493,6 @@
 /area/ruin/space/ancientstation/charlie/hydro)
 "lc" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/e_gun/old,
 /turf/open/floor/iron/white/textured,
 /area/ruin/space/ancientstation/delta/proto)
 "ld" = (

@@ -75,7 +75,6 @@
 /area/template_noop)
 "t" = (
 /obj/structure/table/glass,
-/obj/item/gun/energy/e_gun/mini/practice_phaser,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/machinery/recharger,
 /turf/open/floor/holofloor/plating,
@@ -148,7 +147,6 @@
 /area/template_noop)
 "L" = (
 /obj/structure/table/glass,
-/obj/item/gun/energy/e_gun/mini/practice_phaser,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/holofloor/plating,
 /area/template_noop)

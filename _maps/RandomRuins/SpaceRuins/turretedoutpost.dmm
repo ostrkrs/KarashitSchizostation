@@ -718,7 +718,7 @@
 /area/ruin/space/has_grav/turretedoutpost)
 "US" = (
 /obj/structure/closet/crate,
-/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c8mm,
 /obj/machinery/light/small/directional/east,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,

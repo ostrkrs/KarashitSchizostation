@@ -203,7 +203,6 @@
 	sheet_type = /obj/item/stack/sheet/mineral/snow
 	girder_type = null
 	bullet_sizzle = TRUE
-	bullet_bounce_sound = null
 	custom_materials = list(/datum/material/snow = SHEET_MATERIAL_AMOUNT*2)
 	rust_resistance = RUST_RESISTANCE_BASIC
 

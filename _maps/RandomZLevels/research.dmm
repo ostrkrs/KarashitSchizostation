@@ -218,7 +218,6 @@
 /area/awaymission/research/interior/engineering)
 "be" = (
 /obj/item/stack/rods,
-/obj/item/ammo_casing/c45,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/engineering)
@@ -258,7 +257,6 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bs" = (
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
@@ -322,7 +320,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bH" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
@@ -333,10 +331,6 @@
 /obj/effect/mob_spawn/corpse/human/syndicatesoldier{
 	brute_damage = 200
 	},
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
 	dir = 4
 	},
@@ -422,8 +416,7 @@
 /obj/effect/mob_spawn/corpse/human/engineer{
 	brute_damage = 200
 	},
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
@@ -587,7 +580,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "cN" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
@@ -614,7 +607,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/gateway)
 "cY" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
@@ -693,7 +686,6 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "dn" = (
-/obj/item/ammo_casing/c45,
 /mob/living/basic/trooper/syndicate,
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 8
@@ -781,11 +773,6 @@
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
-"dR" = (
-/obj/item/ammo_casing/c45,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/awaymission/research/interior/maint)
 "dW" = (
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/highsecurity{
@@ -825,10 +812,6 @@
 /area/awaymission/research/interior/genetics)
 "ec" = (
 /mob/living/basic/trooper/syndicate/ranged/smg,
-/turf/open/floor/plating,
-/area/awaymission/research/interior/maint)
-"ed" = (
-/obj/item/ammo_casing/c45,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "ee" = (
@@ -923,7 +906,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "eC" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/turf_decal/tile/purple/half/contrasted{
 	dir = 1
 	},
@@ -1092,7 +1075,6 @@
 /area/awaymission/research/interior)
 "fl" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/item/ammo_casing/c45,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fn" = (
@@ -1182,7 +1164,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fI" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/turf_decal/tile/purple/half/contrasted,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
@@ -1344,7 +1326,6 @@
 /obj/item/stack/cable_coil{
 	amount = 1
 	},
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/floor/iron/white,
@@ -1919,6 +1900,11 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "ju" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/light_blue/half/contrasted,
 /turf/open/floor/iron/white,
@@ -2076,6 +2062,13 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kh" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
@@ -2143,10 +2136,6 @@
 	name = "Dorm 3"
 	},
 /turf/open/floor/wood,
-/area/awaymission/research/interior/dorm)
-"kt" = (
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "ku" = (
 /obj/structure/closet/wardrobe/pjs,
@@ -2296,6 +2285,13 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lf" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 4
@@ -2354,14 +2350,21 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "lu" = (
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
 /obj/item/shard{
 	icon_state = "small"
 	},
 /turf/open/floor/plating,
 /area/awaymission/research/interior/medbay)
 "lv" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/stack/rods,
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
 /obj/item/stack/rods,
@@ -2818,10 +2821,10 @@
 /area/awaymission/research/interior/engineering)
 "nC" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/wt550,
-/obj/item/gun/ballistic/automatic/wt550,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
@@ -2989,6 +2992,12 @@
 /turf/open/misc/asteroid/airless,
 /area/awaymission/research/exterior)
 "tv" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
@@ -3160,6 +3169,14 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "yn" = (
+/obj/effect/turf_decal/tile/blue/half/contrasted{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 1
@@ -3191,7 +3208,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "zt" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
@@ -3222,6 +3239,12 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Bp" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/effect/decal/cleanable/blood,
 /obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
@@ -3290,11 +3313,6 @@
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
-"CN" = (
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior)
 "CV" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
@@ -3317,12 +3335,6 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
-"Dt" = (
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior)
 "DC" = (
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /obj/structure/cable,
@@ -3351,7 +3363,6 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "EC" = (
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
@@ -3370,6 +3381,15 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "Fl" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/shard{
+	icon_state = "small"
+	},
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
 /obj/item/shard{
@@ -3460,12 +3480,6 @@
 /obj/effect/turf_decal/tile/green/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
-"HW" = (
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/green/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior)
 "It" = (
 /obj/structure/table,
 /obj/item/book/manual/wiki/security_corp_law,
@@ -3480,10 +3494,6 @@
 /area/awaymission/research/interior/medbay)
 "IN" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/obj/item/ammo_box/magazine/m45,
-/obj/item/ammo_box/magazine/m45,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
@@ -3616,7 +3626,6 @@
 /area/awaymission/research/interior/medbay)
 "Lm" = (
 /obj/effect/decal/cleanable/blood,
-/obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
@@ -3631,13 +3640,6 @@
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
-"Mo" = (
-/obj/item/stack/rods,
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior/engineering)
 "Mz" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/tile/purple/half/contrasted{
@@ -3804,7 +3806,6 @@
 /obj/item/stack/cable_coil{
 	amount = 1
 	},
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/floor/iron/white,
@@ -3874,6 +3875,11 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "TC" = (
+/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
 /turf/open/floor/iron/white,
@@ -3955,7 +3961,7 @@
 /area/awaymission/research/interior/cryo)
 "UY" = (
 /obj/item/ammo_casing/c46x30mm,
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/turf_decal/tile/yellow/fourcorners,
 /turf/open/floor/iron/white,
@@ -4038,19 +4044,13 @@
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
-"XU" = (
-/obj/item/ammo_casing/c45,
-/obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior/engineering)
 "XV" = (
 /mob/living/carbon/human/species/monkey,
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Ye" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /turf/open/floor/iron/white,
@@ -38908,7 +38908,7 @@ aH
 aH
 aH
 aH
-dR
+bD
 ea
 eD
 ff
@@ -39165,7 +39165,7 @@ ad
 ad
 ad
 aH
-dR
+bD
 ea
 ea
 cp
@@ -39422,7 +39422,7 @@ ad
 ad
 ad
 aH
-dR
+bD
 ec
 eE
 cp
@@ -39680,7 +39680,7 @@ ad
 ad
 aH
 bD
-ed
+aO
 eF
 cp
 fL
@@ -40216,7 +40216,7 @@ iY
 jn
 jF
 jF
-kt
+jF
 kE
 jF
 jF
@@ -41725,7 +41725,7 @@ an
 an
 aT
 aU
-Mo
+UO
 bI
 bV
 cf
@@ -41983,7 +41983,7 @@ aK
 au
 be
 bb
-XU
+VD
 EC
 cg
 cr
@@ -41994,11 +41994,11 @@ RI
 Lm
 cp
 Vt
-Dt
 Qs
-CN
+Qs
+Qs
 gD
-HW
+HS
 HS
 HS
 HS

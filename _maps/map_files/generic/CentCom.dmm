@@ -906,7 +906,7 @@
 /area/centcom/central_command_areas/courtroom)
 "dV" = (
 /obj/structure/table/wood,
-/obj/item/storage/box/beanbag,
+/obj/item/storage/box/ammo/beanbags,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/machinery/status_display/evac/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -1457,7 +1457,7 @@
 "gH" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/machinery/status_display/evac/directional/west,
@@ -1843,7 +1843,7 @@
 "iD" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -1854,7 +1854,7 @@
 "iE" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -1935,7 +1935,7 @@
 "iV" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -1946,7 +1946,7 @@
 "iW" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -6481,10 +6481,6 @@
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/gun/ballistic/automatic/pistol/m1911{
-	pixel_y = 7;
-	pixel_x = 2
-	},
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "CU" = (
@@ -8269,7 +8265,6 @@
 "Nn" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty,
-/obj/item/gun/ballistic/automatic/ar,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
@@ -9258,7 +9253,7 @@
 "Rs" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -10026,11 +10021,6 @@
 /area/centcom/central_command_areas/fore)
 "Vg" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/energy/e_gun,
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
 	},
@@ -10246,7 +10236,7 @@
 /area/centcom/central_command_areas/evacuation)
 "Wd" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/flashlight/seclite,
 /obj/structure/noticeboard/directional/north,
 /obj/effect/turf_decal/stripes/line,

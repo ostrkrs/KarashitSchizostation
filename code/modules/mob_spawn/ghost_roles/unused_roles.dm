@@ -252,7 +252,7 @@
 	uniform = /obj/item/clothing/under/syndicate/coldres
 	ears = /obj/item/radio/headset/syndicate/alt
 	shoes = /obj/item/clothing/shoes/combat/coldres
-	r_pocket = /obj/item/gun/ballistic/automatic/pistol
+	r_pocket = /obj/item/gun/ballistic/automatic/pistol/wt23
 
 	implants = list(/obj/item/implant/exile)
 
@@ -310,7 +310,7 @@
 	name = "Syndicate Ship Crew Member"
 	glasses = /obj/item/clothing/glasses/night
 	mask = /obj/item/clothing/mask/gas/syndicate
-	l_pocket = /obj/item/gun/ballistic/automatic/pistol
+	l_pocket = /obj/item/gun/ballistic/automatic/pistol/wt23
 	r_pocket = /obj/item/knife/combat/survival
 
 /datum/outfit/syndicatespace/syndicaptain
@@ -323,6 +323,5 @@
 	r_pocket = /obj/item/knife/combat/survival
 	backpack_contents = list(
 		/obj/item/documents/syndicate/red,
-		/obj/item/gun/ballistic/automatic/pistol/aps,
 		/obj/item/paper/fluff/ruins/forgottenship/password,
 	)

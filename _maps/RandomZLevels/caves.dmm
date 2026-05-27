@@ -574,11 +574,6 @@
 "ej" = (
 /turf/open/floor/plating,
 /area/awaymission/caves/bmp_asteroid)
-"el" = (
-/obj/structure/closet/secure_closet/personal,
-/obj/item/gun/energy/laser/carbine,
-/turf/open/floor/wood,
-/area/awaymission/caves/northblock)
 "em" = (
 /obj/structure/closet/secure_closet/personal,
 /turf/open/floor/wood,
@@ -999,7 +994,6 @@
 /obj/structure/closet/crate/preopen,
 /obj/item/paper/fluff/awaymissions/caves/shipment_receipt,
 /obj/item/slimepotion/fireproof,
-/obj/item/gun/energy/e_gun/mini,
 /obj/item/gun/energy/laser/musket,
 /obj/item/organ/eyes/robotic/thermals,
 /turf/open/misc/asteroid/basalt,
@@ -1196,7 +1190,6 @@
 /obj/item/clothing/glasses/thermal,
 /obj/item/grenade/frag,
 /obj/item/grenade/frag,
-/obj/item/gun/energy/e_gun/old,
 /turf/open/misc/asteroid/basalt,
 /area/awaymission/caves/bmp_asteroid/level_two)
 "yV" = (
@@ -1440,10 +1433,6 @@
 /obj/effect/decal/cleanable/blood/gibs/old,
 /turf/open/misc/asteroid/basalt,
 /area/awaymission/caves/bmp_asteroid/level_two)
-"OA" = (
-/obj/item/gun/ballistic/automatic/pistol/deagle/gold,
-/turf/open/misc/asteroid/basalt,
-/area/awaymission/caves/bmp_asteroid/level_four)
 "OX" = (
 /turf/closed/indestructible/oldshuttle{
 	desc = "Go through.";
@@ -5326,7 +5315,7 @@ Xa
 dP
 dI
 pc
-el
+em
 dt
 bL
 bL
@@ -24816,7 +24805,7 @@ ad
 ad
 rv
 rv
-OA
+rv
 xs
 rv
 rv

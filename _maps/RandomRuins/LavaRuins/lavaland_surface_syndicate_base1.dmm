@@ -86,7 +86,7 @@
 /obj/item/storage/box/syringes,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/gun/syringe/syndicate,
+/obj/item/gun/syringe/compact,
 /turf/open/floor/iron/white/side{
 	dir = 8
 	},
@@ -1047,9 +1047,6 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/cargo)
 "hT" = (
-/obj/machinery/vending/toyliberationstation{
-	req_access = list("syndicate")
-	},
 /obj/effect/turf_decal/tile/brown/half/contrasted,
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/cargo)
@@ -2699,23 +2696,23 @@
 /obj/structure/closet/crate/secure/weapon{
 	req_access = list("syndicate")
 	},
-/obj/item/ammo_box/c9mm{
+/obj/item/ammo_box/c8mm{
 	pixel_y = 6
 	},
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/magazine/m9mm{
+/obj/item/ammo_box/c8mm,
+/obj/item/ammo_box/magazine/m10mm{
 	pixel_x = -5;
 	pixel_y = 5
 	},
-/obj/item/ammo_box/magazine/m9mm{
+/obj/item/ammo_box/magazine/m10mm{
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/obj/item/ammo_box/magazine/m9mm{
+/obj/item/ammo_box/magazine/m10mm{
 	pixel_x = 1;
 	pixel_y = -1
 	},
-/obj/item/ammo_box/magazine/m9mm{
+/obj/item/ammo_box/magazine/m10mm{
 	pixel_x = 4;
 	pixel_y = -4
 	},
@@ -3320,7 +3317,7 @@
 /area/ruin/syndicate_lava_base/main)
 "Jj" = (
 /obj/structure/table/wood,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/syndicate_access,
 /turf/open/floor/carpet/red,
@@ -4128,7 +4125,7 @@
 /area/ruin/syndicate_lava_base/virology)
 "UX" = (
 /obj/structure/table/wood,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/ammo_box/magazine/sniper_rounds,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/syndicate_access,
@@ -4507,7 +4504,7 @@
 /area/ruin/syndicate_lava_base/virology)
 "Zu" = (
 /obj/structure/table/wood,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/ammo_box/magazine/sniper_rounds,
 /turf/open/floor/carpet/red,
 /area/ruin/syndicate_lava_base/dormitories)

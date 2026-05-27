@@ -31,14 +31,8 @@
 
 	mail_goodies = list(
 		/obj/item/storage/fancy/cigarettes = 25,
-		/obj/item/ammo_box/speedloader/c38 = 20,
-		/obj/item/ammo_box/speedloader/c38/dumdum = 5,
-		/obj/item/ammo_box/speedloader/c38/hotshot = 5,
-		/obj/item/ammo_box/speedloader/c38/iceblox = 5,
-		/obj/item/ammo_box/speedloader/c38/match = 5,
-		/obj/item/ammo_box/speedloader/c38/trac = 5,
 		/obj/item/card/id/advanced/plainclothes = 5,
-		/obj/item/storage/belt/holster/criminalist/full = 1,
+		/obj/item/reagent_containers/cup/glass/flask = 1,
 	)
 
 	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/bottle/whiskey)
@@ -59,8 +53,6 @@
 	suit = /obj/item/clothing/suit/toggle/jacket/criminalist_trench
 	backpack_contents = list(
 		/obj/item/criminalist_scanner = 1,
-		/obj/item/melee/baton = 1,
-		/obj/item/storage/box/evidence = 1,
 		)
 	belt = /obj/item/modular_computer/pda/criminalist
 	ears = /obj/item/radio/headset/headset_sec/alt

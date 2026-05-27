@@ -33,22 +33,6 @@
 		/obj/item/gun/energy/laser/thermal/cryo = 1,
 	),src)
 
-/obj/item/storage/belt/holster/energy/disabler
-	desc = "A rather plain pair of shoulder holsters with a bit of insulated padding inside. Designed to hold energy weaponry. A production stamp indicates that it was shipped with a disabler."
-
-/obj/item/storage/belt/holster/energy/disabler/PopulateContents()
-	generate_items_inside(list(
-		/obj/item/gun/energy/disabler = 1,
-	),src)
-
-/obj/item/storage/belt/holster/energy/smoothbore
-	desc = "A rather plain pair of shoulder holsters with a bit of insulated padding inside. Designed to hold energy weaponry. Seems it was meant to fit two smoothbores."
-
-/obj/item/storage/belt/holster/energy/smoothbore/PopulateContents()
-	generate_items_inside(list(
-		/obj/item/gun/energy/disabler/smoothbore = 2,
-	),src)
-
 /obj/item/storage/belt/holster/criminalist
 	name = "criminalist's holster"
 	desc = "A holster able to carry handguns and some ammo. WARNING: Badasses only."
@@ -70,8 +54,8 @@
 
 /obj/item/storage/belt/holster/criminalist/full/ert/PopulateContents()
 	generate_items_inside(list(
-		/obj/item/ammo_box/magazine/m45 = 2,
-		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
+		/obj/item/ammo_box/speedloader/c357 = 2,
+		/obj/item/gun/ballistic/revolver/badass = 1,
 	),src)
 
 /obj/item/storage/belt/holster/chameleon

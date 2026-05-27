@@ -3229,7 +3229,7 @@
 	pixel_x = 8;
 	pixel_y = 2
 	},
-/obj/item/gun/syringe/syndicate,
+/obj/item/gun/syringe/compact,
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
 "Jg" = (

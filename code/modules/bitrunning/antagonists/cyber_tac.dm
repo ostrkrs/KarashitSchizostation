@@ -16,12 +16,12 @@
 /datum/outfit/cyber_police/tactical
 	name = ROLE_CYBER_TAC
 	back = /obj/item/mod/control/pre_equipped/glitch
-	l_hand = /obj/item/gun/ballistic/automatic/m90
+	l_hand = /obj/item/gun/ballistic/automatic/smg/wt550
 
 	backpack_contents = list(
-		/obj/item/ammo_box/magazine/m223,
-		/obj/item/ammo_box/magazine/m223,
-		/obj/item/ammo_box/magazine/m223,
+		/obj/item/ammo_box/magazine/smg46mm_wt550,
+		/obj/item/ammo_box/magazine/smg46mm_wt550,
+		/obj/item/ammo_box/magazine/smg46mm_wt550,
 	)
 
 /datum/outfit/cyber_police/tactical/post_equip(mob/living/carbon/human/user, visuals_only)

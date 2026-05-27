@@ -2,14 +2,14 @@
 	name = "Spacepol Officer"
 	uniform = /obj/item/clothing/under/rank/security/officer/spacepol
 	suit = /obj/item/clothing/suit/armor/vest/blueshirt
-	belt = /obj/item/gun/ballistic/automatic/pistol/m1911
+	belt = /obj/item/gun/ballistic/automatic/pistol/wt23
 	head = /obj/item/clothing/head/hats/warden/police
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	shoes = /obj/item/clothing/shoes/jackboots
 	mask = /obj/item/clothing/mask/gas/sechailer/swat/spacepol
 	glasses = /obj/item/clothing/glasses/sunglasses
 	ears = /obj/item/radio/headset
-	l_pocket = /obj/item/ammo_box/magazine/m45
+	l_pocket = /obj/item/ammo_box/magazine/m10mm
 	r_pocket = /obj/item/restraints/handcuffs
 	id = /obj/item/card/id/advanced/bountyhunter
 	id_trim = /datum/id_trim/bounty_hunter/police
@@ -102,20 +102,20 @@
 	back = /obj/item/storage/backpack
 	head = /obj/item/clothing/head/cowboy/bounty
 	suit = /obj/item/clothing/suit/space/hunter
-	belt = /obj/item/gun/ballistic/automatic/pistol/fire_mag
+	belt = /obj/item/gun/ballistic/automatic/pistol/wt23/fire_mag
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	shoes = /obj/item/clothing/shoes/jackboots
 	mask = /obj/item/clothing/mask/gas/hunter
 	glasses = /obj/item/clothing/glasses/sunglasses/gar
 	ears = /obj/item/radio/headset
 	r_pocket = /obj/item/restraints/handcuffs/cable
-	l_pocket = /obj/item/ammo_box/magazine/m9mm/fire
+	l_pocket = /obj/item/ammo_box/magazine/m10mm/fire
 	id = /obj/item/card/id/advanced/bountyhunter
 	l_hand = /obj/item/gun/ballistic/shotgun/automatic/dual_tube/bounty
 
 	backpack_contents = list(
 		/obj/item/ammo_casing/shotgun/rubbershot = 4,
-		/obj/item/ammo_casing/shotgun/incendiary/no_trail = 4,
+		/obj/item/ammo_casing/shotgun/incendiary = 4,
 	)
 
 /datum/outfit/bountyarmor/post_equip(mob/living/carbon/human/H, visuals_only = FALSE)
@@ -225,7 +225,7 @@
 	gloves = /obj/item/clothing/gloves/combat
 	shoes = /obj/item/clothing/shoes/laceup
 	belt = /obj/item/restraints/handcuffs/cable/zipties
-	l_pocket = /obj/item/gun/ballistic/automatic/pistol
+	l_pocket = /obj/item/gun/ballistic/automatic/pistol/wt23
 	r_pocket = /obj/item/suppressor
 	id = /obj/item/card/id/advanced/chameleon/black
 	box = /obj/item/storage/box/survival/syndie
@@ -233,10 +233,10 @@
 
 /datum/outfit/mi13_hunter/pre_equip(mob/living/carbon/human/agent, visuals_only = FALSE)
 	backpack_contents = list()
-	backpack_contents += pick_weight(list(/obj/item/ammo_box/magazine/m9mm = 80,
-	/obj/item/ammo_box/magazine/m9mm/hp = 10,
-	/obj/item/ammo_box/magazine/m9mm/ap = 5,
-	/obj/item/ammo_box/magazine/m9mm/fire = 5,
+	backpack_contents += pick_weight(list(/obj/item/ammo_box/magazine/m10mm = 80,
+	/obj/item/ammo_box/magazine/m10mm/hp = 10,
+	/obj/item/ammo_box/magazine/m10mm/ap = 5,
+	/obj/item/ammo_box/magazine/m10mm/fire = 5,
 	))
 	backpack_contents += pick_weight(list(
 		/obj/item/pen/edagger = 40,
@@ -250,7 +250,7 @@
 		/obj/item/language_manual/codespeak_manual/unlimited = 10,
 		/obj/item/storage/mail_counterfeit_device = 10,
 		/obj/item/clothing/glasses/thermal = 10,
-		/obj/item/gun/ballistic/automatic/pistol/clandestine/fisher = 10,
+		/obj/item/gun/ballistic/automatic/pistol/wt23 = 10,
 	))
 
 /datum/outfit/mi13_hunter/post_equip(mob/living/carbon/human/agent, visuals_only = FALSE)

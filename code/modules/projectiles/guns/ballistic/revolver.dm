@@ -12,6 +12,8 @@
 	internal_magazine = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	tac_reloads = FALSE
+	recoil = RECOIL_RIFLE
+	fire_delay = 4
 	var/spin_delay = 10
 	var/recent_spin = 0
 	var/last_fire = 0
@@ -111,6 +113,7 @@
 	icon_state = "c38"
 	base_icon_state = "c38"
 	fire_sound = 'sound/items/weapons/gun/revolver/shot.ogg'
+	recoil = RECOIL_PISTOL
 
 /obj/item/gun/ballistic/revolver/c38/criminalist
 	name = "\improper .38 Pathfinder revolver"
@@ -147,8 +150,9 @@
 
 /obj/item/gun/ballistic/revolver/mateba
 	name = "\improper Unica 6 auto-revolver"
-	desc = "A retro high-powered autorevolver typically used by officers of the New Russia military. Uses .357 ammo."
+	desc = "A retro high-powered autorevolver. Uses .357 ammo."
 	icon_state = "mateba"
+	fire_delay = 2
 
 /obj/item/gun/ballistic/revolver/golden
 	name = "\improper Golden revolver"
@@ -157,15 +161,6 @@
 	fire_sound = 'sound/items/weapons/resonator_blast.ogg'
 	recoil = 8
 	pin = /obj/item/firing_pin
-
-/obj/item/gun/ballistic/revolver/nagant
-	name = "\improper Nagant revolver"
-	desc = "An old model of revolver that originated in Russia. Able to be suppressed. Uses 7.62x38mmR ammo."
-	icon_state = "nagant"
-	can_suppress = TRUE
-
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/cylinder/rev762
-
 
 // A gun to play Russian Roulette!
 // You can spin the chamber to randomize the position of the bullet.

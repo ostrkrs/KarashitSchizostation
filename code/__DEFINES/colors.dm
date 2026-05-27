@@ -449,17 +449,9 @@
 #define COLOR_ICECREAM_CUSTOM "#f3f3f3"
 #define COLOR_ICECREAM_CHERRY_CHOCOLATE "#800000"
 
-// defines for .38 ammo type colors
+// defines for ammo type colors
 #define COLOR_AMMO_TRACK "#bd0ed4"
-#define COLOR_AMMO_MATCH "#ff0000a8"
 #define COLOR_AMMO_RUBBER "#3d3181"
-#define COLOR_AMMO_TRUESTRIKE "#ff05de"
-#define COLOR_AMMO_DUMDUM "#ffe601"
-#define COLOR_AMMO_HOTSHOT "#ff7b00"
-#define COLOR_AMMO_ICEBLOX "#0de3ff"
-#define COLOR_AMMO_HELLFIRE "#f60021"
-
-// defines for other ammo type colors (should this be merged with above?)
 #define COLOR_AMMO_INCENDIARY "#f4001f"
 #define COLOR_AMMO_ARMORPIERCE "#d9d9d9"
 #define COLOR_AMMO_HOLLOWPOINT "#ff9900"

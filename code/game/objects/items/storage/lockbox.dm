@@ -276,28 +276,6 @@
 		balloon_alert(user, "incorrect bank account!")
 	return FALSE
 
-/obj/item/storage/lockbox/dueling
-	name = "dueling pistol case"
-	desc = "Let's solve this like gentlespacemen."
-	icon_state = "medalbox+l"
-	inhand_icon_state = "syringe_kit"
-	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	w_class = WEIGHT_CLASS_NORMAL
-	req_access = list(ACCESS_CAPTAIN)
-	icon_locked = "medalbox+l"
-	icon_closed = "medalbox"
-	icon_broken = "medalbox+b"
-	base_icon_state = "medalbox"
-	icon_open = "medalboxopen"
-	storage_type = /datum/storage/lockbox/dueling
-
-/obj/item/storage/lockbox/dueling/PopulateContents()
-	. = ..()
-	var/obj/item/gun/energy/dueling/gun_A = new(src)
-	var/obj/item/gun/energy/dueling/gun_B = new(src)
-	new /datum/duel(gun_A, gun_B)
-
 /obj/item/storage/lockbox/bitrunning
 	name = "base class curiosity"
 	desc = "Talk to a coder."

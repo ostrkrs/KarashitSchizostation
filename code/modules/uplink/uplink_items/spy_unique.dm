@@ -84,13 +84,6 @@
 	cost = SPY_UPPER_COST_THRESHOLD
 	uplink_item_flags = SYNDIE_ILLEGAL_TECH | SYNDIE_TRIPS_CONTRABAND
 
-/datum/uplink_item/spy_unique/ansem_pistol
-	name = "Ansem Pistol"
-	desc = "A pistol that's really good at making people sleep."
-	item = /obj/item/gun/ballistic/automatic/pistol/clandestine
-	cost = SPY_UPPER_COST_THRESHOLD
-	uplink_item_flags = SYNDIE_ILLEGAL_TECH | SYNDIE_TRIPS_CONTRABAND
-
 /datum/uplink_item/spy_unique/rocket_launcher
 	name = "Rocket Launcher"
 	desc = "A rocket launcher. I would recommend against jumping with it."
@@ -101,18 +94,18 @@
 /datum/uplink_item/spy_unique/shotgun_ammo
 	name = "Box of Buckshot"
 	desc = "A box of buckshot rounds for a shotgun. For when you don't want to miss."
-	item = /obj/item/storage/box/lethalshot
+	item = /obj/item/storage/box/ammo/buckshot
 	cost = 1
 
 /datum/uplink_item/spy_unique/shotgun_ammo/breacher_slug
 	name = "Box of Breacher Slugs"
 	desc = "A box of breacher slugs for a shotgun. For making a good first impression."
-	item = /obj/item/storage/box/breacherslug
+	item = /obj/item/storage/box/ammo/breacher_slugs
 
 /datum/uplink_item/spy_unique/shotgun_ammo/slugs
 	name = "Box of Slugs"
 	desc = "A box of slugs for a shotgun. For big game hunting."
-	item = /obj/item/storage/box/slugs
+	item = /obj/item/storage/box/ammo/slugs
 
 /datum/uplink_item/spy_unique/stealth_belt
 	name = "Stealth Belt"

@@ -12,7 +12,7 @@
 	max_ammo = 4
 
 /obj/item/ammo_box/magazine/internal/shot/tube/fire
-	ammo_type = /obj/projectile/bullet/incendiary/shotgun/no_trail
+	ammo_type = /obj/item/ammo_casing/shotgun/incendiary
 
 /obj/item/ammo_box/magazine/internal/shot/tube/buckshot
 	ammo_type = /obj/item/ammo_casing/shotgun/buckshot
@@ -30,11 +30,12 @@
 
 /obj/item/ammo_box/magazine/internal/shot/com/compact
 	name = "compact shotgun internal magazine"
-	max_ammo = 5
+	max_ammo = 4
 
 /obj/item/ammo_box/magazine/internal/shot/dual
 	name = "double-barrel shotgun internal magazine"
 	max_ammo = 2
+	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
 
 /obj/item/ammo_box/magazine/internal/shot/dual/slugs
 	name = "double-barrel shotgun internal magazine (slugs)"
@@ -47,7 +48,6 @@
 /obj/item/ammo_box/magazine/internal/shot/riot
 	name = "riot shotgun internal magazine"
 	ammo_type = /obj/item/ammo_casing/shotgun/rubbershot
-	max_ammo = 6
 
 /obj/item/ammo_box/magazine/internal/shot/bounty
 	name = "triple-barrel shotgun internal magazine"
@@ -57,7 +57,3 @@
 /obj/item/ammo_box/magazine/internal/shot/single
 	name = "single-barrel shotgun internal magazine"
 	max_ammo = 1
-
-/obj/item/ammo_box/magazine/internal/shot/single/musket
-	name = "\improper Donk Co. musket internal magazine"
-	ammo_type = /obj/item/ammo_casing/shotgun/flechette/donk

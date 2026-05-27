@@ -210,8 +210,8 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	slowdown = 2
 	flags_1 = NONE
 	planetary_atmos = TRUE
+	bullet_bounce_sound = FALSE
 	bullet_sizzle = TRUE
-	bullet_bounce_sound = null
 	dig_result = /obj/item/stack/sheet/mineral/snow
 
 /turf/open/misc/asteroid/snow/burn_tile()

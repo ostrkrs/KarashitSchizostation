@@ -153,13 +153,6 @@
 /area/centcom/basketball)
 "my" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/tommygun{
-	pixel_y = 10
-	},
-/obj/item/gun/ballistic/automatic/tommygun{
-	pixel_y = 5
-	},
-/obj/item/gun/ballistic/automatic/tommygun,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "mM" = (
@@ -342,19 +335,6 @@
 /obj/structure/sign/poster/contraband/revolver,
 /turf/closed/indestructible/fakeglass,
 /area/centcom/basketball)
-"Gh" = (
-/obj/structure/rack,
-/obj/item/gun/ballistic/automatic/pistol/deagle/gold{
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/item/gun/ballistic/automatic/pistol/deagle/camo{
-	pixel_x = 10;
-	pixel_y = -10
-	},
-/obj/item/gun/ballistic/automatic/pistol/deagle,
-/turf/open/floor/iron/dark,
-/area/centcom/basketball)
 "Gi" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
@@ -520,7 +500,7 @@
 /area/centcom/basketball)
 "WK" = (
 /obj/structure/rack,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "Xm" = (
@@ -784,7 +764,7 @@ EW
 Ql
 Ql
 Cw
-Gh
+my
 my
 cz
 dS

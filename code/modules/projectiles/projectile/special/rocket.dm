@@ -19,7 +19,6 @@
 	sharpness = NONE
 	embed_type = null
 	shrapnel_type = null
-	ricochets_max = 0
 	/// Whether we do extra damage when hitting a mech or silicon
 	var/anti_armour_damage = 0
 	/// Whether the rocket is capable of instantly killing a living target

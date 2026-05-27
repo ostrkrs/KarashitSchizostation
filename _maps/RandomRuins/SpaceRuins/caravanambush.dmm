@@ -21,7 +21,6 @@
 "ag" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/closet/crate/secure/weapon,
-/obj/item/gun/energy/e_gun/mini,
 /turf/template_noop,
 /area/template_noop)
 "ah" = (
@@ -356,7 +355,6 @@
 	dir = 1
 	},
 /obj/structure/closet/crate/secure/weapon,
-/obj/item/gun/energy/disabler,
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/caravan/freighter2)
 "mR" = (
@@ -800,7 +798,7 @@
 /obj/effect/turf_decal/bot_white,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/secure/gear,
-/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/ammo/rubbershot,
 /turf/open/floor/iron/dark/airless,
 /area/shuttle/ruin/caravan/freighter2)
 "GP" = (

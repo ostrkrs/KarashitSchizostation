@@ -110,8 +110,6 @@
 	spawn_list.Add(/obj/effect/mob_spawn/corpse/human/cargo_tech)
 	spawn_list.Add(/obj/effect/mob_spawn/corpse/human/cargo_tech)
 	spawn_list.Add(/obj/effect/mob_spawn/corpse/human/nanotrasensoldier)
-	spawn_list.Add(/obj/item/gun/ballistic/automatic/pistol/no_mag)
-	spawn_list.Add(/obj/item/gun/ballistic/automatic/pistol/m1911/no_mag)
 	spawn_list.Add(/obj/item/honey_frame)
 	spawn_list.Add(/obj/item/honey_frame)
 	spawn_list.Add(/obj/item/honey_frame)

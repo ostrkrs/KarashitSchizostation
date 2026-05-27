@@ -165,7 +165,6 @@
 /area/deathmatch)
 "ms" = (
 /obj/effect/spawner/random/trash/hobo_squat,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
 /obj/item/clothing/suit/armor/vest/alt,
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
@@ -295,7 +294,6 @@
 /area/deathmatch)
 "Bf" = (
 /obj/item/clothing/suit/armor/vest/alt,
-/obj/item/gun/ballistic/revolver/nagant,
 /obj/item/suppressor,
 /obj/structure/closet/crate/cardboard,
 /turf/open/indestructible/rockyground,
@@ -376,9 +374,9 @@
 "EL" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/shotgun/lethal,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /obj/item/gun/ballistic/shotgun/lethal,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/indestructible/stone,
 /area/deathmatch)
 "EZ" = (

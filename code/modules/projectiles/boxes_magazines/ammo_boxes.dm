@@ -1,19 +1,13 @@
-/obj/item/ammo_box/c9mm
-	name = "ammo box (9mm)"
-	icon_state = "9mmbox"
-	ammo_type = /obj/item/ammo_casing/c9mm
+/obj/item/ammo_box/c8mm
+	name = "ammo box (8mm)"
+	icon_state = "8mmbox"
+	ammo_type = /obj/item/ammo_casing/c8mm
 	max_ammo = 30
 
 /obj/item/ammo_box/c10mm
 	name = "ammo box (10mm)"
 	icon_state = "10mmbox"
 	ammo_type = /obj/item/ammo_casing/c10mm
-	max_ammo = 20
-
-/obj/item/ammo_box/c45
-	name = "ammo box (.45)"
-	icon_state = "45box"
-	ammo_type = /obj/item/ammo_casing/c45
 	max_ammo = 20
 
 /obj/item/ammo_box/a40mm
@@ -36,12 +30,6 @@
 
 /obj/item/ammo_box/rocket/can_load(mob/user)
 	return FALSE
-
-/obj/item/ammo_box/n762
-	name = "ammo box (7.62x38mmR)"
-	icon_state = "10mmbox"
-	ammo_type = /obj/item/ammo_casing/n762
-	max_ammo = 14
 
 /obj/item/ammo_box/foambox
 	name = "ammo box (Foam Darts)"

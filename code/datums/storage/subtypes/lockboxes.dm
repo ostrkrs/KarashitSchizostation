@@ -17,15 +17,6 @@
 	. = ..()
 	set_holdable(/obj/item/clothing/accessory/medal)
 
-///Dueling lockbox
-/datum/storage/lockbox/dueling
-	max_slots = 2
-	max_specific_storage = WEIGHT_CLASS_SMALL
-
-/datum/storage/lockbox/dueling/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound)
-	. = ..()
-	set_holdable(/obj/item/gun/energy/dueling)
-
 ///Bitrunning decrypted lockbox
 /datum/storage/lockbox/bitrunning_decrypted
 	max_slots = 1

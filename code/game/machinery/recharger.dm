@@ -20,7 +20,7 @@
 		/obj/item/melee/baton/security,
 		/obj/item/ammo_box/magazine/recharge,
 		/obj/item/modular_computer,
-		/obj/item/gun/ballistic/automatic/battle_rifle,
+		/obj/item/gun/ballistic/automatic/assault_rifle/battle_rifle,
 	))
 
 /obj/machinery/recharger/RefreshParts()
@@ -59,8 +59,8 @@
 		var/obj/item/ammo_box/magazine/recharge/power_pack = charging
 		. += span_notice("- \The [charging]'s cell is at <b>[PERCENT(power_pack.stored_ammo.len/power_pack.max_ammo)]%</b>.")
 		return
-	if(istype(charging, /obj/item/gun/ballistic/automatic/battle_rifle))
-		var/obj/item/gun/ballistic/automatic/battle_rifle/recalibrating_gun = charging
+	if(istype(charging, /obj/item/gun/ballistic/automatic/assault_rifle/battle_rifle))
+		var/obj/item/gun/ballistic/automatic/assault_rifle/battle_rifle/recalibrating_gun = charging
 		. += span_notice("- \The [charging]'s system degradation is at stage [recalibrating_gun.degradation_stage] of [recalibrating_gun.degradation_stage_max]</b>.")
 		. += span_notice("- \The [charging]'s degradation buffer is at <b>[PERCENT(recalibrating_gun.shots_before_degradation/recalibrating_gun.max_shots_before_degradation)]%</b>.")
 		return
@@ -170,8 +170,8 @@
 		update_appearance()
 		return
 
-	if(istype(charging, /obj/item/gun/ballistic/automatic/battle_rifle))
-		var/obj/item/gun/ballistic/automatic/battle_rifle/recalibrating_gun = charging
+	if(istype(charging, /obj/item/gun/ballistic/automatic/assault_rifle/battle_rifle))
+		var/obj/item/gun/ballistic/automatic/assault_rifle/battle_rifle/recalibrating_gun = charging
 
 		if(recalibrating_gun.degradation_stage)
 			recalibrating_gun.attempt_recalibration(FALSE)

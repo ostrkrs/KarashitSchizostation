@@ -23,7 +23,7 @@
 "ba" = (
 /obj/structure/rack,
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
-/obj/item/storage/box/breacherslug,
+/obj/item/storage/box/ammo/breacher_slugs,
 /obj/item/gun/ballistic/shotgun/doublebarrel/breacherslug,
 /turf/open/floor/iron/smooth,
 /area/shuttle/pirate)
@@ -461,10 +461,10 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced,
-/obj/item/storage/toolbox/ammobox/wt550m9{
+/obj/item/storage/toolbox/ammobox/smg46mm_wt550{
 	pixel_y = 6
 	},
-/obj/item/storage/toolbox/ammobox/wt550m9ap,
+/obj/item/storage/toolbox/ammobox/smg46mm_wt550ap,
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron/smooth,
 /area/shuttle/pirate)
@@ -542,8 +542,8 @@
 /area/shuttle/pirate)
 "qI" = (
 /obj/structure/guncase/wt550,
-/obj/item/gun/ballistic/automatic/wt550,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /turf/open/floor/iron/smooth,
 /area/shuttle/pirate)
 "qO" = (
