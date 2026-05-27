@@ -478,7 +478,6 @@
 	sechud_icon_state = SECHUD_COOK
 	minimal_access = list(
 		ACCESS_KITCHEN,
-		ACCESS_MORGUE,
 		ACCESS_SERVICE,
 		)
 	extra_access = list(
@@ -743,7 +742,7 @@
 	assignment = JOB_INTERNAL_AFFAIRS_AGENT
 	trim_state = "trim_iaa"
 	department_state = "departmenthead"
-	department_color = COLOR_COMMAND_BLUE
+	department_color = COLOR_CENTCOM_BLUE
 	subdepartment_color = COLOR_LAW_RED
 	sechud_icon_state = SECHUD_IAA
 	minimal_access = list(
@@ -752,10 +751,6 @@
 		ACCESS_IAA,
 		ACCESS_COMMAND,
 		)
-	template_access = list(
-		ACCESS_CENT_GENERAL,
-		ACCESS_CHANGE_IDS,
-		)
 	job = /datum/job/iaa
 	honorifics = list(", Esq.")
 	honorific_positions = HONORIFIC_POSITION_LAST_FULL | HONORIFIC_POSITION_NONE
@@ -763,7 +758,7 @@
 /datum/id_trim/job/iso
 	assignment = JOB_INTERNAL_SECURITY_OPERATIVE
 	trim_state = "trim_iso"
-	department_color = COLOR_COMMAND_BLUE
+	department_color = COLOR_CENTCOM_BLUE
 	subdepartment_color = COLOR_LAW_RED
 	sechud_icon_state = SECHUD_ISO
 	minimal_access = list(
@@ -772,10 +767,6 @@
 		ACCESS_ISO,
 		ACCESS_COMMAND,
 		ACCESS_WEAPONS,
-		)
-	template_access = list(
-		ACCESS_CENT_GENERAL,
-		ACCESS_CHANGE_IDS,
 		)
 	job = /datum/job/iso
 	honorifics = list(", Exec.")
