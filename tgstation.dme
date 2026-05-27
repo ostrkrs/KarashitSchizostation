@@ -4246,7 +4246,6 @@
 #include "code\modules\events\scrubber_overflow.dm"
 #include "code\modules\events\shuttle_catastrophe.dm"
 #include "code\modules\events\shuttle_insurance.dm"
-#include "code\modules\events\stray_cargo.dm"
 #include "code\modules\events\supermatter_surge.dm"
 #include "code\modules\events\tram_malfunction.dm"
 #include "code\modules\events\vent_clog.dm"
