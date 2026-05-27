@@ -283,7 +283,6 @@ SUBSYSTEM_DEF(economy)
 			card_holder = recursive_loc_check(card, /mob/living)
 	if(!isliving(card_holder)) //If on a living mob
 		return FALSE
-	card_holder.adjust_timed_status_effect(wait, /datum/status_effect/spotlight_light)
 	return TRUE
 
 #undef ECON_DEPARTMENT_STEP
