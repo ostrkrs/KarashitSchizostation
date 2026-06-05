@@ -3,6 +3,7 @@
 	desc = "A fleshy muscle mostly used for lying."
 	icon_state = "tongue"
 
+	visual = FALSE
 	zone = BODY_ZONE_PRECISE_MOUTH
 	slot = ORGAN_SLOT_TONGUE
 	attack_verb_continuous = list("licks", "slobbers", "slaps", "frenches", "tongues")

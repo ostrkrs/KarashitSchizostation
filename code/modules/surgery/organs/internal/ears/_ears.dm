@@ -2,9 +2,11 @@
 	name = "ears"
 	icon_state = "ears"
 	desc = "There are three parts to the ear. Inner, middle and outer. Only one of these parts should be normally visible."
+
 	zone = BODY_ZONE_HEAD
 	slot = ORGAN_SLOT_EARS
 	gender = PLURAL
+	visual = FALSE
 
 	healing_factor = STANDARD_ORGAN_HEALING
 	decay_factor = STANDARD_ORGAN_DECAY
