@@ -5014,7 +5014,6 @@
 #include "code\modules\mob\living\basic\alien\_alien.dm"
 #include "code\modules\mob\living\basic\alien\alien_ai.dm"
 #include "code\modules\mob\living\basic\alien\drone.dm"
-#include "code\modules\mob\living\basic\alien\maid.dm"
 #include "code\modules\mob\living\basic\alien\queen.dm"
 #include "code\modules\mob\living\basic\alien\sentinel.dm"
 #include "code\modules\mob\living\basic\blob_minions\blob_ai.dm"

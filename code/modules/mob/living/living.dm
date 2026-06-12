@@ -1524,13 +1524,11 @@
 				picked_xeno_type = pick(
 					/mob/living/carbon/alien/adult/hunter,
 					/mob/living/carbon/alien/adult/sentinel,
-					/mob/living/basic/alien/maid,
 				)
 			else
 				picked_xeno_type = pick(
 					/mob/living/carbon/alien/adult/hunter,
 					/mob/living/basic/alien/sentinel,
-					/mob/living/basic/alien/maid,
 				)
 			new_mob = new picked_xeno_type(loc)
 

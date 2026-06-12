@@ -2301,10 +2301,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
-"Ff" = (
-/mob/living/basic/alien/maid/barmaid,
-/turf/open/floor/wood/parquet,
-/area/shuttle/escape)
 "Fk" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/recharger{
@@ -3914,7 +3910,7 @@ jt
 KR
 VM
 VM
-Ff
+VM
 zX
 VM
 VM

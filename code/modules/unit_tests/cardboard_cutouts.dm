@@ -18,10 +18,3 @@
 
 	nukie_cutout.push_over()
 	test_screenshot("nukie_cutout_pushed", getFlatIcon(nukie_cutout))
-
-	// This is the only reason we're testing xenomorphs.
-	// Making a custom subtype with direct_icon is hacky.
-	ASSERT(!isnull(/datum/cardboard_cutout/xenomorph_maid::direct_icon))
-
-	var/obj/item/cardboard_cutout/xenomorph/xenomorph_cutout = new
-	test_screenshot("xenomorph_cutout", getFlatIcon(xenomorph_cutout))

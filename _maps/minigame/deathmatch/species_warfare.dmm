@@ -1326,7 +1326,6 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "Yr" = (
-/mob/living/basic/alien/maid,
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/vomit,
