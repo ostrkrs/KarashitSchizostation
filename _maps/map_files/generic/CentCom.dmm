@@ -490,7 +490,7 @@
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/decal/cleanable/cobweb,
-/obj/structure/sign/poster/official/periodic_table/directional/west,
+/obj/structure/sign/poster/legal/periodic_table/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "cm" = (
@@ -599,7 +599,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral/full,
 /obj/item/kirbyplants/organic/plant21,
-/obj/structure/sign/poster/official/ian/directional/west,
+/obj/structure/sign/poster/old_nt/ian/directional/west,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "cL" = (
@@ -2272,7 +2272,7 @@
 /area/centcom/tdome/administration)
 "kh" = (
 /obj/machinery/telecomms/allinone/nuclear,
-/obj/structure/sign/poster/contraband/syndicate_pistol/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/north,
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/admin)
 "ki" = (
@@ -2859,7 +2859,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/enlist/directional/east,
+/obj/structure/sign/poster/old_nt/enlist/directional/east,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "ne" = (
@@ -4407,7 +4407,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
 "tW" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment/directional/north,
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/admin)
 "uc" = (
@@ -6600,7 +6600,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral/full,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/east,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/east,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "DF" = (
@@ -7876,7 +7876,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/west,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/west,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "Lv" = (
@@ -8029,7 +8029,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "LR" = (
-/obj/structure/sign/poster/official/tactical_game_cards/directional/north,
+/obj/structure/sign/poster/old_nt/tactical_game_cards/directional/north,
 /turf/open/floor/carpet/red,
 /area/centcom/central_command_areas/evacuation/ship)
 "LU" = (

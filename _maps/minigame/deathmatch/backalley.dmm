@@ -13,10 +13,6 @@
 /obj/effect/turf_decal/caution,
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
-"cF" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/south,
-/turf/open/indestructible/rockyground,
-/area/deathmatch)
 "cH" = (
 /obj/structure/table,
 /obj/item/food/meatball{
@@ -140,13 +136,6 @@
 /obj/structure/rack,
 /obj/item/storage/medkit/advanced,
 /turf/open/indestructible/dark,
-/area/deathmatch)
-"jy" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
-/obj/structure/mystery_box/tdome{
-	pixel_y = 0
-	},
-/turf/open/indestructible/stone,
 /area/deathmatch)
 "jH" = (
 /turf/open/indestructible/dark,
@@ -576,10 +565,6 @@
 /obj/effect/light_emitter/fake_outdoors,
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
-"Yg" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
-/turf/open/indestructible/stone,
-/area/deathmatch)
 "YU" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/crude,
@@ -1000,9 +985,9 @@ NZ
 Bf
 Oz
 Oz
-cF
+Oz
 Qa
-jy
+Eb
 hN
 RX
 hN
@@ -1130,9 +1115,9 @@ xp
 Qa
 Oz
 Oz
-cF
+Oz
 Qa
-Yg
+hN
 uW
 hN
 hN

@@ -391,7 +391,7 @@
 /obj/item/storage/belt/utility{
 	desc = "The tool storage solution that hangs around your waist. This one has 'VLAD' embroidered on it."
 	},
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/north,
+/obj/structure/sign/poster/legal/interdyne_gene_clinics/directional/north,
 /obj/machinery/light/warm/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -423,7 +423,7 @@
 "dc" = (
 /obj/structure/cable/layer1,
 /obj/effect/decal/cleanable/fuel_pool,
-/obj/structure/sign/poster/contraband/energy_swords/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/north,
 /obj/machinery/duct,
 /obj/structure/chair/sofa/left/maroon,
 /turf/open/floor/catwalk_floor/iron_dark,
@@ -801,7 +801,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/duct,
 /obj/item/book/random,
-/obj/structure/sign/poster/contraband/cybersun_six_hundred/directional/west,
+/obj/structure/sign/poster/legal/cybersun_commemorative/directional/west,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	pipe_color = "#FF7B00";
 	color = "#FF7B00"
@@ -810,7 +810,7 @@
 /area/ruin/space/has_grav/hauntedtradingpost/employees/corridor)
 "hf" = (
 /obj/structure/cable/layer1,
-/obj/structure/sign/poster/contraband/syndicate_pistol/directional/west,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/west,
 /mob/living/simple_animal/bot/secbot{
 	faction = list("Syndicate");
 	bot_cover_flags = 4;
@@ -1276,7 +1276,6 @@
 /obj/structure/cable/layer1,
 /obj/structure/table/wood/fancy/orange,
 /obj/machinery/microwave,
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	pipe_color = "#FF7B00";
@@ -1309,7 +1308,6 @@
 /area/ruin/space/has_grav/hauntedtradingpost/office/meetingroom)
 "lc" = (
 /obj/structure/chair/comfy/brown,
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
 /obj/machinery/light/warm/directional/north,
 /turf/open/floor/wood/large,
 /area/ruin/space/has_grav/hauntedtradingpost/office)
@@ -2114,7 +2112,6 @@
 /area/ruin/space/has_grav/hauntedtradingpost/office)
 "sv" = (
 /obj/structure/table/wood,
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
 /obj/item/trash/ready_donk,
 /turf/open/floor/wood/large,
 /area/ruin/space/has_grav/hauntedtradingpost/public/corridor)
@@ -2126,7 +2123,7 @@
 /turf/open/floor/plating/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/aicore)
 "sy" = (
-/obj/structure/sign/poster/contraband/blasto_detergent/directional/east,
+/obj/structure/sign/poster/legal/blasto_detergent/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -2180,7 +2177,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/hauntedtradingpost/maint/toolstorage)
 "sN" = (
-/obj/structure/sign/poster/contraband/energy_swords/directional/east,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/east,
 /obj/effect/decal/cleanable/blood/drip{
 	pixel_y = 19;
 	pixel_x = -2
@@ -2497,7 +2494,7 @@
 /obj/item/screwdriver/nuke{
 	pixel_y = -4
 	},
-/obj/structure/sign/poster/contraband/pwr_game/directional/south,
+/obj/structure/sign/poster/legal/pwr_game/directional/south,
 /obj/machinery/light/warm/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -3259,7 +3256,7 @@
 /area/ruin/space/has_grav/hauntedtradingpost/public)
 "CU" = (
 /obj/structure/chair/wood,
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment/directional/north,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "donk_office_entrance_trap_alpha"
 	},
@@ -3686,7 +3683,7 @@
 /area/ruin/space/has_grav/hauntedtradingpost/public/corridor)
 "Gs" = (
 /obj/structure/cable/layer1,
-/obj/structure/sign/poster/contraband/revolver/directional/south,
+/obj/structure/sign/poster/old_syndie/revolver/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	pipe_color = "#FF7B00";
@@ -4241,7 +4238,6 @@
 /obj/structure/rack,
 /obj/structure/cable/layer1,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
 /obj/item/storage/box/donkpockets,
 /turf/open/floor/carpet/orange,
 /area/ruin/space/has_grav/hauntedtradingpost/public)
@@ -4332,7 +4328,7 @@
 /turf/open/floor/carpet/donk,
 /area/ruin/space/has_grav/hauntedtradingpost/employees)
 "LO" = (
-/obj/structure/sign/poster/contraband/donut_corp/directional/west,
+/obj/structure/sign/poster/legal/donut_corp/directional/west,
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/hauntedtradingpost/public)
 "LP" = (
@@ -4733,7 +4729,6 @@
 /obj/machinery/vending/tool{
 	all_products_free = 0
 	},
-/obj/structure/sign/poster/contraband/donk_co/directional/west,
 /obj/machinery/duct,
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/ruin/space/has_grav/hauntedtradingpost/public/corridor)
@@ -4757,7 +4752,7 @@
 /area/ruin/space/has_grav/hauntedtradingpost/public/corridor)
 "Px" = (
 /obj/structure/chair/wood,
-/obj/structure/sign/poster/contraband/gorlex_recruitment/directional/north,
+/obj/structure/sign/poster/old_syndie/gorlex_recruitment/directional/north,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "donk_office_entrance_trap_beta"
 	},
@@ -4820,7 +4815,6 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/hauntedtradingpost/maint/toolstorage)
 "Qe" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/duct,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{

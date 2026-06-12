@@ -2682,7 +2682,7 @@
 /turf/open/water/beach,
 /area/virtual_domain)
 "HR" = (
-/obj/structure/sign/poster/official/tactical_game_cards/directional/west,
+/obj/structure/sign/poster/old_nt/tactical_game_cards/directional/west,
 /obj/effect/mob_spawn/ghost_role/human/virtual_domain/islander,
 /turf/open/floor/eighties,
 /area/virtual_domain)
@@ -4067,7 +4067,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Yb" = (
-/obj/structure/sign/poster/contraband/pwr_game/directional/west,
+/obj/structure/sign/poster/legal/pwr_game/directional/west,
 /turf/open/floor/eighties,
 /area/virtual_domain)
 "Yd" = (

@@ -632,7 +632,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/pda_ad/directional/south,
+/obj/structure/sign/poster/old_nt/pda_ad/directional/south,
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "dg" = (

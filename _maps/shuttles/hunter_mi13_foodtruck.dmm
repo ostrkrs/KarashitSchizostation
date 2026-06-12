@@ -422,7 +422,6 @@
 /turf/open/floor/circuit/red/off,
 /area/shuttle/hunter/mi13_foodtruck)
 "ua" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/south,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/hunter/mi13_foodtruck)
 "ui" = (

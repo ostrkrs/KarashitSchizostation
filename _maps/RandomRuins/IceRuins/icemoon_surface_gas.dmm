@@ -292,7 +292,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "vA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/jim_nortons/directional/south,
+/obj/structure/sign/poster/legal/jim_nortons/directional/south,
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/duct,
 /turf/open/floor/iron,

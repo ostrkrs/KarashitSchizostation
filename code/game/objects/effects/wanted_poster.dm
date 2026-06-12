@@ -8,7 +8,7 @@
 */
 
 /obj/item/poster/wanted
-	icon_state = "rolled_poster_legit"
+	icon_state = "rolled_official"
 	var/postHeaderText = "WANTED" // MAX 7 Characters
 	var/postHeaderColor = COLOR_RED
 	var/background = "wanted_background"

@@ -31381,7 +31381,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/periodic_table/directional/east,
+/obj/structure/sign/poster/legal/periodic_table/directional/east,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
 "kMl" = (
@@ -60964,7 +60964,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/cyan/visible/layer5,
 /obj/machinery/atmospherics/pipe/smart/simple/purple/visible,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/east,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/east,
 /turf/open/floor/iron/dark/textured,
 /area/station/engineering/atmos)
 "uVm" = (

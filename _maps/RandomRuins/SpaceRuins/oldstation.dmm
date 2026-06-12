@@ -137,7 +137,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/bridge)
 "aS" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/bridge)
 "aT" = (
@@ -184,7 +184,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/bridge)
 "bb" = (
-/obj/structure/sign/poster/contraband/pwr_game,
+/obj/structure/sign/poster/legal/pwr_game,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/hall)
 "be" = (
@@ -276,7 +276,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/charlie/hall)
 "by" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo,
 /turf/closed/wall/rust,
 /area/ruin/space/ancientstation/charlie/bridge)
 "bz" = (
@@ -1136,7 +1136,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/engie)
 "fd" = (
-/obj/structure/sign/poster/contraband/donut_corp,
+/obj/structure/sign/poster/legal/donut_corp,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/sec)
 "fe" = (
@@ -6388,7 +6388,7 @@
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/periodic_table/directional/north,
+/obj/structure/sign/poster/legal/periodic_table/directional/north,
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/rnd)
 "Kd" = (
@@ -8371,8 +8371,8 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/hall)
 "XN" = (
-/obj/structure/sign/poster/contraband/space_cola,
-/obj/structure/sign/poster/contraband/space_cola,
+/obj/structure/sign/poster/legal/space_cola,
+/obj/structure/sign/poster/legal/space_cola,
 /turf/closed/wall,
 /area/ruin/space/ancientstation/charlie/sec)
 "XO" = (
@@ -8645,10 +8645,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/beta/atmos)
-"Zj" = (
-/obj/structure/sign/poster/contraband/lamarr,
-/turf/closed/wall,
-/area/ruin/space/ancientstation/delta/biolab)
 "Zl" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -15315,7 +15311,7 @@ bE
 Vb
 rQ
 Fi
-Zj
+NG
 wK
 UH
 ae

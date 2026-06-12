@@ -120,7 +120,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "gl" = (
-/obj/structure/sign/poster/contraband/blasto_detergent,
+/obj/structure/sign/poster/legal/blasto_detergent,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "gL" = (
@@ -365,7 +365,7 @@
 /area/virtual_domain)
 "sl" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/legal/space_cola/directional/north,
 /turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "sR" = (
@@ -789,7 +789,7 @@
 /turf/closed/indestructible/binary,
 /area/virtual_domain/fullbright)
 "Nz" = (
-/obj/structure/sign/poster/official/pda_ad/directional/north,
+/obj/structure/sign/poster/old_nt/pda_ad/directional/north,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "NA" = (
@@ -940,7 +940,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "Wj" = (
-/obj/structure/sign/poster/contraband/free_key/directional,
+/obj/structure/sign/poster/old_syndie/free_key/directional,
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain/protected_space/fullbright)
 "Wy" = (

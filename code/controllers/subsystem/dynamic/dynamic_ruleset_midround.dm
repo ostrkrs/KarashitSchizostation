@@ -213,7 +213,7 @@
  */
 /datum/dynamic_ruleset/midround/from_ghosts
 	///Path of an item to show up in ghost polls for applicants to sign up.
-	var/signup_atom_appearance = /obj/structure/sign/poster/contraband/syndicate_recruitment
+	var/signup_atom_appearance = /obj/structure/sign/poster/old_syndie/syndicate_recruitment
 	/// Text shown in the candidate poll. Optional, if unset uses pref_flag. (Though required if pref_flag is unset)
 	var/candidate_role
 

@@ -160,7 +160,7 @@
 /obj/structure/table,
 /obj/machinery/coffeemaker,
 /obj/item/reagent_containers/cup/coffeepot/bluespace,
-/obj/structure/sign/poster/contraband/donut_corp/directional/north,
+/obj/structure/sign/poster/legal/donut_corp/directional/north,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/escape)

@@ -287,7 +287,7 @@
 /obj/effect/decal/cleanable/blood/splatter/over_window{
 	pixel_y = 32
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/north,
 /turf/open/floor/wood/parquet,
 /area/ruin/comms_agent)
 "sB" = (

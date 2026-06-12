@@ -272,6 +272,14 @@
 	name = "Hair Dye"
 	item_path = /obj/item/dyespray
 
+/datum/loadout_item/pocket_items/misc/poster_official
+	name = "Poster (Official)"
+	item_path = /obj/item/poster/random_official
+
+/datum/loadout_item/pocket_items/misc/poster_legal
+	name = "Poster (Legal)"
+	item_path = /obj/item/poster/random_legal
+
 /datum/loadout_item/pocket_items/misc/poster
 	name = "Poster (Contraband)"
 	item_path = /obj/item/poster/random_contraband

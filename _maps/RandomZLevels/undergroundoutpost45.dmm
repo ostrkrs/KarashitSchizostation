@@ -158,7 +158,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "aH" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/north,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "aI" = (
@@ -424,13 +424,13 @@
 /turf/open/floor/iron/freezer,
 /area/awaymission/undergroundoutpost45/central)
 "bK" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "bN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)

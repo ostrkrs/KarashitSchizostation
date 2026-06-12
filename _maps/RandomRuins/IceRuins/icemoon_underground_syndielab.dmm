@@ -201,7 +201,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "mi" = (
-/obj/structure/sign/poster/contraband/cybersun_six_hundred/directional/west,
+/obj/structure/sign/poster/legal/cybersun_commemorative/directional/west,
 /obj/item/vending_refill/donksoft{
 	pixel_x = 2;
 	pixel_y = 8
@@ -225,7 +225,7 @@
 	pixel_x = -3
 	},
 /obj/structure/closet/crate/preopen,
-/obj/structure/sign/poster/contraband/gorlex_recruitment/directional/west,
+/obj/structure/sign/poster/old_syndie/gorlex_recruitment/directional/west,
 /obj/effect/decal/cleanable/plastic,
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
@@ -357,7 +357,7 @@
 	},
 /area/ruin/syndielab)
 "vr" = (
-/obj/structure/sign/poster/contraband/revolver/directional/east,
+/obj/structure/sign/poster/old_syndie/revolver/directional/east,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/syndielab)
 "vE" = (
@@ -590,7 +590,7 @@
 	pixel_x = 12;
 	pixel_y = 1
 	},
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/north,
+/obj/structure/sign/poster/legal/interdyne_gene_clinics/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
@@ -660,11 +660,6 @@
 "MW" = (
 /turf/template_noop,
 /area/template_noop)
-"NM" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
-/obj/structure/cable/layer1,
-/turf/open/floor/iron/dark/textured,
-/area/ruin/syndielab)
 "Qj" = (
 /obj/structure/flora/bush/grassy{
 	pixel_x = 15;
@@ -829,7 +824,7 @@
 	pixel_x = 8
 	},
 /obj/item/mod/paint,
-/obj/structure/sign/poster/contraband/energy_swords/directional/south,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "Xm" = (
@@ -856,7 +851,7 @@
 /area/icemoon/underground/explored)
 "YH" = (
 /obj/item/storage/medkit,
-/obj/structure/sign/poster/contraband/free_key/directional/south,
+/obj/structure/sign/poster/old_syndie/free_key/directional/south,
 /obj/structure/rack,
 /obj/item/stack/medical/suture,
 /obj/item/clothing/neck/stethoscope,
@@ -1161,7 +1156,7 @@ MW
 Xt
 AR
 sV
-NM
+tC
 tC
 tC
 tC

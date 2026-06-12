@@ -3180,7 +3180,7 @@
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "uq" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment/directional/north,
 /obj/effect/turf_decal/loading_area{
 	dir = 8
 	},
@@ -5663,7 +5663,7 @@
 	},
 /area/awaymission/moonoutpost19/main)
 "LL" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/south,
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},

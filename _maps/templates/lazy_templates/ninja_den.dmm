@@ -1776,7 +1776,7 @@
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
 "PB" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/south,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment/directional/south,
 /turf/open/floor/wood/large,
 /area/centcom/central_command_areas/holding)
 "PH" = (

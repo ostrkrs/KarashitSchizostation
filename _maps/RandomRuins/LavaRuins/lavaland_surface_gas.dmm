@@ -88,7 +88,7 @@
 /obj/item/food/chocolatebar{
 	pixel_y = 6
 	},
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/legal/space_cola/directional/north,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -112,7 +112,7 @@
 "fl" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/legal/starkist/directional/north,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -148,7 +148,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "fZ" = (
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/robust_softdrinks/directional/east,
+/obj/structure/sign/poster/legal/robust_softdrinks/directional/east,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -325,7 +325,6 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "nX" = (
-/obj/structure/sign/poster/contraband/tipper_cream_soda/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -530,7 +529,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "wY" = (
 /obj/structure/table,
-/obj/structure/sign/poster/official/festive/directional/south,
+/obj/structure/sign/poster/legal/festive/directional/south,
 /obj/item/wrench,
 /obj/item/universal_scanner{
 	pixel_y = 6;
@@ -713,7 +712,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "El" = (
-/obj/structure/sign/poster/official/pda_ad/directional/south,
+/obj/structure/sign/poster/old_nt/pda_ad/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -1000,7 +999,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "Qt" = (
-/obj/structure/sign/poster/contraband/jumbo_bar/directional/east,
+/obj/structure/sign/poster/legal/jumbo_bar/directional/east,
 /obj/structure/cable,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface

@@ -332,7 +332,7 @@
 	},
 /obj/structure/closet,
 /obj/item/clothing/under/syndicate/bloodred/sleepytime,
-/obj/structure/sign/poster/contraband/energy_swords/directional/west,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/west,
 /turf/open/floor/wood,
 /area/ruin/syndibiodome)
 "el" = (
@@ -714,7 +714,6 @@
 "iS" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/end,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
 /turf/open/floor/iron/white/small,
 /area/ruin/syndibiodome)
 "iV" = (
@@ -1474,7 +1473,7 @@
 /obj/effect/turf_decal/trimline/dark_red/line{
 	dir = 8
 	},
-/obj/structure/sign/poster/contraband/gorlex_recruitment/directional/west,
+/obj/structure/sign/poster/old_syndie/gorlex_recruitment/directional/west,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "tq" = (
@@ -2675,7 +2674,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/contraband/free_key/directional/east,
+/obj/structure/sign/poster/old_syndie/free_key/directional/east,
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Gm" = (

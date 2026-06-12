@@ -712,7 +712,7 @@
 /area/ruin/powered/beach)
 "zK" = (
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/legal/starkist/directional/north,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "zT" = (
@@ -906,7 +906,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "FZ" = (
-/obj/structure/sign/poster/contraband/space_up/directional/west,
+/obj/structure/sign/poster/legal/space_up/directional/west,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Ga" = (
@@ -917,7 +917,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Gf" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/legal/space_cola/directional/north,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "GA" = (

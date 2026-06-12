@@ -3,7 +3,7 @@
 /obj/item/poster/quirk
 	name = "placeholder quirk poster"
 	desc = "Uh oh! You shouldn't have this!"
-	icon_state = "rolled_poster_legit"
+	icon_state = "rolled_official"
 	/// People from the selected department will gain a mood buff. If no department is specified applies to the entire crew.
 	var/quirk_poster_department = NONE
 
@@ -140,12 +140,6 @@
 	When people read this poster they'll feel better!"
 	icon_state = "hang_in_there"
 
-/obj/structure/sign/poster/quirk/crew/renault
-	name = "Captain's Pet"
-	desc = "A poster depicting the Captains beloved Renault. He's ok. \
-	When people read this poster they'll feel better!"
-	icon_state = "renault"
-
 /obj/structure/sign/poster/quirk/crew/bike
 	name = "Someday..."
 	desc = "A poster depicting a bike. Someday it WILL be yours! \
@@ -257,8 +251,8 @@
 	quirk_poster_department = ACCOUNT_SRV
 
 /obj/structure/sign/poster/quirk/service_logo
-	name = "Service corgi"
-	desc = "A poster made with love depicting a certain corgi. \
+	name = "Mime and Clown"
+	desc = "...or Clown and Mime. A poster made with depicting most noticeable service figures. \
 	When members of the service department read this poster they'll feel better!"
 	icon_state = "service_logo"
 

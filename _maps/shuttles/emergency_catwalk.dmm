@@ -524,7 +524,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/ion_rifle/directional/north,
+/obj/structure/sign/poster/contraband/ion_rifle/directional/north,
 /obj/machinery/button/flasher{
 	pixel_x = 26;
 	pixel_y = -6

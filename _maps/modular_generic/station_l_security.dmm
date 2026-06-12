@@ -216,7 +216,7 @@
 "vv" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/contraband/donut_corp/directional/south,
+/obj/structure/sign/poster/legal/donut_corp/directional/south,
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/iron/dark,
 /area/template_noop)

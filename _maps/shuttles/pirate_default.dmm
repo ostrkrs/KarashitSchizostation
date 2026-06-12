@@ -692,7 +692,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/obj/structure/sign/poster/contraband/revolver/directional/east,
+/obj/structure/sign/poster/old_syndie/revolver/directional/east,
 /obj/item/storage/backpack/duffelbag/syndie/x4{
 	pixel_y = 8
 	},

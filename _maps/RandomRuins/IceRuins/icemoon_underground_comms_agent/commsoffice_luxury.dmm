@@ -46,7 +46,6 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
 /turf/open/floor/wood/large,
 /area/ruin/comms_agent)
 "n" = (

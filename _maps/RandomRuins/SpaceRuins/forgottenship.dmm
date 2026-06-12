@@ -64,7 +64,7 @@
 /turf/template_noop,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "aq" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment,
 /turf/closed/wall/r_wall/plastitanium/syndicate,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "ar" = (
@@ -250,7 +250,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_cargopod)
 "bg" = (
-/obj/structure/sign/poster/contraband/syndicate_pistol,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol,
 /turf/closed/wall/r_wall/plastitanium/syndicate,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bh" = (

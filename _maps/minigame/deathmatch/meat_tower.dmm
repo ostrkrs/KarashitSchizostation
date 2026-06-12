@@ -407,7 +407,7 @@
 /turf/open/indestructible/kitchen,
 /area/deathmatch)
 "KW" = (
-/obj/structure/sign/poster/contraband/pizza_imperator,
+/obj/structure/sign/poster/legal/pizza_imperator,
 /turf/closed/indestructible/necropolis,
 /area/deathmatch)
 "KZ" = (

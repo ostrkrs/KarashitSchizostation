@@ -131,7 +131,7 @@
 /area/ruin/space/has_grav/dangerous_research/medical)
 "bP" = (
 /obj/structure/bed,
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/east,
+/obj/structure/sign/poster/legal/interdyne_gene_clinics/directional/east,
 /obj/effect/spawner/random/contraband/narcotics,
 /obj/item/bedsheet/purple,
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted{
@@ -217,7 +217,6 @@
 /obj/item/food/donkpocket/spicy,
 /obj/item/food/ready_donk,
 /obj/item/food/ready_donk/mac_n_cheese,
-/obj/structure/sign/poster/contraband/donk_co/directional/west,
 /obj/machinery/light/dim/directional/west,
 /obj/structure/closet/secure_closet/freezer/empty{
 	name = "fridge"
@@ -3155,7 +3154,7 @@
 	pixel_x = 5;
 	pixel_y = 3
 	},
-/obj/structure/sign/poster/contraband/andromeda_bitters/directional/east,
+/obj/structure/sign/poster/legal/andromeda_bitters/directional/east,
 /turf/open/floor/wood/parquet,
 /area/ruin/space/has_grav/dangerous_research/dorms)
 "Pu" = (
