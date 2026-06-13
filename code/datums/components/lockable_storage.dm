@@ -202,6 +202,10 @@
 	. = ..()
 	if(action != "keypad")
 		return TRUE
+
+	var/atom/source = parent
+	playsound(source, SFX_TERMINAL_TYPE, 50, FALSE)
+
 	var/digit = params["digit"]
 	switch(digit)
 		//locking it back up
