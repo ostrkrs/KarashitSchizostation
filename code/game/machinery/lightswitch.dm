@@ -15,6 +15,8 @@
 	var/light_on_range = 1
 	/// Should this lightswitch automatically rename itself to match the area it's in?
 	var/autoname = TRUE
+	///Time when the lights were switched last, to prevent spamming
+	var/last_switch = 0
 	/// The sound the light makes when it's turned on
 	var/sound_on = 'sound/items/weapons/magin.ogg'
 	/// The sound the light makes when it's turned off
@@ -78,6 +80,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light_switch, 24)
 
 /obj/machinery/light_switch/interact(mob/user)
 	. = ..()
+	if(last_switch > world.time - 2.1 SECONDS)
+		return
+	last_switch = world.time
+
 	playsound(src, area.lightswitch ? sound_off : sound_on, 40, TRUE)
 	set_lights(!area.lightswitch)
 

@@ -1,3 +1,6 @@
+#define LIGHT_TURN_ON_DELAY_MIN 0.5 SECONDS
+#define LIGHT_TURN_ON_DELAY_MAX 2 SECONDS
+
 // the standard tube light fixture
 /obj/machinery/light
 	name = "light fixture"
@@ -324,8 +327,10 @@
 
 // attempt to set the light's on/off status
 // will not switch on if broken/burned/empty
-/obj/machinery/light/proc/set_on(turn_on)
+/obj/machinery/light/proc/set_on(turn_on, play_sound = TRUE)
 	on = (turn_on && status == LIGHT_OK)
+	if(play_sound)
+		playsound(src, 'sound/machines/light_on.ogg', 60, TRUE)
 	update()
 
 /obj/machinery/light/get_cell()
@@ -687,7 +692,10 @@
 /obj/machinery/light/power_change()
 	SHOULD_CALL_PARENT(FALSE)
 	var/area/local_area = get_room_area()
-	set_on(local_area.lightswitch && local_area.power_light)
+	if(!on)
+		addtimer(CALLBACK(src, PROC_REF(set_on), local_area.lightswitch && local_area.power_light), rand(LIGHT_TURN_ON_DELAY_MIN, LIGHT_TURN_ON_DELAY_MAX))
+	else
+		set_on(local_area.lightswitch && local_area.power_light, play_sound = FALSE)
 
 // called when heated
 
@@ -761,3 +769,6 @@
 	// has to render above tram things (trams are stupid)
 	layer = BELOW_OPEN_DOOR_LAYER
 	plane = GAME_PLANE
+
+#undef LIGHT_TURN_ON_DELAY_MIN
+#undef LIGHT_TURN_ON_DELAY_MAX
