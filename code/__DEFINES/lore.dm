@@ -47,7 +47,7 @@
 #define CORPORATION_XION "Xion Manufacturing Group"
 
 // Medical-focused
-#define CORPORATION_DEFOREST "DeForest MedCo" // former NT medical subdivision
+#define CORPORATION_DEFOREST "DeForest" // former NT medical subdivision
 #define CORPORATION_INTERDYNE "Interdyne Pharmaceuticals"
 #define CORPORATION_ZENG_HU "Zeng-Hu Pharmaceuticals"
 
