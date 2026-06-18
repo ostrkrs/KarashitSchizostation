@@ -13,6 +13,9 @@
 	strip_delay = 1 SECONDS
 	equip_delay_other = 1 SECONDS
 	dog_fashion = /datum/dog_fashion/head/chef
+	pickup_sound = null
+	drop_sound = null
+	equip_sound = null
 	/// The chance that the movements of a mouse inside of this hat get relayed to the human wearing the hat
 	var/mouse_control_probability = 20
 	/// Allowed time between movements
@@ -491,7 +494,10 @@
 	icon_state = "surgicalcap"
 	desc = "A teal medical surgery cap to prevent the surgeon's hair from entering the insides of the patient!"
 	flags_inv = HIDEHAIR //Cover your head doctor!
-	w_class = WEIGHT_CLASS_SMALL //surgery cap can be easily crumpled
+	w_class = WEIGHT_CLASS_SMALL
+	pickup_sound = SFX_CLOTH_PICKUP
+	drop_sound = SFX_CLOTH_DROP
+	equip_sound = null
 
 /obj/item/clothing/head/utility/surgerycap/Initialize(mapload)
 	. = ..()
@@ -538,6 +544,9 @@
 		A little useless now, given the technology available, but it certainly completes the look."
 	icon_state = "headmirror"
 	body_parts_covered = NONE
+	pickup_sound = null
+	drop_sound = null
+	equip_sound = null
 
 /obj/item/clothing/head/utility/head_mirror/Initialize(mapload)
 	. = ..()
