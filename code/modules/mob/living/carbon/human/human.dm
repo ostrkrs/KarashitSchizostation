@@ -959,10 +959,19 @@
 	var/obj/item/organ/brain/our_brain = get_organ_slot(ORGAN_SLOT_BRAIN)
 	var/obj/item/bodypart/head/our_head = get_bodypart(BODY_ZONE_HEAD)
 	var/obj/item/bodypart/chest/our_chest = get_bodypart(BODY_ZONE_CHEST)
-	BODY_ZONE_PRECISE_GROIN
+
+	var/lethal_head_damage = our_head.max_damage * 0.75
+	var/lethal_chest_damage = our_chest.max_damage * 0.9
+
 	if(stat != DEAD)
 		if(!HAS_TRAIT(src, TRAIT_NODEATH))
-			if((our_head.get_damage() >= our_head.max_damage * 0,75) || (our_chest.get_damage() >= LIMB_MAX_HP_TORSO * 0,75) || (our_brain && our_brain.damage >= BRAIN_DAMAGE_DEATH))
+			if(our_head.get_damage() >= lethal_head_damage)
+				death()
+				return
+			if(our_chest.get_damage() >= lethal_chest_damage)
+				death()
+				return
+			if(our_brain && our_brain.damage >= BRAIN_DAMAGE_DEATH)
 				death()
 				return
 		if(HAS_TRAIT_FROM(src, TRAIT_DISSECTED, AUTOPSY_TRAIT))
