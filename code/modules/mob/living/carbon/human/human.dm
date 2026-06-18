@@ -952,43 +952,6 @@
 		return FALSE
 	return ..()
 
-/mob/living/carbon/human/update_stat()
-	if(HAS_TRAIT(src, TRAIT_GODMODE))
-		return
-
-	var/obj/item/organ/brain/our_brain = get_organ_slot(ORGAN_SLOT_BRAIN)
-	var/obj/item/bodypart/head/our_head = get_bodypart(BODY_ZONE_HEAD)
-	var/obj/item/bodypart/chest/our_chest = get_bodypart(BODY_ZONE_CHEST)
-
-	var/lethal_head_damage = our_head.max_damage * 0.75
-	var/lethal_chest_damage = our_chest.max_damage * 0.9
-
-	if(stat != DEAD)
-		if(!HAS_TRAIT(src, TRAIT_NODEATH))
-			if(our_head.get_damage() >= lethal_head_damage)
-				death()
-				return
-			if(our_chest.get_damage() >= lethal_chest_damage)
-				death()
-				return
-			if(our_brain && our_brain.damage >= BRAIN_DAMAGE_DEATH)
-				death()
-				return
-		if(HAS_TRAIT_FROM(src, TRAIT_DISSECTED, AUTOPSY_TRAIT))
-			REMOVE_TRAIT(src, TRAIT_DISSECTED, AUTOPSY_TRAIT)
-		if(health <= hardcrit_threshold && !HAS_TRAIT(src, TRAIT_NOHARDCRIT))
-			set_stat(HARD_CRIT)
-		else if(HAS_TRAIT(src, TRAIT_KNOCKEDOUT))
-			set_stat(UNCONSCIOUS)
-		else if(health <= crit_threshold && !HAS_TRAIT(src, TRAIT_NOSOFTCRIT))
-			set_stat(SOFT_CRIT)
-		else
-			set_stat(CONSCIOUS)
-	update_damage_hud()
-	update_health_hud()
-	update_stamina_hud()
-	med_hud_set_status()
-
 /mob/living/carbon/human/updatehealth()
 	. = ..()
 	var/health_deficiency = max((maxHealth - health), staminaloss)

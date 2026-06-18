@@ -21,7 +21,6 @@ GLOBAL_LIST_EMPTY(dead_players_during_shift)
 	var/obj/item/organ/heart/human_heart = get_organ_slot(ORGAN_SLOT_HEART)
 	human_heart?.beat = BEAT_NONE
 	human_heart?.Stop()
-	setOrganLoss(ORGAN_SLOT_BRAIN, BRAIN_DAMAGE_DEATH) // just to ensure that the brain is fully nonfunctional
 
 	. = ..()
 
