@@ -262,14 +262,18 @@
 	icon = 'icons/obj/devices/tool.dmi'
 	icon_state = "cargo_tagger"
 	worn_icon_state = "cargotagger"
-	var/currTag = 0 //Destinations are stored in code\globalvars\lists\flavor_misc.dm
-	var/locked_destination = FALSE //if true, users can't open the destination tag window to prevent changing the tagger's current destination
 	w_class = WEIGHT_CLASS_TINY
 	inhand_icon_state = "electronic"
 	lefthand_file = 'icons/mob/inhands/items/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/items/devices_righthand.dmi'
 	obj_flags = CONDUCTS_ELECTRICITY
 	slot_flags = ITEM_SLOT_BELT
+	sound_vary = TRUE
+	pickup_sound = SFX_GENERIC_DEVICE_PICKUP
+	drop_sound = SFX_GENERIC_DEVICE_DROP
+
+	var/currTag = 0 //Destinations are stored in code\globalvars\lists\flavor_misc.dm
+	var/locked_destination = FALSE //if true, users can't open the destination tag window to prevent changing the tagger's current destination
 
 /obj/item/dest_tagger/borg
 	name = "cyborg destination tagger"
