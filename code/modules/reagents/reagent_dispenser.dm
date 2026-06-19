@@ -58,7 +58,7 @@
 	if(icon_state == "water" && check_holidays(APRIL_FOOLS))
 		icon_state = "water_fools"
 	if(climbable)
-		AddElement(/datum/element/climbable, climb_time = 4 SECONDS, climb_stun = 4 SECONDS)
+		AddElement(/datum/element/climbable, climb_time = 4 SECONDS)
 		AddElement(/datum/element/elevation, pixel_shift = 14)
 
 /obj/structure/reagent_dispensers/examine(mob/user)

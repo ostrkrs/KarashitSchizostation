@@ -39,7 +39,7 @@
 	var/weld_z = 0
 
 /obj/structure/closet/crate/Initialize(mapload)
-	AddElement(/datum/element/climbable, climb_time = crate_climb_time, climb_stun = 0) //add element in closed state before parent init opens it(if it does)
+	AddElement(/datum/element/climbable, climb_time = crate_climb_time) //add element in closed state before parent init opens it(if it does)
 	if(elevation)
 		AddComponent(/datum/component/climb_walkable)
 		AddElement(/datum/element/elevation, pixel_shift = elevation)
@@ -118,8 +118,8 @@
 
 /obj/structure/closet/crate/after_open(mob/living/user, force)
 	. = ..()
-	RemoveElement(/datum/element/climbable, climb_time = crate_climb_time, climb_stun = 0)
-	AddElement(/datum/element/climbable, climb_time = crate_climb_time * 0.5, climb_stun = 0)
+	RemoveElement(/datum/element/climbable, climb_time = crate_climb_time)
+	AddElement(/datum/element/climbable, climb_time = crate_climb_time * 0.5)
 	if(elevation != elevation_open)
 		if(elevation)
 			RemoveElement(/datum/element/elevation, pixel_shift = elevation)
@@ -130,8 +130,8 @@
 
 /obj/structure/closet/crate/after_close(mob/living/user)
 	. = ..()
-	RemoveElement(/datum/element/climbable, climb_time = crate_climb_time * 0.5, climb_stun = 0)
-	AddElement(/datum/element/climbable, climb_time = crate_climb_time, climb_stun = 0)
+	RemoveElement(/datum/element/climbable, climb_time = crate_climb_time * 0.5)
+	AddElement(/datum/element/climbable, climb_time = crate_climb_time)
 	if(elevation != elevation_open)
 		if(elevation_open)
 			RemoveElement(/datum/element/elevation, pixel_shift = elevation_open)
