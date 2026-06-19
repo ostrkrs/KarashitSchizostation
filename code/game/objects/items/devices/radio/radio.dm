@@ -64,6 +64,9 @@
 	/// Does it play radio noise?
 	var/radio_noise = TRUE
 
+	///If false, the radio will not be able to send messages
+	var/can_broadcast = TRUE
+
 	///makes anyone who is talking through this anonymous.
 	var/anonymize = FALSE
 
@@ -127,11 +130,24 @@
 	if(prob(check_holidays(APRIL_FOOLS) ? 50 : 0.5)) // Extremely rare chance to replace a normal radio with a toy one, because it's funny
 		make_silly()
 
+	register_context()
+
 /obj/item/radio/Destroy()
 	remove_radio_all(src) //Just to be sure
 	if(istype(keyslot))
 		QDEL_NULL(keyslot)
 	return ..()
+
+/obj/item/radio/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
+	if(can_broadcast)
+		context[SCREENTIP_CONTEXT_ALT_LMB] = broadcasting ? "Turn Mic Off" : "Turn Mic On"
+
+	context[SCREENTIP_CONTEXT_CTRL_LMB] = listening ? "Turn Audio Off" : "Turn Audio On"
+
+	if(command)
+		context[SCREENTIP_CONTEXT_ALT_RMB] = use_command ? "Turn High-Volume Off" : "Turn High-Volume On"
+
+	return CONTEXTUAL_SCREENTIP_SET
 
 /obj/item/radio/on_saboteur(datum/source, disrupt_duration)
 	. = ..()
@@ -296,6 +312,8 @@
 /obj/item/radio/proc/talk_into_impl(atom/movable/talking_movable, message, channel, list/spans, datum/language/language, list/message_mods)
 	if(!on)
 		return // the device has to be on
+	if(!can_broadcast)
+		return
 	if(!talking_movable || !message)
 		return
 	if(wires.is_cut(WIRE_TX))  // Permacell and otherwise tampered-with radios
@@ -482,6 +500,7 @@
 	data["subspaceSwitchable"] = subspace_switchable
 	data["headset"] = FALSE
 	data["radio_noises"] = (user.client?.prefs.read_preference(/datum/preference/numeric/volume/sound_radio_noise))
+	data["can_broadcast"] = can_broadcast
 
 	return data
 
@@ -558,6 +577,19 @@
 		. += overlay_mic_idle
 	if(listening && overlay_speaker_idle)
 		. += overlay_speaker_idle
+
+/obj/item/radio/click_alt(mob/user)
+	if(can_broadcast)
+		set_broadcasting(!broadcasting)
+		to_chat(user, span_notice("You toggle microphone [broadcasting ? "on" : "off"]."))
+		return CLICK_ACTION_SUCCESS
+
+	return CLICK_ACTION_BLOCKING
+
+/obj/item/radio/item_ctrl_click(mob/user)
+	set_listening(!listening)
+	to_chat(user, span_notice("You toggle audio [listening ? "on" : "off"]."))
+	return CLICK_ACTION_SUCCESS
 
 /obj/item/radio/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
 	if(user.combat_mode && tool.tool_behaviour == TOOL_SCREWDRIVER)
