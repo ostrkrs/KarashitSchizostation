@@ -13,7 +13,7 @@
 "aK" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "aX" = (
 /obj/machinery/light/broken/directional/north,
@@ -42,7 +42,7 @@
 "cr" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/railing,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "cv" = (
 /obj/machinery/door/airlock/vault,
@@ -72,7 +72,7 @@
 /area/misc/anomaly_research)
 "dr" = (
 /obj/effect/spawner/random/environmentally_safe_anomaly/bioscramblerless,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "ds" = (
 /obj/machinery/duct,
@@ -91,7 +91,7 @@
 "dD" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/spawner/random/environmentally_safe_anomaly/bioscramblerless,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "eq" = (
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -186,7 +186,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "gB" = (
 /obj/effect/turf_decal/trimline/purple/line{
@@ -235,7 +235,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
-/obj/structure/window/plasma/spawner/directional/south,
+/obj/structure/window/phoron/spawner/directional/south,
 /turf/open/floor/iron/smooth,
 /area/misc/anomaly_research)
 "hU" = (
@@ -346,7 +346,7 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "kp" = (
 /obj/effect/spawner/random/environmentally_safe_anomaly/immobile,
@@ -737,7 +737,7 @@
 /area/misc/anomaly_research)
 "tR" = (
 /obj/structure/rack,
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /obj/item/stack/sheet/iron/twenty,
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted{
 	dir = 4
@@ -890,7 +890,7 @@
 /turf/closed/wall,
 /area/misc/anomaly_research)
 "xE" = (
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "xI" = (
 /obj/structure/flora/grass/green/style_random,
@@ -926,7 +926,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/structure/window/plasma/spawner/directional/south,
+/obj/structure/window/phoron/spawner/directional/south,
 /turf/open/floor/iron/smooth,
 /area/misc/anomaly_research)
 "yJ" = (
@@ -1017,7 +1017,7 @@
 /turf/open/floor/engine,
 /area/misc/anomaly_research)
 "Cl" = (
-/obj/effect/spawner/structure/window/plasma,
+/obj/effect/spawner/structure/window/phoron,
 /turf/open/floor/plating,
 /area/misc/anomaly_research)
 "CI" = (
@@ -1071,7 +1071,7 @@
 /area/misc/anomaly_research)
 "Ek" = (
 /obj/structure/lattice,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "En" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1080,7 +1080,7 @@
 "Eo" = (
 /obj/structure/lattice,
 /obj/item/anomaly_releaser,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "Et" = (
 /obj/item/paper/fluff/ruins/anomaly_research/stabilizer,
@@ -1297,7 +1297,7 @@
 /turf/open/floor/iron/white,
 /area/misc/anomaly_research)
 "IC" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/misc/anomaly_research)
 "IH" = (
@@ -1433,7 +1433,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "Mt" = (
 /obj/structure/flora/bush/snow/style_random,
@@ -1531,7 +1531,7 @@
 	dir = 1
 	},
 /obj/structure/lattice/catwalk,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "PY" = (
 /turf/open/floor/wood,
@@ -1567,7 +1567,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "Qz" = (
 /obj/effect/turf_decal/stripes/line{
@@ -1688,7 +1688,7 @@
 /area/misc/anomaly_research)
 "TN" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/structure/window/plasma/spawner/directional/south,
+/obj/structure/window/phoron/spawner/directional/south,
 /turf/open/floor/iron/smooth,
 /area/misc/anomaly_research)
 "TU" = (
@@ -1697,7 +1697,7 @@
 /area/misc/anomaly_research)
 "Ud" = (
 /obj/structure/lattice/catwalk,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/misc/anomaly_research)
 "Uo" = (
 /obj/machinery/recharge_station,

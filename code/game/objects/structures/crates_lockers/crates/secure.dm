@@ -44,11 +44,11 @@
 	icon_state = "weaponcrate"
 	base_icon_state = "weaponcrate"
 
-/obj/structure/closet/crate/secure/plasma
-	desc = "A secure plasma crate."
-	name = "plasma crate"
-	icon_state = "plasmacrate"
-	base_icon_state = "plasmacrate"
+/obj/structure/closet/crate/secure/phoron
+	desc = "A secure phoron crate."
+	name = "phoron crate"
+	icon_state = "phoroncrate"
+	base_icon_state = "phoroncrate"
 
 /obj/structure/closet/crate/secure/gear
 	desc = "A secure gear crate."

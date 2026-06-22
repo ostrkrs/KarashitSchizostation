@@ -1,6 +1,6 @@
-/obj/machinery/air_sensor/plasma_tank
-	name = "plasma tank gas sensor"
-	chamber_id = ATMOS_GAS_MONITOR_PLAS
+/obj/machinery/air_sensor/phoron_tank
+	name = "phoron tank gas sensor"
+	chamber_id = ATMOS_GAS_MONITOR_PHORON
 
 /obj/machinery/air_sensor/oxygen_tank
 	name = "oxygen tank gas sensor"

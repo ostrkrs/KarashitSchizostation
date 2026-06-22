@@ -588,7 +588,6 @@
 		// uncommon
 		/datum/martial_art/boxing/evil = 20,
 		// LEGENDARY
-		/datum/martial_art/plasma_fist = 5,
 		/datum/martial_art/wrestling = 5, // wrestling is kinda strong ngl
 		/datum/martial_art/psychotic_brawling = 5, // a complete meme. sometimes you just get hardstunned. sometimes you punch someone across the room
 	)

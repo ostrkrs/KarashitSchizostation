@@ -46,20 +46,20 @@
 		return FALSE
 
 
-/datum/chemical_reaction/stable_plasma
-	results = list(/datum/reagent/stable_plasma = 1)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+/datum/chemical_reaction/stable_phoron
+	results = list(/datum/reagent/stable_phoron = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_catalysts = list(/datum/reagent/stabilizing_agent = 1)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_UNIQUE
 
-/datum/chemical_reaction/plasma_solidification
-	required_reagents = list(/datum/reagent/iron = 5, /datum/reagent/consumable/frostoil = 5, /datum/reagent/toxin/plasma = 20)
+/datum/chemical_reaction/phoron_solidification
+	required_reagents = list(/datum/reagent/iron = 5, /datum/reagent/consumable/frostoil = 5, /datum/reagent/toxin/phoron = 20)
 	mob_react = FALSE
 	reaction_flags = REACTION_INSTANT
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_UNIQUE | REACTION_TAG_OTHER
 
-/datum/chemical_reaction/plasma_solidification/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
-	new /obj/item/stack/sheet/mineral/plasma(get_turf(holder.my_atom), round(created_volume))
+/datum/chemical_reaction/phoron_solidification/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
+	new /obj/item/stack/sheet/mineral/phoron(get_turf(holder.my_atom), round(created_volume))
 
 /datum/chemical_reaction/gold_solidification
 	required_reagents = list(/datum/reagent/consumable/frostoil = 5, /datum/reagent/gold = 20, /datum/reagent/iron = 1)
@@ -187,14 +187,14 @@
 	results = list(/datum/reagent/medicine/synaptizine/synaptizinevirusfood = 1)
 	required_reagents = list(/datum/reagent/medicine/synaptizine = 1, /datum/reagent/consumable/virus_food = 1)
 
-/datum/chemical_reaction/virus_food_plasma
-	results = list(/datum/reagent/toxin/plasma/plasmavirusfood = 1)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1, /datum/reagent/consumable/virus_food = 1)
+/datum/chemical_reaction/virus_food_phoron
+	results = list(/datum/reagent/toxin/phoron/virusfood = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1, /datum/reagent/consumable/virus_food = 1)
 	thermic_constant = 20 // To avoid the plasma boiling
 
-/datum/chemical_reaction/virus_food_plasma_synaptizine
-	results = list(/datum/reagent/toxin/plasma/plasmavirusfood/weak = 2)
-	required_reagents = list(/datum/reagent/medicine/synaptizine = 1, /datum/reagent/toxin/plasma/plasmavirusfood = 1)
+/datum/chemical_reaction/virus_food_phoron_synaptizine
+	results = list(/datum/reagent/toxin/phoron/virusfood/weak = 2)
+	required_reagents = list(/datum/reagent/medicine/synaptizine = 1, /datum/reagent/toxin/phoron/virusfood = 1)
 	thermic_constant = 20 // To avoid the plasma boiling
 
 /datum/chemical_reaction/virus_food_mutagen_sugar
@@ -211,15 +211,15 @@
 
 /datum/chemical_reaction/virus_food_uranium_plasma
 	results = list(/datum/reagent/uranium/uraniumvirusfood/unstable = 1)
-	required_reagents = list(/datum/reagent/uranium = 5, /datum/reagent/toxin/plasma/plasmavirusfood = 1)
+	required_reagents = list(/datum/reagent/uranium = 5, /datum/reagent/toxin/phoron/virusfood = 1)
 
 /datum/chemical_reaction/virus_food_uranium_plasma_gold
 	results = list(/datum/reagent/uranium/uraniumvirusfood/stable = 1)
-	required_reagents = list(/datum/reagent/uranium = 10, /datum/reagent/gold = 10, /datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/uranium = 10, /datum/reagent/gold = 10, /datum/reagent/toxin/phoron = 1)
 
 /datum/chemical_reaction/virus_food_uranium_plasma_silver
 	results = list(/datum/reagent/uranium/uraniumvirusfood/stable = 1)
-	required_reagents = list(/datum/reagent/uranium = 10, /datum/reagent/silver = 10, /datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/uranium = 10, /datum/reagent/silver = 10, /datum/reagent/toxin/phoron = 1)
 
 /datum/chemical_reaction/mix_virus
 	results = list(/datum/reagent/blood = 1)
@@ -243,7 +243,7 @@
 	level_max = 4
 
 /datum/chemical_reaction/mix_virus/mix_virus_3
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	level_min = 4
 	level_max = 6
 
@@ -263,12 +263,12 @@
 	level_max = 4
 
 /datum/chemical_reaction/mix_virus/mix_virus_7
-	required_reagents = list(/datum/reagent/toxin/plasma/plasmavirusfood/weak = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron/virusfood/weak = 1)
 	level_min = 5
 	level_max = 5
 
 /datum/chemical_reaction/mix_virus/mix_virus_8
-	required_reagents = list(/datum/reagent/toxin/plasma/plasmavirusfood = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron/virusfood = 1)
 	level_min = 6
 	level_max = 6
 
@@ -412,7 +412,7 @@
 
 /datum/chemical_reaction/drying_agent
 	results = list(/datum/reagent/drying_agent = 3)
-	required_reagents = list(/datum/reagent/stable_plasma = 2, /datum/reagent/consumable/ethanol = 1, /datum/reagent/sodium = 1)
+	required_reagents = list(/datum/reagent/stable_phoron = 2, /datum/reagent/consumable/ethanol = 1, /datum/reagent/sodium = 1)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_UNIQUE
 
 //////////////////////////////////// Other goon stuff ///////////////////////////////////////////
@@ -504,7 +504,7 @@
 
 /datum/chemical_reaction/carpet/simple_neon_purple
 	results = list(/datum/reagent/carpet/neon/simple_purple = 2)
-	required_reagents = list(/datum/reagent/carpet = 1, /datum/reagent/consumable/tinlux = 1, /datum/reagent/plasma_oxide = 1)
+	required_reagents = list(/datum/reagent/carpet = 1, /datum/reagent/consumable/tinlux = 1, /datum/reagent/phoron_oxide = 1)
 
 /datum/chemical_reaction/carpet/simple_neon_violet
 	results = list(/datum/reagent/carpet/neon/simple_violet = 2)
@@ -536,7 +536,7 @@
 
 /datum/chemical_reaction/colorful_reagent
 	results = list(/datum/reagent/colorful_reagent = 5)
-	required_reagents = list(/datum/reagent/stable_plasma = 1, /datum/reagent/uranium/radium = 1, /datum/reagent/drug/space_drugs = 1, /datum/reagent/medicine/cryoxadone = 1, /datum/reagent/consumable/triple_citrus = 1)
+	required_reagents = list(/datum/reagent/stable_phoron = 1, /datum/reagent/uranium/radium = 1, /datum/reagent/drug/space_drugs = 1, /datum/reagent/medicine/cryoxadone = 1, /datum/reagent/consumable/triple_citrus = 1)
 	reaction_flags = REACTION_CLEAR_INVERSE
 
 /datum/chemical_reaction/lifish/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -700,7 +700,7 @@
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_PLANT | REACTION_TAG_DAMAGING | REACTION_TAG_TOXIN | REACTION_TAG_SLIME
 
 /datum/chemical_reaction/slime_extractification
-	required_reagents = list(/datum/reagent/toxin/slimejelly = 30, /datum/reagent/consumable/frostoil = 5, /datum/reagent/toxin/plasma = 5)
+	required_reagents = list(/datum/reagent/toxin/slimejelly = 30, /datum/reagent/consumable/frostoil = 5, /datum/reagent/toxin/phoron = 5)
 	mix_message = "The mixture condenses into a ball."
 	reaction_flags = REACTION_INSTANT
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_SLIME
@@ -781,7 +781,7 @@
 
 /datum/chemical_reaction/exotic_stabilizer
 	results = list(/datum/reagent/exotic_stabilizer = 2)
-	required_reagents = list(/datum/reagent/plasma_oxide = 1,/datum/reagent/stabilizing_agent = 1)
+	required_reagents = list(/datum/reagent/phoron_oxide = 1,/datum/reagent/stabilizing_agent = 1)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_CHEMICAL
 
 /datum/chemical_reaction/silver_solidification
@@ -858,7 +858,7 @@
 
 /datum/chemical_reaction/eigenstate
 	results = list(/datum/reagent/eigenstate = 1)
-	required_reagents = list(/datum/reagent/bluespace = 1, /datum/reagent/stable_plasma = 1, /datum/reagent/consumable/caramel = 1)
+	required_reagents = list(/datum/reagent/bluespace = 1, /datum/reagent/stable_phoron = 1, /datum/reagent/consumable/caramel = 1)
 	mix_message = "the reaction zaps suddenly!"
 	mix_sound = 'sound/effects/chemistry/bluespace.ogg'
 	//FermiChem vars:

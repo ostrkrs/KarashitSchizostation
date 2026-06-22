@@ -12,7 +12,6 @@
 	config_tag = "INTERNAL_SECURITY_OPERATIVE"
 
 	outfit = /datum/outfit/job/iso
-	plasmaman_outfit = /datum/outfit/plasmaman/bar
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV

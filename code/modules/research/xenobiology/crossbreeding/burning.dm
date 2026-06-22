@@ -1,7 +1,7 @@
 /*
 Burning extracts:
 	Have a unique, primarily offensive effect when
-	filled with 10u plasma and activated in-hand.
+	filled with 10u phoron and activated in-hand.
 */
 /obj/item/slimecross/burning
 	name = "burning extract"
@@ -14,11 +14,11 @@ Burning extracts:
 	create_reagents(10, INJECTABLE | DRAWABLE)
 
 /obj/item/slimecross/burning/attack_self(mob/user)
-	if(!reagents.has_reagent(/datum/reagent/toxin/plasma, 10))
-		to_chat(user, span_warning("This extract needs to be full of plasma to activate!"))
+	if(!reagents.has_reagent(/datum/reagent/toxin/phoron, 10))
+		to_chat(user, span_warning("This extract needs to be full of phoron to activate!"))
 		return
-	reagents.remove_reagent(/datum/reagent/toxin/plasma, 10)
-	to_chat(user, span_notice("You squeeze the extract, and it absorbs the plasma!"))
+	reagents.remove_reagent(/datum/reagent/toxin/phoron, 10)
+	to_chat(user, span_notice("You squeeze the extract, and it absorbs the phoron!"))
 	playsound(src, 'sound/effects/bubbles/bubbles.ogg', 50, TRUE)
 	playsound(src, 'sound/effects/magic/fireball.ogg', 50, TRUE)
 	do_effect(user)
@@ -106,12 +106,12 @@ Burning extracts:
 
 /obj/item/slimecross/burning/darkpurple
 	colour = SLIME_TYPE_DARK_PURPLE
-	effect_desc = "Creates a cloud of plasma."
+	effect_desc = "Creates a cloud of phoron."
 
 /obj/item/slimecross/burning/darkpurple/do_effect(mob/user)
-	user.visible_message(span_danger("[src] sublimates into a cloud of plasma!"))
+	user.visible_message(span_danger("[src] sublimates into a cloud of phoron!"))
 	var/turf/T = get_turf(user)
-	T.atmos_spawn_air("[GAS_PLASMA]=60")
+	T.atmos_spawn_air("[GAS_PHORON]=60")
 	return ..()
 
 /obj/item/slimecross/burning/darkblue

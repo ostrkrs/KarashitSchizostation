@@ -966,7 +966,7 @@
 /obj/item/stack/rods/ten,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/storage/box/lights/bulbs,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 30
 	},
 /obj/item/stock_parts/power_store/cell/high,

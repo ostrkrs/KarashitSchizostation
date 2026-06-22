@@ -133,7 +133,7 @@
 /turf/open/floor/iron/dark/herringbone,
 /area/ruin/syndibiodome)
 "bB" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/window/indestructible{
 	id = "bsyndidomRD";
 	name = "Lockdown Shutters"
@@ -236,7 +236,7 @@
 /area/ruin/syndibiodome)
 "cE" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/syndibiodome)
@@ -846,7 +846,7 @@
 /turf/open/floor/iron/white/small,
 /area/ruin/syndibiodome)
 "kd" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
@@ -988,7 +988,7 @@
 /turf/open/floor/carpet/black,
 /area/ruin/syndibiodome)
 "lm" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/curtain/bounty/start_closed,
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
@@ -1188,7 +1188,7 @@
 /turf/open/floor/grass,
 /area/ruin/syndibiodome)
 "oQ" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/indestructible{
 	id = "biosurglockdown";
 	name = "Surgery Lockdown Shutters"
@@ -1218,7 +1218,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/noteleport)
 "pj" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/window/indestructible{
 	id = "biodomearmor";
 	name = "Security Post Lockdown Shutters"
@@ -1393,7 +1393,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/syndibiodome)
 "si" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/curtain/bounty/start_closed,
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
@@ -2231,7 +2231,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Av" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/curtain/bounty/start_closed,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
@@ -2457,7 +2457,7 @@
 /turf/open/floor/stone/icemoon,
 /area/icemoon/surface/outdoors/noteleport)
 "Do" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/indestructible{
 	id = "biosurglockdown";
 	name = "Surgery Lockdown Shutters"
@@ -2550,7 +2550,7 @@
 	id = "biodomearmor";
 	name = "Security Post Lockdown Shutters"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
@@ -2666,7 +2666,7 @@
 /obj/structure/railing/corner{
 	dir = 1
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
 "Gh" = (
@@ -3190,7 +3190,7 @@
 /obj/structure/railing/corner/end{
 	dir = 8
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
 "Mo" = (
@@ -3410,7 +3410,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Oy" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/indestructible{
 	name = "Cytology Shutters"
 	},
@@ -3548,7 +3548,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "Qc" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/window/indestructible{
 	id = "biodomearmor";
 	name = "Security Post Lockdown Shutters"
@@ -4189,7 +4189,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/surface/outdoors/noteleport)
 "WB" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
 "WC" = (
@@ -4310,7 +4310,7 @@
 /obj/structure/railing/corner/end/flip{
 	dir = 4
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
 "Yz" = (
@@ -4453,7 +4453,7 @@
 /area/ruin/syndibiodome)
 "ZW" = (
 /obj/structure/curtain/bounty,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndibiodome)
 

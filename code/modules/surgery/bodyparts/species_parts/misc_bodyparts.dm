@@ -387,6 +387,9 @@
 	bodypart_flags = BODYPART_UNHUSKABLE
 	wing_types = list(/obj/item/organ/wings/functional/skeleton)
 
+/obj/item/bodypart/chest/skeleton/get_butt_sprite()
+	return icon('icons/mob/butts.dmi', BUTT_SPRITE_SKELETON)
+
 /obj/item/bodypart/arm/left/skeleton
 	biological_state = (BIO_BONE|BIO_JOINTED)
 	limb_id = SPECIES_SKELETON

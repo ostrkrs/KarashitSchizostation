@@ -4,7 +4,7 @@
 	dir = 8;
 	id = "interdynebridge"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "ab" = (
@@ -98,8 +98,8 @@
 /area/shuttle/pirate)
 "ar" = (
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
-/obj/item/stack/sheet/mineral/plasma/five,
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/storage/box/beakers/variety,
 /obj/item/storage/box/beakers/variety,
@@ -521,7 +521,7 @@
 /obj/effect/turf_decal/trimline/yellow/warning{
 	dir = 1
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/power/shuttle_engine/heater,
 /turf/open/floor/plating/airless,
 /area/shuttle/pirate)
@@ -568,7 +568,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "interdynebridge"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "qy" = (
@@ -595,7 +595,7 @@
 	dir = 1;
 	id = "interdynebridge"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "vB" = (
@@ -620,9 +620,9 @@
 "wf" = (
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
+/obj/item/stack/sheet/mineral/phoron,
+/obj/item/stack/sheet/mineral/phoron,
 /obj/machinery/reagentgrinder,
 /obj/item/storage/box/monkeycubes/syndicate,
 /obj/item/storage/box/monkeycubes/syndicate,
@@ -630,7 +630,7 @@
 /obj/item/reagent_containers/cup/bottle,
 /obj/item/reagent_containers/cup/bottle,
 /obj/item/reagent_containers/cup/beaker/meta,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/item/stack/sheet/mineral/uranium/five,
 /obj/item/stack/sheet/mineral/uranium/five,
 /obj/item/stack/sheet/mineral/uranium/five,
@@ -706,7 +706,7 @@
 	dir = 4;
 	id = "interdynebridge"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "En" = (
@@ -726,7 +726,7 @@
 /obj/effect/turf_decal/trimline/yellow/warning{
 	dir = 1
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating/airless,
 /area/shuttle/pirate)
 "GS" = (
@@ -759,7 +759,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Ks" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/preopen{
 	dir = 8;
 	id = "interdynebridge"

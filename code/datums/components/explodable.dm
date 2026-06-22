@@ -12,7 +12,7 @@
 	var/flash_range = 3
 	/// Whether this explosion ignores the bombcap.
 	var/uncapped
-	/// Whether we always delete. Useful for nukes turned plasma and such, so they don't default delete and can survive
+	/// Whether we always delete. Useful for nukes turned phoron and such, so they don't default delete and can survive
 	var/delete_after
 	/// For items, lets us determine where things should be hit.
 	var/equipped_slot

@@ -109,20 +109,20 @@
 	desc = "This statue has a sickening green colour."
 	icon_state = "eng"
 
-////////////////////////////plasma///////////////////////////////////////////////////////////////////////
+////////////////////////////phoron///////////////////////////////////////////////////////////////////////
 
-/obj/structure/statue/plasma
+/obj/structure/statue/phoron
 	max_integrity = 200
 	impressiveness = 20
-	desc = "This statue is suitably made from plasma."
-	custom_materials = list(/datum/material/plasma=SHEET_MATERIAL_AMOUNT*5)
-	abstract_type = /obj/structure/statue/plasma
+	desc = "This statue is suitably made from phoron."
+	custom_materials = list(/datum/material/phoron=SHEET_MATERIAL_AMOUNT*5)
+	abstract_type = /obj/structure/statue/phoron
 
-/obj/structure/statue/plasma/scientist
+/obj/structure/statue/phoron/scientist
 	name = "statue of a scientist"
 	icon_state = "sci"
 
-/obj/structure/statue/plasma/xeno
+/obj/structure/statue/phoron/xeno
 	name = "statue of a xenomorph"
 	icon_state = "xeno"
 

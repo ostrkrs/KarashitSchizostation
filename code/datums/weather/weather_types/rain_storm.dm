@@ -53,10 +53,10 @@
 	whitelist_weather_reagents = list(/datum/reagent/blood)
 	probability = 0 // admeme event
 
-// Fun fact - if you increase the weather_temperature higher than LIQUID_PLASMA_BP
-// the plasma rain will vaporize into a gas on whichever turf it lands on
-/datum/weather/rain_storm/plasma
-	whitelist_weather_reagents = list(/datum/reagent/toxin/plasma)
+// Fun fact - if you increase the weather_temperature higher than LIQUID_PHORON_BP
+// the phorona rain will vaporize into a gas on whichever turf it lands on
+/datum/weather/rain_storm/phoron
+	whitelist_weather_reagents = list(/datum/reagent/toxin/phoron)
 	probability = 0 // maybe for icebox maps one day?
 
 /datum/weather/rain_storm/deep_fried

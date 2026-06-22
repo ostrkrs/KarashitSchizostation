@@ -83,34 +83,34 @@
 /turf/open/floor/glass/reinforced/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
-/turf/open/floor/glass/plasma
-	name = "plasma glass floor"
-	desc = "Studies by the Nanotrasen Materials Safety Division have not yet determined if this is safe to jump on, do so at your own risk."
-	icon = 'icons/turf/floors/plasma_glass.dmi'
-	icon_state = "plasma_glass-0"
-	base_icon_state = "plasma_glass"
-	floor_tile = /obj/item/stack/tile/glass/plasma
+/turf/open/floor/glass/phoron
+	name = "phoron glass floor"
+	desc = "It's not yet determined if this is safe to jump on, do so at your own risk."
+	icon = 'icons/turf/floors/phoron_glass.dmi'
+	icon_state = "phoron_glass-0"
+	base_icon_state = "phoron_glass"
+	floor_tile = /obj/item/stack/tile/glass/phoron
 	starlight_color = COLOR_STRONG_VIOLET
 	alpha_to_leave = 255
 
-/turf/open/floor/glass/plasma/icemoon
+/turf/open/floor/glass/phoron/icemoon
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 
-/turf/open/floor/glass/plasma/airless
+/turf/open/floor/glass/phoron/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
-/turf/open/floor/glass/reinforced/plasma
-	name = "reinforced plasma glass floor"
+/turf/open/floor/glass/reinforced/phoron
+	name = "reinforced phoron glass floor"
 	desc = "Do jump on it, jump on it while in a mecha, it can take it."
-	icon = 'icons/turf/floors/reinf_plasma_glass.dmi'
-	icon_state = "reinf_plasma_glass-0"
-	base_icon_state = "reinf_plasma_glass"
-	floor_tile = /obj/item/stack/tile/rglass/plasma
+	icon = 'icons/turf/floors/reinf_phoron_glass.dmi'
+	icon_state = "reinf_phoron_glass-0"
+	base_icon_state = "reinf_phoron_glass"
+	floor_tile = /obj/item/stack/tile/rglass/phoron
 	starlight_color = COLOR_STRONG_VIOLET
 	alpha_to_leave = 206
 
-/turf/open/floor/glass/reinforced/plasma/icemoon
+/turf/open/floor/glass/reinforced/phoron/icemoon
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 
-/turf/open/floor/glass/reinforced/plasma/airless
+/turf/open/floor/glass/reinforced/phoron/airless
 	initial_gas_mix = AIRLESS_ATMOS

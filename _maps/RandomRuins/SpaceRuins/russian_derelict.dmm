@@ -151,7 +151,7 @@
 /turf/template_noop,
 /area/ruin/space/solars/ks13/aft_solars)
 "bC" = (
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "bE" = (
@@ -197,7 +197,7 @@
 "bT" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "bY" = (
@@ -447,7 +447,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "ek" = (
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /obj/effect/decal/cleanable/greenglow/radioactive,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ks13/engineering/supermatter)
@@ -583,7 +583,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ks13/ai/corridor)
 "gd" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "ge" = (
@@ -1413,8 +1413,8 @@
 /area/ruin/space/ks13/service/cafe)
 "pD" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/item/shard/plasma,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/item/shard/phoron,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "pF" = (
@@ -1496,7 +1496,7 @@
 /area/ruin/space/ks13/service/chapel)
 "qa" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "qd" = (
@@ -1922,8 +1922,8 @@
 /area/space/nearstation)
 "so" = (
 /obj/structure/grille/broken,
-/obj/item/shard/plasma,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/item/shard/phoron,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "sp" = (
@@ -3211,7 +3211,7 @@
 /area/ruin/space/ks13/ai/vault)
 "zg" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "zi" = (
@@ -3415,8 +3415,8 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/hallway/central)
 "Al" = (
-/obj/item/shard/plasma,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/item/shard/phoron,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "Am" = (
@@ -4014,7 +4014,7 @@
 "DA" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/structure/grille/broken,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "DB" = (
@@ -4243,7 +4243,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/science/rnd)
 "EC" = (
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /turf/template_noop,
 /area/ruin/space/ks13/engineering/supermatter)
 "ED" = (
@@ -4922,7 +4922,7 @@
 /area/ruin/space/ks13/engineering/supermatter)
 "HX" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "Ia" = (
@@ -4938,7 +4938,7 @@
 "If" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "Ig" = (
@@ -5349,7 +5349,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ks13/command/bridge_hall)
 "Kp" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/effect/mapping_helpers/damaged_window,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
@@ -5644,7 +5644,7 @@
 /area/ruin/space/ks13/engineering/aft_solars_control)
 "LZ" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "Mc" = (
@@ -5657,7 +5657,7 @@
 /area/ruin/space/ks13/service/hydro)
 "Mf" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "Mg" = (
@@ -5721,7 +5721,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/service/kitchen)
 "My" = (
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
@@ -5949,8 +5949,8 @@
 "NE" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/item/shard/plasma,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/item/shard/phoron,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "NF" = (
@@ -6712,7 +6712,7 @@
 /obj/effect/mapping_helpers/broken_floor,
 /obj/structure/cable,
 /obj/item/stack/rods,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "RG" = (
@@ -6859,7 +6859,7 @@
 "Sn" = (
 /obj/structure/grille/broken,
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "So" = (
@@ -7101,7 +7101,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/science/genetics)
 "Tg" = (
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "Th" = (
@@ -7560,7 +7560,7 @@
 /area/ruin/space/ks13/hallway/central)
 "Vx" = (
 /obj/effect/decal/cleanable/greenglow/radioactive,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "VB" = (
@@ -7768,7 +7768,7 @@
 "WH" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /obj/item/stack/rods,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
@@ -7845,8 +7845,8 @@
 /area/ruin/space/ks13/ai/vault)
 "WZ" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/item/shard/plasma,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/item/shard/phoron,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "Xa" = (
@@ -8275,7 +8275,7 @@
 /obj/item/stack/sheet/mineral/uranium{
 	amount = 15
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 15
 	},
 /turf/open/floor/circuit/red/airless,

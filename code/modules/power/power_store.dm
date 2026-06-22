@@ -18,7 +18,7 @@
 	var/rating_base = STANDARD_CELL_CHARGE
 	///Maximum charge in cell units
 	var/maxcharge = STANDARD_CELL_CHARGE
-	///If the cell has been booby-trapped by injecting it with plasma. Chance on use() to explode.
+	///If the cell has been booby-trapped by injecting it with phoron. Chance on use() to explode.
 	var/rigged = FALSE
 	///If the power cell was damaged by an explosion, chance for it to become corrupted and function the same as rigged.
 	var/corrupted = FALSE
@@ -209,7 +209,7 @@
 /obj/item/stock_parts/power_store/proc/on_reagent_change(datum/reagents/holder)
 	SIGNAL_HANDLER
 
-	rigged = corrupted || !!holder.has_reagent(/datum/reagent/toxin/plasma, 5) //has_reagent returns the reagent datum
+	rigged = corrupted || !!holder.has_reagent(/datum/reagent/toxin/phoron, 5) //has_reagent returns the reagent datum
 
 /obj/item/stock_parts/power_store/proc/explode()
 	if(!charge)

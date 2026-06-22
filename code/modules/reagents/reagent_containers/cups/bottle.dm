@@ -91,10 +91,10 @@
 	desc = "A small bottle of unstable mutagen. Randomly changes the DNA structure of whoever comes in contact."
 	list_reagents = list(/datum/reagent/toxin/mutagen = 30)
 
-/obj/item/reagent_containers/cup/bottle/plasma
-	name = "liquid plasma bottle"
-	desc = "A small bottle of liquid plasma. Extremely toxic and reacts with micro-organisms inside blood."
-	list_reagents = list(/datum/reagent/toxin/plasma = 30)
+/obj/item/reagent_containers/cup/bottle/phoron
+	name = "liquid phoron bottle"
+	desc = "A small bottle of liquid phoron. Extremely toxic and reacts with micro-organisms inside blood."
+	list_reagents = list(/datum/reagent/toxin/phoron = 30)
 
 /obj/item/reagent_containers/cup/bottle/synaptizine
 	name = "synaptizine bottle"

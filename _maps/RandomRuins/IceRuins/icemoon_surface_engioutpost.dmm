@@ -269,18 +269,18 @@
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "bA" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 8
 	},
 /turf/open/floor/engine,
 /area/ruin/planetengi)
 "bB" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump{
 	dir = 4
 	},
@@ -485,7 +485,7 @@
 /turf/open/floor/iron,
 /area/ruin/planetengi)
 "ct" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
 /obj/structure/cable,
 /turf/open/floor/engine,
 /area/ruin/planetengi)
@@ -607,7 +607,7 @@
 /turf/open/floor/catwalk_floor/iron,
 /area/ruin/planetengi)
 "cY" = (
-/obj/item/stack/sheet/plasmarglass,
+/obj/item/stack/sheet/phoron_rglass,
 /obj/item/card/id/advanced/engioutpost,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,

@@ -7,7 +7,7 @@ GLOBAL_LIST_INIT(gas_id_to_canister, init_gas_id_to_canister())
 		GAS_N2 = /obj/machinery/portable_atmospherics/canister/nitrogen,
 		GAS_O2 = /obj/machinery/portable_atmospherics/canister/oxygen,
 		GAS_CO2 = /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
-		GAS_PLASMA = /obj/machinery/portable_atmospherics/canister/plasma,
+		GAS_PHORON = /obj/machinery/portable_atmospherics/canister/phoron,
 		GAS_N2O = /obj/machinery/portable_atmospherics/canister/nitrous_oxide,
 		GAS_NITRIUM = /obj/machinery/portable_atmospherics/canister/nitrium,
 		GAS_BZ = /obj/machinery/portable_atmospherics/canister/bz,

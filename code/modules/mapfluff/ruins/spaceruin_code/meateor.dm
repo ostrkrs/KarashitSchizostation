@@ -68,8 +68,8 @@
 	/// Types of organ we can spawn
 	var/static/list/allowed_organs = list(
 		/obj/item/organ/heart/gland/egg = 7,
-		/obj/item/organ/heart/gland/plasma = 7,
-		/obj/item/organ/alien/plasmavessel = 5,
+		/obj/item/organ/heart/gland/phoron = 7,
+		/obj/item/organ/alien/phoron_vessel = 5,
 		/obj/item/organ/heart/gland/chem = 5,
 		/obj/item/organ/heart/gland/mindshock = 5,
 		/obj/item/organ/heart/gland/spiderman = 5,

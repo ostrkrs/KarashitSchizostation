@@ -192,7 +192,7 @@
 /turf/open/floor/iron/showroomfloor/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "gS" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/whiteship/box)
@@ -712,7 +712,7 @@
 /obj/structure/closet/crate{
 	icon_state = "crateopen"
 	},
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)
 "ut" = (
@@ -1465,7 +1465,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)
 "VD" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)

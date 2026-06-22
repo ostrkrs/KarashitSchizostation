@@ -993,7 +993,7 @@
 /area/ruin/space/has_grav/hellfactoryoffice)
 "Zh" = (
 /obj/structure/closet/crate/trashcart,
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hellfactory)
 "Zq" = (

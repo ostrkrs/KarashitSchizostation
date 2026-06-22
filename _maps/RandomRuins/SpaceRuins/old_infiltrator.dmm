@@ -419,7 +419,7 @@
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
 "CC" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/unpowered)
 "CX" = (
@@ -502,7 +502,7 @@
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
 "Ix" = (
-/obj/item/tank/internals/plasma/empty{
+/obj/item/tank/internals/phoron/empty{
 	pixel_y = -13;
 	pixel_x = -12
 	},
@@ -570,7 +570,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/unpowered)
 "NY" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters{
 	id = "ruined_infiltrator_shutters";
 	name = "Cockpit Shutters"

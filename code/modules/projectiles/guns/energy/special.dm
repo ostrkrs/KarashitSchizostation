@@ -117,9 +117,9 @@
 
 /obj/item/gun/energy/plasmacutter/attackby(obj/item/I, mob/user)
 	var/charge_multiplier = 0 //2 = Refined stack, 1 = Ore
-	if(istype(I, /obj/item/stack/sheet/mineral/plasma))
+	if(istype(I, /obj/item/stack/sheet/mineral/phoron))
 		charge_multiplier = 2
-	if(istype(I, /obj/item/stack/ore/plasma))
+	if(istype(I, /obj/item/stack/ore/phoron))
 		charge_multiplier = 1
 	if(charge_multiplier)
 		if(cell.charge == cell.maxcharge)

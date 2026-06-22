@@ -214,8 +214,8 @@
 	update_appearance()
 
 /obj/item/weldingtool/fueled/proc/explode()
-	var/plasmaAmount = inserted_tank.reagents.get_reagent_amount(/datum/reagent/toxin/plasma)
-	dyn_explosion(src, plasmaAmount/5, explosion_cause = src) // 20 plasma in a standard welder has a 4 power explosion. no breaches, but enough to kill/dismember holder
+	var/phoronAmount = inserted_tank.reagents.get_reagent_amount(/datum/reagent/toxin/phoron)
+	dyn_explosion(src, phoronAmount/5, explosion_cause = src)
 	QDEL_NULL(inserted_tank)
 	qdel(src)
 
@@ -282,7 +282,7 @@
 	if(inserted_tank && !inserted_tank.reagents)
 		balloon_alert(user, "no fuel!")
 		return
-	if(inserted_tank.reagents.has_reagent(/datum/reagent/toxin/plasma))
+	if(inserted_tank.reagents.has_reagent(/datum/reagent/toxin/phoron))
 		message_admins("[ADMIN_LOOKUPFLW(user)] activated a rigged welder at [AREACOORD(user)].")
 		user.log_message("activated a rigged welder", LOG_VICTIM)
 		explode()
@@ -398,7 +398,7 @@
 	icon = 'icons/obj/antags/abductor.dmi'
 	icon_state = "welder"
 	toolspeed = 0.1
-	custom_materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/silver = SHEET_MATERIAL_AMOUNT*1.25, /datum/material/plasma =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/titanium =SHEET_MATERIAL_AMOUNT, /datum/material/diamond =SHEET_MATERIAL_AMOUNT)
+	custom_materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/silver = SHEET_MATERIAL_AMOUNT*1.25, /datum/material/phoron =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/titanium =SHEET_MATERIAL_AMOUNT, /datum/material/diamond =SHEET_MATERIAL_AMOUNT)
 	light_system = NO_LIGHT_SUPPORT
 	light_range = 0
 	change_icons = FALSE
@@ -418,7 +418,7 @@
 	desc = "An experimental welder capable of self-fuel generation, is less harmful to the eyes AND can weld in the vacuum of space!"
 	icon_state = "exwelder"
 	inhand_icon_state = "exwelder"
-	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass = SMALL_MATERIAL_AMOUNT*5, /datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT*1.5, /datum/material/uranium =SMALL_MATERIAL_AMOUNT * 2)
+	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass = SMALL_MATERIAL_AMOUNT*5, /datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT*1.5, /datum/material/uranium =SMALL_MATERIAL_AMOUNT * 2)
 	change_icons = FALSE
 	can_off_process = TRUE
 	light_range = 1
@@ -520,7 +520,7 @@
 	. = ..()
 
 /obj/item/welder_tank/proc/get_fuel()
-	return reagents.get_reagent_amount(/datum/reagent/fuel) + reagents.get_reagent_amount(/datum/reagent/toxin/plasma)
+	return reagents.get_reagent_amount(/datum/reagent/fuel) + reagents.get_reagent_amount(/datum/reagent/toxin/phoron)
 
 /obj/item/welder_tank/examine(mob/user)
 	. = ..()

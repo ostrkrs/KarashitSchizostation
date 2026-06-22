@@ -51,7 +51,7 @@ GLOBAL_LIST(chemical_reactions_results_lookup_list)
 GLOBAL_LIST(fake_reagent_blacklist)
 /// Turfs metalgen can't touch
 GLOBAL_LIST_INIT(blacklisted_metalgen_types, typecacheof(list(
-	/turf/closed/indestructible, //indestructible turfs should be indestructible, metalgen transmutation to plasma allows them to be destroyed
+	/turf/closed/indestructible, //indestructible turfs should be indestructible, metalgen transmutation to phoron allows them to be destroyed
 	/turf/open/indestructible
 )))
 /// Map of reagent names to its datum path
@@ -76,7 +76,7 @@ GLOBAL_LIST_INIT(plant_traits, init_plant_traits())
  * Chemical Reactions - Initialises all /datum/chemical_reaction into a list
  * It is filtered into multiple lists within a list.
  * For example:
- * chemical_reactions_list_reactant_index[/datum/reagent/toxin/plasma] is a list of all reactions relating to plasma
+ * chemical_reactions_list_reactant_index[/datum/reagent/toxin/phoron] is a list of all reactions relating to phoron
  * For chemical reaction list product index - indexes reactions based off the product reagent type - see get_recipe_from_reagent_product() in helpers
  * For chemical reactions list lookup list - creates a bit list of info passed to the UI. This is saved to reduce lag from new windows opening, since it's a lot of data.
  */

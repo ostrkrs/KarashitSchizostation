@@ -132,7 +132,7 @@
 #define ORGAN_SLOT_XENO_EGGSAC "eggsac"
 #define ORGAN_SLOT_XENO_HIVENODE "hive_node"
 #define ORGAN_SLOT_XENO_NEUROTOXINGLAND "neurotoxin_gland"
-#define ORGAN_SLOT_XENO_PLASMAVESSEL "plasma_vessel"
+#define ORGAN_SLOT_XENO_PHORONVESSEL "phoron_vessel"
 #define ORGAN_SLOT_XENO_RESINSPINNER "resin_spinner"
 
 //organ defines
@@ -183,7 +183,7 @@ GLOBAL_LIST_INIT(organ_process_order, list(
 	ORGAN_SLOT_BRAIN_CNS,
 	ORGAN_SLOT_PARASITE_EGG,
 	ORGAN_SLOT_MONSTER_CORE,
-	ORGAN_SLOT_XENO_PLASMAVESSEL,
+	ORGAN_SLOT_XENO_PHORONVESSEL,
 	ORGAN_SLOT_XENO_HIVENODE,
 	ORGAN_SLOT_XENO_RESINSPINNER,
 	ORGAN_SLOT_XENO_ACIDGLAND,
@@ -212,7 +212,7 @@ GLOBAL_LIST_INIT(organ_process_order, list(
 #define GOLEM_FOOD_GLASS "golem_food_glass"
 #define GOLEM_FOOD_URANIUM "golem_food_uranium"
 #define GOLEM_FOOD_SILVER "golem_food_silver"
-#define GOLEM_FOOD_PLASMA "golem_food_plasma"
+#define GOLEM_FOOD_PHORON "golem_food_phoron"
 #define GOLEM_FOOD_GOLD "golem_food_gold"
 #define GOLEM_FOOD_DIAMOND "golem_food_diamond"
 #define GOLEM_FOOD_TITANIUM "golem_food_titanium"
@@ -228,7 +228,7 @@ GLOBAL_LIST_INIT(golem_stack_food_types, list(
 	GOLEM_FOOD_GLASS = new /datum/golem_food_buff/glass(),
 	GOLEM_FOOD_URANIUM = new /datum/golem_food_buff/uranium(),
 	GOLEM_FOOD_SILVER = new /datum/golem_food_buff/silver(),
-	GOLEM_FOOD_PLASMA = new /datum/golem_food_buff/plasma(),
+	GOLEM_FOOD_PHORON = new /datum/golem_food_buff/phoron(),
 	GOLEM_FOOD_GOLD = new /datum/golem_food_buff/gold(),
 	GOLEM_FOOD_DIAMOND = new /datum/golem_food_buff/diamond(),
 	GOLEM_FOOD_TITANIUM = new /datum/golem_food_buff/titanium(),
@@ -250,8 +250,8 @@ GLOBAL_LIST_INIT(golem_stack_food_directory, list(
 	/obj/item/stack/ore/uranium = GLOB.golem_stack_food_types[GOLEM_FOOD_URANIUM],
 	/obj/item/stack/sheet/mineral/silver = GLOB.golem_stack_food_types[GOLEM_FOOD_SILVER],
 	/obj/item/stack/ore/silver = GLOB.golem_stack_food_types[GOLEM_FOOD_SILVER],
-	/obj/item/stack/sheet/mineral/plasma = GLOB.golem_stack_food_types[GOLEM_FOOD_PLASMA],
-	/obj/item/stack/ore/plasma = GLOB.golem_stack_food_types[GOLEM_FOOD_PLASMA],
+	/obj/item/stack/sheet/mineral/phoron = GLOB.golem_stack_food_types[GOLEM_FOOD_PHORON],
+	/obj/item/stack/ore/phoron = GLOB.golem_stack_food_types[GOLEM_FOOD_PHORON],
 	/obj/item/stack/sheet/mineral/gold = GLOB.golem_stack_food_types[GOLEM_FOOD_GOLD],
 	/obj/item/stack/ore/gold = GLOB.golem_stack_food_types[GOLEM_FOOD_GOLD],
 	/obj/item/stack/sheet/mineral/diamond = GLOB.golem_stack_food_types[GOLEM_FOOD_DIAMOND],

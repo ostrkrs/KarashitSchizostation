@@ -8,10 +8,10 @@
 	circuit = /obj/item/circuitboard/computer/atmos_control/oxygen_tank
 	atmos_chambers = list(ATMOS_GAS_MONITOR_O2 = "Oxygen Supply")
 
-/obj/machinery/computer/atmos_control/plasma_tank
-	name = "Plasma Supply Control"
-	circuit = /obj/item/circuitboard/computer/atmos_control/plasma_tank
-	atmos_chambers = list(ATMOS_GAS_MONITOR_PLAS = "Plasma Supply")
+/obj/machinery/computer/atmos_control/phoron_tank
+	name = "Phoron Supply Control"
+	circuit = /obj/item/circuitboard/computer/atmos_control/phoron_tank
+	atmos_chambers = list(ATMOS_GAS_MONITOR_PHORON = "Phoron Supply")
 
 /obj/machinery/computer/atmos_control/air_tank
 	name = "Mixed Air Supply Control"

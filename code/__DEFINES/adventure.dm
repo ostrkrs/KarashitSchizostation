@@ -31,7 +31,7 @@
 
 
 // Scanner bands, use these to guess what's in the site and prepare drone accordingly.
-#define EXOSCANNER_BAND_PLASMA "Plasma absorption band"
+#define EXOSCANNER_BAND_PHORON "Phoron absorption band"
 #define EXOSCANNER_BAND_LIFE "Hydrocarbons/Molecular oxygen"
 #define EXOSCANNER_BAND_TECH "Narrow-band radio waves"
 #define EXOSCANNER_BAND_RADIATION "Exotic Radiation"

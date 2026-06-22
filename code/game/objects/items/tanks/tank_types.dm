@@ -3,7 +3,7 @@
  * Oxygen
  * Anesthetic
  * Air
- * Plasma
+ * Phoron
  * Emergency Oxygen
  * Generic
  */
@@ -87,25 +87,25 @@
 	air_contents.gases[/datum/gas/nitrous_oxide][MOLES] = (10*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
 
 /*
- * Plasma
+ * Phoron
  */
-/obj/item/tank/internals/plasma
-	name = "plasma tank"
-	desc = "Contains dangerous plasma. Do not inhale. Warning: extremely flammable."
-	icon_state = "plasma"
-	inhand_icon_state = "plasma_tank"
-	worn_icon_state = "plasmatank"
+/obj/item/tank/internals/phoron
+	name = "phoron tank"
+	desc = "Contains dangerous phoron. Do not inhale. Warning: extremely flammable."
+	icon_state = "phoron"
+	inhand_icon_state = "phoron_tank"
+	worn_icon_state = "phorontank"
 	tank_holder_icon_state = null
 	obj_flags = CONDUCTS_ELECTRICITY
 	slot_flags = null //they have no straps!
 	force = 8
 
 
-/obj/item/tank/internals/plasma/populate_gas()
-	air_contents.assert_gas(/datum/gas/plasma)
-	air_contents.gases[/datum/gas/plasma][MOLES] = (3*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
+/obj/item/tank/internals/phoron/populate_gas()
+	air_contents.assert_gas(/datum/gas/phoron)
+	air_contents.gases[/datum/gas/phoron][MOLES] = (3*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
 
-/obj/item/tank/internals/plasma/attackby(obj/item/W, mob/user, list/modifiers, list/attack_modifiers)
+/obj/item/tank/internals/phoron/attackby(obj/item/W, mob/user, list/modifiers, list/attack_modifiers)
 	if(istype(W, /obj/item/flamethrower))
 		var/obj/item/flamethrower/F = W
 		if ((!F.status) || (F.ptank))
@@ -118,54 +118,12 @@
 	else
 		return ..()
 
-/obj/item/tank/internals/plasma/full/populate_gas()
-	air_contents.assert_gas(/datum/gas/plasma)
-	air_contents.gases[/datum/gas/plasma][MOLES] = (10*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
+/obj/item/tank/internals/phoron/full/populate_gas()
+	air_contents.assert_gas(/datum/gas/phoron)
+	air_contents.gases[/datum/gas/phoron][MOLES] = (10*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
 
-/obj/item/tank/internals/plasma/empty/populate_gas()
+/obj/item/tank/internals/phoron/empty/populate_gas()
 	return
-
-/*
- * Plasmaman Plasma Tank
- */
-
-/obj/item/tank/internals/plasmaman
-	name = "plasma internals tank"
-	desc = "A tank of plasma gas designed specifically for use as internals, particularly for plasma-based lifeforms. If you're not a Plasmaman, you probably shouldn't use this."
-	icon_state = "plasmaman_tank"
-	inhand_icon_state = "plasmaman_tank"
-	tank_holder_icon_state = null
-	force = 10
-	distribute_pressure = TANK_PLASMAMAN_RELEASE_PRESSURE
-
-/obj/item/tank/internals/plasmaman/populate_gas()
-	air_contents.assert_gas(/datum/gas/plasma)
-	air_contents.gases[/datum/gas/plasma][MOLES] = (3*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
-
-/obj/item/tank/internals/plasmaman/full/populate_gas()
-	air_contents.assert_gas(/datum/gas/plasma)
-	air_contents.gases[/datum/gas/plasma][MOLES] = (10*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
-
-
-/obj/item/tank/internals/plasmaman/belt
-	icon_state = "plasmaman_tank_belt"
-	inhand_icon_state = "plasmaman_tank_belt"
-	worn_icon_state = "plasmaman_tank_belt"
-	tank_holder_icon_state = null
-	worn_icon = null
-	slot_flags = ITEM_SLOT_BELT
-	force = 5
-	volume = 6 //same size as the engineering ones but plasmamen have special lungs that consume less plasma per breath
-	w_class = WEIGHT_CLASS_SMALL //thanks i forgot this
-
-/obj/item/tank/internals/plasmaman/belt/full/populate_gas()
-	air_contents.assert_gas(/datum/gas/plasma)
-	air_contents.gases[/datum/gas/plasma][MOLES] = (10*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C)
-
-/obj/item/tank/internals/plasmaman/belt/empty/populate_gas()
-	return
-
-
 
 /*
  * Emergency Oxygen

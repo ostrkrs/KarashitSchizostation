@@ -193,7 +193,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/virtual_domain)
 "hg" = (
-/obj/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor{
 	id = "fslockdown";
 	name = "Ship Blast Door";
@@ -1136,7 +1136,7 @@
 /obj/structure/closet/crate/secure/gear{
 	req_access = list("syndicate")
 	},
-/obj/item/stack/ore/plasma{
+/obj/item/stack/ore/phoron{
 	amount = 19
 	},
 /turf/open/floor/mineral/plastitanium,

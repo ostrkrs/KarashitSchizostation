@@ -849,7 +849,6 @@ GLOBAL_LIST_INIT(vox_sounds, list(
 	"piss" = 'sound/announcer/vox_fem/piss.ogg',
 	"plant" = 'sound/announcer/vox_fem/plant.ogg',
 	"plasma" = 'sound/announcer/vox_fem/plasma.ogg',
-	"plasmaman" = 'sound/announcer/vox_fem/plasmaman.ogg',
 	"platform" = 'sound/announcer/vox_fem/platform.ogg',
 	"plating" = 'sound/announcer/vox_fem/plating.ogg',
 	"plausible" = 'sound/announcer/vox_fem/plausible.ogg',

@@ -37,11 +37,11 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "bb" = (
 /obj/item/food/badrecipe/moldy,
-/obj/item/tank/internals/plasma/empty{
+/obj/item/tank/internals/phoron/empty{
 	pixel_x = -10;
 	pixel_y = 4
 	},
-/obj/item/tank/internals/plasma/empty{
+/obj/item/tank/internals/phoron/empty{
 	pixel_y = 4
 	},
 /obj/item/popsicle_stick,
@@ -532,7 +532,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "BN" = (
-/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/phoron/full,
 /obj/effect/decal/cleanable/fuel_pool,
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating/dumpsterair,
@@ -554,7 +554,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "DR" = (
-/obj/item/shard/plasma{
+/obj/item/shard/phoron{
 	pixel_x = -8;
 	pixel_y = 4
 	},

@@ -1102,7 +1102,7 @@
 /obj/effect/turf_decal/tile/purple/full,
 /obj/effect/turf_decal/tile/purple/full,
 /obj/effect/turf_decal/tile/purple/full,
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/machinery/door/window/right/directional/north,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
@@ -1294,7 +1294,6 @@
 	},
 /obj/structure/table/glass,
 /obj/item/storage/medkit/fire,
-/obj/item/toy/plush/plasmamanplushie,
 /turf/open/indestructible,
 /area/deathmatch)
 "Wy" = (

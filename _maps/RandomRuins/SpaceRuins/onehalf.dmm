@@ -851,7 +851,7 @@
 "cZ" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/ore/bluespace_crystal,
-/obj/item/coin/plasma,
+/obj/item/coin/phoron,
 /obj/item/lighter,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/onehalf/bridge)

@@ -187,15 +187,15 @@
 #define BURN_MULTIPLIER 0.05
 
 /// Heat immunity, turns heat damage into local power
-/datum/status_effect/golem/plasma
-	overlay_state_prefix = "plasma"
-	mineral_name = "plasma"
-	applied_fluff = "Plasma cooling rods sprout from your body. You can take the heat!"
-	alert_icon_state = "sheet-plasma"
+/datum/status_effect/golem/phoron
+	overlay_state_prefix = "phoron"
+	mineral_name = "phoron"
+	applied_fluff = "Phoron cooling rods sprout from your body. You can take the heat!"
+	alert_icon_state = "sheet-phoron"
 	alert_desc = "You are protected from high pressure and can convert heat damage into power."
 	filter_color = LIGHT_COLOR_PINK
 
-/datum/status_effect/golem/plasma/on_apply()
+/datum/status_effect/golem/phoron/on_apply()
 	. = ..()
 	if (!.)
 		return FALSE
@@ -205,7 +205,7 @@
 	human_owner.physiology.burn_mod *= BURN_MULTIPLIER
 	return TRUE
 
-/datum/status_effect/golem/plasma/on_remove()
+/datum/status_effect/golem/phoron/on_remove()
 	owner.remove_traits(list(TRAIT_RESISTHIGHPRESSURE, TRAIT_RESISTHEAT, TRAIT_ASHSTORM_IMMUNE), TRAIT_STATUS_EFFECT(id))
 	UnregisterSignal(owner, COMSIG_MOB_APPLY_DAMAGE)
 	var/mob/living/carbon/human/human_owner = owner
@@ -213,7 +213,7 @@
 	return ..()
 
 /// When we take fire damage (or... technically also cold damage, we don't differentiate), zap a nearby APC
-/datum/status_effect/golem/plasma/proc/on_burned(datum/source, damage, damagetype, ...)
+/datum/status_effect/golem/phoron/proc/on_burned(datum/source, damage, damagetype, ...)
 	SIGNAL_HANDLER
 	if(damagetype != BURN)
 		return
@@ -234,7 +234,7 @@
 #undef BURN_MULTIPLIER
 
 /// Shoot a beam at the target atom
-/datum/status_effect/golem/plasma/proc/zap_effect(atom/target)
+/datum/status_effect/golem/phoron/proc/zap_effect(atom/target)
 	owner.Beam(target, icon_state = "lightning[rand(1,12)]", time = 0.5 SECONDS)
 	playsound(owner, 'sound/effects/magic/lightningshock.ogg', vol = 50, vary = TRUE)
 

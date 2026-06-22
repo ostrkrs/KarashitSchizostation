@@ -43,7 +43,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "do" = (
 /turf/open/floor/iron/white,
@@ -96,7 +96,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "gY" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -306,7 +306,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "tu" = (
 /obj/structure/table,
@@ -735,8 +735,8 @@
 	},
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/structure/cable,
-/obj/item/stack/sheet/mineral/plasma/thirty,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/comms_agent/maint)
@@ -796,7 +796,7 @@
 /turf/open/floor/plating/snowed/standard_air,
 /area/ruin/comms_agent)
 "OB" = (
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "OM" = (
 /turf/open/misc/asteroid/snow/icemoon,

@@ -1930,7 +1930,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Mo" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/plasma/end{
+/obj/effect/spawner/structure/window/hollow/reinforced/phoron/end{
 	dir = 4
 	},
 /obj/structure/sign/warning/electric_shock/directional/west,
@@ -2148,7 +2148,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/powered/biooutpost/vault)
 "Qh" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/plasma/end{
+/obj/effect/spawner/structure/window/hollow/reinforced/phoron/end{
 	dir = 8
 	},
 /obj/structure/sign/warning/electric_shock/directional/east,

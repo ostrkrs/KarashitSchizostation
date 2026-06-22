@@ -1,6 +1,6 @@
 /* In this file:
  *
- * Plasma floor
+ * Phoron floor
  * Gold floor
  * Silver floor
  * Bananium floor
@@ -31,19 +31,19 @@
 		icon_state = initial(icon_state)
 	return ..()
 
-//PLASMA
+//PHORON
 
-/turf/open/floor/mineral/plasma
-	name = "plasma floor"
-	icon_state = "plasma"
-	floor_tile = /obj/item/stack/tile/mineral/plasma
-	icons = list("plasma","plasma_dam")
-	custom_materials = list(/datum/material/plasma = SMALL_MATERIAL_AMOUNT*5)
+/turf/open/floor/mineral/phoron
+	name = "phoron floor"
+	icon_state = "phoron"
+	floor_tile = /obj/item/stack/tile/mineral/phoron
+	icons = list("phoron","phoron_dam")
+	custom_materials = list(/datum/material/phoron = SMALL_MATERIAL_AMOUNT*5)
 	rust_resistance = RUST_RESISTANCE_BASIC
 
-//Plasma floor that can't be removed, for disco inferno
+//Phoron floor that can't be removed, for disco inferno
 
-/turf/open/floor/mineral/plasma/disco/crowbar_act(mob/living/user, obj/item/I)
+/turf/open/floor/mineral/phoron/disco/crowbar_act(mob/living/user, obj/item/I)
 	return
 
 

@@ -22,7 +22,7 @@
 //
 // I'm not sure everyone will react the emag's features so please say what your opinions are of it. (I'm pretty sure the players like it)
 //
-// When emagged it will rig every light it replaces with plasma, which will slowly heat up and ignite while the light is on.
+// When emagged it will rig every light it replaces with phoron, which will slowly heat up and ignite while the light is on.
 // This is VERY noticable, even the device's name changes when you emag it so if anyone
 // examines you when you're holding it in your hand, you will be discovered.
 //
@@ -91,7 +91,7 @@
 			user.balloon_alert(user, "need [LIGHTBULB_COST] glass sheets!")
 		return TRUE
 
-	if(insert.type == /obj/item/shard) //we don't want to insert plasma, titanium or other types of shards
+	if(insert.type == /obj/item/shard) //we don't want to insert phoron, titanium or other types of shards
 		if(!user.temporarilyRemoveItemFromInventory(insert))
 			user.balloon_alert(user, "stuck in your hand!")
 			return TRUE
@@ -168,7 +168,7 @@
 	obj_flags |= EMAGGED
 	playsound(loc, SFX_SPARKS, 100, TRUE, SHORT_RANGE_SOUND_EXTRARANGE)
 	update_appearance()
-	to_chat(user, span_warning("[src]'s lights are now filled with plasma! Be careful to only install them in disabled light fixtures, lest they explode!"))
+	to_chat(user, span_warning("[src]'s lights are now filled with phoron! Be careful to only install them in disabled light fixtures, lest they explode!"))
 	return FALSE
 
 /obj/item/lightreplacer/update_name(updates)
@@ -309,7 +309,7 @@
 	target.brightness = old_light.brightness
 	if(obj_flags & EMAGGED)
 		target.create_reagents(LIGHT_REAGENT_CAPACITY, SEALED_CONTAINER | TRANSPARENT)
-		target.reagents.add_reagent(/datum/reagent/toxin/plasma, 10)
+		target.reagents.add_reagent(/datum/reagent/toxin/phoron, 10)
 	target.on = target.has_power()
 	target.update()
 	//clean up

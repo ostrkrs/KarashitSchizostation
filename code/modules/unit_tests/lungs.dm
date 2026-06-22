@@ -3,7 +3,7 @@
 #define TEST_ALERT_INHIBIT_MESSAGE(lungs_organ, alert_name) TEST_CHECK_BREATH_MESSAGE(lungs_organ, "threw alert [alert_name] when it wasn't expected.")
 #define GET_MOLES(gas_mixture, gas_type) (gas_mixture.gases[gas_type] ? gas_mixture.gases[gas_type][MOLES] : 0)
 
-/// Tests the standard, plasmaman, and lavaland lungs organ to ensure breathing and suffocation behave as expected.
+/// Tests the standard and lavaland lungs organ to ensure breathing and suffocation behave as expected.
 /// Performs a check on each main (can be life-sustaining) gas, and ensures gas alerts are only thrown when expected.
 /datum/unit_test/lungs
 	abstract_type = /datum/unit_test/lungs
@@ -35,24 +35,6 @@
 	lab_rat = allocate(/mob/living/carbon/human/consistent)
 	test_lungs = allocate(/obj/item/organ/lungs)
 	// Test one breath of Nitrogen. Suffocate due to the breath being 100% N2.
-	lungs_test_check_breath("pure Nitrogen", lab_rat, test_lungs, nitro_test_mix, expect_failure = TRUE)
-
-/// Tests the Plasmaman lungs organ to ensure Plasma breathing and suffocation behave as expected.
-/datum/unit_test/lungs/lungs_sanity_plasmaman
-
-/datum/unit_test/lungs/lungs_sanity_plasmaman/Run()
-	// 2500 Litres of pure Plasma.
-	var/datum/gas_mixture/plasma_test_mix = create_plasma_mix()
-	var/mob/living/carbon/human/lab_rat = allocate(/mob/living/carbon/human/consistent)
-	var/obj/item/organ/lungs/plasmaman/test_lungs = allocate(/obj/item/organ/lungs/plasmaman)
-	// Test one breath of Plasma on Plasmaman lungs.
-	lungs_test_check_breath("pure Plasma", lab_rat, test_lungs, plasma_test_mix)
-
-	// Tests suffocation with Nitrogen.
-	var/datum/gas_mixture/nitro_test_mix = create_nitrogen_mix()
-	lab_rat = allocate(/mob/living/carbon/human/consistent)
-	test_lungs = allocate(/obj/item/organ/lungs/plasmaman)
-	// Test one breath of Nitrogen on Plasmaman lungs.
 	lungs_test_check_breath("pure Nitrogen", lab_rat, test_lungs, nitro_test_mix, expect_failure = TRUE)
 
 /// Tests the lavaland/Ashwalker lungs organ.
@@ -89,20 +71,20 @@
 	var/oxygen_pp = 0
 	var/nitro_pp = 0
 	var/co2_pp = 0
-	var/plasma_pp = 0
+	var/phoron_pp = 0
 	if(test_breath.total_moles() > 0)
 		oxygen_pp = test_breath.get_breath_partial_pressure(GET_MOLES(test_breath, /datum/gas/oxygen))
 		nitro_pp = test_breath.get_breath_partial_pressure(GET_MOLES(test_breath, /datum/gas/nitrogen))
 		co2_pp = test_breath.get_breath_partial_pressure(GET_MOLES(test_breath, /datum/gas/carbon_dioxide))
-		plasma_pp = test_breath.get_breath_partial_pressure(GET_MOLES(test_breath, /datum/gas/plasma))
+		phoron_pp = test_breath.get_breath_partial_pressure(GET_MOLES(test_breath, /datum/gas/phoron))
 
 	// Minimum and maximum gas tolerances for the 4 main life-sustaining gases.
 	var/min_oxygen = test_lungs.safe_oxygen_min
 	var/min_nitro = test_lungs.safe_nitro_min
-	var/min_plasma = test_lungs.safe_plasma_min
+	var/min_phoron = test_lungs.safe_phoron_min
 	var/max_oxygen = test_lungs.safe_oxygen_max
 	var/max_co2 = test_lungs.safe_co2_max
-	var/max_plasma = test_lungs.safe_plasma_max
+	var/max_phoron = test_lungs.safe_phoron_max
 
 	// Test a single "breath" of air.
 	var/status_code = test_lungs.check_breath(test_breath, lab_rat)
@@ -123,14 +105,14 @@
 
 	lungs_test_alert_max(lab_rat, test_lungs, ALERT_TOO_MUCH_CO2, max_co2, co2_pp)
 
-	lungs_test_alert_min(lab_rat, test_lungs, ALERT_NOT_ENOUGH_PLASMA, min_plasma, plasma_pp)
-	lungs_test_alert_max(lab_rat, test_lungs, ALERT_TOO_MUCH_PLASMA, max_plasma, plasma_pp)
+	lungs_test_alert_min(lab_rat, test_lungs, ALERT_NOT_ENOUGH_PHORON, min_phoron, phoron_pp)
+	lungs_test_alert_max(lab_rat, test_lungs, ALERT_TOO_MUCH_PHORON, max_phoron, phoron_pp)
 
 	// Track the volumes of O2 and CO2 which are expected to be exhaled.
 	var/expected_oxygen = GET_MOLES(test_breath_backup, /datum/gas/oxygen)
 	var/expected_nitro = GET_MOLES(test_breath_backup, /datum/gas/nitrogen)
 	var/expected_co2 = GET_MOLES(test_breath_backup, /datum/gas/carbon_dioxide)
-	var/expected_plasma = GET_MOLES(test_breath_backup, /datum/gas/plasma)
+	var/expected_phoron = GET_MOLES(test_breath_backup, /datum/gas/phoron)
 
 	// Setup expectations for main gas exchange tests.
 	if(min_oxygen)
@@ -139,9 +121,9 @@
 	if(min_nitro)
 		expected_co2 += GET_MOLES(test_breath_backup, /datum/gas/nitrogen)
 		expected_nitro = 0
-	if(min_plasma)
-		expected_co2 += GET_MOLES(test_breath_backup, /datum/gas/plasma)
-		expected_plasma = 0
+	if(min_phoron)
+		expected_co2 += GET_MOLES(test_breath_backup, /datum/gas/phoron)
+		expected_phoron = 0
 
 	// Validate conversion of inhaled gas to exhaled gas.
 	if(min_oxygen)
@@ -150,9 +132,9 @@
 	if(min_nitro)
 		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/nitrogen), expected_nitro), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should consume all Nitrogen initially present in the breath."))
 		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/carbon_dioxide), expected_co2), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should convert Nitrogen into an equivalent volume of CO2."))
-	if(min_plasma)
-		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/plasma), expected_plasma), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should consume all Plasma initially present in the breath."))
-		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/carbon_dioxide), expected_co2), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should convert Plasma into an equivalent volume of CO2."))
+	if(min_phoron)
+		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/phoron), expected_phoron), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should consume all Phoron initially present in the breath."))
+		TEST_ASSERT(molar_cmp_equals(GET_MOLES(test_breath, /datum/gas/carbon_dioxide), expected_co2), TEST_CHECK_BREATH_MESSAGE(test_lungs, "should convert Phoron into an equivalent volume of CO2."))
 
 /// Tests minimum gas alerts by comparing gas pressure.
 /datum/unit_test/lungs/proc/lungs_test_alert_min(mob/living/carbon/human/lab_rat, obj/item/organ/lungs/test_lungs, alert_name, min_pressure, pressure)
@@ -184,10 +166,6 @@
 /// Set up a pure Nitrogen gas mix.
 /datum/unit_test/lungs/proc/create_nitrogen_mix()
 	return create_gas_mix(list(/datum/gas/nitrogen = 1))
-
-/// Set up an O2/N2 gas mix which is "ideal" for plasmamen.
-/datum/unit_test/lungs/proc/create_plasma_mix()
-	return create_gas_mix(list(/datum/gas/plasma = 1))
 
 /// Set up an Lavaland gas mix which is "ideal" for Ashwalker life.
 /datum/unit_test/lungs/proc/create_lavaland_mix()

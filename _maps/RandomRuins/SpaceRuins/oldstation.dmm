@@ -1226,7 +1226,7 @@
 /obj/item/stack/sheet/mineral/titanium{
 	amount = 30
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 25
 	},
 /obj/machinery/light/small/broken/directional/east,
@@ -1870,7 +1870,7 @@
 /area/ruin/space/ancientstation/delta/rnd)
 "iv" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ancientstation/beta/supermatter)
 "iy" = (
@@ -1942,7 +1942,7 @@
 	dir = 8
 	},
 /obj/structure/fluff/broken_canister_frame,
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/beta/atmos)
 "iI" = (
@@ -2618,7 +2618,7 @@
 	pixel_x = 25;
 	pixel_y = 23
 	},
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ancientstation/beta/supermatter)
 "lJ" = (
@@ -2692,7 +2692,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/hall)
 "mc" = (
-/turf/closed/mineral/plasma,
+/turf/closed/mineral/phoron,
 /area/ruin/space/ancientstation/charlie/dorms)
 "md" = (
 /obj/structure/sign/warning/secure_area,
@@ -3843,7 +3843,7 @@
 	welded = 1;
 	anchored = 1
 	},
-/obj/structure/window/plasma/spawner/directional/west{
+/obj/structure/window/phoron/spawner/directional/west{
 	anchored = 0
 	},
 /turf/open/floor/engine/airless,
@@ -4149,7 +4149,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ancientstation/beta/supermatter)
@@ -4646,7 +4646,7 @@
 /area/ruin/space/ancientstation/delta/rnd)
 "yQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/window/plasma/spawner/directional/south,
+/obj/structure/window/phoron/spawner/directional/south,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ancientstation/beta/supermatter)
 "yS" = (
@@ -4704,7 +4704,7 @@
 /area/ruin/space/ancientstation/delta/biolab)
 "zm" = (
 /obj/machinery/door/window/brigdoor/right/directional/west{
-	name = "Plasma Canister Storage"
+	name = "Phoron Canister Storage"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -4904,7 +4904,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/hall)
 "Ax" = (
-/turf/closed/mineral/plasma,
+/turf/closed/mineral/phoron,
 /area/ruin/space/ancientstation/beta/hall)
 "Az" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4954,7 +4954,7 @@
 /obj/effect/decal/cleanable/glass,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/turf_decal/stripes/line,
-/obj/structure/tank_dispenser/plasma,
+/obj/structure/tank_dispenser/phoron,
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/beta/atmos)
 "AS" = (
@@ -5240,7 +5240,7 @@
 /turf/open/floor/engine,
 /area/ruin/space/ancientstation/delta/biolab)
 "CN" = (
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ancientstation/beta/supermatter)
 "CP" = (
@@ -5676,10 +5676,10 @@
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/charlie/storage)
 "FP" = (
-/obj/item/shard/plasma{
-	icon_state = "plasmasmall"
+/obj/item/shard/phoron{
+	icon_state = "phoronsmall"
 	},
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mapping_helpers/broken_floor,
@@ -5746,7 +5746,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/ancientstation/charlie/hall)
 "Gi" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/east,
@@ -6154,7 +6154,7 @@
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Jb" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/tank/internals/plasma/full{
+/obj/item/tank/internals/phoron/full{
 	pixel_y = -6;
 	pixel_x = -6
 	},
@@ -6790,7 +6790,7 @@
 /area/ruin/space/ancientstation/charlie/hydro)
 "Ms" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/window/plasma/spawner/directional/east,
+/obj/structure/window/phoron/spawner/directional/east,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating/airless,
@@ -6918,7 +6918,7 @@
 /obj/machinery/power/energy_accumulator/grounding_rod{
 	anchored = 1
 	},
-/obj/structure/window/plasma/spawner/directional/west,
+/obj/structure/window/phoron/spawner/directional/west,
 /turf/open/floor/engine/airless,
 /area/ruin/space/ancientstation/beta/supermatter)
 "Nx" = (
@@ -7268,7 +7268,7 @@
 /area/ruin/space/ancientstation/delta/proto)
 "Pw" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /turf/open/floor/plating/foam{
 	initial_gas_mix = "TEMP=2.7"
 	},
@@ -7803,7 +7803,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/beta/hall)
 "Tt" = (
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /obj/machinery/atmospherics/components/unary/vent_pump,
 /turf/open/floor/plating/foam{
 	initial_gas_mix = "TEMP=2.7"
@@ -7917,7 +7917,7 @@
 "Ul" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/glass/plasma,
+/obj/effect/decal/cleanable/glass/phoron,
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 1
 	},
@@ -7959,7 +7959,7 @@
 /turf/open/floor/catwalk_floor,
 /area/ruin/space/ancientstation/beta/mining)
 "Uu" = (
-/turf/closed/mineral/plasma,
+/turf/closed/mineral/phoron,
 /area/space/nearstation)
 "UA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8108,8 +8108,8 @@
 /area/ruin/space/ancientstation/charlie/sec)
 "VT" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/shard/plasma{
-	icon_state = "plasmasmall"
+/obj/item/shard/phoron{
+	icon_state = "phoronsmall"
 	},
 /turf/open/floor/engine/airless,
 /area/ruin/space/ancientstation/beta/supermatter)
@@ -8472,7 +8472,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/ancientstation/delta/ai)
 "Yp" = (
-/turf/closed/mineral/plasma,
+/turf/closed/mineral/phoron,
 /area/ruin/space/ancientstation/beta/atmos)
 "Yq" = (
 /obj/effect/decal/cleanable/generic,

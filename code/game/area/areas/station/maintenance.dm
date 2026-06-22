@@ -247,9 +247,6 @@
 /area/station/maintenance/space_hut/cabin
 	name = "Abandoned Cabin"
 
-/area/station/maintenance/space_hut/plasmaman
-	name = "\improper Abandoned Plasmaman Friendly Startup"
-
 /area/station/maintenance/space_hut/observatory
 	name = "\improper Space Observatory"
 

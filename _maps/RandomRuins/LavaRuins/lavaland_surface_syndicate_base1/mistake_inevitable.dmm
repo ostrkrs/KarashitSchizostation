@@ -108,15 +108,15 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/syndicate_lava_base/testlab)
 "hK" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor{
 	id = "lavalandsyndi_mistake"
 	},
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/testlab)
 "iF" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
@@ -131,8 +131,8 @@
 /turf/open/floor/engine,
 /area/ruin/syndicate_lava_base/testlab)
 "kw" = (
-/obj/item/stack/sheet/plasmarglass,
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/item/stack/sheet/phoron_rglass,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
 /turf/open/floor/engine,
 /area/ruin/syndicate_lava_base/testlab)
 "kE" = (
@@ -204,7 +204,7 @@
 	dir = 1;
 	filter_type = list(/datum/gas/nitrogen)
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
 /turf/open/floor/engine,
 /area/ruin/syndicate_lava_base/testlab)
 "uG" = (
@@ -256,14 +256,14 @@
 /area/ruin/syndicate_lava_base/testlab)
 "Ch" = (
 /obj/machinery/power/supermatter_crystal/shard/syndicate,
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
 /turf/open/floor/engine,
 /area/ruin/syndicate_lava_base/testlab)
 "EC" = (
 /obj/machinery/door/poddoor{
 	id = "lavalandsyndi_mistake"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/testlab)
 "HC" = (
@@ -277,7 +277,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/syndicate_lava_base/testlab)
 "IG" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/testlab)
@@ -293,8 +293,8 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/ruin/syndicate_lava_base/testlab)
 "OO" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 1
 	},

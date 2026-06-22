@@ -20,7 +20,7 @@
 	if(!isnull(species_override))
 		user.set_species(species_override)
 
-	else if (!isnull(user.dna.species.outfit_important_for_life)) //plasmamen get lit on fire and die
+	else if (!isnull(user.dna.species.outfit_important_for_life))
 		user.set_species(/datum/species/human)
 
 	for(var/datum/action/act as anything in spells_to_add)
@@ -326,11 +326,11 @@
 	uniform = /obj/item/clothing/under/rank/rnd/scientist
 	suit = /obj/item/clothing/suit/armor/reactive/stealth
 	mask = /obj/item/clothing/mask/gas
-	l_hand = /obj/item/reagent_containers/syringe/plasma
+	l_hand = /obj/item/reagent_containers/syringe/phoron
 	l_pocket = /obj/item/slimecross/stabilized/sepia
 	r_pocket = /obj/item/slimecross/stabilized/purple
 	backpack_contents = list(
-		/obj/item/reagent_containers/cup/bottle/plasma,
+		/obj/item/reagent_containers/cup/bottle/phoron,
 		/obj/item/slimecross/burning/grey,
 		/obj/item/slimecross/burning/adamantine,
 		/obj/item/slimecross/burning/gold,
@@ -850,36 +850,6 @@
 
 	mutations_to_add = list(/obj/item/dnainjector/shock) // pretend ethereals are interesting
 
-/datum/outfit/deathmatch_loadout/plasmamen
-	name = "Deathmatch: Plasmaman Species"
-	display_name = "Plasmamen"
-	desc = "Burn baby burn!"
-	species_override = /datum/species/plasmaman
-
-	head = /obj/item/clothing/head/helmet/space/plasmaman/atmospherics
-	suit = /obj/item/clothing/suit/hazardvest
-	suit_store = /obj/item/flashlight
-	uniform = /obj/item/clothing/under/plasmaman/atmospherics
-	id_trim = /datum/id_trim/job/atmospheric_technician
-	id = /obj/item/card/id/advanced/chameleon
-	belt = /obj/item/storage/belt/utility/atmostech
-	gloves = /obj/item/clothing/gloves/color/plasmaman/atmos
-	shoes = /obj/item/clothing/shoes/workboots
-	r_pocket = /obj/item/tank/internals/plasmaman/belt/full
-
-	back = /obj/item/storage/backpack/industrial
-
-	backpack_contents = list(
-		/obj/item/toy/plush/plasmamanplushie,
-		/obj/item/tank/internals/plasma,
-		/obj/item/tank/internals/plasmaman,
-		/obj/item/stack/sheet/mineral/uranium/half,
-		/obj/item/stack/sheet/mineral/plasma/thirty,
-		/obj/item/reagent_containers/condiment/milk,
-		/obj/item/storage/medkit/fire,
-		/obj/item/reagent_containers/syringe/plasma
-	)
-
 //spleef
 
 /datum/outfit/deathmatch_loadout/lattice_battles
@@ -913,7 +883,6 @@
 	name = "Deathmatch: Cultist Invoker"
 	display_name = "Cultist Invoker"
 	desc = "Prove Nar'sie's superiority with your well-balanced set of equipment."
-	//species_override = /datum/species/plasmaman
 
 	head = /obj/item/clothing/head/hooded/cult_hoodie/cult_shield
 	glasses = /obj/item/clothing/glasses/hud/health/night/cultblind
@@ -941,7 +910,6 @@
 	name = "Deathmatch: Cultist Artificer"
 	display_name = "Cultist Artificer"
 	desc = "Prove Nar'sie's superiority with your well-balanced blood magicks."
-	//species_override = /datum/species/plasmaman
 
 	head = /obj/item/clothing/head/hooded/cult_hoodie
 	neck = /obj/item/clothing/neck/heretic_focus/crimson_medallion
@@ -1082,7 +1050,6 @@
 	name = "Deathmatch: Holy Crusader"
 	display_name = "Holy Crusader"
 	desc = "Smite the heathens!!"
-	//species_override = /datum/species/plasmaman
 
 	head = /obj/item/clothing/head/helmet/chaplain
 	neck = /obj/item/camera/spooky

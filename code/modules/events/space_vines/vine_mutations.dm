@@ -289,20 +289,20 @@
 		gas_mix.gases[/datum/gas/carbon_dioxide][MOLES] = max(gas_mix.gases[/datum/gas/carbon_dioxide][MOLES] - GAS_MUTATION_REMOVAL_MULTIPLIER * holder.growth_stage, 0)
 		gas_mix.garbage_collect()
 
-/datum/spacevine_mutation/plasma_eater
-	name = "Plasma consuming"
-	description = "Consumes Plasma from the surrounding area."
+/datum/spacevine_mutation/phoron_eater
+	name = "Phoron consuming"
+	description = "Consumes Phoron from the surrounding area."
 	hue = "#9074b6"
 	severity = SEVERITY_AVERAGE
 	quality = POSITIVE
 
-/datum/spacevine_mutation/plasma_eater/process_mutation(obj/structure/spacevine/holder)
+/datum/spacevine_mutation/phoron_eater/process_mutation(obj/structure/spacevine/holder)
 	var/turf/open/floor/turf = holder.loc
 	if(istype(turf))
 		var/datum/gas_mixture/gas_mix = turf.air
-		if(!gas_mix.gases[/datum/gas/plasma])
+		if(!gas_mix.gases[/datum/gas/phoron])
 			return
-		gas_mix.gases[/datum/gas/plasma][MOLES] = max(gas_mix.gases[/datum/gas/plasma][MOLES] - GAS_MUTATION_REMOVAL_MULTIPLIER * holder.growth_stage, 0)
+		gas_mix.gases[/datum/gas/phoron][MOLES] = max(gas_mix.gases[/datum/gas/phoron][MOLES] - GAS_MUTATION_REMOVAL_MULTIPLIER * holder.growth_stage, 0)
 		gas_mix.garbage_collect()
 
 /datum/spacevine_mutation/thorns

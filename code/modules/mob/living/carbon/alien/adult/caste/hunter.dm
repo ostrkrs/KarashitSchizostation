@@ -14,7 +14,7 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver/alien,
 		ORGAN_SLOT_EARS = /obj/item/organ/ears,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach/alien,
-		ORGAN_SLOT_XENO_PLASMAVESSEL = /obj/item/organ/alien/plasmavessel/small,
+		ORGAN_SLOT_XENO_PHORONVESSEL = /obj/item/organ/alien/phoron_vessel/small,
 		ORGAN_SLOT_EXTERNAL_TAIL = /obj/item/organ/tail/xeno,
 	)
 
@@ -55,7 +55,7 @@
 		//It's also extremely buggy visually, so it's balance+bugfix
 		return
 
-	else //Maybe uses plasma in the future, although that wouldn't make any sense...
+	else //Maybe uses phoron in the future, although that wouldn't make any sense...
 		leaping = TRUE
 		//Because the leaping sprite is bigger than the normal one
 		add_offsets(LEAPING_TRAIT, x_add = -8, animate = FALSE)

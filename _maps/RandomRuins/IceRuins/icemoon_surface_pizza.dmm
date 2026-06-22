@@ -603,7 +603,7 @@
 "AP" = (
 /obj/structure/table,
 /obj/item/clothing/suit/jacket/puffer,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /turf/open/floor/plating,
 /area/ruin/pizzeria)
 "AZ" = (

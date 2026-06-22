@@ -50,7 +50,7 @@
 			context[SCREENTIP_CONTEXT_LMB] = "Insert cell"
 			return CONTEXTUAL_SCREENTIP_SET
 
-		if(istype(held_item, /obj/item/stack/sheet/mineral/plasma) && !QDELETED(powerdevice))
+		if(istype(held_item, /obj/item/stack/sheet/mineral/phoron) && !QDELETED(powerdevice))
 			context[SCREENTIP_CONTEXT_LMB] = "Charge cell"
 			return CONTEXTUAL_SCREENTIP_SET
 
@@ -80,7 +80,7 @@
 		. += span_notice("Its display shows: [display_energy(our_cell.charge)].")
 		if(opened)
 			. += span_notice("The cell can be removed with an empty hand.")
-			. += span_notice("Plasma sheets can be used to recharge the cell.")
+			. += span_notice("Phoron sheets can be used to recharge the cell.")
 	else
 		. += span_warning("It's missing a power cell.")
 
@@ -134,7 +134,7 @@
 		powerdevice = tool
 		return ITEM_INTERACT_SUCCESS
 
-	else if(istype(tool, /obj/item/stack/sheet/mineral/plasma) && !QDELETED(powerdevice))
+	else if(istype(tool, /obj/item/stack/sheet/mineral/phoron) && !QDELETED(powerdevice))
 		if(!powerdevice.used_charge())
 			balloon_alert(user, "fully charged!")
 			return ITEM_INTERACT_FAILURE
@@ -258,7 +258,7 @@
 	if(!QDELETED(our_cell))
 		. += span_notice("Its display shows: [display_energy(our_cell.charge)].")
 		if(opened)
-			. += span_notice("Plasma sheets can be used to recharge the cell.")
+			. += span_notice("Phoron sheets can be used to recharge the cell.")
 	else
 		. += span_warning("It's missing a power cell.")
 	. += span_notice("Its battery compartment can be [EXAMINE_HINT("screwed")] [opened ? "shut" : "open"].")

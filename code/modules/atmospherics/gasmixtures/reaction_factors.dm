@@ -13,15 +13,15 @@
 		"Energy" = "[MIASTER_STERILIZATION_ENERGY] joules of energy is released per mole of miasma sterilized.",
 	)
 
-/datum/gas_reaction/plasmafire/init_factors()
+/datum/gas_reaction/phoronfire/init_factors()
 	factor = list(
-		/datum/gas/oxygen = "Oxygen consumption is determined by the temperature, ranging from [OXYGEN_BURN_RATIO_BASE] moles per mole of plasma consumed at [PLASMA_MINIMUM_BURN_TEMPERATURE] Kelvins to [OXYGEN_BURN_RATIO_BASE-1] moles per mole of plasma consumed at [PLASMA_UPPER_TEMPERATURE] Kelvins. Higher oxygen concentration up to [PLASMA_OXYGEN_FULLBURN] times the plasma increases the speed of plasma consumption.",
-		/datum/gas/plasma = "Plasma is consumed at a rate that scales with the difference between the temperature and [PLASMA_MINIMUM_BURN_TEMPERATURE]K, with maximum scaling at [PLASMA_UPPER_TEMPERATURE]K.",
-		/datum/gas/tritium = "Tritium is formed at 1 mole per mole of plasma consumed if there are at least 97 times more oxygen than plasma.",
-		/datum/gas/water_vapor = "Water vapor is formed at 0.25 moles per mole of plasma consumed if tritium isn't being formed.",
-		/datum/gas/carbon_dioxide = "Carbon Dioxide is formed at 0.75 moles per mole of plasma consumed if tritium isn't being formed.",
-		"Temperature" = "Minimum temperature of [PLASMA_MINIMUM_BURN_TEMPERATURE] kelvin to occur. Higher temperature up to [PLASMA_UPPER_TEMPERATURE]K increases the oxygen efficiency and also the plasma consumption rate.",
-		"Energy" = "[FIRE_PLASMA_ENERGY_RELEASED] joules of energy is released per mole of plasma consumed.",
+		/datum/gas/oxygen = "Oxygen consumption is determined by the temperature, ranging from [OXYGEN_BURN_RATIO_BASE] moles per mole of phoron consumed at [PHORON_MINIMUM_BURN_TEMPERATURE] Kelvins to [OXYGEN_BURN_RATIO_BASE-1] moles per mole of phoron consumed at [PHORON_UPPER_TEMPERATURE] Kelvins. Higher oxygen concentration up to [PHORON_OXYGEN_FULLBURN] times the phoron increases the speed of phoron consumption.",
+		/datum/gas/phoron = "Phoron is consumed at a rate that scales with the difference between the temperature and [PHORON_MINIMUM_BURN_TEMPERATURE]K, with maximum scaling at [PHORON_UPPER_TEMPERATURE]K.",
+		/datum/gas/tritium = "Tritium is formed at 1 mole per mole of phoron consumed if there are at least 97 times more oxygen than phoron.",
+		/datum/gas/water_vapor = "Water vapor is formed at 0.25 moles per mole of phoron consumed if tritium isn't being formed.",
+		/datum/gas/carbon_dioxide = "Carbon Dioxide is formed at 0.75 moles per mole of phoron consumed if tritium isn't being formed.",
+		"Temperature" = "Minimum temperature of [PHORON_MINIMUM_BURN_TEMPERATURE] kelvin to occur. Higher temperature up to [PHORON_UPPER_TEMPERATURE]K increases the oxygen efficiency and also the phoron consumption rate.",
+		"Energy" = "[FIRE_PHORON_ENERGY_RELEASE] joules of energy is released per mole of phoron consumed.",
 	)
 
 /datum/gas_reaction/h2fire/init_factors()
@@ -75,11 +75,11 @@
 
 /datum/gas_reaction/bzformation/init_factors()
 	factor = list(
-		/datum/gas/plasma = "Each mole of BZ made consumes 0.8 moles of plasma. If there is more plasma than nitrous oxide, bz formation rate gets slowed down.",
-		/datum/gas/nitrous_oxide = "Each mole of bz made consumes 0.4 moles of Nitrous oxide. If there is less nitrous oxide than plasma the reaction rate is slowed down. At three times the amount of plasma to Nitrous oxide it will start breaking down into Nitrogen and Oxygen, the lower the ratio the more Nitrous oxide decomposes.",
-		/datum/gas/bz = "The lower the pressure and larger the volume the more bz gets made. Less nitrous oxide than plasma will slow down the reaction.",
-		/datum/gas/nitrogen = "Each mole Nitrous oxide decomposed makes 1 mol Nitrogen. Lower ratio of Nitrous oxide to Plasma means a higher ratio of decomposition to BZ production.",
-		/datum/gas/oxygen = "Each mole Nitrous oxide decomposed makes 0.5 moles Oxygen. Lower ratio of Nitrous oxide to Plasma means a higher ratio of decomposition to BZ production.",
+		/datum/gas/phoron = "Each mole of BZ made consumes 0.8 moles of phoron. If there is more phoron than nitrous oxide, bz formation rate gets slowed down.",
+		/datum/gas/nitrous_oxide = "Each mole of bz made consumes 0.4 moles of Nitrous oxide. If there is less nitrous oxide than phoron the reaction rate is slowed down. At three times the amount of phoron to Nitrous oxide it will start breaking down into Nitrogen and Oxygen, the lower the ratio the more Nitrous oxide decomposes.",
+		/datum/gas/bz = "The lower the pressure and larger the volume the more bz gets made. Less nitrous oxide than phoron will slow down the reaction.",
+		/datum/gas/nitrogen = "Each mole Nitrous oxide decomposed makes 1 mol Nitrogen. Lower ratio of Nitrous oxide to Phoron means a higher ratio of decomposition to BZ production.",
+		/datum/gas/oxygen = "Each mole Nitrous oxide decomposed makes 0.5 moles Oxygen. Lower ratio of Nitrous oxide to Phoron means a higher ratio of decomposition to BZ production.",
 		"Energy" = "[BZ_FORMATION_ENERGY] joules of energy is released per mol of BZ made. Nitrous oxide decomposition releases [N2O_DECOMPOSITION_ENERGY] per mol decomposed",
 	)
 
@@ -116,7 +116,7 @@
 
 /datum/gas_reaction/freonformation/init_factors()
 	factor = list(
-		/datum/gas/plasma = "At least 0.06 moles of plasma needs to be present. Plasma is consumed at 0.6 moles per mole of freon formed.",
+		/datum/gas/phoron = "At least 0.06 moles of phoron needs to be present. Phoron is consumed at 0.6 moles per mole of freon formed.",
 		/datum/gas/carbon_dioxide = "At least 0.03 moles of CO2 needs to be present. CO2 is consumed at 0.3 moles per mole of freon formed.",
 		/datum/gas/bz = "At least 0.01 moles of BZ needs to be present. BZ is consumed at 0.1 moles per mole of freon formed.",
 		/datum/gas/freon = "Freon is produced at a rate that scales with the sum of a quadratic exponential and sigmoidal function, with the quadratic exponential peaking at 800 Kelvin, but the sigmoidal function takes dominance at over 5,500K being up to 3 times more efficient.",
@@ -197,10 +197,10 @@
 /datum/gas_reaction/proto_nitrate_bz_response/init_factors()
 	factor = list(
 		/datum/gas/proto_nitrate = "[MINIMUM_MOLE_COUNT] moles of proto-nitrate needs to be present for the reaction to occur. Proto-nitrate accelerates the BZ decomposition.",
-		/datum/gas/bz = "BZ gets decomposed into plasma and nitrous oxide. The nitrous oxide then decomposes into nitrogen and oxygen, with the oxygen then decaying into helium.",
+		/datum/gas/bz = "BZ gets decomposed into phoron and nitrous oxide. The nitrous oxide then decomposes into nitrogen and oxygen, with the oxygen then decaying into helium.",
 		/datum/gas/nitrogen = "Nitrogen is produced at 0.4 moles per mole of BZ decomposed.",
 		/datum/gas/helium = "Helium is produced at 1.6 moles per mole of BZ decomposed.",
-		/datum/gas/plasma = "Plasma is produced at 0.8 moles per mole of BZ decomposed.",
+		/datum/gas/phoron = "Phoron is produced at 0.8 moles per mole of BZ decomposed.",
 		"Energy" = "[PN_BZASE_ENERGY] joules of energy is released per mole of BZ decomposed.",
 		"Radiation" = "Radiation gets released during this decomposition process.",
 		"Hallucinations" = "This reaction can cause various carbon based lifeforms in the vicinity to hallucinate.",

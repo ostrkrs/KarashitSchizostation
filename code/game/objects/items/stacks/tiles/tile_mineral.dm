@@ -24,16 +24,16 @@
 	else
 		return ..()
 
-/obj/item/stack/tile/mineral/plasma
-	name = "plasma tile"
-	singular_name = "plasma floor tile"
-	desc = "A tile made out of highly flammable plasma. This can only end well."
-	icon_state = "tile_plasma"
-	inhand_icon_state = "tile-plasma"
-	turf_type = /turf/open/floor/mineral/plasma
-	mineralType = "plasma"
-	mats_per_unit = list(/datum/material/plasma=SHEET_MATERIAL_AMOUNT*0.25)
-	merge_type = /obj/item/stack/tile/mineral/plasma
+/obj/item/stack/tile/mineral/phoron
+	name = "phoron tile"
+	singular_name = "phoron floor tile"
+	desc = "A tile made out of highly flammable phoron. This can only end well."
+	icon_state = "tile_phoron"
+	inhand_icon_state = "tile-phoron"
+	turf_type = /turf/open/floor/mineral/phoron
+	mineralType = "phoron"
+	mats_per_unit = list(/datum/material/phoron=SHEET_MATERIAL_AMOUNT*0.25)
+	merge_type = /obj/item/stack/tile/mineral/phoron
 
 /obj/item/stack/tile/mineral/uranium
 	name = "uranium tile"

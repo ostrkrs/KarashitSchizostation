@@ -207,15 +207,15 @@
 	desc = "There's too much carbon dioxide in the air, and you're breathing it in! Find some good air before you pass out!"
 	icon_state = ALERT_TOO_MUCH_CO2
 
-/atom/movable/screen/alert/not_enough_plas
-	name = "Choking (No Plasma)"
-	desc = "You're not getting enough plasma. Find some good air before you pass out! The box in your backpack has a spare plasma tank."
-	icon_state = ALERT_NOT_ENOUGH_PLASMA
+/atom/movable/screen/alert/not_enough_phoron
+	name = "Choking (No Phoron)"
+	desc = "You're not getting enough phoron. Find some good air before you pass out! The box in your backpack has a spare phoron tank."
+	icon_state = ALERT_NOT_ENOUGH_PHORON
 
-/atom/movable/screen/alert/too_much_plas
-	name = "Choking (Plasma)"
-	desc = "There's highly flammable, toxic plasma in the air and you're breathing it in. Find some fresh air. The box in your backpack has an oxygen tank and breath mask in it."
-	icon_state = ALERT_TOO_MUCH_PLASMA
+/atom/movable/screen/alert/too_much_phoron
+	name = "Choking (Phoron)"
+	desc = "There's highly flammable, toxic phoron in the air and you're breathing it in. Find some fresh air. The box in your backpack has an oxygen tank and breath mask in it."
+	icon_state = ALERT_TOO_MUCH_PHORON
 
 /atom/movable/screen/alert/not_enough_n2o
 	name = "Choking (No N2O)"
@@ -581,9 +581,9 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 //ALIENS
 
 /atom/movable/screen/alert/alien_plas
-	name = "Plasma"
-	desc = "There's flammable plasma in the air. If it lights up, you'll be toast."
-	icon_state = ALERT_XENO_PLASMA
+	name = "Phoron"
+	desc = "There's flammable phoron in the air. If it lights up, you'll be toast."
+	icon_state = ALERT_XENO_PHORON
 	alerttooltipstyle = "alien"
 
 /atom/movable/screen/alert/alien_fire
@@ -814,20 +814,20 @@ or shoot a gun to move around via Newton's 3rd Law of Motion."
 	desc = "Unit has no core. No modules available until a core is reinstalled. Robotics may provide assistance."
 	icon_state = "no_cell"
 
-/atom/movable/screen/alert/emptycell/plasma
+/atom/movable/screen/alert/emptycell/phoron
 	name = "Out of Power"
-	desc = "Unit's plasma core has no charge remaining. No modules available until plasma core is recharged. \
-		Unit can be refilled through plasma fuel."
+	desc = "Unit's phoron core has no charge remaining. No modules available until phoron core is recharged. \
+		Unit can be refilled through phoron fuel."
 
-/atom/movable/screen/alert/emptycell/plasma/update_desc()
+/atom/movable/screen/alert/emptycell/phoron/update_desc()
 	. = ..()
 	desc = initial(desc)
 
-/atom/movable/screen/alert/lowcell/plasma
+/atom/movable/screen/alert/lowcell/phoron
 	name = "Low Charge"
-	desc = "Unit's plasma core is running low. Unit can be refilled through plasma fuel."
+	desc = "Unit's phoron core is running low. Unit can be refilled through phoron fuel."
 
-/atom/movable/screen/alert/lowcell/plasma/update_desc()
+/atom/movable/screen/alert/lowcell/phoron/update_desc()
 	. = ..()
 	desc = initial(desc)
 

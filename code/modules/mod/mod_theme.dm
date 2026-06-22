@@ -455,7 +455,7 @@
 		rearranging its own constitution, to allow them to fit upright in a sphere form that can \
 		roll around at half their original size; leaving high-powered mining ordinance in its wake. \
 		However, all of this has proven to be straining on all Nanotrasen-approved cells, \
-		so much so that it comes default fueled by equally-enigmatic plasma fuel rather than a simple recharge. \
+		so much so that it comes default fueled by equally-enigmatic phoron fuel rather than a simple recharge. \
 		Additionally, the systems have been put to near their maximum load, allowing for far less customization than others."
 	default_skin = "mining"
 	armor_type = /datum/armor/mod_theme_mining
@@ -1946,7 +1946,7 @@
 		advanced actuators, feeling practically weightless when turned on. Scraping the paint of this suit is \
 		counted as a war-crime and reason for immediate execution in over fifty Nanotrasen space stations. \
 		The resemblance to a Gorlex Marauder helmet is purely coincidental. This is the newest V2 revision, which has \
-		reflective reinforced-plasmaglass shielding weaved with advanced kevlar fibers. Sources say that some of the armor \
+		reflective reinforced-phoronglass shielding weaved with advanced kevlar fibers. Sources say that some of the armor \
 		is ripped straight from an Apocryphal MODsuit."
 	default_skin = "corporate"
 	armor_type = /datum/armor/mod_theme_corporate

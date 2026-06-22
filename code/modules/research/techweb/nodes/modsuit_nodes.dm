@@ -15,7 +15,6 @@
 		"mod_plating_civilian",
 		"mod_paint_kit",
 		"mod_storage",
-		"mod_plasma",
 		"mod_flashlight",
 	)
 

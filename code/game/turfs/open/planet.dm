@@ -91,7 +91,7 @@
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/iron = 40,
-		/obj/item/stack/ore/plasma = 20,
+		/obj/item/stack/ore/phoron = 20,
 		/obj/item/stack/ore/silver = 12,
 		/obj/item/stack/ore/titanium = 11,
 		/obj/item/stack/ore/uranium = 5,

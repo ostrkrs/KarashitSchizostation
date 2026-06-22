@@ -440,7 +440,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "vz" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/iron,
 /area/virtual_domain)
 "vF" = (

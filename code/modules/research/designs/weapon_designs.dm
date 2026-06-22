@@ -313,7 +313,7 @@
 	desc = "An advanced grenade that is able to self ignite its mixture."
 	id = "pyro_grenade"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT, /datum/material/plasma =SMALL_MATERIAL_AMOUNT * 5)
+	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT, /datum/material/phoron =SMALL_MATERIAL_AMOUNT * 5)
 	build_path = /obj/item/grenade/chem_grenade/pyro
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_CHEMISTRY

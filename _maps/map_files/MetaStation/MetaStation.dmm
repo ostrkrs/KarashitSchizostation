@@ -964,7 +964,7 @@
 /obj/structure/table,
 /obj/item/stack/sheet/iron/fifty,
 /obj/item/stack/sheet/glass/fifty,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 35
 	},
 /obj/structure/cable,
@@ -2510,7 +2510,7 @@
 /area/station/ai_monitored/command/storage/eva)
 "aUP" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/junction,
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "aUU" = (
@@ -2799,7 +2799,7 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aYX" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/effect/turf_decal/siding/purple{
 	dir = 8
 	},
@@ -3130,10 +3130,10 @@
 /turf/open/floor/iron/white,
 /area/station/science/research)
 "bfa" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/phoron_input{
 	dir = 1
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/station/engineering/atmos)
 "bfj" = (
 /obj/structure/cable,
@@ -5549,9 +5549,9 @@
 	pixel_y = -3
 	},
 /obj/item/pen/red,
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
+/obj/item/stack/sheet/mineral/phoron,
+/obj/item/stack/sheet/mineral/phoron,
 /obj/effect/turf_decal/tile/green/anticorner/contrasted{
 	dir = 8
 	},
@@ -5641,7 +5641,7 @@
 /area/station/maintenance/starboard/greater)
 "bXs" = (
 /obj/structure/table/glass,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/dropper{
@@ -5699,7 +5699,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "bYp" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating,
 /area/station/engineering/main)
 "bYv" = (
@@ -7504,8 +7504,8 @@
 /turf/open/floor/iron/white,
 /area/station/science/lobby)
 "cGV" = (
-/obj/machinery/air_sensor/plasma_tank,
-/turf/open/floor/engine/plasma,
+/obj/machinery/air_sensor/phoron_tank,
+/turf/open/floor/engine/phoron,
 /area/station/engineering/atmos)
 "cGX" = (
 /obj/structure/extinguisher_cabinet/directional/south,
@@ -8227,7 +8227,7 @@
 /obj/item/book/manual/wiki/security_corp_law,
 /obj/machinery/light/small/directional/west,
 /obj/item/paper/fluff/gateway,
-/obj/item/coin/plasma,
+/obj/item/coin/phoron,
 /obj/item/melee/chainofcommand,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -9353,7 +9353,7 @@
 	pixel_x = 2;
 	pixel_y = 9
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	pixel_y = 3
 	},
 /obj/item/radio/intercom/directional/south,
@@ -13030,7 +13030,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "eyK" = (
@@ -18629,7 +18629,7 @@
 /turf/open/floor/iron/dark,
 /area/station/security/checkpoint/medical)
 "gAd" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/effect/turf_decal/siding/purple,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/storage)
@@ -19563,7 +19563,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /obj/machinery/power/energy_accumulator/grounding_rod/anchored,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "gOB" = (
@@ -19915,7 +19915,7 @@
 /turf/open/floor/iron,
 /area/station/service/bar)
 "gWn" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "gWq" = (
@@ -21384,7 +21384,6 @@
 	name = "First Aid Supplies";
 	req_access = list("medical")
 	},
-/obj/item/mod/module/plasma_stabilizer,
 /obj/item/mod/module/thermal_regulator,
 /turf/open/floor/iron/dark,
 /area/station/medical/storage)
@@ -21862,8 +21861,8 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
 "hDe" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
-/turf/open/floor/engine/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
+/turf/open/floor/engine/phoron,
 /area/station/engineering/atmos)
 "hDp" = (
 /obj/structure/cable,
@@ -22587,7 +22586,7 @@
 /obj/item/electronics/airlock,
 /obj/item/electronics/airlock,
 /obj/item/stock_parts/power_store/cell/high,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 30
 	},
 /obj/item/gps,
@@ -24125,7 +24124,7 @@
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "isr" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/door/poddoor/shutters/radiation/preopen{
 	id = "atmoshfr"
 	},
@@ -24437,7 +24436,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/aft/greater)
 "iyc" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/iron/dark,
 /area/station/science/ordnance/storage)
 "iym" = (
@@ -27877,7 +27876,7 @@
 "jCx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/atmospherics/components/tank/plasma{
+/obj/machinery/atmospherics/components/tank/phoron{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -29018,7 +29017,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green/visible,
 /obj/machinery/power/energy_accumulator/tesla_coil/anchored,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "jWR" = (
@@ -34632,7 +34631,7 @@
 /area/station/engineering/atmos)
 "lXN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible,
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "lXS" = (
@@ -36039,7 +36038,7 @@
 /turf/open/floor/iron,
 /area/station/commons/storage/tools)
 "mxv" = (
-/obj/machinery/computer/atmos_control/plasma_tank{
+/obj/machinery/computer/atmos_control/phoron_tank{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible{
@@ -36371,7 +36370,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "mDb" = (
-/obj/machinery/atmospherics/components/trinary/filter/atmos/plasma{
+/obj/machinery/atmospherics/components/trinary/filter/atmos/phoron{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/purple/fourcorners,
@@ -39950,7 +39949,6 @@
 "nJM" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/rack,
-/obj/item/mod/module/plasma_stabilizer,
 /obj/item/mod/module/thermal_regulator,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
@@ -41134,7 +41132,7 @@
 /obj/machinery/camera/directional/east{
 	c_tag = "Atmospherics Tank - Toxins"
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/station/engineering/atmos)
 "ojz" = (
 /obj/machinery/door/airlock/public/glass{
@@ -54136,7 +54134,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/aft/greater)
 "sGC" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
 "sGH" = (
@@ -54456,7 +54454,7 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
 "sNt" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)
@@ -55548,7 +55546,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/atmos)
 "tft" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter)
 "tfz" = (
@@ -57235,9 +57233,6 @@
 	pixel_x = -3;
 	pixel_y = 8
 	},
-/obj/item/mod/module/plasma_stabilizer{
-	pixel_x = 16
-	},
 /obj/item/mod/module/thermal_regulator{
 	pixel_x = 16
 	},
@@ -58586,7 +58581,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/machinery/power/energy_accumulator/grounding_rod/anchored,
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
 /turf/open/floor/engine,
 /area/station/engineering/supermatter)
 "ugd" = (
@@ -62758,7 +62753,7 @@
 /turf/open/floor/iron,
 /area/station/maintenance/disposal/incinerator)
 "vzx" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/effect/turf_decal/siding/purple{
 	dir = 10
 	},
@@ -63185,7 +63180,7 @@
 	},
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 1;
-	name = "Plasma to Pure"
+	name = "Phoron to Pure"
 	},
 /obj/effect/turf_decal/tile/purple/fourcorners,
 /obj/structure/window/spawner/directional/south,
@@ -66170,10 +66165,10 @@
 /turf/open/floor/wood,
 /area/station/service/library)
 "wEf" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/phoron_output{
 	dir = 1
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/station/engineering/atmos)
 "wEn" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -66423,7 +66418,7 @@
 /turf/open/floor/iron,
 /area/station/security/prison)
 "wJw" = (
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/station/engineering/atmos)
 "wJD" = (
 /obj/effect/turf_decal/trimline/light_blue/filled/line,
@@ -69071,7 +69066,7 @@
 /area/station/medical/medbay/lobby)
 "xEg" = (
 /obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/station/engineering/atmos)
 "xEr" = (
 /obj/effect/spawner/random/vending/snackvend,
@@ -69309,10 +69304,10 @@
 	pixel_y = 2
 	},
 /obj/item/reagent_containers/dropper,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	pixel_y = 10
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	pixel_y = 10
 	},
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
@@ -70130,7 +70125,7 @@
 /turf/open/floor/iron/white,
 /area/station/medical/medbay/central)
 "xYD" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/station/engineering/supermatter/room)

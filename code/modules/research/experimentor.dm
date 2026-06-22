@@ -306,7 +306,7 @@
 		visible_message(span_warning("[src] fills its chamber with gas, [exp_on] included."))
 		if(prob(EFFECT_PROB_LOW) && criticalReaction)
 			visible_message(span_notice("[exp_on] achieves the perfect mix!"))
-			new /obj/item/stack/sheet/mineral/plasma(get_turf(pick(oview(1,src))))
+			new /obj/item/stack/sheet/mineral/phoron(get_turf(pick(oview(1,src))))
 		else if(prob(EFFECT_PROB_VERYLOW * (100 - malfunction_probability_coeff) * 0.01))
 			visible_message(span_danger("[src] destroys [exp_on], leaking dangerous gas!"))
 			chosenchem = pick(/datum/reagent/carbon,/datum/reagent/uranium/radium,/datum/reagent/toxin,/datum/reagent/consumable/condensedcapsaicin,/datum/reagent/drug/mushroomhallucinogen,/datum/reagent/drug/space_drugs,/datum/reagent/consumable/ethanol,/datum/reagent/consumable/ethanol/beepsky_smash)
@@ -349,7 +349,7 @@
 			visible_message(span_warning("[src]'s emergency coolant system gives off a small ding!"))
 			playsound(src, 'sound/machines/ding.ogg', 50, TRUE)
 			var/obj/item/reagent_containers/cup/glass/coffee/C = new /obj/item/reagent_containers/cup/glass/coffee(get_turf(pick(oview(1,src))))
-			chosenchem = pick(/datum/reagent/toxin/plasma,/datum/reagent/consumable/capsaicin,/datum/reagent/consumable/ethanol)
+			chosenchem = pick(/datum/reagent/toxin/phoron,/datum/reagent/consumable/capsaicin,/datum/reagent/consumable/ethanol)
 			C.reagents.remove_all(25)
 			C.reagents.add_reagent(chosenchem , 50)
 			C.name = "Cup of Suspicious Liquid"

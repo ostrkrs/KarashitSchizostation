@@ -26,7 +26,7 @@
 	spawn_loot_count = 3
 	loot = list(
 		/obj/item/organ/heart/gland/egg = 7,
-		/obj/item/organ/heart/gland/plasma = 7,
+		/obj/item/organ/heart/gland/phoron = 7,
 		/obj/item/organ/heart/gland/chem = 5,
 		/obj/item/organ/heart/gland/mindshock = 5,
 		/obj/item/organ/heart/gland/transform = 5,
@@ -60,7 +60,6 @@
 		/obj/item/organ/tongue/zombie,
 		/obj/item/organ/appendix,
 		/obj/item/organ/liver/fly,
-		/obj/item/organ/lungs/plasmaman,
 		/obj/item/organ/tail/lizard,
 	)
 

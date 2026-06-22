@@ -317,20 +317,20 @@
 /datum/unit_test/mob_damage/proc/test_biotypes(mob/living/carbon/human/consistent/dummy)
 	// Heal up, so that errors from the previous tests we won't cause this one to fail
 	dummy.fully_heal(HEAL_DAMAGE)
-	// Testing biotypes using a plasmaman, who is MOB_MINERAL and MOB_HUMANOID
-	dummy.set_species(/datum/species/plasmaman)
+	// Testing biotypes using a golems, who is MOB_MINERAL and MOB_HUMANOID
+	dummy.set_species(/datum/species/golem)
 
 	// argumentless default: should default to required_biotype = ALL. The damage should be applied in that case.
 	if(!test_apply_damage(dummy, 1, included_types = TOXLOSS|STAMINALOSS))
-		TEST_FAIL("ABOVE FAILURE: plasmaman did not take damage with biotypes = ALL")
+		TEST_FAIL("ABOVE FAILURE: golem did not take damage with biotypes = ALL")
 
-	// If we specify MOB_ORGANIC, the damage should not get applied because plasmamen lack that biotype.
+	// If we specify MOB_ORGANIC, the damage should not get applied because golems lack that biotype.
 	if(!test_apply_damage(dummy, 1, expected = 0, included_types = TOXLOSS|STAMINALOSS, biotypes = MOB_ORGANIC))
-		TEST_FAIL("ABOVE FAILURE: plasmaman took damage with biotypes = MOB_ORGANIC")
+		TEST_FAIL("ABOVE FAILURE: golem took damage with biotypes = MOB_ORGANIC")
 
 	// Now if we specify MOB_MINERAL the damage should get applied.
 	if(!test_apply_damage(dummy, 1, included_types = TOXLOSS|STAMINALOSS, biotypes = MOB_MINERAL))
-		TEST_FAIL("ABOVE FAILURE: plasmaman did not take damage with biotypes = MOB_MINERAL")
+		TEST_FAIL("ABOVE FAILURE: golem did not take damage with biotypes = MOB_MINERAL")
 
 	// Transform back to human
 	dummy.set_species(/datum/species/human)

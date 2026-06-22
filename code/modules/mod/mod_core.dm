@@ -354,53 +354,52 @@
 		return "Biological Battery Missing"
 	return ..()
 
-#define PLASMA_CORE_ORE_CHARGE (1.5 * STANDARD_CELL_CHARGE)
-#define PLASMA_CORE_SHEET_CHARGE (2 * STANDARD_CELL_CHARGE)
+#define PHORON_CORE_ORE_CHARGE (1.5 * STANDARD_CELL_CHARGE)
+#define PHORON_CORE_SHEET_CHARGE (2 * STANDARD_CELL_CHARGE)
 
-/obj/item/mod/core/plasma
-	name = "MOD plasma core"
-	icon_state = "mod-core-plasma"
-	desc = "Nanotrasen's attempt at capitalizing on their plasma research. These plasma cores are refueled \
-		through plasma fuel, allowing for easy continued use by their mining squads."
+/obj/item/mod/core/phoron
+	name = "MOD phoron core"
+	icon_state = "mod-core-phoron"
+	desc = "These phoron cores are refueled through phoron fuel, allowing for easy continued use by mining squads."
 	/// How much charge we can store.
 	var/maxcharge = 10 * STANDARD_CELL_CHARGE
 	/// How much charge we are currently storing.
 	var/charge = 10 * STANDARD_CELL_CHARGE
 	/// Associated list of charge sources and how much they charge, only stacks allowed.
-	var/list/charger_list = list(/obj/item/stack/ore/plasma = PLASMA_CORE_ORE_CHARGE, /obj/item/stack/sheet/mineral/plasma = PLASMA_CORE_SHEET_CHARGE)
+	var/list/charger_list = list(/obj/item/stack/ore/phoron = PHORON_CORE_ORE_CHARGE, /obj/item/stack/sheet/mineral/phoron = PHORON_CORE_SHEET_CHARGE)
 
-/obj/item/mod/core/plasma/install(obj/item/mod/control/mod_unit)
+/obj/item/mod/core/phoron/install(obj/item/mod/control/mod_unit)
 	. = ..()
 	RegisterSignal(mod, COMSIG_ATOM_ITEM_INTERACTION, PROC_REF(on_mod_interaction))
 
-/obj/item/mod/core/plasma/uninstall()
+/obj/item/mod/core/phoron/uninstall()
 	UnregisterSignal(mod, COMSIG_ATOM_ITEM_INTERACTION)
 	return ..()
 
-/obj/item/mod/core/plasma/charge_source()
+/obj/item/mod/core/phoron/charge_source()
 	return src
 
-/obj/item/mod/core/plasma/charge_amount()
+/obj/item/mod/core/phoron/charge_amount()
 	return charge
 
-/obj/item/mod/core/plasma/max_charge_amount()
+/obj/item/mod/core/phoron/max_charge_amount()
 	return maxcharge
 
-/obj/item/mod/core/plasma/add_charge(amount)
+/obj/item/mod/core/phoron/add_charge(amount)
 	charge = min(maxcharge, charge + amount)
 	mod.update_charge_alert()
 	return TRUE
 
-/obj/item/mod/core/plasma/subtract_charge(amount)
+/obj/item/mod/core/phoron/subtract_charge(amount)
 	amount = min(amount, charge)
 	charge -= amount
 	mod.update_charge_alert()
 	return amount
 
-/obj/item/mod/core/plasma/check_charge(amount)
+/obj/item/mod/core/phoron/check_charge(amount)
 	return charge_amount() >= amount
 
-/obj/item/mod/core/plasma/get_charge_icon_state()
+/obj/item/mod/core/phoron/get_charge_icon_state()
 	switch(round(charge_amount() / max_charge_amount(), 0.01))
 		if(0.75 to INFINITY)
 			return "high"
@@ -413,102 +412,34 @@
 
 	return "empty"
 
-/obj/item/mod/core/plasma/get_chargebar_color()
+/obj/item/mod/core/phoron/get_chargebar_color()
 	switch(round(charge_amount() / max_charge_amount(), 0.01))
 		if(-INFINITY to 0.33)
 			return "bad"
 		if(0.33 to INFINITY)
 			return "purple"
 
-/obj/item/mod/core/plasma/proc/on_mod_interaction(datum/source, mob/living/user, obj/item/thing)
+/obj/item/mod/core/phoron/proc/on_mod_interaction(datum/source, mob/living/user, obj/item/thing)
 	SIGNAL_HANDLER
 
 	return item_interaction(user, thing)
 
-/obj/item/mod/core/plasma/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
-	return charge_plasma(tool, user) ? ITEM_INTERACT_SUCCESS : NONE
+/obj/item/mod/core/phoron/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
+	return charge_phoron(tool, user) ? ITEM_INTERACT_SUCCESS : NONE
 
-/obj/item/mod/core/plasma/proc/charge_plasma(obj/item/stack/plasma, mob/user)
-	var/charge_given = is_type_in_list(plasma, charger_list, zebra = TRUE)
+/obj/item/mod/core/phoron/proc/charge_phoron(obj/item/stack/phoron, mob/user)
+	var/charge_given = is_type_in_list(phoron, charger_list, zebra = TRUE)
 	if(!charge_given)
 		return FALSE
-	var/uses_needed = min(plasma.amount, ROUND_UP((max_charge_amount() - charge_amount()) / charge_given))
-	if(uses_needed <= 0 || !plasma.use(uses_needed))
+	var/uses_needed = min(phoron.amount, ROUND_UP((max_charge_amount() - charge_amount()) / charge_given))
+	if(uses_needed <= 0 || !phoron.use(uses_needed))
 		return FALSE
 	add_charge(uses_needed * charge_given)
 	balloon_alert(user, "core refueled")
 	return TRUE
 
-#undef PLASMA_CORE_ORE_CHARGE
-#undef PLASMA_CORE_SHEET_CHARGE
-
-/obj/item/mod/core/plasma/lavaland
-	name = "MOD plasma flower core"
-	icon_state = "mod-core-plasma-flower"
-	desc = "A strange flower from the desolate wastes of lavaland. It pulses with a strange purple glow.  \
-		The wires coming out of it could be hooked into a MODsuit."
-	light_system = OVERLAY_LIGHT
-	light_color = "#cc00cc"
-	light_range = 2.5
-	light_power = 1.5
-	// Slightly better than the normal plasma core.
-	// Not super sure if this should just be the same, but will see.
-	maxcharge = 15 * STANDARD_CELL_CHARGE
-	charge = 15 * STANDARD_CELL_CHARGE
-	/// The mob to be spawned by the core
-	var/mob/living/spawned_mob_type = /mob/living/basic/butterfly/lavaland/temporary
-	/// Max number of mobs it can spawn
-	var/max_spawns = 3
-	/// Mob spawner for the core
-	var/datum/component/spawner/mob_spawner
-	/// Particle holder for pollen particles
-	var/obj/effect/abstract/particle_holder/particle_effect
-
-/obj/item/mod/core/plasma/lavaland/Destroy()
-	QDEL_NULL(particle_effect)
-	return ..()
-
-/obj/item/mod/core/plasma/lavaland/install(obj/item/mod/control/mod_unit)
-	. = ..()
-	RegisterSignal(mod_unit, COMSIG_MOD_TOGGLED, PROC_REF(on_toggle))
-
-/obj/item/mod/core/plasma/lavaland/uninstall(obj/item/mod/control/mod_unit)
-	. = ..()
-	UnregisterSignal(mod_unit, COMSIG_MOD_TOGGLED)
-
-/obj/item/mod/core/plasma/lavaland/proc/on_toggle()
-	SIGNAL_HANDLER
-	if(mod.active)
-		particle_effect = new(mod.wearer, /particles/pollen, PARTICLE_ATTACH_MOB)
-		mob_spawner = mod.wearer.AddComponent(/datum/component/spawner, spawn_types=list(spawned_mob_type), spawn_time=5 SECONDS, max_spawned=3, faction=mod.wearer.faction)
-		RegisterSignal(mob_spawner, COMSIG_SPAWNER_SPAWNED, PROC_REF(new_mob))
-		RegisterSignal(mod.wearer, COMSIG_MOVABLE_MOVED, PROC_REF(spread_flowers))
-
-	else
-		QDEL_NULL(particle_effect)
-		UnregisterSignal(mob_spawner, COMSIG_SPAWNER_SPAWNED)
-		UnregisterSignal(mod.wearer, COMSIG_MOVABLE_MOVED)
-		for(var/datum/mob in mob_spawner.spawned_things)
-			qdel(mob)
-		qdel(mob_spawner)
-
-/obj/item/mod/core/plasma/lavaland/proc/new_mob(spawner, mob/living/basic/butterfly/lavaland/temporary/spawned)
-	SIGNAL_HANDLER
-	if(spawned)
-		spawned.source = src
-
-/obj/item/mod/core/plasma/lavaland/proc/spread_flowers(atom/source, atom/oldloc, dir, forced)
-	SIGNAL_HANDLER
-	var/static/list/possible_flower_types = list(
-		/obj/structure/flora/bush/lavendergrass/style_random,
-		/obj/structure/flora/bush/flowers_yw/style_random,
-		/obj/structure/flora/bush/flowers_br/style_random,
-		/obj/structure/flora/bush/flowers_pp/style_random,
-	)
-	var/chosen_type = pick(possible_flower_types)
-	var/flower_boots = new chosen_type(get_turf(mod.wearer))
-	animate(flower_boots, alpha = 0, 1 SECONDS)
-	QDEL_IN(flower_boots, 1 SECONDS)
+#undef PHORON_CORE_ORE_CHARGE
+#undef PHORON_CORE_SHEET_CHARGE
 
 /obj/item/mod/core/soul
 	name = "MOD soul shard core"

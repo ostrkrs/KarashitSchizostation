@@ -240,9 +240,9 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	flags_1 = CAN_BE_DIRTY_1
 	turf_flags = IS_SOLID | NO_RUST | NO_CLEARING
 
-/turf/open/lava/plasma/ice_moon
+/turf/open/lava/phoron/ice_moon
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
-	baseturfs = /turf/open/lava/plasma/ice_moon
+	baseturfs = /turf/open/lava/phoron/ice_moon
 	planetary_atmos = TRUE
 
 /turf/open/misc/asteroid/snow/ice
@@ -314,7 +314,7 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 
 	//used in outpost45
 
-/turf/open/misc/asteroid/plasma //floor piece
+/turf/open/misc/asteroid/phoron //floor piece
 	gender = PLURAL
 	name = "asteroid gravel"
 	desc = "It's coarse and rough and gets everywhere."
@@ -323,6 +323,6 @@ GLOBAL_LIST_EMPTY(dug_up_basalt)
 	damaged_dmi = 'icons/turf/floors.dmi'
 	icon_state = "asteroid"
 	base_icon_state = "asteroid"
-	initial_gas_mix = "co2=173.4;n2=135.1;plasma=229.8;TEMP=351.9"
+	initial_gas_mix = "co2=173.4;n2=135.1;phoron=229.8;TEMP=351.9"
 	planetary_atmos = TRUE
 

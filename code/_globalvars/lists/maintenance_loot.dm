@@ -109,7 +109,7 @@ GLOBAL_LIST_INIT(common_loot, list( //common: basic items
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/stack/rods/twentyfive = 1,
 		/obj/item/stack/sheet/iron/twenty = 1,
-		/obj/item/stack/sheet/mineral/plasma = 1,
+		/obj/item/stack/sheet/mineral/phoron = 1,
 		/obj/item/stock_parts/power_store/cell = 1,
 		/obj/effect/spawner/random/engineering/vending_restock = 1,
 		//assemblies

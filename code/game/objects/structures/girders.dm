@@ -22,7 +22,7 @@
 		/obj/item/stack/sheet/plasteel = 2,
 		/obj/item/stack/sheet/bronze = 2,
 		/obj/item/stack/sheet/runed_metal = 1,
-		/obj/item/stack/sheet/titaniumglass = 2,
+		/obj/item/stack/sheet/titanium_glass = 2,
 		exotic_material = 2 // this needs to be refactored properly
 	)
 
@@ -180,8 +180,8 @@
 				qdel(src)
 			return
 
-	if(istype(stack, /obj/item/stack/sheet/titaniumglass) && state == GIRDER_TRAM)
-		var/amount = construction_cost[/obj/item/stack/sheet/titaniumglass]
+	if(istype(stack, /obj/item/stack/sheet/titanium_glass) && state == GIRDER_TRAM)
+		var/amount = construction_cost[/obj/item/stack/sheet/titanium_glass]
 		if(stack.get_amount() < amount)
 			balloon_alert(user, "need [amount] sheets!")
 			return

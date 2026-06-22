@@ -81,7 +81,7 @@
 /datum/supply_pack/engineering/pacman
 	name = "P.A.C.M.A.N Generator Crate"
 	desc = "Engineers can't set up the engine? Not an issue for you, once you get your hands \
-		on this P.A.C.M.A.N. Generator! Takes in plasma and spits out sweet sweet energy."
+		on this P.A.C.M.A.N. Generator! Takes in phoron and spits out sweet sweet energy."
 	cost = CARGO_CRATE_VALUE * 5
 	access_view = ACCESS_ENGINEERING
 	contains = list(/obj/machinery/power/port_gen/pacman)
@@ -130,7 +130,7 @@
 
 /datum/supply_pack/engineering/portascrubber
 	name = "Portable Scrubber Crate"
-	desc = "Clean up that pesky plasma leak with your very own set of two portable scrubbers."
+	desc = "Clean up that pesky phoron leak with your very own set of two portable scrubbers."
 	cost = CARGO_CRATE_VALUE * 4.5
 	access_view = ACCESS_ATMOSPHERICS
 	contains = list(/obj/machinery/portable_atmospherics/scrubber = 2)

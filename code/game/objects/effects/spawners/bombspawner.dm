@@ -21,7 +21,7 @@
 /obj/effect/spawner/newbomb/Initialize(mapload, assembly = null)
 	. = ..()
 	var/obj/item/transfer_valve/ttv = new(loc)
-	ttv.tank_one = new /obj/item/tank/internals/plasma (ttv)
+	ttv.tank_one = new /obj/item/tank/internals/phoron (ttv)
 	ttv.tank_two = new /obj/item/tank/internals/oxygen (ttv)
 	first_gasmix = ttv.tank_one.return_air()
 	second_gasmix = ttv.tank_two.return_air()
@@ -37,9 +37,9 @@
 /obj/effect/spawner/newbomb/proc/calculate_pressure(datum/gas_mixture/gasmix, pressure)
 	return pressure * gasmix.volume/(R_IDEAL_GAS_EQUATION*gasmix.temperature)
 
-/obj/effect/spawner/newbomb/plasma
+/obj/effect/spawner/newbomb/phoron
 
-/obj/effect/spawner/newbomb/plasma/Initialize(mapload)
+/obj/effect/spawner/newbomb/phoron/Initialize(mapload)
 	. = ..()
 	if(!first_gasmix || !second_gasmix)
 		return
@@ -47,10 +47,10 @@
 	first_gasmix.temperature = 1413
 	second_gasmix.temperature = 141.3
 
-	first_gasmix.assert_gas(/datum/gas/plasma)
+	first_gasmix.assert_gas(/datum/gas/phoron)
 	second_gasmix.assert_gas(/datum/gas/oxygen)
 
-	first_gasmix.gases[/datum/gas/plasma][MOLES] = calculate_pressure(first_gasmix, TANK_LEAK_PRESSURE - 1)
+	first_gasmix.gases[/datum/gas/phoron][MOLES] = calculate_pressure(first_gasmix, TANK_LEAK_PRESSURE - 1)
 	second_gasmix.gases[/datum/gas/oxygen][MOLES] = calculate_pressure(second_gasmix, TANK_LEAK_PRESSURE - 1)
 
 /obj/effect/spawner/newbomb/tritium
@@ -63,11 +63,11 @@
 	first_gasmix.temperature = 8000
 	second_gasmix.temperature = 43
 
-	first_gasmix.assert_gas(/datum/gas/plasma)
+	first_gasmix.assert_gas(/datum/gas/phoron)
 	second_gasmix.assert_gas(/datum/gas/oxygen)
 	second_gasmix.assert_gas(/datum/gas/tritium)
 
-	first_gasmix.gases[/datum/gas/plasma][MOLES] = calculate_pressure(first_gasmix, TANK_LEAK_PRESSURE - 1)
+	first_gasmix.gases[/datum/gas/phoron][MOLES] = calculate_pressure(first_gasmix, TANK_LEAK_PRESSURE - 1)
 	second_gasmix.gases[/datum/gas/oxygen][MOLES] = 0.67 * calculate_pressure(second_gasmix, TANK_LEAK_PRESSURE - 1)
 	second_gasmix.gases[/datum/gas/tritium][MOLES] = 0.33 * calculate_pressure(second_gasmix, TANK_LEAK_PRESSURE - 1)
 

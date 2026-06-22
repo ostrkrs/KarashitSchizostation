@@ -46,7 +46,7 @@ type HypertorusData = {
  */
 
 const moderator_gases_help = {
-  plasma:
+  phoron:
     'Produces basic gases. Has a modest heat bonus to help kick start the early fusion process. When added in large quantities, its high heat capacity can help to slow down temperature changes to manageable speeds.',
   bz: 'Produces intermediate gases at Fusion Level 3 or higher. Massively increases radiation, and induces hallucinations in bystanders.',
   proto_nitrate:
@@ -60,7 +60,7 @@ const moderator_gases_help = {
     'Saps most forms of energy expression. Slows the rate of temperature change.',
 } as const;
 
-const moderator_gases_sticky_order = ['plasma', 'bz', 'proto_nitrate'] as const;
+const moderator_gases_sticky_order = ['phoron', 'bz', 'proto_nitrate'] as const;
 
 const ensure_gases = (gas_array: HypertorusGas[] = [], gasids) => {
   const gases_by_id = {};

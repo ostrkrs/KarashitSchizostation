@@ -56,8 +56,8 @@
 	status_effect = /datum/status_effect/golem/silver
 	added_info = "If consumed this mineral will repel the supernatural, affording you resistance to mystical effects."
 
-/datum/golem_food_buff/plasma
-	status_effect = /datum/status_effect/golem/plasma
+/datum/golem_food_buff/phoron
+	status_effect = /datum/status_effect/golem/phoron
 	added_info = "If consumed this mineral will allow you to absorb heat and convert it into power."
 
 /datum/golem_food_buff/plasteel

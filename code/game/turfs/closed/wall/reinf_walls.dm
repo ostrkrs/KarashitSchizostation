@@ -243,7 +243,7 @@
 
 /turf/closed/wall/r_wall/plastitanium
 	name = /turf/closed/wall/mineral/plastitanium::name
-	desc = "An extra durable wall made of an alloy of plasma and titanium, reinforced with plasteel rods."
+	desc = "An extra durable wall made of an alloy of phoron and titanium, reinforced with plasteel rods."
 	icon = 'icons/turf/walls/plastitanium_wall.dmi'
 	icon_state = "plastitanium_wall-0"
 	base_icon_state = "plastitanium_wall"

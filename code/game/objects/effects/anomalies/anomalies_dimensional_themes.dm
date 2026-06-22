@@ -256,11 +256,11 @@
 		/obj/structure/platform = list(/obj/structure/platform/gold = 1),
 	)
 
-/datum/dimension_theme/plasma
-	name = "Plasma"
+/datum/dimension_theme/phoron
+	name = "Phoron"
 	icon = 'icons/obj/clothing/masks.dmi'
 	icon_state = "gas_alt"
-	material = /datum/material/plasma
+	material = /datum/material/phoron
 
 /datum/dimension_theme/clown
 	name = "Clown"

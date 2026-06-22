@@ -64,15 +64,6 @@
 	..() // we want the survival stuff too.
 	new /obj/item/radio/off(src)
 
-/obj/item/storage/box/survival/proc/wardrobe_removal()
-	if(!isplasmaman(loc)) //We need to specially fill the box with plasmaman gear, since it's intended for one
-		return
-	var/obj/item/mask = locate(mask_type) in src
-	var/obj/item/internals = locate(internal_type) in src
-	new /obj/item/tank/internals/plasmaman/belt(src)
-	qdel(mask) // Get rid of the items that shouldn't be
-	qdel(internals)
-
 // Prisoners don't get an escape hook
 /obj/item/storage/box/survival/prisoner
 	give_hook = FALSE

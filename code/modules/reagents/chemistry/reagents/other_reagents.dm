@@ -702,7 +702,7 @@
 		to_chat(affected_mob, span_warning("You've become \a [LOWER_TEXT(initial(species_type.name))]!"))
 		return
 
-/datum/reagent/mutationtoxin/classic //The one from plasma on green slimes
+/datum/reagent/mutationtoxin/classic //The one from phoron on green slimes
 	name = "Mutation Toxin"
 	description = "A corruptive toxin."
 	color = "#13BC5E" // rgb: 19, 188, 94
@@ -1740,18 +1740,18 @@
 	addiction_types = null
 	default_container = /obj/effect/decal/cleanable/blood/oil
 
-/datum/reagent/stable_plasma
-	name = "Stable Plasma"
-	description = "Non-flammable plasma locked into a liquid form that cannot ignite or become gaseous/solid."
+/datum/reagent/stable_phoron
+	name = "Stable Phoron"
+	description = "Non-flammable phoron locked into a liquid form that cannot ignite or become gaseous/solid."
 	color = "#2D2D2D"
 	taste_description = "bitterness"
 	taste_mult = 1.5
 	ph = 1.5
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/stable_plasma/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
+/datum/reagent/stable_phoron/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
-	affected_mob.adjustPlasma(10 * REM * seconds_per_tick)
+	affected_mob.adjustPhoron(10 * REM * seconds_per_tick)
 
 /datum/reagent/iodine
 	name = "Iodine"
@@ -2323,14 +2323,14 @@
 	taste_description = "bitterness"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/toxin/plasma/plasmavirusfood
+/datum/reagent/toxin/phoron/virusfood
 	name = "Virus Plasma"
 	color = "#A270A8" // rgb: 166,157,169
 	taste_description = "bitterness"
 	taste_mult = 1.5
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/toxin/plasma/plasmavirusfood/weak
+/datum/reagent/toxin/phoron/virusfood/weak
 	name = "Weakened Virus Plasma"
 	color = "#A28CA5" // rgb: 206,195,198
 	taste_description = "bitterness"
@@ -2671,8 +2671,8 @@
 	taste_description = "bananas"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/plasma_oxide
-	name = "Hyper-Plasmium Oxide"
+/datum/reagent/phoron_oxide
+	name = "Hyper-Phoronium Oxide"
 	description = "Compound created deep in the cores of demon-class planets. Commonly found through deep geysers."
 	color = "#470750" // rgb: 255, 255, 255
 	taste_description = "hell"
@@ -2680,7 +2680,7 @@
 
 /datum/reagent/exotic_stabilizer
 	name = "Exotic Stabilizer"
-	description = "Advanced compound created by mixing stabilizing agent and hyper-plasmium oxide."
+	description = "Advanced compound created by mixing stabilizing agent and hyper-phoronium oxide."
 	color = "#180000" // rgb: 255, 255, 255
 	taste_description = "blood"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
@@ -2958,7 +2958,7 @@
 
 /datum/reagent/ants/fire
 	name = "Fire ants"
-	description = "A rare mutation of space ants, born from the heat of a plasma fire. Their bites land a 3.7 on the Schmidt Pain Scale."
+	description = "A rare mutation of space ants, born from the heat of a phoron fire. Their bites land a 3.7 on the Schmidt Pain Scale."
 	color = "#b51f1f"
 	taste_description = "tiny flaming legs scuttling down the back of your throat"
 	ant_damage = 0.05 // Roughly 64 brute with 100u

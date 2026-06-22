@@ -481,28 +481,28 @@
 
 	return FALSE
 
-/// Determines the rate at which Plasma Fixation heals based on the amount of plasma in the air
+/// Determines the rate at which Phoron Fixation heals based on the amount of phoron in the air
 #define HEALING_PER_MOL 1.1
-/// Determines the rate at which Plasma Fixation heals based on the amount of plasma being breathed through internals
+/// Determines the rate at which Phoron Fixation heals based on the amount of phoron being breathed through internals
 #define HEALING_PER_BREATH_PRESSURE 0.05
-/// Determines the highest amount you can be healed for when breathing plasma from internals
+/// Determines the highest amount you can be healed for when breathing phoron from internals
 #define MAX_HEAL_COEFFICIENT_INTERNALS 0.75
-/// Determines the highest amount you can be healed for from pulling plasma from the environment
+/// Determines the highest amount you can be healed for from pulling phoron from the environment
 #define MAX_HEAL_COEFFICIENT_ENVIRONMENT 0.5
-/// Determines the highest amount you can be healed for when there is plasma in the bloodstream
+/// Determines the highest amount you can be healed for when there is phoron in the bloodstream
 #define MAX_HEAL_COEFFICIENT_BLOODSTREAM 0.75
 /// This is the base heal amount before being multiplied by the healing coefficients
-#define BASE_HEAL_PLASMA_FIXATION 4
+#define BASE_HEAL_PHORON_FIXATION 4
 
-/datum/symptom/heal/plasma
-	name = "Plasma Fixation"
-	desc = "The virus draws plasma from the atmosphere and from inside the body to heal and stabilize body temperature."
+/datum/symptom/heal/phoron
+	name = "Phoron Fixation"
+	desc = "The virus draws phoron from the atmosphere and from inside the body to heal and stabilize body temperature."
 	stealth = 0
 	resistance = 3
 	stage_speed = -2
 	transmittable = -2
 	level = 8
-	passive_message = span_notice("You feel an odd attraction to plasma.")
+	passive_message = span_notice("You feel an odd attraction to phoron.")
 	required_organ = ORGAN_SLOT_LIVER
 	threshold_descs = list(
 		"Transmission 6" = "Increases temperature adjustment rate.",
@@ -510,7 +510,7 @@
 	)
 	var/temp_rate = 1
 
-/datum/symptom/heal/plasma/Start(datum/disease/advance/A)
+/datum/symptom/heal/phoron/Start(datum/disease/advance/A)
 	. = ..()
 	if(!.)
 		return
@@ -519,27 +519,27 @@
 	if(A.totalTransmittable() >= 6)
 		temp_rate = 4
 
-// We do this to prevent liver damage from injecting plasma when plasma fixation virus reaches stage 4 and beyond
-/datum/symptom/heal/plasma/on_stage_change(datum/disease/advance/advanced_disease)
+// We do this to prevent liver damage from injecting phoron when phoron fixation virus reaches stage 4 and beyond
+/datum/symptom/heal/phoron/on_stage_change(datum/disease/advance/advanced_disease)
 	. = ..()
 	if(!.)
 		return FALSE
 
 	if(advanced_disease.stage >= 4)
-		ADD_TRAIT(advanced_disease.affected_mob, TRAIT_PLASMA_LOVER_METABOLISM, DISEASE_TRAIT)
+		ADD_TRAIT(advanced_disease.affected_mob, TRAIT_PHORON_LOVER_METABOLISM, DISEASE_TRAIT)
 	else
-		REMOVE_TRAIT(advanced_disease.affected_mob, TRAIT_PLASMA_LOVER_METABOLISM, DISEASE_TRAIT)
+		REMOVE_TRAIT(advanced_disease.affected_mob, TRAIT_PHORON_LOVER_METABOLISM, DISEASE_TRAIT)
 	return TRUE
 
-/datum/symptom/heal/plasma/End(datum/disease/advance/advanced_disease)
+/datum/symptom/heal/phoron/End(datum/disease/advance/advanced_disease)
 	. = ..()
 	if(!.)
 		return
 
-	REMOVE_TRAIT(advanced_disease.affected_mob, TRAIT_PLASMA_LOVER_METABOLISM, DISEASE_TRAIT)
+	REMOVE_TRAIT(advanced_disease.affected_mob, TRAIT_PHORON_LOVER_METABOLISM, DISEASE_TRAIT)
 
-// Check internals breath, environmental plasma, and plasma in bloodstream to determine the heal power
-/datum/symptom/heal/plasma/CanHeal(datum/disease/advance/advanced_disease)
+// Check internals breath, environmental phoron, and phoron in bloodstream to determine the heal power
+/datum/symptom/heal/phoron/CanHeal(datum/disease/advance/advanced_disease)
 	var/mob/living/carbon/infected_mob = advanced_disease.affected_mob
 	var/datum/gas_mixture/environment
 	var/list/gases
@@ -554,7 +554,7 @@
 	if(internals_tank)
 		var/datum/gas_mixture/tank_contents = internals_tank.return_air()
 		if(tank_contents && round(tank_contents.return_pressure())) // make sure the tank is not empty or 0 pressure
-			if(tank_contents.gases[/datum/gas/plasma])
+			if(tank_contents.gases[/datum/gas/phoron])
 				// higher tank distribution pressure leads to more healing, but once you get to about 15kpa you reach the max
 				. += power * min(MAX_HEAL_COEFFICIENT_INTERNALS, internals_tank.distribute_pressure * HEALING_PER_BREATH_PRESSURE)
 	else // Check environment
@@ -562,18 +562,18 @@
 			environment = infected_mob.loc.return_air()
 		if(environment)
 			gases = environment.gases
-			if(gases[/datum/gas/plasma])
-				. += power * min(MAX_HEAL_COEFFICIENT_INTERNALS, gases[/datum/gas/plasma][MOLES] * HEALING_PER_MOL)
+			if(gases[/datum/gas/phoron])
+				. += power * min(MAX_HEAL_COEFFICIENT_INTERNALS, gases[/datum/gas/phoron][MOLES] * HEALING_PER_MOL)
 
 	// Check for reagents in bloodstream
-	if(infected_mob.reagents.has_reagent(/datum/reagent/toxin/plasma, needs_metabolizing = TRUE))
+	if(infected_mob.reagents.has_reagent(/datum/reagent/toxin/phoron, needs_metabolizing = TRUE))
 		. += power * MAX_HEAL_COEFFICIENT_BLOODSTREAM //Determines how much the symptom heals if injected or ingested
 
-/datum/symptom/heal/plasma/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
-	var/heal_amt = BASE_HEAL_PLASMA_FIXATION * actual_power
+/datum/symptom/heal/phoron/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
+	var/heal_amt = BASE_HEAL_PHORON_FIXATION * actual_power
 
 	if(prob(5))
-		to_chat(M, span_notice("You feel yourself absorbing plasma inside and around you..."))
+		to_chat(M, span_notice("You feel yourself absorbing phoron inside and around you..."))
 
 	var/target_temp = M.get_body_temp_normal()
 	if(M.bodytemperature > target_temp)
@@ -597,13 +597,13 @@
 			M.update_damage_overlays()
 	return 1
 
-///Plasma End
+///Phoron End
 #undef HEALING_PER_MOL
 #undef HEALING_PER_BREATH_PRESSURE
 #undef MAX_HEAL_COEFFICIENT_INTERNALS
 #undef MAX_HEAL_COEFFICIENT_ENVIRONMENT
 #undef MAX_HEAL_COEFFICIENT_BLOODSTREAM
-#undef BASE_HEAL_PLASMA_FIXATION
+#undef BASE_HEAL_PHORON_FIXATION
 
 /datum/symptom/heal/radiation
 	name = "Radioactive Resonance"

@@ -137,7 +137,7 @@
 
 		"Hailing from the arid world of Tizira, lizards were travelling the stars back when mankind was first discovering how neat trains could be. \
 		However, much like the space-fable of the space-tortoise and space-hare, lizards have rejected their kin's motto of \"slow and steady\" \
-		in favor of resting on their laurels and getting completely surpassed by 'bald apes', due in no small part to their lack of access to plasma.",
+		in favor of resting on their laurels and getting completely surpassed by 'bald apes', due in no small part to their lack of access to phoron.",
 
 		"The history between lizards and humans has resulted in many conflicts that lizards ended on the losing side of, \
 		with the finale being an explosive remodeling of their moon. Today's lizard-human relations are seeing the continuance of a record period of peace.",

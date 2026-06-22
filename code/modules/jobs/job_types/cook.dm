@@ -12,7 +12,6 @@
 	var/cooks = 0 //Counts cooks amount
 
 	outfit = /datum/outfit/job/cook
-	plasmaman_outfit = /datum/outfit/plasmaman/chef
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV

@@ -12,7 +12,6 @@
 	config_tag = "PSYCHOLOGIST"
 
 	outfit = /datum/outfit/job/psychologist
-	plasmaman_outfit = /datum/outfit/plasmaman/psychologist
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_MED

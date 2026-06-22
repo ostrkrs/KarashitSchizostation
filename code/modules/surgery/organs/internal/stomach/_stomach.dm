@@ -481,13 +481,6 @@
 	metabolism_efficiency = 0.025 //very bad
 	organ_traits = list(TRAIT_NOHUNGER)
 
-/obj/item/organ/stomach/bone/plasmaman
-	name = "digestive crystal"
-	desc = "A strange crystal that is responsible for metabolizing the unseen energy force that feeds plasmamen."
-	icon_state = "stomach-p"
-	metabolism_efficiency = 0.06
-	organ_traits = null
-
 /obj/item/organ/stomach/cybernetic
 	name = "basic cybernetic stomach"
 	desc = "A basic device designed to mimic the functions of a human stomach"

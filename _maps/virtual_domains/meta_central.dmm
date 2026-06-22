@@ -1162,7 +1162,7 @@
 /area/virtual_domain)
 "kc" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/mine/gas/plasma,
+/obj/effect/mine/gas/phoron,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "kd" = (
@@ -4986,7 +4986,7 @@
 /obj/item/book/manual/wiki/security_corp_law,
 /obj/machinery/light/small/directional/west,
 /obj/item/paper/fluff/gateway,
-/obj/item/coin/plasma,
+/obj/item/coin/phoron,
 /obj/item/melee/chainofcommand,
 /turf/open/floor/wood,
 /area/virtual_domain)

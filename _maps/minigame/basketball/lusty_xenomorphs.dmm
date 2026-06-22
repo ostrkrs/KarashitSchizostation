@@ -74,7 +74,7 @@
 /area/centcom/basketball)
 "fi" = (
 /obj/structure/alien/weeds,
-/obj/structure/statue/plasma/xeno,
+/obj/structure/statue/phoron/xeno,
 /turf/open/floor/iron/white,
 /area/centcom/basketball)
 "fj" = (
@@ -321,7 +321,7 @@
 /area/centcom/basketball)
 "AU" = (
 /obj/structure/alien/weeds,
-/obj/structure/statue/plasma/scientist,
+/obj/structure/statue/phoron/scientist,
 /turf/open/floor/iron/white,
 /area/centcom/basketball)
 "Bd" = (

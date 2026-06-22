@@ -257,16 +257,16 @@
 
 /datum/supply_pack/security/armory/fire
 	name = "Incendiary Weapons Crate"
-	desc = "Burn, baby burn. Contains three incendiary grenades, three plasma canisters, \
+	desc = "Burn, baby burn. Contains three incendiary grenades, three phoron canisters, \
 		and a flamethrower."
 	cost = CARGO_CRATE_VALUE * 7
 	access = ACCESS_COMMAND
 	contains = list(/obj/item/flamethrower/full,
-					/obj/item/tank/internals/plasma = 3,
+					/obj/item/tank/internals/phoron = 3,
 					/obj/item/grenade/chem_grenade/incendiary = 3,
 				)
 	crate_name = "incendiary weapons crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_type = /obj/structure/closet/crate/secure/phoron
 	dangerous = TRUE
 
 /datum/supply_pack/security/armory/mindshield

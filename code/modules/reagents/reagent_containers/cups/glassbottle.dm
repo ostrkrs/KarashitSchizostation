@@ -887,7 +887,7 @@
 		/datum/reagent/phlogiston,
 		/datum/reagent/napalm,
 		/datum/reagent/hellwater,
-		/datum/reagent/toxin/plasma,
+		/datum/reagent/toxin/phoron,
 		/datum/reagent/toxin/spore_burning,
 	)
 

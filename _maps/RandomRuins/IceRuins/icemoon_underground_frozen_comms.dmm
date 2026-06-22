@@ -161,13 +161,6 @@
 /obj/structure/flora/tree/pine/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
-"yF" = (
-/obj/structure/closet/wardrobe/grey,
-/obj/item/clothing/gloves/color/plasmaman,
-/turf/open/floor/iron/showroomfloor{
-	initial_gas_mix = "ICEMOON_ATMOS"
-	},
-/area/ruin/powered/shuttle)
 "yW" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -179,9 +172,6 @@
 /area/ruin/powered/shuttle)
 "zi" = (
 /obj/machinery/suit_storage_unit,
-/obj/item/tank/internals/plasmaman/belt/full,
-/obj/item/clothing/suit/space/eva/plasmaman,
-/obj/item/clothing/head/helmet/space/plasmaman,
 /obj/item/clothing/mask/breath,
 /turf/open/floor/iron/smooth{
 	initial_gas_mix = "ICEMOON_ATMOS"
@@ -419,7 +409,6 @@
 /area/ruin/powered/shuttle)
 "Ws" = (
 /obj/structure/closet/wardrobe/grey,
-/obj/item/clothing/under/plasmaman,
 /turf/open/floor/iron/showroomfloor{
 	initial_gas_mix = "ICEMOON_ATMOS"
 	},
@@ -573,7 +562,7 @@ oj
 gz
 wJ
 HT
-yF
+Ws
 Ws
 gz
 zi

@@ -249,7 +249,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 	name = "SciDrobe"
 	desc = "A simple vending machine suitable to dispense well tailored science clothing. Endorsed by Space Cubans."
 	icon_state = "scidrobe"
-	product_ads = "Longing for the smell of plasma burnt flesh? Buy your science clothing now!;Made with 10% Auxetics, so you don't have to worry about losing your arm!"
+	product_ads = "Longing for the smell of phoron burnt flesh? Buy your science clothing now!;Made with 10% Auxetics, so you don't have to worry about losing your arm!"
 	vend_reply = "Thank you for using the SciDrobe!"
 	products = list(
 		/obj/item/clothing/accessory/pocketprotector = 3,

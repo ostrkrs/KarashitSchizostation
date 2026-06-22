@@ -37,7 +37,7 @@
 /**
  * on_attach: Called when attached to a holder, wiring datum, or other special assembly
  *
- * Will also be called if the assembly holder is attached to a plasma (internals) tank or welding fuel (dispenser) tank.
+ * Will also be called if the assembly holder is attached to a phoron (internals) tank or welding fuel (dispenser) tank.
  */
 /obj/item/assembly/proc/on_attach()
 	SHOULD_CALL_PARENT(TRUE)

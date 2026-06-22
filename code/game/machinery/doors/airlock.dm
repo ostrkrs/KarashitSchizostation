@@ -2180,22 +2180,22 @@
 /obj/machinery/door/airlock/uranium/glass/safe
 	actually_radioactive = FALSE
 
-/obj/machinery/door/airlock/plasma
-	name = "plasma airlock"
+/obj/machinery/door/airlock/phoron
+	name = "phoron airlock"
 	desc = "No way this can end badly."
-	icon = 'icons/obj/doors/airlocks/station/plasma.dmi'
-	assemblytype = /obj/structure/door_assembly/door_assembly_plasma
+	icon = 'icons/obj/doors/airlocks/station/phoron.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_phoron
 	material_flags = MATERIAL_EFFECTS
 	material_modifier = 0.25
 
-/obj/machinery/door/airlock/plasma/Initialize(mapload)
-	custom_materials = custom_materials ? custom_materials : list(/datum/material/plasma = SHEET_MATERIAL_AMOUNT * 10)
+/obj/machinery/door/airlock/phoron/Initialize(mapload)
+	custom_materials = custom_materials ? custom_materials : list(/datum/material/phoron = SHEET_MATERIAL_AMOUNT * 10)
 	. = ..()
 
-/obj/machinery/door/airlock/plasma/block_superconductivity() //we don't stop the heat~
+/obj/machinery/door/airlock/phoron/block_superconductivity() //we don't stop the heat~
 	return 0
 
-/obj/machinery/door/airlock/plasma/glass
+/obj/machinery/door/airlock/phoron/glass
 	opacity = FALSE
 	glass = TRUE
 

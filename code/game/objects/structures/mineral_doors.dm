@@ -250,10 +250,10 @@
 	..()
 	set_opacity(FALSE)
 
-/obj/structure/mineral_door/transparent/plasma
-	name = "plasma door"
-	icon_state = "plasma"
-	sheetType = /obj/item/stack/sheet/mineral/plasma
+/obj/structure/mineral_door/transparent/phoron
+	name = "phoron door"
+	icon_state = "phoron"
+	sheetType = /obj/item/stack/sheet/mineral/phoron
 
 /obj/structure/mineral_door/transparent/diamond
 	name = "diamond door"

@@ -1771,7 +1771,7 @@
 	id_tag = "donk_office_trap_shutters";
 	id = "donk_office_trap_shutters"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/office)
 "pw" = (
@@ -2370,7 +2370,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "donk_vault_lasertrap"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/office)
 "uE" = (
@@ -2406,7 +2406,7 @@
 /turf/template_noop,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/corridor)
 "ve" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/aicore)
 "vf" = (
@@ -3112,7 +3112,7 @@
 "Bg" = (
 /obj/structure/cable/layer1,
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/stack/sheet/plastitaniumglass/fifty,
+/obj/item/stack/sheet/plastitanium_glass/fifty,
 /obj/item/stack/sheet/mineral/plastitanium{
 	pixel_y = 8;
 	amount = 50
@@ -3664,7 +3664,7 @@
 /obj/machinery/door/poddoor/shutters{
 	id = "donk_office_peek"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/office)
 "Gk" = (
@@ -4847,7 +4847,7 @@
 /area/ruin/space/has_grav/hauntedtradingpost/maint)
 "QA" = (
 /obj/structure/sign/warning,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/aicore)
 "QF" = (
@@ -5182,7 +5182,7 @@
 	id = "donk_corridor_peek"
 	},
 /obj/structure/cable/layer1,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/corridor)
 "Tz" = (

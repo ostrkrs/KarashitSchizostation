@@ -328,8 +328,8 @@
 "vM" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/spray/waterflower/superlube,
-/obj/structure/window/plasma/spawner/directional/east,
-/obj/structure/window/plasma/spawner/directional/north,
+/obj/structure/window/phoron/spawner/directional/east,
+/obj/structure/window/phoron/spawner/directional/north,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "vW" = (
@@ -712,7 +712,7 @@
 /area/deathmatch)
 "UU" = (
 /obj/structure/table/reinforced,
-/obj/structure/window/plasma/spawner/directional/north,
+/obj/structure/window/phoron/spawner/directional/north,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "UV" = (

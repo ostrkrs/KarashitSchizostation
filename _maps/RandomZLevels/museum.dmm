@@ -1662,11 +1662,11 @@
 "nz" = (
 /obj/structure/lattice/catwalk/mining,
 /obj/structure/fluff{
-	name = "old plasma extractor";
+	name = "old phoron extractor";
 	icon = 'icons/mob/simple/hivebot.dmi';
 	icon_state = "fab_robot"
 	},
-/turf/open/lava/plasma/mafia,
+/turf/open/lava/phoron/mafia,
 /area/awaymission/museum)
 "nC" = (
 /obj/structure/railing,
@@ -3003,7 +3003,7 @@
 /turf/open/floor/wood/large,
 /area/awaymission/museum)
 "yl" = (
-/turf/open/lava/plasma/mafia,
+/turf/open/lava/phoron/mafia,
 /area/awaymission/museum)
 "yn" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/end{
@@ -4387,7 +4387,7 @@
 	},
 /obj/machinery/computer/terminal/museum{
 	dir = 8;
-	content = list("This exhibit is of a preserved cortical borer. Cortical borers went extinct in the Spinward sector due to almost every of them starving as they could not find enough food in the brains of the crewmembers, as they are usually pretty small or damaged by plasma exposure.")
+	content = list("This exhibit is of a preserved cortical borer. Cortical borers went extinct in the Spinward sector due to almost every of them starving as they could not find enough food in the brains of the crewmembers, as they are usually pretty small or damaged by phoron exposure.")
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)

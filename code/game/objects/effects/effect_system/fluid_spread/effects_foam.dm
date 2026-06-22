@@ -237,15 +237,15 @@
 
 
 // Firefighting foam
-/// A variant of foam which absorbs plasma in the air if there is a fire.
+/// A variant of foam which absorbs phoron in the air if there is a fire.
 /obj/effect/particle_effect/fluid/foam/firefighting
 	name = "firefighting foam"
 	lifetime = 20 //doesn't last as long as normal foam
-	result_type = /obj/effect/decal/cleanable/plasma
+	result_type = /obj/effect/decal/cleanable/phoron
 	allow_duplicate_results = FALSE
 	slippery_foam = FALSE
-	/// The amount of plasma gas this foam has absorbed. To be deposited when the foam dissipates.
-	var/absorbed_plasma = 0
+	/// The amount of phoron gas this foam has absorbed. To be deposited when the foam dissipates.
+	var/absorbed_phoron = 0
 
 /obj/effect/particle_effect/fluid/foam/firefighting/Initialize(mapload)
 	. = ..()
@@ -265,10 +265,10 @@
 	QDEL_NULL(hotspot)
 	var/datum/gas_mixture/air = location.air
 	var/list/gases = air.gases
-	if (gases[/datum/gas/plasma])
-		var/scrub_amt = min(30, gases[/datum/gas/plasma][MOLES]) //Absorb some plasma
-		gases[/datum/gas/plasma][MOLES] -= scrub_amt
-		absorbed_plasma += scrub_amt
+	if (gases[/datum/gas/phoron])
+		var/scrub_amt = min(30, gases[/datum/gas/phoron][MOLES]) //Absorb some phoron
+		gases[/datum/gas/phoron][MOLES] -= scrub_amt
+		absorbed_phoron += scrub_amt
 	if (air.temperature > T20C)
 		air.temperature = max(air.temperature / 2, T20C)
 	air.garbage_collect()
@@ -276,9 +276,9 @@
 
 /obj/effect/particle_effect/fluid/foam/firefighting/make_result()
 	var/atom/movable/deposit = ..()
-	if(istype(deposit) && deposit.reagents && absorbed_plasma > 0)
-		deposit.reagents.add_reagent(/datum/reagent/stable_plasma, absorbed_plasma)
-		absorbed_plasma = 0
+	if(istype(deposit) && deposit.reagents && absorbed_phoron > 0)
+		deposit.reagents.add_reagent(/datum/reagent/stable_phoron, absorbed_phoron)
+		absorbed_phoron = 0
 	return deposit
 
 /obj/effect/particle_effect/fluid/foam/firefighting/foam_mob(mob/living/foaming, seconds_per_tick)

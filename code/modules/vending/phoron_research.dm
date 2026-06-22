@@ -1,5 +1,5 @@
 //This one's from bay12
-/obj/machinery/vending/plasmaresearch
+/obj/machinery/vending/phoron_research
 	name = "\improper Bombuddy 3000"
 	desc = "All the fine parts you need in one vending machine!"
 	products = list(
@@ -13,11 +13,11 @@
 		/obj/item/transfer_valve = 6,
 	)
 	contraband = list(/obj/item/assembly/health = 3)
-	refill_canister = /obj/item/vending_refill/plasmaresearch
+	refill_canister = /obj/item/vending_refill/phoron_research
 	default_price = PAYCHECK_CREW
 	extra_price = PAYCHECK_CREW
 	payment_department = ACCOUNT_SCI
 
-/obj/item/vending_refill/plasmaresearch
+/obj/item/vending_refill/phoron_research
 	machine_name = "Bombuddy 3000"
 	icon_state = "refill_bombuddy"

@@ -13,8 +13,6 @@
 
 /datum/quirk/item_quirk/signer/add_unique(client/client_source)
 	var/obj/item/clothing/gloves/gloves_type = /obj/item/clothing/gloves/radio
-	if(isplasmaman(quirk_holder))
-		gloves_type = /obj/item/clothing/gloves/color/plasmaman/radio
 	give_item_to_holder(gloves_type, list(LOCATION_GLOVES, LOCATION_HANDS))
 
 /datum/quirk/item_quirk/signer/remove()

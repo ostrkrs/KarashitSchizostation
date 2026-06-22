@@ -9,17 +9,17 @@
 	anchored = TRUE
 	max_integrity = 300
 	var/oxygentanks = TANK_DISPENSER_CAPACITY
-	var/plasmatanks = TANK_DISPENSER_CAPACITY
+	var/phorontanks = TANK_DISPENSER_CAPACITY
 
 /obj/structure/tank_dispenser/oxygen
-	plasmatanks = 0
+	phorontanks = 0
 
-/obj/structure/tank_dispenser/plasma
+/obj/structure/tank_dispenser/phoron
 	oxygentanks = 0
 
 /obj/structure/tank_dispenser/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/contextual_screentip_bare_hands, lmb_text = "Take Oxygen Tank", rmb_text = "Take Plasma Tank")
+	AddElement(/datum/element/contextual_screentip_bare_hands, lmb_text = "Take Oxygen Tank", rmb_text = "Take Phoron Tank")
 	update_appearance()
 
 /obj/structure/tank_dispenser/update_overlays()
@@ -29,11 +29,11 @@
 			. += "oxygen-[oxygentanks]"
 		if(4 to TANK_DISPENSER_CAPACITY)
 			. += "oxygen-4"
-	switch(plasmatanks)
+	switch(phorontanks)
 		if(1 to 4)
-			. += "plasma-[plasmatanks]"
+			. += "phoron-[phorontanks]"
 		if(5 to TANK_DISPENSER_CAPACITY)
-			. += "plasma-5"
+			. += "phoron-5"
 
 /obj/structure/tank_dispenser/attack_hand(mob/living/user, list/modifiers)
 	. = ..()
@@ -46,11 +46,11 @@
 
 /obj/structure/tank_dispenser/attack_hand_secondary(mob/user, list/modifiers)
 	. = ..()
-	if (!plasmatanks)
-		balloon_alert(user, "no plasma tanks!")
+	if (!phorontanks)
+		balloon_alert(user, "no phoron tanks!")
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
-	dispense(/obj/item/tank/internals/plasma, user)
-	plasmatanks--
+	dispense(/obj/item/tank/internals/phoron, user)
+	phorontanks--
 	update_appearance()
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
@@ -61,9 +61,9 @@
 
 /obj/structure/tank_dispenser/attackby(obj/item/I, mob/living/user, list/modifiers, list/attack_modifiers)
 	var/full
-	if(istype(I, /obj/item/tank/internals/plasma))
-		if(plasmatanks < TANK_DISPENSER_CAPACITY)
-			plasmatanks++
+	if(istype(I, /obj/item/tank/internals/phoron))
+		if(phorontanks < TANK_DISPENSER_CAPACITY)
+			phorontanks++
 		else
 			full = TRUE
 	else if(istype(I, /obj/item/tank/internals/oxygen))
@@ -93,10 +93,10 @@
 
 /obj/structure/tank_dispenser/examine(mob/user)
 	. = ..()
-	if(plasmatanks && oxygentanks)
-		. += span_notice("It has <b>[plasmatanks]</b> plasma tank\s and <b>[oxygentanks]</b> oxygen tank\s left.")
-	else if(plasmatanks || oxygentanks)
-		. += span_notice("It has <b>[plasmatanks ? "[plasmatanks]</b> plasma" : "[oxygentanks]</b> oxygen"] tank\s left.")
+	if(phorontanks && oxygentanks)
+		. += span_notice("It has <b>[phorontanks]</b> phoron tank\s and <b>[oxygentanks]</b> oxygen tank\s left.")
+	else if(phorontanks || oxygentanks)
+		. += span_notice("It has <b>[phorontanks ? "[phorontanks]</b> phoron" : "[oxygentanks]</b> oxygen"] tank\s left.")
 
 /obj/structure/tank_dispenser/proc/dispense(tank_type, mob/receiver)
 	var/existing_tank = locate(tank_type) in src

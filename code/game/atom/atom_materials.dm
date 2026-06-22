@@ -188,7 +188,7 @@
 		mat_names |= material.name
 	return mat_names.Join("-")
 
-///Returns a string like "plasma, paper and glass" from a list of materials
+///Returns a string like "phoron, paper and glass" from a list of materials
 /atom/proc/get_material_english_list(list/materials)
 	var/list/mat_names = list()
 	for(var/datum/material/material as anything in materials)

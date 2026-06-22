@@ -1,2 +1,2 @@
-output_name = "plasmaglass_table"
+output_name = "reinf_phoron_glass"
 template = "bitmask/diagonal_32x32.toml"

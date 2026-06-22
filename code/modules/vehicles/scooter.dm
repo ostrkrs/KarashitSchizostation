@@ -151,7 +151,7 @@
 	if(location)
 		if(prob(25))
 			location.hotspot_expose(1000,1000)
-			sparks.start() //the most radical way to start plasma fires
+			sparks.start()
 	for(var/mob/living/carbon/victim in location)
 		if(victim.body_position == LYING_DOWN)
 			playsound(location, 'sound/items/trayhit/trayhit2.ogg', 40)

@@ -2,16 +2,16 @@
 #define FAKE_FLOOD_EXPAND_TIME 20
 #define FAKE_FLOOD_MAX_RADIUS 10
 
-/// Plasma starts flooding from the nearby vent
+/// Phoron starts flooding from the nearby vent
 /datum/hallucination/fake_flood
 	random_hallucination_weight = 7
 	hallucination_tier = HALLUCINATION_TIER_UNCOMMON
 
 	var/list/image/flood_images = list()
-	var/list/obj/effect/plasma_image_holder/flood_image_holders = list()
+	var/list/obj/effect/phoron_image_holder/flood_image_holders = list()
 	var/list/turf/flood_turfs = list()
 	var/image_icon = 'icons/effects/atmospherics.dmi'
-	var/image_state = "plasma"
+	var/image_state = "phoron"
 	var/radius = 0
 	var/next_expand = 0
 
@@ -33,7 +33,7 @@
 		return FALSE
 
 	feedback_details += "Vent Coords: ([center.x], [center.y], [center.z])"
-	create_new_plasma_image(center)
+	create_new_phoron_image(center)
 	hallucinator.client?.images |= flood_images
 
 	next_expand = world.time + FAKE_FLOOD_EXPAND_TIME
@@ -54,7 +54,7 @@
 	if(get_turf(hallucinator) in flood_turfs)
 		var/mob/living/carbon/carbon_hallucinator = hallucinator
 		if(istype(carbon_hallucinator) && !carbon_hallucinator.internal)
-			hallucinator.cause_hallucination(/datum/hallucination/fake_alert/bad_plasma, "fake plasmaflood hallucination")
+			hallucinator.cause_hallucination(/datum/hallucination/fake_alert/bad_phoron, "fake phoronflood hallucination")
 
 	next_expand = world.time + FAKE_FLOOD_EXPAND_TIME
 
@@ -67,20 +67,20 @@
 			var/turf/nearby_turf = get_step(flooded_turf, dir)
 			if((nearby_turf in flood_turfs) || !TURFS_CAN_SHARE(nearby_turf, flooded_turf) || isspaceturf(nearby_turf))
 				continue
-			create_new_plasma_image(nearby_turf)
+			create_new_phoron_image(nearby_turf)
 
 	hallucinator.client?.images |= flood_images
 
-/datum/hallucination/fake_flood/proc/create_new_plasma_image(turf/to_flood)
+/datum/hallucination/fake_flood/proc/create_new_phoron_image(turf/to_flood)
 	flood_turfs += to_flood
 
-	var/obj/effect/plasma_image_holder/image_holder = new(to_flood)
+	var/obj/effect/phoron_image_holder/image_holder = new(to_flood)
 	flood_image_holders += image_holder
 
-	var/image/plasma_image = image(image_icon, image_holder, image_state, FLY_LAYER)
-	plasma_image.alpha = 50
-	SET_PLANE_EXPLICIT(plasma_image, ABOVE_GAME_PLANE, to_flood)
-	flood_images += plasma_image
+	var/image/phoron_image = image(image_icon, image_holder, image_state, FLY_LAYER)
+	phoron_image.alpha = 50
+	SET_PLANE_EXPLICIT(phoron_image, ABOVE_GAME_PLANE, to_flood)
+	flood_images += phoron_image
 
 /datum/hallucination/fake_flood/Destroy()
 	STOP_PROCESSING(SSobj, src)
@@ -93,7 +93,7 @@
 
 	return ..()
 
-/obj/effect/plasma_image_holder
+/obj/effect/phoron_image_holder
 	icon_state = "nothing"
 	anchored = TRUE
 	layer = FLY_LAYER

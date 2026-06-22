@@ -19,7 +19,7 @@
 	config_tag = "CHIEF_ENGINEER"
 
 	outfit = /datum/outfit/job/ce
-	plasmaman_outfit = /datum/outfit/plasmaman/chief_engineer
+
 	departments_list = list(
 		/datum/job_department/engineering,
 		/datum/job_department/command,
@@ -40,7 +40,7 @@
 		/obj/item/food/cracker = 25, //you know. for poly
 		/obj/item/stack/sheet/mineral/diamond = 15,
 		/obj/item/stack/sheet/mineral/uranium/five = 15,
-		/obj/item/stack/sheet/mineral/plasma/five = 15,
+		/obj/item/stack/sheet/mineral/phoron/five = 15,
 		/obj/item/stack/sheet/mineral/gold = 15,
 		/obj/effect/spawner/random/engineering/tool_advanced = 3
 	)

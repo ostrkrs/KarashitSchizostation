@@ -54,7 +54,7 @@
 /turf/open/floor/pod/light,
 /area/shuttle/hunter)
 "h" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
 "i" = (

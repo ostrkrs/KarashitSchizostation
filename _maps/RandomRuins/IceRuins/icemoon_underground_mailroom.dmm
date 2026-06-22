@@ -198,7 +198,7 @@
 /turf/open/floor/carpet/green,
 /area/ruin/powered/mailroom)
 "uK" = (
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /obj/machinery/light/small/red/directional/north,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/mailroom)

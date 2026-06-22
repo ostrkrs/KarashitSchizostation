@@ -169,9 +169,9 @@
 	material = /datum/material/uranium
 	barricade = /obj/structure/statue/uranium/nuke
 
-/datum/armour_dimensional_theme/dangerous/plasma
-	material = /datum/material/plasma
-	barricade = /obj/structure/statue/plasma/xeno
+/datum/armour_dimensional_theme/dangerous/phoron
+	material = /datum/material/phoron
+	barricade = /obj/structure/statue/phoron/xeno
 
 /datum/armour_dimensional_theme/dangerous/ice
 	material = /datum/material/snow

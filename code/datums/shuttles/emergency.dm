@@ -149,8 +149,8 @@
 /datum/map_template/shuttle/emergency/discoinferno
 	suffix = "discoinferno"
 	name = "Disco Inferno"
-	description = "The glorious results of centuries of plasma research done by Nanotrasen employees. This is the reason why you are here. Get on and dance like you're on fire, burn baby burn!"
-	admin_notes = "Flaming hot. The main area has a dance machine as well as plasma floor tiles that will be ignited by players every single time."
+	description = "The glorious results of centuries of phoron research done by Nanotrasen employees. This is the reason why you are here. Get on and dance like you're on fire, burn baby burn!"
+	admin_notes = "Flaming hot. The main area has a dance machine as well as phoron floor tiles that will be ignited by players every single time."
 	emag_only = TRUE
 	credit_cost = EMAG_LOCKED_SHUTTLE_COST
 	occupancy_limit = "10"
@@ -421,8 +421,8 @@
 /datum/map_template/shuttle/emergency/shadow
 	suffix = "shadow"
 	name = "The NTSS Shadow"
-	description = "Guaranteed to get you somewhere FAST. With a custom-built plasma engine, this bad boy will put more distance between you and certain danger than any other!"
-	admin_notes = "The aft of the ship has a plasma tank that starts ignited. May get released by crew. The plasma windows next to the engine heaters will also erupt into flame, and also risk getting released by crew."
+	description = "Guaranteed to get you somewhere FAST. With a custom-built phoron engine, this bad boy will put more distance between you and certain danger than any other!"
+	admin_notes = "The aft of the ship has a phoron tank that starts ignited. May get released by crew. The phoron windows next to the engine heaters will also erupt into flame, and also risk getting released by crew."
 	credit_cost = CARGO_CRATE_VALUE * 50
 	occupancy_limit = "40"
 

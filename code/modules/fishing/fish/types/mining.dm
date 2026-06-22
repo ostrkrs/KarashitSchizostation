@@ -18,7 +18,7 @@
 		/datum/gas/nitrogen,
 		/datum/gas/carbon_dioxide = list(0, 20),
 		/datum/gas/water_vapor,
-		/datum/gas/plasma = list(0, 5),
+		/datum/gas/phoron = list(0, 5),
 		/datum/gas/bz = list(0, 5),
 		/datum/gas/miasma = list(0, 5),
 	)
@@ -182,8 +182,8 @@
 		/datum/fish_trait/carnivore,
 		/datum/fish_trait/heavy,
 	)
-	compatible_types = list(/obj/item/fish/lavaloop/plasma_river)
-	evolution_types = list(/datum/fish_evolution/plasmaloop)
+	compatible_types = list(/obj/item/fish/lavaloop/phoron_river)
+	evolution_types = list(/datum/fish_evolution/phoronloop)
 	hitsound = null
 	throwforce = 5
 	beauty = FISH_BEAUTY_GOOD
@@ -209,7 +209,7 @@
 	return list("chewy fish" = 2)
 
 /obj/item/fish/lavaloop/get_food_types()
-	return SEAFOOD|MEAT|GORE //Well-cooked in lava/plasma
+	return SEAFOOD|MEAT|GORE //Well-cooked in lava/phoron
 
 /obj/item/fish/lavaloop/proc/explode_on_user(mob/living/user)
 	var/obj/item/bodypart/arm/active_arm = user.get_active_hand()
@@ -224,11 +224,11 @@
 		return FALSE
 	return (target.mob_size >= MOB_SIZE_LARGE)
 
-/obj/item/fish/lavaloop/plasma_river
-	name = "plasmaloop"
-	desc = "A lavaloop that has evolved to survive in cold liquid plasma. Can be used as make-shift boomerang."
-	fish_id = "plasma_lavaloop"
-	icon_state = "plasma_loop"
+/obj/item/fish/lavaloop/phoron_river
+	name = "phoronloop"
+	desc = "A lavaloop that has evolved to survive in cold liquid phoron. Can be used as make-shift boomerang."
+	fish_id = "phoron_lavaloop"
+	icon_state = "phoron_loop"
 	dedicated_in_aquarium_icon_state = /obj/item/fish/lavaloop::icon_state + "_small"
 	required_temperature_min = MIN_AQUARIUM_TEMP - 100
 	required_temperature_max = MIN_AQUARIUM_TEMP+80
@@ -236,13 +236,13 @@
 	evolution_types = list(/datum/fish_evolution/lavaloop)
 	maximum_bonus = 30
 
-/obj/item/fish/lavaloop/plasma_river/explode_on_user(mob/living/user)
+/obj/item/fish/lavaloop/phoron_river/explode_on_user(mob/living/user)
 	playsound(src, 'sound/effects/explosion/explosion1.ogg', 40, TRUE)
 	user.flash_act(1, 1)
 	user.apply_status_effect(/datum/status_effect/ice_block_talisman, 5 SECONDS)
 	qdel(src)
 
-/obj/item/fish/lavaloop/plasma_river/on_fish_land(mob/living/target, bonus_value)
+/obj/item/fish/lavaloop/phoron_river/on_fish_land(mob/living/target, bonus_value)
 	if(!istype(target))
 		return FALSE
 	if(target.mob_size < MOB_SIZE_LARGE)

@@ -78,7 +78,6 @@
 		/obj/item/storage/fancy/cigarettes,
 		/obj/item/storage/lockbox/medal,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 	)
 
 //Chef
@@ -184,7 +183,6 @@
 		/obj/item/radio,
 		/obj/item/storage/bag/construction,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/t_scanner,
 		/obj/item/gun/ballistic/rifle/boltaction/pipegun,
 		/obj/item/storage/bag/rebar_quiver,
@@ -241,7 +239,6 @@
 	body_parts_covered = CHEST|ARMS
 	allowed = list(
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/boxcutter,
 		/obj/item/dest_tagger,
 		/obj/item/stamp,
@@ -431,7 +428,6 @@
 		/obj/item/storage/bag/construction,
 		/obj/item/t_scanner,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/extinguisher,
 		/obj/item/construction/rtd,
 		/obj/item/gun/ballistic/rifle/rebarxbow,

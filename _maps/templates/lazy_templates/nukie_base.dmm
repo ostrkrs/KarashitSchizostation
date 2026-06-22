@@ -146,7 +146,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_mothership)
 "cl" = (
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "cq" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -170,7 +170,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 9
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/machinery/reagentgrinder{
 	pixel_x = -5;
 	pixel_y = 12
@@ -262,7 +262,7 @@
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
 "dF" = (
 /obj/machinery/light/cold/directional/west,
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/pen{
 	pixel_x = 9;
 	pixel_y = 18
@@ -306,7 +306,7 @@
 	pixel_y = 17
 	},
 /obj/structure/fluff/tram_rail,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "dI" = (
 /obj/structure/dresser,
@@ -406,7 +406,7 @@
 /turf/open/floor/wood/tile,
 /area/centcom/syndicate_mothership/control)
 "eu" = (
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/screwdriver{
 	pixel_x = 1;
 	pixel_y = 23
@@ -485,7 +485,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating,
 /area/centcom/syndicate_mothership/expansion_bombthreat)
 "fu" = (
@@ -526,7 +526,7 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "fA" = (
 /obj/item/kirbyplants/random,
@@ -623,7 +623,7 @@
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 6
 	},
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/item/reagent_containers/syringe{
 	pixel_y = 15
 	},
@@ -687,12 +687,12 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "hs" = (
 /obj/structure/sign/warning/chem_diamond/directional/south,
 /obj/structure/rack,
-/obj/item/stack/sheet/mineral/plasma/fifty,
+/obj/item/stack/sheet/mineral/phoron/fifty,
 /turf/open/floor/mineral/titanium/tiled/yellow,
 /area/centcom/syndicate_mothership/expansion_chemicalwarfare)
 "hA" = (
@@ -1007,7 +1007,7 @@
 /obj/structure/railing{
 	dir = 9
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "lc" = (
 /obj/effect/turf_decal/siding/red/corner{
@@ -1638,7 +1638,7 @@
 /turf/open/floor/iron,
 /area/centcom/syndicate_mothership/control)
 "rL" = (
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/reagent_containers/cup/beaker/plastic{
 	pixel_x = 7;
 	pixel_y = 5
@@ -1687,7 +1687,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "sg" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -1980,7 +1980,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/structure/reagent_dispensers/wall/virusfood/directional/north,
 /obj/item/clothing/gloves/latex,
 /obj/item/healthanalyzer{
@@ -2203,7 +2203,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 9
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
@@ -2238,7 +2238,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/centcom/syndicate_mothership/control)
 "zy" = (
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/item/flashlight/lamp/green{
 	pixel_y = 9;
 	pixel_x = 5
@@ -2481,7 +2481,7 @@
 /turf/open/floor/plastic,
 /area/centcom/syndicate_mothership/expansion_fridgerummage)
 "BR" = (
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/storage/pill_bottle{
 	pixel_x = 8;
 	pixel_y = 8
@@ -2552,7 +2552,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/reagent_containers/syringe{
 	pixel_x = -5;
 	pixel_y = 12
@@ -2739,7 +2739,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "EL" = (
 /obj/structure/sign/poster/contraband/masked_men/directional/east,
@@ -2873,7 +2873,7 @@
 /obj/structure/railing{
 	dir = 10
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "Gz" = (
 /obj/machinery/light/small/directional/east,
@@ -2976,7 +2976,7 @@
 	dir = 1
 	},
 /obj/structure/railing,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "GO" = (
 /obj/machinery/vending/wardrobe/jani_wardrobe,
@@ -3033,7 +3033,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/folder/white,
 /obj/item/pen{
 	pixel_x = 6;
@@ -3052,7 +3052,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/folder/white{
 	pixel_x = 4;
 	pixel_y = -3
@@ -3078,8 +3078,8 @@
 	pixel_x = -8;
 	pixel_y = 9
 	},
-/obj/item/stack/sheet/mineral/plasma,
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
+/obj/item/stack/sheet/mineral/phoron,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_mothership/expansion_bioterrorism)
 "HJ" = (
@@ -3147,7 +3147,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 10
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/paper_bin{
 	pixel_x = -6;
 	pixel_y = 6
@@ -3219,7 +3219,7 @@
 /turf/open/floor/iron,
 /area/centcom/syndicate_mothership/control)
 "Jf" = (
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/reagent_containers/cup/beaker/meta{
 	pixel_x = -5;
 	pixel_y = 8
@@ -3369,7 +3369,7 @@
 /obj/structure/railing{
 	dir = 9
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "KU" = (
 /obj/effect/light_emitter{
@@ -3687,7 +3687,7 @@
 /turf/closed/indestructible/syndicate,
 /area/centcom/syndicate_mothership/control)
 "Om" = (
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/item/paper_bin{
 	pixel_x = -2;
 	pixel_y = 6
@@ -3818,7 +3818,7 @@
 /obj/structure/railing{
 	dir = 6
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "Py" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -3881,7 +3881,7 @@
 /obj/structure/railing{
 	dir = 6
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "Ql" = (
 /obj/structure/sign/poster/contraband/fun_police/directional/west,
@@ -3889,7 +3889,7 @@
 	name = "Tinted Window"
 	},
 /obj/machinery/light/cold/directional/west,
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/item/assembly/timer{
 	pixel_x = 12;
 	pixel_y = -9
@@ -4121,7 +4121,7 @@
 /turf/open/misc/asteroid/snow/airless,
 /area/centcom/syndicate_mothership/expansion_bombthreat)
 "Sm" = (
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/item/plunger{
 	pixel_x = -9;
 	pixel_y = 15
@@ -4247,7 +4247,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating,
 /area/centcom/syndicate_mothership/expansion_bombthreat)
 "Tn" = (
@@ -4450,7 +4450,7 @@
 /obj/structure/window/reinforced/survival_pod/spawner/directional/south{
 	name = "Tinted Window"
 	},
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/item/transfer_valve{
 	pixel_x = -5
 	},
@@ -4488,7 +4488,7 @@
 /obj/structure/railing{
 	dir = 9
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/centcom/syndicate_mothership/control)
 "Wa" = (
 /obj/structure/rack,

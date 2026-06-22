@@ -579,7 +579,7 @@
 	mineral_breakdown = list( // All the riches of the world, eeny meeny boulder room.
 		/datum/material/iron = 1,
 		/datum/material/glass = 1,
-		/datum/material/plasma = 1,
+		/datum/material/phoron = 1,
 		/datum/material/titanium = 1,
 		/datum/material/silver = 1,
 		/datum/material/gold = 1,

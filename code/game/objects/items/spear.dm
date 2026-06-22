@@ -86,11 +86,11 @@
 		return ..()
 
 	switch(tip.type)
-		if(/obj/item/shard/plasma)
+		if(/obj/item/shard/phoron)
 			force = 11
 			throwforce = 21
-			custom_materials = list(/datum/material/iron= HALF_SHEET_MATERIAL_AMOUNT, /datum/material/alloy/plasmaglass= HALF_SHEET_MATERIAL_AMOUNT * 2)
-			icon_prefix = "spearplasma"
+			custom_materials = list(/datum/material/iron= HALF_SHEET_MATERIAL_AMOUNT, /datum/material/alloy/phoronglass= HALF_SHEET_MATERIAL_AMOUNT * 2)
+			icon_prefix = "spearphoron"
 			force_unwielded = 11
 			force_wielded = 19
 			AddComponent(/datum/component/two_handed, force_unwielded=force_unwielded, force_wielded=force_wielded, icon_wielded="[icon_prefix]1")

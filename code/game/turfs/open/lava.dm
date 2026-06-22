@@ -1,7 +1,7 @@
 /*
  * LAVA
- * PLASMA LAVA
- * MAFIA PLASMA LAVA
+ * PHORON LAVA
+ * MAFIA PHORO LAVA
  */
 
 /turf/open/lava
@@ -390,12 +390,12 @@
 /turf/open/lava/smooth/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
-/turf/open/lava/plasma
-	name = "liquid plasma"
-	desc = "A flowing stream of chilled liquid plasma. You probably shouldn't get in."
-	icon_state = "liquidplasma"
+/turf/open/lava/phoron
+	name = "liquid phoron"
+	desc = "A flowing stream of chilled liquid phoron. You probably shouldn't get in."
+	icon_state = "liquidphoron"
 	initial_gas_mix = BURNING_COLD
-	baseturfs = /turf/open/lava/plasma
+	baseturfs = /turf/open/lava/phoron
 	fish_source_type = /datum/fish_source/lavaland/icemoon
 
 	light_range = 3
@@ -405,88 +405,35 @@
 	immunity_resistance_flags = FREEZE_PROOF
 	lava_temperature = 100
 
-/turf/open/lava/plasma/examine(mob/user)
+/turf/open/lava/phoron/examine(mob/user)
 	. = ..()
-	. += span_info("Some <b>liquid plasma<b> could probably be scooped up with a <b>container</b>.")
+	. += span_info("Some <b>liquid phoron<b> could probably be scooped up with a <b>container</b>.")
 
-/turf/open/lava/plasma/attackby(obj/item/I, mob/user, list/modifiers)
+/turf/open/lava/phoron/attackby(obj/item/I, mob/user, list/modifiers)
 	if(!I.is_open_container())
 		return ..()
-	if(!I.reagents.add_reagent(/datum/reagent/toxin/plasma, rand(5, 10)))
+	if(!I.reagents.add_reagent(/datum/reagent/toxin/phoron, rand(5, 10)))
 		to_chat(user, span_warning("[I] is full."))
 		return
-	user.visible_message(span_notice("[user] scoops some plasma from the [src] with [I]."), span_notice("You scoop out some plasma from the [src] using [I]."))
+	user.visible_message(span_notice("[user] scoops some phoron from the [src] with [I]."), span_notice("You scoop out some phoron from the [src] using [I]."))
 
-/turf/open/lava/plasma/do_burn(atom/movable/burn_target, seconds_per_tick = 1)
+/turf/open/lava/phoron/do_burn(atom/movable/burn_target, seconds_per_tick = 1)
 	. = TRUE
 	if(!isliving(burn_target))
 		return FALSE
 
 	var/mob/living/burn_living = burn_target
 	var/need_mob_update
-	// This is from plasma, so it should obey plasma biotype requirements
+	// This is from phoron, so it should obey phoron biotype requirements
 	need_mob_update += burn_living.adjustToxLoss(15, updating_health = FALSE, required_biotype = MOB_ORGANIC)
 	need_mob_update += burn_living.adjustFireLoss(25, updating_health = FALSE)
 	if(need_mob_update)
 		burn_living.updatehealth()
 
-	if(QDELETED(burn_living) \
-		|| !ishuman(burn_living) \
-		|| HAS_TRAIT(burn_living, TRAIT_NODISMEMBER) \
-		|| HAS_TRAIT(burn_living, TRAIT_NO_PLASMA_TRANSFORM) \
-		|| SPT_PROB(65, seconds_per_tick) \
-	)
-		return
-
-	var/mob/living/carbon/human/burn_human = burn_living
-
-	var/list/immune_parts = list() // Parts we can't transform because they're not organic or can't be dismembered
-	var/list/transform_parts = list() // Parts we want to transform
-
-	for(var/obj/item/bodypart/burn_limb as anything in burn_human.bodyparts)
-		if(!IS_ORGANIC_LIMB(burn_limb) || !burn_limb.can_dismember())
-			immune_parts += burn_limb
-			continue
-		if(burn_limb.limb_id == SPECIES_PLASMAMAN)
-			continue
-		transform_parts += burn_limb
-
-	if(length(transform_parts))
-		var/obj/item/bodypart/burn_limb = pick_n_take(transform_parts)
-		burn_human.emote("scream")
-		var/obj/item/bodypart/plasmalimb
-		switch(burn_limb.body_zone) //get plasmaman limb to swap in
-			if(BODY_ZONE_L_ARM)
-				plasmalimb = new /obj/item/bodypart/arm/left/plasmaman
-			if(BODY_ZONE_R_ARM)
-				plasmalimb = new /obj/item/bodypart/arm/right/plasmaman
-			if(BODY_ZONE_L_LEG)
-				plasmalimb = new /obj/item/bodypart/leg/left/plasmaman
-			if(BODY_ZONE_R_LEG)
-				plasmalimb = new /obj/item/bodypart/leg/right/plasmaman
-			if(BODY_ZONE_CHEST)
-				plasmalimb = new /obj/item/bodypart/chest/plasmaman
-			if(BODY_ZONE_HEAD)
-				plasmalimb = new /obj/item/bodypart/head/plasmaman
-
-		burn_human.del_and_replace_bodypart(plasmalimb, special = TRUE)
-		burn_human.update_body_parts()
-		burn_human.emote("scream")
-		burn_human.visible_message(span_warning("[burn_human]'s [burn_limb.plaintext_zone] melts down to the bone!"), \
-			span_userdanger("You scream out in pain as your [burn_limb.plaintext_zone] melts down to the bone, held together only by strands of purple fungus!"))
-
-	// If all of your limbs are plasma then congrats: you are plasma man
-	if(length(immune_parts) || length(transform_parts))
-		return
-	burn_human.ignite_mob()
-	burn_human.set_species(/datum/species/plasmaman)
-	burn_human.visible_message(span_warning("[burn_human] bursts into flame as the last of [burn_human.p_their()] body is coated in fungus!"), \
-		span_userdanger("Your senses numb as what remains of your flesh sloughs off, revealing the plasma-encrusted bone beneath!"))
-
-//mafia specific tame happy plasma (normal atmos, no slowdown)
-/turf/open/lava/plasma/mafia
+//mafia specific tame happy phoron (normal atmos, no slowdown)
+/turf/open/lava/phoron/mafia
 	initial_gas_mix = OPENTURF_DEFAULT_ATMOS
-	baseturfs = /turf/open/lava/plasma/mafia
+	baseturfs = /turf/open/lava/phoron/mafia
 	slowdown = 0
 	fish_source_type = null
 

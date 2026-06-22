@@ -7,7 +7,7 @@
 /obj/machinery/syndicatebomb/self_destruct{
 	anchored = 1
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /obj/structure/sign/warning/explosives/alt/directional/north,
 /turf/open/floor/mineral/gold,
 /area/ruin/comms_agent)
@@ -19,7 +19,7 @@
 /turf/open/floor/carpet/donk,
 /area/ruin/comms_agent)
 "k" = (
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/machinery/light_switch/directional/south,
 /obj/item/paper_bin/carbon{
 	pixel_x = -2;
@@ -55,7 +55,7 @@
 /turf/open/floor/carpet/donk,
 /area/ruin/comms_agent)
 "o" = (
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/machinery/button/door{
 	id = "syndie_lpost_icemoon_windows";
 	name = "Window Shutters";
@@ -75,7 +75,7 @@
 /turf/open/floor/carpet/donk,
 /area/ruin/comms_agent)
 "u" = (
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/machinery/fax{
 	syndicate_network = 1;
 	allow_exotic_faxes = 1;
@@ -162,7 +162,7 @@
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "syndie_lpost_icemoon_windows"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/ruin/comms_agent)
 "X" = (

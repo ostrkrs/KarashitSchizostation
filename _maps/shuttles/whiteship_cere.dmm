@@ -614,7 +614,7 @@
 	},
 /obj/machinery/firealarm/directional/south,
 /obj/structure/closet/crate/engineering/electrical,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "DC" = (
@@ -882,10 +882,10 @@
 /area/shuttle/abandoned/cargo)
 "Sw" = (
 /obj/item/toy/plush/lizard_plushie/green{
-	name = "Smuggles-The-Plasma";
+	name = "Smuggles-The-Fent";
 	pixel_y = 14
 	},
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
 /obj/structure/closet/crate,
 /obj/machinery/light/broken/directional/north,
 /turf/open/floor/pod/dark,

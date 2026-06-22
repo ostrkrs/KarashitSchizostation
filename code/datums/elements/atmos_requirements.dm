@@ -52,7 +52,7 @@
 	var/can_breathe_vacuum = HAS_TRAIT(target, TRAIT_NO_BREATHLESS_DAMAGE)
 
 	var/min_oxy = can_breathe_vacuum ? 0 : atmos_requirements["min_oxy"]
-	var/min_plasma = can_breathe_vacuum ? 0 : atmos_requirements["min_plas"]
+	var/min_phoron = can_breathe_vacuum ? 0 : atmos_requirements["min_plas"]
 	var/min_n2 = can_breathe_vacuum ? 0 : atmos_requirements["min_n2"]
 	var/min_co2 = can_breathe_vacuum ? 0 : atmos_requirements["min_co2"]
 
@@ -60,7 +60,7 @@
 	if(isnull(open_turf.air))
 		if (can_breathe_vacuum)
 			return TRUE
-		if(min_oxy || min_plasma || min_n2 || min_co2)
+		if(min_oxy || min_phoron || min_n2 || min_co2)
 			return FALSE
 		return TRUE
 
@@ -68,7 +68,7 @@
 
 	if(!ISINRANGE(gases["oxy"], min_oxy, (atmos_requirements["max_oxy"] || INFINITY)))
 		return FALSE
-	if(!ISINRANGE(gases["plas"], min_plasma, (atmos_requirements["max_plas"] || INFINITY)))
+	if(!ISINRANGE(gases["plas"], min_phoron, (atmos_requirements["max_plas"] || INFINITY)))
 		return FALSE
 	if(!ISINRANGE(gases["n2"], min_n2, (atmos_requirements["max_n2"] || INFINITY)))
 		return FALSE
@@ -78,10 +78,10 @@
 
 /datum/element/atmos_requirements/proc/get_atmos_req_list(turf/open/open_turf)
 	var/open_turf_gases = open_turf.air.gases
-	open_turf.air.assert_gases(/datum/gas/oxygen, /datum/gas/pluoxium, /datum/gas/nitrogen, /datum/gas/carbon_dioxide, /datum/gas/plasma)
+	open_turf.air.assert_gases(/datum/gas/oxygen, /datum/gas/pluoxium, /datum/gas/nitrogen, /datum/gas/carbon_dioxide, /datum/gas/phoron)
 
 	var/list/return_gases = list()
-	return_gases["plas"] = open_turf_gases[/datum/gas/plasma][MOLES]
+	return_gases["plas"] = open_turf_gases[/datum/gas/phoron][MOLES]
 	return_gases["oxy"] = open_turf_gases[/datum/gas/oxygen][MOLES] + (open_turf_gases[/datum/gas/pluoxium][MOLES] * PLUOXIUM_PROPORTION)
 	return_gases["n2"] = open_turf_gases[/datum/gas/nitrogen][MOLES]
 	return_gases["co2"] = open_turf_gases[/datum/gas/carbon_dioxide][MOLES]
@@ -99,5 +99,5 @@
 	var/string_text = "No Air"
 	if(open_turf.air)
 		gases = get_atmos_req_list(open_turf)
-		string_text = "O2: [gases["o2"]] - Plasma: [gases["plasma"]] - N2: [gases["n2"]] - CO2: [gases["co2"]]"
+		string_text = "O2: [gases["o2"]] - Phoron: [gases["phoron"]] - N2: [gases["n2"]] - CO2: [gases["co2"]]"
 	stack_trace("[living_mob] loaded on a turf with unsafe atmos at \[[open_turf.x], [open_turf.y], [open_turf.z]\] (area : [open_turf.loc]). Turf gases: [string_text]. Check the mob atmos requirements again.")

@@ -192,7 +192,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_NODISMEMBER "dismember_immunity"
 #define TRAIT_NOFIRE "nonflammable"
 #define TRAIT_NOFIRE_SPREAD "no_fire_spreading"
-/// Prevents plasmamen from self-igniting if only their helmet is missing
 #define TRAIT_HEAD_ATMOS_SEALED "no_selfignition_head_only"
 #define TRAIT_NOGUNS "no_guns"
 ///Can toss a guns like a badass, causing additional damage/effect to their enemies
@@ -245,8 +244,8 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_SWIMMER "swimmer"
 /// Mob is currently disguised as something else (like a morph being another mob or an object). Holds a reference to the thing that applied the trait.
 #define TRAIT_DISGUISED "disguised"
-/// Use when you want a mob to be able to metabolize plasma temporarily (e.g. plasma fixation disease symptom)
-#define TRAIT_PLASMA_LOVER_METABOLISM "plasma_lover_metabolism"
+/// Use when you want a mob to be able to metabolize phoron temporarily (e.g. phoron fixation disease symptom)
+#define TRAIT_PHORON_LOVER_METABOLISM "phoron_lover_metabolism"
 /// The mob is not harmed by tetrodotoxin. Instead, it heals them like omnizine
 #define TRAIT_TETRODOTOXIN_HEALING "tetrodotoxin_healing"
 #define TRAIT_EASYDISMEMBER "easy_dismember"
@@ -765,9 +764,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_MOVE_UPSIDE_DOWN "move_upside_down"
 /// Disables the floating animation. See above.
 #define TRAIT_NO_FLOATING_ANIM "no-floating-animation"
-
-/// Cannot be turned into a funny skeleton by the plasma river
-#define TRAIT_NO_PLASMA_TRANSFORM "no_plasma_transform"
 
 /// Mind trait that allows you to see blessed tiles.
 #define TRAIT_SEE_BLESSED_TILES "sees_blessed_tiles"

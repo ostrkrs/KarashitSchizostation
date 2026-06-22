@@ -210,7 +210,7 @@
 /obj/machinery/door/poddoor{
 	id = "caravanpirate_bridge"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/pirate)
 "pR" = (
@@ -669,7 +669,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 20
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -814,7 +814,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/pirate)
 "Yi" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor{
 	id = "caravanpirate_bridge"
 	},

@@ -1222,7 +1222,7 @@
 	dir = 8;
 	icon_state = "connector_map-2"
 	},
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating,
 /area/station/construction)
 "sE" = (

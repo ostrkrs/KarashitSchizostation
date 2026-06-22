@@ -181,7 +181,7 @@ GLOBAL_LIST_EMPTY(fishes_by_fish_evolution)
 	new_fish_type = /obj/item/fish/lavaloop
 	required_temperature_min = MIN_AQUARIUM_TEMP + 60
 
-/datum/fish_evolution/plasmaloop
+/datum/fish_evolution/phoronloop
 	probability = 85
-	new_fish_type = /obj/item/fish/lavaloop/plasma_river
+	new_fish_type = /obj/item/fish/lavaloop/phoron_river
 	required_temperature_max = MIN_AQUARIUM_TEMP + 60

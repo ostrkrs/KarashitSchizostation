@@ -16,7 +16,6 @@
 	config_tag = "QUARTERMASTER"
 
 	outfit = /datum/outfit/job/quartermaster
-	plasmaman_outfit = /datum/outfit/plasmaman/cargo
 
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_CAR

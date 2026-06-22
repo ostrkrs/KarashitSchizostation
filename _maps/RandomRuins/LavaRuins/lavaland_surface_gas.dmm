@@ -69,11 +69,11 @@
 /area/ruin/thelizardsgas_lavaland)
 "dC" = (
 /obj/structure/sign/warning/fire/directional/north,
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/phoron_input{
 	dir = 4
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=30000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=30000;TEMP=293.15"
 	},
 /area/ruin/thelizardsgas_lavaland)
 "dI" = (
@@ -132,11 +132,11 @@
 /turf/open/floor/asphalt/lavaland,
 /area/ruin/thelizardsgas_lavaland)
 "fO" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/phoron_output{
 	dir = 8
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=30000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=30000;TEMP=293.15"
 	},
 /area/ruin/thelizardsgas_lavaland)
 "fX" = (
@@ -198,7 +198,7 @@
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /obj/machinery/computer/atmos_control/noreconnect{
-	atmos_chambers = list("lizardgaslava"="Plasma Supply");
+	atmos_chambers = list("lizardgaslava"="Phoron Supply");
 	dir = 4;
 	name = "gas tank monitor";
 	desc = "This computer connects to and controls the sensors and equipment in a nearby pressurised gas reservoir."
@@ -257,11 +257,11 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "mn" = (
-/obj/structure/sign/poster/official/plasma_effects/directional/east,
+/obj/structure/sign/poster/official/phoron_effects/directional/east,
 /obj/structure/reagent_dispensers/plumbed/storage{
 	dir = 8;
-	reagent_id = /datum/reagent/toxin/plasma;
-	name = "plasma storage tank";
+	reagent_id = /datum/reagent/toxin/phoron;
+	name = "phoron storage tank";
 	tank_volume = 2500
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -388,11 +388,11 @@
 /area/ruin/thelizardsgas_lavaland)
 "rv" = (
 /obj/structure/sign/warning/fire/directional/north,
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/phoron_output{
 	dir = 8
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=30000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=30000;TEMP=293.15"
 	},
 /area/ruin/thelizardsgas_lavaland)
 "rM" = (
@@ -405,7 +405,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "rW" = (
-/obj/machinery/portable_atmospherics/canister/plasma{
+/obj/machinery/portable_atmospherics/canister/phoron{
 	filled = 0.05
 	},
 /turf/open/misc/asteroid/basalt/lava_land_surface,
@@ -604,7 +604,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "Bp" = (
 /obj/structure/cable,
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/duct,
 /turf/open/floor/plating/lavaland_baseturf,
 /area/ruin/thelizardsgas_lavaland)
@@ -635,11 +635,11 @@
 /turf/open/floor/asphalt/lavaland,
 /area/ruin/thelizardsgas_lavaland)
 "BU" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/phoron_input{
 	dir = 4
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=30000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=30000;TEMP=293.15"
 	},
 /area/ruin/thelizardsgas_lavaland)
 "BX" = (
@@ -651,7 +651,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "Cs" = (
 /obj/structure/cable,
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating/lavaland_baseturf,
 /area/ruin/thelizardsgas_lavaland)
 "Cx" = (
@@ -697,7 +697,7 @@
 /turf/template_noop,
 /area/template_noop)
 "Ef" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/structure/cable,
 /turf/open/floor/plating/lavaland_atmos{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
@@ -739,7 +739,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "FC" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/ruin/thelizardsgas_lavaland)
@@ -862,20 +862,20 @@
 /obj/machinery/air_sensor{
 	chamber_id = "lizardgaslava"
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=30000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=30000;TEMP=293.15"
 	},
 /area/ruin/thelizardsgas_lavaland)
 "JK" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/phoron_output{
 	dir = 8
 	},
 /obj/item/toy/plush/lizard_plushie/space/green{
 	desc = "A famous lizard, in plushy form.";
 	name = "Bingo"
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=30000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=30000;TEMP=293.15"
 	},
 /area/ruin/thelizardsgas_lavaland)
 "JX" = (
@@ -942,7 +942,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "MX" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/hidden/layer4,
 /turf/open/floor/iron,
@@ -1133,12 +1133,12 @@
 /turf/open/floor/asphalt/lavaland,
 /area/ruin/thelizardsgas_lavaland)
 "WY" = (
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=30000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=30000;TEMP=293.15"
 	},
 /area/ruin/thelizardsgas_lavaland)
 "Xe" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/binary/pump/on/pink/visible{
 	dir = 8;

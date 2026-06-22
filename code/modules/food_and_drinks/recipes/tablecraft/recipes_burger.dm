@@ -259,10 +259,10 @@
 /datum/crafting_recipe/food/empoweredburger
 	name = "Empowered Burger"
 	reqs = list(
-			/obj/item/stack/sheet/mineral/plasma = 2,
+			/obj/item/stack/sheet/mineral/phoron = 2,
 			/obj/item/food/bun = 1
 	)
-	requirements_mats_blacklist = list(/obj/item/stack/sheet/mineral/plasma)
+	requirements_mats_blacklist = list(/obj/item/stack/sheet/mineral/phoron)
 	result = /obj/item/food/burger/empoweredburger
 	added_foodtypes = TOXIC
 	category = CAT_BURGER

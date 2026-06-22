@@ -37,7 +37,7 @@
 
 /obj/item/stock_parts/power_store/cell/crap
 	name = "rechargeable AA cell"
-	desc = "You can't top the plasma top." //TOTALLY TRADEMARK INFRINGEMENT
+	desc = "You can't top the phoron top." //TOTALLY TRADEMARK INFRINGEMENT
 	icon_state = "aa_cell"
 	maxcharge = STANDARD_CELL_CHARGE * 0.5
 	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT*0.4)
@@ -210,7 +210,7 @@
 
 /obj/item/stock_parts/power_store/cell/emproof/slime
 	name = "EMP-proof slime core"
-	desc = "A yellow slime core infused with plasma. Its organic nature makes it immune to EMPs."
+	desc = "A yellow slime core infused with phoron. Its organic nature makes it immune to EMPs."
 	icon = 'icons/mob/simple/slimes.dmi'
 	icon_state = "yellow-core"
 	custom_materials = null
@@ -234,7 +234,7 @@
 
 /obj/item/stock_parts/power_store/cell/crystal_cell
 	name = "crystal power cell"
-	desc = "A very high power cell made from crystallized plasma"
+	desc = "A very high power cell made from crystallized phoron"
 	icon_state = "crystal_cell"
 	maxcharge = STANDARD_CELL_CHARGE * 50
 	chargerate = 0

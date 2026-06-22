@@ -168,7 +168,7 @@
 /datum/exploration_event/simple/resource/fuel_storage
 	name = "fuel storage"
 	required_site_traits = list(EXPLORATION_SITE_SHIP)
-	band_values = list(EXOSCANNER_BAND_PLASMA=1)
+	band_values = list(EXOSCANNER_BAND_PHORON=1)
 	required_tool = EXODRONE_TOOL_MULTITOOL
 	discovery_log = "Discovered ship fuel storage."
 	description = "You find the ship's fuel storage. Unfortunately, it has an electronic lock."
@@ -256,19 +256,19 @@
 	drone.try_transfer(skeleton_head)
 
 // EXPLORATION_SITE_SURFACE 2/2
-/datum/exploration_event/simple/resource/plasma_deposit
-	name = "Raw Plasma Deposit"
+/datum/exploration_event/simple/resource/phoron_deposit
+	name = "Raw Phoron Deposit"
 	required_site_traits = list(EXPLORATION_SITE_SURFACE)
-	band_values = list(EXOSCANNER_BAND_PLASMA=3)
+	band_values = list(EXOSCANNER_BAND_PHORON=3)
 	required_tool = EXODRONE_TOOL_DRILL
-	discovery_log = "Discovered a sizeable plasma deposit."
-	success_log = "Extracted the plasma from the deposit."
-	description = "You locate a rich surface deposit of plasma."
+	discovery_log = "Discovered a sizeable phoron deposit."
+	success_log = "Extracted the phoron from the deposit."
+	description = "You locate a rich surface deposit of phoron."
 	no_tool_description = "You'll need a drill to take anything from the deposit."
 	has_tool_description = "Your drill will allow you to extract the deposit!"
 	action_text = "Mine"
 	delay_message = "Mining..."
-	loot_type = /obj/item/stack/sheet/mineral/plasma/thirty
+	loot_type = /obj/item/stack/sheet/mineral/phoron/thirty
 
 /datum/exploration_event/simple/resource/mineral_deposit
 	name = "MATERIAL Deposit"

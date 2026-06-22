@@ -27,9 +27,9 @@
 
 	var/list/global_stack_recipes = list(
 		/obj/item/stack/sheet/glass = GLOB.glass_recipes,
-		/obj/item/stack/sheet/plasmaglass = GLOB.pglass_recipes,
+		/obj/item/stack/sheet/phoron_glass = GLOB.pglass_recipes,
 		/obj/item/stack/sheet/rglass = GLOB.reinforced_glass_recipes,
-		/obj/item/stack/sheet/plasmarglass = GLOB.prglass_recipes,
+		/obj/item/stack/sheet/phoron_rglass = GLOB.prglass_recipes,
 		/obj/item/stack/sheet/animalhide/gondola = GLOB.gondola_recipes,
 		/obj/item/stack/sheet/animalhide/corgi = GLOB.corgi_recipes,
 		/obj/item/stack/sheet/animalhide/monkey = GLOB.monkey_recipes,
@@ -41,7 +41,7 @@
 		/obj/item/stack/sheet/mineral/sandbags = GLOB.sandbag_recipes,
 		/obj/item/stack/sheet/mineral/diamond = GLOB.diamond_recipes,
 		/obj/item/stack/sheet/mineral/uranium = GLOB.uranium_recipes,
-		/obj/item/stack/sheet/mineral/plasma = GLOB.plasma_recipes,
+		/obj/item/stack/sheet/mineral/phoron = GLOB.phoron_recipes,
 		/obj/item/stack/sheet/mineral/gold = GLOB.gold_recipes,
 		/obj/item/stack/sheet/mineral/silver = GLOB.silver_recipes,
 		/obj/item/stack/sheet/mineral/bananium = GLOB.bananium_recipes,

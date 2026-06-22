@@ -91,7 +91,7 @@
 		GUARDIAN_CHARGER = "The shard reveals... Titanium, a lightweight, agile fighter.",
 		GUARDIAN_DEXTROUS = "The shard reveals... Gold, a malleable hoarder of treasure.",
 		GUARDIAN_EXPLOSIVE = "The shard reveals... Gibtonite, volatile and surprising.",
-		GUARDIAN_GASEOUS = "The shard reveals... Plasma, the bringer of flame.",
+		GUARDIAN_GASEOUS = "The shard reveals... Phoron, the bringer of flame.",
 		GUARDIAN_GRAVITOKINETIC = "The shard reveals... Bananium, a manipulator of motive forces.",
 		GUARDIAN_LIGHTNING = "The shard reveals... Iron, a conductive font of lightning.",
 		GUARDIAN_PROTECTOR = "The shard reveals... Uranium, dense and resistant.",

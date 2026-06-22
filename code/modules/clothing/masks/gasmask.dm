@@ -190,9 +190,6 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	fire = 20
 	acid = 10
 
-/obj/item/clothing/mask/gas/atmos/plasmaman
-	starting_filter_type = /obj/item/gas_filter/plasmaman
-
 /obj/item/clothing/mask/gas/atmos/captain
 	name = "captain's gas mask"
 	desc = "Nanotrasen cut corners and repainted a spare atmospheric gas mask, but don't tell anyone."
@@ -303,9 +300,6 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	voice_filter = null // performer masks expect to be talked through
 	fishing_modifier = 0
 
-/obj/item/clothing/mask/gas/clown_hat/plasmaman
-	starting_filter_type = /obj/item/gas_filter/plasmaman
-
 /obj/item/clothing/mask/gas/clown_hat/Initialize(mapload)
 	.=..()
 	clownmask_designs = list(
@@ -367,9 +361,6 @@ GLOBAL_LIST_INIT(clown_mask_options, list(
 	species_exception = list(/datum/species/golem)
 	fishing_modifier = 0
 	var/list/mimemask_designs = list()
-
-/obj/item/clothing/mask/gas/mime/plasmaman
-	starting_filter_type = /obj/item/gas_filter/plasmaman
 
 /obj/item/clothing/mask/gas/mime/Initialize(mapload)
 	.=..()

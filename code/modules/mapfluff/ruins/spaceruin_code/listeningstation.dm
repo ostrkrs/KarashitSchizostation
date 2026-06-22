@@ -109,7 +109,7 @@
 	name = "mission briefing"
 	default_raw_text = {"<b>Mission Details</b>:
 	<br>
-	<br>You have been assigned to a newly constructed listening post constructed within an asteroid in Nanotrasen space to monitor their plasma mining operations.
+	<br>You have been assigned to a newly constructed listening post constructed within an asteroid in Nanotrasen space to monitor their phoron mining operations.
 	<br>Accurate intel is crucial to the success of our operatives onboard, do not fail us.
 	<br>
 	<br>You may view intelligence reports from your predecessors in the filing cabinet in your office.

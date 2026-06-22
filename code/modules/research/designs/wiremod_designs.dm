@@ -552,7 +552,7 @@
 	id = "gun_shell"
 	build_path = /obj/item/gun/energy/wiremod_gun
 	build_type = COMPONENT_PRINTER
-	materials = list(/datum/material/glass =SHEET_MATERIAL_AMOUNT, /datum/material/iron = SHEET_MATERIAL_AMOUNT*5, /datum/material/plasma =SMALL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/glass =SHEET_MATERIAL_AMOUNT, /datum/material/iron = SHEET_MATERIAL_AMOUNT*5, /datum/material/phoron =SMALL_MATERIAL_AMOUNT)
 	category = list(
 		RND_CATEGORY_CIRCUITRY + RND_SUBCATEGORY_CIRCUITRY_SHELLS
 	)

@@ -147,7 +147,7 @@
 /area/shuttle/abandoned)
 "jP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 15
 	},
 /turf/open/floor/plating/airless,

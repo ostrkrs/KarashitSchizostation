@@ -321,7 +321,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/powered/golem_ship)
 "tY" = (
-/obj/item/stack/ore/plasma{
+/obj/item/stack/ore/phoron{
 	pixel_x = -8;
 	pixel_y = -8
 	},

@@ -1,4 +1,4 @@
-/// Any humanoid (non-Xeno) mob, such as humans, plasmamen, lizards.
+/// Any humanoid (non-Xeno) mob, such as humans.
 /mob/living/carbon/human
 	name = "Unknown"
 	real_name = "Unknown"

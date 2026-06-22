@@ -384,7 +384,7 @@
 /obj/item/transfer_valve/fake/Initialize(mapload)
 	. = ..()
 
-	tank_one = new /obj/item/tank/internals/plasma (src)
+	tank_one = new /obj/item/tank/internals/phoron (src)
 	tank_two = new /obj/item/tank/internals/oxygen (src)
 
 	update_appearance()

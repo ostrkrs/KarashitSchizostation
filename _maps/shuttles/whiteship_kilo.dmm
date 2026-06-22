@@ -817,8 +817,8 @@
 	},
 /obj/effect/spawner/random/maintenance/three,
 /obj/item/wirebrush,
-/obj/item/stack/sheet/mineral/plasma/five,
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "LK" = (

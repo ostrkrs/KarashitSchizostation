@@ -237,7 +237,7 @@
 	var/list/gas_types = list(
 		/datum/gas/bz = 30,
 		/datum/gas/miasma = 50,
-		/datum/gas/plasma = 20,
+		/datum/gas/phoron = 20,
 	)
 
 /obj/item/organ/lungs/corrupt/Initialize(mapload)

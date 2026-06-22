@@ -775,7 +775,7 @@
 	},
 /obj/item/flashlight/seclite,
 /obj/item/storage/box/lights/bulbs,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /obj/item/multitool,

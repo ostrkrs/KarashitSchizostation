@@ -24,7 +24,7 @@
 	id = "syndie_battlecruier_bridge_blast"
 	},
 /obj/structure/cable,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
 "ae" = (
@@ -206,7 +206,7 @@
 /area/shuttle/sbc_starfury)
 "aG" = (
 /obj/structure/cable,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
 "aH" = (
@@ -410,7 +410,7 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "syndie_battlecruier_bridge_blast"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
@@ -724,7 +724,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/sbc_starfury)
 "cP" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "starfury_surgery_shutters";
 	dir = 8
@@ -1541,7 +1541,7 @@
 	amount = 30;
 	pixel_y = 3
 	},
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /turf/open/floor/iron/smooth,
 /area/shuttle/sbc_starfury)
 "fB" = (
@@ -2936,7 +2936,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
@@ -2974,7 +2974,7 @@
 	pixel_x = 2;
 	pixel_y = 4
 	},
-/obj/item/stack/sheet/plastitaniumglass{
+/obj/item/stack/sheet/plastitanium_glass{
 	amount = 30
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -3306,7 +3306,7 @@
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
 "lB" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
 "lC" = (
@@ -3330,7 +3330,7 @@
 	pixel_x = 2;
 	pixel_y = 4
 	},
-/obj/item/stack/sheet/plastitaniumglass{
+/obj/item/stack/sheet/plastitanium_glass{
 	amount = 30
 	},
 /obj/effect/turf_decal/tile/yellow/half/contrasted{
@@ -3461,7 +3461,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
@@ -4139,7 +4139,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
 "xG" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
@@ -4806,7 +4806,7 @@
 "Jf" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
 "Jl" = (
@@ -5364,7 +5364,7 @@
 /area/shuttle/sbc_starfury)
 "Tn" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/effect/turf_decal/box/corners{
 	dir = 1
 	},
@@ -5399,7 +5399,7 @@
 /turf/open/floor/iron,
 /area/shuttle/sbc_starfury)
 "UB" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "starfury_surgery_shutters"
 	},
@@ -5538,7 +5538,7 @@
 /turf/open/floor/plating,
 /area/shuttle/sbc_starfury)
 "WB" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/structure/cable,
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "starfury_surgery_shutters";

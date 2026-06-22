@@ -79,7 +79,7 @@
 		/datum/material/iron = SMALL_MATERIAL_AMOUNT*6,
 		/datum/material/glass = SMALL_MATERIAL_AMOUNT*6,
 		/datum/material/uranium =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =SMALL_MATERIAL_AMOUNT * 3,
+		/datum/material/phoron =SMALL_MATERIAL_AMOUNT * 3,
 	)
 	build_path = /obj/item/clothing/glasses/hud/diagnostic/night
 	category = list(
@@ -205,7 +205,7 @@
 	desc = "Goggles used by engineers. The Meson Scanner mode lets you see basic structural and terrain layouts through walls, regardless of lighting condition. The T-ray Scanner mode lets you see underfloor objects such as cables and pipes."
 	id = "engine_goggles"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT*5, /datum/material/glass =SMALL_MATERIAL_AMOUNT*5, /datum/material/plasma =SMALL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT*5, /datum/material/glass =SMALL_MATERIAL_AMOUNT*5, /datum/material/phoron =SMALL_MATERIAL_AMOUNT)
 	build_path = /obj/item/clothing/glasses/meson/engine
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_ENGINEERING
@@ -229,7 +229,7 @@
 	desc = "Used by Atmospheric Technician to determine the temperature of the air"
 	id = "atmos_thermal"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT*5, /datum/material/glass =SMALL_MATERIAL_AMOUNT*5, /datum/material/plasma =SMALL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT*5, /datum/material/glass =SMALL_MATERIAL_AMOUNT*5, /datum/material/phoron =SMALL_MATERIAL_AMOUNT)
 	build_path = /obj/item/clothing/glasses/meson/engine/atmos_imaging
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_ATMOSPHERICS
@@ -244,7 +244,7 @@
 	materials = list(
 		/datum/material/iron = SMALL_MATERIAL_AMOUNT*6,
 		/datum/material/glass = SMALL_MATERIAL_AMOUNT*6,
-		/datum/material/plasma = SMALL_MATERIAL_AMOUNT*3.5,
+		/datum/material/phoron = SMALL_MATERIAL_AMOUNT*3.5,
 		/datum/material/uranium =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	build_path = /obj/item/clothing/glasses/meson/night
@@ -261,7 +261,7 @@
 	materials = list(
 		/datum/material/iron = SMALL_MATERIAL_AMOUNT*6,
 		/datum/material/glass = SMALL_MATERIAL_AMOUNT*6,
-		/datum/material/plasma = SMALL_MATERIAL_AMOUNT*3.5,
+		/datum/material/phoron = SMALL_MATERIAL_AMOUNT*3.5,
 		/datum/material/uranium =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	build_path = /obj/item/clothing/glasses/night
@@ -321,7 +321,7 @@
 	materials = list(
 		/datum/material/iron = SMALL_MATERIAL_AMOUNT*6,
 		/datum/material/glass = SMALL_MATERIAL_AMOUNT*6,
-		/datum/material/plasma = SMALL_MATERIAL_AMOUNT*3.5,
+		/datum/material/phoron = SMALL_MATERIAL_AMOUNT*3.5,
 		/datum/material/uranium =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	build_path = /obj/item/clothing/glasses/science/night
@@ -387,7 +387,7 @@
 	desc = "An advanced tool capable of instantly neutralizing anomalies, designed to capture the fleeting aberrations created by the engine."
 	id = "anomaly_neutralizer"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT, /datum/material/gold =SHEET_MATERIAL_AMOUNT, /datum/material/plasma =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/uranium =SHEET_MATERIAL_AMOUNT)
+	materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT, /datum/material/gold =SHEET_MATERIAL_AMOUNT, /datum/material/phoron =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/uranium =SHEET_MATERIAL_AMOUNT)
 	build_path = /obj/item/anomaly_neutralizer
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SCIENCE
@@ -402,7 +402,7 @@
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT*12.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT*7.5,
-		/datum/material/plasma = SHEET_MATERIAL_AMOUNT*10,
+		/datum/material/phoron = SHEET_MATERIAL_AMOUNT*10,
 		/datum/material/gold = SHEET_MATERIAL_AMOUNT*5,
 		/datum/material/silver = SHEET_MATERIAL_AMOUNT*5,
 	)
@@ -424,13 +424,13 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING | DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_CARGO
 
-/datum/design/plasma_tank
-	name = "Plasma Tank"
-	desc = "An empty oxygen tank."
-	id = "plasma_tank"
+/datum/design/phoron_tank
+	name = "Phoron Tank"
+	desc = "An empty phoron tank."
+	id = "phoron_tank"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT)
-	build_path = /obj/item/tank/internals/plasma/empty
+	build_path = /obj/item/tank/internals/phoron/empty
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_GAS_TANKS
 	)
@@ -464,7 +464,7 @@
 	name = "Lava-Resistant Iron Rods"
 	id = "lava_rods"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron=HALF_SHEET_MATERIAL_AMOUNT, /datum/material/plasma=SMALL_MATERIAL_AMOUNT*5, /datum/material/titanium=SHEET_MATERIAL_AMOUNT)
+	materials = list(/datum/material/iron=HALF_SHEET_MATERIAL_AMOUNT, /datum/material/phoron=SMALL_MATERIAL_AMOUNT*5, /datum/material/titanium=SHEET_MATERIAL_AMOUNT)
 	build_path = /obj/item/stack/rods/lava
 	category = list(
 		RND_CATEGORY_CONSTRUCTION + RND_SUBCATEGORY_CONSTRUCTION_MATERIALS
@@ -488,7 +488,7 @@
 	desc = "A heavy brace used to seal airlocks. Useful for keeping out people without the dexterity to remove it."
 	id = "pneumatic_seal"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*10, /datum/material/plasma = SHEET_MATERIAL_AMOUNT*5)
+	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT*10, /datum/material/phoron = SHEET_MATERIAL_AMOUNT*5)
 	build_path = /obj/item/door_seal
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_ENGINEERING
@@ -526,7 +526,7 @@
 	desc = "An advanced trash bag with bluespace properties; capable of holding a plethora of garbage."
 	id = "blutrash"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/gold =HALF_SHEET_MATERIAL_AMOUNT * 1.5, /datum/material/uranium = SMALL_MATERIAL_AMOUNT*2.5, /datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT * 1.5)
+	materials = list(/datum/material/gold =HALF_SHEET_MATERIAL_AMOUNT * 1.5, /datum/material/uranium = SMALL_MATERIAL_AMOUNT*2.5, /datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT * 1.5)
 	build_path = /obj/item/storage/bag/trash/bluespace
 	category = list(
 		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_JANITORIAL
@@ -774,7 +774,7 @@
 	desc = "A specialized hard-light bola designed to ensnare fleeing criminals and aid in arrests."
 	id = "bola_energy"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/silver =SMALL_MATERIAL_AMOUNT*5, /datum/material/plasma =SMALL_MATERIAL_AMOUNT*5, /datum/material/titanium =SMALL_MATERIAL_AMOUNT*5)
+	materials = list(/datum/material/silver =SMALL_MATERIAL_AMOUNT*5, /datum/material/phoron =SMALL_MATERIAL_AMOUNT*5, /datum/material/titanium =SMALL_MATERIAL_AMOUNT*5)
 	build_path = /obj/item/restraints/legcuffs/bola/energy
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SECURITY
@@ -903,7 +903,7 @@
 	name = "Rocket Gloves"
 	id = "tackle_rocket"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/plastic =SHEET_MATERIAL_AMOUNT)
+	materials = list(/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/plastic =SHEET_MATERIAL_AMOUNT)
 	build_path = /obj/item/clothing/gloves/tackler/rocket
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SECURITY
@@ -1131,7 +1131,7 @@
 		/datum/material/titanium = SHEET_MATERIAL_AMOUNT * 2,
 		/datum/material/silver = SHEET_MATERIAL_AMOUNT * 1,
 		/datum/material/gold = SHEET_MATERIAL_AMOUNT * 0.5,
-		/datum/material/plasma = SHEET_MATERIAL_AMOUNT * 3,
+		/datum/material/phoron = SHEET_MATERIAL_AMOUNT * 3,
 		/datum/material/uranium = SHEET_MATERIAL_AMOUNT,
 	)
 	category = list(

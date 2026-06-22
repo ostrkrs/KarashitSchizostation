@@ -128,7 +128,7 @@
 /area/ruin/outpost31/medical)
 "ck" = (
 /obj/structure/closet,
-/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/phoron/full,
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "cm" = (

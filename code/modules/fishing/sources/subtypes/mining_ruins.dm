@@ -71,7 +71,7 @@
 	fishing_difficulty = FISHING_DEFAULT_DIFFICULTY + 20
 	fish_source_flags = FISH_SOURCE_FLAG_EXPLOSIVE_MALUS
 	associated_safe_turfs = list(/turf/open/lava)
-	safe_turfs_blacklist = list(/turf/open/lava/plasma)
+	safe_turfs_blacklist = list(/turf/open/lava/phoron)
 
 /datum/fish_source/lavaland/reason_we_cant_fish(obj/item/fishing_rod/rod, mob/fisherman, atom/parent)
 	. = ..()
@@ -80,15 +80,14 @@
 
 /datum/fish_source/lavaland/icemoon
 	background = "background_plasma"
-	catalog_description = "Liquid plasma vents"
+	catalog_description = "Liquid phoron vents"
 	radial_state = "plasma"
 	fish_table = list(
 		FISHING_DUD = 5,
 		/obj/item/fish/chasm_crab/ice = 30,
-		/obj/item/fish/lavaloop/plasma_river = 30,
-		/obj/item/coin/plasma = 6,
-		/obj/item/stack/ore/plasma = 6,
-		/obj/effect/decal/remains/plasma = 2,
+		/obj/item/fish/lavaloop/phoron_river = 30,
+		/obj/item/coin/phoron = 6,
+		/obj/item/stack/ore/phoron = 6,
 		/obj/item/stack/sheet/mineral/runite = 2,
 		/obj/item/stack/sheet/mineral/adamantine = 2,
 		/obj/item/skeleton_key = 1,
@@ -109,7 +108,7 @@
 		/obj/structure/closet/crate/necropolis/tendril = 30 MINUTES,
 	)
 	overlay_state = "portal_plasma"
-	associated_safe_turfs = list(/turf/open/lava/plasma)
+	associated_safe_turfs = list(/turf/open/lava/phoron)
 
 /datum/fish_source/oil_well
 	background = "background_oil_well"

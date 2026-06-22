@@ -44,7 +44,6 @@
 %A% %ADJECTIVE% ocean
 %A% %ADJECTIVE% pill
 %A% %ADJECTIVE% planet
-%A% %ADJECTIVE% plasmaman
 %A% %ADJECTIVE% pool
 %A% %ADJECTIVE% rat
 %A% %ADJECTIVE% scientist
@@ -76,6 +75,7 @@
 %ADJECTIVE% operatives
 %ADJECTIVE% paperwork
 %ADJECTIVE% plasma
+%ADJECTIVE% phoron
 %ADJECTIVE% power
 %ADJECTIVE% riches
 %ADJECTIVE% waves

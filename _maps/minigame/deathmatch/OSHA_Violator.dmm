@@ -130,7 +130,7 @@
 /turf/open/space/basic,
 /area/template_noop)
 "jn" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/deathmatch)
@@ -194,7 +194,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "mO" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -217,7 +217,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "oT" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/indestructible,
 /area/deathmatch)
 "pe" = (
@@ -344,7 +344,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "vG" = (
-/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/phoron/full,
 /obj/structure/rack,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -405,7 +405,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "xg" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -580,7 +580,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Bf" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/deathmatch)
 "Bv" = (
@@ -933,7 +933,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Sh" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Si" = (

@@ -203,7 +203,7 @@
 		target_turf.air_update_turf(TRUE, FALSE) //You're empty now
 	air_update_turf(TRUE, TRUE) //You aren't
 
-/atom/proc/atmos_spawn_air(text) //because a lot of people loves to copy paste awful code lets just make an easy proc to spawn your plasma fires
+/atom/proc/atmos_spawn_air(text) //because a lot of people loves to copy paste awful code lets just make an easy proc to spawn your phoron fires
 	var/turf/open/local_turf = get_turf(src)
 	if(!istype(local_turf))
 		return

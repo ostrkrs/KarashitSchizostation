@@ -52,7 +52,7 @@
 		/obj/item/coin/iron = 5,
 		/obj/item/coin/plastic = 5,
 		/obj/item/coin/silver = 4,
-		/obj/item/coin/plasma = 4,
+		/obj/item/coin/phoron = 4,
 		/obj/item/coin/uranium = 3,
 		/obj/item/coin/titanium = 3,
 		/obj/item/coin/diamond = 2,

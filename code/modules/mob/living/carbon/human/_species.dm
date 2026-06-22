@@ -26,7 +26,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/allow_numbers_in_names = FALSE
 	/**
 	 * The formatting of the name of the species in plural context. Defaults to "[name]\s" if unset.
-	 *  Ex "[Plasmamen] are weak", "[Mothmen] are strong", "[Lizardpeople] don't like", "[Golems] hate"
+	 *  Ex "[Mothmen] are strong", "[Lizardpeople] don't like", "[Golems] hate"
 	 */
 	var/plural_form
 
@@ -122,7 +122,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/death_sound
 	///Special sound for grabbing
 	var/grab_sound
-	/// A path to an outfit that is important for species life e.g. plasmaman outfit
+	/// A path to an outfit that is important for species life
 	var/datum/outfit/outfit_important_for_life
 
 	/// The natural temperature for a body

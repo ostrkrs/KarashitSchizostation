@@ -3,21 +3,21 @@
 	access_view = ACCESS_RESEARCH
 	crate_type = /obj/structure/closet/crate/science
 
-/datum/supply_pack/science/plasma
-	name = "Plasma Assembly Crate"
+/datum/supply_pack/science/phoron
+	name = "Phoron Assembly Crate"
 	desc = "Everything you need to burn something to the ground, this contains three \
-		plasma assembly sets. Each set contains a plasma tank, igniter, proximity sensor, \
+		phoron assembly sets. Each set contains a phoron tank, igniter, proximity sensor, \
 		and timer! Warranty void if exposed to high temperatures."
 	cost = CARGO_CRATE_VALUE * 2
 	access = ACCESS_ORDNANCE
 	access_view = ACCESS_ORDNANCE
-	contains = list(/obj/item/tank/internals/plasma = 3,
+	contains = list(/obj/item/tank/internals/phoron = 3,
 					/obj/item/assembly/igniter = 3,
 					/obj/item/assembly/prox_sensor = 3,
 					/obj/item/assembly/timer = 3,
 				)
-	crate_name = "plasma assembly crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_name = "phoron assembly crate"
+	crate_type = /obj/structure/closet/crate/secure/phoron
 
 /datum/supply_pack/science/raw_flux_anomaly
 	name = "Raw Flux Anomaly"

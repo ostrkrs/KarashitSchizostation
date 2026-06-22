@@ -12,7 +12,7 @@
 /datum/chemical_reaction/medicine/leporazine
 	results = list(/datum/reagent/medicine/leporazine = 2)
 	required_reagents = list(/datum/reagent/silicon = 1, /datum/reagent/copper = 1)
-	required_catalysts = list(/datum/reagent/toxin/plasma = 5)
+	required_catalysts = list(/datum/reagent/toxin/phoron = 5)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_OTHER
 
 /datum/chemical_reaction/medicine/rezadone
@@ -100,7 +100,7 @@
 
 /datum/chemical_reaction/medicine/mine_salve2
 	results = list(/datum/reagent/medicine/mine_salve = 15)
-	required_reagents = list(/datum/reagent/toxin/plasma = 5, /datum/reagent/iron = 5, /datum/reagent/consumable/sugar = 1) // A sheet of plasma, a twinkie and a sheet of metal makes four of these
+	required_reagents = list(/datum/reagent/toxin/phoron = 5, /datum/reagent/iron = 5, /datum/reagent/consumable/sugar = 1) // A sheet of phoron, a twinkie and a sheet of metal makes four of these
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_BRUTE | REACTION_TAG_BURN
 
 /datum/chemical_reaction/medicine/synthflesh
@@ -330,7 +330,7 @@
 
 /datum/chemical_reaction/medicine/cryoxadone
 	results = list(/datum/reagent/medicine/cryoxadone = 3)
-	required_reagents = list(/datum/reagent/stable_plasma = 1, /datum/reagent/acetone = 1, /datum/reagent/toxin/mutagen = 1)
+	required_reagents = list(/datum/reagent/stable_phoron = 1, /datum/reagent/acetone = 1, /datum/reagent/toxin/mutagen = 1)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_HEALING | REACTION_TAG_PLANT | REACTION_TAG_BRUTE |REACTION_TAG_BURN | REACTION_TAG_TOXIN | REACTION_TAG_OXY
 
 /datum/chemical_reaction/medicine/pyroxadone

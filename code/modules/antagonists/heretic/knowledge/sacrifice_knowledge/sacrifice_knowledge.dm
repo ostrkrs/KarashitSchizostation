@@ -408,9 +408,6 @@
 /// Apply a sinister curse to some of the target's organs as an incentive to leave us alone
 /datum/heretic_knowledge/hunt_and_sacrifice/proc/curse_organs(mob/living/carbon/human/sac_target)
 	var/usable_organs = grantable_organs.Copy()
-	if (isplasmaman(sac_target))
-		usable_organs -= /obj/item/organ/lungs/corrupt // Their lungs are already more cursed than anything I could give them
-
 	var/total_implant = rand(2, 4)
 
 	for (var/i in 1 to total_implant)

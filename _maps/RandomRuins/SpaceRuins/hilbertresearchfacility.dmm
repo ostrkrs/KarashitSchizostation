@@ -14,7 +14,7 @@
 /area/ruin/space)
 "ao" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/stack/sheet/mineral/plasma/five{
+/obj/item/stack/sheet/mineral/phoron/five{
 	pixel_y = 4
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -1438,8 +1438,8 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/powered/hilbertresearchfacility)
 "HK" = (
-/obj/structure/closet/crate/secure/plasma,
-/obj/item/stack/ore/plasma{
+/obj/structure/closet/crate/secure/phoron,
+/obj/item/stack/ore/phoron{
 	amount = 30
 	},
 /obj/item/stack/ore/diamond{

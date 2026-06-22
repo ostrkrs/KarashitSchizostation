@@ -584,7 +584,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "qH" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "re" = (
@@ -798,7 +798,7 @@
 /area/shuttle/escape)
 "zh" = (
 /obj/structure/closet/secure_closet/atmospherics,
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/iron/dark/side{
 	dir = 1
@@ -820,7 +820,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/shuttle/escape)
 "An" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/preopen{
 	id = "escape_public_windows";
 	name = "Central Blast Door"
@@ -975,7 +975,7 @@
 /turf/open/floor/iron/dark/side,
 /area/shuttle/escape)
 "Gr" = (
-/obj/item/stack/sheet/plastitaniumglass{
+/obj/item/stack/sheet/plastitanium_glass{
 	amount = 20;
 	pixel_x = -2;
 	pixel_y = 2
@@ -1396,7 +1396,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Rj" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/preopen{
 	id = "escape_cockpit_windows";
 	name = "Cockpit Blast Door"

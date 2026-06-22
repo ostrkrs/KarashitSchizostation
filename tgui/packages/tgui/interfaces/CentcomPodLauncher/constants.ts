@@ -244,7 +244,7 @@ export const EFFECTS_HARM: PodEffect[] = [
     choiceNumber: 1,
     icon: 'certificate',
     selected: 'create_sparks',
-    title: 'Create sparks; May cause fires if there is plasma in the air',
+    title: 'Create sparks; May cause fires if there is phoron in the air',
   },
   {
     divider: true,

@@ -12,7 +12,6 @@
 	config_tag = "INTERNAL_AFFAIRS_AGENT"
 
 	outfit = /datum/outfit/job/iaa
-	plasmaman_outfit = /datum/outfit/plasmaman/bar
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV

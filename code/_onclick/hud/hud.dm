@@ -28,7 +28,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/inventory_shown = FALSE //Equipped item inventory
 	var/hotkey_ui_hidden = FALSE //This is to hide the buttons that can be used via hotkeys. (hotkeybuttons list of buttons)
 
-	var/atom/movable/screen/alien_plasma_display
+	var/atom/movable/screen/alien_phoron_display
 	var/atom/movable/screen/alien_queen_finder
 
 	var/atom/movable/screen/action_intent
@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/list/static_inventory = list() //the screen objects which are static
 	var/list/toggleable_inventory = list() //the screen objects which can be hidden
 	var/list/atom/movable/screen/hotkeybuttons = list() //the buttons that can be used via hotkeys
-	var/list/infodisplay = list() //the screen objects that display mob info (health, alien plasma, etc...)
+	var/list/infodisplay = list() //the screen objects that display mob info (health, alien phoron, etc...)
 	/// Screen objects that never exit view.
 	var/list/always_visible_inventory = list()
 	var/list/inv_slots[SLOTS_AMT] // /atom/movable/screen/inventory objects, ordered by their slot ID.
@@ -250,7 +250,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	spacesuit = null
 	hunger = null
 	thirst = null
-	alien_plasma_display = null
+	alien_phoron_display = null
 	alien_queen_finder = null
 
 	QDEL_LIST_ASSOC_VAL(master_groups)

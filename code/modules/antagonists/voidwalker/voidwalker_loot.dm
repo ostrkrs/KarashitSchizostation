@@ -75,7 +75,7 @@
 	AddComponent(/datum/component/temporary_glass_shatterer)
 
 /obj/effect/spawner/random/glass_shards
-	loot = list(/obj/item/shard = 2, /obj/item/shard/plasma = 1, /obj/item/shard/titanium = 1, /obj/item/shard/plastitanium = 1)
+	loot = list(/obj/item/shard = 2, /obj/item/shard/phoron = 1, /obj/item/shard/titanium = 1, /obj/item/shard/plastitanium = 1)
 	spawn_random_offset = TRUE
 
 	/// Min shards we generate
@@ -96,7 +96,7 @@
 	/// Weighted list for the debris we spawn
 	loot = list(
 		/obj/effect/decal/cleanable/glass = 2,
-		/obj/effect/decal/cleanable/glass/plasma = 1,
+		/obj/effect/decal/cleanable/glass/phoron = 1,
 		/obj/effect/decal/cleanable/glass/titanium = 1,
 		/obj/effect/decal/cleanable/glass/plastitanium = 1,
 		)

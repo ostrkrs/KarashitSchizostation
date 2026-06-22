@@ -119,7 +119,6 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define isgolem(A) (is_species(A, /datum/species/golem))
 #define islizard(A) (is_species(A, /datum/species/lizard))
 #define isashwalker(A) (is_species(A, /datum/species/lizard/ashwalker))
-#define isplasmaman(A) (is_species(A, /datum/species/plasmaman))
 #define ispodperson(A) (is_species(A, /datum/species/pod))
 #define isflyperson(A) (is_species(A, /datum/species/fly))
 #define isjellyperson(A) (is_species(A, /datum/species/jelly))
@@ -299,10 +298,10 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 GLOBAL_LIST_INIT(glass_sheet_types, typecacheof(list(
 	/obj/item/stack/sheet/glass,
 	/obj/item/stack/sheet/rglass,
-	/obj/item/stack/sheet/plasmaglass,
-	/obj/item/stack/sheet/plasmarglass,
-	/obj/item/stack/sheet/titaniumglass,
-	/obj/item/stack/sheet/plastitaniumglass)))
+	/obj/item/stack/sheet/phoron_glass,
+	/obj/item/stack/sheet/phoron_rglass,
+	/obj/item/stack/sheet/titanium_glass,
+	/obj/item/stack/sheet/plastitanium_glass)))
 
 #define is_glass_sheet(O) (is_type_in_typecache(O, GLOB.glass_sheet_types))
 

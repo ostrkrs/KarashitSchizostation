@@ -42,7 +42,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/syndicate_lava_base/chemistry)
 "at" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor{
 	id = "lavalandsyndi_chemistry"
 	},
@@ -219,7 +219,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/chemistry)
 "cB" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
@@ -327,16 +327,16 @@
 /area/ruin/syndicate_lava_base/chemistry)
 "dE" = (
 /obj/structure/table/glass,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 5;
 	pixel_x = -2;
 	pixel_y = 6
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 5;
 	pixel_y = 2
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 5;
 	pixel_x = 2;
 	pixel_y = -2
@@ -373,8 +373,8 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/syndicate_lava_base/testlab)
 "dV" = (
-/obj/machinery/atmospherics/miner/plasma,
-/turf/open/floor/engine/plasma,
+/obj/machinery/atmospherics/miner/phoron,
+/turf/open/floor/engine/phoron,
 /area/ruin/syndicate_lava_base/engineering)
 "dY" = (
 /obj/structure/chair{
@@ -505,7 +505,7 @@
 	},
 /area/ruin/syndicate_lava_base/virology)
 "eI" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/virology)
 "eJ" = (
@@ -558,7 +558,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndicate_lava_base/main)
 "fa" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/cargo)
@@ -637,7 +637,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/arrivals)
 "fn" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/chemistry)
@@ -931,7 +931,7 @@
 "hu" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 5
 	},
 /obj/item/stack/sheet/mineral/uranium{
@@ -1010,7 +1010,7 @@
 	},
 /area/ruin/syndicate_lava_base/virology)
 "hH" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/preopen{
 	id = "lavalandsyndi_virology"
 	},
@@ -1194,7 +1194,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/syndicate_lava_base/engineering)
 "jx" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/preopen{
 	id = "lavalandsyndi_bar"
@@ -1642,7 +1642,7 @@
 /area/ruin/syndicate_lava_base/arrivals)
 "mU" = (
 /obj/machinery/door/firedoor,
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/syndicate_lava_base/bar)
 "nb" = (
@@ -1660,7 +1660,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/engineering)
 "nj" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor{
 	id = "lavalandsyndi_cargo"
@@ -1764,15 +1764,15 @@
 "nN" = (
 /obj/machinery/light/small/directional/east,
 /obj/machinery/air_sensor{
-	chamber_id = "lavalandsyndieplasma"
+	chamber_id = "lavalandsyndiephoron"
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/ruin/syndicate_lava_base/engineering)
 "nR" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored{
 	dir = 8
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/ruin/syndicate_lava_base/engineering)
 "nW" = (
 /turf/open/floor/iron,
@@ -1913,7 +1913,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/computer/atmos_control/noreconnect{
 	dir = 1;
-	atmos_chambers = list("lavalandsyndieo2"="Oxygen Supply","lavalandsyndien2"="Nitrogen Supply","lavalandsyndieco2"="Carbon Dioxide Supply","lavalandsyndieplasma"="Plasma Supply")
+	atmos_chambers = list("lavalandsyndieo2"="Oxygen Supply","lavalandsyndien2"="Nitrogen Supply","lavalandsyndieco2"="Carbon Dioxide Supply","lavalandsyndiephoron"="Phoron Supply")
 	},
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/engineering)
@@ -2310,7 +2310,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/syndicate_lava_base/engineering)
 "uH" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor{
 	id = "lavalandsyndi_arrivals"
@@ -2471,7 +2471,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndicate_lava_base/bar)
 "ye" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
@@ -3860,7 +3860,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored{
 	dir = 8
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/ruin/syndicate_lava_base/engineering)
 "RG" = (
 /obj/structure/sink/kitchen/directional/west,
@@ -4355,7 +4355,7 @@
 /turf/open/floor/carpet/red,
 /area/ruin/syndicate_lava_base/dormitories)
 "XK" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/plating/airless,
 /area/ruin/syndicate_lava_base/engineering)
@@ -4423,7 +4423,7 @@
 /obj/item/stack/sheet/mineral/plastitanium{
 	amount = 30
 	},
-/obj/item/stack/sheet/plastitaniumglass{
+/obj/item/stack/sheet/plastitanium_glass{
 	amount = 15
 	},
 /obj/item/holosign_creator/atmos,

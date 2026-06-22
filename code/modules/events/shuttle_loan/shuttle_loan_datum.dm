@@ -67,7 +67,7 @@
 		/datum/supply_pack/engineering/tools,
 		/datum/supply_pack/engineering/engiequipment,
 		/datum/supply_pack/science/robotics,
-		/datum/supply_pack/science/plasma,
+		/datum/supply_pack/science/phoron,
 		/datum/supply_pack/medical/supplies
 		)
 	for(var/crate in crate_types)

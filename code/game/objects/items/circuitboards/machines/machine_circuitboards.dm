@@ -289,13 +289,13 @@
 
 /obj/item/circuitboard/machine/pacman/examine(mob/user)
 	. = ..()
-	var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
+	var/message = high_production_profile ? "high-power uranium mode" : "medium-power phoron mode"
 	. += span_notice("It's set to [message].")
 	. += span_notice("You can switch the mode by using a screwdriver on [src].")
 
 /obj/item/circuitboard/machine/pacman/screwdriver_act(mob/living/user, obj/item/tool)
 	high_production_profile = !high_production_profile
-	var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
+	var/message = high_production_profile ? "high-power uranium mode" : "medium-power phoron mode"
 	to_chat(user, span_notice("You set the board for [message]"))
 
 /obj/item/circuitboard/machine/turbine_compressor
@@ -344,7 +344,7 @@
 		/datum/stock_part/capacitor = 1,
 		/datum/stock_part/micro_laser = 1,
 		/obj/item/stack/sheet/mineral/uranium = 10,
-		/obj/item/stack/sheet/mineral/plasma = 5)
+		/obj/item/stack/sheet/mineral/phoron = 5)
 
 /obj/item/circuitboard/machine/scanner_gate
 	name = "Scanner Gate"

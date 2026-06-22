@@ -153,7 +153,6 @@
 		list("green", "purple") = /obj/item/toy/balloon_animal/slime,
 		list("yellow", "orange") = /obj/item/toy/balloon_animal/moth,
 		list("yellow", "purple") = /obj/item/toy/balloon_animal/ethereal,
-		list("orange", "purple") = /obj/item/toy/balloon_animal/plasmaman,
 	)
 
 
@@ -364,12 +363,6 @@
 	name = "balloon ethereal"
 	desc = "A balloon effigy of an ethereal artisan. Clownery is one form of art, and as such, ethereals were both drawn to and readily accepted at clown planet. Don't mind the lighbulb head, it's art too."
 	icon_state = "balloon_ethereal"
-
-/obj/item/toy/balloon_animal/plasmaman
-	name = "balloon plasmaman"
-	desc = "A balloon effigy of a plasmaman. Among the rarest on the clown planet, only having appeared recently thanks to ready trade between clown planet and NT."
-	icon_state = "balloon_plasmaman"
-
 
 /*
 * Captain's Aid

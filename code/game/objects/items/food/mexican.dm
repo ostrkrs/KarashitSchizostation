@@ -65,7 +65,7 @@
 	custom_materials = list(/datum/material/meat = MEATDISH_MATERIAL_AMOUNT * 2)
 
 /obj/item/food/fuegoburrito
-	name = "fuego plasma burrito"
+	name = "fuego burrito"
 	desc = "A super spicy burrito."
 	icon = 'icons/obj/food/mexican.dmi'
 	icon_state = "fuegoburrito"

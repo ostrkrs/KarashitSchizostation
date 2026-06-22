@@ -120,7 +120,7 @@
 		/obj/item/coin/iron = 100,
 		/obj/item/coin/plastic = 100,
 		/obj/item/coin/silver = 60,
-		/obj/item/coin/plasma = 30,
+		/obj/item/coin/phoron = 30,
 		/obj/item/coin/uranium = 30,
 		/obj/item/coin/titanium = 30,
 		/obj/item/coin/diamond = 20,

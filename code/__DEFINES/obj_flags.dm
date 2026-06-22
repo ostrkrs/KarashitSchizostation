@@ -82,10 +82,8 @@
 #define DANGEROUS_OBJECT (1<<10)
 /// Clothes that use large icons, for applying the proper overlays like blood
 #define LARGE_WORN_ICON (1<<11)
-/// prevents from placing on plasmaman helmet or modsuit hat holder
+/// prevents from placing on helmet or modsuit hat holder
 #define STACKABLE_HELMET_EXEMPT (1<<12)
-/// Prevents plasmamen from igniting when wearing this
-#define PLASMAMAN_PREVENT_IGNITION (1<<13)
 /// Usable as casting clothes by wizards (matters for suits, glasses and headwear)
 #define CASTING_CLOTHES (1<<14)
 ///Moths can't eat the clothing that has this flag.

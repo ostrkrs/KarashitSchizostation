@@ -146,24 +146,24 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/no_erp, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/wtf_is_co2, 32)
 
-/obj/structure/sign/poster/official/plasma_effects
-	name = "Plasma and the Body"
-	desc = "This informational poster provides information on the effects of long-term plasma exposure on the brain."
-	icon_state = "plasma_effects"
+/obj/structure/sign/poster/official/phoron_effects
+	name = "Phoron and the Body"
+	desc = "This informational poster provides information on the effects of long-term phoron exposure on the brain."
+	icon_state = "phoron_effects"
 
-/obj/structure/sign/poster/official/plasma_effects/examine_more(mob/user)
+/obj/structure/sign/poster/official/phoron_effects/examine_more(mob/user)
 	. = ..()
 	. += span_notice("<i>You browse some of the poster's information...</i>")
-	. += "\t[span_info("Plasma is classified as a Grade 1 Health Hazard, and has significant risks to health associated with chronic exposure.")]"
-	. += "\t[span_info("Plasma is known to cross the blood/brain barrier and bioaccumulate in brain tissue, where it begins to result in degradation of brain function. The mechanism for attack is not yet fully known, and as such no concrete preventative advice is available barring proper use of PPE (gloves + protective jumpsuit + respirator).")]"
-	. += "\t[span_info("In small doses, plasma induces confusion, short-term amnesia, and heightened aggression. These effects persist with continual exposure.")]"
+	. += "\t[span_info("Phoron is classified as a Grade 1 Health Hazard, and has significant risks to health associated with chronic exposure.")]"
+	. += "\t[span_info("Phoron is known to cross the blood/brain barrier and bioaccumulate in brain tissue, where it begins to result in degradation of brain function. The mechanism for attack is not yet fully known, and as such no concrete preventative advice is available barring proper use of PPE (gloves + protective jumpsuit + respirator).")]"
+	. += "\t[span_info("In small doses, phoron induces confusion, short-term amnesia, and heightened aggression. These effects persist with continual exposure.")]"
 	. += "\t[span_info("In individuals with chronic exposure, severe effects have been noted. Further heightened aggression, long-term amnesia, Alzheimer's symptoms, schizophrenia, macular degeneration, aneurysms, heightened risk of stroke, and Parkinsons symptoms have all been noted.")]"
-	. += "\t[span_info("It is recommended that all individuals in unprotected contact with raw plasma regularly check with company health officials.")]"
-	. += "\t[span_info("For more information, please check with Corporate extranet site: www.srcorp.net/health_and_safety/, or our internal risk-assessment documents (document numbers #47582-b (Plasma safety data sheets) and #64210 through #64225 (PPE regulations for working with Plasma)).")]"
+	. += "\t[span_info("It is recommended that all individuals in unprotected contact with raw phoron regularly check with company health officials.")]"
+	. += "\t[span_info("For more information, please check with Corporate extranet site: www.srcorp.net/health_and_safety/, or our internal risk-assessment documents (document numbers #47582-b (Phoron safety data sheets) and #64210 through #64225 (PPE regulations for working with Phoron)).")]"
 	. += "\t[span_info("Solstice Reach: Always looking after eployees' health.")]"
 	return .
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/plasma_effects, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/official/phoron_effects, 32)
 
 /obj/structure/sign/poster/official/download
 	name = "You Wouldn't Download A Gun"

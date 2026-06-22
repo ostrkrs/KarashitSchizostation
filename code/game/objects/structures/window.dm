@@ -626,62 +626,62 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/unanchored/spawner,
 	take_damage(get_integrity() * 0.5)
 	modify_max_integrity(initial(max_integrity) * 0.2)
 
-/obj/structure/window/plasma
-	name = "plasma window"
-	desc = "A window made out of a plasma-silicate alloy. It looks insanely tough to break and burn through."
-	icon_state = "plasmawindow"
+/obj/structure/window/phoron
+	name = "phoron window"
+	desc = "A window made out of a phoron-silicate alloy. It looks insanely tough to break and burn through."
+	icon_state = "phoronwindow"
 	reinf = FALSE
 	heat_resistance = 25000
-	armor_type = /datum/armor/window_plasma
+	armor_type = /datum/armor/window_phoron
 	max_integrity = 200
 	explosion_block = 1
-	glass_type = /obj/item/stack/sheet/plasmaglass
+	glass_type = /obj/item/stack/sheet/phoron_glass
 	rad_insulation = RAD_MEDIUM_INSULATION
-	glass_material_datum = /datum/material/alloy/plasmaglass
+	glass_material_datum = /datum/material/alloy/phoronglass
 
-/datum/armor/window_plasma
+/datum/armor/window_phoron
 	melee = 80
 	bullet = 5
 	bomb = 45
 	fire = 99
 	acid = 100
 
-/obj/structure/window/plasma/Initialize(mapload, direct)
+/obj/structure/window/phoron/Initialize(mapload, direct)
 	. = ..()
 	RemoveElement(/datum/element/atmos_sensitive)
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/plasma/spawner, 0)
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/phoron/spawner, 0)
 
-/obj/structure/window/plasma/unanchored
+/obj/structure/window/phoron/unanchored
 	anchored = FALSE
 
-/obj/structure/window/reinforced/plasma
-	name = "reinforced plasma window"
-	desc = "A window made out of a plasma-silicate alloy and a rod matrix. It looks hopelessly tough to break and is most likely nigh fireproof."
-	icon_state = "plasmarwindow"
+/obj/structure/window/reinforced/phoron
+	name = "reinforced phoron window"
+	desc = "A window made out of a phoron-silicate alloy and a rod matrix. It looks hopelessly tough to break and is most likely nigh fireproof."
+	icon_state = "phoronrwindow"
 	reinf = TRUE
 	heat_resistance = 50000
-	armor_type = /datum/armor/reinforced_plasma
+	armor_type = /datum/armor/reinforced_phoron
 	max_integrity = 500
 	damage_deflection = 21
 	explosion_block = 2
-	glass_type = /obj/item/stack/sheet/plasmarglass
+	glass_type = /obj/item/stack/sheet/phoron_rglass
 	rad_insulation = RAD_HEAVY_INSULATION
-	glass_material_datum = /datum/material/alloy/plasmaglass
+	glass_material_datum = /datum/material/alloy/phoronglass
 
-/datum/armor/reinforced_plasma
+/datum/armor/reinforced_phoron
 	melee = 80
 	bullet = 20
 	bomb = 60
 	fire = 99
 	acid = 100
 
-/obj/structure/window/reinforced/plasma/block_superconductivity()
+/obj/structure/window/reinforced/phoron/block_superconductivity()
 	return TRUE
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/plasma/spawner, 0)
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/phoron/spawner, 0)
 
-/obj/structure/window/reinforced/plasma/unanchored
+/obj/structure/window/reinforced/phoron/unanchored
 	anchored = FALSE
 	state = WINDOW_OUT_OF_FRAME
 
@@ -722,10 +722,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/tinted/frosted/spaw
 /obj/structure/window/fulltile/unanchored
 	anchored = FALSE
 
-/obj/structure/window/plasma/fulltile
-	icon = 'icons/obj/smooth_structures/plasma_window.dmi'
-	icon_state = "plasma_window-0"
-	base_icon_state = "plasma_window"
+/obj/structure/window/phoron/fulltile
+	icon = 'icons/obj/smooth_structures/phoron_window.dmi'
+	icon_state = "phoron_window-0"
+	base_icon_state = "phoron_window"
 	max_integrity = 400
 	fulltile = TRUE
 	flags_1 = PREVENT_CLICK_UNDER_1
@@ -735,13 +735,13 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/tinted/frosted/spaw
 	canSmoothWith = SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_AIRLOCK
 	glass_amount = 2
 
-/obj/structure/window/plasma/fulltile/unanchored
+/obj/structure/window/phoron/fulltile/unanchored
 	anchored = FALSE
 
-/obj/structure/window/reinforced/plasma/fulltile
-	icon = 'icons/obj/smooth_structures/rplasma_window.dmi'
-	icon_state = "rplasma_window-0"
-	base_icon_state = "rplasma_window"
+/obj/structure/window/reinforced/phoron/fulltile
+	icon = 'icons/obj/smooth_structures/rphoron_window.dmi'
+	icon_state = "rphoron_window-0"
+	base_icon_state = "rphoron_window"
 	state = RWINDOW_SECURE
 	max_integrity = 1000
 	fulltile = TRUE
@@ -752,7 +752,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/tinted/frosted/spaw
 	canSmoothWith = SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_AIRLOCK
 	glass_amount = 2
 
-/obj/structure/window/reinforced/plasma/fulltile/unanchored
+/obj/structure/window/reinforced/phoron/fulltile/unanchored
 	anchored = FALSE
 	state = WINDOW_OUT_OF_FRAME
 
@@ -822,7 +822,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/tinted/frosted/spaw
 	smoothing_groups = SMOOTH_GROUP_WINDOW_FULLTILE
 	canSmoothWith = SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_AIRLOCK
 	explosion_block = 3
-	glass_type = /obj/item/stack/sheet/titaniumglass
+	glass_type = /obj/item/stack/sheet/titanium_glass
 	glass_amount = 2
 	receive_ricochet_chance_mod = 1.2
 	rad_insulation = RAD_MEDIUM_INSULATION
@@ -861,9 +861,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/tinted/frosted/spaw
 /obj/structure/window/reinforced/shuttle/indestructible/crowbar_act(mob/living/user, obj/item/tool)
 	return NONE
 
-/obj/structure/window/reinforced/plasma/plastitanium
+/obj/structure/window/reinforced/phoron/plastitanium
 	name = "plastitanium window"
-	desc = "A durable looking window made of an alloy of plasma and titanium."
+	desc = "A durable looking window made of an alloy of phoron and titanium."
 	icon = 'icons/obj/smooth_structures/plastitanium_window.dmi'
 	icon_state = "plastitanium_window-0"
 	base_icon_state = "plastitanium_window"
@@ -873,50 +873,29 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/window/reinforced/tinted/frosted/spaw
 	flags_1 = PREVENT_CLICK_UNDER_1
 	obj_flags = CAN_BE_HIT
 	heat_resistance = 1600
-	armor_type = /datum/armor/plasma_plastitanium
+	armor_type = /datum/armor/phoron_plastitanium
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_WINDOW_FULLTILE
 	canSmoothWith = SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_AIRLOCK
 	explosion_block = 3
-	damage_deflection = 21 //The same as reinforced plasma windows.3
-	glass_type = /obj/item/stack/sheet/plastitaniumglass
+	damage_deflection = 21
+	glass_type = /obj/item/stack/sheet/plastitanium_glass
 	glass_amount = 2
 	rad_insulation = RAD_EXTREME_INSULATION
 	glass_material_datum = /datum/material/alloy/plastitaniumglass
 
-/obj/structure/window/reinforced/plasma/plastitanium/indestructible
-	name = "plastitanium window"
-	desc = "A durable looking window made of an alloy of plasma and titanium."
-	icon = 'icons/obj/smooth_structures/plastitanium_window.dmi'
-	icon_state = "plastitanium_window-0"
-	base_icon_state = "plastitanium_window"
-	max_integrity = 1200
-	wtype = "shuttle"
-	fulltile = TRUE
-	flags_1 = PREVENT_CLICK_UNDER_1
-	obj_flags = CAN_BE_HIT
-	heat_resistance = 1600
-	armor_type = /datum/armor/plasma_plastitanium
-	smoothing_flags = SMOOTH_BITMASK
-	smoothing_groups = SMOOTH_GROUP_WINDOW_FULLTILE
-	canSmoothWith = SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_AIRLOCK
-	explosion_block = 3
-	damage_deflection = 21 //The same as reinforced plasma windows.3
-	glass_type = /obj/item/stack/sheet/plastitaniumglass
-	glass_amount = 2
-	rad_insulation = RAD_EXTREME_INSULATION
-	glass_material_datum = /datum/material/alloy/plastitaniumglass
+/obj/structure/window/reinforced/phoron/plastitanium/indestructible
 	name = "hardened shuttle window"
 	flags_1 = PREVENT_CLICK_UNDER_1
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 
-/datum/armor/plasma_plastitanium
+/datum/armor/phoron_plastitanium
 	melee = 95
 	bomb = 50
 	fire = 80
 	acid = 100
 
-/obj/structure/window/reinforced/plasma/plastitanium/unanchored
+/obj/structure/window/reinforced/phoron/plastitanium/unanchored
 	anchored = FALSE
 	state = WINDOW_OUT_OF_FRAME
 

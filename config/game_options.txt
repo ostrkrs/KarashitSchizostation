@@ -372,7 +372,6 @@ ROUNDSTART_RACES caver
 #ROUNDSTART_RACES lizard
 #ROUNDSTART_RACES fly
 #ROUNDSTART_RACES moth
-#ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES shadow
 
 ## Races that are better than humans in some ways, but worse in others

@@ -179,7 +179,7 @@ Slimecrossing Potions
 //Revival potion - Charged Grey
 /obj/item/slimepotion/slime_reviver
 	name = "slime revival potion"
-	desc = "Infused with plasma and compressed gel, this brings dead slimes back to life."
+	desc = "Infused with phoron and compressed gel, this brings dead slimes back to life."
 	icon = 'icons/obj/medical/chemical.dmi'
 	icon_state = "potgrey"
 

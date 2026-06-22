@@ -3337,7 +3337,7 @@
 	name = "icy wind";
 	color = "4040ff"
 	},
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /turf/open/misc/asteroid/snow/snow_cabin,
 /area/awaymission/cabin/caves)
 "wf" = (
@@ -4237,7 +4237,7 @@
 /area/awaymission/cabin/caves)
 "Ie" = (
 /obj/effect/decal/cleanable/blood,
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /obj/effect/light_emitter{
 	set_cap = 3;
 	set_luminosity = 6;

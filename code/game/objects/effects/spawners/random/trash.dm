@@ -25,7 +25,7 @@
 		/obj/item/popsicle_stick = 1,
 		/obj/item/reagent_containers/syringe = 1,
 		/obj/item/reagent_containers/cup/glass/sillycup = 1,
-		/obj/item/shard/plasma = 1,
+		/obj/item/shard/phoron = 1,
 	)
 
 /obj/effect/spawner/random/trash/deluxe_garbage
@@ -35,7 +35,7 @@
 		/obj/effect/spawner/random/trash/food_packaging = 10,
 		/obj/effect/spawner/random/entertainment/money = 10,
 		/obj/effect/spawner/random/trash/crushed_can = 10,
-		/obj/item/shard/plasma = 5,
+		/obj/item/shard/phoron = 5,
 		/obj/item/reagent_containers/applicator/pill/maintenance = 5,
 		/obj/item/mail/junkmail = 5,
 		/obj/effect/spawner/random/food_or_drink/snack = 5,

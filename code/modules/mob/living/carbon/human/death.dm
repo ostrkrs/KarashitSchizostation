@@ -7,8 +7,6 @@ GLOBAL_LIST_EMPTY(dead_players_during_shift)
 		return ..()
 
 	var/bone_type = /obj/effect/decal/remains/human
-	if(isplasmaman(src))
-		bone_type = /obj/effect/decal/remains/plasma
 
 	var/obj/effect/decal/remains/human/bones = new bone_type(loc)
 	bones.pixel_z = -6

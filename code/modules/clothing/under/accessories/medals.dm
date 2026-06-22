@@ -112,28 +112,28 @@
 	name = "medal of exceptional heroism"
 	desc = "An extremely rare golden medal awarded only by CentCom. To receive such a medal is the highest honor and as such, very few exist. This medal is almost never awarded to anybody but commanders."
 
-/obj/item/clothing/accessory/medal/plasma
-	name = "plasma medal"
-	desc = "An eccentric medal made of plasma."
-	icon_state = "plasma"
-	medaltype = "medal-plasma"
-	custom_materials = list(/datum/material/plasma = HALF_SHEET_MATERIAL_AMOUNT)
+/obj/item/clothing/accessory/medal/phoron
+	name = "phoron medal"
+	desc = "An eccentric medal made of phoron."
+	icon_state = "phoron"
+	medaltype = "medal-phoron"
+	custom_materials = list(/datum/material/phoron = HALF_SHEET_MATERIAL_AMOUNT)
 
-/obj/item/clothing/accessory/medal/plasma/Initialize(mapload)
+/obj/item/clothing/accessory/medal/phoron/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/atmos_sensitive, mapload)
 
-/obj/item/clothing/accessory/medal/plasma/should_atmos_process(datum/gas_mixture/air, exposed_temperature)
+/obj/item/clothing/accessory/medal/phoron/should_atmos_process(datum/gas_mixture/air, exposed_temperature)
 	return exposed_temperature > 300
 
-/obj/item/clothing/accessory/medal/plasma/atmos_expose(datum/gas_mixture/air, exposed_temperature)
-	atmos_spawn_air("[GAS_PLASMA]=20;[TURF_TEMPERATURE(exposed_temperature)]")
+/obj/item/clothing/accessory/medal/phoron/atmos_expose(datum/gas_mixture/air, exposed_temperature)
+	atmos_spawn_air("[GAS_PHORON]=20;[TURF_TEMPERATURE(exposed_temperature)]")
 	visible_message(span_danger("\The [src] bursts into flame!"), span_userdanger("Your [src] bursts into flame!"))
 	qdel(src)
 
-/obj/item/clothing/accessory/medal/plasma/nobel_science
+/obj/item/clothing/accessory/medal/phoron/nobel_science
 	name = "nobel sciences award"
-	desc = "A plasma medal which represents significant contributions to the field of science or engineering."
+	desc = "A phoron medal which represents significant contributions to the field of science or engineering."
 
 /obj/item/clothing/accessory/medal/silver/emergency_services
 	name = "emergency services award"

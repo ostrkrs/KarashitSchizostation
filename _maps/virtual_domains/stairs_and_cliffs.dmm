@@ -118,7 +118,7 @@
 /turf/open/misc/asteroid/snow,
 /area/icemoon/underground/explored/virtual_domain)
 "pL" = (
-/turf/open/lava/plasma/virtual_domain,
+/turf/open/lava/phoron/virtual_domain,
 /area/icemoon/underground/explored/virtual_domain)
 "qc" = (
 /turf/open/misc/ice,
@@ -181,10 +181,6 @@
 /obj/structure/flora/grass/green/style_random,
 /turf/open/floor/plating/snowed/smoothed,
 /area/icemoon/underground/explored/virtual_domain)
-"BV" = (
-/obj/effect/decal/remains/plasma,
-/turf/open/misc/asteroid/snow,
-/area/icemoon/underground/explored/virtual_domain)
 "Dz" = (
 /obj/structure/railing/corner/end{
 	dir = 4
@@ -224,11 +220,6 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/icemoon/underground/explored/virtual_domain)
-"Kl" = (
-/obj/effect/decal/remains/plasma,
-/obj/effect/decal/cleanable/ash/large,
-/turf/open/misc/asteroid/snow,
 /area/icemoon/underground/explored/virtual_domain)
 "KA" = (
 /obj/structure/statue/snow/snowman{
@@ -1732,7 +1723,7 @@ sM
 dR
 dR
 sw
-BV
+dR
 pL
 sM
 sM
@@ -5745,7 +5736,7 @@ sM
 sM
 sM
 sM
-Kl
+GX
 pL
 pL
 pL

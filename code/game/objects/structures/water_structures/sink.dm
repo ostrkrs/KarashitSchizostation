@@ -235,10 +235,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sink, (-14))
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sink/kitchen, (-16))
 
 /obj/structure/sink/gasstation
-	name = "plasma fuel station"
-	desc = "A place to refuel vehicles with liquid plasma. It can also dispense into a container."
+	name = "phoron fuel station"
+	desc = "A place to refuel vehicles with liquid phoron. It can also dispense into a container."
 	icon_state = "sink_gasstation"
-	dispensedreagent = /datum/reagent/toxin/plasma
+	dispensedreagent = /datum/reagent/toxin/phoron
 	has_water_reclaimer = FALSE
 
 /obj/structure/sink/greyscale

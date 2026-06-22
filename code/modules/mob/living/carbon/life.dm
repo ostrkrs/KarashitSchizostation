@@ -167,7 +167,7 @@
 		breath = empty_breath
 
 	// Ensure gas volumes are present.
-	breath.assert_gases(/datum/gas/bz, /datum/gas/carbon_dioxide, /datum/gas/freon, /datum/gas/plasma, /datum/gas/pluoxium, /datum/gas/miasma, /datum/gas/nitrous_oxide, /datum/gas/nitrium, /datum/gas/oxygen)
+	breath.assert_gases(/datum/gas/bz, /datum/gas/carbon_dioxide, /datum/gas/freon, /datum/gas/phoron, /datum/gas/pluoxium, /datum/gas/miasma, /datum/gas/nitrous_oxide, /datum/gas/nitrium, /datum/gas/oxygen)
 
 	/// The list of gases in the breath.
 	var/list/breath_gases = breath.gases
@@ -187,7 +187,7 @@
 	var/safe_oxygen_min = 16
 	/// Maximum CO2 before side-effects.
 	var/safe_co2_max = 10
-	/// Maximum Plasma before side-effects.
+	/// Maximum Phoron before side-effects.
 	var/safe_plas_max = 0.05
 	/// Maximum Pluoxum before side-effects.
 	var/gas_stimulation_min = 0.002 // For Pluoxium
@@ -200,7 +200,7 @@
 	// Main gases.
 	var/pluoxium_pp = 0
 	var/o2_pp = 0
-	var/plasma_pp = 0
+	var/phoron_pp = 0
 	var/co2_pp = 0
 	// Trace gases ordered alphabetically.
 	var/bz_pp = 0
@@ -217,7 +217,7 @@
 		// Partial pressures of "main gases".
 		pluoxium_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/pluoxium][MOLES])
 		o2_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/oxygen][MOLES] + (PLUOXIUM_PROPORTION * pluoxium_pp))
-		plasma_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/plasma][MOLES])
+		phoron_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/phoron][MOLES])
 		co2_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/carbon_dioxide][MOLES])
 		// Partial pressures of "trace" gases.
 		bz_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/bz][MOLES])
@@ -296,17 +296,17 @@
 		co2overloadtime = 0
 		clear_alert(ALERT_TOO_MUCH_CO2)
 
-	//-- PLASMA --//
-	// Maximum Plasma effects. "Too much Plasma!"
-	if(plasma_pp > safe_plas_max)
-		// Plasma side-effects.
-		var/ratio = (breath_gases[/datum/gas/plasma][MOLES] / safe_plas_max) * 10
+	//-- PHORON --//
+	// Maximum Phoron effects. "Too much Phoron!"
+	if(phoron_pp > safe_plas_max)
+		// Phoron side-effects.
+		var/ratio = (breath_gases[/datum/gas/phoron][MOLES] / safe_plas_max) * 10
 		adjustToxLoss(clamp(ratio, MIN_TOXIC_GAS_DAMAGE, MAX_TOXIC_GAS_DAMAGE))
 		if(!HAS_TRAIT(src, TRAIT_ANOSMIA))
-			throw_alert(ALERT_TOO_MUCH_PLASMA, /atom/movable/screen/alert/too_much_plas)
+			throw_alert(ALERT_TOO_MUCH_PHORON, /atom/movable/screen/alert/too_much_phoron)
 	else
 		// Reset side-effects.
-		clear_alert(ALERT_TOO_MUCH_PLASMA)
+		clear_alert(ALERT_TOO_MUCH_PHORON)
 
 	//-- TRACES --//
 	// If there's some other funk in the air lets deal with it here.

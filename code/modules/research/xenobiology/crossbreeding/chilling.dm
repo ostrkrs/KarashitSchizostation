@@ -1,7 +1,7 @@
 /*
 Chilling extracts:
 	Have a unique, primarily defensive effect when
-	filled with 10u plasma and activated in-hand.
+	filled with 10u phoron and activated in-hand.
 */
 /obj/item/slimecross/chilling
 	name = "chilling extract"
@@ -14,11 +14,11 @@ Chilling extracts:
 	create_reagents(10, INJECTABLE | DRAWABLE)
 
 /obj/item/slimecross/chilling/attack_self(mob/user)
-	if(!reagents.has_reagent(/datum/reagent/toxin/plasma, 10))
-		to_chat(user, span_warning("This extract needs to be full of plasma to activate!"))
+	if(!reagents.has_reagent(/datum/reagent/toxin/phoron, 10))
+		to_chat(user, span_warning("This extract needs to be full of phoron to activate!"))
 		return
-	reagents.remove_reagent(/datum/reagent/toxin/plasma, 10)
-	to_chat(user, span_notice("You squeeze the extract, and it absorbs the plasma!"))
+	reagents.remove_reagent(/datum/reagent/toxin/phoron, 10)
+	to_chat(user, span_notice("You squeeze the extract, and it absorbs the phoron!"))
 	playsound(src, 'sound/effects/bubbles/bubbles.ogg', 50, TRUE)
 	playsound(src, 'sound/effects/glass/glassbr1.ogg', 50, TRUE)
 	do_effect(user)
@@ -101,7 +101,7 @@ Chilling extracts:
 
 /obj/item/slimecross/chilling/darkpurple
 	colour = SLIME_TYPE_DARK_PURPLE
-	effect_desc = "Removes all plasma gas in the area."
+	effect_desc = "Removes all phoron gas in the area."
 
 /obj/item/slimecross/chilling/darkpurple/do_effect(mob/user)
 	var/area/A = get_area(get_turf(user))
@@ -112,8 +112,8 @@ Chilling extracts:
 	for(var/turf/open/T in A.get_turfs_from_all_zlevels())
 		var/datum/gas_mixture/G = T.air
 		if(istype(G))
-			G.assert_gas(/datum/gas/plasma)
-			G.gases[/datum/gas/plasma][MOLES] = 0
+			G.assert_gas(/datum/gas/phoron)
+			G.gases[/datum/gas/phoron][MOLES] = 0
 			filtered = TRUE
 			G.garbage_collect()
 			T.air_update_turf(FALSE, FALSE)

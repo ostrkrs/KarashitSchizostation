@@ -82,7 +82,7 @@
 	var/conduction = 0
 	///The remaining wavelength that actually can do damage to mobs.
 	var/radiation = 0
-	///Efficiency of the reaction, it increases with the amount of plasma
+	///Efficiency of the reaction, it increases with the amount of phoron
 	var/efficiency = 0
 	///Hotter air is easier to heat up and cool down
 	var/heat_limiter_modifier = 0

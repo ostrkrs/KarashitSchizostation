@@ -244,7 +244,7 @@
 /obj/item/stack/sheet/glass{
 	amount = 10
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /obj/effect/turf_decal/siding/purple{
@@ -713,7 +713,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
@@ -925,7 +925,7 @@
 /obj/effect/turf_decal/siding/purple/corner{
 	dir = 8
 	},
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /turf/open/floor/iron/white/diagonal,
 /area/shuttle/abandoned)
 "Ny" = (

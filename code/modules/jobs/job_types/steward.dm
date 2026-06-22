@@ -17,7 +17,7 @@
 	config_tag = "STEWARD"
 
 	outfit = /datum/outfit/job/steward
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_personnel // PLACEHOLDER, will delete plasmaman outfit later
+
 	departments_list = list(
 		/datum/job_department/service,
 		/datum/job_department/command,
