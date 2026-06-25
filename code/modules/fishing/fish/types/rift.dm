@@ -635,7 +635,7 @@
 			to_chat(screeched, span_notice("You resist the psychic wail!"))
 			continue
 		var/power = 1
-		if(!screeched.can_hear()) // bit weaker if deaf. but its still psychic
+		if(HAS_TRAIT(screeched, TRAIT_DEAF)) // bit weaker if deaf. but its still psychic
 			power *= 0.5
 		var/affect_time = 15 SECONDS * power
 		// it really fucks you up
@@ -815,7 +815,7 @@
 
 /obj/item/organ/ears/babbelfish/proc/on_drain_magic(mob/user)
 	to_chat(user, span_noticealien("Your [src] pop as they protect your mind from psychic phenomena!"))
-	adjustEarDamage(ddeaf = 20)
+	adjust_temporary_deafness(40 SECONDS)
 
 /obj/item/organ/ears/babbelfish/proc/on_expire(mob/user)
 	to_chat(user, span_noticealien("Your [src] suddenly burst apart!"))

@@ -108,3 +108,7 @@
 	SIGNAL_HANDLER
 
 	dna?.remove_all_mutations()
+
+/mob/living/carbon/on_hearing_loss(datum/source)
+	. = ..()
+	breathing_loop.stop()

@@ -2,8 +2,12 @@
 	abstract_hallucination_parent = /datum/hallucination/station_message
 	random_hallucination_weight = 1
 	hallucination_tier = HALLUCINATION_TIER_RARE
+	var/require_hearing = TRUE
 
 /datum/hallucination/station_message/start()
+	if(require_hearing && HAS_TRAIT(hallucinator, TRAIT_DEAF))
+		return FALSE
+
 	qdel(src) // To be implemented by subtypes, call parent for easy cleanup
 	return TRUE
 
