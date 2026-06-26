@@ -1,7 +1,7 @@
 /datum/computer_file/program/maintenance/modsuit_control
 	filename = "modsuit_control"
 	filedesc = "MODsuit Control"
-	program_open_overlay = "modsuit_control"
+	program_open_overlay = "gear"
 	downloader_category = PROGRAM_CATEGORY_EQUIPMENT
 	extended_desc = "This program allows people to connect a MODsuit to it, allowing remote control."
 	size = 2

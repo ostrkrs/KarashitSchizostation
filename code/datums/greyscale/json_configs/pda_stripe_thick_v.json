@@ -9,14 +9,13 @@
 		{
 			"type": "icon_state",
 			"icon_state": "pda_buttons",
-			"blend_mode": "overlay",
-			"color_ids": [2]
+			"blend_mode": "overlay"
 		},
 		{
 			"type": "icon_state",
-			"icon_state": "pda_stripe_double",
+			"icon_state": "pda_stripe_thick_v",
 			"blend_mode": "overlay",
-			"color_ids": [3]
+			"color_ids": [2]
 		},
 		{
 			"type": "icon_state",

@@ -6,12 +6,6 @@
 	crate_type = null
 	discountable = SUPPLY_PACK_STD_DISCOUNTABLE
 
-/datum/supply_pack/goody/clear_pda
-	name = "Mint Condition Clear PDA"
-	desc = "Mint condition, freshly repackaged! A valuable collector's item normally valued at over 2.5 million credits, now available for a steal!"
-	cost = 100000
-	contains = list(/obj/item/modular_computer/pda/clear)
-
 /datum/supply_pack/goody/hp38
 	name = ".38 Hollow-Point Speedloader Single-Pack"
 	desc = "Contains one speedloader of .38 hollow-point ammunition, good for embedding in soft targets."

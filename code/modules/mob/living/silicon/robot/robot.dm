@@ -113,12 +113,8 @@
 /mob/living/silicon/robot/proc/set_modularInterface_theme()
 	if(istype(model, /obj/item/robot_model/syndicate) || emagged)
 		modularInterface.device_theme = PDA_THEME_SYNDICATE
-		modularInterface.icon_state = "tablet-silicon-syndicate"
 	else
 		modularInterface.device_theme = PDA_THEME_NTOS
-		modularInterface.icon_state = "tablet-silicon"
-		modularInterface.icon_state_powered = "tablet-silicon"
-		modularInterface.icon_state_unpowered = "tablet-silicon"
 	modularInterface.update_icon()
 
 //If there's an MMI in the robot, have it ejected when the mob goes away. --NEO

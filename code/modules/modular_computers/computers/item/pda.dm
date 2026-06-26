@@ -6,7 +6,7 @@
 	worn_icon_state = "nothing"
 	base_icon_state = "tablet"
 	greyscale_config = /datum/greyscale_config/tablet
-	greyscale_colors = "#999875#a92323"
+	greyscale_colors = "#999875"
 
 	lefthand_file = 'icons/mob/inhands/items/devices_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/items/devices_righthand.dmi'
@@ -26,7 +26,6 @@
 	max_capacity = 64
 	allow_chunky = TRUE
 	hardware_flag = PROGRAM_PDA
-	max_idle_programs = 2
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_ID | ITEM_SLOT_BELT
 	has_light = TRUE //LED flashlight!
@@ -62,6 +61,8 @@
 	. = ..()
 	if(inserted_item)
 		inserted_item = new inserted_item(src)
+
+	AddElement(/datum/element/item_scaling, 0.8, 1)
 
 /obj/item/modular_computer/pda/Destroy()
 	if(istype(inserted_item))
@@ -271,8 +272,8 @@
 	device_theme = PDA_THEME_SYNDICATE
 	comp_light_luminosity = 6.3 //matching a flashlight
 	light_color = COLOR_RED
-	greyscale_config = /datum/greyscale_config/tablet/stripe_thick
-	greyscale_colors = "#a80001#5C070F#000000"
+	greyscale_config = /datum/greyscale_config/tablet/stripe_thick_vertical
+	greyscale_colors = "#a80001#000000"
 	long_ranged = TRUE
 	starting_programs = list(
 		/datum/computer_file/program/radar/fission360,
@@ -292,8 +293,8 @@
 	device_theme = PDA_THEME_SYNDICATE
 	comp_light_luminosity = 6.3
 	has_pda_programs = FALSE
-	greyscale_config = /datum/greyscale_config/tablet/stripe_double
-	greyscale_colors = "#696969#000000#FFA500"
+	greyscale_config = /datum/greyscale_config/tablet/stripe_double_horizontal
+	greyscale_colors = "#696969#FFA500"
 
 	starting_programs = list(
 		/datum/computer_file/program/contract_uplink,
@@ -307,13 +308,6 @@
  */
 /obj/item/modular_computer/pda/silicon
 	name = "modular interface"
-	icon = 'icons/obj/devices/modular_pda.dmi'
-	icon_state = "tablet-silicon"
-	post_init_icon_state = null
-	base_icon_state = "tablet-silicon"
-	greyscale_config = null
-	greyscale_colors = null
-
 	has_light = FALSE //tablet light button actually enables/disables the borg lamp
 	comp_light_luminosity = 0
 	inserted_item = null
@@ -438,7 +432,6 @@
 	return GLOB.deep_inventory_state
 
 /obj/item/modular_computer/pda/silicon/cyborg/syndicate
-	icon_state = "tablet-silicon-syndicate"
 	device_theme = PDA_THEME_SYNDICATE
 
 /obj/item/modular_computer/pda/silicon/cyborg/syndicate/Initialize(mapload)
