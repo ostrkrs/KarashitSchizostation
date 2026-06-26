@@ -28,7 +28,7 @@
 		new /obj/item/paper(folder)
 
 /obj/item/storage/briefcase/iaa
-	folder_path = /obj/item/folder/blue
+	folder_path = /obj/item/folder/red
 
 /obj/item/storage/briefcase/iaa/PopulateContents()
 	new /obj/item/stamp/law(src)
