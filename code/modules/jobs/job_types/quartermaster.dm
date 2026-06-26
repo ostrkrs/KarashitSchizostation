@@ -51,6 +51,5 @@
 	suit = /obj/item/clothing/suit/jacket/quartermaster
 	ears = /obj/item/radio/headset/heads/qm
 	shoes = /obj/item/clothing/shoes/laceup
-	l_hand = /obj/item/clipboard
 
 	chameleon_extras = /obj/item/stamp/head/qm

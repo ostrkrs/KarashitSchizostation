@@ -51,9 +51,7 @@
 	ears = /obj/item/radio/headset/headset_comsec
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/tie/red/tied
-	l_pocket = /obj/item/laser_pointer/red
 	r_pocket = /obj/item/clothing/accessory/iaa_badge
-	l_hand = /obj/item/storage/briefcase/iaa
 
 	chameleon_extras = /obj/item/stamp/law
 	implants = list(/obj/item/implant/mindshield)

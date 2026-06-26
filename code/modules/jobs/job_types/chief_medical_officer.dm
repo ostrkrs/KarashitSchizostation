@@ -63,13 +63,13 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	backpack_contents = list(
 		/obj/item/melee/baton/telescopic/silver = 1,
+		/obj/item/storage/medkit/surgery = 1,
 		)
 	belt = /obj/item/modular_computer/pda/heads/cmo
 	ears = /obj/item/radio/headset/heads/cmo
 	shoes = /obj/item/clothing/shoes/sneakers/blue
 	l_pocket = /obj/item/laser_pointer/blue
 	r_pocket = /obj/item/pinpointer/crew
-	l_hand = /obj/item/storage/medkit/surgery
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med

@@ -57,7 +57,6 @@
 	belt = /obj/item/modular_computer/pda/heads/steward
 	ears = /obj/item/radio/headset/heads/steward
 	shoes = /obj/item/clothing/shoes/laceup
-	l_hand = /obj/item/clipboard
 
 	chameleon_extras = /obj/item/stamp/head/steward
 	implants = list(/obj/item/implant/mindshield)

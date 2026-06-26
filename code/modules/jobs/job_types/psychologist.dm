@@ -51,7 +51,6 @@
 	belt = /obj/item/modular_computer/pda/psychologist
 	ears = /obj/item/radio/headset/headset_srvmed
 	shoes = /obj/item/clothing/shoes/laceup
-	l_hand = /obj/item/clipboard
 	neck = /obj/item/clothing/neck/tie/black/tied
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med

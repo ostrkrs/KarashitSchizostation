@@ -40,13 +40,13 @@
 
 	backpack_contents = list(
 		/obj/item/boxcutter = 1,
+		/obj/item/universal_scanner = 1,
 	)
 	id_trim = /datum/id_trim/job/cargo_technician
 	uniform = /obj/item/clothing/under/rank/cargo/tech
 	belt = /obj/item/modular_computer/pda/cargo
 	suit = /obj/item/clothing/suit/toggle/cargo_tech
 	ears = /obj/item/radio/headset/headset_cargo
-	l_hand = /obj/item/universal_scanner
 
 /datum/outfit/job/cargo_tech/mod
 	name = "Cargo Technician (MODsuit)"

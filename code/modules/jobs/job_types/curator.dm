@@ -51,7 +51,6 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/laser_pointer/green
 	r_pocket = /obj/item/key/displaycase
-	l_hand = /obj/item/storage/bag/books
 
 	accessory = /obj/item/clothing/accessory/pocketprotector/full
 
