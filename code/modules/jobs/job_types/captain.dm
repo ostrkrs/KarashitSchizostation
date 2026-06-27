@@ -4,7 +4,8 @@
 		keep the crew alive, be prepared to do anything and everything or die \
 		horribly trying."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
-	department_head = list("CentCom")
+	department_head = list("Solstice Reach HQ")
+	default_radio_channel = RADIO_CHANNEL_COMMAND
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1

@@ -392,7 +392,7 @@
   RandomGamer123:
   - bugfix: Power fist no longer occasionally and randomly says it does not have enough
       gas when it has enough
-  - bugfix: Connects Delta's cryopod room to the station's power grid
+  - bugfix: Connects Delta's cryptopod room to the station's power grid
 2021-06-19:
   Maurukas:
   - bugfix: Nitrile gloves have been restocked on Metastation.

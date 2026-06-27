@@ -3,7 +3,7 @@
 	alt_titles = JOB_INTERNAL_AFFAIRS_AGENT_ALT_TITLES
 	description = "Advocate for prisoners, create law-binding contracts, \
 		ensure Security is following protocol and Space Law."
-	department_head = list(JOB_CENTCOM_COMMANDER)
+	department_head = list("Solstice Reach HQ")
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1

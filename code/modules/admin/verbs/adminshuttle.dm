@@ -171,26 +171,3 @@ ADMIN_VERB(shuttle_panel, R_ADMIN, "Shuttle Manipulator", "Opens the shuttle man
 
 /obj/docking_port/mobile/emergency/admin_fly_shuttle(mob/user)
 	return  // use the existing verbs for this
-
-/obj/docking_port/mobile/arrivals/admin_fly_shuttle(mob/user)
-	switch(tgui_alert(user, "Would you like to fly the arrivals shuttle once or change its destination?", "Fly Shuttle", list("Fly", "Retarget", "Cancel")))
-		if("Cancel")
-			return
-		if("Fly")
-			return ..()
-
-	var/list/options = list()
-
-	for(var/port in SSshuttle.stationary_docking_ports)
-		if (istype(port, /obj/docking_port/stationary/transit))
-			continue  // please don't do this
-		var/obj/docking_port/stationary/S = port
-		if (canDock(S) == SHUTTLE_CAN_DOCK)
-			options[S.name || S.shuttle_id] = S
-
-	var/selection = tgui_input_list(user, "New arrivals destination", "Fly Shuttle", options)
-	if(isnull(selection))
-		return
-	target_dock = options[selection]
-	if(!QDELETED(target_dock))
-		destination = target_dock

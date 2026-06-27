@@ -5,6 +5,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SUPPLY)
+	default_radio_channel = RADIO_CHANNEL_SUPPLY
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1

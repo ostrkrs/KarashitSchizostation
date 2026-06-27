@@ -5,6 +5,7 @@
 		protect Ian, run the station when the captain dies."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
+	default_radio_channel = RADIO_CHANNEL_COMMAND
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1

@@ -153,7 +153,7 @@
 				Backup exit route protocol decrypted. Calibrating route...",
 			"Emergency Shuttle", TRUE) // wait out until the rift on the station gets destroyed and the final message plays
 		var/list/mobs = mobs_in_area_type(list(/area/shuttle/escape))
-		for(var/mob/living/mob as anything in mobs) // emulate mob/living/lateShuttleMove() behaviour
+		for(var/mob/living/mob as anything in mobs)
 			if(mob.buckled)
 				continue
 			if(mob.client)

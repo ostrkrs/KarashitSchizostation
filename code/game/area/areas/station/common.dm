@@ -51,6 +51,10 @@
 	name = "\improper Laundry Room"
 	icon_state = "laundry_room"
 
+/*
+* Toilet Areas
+*/
+
 /area/station/commons/toilet
 	name = "\improper Dormitory Toilets"
 	icon_state = "toilet"
@@ -171,3 +175,17 @@
 /area/station/commons/storage/mining
 	name = "\improper Public Mining Storage"
 	icon_state = "mining_storage"
+
+/*
+* Cryptosleep Areas
+*/
+
+/area/station/commons/cryptosleep
+	name = "\improper Cryptosleep Chambers"
+	icon_state = "cryptosleep"
+
+/area/station/commons/cryptosleep/primary
+	name = "\improper Primary Cryptosleep Chambers"
+
+/area/station/commons/cryptosleep/secondary
+	name = "\improper Secondary Cryptosleep Chambers"

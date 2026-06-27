@@ -663,9 +663,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	location = "IAA's Office"
 
 //Shuttle docks
-/obj/effect/landmark/navigate_destination/dockarrival
-	location = "Arrival Shuttle Dock"
-
 /obj/effect/landmark/navigate_destination/dockesc
 	location = "Escape Shuttle Dock"
 

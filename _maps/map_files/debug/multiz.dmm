@@ -266,7 +266,7 @@
 /area/station/command/bridge)
 "by" = (
 /turf/closed/wall/r_wall,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "bz" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating,
@@ -365,14 +365,14 @@
 /turf/open/floor/iron{
 	dir = 9
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "bV" = (
 /obj/machinery/light/directional/north,
 /obj/structure/closet/emcloset,
 /turf/open/floor/iron{
 	dir = 1
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "bW" = (
 /obj/structure/closet/secure_closet/hos,
 /obj/machinery/airalarm/directional/north{
@@ -382,13 +382,13 @@
 /turf/open/floor/iron{
 	dir = 1
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "bX" = (
 /obj/structure/closet/emcloset,
 /turf/open/floor/iron{
 	dir = 1
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "bY" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -412,11 +412,11 @@
 /turf/open/floor/iron{
 	dir = 8
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "cn" = (
 /obj/machinery/door/airlock,
 /turf/open/floor/plating,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "co" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
@@ -450,7 +450,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "cA" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -505,7 +505,7 @@
 /turf/open/floor/iron{
 	dir = 8
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "cL" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -513,14 +513,14 @@
 	pixel_y = 7
 	},
 /turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "cM" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
 /obj/item/storage/medkit/regular,
 /obj/item/healthanalyzer,
 /turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "cS" = (
 /turf/closed/wall/r_wall,
 /area/station/commons/storage/primary)
@@ -741,7 +741,7 @@
 /area/station/hallway/secondary/service)
 "eo" = (
 /turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "es" = (
 /obj/effect/turf_decal/stripes/asteroid/corner,
 /turf/open/floor/iron,
@@ -1008,7 +1008,7 @@
 /obj/machinery/light/directional/south,
 /obj/structure/table,
 /turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "kg" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 4
@@ -1075,7 +1075,7 @@
 /turf/open/floor/iron{
 	dir = 8
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "mG" = (
 /obj/structure/transport/linear/public,
 /obj/effect/turf_decal/siding/white{
@@ -1125,7 +1125,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "on" = (
 /obj/machinery/light/directional/west,
 /obj/effect/turf_decal/stripes/line{
@@ -1539,7 +1539,7 @@
 /turf/open/floor/iron{
 	dir = 8
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "IL" = (
 /obj/structure/railing/corner,
 /obj/structure/railing/corner{
@@ -1591,7 +1591,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "Km" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 4
@@ -1671,11 +1671,11 @@
 	dir = 1
 	},
 /turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "LW" = (
 /obj/structure/fans/tiny,
 /turf/open/floor/plating,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "Mk" = (
 /obj/machinery/light/directional/north,
 /obj/structure/sign/warning/directional/north,
@@ -1754,7 +1754,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "Qf" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron,
@@ -1802,7 +1802,7 @@
 /turf/open/floor/iron{
 	dir = 8
 	},
-/area/station/hallway/secondary/entry)
+/area/station/hallway/primary)
 "RQ" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/cable,

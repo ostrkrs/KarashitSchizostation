@@ -65,7 +65,7 @@
   - admin: The greyscale debug menu now has improved functionality involving dirs
       and changing config types.
   sergeirocks100:
-  - rscadd: Adds cryopod areas to every in-rotation map. Expect to find them in dorms
+  - rscadd: Adds cryptopod areas to every in-rotation map. Expect to find them in dorms
       or recreation areas.
   tf-4:
   - bugfix: Tram medbay storage is now wired to the grid at round start.
@@ -468,10 +468,10 @@
   - qol: You can now unlock/lock secure lockers with Right click rather than using
       Alt+click.
   Timberpoes:
-  - bugfix: Cryopods can no longer be used to round remove other SSD players.
-  - bugfix: Cryopods no longer delete traitor objectives under certain edge cases,
+  - bugfix: cryptopods can no longer be used to round remove other SSD players.
+  - bugfix: cryptopods no longer delete traitor objectives under certain edge cases,
       and can no longer be used to metagame the existence of traitors with steal objectives.
-  - balance: Cryopods now vomit out all the items of players who get vored by them,
+  - balance: cryptopods now vomit out all the items of players who get vored by them,
       like beautiful loot pinatas.
   itseasytosee:
   - bugfix: changeling spacesuits no longer come with a battery hud
@@ -772,7 +772,7 @@
   - qol: adds a substantial number of fire alarms to Tramstation areas that had few/none
   - bugfix: Fixed duplicate PunPun in Tramstation bar
   - bugfix: Fixed duplicated chemistry locker embedded in the Tramstation HPLC machine
-  - bugfix: The Cryopod bays on Icebox, Metastation and Deltastation have been wired
+  - bugfix: The cryptopod bays on Icebox, Metastation and Deltastation have been wired
       into the station's power grid
   Melbert:
   - rscadd: GAGS flowers (Rainbow bunch flowers now look prettier!)

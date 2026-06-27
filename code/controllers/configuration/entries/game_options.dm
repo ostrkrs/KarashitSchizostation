@@ -151,15 +151,6 @@
 
 /datum/config_entry/flag/no_intercept_report //Whether or not to send a communications intercept report roundstart. This may be overridden by gamemodes.
 
-/datum/config_entry/number/arrivals_shuttle_dock_window //Time from when a player late joins on the arrivals shuttle to when the shuttle docks on the station
-	default = 55
-	integer = FALSE
-	min_val = 30
-
-/datum/config_entry/flag/arrivals_shuttle_require_undocked //Require the arrivals shuttle to be undocked before latejoiners can join
-
-/datum/config_entry/flag/arrivals_shuttle_require_safe_latejoin //Require the arrivals shuttle to be operational in order for latejoiners to join
-
 /datum/config_entry/string/alert_green
 	default = "All threats to the station have passed. Security may not have weapons visible, privacy laws are once again fully enforced."
 
@@ -520,3 +511,8 @@
 
 /datum/config_entry/number/max_shuttle_size
 	default = 250
+
+/datum/config_entry/number/cryo_min_ssd_time
+	default = 30 MINUTES
+	max_val = INFINITY
+	min_val = 0

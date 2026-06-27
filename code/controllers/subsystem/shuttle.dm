@@ -46,8 +46,6 @@ SUBSYSTEM_DEF(shuttle)
 
 	/// The mobile docking port of the emergency shuttle.
 	var/obj/docking_port/mobile/emergency/emergency
-	/// The mobile docking port of the arrivals shuttle.
-	var/obj/docking_port/mobile/arrivals/arrivals
 	/// The mobile docking port of the backup emergency shuttle.
 	var/obj/docking_port/mobile/emergency/backup/backup_shuttle
 	/// Time taken for emergency shuttle to reach the station when called (in deciseconds).
@@ -187,8 +185,6 @@ SUBSYSTEM_DEF(shuttle)
 	setup_shuttles(stationary_docking_ports)
 	has_purchase_shuttle_access = init_has_purchase_shuttle_access()
 
-	if(!arrivals)
-		log_mapping("No /obj/docking_port/mobile/arrivals placed on the map!")
 	if(!emergency)
 		log_mapping("No /obj/docking_port/mobile/emergency placed on the map!")
 	if(!backup_shuttle)
@@ -729,8 +725,6 @@ SUBSYSTEM_DEF(shuttle)
 
 	if (istype(SSshuttle.emergency))
 		emergency = SSshuttle.emergency
-	if (istype(SSshuttle.arrivals))
-		arrivals = SSshuttle.arrivals
 	if (istype(SSshuttle.backup_shuttle))
 		backup_shuttle = SSshuttle.backup_shuttle
 

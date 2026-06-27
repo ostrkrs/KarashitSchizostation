@@ -33,6 +33,12 @@
 	if(can_buckle && fishing_modifier)
 		AddComponent(/datum/component/adjust_fishing_difficulty, fishing_modifier)
 
+/obj/structure/chair/JoinPlayerHere(mob/joining_mob, buckle)
+	. = ..()
+	// Placing a mob in a chair will attempt to buckle it, or else fall back to default.
+	if(buckle && isliving(joining_mob))
+		buckle_mob(joining_mob, FALSE, FALSE)
+
 /obj/structure/chair/buckle_feedback(mob/living/being_buckled, mob/buckler)
 	if(HAS_TRAIT(being_buckled, TRAIT_RESTRAINED))
 		return ..()

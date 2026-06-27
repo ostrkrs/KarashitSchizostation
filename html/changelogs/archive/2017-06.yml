@@ -395,7 +395,7 @@
       abstract offhand objects.
   - bugfix: Disablers now have an in-hand sprite.
   nicbn:
-  - imageadd: Changed cryo sprites to Bay cryopods, which show the person inside of
+  - imageadd: Changed cryo sprites to Bay cryptopods, which show the person inside of
       them.
 2017-06-22:
   Bawhoppen:

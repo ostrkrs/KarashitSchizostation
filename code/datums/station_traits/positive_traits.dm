@@ -282,9 +282,7 @@
 		/datum/job/iaa = /obj/item/organ/heart/cybernetic/tier2,
 		/datum/job/mime = /obj/item/organ/tongue/robot, //...
 		/datum/job/paramedic = /obj/item/organ/cyberimp/eyes/hud/medical,
-		/datum/job/prisoner = /obj/item/organ/eyes/robotic/shield,
 		/datum/job/psychologist = /obj/item/organ/ears/cybernetic/whisper,
-		/datum/job/pun_pun = /obj/item/organ/cyberimp/arm/strongarm,
 		/datum/job/quartermaster = /obj/item/organ/stomach/cybernetic/tier3,
 		/datum/job/research_director = /obj/item/organ/cyberimp/bci,
 		/datum/job/roboticist = /obj/item/organ/cyberimp/eyes/hud/diagnostic,

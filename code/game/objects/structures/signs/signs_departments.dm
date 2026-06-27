@@ -216,7 +216,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/departments/holy, 32)
 /obj/structure/sign/departments/iaa
 	name = "\improper Legal Department sign"
 	sign_change_name = "Department - Legal"
-	desc = "A sign labelling an area where the IAA work, apply here for arrivals shuttle whiplash settlement."
+	desc = "A sign labelling an area where the IAA work."
 	icon_state = "iaa"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/departments/iaa, 32)

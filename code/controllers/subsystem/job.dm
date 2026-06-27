@@ -763,12 +763,6 @@ SUBSYSTEM_DEF(job)
 		joining_mob.forceMove(get_turf(src))
 	return joining_mob
 
-/obj/structure/chair/JoinPlayerHere(mob/joining_mob, buckle)
-	. = ..()
-	// Placing a mob in a chair will attempt to buckle it, or else fall back to default.
-	if(buckle && isliving(joining_mob))
-		buckle_mob(joining_mob, FALSE, FALSE)
-
 /datum/controller/subsystem/job/proc/send_to_late_join(mob/M, buckle = TRUE)
 	var/atom/destination
 	if(M.mind && !is_unassigned_job(M.mind.assigned_role) && length(GLOB.jobspawn_overrides[M.mind.assigned_role.title])) //We're doing something special today.
@@ -780,29 +774,6 @@ SUBSYSTEM_DEF(job)
 		destination = pick(latejoin_trackers)
 		destination.JoinPlayerHere(M, buckle)
 		return TRUE
-
-	destination = get_last_resort_spawn_points()
-	destination.JoinPlayerHere(M, buckle)
-
-
-/datum/controller/subsystem/job/proc/get_last_resort_spawn_points()
-	var/area/shuttle/arrival/arrivals_area = GLOB.areas_by_type[/area/shuttle/arrival]
-	if(!isnull(arrivals_area))
-		var/list/turf/available_turfs = list()
-		for (var/list/zlevel_turfs as anything in arrivals_area.get_zlevel_turf_lists())
-			for (var/turf/arrivals_turf as anything in zlevel_turfs)
-				var/obj/structure/chair/shuttle_chair = locate() in arrivals_turf
-				if(!isnull(shuttle_chair))
-					return shuttle_chair
-				if(arrivals_turf.is_blocked_turf(TRUE))
-					continue
-				available_turfs += arrivals_turf
-
-		if(length(available_turfs))
-			return pick(available_turfs)
-
-	stack_trace("Unable to find last resort spawn point.")
-	return GET_ERROR_ROOM
 
 /// Returns a list of minds of all heads of staff who are alive
 /datum/controller/subsystem/job/proc/get_living_heads()
@@ -1029,3 +1000,16 @@ SUBSYSTEM_DEF(job)
 		return TRUE
 
 	return FALSE
+
+/// Adds 1 available slot for the position, if possible
+/datum/controller/subsystem/job/proc/free_job_position(position)
+	if(!position)
+		return
+
+	var/datum/job/job_to_modify = get_job(position)
+	if(!job_to_modify)
+		return
+
+	var/new_current_positions = max(0, job_to_modify.current_positions - 1)
+	job_debug("Freeing position: [position]; was: [job_to_modify.current_positions]; now: [new_current_positions]")
+	job_to_modify.current_positions = new_current_positions

@@ -132,6 +132,8 @@
 	/// If set, look for a policy with this instead of the job title
 	var/policy_override
 
+	var/default_radio_channel = null
+
 /datum/job/New()
 	. = ..()
 	var/new_spawn_positions = CHECK_MAP_JOB_CHANGE(title, "spawn_positions")
@@ -457,10 +459,6 @@
 /// Returns an atom where the mob should spawn in.
 /datum/job/proc/get_roundstart_spawn_point()
 	if(random_spawns_possible)
-		if(HAS_TRAIT(SSstation, STATION_TRAIT_LATE_ARRIVALS))
-			return get_latejoin_spawn_point()
-		if(HAS_TRAIT(SSstation, STATION_TRAIT_RANDOM_ARRIVALS))
-			return get_safe_random_station_turf(typesof(/area/station/hallway)) || get_latejoin_spawn_point()
 		if(HAS_TRAIT(SSstation, STATION_TRAIT_HANGOVER))
 			var/obj/effect/landmark/start/hangover_spawn_point
 			for(var/obj/effect/landmark/start/hangover/hangover_landmark in GLOB.start_landmarks_list)
@@ -491,13 +489,13 @@
 	if(!.)
 		log_mapping("Job [title] ([type]) couldn't find a round start spawn point.")
 
+
 /// Finds a valid latejoin spawn point, checking for events and special conditions.
 /datum/job/proc/get_latejoin_spawn_point()
 	if(length(GLOB.jobspawn_overrides[title])) //We're doing something special today.
 		return pick(GLOB.jobspawn_overrides[title])
 	if(length(SSjob.latejoin_trackers))
 		return pick(SSjob.latejoin_trackers)
-	return SSjob.get_last_resort_spawn_points()
 
 
 /// Spawns the mob to be played as, taking into account preferences and the desired spawn point.

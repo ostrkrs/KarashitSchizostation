@@ -603,7 +603,7 @@
   Time-Green:
   - qol: geysers no longer need to be plungered
   Vire:
-  - bugfix: The cryopod on the Cere emergency shuttle can now be connected while the
+  - bugfix: The cryptopod on the Cere emergency shuttle can now be connected while the
       shuttle is docked.
   Wallem:
   - imageadd: Updates the newscaster wallframe sprite
