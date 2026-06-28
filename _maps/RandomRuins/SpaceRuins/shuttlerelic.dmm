@@ -31,11 +31,7 @@
 	},
 /area/ruin/space/has_grav/powered)
 "i" = (
-/obj/structure/closet{
-	icon_state = "oldcloset";
-	name = "strange closet";
-	enable_door_overlay = 0
-	},
+/obj/structure/closet,
 /turf/open/floor/oldshuttle,
 /area/ruin/space/has_grav/powered)
 "j" = (

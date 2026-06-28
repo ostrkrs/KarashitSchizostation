@@ -66,7 +66,7 @@
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
 /turf/open/floor/iron/kitchen,
 /area/template_noop)
 "C" = (

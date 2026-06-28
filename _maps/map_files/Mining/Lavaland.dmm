@@ -3220,7 +3220,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/mine/laborcamp)
 "qy" = (
-/obj/structure/closet/secure_closet/freezer/gulag_fridge,
+/obj/structure/closet/secure_closet/freezer/beer_light,
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 5
 	},
@@ -4895,7 +4895,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "AV" = (
-/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
 /obj/item/reagent_containers/cup/glass/bottle/beer,
 /obj/item/reagent_containers/cup/glass/bottle/beer,
 /obj/item/reagent_containers/cup/glass/bottle/beer,

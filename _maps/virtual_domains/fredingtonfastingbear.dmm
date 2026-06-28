@@ -454,7 +454,7 @@
 /turf/open/floor/iron/kitchen,
 /area/virtual_domain)
 "vG" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/structure/closet/secure_closet/freezer/condiments,
 /turf/open/floor/iron/kitchen/small,
 /area/virtual_domain)
 "vR" = (

@@ -3901,7 +3901,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/syndibiodome)
 "TF" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs,
 /obj/item/food/meat/rawcutlet/bear,
 /obj/item/food/meat/rawcutlet/bear,
 /obj/item/food/meat/rawbacon,

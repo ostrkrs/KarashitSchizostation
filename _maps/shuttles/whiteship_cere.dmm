@@ -171,7 +171,6 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/abandoned/cargo)
 "dN" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/mining,
 /obj/machinery/light/small/broken/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
@@ -355,7 +354,6 @@
 /turf/open/floor/wood,
 /area/shuttle/abandoned/bar)
 "nx" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/maintenance,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/firealarm/directional/west,

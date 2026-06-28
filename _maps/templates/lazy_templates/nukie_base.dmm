@@ -1474,7 +1474,7 @@
 /area/centcom/syndicate_mothership/control)
 "qs" = (
 /obj/machinery/light/small/directional/west,
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open,
 /obj/item/food/meat/slab/rawcrab,
 /obj/item/food/meat/slab/rawcrab,
 /obj/item/food/meat/slab/rawcrab,

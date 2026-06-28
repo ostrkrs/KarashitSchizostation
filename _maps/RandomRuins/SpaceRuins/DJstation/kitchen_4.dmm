@@ -43,13 +43,10 @@
 /turf/closed/wall,
 /area/ruin/space/djstation)
 "s" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/mining{
-	req_access = null
-	},
 /turf/open/floor/iron/freezer,
 /area/ruin/space/djstation)
 "t" = (
-/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/djstation)

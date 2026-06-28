@@ -30,7 +30,7 @@
 /area/ruin)
 "hG" = (
 /obj/effect/mob_spawn/corpse/human/clown,
-/obj/structure/closet/secure_closet/freezer/fridge/preopen,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/preopen,
 /obj/item/food/burger/mime,
 /obj/item/food/burger/mime,
 /obj/item/food/pie/mimetart,

@@ -242,7 +242,7 @@
 /turf/template_noop,
 /area/virtual_domain/safehouse)
 "mq" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/secure_closet/freezer/condiments/all_access,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "mG" = (
@@ -794,7 +794,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "JE" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/secure_closet/freezer/condiments/all_access,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/mayonnaise,
 /obj/item/reagent_containers/condiment/flour,

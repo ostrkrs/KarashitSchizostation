@@ -102,7 +102,9 @@
 
 /obj/structure/closet/secure_closet/criminalist
 	name = "\improper criminalist's cabinet"
-	icon_state = "cabinet"
+	icon_state = "cabinet_secure"
+	icon_locked = "cabinet_secure_locked"
+	icon_unlocked = "cabinet_secure_unlocked"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
 	door_anim_time = 0 // no animation

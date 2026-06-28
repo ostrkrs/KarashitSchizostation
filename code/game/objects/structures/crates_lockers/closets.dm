@@ -68,6 +68,8 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	var/anchorable = TRUE
 	var/icon_welded = "welded"
 	var/icon_broken = "sparking"
+	var/icon_locked = "locked"
+	var/icon_unlocked = "unlocked"
 	/// Whether a skittish person can dive inside this closet. Disable if opening the closet causes "bad things" to happen or that it leads to a logical inconsistency.
 	var/divable = TRUE
 	/// secure locker or not, also used if overriding a non-secure locker with a secure door overlay to add fancy lights
@@ -266,8 +268,8 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	if(broken || !secure)
 		return
 	//Overlay is similar enough for both that we can use the same mask for both
-	. += emissive_appearance(icon, "locked", src, alpha = src.alpha)
-	. += locked ? "locked" : "unlocked"
+	. += emissive_appearance(icon, icon_locked, src, alpha = src.alpha)
+	. += locked ? icon_locked : icon_unlocked
 
 /obj/structure/closet/vv_edit_var(vname, vval)
 	if(vname == NAMEOF(src, opened))

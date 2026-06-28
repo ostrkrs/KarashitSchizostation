@@ -6658,7 +6658,7 @@
 /area/ruin/space/ancientstation/delta/hall)
 "LA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/iron/cafeteria,
 /area/ruin/space/ancientstation/charlie/kitchen)

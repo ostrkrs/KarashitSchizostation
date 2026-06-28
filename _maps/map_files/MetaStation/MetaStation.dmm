@@ -40547,7 +40547,6 @@
 /area/station/ai_monitored/command/nuke_storage)
 "nYy" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/structure/closet/secure_closet/freezer/kitchen/maintenance,
 /obj/machinery/light/small/dim/directional/north,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
@@ -48199,7 +48198,7 @@
 /obj/item/storage/box/coffeepack/robusta,
 /obj/item/reagent_containers/condiment/soymilk,
 /obj/item/reagent_containers/condiment/milk,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/open,
 /turf/open/floor/iron/dark,
 /area/station/service/cafeteria)
 "qIq" = (
@@ -48327,7 +48326,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/structure/closet/secure_closet/freezer/condiments,
 /obj/effect/turf_decal/trimline/brown/warning{
 	dir = 10
 	},
@@ -52527,7 +52526,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs,
 /obj/effect/turf_decal/trimline/brown/warning{
 	dir = 9
 	},

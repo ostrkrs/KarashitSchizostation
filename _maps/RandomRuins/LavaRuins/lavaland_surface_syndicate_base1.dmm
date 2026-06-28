@@ -3864,9 +3864,6 @@
 /area/ruin/syndicate_lava_base/engineering)
 "RG" = (
 /obj/structure/sink/kitchen/directional/west,
-/obj/structure/closet/secure_closet/freezer/kitchen/maintenance{
-	req_access = null
-	},
 /obj/item/storage/box/donkpockets{
 	pixel_x = 2
 	},
@@ -3908,7 +3905,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/engineering)
 "SN" = (
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open,
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/item/food/chocolatebar,
 /obj/effect/decal/cleanable/dirt,

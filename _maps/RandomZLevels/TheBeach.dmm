@@ -813,7 +813,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "ko" = (
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /obj/item/food/popsicle/creamsicle_berry,
 /obj/item/food/popsicle/creamsicle_berry,
 /obj/item/food/popsicle/creamsicle_orange,

@@ -463,7 +463,7 @@
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/flour,
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /obj/item/storage/box/donkpockets,
 /obj/item/coffee_cartridge,
 /obj/item/coffee_cartridge/decaf,
@@ -775,7 +775,7 @@
 "NJ" = (
 /obj/item/storage/medkit/regular,
 /obj/item/reagent_containers/syringe,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/open,
 /turf/open/floor/iron/white,
 /area/ruin/comms_agent)
 "NL" = (

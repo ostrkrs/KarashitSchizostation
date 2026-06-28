@@ -478,7 +478,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "jO" = (
-/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/item/food/butterdog,
 /obj/item/food/cakeslice/apple,

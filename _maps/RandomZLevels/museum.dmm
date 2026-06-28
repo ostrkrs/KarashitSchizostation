@@ -180,7 +180,7 @@
 	},
 /area/awaymission/museum)
 "bC" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/secure_closet/freezer/condiments/all_access,
 /turf/open/floor/iron/freezer,
 /area/awaymission/museum)
 "bE" = (
