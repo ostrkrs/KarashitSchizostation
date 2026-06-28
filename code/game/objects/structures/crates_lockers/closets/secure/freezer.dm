@@ -6,7 +6,7 @@
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
 	open_sound = 'sound/machines/closet/freezer_open.ogg'
 	close_sound = 'sound/machines/closet/freezer_close.ogg'
-	open_sound_volume = 25
+	open_sound_volume = 50
 	close_sound_volume = 25
 	door_anim_time = 0
 	/// If FALSE, we will protect the first person in the freezer from an explosion / nuclear blast.
