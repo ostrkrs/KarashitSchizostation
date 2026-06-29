@@ -48198,7 +48198,7 @@
 /obj/item/storage/box/coffeepack/robusta,
 /obj/item/reagent_containers/condiment/soymilk,
 /obj/item/reagent_containers/condiment/milk,
-/obj/structure/closet/secure_closet/freezer/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/dark,
 /area/station/service/cafeteria)
 "qIq" = (

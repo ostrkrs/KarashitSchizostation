@@ -387,7 +387,7 @@
 /turf/open/floor/catwalk_floor,
 /area/centcom/central_command_areas/holding)
 "jG" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/fishmeat,
 /obj/item/food/fishmeat,
 /obj/item/food/fishmeat,
@@ -828,7 +828,7 @@
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /turf/open/floor/catwalk_floor,
 /area/centcom/central_command_areas/holding)
 "uv" = (
@@ -997,7 +997,7 @@
 /turf/open/floor/carpet/black,
 /area/centcom/central_command_areas/holding)
 "zh" = (
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
 /obj/item/food/grown/chili,
 /obj/item/food/grown/chili,
 /obj/item/food/grown/chili,
@@ -1538,7 +1538,7 @@
 /obj/item/food/grown/onion/red,
 /obj/item/food/grown/onion/red,
 /obj/item/food/grown/coffee,
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open{
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access{
 	name = "kitchen cabinet"
 	},
 /turf/open/floor/carpet/black,
@@ -1981,7 +1981,7 @@
 /turf/open/floor/carpet/black,
 /area/centcom/central_command_areas/holding)
 "VW" = (
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open{
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access{
 	name = "freezer"
 	},
 /obj/item/food/meat/slab/killertomato,

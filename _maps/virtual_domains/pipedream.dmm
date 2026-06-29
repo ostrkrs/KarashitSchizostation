@@ -1004,7 +1004,7 @@
 "CQ" = (
 /obj/effect/spawner/random/trash/botanical_waste,
 /obj/item/trash/chips,
-/obj/structure/closet/secure_closet/freezer/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron,
 /area/virtual_domain)
 "CX" = (

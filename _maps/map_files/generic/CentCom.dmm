@@ -147,7 +147,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "aM" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/meat/rawbacon,
 /obj/item/food/meat/rawbacon,
 /obj/item/food/meat/rawbacon,
@@ -235,7 +235,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/fore)
 "bf" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/meat/slab/bear,
 /obj/item/food/meat/slab/bear,
 /obj/item/food/meat/slab/bear,
@@ -3171,7 +3171,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/admin)
 "oF" = (
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
 /obj/item/food/grown/potato,
 /obj/item/food/grown/potato,
 /obj/item/food/grown/whitebeet,

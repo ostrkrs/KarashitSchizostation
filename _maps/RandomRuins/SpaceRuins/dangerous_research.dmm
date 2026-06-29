@@ -2118,7 +2118,7 @@
 "AU" = (
 /obj/effect/turf_decal/tile/neutral/diagonal_edge,
 /obj/item/trash/ready_donk,
-/obj/structure/closet/secure_closet/freezer/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/dangerous_research)
 "Ba" = (

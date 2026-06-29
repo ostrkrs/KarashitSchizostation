@@ -135,7 +135,7 @@
 /turf/open/floor/iron/cafeteria/airless,
 /area/ruin/space/has_grav)
 "aK" = (
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
 /obj/machinery/light/broken/directional/north,
 /turf/open/floor/iron/cafeteria/airless,
 /area/ruin/space/has_grav)

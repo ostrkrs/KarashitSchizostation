@@ -75,7 +75,7 @@
 /turf/open/floor/plating/snowed,
 /area/template_noop)
 "w" = (
-/obj/structure/closet/secure_closet/freezer/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /obj/item/food/meat/slab/spider,
 /obj/item/food/meat/slab/chicken,
 /obj/item/food/meat/slab/rawcrab,

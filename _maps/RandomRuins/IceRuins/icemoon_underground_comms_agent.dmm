@@ -775,7 +775,7 @@
 "NJ" = (
 /obj/item/storage/medkit/regular,
 /obj/item/reagent_containers/syringe,
-/obj/structure/closet/secure_closet/freezer/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/white,
 /area/ruin/comms_agent)
 "NL" = (

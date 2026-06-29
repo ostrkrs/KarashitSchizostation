@@ -360,7 +360,7 @@
 /turf/open/floor/catwalk_floor,
 /area/shuttle/abandoned/crew)
 "nz" = (
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/open,
+/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/item/food/meat/slab/synthmeat{
 	pixel_x = -3;
