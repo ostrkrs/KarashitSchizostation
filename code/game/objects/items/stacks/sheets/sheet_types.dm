@@ -14,7 +14,7 @@
 /*
  * Iron
  */
-GLOBAL_LIST_INIT(metal_recipes, list ( \
+GLOBAL_LIST_INIT(iron_recipes, list ( \
 	new/datum/stack_recipe("stool", /obj/structure/chair/stool, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 	new/datum/stack_recipe("bar stool", /obj/structure/chair/stool/bar, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 	new/datum/stack_recipe("bed", /obj/structure/bed, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
@@ -76,7 +76,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	)),
 	null, \
 	new/datum/stack_recipe("rack parts", /obj/item/rack_parts, category = CAT_FURNITURE), \
-	new/datum/stack_recipe("closet", /obj/structure/closet, 2, time = 1.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+	new/datum/stack_recipe("closet", /obj/structure/closet, 5, time = 1.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 	null, \
 	new/datum/stack_recipe("atmos canister", /obj/machinery/portable_atmospherics/canister, 10, time = 3 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_ATMOSPHERIC), \
 	new/datum/stack_recipe("pipe", /obj/item/pipe/quaternary/pipe/crafted, 1, time = 4 SECONDS, crafting_flags = NONE, category = CAT_ATMOSPHERIC), \
@@ -207,7 +207,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 
 /obj/item/stack/sheet/iron/get_main_recipes()
 	. = ..()
-	. += GLOB.metal_recipes
+	. += GLOB.iron_recipes
 
 /obj/item/stack/sheet/iron/suicide_act(mob/living/carbon/user)
 	user.visible_message(span_suicide("[user] begins whacking [user.p_them()]self over the head with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
@@ -261,7 +261,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 			frame_path = /obj/structure/frame/machine
 		else
 			frame_path = /obj/structure/frame/computer
-		for(var/datum/stack_recipe/recipe in GLOB.metal_recipes)
+		for(var/datum/stack_recipe/recipe in GLOB.iron_recipes)
 			if(recipe.result_type == frame_path)
 				time = recipe.time
 				cost = recipe.req_amount
