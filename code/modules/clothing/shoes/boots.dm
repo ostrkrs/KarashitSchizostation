@@ -66,9 +66,11 @@
 	slowdown = -1
 
 /obj/item/clothing/shoes/jackboots/sec
+	name = "security jackboots"
 	icon_state = "jackboots_sec"
 
 /obj/item/clothing/shoes/jackboots/iso
+	name = "internal security jackboots"
 	icon_state = "jackboots_iso"
 
 /obj/item/clothing/shoes/jackboots/floortile
