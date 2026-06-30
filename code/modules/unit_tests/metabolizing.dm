@@ -22,7 +22,7 @@
 /datum/unit_test/on_mob_end_metabolize/Run()
 	SSmobs.pause()
 
-	var/mob/living/carbon/human/user = allocate(/mob/living/carbon/human/consistent)
+	var/mob/living/carbon/human/user = allocate(/mob/living/carbon/human/consistent/slow)
 	var/obj/item/reagent_containers/applicator/pill/pill = allocate(/obj/item/reagent_containers/applicator/pill)
 	var/datum/reagent/drug/methamphetamine/meth = /datum/reagent/drug/methamphetamine
 
