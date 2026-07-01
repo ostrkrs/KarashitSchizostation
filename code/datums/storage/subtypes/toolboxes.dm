@@ -7,10 +7,6 @@
 /datum/storage/toolbox/heirloom
 	max_specific_storage = WEIGHT_CLASS_SMALL
 
-///Syndicate toolbox
-/datum/storage/toolbox/syndicate
-	silent = TRUE
-
 ///Artistic toolbox
 /datum/storage/toolbox/artistic
 	max_total_storage = 20

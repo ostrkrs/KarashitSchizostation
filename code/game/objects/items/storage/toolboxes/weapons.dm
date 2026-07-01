@@ -6,7 +6,6 @@
 	force = 15
 	throwforce = 18
 	material_flags = NONE
-	storage_type = /datum/storage/toolbox/syndicate
 
 /obj/item/storage/toolbox/syndicate/PopulateContents()
 	new /obj/item/screwdriver/nuke(src)
