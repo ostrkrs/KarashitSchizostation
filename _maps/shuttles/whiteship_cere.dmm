@@ -561,7 +561,7 @@
 /area/shuttle/abandoned/cargo)
 "Bq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/floor/pod/dark,
 /area/shuttle/abandoned/cargo)
 "BN" = (

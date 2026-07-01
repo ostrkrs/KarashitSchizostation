@@ -24,7 +24,7 @@
 /turf/open/floor/mineral/titanium/white/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "aP" = (
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating/end{
 	dir = 4
@@ -591,7 +591,7 @@
 /area/ruin/space/has_grav/whiteship/box)
 "pB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/floor/mineral/titanium/white/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "qi" = (

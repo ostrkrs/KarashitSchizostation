@@ -78,7 +78,7 @@
 /area/ruin/space/ancientstation/charlie/bridge)
 "aA" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/charlie/hall)
 "aG" = (
@@ -5764,7 +5764,7 @@
 /area/ruin/space/ancientstation/delta/biolab)
 "Gr" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/floor/plating,
 /area/ruin/space/ancientstation/delta/hall)
 "Gt" = (

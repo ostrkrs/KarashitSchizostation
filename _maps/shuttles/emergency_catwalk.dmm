@@ -343,7 +343,7 @@
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "yW" = (
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /obj/item/toy/plush/lizard_plushie/green{
 	name = "Hides-On-Shuttle"
 	},

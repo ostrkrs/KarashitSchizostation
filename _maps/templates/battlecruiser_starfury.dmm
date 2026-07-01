@@ -705,7 +705,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/sbc_starfury)
 "cI" = (
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/dark_red{
 	dir = 8
@@ -766,7 +766,7 @@
 /area/shuttle/sbc_starfury)
 "da" = (
 /obj/structure/cable,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},

@@ -906,7 +906,7 @@
 /area/ruin/space/has_grav/infested_frigate)
 "pk" = (
 /obj/structure/cable,
-/obj/structure/closet/firecloset/full{
+/obj/structure/closet/firecloset{
 	anchored = 1
 	},
 /obj/effect/turf_decal{
@@ -1089,7 +1089,7 @@
 /obj/effect/turf_decal{
 	icon_state = "bot_red"
 	},
-/obj/structure/closet/firecloset/full{
+/obj/structure/closet/firecloset{
 	anchored = 1
 	},
 /obj/effect/turf_decal{

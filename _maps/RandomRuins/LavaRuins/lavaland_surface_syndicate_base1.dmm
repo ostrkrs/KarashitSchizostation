@@ -417,7 +417,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/cargo)
 "eg" = (
-/obj/structure/closet/firecloset/full{
+/obj/structure/closet/firecloset{
 	anchored = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -3796,7 +3796,7 @@
 /turf/open/floor/iron,
 /area/ruin/syndicate_lava_base/main)
 "Qv" = (
-/obj/structure/closet/firecloset/full{
+/obj/structure/closet/firecloset{
 	anchored = 1
 	},
 /turf/open/floor/iron,

@@ -365,7 +365,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "EA" = (
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/floor/mineral/titanium,
 /area/ruin/space/nt_commsbuoy)
 "EQ" = (
