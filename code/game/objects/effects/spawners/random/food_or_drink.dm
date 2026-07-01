@@ -297,7 +297,6 @@
 		/obj/item/storage/box/condimentbottles,
 	)
 
-///Used for the employee birthday station trait
 /obj/effect/spawner/random/food_or_drink/cake_ingredients
 	name = "cake ingredients spawner"
 	icon_state = "cake"
@@ -308,11 +307,6 @@
 		/obj/item/reagent_containers/condiment/sugar,
 		/obj/item/reagent_containers/cup/bottle/caramel,
 	)
-
-/obj/effect/spawner/random/food_or_drink/cake_ingredients/Initialize(mapload)
-	if(!HAS_TRAIT(SSstation, STATION_TRAIT_BIRTHDAY))
-		spawn_loot_chance = 0
-	return ..()
 
 /obj/effect/spawner/random/food_or_drink/donuts
 	name = "donut spawner"

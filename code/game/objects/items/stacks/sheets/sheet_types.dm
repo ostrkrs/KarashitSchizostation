@@ -937,6 +937,7 @@ GLOBAL_LIST_INIT(paperframe_recipes, list(
 /obj/item/stack/sheet/paperframes/get_main_recipes()
 	. = ..()
 	. += GLOB.paperframe_recipes
+
 /obj/item/stack/sheet/paperframes/five
 	amount = 5
 /obj/item/stack/sheet/paperframes/twenty

@@ -62551,7 +62551,7 @@
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/tile/brown/anticorner/contrasted,
 /obj/structure/table,
-/obj/effect/spawner/random/bureaucracy/birthday_wrap,
+/obj/effect/spawner/random/bureaucracy/wrapping_paper,
 /turf/open/floor/iron,
 /area/station/cargo/lobby)
 "vwi" = (

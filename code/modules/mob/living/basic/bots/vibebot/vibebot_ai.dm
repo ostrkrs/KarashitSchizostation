@@ -3,7 +3,6 @@
 		BB_UNREACHABLE_LIST_COOLDOWN = 2 MINUTES,
 		BB_VIBEBOT_HAPPY_SONG = VIBEBOT_CHEER_SONG,
 		BB_VIBEBOT_GRIM_SONG = VIBEBOT_GRIM_MUSIC,
-		BB_VIBEBOT_BIRTHDAY_SONG = VIBEBOT_HAPPY_BIRTHDAY,
 	)
 	planning_subtrees = list(
 		/datum/ai_planning_subtree/escape_captivity/pacifist,
@@ -31,14 +30,13 @@
 	var/obj/item/instrument/instrument = blackboard[BB_SONG_INSTRUMENT]
 	if(isnull(instrument))
 		return
-	var/atom/target = blackboard[blackboard_key]
 	var/datum/song/song = instrument.song
 	song.stop_playing()
 	var/song_lines
 	if(living_bot.bot_access_flags & BOT_COVER_EMAGGED)
 		song_lines = blackboard[BB_VIBEBOT_GRIM_SONG]
 	else
-		song_lines = HAS_TRAIT(target, TRAIT_BIRTHDAY_BOY) ? blackboard[BB_VIBEBOT_BIRTHDAY_SONG] : blackboard[BB_VIBEBOT_HAPPY_SONG]
+		song_lines = blackboard[BB_VIBEBOT_HAPPY_SONG]
 	if(isnull(song_lines))
 		return
 	song.ParseSong(new_song = song_lines)
@@ -84,4 +82,4 @@
 /datum/ai_behavior/bot_search/party_friends/valid_target(datum/ai_controller/basic_controller/bot/controller, mob/living/carbon/human/my_target)
 	if(my_target.stat != CONSCIOUS || isnull(my_target.mind))
 		return FALSE
-	return (my_target.mob_mood.mood_level < MOOD_LEVEL_NEUTRAL || HAS_TRAIT(my_target, TRAIT_BIRTHDAY_BOY))
+	return (my_target.mob_mood.mood_level < MOOD_LEVEL_NEUTRAL)

@@ -78,16 +78,6 @@
 	added_foodtypes = JUNKFOOD
 	category = CAT_CAKE
 
-/datum/crafting_recipe/food/energycake
-	name = "Energy cake"
-	reqs = list(
-		/obj/item/food/cake/birthday = 1,
-		/obj/item/melee/energy/sword = 1,
-	)
-	blacklist = list(/obj/item/food/cake/birthday/energy)
-	result = /obj/item/food/cake/birthday/energy
-	category = CAT_CAKE
-
 /datum/crafting_recipe/food/slimecake
 	name = "Slime cake"
 	reqs = list(
