@@ -25,9 +25,3 @@ export const language_skill: FeatureChoiced = {
   description: 'The percentage of the language you can understand.',
   component: FeatureDropdownInput,
 };
-
-export const csl_strength: FeatureChoiced = {
-  name: 'Language Skill',
-  description: 'The percentage of Common you can understand.',
-  component: FeatureDropdownInput,
-};
