@@ -1025,6 +1025,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_DRUNKHEALING "drunkhealing"
 #define TRAIT_SIGNER "signer"
 #define TRAIT_SPACER_BORN "spacer_born"
+#define TRAIT_CLAUSTROPHOBIA "claustrophobia"
 
 /// This mob always lands on their feet when they fall, for better or for worse.
 #define TRAIT_CATLIKE_GRACE "catlike_grace"

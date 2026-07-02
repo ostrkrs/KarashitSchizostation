@@ -7,6 +7,10 @@
 		TRAIT_FIXED_MUTANT_COLORS,
 		TRAIT_NOFAT,
 	)
+	banned_traits = list(
+		TRAIT_NYCTOPHOBIA,
+		TRAIT_CLAUSTROPHOBIA,
+	)
 
 	payday_modifier = 0.8
 	mutantears = /obj/item/organ/ears/caver
