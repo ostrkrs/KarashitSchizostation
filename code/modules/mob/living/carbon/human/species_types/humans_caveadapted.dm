@@ -12,7 +12,6 @@
 		TRAIT_CLAUSTROPHOBIA,
 	)
 
-	payday_modifier = 0.8
 	mutantears = /obj/item/organ/ears/caver
 	mutanteyes = /obj/item/organ/eyes/caver
 	mutanttongue = /obj/item/organ/tongue/caver
