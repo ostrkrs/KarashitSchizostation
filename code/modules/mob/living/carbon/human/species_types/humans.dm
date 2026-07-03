@@ -128,7 +128,7 @@
 			SPECIES_PERK_TYPE = SPECIES_POSITIVE_PERK,
 			SPECIES_PERK_ICON = FA_ICON_STAR,
 			SPECIES_PERK_NAME = "Chain of Command",
-			SPECIES_PERK_DESC = "Nanotrasen only recognizes baseline humans for command roles, such as Captain.",
+			SPECIES_PERK_DESC = "Solstice Reach only recognizes baseline humans for command roles, such as Captain.",
 		))
 
 	return to_add
