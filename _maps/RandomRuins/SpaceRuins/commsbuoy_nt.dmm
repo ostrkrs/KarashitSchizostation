@@ -131,7 +131,7 @@
 /obj/item/stock_parts/subspace/ansible,
 /obj/item/stock_parts/subspace/analyzer,
 /obj/item/stock_parts/subspace/amplifier,
-/obj/structure/closet/crate/centcom,
+/obj/structure/closet/crate/nanotrasen,
 /obj/item/storage/box/lights/bulbs,
 /obj/effect/spawner/random/exotic/technology,
 /turf/open/floor/plating,

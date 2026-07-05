@@ -127,13 +127,13 @@
 	crate_name = "robotics assembly crate"
 	crate_type = /obj/structure/closet/crate/secure/science/robo
 
-/datum/supply_pack/science/rped
-	name = "RPED crate"
-	desc = "Need to rebuild the ORM but science got annihilated after a bomb test? \
-		Buy this for the most advanced parts NT can give you."
-	cost = CARGO_CRATE_VALUE * 3
-	contains = list(/obj/item/storage/part_replacer/cargo)
-	crate_name = "\improper RPED crate"
+/datum/supply_pack/science/stock_parts
+	name = "Surplus Stock Parts Crate"
+	desc = "Need to rebuild the deck but science got annihilated after a bomb test? \
+		No worries! Just order these ready-to-install spare parts."
+	cost = CARGO_CRATE_VALUE * 1.5
+	contains = list(/obj/item/storage/box/stockparts/basic = 2)
+	crate_name = "\improper stock parts crate"
 
 /datum/supply_pack/science/shieldwalls
 	name = "Shield Generator Crate"

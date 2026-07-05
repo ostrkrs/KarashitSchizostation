@@ -107,11 +107,8 @@
 	test_ignored = TRUE
 
 /datum/supply_pack/imports/shells
-	name = "Lethal Shotgun Shell Box Crate"
-	desc = "Contains three boxes of buckshot shotgun shells. \
-		Due to Nanotrasen's failure to secure exclusive manufacturing rights \
-		during the Spinward Hunting and Shooting policy hearings, this import \
-		is heavily taxed, despite being 'legal'. I hope the price tag is worth it."
+	name = "Buckshot Shotgun Shell Box Crate"
+	desc = "Contains three boxes of buckshot shotgun shells."
 	cost = CARGO_CRATE_VALUE * 10
 	access = ACCESS_ARMORY
 	access_view = ACCESS_ARMORY

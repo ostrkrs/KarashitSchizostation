@@ -26,9 +26,8 @@
 
 /datum/supply_pack/service/janitor
 	name = "Janitorial Supplies Crate"
-	desc = "Fight back against dirt and grime with Nanotrasen's Janitorial Essentials™! \
-		Contains three buckets, caution signs, and cleaner grenades. Also has a single mop, \
-		broom, spray cleaner, rag, and trash bag."
+	desc = "Contains three buckets, caution signs, and cleaner grenades. \
+		Also has a single mop, broom, spray cleaner, rag, and trash bag."
 	cost = CARGO_CRATE_VALUE * 2
 	access_view = ACCESS_JANITOR
 	contains = list(/obj/item/reagent_containers/cup/bucket = 3,
@@ -74,9 +73,8 @@
 
 /datum/supply_pack/service/party
 	name = "Party Equipment"
-	desc = "Celebrate both life and death on the station with Nanotrasen's Party Essentials™! \
-		Contains seven colored glowsticks, six beers, six sodas, two ales, and a bottle of patron, \
-		goldschlager, and shaker!"
+	desc = "Contains seven colored glowsticks, six beers, six sodas, \
+		two ales, and a bottle of patron, goldschlager, and shaker!"
 	cost = CARGO_CRATE_VALUE * 5
 	contains = list(/obj/item/storage/box/drinkingglasses,
 					/obj/item/reagent_containers/cup/glass/shaker,
@@ -167,8 +165,7 @@
 
 /datum/supply_pack/service/survivalknives
 	name = "Survival Knives Crate"
-	desc = "Contains three sharpened survival knives. Each knife guaranteed to fit snugly \
-		inside any Nanotrasen-standard boot."
+	desc = "Contains three sharpened survival knives."
 	cost = CARGO_CRATE_VALUE * 3
 	contains = list(/obj/item/knife/combat/survival = 3)
 	crate_name = "survival knife crate"

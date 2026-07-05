@@ -65,7 +65,11 @@
 	for(var/i in 1 to 3)
 		new /obj/item/food/monkeycube/gorilla(src)
 
-/obj/item/storage/box/stockparts/basic //for ruins where it's a bad idea to give access to an autolathe/protolathe, but still want to make stock parts accessible
+/obj/item/storage/box/stockparts
+	icon_state = "scibox_large"
+	storage_type = /datum/storage/box/stock_parts
+
+/obj/item/storage/box/stockparts/basic
 	name = "box of stock parts"
 	desc = "Contains a variety of basic stock parts."
 
@@ -76,13 +80,13 @@
 		/obj/item/stock_parts/matter_bin = 3,
 		/obj/item/stock_parts/micro_laser = 3,
 		/obj/item/stock_parts/scanning_module = 3,
-	)
+		/obj/item/stock_parts/power_store/cell = 3,
+		)
 	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/stockparts/deluxe
 	name = "box of deluxe stock parts"
 	desc = "Contains a variety of deluxe stock parts."
-	icon_state = "syndiebox"
 
 /obj/item/storage/box/stockparts/deluxe/PopulateContents()
 	var/static/items_inside = list(
@@ -91,6 +95,7 @@
 		/obj/item/stock_parts/servo/femto = 3,
 		/obj/item/stock_parts/micro_laser/quadultra = 3,
 		/obj/item/stock_parts/matter_bin/bluespace = 3,
+		/obj/item/stock_parts/power_store/cell/bluespace = 3,
 		)
 	generate_items_inside(items_inside,src)
 

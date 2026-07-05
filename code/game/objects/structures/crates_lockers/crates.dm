@@ -49,6 +49,7 @@
 	if(isnull(crate_paint_jobs))
 		crate_paint_jobs = list(
 			"Internals" = list("icon_state" = "o2crate"),
+			"Firefighting" = list("icon_state" = "firecrate"),
 			"Medical" = list("icon_state" = "medical"),
 			"Medical Plus" = list("icon_state" = "medicalcrate"),
 			"Radiation" = list("icon_state" = "radiation"),
@@ -60,7 +61,6 @@
 			"Atmospherics" = list("icon_state" = "atmos"),
 			"Cargo" = list("icon_state" = "cargo"),
 			"Mining" = list("icon_state" = "mining"),
-			"Command" = list("icon_state" = "centcom"),
 		)
 	if(paint_jobs)
 		paint_jobs = crate_paint_jobs
@@ -228,6 +228,12 @@
 	icon_state = "o2crate"
 	base_icon_state = "o2crate"
 
+/obj/structure/closet/crate/firefighting
+	desc = "A firefighting crate."
+	name = "firefighting crate"
+	icon_state = "firecrate"
+	base_icon_state = "firecrate"
+
 /obj/structure/closet/crate/medical
 	desc = "A medical crate."
 	name = "medical crate"
@@ -347,10 +353,10 @@
 	icon_state = "hydrocrate"
 	base_icon_state = "hydrocrate"
 
-/obj/structure/closet/crate/centcom
-	name = "centcom crate"
-	icon_state = "centcom"
-	base_icon_state = "centcom"
+/obj/structure/closet/crate/nanotrasen
+	name = "nanotrasen crate"
+	icon_state = "nanotrasen"
+	base_icon_state = "nanotrasen"
 
 /obj/structure/closet/crate/cargo
 	name = "cargo crate"

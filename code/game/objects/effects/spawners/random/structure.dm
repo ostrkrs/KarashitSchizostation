@@ -118,6 +118,7 @@
 		/obj/structure/closet/crate = 20,
 		/obj/structure/closet/crate/wooden = 1,
 		/obj/structure/closet/crate/internals = 1,
+		/obj/structure/closet/crate/firefighting = 1,
 		/obj/structure/closet/crate/medical = 1,
 		/obj/structure/closet/crate/freezer = 1,
 		/obj/structure/closet/crate/radiation = 1,

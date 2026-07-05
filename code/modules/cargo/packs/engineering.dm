@@ -4,7 +4,7 @@
 
 /datum/supply_pack/engineering/shieldgen
 	name = "Anti-breach Shield Projector Crate"
-	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! \
+	desc = "Hull breaches again? Say no more with the Anti-Breach Shield Projector! \
 		Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
 	cost = CARGO_CRATE_VALUE * 3
 	access_view = ACCESS_ENGINE_EQUIP
@@ -70,8 +70,8 @@
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/engineering/inducers
-	name = "NT-75 Electromagnetic Power Inducers Crate"
-	desc = "No rechargers? No problem, with the NT-75 EPI, you can recharge any standard \
+	name = "Electromagnetic Power Inducers Crate"
+	desc = "No rechargers? No problem, with the EPI, you can recharge any standard \
 		cell-based equipment anytime, anywhere. Contains two Inducers."
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/inducer/orderable = 2)
@@ -156,9 +156,8 @@
 
 /datum/supply_pack/engineering/bsa
 	name = "Bluespace Artillery Parts"
-	desc = "The pride of Nanotrasen Naval Command. The legendary Bluespace Artillery Cannon is a \
-		devastating feat of human engineering and testament to wartime determination. \
-		Highly advanced research is required for proper construction."
+	desc = "The legendary Bluespace Artillery Cannon is a devastating feat of human engineering and \
+		testament to wartime determination. Highly advanced research is required for proper construction."
 	cost = CARGO_CRATE_VALUE * 30
 	special = TRUE
 	access_view = ACCESS_COMMAND

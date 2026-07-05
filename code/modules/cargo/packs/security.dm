@@ -130,9 +130,9 @@
 /datum/supply_pack/security/justiceinbound
 	name = "Standard Justice Enforcer Crate"
 	desc = "This is it. The Bee's Knees. The Creme of the Crop. The Pick of the Litter. \
-		The best of the best of the best. The Crown Jewel of Nanotrasen. \
-		The Alpha and the Omega of security headwear. Guaranteed to strike fear into the hearts \
-		of each and every criminal aboard the station. Also comes with a security gasmask."
+		The best of the best of the best. The Alpha and the Omega of security headwear. \
+		Guaranteed to strike fear into the hearts of each and every criminal aboard the ship. \
+		Also comes with a security gasmask."
 	cost = CARGO_CRATE_VALUE * 6 //justice comes at a price. An expensive, noisy price.
 	contraband = TRUE
 	contains = list(/obj/item/clothing/head/helmet/toggleable/justice,
@@ -320,9 +320,8 @@
 
 /datum/supply_pack/security/armory/swat
 	name = "SWAT Crate"
-	desc = "Contains two fullbody sets of tough, fireproof suits designed in a joint \
-		effort by IS-ERI and Nanotrasen. Each set contains a suit, helmet, mask, combat belt, \
-		and gorilla gloves."
+	desc = "Contains two fullbody sets of tough, fireproof suits. \
+		Each set contains a suit, helmet, mask, combat belt, and gorilla gloves."
 	cost = CARGO_CRATE_VALUE * 7
 	contains = list(/obj/item/clothing/head/helmet/swat/nanotrasen = 2,
 					/obj/item/clothing/suit/armor/swat = 2,

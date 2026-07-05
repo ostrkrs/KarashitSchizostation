@@ -19,7 +19,6 @@
 	for(var/i in 1 to 7)
 		new /obj/item/reagent_containers/cup/glass/sillycup(src)
 
-//Some spare PDAs in a box
 /obj/item/storage/box/pdas
 	name = "spare PDAs"
 	desc = "A box of spare PDA microcomputers."

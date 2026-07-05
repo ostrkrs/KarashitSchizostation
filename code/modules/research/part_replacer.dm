@@ -151,15 +151,6 @@
 		new /obj/item/stock_parts/matter_bin/bluespace(src)
 		new /obj/item/stock_parts/power_store/cell/bluespace(src)
 
-//used in a cargo crate
-/obj/item/storage/part_replacer/cargo/PopulateContents()
-	for(var/i in 1 to 10)
-		new /obj/item/stock_parts/capacitor(src)
-		new /obj/item/stock_parts/scanning_module(src)
-		new /obj/item/stock_parts/servo(src)
-		new /obj/item/stock_parts/micro_laser(src)
-		new /obj/item/stock_parts/matter_bin(src)
-
 ///Cyborg variant
 /obj/item/storage/part_replacer/cyborg
 	name = "rapid part exchange device"

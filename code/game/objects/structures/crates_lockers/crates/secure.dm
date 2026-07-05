@@ -79,10 +79,10 @@
 	. = ..()
 	new /obj/effect/spawner/random/food_or_drink/pizzaparty(src)
 
-/obj/structure/closet/crate/secure/centcom
-	name = "secure centcom crate"
-	icon_state = "centcom_secure"
-	base_icon_state = "centcom_secure"
+/obj/structure/closet/crate/secure/nanotrasen
+	name = "secure nanotrasen crate"
+	icon_state = "nanotrasen_secure"
+	base_icon_state = "nanotrasen_secure"
 
 /obj/structure/closet/crate/secure/cargo
 	name = "secure cargo crate"

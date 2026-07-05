@@ -145,9 +145,8 @@
 
 /datum/supply_pack/costumes_toys/costume
 	name = "Standard Costume Crate"
-	desc = "Supply the station's entertainers with the equipment of their trade with these \
-		Nanotrasen-approved costumes! Contains a full clown and mime outfit, along with a \
-		bike horn and a bottle of nothing."
+	desc = "Supply the onboard entertainers with the equipment of their trade with these costumes! \
+		Contains a full clown and mime outfit, along with a bike horn and a bottle of nothing."
 	cost = CARGO_CRATE_VALUE * 2
 	access = ACCESS_THEATRE
 	contains = list(/obj/item/storage/backpack/clown,
@@ -195,8 +194,7 @@
 
 /datum/supply_pack/costumes_toys/wizard
 	name = "Wizard Costume Crate"
-	desc = "Pretend to join the Wizard Federation with this full wizard outfit! Nanotrasen would like to remind \
-		its employees that actually joining the Wizard Federation is subject to termination of job and life."
+	desc = "Join the wizard gang today!"
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/staff,
 					/obj/item/clothing/suit/wizrobe/fake,
@@ -208,7 +206,7 @@
 
 /datum/supply_pack/costumes_toys/trekkie
 	name = "Trekkie Costume Crate"
-	desc = "Wear the scrapped concepts for twelve of Nanotrasen's jumpsuits, based off popular \
+	desc = "Wear the scrapped concepts for twelve of SolsticeReach's jumpsuits, based off popular \
 		late-20th century Earth media! While they couldn't be used for the official jumpsuits \
 		due to copyright infringement, it's been assured that they can still legally be sold under \
 		the label of being 'failed designs'."
@@ -231,7 +229,7 @@
 
 /datum/supply_pack/costumes_toys/randomised/tcg
 	name = "Big-Ass Booster Pack Pack"
-	desc = "A bumper load of NT TCG Booster Packs of varying series. Collect them all!"
+	desc = "A bumper load of TCG Booster Packs of varying series. Collect them all!"
 	cost = 1000
 	contains = list()
 	crate_name = "booster pack pack"
