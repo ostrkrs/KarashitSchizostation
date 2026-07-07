@@ -274,7 +274,7 @@
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(
 		/obj/item/storage/box/balloons,
-		/obj/item/skillchip/job/clown,
+		/obj/item/skillchip/job/balloons,
 	)
 	crate_name = "long balloons kit"
 	crate_type = /obj/structure/closet/crate/wooden

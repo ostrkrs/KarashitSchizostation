@@ -67,5 +67,3 @@
 		/obj/item/gun/ballistic/revolver/c38/criminalist,
 		)
 	implants = list(/obj/item/implant/mindshield)
-
-	skillchips = list(/obj/item/skillchip/job/criminalists_taste)

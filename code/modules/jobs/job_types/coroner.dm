@@ -71,5 +71,3 @@
 	satchel = /obj/item/storage/backpack/satchel/coroner
 	duffelbag = /obj/item/storage/backpack/duffelbag/coroner
 	messenger = /obj/item/storage/backpack/messenger/coroner
-
-	skillchips = list(/obj/item/skillchip/entrails_reader)

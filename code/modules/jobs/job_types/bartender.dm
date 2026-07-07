@@ -55,4 +55,6 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	box = /obj/item/storage/box/survival/bartender
 
-	skillchips = list(/obj/item/skillchip/drunken_brawler)
+/datum/outfit/job/bartender/post_equip(mob/living/carbon/human/equipped, visuals_only = FALSE)
+	..()
+	ADD_TRAIT(equipped, TRAIT_DRUNKEN_BRAWLERA, INNATE_TRAIT)

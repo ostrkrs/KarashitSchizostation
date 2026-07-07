@@ -1,7 +1,7 @@
 /datum/job/roboticist
 	title = JOB_ROBOTICIST
 	alt_titles = JOB_ROBOTICIST_ALT_TITLES
-	description = "Build and repair the AI and cyborgs, create mechs."
+	description = "Build and repair the AI and cyborgs, create mechs and MODsuits."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
 	faction = FACTION_SHIP
 	total_positions = 2
