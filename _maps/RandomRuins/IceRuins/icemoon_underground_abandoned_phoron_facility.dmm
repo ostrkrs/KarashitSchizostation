@@ -1404,7 +1404,7 @@
 /turf/open/floor/plating/icemoon,
 /area/ruin/phoron_facility/commons)
 "yp" = (
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/knife/kitchen,
 /obj/item/food/grown/carrot,
 /obj/item/food/grown/potato,

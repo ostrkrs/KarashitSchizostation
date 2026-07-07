@@ -975,7 +975,7 @@
 /area/ruin/huntinglodge)
 "pU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/food/grown/carrot{
 	pixel_x = 1;
 	pixel_y = 2

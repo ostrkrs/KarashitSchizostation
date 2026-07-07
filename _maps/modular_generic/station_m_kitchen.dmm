@@ -127,7 +127,7 @@
 /turf/template_noop,
 /area/template_noop)
 "I" = (
-/obj/structure/closet/secure_closet/freezer/condiments/all_access,
+/obj/structure/closet/kitchen/all_access,
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/effect/spawner/random/food_or_drink/booze,

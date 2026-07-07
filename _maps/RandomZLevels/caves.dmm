@@ -796,7 +796,7 @@
 /turf/open/floor/plating,
 /area/awaymission/caves/bmp_asteroid)
 "gb" = (
-/obj/structure/closet/secure_closet/freezer/condiments,
+/obj/structure/closet/kitchen,
 /turf/open/floor/iron,
 /area/awaymission/caves/bmp_asteroid)
 "gf" = (

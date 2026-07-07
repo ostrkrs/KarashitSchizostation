@@ -48326,7 +48326,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/freezer/condiments,
+/obj/structure/closet/kitchen,
 /obj/effect/turf_decal/trimline/brown/warning{
 	dir = 10
 	},
@@ -52526,7 +52526,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs,
 /obj/effect/turf_decal/trimline/brown/warning{
 	dir = 9
 	},

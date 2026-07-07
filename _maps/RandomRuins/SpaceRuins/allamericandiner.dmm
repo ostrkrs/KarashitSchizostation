@@ -706,7 +706,7 @@
 /obj/item/storage/fancy/egg_box,
 /obj/effect/turf_decal/bot,
 /obj/item/storage/fancy/egg_box,
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /turf/open/floor/iron/freezer,
@@ -860,7 +860,7 @@
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
 /obj/effect/turf_decal/bot,
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /turf/open/floor/iron/freezer,
@@ -1271,7 +1271,7 @@
 /obj/item/storage/box/ingredients/american,
 /obj/item/storage/box/ingredients/american,
 /obj/effect/turf_decal/bot,
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /turf/open/floor/iron/freezer,

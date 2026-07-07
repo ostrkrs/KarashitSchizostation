@@ -235,7 +235,7 @@
 /area/ruin/space/has_grav/interdyne)
 "kA" = (
 /obj/structure/cable,
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/interdyne)
 "kI" = (

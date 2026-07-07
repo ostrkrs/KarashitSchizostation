@@ -96,28 +96,6 @@
 
 
 // MARK: SUBTYPES
-// Condiments
-/obj/structure/closet/freezer/condiments/PopulateContents()
-	..()
-	for(var/i in 1 to 3)
-		new /obj/item/reagent_containers/condiment/flour(src)
-	new /obj/item/reagent_containers/condiment/rice(src)
-	new /obj/item/reagent_containers/condiment/sugar(src)
-
-/obj/structure/closet/secure_closet/freezer/condiments
-	req_access = list(ACCESS_KITCHEN)
-
-/obj/structure/closet/secure_closet/freezer/condiments/PopulateContents()
-	..()
-	for(var/i in 1 to 3)
-		new /obj/item/reagent_containers/condiment/flour(src)
-	new /obj/item/reagent_containers/condiment/rice(src)
-	new /obj/item/reagent_containers/condiment/sugar(src)
-
-/obj/structure/closet/secure_closet/freezer/condiments/all_access
-	req_access = null
-
-
 // Meat
 /obj/structure/closet/freezer/meat/PopulateContents()
 	..()
@@ -136,27 +114,59 @@
 	req_access = null
 
 
-// Milk and eggs
-/obj/structure/closet/freezer/milk_and_eggs/PopulateContents()
+// Vegetables
+/obj/structure/closet/freezer/vegetables/PopulateContents()
 	..()
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/condiment/milk(src)
-		new /obj/item/reagent_containers/condiment/soymilk(src)
-	for(var/i in 1 to 2)
-		new /obj/item/storage/fancy/egg_box(src)
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/carrot(src)
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/corn(src)
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/potato(src)
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/tomato(src)
 
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs
+/obj/structure/closet/secure_closet/freezer/vegetables
 	req_access = list(ACCESS_KITCHEN)
 
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/PopulateContents()
+/obj/structure/closet/secure_closet/freezer/vegetables/PopulateContents()
+	..()
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/carrot(src)
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/corn(src)
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/potato(src)
+	for(var/i in 1 to 3)
+		new /obj/item/food/grown/tomato(src)
+
+/obj/structure/closet/secure_closet/freezer/vegetables/all_access
+	req_access = null
+
+
+// Milk and eggs
+/obj/structure/closet/freezer/milk_cheese_eggs/PopulateContents()
 	..()
 	for(var/i in 1 to 5)
 		new /obj/item/reagent_containers/condiment/milk(src)
 		new /obj/item/reagent_containers/condiment/soymilk(src)
 	for(var/i in 1 to 2)
 		new /obj/item/storage/fancy/egg_box(src)
+	new /obj/item/food/cheese/wheel(src)
 
-/obj/structure/closet/secure_closet/freezer/milk_and_eggs/all_access
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs
+	req_access = list(ACCESS_KITCHEN)
+
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/PopulateContents()
+	..()
+	for(var/i in 1 to 5)
+		new /obj/item/reagent_containers/condiment/milk(src)
+		new /obj/item/reagent_containers/condiment/soymilk(src)
+	for(var/i in 1 to 2)
+		new /obj/item/storage/fancy/egg_box(src)
+	new /obj/item/food/cheese/wheel(src)
+
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access
 	req_access = null
 
 
