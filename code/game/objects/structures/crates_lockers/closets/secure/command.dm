@@ -52,8 +52,7 @@
 
 /obj/structure/closet/secure_closet/iso
 	name = "internal security operative's locker"
-	icon_state = "law"
-	icon_door = "iso"
+	icon_state = "iso"
 	req_access = list(ACCESS_ISO)
 
 /obj/structure/closet/secure_closet/iso/PopulateContents()
@@ -71,8 +70,7 @@
 
 /obj/structure/closet/secure_closet/iaa
 	name = "internal affairs agent's locker"
-	icon_state = "law"
-	icon_door = "iaa"
+	icon_state = "iaa"
 	req_access = list(ACCESS_IAA)
 
 /obj/structure/closet/secure_closet/iaa/PopulateContents()
