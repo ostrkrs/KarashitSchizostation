@@ -17,7 +17,6 @@
 
 /area/station/law/office
 	name = "\improper Law Office"
-	icon_state = "law"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
 /area/station/law/iaa_office
