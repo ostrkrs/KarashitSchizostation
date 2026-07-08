@@ -6,7 +6,6 @@
 	should_generate_icons = TRUE
 
 /datum/preference/choiced/serpentid_color/has_relevant_feature(datum/preferences/preferences)
-	// Skips checks for relevant_organ, relevant trait etc. because serpentid color is tied directly to species (atm)
 	return current_species_has_savekey(preferences)
 
 /datum/preference/choiced/serpentid_color/init_possible_values()
