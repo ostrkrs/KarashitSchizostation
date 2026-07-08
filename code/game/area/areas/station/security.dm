@@ -47,14 +47,6 @@
 	name = "\improper Brig Entrance"
 	icon_state = "brigentry"
 
-/area/station/security/courtroom
-	name = "\improper Courtroom"
-	icon_state = "courtroom"
-	sound_environment = SOUND_AREA_LARGE_ENCLOSED
-
-/area/station/security/courtroom/holding
-	name = "\improper Courtroom Prisoner Holding Room"
-
 /area/station/security/processing
 	name = "\improper Labor Shuttle Dock"
 	icon_state = "sec_labor_processing"

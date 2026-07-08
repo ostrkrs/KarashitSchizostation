@@ -36,7 +36,6 @@
 	mood_bonus = 5
 	mood_message = "I love being in the bar!"
 	mood_trait = TRAIT_EXTROVERT
-	airlock_wires = /datum/wires/airlock/service
 	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/station/service/bar/Initialize(mapload)
@@ -157,7 +156,6 @@
 /area/station/service/hydroponics
 	name = "Hydroponics"
 	icon_state = "hydro"
-	airlock_wires = /datum/wires/airlock/service
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/station/service/hydroponics/upper

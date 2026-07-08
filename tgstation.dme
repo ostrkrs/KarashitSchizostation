@@ -2118,6 +2118,7 @@
 #include "code\game\area\areas\station\common.dm"
 #include "code\game\area\areas\station\engineering.dm"
 #include "code\game\area\areas\station\hallway.dm"
+#include "code\game\area\areas\station\law.dm"
 #include "code\game\area\areas\station\maintenance.dm"
 #include "code\game\area\areas\station\medical.dm"
 #include "code\game\area\areas\station\misc.dm"
