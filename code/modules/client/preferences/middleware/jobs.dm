@@ -86,7 +86,7 @@
 		preferences.alt_job_titles = list()
 
 	data["job_preferences"] = preferences.job_preferences
-	data["job_alt_titles"] = preferences.alt_job_titles
+	data["alt_job_titles"] = preferences.alt_job_titles
 
 	return data
 

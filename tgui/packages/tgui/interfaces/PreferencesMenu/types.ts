@@ -182,7 +182,7 @@ export type PreferencesMenuData = {
     }
   >;
   job_preferences: Record<string, JobPriority>;
-  job_alt_titles: Record<string, string>;
+  alt_job_titles: Record<string, string>;
 
   keybindings: Record<string, string[]>;
   overflow_role: string;
