@@ -12,69 +12,47 @@
 	name = "\improper Dormitories"
 	icon_state = "dorms"
 
-/area/station/commons/dorms/room1
-	name = "\improper Dorms Room 1"
-	icon_state = "room1"
+/area/station/commons/dorms/medbay
+	name = "\improper Medbay Dorms Room"
 
-/area/station/commons/dorms/room2
-	name = "\improper Dorms Room 2"
-	icon_state = "room2"
+/area/station/commons/dorms/research
+	name = "\improper Research Dorms Room"
 
-/area/station/commons/dorms/room3
-	name = "\improper Dorms Room 3"
-	icon_state = "room3"
+/area/station/commons/dorms/supply
+	name = "\improper Supply Dorms Room"
 
-/area/station/commons/dorms/room4
-	name = "\improper Dorms Room 4"
-	icon_state = "room4"
+/area/station/commons/dorms/security
+	name = "\improper Security Dorms Room"
 
-/area/station/commons/dorms/apartment1
-	name = "\improper Dorms Apartment 1"
-	icon_state = "apartment1"
+/area/station/commons/dorms/engineering
+	name = "\improper Engineering Dorms Room"
 
-/area/station/commons/dorms/apartment2
-	name = "\improper Dorms Apartment 2"
-	icon_state = "apartment2"
-
-/area/station/commons/dorms/barracks
-	name = "\improper Sleep Barracks"
-
-/area/station/commons/dorms/barracks/male
-	name = "\improper Male Sleep Barracks"
-	icon_state = "dorms_male"
-
-/area/station/commons/dorms/barracks/female
-	name = "\improper Female Sleep Barracks"
-	icon_state = "dorms_female"
-
-/area/station/commons/dorms/laundry
-	name = "\improper Laundry Room"
-	icon_state = "laundry_room"
+/area/station/commons/dorms/service
+	name = "\improper Service Dorms Room"
 
 /*
 * Toilet Areas
 */
 
-/area/station/commons/toilet
-	name = "\improper Dormitory Toilets"
+/area/station/commons/hygiene
 	icon_state = "toilet"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
-/area/station/commons/toilet/auxiliary
-	name = "\improper Auxiliary Restrooms"
+/area/station/commons/hygiene/restrooms
+	name = "\improper Unisex Restrooms"
 	icon_state = "toilet"
 
-/area/station/commons/toilet/locker
-	name = "\improper Locker Toilets"
+/area/station/commons/hygiene/auxiliary_restrooms
+	name = "\improper Auxiliary Unisex Restrooms"
 	icon_state = "toilet"
 
-/area/station/commons/toilet/restrooms
-	name = "\improper Restrooms"
-	icon_state = "toilet"
-
-/area/station/commons/toilet/shower
+/area/station/commons/hygiene/shower
 	name = "\improper Shower Room"
 	icon_state = "shower"
+
+/area/station/commons/hygiene/sauna
+	name = "\improper Sauna"
+	icon_state = "sauna"
 
 /*
 * Rec and Locker Rooms
@@ -91,6 +69,10 @@
 	mood_message = "I love being in the bar!"
 	mood_trait = TRAIT_EXTROVERT
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
+
+/*
+* Fitness and Recreacion Rooms
+*/
 
 /area/station/commons/fitness
 	name = "\improper Fitness Room"
@@ -123,10 +105,6 @@
 /area/station/commons/fitness/recreation/lasertag
 	name = "\improper Laser Tag Arena"
 	icon_state = "lasertag"
-
-/area/station/commons/fitness/recreation/sauna
-	name = "\improper Sauna"
-	icon_state = "sauna"
 
 /*
 * Vacant Rooms
