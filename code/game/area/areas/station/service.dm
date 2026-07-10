@@ -22,10 +22,6 @@
 	icon_state = "kitchen_cold"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
-/area/station/service/kitchen/diner
-	name = "\improper Diner"
-	icon_state = "diner"
-
 /area/station/service/kitchen/kitchen_backroom
 	name = "\improper Kitchen Backroom"
 	icon_state = "kitchen_backroom"
@@ -41,11 +37,6 @@
 /area/station/service/bar/Initialize(mapload)
 	. = ..()
 	GLOB.bar_areas += src
-
-/area/station/service/bar/atrium
-	name = "\improper Atrium"
-	icon_state = "bar"
-	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/station/service/bar/backroom
 	name = "\improper Bar Backroom"
@@ -96,10 +87,6 @@
 	name = "\improper Library Private Study"
 	icon_state = "library_gallery_private"
 
-/area/station/service/library/upper
-	name = "\improper Library Upper Floor"
-	icon_state = "library"
-
 /area/station/service/library/printer
 	name = "\improper Library Printer Room"
 	icon_state = "library"
@@ -118,20 +105,9 @@
 	flags_1 = NONE
 	sound_environment = SOUND_AREA_LARGE_ENCLOSED
 
-/area/station/service/chapel/monastery
-	name = "\improper Monastery"
-
 /area/station/service/chapel/office
 	name = "\improper Chapel Office"
 	icon_state = "chapeloffice"
-
-/area/station/service/chapel/asteroid
-	name = "\improper Chapel Asteroid"
-	icon_state = "explored"
-	sound_environment = SOUND_AREA_ASTEROID
-
-/area/station/service/chapel/asteroid/monastery
-	name = "\improper Monastery Asteroid"
 
 /area/station/service/chapel/dock
 	name = "\improper Chapel Dock"
@@ -179,10 +155,6 @@
 /area/station/service/barber
 	name = "\improper Barber"
 	icon_state = "barber"
-
-/area/station/service/boutique
-	name = "\improper Boutique"
-	icon_state = "boutique"
 
 /*
 * Abandoned Rooms

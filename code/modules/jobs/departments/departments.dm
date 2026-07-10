@@ -189,7 +189,7 @@
 	ui_color = "#62913a"
 	nation_prefixes = list("Honka", "Boozo", "Fatu", "Danka", "Mimi", "Libra", "Jani", "Religi")
 	primary_work_area = /area/station/service
-	department_delivery_areas = list(/area/station/hallway/secondary/service, /area/station/service/bar/atrium)
+	department_delivery_areas = list(/area/station/hallway/secondary/service)
 	associated_cargo_groups = list("Service", "Food & Hydroponics", "Livestock", "Costumes & Toys")
 	head_of_staff_access = ACCESS_STEWARD
 	department_access = list(ACCESS_SERVICE)

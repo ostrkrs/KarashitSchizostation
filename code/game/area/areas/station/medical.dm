@@ -1,11 +1,26 @@
 /area/station/medical
-	name = "Medical"
-	icon_state = "medbay"
 	ambience_index = AMBIENCE_MEDICAL
 	airlock_wires = /datum/wires/airlock/medbay
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
-/area/station/medical/abandoned
+//medbay
+/area/station/medical/medbay
+	name = "Medbay"
+	icon_state = "medbay"
+
+/area/station/medical/medbay/central
+	name = "Medbay Central"
+	icon_state = "med_central"
+
+/area/station/medical/medbay/lobby
+	name = "\improper Medbay Lobby"
+	icon_state = "med_lobby"
+
+/area/station/medical/medbay/lower
+	name = "\improper Lower Medbay"
+	icon_state = "lower_med"
+
+/area/station/medical/medbay/abandoned
 	name = "\improper Abandoned Medbay"
 	icon_state = "abandoned_medbay"
 	ambientsounds = list(
@@ -13,24 +28,56 @@
 		)
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
-/area/station/medical/medbay/central
-	name = "Medbay Central"
-	icon_state = "med_central"
+//hospital
+/area/station/medical/hospital
+	name = "\improper Hospital"
+	icon_state = "patients"
+	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
-/area/station/medical/lower
-	name = "\improper Lower Medbay"
-	icon_state = "lower_med"
+/area/station/medical/hospital/room_1
+	name = "Patient Room 1"
 
-/area/station/medical/medbay/lobby
-	name = "\improper Medbay Lobby"
-	icon_state = "med_lobby"
+/area/station/medical/hospital/room_2
+	name = "Patient Room 2"
 
-/area/station/medical/medbay/aft
-	name = "Medbay Aft"
-	icon_state = "med_aft"
+/area/station/medical/hospital/restrooms
+	name = "\improper Hospital Restrooms"
 
+//virology
+/area/station/medical/virology
+	name = "Virology"
+	icon_state = "virology"
+	ambience_index = AMBIENCE_VIROLOGY
+
+/area/station/medical/virology/isolation
+	name = "Virology Isolation"
+	icon_state = "virology_isolation"
+
+//chemistry
+/area/station/medical/chemistry
+	name = "Chemistry"
+	icon_state = "chem"
+
+/area/station/medical/chemistry/pharmacy
+	name = "\improper Pharmacy"
+	icon_state = "pharmacy"
+
+/area/station/medical/chemistry/storage
+	name = "\improper Chemical Storage"
+	icon_state = "chem_storage"
+
+//surgery
+/area/station/medical/surgery
+	name = "\improper Operating Room"
+	icon_state = "surgery"
+
+/area/station/medical/surgery/theatre
+	name = "\improper Surgery Theatre"
+	icon_state = "surgerytheatre"
+
+//misc
 /area/station/medical/storage
-	name = "Medbay Storage"
+	name = "Medical Storage"
 	icon_state = "med_storage"
 
 /area/station/medical/paramedic
@@ -47,29 +94,7 @@
 
 /area/station/medical/coldroom
 	name = "\improper Medical Cold Room"
-	icon_state = "kitchen_cold"
-
-/area/station/medical/patients_rooms
-	name = "\improper Patients' Rooms"
-	icon_state = "patients"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
-
-/area/station/medical/patients_rooms/room_a
-	name = "Patient Room A"
-	icon_state = "patients"
-
-/area/station/medical/patients_rooms/room_b
-	name = "Patient Room B"
-	icon_state = "patients"
-
-/area/station/medical/virology
-	name = "Virology"
-	icon_state = "virology"
-	ambience_index = AMBIENCE_VIROLOGY
-
-/area/station/medical/virology/isolation
-	name = "Virology Isolation"
-	icon_state = "virology_isolation"
+	icon_state = "med_coldroom"
 
 /area/station/medical/morgue
 	name = "\improper Morgue"
@@ -77,48 +102,13 @@
 	ambience_index = AMBIENCE_SPOOKY
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 
-/area/station/medical/chemistry
-	name = "Chemistry"
-	icon_state = "chem"
-
-/area/station/medical/chemistry/minisat
-	name = "Chemistry Mini-Satellite"
-
-/area/station/medical/pharmacy
-	name = "\improper Pharmacy"
-	icon_state = "pharmacy"
-
-/area/station/medical/chem_storage
-	name = "\improper Chemical Storage"
-	icon_state = "chem_storage"
-
-/area/station/medical/surgery
-	name = "\improper Operating Room"
-	icon_state = "surgery"
-
-/area/station/medical/surgery/fore
-	name = "\improper Fore Operating Room"
-	icon_state = "foresurgery"
-
-/area/station/medical/surgery/aft
-	name = "\improper Aft Operating Room"
-	icon_state = "aftsurgery"
-
-/area/station/medical/surgery/theatre
-	name = "\improper Grand Surgery Theatre"
-	icon_state = "surgerytheatre"
-
 /area/station/medical/cryo
 	name = "Cryogenics"
 	icon_state = "cryo"
 
-/area/station/medical/exam_room
-	name = "\improper Exam Room"
-	icon_state = "exam_room"
-
 /area/station/medical/treatment_center
 	name = "\improper Medbay Treatment Center"
-	icon_state = "exam_room"
+	icon_state = "treatment"
 
 /area/station/medical/psychology
 	name = "\improper Psychology Office"

@@ -47,15 +47,6 @@
 	name = "\improper Brig Entrance"
 	icon_state = "brigentry"
 
-/area/station/security/processing
-	name = "\improper Labor Shuttle Dock"
-	icon_state = "sec_labor_processing"
-
-/area/station/security/processing/cremation
-	name = "\improper Security Crematorium"
-	icon_state = "sec_cremation"
-	sound_environment = SOUND_AREA_SMALL_ENCLOSED
-
 /area/station/security/interrogation
 	name = "\improper Interrogation Room"
 	icon_state = "interrogation"
@@ -134,16 +125,9 @@
 	name = "Security Post - Medbay"
 	icon_state = "checkpoint_med"
 
-/area/station/security/checkpoint/medical/medsci
-	name = "Security Post - Medsci"
-
 /area/station/security/checkpoint/science
 	name = "Security Post - Science"
 	icon_state = "checkpoint_sci"
-
-/area/station/security/checkpoint/science/research
-	name = "Security Post - Research Division"
-	icon_state = "checkpoint_res"
 
 /area/station/security/checkpoint/customs
 	name = "Customs"
@@ -161,45 +145,26 @@
 	name = "Aft Customs"
 	icon_state = "customs_point_aft"
 
-/area/station/security/checkpoint/first
-	name = "Security Post - First Floor"
-	icon_state = "checkpoint_1"
-
-/area/station/security/checkpoint/second
-	name = "Security Post - Second Floor"
-	icon_state = "checkpoint_2"
-
-/area/station/security/checkpoint/third
-	name = "Security Post - Third Floor"
-	icon_state = "checkpoint_3"
-
+/*
+* Prison
+*/
 
 /area/station/security/prison
 	name = "\improper Prison Wing"
 	icon_state = "sec_prison"
 	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | CULT_PERMITTED | PERSISTENT_ENGRAVINGS
 
-//Rad proof
 /area/station/security/prison/toilet
 	name = "\improper Prison Toilet"
 	icon_state = "sec_prison_safe"
 
-// Rad proof
 /area/station/security/prison/safe
 	name = "\improper Prison Wing Cells"
 	icon_state = "sec_prison_safe"
 
-/area/station/security/prison/upper
-	name = "\improper Upper Prison Wing"
-	icon_state = "prison_upper"
-
 /area/station/security/prison/visit
 	name = "\improper Prison Visitation Area"
 	icon_state = "prison_visit"
-
-/area/station/security/prison/rec
-	name = "\improper Prison Rec Room"
-	icon_state = "prison_rec"
 
 /area/station/security/prison/mess
 	name = "\improper Prison Mess Hall"
@@ -212,10 +177,6 @@
 /area/station/security/prison/shower
 	name = "\improper Prison Shower"
 	icon_state = "prison_shower"
-
-/area/station/security/prison/workout
-	name = "\improper Prison Gym"
-	icon_state = "prison_workout"
 
 /area/station/security/prison/garden
 	name = "\improper Prison Garden"

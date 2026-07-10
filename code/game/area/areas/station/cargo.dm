@@ -1,6 +1,4 @@
 /area/station/cargo
-	name = "Cargo"
-	icon_state = "cargo"
 	airlock_wires = /datum/wires/airlock/cargo
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
@@ -16,11 +14,6 @@
 /area/station/cargo/drone_bay
 	name = "\improper Drone Bay"
 	icon_state = "cargo_drone"
-
-/area/station/cargo/boutique
-	name = "\improper Boutique"
-	icon_state = "cargo_delivery"
-	sound_environment = SOUND_AREA_WOODFLOOR
 
 /area/station/cargo/warehouse/upper
 	name = "\improper Upper Warehouse"

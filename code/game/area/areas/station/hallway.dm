@@ -1,5 +1,4 @@
 /area/station/hallway
-	icon_state = "hall"
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/station/hallway/primary

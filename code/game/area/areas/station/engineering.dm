@@ -1,7 +1,6 @@
 /area/station/engineering
-	icon_state = "engie"
-	ambience_index = AMBIENCE_ENGI
 	airlock_wires = /datum/wires/airlock/engineering
+	ambience_index = AMBIENCE_ENGI
 	sound_environment = SOUND_AREA_LARGE_ENCLOSED
 
 /area/station/engineering/engine_smes

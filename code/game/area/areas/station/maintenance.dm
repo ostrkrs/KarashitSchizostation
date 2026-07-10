@@ -12,22 +12,10 @@
 * Departmental Maintenance
 */
 
-/area/station/maintenance/department/chapel
-	name = "Chapel Maintenance"
-	icon_state = "maint_chapel"
-
-/area/station/maintenance/department/chapel/monastery
-	name = "Monastery Maintenance"
-	icon_state = "maint_monastery"
-
-/area/station/maintenance/department/crew_quarters/bar
-	name = "Bar Maintenance"
-	icon_state = "maint_bar"
-	sound_environment = SOUND_AREA_WOODFLOOR
-
-/area/station/maintenance/department/crew_quarters/dorms
+/area/station/maintenance/department/commons/dorms
 	name = "Dormitory Maintenance"
 	icon_state = "maint_dorms"
+
 
 /area/station/maintenance/department/eva
 	name = "EVA Maintenance"
@@ -36,36 +24,20 @@
 /area/station/maintenance/department/eva/abandoned
 	name = "Abandoned EVA Storage"
 
-/area/station/maintenance/department/electrical
-	name = "Electrical Maintenance"
-	icon_state = "maint_electrical"
-
-/area/station/maintenance/department/engine/atmos
-	name = "Atmospherics Maintenance"
-	icon_state = "maint_atmos"
 
 /area/station/maintenance/department/security
 	name = "Security Maintenance"
 	icon_state = "maint_sec"
 
-/area/station/maintenance/department/security/upper
-	name = "Upper Security Maintenance"
+/area/station/maintenance/department/security/prison
+	name = "Prison Maintenance"
+	icon_state = "maint_prison"
 
-/area/station/maintenance/department/security/brig
-	name = "Brig Maintenance"
-	icon_state = "maint_brig"
 
 /area/station/maintenance/department/medical
 	name = "Medbay Maintenance"
 	icon_state = "medbay_maint"
 
-/area/station/maintenance/department/medical/central
-	name = "Central Medbay Maintenance"
-	icon_state = "medbay_maint_central"
-
-/area/station/maintenance/department/medical/morgue
-	name = "Morgue Maintenance"
-	icon_state = "morgue_maint"
 
 /area/station/maintenance/department/science
 	name = "Science Maintenance"
@@ -75,26 +47,33 @@
 	name = "Central Science Maintenance"
 	icon_state = "maint_sci_central"
 
+/area/station/maintenance/department/science/xenobiology
+	name = "Xenobiology Maintenance"
+	icon_state = "xenomaint"
+	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | XENOBIOLOGY_COMPATIBLE | CULT_PERMITTED
+
+
 /area/station/maintenance/department/cargo
 	name = "Cargo Maintenance"
 	icon_state = "maint_cargo"
+
 
 /area/station/maintenance/department/bridge
 	name = "Bridge Maintenance"
 	icon_state = "maint_bridge"
 
-/area/station/maintenance/department/engine
+
+/area/station/maintenance/department/engineering
 	name = "Engineering Maintenance"
 	icon_state = "maint_engi"
 
-/area/station/maintenance/department/prison
-	name = "Prison Maintenance"
-	icon_state = "sec_prison"
+/area/station/maintenance/department/engineering/electrical
+	name = "Electrical Maintenance"
+	icon_state = "maint_electrical"
 
-/area/station/maintenance/department/science/xenobiology
-	name = "Xenobiology Maintenance"
-	icon_state = "xenomaint"
-	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | XENOBIOLOGY_COMPATIBLE | CULT_PERMITTED
+/area/station/maintenance/department/engineering/atmos
+	name = "Atmospherics Maintenance"
+	icon_state = "maint_atmos"
 
 /*
 * Generic Maintenance Tunnels

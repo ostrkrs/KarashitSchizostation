@@ -1,10 +1,8 @@
 /area/station/law
-	name = "Law an Order"
-	icon_state = "law"
+	airlock_wires = /datum/wires/airlock/law
 	ambientsounds = list(
 		'sound/ambience/misc/signal.ogg',
 		)
-	airlock_wires = /datum/wires/airlock/law
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/station/law/courtroom

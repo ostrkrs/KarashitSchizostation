@@ -1,6 +1,5 @@
 /area/station/command
 	name = "Command"
-	icon_state = "command"
 	ambientsounds = list(
 		'sound/ambience/misc/signal.ogg',
 		)
