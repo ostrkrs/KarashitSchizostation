@@ -2,7 +2,7 @@
 * Telecommunications Satellite Areas
 */
 
-/area/station/tcommsat
+/area/station/tcomms
 	ambientsounds = list(
 		'sound/ambience/engineering/ambisin2.ogg',
 		'sound/ambience/misc/signal.ogg',
@@ -15,12 +15,12 @@
 		)
 	airlock_wires = /datum/wires/airlock/engineering
 
-/area/station/tcommsat/computer
+/area/station/tcomms/computer
 	name = "\improper Telecomms Control Room"
 	icon_state = "tcomsatcomp"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
-/area/station/tcommsat/server
+/area/station/tcomms/server
 	name = "\improper Telecomms Server Room"
 	icon_state = "tcomsatcham"
 

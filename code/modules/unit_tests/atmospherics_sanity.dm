@@ -83,7 +83,7 @@
 		/area/station/science/ordnance/burnchamber,
 		/area/station/science/ordnance/freezerchamber,
 		/area/station/solars,
-		/area/station/tcommsat/server,
+		/area/station/tcomms/server,
 	)
 
 	for(var/area/ignored as anything in ignored_types)
