@@ -35,7 +35,7 @@
 		/area/station/ai_monitored/turret_protected/ai,
 		/area/station/engineering/atmos,
 		/area/station/medical/virology,
-		/area/station/science/xenobiology,
+		/area/station/research/xenobiology,
 		)
 
 	if(!length(starting_areas))
@@ -79,9 +79,9 @@
 		/area/station/engineering/supermatter,
 		/area/station/holodeck,
 		/area/station/maintenance,
-		/area/station/science/ordnance/bomb,
-		/area/station/science/ordnance/burnchamber,
-		/area/station/science/ordnance/freezerchamber,
+		/area/station/research/ordnance/bomb,
+		/area/station/research/ordnance/burnchamber,
+		/area/station/research/ordnance/freezerchamber,
 		/area/station/solars,
 		/area/station/tcomms/server,
 	)

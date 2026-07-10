@@ -8,7 +8,7 @@ GLOBAL_LIST_INIT(battle_royale_regions, list(
 	"Research Division" = list(
 		/area/station/command/heads_quarters/rd,
 		/area/station/security/checkpoint/science,
-		/area/station/science,
+		/area/station/research,
 	),
 	"Engineering Bay" = list(
 		/area/station/command/heads_quarters/ce,

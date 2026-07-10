@@ -576,7 +576,7 @@
 
 	//Give robotics some radiation protection modules for modsuits
 	var/datum/supply_pack/supply_pack_modsuits = new /datum/supply_pack/engineering/rad_protection_modules()
-	send_supply_pod_to_area(supply_pack_modsuits.generate(null), /area/station/science/robotics, /obj/structure/closet/supplypod/centcompod)
+	send_supply_pod_to_area(supply_pack_modsuits.generate(null), /area/station/research/robotics, /obj/structure/closet/supplypod/centcompod)
 
 	//Send a nebula shielding unit to engineering
 	var/datum/supply_pack/supply_pack_shielding = new /datum/supply_pack/engineering/rad_nebula_shielding_kit()

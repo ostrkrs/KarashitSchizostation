@@ -156,11 +156,11 @@
 	label_class = "science"
 	ui_color = "#ca62b7"
 	nation_prefixes = list("Sci", "Griffa", "Geneti", "Explosi", "Mecha", "Xeno", "Nani", "Cyto")
-	primary_work_area = /area/station/science
+	primary_work_area = /area/station/research
 	department_delivery_areas = list(
-		/area/station/science/research,
-		/area/station/science/lobby,
-		/area/station/science/lab,
+		/area/station/research/division,
+		/area/station/research/division/lobby,
+		/area/station/research/division/lab,
 	)
 	associated_cargo_groups = list("Science", "Livestock", "Canisters & Materials")
 	head_of_staff_access = ACCESS_RD

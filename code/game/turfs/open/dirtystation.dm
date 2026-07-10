@@ -42,7 +42,7 @@
 	var/static/list/engine_dirt_areas = typecacheof(list(
 		/area/station/engineering,
 		/area/station/command/heads_quarters/ce,
-		/area/station/science/robotics,
+		/area/station/research/robotics,
 		/area/station/maintenance,
 		/area/station/construction,
 		/area/station/commons/vacant_room/commissary,
@@ -142,7 +142,7 @@
 
 		//Science messes. Mostly green glowy stuff -WHICH YOU SHOULD NOT INJEST-.
 	var/static/list/science_dirt_areas = typecacheof(list(
-		/area/station/science,
+		/area/station/research,
 		/area/station/command/heads_quarters/rd,
 	))
 	if(is_type_in_typecache(A, science_dirt_areas))

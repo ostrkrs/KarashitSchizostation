@@ -26,7 +26,7 @@
 		/area/station/medical,
 		/area/station/security,
 		/area/station/cargo,
-		/area/station/science,
+		/area/station/research,
 	)
 
 	for(var/i in 1 to severity)

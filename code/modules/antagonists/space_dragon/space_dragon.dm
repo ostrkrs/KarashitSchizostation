@@ -46,7 +46,7 @@
 		allowed_areas = typecacheof(list(
 			/area/station/command,
 			/area/station/engineering,
-			/area/station/science,
+			/area/station/research,
 			/area/station/security,
 		))
 

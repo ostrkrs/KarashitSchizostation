@@ -73,7 +73,7 @@
 
 /area/station/medical/surgery/theatre
 	name = "\improper Surgery Theatre"
-	icon_state = "surgerytheatre"
+	icon_state = "surgery_theatre"
 
 //misc
 /area/station/medical/storage

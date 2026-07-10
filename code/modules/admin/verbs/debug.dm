@@ -228,7 +228,7 @@ ADMIN_VERB(cmd_admin_areatest, R_DEBUG, "Test Areas", "Tests the areas for vario
 		/area/space,
 		/area/station/engineering/supermatter,
 		/area/station/holodeck/rec_center,
-		/area/station/science/ordnance/bomb,
+		/area/station/research/ordnance/bomb,
 		/area/station/solars,
 	))
 

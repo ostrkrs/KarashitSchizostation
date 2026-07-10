@@ -3,7 +3,7 @@
 	"Engineering Division" = /area/station/engineering, \
 	"Medbay" = /area/station/medical, \
 	"Recreation and Relaxation Division" = /area/station/commons, \
-	"Science Division" = /area/station/science, \
+	"Science Division" = /area/station/research, \
 	"Security Department" = /area/station/security, \
 	"Station Corridors" = /area/station/hallway, \
 )

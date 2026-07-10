@@ -43,13 +43,9 @@
 	name = "Science Maintenance"
 	icon_state = "maint_sci"
 
-/area/station/maintenance/department/science/central
-	name = "Central Science Maintenance"
-	icon_state = "maint_sci_central"
-
 /area/station/maintenance/department/science/xenobiology
 	name = "Xenobiology Maintenance"
-	icon_state = "xenomaint"
+	icon_state = "maint_xenobio"
 	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | XENOBIOLOGY_COMPATIBLE | CULT_PERMITTED
 
 

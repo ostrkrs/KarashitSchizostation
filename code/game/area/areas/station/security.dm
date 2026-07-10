@@ -1,10 +1,8 @@
 // When adding a new area to the security areas, make sure to add it to /datum/bounty/item/security/paperwork as well!
 
 /area/station/security
-	name = "Security"
-	icon_state = "security"
-	ambience_index = AMBIENCE_DANGER
 	airlock_wires = /datum/wires/airlock/security
+	ambience_index = AMBIENCE_DANGER
 	sound_environment = SOUND_AREA_STANDARD_STATION
 
 /area/station/security/office
@@ -14,10 +12,6 @@
 /area/station/security/breakroom
 	name = "\improper Security Break Room"
 	icon_state = "brig"
-
-/area/station/security/tram
-	name = "\improper Security Transfer Tram"
-	icon_state = "security"
 
 /area/station/security/lockers
 	name = "\improper Security Locker Room"
@@ -70,11 +64,6 @@
 		'sound/ambience/security/ambidet2.ogg',
 		)
 
-/area/station/security/criminalist_office/private_investigators_office
-	name = "\improper Private Investigator's Office"
-	icon_state = "investigate_office"
-	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
-
 /area/station/security/range
 	name = "\improper Firing Range"
 	icon_state = "firingrange"
@@ -84,14 +73,8 @@
 	icon_state = "sec_eva"
 
 /area/station/security/execution
-	icon_state = "execution_room"
-
-/area/station/security/execution/transfer
-	name = "\improper Transfer Centre"
-	icon_state = "sec_processing"
-
-/area/station/security/execution/education
 	name = "\improper Prisoner Education Chamber"
+	icon_state = "execution_room"
 
 /area/station/security/mechbay
 	name = "Security Mechbay"
@@ -158,7 +141,7 @@
 	name = "\improper Prison Toilet"
 	icon_state = "sec_prison_safe"
 
-/area/station/security/prison/safe
+/area/station/security/prison/cells
 	name = "\improper Prison Wing Cells"
 	icon_state = "sec_prison_safe"
 
@@ -166,8 +149,8 @@
 	name = "\improper Prison Visitation Area"
 	icon_state = "prison_visit"
 
-/area/station/security/prison/mess
-	name = "\improper Prison Mess Hall"
+/area/station/security/prison/dining
+	name = "\improper Prison Diner"
 	icon_state = "prison_mess"
 
 /area/station/security/prison/work
@@ -181,3 +164,7 @@
 /area/station/security/prison/garden
 	name = "\improper Prison Garden"
 	icon_state = "prison_garden"
+
+/area/station/security/prison/transfer
+	name = "\improper Prison Transfer Centre"
+	icon_state = "sec_processing"
