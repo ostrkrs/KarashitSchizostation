@@ -160,7 +160,7 @@
 	if(recipient)
 		. += span_info("[postmarked ? "Certified NT" : "Uncertfieid"] mail for [recipient].")
 	else if(postmarked)
-		. += span_info("Certified mail for [GLOB.station_name].")
+		. += span_info("Certified mail for [GLOB.ship_name].")
 	else
 		. += span_info("This is a dead letter mail with no recipient.")
 	. += span_info("Distribute by hand or via destination tagger using the certified NT disposal system.")

@@ -87,40 +87,40 @@ GLOBAL_VAR(command_name)
 
 	return name
 
-/proc/station_name()
-	if(!GLOB.station_name)
+/proc/ship_name()
+	if(!GLOB.ship_name)
 		var/newname
-		var/config_station_name = CONFIG_GET(string/stationname)
-		if(config_station_name)
-			newname = config_station_name
+		var/config_ship_name = CONFIG_GET(string/shipname)
+		if(config_ship_name)
+			newname = config_ship_name
 		else
-			newname = new_station_name()
+			newname = new_ship_name()
 
-		set_station_name(newname)
+		set_ship_name(newname)
 
-	return GLOB.station_name
+	return GLOB.ship_name
 
-/proc/set_station_name(new_name)
-	var/old_name = GLOB.station_name
-	GLOB.station_name = new_name
+/proc/set_ship_name(new_name)
+	var/old_name = GLOB.ship_name
+	GLOB.ship_name = new_name
 
 	var/config_server_name = CONFIG_GET(string/servername)
 	if(config_server_name)
-		world.name = "[config_server_name][config_server_name == GLOB.station_name ? "" : ": [html_decode(GLOB.station_name)]"]"
+		world.name = "[config_server_name][config_server_name == GLOB.ship_name ? "" : ": [html_decode(GLOB.ship_name)]"]"
 	else
-		world.name = html_decode(GLOB.station_name)
+		world.name = html_decode(GLOB.ship_name)
 
-	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_STATION_NAME_CHANGED, new_name, old_name)
+	SEND_GLOBAL_SIGNAL(COMSIG_GLOB_SHIP_NAME_CHANGED, new_name, old_name)
 
-/proc/new_station_name()
+/proc/new_ship_name()
 	var/random = rand(1,5)
 	var/name = ""
-	var/new_station_name = ""
+	var/new_ship_name = ""
 
 	//Rare: Pre-Prefix
 	if (prob(10))
-		name = pick(GLOB.station_prefixes)
-		new_station_name = name + " "
+		name = pick(GLOB.ship_prefixes)
+		new_ship_name = name + " "
 		name = ""
 
 	if(prob(0.1))
@@ -135,31 +135,31 @@ GLOBAL_VAR(command_name)
 		name = holiday.getStationPrefix()
 		//get normal name
 	if(!name)
-		name = pick(GLOB.station_names)
+		name = pick(GLOB.ship_names)
 	if(name)
-		new_station_name += name + " "
+		new_ship_name += name + " "
 
 	// Suffix
-	name = pick(GLOB.station_suffixes)
-	new_station_name += name + " "
+	name = pick(GLOB.ship_suffixes)
+	new_ship_name += name + " "
 
 	// ID Number
 	switch(random)
 		if(1)
-			new_station_name += "[rand(1, 99)]"
+			new_ship_name += "[rand(1, 99)]"
 		if(2)
-			new_station_name += pick(GLOB.greek_letters)
+			new_ship_name += pick(GLOB.greek_letters)
 		if(3)
-			new_station_name += "\Roman[rand(1,99)]"
+			new_ship_name += "\Roman[rand(1,99)]"
 		if(4)
-			new_station_name += pick(GLOB.phonetic_alphabet)
+			new_ship_name += pick(GLOB.phonetic_alphabet)
 		if(5)
-			new_station_name += convert_integer_to_words(rand(-1,99), capitalise = TRUE)
+			new_ship_name += convert_integer_to_words(rand(-1,99), capitalise = TRUE)
 		if(13)
-			new_station_name += pick("13","XIII","Thirteen")
+			new_ship_name += pick("13","XIII","Thirteen")
 		if(999999999)
-			new_station_name += convert_integer_to_words(rand(111111111,999999999), capitalise = TRUE)
-	return new_station_name
+			new_ship_name += convert_integer_to_words(rand(111111111,999999999), capitalise = TRUE)
+	return new_ship_name
 
 /proc/syndicate_name()
 	var/name = ""

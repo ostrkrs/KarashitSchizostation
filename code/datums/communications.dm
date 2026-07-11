@@ -83,7 +83,7 @@ GLOBAL_DATUM_INIT(communications_controller, /datum/communciations_controller, n
 
 	var/list/datum/station_goal/goals = SSstation.get_station_goals()
 	if(length(goals))
-		var/list/texts = list("<hr><b>Special Orders for [station_name()]:</b><br>")
+		var/list/texts = list("<hr><b>Special Orders for [ship_name()]:</b><br>")
 		for(var/datum/station_goal/station_goal as anything in goals)
 			station_goal.on_report()
 			texts += station_goal.get_report()
@@ -112,7 +112,7 @@ GLOBAL_DATUM_INIT(communications_controller, /datum/communciations_controller, n
 	if(greenshift)
 		priority_announce(
 			"Thanks to the tireless efforts of our security and intelligence divisions, \
-				there are currently no credible threats to [station_name()]. \
+				there are currently no credible threats to [ship_name()]. \
 				All station construction projects have been authorized. Have a secure shift!",
 			"Security Report",
 			SSstation.announcer.get_rand_report_sound(),

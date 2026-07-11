@@ -202,7 +202,7 @@ export class Changelog extends Component {
         </p>
         <p>
           {'You can also join our discord '}
-          <a href="https://tgstation13.org/phpBB/viewforum.php?f=60">here</a>.
+          <a href="https://discord.gg/YftMkCrxBF">here</a>.
         </p>
         {dateDropdown}
       </Section>

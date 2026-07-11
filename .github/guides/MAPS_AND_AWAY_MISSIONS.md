@@ -1,6 +1,6 @@
 ## MAPS
 
-/tg/Voyagers currently has single station maps in rotation which will be removed anyways.
+Andromedae Voyagers currently has single station maps in rotation which will be removed anyways.
 
 - [MetaStation](https://tgstation13.org/wiki/MetaStation)
 

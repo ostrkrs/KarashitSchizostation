@@ -196,7 +196,7 @@ GLOBAL_LIST_EMPTY(request_list)
 		"desc" = desc,
 		"delay" = cross_sector_delay,
 	)
-	send2otherserver(html_decode(station_name()), channel_name, "create_news_channel", additional_data = payload)
+	send2otherserver(html_decode(ship_name()), channel_name, "create_news_channel", additional_data = payload)
 
 /datum/feed_network/proc/submit_article(msg, author, channel_name, datum/picture/picture, adminMessage = FALSE, allow_comments = TRUE, update_alert = TRUE, mob/author_mob = null)
 	var/datum/feed_channel/chosen_channel = network_channels_by_name[channel_name]
@@ -232,7 +232,7 @@ GLOBAL_LIST_EMPTY(request_list)
 			"author_ckey" = author_mob?.ckey,
 			"msg" = msg,
 		)
-		send2otherserver(html_decode(station_name()), channel_name, "create_news_article", additional_data = payload)
+		send2otherserver(html_decode(ship_name()), channel_name, "create_news_article", additional_data = payload)
 
 	for(var/obj/machinery/newscaster/caster in GLOB.allCasters)
 		caster.news_alert(channel_name, update_alert)

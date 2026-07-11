@@ -64,9 +64,9 @@
 /datum/antagonist/ert/official/greet()
 	. = ..()
 	if (ert_team)
-		to_chat(owner, "<span class='warningplain'>Central Command is sending you to [station_name()] with the task: [ert_team.mission.explanation_text]</span>")
+		to_chat(owner, "<span class='warningplain'>Central Command is sending you to [ship_name()] with the task: [ert_team.mission.explanation_text]</span>")
 	else
-		to_chat(owner, "<span class='warningplain'>Central Command is sending you to [station_name()] with the task: [mission.explanation_text]</span>")
+		to_chat(owner, "<span class='warningplain'>Central Command is sending you to [ship_name()] with the task: [mission.explanation_text]</span>")
 
 /datum/antagonist/ert/official/forge_objectives()
 	if (ert_team)
@@ -75,7 +75,7 @@
 		return
 	var/datum/objective/missionobj = new ()
 	missionobj.owner = owner
-	missionobj.explanation_text = "Conduct a routine performance review of [station_name()] and its Captain."
+	missionobj.explanation_text = "Conduct a routine performance review of [ship_name()] and its Captain."
 	missionobj.completed = TRUE
 	mission = missionobj
 	objectives |= mission
@@ -242,7 +242,7 @@
 
 	to_chat(owner, "<span class='warningplain'><B><font size=3 color=red>You are the [name].</font></B></span>")
 
-	var/missiondesc = "Your squad is being sent on a mission to [station_name()] by Nanotrasen's Security Division."
+	var/missiondesc = "Your squad is being sent on a mission to [ship_name()] by Nanotrasen's Security Division."
 	if(leader) //If Squad Leader
 		missiondesc += " Lead your squad to ensure the completion of the mission. Board the shuttle when your team is ready."
 	else

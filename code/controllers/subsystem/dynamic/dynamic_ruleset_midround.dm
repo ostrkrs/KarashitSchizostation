@@ -53,7 +53,7 @@
 	addtimer(CALLBACK(src, PROC_REF(announce_spiders)), rand(375, 600) SECONDS)
 
 /datum/dynamic_ruleset/midround/spiders/proc/announce_spiders()
-	priority_announce("Unidentified lifesigns detected coming aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", ANNOUNCER_ALIENS)
+	priority_announce("Unidentified lifesigns detected coming aboard [ship_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", ANNOUNCER_ALIENS)
 
 /datum/dynamic_ruleset/midround/spiders/false_alarm()
 	announce_spiders()
@@ -405,7 +405,7 @@
 	return pick(GLOB.blobstart)
 
 /datum/dynamic_ruleset/midround/from_ghosts/blob/false_alarm()
-	priority_announce("Confirmed outbreak of level 5 biohazard aboard [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", ANNOUNCER_OUTBREAK5)
+	priority_announce("Confirmed outbreak of level 5 biohazard aboard [ship_name()]. All personnel must contain the outbreak.", "Biohazard Alert", ANNOUNCER_OUTBREAK5)
 
 	// Set status displays to biohazard alert even for false alarm
 	send_status_display_biohazard_alert()
@@ -442,7 +442,7 @@
 	addtimer(CALLBACK(src, PROC_REF(announce_xenos)), rand(375, 600) SECONDS)
 
 /datum/dynamic_ruleset/midround/from_ghosts/xenomorph/proc/announce_xenos()
-	priority_announce("Unidentified lifesigns detected coming aboard [station_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", ANNOUNCER_ALIENS)
+	priority_announce("Unidentified lifesigns detected coming aboard [ship_name()]. Secure any exterior access, including ducting and ventilation.", "Lifesign Alert", ANNOUNCER_ALIENS)
 
 /datum/dynamic_ruleset/midround/from_ghosts/xenomorph/false_alarm()
 	announce_xenos()
@@ -532,7 +532,7 @@
 	addtimer(CALLBACK(src, PROC_REF(announce_space_dragon)), rand(5, 10) SECONDS)
 
 /datum/dynamic_ruleset/midround/from_ghosts/space_dragon/proc/announce_space_dragon()
-	priority_announce("A large organic energy flux has been recorded near of [station_name()], please stand-by.", "Lifesign Alert")
+	priority_announce("A large organic energy flux has been recorded near of [ship_name()], please stand-by.", "Lifesign Alert")
 
 /datum/dynamic_ruleset/midround/from_ghosts/space_dragon/false_alarm()
 	announce_space_dragon()
@@ -934,16 +934,16 @@
 	var/announcement_title = ""
 	switch(hunter_backstory)
 		if(HUNTER_PACK_COPS)
-			announcement_text_list += "Attention Crew of [station_name()], this is the Police. A wanted criminal has been reported taking refuge on your station."
+			announcement_text_list += "Attention Crew of [ship_name()], this is the Police. A wanted criminal has been reported taking refuge on your station."
 			announcement_text_list += "We have a warrant from the SSC authorities to take them into custody. Officers have been dispatched to your location."
 			announcement_text_list += "We demand your cooperation in bringing this criminal to justice."
 			announcement_title += "Spacepol Command"
 		if(HUNTER_PACK_RUSSIAN)
-			announcement_text_list += "Zdraviya zhelaju, [station_name()] crew. We are coming to your station."
+			announcement_text_list += "Zdraviya zhelaju, [ship_name()] crew. We are coming to your station."
 			announcement_text_list += "There is a criminal aboard. We will arrest them and return them to the gulag. That's good, yes?"
 			announcement_title += "Russian Freighter"
 		if(HUNTER_PACK_BOUNTY)
-			announcement_text_list += "[station_name()]. One of our bounty marks has ended up on your station. We will be arriving to collect shortly."
+			announcement_text_list += "[ship_name()]. One of our bounty marks has ended up on your station. We will be arriving to collect shortly."
 			announcement_text_list += "Let's make this quick. If you don't want trouble, stay the hell out of our way."
 			announcement_title += "Unregistered Signal"
 		if(HUNTER_PACK_PSYKER)

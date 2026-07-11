@@ -113,7 +113,7 @@
 
 	data["first_load"] = first_load
 	data["logged_in"] = !!traitor_data
-	data["station_name"] = GLOB.station_name
+	data["ship_name"] = GLOB.ship_name
 	data["info_screen"] = info_screen
 	data["error"] = error
 

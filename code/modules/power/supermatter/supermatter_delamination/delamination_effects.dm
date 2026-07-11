@@ -203,7 +203,7 @@
 	sleep(25 SECONDS)
 
 	priority_announce("[Gibberish("All attempts at evacuation have now ceased, and all assets have been retrieved from your sector.\n \
-		To the remaining survivors of [station_name()], farewell.", FALSE, 5)]")
+		To the remaining survivors of [ship_name()], farewell.", FALSE, 5)]")
 
 	if(SSshuttle.emergency.mode == SHUTTLE_ESCAPE)
 		// special message for hijacks

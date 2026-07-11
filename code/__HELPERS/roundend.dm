@@ -422,17 +422,17 @@ GLOBAL_LIST_INIT(achievements_unlocked, list())
 			if(EMERGENCY_ESCAPED_OR_ENDGAMED)
 				if(!M.onCentCom() && !M.onSyndieBase())
 					parts += "<div class='panel stationborder'>"
-					parts += "<span class='marooned'>You managed to survive, but were marooned on [station_name()]...</span>"
+					parts += "<span class='marooned'>You managed to survive, but were marooned on [ship_name()]...</span>"
 				else
 					parts += "<div class='panel greenborder'>"
-					parts += span_greentext("You managed to survive the events on [station_name()] as [M.real_name].")
+					parts += span_greentext("You managed to survive the events on [ship_name()] as [M.real_name].")
 			else
 				parts += "<div class='panel greenborder'>"
-				parts += span_greentext("You managed to survive the events on [station_name()] as [M.real_name].")
+				parts += span_greentext("You managed to survive the events on [ship_name()] as [M.real_name].")
 
 		else
 			parts += "<div class='panel redborder'>"
-			parts += span_redtext("You did not survive the events on [station_name()]...")
+			parts += span_redtext("You did not survive the events on [ship_name()]...")
 	else
 		parts += "<div class='panel stationborder'>"
 	parts += "<br>"

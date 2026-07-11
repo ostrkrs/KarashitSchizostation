@@ -150,7 +150,7 @@ ADMIN_VERB(secrets, R_NONE, "Secrets", "Abuse harder than you ever have before w
 			var/new_name = input(holder, "Please input a new name for the station.", "What?", "") as text|null
 			if(!new_name)
 				return
-			set_station_name(new_name)
+			set_ship_name(new_name)
 			log_admin("[key_name(holder)] renamed the station to \"[new_name]\".")
 			message_admins(span_adminnotice("[key_name_admin(holder)] renamed the station to: [new_name]."))
 			priority_announce("[command_name()] has renamed the station to \"[new_name]\".")
@@ -158,8 +158,8 @@ ADMIN_VERB(secrets, R_NONE, "Secrets", "Abuse harder than you ever have before w
 			var/confirmed = tgui_alert(usr,"Are you sure you want to reset the station name?", "Confirm", list("Yes", "No", "Cancel"))
 			if(confirmed != "Yes")
 				return
-			var/new_name = new_station_name()
-			set_station_name(new_name)
+			var/new_name = new_ship_name()
+			set_ship_name(new_name)
 			log_admin("[key_name(holder)] reset the station name.")
 			message_admins(span_adminnotice("[key_name_admin(holder)] reset the station name."))
 			priority_announce("[command_name()] has renamed the station to \"[new_name]\".")
@@ -357,7 +357,7 @@ ADMIN_VERB(secrets, R_NONE, "Secrets", "Abuse harder than you ever have before w
 				to_chat(usr, span_warning("Emergency shuttle not currently in transit!"), confidential = TRUE)
 				return
 			var/make_announcement = tgui_alert(usr, "Make a CentCom announcement?", "Emergency shuttle return", list("Yes", "Custom Text", "No")) || "No"
-			var/announcement_text = "Emergency shuttle trajectory overriden, rerouting course back to [station_name()]."
+			var/announcement_text = "Emergency shuttle trajectory overriden, rerouting course back to [ship_name()]."
 			if (make_announcement == "Custom Text")
 				announcement_text = tgui_input_text(usr, "Custom CentCom announcement", "Emergency shuttle return", multiline = TRUE) || announcement_text
 			var/new_timer = tgui_input_number(usr, "How long should the shuttle remain in transit?", "When are we droppin' boys?", 180, 600)
@@ -636,7 +636,7 @@ ADMIN_VERB(secrets, R_NONE, "Secrets", "Abuse harder than you ever have before w
 	if (playlightning)
 		sound_to_playing_players('sound/effects/magic/lightning_chargeup.ogg')
 		sleep(8 SECONDS)
-	priority_announce(replacetext(announcement, "%STATION%", station_name()))
+	priority_announce(replacetext(announcement, "%STATION%", ship_name()))
 	if (playlightning)
 		sleep(2 SECONDS)
 		sound_to_playing_players('sound/effects/magic/lightningbolt.ogg')

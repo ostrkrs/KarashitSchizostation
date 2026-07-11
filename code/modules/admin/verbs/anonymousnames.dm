@@ -217,13 +217,13 @@ GLOBAL_DATUM(current_anonymous_theme, /datum/anonymous_theme)
 	extras_prompt = "Also set station name to be a random human name?"
 
 /datum/anonymous_theme/station/theme_extras()
-	set_station_name("[pick(GLOB.first_names)] [pick(GLOB.last_names)]")
+	set_ship_name("[pick(GLOB.first_names)] [pick(GLOB.last_names)]")
 
 /datum/anonymous_theme/station/announce_to_all_players()
-	priority_announce("Confirmed level 9 reality error event near [station_name()]. All personnel must try their best to carry on, as to not trigger more reality events by accident.", "Central Command Higher Dimensional Affairs", 'sound/announcer/notice/notice1.ogg')
+	priority_announce("Confirmed level 9 reality error event near [ship_name()]. All personnel must try their best to carry on, as to not trigger more reality events by accident.", "Central Command Higher Dimensional Affairs", 'sound/announcer/notice/notice1.ogg')
 
 /datum/anonymous_theme/station/anonymous_name(mob/target)
-	return new_station_name()
+	return new_ship_name()
 
 /datum/anonymous_theme/station/anonymous_ai_name(is_ai = FALSE)
-	return new_station_name()
+	return new_ship_name()
