@@ -44,7 +44,7 @@
 		/area/station/command/heads_quarters/ce,
 		/area/station/research/robotics,
 		/area/station/maintenance,
-		/area/station/construction,
+		/area/station/engineering/construction,
 		/area/station/commons/vacant_room/commissary,
 		/area/misc/survivalpod,
 	))

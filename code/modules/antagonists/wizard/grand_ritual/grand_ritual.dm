@@ -61,7 +61,7 @@
 		/area/station/cargo,
 		/area/station/command,
 		/area/station/commons,
-		/area/station/construction,
+		/area/station/engineering/construction,
 		/area/station/engineering,
 		/area/station/maintenance/disposal,
 		/area/station/medical,

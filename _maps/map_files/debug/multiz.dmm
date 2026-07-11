@@ -10,7 +10,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "ah" = (
 /turf/closed/wall/r_wall,
 /area/station/engineering/atmos)
@@ -578,7 +578,7 @@
 /obj/machinery/door/airlock/glass,
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "dk" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -754,7 +754,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "ey" = (
 /obj/structure/ladder,
 /obj/effect/turf_decal/stripes/asteroid/corner{
@@ -862,7 +862,7 @@
 	},
 /obj/machinery/suit_storage_unit/ce,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "gz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -877,7 +877,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "gW" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
@@ -909,7 +909,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "hY" = (
 /obj/structure/railing/corner,
 /turf/open/floor/plating,
@@ -971,7 +971,7 @@
 "jz" = (
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "jA" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
@@ -982,7 +982,7 @@
 "jK" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "jL" = (
 /obj/machinery/atmospherics/pipe/multiz{
 	dir = 1
@@ -1028,11 +1028,11 @@
 	pixel_y = 10
 	},
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "kX" = (
 /obj/machinery/atmospherics/components/binary/valve,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "la" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -1068,7 +1068,7 @@
 "mv" = (
 /obj/structure/disposalpipe/trunk/multiz,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "my" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -1092,7 +1092,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "ni" = (
 /obj/structure/lattice/catwalk,
 /turf/open/space/basic,
@@ -1224,7 +1224,7 @@
 	},
 /obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "sE" = (
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
@@ -1283,10 +1283,10 @@
 	dir = 1
 	},
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "vX" = (
 /turf/closed/wall/r_wall,
-/area/station/construction)
+/area/station/engineering/construction)
 "wb" = (
 /obj/machinery/elevator_control_panel/directional/north{
 	linked_elevator_id = "test_vator"
@@ -1298,13 +1298,13 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "wI" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "xw" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 8
@@ -1346,7 +1346,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "yl" = (
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -1395,7 +1395,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "Ai" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -1409,7 +1409,7 @@
 "Av" = (
 /obj/structure/cable/multilayer/multiz,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "AG" = (
 /turf/closed/wall/r_wall,
 /area/station/engineering/storage)
@@ -1428,7 +1428,7 @@
 /obj/structure/table,
 /obj/item/pipe_dispenser,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Cc" = (
 /turf/open/space/basic,
 /area/space)
@@ -1497,7 +1497,7 @@
 /obj/item/rcd_ammo/large,
 /obj/item/construction/rcd/combat/admin,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Fd" = (
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plating,
@@ -1517,16 +1517,16 @@
 "Hu" = (
 /obj/structure/railing/corner,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "Ia" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "Ix" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "IC" = (
 /obj/machinery/atmospherics/components/binary/valve,
 /turf/open/floor/plating,
@@ -1559,7 +1559,7 @@
 /obj/effect/turf_decal/stripes/corner,
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Jt" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 1
@@ -1579,7 +1579,7 @@
 	},
 /obj/machinery/disposal/bin,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "Kc" = (
 /obj/structure/lattice,
 /obj/structure/grille,
@@ -1626,7 +1626,7 @@
 /area/station/engineering/gravity_generator)
 "KV" = (
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "KX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -1634,7 +1634,7 @@
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Lu" = (
 /obj/structure/railing{
 	dir = 4
@@ -1665,7 +1665,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/meter,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "LV" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
@@ -1695,13 +1695,13 @@
 	icon_state = "inje_map-2"
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "MP" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "MS" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -1709,7 +1709,7 @@
 /obj/structure/table,
 /obj/item/construction/plumbing,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Na" = (
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable,
@@ -1731,14 +1731,14 @@
 	},
 /obj/structure/ladder,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Pc" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Pu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -1774,11 +1774,11 @@
 "QN" = (
 /obj/structure/stairs/south,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "Ra" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Rd" = (
 /obj/machinery/gravity_generator/main,
 /turf/open/floor/iron{
@@ -1790,11 +1790,11 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Rl" = (
 /obj/machinery/door/airlock/glass,
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "RC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
@@ -1823,7 +1823,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "Uc" = (
 /obj/effect/landmark/blobstart,
 /turf/open/floor/iron,
@@ -1858,13 +1858,13 @@
 	dir = 4
 	},
 /turf/open/floor/iron,
-/area/station/construction)
+/area/station/engineering/construction)
 "UU" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "Vm" = (
 /obj/structure/cable/multilayer/multiz,
 /turf/open/floor/plating,
@@ -1917,11 +1917,11 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "VJ" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "Wq" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -1947,7 +1947,7 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/station/construction)
+/area/station/engineering/construction)
 "WR" = (
 /obj/effect/spawner/random/entertainment/arcade,
 /turf/open/floor/iron,
@@ -1962,7 +1962,7 @@
 "XK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/closed/wall/r_wall,
-/area/station/construction)
+/area/station/engineering/construction)
 "XN" = (
 /obj/structure/railing,
 /turf/open/floor/plating,
