@@ -326,7 +326,6 @@ GLOBAL_DATUM(syndicate_code_response_regex, /regex)
 	used_names[text] = TRUE
 	return text
 
-
 /**
  * returns an ic name of the tool needed
  * Arguments:
