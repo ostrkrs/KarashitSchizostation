@@ -1097,10 +1097,6 @@
 	job = /datum/job/security_officer
 	honorifics = list("Officer")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
-	/// List of bonus departmental accesses that departmental sec officers get by default.
-	var/department_access = list()
-	/// List of bonus departmental accesses that departmental security officers can in relation to how many overall security officers there are if the scaling system is set up. These can otherwise be granted via config settings.
-	var/elevated_access = list()
 
 /datum/id_trim/job/security_officer/refresh_trim_access()
 	. = ..()
@@ -1113,26 +1109,6 @@
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
-
-	// Scaling access (POPULATION_SCALED_ACCESS) is a system directly tied into calculations derived via a config entered variable, as well as the amount of players in the shift.
-	// Thus, it makes it possible to judge if departmental security officers should have more access to their department on a lower population shift.
-	// Server operators can modify config to change it such that security officers can use this system, or alternatively either: A) always give the "elevated" access (ALWAYS_GETS_ACCESS) or B) never give this access (null value).
-
-	#define POPULATION_SCALED_ACCESS 1
-	#define ALWAYS_GETS_ACCESS 2
-
-	// If null, then the departmental security officer will not get any elevated access.
-	if(!CONFIG_GET(number/depsec_access_level))
-		return
-
-	if(CONFIG_GET(number/depsec_access_level) == POPULATION_SCALED_ACCESS)
-		var/minimal_security_officers = 3 // We do not spawn in any more lockers if there are 5 or less security officers, so let's keep it lower than that number.
-		var/datum/job/J = SSjob.get_job(JOB_SECURITY_OFFICER)
-		if((J.spawn_positions - minimal_security_officers) <= 0)
-			access |= elevated_access
-
-	if(CONFIG_GET(number/depsec_access_level) == ALWAYS_GETS_ACCESS)
-		access |= elevated_access
 
 /datum/id_trim/job/shaft_miner
 	assignment = JOB_SHAFT_MINER
@@ -1315,9 +1291,6 @@
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
-
-#undef POPULATION_SCALED_ACCESS
-#undef ALWAYS_GETS_ACCESS
 
 /datum/id_trim/job/human_ai
 	assignment = JOB_HUMAN_AI
