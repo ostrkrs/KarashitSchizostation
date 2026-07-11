@@ -184,5 +184,3 @@
 	show_in_report = TRUE
 	report_message = "Due to a mishap at the Robust Softdrinks Megafactory, some drinks may contain traces of ethanol or psychoactive chemicals."
 	trait_to_give = STATION_TRAIT_SPIKED_DRINKS
-
-#undef GLOW_NEBULA

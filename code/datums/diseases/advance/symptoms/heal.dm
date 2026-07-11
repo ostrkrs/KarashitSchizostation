@@ -651,4 +651,4 @@
 	return 1
 
 /datum/symptom/heal/radiation/can_generate_randomly()
-	return ..() && !HAS_TRAIT(SSstation, STATION_TRAIT_RADIOACTIVE_NEBULA) //because people can never really suffer enough
+	return ..()
