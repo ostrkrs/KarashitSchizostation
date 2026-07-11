@@ -64,8 +64,6 @@
 		/area/station/construction,
 		/area/station/engineering,
 		/area/station/maintenance/disposal,
-		/area/station/maintenance/radshelter,
-		/area/station/maintenance/tram,
 		/area/station/medical,
 		/area/station/research,
 		/area/station/security,

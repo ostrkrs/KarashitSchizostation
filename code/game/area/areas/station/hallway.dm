@@ -37,25 +37,7 @@
 	name = "\improper Upper Central Primary Hallway"
 	icon_state = "centralhall"
 
-/area/station/hallway/primary/tram
-	name = "\improper Primary Tram"
-
-/area/station/hallway/primary/tram/left
-	name = "\improper Port Tram Dock"
-	icon_state = "halltramL"
-
-/area/station/hallway/primary/tram/center
-	name = "\improper Central Tram Dock"
-	icon_state = "halltramM"
-
-/area/station/hallway/primary/tram/right
-	name = "\improper Starboard Tram Dock"
-	icon_state = "halltramR"
-
-// This shouldn't be used, but it gives an icon for the enviornment tree in the map editor
-/area/station/hallway/secondary
-	icon_state = "secondaryhall"
-
+//secondary hallways
 /area/station/hallway/secondary/command
 	name = "\improper Command Hallway"
 	icon_state = "bridge_hallway"
@@ -79,21 +61,9 @@
 	name = "\improper Departure Lounge"
 	icon_state = "escape_lounge"
 
-/area/station/hallway/secondary/dock
-	name = "\improper Secondary Station Dock Hallway"
-	icon_state = "hall"
-
 /area/station/hallway/secondary/service
 	name = "\improper Service Hallway"
 	icon_state = "hall_service"
-
-/area/station/hallway/secondary/spacebridge
-	name = "\improper Space Bridge"
-	icon_state = "hall"
-
-/area/station/hallway/secondary/recreation
-	name = "\improper Recreation Hallway"
-	icon_state = "hall"
 
 /*
 * Station Specific Areas
@@ -113,6 +83,7 @@
 /area/station/hallway/floor1/fore
 	name = "\improper First Floor Fore Hallway"
 	icon_state = "1_fore"
+
 //2
 /area/station/hallway/floor2
 	name = "\improper Second Floor Hallway"
@@ -124,25 +95,3 @@
 /area/station/hallway/floor2/fore
 	name = "\improper Second Floor Fore Hallway"
 	icon_state = "2_fore"
-//3
-/area/station/hallway/floor3
-	name = "\improper Third Floor Hallway"
-
-/area/station/hallway/floor3/aft
-	name = "\improper Third Floor Aft Hallway"
-	icon_state = "3_aft"
-
-/area/station/hallway/floor3/fore
-	name = "\improper Third Floor Fore Hallway"
-	icon_state = "3_fore"
-//4
-/area/station/hallway/floor4
-	name = "\improper Fourth Floor Hallway"
-
-/area/station/hallway/floor4/aft
-	name = "\improper Fourth Floor Aft Hallway"
-	icon_state = "4_aft"
-
-/area/station/hallway/floor4/fore
-	name = "\improper Fourth Floor Fore Hallway"
-	icon_state = "4_fore"

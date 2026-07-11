@@ -9,10 +9,6 @@
 	name = "\improper Cafeteria"
 	icon_state = "cafeteria"
 
-/area/station/service/minibar
-	name = "\improper Mini Bar"
-	icon_state = "minibar"
-
 /area/station/service/kitchen
 	name = "\improper Kitchen"
 	icon_state = "kitchen"
@@ -51,7 +47,7 @@
 	icon_state = "theatre"
 	sound_environment = SOUND_AREA_WOODFLOOR
 
-/area/station/service/theater_dressing
+/area/station/service/theater/dressing
 	name = "\improper Theater Dressing Room"
 	icon_state = "theatre_dressing"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
@@ -92,7 +88,7 @@
 	icon_state = "library"
 
 /*
-* Chapel/Pubby Monestary Areas
+* Chapel Areas
 */
 
 /area/station/service/chapel
@@ -121,10 +117,6 @@
 	name = "\improper Chapel Funeral Room"
 	icon_state = "chapelfuneral"
 
-/area/station/service/hydroponics/garden/monastery
-	name = "\improper Monastery Garden"
-	icon_state = "hydro"
-
 /*
 * Hydroponics/Garden Areas
 */
@@ -133,10 +125,6 @@
 	name = "Hydroponics"
 	icon_state = "hydro"
 	sound_environment = SOUND_AREA_STANDARD_STATION
-
-/area/station/service/hydroponics/upper
-	name = "Upper Hydroponics"
-	icon_state = "hydro"
 
 /area/station/service/hydroponics/garden
 	name = "Garden"
@@ -164,27 +152,3 @@
 	name = "\improper Abandoned Garden"
 	icon_state = "abandoned_garden"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
-
-/area/station/service/kitchen/abandoned
-	name = "\improper Abandoned Kitchen"
-	icon_state = "abandoned_kitchen"
-
-/area/station/service/electronic_marketing_den
-	name = "\improper Electronic Marketing Den"
-	icon_state = "abandoned_marketing_den"
-
-/area/station/service/abandoned_gambling_den
-	name = "\improper Abandoned Gambling Den"
-	icon_state = "abandoned_gambling_den"
-
-/area/station/service/abandoned_gambling_den/gaming
-	name = "\improper Abandoned Gaming Den"
-	icon_state = "abandoned_gaming_den"
-
-/area/station/service/theater/abandoned
-	name = "\improper Abandoned Theater"
-	icon_state = "abandoned_theatre"
-
-/area/station/service/library/abandoned
-	name = "\improper Abandoned Library"
-	icon_state = "abandoned_library"

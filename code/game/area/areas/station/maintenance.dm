@@ -180,21 +180,6 @@
 	name = "Fore Port Maintenance"
 	icon_state = "fpmaint"
 
-/area/station/maintenance/tram
-	name = "Primary Tram Maintenance"
-
-/area/station/maintenance/tram/left
-	name = "\improper Port Tram Underpass"
-	icon_state = "mainttramL"
-
-/area/station/maintenance/tram/mid
-	name = "\improper Central Tram Underpass"
-	icon_state = "mainttramM"
-
-/area/station/maintenance/tram/right
-	name = "\improper Starboard Tram Underpass"
-	icon_state = "mainttramR"
-
 /*
 * Discrete Maintenance Areas
 */
@@ -224,32 +209,6 @@
 
 /area/station/maintenance/space_hut/observatory
 	name = "\improper Space Observatory"
-
-/*
-* Radation Storm Shelters
-*/
-
-/area/station/maintenance/radshelter
-	name = "\improper Radstorm Shelter"
-	icon_state = "radstorm_shelter"
-
-/area/station/maintenance/radshelter/medical
-	name = "\improper Medical Radstorm Shelter"
-
-/area/station/maintenance/radshelter/sec
-	name = "\improper Security Radstorm Shelter"
-
-/area/station/maintenance/radshelter/service
-	name = "\improper Service Radstorm Shelter"
-
-/area/station/maintenance/radshelter/civil
-	name = "\improper Civilian Radstorm Shelter"
-
-/area/station/maintenance/radshelter/sci
-	name = "\improper Science Radstorm Shelter"
-
-/area/station/maintenance/radshelter/cargo
-	name = "\improper Cargo Radstorm Shelter"
 
 /*
 * External Hull Access Areas

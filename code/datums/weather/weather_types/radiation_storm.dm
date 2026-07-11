@@ -81,8 +81,6 @@
 
 /// Used by the radioactive nebula when the station doesnt have enough shielding
 /datum/weather/rad_storm/nebula
-	protected_areas = list(/area/shuttle, /area/station/maintenance/radshelter)
-
 	weather_overlay = "nebula_radstorm"
 	end_message = null
 	weather_flags = parent_type::weather_flags | WEATHER_ENDLESS
