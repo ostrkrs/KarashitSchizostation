@@ -185,7 +185,6 @@
 		/datum/reagent/gondola_mutation_toxin,
 		/datum/reagent/metalgen,
 		/datum/reagent/flightpotion,
-		/datum/reagent/eigenstate,
 		/datum/reagent/magillitis,
 		/datum/reagent/pax,
 		/datum/reagent/gluttonytoxin,

@@ -9,7 +9,7 @@
 	///The types of loan events already run (and to be excluded if the event triggers).
 	admin_setup = list(/datum/event_admin_setup/listed_options/shuttle_loan)
 	///A list of normally unavailable (or already run) situations datums
-	var/list/unavailable_situations = list(/datum/shuttle_loan_situation/mail_strike)
+	var/list/unavailable_situations = list()
 
 /datum/round_event_control/shuttle_loan/can_spawn_event(players_amt, allow_magic = FALSE)
 	. = ..()

@@ -102,8 +102,6 @@
 #define CLOWN_NONSENSE_FILE "clown_nonsense.json"
 /// File location for cult shuttle curse descriptions
 #define CULT_SHUTTLE_CURSE "cult_shuttle_curse.json"
-/// File location for eigenstasium lines
-#define EIGENSTASIUM_FILE "eigenstasium.json"
 /// File location for hallucination lines
 #define HALLUCINATION_FILE "hallucination.json"
 /// File location for ninja lines

@@ -241,9 +241,6 @@
 #define COLOR_THEME_TRASENKNOX "#3ce375"
 #define COLOR_THEME_DETECTIVE "#c7b08b"
 
-///Colors for eigenstates
-#define COLOR_PERIWINKLEE "#9999FF"
-
 /// Starlight!
 #define COLOR_STARLIGHT "#8589fa"
 /**

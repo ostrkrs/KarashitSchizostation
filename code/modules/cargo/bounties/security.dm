@@ -62,7 +62,6 @@
 			/area/station/security/prison,\
 			/area/station/security/range,\
 			/area/station/security/checkpoint,\
-			/area/station/security/tram,\
 			/area/station/security/breakroom,\
 			/area/station/security/interrogation))
 		for (var/area_type in possible_areas)

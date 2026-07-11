@@ -78,34 +78,3 @@
 		send_status_display_radiation_alert()
 	else
 		clear_status_display_radiation()
-
-/// Used by the radioactive nebula when the station doesnt have enough shielding
-/datum/weather/rad_storm/nebula
-	weather_overlay = "nebula_radstorm"
-	end_message = null
-	weather_flags = parent_type::weather_flags | WEATHER_ENDLESS
-
-	mutate_chance = 0.1
-	///Chance we pulse a living during the storm
-	var/radiation_chance = 5
-
-/datum/weather/rad_storm/nebula/weather_act_mob(mob/living/living)
-	..()
-
-	if(!prob(radiation_chance))
-		return
-
-	if(!SSradiation.can_irradiate_basic(living) || SSradiation.wearing_rad_protected_clothing(living))
-		return
-
-	radiation_pulse(
-		source = living,
-		max_range = 0,
-		threshold = RAD_LIGHT_INSULATION,
-		chance = URANIUM_IRRADIATION_CHANCE,
-	)
-
-/datum/weather/rad_storm/nebula/status_alarm(active)
-	if(!active) //we stay on
-		return
-	..()

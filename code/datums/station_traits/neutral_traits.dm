@@ -1,29 +1,3 @@
-///This station traits gives 5 bananium sheets to the clown (and every dead clown out there in deep space or lavaland).
-/datum/station_trait/bananium_shipment
-	name = "Bananium Shipment"
-	trait_type = STATION_TRAIT_NEUTRAL
-	weight = 5
-	cost = STATION_TRAIT_COST_LOW
-	report_message = "Rumors has it that the clown planet has been sending support packages to clowns in this system."
-	trait_to_give = STATION_TRAIT_BANANIUM_SHIPMENTS
-
-/datum/station_trait/bananium_shipment/get_pulsar_message()
-	var/advisory_string = "Advisory Level: <b>Clown Planet</b></center><BR>"
-	advisory_string += "Your sector's advisory level is Clown Planet! Our bike horns have picked up on a large bananium stash. Clowns show a large influx of clowns on your station. We highly advise you to slip any threats to keep Honkotrasen assets within the Banana Sector. The Department of Intelligence advises defending chemistry from any clowns that are trying to make baldium or space lube."
-	return advisory_string
-
-/datum/station_trait/unnatural_atmosphere
-	name = "Unnatural atmospherical properties"
-	trait_type = STATION_TRAIT_NEUTRAL
-	weight = 5
-	cost = STATION_TRAIT_COST_LOW
-	show_in_report = TRUE
-	report_message = "System's local planet has irregular atmospherical properties."
-	trait_to_give = STATION_TRAIT_UNNATURAL_ATMOSPHERE
-
-	// This station trait modifies the atmosphere, which is too far past the time admins are able to revert it
-	can_revert = FALSE
-
 /datum/station_trait/spider_infestation
 	name = "Spider Infestation"
 	trait_type = STATION_TRAIT_NEUTRAL
@@ -52,7 +26,7 @@
 	weight = 5
 	show_in_report = FALSE
 	cost = STATION_TRAIT_COST_LOW
-	report_message = "Ian has gone exploring somewhere in the station."
+	report_message = "Ian has gone exploring somewhere on the deck."
 
 /datum/station_trait/ian_adventure/on_round_start()
 	for(var/mob/living/basic/pet/dog/corgi/dog in GLOB.mob_list)
@@ -189,38 +163,6 @@
 	new_scryer.update_name()
 
 	spawned.equip_to_slot_or_del(new_scryer, ITEM_SLOT_NECK, initial = FALSE)
-
-/// Tells the area map generator to ADD MORE TREEEES
-/datum/station_trait/forested
-	name = "Forested"
-	trait_type = STATION_TRAIT_NEUTRAL
-	trait_to_give = STATION_TRAIT_FORESTED
-	trait_flags = STATION_TRAIT_PLANETARY
-	weight = 10
-	show_in_report = TRUE
-	report_message = "There sure are a lot of trees out there."
-
-/datum/station_trait/linked_closets
-	name = "Closet Anomaly"
-	trait_type = STATION_TRAIT_NEUTRAL
-	show_in_report = TRUE
-	weight = 1
-	report_message = "We've reports of high amount of trace eigenstasium on your station. Ensure that your closets are working correctly."
-
-/datum/station_trait/linked_closets/on_round_start()
-	. = ..()
-	var/list/roundstart_closets = GLOB.roundstart_station_closets.Copy()
-
-	/**
-	 * The number of links to perform. the chance of a closet being linked are about 1 in 10
-	 * There are more than 220 roundstart closets on meta, so, about 22 closets will be affected on average.
-	 */
-	var/number_of_links = round(length(roundstart_closets) * (rand(400, 430)*0.0001), 1)
-	for(var/repetition in 1 to number_of_links)
-		var/list/targets = list()
-		for(var/how_many in 1 to rand(2,3))
-			targets += pick_n_take(roundstart_closets)
-		GLOB.eigenstate_manager.create_new_link(targets)
 
 /// Crew don't ever spawn as enemies of the station. Obsesseds, blob infection, space changelings etc can still happen though
 /datum/station_trait/background_checks
