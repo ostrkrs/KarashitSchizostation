@@ -111,9 +111,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	if (current_version < 41)
 		migrate_character_to_tgui_prefs_menu()
 
-	if (current_version < 42)
-		migrate_body_types(save_data)
-
 	if (current_version < 43)
 		migrate_legacy_sound_toggles(savefile)
 

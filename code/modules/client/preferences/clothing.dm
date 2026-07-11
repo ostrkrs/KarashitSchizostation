@@ -66,45 +66,6 @@
 /datum/preference/choiced/backpack/apply_to_human(mob/living/carbon/human/target, value)
 	target.backpack = value
 
-#define USE_GENDER "Use gender"
-
-/// Jumpsuit preference
-/datum/preference/choiced/jumpsuit
-	main_feature_name = "Jumpsuit"
-	savefile_key = "jumpsuit_style"
-	savefile_identifier = PREFERENCE_CHARACTER
-	priority = PREFERENCE_PRIORITY_BODY_TYPE
-	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
-	can_randomize = FALSE
-
-/datum/preference/choiced/jumpsuit/init_possible_values()
-	return list(
-		USE_GENDER,
-		PREF_SUIT,
-		PREF_SKIRT,
-	)
-
-/datum/preference/choiced/jumpsuit/create_default_value()
-	return USE_GENDER
-
-/datum/preference/choiced/jumpsuit/apply_to_human(mob/living/carbon/human/target, value)
-	if (value == USE_GENDER)
-		if (target.gender == FEMALE)
-			target.jumpsuit_style = PREF_SKIRT
-		else
-			target.jumpsuit_style = PREF_SUIT
-	else
-		target.jumpsuit_style = value
-
-/datum/preference/choiced/jumpsuit/is_accessible(datum/preferences/preferences)
-	if (!..(preferences))
-		return FALSE
-
-	var/datum/species/species = preferences.read_preference(/datum/preference/choiced/species)
-	return initial(species.sexes)
-
-#undef USE_GENDER
-
 /// Socks preference
 /datum/preference/choiced/socks
 	savefile_key = "socks"
@@ -152,7 +113,7 @@
 /datum/preference/choiced/top_underwear
 	savefile_key = "top_underwear"
 	savefile_identifier = PREFERENCE_CHARACTER
-	priority = PREFERENCE_PRIORITY_BODY_TYPE
+	priority = PREFERENCE_PRIORITY_UNDERWEAR
 	main_feature_name = "Top Underwear"
 	category = PREFERENCE_CATEGORY_CLOTHING
 	should_generate_icons = TRUE
@@ -169,7 +130,7 @@
 		if(MALE)
 			return /datum/sprite_accessory/clothing/underwear_top/nude::name
 		if(FEMALE)
-			return /datum/sprite_accessory/clothing/underwear_top/sports_bra::name
+			return /datum/sprite_accessory/clothing/underwear_top/bra::name
 
 	return ..()
 
@@ -226,6 +187,15 @@
 
 /datum/preference/choiced/bottom_underwear/create_default_value()
 	return /datum/sprite_accessory/clothing/underwear_bottom/nude::name
+
+/datum/preference/choiced/top_underwear/create_informed_default_value(datum/preferences/preferences)
+	switch(preferences.read_preference(/datum/preference/choiced/gender))
+		if(MALE)
+			return /datum/sprite_accessory/clothing/underwear_bottom/male_briefs::name
+		if(FEMALE)
+			return /datum/sprite_accessory/clothing/underwear_bottom/female_panties::name
+
+	return ..()
 
 /datum/preference/choiced/bottom_underwear/icon_for(value)
 	var/static/datum/universal_icon/lower_half

@@ -370,12 +370,7 @@
 
 	//converts the uniform string into the path we'll wear, whether it's the skirt or regular variant
 	var/holder
-	if(H.jumpsuit_style == PREF_SKIRT)
-		holder = "[uniform]/skirt"
-		if(!text2path(holder))
-			holder = "[uniform]"
-	else
-		holder = "[uniform]"
+	holder = "[uniform]"
 	uniform = text2path(holder)
 
 	var/client/client = GLOB.directory[ckey(H.mind?.key)]

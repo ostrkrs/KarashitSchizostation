@@ -149,7 +149,6 @@
 
 	features += "feature_serpcolor"
 	features -= "socks"
-	features -= "jumpsuit_style"
 
 	return features
 

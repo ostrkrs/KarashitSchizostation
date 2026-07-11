@@ -21,7 +21,6 @@ The console is located at computer/gulag_teleporter.dm
 	var/message_cooldown
 	var/breakout_time = 600
 	var/jumpsuit_type = /obj/item/clothing/under/rank/prisoner
-	var/jumpskirt_type = /obj/item/clothing/under/rank/prisoner/skirt
 	var/shoes_type = /obj/item/clothing/shoes/sneakers/orange
 	var/obj/machinery/gulag_item_reclaimer/linked_reclaimer
 	var/static/list/telegulag_required_items = typecacheof(list(
@@ -156,8 +155,7 @@ The console is located at computer/gulag_teleporter.dm
 	strip_prisoner(occupant)
 	var/mob/living/carbon/human/prisoner = occupant
 	if(jumpsuit_type)
-		var/suit_or_skirt = prisoner.jumpsuit_style == PREF_SKIRT ? jumpskirt_type : jumpsuit_type //Check player prefs for jumpsuit or jumpskirt toggle, then give appropriate prison outfit.
-		prisoner.equip_to_appropriate_slot(new suit_or_skirt, qdel_on_fail = TRUE)
+		prisoner.equip_to_appropriate_slot(new jumpsuit_type, qdel_on_fail = TRUE)
 	if(shoes_type)
 		prisoner.equip_to_appropriate_slot(new shoes_type, qdel_on_fail = TRUE)
 	if(id)

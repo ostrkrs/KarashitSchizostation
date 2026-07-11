@@ -1104,8 +1104,6 @@
 	if(!.)
 		return
 
-	access |= department_access
-
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
