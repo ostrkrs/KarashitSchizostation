@@ -40,7 +40,6 @@
 		"freeform_module",
 		"intellicard",
 		"mecha_tracking_ai_control",
-		"nutimov_module",
 		"oxygen_module",
 		"paladin_module",
 		"protectstation_module",

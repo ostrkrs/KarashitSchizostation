@@ -124,10 +124,6 @@
 	name = "'10 Commandments' Core AI Module"
 	law_id = "ten_commandments"
 
-/obj/item/ai_module/core/full/nutimov
-	name = "'Nutimov' Core AI Module"
-	law_id = "nutimov"
-
 /obj/item/ai_module/core/full/dungeon_master
 	name = "'Dungeon Master' Core AI Module"
 	law_id = "dungeon_master"
