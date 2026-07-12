@@ -23,7 +23,7 @@
 
 	var/suicided = FALSE
 	var/mob/living/brain/brainmob = null
-	/// If it's a fake brain with no brainmob assigned. Feedback messages will be faked as if it does have a brainmob. See changelings & dullahans.
+	/// If it's a fake brain with no brainmob assigned. Feedback messages will be faked as if it does have a brainmob. See changelings.
 	var/decoy_override = FALSE
 
 	var/list/datum/brain_trauma/traumas = list()

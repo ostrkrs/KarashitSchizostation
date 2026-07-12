@@ -409,16 +409,13 @@
 		create_chat_message(src, raw_message = raw_self_message, runechat_flags = audible_message_flags)
 
 /// Gets a linked mob, letting atoms act as proxies for actions that rely on hearing sensitivity.
-/// For example, AIs hearing around their holopads, and dullahans hearing around their heads.
+/// For example, AIs hearing around their holopads.
 /// Normal say messages are handled by Hear(), this is for other visible/audible messages
 /atom/movable/proc/get_listening_mob()
 	return
 
 /obj/effect/overlay/holo_pad_hologram/get_listening_mob()
 	return Impersonation
-
-/obj/item/dullahan_relay/get_listening_mob()
-	return owner
 
 /mob/get_listening_mob()
 	return src

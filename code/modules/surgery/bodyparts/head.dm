@@ -27,7 +27,7 @@
 	unarmed_effectiveness = 0
 	bodypart_trait_source = HEAD_TRAIT
 
-	/// Do we show the information about missing organs upon being examined? Defaults to TRUE, useful for Dullahan heads.
+	/// Do we show the information about missing organs upon being examined? Defaults to TRUE.
 	var/show_organs_on_examine = TRUE
 
 	//Limb appearance info:
