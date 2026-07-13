@@ -873,7 +873,7 @@ DEFINE_BITFIELD(turret_flags, list(
 	faction = list(FACTION_NEUTRAL,FACTION_SILICON,FACTION_TURRET) //Minebots, medibots, etc that should not be shot.
 
 /obj/machinery/porta_turret/aux_base/assess_perp(mob/living/carbon/human/perp)
-	return 0 //Never shoot humanoids. You are on your own if Ashwalkers or the like attack!
+	return 0
 
 /obj/machinery/porta_turret/aux_base/setup()
 	return

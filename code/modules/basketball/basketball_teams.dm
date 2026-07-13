@@ -119,13 +119,6 @@
 	head = /obj/item/clothing/head/costume/ushanka
 	gloves = /obj/item/clothing/gloves/color/brown
 
-/datum/outfit/basketball/ash_gladiators
-	name = "Basketball Ash Gladiators"
-	head = /obj/item/clothing/head/helmet/gladiator
-	uniform = /obj/item/clothing/under/costume/gladiator/ash_walker
-	back = /obj/item/spear
-	shoes = null
-
 /datum/outfit/basketball/beach_bums
 	name = "Basketball Beach Bums"
 	underwear_top = /datum/sprite_accessory/clothing/underwear_top/nude

@@ -10,7 +10,6 @@
 	decal_reagent = /datum/reagent/brimdust
 	reagent_amount = 15
 
-/// Ashwalker ore sensor crafted from brimdemon ash
 /obj/item/ore_sensor
 	name = "ore sensor"
 	desc = "Using demonic frequencies, this ear-mounted tool detects ores in the nearby terrain."

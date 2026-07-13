@@ -683,3 +683,4 @@
 	name = "serpentid brain"
 	icon_state = "brain_serpentid"
 	can_smoothen_out = FALSE
+	variant_traits_added = list(TRAIT_PRIMITIVE)

@@ -37,18 +37,6 @@
 	// Test one breath of Nitrogen. Suffocate due to the breath being 100% N2.
 	lungs_test_check_breath("pure Nitrogen", lab_rat, test_lungs, nitro_test_mix, expect_failure = TRUE)
 
-/// Tests the lavaland/Ashwalker lungs organ.
-/// Ensures they can breathe from the lavaland air mixture properly, and suffocate on inadequate mixture.
-/datum/unit_test/lungs/lungs_sanity_ashwalker
-
-/datum/unit_test/lungs/lungs_sanity_ashwalker/Run()
-	// Gas mix resembling one cell of lavaland's atmosphere.
-	var/datum/gas_mixture/lavaland_test_mix = create_lavaland_mix()
-	var/obj/item/organ/lungs/lavaland/test_lungs = allocate(/obj/item/organ/lungs/lavaland)
-	var/mob/living/carbon/human/lab_rat = allocate(/mob/living/carbon/human/consistent)
-	// Test one breath of Lavaland gas mix on Ashwalker lungs.
-	lungs_test_check_breath("Lavaland air mixture", lab_rat, test_lungs, lavaland_test_mix)
-
 /// Comprehensive unit test for [/obj/item/organ/lungs/proc/check_breath()]
 /// If "expect_failure" is set to TRUE, the test ensures the given Human suffocated.
 /// A "test_name" string is required to contextualize test logs. Describe the gas you're testing.
@@ -166,13 +154,6 @@
 /// Set up a pure Nitrogen gas mix.
 /datum/unit_test/lungs/proc/create_nitrogen_mix()
 	return create_gas_mix(list(/datum/gas/nitrogen = 1))
-
-/// Set up an Lavaland gas mix which is "ideal" for Ashwalker life.
-/datum/unit_test/lungs/proc/create_lavaland_mix()
-	var/datum/gas_mixture/immutable/planetary/lavaland_mix = SSair.planetary[LAVALAND_DEFAULT_ATMOS]
-	var/datum/gas_mixture/test_mix = allocate(/datum/gas_mixture, 2500)
-	test_mix.copy_from(lavaland_mix)
-	return test_mix
 
 #undef TEST_CHECK_BREATH_MESSAGE
 #undef TEST_ALERT_THROW_MESSAGE

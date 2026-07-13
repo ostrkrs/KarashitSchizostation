@@ -1,4 +1,4 @@
-/// Tests to ensure humans and ashwalkers can breath in normal situations.
+/// Tests to ensure humans can breath in normal situations.
 /// Ensures algorithmic correctness of the "breathe()" and "toggle_internals()" procs.
 /// Built to prevent regression on an issue surrounding QUANTIZE() and BREATH_VOLUME.
 /// See the comment on BREATH_VOLUME for more details.
@@ -49,24 +49,6 @@
 	TEST_ASSERT(lab_rat.failed_last_breath && lab_rat.has_alert(ALERT_NOT_ENOUGH_OXYGEN), "Humans should suffocate from pure n2 tanks")
 
 /datum/unit_test/breath/breath_sanity/Destroy()
-	//Reset initial_gas_mix to avoid future issues on other tests
-	var/turf/open/to_fill = run_loc_floor_bottom_left
-	to_fill.initial_gas_mix = OPENTURF_DEFAULT_ATMOS
-	return ..()
-
-/// Tests to make sure ashwalkers can breathe from the lavaland air.
-/datum/unit_test/breath/breath_sanity_ashwalker
-
-/datum/unit_test/breath/breath_sanity_ashwalker/Run()
-	var/mob/living/carbon/human/species/lizard/ashwalker/lab_rat = allocate(/mob/living/carbon/human/species/lizard/ashwalker)
-	lab_rat.forceMove(run_loc_floor_bottom_left)
-	var/turf/open/to_fill = run_loc_floor_bottom_left
-	to_fill.initial_gas_mix = LAVALAND_DEFAULT_ATMOS
-	to_fill.air = to_fill.create_gas_mixture()
-	lab_rat.breathe()
-	TEST_ASSERT(!lab_rat.has_alert(ALERT_NOT_ENOUGH_OXYGEN), "Ashwalkers can't get a full breath from the Lavaland's initial_gas_mix on a turf")
-
-/datum/unit_test/breath/breath_sanity_ashwalker/Destroy()
 	//Reset initial_gas_mix to avoid future issues on other tests
 	var/turf/open/to_fill = run_loc_floor_bottom_left
 	to_fill.initial_gas_mix = OPENTURF_DEFAULT_ATMOS

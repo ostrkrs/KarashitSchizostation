@@ -973,11 +973,10 @@
 /obj/item/organ/lungs/lavaland
 	name = "blackened frilled lungs" // blackened from necropolis exposure
 	desc = "Exposure to the necropolis has mutated these lungs to breathe the air of Indecipheres, the lava-covered moon."
-	icon_state = "lungs-ashwalker"
+	icon_state = "lungs-lavaland"
 	breath_noise = "a throbbing smoke-like hiss"
 
-// Normal oxygen is 21 kPa partial pressure, but SS13 humans can tolerate down
-// to 16 kPa. So it follows that ashwalkers, as humanoids, follow the same rules.
+// Normal oxygen is 21 kPa partial pressure, but SS13 humans can tolerate down to 16 kPa.
 #define GAS_TOLERANCE 5
 
 /obj/item/organ/lungs/lavaland/Initialize(mapload)
@@ -1013,9 +1012,6 @@
 
 	// Increase phoron tolerance based on amount in base air
 	safe_phoron_max += phoron_pp
-
-	// CO2 is always a waste gas, so none is required, but ashwalkers
-	// tolerate the base amount plus tolerance*2 (humans tolerate only 10 pp)
 
 	safe_co2_max = carbon_dioxide_pp + GAS_TOLERANCE * 2
 

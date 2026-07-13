@@ -93,14 +93,6 @@
 	team_name = "Soviet Bears"
 	home_team_uniform = /datum/outfit/basketball/soviet_bears
 
-/datum/lazy_template/basketball/ash_gladiators
-	name = "Ash Gladiators Stadium"
-	description = "The homecourt of the Ash Gladiators."
-	map_name = "ash_gladiators"
-	key = "ash_gladiators"
-	team_name = "Ash Gladiators"
-	home_team_uniform = /datum/outfit/basketball/ash_gladiators
-
 /datum/lazy_template/basketball/beach_bums
 	name = "Beach Bums Stadium"
 	description = "The homecourt of the Beach Bums."

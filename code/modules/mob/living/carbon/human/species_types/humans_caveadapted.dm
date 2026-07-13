@@ -27,8 +27,8 @@
 		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/caver,
 		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/caver,
 		BODY_ZONE_HEAD = /obj/item/bodypart/head/caver,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/caver,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/caver,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/digitigrade/caver,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/digitigrade/caver,
 		BODY_ZONE_CHEST = /obj/item/bodypart/chest/caver,
 	)
 

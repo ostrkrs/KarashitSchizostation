@@ -118,7 +118,6 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define isghostspecies(A) (is_species(A, /datum/species/ghost))
 #define isgolem(A) (is_species(A, /datum/species/golem))
 #define islizard(A) (is_species(A, /datum/species/lizard))
-#define isashwalker(A) (is_species(A, /datum/species/lizard/ashwalker))
 #define ispodperson(A) (is_species(A, /datum/species/pod))
 #define isflyperson(A) (is_species(A, /datum/species/fly))
 #define isjellyperson(A) (is_species(A, /datum/species/jelly))

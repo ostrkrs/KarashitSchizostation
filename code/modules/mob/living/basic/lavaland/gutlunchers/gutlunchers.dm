@@ -5,7 +5,7 @@
 
 /mob/living/basic/mining/gutlunch
 	name = "gutlunch"
-	desc = "A scavenger that eats raw ores, often found alongside ash walkers. Produces a thick, nutritious milk."
+	desc = "A scavenger that eats raw ores. Produces a thick, nutritious milk."
 	icon = 'icons/mob/simple/lavaland/lavaland_monsters.dmi'
 	icon_state = "gutlunch"
 	icon_living = "gutlunch"
@@ -14,7 +14,7 @@
 	mob_biotypes = MOB_ORGANIC|MOB_BUG|MOB_MINING
 	basic_mob_flags = DEL_ON_DEATH
 	speak_emote = list("warbles", "quavers")
-	faction = list(FACTION_ASHWALKER)
+	faction = list(FACTION_MINING)
 	response_help_continuous = "pets"
 	response_help_simple = "pet"
 	response_disarm_continuous = "gently pushes aside"
