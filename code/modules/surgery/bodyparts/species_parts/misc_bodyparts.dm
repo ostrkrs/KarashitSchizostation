@@ -418,51 +418,6 @@
 	dmg_overlay_type = null
 	bodypart_flags = BODYPART_UNHUSKABLE
 
-///MUSHROOM
-/obj/item/bodypart/head/mushroom
-	limb_id = SPECIES_MUSHROOM
-	is_dimorphic = TRUE
-	burn_modifier = 1.25
-	head_flags = NONE
-	teeth_count = 0
-
-/obj/item/bodypart/chest/mushroom
-	limb_id = SPECIES_MUSHROOM
-	is_dimorphic = TRUE
-	bodypart_traits = list(TRAIT_NO_JUMPSUIT)
-	burn_modifier = 1.25
-	wing_types = null
-
-/obj/item/bodypart/arm/left/mushroom
-	limb_id = SPECIES_MUSHROOM
-	unarmed_damage_low = 6
-	unarmed_damage_high = 14
-	unarmed_effectiveness = 15
-	burn_modifier = 1.25
-
-/obj/item/bodypart/arm/right/mushroom
-	limb_id = SPECIES_MUSHROOM
-	unarmed_damage_low = 6
-	unarmed_damage_high = 14
-	unarmed_effectiveness = 15
-	burn_modifier = 1.25
-
-/obj/item/bodypart/leg/left/mushroom
-	limb_id = SPECIES_MUSHROOM
-	unarmed_damage_low = 9
-	unarmed_damage_high = 21
-	unarmed_effectiveness = 20
-	burn_modifier = 1.25
-	speed_modifier = 0.75
-
-/obj/item/bodypart/leg/right/mushroom
-	limb_id = SPECIES_MUSHROOM
-	unarmed_damage_low = 9
-	unarmed_damage_high = 21
-	unarmed_effectiveness = 20
-	burn_modifier = 1.25
-	speed_modifier = 0.75
-
 //GOLEM
 /obj/item/bodypart/head/golem
 	icon = 'icons/mob/human/species/golems.dmi'

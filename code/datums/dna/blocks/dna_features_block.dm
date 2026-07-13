@@ -150,15 +150,6 @@
 /datum/dna_block/feature/moth_marking/apply_to_mob(mob/living/carbon/human/target, dna_hash)
 	target.dna.features[feature_key] = SSaccessories.moth_markings_list[deconstruct_block(get_block(dna_hash), length(SSaccessories.moth_markings_list))]
 
-/datum/dna_block/feature/mush_cap
-	feature_key = FEATURE_MUSH_CAP
-
-/datum/dna_block/feature/mush_cap/create_unique_block(mob/living/carbon/human/target)
-	return construct_block(SSaccessories.caps_list.Find(target.dna.features[feature_key]), length(SSaccessories.caps_list))
-
-/datum/dna_block/feature/mush_cap/apply_to_mob(mob/living/carbon/human/target, dna_hash)
-	target.dna.features[feature_key] = SSaccessories.caps_list[deconstruct_block(get_block(dna_hash), length(SSaccessories.caps_list))]
-
 /datum/dna_block/feature/pod_hair
 	feature_key = FEATURE_POD_HAIR
 

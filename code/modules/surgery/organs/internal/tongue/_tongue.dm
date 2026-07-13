@@ -627,14 +627,6 @@
 	toxic_foodtypes = MEAT | RAW | SEAFOOD
 	languages_native = list(/datum/language/moffic)
 
-/obj/item/organ/tongue/mush
-	name = "mush-tongue-room"
-	desc = "You poof with this. Got it?"
-	icon = 'icons/obj/service/hydroponics/seeds.dmi'
-	icon_state = "mycelium-angel"
-	say_mod = "poofs"
-	languages_native = list(/datum/language/mushroom)
-
 /obj/item/organ/tongue/pod
 	name = "pod tongue"
 	desc = "A plant-like organ used for speaking and eating."

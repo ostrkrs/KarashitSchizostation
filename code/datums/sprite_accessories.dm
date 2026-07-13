@@ -2081,15 +2081,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Aquatic"
 	icon_state = "aqua"
 
-/datum/sprite_accessory/caps
-	icon = 'icons/mob/human/species/mush_cap.dmi'
-	color_src = HAIR_COLOR
-	em_block = TRUE
-
-/datum/sprite_accessory/caps/round
-	name = "Round"
-	icon_state = "round"
-
 /datum/sprite_accessory/moth_wings
 	icon = 'icons/mob/human/species/moth/moth_wings.dmi'
 	color_src = null

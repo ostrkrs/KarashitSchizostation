@@ -51,7 +51,7 @@
 #define FACTION_WATCHER "watcher"
 /// Monkeys and gorillas
 #define FACTION_MONKEY "monkey"
-/// Mushrooms and mushroompeople
+/// Mushrooms
 #define FACTION_MUSHROOM "mushroom"
 /// Nanotrasen private security
 #define FACTION_NANOTRASEN_PRIVATE "nanotrasen_private"
