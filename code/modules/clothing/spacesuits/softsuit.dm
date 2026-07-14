@@ -81,7 +81,7 @@
 	var/torn = FALSE
 	icon_state = "syndicate-orange"
 	inhand_icon_state = "syndicate-orange"
-	slowdown = 2
+	slowdown = 1.5
 	armor_type = /datum/armor/space_fragile
 	strip_delay = 6.5 SECONDS
 
