@@ -45,8 +45,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	///The alpha used by the facial hair. 255 is completely solid, 0 is invisible.
 	var/facial_hair_alpha = 255
 
-	///Never, Optional, or Forced digi legs?
-	var/digitigrade_customization = DIGITIGRADE_NEVER
 	///If your race uses a non standard bloodtype (A+, O-, AB-, etc). For example, lizards have L type blood.
 	///Reagent that your species bleeds, and what chemical can be used to recover lost blood depend on this
 	var/exotic_bloodtype
@@ -1964,15 +1962,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 /datum/species/proc/replace_body(mob/living/carbon/target, datum/species/new_species)
 	new_species ||= target.dna.species //If no new species is provided, assume its src.
 	//Note for future: Potentionally add a new C.dna.species() to build a template species for more accurate limb replacement
-
 	var/list/final_bodypart_overrides = new_species.bodypart_overrides.Copy()
-	if((new_species.digitigrade_customization == DIGITIGRADE_OPTIONAL && target.dna.features[FEATURE_LEGS] == DIGITIGRADE_LEGS) || new_species.digitigrade_customization == DIGITIGRADE_FORCED)
-		var/obj/item/bodypart/leg/right/r_leg = new_species.bodypart_overrides[BODY_ZONE_R_LEG]
-		if(r_leg)
-			final_bodypart_overrides[BODY_ZONE_R_LEG] = initial(r_leg.digitigrade_type)
-		var/obj/item/bodypart/leg/left/l_leg = new_species.bodypart_overrides[BODY_ZONE_L_LEG]
-		if(l_leg)
-			final_bodypart_overrides[BODY_ZONE_L_LEG] = initial(l_leg.digitigrade_type)
 
 	for(var/obj/item/bodypart/old_part as anything in target.bodyparts)
 		if((old_part.change_exempt_flags & BP_BLOCK_CHANGE_SPECIES) || (old_part.bodypart_flags & BODYPART_IMPLANTED))

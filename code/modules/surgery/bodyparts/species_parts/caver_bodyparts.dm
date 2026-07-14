@@ -25,36 +25,19 @@
 /obj/item/bodypart/leg/left/caver
 	icon_greyscale = 'icons/mob/human/species/human_subtypes/caver/bodyparts.dmi'
 	limb_id = SPECIES_HUMAN_CAVER
+	bodyshape = BODYSHAPE_DIGITIGRADE
 	brute_modifier = 0.9
-	digitigrade_type = /obj/item/bodypart/leg/left/digitigrade/caver
 
 /obj/item/bodypart/leg/right/caver
 	icon_greyscale = 'icons/mob/human/species/human_subtypes/caver/bodyparts.dmi'
 	limb_id = SPECIES_HUMAN_CAVER
-	brute_modifier = 0.9
-	digitigrade_type = /obj/item/bodypart/leg/right/digitigrade/caver
-
-
-/obj/item/bodypart/leg/left/digitigrade/caver
-	icon_greyscale = 'icons/mob/human/species/human_subtypes/caver/bodyparts.dmi'
-	limb_id = BODYPART_ID_DIGITIGRADE_CAVER
 	bodyshape = BODYSHAPE_DIGITIGRADE
-	footprint_sprite = FOOTPRINT_SPRITE_SHOES
-	footstep_type = FOOTSTEP_MOB_BAREFOOT
 	brute_modifier = 0.9
 
-/obj/item/bodypart/leg/left/digitigrade/caver/update_limb(dropping_limb = FALSE, is_creating = FALSE)
+/obj/item/bodypart/leg/left/caver/update_limb(dropping_limb = FALSE, is_creating = FALSE)
 	. = ..()
-	limb_id = owner?.is_digitigrade_squished() ? SPECIES_HUMAN_CAVER : BODYPART_ID_DIGITIGRADE_CAVER
+	limb_id = owner?.is_digitigrade_squished() ? SPECIES_HUMAN : SPECIES_HUMAN_CAVER
 
-/obj/item/bodypart/leg/right/digitigrade/caver
-	icon_greyscale = 'icons/mob/human/species/human_subtypes/caver/bodyparts.dmi'
-	limb_id = BODYPART_ID_DIGITIGRADE_CAVER
-	bodyshape = BODYSHAPE_DIGITIGRADE
-	footprint_sprite = FOOTPRINT_SPRITE_SHOES
-	footstep_type = FOOTSTEP_MOB_BAREFOOT
-	brute_modifier = 0.9
-
-/obj/item/bodypart/leg/right/digitigrade/caver/update_limb(dropping_limb = FALSE, is_creating = FALSE)
+/obj/item/bodypart/leg/right/caver/update_limb(dropping_limb = FALSE, is_creating = FALSE)
 	. = ..()
-	limb_id = owner?.is_digitigrade_squished() ? SPECIES_HUMAN_CAVER : BODYPART_ID_DIGITIGRADE_CAVER
+	limb_id = owner?.is_digitigrade_squished() ? SPECIES_HUMAN : SPECIES_HUMAN_CAVER

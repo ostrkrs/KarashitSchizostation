@@ -68,25 +68,3 @@
 		|| (worn_shoes.supports_variations_flags & DIGITIGRADE_VARIATIONS)
 
 	return !uniform_compatible || !suit_compatible || !shoes_compatible
-
-/obj/item/bodypart/leg/left/digitigrade
-	icon_greyscale = 'icons/mob/human/species/lizard/bodyparts.dmi'
-	limb_id = BODYPART_ID_DIGITIGRADE
-	bodyshape = BODYSHAPE_HUMANOID | BODYSHAPE_DIGITIGRADE
-	footprint_sprite = FOOTPRINT_SPRITE_CLAWS
-	footstep_type = FOOTSTEP_MOB_CLAW
-
-/obj/item/bodypart/leg/left/digitigrade/update_limb(dropping_limb = FALSE, is_creating = FALSE)
-	. = ..()
-	limb_id = owner?.is_digitigrade_squished() ? SPECIES_LIZARD : BODYPART_ID_DIGITIGRADE
-
-/obj/item/bodypart/leg/right/digitigrade
-	icon_greyscale = 'icons/mob/human/species/lizard/bodyparts.dmi'
-	limb_id = BODYPART_ID_DIGITIGRADE
-	bodyshape = BODYSHAPE_HUMANOID | BODYSHAPE_DIGITIGRADE
-	footprint_sprite = FOOTPRINT_SPRITE_CLAWS
-	footstep_type = FOOTSTEP_MOB_CLAW
-
-/obj/item/bodypart/leg/right/digitigrade/update_limb(dropping_limb = FALSE, is_creating = FALSE)
-	. = ..()
-	limb_id = owner?.is_digitigrade_squished() ? SPECIES_LIZARD : BODYPART_ID_DIGITIGRADE

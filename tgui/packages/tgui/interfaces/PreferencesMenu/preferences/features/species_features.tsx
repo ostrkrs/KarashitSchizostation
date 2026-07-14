@@ -104,15 +104,6 @@ export const feature_caver_skincolor: FeatureChoiced = {
   },
 };
 
-export const feature_lizard_legs: FeatureChoiced = {
-  name: 'Legs',
-  component: (
-    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
-  ) => {
-    return <FeatureDropdownInput buttons {...props} />;
-  },
-};
-
 export const feature_lizard_spines: FeatureChoiced = {
   name: 'Spines',
   component: (

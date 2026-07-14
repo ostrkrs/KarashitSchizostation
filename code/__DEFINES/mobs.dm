@@ -205,21 +205,10 @@
 // Like species IDs, but not specifically attached a species.
 #define BODYPART_ID_ALIEN "alien"
 #define BODYPART_ID_ROBOTIC "robotic"
-#define BODYPART_ID_DIGITIGRADE "digitigrade"
-#define BODYPART_ID_DIGITIGRADE_CAVER "digicaver"
 #define BODYPART_ID_LARVA "larva"
 #define BODYPART_ID_PSYKER "psyker"
 #define BODYPART_ID_MEAT "meat"
 #define BODYPART_ID_PEG "peg"
-
-
-//See: datum/species/var/digitigrade_customization
-///The species does not have digitigrade legs in generation.
-#define DIGITIGRADE_NEVER 0
-///The species can have digitigrade legs in generation
-#define DIGITIGRADE_OPTIONAL 1
-///The species is forced to have digitigrade legs in generation.
-#define DIGITIGRADE_FORCED 2
 
 // Preferences for leg types
 /// Legs that are normal
