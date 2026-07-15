@@ -37,7 +37,7 @@ SUBSYSTEM_DEF(tgui)
 	ntos_error = "<style type='text/css'>\n[ntos_error]\n</style>"
 	basehtml = replacetextEx(basehtml, "<!-- tgui:ntos-error -->", ntos_error)
 
-	basehtml = replacetextEx(basehtml, "<!-- tgui:nt-copyright -->", "COMBSware International (c) 2106-[CURRENT_YEAR]")
+	basehtml = replacetextEx(basehtml, "<!-- tgui:combs-copyright -->", "COMBSware International (c) 2046-[CURRENT_YEAR]")
 
 
 /datum/controller/subsystem/tgui/Shutdown()
