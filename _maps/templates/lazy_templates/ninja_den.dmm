@@ -106,28 +106,6 @@
 	},
 /turf/open/floor/iron/sepia,
 /area/centcom/central_command_areas/holding)
-"cn" = (
-/obj/structure/closet{
-	anchored = 1;
-	desc = "A storage unit for plasmaman internals, courtesy of the Spider Clan.";
-	icon_state = "emergency";
-	name = "Plasmaman emergency closet"
-	},
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/breath,
-/obj/item/tank/internals/plasmaman/belt/full,
-/obj/item/tank/internals/plasmaman/belt/full,
-/obj/item/tank/internals/plasmaman/belt/full,
-/obj/item/tank/internals/plasmaman/belt/full,
-/obj/item/tank/internals/plasmaman/belt/full,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/central_command_areas/holding)
 "cK" = (
 /obj/structure/table/wood,
 /obj/item/flashlight/lamp/green,
@@ -409,7 +387,7 @@
 /turf/open/floor/catwalk_floor,
 /area/centcom/central_command_areas/holding)
 "jG" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/fishmeat,
 /obj/item/food/fishmeat,
 /obj/item/food/fishmeat,
@@ -850,7 +828,7 @@
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /turf/open/floor/catwalk_floor,
 /area/centcom/central_command_areas/holding)
 "uv" = (
@@ -1019,7 +997,7 @@
 /turf/open/floor/carpet/black,
 /area/centcom/central_command_areas/holding)
 "zh" = (
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/food/grown/chili,
 /obj/item/food/grown/chili,
 /obj/item/food/grown/chili,
@@ -1524,26 +1502,6 @@
 /obj/item/camera_film,
 /turf/open/floor/wood/large,
 /area/centcom/central_command_areas/holding)
-"JC" = (
-/obj/structure/closet{
-	anchored = 1;
-	name = "Plasmaman suits"
-	},
-/obj/item/clothing/under/plasmaman,
-/obj/item/clothing/under/plasmaman/engineering,
-/obj/item/clothing/under/plasmaman/botany,
-/obj/item/clothing/under/plasmaman/janitor,
-/obj/item/clothing/under/plasmaman/chef,
-/obj/item/clothing/head/helmet/space/plasmaman,
-/obj/item/clothing/head/helmet/space/plasmaman/engineering,
-/obj/item/clothing/head/helmet/space/plasmaman/botany,
-/obj/item/clothing/head/helmet/space/plasmaman/janitor,
-/obj/item/clothing/head/helmet/space/plasmaman/white,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/carpet/black,
-/area/centcom/central_command_areas/holding)
 "JF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -1580,7 +1538,7 @@
 /obj/item/food/grown/onion/red,
 /obj/item/food/grown/onion/red,
 /obj/item/food/grown/coffee,
-/obj/structure/closet/secure_closet/freezer/fridge/open{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access{
 	name = "kitchen cabinet"
 	},
 /turf/open/floor/carpet/black,
@@ -1776,7 +1734,7 @@
 /turf/open/floor/grass,
 /area/centcom/central_command_areas/holding)
 "PB" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/south,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment/directional/south,
 /turf/open/floor/wood/large,
 /area/centcom/central_command_areas/holding)
 "PH" = (
@@ -1996,7 +1954,7 @@
 /obj/effect/turf_decal/siding/wood,
 /obj/item/paper_bin,
 /obj/item/pen/fountain,
-/obj/item/camera/detective{
+/obj/item/camera/criminalist{
 	desc = "A polaroid camera with extra capacity for social media marketing.";
 	name = "Professional camera"
 	},
@@ -2023,7 +1981,7 @@
 /turf/open/floor/carpet/black,
 /area/centcom/central_command_areas/holding)
 "VW" = (
-/obj/structure/closet/secure_closet/freezer/fridge/open{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access{
 	name = "freezer"
 	},
 /obj/item/food/meat/slab/killertomato,
@@ -3345,7 +3303,7 @@ dg
 dg
 HV
 pp
-JC
+FU
 XP
 Tc
 mw
@@ -3382,7 +3340,7 @@ ga
 ML
 pp
 pp
-cn
+FU
 XP
 wc
 mw

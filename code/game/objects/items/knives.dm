@@ -246,17 +246,17 @@
 /obj/item/knife/shiv/make_stabby()
 	AddComponent(/datum/component/alternative_sharpness, SHARP_POINTY, alt_continuous, alt_simple, -3)
 
-/obj/item/knife/shiv/plasma
-	name = "plasma shiv"
-	desc = "A makeshift plasma glass shiv."
-	icon_state = "plasmashiv"
-	inhand_icon_state = "plasmashiv"
+/obj/item/knife/shiv/phoron
+	name = "phoron shiv"
+	desc = "A makeshift phoron glass shiv."
+	icon_state = "phoronshiv"
+	inhand_icon_state = "phoronshiv"
 	force = 9
 	throwforce = 13
-	armor_type = /datum/armor/shiv_plasma
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT *4, /datum/material/plasma=SMALL_MATERIAL_AMOUNT * 2)
+	armor_type = /datum/armor/shiv_phoron
+	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT *4, /datum/material/phoron=SMALL_MATERIAL_AMOUNT * 2)
 
-/datum/armor/shiv_plasma
+/datum/armor/shiv_phoron
 	melee = 25
 	bullet = 25
 	laser = 25
@@ -287,7 +287,7 @@
 
 /obj/item/knife/shiv/plastitanium
 	name = "plastitanium shiv"
-	desc = "A makeshift titanium-infused plasma glass shiv."
+	desc = "A makeshift titanium-infused phoron glass shiv."
 	icon_state = "plastitaniumshiv"
 	inhand_icon_state = "plastitaniumshiv"
 	force = 10

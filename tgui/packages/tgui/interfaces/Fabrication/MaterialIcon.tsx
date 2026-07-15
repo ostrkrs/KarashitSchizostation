@@ -27,10 +27,10 @@ const MATERIAL_ICONS: Record<string, [number, string][]> = {
     [17, 'sheet-diamond_2'],
     [34, 'sheet-diamond_3'],
   ],
-  plasma: [
-    [0, 'sheet-plasma'],
-    [17, 'sheet-plasma_2'],
-    [34, 'sheet-plasma_3'],
+  phoron: [
+    [0, 'sheet-phoron'],
+    [17, 'sheet-phoron_2'],
+    [34, 'sheet-phoron_3'],
   ],
   uranium: [
     [0, 'sheet-uranium'],

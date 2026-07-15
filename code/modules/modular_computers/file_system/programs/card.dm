@@ -2,7 +2,7 @@
 	filename = "plexagonidwriter"
 	filedesc = "Plexagon Access Management"
 	downloader_category = PROGRAM_CATEGORY_EQUIPMENT
-	program_open_overlay = "id"
+	program_open_overlay = "access"
 	extended_desc = "Program for programming employee ID cards to access parts of the station."
 	download_access = list(ACCESS_COMMAND)
 	size = 8

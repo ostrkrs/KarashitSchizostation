@@ -30,7 +30,7 @@
 
 	///List of gases with high filter priority
 	var/list/high_filtering_gases = list(
-		/datum/gas/plasma,
+		/datum/gas/phoron,
 		/datum/gas/carbon_dioxide,
 		/datum/gas/nitrous_oxide
 		)
@@ -104,14 +104,6 @@
 /obj/item/gas_filter/damaged/Initialize(mapload)
 	. = ..()
 	filter_status = rand(35, 65)
-
-/obj/item/gas_filter/plasmaman
-	name = "plasmaman atmospheric gas filter"
-	high_filtering_gases = list(
-		/datum/gas/oxygen,
-		/datum/gas/carbon_dioxide,
-		/datum/gas/nitrous_oxide
-		)
 
 #undef HIGH_FILTERING_MOLES
 #undef HIGH_FILTERING_RATIO

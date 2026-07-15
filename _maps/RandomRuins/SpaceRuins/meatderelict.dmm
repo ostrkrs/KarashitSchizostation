@@ -469,8 +469,8 @@
 	dir = 8
 	},
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9{
+/obj/item/ammo_box/magazine/smg46mm_wt550,
+/obj/item/ammo_box/magazine/smg46mm_wt550{
 	pixel_x = 6;
 	pixel_y = 6
 	},
@@ -580,7 +580,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 10
 	},
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "lJ" = (
@@ -971,13 +970,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space)
-"sM" = (
-/obj/item/ammo_casing/spent,
-/obj/item/ammo_casing/spent,
-/obj/item/ammo_casing/c45/spent,
-/obj/item/ammo_casing/c45/spent,
-/turf/open/indestructible/white,
-/area/ruin/space/has_grav/powered/biooutpost)
 "sR" = (
 /obj/effect/turf_decal/trimline/yellow/filled/end,
 /turf/open/indestructible,
@@ -1183,7 +1175,7 @@
 	dir = 1
 	},
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/wt550{
+/obj/item/gun/ballistic/automatic/smg/wt550{
 	pin = /obj/item/firing_pin/explorer
 	},
 /turf/open/indestructible/dark,
@@ -1701,9 +1693,6 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 8
 	},
-/obj/item/ammo_casing/c45/spent,
-/obj/item/ammo_casing/c45/spent,
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "GC" = (
@@ -1791,10 +1780,6 @@
 	id = "md_armory"
 	},
 /obj/effect/turf_decal/stripes/full,
-/turf/open/indestructible/white,
-/area/ruin/space/has_grav/powered/biooutpost)
-"Jb" = (
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Jf" = (
@@ -1945,7 +1930,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Mo" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/plasma/end{
+/obj/effect/spawner/structure/window/hollow/reinforced/phoron/end{
 	dir = 4
 	},
 /obj/structure/sign/warning/electric_shock/directional/west,
@@ -2163,7 +2148,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/powered/biooutpost/vault)
 "Qh" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/plasma/end{
+/obj/effect/spawner/structure/window/hollow/reinforced/phoron/end{
 	dir = 8
 	},
 /obj/structure/sign/warning/electric_shock/directional/east,
@@ -2416,11 +2401,6 @@
 	},
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
-"VN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_casing/c45/spent,
-/turf/open/indestructible/white,
-/area/ruin/space/has_grav/powered/biooutpost)
 "VT" = (
 /obj/structure/broken_flooring/singular{
 	dir = 1
@@ -2567,7 +2547,6 @@
 /obj/item/ammo_casing/spent,
 /obj/item/ammo_casing/spent,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "YI" = (
@@ -3435,8 +3414,8 @@ Se
 Jh
 sk
 at
-sM
-Jb
+Hx
+jE
 Pa
 Jh
 Uv
@@ -3478,7 +3457,7 @@ Jh
 Kl
 zF
 Bu
-VN
+at
 HA
 ph
 FE

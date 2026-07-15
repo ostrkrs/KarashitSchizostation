@@ -10,8 +10,8 @@
 	piping_layer = 4
 	icon_state = "inje_map-4"
 
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input
-	name = "plasma tank input injector"
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/phoron_input
+	name = "phoron tank input injector"
 
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored/oxygen_input
 	name = "oxygen tank input injector"

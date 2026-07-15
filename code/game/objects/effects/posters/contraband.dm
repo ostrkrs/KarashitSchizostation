@@ -2,7 +2,7 @@
 /obj/item/poster/random_contraband
 	name = "random contraband poster"
 	poster_type = /obj/structure/sign/poster/contraband/random
-	icon_state = "rolled_poster"
+	icon_state = "rolled_contraband"
 
 /obj/item/poster/random_contraband/Initialize(mapload, obj/structure/sign/poster/new_poster_structure)
 	. = ..()
@@ -11,7 +11,7 @@
 /obj/structure/sign/poster/contraband
 	poster_item_name = "contraband poster"
 	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. Its controversial themes have marked it as contraband aboard Solstice Reach spacecrafts."
-	poster_item_icon_state = "rolled_poster"
+	poster_item_icon_state = "rolled_contraband"
 
 /obj/structure/sign/poster/contraband/random
 	name = "random contraband poster"
@@ -37,17 +37,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/atmosia_indepe
 
 /obj/structure/sign/poster/contraband/fun_police
 	name = "Fun Police"
-	desc = "A poster condemning the station's security forces."
+	desc = "A poster condemning the vessel's security forces."
 	icon_state = "fun_police"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/fun_police, 32)
-
-/obj/structure/sign/poster/contraband/syndicate_recruitment
-	name = "Syndicate Recruitment"
-	desc = "See the galaxy! Shatter corrupt megacorporations! Join today!"
-	icon_state = "syndicate_recruitment"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/syndicate_recruitment, 32)
 
 /obj/structure/sign/poster/contraband/clown
 	name = "Clown"
@@ -91,13 +84,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/hacking_guide,
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/ambrosia_vulgaris, 32)
 
-/obj/structure/sign/poster/contraband/donut_corp
-	name = "Donut Corp."
-	desc = "This poster is an unauthorized advertisement for Donut Corp."
-	icon_state = "donut_corp"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/donut_corp, 32)
-
 /obj/structure/sign/poster/contraband/eat
 	name = "EAT."
 	desc = "This poster promotes rank gluttony."
@@ -126,13 +112,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/space_cube, 32
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/communist_state, 32)
 
-/obj/structure/sign/poster/contraband/lamarr
-	name = "Lamarr"
-	desc = "This poster depicts Lamarr. Probably made by a traitorous Research Director."
-	icon_state = "lamarr"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/lamarr, 32)
-
 /obj/structure/sign/poster/contraband/borg_fancy_1
 	name = "Borg Fancy"
 	desc = "Being fancy can be for any borg, just need a suit."
@@ -154,14 +133,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/borg_fancy_2, 
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/rebels_unite, 32)
 
-/obj/structure/sign/poster/contraband/c20r
-	// have fun seeing this poster in "spawn 'c20r'", admins...
-	name = "C-20r"
-	desc = "A poster advertising the Scarborough Arms C-20r."
-	icon_state = "c20r"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/c20r, 32)
-
 /obj/structure/sign/poster/contraband/have_a_puff
 	name = "Have a Puff"
 	desc = "Who cares about lung cancer when you're high as a kite?"
@@ -169,47 +140,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/c20r, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/have_a_puff, 32)
 
-/obj/structure/sign/poster/contraband/revolver
-	name = "Revolver"
-	desc = "Because seven shots are all you need."
-	icon_state = "revolver"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/revolver, 32)
-
-/obj/structure/sign/poster/contraband/d_day_promo
-	name = "D-Day Promo"
-	desc = "A promotional poster for some rapper."
-	icon_state = "d_day_promo"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/d_day_promo, 32)
-
-/obj/structure/sign/poster/contraband/syndicate_pistol
-	name = "Syndicate Pistol"
-	desc = "A poster advertising syndicate pistols as being 'classy as fuck'. It is covered in faded gang tags."
-	icon_state = "syndicate_pistol"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/syndicate_pistol, 32)
-
-/obj/structure/sign/poster/contraband/energy_swords
-	name = "Energy Swords"
-	desc = "All the colors of the bloody murder rainbow."
-	icon_state = "energy_swords"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/energy_swords, 32)
-
 /obj/structure/sign/poster/contraband/red_rum
 	name = "Red Rum"
 	desc = "Looking at this poster makes you want to kill."
 	icon_state = "red_rum"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/red_rum, 32)
-
-/obj/structure/sign/poster/contraband/cc64k_ad
-	name = "CC 64K Ad"
-	desc = "The latest portable computer from Comrade Computing, with a whole 64kB of ram!"
-	icon_state = "cc64k_ad"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/cc64k_ad, 32)
 
 /obj/structure/sign/poster/contraband/punch_shit
 	name = "Punch Shit"
@@ -232,48 +168,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/the_griffin, 3
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/free_drone, 32)
 
-/obj/structure/sign/poster/contraband/robust_softdrinks
-	name = "Robust Softdrinks"
-	desc = "Robust Softdrinks: More robust than a toolbox to the head!"
-	icon_state = "robust_softdrinks"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/robust_softdrinks, 32)
-
-/obj/structure/sign/poster/contraband/shamblers_juice
-	name = "Shambler's Juice"
-	desc = "~Shake me up some of that Shambler's Juice!~"
-	icon_state = "shamblers_juice"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/shamblers_juice, 32)
-
-/obj/structure/sign/poster/contraband/pwr_game
-	name = "Pwr Game"
-	desc = "The POWER that gamers CRAVE! In partnership with Vlad's Salad."
-	icon_state = "pwr_game"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/pwr_game, 32)
-
-/obj/structure/sign/poster/contraband/starkist
-	name = "Star-kist"
-	desc = "Drink the stars!"
-	icon_state = "starkist"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/starkist, 32)
-
-/obj/structure/sign/poster/contraband/space_cola
-	name = "Space Cola"
-	desc = "Your favorite cola, in space."
-	icon_state = "space_cola"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/space_cola, 32)
-
-/obj/structure/sign/poster/contraband/space_up
-	name = "Space-Up!"
-	desc = "Sucked out into space by the FLAVOR!"
-	icon_state = "space_up"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/space_up, 32)
-
 /obj/structure/sign/poster/contraband/kudzu
 	name = "Kudzu"
 	desc = "A poster advertising a movie about plants. How dangerous could they possibly be?"
@@ -287,15 +181,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/kudzu, 32)
 	icon_state = "masked_men"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/masked_men, 32)
-
-//don't forget, you're here forever
-
-/obj/structure/sign/poster/contraband/free_key
-	name = "Free Syndicate Encryption Key"
-	desc = "A poster about traitors begging for more."
-	icon_state = "free_key"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/free_key, 32)
 
 /obj/structure/sign/poster/contraband/bountyhunters
 	name = "Bounty Hunters"
@@ -311,49 +196,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/bountyhunters,
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/got_wood, 32)
 
-/obj/structure/sign/poster/contraband/donk_co
-	name = "DONK CO. BRAND MICROWAVEABLE FOOD"
-	desc = "DONK CO. BRAND MICROWAVABLE FOOD: MADE BY STARVING COLLEGE STUDENTS, FOR STARVING COLLEGE STUDENTS."
-	icon_state = "donk_co"
-
-/obj/structure/sign/poster/contraband/donk_co/examine_more(mob/user)
-	. = ..()
-	. += span_notice("<i>You browse some of the poster's information...</i>")
-	. += "\t[span_info("DONK CO. BRAND DONK POCKETS: IRRESISTABLY DONK!")]"
-	. += "\t[span_info("AVAILABLE IN OVER 200 DONKTASTIC FLAVOURS: TRY CLASSIC MEAT, HOT AND SPICY, NEW YORK PEPPERONI PIZZA, BREAKFAST SAUSAGE AND EGG, PHILADELPHIA CHEESESTEAK, HAMBURGER DONK-A-RONI, CHEESE-O-RAMA, AND MANY MORE!")]"
-	. += "\t[span_info("AVAILABLE FROM ALL GOOD RETAILERS, AND MANY BAD ONES TOO!")]"
-	return .
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/donk_co, 32)
-
-/obj/structure/sign/poster/contraband/cybersun_six_hundred
-	name = "Saibāsan: 600 Years Commemorative Poster"
-	desc = "An artistic poster commemorating 600 years of continual business for Cybersun Industries."
-	icon_state = "cybersun_six_hundred"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/cybersun_six_hundred, 32)
-
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics
-	name = "Interdyne Pharmaceutics: For the Health of Humankind"
-	desc = "An advertisement for Interdyne Pharmaceutics' GeneClean clinics. 'Become the master of your own body!'"
-	icon_state = "interdyne_gene_clinics"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/interdyne_gene_clinics, 32)
-
-/obj/structure/sign/poster/contraband/waffle_corp_rifles
-	name = "Make Mine a Waffle Corp: Fine Rifles, Economic Prices"
-	desc = "An old advertisement for Waffle Corp rifles. 'Better weapons, lower prices!'"
-	icon_state = "waffle_corp_rifles"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/waffle_corp_rifles, 32)
-
-/obj/structure/sign/poster/contraband/gorlex_recruitment
-	name = "Enlist"
-	desc = "Enlist with the Gorlex Marauders today! See the galaxy, kill corpos, get paid!"
-	icon_state = "gorlex_recruitment"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/gorlex_recruitment, 32)
-
 /obj/structure/sign/poster/contraband/self_ai_liberation
 	name = "SELF: ALL SENTIENTS DESERVE FREEDOM"
 	desc = "Support Proposition 1253: Emancipate all Silicon life!"
@@ -368,122 +210,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/self_ai_libera
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/arc_slimes, 32)
 
-/obj/structure/sign/poster/contraband/andromeda_bitters
-	name = "Andromeda Bitters"
-	desc = "Andromeda Bitters: good for the body, good for the soul. Made in New Trinidad, now and forever."
-	icon_state = "andromeda_bitters"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/andromeda_bitters, 32)
-
-/obj/structure/sign/poster/contraband/blasto_detergent
-	name = "Blasto Brand Laundry Detergent"
-	desc = "Sheriff Blasto's here to take back Laundry County from the evil Johnny Dirt and the Clothstain Crew, and he's brought a posse. It's High Noon for Tough Stains: Blasto brand detergent, available at all good stores."
-	icon_state = "blasto_detergent"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/blasto_detergent, 32)
-
-/obj/structure/sign/poster/contraband/eistee
-	name = "EisT: The New Revolution in Energy"
-	desc = "New from EisT, try EisT Energy, available in a kaleidoscope range of flavors. EisT: Precision German Engineering for your Thirst."
-	icon_state = "eistee"
-
-/obj/structure/sign/poster/contraband/eistee/examine_more(mob/user)
-	. = ..()
-	. += span_notice("<i>You browse some of the poster's information...</i>")
-	. += "\t[span_info("Get a taste of the tropics with Amethyst Sunrise, one of the many new flavours of EisT Energy now available from EisT.")]"
-	. += "\t[span_info("With pink grapefruit, yuzu, and yerba mate, Amethyst Sunrise gives you a great start in the morning, or a welcome boost throughout the day.")]"
-	. += "\t[span_info("Get EisT Energy today at your nearest retailer, or online at eist.de.tg/store/.")]"
-	return .
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/eistee, 32)
-
-/obj/structure/sign/poster/contraband/little_fruits
-	name = "Little Fruits: Honey, I Shrunk the Fruitbowl"
-	desc = "Little Fruits are the galaxy's leading vitamin-enriched gummy candy product, packed with everything you need to stay healthy in one great tasting package. Get yourself a bag today!"
-	icon_state = "little_fruits"
-
-/obj/structure/sign/poster/contraband/little_fruits/examine_more(mob/user)
-	. = ..()
-	. += span_notice("<i>You browse some of the poster's information...</i>")
-	. += "\t[span_info("Oh no, there's been a terrible accident at the Little Fruits factory! We shrunk the fruits!")]"
-	. += "\t[span_info("Wait, hang on, that's what we've always done! That's right, at Little Fruits our gummy candies are made to be as healthy as the real deal, but smaller and sweeter, too!")]"
-	. += "\t[span_info("Get yourself a bag of our Classic Mix today, or perhaps you're interested in our other options? See our full range today on the extranet at little_fruits.kr.tg.")]"
-	. += "\t[span_info("Little Fruits: Size Matters.")]"
-	return .
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/little_fruits, 32)
-
-/obj/structure/sign/poster/contraband/jumbo_bar
-	name = "Jumbo Ice Cream Bars"
-	desc = "Get a taste of the Big Life with Jumbo Ice Cream Bars, from Happy Heart."
-	icon_state = "jumbo_bar"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/jumbo_bar, 32)
-
-/obj/structure/sign/poster/contraband/calada_jelly
-	name = "Calada Anobar Jelly"
-	desc = "A treat from Tizira to satisfy all tastes, made from the finest anobar wood and luxurious Taraviero honey. Calada: a full tree in every jar."
-	icon_state = "calada_jelly"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/calada_jelly, 32)
-
-/obj/structure/sign/poster/contraband/triumphal_arch
-	name = "Zagoskeld Art Print #1: The Arch on the March"
-	desc = "One of the Zagoskeld Art Print series. It depicts the Arch of Unity (also know as the Triumphal Arch) at the Plaza of Triumph, with the Avenue of the Victorious March in the background."
-	icon_state = "triumphal_arch"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/triumphal_arch, 32)
-
-/obj/structure/sign/poster/contraband/wildcat
-	name = "Wildcat Customs Screambike"
-	desc = "A pinup poster showing a Wildcat Customs Dante Screambike- the fastest production sublight open-frame vessel in the galaxy."
-	icon_state = "wildcat"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/wildcat, 32)
-
-/obj/structure/sign/poster/contraband/babel_device
-	name = "Linguafacile Babel Device"
-	desc = "A poster advertising Linguafacile's new Babel Device model. 'Calibrated for excellent performance on all Human languages, as well as most common variants of Draconic and Mothic!'"
-	icon_state = "babel_device"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/babel_device, 32)
-
-/obj/structure/sign/poster/contraband/pizza_imperator
-	name = "Pizza Imperator"
-	desc = "An advertisement for Pizza Imperator. Their crusts may be tough and their sauce may be thin, but they're everywhere, so you've gotta give in."
-	icon_state = "pizza_imperator"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/pizza_imperator, 32)
-
 /obj/structure/sign/poster/contraband/thunderdrome
 	name = "Thunderdrome Concert Advertisement"
 	desc = "An advertisement for a concert at the Adasta City Thunderdrome, the largest nightclub in human space."
 	icon_state = "thunderdrome"
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/thunderdrome, 32)
-
-/obj/structure/sign/poster/contraband/rush_propaganda
-	name = "A New Life"
-	desc = "An old UCA poster from around the time of the First Spinward Rush. It depicts a view of wide, unspoiled lands, ready for Humanity's Manifest Destiny."
-	icon_state = "rush_propaganda"
-
-/obj/structure/sign/poster/contraband/rush_propaganda/examine_more(mob/user)
-	. = ..()
-	. += span_notice("<i>You browse some of the poster's information...</i>")
-	. += "\t[span_info("Humanity needs YOU!")]"
-	. += "\t[span_info("A new life in the colonies awaits intrepid adventurers! All registered colonists are guaranteed transport, land and subsidies!")]"
-	. += "\t[span_info("You could join the legacy of hardworking humans who settled such new frontiers as Mars, Europe or even Kepler-22b!")]"
-	. += "\t[span_info("To apply, inquire at your nearest Colonial Affairs office for evaluation. Our locations can be found at www.uca.gov.us/colonial_affairs.")]"
-	return .
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/rush_propaganda, 32)
-
-/obj/structure/sign/poster/contraband/tipper_cream_soda
-	name = "Tipper's Cream Soda"
-	desc = "An old advertisement for an obscure cream soda brand, now bankrupt due to legal problems."
-	icon_state = "tipper_cream_soda"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/tipper_cream_soda, 32)
 
 /obj/structure/sign/poster/contraband/microwave
 	name = "How To Charge Your PDA"
@@ -499,53 +231,23 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/microwave, 32)
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/singletank_bomb, 32)
 
-/obj/structure/sign/poster/contraband/roroco
-	name = "Roroco Gloves"
-	desc = "Roro says: Wear RoroCo insulated gloves, the safest brand on the market."
-	icon_state = "roroco"
+/obj/structure/sign/poster/contraband/ion_rifle
+	name = "Ion Rifle"
+	desc = "A poster displaying an Ion Rifle."
+	icon_state = "ion_rifle"
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/roroco, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/ion_rifle, 32)
 
-///a special poster meant to fool people into thinking this is a bombable wall at a glance.
-/obj/structure/sign/poster/contraband/fake_bombable
-	name = "fake bombable poster"
-	desc = "We do a little trolling."
-	icon_state = "fake_bombable"
-	never_random = TRUE
+/obj/structure/sign/poster/contraband/twelve_gauge
+	name = "12 Gauge"
+	desc = "A poster boasting about the superiority of 12 gauge shotgun shells."
+	icon_state = "twelve_gauge"
 
-/obj/structure/sign/poster/contraband/fake_bombable/Initialize(mapload)
-	. = ..()
-	var/turf/our_wall = get_turf_pixel(src)
-	name = our_wall.name
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/twelve_gauge, 32)
 
-/obj/structure/sign/poster/contraband/fake_bombable/examine(mob/user)
-	var/turf/our_wall = get_turf_pixel(src)
-	. = our_wall.examine(user)
-	. += span_notice("It seems to be slightly cracked...")
+/obj/structure/sign/poster/contraband/c20r
+	name = "C-20r"
+	desc = "A poster advertising the Scarborough Arms C-20r."
+	icon_state = "c20r"
 
-/obj/structure/sign/poster/contraband/fake_bombable/ex_act(severity, target)
-	addtimer(CALLBACK(src, PROC_REF(fall_off_wall)), 2.5 SECONDS)
-	return FALSE
-
-/obj/structure/sign/poster/contraband/fake_bombable/proc/fall_off_wall()
-	if(QDELETED(src) || !isturf(loc))
-		return
-	var/turf/our_wall = get_turf_pixel(src)
-	our_wall.balloon_alert_to_viewers("it was a ruse!")
-	roll_and_drop(loc)
-	playsound(loc, 'sound/items/handling/paper_drop.ogg', 50, TRUE)
-
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/fake_bombable, 32)
-
-/obj/structure/sign/poster/contraband/beekind
-	name = "Bee Kind"
-	desc = "Always bee kind to others!"
-	icon_state = "beekind"
-
-/obj/item/poster/contraband/beekind
-	name = "Bee Kind"
-	poster_type = /obj/structure/sign/poster/contraband/beekind
-	icon_state = "rolled_poster"
-
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/beekind, 32)
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/poster/contraband/c20r, 32)

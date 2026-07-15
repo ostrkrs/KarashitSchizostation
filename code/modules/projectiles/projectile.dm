@@ -103,7 +103,7 @@
 	var/hit_threshhold = PROJECTILE_HIT_THRESHHOLD_LAYER
 
 	/// How many tiles we pass in a single SSprojectiles tick
-	var/speed = 1.25
+	var/speed = 4
 
 	/// The current angle of the projectile. Initially null, so if the arg is missing from [/fire()], we can calculate it from firer and target as fallback.
 	var/angle
@@ -212,11 +212,11 @@
 	var/immobilize = 0 SECONDS
 	var/unconscious = 0 SECONDS
 	/// Seconds of blurry eyes applied on projectile hit
-	var/eyeblur = 0 SECONDS
+	var/eyeblur = 0.5 SECONDS
 	/// Drowsiness applied on projectile hit
 	var/drowsy = 0 SECONDS
 	/// Jittering applied on projectile hit
-	var/jitter = 0 SECONDS
+	var/jitter = 2 SECONDS
 	/// Extra stamina damage applied on projectile hit (in addition to the main damage)
 	var/stamina = 0
 	/// Stuttering applied on projectile hit

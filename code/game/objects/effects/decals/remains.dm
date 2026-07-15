@@ -64,12 +64,6 @@
 	. = ..()
 	gas_cooldown_length = rand(4 MINUTES, 6 MINUTES)
 
-/obj/effect/decal/remains/plasma
-	icon_state = "remainsplasma"
-
-/obj/effect/decal/remains/plasma/NeverShouldHaveComeHere(turf/here_turf)
-	return isclosedturf(here_turf)
-
 /obj/effect/decal/remains/xeno
 	desc = "They look like the remains of something... alien. They have a strange aura about them."
 	icon_state = "remainsxeno"

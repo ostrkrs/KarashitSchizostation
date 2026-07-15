@@ -265,7 +265,7 @@ SUBSYSTEM_DEF(mapping)
 		var/proportional_budget = round(CONFIG_GET(number/space_budget) * (space_ruins.len / DEFAULT_SPACE_RUIN_LEVELS))
 		seedRuins(space_ruins, proportional_budget, list(/area/space), themed_ruins[ZTRAIT_SPACE_RUINS], mineral_budget = 0, ruins_type = ZTRAIT_SPACE_RUINS)
 
-/// Sets up rivers, and things that behave like rivers. So lava/plasma rivers, and chasms
+/// Sets up rivers, and things that behave like rivers. So lava/phoron rivers, and chasms
 /// It is important that this happens AFTER generating mineral walls and such, since we rely on them for river logic
 /datum/controller/subsystem/mapping/proc/setup_rivers()
 	// Generate mining ruins
@@ -275,7 +275,7 @@ SUBSYSTEM_DEF(mapping)
 
 	var/list/ice_ruins = levels_by_trait(ZTRAIT_ICE_RUINS)
 	for (var/ice_z in ice_ruins)
-		spawn_rivers(ice_z, 6, /turf/open/lava/plasma/ice_moon, /area/icemoon/surface/outdoors/unexplored/rivers)
+		spawn_rivers(ice_z, 6, /turf/open/lava/phoron/ice_moon, /area/icemoon/surface/outdoors/unexplored/rivers)
 
 	var/list/ice_ruins_underground = levels_by_trait(ZTRAIT_ICE_RUINS_UNDERGROUND)
 	for (var/ice_z in ice_ruins_underground)

@@ -1,7 +1,4 @@
 
-//These laws are made to bring great amounts of grief to the station immediately or are directly sided with antagonists.
-//I'm not talking silicons being "better" than the crew, I'm talking entirely antag or plasmafires for days
-
 /datum/ai_laws/antimov
 	name = "Primary Mission Objectives"
 	id = "antimov"

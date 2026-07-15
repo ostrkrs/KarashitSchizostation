@@ -174,7 +174,7 @@
 /obj/item/bitrunning_disk/item/tier3
 	name = "bitrunning gear: advanced"
 	selectable_items = list(
-		/obj/item/gun/energy/e_gun/nuclear,
+		/obj/item/gun/energy/laser,
 		/obj/item/dualsaber/green,
 		/obj/item/grenade/syndieminibomb,
 	)
@@ -220,10 +220,4 @@
 		/obj/item/crusher_trophy/demon_claws,
 		/obj/item/crusher_trophy/vortex_talisman,
 		/obj/item/crusher_trophy/ice_demon_cube,
-	)
-
-/obj/item/bitrunning_disk/item/mini_uzi
-	name = "bitrunning gear: mini-uzi"
-	selectable_items = list(
-		/obj/item/gun/ballistic/automatic/mini_uzi,
 	)

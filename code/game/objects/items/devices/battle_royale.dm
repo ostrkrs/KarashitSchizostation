@@ -8,7 +8,7 @@ GLOBAL_LIST_INIT(battle_royale_regions, list(
 	"Research Division" = list(
 		/area/station/command/heads_quarters/rd,
 		/area/station/security/checkpoint/science,
-		/area/station/science,
+		/area/station/research,
 	),
 	"Engineering Bay" = list(
 		/area/station/command/heads_quarters/ce,
@@ -232,7 +232,7 @@ GLOBAL_DATUM_INIT(battle_royale_master, /datum/battle_royale_master, new)
 		return FALSE // Well there's not much point is there
 
 	priority_announce(
-		text = "Congratulations [station_name()], you have been chosen as the next site of the Rumble Royale! \n\
+		text = "Congratulations [ship_name()], you have been chosen as the next site of the Rumble Royale! \n\
 			Viewers across the sector will watch our [convert_integer_to_words(length(contestant_implants))] lucky contestants battle their way into your [chosen_area] and fight until only one is left standing! \n\
 			If they don't make it in five minutes, they'll be disqualified. If you see one of our players struggling to get in, do lend them a hand... or don't, if you can live with the consequences!  \n\
 			As a gesture of gratitude, we will be providing our premium broadcast to your entertainment monitors at no cost so that you can watch the excitement. \n\

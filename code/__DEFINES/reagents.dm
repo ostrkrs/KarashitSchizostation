@@ -25,7 +25,7 @@
 #define REAGENT_HOLDER_ALIVE (1<<9)
 
 //Special properties
-///If the holder is a sealed container - Used if you don't want reagent contents boiling out (plasma, specifically, in which case it only bursts out when at ignition temperatures)
+///If the holder is a sealed container - Used if you don't want reagent contents boiling out (phoron, specifically, in which case it only bursts out when at ignition temperatures)
 #define SEALED_CONTAINER (1<<10)
 /// Prevents splashing for open reagent containers
 #define NO_SPLASH (1<<11)

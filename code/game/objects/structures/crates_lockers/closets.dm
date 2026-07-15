@@ -1,8 +1,10 @@
 #define LOCKER_FULL -1
+#define CLOSET_LOCK_PANEL_OPEN 0
+#define CLOSET_LOCK_WIRES_DISCONNECTED 1
+#define CLOSET_LOCK_HACKED 2
 
 ///A comprehensive list of all closets (NOT CRATES) in the game world
 GLOBAL_LIST_EMPTY(roundstart_station_closets)
-
 
 /obj/structure/closet
 	name = "closet"
@@ -43,6 +45,7 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	var/opened = FALSE
 	var/welded = FALSE
 	var/locked = FALSE
+	var/picklocking_stage
 	var/large = TRUE
 	var/wall_mounted = 0 //never solid (You can always pass over it)
 	var/breakout_time = 1200
@@ -68,6 +71,8 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	var/anchorable = TRUE
 	var/icon_welded = "welded"
 	var/icon_broken = "sparking"
+	var/icon_locked = "locked"
+	var/icon_unlocked = "unlocked"
 	/// Whether a skittish person can dive inside this closet. Disable if opening the closet causes "bad things" to happen or that it leads to a logical inconsistency.
 	var/divable = TRUE
 	/// secure locker or not, also used if overriding a non-secure locker with a secure door overlay to add fancy lights
@@ -266,8 +271,8 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	if(broken || !secure)
 		return
 	//Overlay is similar enough for both that we can use the same mask for both
-	. += emissive_appearance(icon, "locked", src, alpha = src.alpha)
-	. += locked ? "locked" : "unlocked"
+	. += emissive_appearance(icon, icon_locked, src, alpha = src.alpha)
+	. += locked ? icon_locked : icon_unlocked
 
 /obj/structure/closet/vv_edit_var(vname, vval)
 	if(vname == NAMEOF(src, opened))
@@ -368,6 +373,14 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 			. += span_notice("The card reader could be [EXAMINE_HINT("pried")] out.")
 			. += span_notice("Swipe your PDA with an ID card/Just ID to change access levels.")
 			. += span_notice("Use multitool to [access_locked ? "unlock" : "lock"] the access panel.")
+
+	switch(picklocking_stage)
+		if(CLOSET_LOCK_PANEL_OPEN)
+			. += span_warning("Lock panel is missing.")
+		if(CLOSET_LOCK_WIRES_DISCONNECTED)
+			. += span_warning("Lock panel is missing and wires are exposed.")
+		if(CLOSET_LOCK_HACKED)
+			. += span_warning("Lock is broken.")
 
 /obj/structure/closet/add_context(atom/source, list/context, obj/item/held_item, mob/user)
 	. = ..()
@@ -637,11 +650,68 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 		req_one_access = null
 
 /obj/structure/closet/multitool_act(mob/living/user, obj/item/tool)
+	if(locked && picklocking_stage == CLOSET_LOCK_WIRES_DISCONNECTED && !user.combat_mode)
+		to_chat(user, span_notice("You begin connecting wires to your [tool]..."))
+		balloon_alert(user, "pulsing wires...")
+		if(tool.use_tool(src, user, 16 SECONDS, volume = 50))
+			if(prob(80))
+				broken = FALSE
+				picklocking_stage = CLOSET_LOCK_HACKED
+				emag_act(user)
+			else
+				to_chat(user, span_warning("Shit! Wrong wire!"))
+				balloon_alert(user, "failed to pulse wires!")
+				do_sparks(5, TRUE, src)
+				electrocute_mob(user, get_area(src), src, 0.5, TRUE)
+		return TRUE
+
 	if(!secure || !card_reader_installed || broken || locked || opened)
 		return
 	access_locked = !access_locked
 	balloon_alert(user, "access panel [access_locked ? "locked" : "unlocked"]")
 	return TRUE
+
+/obj/structure/closet/screwdriver_act(mob/living/user, obj/item/tool)
+	. = ..()
+	if(!secure)
+		return
+	if(istype(src, /obj/structure/closet/crate/secure/loot) && !user.combat_mode)
+		to_chat(user, span_warning("The panel of this lock is rusted solid!"))
+		balloon_alert(user, "can't unscrew that!")
+		return
+	if(locked && picklocking_stage == null && !user.combat_mode)
+		to_chat(user, span_notice("You begin unscrewing lock panel..."))
+		balloon_alert(user, "unscrewing panel...")
+		if(tool.use_tool(src, user, 16 SECONDS, volume = 50))
+			if(prob(95))
+				broken = TRUE
+				picklocking_stage = CLOSET_LOCK_PANEL_OPEN
+				update_icon()
+				to_chat(user, span_notice("You successfully unscrewed lock panel!"))
+				balloon_alert(user, "panel unscrewed")
+			else
+				user.apply_damage(5, BRUTE, user.get_inactive_hand())
+				user.emote("scream")
+				to_chat(user, span_warning("Dang it! Your [tool] slipped off, hitting your hand!"))
+				balloon_alert(user, "failed to uscrew panel!")
+		return TRUE
+
+/obj/structure/closet/wirecutter_act(mob/living/user, obj/item/tool)
+	. = ..()
+	if(locked && picklocking_stage == CLOSET_LOCK_PANEL_OPEN && !user.combat_mode)
+		to_chat(user, span_notice("You begin cutting through wires behing lock panel..."))
+		balloon_alert(user, "cutting wires...")
+		if(tool.use_tool(src, user, 16 SECONDS, volume = 50))
+			if(prob(80))
+				to_chat(user, span_notice("You successfully prepared wires for hacking!"))
+				balloon_alert(user, "wires are cut")
+				picklocking_stage = CLOSET_LOCK_WIRES_DISCONNECTED
+			else
+				to_chat(user, span_warning("Shit! Wrong wire!"))
+				balloon_alert(user, "failed to cut wires!")
+				do_sparks(5, TRUE, src)
+				electrocute_mob(user, get_area(src), src, 0.5, TRUE)
+		return TRUE
 
 /// sets the access for the closets from the swiped ID card
 /obj/structure/closet/proc/set_access(list/accesses)
@@ -1285,3 +1355,6 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	return .
 
 #undef LOCKER_FULL
+#undef CLOSET_LOCK_PANEL_OPEN
+#undef CLOSET_LOCK_WIRES_DISCONNECTED
+#undef CLOSET_LOCK_HACKED

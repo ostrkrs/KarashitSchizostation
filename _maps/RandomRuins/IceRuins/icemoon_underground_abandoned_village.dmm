@@ -93,7 +93,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "kl" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo,
 /turf/closed/wall,
 /area/icemoon/underground/explored)
 "ks" = (

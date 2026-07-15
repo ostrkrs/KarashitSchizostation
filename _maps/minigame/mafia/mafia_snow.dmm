@@ -87,7 +87,7 @@
 /turf/open/floor/holofloor/snow,
 /area/centcom/mafia)
 "u" = (
-/obj/structure/statue/plasma/scientist{
+/obj/structure/statue/phoron/scientist{
 	anchored = 1
 	},
 /turf/open/floor/holofloor/snow,
@@ -98,7 +98,7 @@
 /turf/open/floor/holofloor/snow,
 /area/centcom/mafia)
 "w" = (
-/turf/open/lava/plasma/mafia,
+/turf/open/lava/phoron/mafia,
 /area/centcom/mafia)
 "x" = (
 /obj/machinery/door/poddoor/preopen{
@@ -119,7 +119,7 @@
 /area/centcom/mafia)
 "z" = (
 /obj/structure/lattice/catwalk,
-/turf/open/lava/plasma/mafia,
+/turf/open/lava/phoron/mafia,
 /area/centcom/mafia)
 "A" = (
 /obj/machinery/door/poddoor/preopen{
@@ -147,7 +147,7 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/closet/crate/critter,
 /obj/item/clothing/suit/hooded/wintercoat/miner,
-/turf/open/lava/plasma/mafia,
+/turf/open/lava/phoron/mafia,
 /area/centcom/mafia)
 "F" = (
 /turf/open/floor/holofloor/wood,
@@ -187,7 +187,7 @@
 "W" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/landmark/mafia,
-/turf/open/lava/plasma/mafia,
+/turf/open/lava/phoron/mafia,
 /area/centcom/mafia)
 
 (1,1,1) = {"

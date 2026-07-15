@@ -141,8 +141,8 @@
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
 	new /obj/item/clothing/accessory/medal/silver/security(src)
 	new /obj/item/clothing/accessory/medal/bronze_heart(src)
-	new /obj/item/clothing/accessory/medal/plasma/nobel_science(src)
-	new /obj/item/clothing/accessory/medal/plasma/nobel_science(src)
+	new /obj/item/clothing/accessory/medal/phoron/nobel_science(src)
+	new /obj/item/clothing/accessory/medal/phoron/nobel_science(src)
 	for(var/i in 1 to 3)
 		new /obj/item/clothing/accessory/medal/conduct(src)
 
@@ -234,7 +234,7 @@
 
 /obj/item/storage/lockbox/medal/sci/PopulateContents()
 	for(var/i in 1 to 3)
-		new /obj/item/clothing/accessory/medal/plasma/nobel_science(src)
+		new /obj/item/clothing/accessory/medal/phoron/nobel_science(src)
 
 /obj/item/storage/lockbox/medal/engineering
 	name = "engineering medal box"
@@ -275,28 +275,6 @@
 	if(!silent)
 		balloon_alert(user, "incorrect bank account!")
 	return FALSE
-
-/obj/item/storage/lockbox/dueling
-	name = "dueling pistol case"
-	desc = "Let's solve this like gentlespacemen."
-	icon_state = "medalbox+l"
-	inhand_icon_state = "syringe_kit"
-	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	w_class = WEIGHT_CLASS_NORMAL
-	req_access = list(ACCESS_CAPTAIN)
-	icon_locked = "medalbox+l"
-	icon_closed = "medalbox"
-	icon_broken = "medalbox+b"
-	base_icon_state = "medalbox"
-	icon_open = "medalboxopen"
-	storage_type = /datum/storage/lockbox/dueling
-
-/obj/item/storage/lockbox/dueling/PopulateContents()
-	. = ..()
-	var/obj/item/gun/energy/dueling/gun_A = new(src)
-	var/obj/item/gun/energy/dueling/gun_B = new(src)
-	new /datum/duel(gun_A, gun_B)
 
 /obj/item/storage/lockbox/bitrunning
 	name = "base class curiosity"

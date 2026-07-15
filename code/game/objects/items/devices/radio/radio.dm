@@ -12,6 +12,10 @@
 	dog_fashion = /datum/dog_fashion/back
 	interaction_flags_atom = parent_type::interaction_flags_atom | INTERACT_ATOM_ALLOW_USER_LOCATION | INTERACT_ATOM_IGNORE_MOBILITY
 
+	sound_vary = TRUE
+	pickup_sound = SFX_GENERIC_DEVICE_PICKUP
+	drop_sound = SFX_GENERIC_DEVICE_DROP
+
 	obj_flags = CONDUCTS_ELECTRICITY
 	slot_flags = ITEM_SLOT_BELT
 	throw_speed = 3
@@ -59,6 +63,9 @@
 	var/command = FALSE
 	/// Does it play radio noise?
 	var/radio_noise = TRUE
+
+	///If false, the radio will not be able to send messages
+	var/can_broadcast = TRUE
 
 	///makes anyone who is talking through this anonymous.
 	var/anonymize = FALSE
@@ -123,11 +130,24 @@
 	if(prob(check_holidays(APRIL_FOOLS) ? 50 : 0.5)) // Extremely rare chance to replace a normal radio with a toy one, because it's funny
 		make_silly()
 
+	register_context()
+
 /obj/item/radio/Destroy()
 	remove_radio_all(src) //Just to be sure
 	if(istype(keyslot))
 		QDEL_NULL(keyslot)
 	return ..()
+
+/obj/item/radio/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
+	if(can_broadcast)
+		context[SCREENTIP_CONTEXT_ALT_LMB] = broadcasting ? "Turn Mic Off" : "Turn Mic On"
+
+	context[SCREENTIP_CONTEXT_CTRL_LMB] = listening ? "Turn Audio Off" : "Turn Audio On"
+
+	if(command)
+		context[SCREENTIP_CONTEXT_ALT_RMB] = use_command ? "Turn High-Volume Off" : "Turn High-Volume On"
+
+	return CONTEXTUAL_SCREENTIP_SET
 
 /obj/item/radio/on_saboteur(datum/source, disrupt_duration)
 	. = ..()
@@ -292,6 +312,8 @@
 /obj/item/radio/proc/talk_into_impl(atom/movable/talking_movable, message, channel, list/spans, datum/language/language, list/message_mods)
 	if(!on)
 		return // the device has to be on
+	if(!can_broadcast)
+		return
 	if(!talking_movable || !message)
 		return
 	if(wires.is_cut(WIRE_TX))  // Permacell and otherwise tampered-with radios
@@ -353,7 +375,7 @@
 	if(isliving(talking_movable))
 		var/mob/living/talking_living = talking_movable
 		var/volume_modifier = (talking_living.client?.prefs.read_preference(/datum/preference/numeric/volume/sound_radio_noise))
-		if(radio_noise && talking_living.can_hear() && volume_modifier && signal.frequency != FREQ_COMMON && !LAZYACCESS(message_mods, MODE_SEQUENTIAL) && COOLDOWN_FINISHED(src, audio_cooldown))
+		if(radio_noise && !HAS_TRAIT(talking_living, TRAIT_DEAF) && volume_modifier && signal.frequency != FREQ_COMMON && !LAZYACCESS(message_mods, MODE_SEQUENTIAL) && COOLDOWN_FINISHED(src, audio_cooldown))
 			COOLDOWN_START(src, audio_cooldown, 0.5 SECONDS)
 			var/sound/radio_noise = sound('sound/items/radio/radio_talk.ogg', volume = volume_modifier)
 			radio_noise.frequency = get_rand_frequency_low_range()
@@ -478,6 +500,7 @@
 	data["subspaceSwitchable"] = subspace_switchable
 	data["headset"] = FALSE
 	data["radio_noises"] = (user.client?.prefs.read_preference(/datum/preference/numeric/volume/sound_radio_noise))
+	data["can_broadcast"] = can_broadcast
 
 	return data
 
@@ -554,6 +577,19 @@
 		. += overlay_mic_idle
 	if(listening && overlay_speaker_idle)
 		. += overlay_speaker_idle
+
+/obj/item/radio/click_alt(mob/user)
+	if(can_broadcast)
+		set_broadcasting(!broadcasting)
+		to_chat(user, span_notice("You toggle microphone [broadcasting ? "on" : "off"]."))
+		return CLICK_ACTION_SUCCESS
+
+	return CLICK_ACTION_BLOCKING
+
+/obj/item/radio/item_ctrl_click(mob/user)
+	set_listening(!listening)
+	to_chat(user, span_notice("You toggle audio [listening ? "on" : "off"]."))
+	return CLICK_ACTION_SUCCESS
 
 /obj/item/radio/item_interaction(mob/living/user, obj/item/tool, list/modifiers)
 	if(user.combat_mode && tool.tool_behaviour == TOOL_SCREWDRIVER)

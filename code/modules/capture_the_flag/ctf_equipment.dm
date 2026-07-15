@@ -113,34 +113,9 @@
 /obj/projectile/beam/ctf/marksman
 	damage = 30
 	icon_state = null
-	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/laser/blue
 	muzzle_type = /obj/effect/projectile/muzzle/laser/blue
 	impact_type = /obj/effect/projectile/impact/laser/blue
-
-// DESERT EAGLE
-
-/obj/item/gun/ballistic/automatic/pistol/deagle/ctf
-	desc = "This looks like it could really hurt in melee."
-	force = 75
-	accepted_magazine_type = /obj/item/ammo_box/magazine/recharge/ctf/deagle
-
-/obj/item/gun/ballistic/automatic/pistol/deagle/ctf/Initialize(mapload)
-	. = ..()
-	AddElement(/datum/element/delete_on_drop)
-
-/obj/item/ammo_box/magazine/recharge/ctf/deagle
-	ammo_type = /obj/item/ammo_casing/laser/ctf/deagle
-	max_ammo = 7
-
-/obj/item/ammo_casing/laser/ctf/deagle
-	projectile_type = /obj/projectile/beam/ctf/deagle
-
-/obj/projectile/beam/ctf/deagle
-	icon_state = "bullet"
-	damage = 60
-	light_color = COLOR_WHITE
-	impact_effect_type = /obj/effect/temp_visual/impact_effect
 
 // INSTAKILL RIFLE
 

@@ -166,71 +166,71 @@
 // Fire:
 
 /**
- * Plasma combustion:
+ * Phoron combustion:
  *
- * Combustion of oxygen and plasma (mostly treated as hydrocarbons).
+ * Combustion of oxygen and phoron (mostly treated as hydrocarbons).
  * The reaction rate is dependent on the temperature of the gasmix.
  * May produce either tritium or carbon dioxide and water vapor depending on the fuel/oxydizer ratio of the gasmix.
  */
-/datum/gas_reaction/plasmafire
+/datum/gas_reaction/phoronfire
 	priority_group = PRIORITY_FIRE
-	name = "Plasma Combustion"
-	id = "plasmafire"
+	name = "Phoron Combustion"
+	id = "phoronfire"
 	expands_hotspot = TRUE
-	desc = "Combustion of oxygen and plasma. Able to produce tritium or carbon dioxide and water vapor."
+	desc = "Combustion of oxygen and phoron. Able to produce tritium or carbon dioxide and water vapor."
 
-/datum/gas_reaction/plasmafire/init_reqs()
+/datum/gas_reaction/phoronfire/init_reqs()
 	requirements = list(
-		/datum/gas/plasma = MINIMUM_MOLE_COUNT,
+		/datum/gas/phoron = MINIMUM_MOLE_COUNT,
 		/datum/gas/oxygen = MINIMUM_MOLE_COUNT,
-		"MIN_TEMP" = PLASMA_MINIMUM_BURN_TEMPERATURE,
+		"MIN_TEMP" = PHORON_MINIMUM_BURN_TEMPERATURE,
 	)
 
-/datum/gas_reaction/plasmafire/react(datum/gas_mixture/air, datum/holder)
+/datum/gas_reaction/phoronfire/react(datum/gas_mixture/air, datum/holder)
 	. = NO_REACTION
 	// This reaction should proceed faster at higher temperatures.
 	var/temperature = air.temperature
 	var/temperature_scale = 0
-	if(temperature > PLASMA_UPPER_TEMPERATURE)
+	if(temperature > PHORON_UPPER_TEMPERATURE)
 		temperature_scale = 1
 	else
-		temperature_scale = (temperature - PLASMA_MINIMUM_BURN_TEMPERATURE) / (PLASMA_UPPER_TEMPERATURE-PLASMA_MINIMUM_BURN_TEMPERATURE)
+		temperature_scale = (temperature - PHORON_MINIMUM_BURN_TEMPERATURE) / (PHORON_UPPER_TEMPERATURE-PHORON_MINIMUM_BURN_TEMPERATURE)
 		if(temperature_scale <= 0)
 			return
 
 	var/oxygen_burn_ratio = OXYGEN_BURN_RATIO_BASE - temperature_scale
-	var/plasma_burn_rate = 0
+	var/phoron_burn_rate = 0
 	var/super_saturation = FALSE // Whether we should make tritium.
 	var/list/cached_gases = air.gases //this speeds things up because accessing datum vars is slow
 	var/list/oxygen = cached_gases[/datum/gas/oxygen]
-	var/list/plasma = cached_gases[/datum/gas/plasma]
-	switch(oxygen[MOLES] / plasma[MOLES])
+	var/list/phoron = cached_gases[/datum/gas/phoron]
+	switch(oxygen[MOLES] / phoron[MOLES])
 		if(SUPER_SATURATION_THRESHOLD to INFINITY)
-			plasma_burn_rate = (plasma[MOLES] / PLASMA_BURN_RATE_DELTA) * temperature_scale
+			phoron_burn_rate = (phoron[MOLES] / PHORON_BURN_RATE_DELTA) * temperature_scale
 			super_saturation = TRUE // Begin to form tritium
-		if(PLASMA_OXYGEN_FULLBURN to SUPER_SATURATION_THRESHOLD)
-			plasma_burn_rate = (plasma[MOLES] / PLASMA_BURN_RATE_DELTA) * temperature_scale
+		if(PHORON_OXYGEN_FULLBURN to SUPER_SATURATION_THRESHOLD)
+			phoron_burn_rate = (phoron[MOLES] / PHORON_BURN_RATE_DELTA) * temperature_scale
 		else
-			plasma_burn_rate = ((oxygen[MOLES] / PLASMA_OXYGEN_FULLBURN) / PLASMA_BURN_RATE_DELTA) * temperature_scale
+			phoron_burn_rate = ((oxygen[MOLES] / PHORON_OXYGEN_FULLBURN) / PHORON_BURN_RATE_DELTA) * temperature_scale
 
-	if(plasma_burn_rate < MINIMUM_HEAT_CAPACITY)
+	if(phoron_burn_rate < MINIMUM_HEAT_CAPACITY)
 		return
 
 	var/old_heat_capacity = air.heat_capacity()
-	plasma_burn_rate = min(plasma_burn_rate, plasma[MOLES], oxygen[MOLES] *  INVERSE(oxygen_burn_ratio)) //Ensures matter is conserved properly
-	plasma[MOLES] = QUANTIZE(plasma[MOLES] - plasma_burn_rate)
-	oxygen[MOLES] = QUANTIZE(oxygen[MOLES] - (plasma_burn_rate * oxygen_burn_ratio))
+	phoron_burn_rate = min(phoron_burn_rate, phoron[MOLES], oxygen[MOLES] *  INVERSE(oxygen_burn_ratio)) //Ensures matter is conserved properly
+	phoron[MOLES] = QUANTIZE(phoron[MOLES] - phoron_burn_rate)
+	oxygen[MOLES] = QUANTIZE(oxygen[MOLES] - (phoron_burn_rate * oxygen_burn_ratio))
 	if (super_saturation)
 		ASSERT_GAS(/datum/gas/tritium, air)
-		cached_gases[/datum/gas/tritium][MOLES] += plasma_burn_rate
+		cached_gases[/datum/gas/tritium][MOLES] += phoron_burn_rate
 	else
 		ASSERT_GAS(/datum/gas/carbon_dioxide, air)
 		ASSERT_GAS(/datum/gas/water_vapor, air)
-		cached_gases[/datum/gas/carbon_dioxide][MOLES] += plasma_burn_rate * 0.75
-		cached_gases[/datum/gas/water_vapor][MOLES] += plasma_burn_rate * 0.25
+		cached_gases[/datum/gas/carbon_dioxide][MOLES] += phoron_burn_rate * 0.75
+		cached_gases[/datum/gas/water_vapor][MOLES] += phoron_burn_rate * 0.25
 
-	SET_REACTION_RESULTS((plasma_burn_rate) * (1 + oxygen_burn_ratio))
-	var/energy_released = FIRE_PLASMA_ENERGY_RELEASED * plasma_burn_rate
+	SET_REACTION_RESULTS((phoron_burn_rate) * (1 + oxygen_burn_ratio))
+	var/energy_released = FIRE_PHORON_ENERGY_RELEASE * phoron_burn_rate
 	var/new_heat_capacity = air.heat_capacity()
 	if(new_heat_capacity > MINIMUM_HEAT_CAPACITY)
 		air.temperature = (temperature * old_heat_capacity + energy_released) / new_heat_capacity
@@ -533,42 +533,42 @@
 /**
  * BZ Formation
  *
- * Formation of BZ by combining plasma and nitrous oxide at low pressures.
+ * Formation of BZ by combining phoron and nitrous oxide at low pressures.
  * Exothermic.
  */
 /datum/gas_reaction/bzformation
 	priority_group = PRIORITY_FORMATION
 	name = "BZ Gas Formation"
 	id = "bzformation"
-	desc = "Production of BZ using plasma and nitrous oxide."
+	desc = "Production of BZ using phoron and nitrous oxide."
 
 /datum/gas_reaction/bzformation/init_reqs()
 	requirements = list(
 		/datum/gas/nitrous_oxide = 10,
-		/datum/gas/plasma = 10,
+		/datum/gas/phoron = 10,
 		"MAX_TEMP" = BZ_FORMATION_MAX_TEMPERATURE,
 	)
 
 /datum/gas_reaction/bzformation/react(datum/gas_mixture/air)
 	var/list/cached_gases = air.gases
 	var/nitrous_oxide = cached_gases[/datum/gas/nitrous_oxide]
-	var/plasma = cached_gases[/datum/gas/plasma]
+	var/phoron = cached_gases[/datum/gas/phoron]
 	var/pressure = air.return_pressure()
 	var/volume = air.return_volume()
 	var/environment_effciency = volume/pressure		//More volume and less pressure gives better rates
-	var/ratio_efficency = min(nitrous_oxide[MOLES]/plasma[MOLES], 1)  //Less n2o than plasma give lower rates
-	var/nitrous_oxide_decomposed_factor = max(4 * (plasma[MOLES] / (nitrous_oxide[MOLES] + plasma[MOLES]) - 0.75), 0) // Nitrous oxide decomposes when there are more than 3 parts plasma per n2o.
-	var/bz_formed = min(0.01 * ratio_efficency * environment_effciency, nitrous_oxide[MOLES] * INVERSE(0.4), plasma[MOLES] * INVERSE(0.8 * (1 - nitrous_oxide_decomposed_factor)))
+	var/ratio_efficency = min(nitrous_oxide[MOLES]/phoron[MOLES], 1)  //Less n2o than phoron give lower rates
+	var/nitrous_oxide_decomposed_factor = max(4 * (phoron[MOLES] / (nitrous_oxide[MOLES] + phoron[MOLES]) - 0.75), 0) // Nitrous oxide decomposes when there are more than 3 parts phoron per n2o.
+	var/bz_formed = min(0.01 * ratio_efficency * environment_effciency, nitrous_oxide[MOLES] * INVERSE(0.4), phoron[MOLES] * INVERSE(0.8 * (1 - nitrous_oxide_decomposed_factor)))
 
-	if (nitrous_oxide[MOLES] - bz_formed * 0.4 < 0  || plasma[MOLES] - 0.8 * bz_formed * (1 - nitrous_oxide_decomposed_factor) < 0 || bz_formed <= 0)
+	if (nitrous_oxide[MOLES] - bz_formed * 0.4 < 0  || phoron[MOLES] - 0.8 * bz_formed * (1 - nitrous_oxide_decomposed_factor) < 0 || bz_formed <= 0)
 		return NO_REACTION
 
 	var/old_heat_capacity = air.heat_capacity()
 
 	/**
-	*If n2o-plasma ratio is less than 1:3 start decomposing n2o.
+	*If n2o-phoron ratio is less than 1:3 start decomposing n2o.
 	*Rate of decomposition vs BZ production increases as n2o concentration gets lower
-	*Plasma acts as a catalyst on decomposition, so it doesn't get consumed in the process.
+	*Phoron acts as a catalyst on decomposition, so it doesn't get consumed in the process.
 	*N2O decomposes with its normal decomposition energy
 	*/
 	if (nitrous_oxide_decomposed_factor>0)
@@ -581,7 +581,7 @@
 	ASSERT_GAS(/datum/gas/bz, air)
 	cached_gases[/datum/gas/bz][MOLES] += bz_formed * (1-nitrous_oxide_decomposed_factor)
 	nitrous_oxide[MOLES] -= 0.4 * bz_formed
-	plasma[MOLES] -= 0.8 * bz_formed * (1-nitrous_oxide_decomposed_factor)
+	phoron[MOLES] -= 0.8 * bz_formed * (1-nitrous_oxide_decomposed_factor)
 
 	SET_REACTION_RESULTS(bz_formed)
 	var/energy_released = bz_formed * (BZ_FORMATION_ENERGY + nitrous_oxide_decomposed_factor * (N2O_DECOMPOSITION_ENERGY - BZ_FORMATION_ENERGY))
@@ -744,11 +744,11 @@
 	priority_group = PRIORITY_FORMATION
 	name = "Freon Formation"
 	id = "freonformation"
-	desc = "Production of freon using plasma, carbon dioxide, and BZ under high temperature."
+	desc = "Production of freon using phoron, carbon dioxide, and BZ under high temperature."
 
 /datum/gas_reaction/freonformation/init_reqs() //minimum requirements for freon formation
 	requirements = list(
-		/datum/gas/plasma = MINIMUM_MOLE_COUNT * 6,
+		/datum/gas/phoron = MINIMUM_MOLE_COUNT * 6,
 		/datum/gas/carbon_dioxide = MINIMUM_MOLE_COUNT * 3,
 		/datum/gas/bz = MINIMUM_MOLE_COUNT,
 		"MIN_TEMP" = FREON_FORMATION_MIN_TEMPERATURE,
@@ -756,23 +756,23 @@
 
 /datum/gas_reaction/freonformation/react(datum/gas_mixture/air)
 	var/list/cached_gases = air.gases
-	var/list/plasma = cached_gases[/datum/gas/plasma]
+	var/list/phoron = cached_gases[/datum/gas/phoron]
 	var/list/carbon_dioxide = cached_gases[/datum/gas/carbon_dioxide]
 	var/list/bz = cached_gases[/datum/gas/bz]
 	var/temperature = air.temperature
-	var/minimal_mole_factor = min(plasma[MOLES] *  INVERSE(0.6), bz[MOLES] *  INVERSE(0.1), carbon_dioxide[MOLES] *  INVERSE(0.3))
+	var/minimal_mole_factor = min(phoron[MOLES] *  INVERSE(0.6), bz[MOLES] *  INVERSE(0.1), carbon_dioxide[MOLES] *  INVERSE(0.3))
 
 	var/equation_first_part = NUM_E ** (-(((temperature - 800) / 200) ** 2))
 	var/equation_second_part = 3 / (1 + NUM_E ** (-0.001 * (temperature - 6000)))
 	var/heat_factor = equation_first_part + equation_second_part
 
-	var/freon_formed = min(heat_factor * minimal_mole_factor * 0.05, plasma[MOLES] * INVERSE(0.6), carbon_dioxide[MOLES] * INVERSE(0.3), bz[MOLES] * INVERSE(0.1))
-	if (freon_formed <= 0 || (plasma[MOLES] - freon_formed * 0.6 < 0 ) || (carbon_dioxide[MOLES] - freon_formed * 0.3 < 0) || (bz[MOLES] - freon_formed * 0.1 < 0)) //Shouldn't produce gas from nothing.
+	var/freon_formed = min(heat_factor * minimal_mole_factor * 0.05, phoron[MOLES] * INVERSE(0.6), carbon_dioxide[MOLES] * INVERSE(0.3), bz[MOLES] * INVERSE(0.1))
+	if (freon_formed <= 0 || (phoron[MOLES] - freon_formed * 0.6 < 0 ) || (carbon_dioxide[MOLES] - freon_formed * 0.3 < 0) || (bz[MOLES] - freon_formed * 0.1 < 0)) //Shouldn't produce gas from nothing.
 		return NO_REACTION
 
 	var/old_heat_capacity = air.heat_capacity()
 	ASSERT_GAS(/datum/gas/freon, air)
-	plasma[MOLES] -= freon_formed * 0.6
+	phoron[MOLES] -= freon_formed * 0.6
 	carbon_dioxide[MOLES] -= freon_formed * 0.3
 	bz[MOLES] -= freon_formed * 0.1
 	cached_gases[/datum/gas/freon][MOLES] += freon_formed
@@ -1162,13 +1162,13 @@
 /**
  * Proto-Nitrate BZase Action
  *
- * Breaks BZ down into nitrogen, helium, and plasma in the presence of proto-nitrate.
+ * Breaks BZ down into nitrogen, helium, and phoron in the presence of proto-nitrate.
  */
 /datum/gas_reaction/proto_nitrate_bz_response
 	priority_group = PRIORITY_PRE_FORMATION
 	name = "Proto Nitrate BZ Response"
 	id = "proto_nitrate_bz_response"
-	desc = "Breakdown of BZ into nitrogen, helium, and plasma by proto-nitrate under low temperatures."
+	desc = "Breakdown of BZ into nitrogen, helium, and phoron by proto-nitrate under low temperatures."
 
 /datum/gas_reaction/proto_nitrate_bz_response/init_reqs()
 	requirements = list(
@@ -1194,8 +1194,8 @@
 	cached_gases[/datum/gas/nitrogen][MOLES] += consumed_amount * 0.4
 	ASSERT_GAS(/datum/gas/helium, air)
 	cached_gases[/datum/gas/helium][MOLES] += consumed_amount * 1.6
-	ASSERT_GAS(/datum/gas/plasma, air)
-	cached_gases[/datum/gas/plasma][MOLES] += consumed_amount * 0.8
+	ASSERT_GAS(/datum/gas/phoron, air)
+	cached_gases[/datum/gas/phoron][MOLES] += consumed_amount * 0.8
 
 	SET_REACTION_RESULTS(consumed_amount)
 	var/turf/open/location

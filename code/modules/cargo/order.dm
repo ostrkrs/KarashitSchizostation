@@ -106,7 +106,7 @@
 	var/obj/item/paper/requisition/requisition_paper = new(T)
 
 	requisition_paper.name = "requisition form - #[id] ([pack.name])"
-	var/requisition_text = "<h2>[station_name()] Supply Requisition</h2>"
+	var/requisition_text = "<h2>[ship_name()] Supply Requisition</h2>"
 	requisition_text += "<hr/>"
 	requisition_text += "Order #[id]<br/>"
 	requisition_text+= "Time of Order: [station_time_timestamp()]<br/>"
@@ -125,7 +125,7 @@
 /datum/supply_order/proc/generateManifest(obj/container, owner, packname, cost) //generates-the-manifests.
 	var/obj/item/paper/fluff/jobs/cargo/manifest/manifest_paper = new(null, id, cost, manifest_can_fail)
 
-	var/station_name = (manifest_paper.errors & MANIFEST_ERROR_NAME) ? new_station_name() : station_name()
+	var/ship_name = (manifest_paper.errors & MANIFEST_ERROR_NAME) ? new_ship_name() : ship_name()
 
 	manifest_paper.name = "shipping manifest - [packname?"#[id] ([pack.name])":"(Grouped Item Crate)"]"
 
@@ -135,7 +135,7 @@
 		manifest_text += "Direct purchase from [owner]<br/>"
 		manifest_paper.name += " - Purchased by [owner]"
 	manifest_text += "Order[packname?"":"s"]: [id]<br/>"
-	manifest_text += "Destination: [station_name]<br/>"
+	manifest_text += "Destination: [ship_name]<br/>"
 	if(packname)
 		manifest_text += "Item: [packname]<br/>"
 	manifest_text += "Contents: <br/>"

@@ -11,7 +11,6 @@
 	config_tag = "JANITOR"
 
 	outfit = /datum/outfit/job/janitor
-	plasmaman_outfit = /datum/outfit/plasmaman/janitor
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -41,7 +40,6 @@
 	uniform = /obj/item/clothing/under/rank/civilian/janitor
 	belt = /obj/item/modular_computer/pda/janitor
 	ears = /obj/item/radio/headset/headset_srv
-	skillchips = list(/obj/item/skillchip/job/janitor)
 	backpack_contents = list(/obj/item/access_key)
 
 /datum/outfit/job/janitor/pre_equip(mob/living/carbon/human/human_equipper, visuals_only)

@@ -2,8 +2,8 @@
 	filename = "wirecarp"
 	filedesc = "WireCarp"
 	downloader_category = PROGRAM_CATEGORY_SECURITY
-	program_open_overlay = "comm_monitor"
-	extended_desc = "This program monitors stationwide NTNet network, provides access to logging systems, and allows for configuration changes"
+	program_open_overlay = "generic"
+	extended_desc = "This program monitors vessel's network, provides access to logging systems, and allows for configuration changes"
 	size = 12
 	run_access = list(ACCESS_NETWORK) //NETWORK CONTROL IS A MORE SECURE PROGRAM.
 	program_flags = PROGRAM_ON_NTNET_STORE | PROGRAM_REQUIRES_NTNET

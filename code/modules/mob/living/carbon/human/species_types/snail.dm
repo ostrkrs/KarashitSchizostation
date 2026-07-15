@@ -40,8 +40,7 @@
 
 /datum/species/snail/get_species_lore()
 	return list(
-		"Normally, Snailpeople are a result of a genetic experiment gone wrong, but they have since become recognized species in their own right, \
-		similar to the Felinid.",
+		"Normally, Snailpeople are a result of a genetic experiment gone wrong.",
 	)
 
 /datum/species/snail/create_pref_unique_perks()

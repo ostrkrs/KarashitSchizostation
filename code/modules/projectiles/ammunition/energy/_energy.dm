@@ -9,3 +9,4 @@
 	fire_sound = 'sound/items/weapons/laser.ogg'
 	firing_effect_type = /obj/effect/temp_visual/dir_setting/firing_effect/red
 	newtonian_force = 0.5
+	delay = 6

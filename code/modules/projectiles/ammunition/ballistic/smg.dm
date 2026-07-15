@@ -16,28 +16,26 @@
 	desc = "A 4.6x30mm incendiary bullet casing."
 	projectile_type = /obj/projectile/bullet/incendiary/c46x30mm
 
-// .45 (M1911 + C20r)
+// 8 mm
 
-/obj/item/ammo_casing/c45
-	name = ".45 bullet casing"
-	desc = "A .45 bullet casing."
-	caliber = CALIBER_45
-	projectile_type = /obj/projectile/bullet/c45
+/obj/item/ammo_casing/c8mm
+	name = "8mm bullet casing"
+	desc = "An 8mm bullet casing."
+	caliber = CALIBER_8MM
+	projectile_type = /obj/projectile/bullet/c8mm
+	newtonian_force = 0.75
 
-/obj/item/ammo_casing/c45/spent
-	projectile_type = null
+/obj/item/ammo_casing/c8mm/ap
+	name = "8mm armor-piercing bullet casing"
+	desc = "An 8mm armor-piercing bullet casing."
+	projectile_type = /obj/projectile/bullet/c8mm/ap
 
-/obj/item/ammo_casing/c45/ap
-	name = ".45 armor-piercing bullet casing"
-	desc = "A .45 bullet casing."
-	projectile_type = /obj/projectile/bullet/c45/ap
+/obj/item/ammo_casing/c8mm/hp
+	name = "8mm hollow-point bullet casing"
+	desc = "An 8mm hollow-point bullet casing."
+	projectile_type = /obj/projectile/bullet/c8mm/hp
 
-/obj/item/ammo_casing/c45/hp
-	name = ".45 hollow point bullet casing"
-	desc = "A .45 bullet casing."
-	projectile_type = /obj/projectile/bullet/c45/hp
-
-/obj/item/ammo_casing/c45/inc
-	name = ".45 incendiary bullet casing"
-	desc = "A .45 bullet casing."
-	projectile_type = /obj/projectile/bullet/incendiary/c45
+/obj/item/ammo_casing/c8mm/fire
+	name = "8mm incendiary bullet casing"
+	desc = "An 8mm incendiary bullet casing."
+	projectile_type = /obj/projectile/bullet/incendiary/c8mm

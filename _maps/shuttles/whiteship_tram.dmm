@@ -12,7 +12,7 @@
 	},
 /area/shuttle/abandoned/engine)
 "ad" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "ae" = (
@@ -479,7 +479,7 @@
 /obj/structure/closet/crate/radiation,
 /obj/effect/turf_decal/bot_white,
 /obj/item/stack/sheet/mineral/uranium/five,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /obj/machinery/light/cold/directional/south,
@@ -634,8 +634,8 @@
 /turf/template_noop,
 /area/shuttle/abandoned/cargo)
 "cO" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /obj/structure/lattice/catwalk,
 /turf/open/floor/plating/airless,
 /area/shuttle/abandoned/cargo)
@@ -664,8 +664,8 @@
 /turf/template_noop,
 /area/shuttle/abandoned/cargo)
 "cV" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /turf/open/floor/plating/airless,
 /area/shuttle/abandoned/cargo)
 "cY" = (
@@ -859,8 +859,8 @@
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 1
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
@@ -933,8 +933,8 @@
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 1
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
@@ -1384,7 +1384,7 @@
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 1
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
 /turf/open/floor/plating/airless,
 /area/shuttle/abandoned/engine)
 "Yi" = (

@@ -34,6 +34,7 @@
 		TRAIT_BODY_PURIST,
 		TRAIT_BRAINPROBLEMS,
 		TRAIT_CHRONIC_ILLNESS,
+		TRAIT_CLAUSTROPHOBIA,
 		TRAIT_DEAF,
 		TRAIT_FAMILY_HEIRLOOM,
 		TRAIT_FOOD_ALLERGIC,
@@ -72,7 +73,6 @@
 		TRAIT_SPACER_BORN,
 	)
 	allow_numbers_in_names = TRUE
-	digitigrade_customization = DIGITIGRADE_NEVER
 	sexes = FALSE // these goobers don't know what sex is
 	mob_size = MOB_SIZE_LARGE
 	meat = /obj/item/food/meat/slab/bugmeat
@@ -148,7 +148,6 @@
 
 	features += "feature_serpcolor"
 	features -= "socks"
-	features -= "jumpsuit_style"
 
 	return features
 

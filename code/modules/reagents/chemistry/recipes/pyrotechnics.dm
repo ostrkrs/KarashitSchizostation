@@ -219,28 +219,6 @@
 	empulse(location, round(two_thirds / 12), round(two_thirds / 7), 1)
 	holder.clear_reagents()
 
-/datum/chemical_reaction/beesplosion
-	required_reagents = list(/datum/reagent/consumable/honey = 1, /datum/reagent/medicine/strange_reagent = 1, /datum/reagent/uranium/radium = 1)
-	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_EXPLOSIVE | REACTION_TAG_DANGEROUS
-
-/datum/chemical_reaction/beesplosion/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
-	var/location = holder.my_atom.drop_location()
-	if(created_volume < 5)
-		playsound(location,'sound/effects/sparks/sparks1.ogg', 100, TRUE)
-	else
-		playsound(location,'sound/mobs/non-humanoids/bee/bee.ogg', 100, TRUE)
-		var/list/beeagents = list()
-		for(var/R in holder.reagent_list)
-			if(required_reagents[R])
-				continue
-			beeagents += R
-		var/bee_amount = round(created_volume * 0.2)
-		for(var/i in 1 to bee_amount)
-			var/mob/living/basic/bee/timed/new_bee = new(location)
-			if(LAZYLEN(beeagents))
-				new_bee.assign_reagent(pick(beeagents))
-
-
 /datum/chemical_reaction/stabilizing_agent
 	results = list(/datum/reagent/stabilizing_agent = 3)
 	required_reagents = list(/datum/reagent/iron = 1, /datum/reagent/oxygen = 1, /datum/reagent/hydrogen = 1)
@@ -302,7 +280,7 @@
 
 /datum/chemical_reaction/liquid_dark_matter
 	results = list(/datum/reagent/liquid_dark_matter = 3)
-	required_reagents = list(/datum/reagent/stable_plasma = 1, /datum/reagent/uranium/radium = 1, /datum/reagent/carbon = 1)
+	required_reagents = list(/datum/reagent/stable_phoron = 1, /datum/reagent/uranium/radium = 1, /datum/reagent/carbon = 1)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_EXPLOSIVE | REACTION_TAG_DANGEROUS
 
 /datum/chemical_reaction/liquid_dark_matter/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -430,7 +408,7 @@
 
 /datum/chemical_reaction/phlogiston
 	results = list(/datum/reagent/phlogiston = 3)
-	required_reagents = list(/datum/reagent/phosphorus = 1, /datum/reagent/toxin/acid = 1, /datum/reagent/stable_plasma = 1)
+	required_reagents = list(/datum/reagent/phosphorus = 1, /datum/reagent/toxin/acid = 1, /datum/reagent/stable_phoron = 1)
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_EXPLOSIVE | REACTION_TAG_DANGEROUS
 
 /datum/chemical_reaction/phlogiston/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -438,7 +416,7 @@
 		return
 	var/turf/open/T = get_turf(holder.my_atom)
 	if(istype(T))
-		T.atmos_spawn_air("[GAS_PLASMA]=[created_volume];[TURF_TEMPERATURE(1000)]")
+		T.atmos_spawn_air("[GAS_PHORON]=[created_volume];[TURF_TEMPERATURE(1000)]")
 	holder.clear_reagents()
 	return
 
@@ -452,7 +430,7 @@
 
 /datum/chemical_reaction/cryostylane
 	results = list(/datum/reagent/cryostylane = 3)
-	required_reagents = list(/datum/reagent/consumable/ice = 1, /datum/reagent/stable_plasma = 1, /datum/reagent/nitrogen = 1)
+	required_reagents = list(/datum/reagent/consumable/ice = 1, /datum/reagent/stable_phoron = 1, /datum/reagent/nitrogen = 1)
 	required_temp = -200
 	optimal_temp = 300
 	overheat_temp = NO_OVERHEAT //There is an overheat - 50 see reaction_step()
@@ -550,7 +528,7 @@
 
 /datum/chemical_reaction/pyrosium
 	results = list(/datum/reagent/pyrosium = 3)
-	required_reagents = list(/datum/reagent/stable_plasma = 1, /datum/reagent/uranium/radium = 1, /datum/reagent/phosphorus = 1)
+	required_reagents = list(/datum/reagent/stable_phoron = 1, /datum/reagent/uranium/radium = 1, /datum/reagent/phosphorus = 1)
 	required_temp = 0
 	optimal_temp = 20
 	overheat_temp = NO_OVERHEAT
@@ -563,7 +541,7 @@
 
 /datum/chemical_reaction/teslium
 	results = list(/datum/reagent/teslium = 3)
-	required_reagents = list(/datum/reagent/stable_plasma = 1, /datum/reagent/silver = 1, /datum/reagent/gunpowder = 1)
+	required_reagents = list(/datum/reagent/stable_phoron = 1, /datum/reagent/silver = 1, /datum/reagent/gunpowder = 1)
 	mix_message = span_danger("A jet of sparks flies from the mixture as it merges into a flickering slurry.")
 	required_temp = 400
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_EXPLOSIVE

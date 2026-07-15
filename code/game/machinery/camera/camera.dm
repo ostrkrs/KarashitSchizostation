@@ -37,8 +37,8 @@
 	var/malf_xray_firmware_active
 	///so the malf upgrade is restored when the normal upgrade part is removed.
 	var/malf_xray_firmware_present
-	///A sheet of plasma stored inside of the camera, giving it EMP protection.
-	var/obj/item/stack/sheet/mineral/plasma/emp_module
+	///A sheet of phoron stored inside of the camera, giving it EMP protection.
+	var/obj/item/stack/sheet/mineral/phoron/emp_module
 	///used to keep from revealing malf AI upgrades for user facing isEmp() checks after they use Upgrade Camera Network ability
 	///will be false if the camera is upgraded with the proper parts.
 	var/malf_emp_firmware_active
@@ -192,7 +192,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/camera/xray, 12)
 	if(isEmpProof(TRUE)) //don't reveal it's upgraded if was done via MALF AI Upgrade Camera Network ability
 		. += span_info("It has electromagnetic interference shielding installed.")
 	else
-		. += span_info("It can be shielded against electromagnetic interference with some <b>plasma</b>.")
+		. += span_info("It can be shielded against electromagnetic interference with some <b>phoron</b>.")
 
 	if(isXRay(TRUE)) //don't reveal it's upgraded if was done via MALF AI Upgrade Camera Network ability
 		. += span_info("It has an X-ray photodiode installed.")

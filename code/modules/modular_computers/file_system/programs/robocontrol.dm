@@ -3,7 +3,7 @@
 	filename = "botkeeper"
 	filedesc = "BotKeeper"
 	downloader_category = PROGRAM_CATEGORY_SCIENCE
-	program_open_overlay = "robot"
+	program_open_overlay = "gear"
 	extended_desc = "A remote controller used for giving basic commands to non-sentient robots."
 	program_flags = PROGRAM_ON_NTNET_STORE | PROGRAM_REQUIRES_NTNET
 	size = 6

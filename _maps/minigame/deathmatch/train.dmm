@@ -197,7 +197,6 @@
 /area/deathmatch)
 "kt" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/deathmatch)
@@ -615,11 +614,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/plating,
 /area/deathmatch)
-"EX" = (
-/obj/structure/lattice/catwalk,
-/obj/item/ammo_box/speedloader/c38/match,
-/turf/open/chasm/true/no_smooth/fake_motion_sand/fast,
-/area/deathmatch)
 "Fa" = (
 /obj/structure/girder,
 /obj/structure/railing{
@@ -856,7 +850,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "VS" = (
-/obj/structure/closet/secure_closet/freezer/kitchen{
+/obj/structure/closet/kitchen{
 	req_access = null
 	},
 /obj/item/food/grown/potato,
@@ -1255,7 +1249,7 @@ Je
 Je
 Je
 Je
-EX
+Je
 Mt
 Mt
 Mt

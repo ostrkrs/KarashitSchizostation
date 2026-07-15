@@ -15,9 +15,10 @@
 		/obj/item/storage/box/evidence = 6,
 		/obj/item/flashlight/seclite = 4,
 		/obj/item/restraints/legcuffs/bola/energy = 7,
-		/obj/item/clothing/gloves/tackler = 5,
 		/obj/item/holosign_creator/security = 2,
 		/obj/item/gun_maintenance_supplies = 2,
+		/obj/item/clothing/ears/earmuffs/security = 4,
+		/obj/item/clothing/gloves/color/black/security = 5,
 	)
 	contraband = list(
 		/obj/item/clothing/glasses/sunglasses = 2,
@@ -25,10 +26,6 @@
 	)
 	premium = list(
 		/obj/item/storage/belt/security/webbing = 5,
-		/obj/item/coin/antagtoken = 1,
-		/obj/item/clothing/head/helmet/blueshirt = 1,
-		/obj/item/clothing/gloves/color/black/iso = 1,
-		/obj/item/clothing/suit/armor/vest/blueshirt = 1,
 		/obj/item/grenade/stingbang = 1,
 		/obj/item/watertank/pepperspray = 2,
 		/obj/item/storage/belt/holster/energy = 4,

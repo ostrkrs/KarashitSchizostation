@@ -18,7 +18,7 @@
 	uniform = /obj/item/clothing/under/syndicate
 	back = /obj/item/storage/backpack
 	box = /obj/item/storage/box/survival/syndie
-	belt = /obj/item/gun/ballistic/automatic/pistol/clandestine
+	belt = /obj/item/gun/ballistic/automatic/pistol/wt23
 	gloves = /obj/item/clothing/gloves/combat
 	shoes = /obj/item/clothing/shoes/combat
 	l_pocket = /obj/item/paper/fluff/vr/fluke_ops

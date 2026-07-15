@@ -175,7 +175,7 @@
 			new /obj/item/assembly/flash/hypnotic(src) // 7 TC
 			new /obj/item/storage/pill_bottle/lsd(src) // ~1 TC
 			new /obj/item/pen/sleepy(src) // 4 TC
-			new /obj/item/gun/ballistic/revolver/nagant(src) // 13 TC comparable to 357. revolvers
+			new /obj/item/gun/ballistic/revolver(src) // 13 TC comparable to 357. revolvers
 			new /obj/item/megaphone(src)
 			new /obj/item/bedsheet/rev(src)
 			new /obj/item/clothing/suit/armor/vest/russian_coat(src)
@@ -197,10 +197,10 @@
 		KIT_PROP_HUNT = 1
 		)))
 		if(KIT_JAMES_BOND)
-			new /obj/item/gun/ballistic/automatic/pistol(src) // 7 tc
+			new /obj/item/gun/ballistic/automatic/pistol/wt23(src) // 7 tc
 			new /obj/item/suppressor(src) // 3 tc
-			new /obj/item/ammo_box/magazine/m9mm(src) // 1 tc
-			new /obj/item/ammo_box/magazine/m9mm(src)
+			new /obj/item/ammo_box/magazine/m10mm(src) // 1 tc
+			new /obj/item/ammo_box/magazine/m10mm(src)
 			new /obj/item/card/id/advanced/chameleon/elite(src) // 2 tc
 			new /obj/item/clothing/under/chameleon(src) // 1 tc
 			new /obj/item/reagent_containers/hypospray/medipen/stimulants(src) // 5 tc
@@ -295,21 +295,11 @@
 			new /obj/item/jammer(src) // 5 tc
 			new /obj/item/pinpointer/crew(src) //priceless
 
-		if(KIT_SAM_FISHER)
-			new /obj/item/clothing/under/syndicate/combat(src)
-			new /obj/item/clothing/suit/armor/vest/marine/pmc(src) //The armor kit is comparable to the infiltrator, 6 TC
-			new /obj/item/clothing/head/helmet/marine/pmc(src)
-			new /obj/item/clothing/mask/gas/sechailer(src)
-			new /obj/item/clothing/glasses/night(src) // 3~ TC
-			new /obj/item/clothing/gloves/krav_maga/combatglovesplus(src) //5TC
-			new /obj/item/clothing/shoes/jackboots(src)
-			new /obj/item/storage/belt/military/assault/fisher(src) //items in this belt easily costs 18 TC
-
 		if(KIT_PROP_HUNT)
 			new /obj/item/chameleon(src) // 7 TC
 			new /obj/item/card/emag/doorjack(src) // 3 TC
 			new /obj/item/storage/box/syndie_kit/imp_stealth(src) //8 TC
-			new /obj/item/gun/ballistic/automatic/pistol(src) // 7 TC
+			new /obj/item/gun/ballistic/automatic/pistol/wt23(src) // 7 TC
 			new /obj/item/clothing/glasses/thermal(src) // 4 TC
 
 /obj/item/storage/toolbox/emergency/old/ancientbundle/ //So the subtype works
@@ -323,15 +313,6 @@
 	new /obj/item/gun/ballistic/revolver(src) // 13 tc old one stays in the old box
 	new /obj/item/implanter/freedom(src) // 5 tc
 	new /obj/item/stack/telecrystal(src) //The failsafe/self destruct isn't an item we can physically include in the kit, but 1 TC is technically enough to buy the equivalent.
-
-/obj/item/storage/belt/military/assault/fisher
-
-/obj/item/storage/belt/military/assault/fisher/PopulateContents()
-	new /obj/item/gun/ballistic/automatic/pistol/clandestine/fisher(src) // 11 TC: 7 (pistol) + 3 (suppressor) + lightbreaker (1 TC, black market meme/util item)
-	new /obj/item/ammo_box/magazine/m10mm(src) // 1 TC
-	new /obj/item/ammo_box/magazine/m10mm(src)
-	new /obj/item/card/emag/doorjack(src) // 3 TC
-	new /obj/item/knife/combat(src) //comparable to the e-dagger, 2 TC
 
 /obj/item/storage/box/syndie_kit
 	name = "box"
@@ -669,17 +650,6 @@
 	for(var/i in 1 to 7)
 		new /obj/item/ammo_box/magazine/sniper_rounds/surplus(src)
 
-/obj/item/storage/box/syndie_kit/shotgun_surplus
-	name = "\improper Donk Co. 'Donk Spike' flechette 12g Bulldog magazine box"
-	desc = "A shoddy box full of Donk Co. 'Donk Spike' flechette 12g. It is debatable whether or not these are actually \
-		better or worse than standard flechette. Donk Co. did genuinely believe in this product being the future of military \
-		ammunition production. The only reason it didn't see wider adoption was a lack of faith in the product. Do you \
-		believe in Donk? Time to put that to the test."
-
-/obj/item/storage/box/syndie_kit/shotgun_surplus/PopulateContents()
-	for(var/i in 1 to 7)
-		new /obj/item/ammo_box/magazine/m12g/donk(src)
-
 ///Subtype for the sabotage bundle. Contains three C4, two X4 and 6 signalers
 /obj/item/storage/backpack/duffelbag/syndie/sabotage
 
@@ -739,9 +709,6 @@
 
 /obj/item/storage/box/syndie_kit/induction_kit/PopulateContents()
 	// Basic weaponry, so they have something to use.
-	new /obj/item/gun/ballistic/automatic/pistol/clandestine(src) // 6 TC, but free for nukies
-	new /obj/item/ammo_box/magazine/m10mm/hp(src) // 3 TC, a reward for the teamwork involved
-	new /obj/item/ammo_box/magazine/m10mm/ap(src) // 3 TC, a reward for the teamwork involved
 	new /obj/item/pen/edagger(src) // 2 TC
 	// The necessary equipment to help secure that disky.
 	new /obj/item/radio/headset/syndicate/alt(src) // 5 TC / Free for nukies

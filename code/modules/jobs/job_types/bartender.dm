@@ -11,7 +11,6 @@
 	config_tag = "BARTENDER"
 
 	outfit = /datum/outfit/job/bartender
-	plasmaman_outfit = /datum/outfit/plasmaman/bar
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -56,4 +55,6 @@
 	shoes = /obj/item/clothing/shoes/laceup
 	box = /obj/item/storage/box/survival/bartender
 
-	skillchips = list(/obj/item/skillchip/drunken_brawler)
+/datum/outfit/job/bartender/post_equip(mob/living/carbon/human/equipped, visuals_only = FALSE)
+	..()
+	ADD_TRAIT(equipped, TRAIT_DRUNKEN_BRAWLER, INNATE_TRAIT)

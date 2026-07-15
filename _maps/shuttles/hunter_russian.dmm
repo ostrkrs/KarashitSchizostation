@@ -481,7 +481,7 @@
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 4
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /obj/item/multitool,
@@ -601,7 +601,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/ballistic/automatic/pistol,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/ammo_box/speedloader/strilka310,
 /obj/item/crowbar,
 /turf/open/floor/pod/dark,

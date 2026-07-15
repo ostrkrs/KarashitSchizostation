@@ -14,54 +14,38 @@
  */
 /obj/structure/closet/emcloset
 	name = "emergency closet"
-	desc = "It's a storage unit for emergency breath masks and O2 tanks."
+	desc = "It's a storage unit for emergency space suits, breath masks and O2 tanks."
 	icon_state = "emergency"
 
 /obj/structure/closet/emcloset/anchored
 	anchored = TRUE
 
 /obj/structure/closet/emcloset/Initialize(mapload)
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_RADIOACTIVE_NEBULA) && prob(30))
-		new /obj/structure/closet/radiation(loc)
-		return INITIALIZE_HINT_QDEL
-
 	. = ..()
 
-	if (prob(1))
+	if(prob(1))
 		return INITIALIZE_HINT_QDEL
 
 /obj/structure/closet/emcloset/PopulateContents()
 	..()
+	new /obj/item/storage/briefcase/emergency_suit(src)
+	new /obj/item/clothing/mask/breath(src)
 
-	if (prob(40))
+	switch(pick_weight(list("default" = 30, "bigtank" = 15)))
+		if("default")
+			new /obj/item/tank/internals/emergency_oxygen(src)
+
+		if("bigtank")
+			new /obj/item/tank/internals/emergency_oxygen/engi(src)
+
+	if(prob(30))
 		new /obj/item/storage/toolbox/emergency(src)
 
-	if (prob(40))
+	if(prob(30))
 		new /obj/item/storage/briefcase/inflatable(src)
 
-	switch (pick_weight(list("small" = 20, "aid" = 20, "tank" = 20, "both" = 30, "nothing" = 10)))
-		if ("small")
-			new /obj/item/tank/internals/emergency_oxygen(src)
-			new /obj/item/tank/internals/emergency_oxygen(src)
-			new /obj/item/clothing/mask/breath(src)
-			new /obj/item/clothing/mask/breath(src)
-
-		if ("aid")
-			new /obj/item/tank/internals/emergency_oxygen(src)
-			new /obj/item/storage/medkit/emergency(src)
-			new /obj/item/clothing/mask/breath(src)
-
-		if ("tank")
-			new /obj/item/tank/internals/oxygen(src)
-			new /obj/item/clothing/mask/breath(src)
-
-		if ("both")
-			new /obj/item/tank/internals/emergency_oxygen(src)
-			new /obj/item/clothing/mask/breath(src)
-
-		if ("nothing")
-			// doot
-			pass()
+	if(prob(30))
+		new /obj/item/storage/medkit/emergency(src)
 
 /*
  * Fire Closet
@@ -73,20 +57,11 @@
 
 /obj/structure/closet/firecloset/PopulateContents()
 	..()
-
 	new /obj/item/clothing/suit/utility/fire/firefighter(src)
 	new /obj/item/clothing/mask/gas(src)
 	new /obj/item/tank/internals/oxygen/red(src)
 	new /obj/item/extinguisher(src)
-	new /obj/item/clothing/head/utility/hardhat/red(src)
-	new /obj/item/crowbar/large/emergency(src)
-
-/obj/structure/closet/firecloset/full/PopulateContents()
-	new /obj/item/clothing/suit/utility/fire/firefighter(src)
-	new /obj/item/clothing/mask/gas(src)
 	new /obj/item/flashlight(src)
-	new /obj/item/tank/internals/oxygen/red(src)
-	new /obj/item/extinguisher(src)
 	new /obj/item/clothing/head/utility/hardhat/red(src)
 	new /obj/item/crowbar/large/emergency(src)
 

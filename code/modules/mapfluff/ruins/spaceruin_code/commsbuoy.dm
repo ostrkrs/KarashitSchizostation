@@ -226,10 +226,10 @@
 		<br>\
 		Hey. I miss you. Hope we can holo-call again soon. <br>\
 		Work's been busy. Wish you could be here for it, but I know you were adamant on getting your citizenship. I hope Gateway's been nice to you. <br>\
-		I was working on that project folder you left me, the plasma stuff. Really see why you asked to change divisions... <br>\
+		I was working on that project folder you left me, the phoron stuff. Really see why you asked to change divisions... <br>\
 		<br>\
 		Regardless of the heavy topic of the research, I've made some astounding breakthroughs. A majority of this is still your notes just progressing, \
-		long-term ingestion of plasma - specifically Pudicitite - in humanoid species. I really had hoped these projections weren't so accurate. \
+		long-term ingestion of phoron - specifically Pudicitite - in humanoid species. I really had hoped these projections weren't so accurate. \
 		Guess it just shows your dazzling intellect... as dark as this is. <br>\
 		<br>\
 		That doomed assistant you had on observation finally expired. The constant medium-level exposure, even treated with a myriad of medications, \
@@ -240,7 +240,7 @@
 		truly is seems to have contributed to overstimulation and amplified emotional responses to the testing. <br>\
 		<br>\
 		It's... a perfect storm. The loss of control of emotional responses in tandem with the exaggurated environmental stimuli. I've already pushed \
-		a few of the results up as high as I can and advised we push towards improving our plasma filtration, especially in masks. Specifically \
+		a few of the results up as high as I can and advised we push towards improving our phoron filtration, especially in masks. Specifically \
 		the Mining gas masks, as your papers mentioned - the elevated gas exposure makes them a high risk group. <br>\
 		My peers over here are already adjusting their testing to boost this to Central's attention so that other stations might \
 		contribute to improving our protections from this. <br>\

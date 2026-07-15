@@ -210,11 +210,6 @@
 "nF" = (
 /obj/item/radio/intercom/directional/south,
 /obj/effect/decal/cleanable/blood/old,
-/obj/item/ammo_casing/c357/match,
-/obj/item/ammo_casing/c357/match{
-	pixel_y = -4;
-	pixel_x = -7
-	},
 /obj/item/computer_disk/syndicate/camera_app{
 	pixel_x = -5;
 	pixel_y = 9
@@ -306,7 +301,6 @@
 /area/ruin/space/unpowered)
 "uS" = (
 /obj/machinery/newscaster/directional/south,
-/obj/item/ammo_casing/c357/match,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/unpowered)
 "vi" = (
@@ -424,12 +418,8 @@
 	},
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
-"Cv" = (
-/obj/item/ammo_casing/c357/match,
-/turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/unpowered)
 "CC" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/unpowered)
 "CX" = (
@@ -512,7 +502,7 @@
 /turf/open/floor/mineral/plastitanium/red/airless,
 /area/ruin/space/unpowered)
 "Ix" = (
-/obj/item/tank/internals/plasma/empty{
+/obj/item/tank/internals/phoron/empty{
 	pixel_y = -13;
 	pixel_x = -12
 	},
@@ -580,7 +570,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/unpowered)
 "NY" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor/shutters{
 	id = "ruined_infiltrator_shutters";
 	name = "Cockpit Shutters"
@@ -1055,7 +1045,7 @@ la
 la
 NY
 jj
-Cv
+Yj
 mq
 Yj
 Pq
@@ -1084,7 +1074,7 @@ NY
 GN
 mg
 Yj
-Cv
+Yj
 en
 DM
 EK
@@ -1110,8 +1100,8 @@ la
 NY
 gr
 Fn
-Cv
-Cv
+Yj
+Yj
 Pq
 EM
 yL

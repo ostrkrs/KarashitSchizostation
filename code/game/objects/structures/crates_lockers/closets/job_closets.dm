@@ -43,6 +43,18 @@
 		/obj/item/rag = 1)
 	generate_items_inside(items_inside,src)
 
+/obj/structure/closet/kitchen
+	name = "kitchen closet"
+	desc = "It's a storage unit for non-perishable ingredients and condiments."
+
+/obj/structure/closet/kitchen/PopulateContents()
+	..()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/condiment/flour = 3,
+		/obj/item/reagent_containers/condiment/rice = 1,
+		/obj/item/reagent_containers/condiment/sugar =1)
+	generate_items_inside(items_inside,src)
+
 
 /obj/structure/closet/jcloset
 	name = "custodial closet"

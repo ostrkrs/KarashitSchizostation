@@ -159,13 +159,12 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/structure/alien,
 		/obj/structure/bed/abductor,
 		/obj/structure/closet/abductor,
-		/obj/structure/statue/plasma/xeno,
+		/obj/structure/statue/phoron/xeno,
 		/obj/structure/table_frame/abductor,
 		/obj/structure/table/abductor,
 		/obj/structure/table/optable/abductor,
 	)),
 	"anime" = typecacheof(list(
-		/obj/item/clothing/head/costume/kitty/genuine,
 		/obj/item/clothing/mask/gas/ninja,
 		/obj/item/clothing/under/syndicate/ninja,
 		/obj/item/clothing/under/costume/seifuku,
@@ -266,9 +265,6 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 		/obj/item/clothing/mask/gas/clown_hat,
 		/obj/item/clothing/shoes/clown_shoes,
 		/obj/item/clothing/suit/chaplainsuit/clownpriest,
-		/obj/item/clothing/head/helmet/space/plasmaman/clown,
-		/obj/item/clothing/under/plasmaman/clown,
-		/obj/item/clothing/gloves/color/plasmaman/clown,
 		/obj/item/clothing/under/rank/civilian/clown,
 		/obj/item/food/burger/clown,
 		/obj/item/food/cheesiehonkers,
@@ -462,7 +458,7 @@ GLOBAL_LIST_INIT(phobia_objs, list(
 	)),
 	"security" = typecacheof(list(
 		/obj/effect/client_image_holder/securitron,
-		/obj/item/clothing/under/rank/security/detective,
+		/obj/item/clothing/under/rank/security/criminalist,
 		/obj/item/clothing/under/rank/security/head_of_security,
 		/obj/item/clothing/under/rank/security/officer,
 		/obj/item/clothing/under/rank/security/warden,
@@ -563,7 +559,6 @@ GLOBAL_LIST_INIT(phobia_species, list(
 		/datum/species/pod,
 		/datum/species/shadow,
 	)),
-	"anime" = typecacheof(list(/datum/species/human/felinid)),
 	"conspiracies" = typecacheof(list(
 		/datum/species/abductor,
 		/datum/species/lizard,
@@ -575,10 +570,7 @@ GLOBAL_LIST_INIT(phobia_species, list(
 	)),
 	"lizards" = typecacheof(list(/datum/species/lizard)),
 	"robots" = typecacheof(list(/datum/species/android)),
-	"skeletons" = typecacheof(list(
-		/datum/species/plasmaman,
-		/datum/species/skeleton,
-	)),
+	"skeletons" = typecacheof(list(/datum/species/skeleton)),
 ))
 
 /// Creates a regular expression to match against the given phobia

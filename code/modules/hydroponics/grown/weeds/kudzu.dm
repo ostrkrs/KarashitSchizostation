@@ -90,7 +90,7 @@
 	if(reagents.has_reagent(/datum/reagent/toxin/amatoxin, 5))
 		adjust_production(rand(5, -15))
 
-	if(reagents.has_reagent(/datum/reagent/toxin/plasma, 5))
+	if(reagents.has_reagent(/datum/reagent/toxin/phoron, 5))
 		adjust_potency(rand(5, -15))
 
 	if(reagents.has_reagent(/datum/reagent/water/holywater, 10))

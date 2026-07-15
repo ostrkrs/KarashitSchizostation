@@ -7,8 +7,11 @@
 		TRAIT_FIXED_MUTANT_COLORS,
 		TRAIT_NOFAT,
 	)
+	banned_traits = list(
+		TRAIT_NYCTOPHOBIA,
+		TRAIT_CLAUSTROPHOBIA,
+	)
 
-	payday_modifier = 0.8
 	mutantears = /obj/item/organ/ears/caver
 	mutanteyes = /obj/item/organ/eyes/caver
 	mutanttongue = /obj/item/organ/tongue/caver
@@ -19,7 +22,6 @@
 		/obj/item/organ/tail/caver = "Caver Tail",
 	)
 
-	digitigrade_customization = DIGITIGRADE_FORCED
 	bodypart_overrides = list(
 		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/caver,
 		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/caver,

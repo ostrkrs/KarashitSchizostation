@@ -63,7 +63,6 @@
 		"random_gender" = "gender",
 		"random_hair_color" = "hair_color",
 		"random_hairstyle" = "hairstyle",
-		"random_jumpsuit_style" = "jumpsuit_style",
 		"random_skin_tone" = "skin_tone",
 		"random_socks" = "socks",
 		"random_socks_color" = "socks_color",

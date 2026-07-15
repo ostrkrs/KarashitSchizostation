@@ -1,6 +1,6 @@
 #define ORE_MULTIPLIER_IRON 3
 #define ORE_MULTIPLIER_GLASS 2
-#define ORE_MULTIPLIER_PLASMA 1
+#define ORE_MULTIPLIER_PHORON 1
 #define ORE_MULTIPLIER_SILVER 0.7
 #define ORE_MULTIPLIER_GOLD 0.6
 #define ORE_MULTIPLIER_TITANIUM 0.5
@@ -56,7 +56,7 @@
 		new /obj/item/stack/ore/titanium(src, calculate_loot(reward_points, rewards_multiplier, ORE_MULTIPLIER_TITANIUM))
 
 	if(reward_points > 2)
-		new /obj/item/stack/ore/plasma(src, calculate_loot(reward_points, rewards_multiplier, ORE_MULTIPLIER_PLASMA))
+		new /obj/item/stack/ore/phoron(src, calculate_loot(reward_points, rewards_multiplier, ORE_MULTIPLIER_PHORON))
 		new /obj/item/stack/ore/gold(src, calculate_loot(reward_points, rewards_multiplier, ORE_MULTIPLIER_GOLD))
 		new /obj/item/stack/ore/uranium(src, calculate_loot(reward_points, rewards_multiplier, ORE_MULTIPLIER_URANIUM))
 
@@ -88,7 +88,7 @@
 
 #undef ORE_MULTIPLIER_IRON
 #undef ORE_MULTIPLIER_GLASS
-#undef ORE_MULTIPLIER_PLASMA
+#undef ORE_MULTIPLIER_PHORON
 #undef ORE_MULTIPLIER_SILVER
 #undef ORE_MULTIPLIER_GOLD
 #undef ORE_MULTIPLIER_TITANIUM

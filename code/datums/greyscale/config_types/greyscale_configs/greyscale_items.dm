@@ -133,33 +133,25 @@
 	name = "Captain PDA"
 	json_config = 'code/datums/greyscale/json_configs/pda_captain.json'
 
-/datum/greyscale_config/tablet/clown
-	name = "Clown PDA"
-	json_config = 'code/datums/greyscale/json_configs/pda_clown.json'
-
-/datum/greyscale_config/tablet/head
-	name = "Head PDA"
-	json_config = 'code/datums/greyscale/json_configs/pda_head.json'
-
 /datum/greyscale_config/tablet/mime
 	name = "Mime PDA"
 	json_config = 'code/datums/greyscale/json_configs/pda_mime.json'
 
-/datum/greyscale_config/tablet/stripe_double
-	name = "Double Stripe PDA"
-	json_config = 'code/datums/greyscale/json_configs/pda_stripe_double.json'
+/datum/greyscale_config/tablet/stripe_double_vertical
+	name = "Double Stripe PDA (Vertical)"
+	json_config = 'code/datums/greyscale/json_configs/pda_stripe_double_v.json'
 
-/datum/greyscale_config/tablet/stripe_split
-	name = "Split Stripe PDA"
-	json_config = 'code/datums/greyscale/json_configs/pda_stripe_split.json'
+/datum/greyscale_config/tablet/stripe_double_horizontal
+	name = "Double Stripe PDA (Horizontal)"
+	json_config = 'code/datums/greyscale/json_configs/pda_stripe_double_h.json'
 
-/datum/greyscale_config/tablet/stripe_thick
-	name = "Thick Stripe PDA"
-	json_config = 'code/datums/greyscale/json_configs/pda_stripe_thick.json'
+/datum/greyscale_config/tablet/stripe_thick_vertical
+	name = "Thick Stripe PDA (Vertical)"
+	json_config = 'code/datums/greyscale/json_configs/pda_stripe_thick_v.json'
 
-/datum/greyscale_config/tablet/stripe_thick/head
-	name = "Head Thick Stripe PDA"
-	json_config = 'code/datums/greyscale/json_configs/pda_stripe_thick_head.json'
+/datum/greyscale_config/tablet/stripe_thick_horizontal
+	name = "Thick Stripe PDA (Horizontal)"
+	json_config = 'code/datums/greyscale/json_configs/pda_stripe_thick_h.json'
 
 //
 // ENCRYPTION KEYS

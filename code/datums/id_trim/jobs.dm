@@ -222,7 +222,6 @@
 	extra_access = list(
 		ACCESS_BAR,
 		ACCESS_KITCHEN,
-		ACCESS_MORGUE,
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,
@@ -478,7 +477,6 @@
 	sechud_icon_state = SECHUD_COOK
 	minimal_access = list(
 		ACCESS_KITCHEN,
-		ACCESS_MORGUE,
 		ACCESS_SERVICE,
 		)
 	extra_access = list(
@@ -541,16 +539,16 @@
 		)
 	job = /datum/job/curator
 
-/datum/id_trim/job/detective
+/datum/id_trim/job/criminalist
 	assignment = JOB_CRIMINALIST
-	trim_state = "trim_detective"
+	trim_state = "trim_criminalist"
 	department_color = COLOR_SECURITY_BLUE
 	subdepartment_color = COLOR_SECURITY_BLUE
 	sechud_icon_state = SECHUD_CRIMINALIST
 	minimal_access = list(
 		ACCESS_BRIG_ENTRANCE,
 		ACCESS_COURT,
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MECH_SECURITY,
 		ACCESS_MORGUE,
@@ -566,11 +564,11 @@
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOS,
 	)
-	job = /datum/job/detective
+	job = /datum/job/criminalist
 	honorifics = list("Detective", "Investigator")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/detective/refresh_trim_access()
+/datum/id_trim/job/criminalist/refresh_trim_access()
 	. = ..()
 
 	if(!.)
@@ -629,7 +627,6 @@
 		ACCESS_EVA,
 		ACCESS_GATEWAY,
 		ACCESS_KEYCARD_AUTH,
-		ACCESS_IAA,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MEDICAL,
 		ACCESS_MINERAL_STOREROOM,
@@ -675,7 +672,7 @@
 		ACCESS_COMMAND,
 		ACCESS_CONSTRUCTION,
 		ACCESS_COURT,
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_ENGINEERING,
 		ACCESS_EVA,
 		ACCESS_GATEWAY,
@@ -743,7 +740,7 @@
 	assignment = JOB_INTERNAL_AFFAIRS_AGENT
 	trim_state = "trim_iaa"
 	department_state = "departmenthead"
-	department_color = COLOR_COMMAND_BLUE
+	department_color = COLOR_CENTCOM_BLUE
 	subdepartment_color = COLOR_LAW_RED
 	sechud_icon_state = SECHUD_IAA
 	minimal_access = list(
@@ -752,10 +749,6 @@
 		ACCESS_IAA,
 		ACCESS_COMMAND,
 		)
-	template_access = list(
-		ACCESS_CENT_GENERAL,
-		ACCESS_CHANGE_IDS,
-		)
 	job = /datum/job/iaa
 	honorifics = list(", Esq.")
 	honorific_positions = HONORIFIC_POSITION_LAST_FULL | HONORIFIC_POSITION_NONE
@@ -763,7 +756,7 @@
 /datum/id_trim/job/iso
 	assignment = JOB_INTERNAL_SECURITY_OPERATIVE
 	trim_state = "trim_iso"
-	department_color = COLOR_COMMAND_BLUE
+	department_color = COLOR_CENTCOM_BLUE
 	subdepartment_color = COLOR_LAW_RED
 	sechud_icon_state = SECHUD_ISO
 	minimal_access = list(
@@ -772,10 +765,6 @@
 		ACCESS_ISO,
 		ACCESS_COMMAND,
 		ACCESS_WEAPONS,
-		)
-	template_access = list(
-		ACCESS_CENT_GENERAL,
-		ACCESS_CHANGE_IDS,
 		)
 	job = /datum/job/iso
 	honorifics = list(", Exec.")
@@ -1000,7 +989,6 @@
 		ACCESS_MECH_SCIENCE,
 		ACCESS_MINERAL_STOREROOM,
 		ACCESS_MINISAT,
-		ACCESS_MORGUE,
 		ACCESS_ORDNANCE,
 		ACCESS_ORDNANCE_STORAGE,
 		ACCESS_RC_ANNOUNCE,
@@ -1035,7 +1023,6 @@
 	minimal_access = list(
 		ACCESS_MECH_SCIENCE,
 		ACCESS_MINERAL_STOREROOM,
-		ACCESS_MORGUE,
 		ACCESS_RESEARCH,
 		ACCESS_ROBOTICS,
 		ACCESS_SCIENCE,
@@ -1046,7 +1033,6 @@
 	extra_access = list(
 		ACCESS_GENETICS,
 		ACCESS_XENOBIOLOGY,
-		ACCESS_MORGUE_SECURE,
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,
@@ -1099,7 +1085,7 @@
 		ACCESS_WEAPONS,
 		)
 	extra_access = list(
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MORGUE,
 		)
@@ -1111,10 +1097,6 @@
 	job = /datum/job/security_officer
 	honorifics = list("Officer")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
-	/// List of bonus departmental accesses that departmental sec officers get by default.
-	var/department_access = list()
-	/// List of bonus departmental accesses that departmental security officers can in relation to how many overall security officers there are if the scaling system is set up. These can otherwise be granted via config settings.
-	var/elevated_access = list()
 
 /datum/id_trim/job/security_officer/refresh_trim_access()
 	. = ..()
@@ -1122,31 +1104,9 @@
 	if(!.)
 		return
 
-	access |= department_access
-
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
-
-	// Scaling access (POPULATION_SCALED_ACCESS) is a system directly tied into calculations derived via a config entered variable, as well as the amount of players in the shift.
-	// Thus, it makes it possible to judge if departmental security officers should have more access to their department on a lower population shift.
-	// Server operators can modify config to change it such that security officers can use this system, or alternatively either: A) always give the "elevated" access (ALWAYS_GETS_ACCESS) or B) never give this access (null value).
-
-	#define POPULATION_SCALED_ACCESS 1
-	#define ALWAYS_GETS_ACCESS 2
-
-	// If null, then the departmental security officer will not get any elevated access.
-	if(!CONFIG_GET(number/depsec_access_level))
-		return
-
-	if(CONFIG_GET(number/depsec_access_level) == POPULATION_SCALED_ACCESS)
-		var/minimal_security_officers = 3 // We do not spawn in any more lockers if there are 5 or less security officers, so let's keep it lower than that number.
-		var/datum/job/J = SSjob.get_job(JOB_SECURITY_OFFICER)
-		if((J.spawn_positions - minimal_security_officers) <= 0)
-			access |= elevated_access
-
-	if(CONFIG_GET(number/depsec_access_level) == ALWAYS_GETS_ACCESS)
-		access |= elevated_access
 
 /datum/id_trim/job/shaft_miner
 	assignment = JOB_SHAFT_MINER
@@ -1235,7 +1195,6 @@
 		ACCESS_JANITOR,
 		ACCESS_KEYCARD_AUTH,
 		ACCESS_KITCHEN,
-		ACCESS_IAA,
 		ACCESS_LIBRARY,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MEDICAL,
@@ -1308,7 +1267,7 @@
 		ACCESS_WEAPONS,
 		) // See /datum/job/warden/get_access()
 	extra_access = list(
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MORGUE,
 		)
@@ -1330,9 +1289,6 @@
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
-
-#undef POPULATION_SCALED_ACCESS
-#undef ALWAYS_GETS_ACCESS
 
 /datum/id_trim/job/human_ai
 	assignment = JOB_HUMAN_AI

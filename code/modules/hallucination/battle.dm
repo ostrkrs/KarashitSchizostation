@@ -4,6 +4,10 @@
 	random_hallucination_weight = 3
 	hallucination_tier = HALLUCINATION_TIER_COMMON
 
+/datum/hallucination/battle/start()
+	if(HAS_TRAIT(hallucinator, TRAIT_DEAF))
+		return FALSE
+
 /// Subtype of battle hallucination for gun based battles, where it sounds like someone is being shot.
 /datum/hallucination/battle/gun
 	abstract_hallucination_parent = /datum/hallucination/battle/gun
@@ -23,8 +27,11 @@
 	var/chance_to_fall = 80
 
 /datum/hallucination/battle/gun/start()
+	. = ..()
+	if(!.)
+		return
+
 	fire_loop(random_far_turf(), rand(shots_to_fire_lower_range, shots_to_fire_upper_range))
-	return TRUE
 
 /// The main loop for gun based hallucinations.
 /datum/hallucination/battle/gun/proc/fire_loop(turf/source, shots_left = 3, hits = 0)

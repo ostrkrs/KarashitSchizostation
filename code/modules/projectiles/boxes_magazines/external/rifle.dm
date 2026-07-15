@@ -1,18 +1,3 @@
-/obj/item/ammo_box/magazine/m223
-	name = "toploader magazine (.223)"
-	desc = "A top-loading .223 magazine, suitable for the M-90gl carbine."
-	icon_state = ".223"
-	ammo_band_icon = "+.223ab"
-	ammo_type = /obj/item/ammo_casing/a223
-	caliber = CALIBER_A223
-	max_ammo = 30
-	multiple_sprites = AMMO_BOX_FULL_EMPTY
-
-/obj/item/ammo_box/magazine/m223/phasic
-	name = "toploader magazine (.223 Phasic)"
-	desc = parent_type::desc + "<br>Carries phasic rounds, which completely ignore armor and phase through cover, but not targets."
-	ammo_type = /obj/item/ammo_casing/a223/phasic
-
 // .38 (Battle Rifle) //
 
 /obj/item/ammo_box/magazine/m38
@@ -44,44 +29,14 @@
 	ammo_type = /obj/item/ammo_casing/c38/trac
 	ammo_band_color = COLOR_AMMO_TRACK
 
-/obj/item/ammo_box/magazine/m38/match
-	name = "battle rifle magazine (.38 Match)"
-	desc = parent_type::desc + " These rounds are manufactured within extremely tight tolerances, making them easy to show off trickshots with."
-	ammo_type = /obj/item/ammo_casing/c38/match
-	ammo_band_color = COLOR_AMMO_MATCH
-
-/obj/item/ammo_box/magazine/m38/match/bouncy
+/obj/item/ammo_box/magazine/m38/rubber
 	name = "battle rifle magazine (.38 Rubber)"
 	desc = parent_type::desc + " These rounds are incredibly bouncy and MOSTLY nonlethal, making them great to show off trickshots with."
-	ammo_type = /obj/item/ammo_casing/c38/match/bouncy
+	ammo_type = /obj/item/ammo_casing/c38/rubber
 	ammo_band_color = COLOR_AMMO_RUBBER
 
-/obj/item/ammo_box/magazine/m38/true
-	name = "battle rifle magazine (.38 True Strike)"
-	desc = parent_type::desc + " Bullets bounce towards new targets with surprising accuracy."
-	ammo_type = /obj/item/ammo_casing/c38/match/true
-	ammo_band_color = COLOR_AMMO_TRUESTRIKE
-
-/obj/item/ammo_box/magazine/m38/dumdum
-	name = "battle rifle magazine (.38 DumDum)"
+/obj/item/ammo_box/magazine/m38/hp
+	name = "battle rifle magazine (.38 Hollow-Point)"
 	desc = parent_type::desc + " These rounds expand on impact, allowing them to shred the target and cause massive bleeding. Very weak against armor and distant targets."
-	ammo_type = /obj/item/ammo_casing/c38/dumdum
-	ammo_band_color = COLOR_AMMO_DUMDUM
-
-/obj/item/ammo_box/magazine/m38/hotshot
-	name = "battle rifle magazine (.38 Hot Shot)"
-	desc = parent_type::desc + " Hot Shot bullets contain an incendiary payload."
-	ammo_type = /obj/item/ammo_casing/c38/hotshot
-	ammo_band_color = COLOR_AMMO_HOTSHOT
-
-/obj/item/ammo_box/magazine/m38/iceblox
-	name = "battle rifle magazine (.38 Iceblox)"
-	desc = parent_type::desc + " Iceblox bullets contain a cryogenic payload."
-	ammo_type = /obj/item/ammo_casing/c38/iceblox
-	ammo_band_color = COLOR_AMMO_ICEBLOX
-
-/obj/item/ammo_box/magazine/m38/flare
-	name = "battle rifle magazine (.38 Flare)"
-	desc = parent_type::desc + " Flare casings launch a concentrated particle beam towards a target, lighting them up for everyone to see."
-	ammo_type = /obj/item/ammo_casing/c38/flare
-	ammo_band_color = COLOR_AMMO_HELLFIRE
+	ammo_type = /obj/item/ammo_casing/c38/hp
+	ammo_band_color = COLOR_AMMO_HOLLOWPOINT

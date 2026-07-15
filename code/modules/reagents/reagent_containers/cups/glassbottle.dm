@@ -448,14 +448,14 @@
 		LAZYSET(located_wine.data, "vintage", wine_info)
 
 /obj/item/reagent_containers/cup/glass/bottle/wine/proc/generate_vintage()
-	return "[CURRENT_STATION_YEAR] Nanotrasen Light Red"
+	return "[CURRENT_YEAR] Nanotrasen Light Red"
 
 /obj/item/reagent_containers/cup/glass/bottle/wine/unlabeled
 	name = "unlabeled wine bottle"
 	desc = "There's no label on this wine bottle."
 
 /obj/item/reagent_containers/cup/glass/bottle/wine/unlabeled/generate_vintage()
-	var/year = rand(CURRENT_STATION_YEAR - 50, CURRENT_STATION_YEAR)
+	var/year = rand(CURRENT_YEAR - 50, CURRENT_YEAR)
 	var/type = pick(
 		"Bold Red",
 		"Dessert",
@@ -887,7 +887,7 @@
 		/datum/reagent/phlogiston,
 		/datum/reagent/napalm,
 		/datum/reagent/hellwater,
-		/datum/reagent/toxin/plasma,
+		/datum/reagent/toxin/phoron,
 		/datum/reagent/toxin/spore_burning,
 	)
 

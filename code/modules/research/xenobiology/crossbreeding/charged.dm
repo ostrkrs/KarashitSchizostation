@@ -1,7 +1,7 @@
 /*
 Charged extracts:
 	Have a unique, effect when filled with
-	10u plasma and activated in-hand, related to their
+	10u phoron and activated in-hand, related to their
 	normal extract effect.
 */
 /obj/item/slimecross/charged
@@ -15,11 +15,11 @@ Charged extracts:
 	create_reagents(10, INJECTABLE | DRAWABLE)
 
 /obj/item/slimecross/charged/attack_self(mob/user)
-	if(!reagents.has_reagent(/datum/reagent/toxin/plasma, 10))
-		to_chat(user, span_warning("This extract needs to be full of plasma to activate!"))
+	if(!reagents.has_reagent(/datum/reagent/toxin/phoron, 10))
+		to_chat(user, span_warning("This extract needs to be full of phoron to activate!"))
 		return
-	reagents.remove_reagent(/datum/reagent/toxin/plasma, 10)
-	to_chat(user, span_notice("You squeeze the extract, and it absorbs the plasma!"))
+	reagents.remove_reagent(/datum/reagent/toxin/phoron, 10)
+	to_chat(user, span_notice("You squeeze the extract, and it absorbs the phoron!"))
 	playsound(src, 'sound/effects/bubbles/bubbles.ogg', 50, TRUE)
 	playsound(src, 'sound/effects/light_flicker.ogg', 50, TRUE)
 	do_effect(user)
@@ -87,11 +87,11 @@ Charged extracts:
 
 /obj/item/slimecross/charged/darkpurple
 	colour = SLIME_TYPE_DARK_PURPLE
-	effect_desc = "Creates several sheets of plasma."
+	effect_desc = "Creates several sheets of phoron."
 
 /obj/item/slimecross/charged/darkpurple/do_effect(mob/user)
-	new /obj/item/stack/sheet/mineral/plasma(get_turf(user), 10)
-	user.visible_message(span_notice("[src] produces a large amount of plasma!"))
+	new /obj/item/stack/sheet/mineral/phoron(get_turf(user), 10)
+	user.visible_message(span_notice("[src] produces a large amount of phoron!"))
 	..()
 
 /obj/item/slimecross/charged/darkblue

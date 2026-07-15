@@ -21,7 +21,7 @@
 
 /obj/item/ammo_box/magazine/toy/pistol
 	name = "foam force pistol magazine"
-	icon_state = "9x19p"
+	icon_state = "toymag"
 	max_ammo = 12
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
 

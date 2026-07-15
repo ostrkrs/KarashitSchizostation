@@ -1,15 +1,15 @@
 /datum/scientific_partner/mining
 	name = "Mining Corps"
-	flufftext = "A local group of miners are looking for ways to improve their mining output. They are interested in smaller scale explosives and plasma research."
+	flufftext = "A local group of miners are looking for ways to improve their mining output. They are interested in smaller scale explosives and phoron research."
 	accepted_experiments = list(
-		/datum/experiment/ordnance/gaseous/plasma,
+		/datum/experiment/ordnance/gaseous/phoron,
 		/datum/experiment/ordnance/explosive/lowyieldbomb,
 		/datum/experiment/ordnance/explosive/highyieldbomb,
 	)
 	multipliers = list(SCIPAPER_COOPERATION_INDEX = 0.75, SCIPAPER_FUNDING_INDEX = 0.75)
 	boostable_nodes = list(
 		TECHWEB_NODE_LOW_PRESSURE_EXCAVATION = TECHWEB_TIER_2_POINTS,
-		TECHWEB_NODE_PLASMA_MINING = TECHWEB_TIER_3_POINTS,
+		TECHWEB_NODE_PLASMA_CUTTERS = TECHWEB_TIER_3_POINTS,
 		TECHWEB_NODE_MINING_ADV = TECHWEB_TIER_4_POINTS,
 		TECHWEB_NODE_NIGHT_VISION = TECHWEB_TIER_4_POINTS,
 		TECHWEB_NODE_BORG_ENGI = TECHWEB_TIER_3_POINTS,

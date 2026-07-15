@@ -79,7 +79,7 @@
 		/datum/reagent/consumable/capsaicin,
 		/datum/reagent/consumable/frostoil,
 		/datum/reagent/drug/krokodil,
-		/datum/reagent/toxin/plasma,
+		/datum/reagent/toxin/phoron,
 		/datum/reagent/consumable/coco,
 		/datum/reagent/toxin/slimejelly,
 		/datum/reagent/consumable/banana,

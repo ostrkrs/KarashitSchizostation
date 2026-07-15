@@ -11,7 +11,7 @@
 		"scrubber",
 		"generic_tank",
 		"oxygen_tank",
-		"plasma_tank",
+		"phoron_tank",
 		"extinguisher",
 		"pocketfireextinguisher",
 		"gas_filter",
@@ -41,17 +41,17 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_1_POINTS)
 	experiments_to_unlock = list(
-		/datum/experiment/ordnance/gaseous/plasma,
+		/datum/experiment/ordnance/gaseous/phoron,
 		/datum/experiment/ordnance/gaseous/nitrous_oxide,
 		/datum/experiment/ordnance/gaseous/bz,
 		/datum/experiment/ordnance/gaseous/noblium,
 	)
 	announce_channels = list(RADIO_CHANNEL_ENGINEERING)
 
-/datum/techweb_node/plasma_control
-	id = TECHWEB_NODE_PLASMA_CONTROL
-	display_name = "Controlled Plasma"
-	description = "Experiments with high-pressure gases and electricity resulting in crystallization and controlled plasma reactions."
+/datum/techweb_node/phoron_control
+	id = TECHWEB_NODE_PHORON_CONTROL
+	display_name = "Controlled Phoron"
+	description = "Experiments with high-pressure gases and electricity resulting in crystallization and controlled phoron reactions."
 	prereq_ids = list(TECHWEB_NODE_GAS_COMPRESSION, TECHWEB_NODE_ENERGY_MANIPULATION)
 	design_ids = list(
 		"electrolyzer",
@@ -62,14 +62,14 @@
 		"diode_disk_incendiary",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_2_POINTS)
-	discount_experiments = list(/datum/experiment/ordnance/gaseous/plasma = TECHWEB_TIER_2_POINTS)
+	discount_experiments = list(/datum/experiment/ordnance/gaseous/phoron = TECHWEB_TIER_2_POINTS)
 	announce_channels = list(RADIO_CHANNEL_ENGINEERING)
 
 /datum/techweb_node/fusion
 	id = TECHWEB_NODE_FUSION
 	display_name = "Fusion"
-	description = "Investigating fusion reactor technology to achieve sustainable and efficient energy production through controlled plasma reactions involving noble gases."
-	prereq_ids = list(TECHWEB_NODE_PLASMA_CONTROL)
+	description = "Investigating fusion reactor technology to achieve sustainable and efficient energy production through controlled phoron reactions involving noble gases."
+	prereq_ids = list(TECHWEB_NODE_PHORON_CONTROL)
 	design_ids = list(
 		"HFR_core",
 		"HFR_corner",

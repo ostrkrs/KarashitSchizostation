@@ -159,11 +159,9 @@
 			board.set_type(/obj/machinery/vending/sovietsoda)
 		if(31 to 35)
 			new /obj/item/seeds/firelemon(src)
-		if(36 to 40)
+		if(36 to 45)
 			for(var/i in 1 to 5)
 				new /obj/item/toy/snappop/phoenix(src)
-		if(41 to 45)
-			new /obj/item/modular_computer/pda/clear(src)
 		if(46 to 50)
 			new /obj/item/storage/box/syndie_kit/chameleon/broken
 		if(51 to 52) // 2% chance
@@ -246,7 +244,6 @@
 				new /obj/item/clothing/mask/balaclava(src)
 			new /obj/item/gun/ballistic/shotgun/toy(src)
 			new /obj/item/gun/ballistic/automatic/pistol/toy(src)
-			new /obj/item/gun/ballistic/automatic/toy(src)
 			new /obj/item/gun/ballistic/automatic/l6_saw/toy/unrestricted(src)
 			new /obj/item/ammo_box/foambox(src)
 		if(98)

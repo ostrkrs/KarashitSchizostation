@@ -874,11 +874,9 @@
 		set_disabled(TRUE)
 		return
 
-	var/total_damage = brute_dam + burn_dam
-
 	// this block of checks is for limbs that can be disabled, but not through pure damage (AKA limbs that suffer wounds, human/monkey parts and such)
 	if(!disabling_threshold_percentage)
-		if(total_damage < max_damage)
+		if(get_damage() < max_damage)
 			last_maxed = FALSE
 		else
 			if(!last_maxed && owner.stat < UNCONSCIOUS)
@@ -888,7 +886,7 @@
 		return
 
 	// we're now dealing solely with limbs that can be disabled through pure damage, AKA robot parts
-	if(total_damage >= max_damage * disabling_threshold_percentage)
+	if(get_damage() >= max_damage * disabling_threshold_percentage)
 		if(!last_maxed)
 			if(owner.stat < UNCONSCIOUS)
 				INVOKE_ASYNC(owner, TYPE_PROC_REF(/mob, emote), "scream")
@@ -896,7 +894,7 @@
 		set_disabled(TRUE)
 		return
 
-	if(bodypart_disabled && total_damage <= max_damage * 0.5) // reenable the limb at 50% health
+	if(bodypart_disabled && get_damage() <= max_damage * 0.5) // reenable the limb at 50% health
 		last_maxed = FALSE
 		set_disabled(FALSE)
 

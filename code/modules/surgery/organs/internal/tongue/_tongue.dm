@@ -3,11 +3,13 @@
 	desc = "A fleshy muscle mostly used for lying."
 	icon_state = "tongue"
 
+	visual = FALSE
 	zone = BODY_ZONE_PRECISE_MOUTH
 	slot = ORGAN_SLOT_TONGUE
 	attack_verb_continuous = list("licks", "slobbers", "slaps", "frenches", "tongues")
 	attack_verb_simple = list("lick", "slobber", "slap", "french", "tongue")
 	voice_filter = ""
+	organ_traits = list(TRAIT_SPEAKS_CLEARLY)
 	/**
 	 * A cached list of paths of all the languages this tongue is capable of speaking
 	 *
@@ -51,6 +53,8 @@
 	// - then we cache it via string list
 	// this results in tongues with identical possible languages sharing a cached list instance
 	languages_possible = string_list(get_possible_languages())
+	if(!sense_of_taste)
+		add_organ_trait(TRAIT_AGEUSIA)
 
 /obj/item/organ/tongue/examine(mob/user)
 	. = ..()
@@ -89,7 +93,6 @@
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
 		/datum/language/terrum,
-		/datum/language/nekomimetic,
 	)
 
 /obj/item/organ/tongue/proc/handle_speech(datum/source, list/speech_args)
@@ -137,40 +140,24 @@
 	* ageusia from having a non-tasting tongue.
 	*/
 	REMOVE_TRAIT(receiver, TRAIT_AGEUSIA, NO_TONGUE_TRAIT)
-	apply_tongue_effects()
 
 /obj/item/organ/tongue/on_mob_remove(mob/living/carbon/organ_owner, special, movement_flags)
 	. = ..()
 
 	temp_say_mod = ""
 	UnregisterSignal(organ_owner, COMSIG_MOB_SAY)
-	REMOVE_TRAIT(organ_owner, TRAIT_SPEAKS_CLEARLY, SPEAKING_FROM_TONGUE)
-	REMOVE_TRAIT(organ_owner, TRAIT_AGEUSIA, ORGAN_TRAIT)
 	// Carbons by default start with NO_TONGUE_TRAIT caused TRAIT_AGEUSIA
 	ADD_TRAIT(organ_owner, TRAIT_AGEUSIA, NO_TONGUE_TRAIT)
 	organ_owner.voice_filter = initial(organ_owner.voice_filter)
 
-/obj/item/organ/tongue/apply_organ_damage(damage_amount, maximum = maxHealth, required_organ_flag)
-	. = ..()
-	if(!owner)
-		return FALSE
-	apply_tongue_effects()
+/obj/item/organ/tongue/on_begin_failure()
+	remove_organ_trait(TRAIT_SPEAKS_CLEARLY)
+	add_organ_trait(TRAIT_AGEUSIA)
 
-/// Applies effects to our owner based on how damaged our tongue is
-/obj/item/organ/tongue/proc/apply_tongue_effects()
+/obj/item/organ/tongue/on_failure_recovery()
+	add_organ_trait(TRAIT_SPEAKS_CLEARLY)
 	if(sense_of_taste)
-		//tongues can't taste food when they are failing
-		if(organ_flags & ORGAN_FAILING)
-			ADD_TRAIT(owner, TRAIT_AGEUSIA, ORGAN_TRAIT)
-		else
-			REMOVE_TRAIT(owner, TRAIT_AGEUSIA, ORGAN_TRAIT)
-	else
-		//tongues can't taste food when they lack a sense of taste
-		ADD_TRAIT(owner, TRAIT_AGEUSIA, ORGAN_TRAIT)
-	if(organ_flags & ORGAN_FAILING)
-		REMOVE_TRAIT(owner, TRAIT_SPEAKS_CLEARLY, SPEAKING_FROM_TONGUE)
-	else
-		ADD_TRAIT(owner, TRAIT_SPEAKS_CLEARLY, SPEAKING_FROM_TONGUE)
+		remove_organ_trait(TRAIT_AGEUSIA)
 
 /obj/item/organ/tongue/could_speak_language(datum/language/language_path)
 	return (language_path in languages_possible)
@@ -541,15 +528,6 @@
 		if("papyrus")
 			speech_args[SPEECH_SPANS] |= SPAN_PAPYRUS
 
-/obj/item/organ/tongue/bone/plasmaman
-	name = "plasma bone \"tongue\""
-	desc = "Like animated skeletons, Plasmamen vibrate their teeth in order to produce speech."
-	icon_state = "tongueplasma"
-	modifies_speech = FALSE
-	liked_foodtypes = VEGETABLES
-	disliked_foodtypes = FRUIT | CLOTH
-	languages_native = list(/datum/language/calcic)
-
 /obj/item/organ/tongue/robot
 	name = "robotic voicebox"
 	desc = "A voice synthesizer that can interface with organic lifeforms."
@@ -617,45 +595,6 @@
 /obj/item/organ/tongue/ethereal/get_possible_languages()
 	return ..() + /datum/language/voltaic
 
-/obj/item/organ/tongue/cat
-	name = "felinid tongue"
-	desc = "A fleshy muscle mostly used for meowing. Or biting."
-	say_mod = "meows"
-	liked_foodtypes = SEAFOOD | ORANGES | BUGS | GORE
-	disliked_foodtypes = GROSS | CLOTH | RAW
-	organ_traits = list(TRAIT_WOUND_LICKER, TRAIT_FISH_EATER, TRAIT_CARPOTOXIN_IMMUNE)
-	languages_native = list(/datum/language/nekomimetic)
-	actions_types = list(/datum/action/item_action/organ_action/go_feral)
-	var/feral_mode = FALSE
-
-/obj/item/organ/tongue/cat/on_bodypart_insert(obj/item/bodypart/head)
-	. = ..()
-	head.unarmed_damage_low += 4
-	head.unarmed_damage_high += 7
-	head.unarmed_effectiveness += 10
-	head.unarmed_pummeling_bonus += 0.5
-	head.unarmed_attack_effect = ATTACK_EFFECT_BITE
-	head.unarmed_sharpness = SHARP_EDGED
-	if(feral_mode)
-		add_organ_trait(TRAIT_FERAL_BITER)
-
-/obj/item/organ/tongue/cat/on_bodypart_remove(obj/item/bodypart/head)
-	. = ..()
-	head.unarmed_damage_low -= 4
-	head.unarmed_damage_high -= 7
-	head.unarmed_effectiveness -= 10
-	head.unarmed_pummeling_bonus -= 0.5
-	head.unarmed_attack_effect = initial(head.unarmed_attack_effect)
-	head.unarmed_sharpness = initial(head.unarmed_sharpness)
-	remove_organ_trait(TRAIT_FERAL_BITER)
-
-/obj/item/organ/tongue/cat/proc/toggle_feral()
-	feral_mode = !feral_mode
-	if(feral_mode)
-		add_organ_trait(TRAIT_FERAL_BITER)
-	else
-		remove_organ_trait(TRAIT_FERAL_BITER)
-
 /obj/item/organ/tongue/jelly
 	name = "jelly tongue"
 	desc = "Ah... That's not the sound I expected it to make. Sounds like a Space Autumn Bird."
@@ -687,14 +626,6 @@
 	disliked_foodtypes = FRUIT | GROSS | BUGS | GORE
 	toxic_foodtypes = MEAT | RAW | SEAFOOD
 	languages_native = list(/datum/language/moffic)
-
-/obj/item/organ/tongue/mush
-	name = "mush-tongue-room"
-	desc = "You poof with this. Got it?"
-	icon = 'icons/obj/service/hydroponics/seeds.dmi'
-	icon_state = "mycelium-angel"
-	say_mod = "poofs"
-	languages_native = list(/datum/language/mushroom)
 
 /obj/item/organ/tongue/pod
 	name = "pod tongue"

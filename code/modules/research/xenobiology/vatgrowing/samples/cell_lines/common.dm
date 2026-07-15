@@ -467,7 +467,7 @@
 	supplementary_reagents = list( //all of these are just geyser stuff, rated by their rarity
 		/datum/reagent/wittel = 10, //stupid rare
 		/datum/reagent/medicine/omnizine/protozine = 5,
-		/datum/reagent/plasma_oxide = 3,
+		/datum/reagent/phoron_oxide = 3,
 		/datum/reagent/clf3 = 1)//since this is also chemistry it's worth near nothing
 
 	suppressive_reagents = list(//generics you would regularly put in a vat kill abberant residue
@@ -622,7 +622,7 @@
 	suppressive_reagents = list(
 		/datum/reagent/lead = -4,
 		/datum/reagent/consumable/garlic = -3,
-		/datum/reagent/toxin/plasma = -2,
+		/datum/reagent/toxin/phoron = -2,
 		/datum/reagent/flash_powder = -2,
 		/datum/reagent/pax = -2,
 		/datum/reagent/copper = -1)
@@ -698,7 +698,7 @@
 		/datum/reagent/consumable/ethanol/squirt_cider = 2,
 		/datum/reagent/consumable/nutraslop = 2,
 		/datum/reagent/consumable/nutriment/vitamin = 1,
-		/datum/reagent/toxin/plasma = 1,
+		/datum/reagent/toxin/phoron = 1,
 		/datum/reagent/consumable/nutriment/organ_tissue = 1,
 		/datum/reagent/consumable/liquidgibs = 1,
 		/datum/reagent/consumable/enzyme = 1)

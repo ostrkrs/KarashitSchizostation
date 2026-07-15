@@ -251,7 +251,7 @@
 /area/shuttle/pirate)
 "jS" = (
 /obj/effect/spawner/random/trash/mess,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/item/knife/butcher,
 /turf/open/floor/plating,
 /area/shuttle/pirate)

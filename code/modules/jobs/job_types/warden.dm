@@ -18,7 +18,6 @@
 	config_tag = "WARDEN"
 
 	outfit = /datum/outfit/job/warden
-	plasmaman_outfit = /datum/outfit/plasmaman/warden
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SEC
@@ -39,8 +38,8 @@
 		/obj/item/storage/box/handcuffs = 10,
 		/obj/item/storage/box/teargas = 10,
 		/obj/item/storage/box/flashbangs = 10,
-		/obj/item/storage/box/rubbershot = 10,
-		/obj/item/storage/box/lethalshot = 5
+		/obj/item/storage/box/ammo/rubbershot = 10,
+		/obj/item/storage/box/ammo/buckshot = 5
 	)
 	rpg_title = "Jailor"
 	job_flags = SHIP_JOB_FLAGS | JOB_BOLD_SELECT_TEXT | JOB_ANTAG_PROTECTED

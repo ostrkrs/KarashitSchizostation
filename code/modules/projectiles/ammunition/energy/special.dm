@@ -57,11 +57,6 @@
 	variance = 10
 	harmful = FALSE
 
-/obj/item/ammo_casing/energy/snare
-	projectile_type = /obj/projectile/energy/snare
-	select_name = "snare"
-	harmful = FALSE
-
 /obj/item/ammo_casing/energy/tesla_cannon
 	fire_sound = null
 	e_cost = LASER_SHOTS(33, STANDARD_CELL_CHARGE)
@@ -74,23 +69,9 @@
 	select_name = "shrink ray"
 	e_cost = LASER_SHOTS(5, STANDARD_CELL_CHARGE)
 
-/obj/item/ammo_casing/energy/marksman
-	projectile_type = /obj/projectile/bullet/marksman
-	select_name = "marksman nanoshot"
-	e_cost = 0 // Can't use the macro
-	fire_sound = 'sound/items/weapons/gun/revolver/shot_alt.ogg'
-	newtonian_force = 1
-
 /obj/item/ammo_casing/energy/fisher
 	projectile_type = /obj/projectile/energy/fisher
 	select_name = "light disruptor"
 	harmful = FALSE
 	e_cost = LASER_SHOTS(2, STANDARD_CELL_CHARGE * 0.5)
 	fire_sound = 'sound/items/weapons/gun/general/heavy_shot_suppressed.ogg' // fwip fwip fwip fwip
-
-// Used by /obj/item/gun/energy/photon
-/obj/item/ammo_casing/energy/photon
-	fire_sound = 'sound/items/weapons/lasercannonfire.ogg'
-	e_cost = LASER_SHOTS(4, STANDARD_CELL_CHARGE)
-	select_name = "flare"
-	projectile_type = /obj/projectile/energy/photon

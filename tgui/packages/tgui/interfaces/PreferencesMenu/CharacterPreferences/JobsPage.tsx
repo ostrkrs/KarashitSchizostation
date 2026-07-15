@@ -186,8 +186,8 @@ function JobRow(props: JobRowProps) {
   const experienceNeeded = data.job_required_experience?.[name];
   const daysLeft = data.job_days_left ? data.job_days_left[name] : 0;
 
-  const alt_title_selected = data.job_alt_titles[name]
-    ? data.job_alt_titles[name]
+  const alt_title_selected = data.alt_job_titles[name]
+    ? data.alt_job_titles[name]
     : name;
 
   let rightSide: ReactNode;

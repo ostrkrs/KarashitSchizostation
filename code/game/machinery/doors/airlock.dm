@@ -85,7 +85,7 @@
 	explosion_block = 1
 	hud_possible = list(DIAG_AIRLOCK_HUD)
 	smoothing_groups = SMOOTH_GROUP_AIRLOCK
-	canSmoothWith = SMOOTH_GROUP_WALLS + SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_AIRLOCK + SMOOTH_GROUP_GIRDER
+	canSmoothWith = SMOOTH_GROUP_WALLS + SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_AIRLOCK
 
 	interaction_flags_machine = INTERACT_MACHINE_WIRES_IF_OPEN | INTERACT_MACHINE_ALLOW_SILICON | INTERACT_MACHINE_OPEN_SILICON | INTERACT_MACHINE_OPEN
 	interaction_flags_click = ALLOW_SILICON_REACH
@@ -2180,22 +2180,22 @@
 /obj/machinery/door/airlock/uranium/glass/safe
 	actually_radioactive = FALSE
 
-/obj/machinery/door/airlock/plasma
-	name = "plasma airlock"
+/obj/machinery/door/airlock/phoron
+	name = "phoron airlock"
 	desc = "No way this can end badly."
-	icon = 'icons/obj/doors/airlocks/station/plasma.dmi'
-	assemblytype = /obj/structure/door_assembly/door_assembly_plasma
+	icon = 'icons/obj/doors/airlocks/station/phoron.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_phoron
 	material_flags = MATERIAL_EFFECTS
 	material_modifier = 0.25
 
-/obj/machinery/door/airlock/plasma/Initialize(mapload)
-	custom_materials = custom_materials ? custom_materials : list(/datum/material/plasma = SHEET_MATERIAL_AMOUNT * 10)
+/obj/machinery/door/airlock/phoron/Initialize(mapload)
+	custom_materials = custom_materials ? custom_materials : list(/datum/material/phoron = SHEET_MATERIAL_AMOUNT * 10)
 	. = ..()
 
-/obj/machinery/door/airlock/plasma/block_superconductivity() //we don't stop the heat~
+/obj/machinery/door/airlock/phoron/block_superconductivity() //we don't stop the heat~
 	return 0
 
-/obj/machinery/door/airlock/plasma/glass
+/obj/machinery/door/airlock/phoron/glass
 	opacity = FALSE
 	glass = TRUE
 

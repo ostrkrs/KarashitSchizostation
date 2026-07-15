@@ -33,7 +33,7 @@
 27 Virology
 28 Xenobiology
 29 Law Office
-30 Detective's Office
+30 Criminalist's Office
 */
 
 //The whole system for the sorttype var is determined based on the order of this list,
@@ -47,6 +47,8 @@ GLOBAL_LIST_INIT(TAGGERLOCATIONS, list("Disposals",
 	"Atmospherics", "Security", "HoS Office", "Medbay",
 	"CMO Office", "Chemistry", "Research", "RD Office",
 	"Robotics", "HoP Office", "Library", "Chapel", "Theatre",
-	"Bar", "Kitchen", "Hydroponics", "Janitor Closet","Genetics",
+	"Bar", "Kitchen", "Hydroponics", "Janitor Closet", "Genetics",
 	"Experimentor Lab", "Ordnance", "Dormitories", "Virology",
-	"Xenobiology", "Law Office","Detective's Office"))
+	"Xenobiology", "IAA Office", "Criminalist's Office",
+	"ISO Office", "Steward's Office", "Captain's Office",
+	"Bridge", "Courtroom"))

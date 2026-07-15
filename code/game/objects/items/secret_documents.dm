@@ -44,7 +44,7 @@
 
 ///Syndicate mining documents
 /obj/item/documents/syndicate/mining
-	desc = "\"Top Secret\" documents detailing Syndicate plasma mining operations."
+	desc = "\"Top Secret\" documents detailing Syndicate phoron mining operations."
 
 /**
  * # secret documents (photocopy)

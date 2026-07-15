@@ -25,7 +25,6 @@
 	blood_deficiency_drain_rate = JELLY_REGEN_RATE + BLOOD_DEFICIENCY_MODIFIER
 	coldmod = 6   // = 3x cold damage
 	heatmod = 0.5 // = 1/4x heat damage
-	payday_modifier = 1.0
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	inherent_factions = list(FACTION_SLIME)
 	species_language_holder = /datum/language_holder/jelly
@@ -193,7 +192,7 @@
 	)
 
 /datum/species/jelly/slime/get_physical_attributes()
-	return "Slimepeople have jelly for blood and their vacuoles can extremely quickly convert plasma to it if they're breathing it in.\
+	return "Slimepeople have jelly for blood and their vacuoles can extremely quickly convert phoron to it if they're breathing it in.\
 		They can then use the excess blood to split off an excess body, which their consciousness can transfer to at will or on death.\
 		Most things that are toxic heal them, but most things that prevent toxicity damage them!"
 
@@ -656,7 +655,7 @@
 
 /datum/action/innate/use_extract/major
 	name = "Extract Major Activation"
-	desc = "Pulse the slime extract with plasma jelly to activate it."
+	desc = "Pulse the slime extract with phoron jelly to activate it."
 	button_icon_state = "slimeuse2"
 	activation_type = SLIME_ACTIVATE_MAJOR
 

@@ -107,9 +107,9 @@
 /obj/effect/spawner/random/trash,
 /obj/structure/alien/weeds/node,
 /obj/effect/decal/cleanable/glass{
-	icon_state = "plasmatiny"
+	icon_state = "phorontiny"
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /obj/machinery/power/rtg,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/infested_frigate)
@@ -190,7 +190,7 @@
 /obj/structure/alien/weeds,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/glass{
-	icon_state = "plasmatiny"
+	icon_state = "phorontiny"
 	},
 /obj/structure/bed/nest,
 /obj/effect/mob_spawn/corpse/human/cargo_tech,
@@ -856,7 +856,7 @@
 	icon_state = "floor5-old"
 	},
 /obj/item/ammo_casing/spent,
-/obj/item/gun/ballistic/automatic/smartgun,
+/obj/item/gun/ballistic/automatic/smg/smartgun,
 /obj/effect/mob_spawn/corpse/human/syndicatepilot,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/infested_frigate)
@@ -906,7 +906,7 @@
 /area/ruin/space/has_grav/infested_frigate)
 "pk" = (
 /obj/structure/cable,
-/obj/structure/closet/firecloset/full{
+/obj/structure/closet/firecloset{
 	anchored = 1
 	},
 /obj/effect/turf_decal{
@@ -961,7 +961,7 @@
 	},
 /obj/structure/tank_dispenser{
 	oxygentanks = 0;
-	plasmatanks = 0
+	phorontanks = 0
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
@@ -1089,7 +1089,7 @@
 /obj/effect/turf_decal{
 	icon_state = "bot_red"
 	},
-/obj/structure/closet/firecloset/full{
+/obj/structure/closet/firecloset{
 	anchored = 1
 	},
 /obj/effect/turf_decal{
@@ -1138,7 +1138,7 @@
 /obj/effect/decal/cleanable/glass,
 /obj/structure/alien/weeds,
 /obj/item/shard{
-	icon_state = "plasmatiny"
+	icon_state = "phorontiny"
 	},
 /obj/item/shard{
 	icon_state = "titaniumtiny"
@@ -1230,7 +1230,7 @@
 /obj/machinery/door/poddoor{
 	id = "Brutusexterior"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/infested_frigate)
 "vm" = (
@@ -1255,7 +1255,7 @@
 	pixel_y = 2;
 	pixel_x = -8
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/infested_frigate)
 "vx" = (
@@ -1613,7 +1613,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/infested_frigate)
 "yZ" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/infested_frigate)
 "zg" = (
@@ -2176,7 +2176,7 @@
 	dir = 1
 	},
 /obj/effect/spawner/random/exotic/antag_gear,
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /obj/effect/spawner/random/contraband/permabrig_gear,
 /turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/infested_frigate)
@@ -2363,7 +2363,7 @@
 /obj/effect/spawner/random/medical/memeorgans,
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/rice,
-/obj/structure/closet/secure_closet/freezer/gulag_fridge{
+/obj/structure/closet/secure_closet/freezer/beer_light{
 	locked = 0
 	},
 /obj/item/bodypart/head,
@@ -2404,7 +2404,7 @@
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/glass,
 /obj/item/shard{
-	icon_state = "plasmasmall"
+	icon_state = "phoronsmall"
 	},
 /obj/structure/alien/egg/burst,
 /turf/open/floor/mineral/plastitanium,
@@ -2434,7 +2434,6 @@
 	pixel_x = 5
 	},
 /obj/item/suppressor,
-/obj/item/gun/energy/e_gun/mini,
 /obj/structure/closet/crate/secure/weapon{
 	req_access = list("syndicate")
 	},
@@ -2745,7 +2744,7 @@
 	pixel_x = 7;
 	pixel_y = -1
 	},
-/obj/structure/table/glass/plasmaglass,
+/obj/structure/table/glass/phoronglass,
 /turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/infested_frigate)
 "SB" = (
@@ -2957,10 +2956,10 @@
 /obj/structure/alien/weeds,
 /obj/structure/cable,
 /obj/effect/decal/cleanable/glass{
-	icon_state = "plasmatiny"
+	icon_state = "phorontiny"
 	},
 /obj/effect/decal/cleanable/glass{
-	icon_state = "plasmalarge"
+	icon_state = "phoronlarge"
 	},
 /obj/item/shard{
 	icon_state = "titaniumtiny"

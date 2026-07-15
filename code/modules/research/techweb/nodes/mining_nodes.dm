@@ -14,8 +14,8 @@
 		"stack_console",
 		"autolathe",
 		"rglass",
-		"plasmaglass",
-		"plasmareinforcedglass",
+		"phoronglass",
+		"phoronrglass",
 		"plasteel",
 		"titaniumglass",
 		"plastitanium",
@@ -70,10 +70,10 @@
 	announce_channels = list(RADIO_CHANNEL_SUPPLY)
 
 /datum/techweb_node/plasma_mining
-	id = TECHWEB_NODE_PLASMA_MINING
+	id = TECHWEB_NODE_PLASMA_CUTTERS
 	display_name = "Plasma Beam Mining"
 	description = "Engineers' plasma welders have proven highly effective in mining operations. This led to the development of a mech-mounted variant and an enhanced handheld cutter for miners."
-	prereq_ids = list(TECHWEB_NODE_LOW_PRESSURE_EXCAVATION, TECHWEB_NODE_PLASMA_CONTROL)
+	prereq_ids = list(TECHWEB_NODE_LOW_PRESSURE_EXCAVATION, TECHWEB_NODE_PHORON_CONTROL)
 	design_ids = list(
 		"mech_plasma_cutter",
 		"plasmacutter_adv",
@@ -98,7 +98,7 @@
 	id = TECHWEB_NODE_MINING_ADV
 	display_name = "Advanced Mining Technology"
 	description = "High-level mining equipment, pushing the boundaries of efficiency and effectiveness in resource extraction."
-	prereq_ids = list(TECHWEB_NODE_PLASMA_MINING)
+	prereq_ids = list(TECHWEB_NODE_PLASMA_CUTTERS)
 	design_ids = list(
 		"jackhammer",
 		"drill_diamond",

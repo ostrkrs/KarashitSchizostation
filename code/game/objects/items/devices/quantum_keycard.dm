@@ -24,7 +24,7 @@
 		/area/station/command = COLOR_COMMAND_BLUE,
 		/area/station/ai_monitored = COLOR_COMMAND_BLUE,
 		/area/station/medical = COLOR_MEDICAL_TEAL,
-		/area/station/science = COLOR_SCIENCE_PINK,
+		/area/station/research = COLOR_SCIENCE_PINK,
 		/area/station/engineering = COLOR_ENGINEERING_ORANGE,
 		/area/station/cargo = COLOR_CARGO_BROWN,
 		/area/mine = COLOR_CARGO_BROWN

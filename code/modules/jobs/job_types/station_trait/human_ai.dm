@@ -16,7 +16,6 @@
 	config_tag = "HUMAN_AI"
 
 	outfit = /datum/outfit/job/human_ai
-	plasmaman_outfit = /datum/outfit/plasmaman/human_ai
 
 	paycheck = null
 	paycheck_department = null

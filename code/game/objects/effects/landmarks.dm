@@ -129,9 +129,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Captain"
 	icon_state = "Captain"
 
-/obj/effect/landmark/start/detective
-	name = "Detective"
-	icon_state = "Detective"
+/obj/effect/landmark/start/criminalist
+	name = "Criminalist"
+	icon_state = "Criminalist"
 
 /obj/effect/landmark/start/warden
 	name = "Warden"
@@ -466,37 +466,15 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	/// A list of everything this hangover spawn created as part of the hangover station trait
 	var/list/hangover_debris = list()
 
-	/// A list of everything this hangover spawn created as part of the birthday station trait
-	var/list/party_debris = list()
-
 /obj/effect/landmark/start/hangover/Initialize(mapload)
 	. = ..()
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/effect/landmark/start/hangover/Destroy()
 	hangover_debris = null
-	party_debris = null
 	return ..()
 
 /obj/effect/landmark/start/hangover/LateInitialize()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_BIRTHDAY))
-		party_debris += new /obj/effect/decal/cleanable/confetti(get_turf(src)) //a birthday celebration can also be a hangover
-		var/list/bonus_confetti = GLOB.alldirs
-		for(var/confettis in bonus_confetti)
-			var/party_turf_to_spawn_on = get_step(src, confettis)
-			if(!isopenturf(party_turf_to_spawn_on))
-				continue
-			var/dense_object = FALSE
-			for(var/atom/content in party_turf_to_spawn_on)
-				if(content.density)
-					dense_object = TRUE
-					break
-			if(dense_object)
-				continue
-			if(prob(50))
-				party_debris += new /obj/effect/decal/cleanable/confetti(party_turf_to_spawn_on)
-			if(prob(10))
-				party_debris += new /obj/item/toy/balloon(party_turf_to_spawn_on)
 	if(!HAS_TRAIT(SSstation, STATION_TRAIT_HANGOVER))
 		return
 	if(prob(60))
@@ -604,7 +582,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	location = "Security"
 
 /obj/effect/landmark/navigate_destination/det
-	location = "Detective's Office"
+	location = "Criminalist's Office"
 
 /obj/effect/landmark/navigate_destination/research
 	location = "Research"
@@ -663,9 +641,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	location = "IAA's Office"
 
 //Shuttle docks
-/obj/effect/landmark/navigate_destination/dockarrival
-	location = "Arrival Shuttle Dock"
-
 /obj/effect/landmark/navigate_destination/dockesc
 	location = "Escape Shuttle Dock"
 

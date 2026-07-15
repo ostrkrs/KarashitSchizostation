@@ -386,7 +386,7 @@
 	. = ..()
 	if(.)
 		return
-	if(user.get_organ_by_type(/obj/item/organ/alien/plasmavessel))
+	if(user.get_organ_by_type(/obj/item/organ/alien/phoron_vessel))
 		switch(status)
 			if(BURSTING)
 				to_chat(user, span_notice("The child is hatching out."))

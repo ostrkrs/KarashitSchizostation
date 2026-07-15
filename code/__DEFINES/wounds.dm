@@ -349,7 +349,7 @@ GLOBAL_LIST_INIT(biotypes_to_scar_file, list(
 #define SCAR_SAVE_PRECISE_LOCATION 4
 /// The severity the scar had
 #define SCAR_SAVE_SEVERITY 5
-/// Whether this is a BIO_BONE scar, a BIO_FLESH scar, or a BIO_FLESH_BONE scar (so you can't load fleshy human scars on a plasmaman character)
+/// Whether this is a BIO_BONE scar, a BIO_FLESH scar, or a BIO_FLESH_BONE scar
 #define SCAR_SAVE_BIOLOGY 6
 /// Which character slot this was saved to
 #define SCAR_SAVE_CHAR_SLOT 7

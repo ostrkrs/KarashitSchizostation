@@ -17,10 +17,10 @@
 /obj/item/station_charter/Initialize(mapload)
 	. = ..()
 	if(!standard_station_regex)
-		var/prefixes = jointext(GLOB.station_prefixes, "|")
-		var/names = jointext(GLOB.station_names, "|")
-		var/suffixes = jointext(GLOB.station_suffixes, "|")
-		var/numerals = jointext(GLOB.station_numerals, "|")
+		var/prefixes = jointext(GLOB.ship_prefixes, "|")
+		var/names = jointext(GLOB.ship_names, "|")
+		var/suffixes = jointext(GLOB.ship_suffixes, "|")
+		var/numerals = jointext(GLOB.ship_numerals, "|")
 		var/regexstr = "^(([prefixes]) )?(([names]) ?)([suffixes]) ([numerals])$"
 		standard_station_regex = new(regexstr)
 
@@ -36,7 +36,7 @@
 		return
 
 	var/new_name = tgui_input_text(user, "What do you want to name \
-		[station_name()]? Keep in mind particularly terrible names may be \
+		[ship_name()]? Keep in mind particularly terrible names may be \
 		rejected by your employers, while names using the standard format \
 		will be accepted automatically.", "Station Name", max_length = MAX_CHARTER_LEN)
 
@@ -82,14 +82,14 @@
 	response_timer_id = null
 
 /obj/item/station_charter/proc/rename_station(designation, uname, ureal_name, ukey)
-	set_station_name(designation)
-	minor_announce("[ureal_name] has designated your station as [html_decode(station_name())]", "Captain's Charter") //decode station_name to avoid minor_announce double encode
-	log_game("[ukey] has renamed the station as [station_name()].")
+	set_ship_name(designation)
+	minor_announce("[ureal_name] has designated your station as [html_decode(ship_name())]", "Captain's Charter") //decode ship_name to avoid minor_announce double encode
+	log_game("[ukey] has renamed the station as [ship_name()].")
 
-	name = "station charter for [station_name()]"
+	name = "station charter for [ship_name()]"
 	desc = "An official document entrusting the governance of \
-		[station_name()] and surrounding space to Captain [uname]."
-	SSblackbox.record_feedback("text", "station_renames", 1, "[station_name()]")
+		[ship_name()] and surrounding space to Captain [uname]."
+	SSblackbox.record_feedback("text", "station_renames", 1, "[ship_name()]")
 	if(!unlimited_uses)
 		used = TRUE
 
@@ -111,11 +111,11 @@
 	force = 15
 
 /obj/item/station_charter/banner/rename_station(designation, uname, ureal_name, ukey)
-	set_station_name(designation)
-	minor_announce("[ureal_name] has designated the [name_type] as [html_decode(station_name())]", "Captain's Banner") //decode station_name to avoid minor_announce double encode
-	log_game("[ukey] has renamed the [name_type] as [station_name()].")
-	name = "banner of [station_name()]"
-	desc = "The banner bears the official coat of arms of Nanotrasen, signifying that [station_name()] has been claimed by Captain [uname] in the name of the company."
-	SSblackbox.record_feedback("text", "station_renames", 1, "[station_name()]")
+	set_ship_name(designation)
+	minor_announce("[ureal_name] has designated the [name_type] as [html_decode(ship_name())]", "Captain's Banner") //decode ship_name to avoid minor_announce double encode
+	log_game("[ukey] has renamed the [name_type] as [ship_name()].")
+	name = "banner of [ship_name()]"
+	desc = "The banner bears the official coat of arms of Nanotrasen, signifying that [ship_name()] has been claimed by Captain [uname] in the name of the company."
+	SSblackbox.record_feedback("text", "station_renames", 1, "[ship_name()]")
 	if(!unlimited_uses)
 		used = TRUE

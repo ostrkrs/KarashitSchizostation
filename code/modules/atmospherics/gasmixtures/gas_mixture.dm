@@ -537,7 +537,7 @@ GLOBAL_LIST_INIT(gaslist_cache, init_gaslist_cache())
 /**
  * Returns the partial pressure of the gas in the breath based on BREATH_VOLUME
  * eg:
- * Plas_PP = get_breath_partial_pressure(gas_mixture.gases[/datum/gas/plasma][MOLES])
+ * Plas_PP = get_breath_partial_pressure(gas_mixture.gases[/datum/gas/phoron][MOLES])
  * O2_PP = get_breath_partial_pressure(gas_mixture.gases[/datum/gas/oxygen][MOLES])
  * get_breath_partial_pressure(gas_mole_count) --> PV = nRT, P = nRT/V
  *

@@ -57,6 +57,7 @@
 			if((drop_bitflags & DROP_BODYPARTS) && (check_zone(organ.zone) != BODY_ZONE_CHEST)) // chests can't drop
 				continue // the head will drop, so the brain should stay inside
 
+			organ.apply_organ_damage(organ.maxHealth)
 			organ.Remove(src)
 			organ.forceMove(Tsec)
 			organ.throw_at(get_edge_target_turf(src, pick(GLOB.alldirs)), rand(1,3), 5)

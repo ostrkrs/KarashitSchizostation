@@ -6,6 +6,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SCIENCE)
+	default_radio_channel = RADIO_CHANNEL_SCIENCE
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -20,7 +21,7 @@
 	config_tag = "RESEARCH_DIRECTOR"
 
 	outfit = /datum/outfit/job/rd
-	plasmaman_outfit = /datum/outfit/plasmaman/research_director
+
 	departments_list = list(
 		/datum/job_department/science,
 		/datum/job_department/command,
@@ -71,7 +72,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/color/black
 	l_pocket = /obj/item/laser_pointer/purple
-	l_hand = /obj/item/clipboard
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/science
@@ -79,7 +79,6 @@
 	messenger = /obj/item/storage/backpack/messenger/science
 
 	chameleon_extras = /obj/item/stamp/head/rd
-	skillchips = list(/obj/item/skillchip/research_director, /obj/item/skillchip/job/roboticist)
 
 /datum/outfit/job/rd/mod
 	name = "Research Director (MODsuit)"

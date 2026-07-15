@@ -111,7 +111,7 @@
 
 	var/death_real_time = world.realtime - died_how_long_ago
 	var/current_date = time2text(death_real_time, "DD Month", 0)
-	var/current_year = text2num(time2text(death_real_time, "YYYY", NO_TIMEZONE)) + STATION_YEAR_OFFSET
+	var/current_year = text2num(time2text(death_real_time, "YYYY", NO_TIMEZONE)) + YEAR_OFFSET
 	body.station_timestamp_timeofdeath = "[current_date] [current_year]"
 
 /// Main corpse damage type that's used to apply damages to a body

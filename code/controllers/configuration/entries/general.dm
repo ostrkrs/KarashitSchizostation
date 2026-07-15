@@ -37,7 +37,7 @@
 /datum/config_entry/string/serversqlname
 
 /// station name (the name of the station in-game)
-/datum/config_entry/string/stationname
+/datum/config_entry/string/shipname
 
 /// Countdown between lobby and the round starting.
 /datum/config_entry/number/lobby_countdown
@@ -715,7 +715,7 @@
 /datum/config_entry/flag/save_spritesheets
 	default = FALSE
 
-/datum/config_entry/flag/station_name_in_hub_entry
+/datum/config_entry/flag/ship_name_in_hub_entry
 	default = FALSE
 
 /datum/config_entry/number/pr_announcements_per_round

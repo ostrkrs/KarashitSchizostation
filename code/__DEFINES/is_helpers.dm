@@ -118,8 +118,6 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define isghostspecies(A) (is_species(A, /datum/species/ghost))
 #define isgolem(A) (is_species(A, /datum/species/golem))
 #define islizard(A) (is_species(A, /datum/species/lizard))
-#define isashwalker(A) (is_species(A, /datum/species/lizard/ashwalker))
-#define isplasmaman(A) (is_species(A, /datum/species/plasmaman))
 #define ispodperson(A) (is_species(A, /datum/species/pod))
 #define isflyperson(A) (is_species(A, /datum/species/fly))
 #define isjellyperson(A) (is_species(A, /datum/species/jelly))
@@ -127,10 +125,9 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define iszombie(A) (is_species(A, /datum/species/zombie))
 #define isskeleton(A) (is_species(A, /datum/species/skeleton))
 #define ismoth(A) (is_species(A, /datum/species/moth))
-#define isfelinid(A) (is_species(A, /datum/species/human/felinid))
+#define iscaver(A) (is_species(A, /datum/species/human/cave_adapted))
 #define isethereal(A) (is_species(A, /datum/species/ethereal))
 #define isvampire(A) (is_species(A,/datum/species/human/vampire))
-#define isdullahan(A) (is_species(A, /datum/species/dullahan))
 #define ismonkey(A) (is_species(A, /datum/species/monkey))
 #define isandroid(A) (is_species(A, /datum/species/android))
 #define isnightmare(A) (is_species(A, /datum/species/shadow/nightmare))
@@ -299,10 +296,10 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 GLOBAL_LIST_INIT(glass_sheet_types, typecacheof(list(
 	/obj/item/stack/sheet/glass,
 	/obj/item/stack/sheet/rglass,
-	/obj/item/stack/sheet/plasmaglass,
-	/obj/item/stack/sheet/plasmarglass,
-	/obj/item/stack/sheet/titaniumglass,
-	/obj/item/stack/sheet/plastitaniumglass)))
+	/obj/item/stack/sheet/phoron_glass,
+	/obj/item/stack/sheet/phoron_rglass,
+	/obj/item/stack/sheet/titanium_glass,
+	/obj/item/stack/sheet/plastitanium_glass)))
 
 #define is_glass_sheet(O) (is_type_in_typecache(O, GLOB.glass_sheet_types))
 
@@ -338,7 +335,7 @@ GLOBAL_LIST_INIT(book_types, typecacheof(list(
 #define is_chaplain_job(job_type) (istype(job_type, /datum/job/chaplain))
 #define is_clown_job(job_type) (istype(job_type, /datum/job/clown))
 #define is_mime_job(job_type) (istype(job_type, /datum/job/mime))
-#define is_detective_job(job_type) (istype(job_type, /datum/job/detective))
+#define is_criminalist_job(job_type) (istype(job_type, /datum/job/criminalist))
 #define is_scientist_job(job_type) (istype(job_type, /datum/job/scientist))
 #define is_security_officer_job(job_type) (istype(job_type, /datum/job/security_officer))
 #define is_research_director_job(job_type) (istype(job_type, /datum/job/research_director))

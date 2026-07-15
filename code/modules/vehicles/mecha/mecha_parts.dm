@@ -9,6 +9,9 @@
 	abstract_type = /obj/item/mecha_parts
 	w_class = WEIGHT_CLASS_GIGANTIC
 	obj_flags = CONDUCTS_ELECTRICITY
+	sound_vary = TRUE
+	pickup_sound = SFX_GENERIC_DEVICE_PICKUP
+	drop_sound = SFX_GENERIC_DEVICE_DROP
 
 /obj/item/mecha_parts/proc/try_attach_part(mob/user, obj/vehicle/sealed/mecha/M, attach_right = FALSE) //For attaching parts to a finished mech
 	if(!user.transferItemToLoc(src, M))
@@ -290,7 +293,7 @@
 
 /obj/item/mecha_parts/part/phazon_armor
 	name="Phazon armor"
-	desc="Phazon armor plates. They are layered with plasma to protect the pilot from the stress of phasing and have unusual properties."
+	desc="Phazon armor plates. They are layered with phoron to protect the pilot from the stress of phasing and have unusual properties."
 	icon_state = "phazon_armor"
 
 // Savannah-Ivanov

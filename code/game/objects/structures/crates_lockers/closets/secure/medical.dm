@@ -49,7 +49,9 @@
 /obj/structure/closet/secure_closet/psychology
 	name = "psychology locker"
 	req_access = list(ACCESS_PSYCHOLOGY)
-	icon_state = "cabinet"
+	icon_state = "cabinet_secure"
+	icon_locked = "cabinet_secure_locked"
+	icon_unlocked = "cabinet_secure_unlocked"
 	door_anim_time = 0 // no animation
 	open_sound = 'sound/machines/closet/wooden_closet_open.ogg'
 	close_sound = 'sound/machines/closet/wooden_closet_close.ogg'

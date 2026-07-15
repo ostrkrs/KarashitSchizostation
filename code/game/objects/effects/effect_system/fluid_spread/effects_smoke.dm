@@ -279,7 +279,7 @@
  * Chills an open turf.
  *
  * Forces the air temperature to a specific value.
- * Transmutes all of the plasma in the air into nitrogen.
+ * Transmutes all of the phoron in the air into nitrogen.
  * Extinguishes all fires and burning objects/mobs in the turf.
  * May freeze all vents and vent scrubbers shut.
  *
@@ -296,10 +296,10 @@
 			air.temperature = temperature
 
 		var/list/gases = air.gases
-		if(gases[/datum/gas/plasma])
+		if(gases[/datum/gas/phoron])
 			air.assert_gas(/datum/gas/nitrogen)
-			gases[/datum/gas/nitrogen][MOLES] += gases[/datum/gas/plasma][MOLES]
-			gases[/datum/gas/plasma][MOLES] = 0
+			gases[/datum/gas/nitrogen][MOLES] += gases[/datum/gas/phoron][MOLES]
+			gases[/datum/gas/phoron][MOLES] = 0
 			air.garbage_collect()
 
 		for(var/obj/effect/hotspot/fire in chilly)

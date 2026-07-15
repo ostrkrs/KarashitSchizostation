@@ -220,15 +220,6 @@
 /area/icemoon/surface/outdoors/less_spawns
 	icon_state = "less_spawns"
 
-/area/icemoon/surface/outdoors/less_spawns/New()
-	. = ..()
-	// this area SOMETIMES does map generation. Often it doesn't at all
-	// so it SHOULD NOT be used with the genturf turf type, as it is not always replaced
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_FORESTED))
-		map_generator = /datum/map_generator/cave_generator/icemoon/surface/forested
-		// flip this on, the generator has already disabled dangerous fauna
-		area_flags = MOB_SPAWN_ALLOWED | FLORA_ALLOWED
-
 /area/icemoon/surface/outdoors/always_forested
 	icon_state = "forest"
 	map_generator = /datum/map_generator/cave_generator/icemoon/surface/forested
@@ -258,12 +249,6 @@
 /area/icemoon/surface/outdoors/unexplored/rivers // rivers spawn here
 	icon_state = "danger"
 	map_generator = /datum/map_generator/cave_generator/icemoon/surface
-
-/area/icemoon/surface/outdoors/unexplored/rivers/New()
-	. = ..()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_FORESTED))
-		map_generator = /datum/map_generator/cave_generator/icemoon/surface/forested
-		area_flags |= MOB_SPAWN_ALLOWED //flip this on, the generator has already disabled dangerous fauna
 
 /area/icemoon/surface/outdoors/unexplored/rivers/no_monsters
 	area_flags = UNIQUE_AREA | FLORA_ALLOWED | CAVES_ALLOWED

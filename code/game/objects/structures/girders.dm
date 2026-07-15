@@ -10,7 +10,7 @@
 	rad_insulation = RAD_VERY_LIGHT_INSULATION
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_GIRDER
-	canSmoothWith = SMOOTH_GROUP_GIRDER + SMOOTH_GROUP_WALLS + SMOOTH_GROUP_AIRLOCK + SMOOTH_GROUP_WINDOW_FULLTILE
+	canSmoothWith = SMOOTH_GROUP_GIRDER + SMOOTH_GROUP_WALLS
 	var/state = GIRDER_NORMAL
 	var/girderpasschance = 20 // percentage chance that a projectile passes through the girder.
 	var/can_displace = TRUE //If the girder can be moved around by wrenching it
@@ -22,7 +22,7 @@
 		/obj/item/stack/sheet/plasteel = 2,
 		/obj/item/stack/sheet/bronze = 2,
 		/obj/item/stack/sheet/runed_metal = 1,
-		/obj/item/stack/sheet/titaniumglass = 2,
+		/obj/item/stack/sheet/titanium_glass = 2,
 		exotic_material = 2 // this needs to be refactored properly
 	)
 
@@ -180,8 +180,8 @@
 				qdel(src)
 			return
 
-	if(istype(stack, /obj/item/stack/sheet/titaniumglass) && state == GIRDER_TRAM)
-		var/amount = construction_cost[/obj/item/stack/sheet/titaniumglass]
+	if(istype(stack, /obj/item/stack/sheet/titanium_glass) && state == GIRDER_TRAM)
+		var/amount = construction_cost[/obj/item/stack/sheet/titanium_glass]
 		if(stack.get_amount() < amount)
 			balloon_alert(user, "need [amount] sheets!")
 			return

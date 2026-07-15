@@ -1,5 +1,5 @@
 /obj/machinery/vending/wallmed
-	name = "\improper Emergency NanoMed"
+	name = "\improper Emergency MiniMed"
 	desc = "Wall-mounted Medical Equipment dispenser, Meant to be used in medical emergencies."
 	icon_state = "wallmed"
 	icon_deny = "wallmed-deny"
@@ -34,5 +34,5 @@
 MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/vending/wallmed, 32)
 
 /obj/item/vending_refill/wallmed
-	machine_name = "Emergency NanoMed"
+	machine_name = "Emergency MiniMed"
 	icon_state = "refill_medical"

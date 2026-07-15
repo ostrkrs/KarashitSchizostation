@@ -315,7 +315,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "kO" = (
-/obj/structure/sign/poster/official/love_ian/directional/south,
+/obj/structure/sign/poster/old_nt/love_ian/directional/south,
 /obj/effect/turf_decal/siding,
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
@@ -944,7 +944,7 @@
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 8
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "DA" = (

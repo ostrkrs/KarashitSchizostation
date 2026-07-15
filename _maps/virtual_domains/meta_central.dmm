@@ -51,7 +51,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/item/toy/figure/detective{
+/obj/item/toy/figure/criminalist{
 	pixel_y = 13
 	},
 /turf/open/floor/iron,
@@ -665,7 +665,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain)
 "fn" = (
-/obj/item/camera/detective{
+/obj/item/camera/criminalist{
 	pixel_x = 9;
 	pixel_y = 4
 	},
@@ -1122,7 +1122,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain)
 "jC" = (
-/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
 /turf/open/floor/plating,
 /area/virtual_domain)
 "jD" = (
@@ -1132,9 +1132,7 @@
 /area/virtual_domain)
 "jF" = (
 /obj/machinery/holopad/secure,
-/obj/item/storage/box/lethalshot{
-	pixel_y = 7
-	},
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/floor/carpet,
 /area/virtual_domain)
 "jG" = (
@@ -1164,7 +1162,7 @@
 /area/virtual_domain)
 "kc" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/mine/gas/plasma,
+/obj/effect/mine/gas/phoron,
 /turf/open/floor/wood,
 /area/virtual_domain)
 "kd" = (
@@ -3525,7 +3523,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/item/detective_scanner{
+/obj/item/criminalist_scanner{
 	pixel_x = -7;
 	pixel_y = -6
 	},
@@ -4821,7 +4819,7 @@
 /turf/open/floor/plating,
 /area/virtual_domain)
 "Oj" = (
-/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/virtual_domain)
@@ -4988,7 +4986,7 @@
 /obj/item/book/manual/wiki/security_corp_law,
 /obj/machinery/light/small/directional/west,
 /obj/item/paper/fluff/gateway,
-/obj/item/coin/plasma,
+/obj/item/coin/phoron,
 /obj/item/melee/chainofcommand,
 /turf/open/floor/wood,
 /area/virtual_domain)

@@ -339,8 +339,8 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 	var/datum/gas_mixture/merged_gasmix = absorbed_gasmix.copy()
 	merged_gasmix.temperature += device_energy * waste_multiplier / THERMAL_RELEASE_MODIFIER
 	merged_gasmix.temperature = clamp(merged_gasmix.temperature, TCMB, 2500 * waste_multiplier)
-	merged_gasmix.assert_gases(/datum/gas/plasma, /datum/gas/oxygen)
-	merged_gasmix.gases[/datum/gas/plasma][MOLES] += max(device_energy * waste_multiplier / PLASMA_RELEASE_MODIFIER, 0)
+	merged_gasmix.assert_gases(/datum/gas/phoron, /datum/gas/oxygen)
+	merged_gasmix.gases[/datum/gas/phoron][MOLES] += max(device_energy * waste_multiplier / PHORON_RELEASE_MODIFIER, 0)
 	merged_gasmix.gases[/datum/gas/oxygen][MOLES] += max(((device_energy + merged_gasmix.temperature * waste_multiplier) - T0C) / OXYGEN_RELEASE_MODIFIER, 0)
 	merged_gasmix.garbage_collect()
 	env.merge(merged_gasmix)
@@ -769,8 +769,8 @@ GLOBAL_DATUM(main_supermatter_engine, /obj/machinery/power/supermatter_crystal)
 
 /**
  * Perform calculation for the waste multiplier.
- * This number affects the temperature, plasma, and oxygen of the waste gas.
- * Multiplier is applied to energy for plasma and temperature but temperature for oxygen.
+ * This number affects the temperature, phoron, and oxygen of the waste gas.
+ * Multiplier is applied to energy for phoron and temperature but temperature for oxygen.
  *
  * Description of each factors can be found in the defines.
  *

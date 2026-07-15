@@ -63,7 +63,7 @@
 /obj/structure/disposalpipe/sorting/mail/flip{
 	dir = 1
 	},
-/obj/effect/mapping_helpers/mail_sorting/supply/qm_office,
+/obj/effect/mapping_helpers/mail_sorting/command/qm_office,
 /turf/closed/wall/r_wall,
 /area/ruin/powered/clownplanet)
 "aw" = (

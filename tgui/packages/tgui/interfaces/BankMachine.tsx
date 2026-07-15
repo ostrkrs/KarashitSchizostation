@@ -14,18 +14,18 @@ import { Window } from '../layouts';
 type Data = {
   current_balance: number;
   siphoning: BooleanLike;
-  station_name: string;
+  ship_name: string;
 };
 
 export const BankMachine = (props) => {
   const { act, data } = useBackend<Data>();
-  const { current_balance, siphoning, station_name } = data;
+  const { current_balance, siphoning, ship_name } = data;
 
   return (
     <Window width={350} height={155}>
       <Window.Content>
         <NoticeBox danger>Authorized personnel only</NoticeBox>
-        <Section title={`${station_name} Vault`}>
+        <Section title={`${ship_name} Vault`}>
           <LabeledList>
             <LabeledList.Item
               label="Current Balance"

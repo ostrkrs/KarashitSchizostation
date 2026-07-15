@@ -280,7 +280,7 @@
 
 /// Should return a associative list where keys are taste descriptions and values are strength ratios
 /datum/reagent/proc/get_taste_description(mob/living/taster)
-	if(isnull(taster) || !HAS_TRAIT(taster, TRAIT_DETECTIVES_TASTE))
+	if(isnull(taster) || !HAS_TRAIT(taster, TRAIT_CRIMINALIST_TASTE))
 		return list("[taste_description]" = 1)
 	return list("[LOWER_TEXT(name)]" = 1)
 

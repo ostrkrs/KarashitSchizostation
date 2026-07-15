@@ -351,7 +351,7 @@ Policy file should be a json file with a single object.
 Value is raw html.
 
 Possible keywords :
-Job titles / Assigned roles (ghost spawners for example) : Assistant , Captain , Ash Walker
+Job titles / Assigned roles (ghost spawners for example) : Assistant , Captain , Clown
 Mob types : /mob/living/basic/carp
 Antagonist types : /datum/antagonist/highlander
 Species types : /datum/species/lizard
@@ -361,7 +361,7 @@ Example config:
 {
 	JOB_ASSISTANT : "Don't kill everyone",
 	"/datum/antagonist/highlander" : "<b>Kill everyone</b>",
-	"Ash Walker" : "Kill all spacemans"
+	"Clown Operative" : "Kill all mimes"
 }
 
 */

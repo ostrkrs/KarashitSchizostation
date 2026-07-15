@@ -147,7 +147,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "aM" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/meat/rawbacon,
 /obj/item/food/meat/rawbacon,
 /obj/item/food/meat/rawbacon,
@@ -235,7 +235,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/fore)
 "bf" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/meat/slab/bear,
 /obj/item/food/meat/slab/bear,
 /obj/item/food/meat/slab/bear,
@@ -490,7 +490,7 @@
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
 /obj/effect/decal/cleanable/cobweb,
-/obj/structure/sign/poster/official/periodic_table/directional/west,
+/obj/structure/sign/poster/legal/periodic_table/directional/west,
 /turf/open/floor/iron/white,
 /area/centcom/central_command_areas/evacuation/ship)
 "cm" = (
@@ -599,7 +599,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral/full,
 /obj/item/kirbyplants/organic/plant21,
-/obj/structure/sign/poster/official/ian/directional/west,
+/obj/structure/sign/poster/old_nt/ian/directional/west,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "cL" = (
@@ -846,7 +846,7 @@
 "dz" = (
 /obj/item/clipboard,
 /obj/structure/table/reinforced,
-/obj/item/detective_scanner,
+/obj/item/criminalist_scanner,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
@@ -906,7 +906,7 @@
 /area/centcom/central_command_areas/courtroom)
 "dV" = (
 /obj/structure/table/wood,
-/obj/item/storage/box/beanbag,
+/obj/item/storage/box/ammo/beanbags,
 /obj/item/gun/ballistic/shotgun/doublebarrel,
 /obj/machinery/status_display/evac/directional/north,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -1457,7 +1457,7 @@
 "gH" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/machinery/status_display/evac/directional/west,
@@ -1843,7 +1843,7 @@
 "iD" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -1854,7 +1854,7 @@
 "iE" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -1935,7 +1935,7 @@
 "iV" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -1946,7 +1946,7 @@
 "iW" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/stripes/line{
@@ -2272,7 +2272,7 @@
 /area/centcom/tdome/administration)
 "kh" = (
 /obj/machinery/telecomms/allinone/nuclear,
-/obj/structure/sign/poster/contraband/syndicate_pistol/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/north,
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/admin)
 "ki" = (
@@ -2859,7 +2859,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/enlist/directional/east,
+/obj/structure/sign/poster/old_nt/enlist/directional/east,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "ne" = (
@@ -3171,7 +3171,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/admin)
 "oF" = (
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/food/grown/potato,
 /obj/item/food/grown/potato,
 /obj/item/food/grown/whitebeet,
@@ -4407,7 +4407,7 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
 "tW" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment/directional/north,
 /turf/open/indestructible/dark,
 /area/centcom/central_command_areas/admin)
 "uc" = (
@@ -6481,10 +6481,6 @@
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/item/gun/ballistic/automatic/pistol/m1911{
-	pixel_y = 7;
-	pixel_x = 2
-	},
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "CU" = (
@@ -6604,7 +6600,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral/full,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/east,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/east,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "DF" = (
@@ -7880,7 +7876,7 @@
 	},
 /obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/west,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/west,
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/central_command_areas/evacuation/ship)
 "Lv" = (
@@ -8033,7 +8029,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/central_command_areas/evacuation/ship)
 "LR" = (
-/obj/structure/sign/poster/official/tactical_game_cards/directional/north,
+/obj/structure/sign/poster/old_nt/tactical_game_cards/directional/north,
 /turf/open/floor/carpet/red,
 /area/centcom/central_command_areas/evacuation/ship)
 "LU" = (
@@ -8269,7 +8265,6 @@
 "Nn" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/lockbox/loyalty,
-/obj/item/gun/ballistic/automatic/ar,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
@@ -9258,7 +9253,7 @@
 "Rs" = (
 /obj/structure/closet/secure_closet/security,
 /obj/item/storage/belt/security/full,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/clothing/head/helmet/swat/nanotrasen,
 /obj/item/crowbar/red,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -9586,13 +9581,13 @@
 /area/centcom/central_command_areas/supplypod/loading/two)
 "Te" = (
 /obj/structure/closet/crate/engineering,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /turf/open/floor/iron/smooth_edge,
 /area/centcom/central_command_areas/evacuation/ship)
 "Tg" = (
@@ -10026,11 +10021,6 @@
 /area/centcom/central_command_areas/fore)
 "Vg" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/energy/e_gun,
 /obj/structure/sign/nanotrasen{
 	pixel_y = 32
 	},
@@ -10246,7 +10236,7 @@
 /area/centcom/central_command_areas/evacuation)
 "Wd" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /obj/item/flashlight/seclite,
 /obj/structure/noticeboard/directional/north,
 /obj/effect/turf_decal/stripes/line,
@@ -10784,7 +10774,7 @@
 /turf/open/floor/iron,
 /area/centcom/tdome/arena)
 "Zj" = (
-/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/structure/closet/kitchen,
 /obj/item/food/grown/banana,
 /obj/item/food/grown/banana,
 /obj/item/food/grown/wheat,

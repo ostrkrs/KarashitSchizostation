@@ -13,18 +13,16 @@
 		TRAIT_NOFIRE,
 		TRAIT_NO_AUGMENTS,
 		TRAIT_NO_DNA_COPY,
-		TRAIT_NO_PLASMA_TRANSFORM,
 		TRAIT_NO_UNDERWEAR,
 		TRAIT_PIERCEIMMUNE,
 		TRAIT_RADIMMUNE,
-		TRAIT_SNOWSTORM_IMMUNE, // Shared with plasma river... but I guess if you can survive a plasma river a blizzard isn't a big deal
+		TRAIT_SNOWSTORM_IMMUNE,
 		TRAIT_UNHUSKABLE,
 	)
 	mutantheart = null
 	mutantlungs = null
 	inherent_biotypes = MOB_HUMANOID|MOB_MINERAL
 	damage_modifier = 10 //golem is stronk
-	payday_modifier = 1.0
 	siemens_coeff = 0
 	no_equip_flags = ITEM_SLOT_MASK | ITEM_SLOT_OCLOTHING | ITEM_SLOT_GLOVES | ITEM_SLOT_FEET | ITEM_SLOT_ICLOTHING | ITEM_SLOT_SUITSTORE
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC

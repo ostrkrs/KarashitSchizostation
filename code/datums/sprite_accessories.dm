@@ -1697,12 +1697,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	icon_state = "short"
 	spine_key = NONE
 
-/datum/sprite_accessory/tails/felinid/cat
-	name = "Cat"
-	icon = 'icons/mob/human/cat_features.dmi'
-	icon_state = "default"
-	color_src = HAIR_COLOR
-
 /datum/sprite_accessory/tails/monkey
 
 /datum/sprite_accessory/tails/monkey/none
@@ -1732,7 +1726,7 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	dimension_x = 64
 
 /datum/sprite_accessory/tails/caver
-	icon = 'icons/mob/human/species/human_subspecies/caver/caver_tails.dmi'
+	icon = 'icons/mob/human/species/human_subtypes/caver/caver_tails.dmi'
 
 /datum/sprite_accessory/tails/caver/none
 	name = SPRITE_ACCESSORY_NONE
@@ -1842,15 +1836,11 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	em_block = TRUE
 
 /datum/sprite_accessory/horns/caver
-	icon = 'icons/mob/human/species/human_subspecies/caver/caver_boneplates.dmi'
+	icon = 'icons/mob/human/species/human_subtypes/caver/caver_boneplates.dmi'
 
 /datum/sprite_accessory/horns/caver/default
 	name = "Default"
 	icon_state = "default"
-
-/datum/sprite_accessory/horns/caver/smaller
-	name = "Smaller"
-	icon_state = "smaller"
 
 /datum/sprite_accessory/horns/caver/broad
 	name = "Broad"
@@ -2090,15 +2080,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/tail_spines/aquatic
 	name = "Aquatic"
 	icon_state = "aqua"
-
-/datum/sprite_accessory/caps
-	icon = 'icons/mob/human/species/mush_cap.dmi'
-	color_src = HAIR_COLOR
-	em_block = TRUE
-
-/datum/sprite_accessory/caps/round
-	name = "Round"
-	icon_state = "round"
 
 /datum/sprite_accessory/moth_wings
 	icon = 'icons/mob/human/species/moth/moth_wings.dmi'

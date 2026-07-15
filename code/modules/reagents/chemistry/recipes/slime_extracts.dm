@@ -27,12 +27,12 @@
 
 //Grey
 /datum/chemical_reaction/slime/slimespawn
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/grey
 
 /datum/chemical_reaction/slime/slimespawn/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
 	var/mob/living/basic/slime/spawning_slime = new(get_turf(holder.my_atom), /datum/slime_type/grey)
-	spawning_slime.visible_message(span_danger("Infused with plasma, the core begins to quiver and grow, and a new baby slime emerges from it!"))
+	spawning_slime.visible_message(span_danger("Infused with phoron, the core begins to quiver and grow, and a new baby slime emerges from it!"))
 	..()
 
 /datum/chemical_reaction/slime/slimeinaprov
@@ -52,7 +52,7 @@
 //Green
 /datum/chemical_reaction/slime/slimemutate
 	results = list(/datum/reagent/mutationtoxin/jelly = 1)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/green
 
 /datum/chemical_reaction/slime/slimehuman
@@ -62,7 +62,7 @@
 
 //Metal
 /datum/chemical_reaction/slime/slimemetal
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/metal
 
 /datum/chemical_reaction/slime/slimemetal/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -83,7 +83,7 @@
 
 //Gold
 /datum/chemical_reaction/slime/slimemobspawn
-	required_reagents = list(/datum/reagent/toxin/plasma = 15)
+	required_reagents = list(/datum/reagent/toxin/phoron = 15)
 	required_container = /obj/item/slime_extract/gold
 	deletes_extract = FALSE //we do delete, but we don't do so instantly
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_SLIME | REACTION_TAG_DANGEROUS
@@ -125,7 +125,7 @@
 
 //Silver
 /datum/chemical_reaction/slime/slimebork
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/silver
 
 /datum/chemical_reaction/slime/slimebork/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -162,7 +162,7 @@
 //Blue
 /datum/chemical_reaction/slime/slimefrost
 	results = list(/datum/reagent/consumable/frostoil = 10)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/blue
 
 /datum/chemical_reaction/slime/slimestabilizer
@@ -182,7 +182,7 @@
 
 //Dark Blue
 /datum/chemical_reaction/slime/slimefreeze
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/darkblue
 	deletes_extract = FALSE
 
@@ -217,7 +217,7 @@
 	required_container = /obj/item/slime_extract/orange
 
 /datum/chemical_reaction/slime/slimefire
-	required_reagents = list(/datum/reagent/toxin/plasma = 15)
+	required_reagents = list(/datum/reagent/toxin/phoron = 15)
 	required_container = /obj/item/slime_extract/orange
 	deletes_extract = FALSE
 
@@ -234,7 +234,7 @@
 	if(holder?.my_atom)
 		var/turf/open/T = get_turf(holder.my_atom)
 		if(istype(T))
-			T.atmos_spawn_air("[GAS_PLASMA]=50;[TURF_TEMPERATURE(1000)]")
+			T.atmos_spawn_air("[GAS_PHORON]=50;[TURF_TEMPERATURE(1000)]")
 
 
 /datum/chemical_reaction/slime/slimesmoke
@@ -253,7 +253,7 @@
 	..()
 
 /datum/chemical_reaction/slime/slimecell
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/yellow
 
 /datum/chemical_reaction/slime/slimecell/on_reaction(datum/reagents/holder, created_volume)
@@ -272,7 +272,7 @@
 
 //Purple
 /datum/chemical_reaction/slime/slimepsteroid
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/purple
 
 /datum/chemical_reaction/slime/slimepsteroid/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -285,17 +285,17 @@
 	required_container = /obj/item/slime_extract/purple
 
 //Dark Purple
-/datum/chemical_reaction/slime/slimeplasma
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+/datum/chemical_reaction/slime/slimephoron
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/darkpurple
 
-/datum/chemical_reaction/slime/slimeplasma/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
-	new /obj/item/stack/sheet/mineral/plasma(get_turf(holder.my_atom), 3)
+/datum/chemical_reaction/slime/slimephoron/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
+	new /obj/item/stack/sheet/mineral/phoron(get_turf(holder.my_atom), 3)
 	..()
 
 //Red
 /datum/chemical_reaction/slime/slimemutator
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/red
 
 /datum/chemical_reaction/slime/slimemutator/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -328,7 +328,7 @@
 
 //Pink
 /datum/chemical_reaction/slime/docility
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/pink
 
 /datum/chemical_reaction/slime/docility/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -346,12 +346,12 @@
 //Black
 /datum/chemical_reaction/slime/slimemutate2
 	results = list(/datum/reagent/aslimetoxin = 1)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/black
 
 //Oil
 /datum/chemical_reaction/slime/slimeexplosion
-	required_reagents = list(/datum/reagent/toxin/plasma = 15)
+	required_reagents = list(/datum/reagent/toxin/phoron = 15)
 	required_container = /obj/item/slime_extract/oil
 	deletes_extract = FALSE
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_SLIME | REACTION_TAG_DANGEROUS
@@ -386,7 +386,7 @@
 //Light Pink
 /datum/chemical_reaction/slime/slimepotion2
 	required_container = /obj/item/slime_extract/lightpink
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 
 /datum/chemical_reaction/slime/slimepotion2/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
 	new /obj/item/slimepotion/slime/sentience(get_turf(holder.my_atom))
@@ -403,7 +403,7 @@
 
 //Adamantine
 /datum/chemical_reaction/slime/adamantine
-	required_reagents = list(/datum/reagent/toxin/plasma = 15)
+	required_reagents = list(/datum/reagent/toxin/phoron = 15)
 	required_container = /obj/item/slime_extract/adamantine
 
 /datum/chemical_reaction/slime/adamantine/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -421,7 +421,7 @@
 
 
 /datum/chemical_reaction/slime/slimecrystal
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/bluespace
 
 /datum/chemical_reaction/slime/slimecrystal/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -439,7 +439,7 @@
 
 //Cerulean
 /datum/chemical_reaction/slime/slimepsteroid2
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/cerulean
 
 /datum/chemical_reaction/slime/slimepsteroid2/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -456,7 +456,7 @@
 
 //Sepia
 /datum/chemical_reaction/slime/slimestop
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/sepia
 
 /datum/chemical_reaction/slime/slimestop/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -492,7 +492,7 @@
 
 //Pyrite
 /datum/chemical_reaction/slime/slimepaint
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/pyrite
 
 /datum/chemical_reaction/slime/slimepaint/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
@@ -511,19 +511,19 @@
 
 //Rainbow :o)
 /datum/chemical_reaction/slime/slime_rng
-	required_reagents = list(/datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1)
 	required_container = /obj/item/slime_extract/rainbow
 
 /datum/chemical_reaction/slime/slime_rng/on_reaction(datum/reagents/holder, datum/equilibrium/reaction, created_volume)
 	if(created_volume >= 5)
 		var/obj/item/grenade/clusterbuster/slime/S = new (get_turf(holder.my_atom))
-		S.visible_message(span_danger("Infused with plasma, the core begins to expand uncontrollably!"))
+		S.visible_message(span_danger("Infused with phoron, the core begins to expand uncontrollably!"))
 		S.icon_state = "[S.base_state]_active"
 		S.active = TRUE
 		addtimer(CALLBACK(S, TYPE_PROC_REF(/obj/item/grenade, detonate)), rand(1.5 SECONDS, 6 SECONDS))
 	else
 		var/mob/living/basic/slime/random/random_slime = new (get_turf(holder.my_atom))
-		random_slime.visible_message(span_danger("Infused with plasma, the core begins to quiver and grow, and a new baby slime emerges from it!"))
+		random_slime.visible_message(span_danger("Infused with phoron, the core begins to quiver and grow, and a new baby slime emerges from it!"))
 	..()
 
 /datum/chemical_reaction/slime/slimebomb

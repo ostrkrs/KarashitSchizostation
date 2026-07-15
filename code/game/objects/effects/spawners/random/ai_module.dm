@@ -10,9 +10,9 @@
 /obj/effect/spawner/random/aimodule/harmless
 	name = "harmless AI module spawner"
 	loot = list( // These shouldn't allow the AI to start butchering people
+		/obj/item/ai_module/core/full/sr_standard,
 		/obj/item/ai_module/core/full/asimovpp,
 		/obj/item/ai_module/core/full/hippocratic,
-		/obj/item/ai_module/core/full/paladin_devotion,
 		/obj/item/ai_module/core/full/paladin,
 		/obj/item/ai_module/core/full/corp,
 		/obj/item/ai_module/core/full/robocop,
@@ -20,7 +20,6 @@
 		/obj/item/ai_module/core/full/liveandletlive,
 		/obj/item/ai_module/core/full/peacekeeper,
 		/obj/item/ai_module/core/full/ten_commandments,
-		/obj/item/ai_module/core/full/nutimov,
 		/obj/item/ai_module/core/full/drone,
 		/obj/item/ai_module/core/full/custom, // uses lawsets from config/silicon_laws.txt (defaults to asmiov if no lawsets)
 	)

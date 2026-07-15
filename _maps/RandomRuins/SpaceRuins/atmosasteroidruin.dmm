@@ -3,7 +3,7 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "aO" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow/visible,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)
@@ -26,7 +26,7 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "df" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)
@@ -76,7 +76,7 @@
 /turf/open/floor/engine/airless,
 /area/ruin/space/has_grav/atmosasteroid)
 "hP" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)
@@ -103,7 +103,7 @@
 /turf/open/floor/iron/dark/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "ij" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)
@@ -113,7 +113,7 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "iD" = (
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/ruin/space/has_grav/atmosasteroid)
 "jB" = (
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -163,7 +163,7 @@
 /area/ruin/space/has_grav/atmosasteroid)
 "ky" = (
 /obj/machinery/light/small/directional/east,
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/ruin/space/has_grav/atmosasteroid)
 "kB" = (
 /obj/machinery/atmospherics/components/trinary/mixer/airmix/inverse{
@@ -185,7 +185,7 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "mA" = (
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/effect/turf_decal/tile/yellow/anticorner,
 /turf/open/floor/iron/co2_pressurized,
@@ -249,7 +249,7 @@
 /obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 1
 	},
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "pw" = (
@@ -336,7 +336,7 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/atmosasteroid)
 "zd" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)
 "zw" = (
@@ -362,7 +362,7 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "AJ" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)
@@ -551,7 +551,7 @@
 /turf/open/floor/plating/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "MR" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/yellow,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)
@@ -667,7 +667,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon{
 	dir = 8
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/ruin/space/has_grav/atmosasteroid)
 "Ub" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
@@ -699,8 +699,8 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "UR" = (
-/obj/machinery/atmospherics/miner/plasma,
-/turf/open/floor/engine/plasma,
+/obj/machinery/atmospherics/miner/phoron,
+/turf/open/floor/engine/phoron,
 /area/ruin/space/has_grav/atmosasteroid)
 "VH" = (
 /obj/effect/turf_decal/stripes/line,
@@ -714,12 +714,12 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "Ws" = (
-/obj/item/shard/plasma,
+/obj/item/shard/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "YB" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/purple,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/atmosasteroid)

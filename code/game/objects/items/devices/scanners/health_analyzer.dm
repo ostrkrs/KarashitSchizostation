@@ -19,6 +19,9 @@
 	w_class = WEIGHT_CLASS_TINY
 	throw_speed = 3
 	throw_range = 7
+	sound_vary = TRUE
+	pickup_sound = SFX_GENERIC_DEVICE_PICKUP
+	drop_sound = SFX_GENERIC_DEVICE_DROP
 	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT *2)
 	interaction_flags_click = NEED_LITERACY|NEED_LIGHT|ALLOW_RESTING
 	/// Verbose/condensed
@@ -190,7 +193,7 @@
 			render_list += "<span class='alert ml-1'>Fatigue level: [target.getStaminaLoss()]%.</span><br>"
 		else
 			render_list += "<span class='alert ml-1'>Subject appears to be suffering from fatigue.</span><br>"
-	
+
 	// Check for brain - both organic (carbon) and synthetic (cyborg MMI)
 	var/has_brain = FALSE
 	if(target.get_organ_slot(ORGAN_SLOT_BRAIN))
@@ -199,7 +202,7 @@
 		var/mob/living/silicon/robot/cyborg_target = target
 		if(cyborg_target.mmi?.brain)
 			has_brain = TRUE
-	
+
 	if(!has_brain) // kept exclusively for soul purposes
 		render_list += "<span class='alert ml-1'>Subject lacks a brain.</span><br>"
 
@@ -574,10 +577,6 @@
 			render_list += "<span class='boldannounce ml-1'>Subject is addicted to the following types of drug:</span><br>"
 			for(var/datum/addiction/addiction_type as anything in target.mind.active_addictions)
 				render_list += "<span class='alert ml-2'>[initial(addiction_type.name)]</span><br>"
-
-		// Special eigenstasium addiction
-		if(target.has_status_effect(/datum/status_effect/eigenstasium))
-			render_list += "<span class='notice ml-1'>Subject is temporally unstable. Stabilising agent is recommended to reduce disturbances.</span><br>"
 
 		// Allergies
 		for(var/datum/quirk/quirky as anything in target.quirks)

@@ -245,7 +245,7 @@
 	hits = 5
 	heavy = TRUE
 	meteorsound = 'sound/effects/bamf.ogg'
-	meteordrop = list(/obj/item/stack/ore/plasma)
+	meteordrop = list(/obj/item/stack/ore/phoron)
 	threat = 20
 	signature = "thermal"
 
@@ -440,7 +440,7 @@
 	hitpwr = EXPLODE_DEVASTATE
 	heavy = TRUE
 	meteorsound = 'sound/effects/bamf.ogg'
-	meteordrop = list(/obj/item/stack/ore/plasma)
+	meteordrop = list(/obj/item/stack/ore/phoron)
 	threat = 50
 	signature = "armageddon"
 

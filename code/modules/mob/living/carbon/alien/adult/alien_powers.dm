@@ -15,8 +15,8 @@ Doesn't work on other aliens/AI.*/
 	button_icon_state = "spell_default"
 	check_flags = AB_CHECK_IMMOBILE | AB_CHECK_CONSCIOUS | AB_CHECK_INCAPACITATED
 
-	/// How much plasma this action uses.
-	var/plasma_cost = 0
+	/// How much phoron this action uses.
+	var/phoron_cost = 0
 
 /datum/action/cooldown/alien/IsAvailable(feedback = FALSE)
 	. = ..()
@@ -25,7 +25,7 @@ Doesn't work on other aliens/AI.*/
 	if(!iscarbon(owner))
 		return FALSE
 	var/mob/living/carbon/carbon_owner = owner
-	if(carbon_owner.getPlasma() < plasma_cost)
+	if(carbon_owner.getPhoron() < phoron_cost)
 		return FALSE
 
 	return TRUE
@@ -42,10 +42,10 @@ Doesn't work on other aliens/AI.*/
 		return TRUE
 
 	var/mob/living/carbon/carbon_owner = owner
-	carbon_owner.adjustPlasma(-plasma_cost)
+	carbon_owner.adjustPhoron(-phoron_cost)
 	// It'd be really annoying if click-to-fire actions stayed active,
-	// even if our plasma amount went under the required amount.
-	if(click_to_activate && carbon_owner.getPlasma() < plasma_cost)
+	// even if our phoron amount went under the required amount.
+	if(click_to_activate && carbon_owner.getPhoron() < phoron_cost)
 		unset_click_ability(owner, refund_cooldown = FALSE)
 
 	return TRUE
@@ -55,7 +55,7 @@ Doesn't work on other aliens/AI.*/
 	if(!islist(.))
 		return
 
-	.[PANEL_DISPLAY_STATUS] = "PLASMA - [plasma_cost]"
+	.[PANEL_DISPLAY_STATUS] = "PHORON - [phoron_cost]"
 
 /datum/action/cooldown/alien/make_structure
 	/// The type of structure the action makes on use
@@ -108,7 +108,7 @@ Doesn't work on other aliens/AI.*/
 	name = "Plant Weeds"
 	desc = "Plants some alien weeds."
 	button_icon_state = "alien_plant"
-	plasma_cost = 50
+	phoron_cost = 50
 	made_structure_type = /obj/structure/alien/weeds/node
 
 /datum/action/cooldown/alien/make_structure/plant_weeds/Activate(atom/target)
@@ -119,7 +119,7 @@ Doesn't work on other aliens/AI.*/
 	name = "Whisper"
 	desc = "Whisper to someone."
 	button_icon_state = "alien_whisper"
-	plasma_cost = 10
+	phoron_cost = 10
 
 /datum/action/cooldown/alien/whisper/Activate(atom/target)
 	var/list/possible_recipients = list()
@@ -154,16 +154,16 @@ Doesn't work on other aliens/AI.*/
 	return TRUE
 
 /datum/action/cooldown/alien/transfer
-	name = "Transfer Plasma"
-	desc = "Transfer Plasma to another alien."
-	plasma_cost = 0
+	name = "Transfer Phoron"
+	desc = "Transfer Phoron to another alien."
+	phoron_cost = 0
 	button_icon_state = "alien_transfer"
 
 /datum/action/cooldown/alien/transfer/Activate(atom/target)
 	var/mob/living/carbon/carbon_owner = owner
 	var/list/mob/living/carbon/aliens_around = list()
 	for(var/mob/living/carbon/alien in view(owner))
-		if(alien.getPlasma() == -1 || alien == owner)
+		if(alien.getPhoron() == -1 || alien == owner)
 			continue
 		aliens_around += alien
 
@@ -171,11 +171,11 @@ Doesn't work on other aliens/AI.*/
 		to_chat(owner, span_noticealien("There are no other aliens around."))
 		return FALSE
 
-	var/mob/living/carbon/donation_target = tgui_input_list(owner, "Target to transfer to", "Plasma Donation", sort_names(aliens_around))
+	var/mob/living/carbon/donation_target = tgui_input_list(owner, "Target to transfer to", "Phoron Donation", sort_names(aliens_around))
 	if(!donation_target)
 		return FALSE
 
-	var/amount = tgui_input_number(owner, "Amount", "Transfer Plasma to [donation_target]", max_value = carbon_owner.getPlasma())
+	var/amount = tgui_input_number(owner, "Amount", "Transfer Phoron to [donation_target]", max_value = carbon_owner.getPhoron())
 	if(QDELETED(donation_target) || QDELETED(src) || QDELETED(owner) || !IsAvailable(feedback = TRUE) || isnull(amount) || amount <= 0)
 		return FALSE
 
@@ -183,11 +183,11 @@ Doesn't work on other aliens/AI.*/
 		to_chat(owner, span_noticealien("You need to be closer!"))
 		return FALSE
 
-	donation_target.adjustPlasma(amount)
-	carbon_owner.adjustPlasma(-amount)
+	donation_target.adjustPhoron(amount)
+	carbon_owner.adjustPhoron(-amount)
 
-	to_chat(donation_target, span_noticealien("[owner] has transferred [amount] plasma to you."))
-	to_chat(owner, span_noticealien("You transfer [amount] plasma to [donation_target]."))
+	to_chat(donation_target, span_noticealien("[owner] has transferred [amount] phoron to you."))
+	to_chat(owner, span_noticealien("You transfer [amount] phoron to [donation_target]."))
 	return TRUE
 
 /datum/action/cooldown/alien/acid
@@ -198,7 +198,7 @@ Doesn't work on other aliens/AI.*/
 	name = "Corrosive Acid"
 	desc = "Drench an object in acid, destroying it over time."
 	button_icon_state = "alien_acid"
-	plasma_cost = 200
+	phoron_cost = 200
 	/// The acid power for the aliens acid corrosion, will ignore mobs
 	var/corrosion_acid_power = 200
 	/// The acid volume for the aliens acid corrosion, will ignore mobs
@@ -247,7 +247,7 @@ Doesn't work on other aliens/AI.*/
 	name = "Spit Neurotoxin"
 	desc = "Spits neurotoxin at someone, dealing large amounts of stamina damage."
 	button_icon_state = "alien_neurotoxin_0"
-	plasma_cost = 50
+	phoron_cost = 50
 
 /datum/action/cooldown/alien/acid/neurotoxin/IsAvailable(feedback = FALSE)
 	var/mob/living/carbon/as_carbon = owner
@@ -309,7 +309,7 @@ Doesn't work on other aliens/AI.*/
 	name = "Secrete Resin"
 	desc = "Secrete tough malleable resin."
 	button_icon_state = "alien_resin"
-	plasma_cost = 55
+	phoron_cost = 55
 	/// A list of all structures we can make.
 	var/static/list/structures = list(
 		"resin wall" = /obj/structure/alien/resin/wall,
@@ -381,24 +381,24 @@ Doesn't work on other aliens/AI.*/
 	playsound(owner, 'sound/mobs/non-humanoids/alien/alien_york.ogg', 100)
 	melting_pot.eject_stomach(slice_off_turfs(owner, border_diamond_range_turfs(owner, 9), dir_angle - angle_delta, dir_angle + angle_delta), 4, mob_speed, spit_speed)
 
-/// Gets the plasma level of this carbon's plasma vessel, or -1 if they don't have one
-/mob/living/carbon/proc/getPlasma()
-	var/obj/item/organ/alien/plasmavessel/vessel = get_organ_by_type(/obj/item/organ/alien/plasmavessel)
+/// Gets the phoron level of this carbon's phoron vessel, or -1 if they don't have one
+/mob/living/carbon/proc/getPhoron()
+	var/obj/item/organ/alien/phoron_vessel/vessel = get_organ_by_type(/obj/item/organ/alien/phoron_vessel)
 	if(!vessel)
 		return -1
-	return vessel.stored_plasma
+	return vessel.stored_phoron
 
-/// Adjusts the plasma level of the carbon's plasma vessel if they have one
-/mob/living/carbon/proc/adjustPlasma(amount)
-	var/obj/item/organ/alien/plasmavessel/vessel = get_organ_by_type(/obj/item/organ/alien/plasmavessel)
+/// Adjusts the phoron level of the carbon's phoron vessel if they have one
+/mob/living/carbon/proc/adjustPhoron(amount)
+	var/obj/item/organ/alien/phoron_vessel/vessel = get_organ_by_type(/obj/item/organ/alien/phoron_vessel)
 	if(!vessel)
 		return FALSE
-	vessel.stored_plasma = max(vessel.stored_plasma + amount,0)
-	vessel.stored_plasma = min(vessel.stored_plasma, vessel.max_plasma) //upper limit of max_plasma, lower limit of 0
+	vessel.stored_phoron = max(vessel.stored_phoron + amount,0)
+	vessel.stored_phoron = min(vessel.stored_phoron, vessel.max_phoron) //upper limit of max_phoron, lower limit of 0
 	for(var/datum/action/cooldown/alien/ability in actions)
 		ability.build_all_button_icons()
 	return TRUE
 
-/mob/living/carbon/alien/adjustPlasma(amount)
+/mob/living/carbon/alien/adjustPhoron(amount)
 	. = ..()
-	updatePlasmaDisplay()
+	updatePhoronDisplay()

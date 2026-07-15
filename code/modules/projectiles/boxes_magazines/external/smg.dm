@@ -1,4 +1,4 @@
-/obj/item/ammo_box/magazine/wt550m9
+/obj/item/ammo_box/magazine/smg46mm_wt550
 	name = "\improper WT-550 magazine (4.6x30mm)"
 	desc = "A top-loading 4.6x30mm magazine, specifically for the WT-550 autorifle."
 	icon_state = "46x30mmt-20"
@@ -9,16 +9,16 @@
 	caliber = CALIBER_46X30MM
 	max_ammo = 20
 
-/obj/item/ammo_box/magazine/wt550m9/update_icon_state()
+/obj/item/ammo_box/magazine/smg46mm_wt550/update_icon_state()
 	. = ..()
 	icon_state = "[base_icon_state]-[round(ammo_count(), 4)]"
 
-/obj/item/ammo_box/magazine/wt550m9/wtap
+/obj/item/ammo_box/magazine/smg46mm_wt550/wtap
 	name = "\improper WT-550 magazine (4.6x30mm AP)"
 	MAGAZINE_TYPE_ARMORPIERCE
 	ammo_type = /obj/item/ammo_casing/c46x30mm/ap
 
-/obj/item/ammo_box/magazine/wt550m9/wtic
+/obj/item/ammo_box/magazine/smg46mm_wt550/wtic
 	name = "\improper WT-550 magazine (4.6x30mm incendiary)"
 	MAGAZINE_TYPE_INCENDIARY
 	ammo_type = /obj/item/ammo_casing/c46x30mm/inc
@@ -35,75 +35,33 @@
 	caliber = CALIBER_160SMART
 	max_ammo = 50
 
-/obj/item/ammo_box/magazine/uzim9mm
-	name = "\improper Uzi magazine (9mm)"
-	desc = "A long 9mm magazine, suitable for the Uzi SMG."
-	icon_state = "uzi9mm-32"
-	base_icon_state = "uzi9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = CALIBER_9MM
-	max_ammo = 32
 
-/obj/item/ammo_box/magazine/uzim9mm/update_icon_state()
-	. = ..()
-	icon_state = "[base_icon_state]-[round(ammo_count(), 4)]"
-
-/obj/item/ammo_box/magazine/smgm9mm
-	name = "\improper SMG magazine (9mm)"
-	desc = "A sleek 9mm magazine, suitable for the Nanotrasen Saber SMG."
-	icon_state = "smg9mm"
-	base_icon_state = "smg9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = CALIBER_9MM
-	max_ammo = 21
-
-/obj/item/ammo_box/magazine/smgm9mm/update_icon_state()
-	. = ..()
-	icon_state = "[base_icon_state]-[LAZYLEN(stored_ammo) ? "full" : "empty"]"
-
-/obj/item/ammo_box/magazine/smgm9mm/ap
-	name = "SMG magazine (9mm AP)"
-	MAGAZINE_TYPE_ARMORPIERCE
-	ammo_type = /obj/item/ammo_casing/c9mm/ap
-
-/obj/item/ammo_box/magazine/smgm9mm/fire
-	name = "SMG magazine (9mm incendiary)"
-	MAGAZINE_TYPE_INCENDIARY
-	ammo_type = /obj/item/ammo_casing/c9mm/fire
-
-/obj/item/ammo_box/magazine/smgm45
-	name = "SMG magazine (.45)"
-	desc = "A long .45 magazine, suitable for the C-20r SMG."
+/obj/item/ammo_box/magazine/smgm8mm_c20r
+	name = "\improper C-20r magazine (8mm)"
+	desc = "A long 8mm magazine, suitable for the C-20r SMG."
 	icon_state = "c20r45"
 	base_icon_state = "c20r45"
 	ammo_band_icon = "+c20rab"
 	ammo_band_color = null
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = CALIBER_45
+	ammo_type = /obj/item/ammo_casing/c8mm
+	caliber = CALIBER_8MM
 	max_ammo = 24
 
-/obj/item/ammo_box/magazine/smgm45/update_icon_state()
+/obj/item/ammo_box/magazine/smgm8mm_c20r/update_icon_state()
 	. = ..()
 	icon_state = "[base_icon_state]-[round(ammo_count(), 2)]"
 
-/obj/item/ammo_box/magazine/smgm45/ap
-	name = "SMG magazine (.45 AP)"
+/obj/item/ammo_box/magazine/smgm8mm_c20r/ap
+	name = "\improper C-20r magazine (8mm AP)"
 	MAGAZINE_TYPE_ARMORPIERCE
-	ammo_type = /obj/item/ammo_casing/c45/ap
+	ammo_type = /obj/item/ammo_casing/c8mm/ap
 
-/obj/item/ammo_box/magazine/smgm45/hp
-	name = "SMG magazine (.45 HP)"
+/obj/item/ammo_box/magazine/smgm8mm_c20r/hp
+	name = "\improper C-20r magazine (8mm HP)"
 	MAGAZINE_TYPE_HOLLOWPOINT
-	ammo_type = /obj/item/ammo_casing/c45/hp
+	ammo_type = /obj/item/ammo_casing/c8mm/hp
 
-/obj/item/ammo_box/magazine/smgm45/incen
-	name = "SMG magazine (.45 incendiary)"
+/obj/item/ammo_box/magazine/smgm8mm_c20r/incen
+	name = "\improper C-20r magazine (8mm incendiary)"
 	MAGAZINE_TYPE_INCENDIARY
-	ammo_type = /obj/item/ammo_casing/c45/inc
-
-/obj/item/ammo_box/magazine/tommygunm45
-	name = "drum magazine (.45)"
-	icon_state = "drum45"
-	ammo_type = /obj/item/ammo_casing/c45
-	caliber = CALIBER_45
-	max_ammo = 50
+	ammo_type = /obj/item/ammo_casing/c8mm/fire

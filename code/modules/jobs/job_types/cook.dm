@@ -9,10 +9,8 @@
 	supervisors = SUPERVISOR_STEWARD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "COOK"
-	var/cooks = 0 //Counts cooks amount
 
 	outfit = /datum/outfit/job/cook
-	plasmaman_outfit = /datum/outfit/plasmaman/chef
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -68,40 +66,18 @@
 	id_trim = /datum/id_trim/job/cook
 	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
 	suit = /obj/item/clothing/suit/toggle/chef
-	backpack_contents = list(
-		/obj/item/choice_beacon/ingredient = 1,
-		/obj/item/sharpener = 1,
-	)
+	backpack_contents = list(/obj/item/sharpener = 1,)
 	belt = /obj/item/modular_computer/pda/cook
 	ears = /obj/item/radio/headset/headset_srv
 	head = /obj/item/clothing/head/utility/chefhat
-	mask = /obj/item/clothing/mask/fakemoustache/italian
 
-	skillchips = list(/obj/item/skillchip/job/chef)
+	var/datum/martial_art/cqc/under_siege/style
 
 /datum/outfit/job/cook/pre_equip(mob/living/carbon/human/H, visuals_only = FALSE)
 	..()
-	var/datum/job/cook/other_chefs = SSjob.get_job_type(jobtype)
-	if(other_chefs) // If there's other Chefs, you're a Cook
-		if(other_chefs.cooks > 0)//Cooks
-			id_trim = /datum/id_trim/job/cook
-			suit = /obj/item/clothing/suit/apron/chef
-			head = /obj/item/clothing/head/soft/mime
-		if(!visuals_only)
-			other_chefs.cooks++
+	style = new(src)
+	style.refresh_valid_areas()
 
 /datum/outfit/job/cook/post_equip(mob/living/carbon/human/user, visuals_only = FALSE)
-	. = ..()
-	// Update PDA to match possible new trim.
-	var/obj/item/card/id/worn_id = user.wear_id
-	var/obj/item/modular_computer/pda/pda = user.get_item_by_slot(pda_slot)
-	if(!istype(worn_id) || !istype(pda))
-		return
-	var/assignment = worn_id.get_trim_assignment()
-	if(!isnull(assignment))
-		pda.imprint_id(user.real_name, assignment)
-
-/datum/outfit/job/cook/get_types_to_preload()
-	. = ..()
-	. += /obj/item/clothing/suit/apron/chef
-	. += /obj/item/clothing/head/soft/mime
+	..()
+	style.teach(user)

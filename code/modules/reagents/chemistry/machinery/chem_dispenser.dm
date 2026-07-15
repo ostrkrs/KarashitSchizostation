@@ -66,7 +66,7 @@
 		/datum/reagent/uranium/radium,
 		/datum/reagent/silicon,
 		/datum/reagent/sodium,
-		/datum/reagent/stable_plasma,
+		/datum/reagent/stable_phoron,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/sulfur,
 		/datum/reagent/toxin/acid,
@@ -647,7 +647,7 @@
 	var/static/list/mutagen_dispensable_reagents = list(/datum/reagent/toxin/mutagen)
 	upgrade_reagents = null
 	/// The default list of emagged reagents dispensable by mutagen chem dispenser
-	var/static/list/mutagen_emagged_reagents = list(/datum/reagent/toxin/plasma)
+	var/static/list/mutagen_emagged_reagents = list(/datum/reagent/toxin/phoron)
 
 /obj/machinery/chem_dispenser/mutagen/Initialize(mapload)
 	dispensable_reagents = mutagen_dispensable_reagents
@@ -725,7 +725,7 @@
 		/datum/reagent/silicon,
 		/datum/reagent/silver,
 		/datum/reagent/sodium,
-		/datum/reagent/stable_plasma,
+		/datum/reagent/stable_phoron,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/sulfur,
 		/datum/reagent/toxin/acid,
@@ -741,7 +741,7 @@
 		/datum/reagent/medicine/morphine,
 		/datum/reagent/drug/space_drugs,
 		/datum/reagent/toxin,
-		/datum/reagent/toxin/plasma,
+		/datum/reagent/toxin/phoron,
 		/datum/reagent/uranium,
 		/datum/reagent/consumable/liquidelectricity/enriched,
 		/datum/reagent/medicine/c2/synthflesh,

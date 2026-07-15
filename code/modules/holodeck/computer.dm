@@ -258,7 +258,7 @@ GLOBAL_LIST_INIT(typecache_holodeck_linked_floorcheck_ok, typecacheof(list(/turf
 		holo_effect.deactivate(src)
 
 	//makes sure that any time a holoturf is inside a baseturf list (e.g. if someone put a wall over it) its set to the OFFLINE turf
-	//so that you cant bring turfs from previous programs into other ones (like putting the plasma burn turf into lounge for example)
+	//so that you cant bring turfs from previous programs into other ones (like putting the phoron burn turf into lounge for example)
 	for(var/turf/closed/holo_turf in linked)
 		holo_turf.replace_baseturf(/turf/open/floor/holofloor, /turf/open/floor/holofloor/plating)
 

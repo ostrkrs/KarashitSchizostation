@@ -37,14 +37,16 @@
 	new /obj/item/clothing/shoes/sneakers/white( src )
 
 /obj/structure/closet/secure_closet/personal/cabinet
-	icon_state = "cabinet"
+	icon_state = "cabinet_secure"
+	icon_locked = "cabinet_secure_locked"
+	icon_unlocked = "cabinet_secure_unlocked"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
 	open_sound = 'sound/machines/closet/wooden_closet_open.ogg'
 	close_sound = 'sound/machines/closet/wooden_closet_close.ogg'
 	open_sound_volume = 25
 	close_sound_volume = 50
-	door_anim_time = 0 // no animation
+	door_anim_time = 0
 
 /obj/structure/closet/secure_closet/personal/cabinet/PopulateContents()
 	new /obj/item/storage/backpack/satchel/leather/withwallet( src )

@@ -80,7 +80,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/ion_rifle/directional/north,
+/obj/structure/sign/poster/contraband/ion_rifle/directional/north,
 /obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/red/fourcorners,
 /turf/open/floor/iron/dark/textured_half,
@@ -1285,7 +1285,7 @@
 	dir = 6
 	},
 /obj/machinery/vending/cigarette,
-/obj/structure/sign/poster/official/corporate_perks_vacation/directional/north,
+/obj/structure/sign/poster/old_nt/corporate_perks_vacation/directional/north,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "yV" = (
@@ -2200,7 +2200,7 @@
 	color = "#A47449";
 	dir = 4
 	},
-/obj/structure/sign/poster/official/festive/directional/south,
+/obj/structure/sign/poster/legal/festive/directional/south,
 /turf/open/water,
 /area/shuttle/escape)
 "OM" = (
@@ -2468,7 +2468,7 @@
 "UP" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/closet/emcloset/anchored,
-/obj/structure/sign/poster/official/jim_nortons/directional/north,
+/obj/structure/sign/poster/legal/jim_nortons/directional/north,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plating,
 /area/shuttle/escape)
@@ -2658,9 +2658,6 @@
 /area/shuttle/escape)
 "ZW" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/e_gun/mini{
-	pixel_y = 5
-	},
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
 

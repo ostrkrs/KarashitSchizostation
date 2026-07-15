@@ -149,11 +149,11 @@
 	label_class = "science"
 	ui_color = "#e277cf"
 	nation_prefixes = list("Sci", "Griffa", "Geneti", "Explosi", "Mecha", "Xeno", "Nani", "Cyto")
-	primary_work_area = /area/station/science
+	primary_work_area = /area/station/research
 	department_delivery_areas = list(
-		/area/station/science/research,
-		/area/station/science/lobby,
-		/area/station/science/lab,
+		/area/station/research/division,
+		/area/station/research/division/lobby,
+		/area/station/research/division/lab,
 	)
 	associated_cargo_groups = list("Science", "Livestock", "Canisters & Materials")
 	head_of_staff_access = ACCESS_RD
@@ -182,7 +182,7 @@
 	ui_color = "#74ac46"
 	nation_prefixes = list("Honka", "Boozo", "Fatu", "Danka", "Mimi", "Libra", "Jani", "Religi")
 	primary_work_area = /area/station/service
-	department_delivery_areas = list(/area/station/hallway/secondary/service, /area/station/service/bar/atrium)
+	department_delivery_areas = list(/area/station/hallway/secondary/service)
 	associated_cargo_groups = list("Service", "Food & Hydroponics", "Livestock", "Costumes & Toys")
 	head_of_staff_access = ACCESS_STEWARD
 	department_access = list(ACCESS_SERVICE)

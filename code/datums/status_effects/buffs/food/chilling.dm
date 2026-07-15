@@ -9,6 +9,6 @@
 
 /atom/movable/screen/alert/status_effect/icecream_chilling
 	name = "Cooling Off"
-	desc = "Nothing beats a cup of ice cream during hot, plasma-floody day..."
+	desc = "Nothing beats a cup of ice cream during hot, phoron-floody day..."
 	icon_state = "food_icecream"
 

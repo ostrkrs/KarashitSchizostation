@@ -305,26 +305,6 @@
 /datum/cardboard_cutout/xenomorph/get_name()
 	return applied_name + " ([rand(1, 999)])"
 
-/datum/cardboard_cutout/xenomorph_maid
-	name = "Xenomorph Maid"
-	applied_name = "lusty xenomorph maid"
-	applied_desc = "A cardboard cutout of a xenomorph maid."
-	direct_icon = 'icons/mob/nonhuman-player/alien.dmi'
-	direct_icon_state = "maid"
-
-/datum/cardboard_cutout/xenomorph_maid/get_name()
-	return applied_name + " ([rand(1, 999)])"
-
-/datum/cardboard_cutout/ash_walker
-	name = "Ash Walker"
-	applied_name = "lizard"
-	applied_desc = "A cardboard cutout of an ash walker."
-	species = /datum/species/lizard/ashwalker
-	outfit = /datum/outfit/ashwalker/spear
-
-/datum/cardboard_cutout/ash_walker/get_name()
-	return generate_random_name_species_based(species_type = /datum/species/lizard)
-
 /datum/cardboard_cutout/death_squad
 	name = "Deathsquad Officer"
 	applied_name = "deathsquad officer"

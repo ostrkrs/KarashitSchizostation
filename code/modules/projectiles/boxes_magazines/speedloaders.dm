@@ -10,107 +10,38 @@
 /obj/item/ammo_box/speedloader/c357
 	name = "speed loader (.357)"
 	desc = "Designed to quickly reload seven-chamber .357 revolvers."
-	icon_state = "357"
+	icon_state = "speedloader_357"
 	ammo_type = /obj/item/ammo_casing/c357
-	max_ammo = 7
+	max_ammo = 6
 	caliber = CALIBER_357
 	item_flags = NO_MAT_REDEMPTION
-	ammo_band_icon = "+357_ammo_band"
-	ammo_band_color = null
-
-/obj/item/ammo_box/speedloader/c357/match
-	name = "speed loader (.357 Match)"
-	desc = parent_type::desc + " Match rounds are manufactured within extremely tight tolerances, making them easy to show off trickshots with."
-	ammo_type = /obj/item/ammo_casing/c357/match
-	ammo_band_color = "#77828a"
-
-/obj/item/ammo_box/speedloader/c357/phasic
-	name = "speed loader (.357 Phasic)"
-	desc = parent_type::desc + " Phasic rounds, also known as 'Ghost Lead', are specially manufactured to pass through non-organic material. Somehow."
-	ammo_type = /obj/item/ammo_casing/c357/phasic
-	ammo_band_color = "#693a6a"
-
-/obj/item/ammo_box/speedloader/c357/heartseeker
-	name = "speed loader (.357 Heartseeker)"
-	desc = parent_type::desc + " Heartseeker rounds veer into targets with exceptional precision using an unknown method. \
-		It apparently predicts movement using neural pulses in the brain, but that's less marketable. \
-		As seen in the hit NTFlik horror-space western film, Forget-Me-Not, brought to you by Roseus Galactic!"
-	ammo_type = /obj/item/ammo_casing/c357/heartseeker
-	ammo_band_color = "#a91e1e"
 
 /obj/item/ammo_box/speedloader/c38
 	name = "speed loader (.38)"
 	desc = "Designed to quickly reload six-chamber .38 Special revolvers."
-	icon_state = "38"
-	base_icon_state = "38"
+	icon_state = "speedloader_38"
+	base_icon_state = "speedloader_38"
 	ammo_type = /obj/item/ammo_casing/c38
 	max_ammo = 6
 	caliber = CALIBER_38
 	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT)
-	ammo_band_icon = "+38_ammo_band"
-	ammo_band_color = null
-
-/obj/item/ammo_box/speedloader/c38/update_icon_state()
-	. = ..()
-	icon_state = "[base_icon_state]-base"
-
-/obj/item/ammo_box/speedloader/c38/update_overlays()
-	. = ..()
-	if(!LAZYLEN(stored_ammo))
-		return
-	for(var/inserted_ammo in 1 to stored_ammo.len)
-		var/obj/item/ammo_casing/c38/boolet = stored_ammo[inserted_ammo]
-		. += "38-[boolet::lead_or_laser]-[inserted_ammo]"
 
 /obj/item/ammo_box/speedloader/c38/trac
 	name = "speed loader (.38 TRAC)"
 	desc = parent_type::desc + " TRAC bullets embed a tracking implant within the target's body."
 	ammo_type = /obj/item/ammo_casing/c38/trac
-	ammo_band_color = COLOR_AMMO_TRACK
 
-/obj/item/ammo_box/speedloader/c38/match
-	name = "speed loader (.38 Match)"
-	desc = parent_type::desc + " Match bullets are manufactured within extremely tight tolerances, making them easy to show off trickshots with."
-	ammo_type = /obj/item/ammo_casing/c38/match
-	ammo_band_color = COLOR_AMMO_MATCH
-
-/obj/item/ammo_box/speedloader/c38/match/bouncy
+/obj/item/ammo_box/speedloader/c38/rubber
 	name = "speed loader (.38 Rubber)"
 	desc = parent_type::desc + " Rubber rounds are incredibly bouncy and MOSTLY less-lethal, making them great to show off trickshots with."
-	ammo_type = /obj/item/ammo_casing/c38/match/bouncy
-	ammo_band_color = COLOR_AMMO_RUBBER
+	ammo_type = /obj/item/ammo_casing/c38/rubber
 
-/obj/item/ammo_box/speedloader/c38/true
-	name = "speed loader (.38 True Strike)"
-	desc = parent_type::desc + " True Strike bullets bounce towards new targets with surprising accuracy after ricocheting."
-	ammo_type = /obj/item/ammo_casing/c38/match/true
-	ammo_band_color = COLOR_AMMO_TRUESTRIKE
-
-/obj/item/ammo_box/speedloader/c38/dumdum
-	name = "speed loader (.38 DumDum)"
-	desc = parent_type::desc + " DumDum bullets expand on impact, reducing outright stopping power but \
+/obj/item/ammo_box/speedloader/c38/hp
+	name = "speed loader (.38 Hollow-Point)"
+	desc = parent_type::desc + " hollow-point bullets expand on impact, reducing outright stopping power but \
 		shredding targets and causing massive bleeding in close range, \
 		at the cost of suffering greatly against armor and distant targets."
-	ammo_type = /obj/item/ammo_casing/c38/dumdum
-	ammo_band_color = COLOR_AMMO_DUMDUM
-
-/obj/item/ammo_box/speedloader/c38/hotshot
-	name = "speed loader (.38 Hot Shot)"
-	desc = parent_type::desc + " Hot Shot bullets contain an incendiary payload that ignites struck targets."
-	ammo_type = /obj/item/ammo_casing/c38/hotshot
-	ammo_band_color = COLOR_AMMO_HOTSHOT
-
-/obj/item/ammo_box/speedloader/c38/iceblox
-	name = "speed loader (.38 Iceblox)"
-	desc = parent_type::desc + " Iceblox bullets contain a cryogenic payload that lower the body temperature of struck targets."
-	ammo_type = /obj/item/ammo_casing/c38/iceblox
-	ammo_band_color = COLOR_AMMO_ICEBLOX
-
-/obj/item/ammo_box/speedloader/c38/flare
-	name = "speed loader (.38 Flare)"
-	desc = parent_type::desc + " Flare casings launch a concentrated particle beam towards a target, lighting them up for everyone to see."
-	ammo_type = /obj/item/ammo_casing/c38/flare
-	ammo_band_color = COLOR_AMMO_HELLFIRE
+	ammo_type = /obj/item/ammo_casing/c38/hp
 
 /obj/item/ammo_box/speedloader/strilka310
 	name = "stripper clip (.310 Strilka)"

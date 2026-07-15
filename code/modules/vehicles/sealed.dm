@@ -58,9 +58,6 @@
 /obj/vehicle/sealed/proc/mob_try_enter(mob/rider)
 	if(!istype(rider))
 		return FALSE
-	if(isserpentid(rider))
-		balloon_alert(rider, "you're too big!")
-		return FALSE
 	var/enter_delay = get_enter_delay(rider)
 	if (enter_delay == 0)
 		if (enter_checks(rider))

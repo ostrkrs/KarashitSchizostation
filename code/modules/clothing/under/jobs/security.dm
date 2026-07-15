@@ -1,7 +1,7 @@
 /*
  * Contains:
  * Security
- * Detective
+ * Criminalist
  * Navy uniforms
  */
 
@@ -97,17 +97,17 @@
 	alt_covers_chest = TRUE
 
 /*
- * Detective
+ * Criminalist
  */
-/obj/item/clothing/under/rank/security/detective
+/obj/item/clothing/under/rank/security/criminalist
 	name = "hard-worn suit"
 	desc = "Someone who wears this means business."
 	icon_state = "detective"
 	inhand_icon_state = "det"
 	alt_covers_chest = TRUE
 
-/obj/item/clothing/under/rank/security/detective/skirt
-	name = "detective's suitskirt"
+/obj/item/clothing/under/rank/security/criminalist/skirt
+	name = "criminalist's suitskirt"
 	desc = "Someone who wears this means business."
 	icon_state = "detective_skirt"
 	inhand_icon_state = "det"
@@ -117,14 +117,14 @@
 	alt_covers_chest = TRUE
 	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION_NO_NEW_ICON
 
-/obj/item/clothing/under/rank/security/detective/noir
+/obj/item/clothing/under/rank/security/criminalist/noir
 	name = "noir suit"
 	desc = "A hard-boiled private investigator's dark suit, complete with tie clip."
 	icon_state = "noirdet"
 	inhand_icon_state = null
 	alt_covers_chest = TRUE
 
-/obj/item/clothing/under/rank/security/detective/noir/skirt
+/obj/item/clothing/under/rank/security/criminalist/noir/skirt
 	name = "noir suitskirt"
 	desc = "A hard-boiled private investigator's grey suitskirt, complete with tie clip."
 	icon_state = "noirdet_skirt"
@@ -271,14 +271,14 @@
 	inhand_icon_state = null
 	can_adjust = FALSE
 
-/obj/item/clothing/under/rank/security/detective/disco
+/obj/item/clothing/under/rank/security/criminalist/disco
 	name = "superstar cop uniform"
 	desc = "Flare cut trousers and a dirty shirt that might have been classy before someone took a piss in the armpits. It's the dress of a superstar."
 	icon_state = "jamrock_suit"
 	inhand_icon_state = null
 	can_adjust = FALSE
 
-/obj/item/clothing/under/rank/security/detective/kim
+/obj/item/clothing/under/rank/security/criminalist/kim
 	name = "aerostatic suit"
 	desc = "A crisp and well-pressed suit; professional, comfortable and curiously authoritative."
 	icon_state = "aerostatic_suit"

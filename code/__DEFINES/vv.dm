@@ -145,6 +145,7 @@
 #define VV_HK_GIVE_HALLUCINATION "give_hallucination"
 #define VV_HK_GIVE_DELUSION_HALLUCINATION "give_hallucination_delusion"
 #define VV_HK_GIVE_GUARDIAN_SPIRIT "give_guardian_spirit"
+#define VV_HK_SEND_CRYPTOPOD "send_to_cryptopod"
 
 // /mob/living/carbon
 #define VV_HK_MODIFY_BODYPART "mod_bodypart"
@@ -158,7 +159,6 @@
 #define VV_HK_MOD_MUTATIONS "quirkmut"
 #define VV_HK_MOD_QUIRKS "quirkmod"
 #define VV_HK_SET_SPECIES "setspecies"
-#define VV_HK_PURRBATION "purrbation"
 #define VV_HK_APPLY_DNA_INFUSION "apply_dna_infusion"
 #define VV_HK_TURN_INTO_MMI "turn_into_mmi"
 

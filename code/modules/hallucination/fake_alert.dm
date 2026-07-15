@@ -44,9 +44,9 @@
 	alert_category = ALERT_NOT_ENOUGH_OXYGEN
 	alert_type = /atom/movable/screen/alert/not_enough_oxy
 
-/datum/hallucination/fake_alert/need_plasma
-	alert_category = ALERT_NOT_ENOUGH_PLASMA
-	alert_type = /atom/movable/screen/alert/not_enough_plas
+/datum/hallucination/fake_alert/need_phoron
+	alert_category = ALERT_NOT_ENOUGH_PHORON
+	alert_type = /atom/movable/screen/alert/not_enough_phoron
 
 /datum/hallucination/fake_alert/need_co2
 	alert_category = ALERT_NOT_ENOUGH_CO2
@@ -56,9 +56,9 @@
 	alert_category = ALERT_TOO_MUCH_OXYGEN
 	alert_type = /atom/movable/screen/alert/too_much_oxy
 
-/datum/hallucination/fake_alert/bad_plasma
-	alert_category = ALERT_TOO_MUCH_PLASMA
-	alert_type = /atom/movable/screen/alert/too_much_plas
+/datum/hallucination/fake_alert/bad_phoron
+	alert_category = ALERT_TOO_MUCH_PHORON
+	alert_type = /atom/movable/screen/alert/too_much_phoron
 
 /datum/hallucination/fake_alert/bad_co2
 	alert_category = ALERT_TOO_MUCH_CO2

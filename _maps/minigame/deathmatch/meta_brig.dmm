@@ -45,7 +45,7 @@
 /obj/structure/table/wood,
 /obj/item/folder/red,
 /obj/item/hand_labeler,
-/obj/item/camera/detective,
+/obj/item/camera/criminalist,
 /turf/open/floor/carpet,
 /area/deathmatch)
 "aR" = (
@@ -1778,7 +1778,7 @@
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "As" = (
-/obj/machinery/vending/wardrobe/det_wardrobe,
+/obj/machinery/vending/wardrobe/criminalist,
 /turf/open/floor/iron/grimy,
 /area/deathmatch)
 "Ay" = (

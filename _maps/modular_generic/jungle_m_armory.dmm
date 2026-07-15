@@ -8,7 +8,7 @@
 	dir = 10
 	},
 /obj/structure/flora/rock/pile/jungle/style_random,
-/obj/structure/sign/poster/contraband/calada_jelly/directional/south,
+/obj/structure/sign/poster/legal/calada_jelly/directional/south,
 /turf/open/floor/wood,
 /area/template_noop)
 "e" = (

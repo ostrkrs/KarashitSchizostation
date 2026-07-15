@@ -36,40 +36,6 @@
 	return INITIALIZE_HINT_QDEL
 
 /*
- * Guns - I'm making these specifically so that I dont spawn a pile of fully loaded weapons on the map.
- */
-//Captain's retro laser - Fires practice laser shots instead.
-/obj/item/gun/energy/laser/retro/sc_retro
-	name ="retro laser"
-	icon_state = "retro"
-	desc = "An older model of the basic lasergun, no longer used by Nanotrasen's security or military forces."
-	clumsy_check = FALSE //No sense in having a harmless gun blow up in the clowns face
-
-//Syndicate sub-machine guns.
-/obj/item/gun/ballistic/automatic/c20r/sc_c20r
-
-/obj/item/gun/ballistic/automatic/c20r/sc_c20r/Initialize(mapload)
-	. = ..()
-	for(var/ammo in magazine.stored_ammo)
-		if(prob(95)) //95% chance
-			magazine.stored_ammo -= ammo
-
-//Barman's shotgun
-/obj/item/gun/ballistic/shotgun/sc_pump
-
-/obj/item/gun/ballistic/shotgun/sc_pump/Initialize(mapload)
-	. = ..()
-	for(var/ammo in magazine.stored_ammo)
-		if(prob(95)) //95% chance
-			magazine.stored_ammo -= ammo
-
-//Lasers
-/obj/item/gun/energy/laser/practice/sc_laser
-	name = "Old laser"
-	desc = "A once potent weapon, years of dust have collected in the chamber and lens of this weapon, weakening the beam significantly."
-	clumsy_check = FALSE
-
-/*
  * Safe code hints
  */
 

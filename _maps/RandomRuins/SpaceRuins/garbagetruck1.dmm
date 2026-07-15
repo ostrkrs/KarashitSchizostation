@@ -250,7 +250,7 @@
 	pixel_x = -8;
 	pixel_y = 6
 	},
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "ki" = (
@@ -330,7 +330,7 @@
 /obj/item/food/cheese/firm_cheese,
 /obj/item/food/cheese/firm_cheese,
 /obj/item/thermometer,
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "oL" = (

@@ -125,15 +125,15 @@
 /area/ruin/space/has_grav/thelizardsgas)
 "kS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored,
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=35000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=35000;TEMP=293.15"
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "mN" = (
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/effect/spawner/random/food_or_drink/booze,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/white/corner{
 	dir = 8
 	},
@@ -170,7 +170,7 @@
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "rC" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/thelizardsgas)
 "ss" = (
@@ -207,7 +207,7 @@
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/white/corner,
 /area/ruin/space/has_grav/thelizardsgas)
 "wb" = (
@@ -280,8 +280,8 @@
 /turf/template_noop,
 /area/template_noop)
 "DG" = (
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=35000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=35000;TEMP=293.15"
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "Es" = (
@@ -400,8 +400,8 @@
 /area/ruin/space/has_grav/thelizardsgas)
 "OQ" = (
 /obj/machinery/light/small/directional/west,
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=35000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=35000;TEMP=293.15"
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "Pb" = (
@@ -418,7 +418,7 @@
 /area/ruin/space/has_grav/thelizardsgas)
 "PF" = (
 /obj/machinery/computer/atmos_control/noreconnect{
-	atmos_chambers = list("lizardgas"="Plasma Supply");
+	atmos_chambers = list("lizardgas"="Phoron Supply");
 	dir = 8
 	},
 /turf/open/floor/iron/dark/smooth_edge{
@@ -440,8 +440,8 @@
 	desc = "How the fuck did he get in there?!";
 	name = "Zingo"
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=35000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=35000;TEMP=293.15"
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "RB" = (
@@ -450,7 +450,7 @@
 /area/ruin/space/has_grav/thelizardsgas)
 "Tj" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/thelizardsgas)
 "Ua" = (
@@ -472,8 +472,8 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored{
 	dir = 4
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=35000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=35000;TEMP=293.15"
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "Um" = (
@@ -514,8 +514,8 @@
 /obj/machinery/air_sensor{
 	chamber_id = "lizardgas"
 	},
-/turf/open/floor/engine/plasma{
-	initial_gas_mix = "plasma=35000;TEMP=293.15"
+/turf/open/floor/engine/phoron{
+	initial_gas_mix = "phoron=35000;TEMP=293.15"
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "Ys" = (
@@ -529,7 +529,7 @@
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/white/side,
 /area/ruin/space/has_grav/thelizardsgas)
 "Zr" = (

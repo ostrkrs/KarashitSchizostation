@@ -4,7 +4,8 @@
 		keep the crew alive, be prepared to do anything and everything or die \
 		horribly trying."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
-	department_head = list("CentCom")
+	department_head = list("Solstice Reach HQ")
+	default_radio_channel = RADIO_CHANNEL_COMMAND
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -19,7 +20,6 @@
 	config_tag = "CAPTAIN"
 
 	outfit = /datum/outfit/job/captain
-	plasmaman_outfit = /datum/outfit/plasmaman/captain
 
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
@@ -85,7 +85,7 @@
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
+		/obj/item/gun/energy/laser,
 		/obj/item/stamp/head/captain,
 		)
 	implants = list(/obj/item/implant/mindshield)

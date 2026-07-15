@@ -12,6 +12,7 @@
 	plane = TRANSPARENT_FLOOR_PLANE
 	layer = SPACE_LAYER
 	rust_resistance = RUST_RESISTANCE_ABSOLUTE
+	bullet_bounce_sound = FALSE
 	var/can_cover_up = TRUE
 	var/can_build_on = TRUE
 

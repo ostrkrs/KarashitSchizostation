@@ -61,7 +61,7 @@
 /area/shuttle/escape)
 "bT" = (
 /obj/effect/mob_spawn/corpse/human/clown,
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/shuttle/escape/engine)
 "cv" = (
 /obj/structure/table,
@@ -99,7 +99,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
 "cX" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating/airless,
 /area/shuttle/escape/engine)
 "dw" = (
@@ -146,8 +146,8 @@
 /obj/machinery/power/shuttle_engine/heater{
 	dir = 8
 	},
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
-/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/plasma_input{
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
+/obj/machinery/atmospherics/components/unary/outlet_injector/monitored/phoron_input{
 	dir = 4
 	},
 /turf/open/floor/plating/airless,
@@ -160,7 +160,7 @@
 /obj/structure/table,
 /obj/machinery/coffeemaker,
 /obj/item/reagent_containers/cup/coffeepot/bluespace,
-/obj/structure/sign/poster/contraband/donut_corp/directional/north,
+/obj/structure/sign/poster/legal/donut_corp/directional/north,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/escape)
@@ -490,10 +490,6 @@
 /obj/effect/turf_decal/tile/dark_blue/opposingcorners,
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/escape)
-"zj" = (
-/obj/item/toy/plush/plasmamanplushie,
-/turf/open/floor/engine/plasma,
-/area/shuttle/escape/engine)
 "zs" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/structure/sign/warning/fire/directional/west,
@@ -501,7 +497,7 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/escape/engine)
 "zu" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/smart/simple/violet/hidden{
 	dir = 4
 	},
@@ -611,7 +607,7 @@
 	idle_power_usage = 0;
 	use_power = 0
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/shuttle/escape/engine)
 "CK" = (
 /obj/machinery/power/shuttle_engine/propulsion{
@@ -643,12 +639,12 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/escape)
 "DN" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/firedoor,
 /turf/open/floor/plating/airless,
 /area/shuttle/escape/engine)
 "DY" = (
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/engine/o2,
 /area/shuttle/escape/engine)
 "DZ" = (
@@ -675,12 +671,12 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/escape)
 "Fu" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output{
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/phoron_output{
 	dir = 8;
 	idle_power_usage = 0;
 	use_power = 0
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/shuttle/escape/engine)
 "Fz" = (
 /obj/effect/turf_decal/siding/dark{
@@ -903,7 +899,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
 "Oi" = (
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/shuttle/escape/engine)
 "OL" = (
 /obj/effect/turf_decal/tile/yellow/opposingcorners,
@@ -944,7 +940,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
 "Qd" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating/airless,
 /area/shuttle/escape/engine)
 "Qj" = (
@@ -1042,7 +1038,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/shuttle/escape)
 "US" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "Vg" = (
@@ -1281,7 +1277,7 @@ Bu
 cX
 Oi
 CD
-zj
+Oi
 cX
 wF
 OL

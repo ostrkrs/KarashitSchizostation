@@ -248,8 +248,6 @@
 	destination.top_underwear_color = top_underwear_color
 	destination.socks = socks
 	destination.socks_color = socks_color
-	destination.jumpsuit_style = jumpsuit_style
-
 
 /// Fully randomizes everything according to the given flags.
 /mob/living/carbon/human/proc/randomize_human_appearance(randomize_flags = ALL)

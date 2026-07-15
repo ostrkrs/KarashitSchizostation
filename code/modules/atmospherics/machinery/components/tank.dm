@@ -445,8 +445,8 @@
 	gas_type = /datum/gas/carbon_dioxide
 	flags_1 = parent_type::flags_1 | NO_NEW_GAGS_PREVIEW_1
 
-/obj/machinery/atmospherics/components/tank/plasma
-	gas_type = /datum/gas/plasma
+/obj/machinery/atmospherics/components/tank/phoron
+	gas_type = /datum/gas/phoron
 	flags_1 = parent_type::flags_1 | NO_NEW_GAGS_PREVIEW_1
 
 /obj/machinery/atmospherics/components/tank/nitrogen

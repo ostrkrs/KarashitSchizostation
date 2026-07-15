@@ -194,7 +194,7 @@
 /obj/item/soulstone/proc/soul_core_learning_check(mob/user)
 	return user.is_holding(src) || (user.loc == loc) || (isturf(loc) && user.Adjacent(loc))
 
-/obj/item/soulstone/Destroy() //Stops the shade from being qdel'd immediately and their ghost being sent back to the arrival shuttle.
+/obj/item/soulstone/Destroy()
 	for(var/mob/living/basic/shade/shade in src)
 		INVOKE_ASYNC(shade, TYPE_PROC_REF(/mob/living, death))
 	return ..()

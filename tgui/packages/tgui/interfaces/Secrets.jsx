@@ -549,32 +549,6 @@ const FunForYouTab = (props) => {
         </NoticeBox>
       </Stack.Item>
       <Stack.Item>
-        <Stack fill>
-          <Stack.Item>
-            <NoticeBox danger width={19.6} mb={0}>
-              <Button
-                color="red"
-                icon="cat"
-                fluid
-                content="Mass Purrbation"
-                onClick={() => act('masspurrbation')}
-              />
-            </NoticeBox>
-          </Stack.Item>
-          <Stack.Item>
-            <NoticeBox info width={19.6} mb={0}>
-              <Button
-                color="blue"
-                icon="user"
-                fluid
-                content="Cure Purrbation"
-                onClick={() => act('massremovepurrbation')}
-              />
-            </NoticeBox>
-          </Stack.Item>
-        </Stack>
-      </Stack.Item>
-      <Stack.Item>
         <Stack>
           <Stack.Item>
             <NoticeBox danger width={19.6} mb={0}>

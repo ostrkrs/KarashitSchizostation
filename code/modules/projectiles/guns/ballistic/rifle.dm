@@ -4,6 +4,7 @@
 	icon = 'icons/obj/weapons/guns/wide_guns.dmi'
 	icon_state = "sakhno"
 	w_class = WEIGHT_CLASS_BULKY
+	recoil = RECOIL_RIFLE
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction
 	bolt_wording = "bolt"
 	bolt_type = BOLT_TYPE_LOCKING
@@ -170,32 +171,10 @@
 	if(.)
 		name = "\improper Obrez Moderna" // wear it loud and proud
 
-/obj/item/gun/ballistic/rifle/boltaction/donkrifle
-	name = "\improper Donk Co. Jezail"
-	desc = "A mass-manufactured bolt-action sporting rifle with a distinctively long barrel. Powerful enough to take down a space bear from a thousand paces. The lengthened barrel gives it good accuracy and power, even at range."
-	w_class = WEIGHT_CLASS_HUGE
-	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/64x_guns_right.dmi'
-	inhand_x_dimension = 64
-	inhand_y_dimension = 64
-	icon_state = "jezail"
-	inhand_icon_state = "jezail"
-	worn_icon_state = "jezail"
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/jezail
-	can_be_sawn_off = TRUE
-	sawn_desc = "A mass-manufactured bolt-action sporting rifle with a distinctively long barrel. Powerful enough to take down a space bear from a thousand paces. Its barrel has been cut off, so its power and accuracy have been impaired."
-
-/obj/item/gun/ballistic/rifle/boltaction/donkrifle/sawoff(mob/user) //the heavy price one pays for fitting this in a backpack
-	. = ..()
-	if(.)
-		projectile_damage_multiplier = 0.75
-		spread = 50
-
 /obj/item/gun/ballistic/rifle/rebarxbow
 	name = "heated rebar crossbow"
-	desc = "A handcrafted crossbow. \
-		   Aside from conventional sharpened iron rods, it can also fire specialty ammo made from the atmos crystalizer - zaukerite, metallic hydrogen, and healium rods all work. \
-		   Very slow to reload - you can craft the crossbow with a crowbar to loosen the crossbar, but risk a misfire, or worse..."
+	desc = "A handcrafted crossbow. Very slow to reload - you can craft the crossbow with a crowbar to loosen the crossbar, \
+		but risk a misfire, or worse..."
 	icon = 'icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "rebarxbow"
 	inhand_icon_state = "rebarxbow"
@@ -212,6 +191,7 @@
 	magazine_wording = "rod"
 	cartridge_wording = "rod"
 	weapon_weight = WEAPON_HEAVY
+	recoil = 0
 	initial_caliber = CALIBER_REBAR
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/rebarxbow/normal
 	fire_sound = 'sound/items/xbow_lock.ogg'
@@ -299,12 +279,11 @@
 	worn_icon_state = "pipegun"
 	fire_sound = 'sound/items/weapons/gun/sniper/shot.ogg'
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/boltaction/pipegun
-
-	projectile_damage_multiplier = 1.35
+	recoil = RECOIL_SHOTGUN
+	projectile_damage_multiplier = 0.75
 	obj_flags = UNIQUE_RENAME
 	can_be_sawn_off = FALSE
 	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
-	pb_knockback = 3
 
 	SET_BASE_PIXEL(-8, 0)
 
@@ -340,6 +319,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	w_class = WEIGHT_CLASS_NORMAL
 	weapon_weight = WEAPON_MEDIUM
+	recoil = RECOIL_PISTOL
 	semi_auto = TRUE
 
 	SET_BASE_PIXEL(0, 0)
@@ -429,7 +409,7 @@
 	load_sound = 'sound/items/weapons/gun/sniper/mag_insert.ogg'
 	rack_sound = 'sound/items/weapons/gun/sniper/rack.ogg'
 	suppressed_sound = 'sound/items/weapons/gun/general/heavy_shot_suppressed.ogg'
-	recoil = 2
+	recoil = RECOIL_SNIPER
 	accepted_magazine_type = /obj/item/ammo_box/magazine/sniper_rounds
 	internal_magazine = FALSE
 	w_class = WEIGHT_CLASS_NORMAL
@@ -480,7 +460,6 @@
 	need_bolt_lock_to_interact = TRUE
 	semi_auto = TRUE
 	slot_flags = ITEM_SLOT_BACK
-	projectile_damage_multiplier = 0.5
 
 	SET_BASE_PIXEL(-8, 0)
 
@@ -495,30 +474,3 @@
 
 /obj/item/gun/ballistic/rifle/sks/empty
 	spawn_magazine_type = /obj/item/ammo_box/magazine/internal/sks/empty
-
-// lahti-l39 anti material rifle //
-
-/obj/item/gun/ballistic/automatic/lahti
-	name = "\improper Lahti L-39"
-	desc = "The Lahti L-39, now manufactured in space with better materials making it more portable and reliable- still loaded in the same massive cartridge, \
-		this thing was made to go through a tank and come out the other end- imagine what it could do to an exosuit, there's also a completely useless sight which is totally obstructed by the magazine."
-	icon = 'icons/obj/weapons/guns/lahtil39.dmi'
-	icon_state = "lahtil"
-	inhand_icon_state = "sniper"
-	worn_icon_state = "sniper"
-	fire_sound = 'sound/items/weapons/gun/sniper/shot.ogg'
-	fire_sound_volume = 90
-	load_sound = 'sound/items/weapons/gun/sniper/mag_insert.ogg'
-	rack_sound = 'sound/items/weapons/gun/sniper/rack.ogg'
-	suppressed_sound = 'sound/items/weapons/gun/general/heavy_shot_suppressed.ogg'
-	mag_display = FALSE
-	recoil = 15
-	w_class = WEIGHT_CLASS_BULKY
-	accepted_magazine_type = /obj/item/ammo_box/magazine/lahtimagazine
-	fire_delay = 8 SECONDS
-	slowdown = 2
-	burst_size = 1
-	slot_flags = ITEM_SLOT_BACK
-	actions_types = list()
-	suppressor_x_offset = 3
-	suppressor_y_offset = 3

@@ -706,7 +706,6 @@
 	pixel_x = 4;
 	pixel_y = 4
 	},
-/obj/item/gun/energy/e_gun/mini,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "oj" = (

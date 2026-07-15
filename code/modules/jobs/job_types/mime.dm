@@ -11,7 +11,6 @@
 	config_tag = "MIME"
 
 	outfit = /datum/outfit/job/mime
-	plasmaman_outfit = /datum/outfit/plasmaman/mime
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV

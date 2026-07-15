@@ -14,7 +14,6 @@
 	config_tag = "BRIDGE_ASSISTANT"
 
 	outfit = /datum/outfit/job/bridge_assistant
-	plasmaman_outfit = /datum/outfit/plasmaman/bridge_assistant
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_CIV
@@ -46,7 +45,7 @@
 	var/list/possible_turfs = list()
 	var/area/bridge = GLOB.areas_by_type[/area/station/command/bridge]
 	if(isnull(bridge))
-		return ..() //if no bridge, spawn on the arrivals shuttle (but also what the fuck)
+		return ..()
 	for (var/list/zlevel_turfs as anything in bridge.get_zlevel_turf_lists())
 		for (var/turf/possible_turf as anything in zlevel_turfs)
 			if(possible_turf.is_blocked_turf())
@@ -59,7 +58,7 @@
 		return pick(chair_turfs) //prioritize turfs with a chair
 	if(length(possible_turfs))
 		return pick(possible_turfs) //if none, just pick a random turf in the bridge
-	return ..() //if the bridge has no turfs, spawn on the arrivals shuttle
+	return ..()
 
 /datum/outfit/job/bridge_assistant
 	name = "Bridge Assistant"
@@ -77,5 +76,4 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	head = /obj/item/clothing/head/soft/black
 	shoes = /obj/item/clothing/shoes/laceup
-	l_pocket = /obj/item/gun/energy/e_gun/mini
 	r_pocket = /obj/item/assembly/flash/handheld

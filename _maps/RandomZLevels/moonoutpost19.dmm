@@ -423,7 +423,7 @@
 /area/awaymission/moonoutpost19/mines)
 "dd" = (
 /obj/structure/fluff/minepost,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /turf/open/misc/asteroid/moon{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
 	},
@@ -1095,7 +1095,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /turf/open/floor/iron{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251";
 	temperature = 251
@@ -3042,7 +3042,6 @@
 /obj/effect/decal/remains/human{
 	desc = "They look like human remains. The skeleton is sitting upright with its legs tucked in and hands still holding onto its arms."
 	},
-/obj/item/gun/ballistic/shotgun/sc_pump,
 /turf/open/floor/iron/showroomfloor{
 	temperature = 273.15
 	},
@@ -3106,7 +3105,7 @@
 /area/awaymission/moonoutpost19/mines)
 "tQ" = (
 /obj/structure/table,
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
 /obj/machinery/light/small/broken/directional/north,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
@@ -3181,7 +3180,7 @@
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "uq" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment/directional/north,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment/directional/north,
 /obj/effect/turf_decal/loading_area{
 	dir = 8
 	},
@@ -3290,7 +3289,7 @@
 /obj/structure/flora/rock/style_random{
 	pixel_y = -2
 	},
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /turf/open/misc/asteroid/moon{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
 	},
@@ -3428,8 +3427,8 @@
 /obj/structure/closet/secure_closet/personal/cabinet{
 	req_access = "150"
 	},
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/suppressor,
 /turf/open/floor/wood{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
@@ -3488,7 +3487,7 @@
 /area/awaymission/moonoutpost19/arrivals)
 "vY" = (
 /obj/structure/fluff/minepost,
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /turf/open/misc/asteroid/moon{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
 	},
@@ -4120,7 +4119,7 @@
 	},
 /area/awaymission/moonoutpost19/hive)
 "AQ" = (
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
 /turf/open/misc/asteroid/moon{
 	initial_gas_mix = "co2=48.7;n2=13.2;o2=32.4;TEMP=251"
 	},
@@ -4415,10 +4414,10 @@
 	name = "fire-proof closet"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/tank/internals/plasma/full{
+/obj/item/tank/internals/phoron/full{
 	pixel_y = -8
 	},
-/obj/item/tank/internals/plasma/full{
+/obj/item/tank/internals/phoron/full{
 	pixel_y = -4
 	},
 /obj/item/fuel_pellet,
@@ -5540,7 +5539,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
 /turf/open/floor/iron/white/corner,
 /area/awaymission/moonoutpost19/arrivals)
 "Ky" = (
@@ -5664,7 +5663,7 @@
 	},
 /area/awaymission/moonoutpost19/main)
 "LL" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/south,
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
@@ -5686,7 +5685,7 @@
 	req_access = "201"
 	},
 /obj/item/clothing/under/suit/navy,
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /turf/open/floor/carpet/orange,
 /area/awaymission/moonoutpost19/arrivals)
 "LY" = (

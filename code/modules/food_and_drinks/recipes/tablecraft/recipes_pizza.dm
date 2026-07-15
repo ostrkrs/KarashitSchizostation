@@ -28,7 +28,7 @@
 	reqs = list(
 		/obj/item/food/flatdough = 1,
 		/obj/item/food/meat/rawcutlet = 3,
-		/obj/item/ammo_casing/c9mm = 8,
+		/obj/item/ammo_casing/c8mm = 8,
 		/obj/item/food/cheese/wedge = 1,
 		/obj/item/food/grown/tomato = 1
 	)

@@ -91,6 +91,17 @@
 		/obj/item/light/bulb
 	))
 
+///Stock Parts Box
+/datum/storage/box/stock_parts
+	max_slots = 21
+	max_total_storage = 21
+	allow_quick_gather = FALSE
+	numerical_stacking = TRUE
+
+/datum/storage/box/stock_parts/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound)
+	. = ..()
+	set_holdable(/obj/item/stock_parts)
+
 ///Balloon box
 /datum/storage/box/balloon
 	max_slots = 24

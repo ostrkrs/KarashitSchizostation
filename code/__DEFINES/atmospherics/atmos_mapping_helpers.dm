@@ -20,9 +20,9 @@
 /// -14°C kitchen coldroom, just might loss your tail; higher amount of mol to reach about 101.3 kpA
 #define KITCHEN_COLDROOM_ATMOS GAS_O2 + "=26;" + GAS_N2 + "=97;TEMP=259.15"
 /// used in the holodeck burn test program
-#define BURNMIX_ATMOS GAS_O2 + "=2500;" + GAS_PLASMA + "=5000;TEMP=370"
-///-153.15°C plasma air, used for burning people.
-#define BURNING_COLD GAS_N2 + "=82;" + GAS_PLASMA + "=24;TEMP=120"
+#define BURNMIX_ATMOS GAS_O2 + "=2500;" + GAS_PHORON + "=5000;TEMP=370"
+///-153.15°C phoron air, used for burning people.
+#define BURNING_COLD GAS_N2 + "=82;" + GAS_PHORON + "=24;TEMP=120"
 ///Space temperature hyper nob
 #define SPACE_TEMP_NOBLIUM GAS_HYPER_NOBLIUM + "=7500;TEMP=2.7"
 ///Xenobio slime containment turf
@@ -31,7 +31,7 @@
 //ATMOSPHERICS DEPARTMENT GAS TANK TURFS
 #define ATMOS_TANK_N2O GAS_N2O + "=6000;TEMP=293.15"
 #define ATMOS_TANK_CO2 GAS_CO2 + "=50000;TEMP=293.15"
-#define ATMOS_TANK_PLASMA GAS_PLASMA + "=70000;TEMP=293.15"
+#define ATMOS_TANK_PHORON GAS_PHORON + "=70000;TEMP=293.15"
 #define ATMOS_TANK_O2 GAS_O2 + "=100000;TEMP=293.15"
 #define ATMOS_TANK_N2 GAS_N2 + "=100000;TEMP=293.15"
 #define ATMOS_TANK_BZ GAS_BZ + "=100000;TEMP=293.15"

@@ -63,8 +63,8 @@
 	cleanspeed = 3 SECONDS // faster than base soap to reward chemists for going to the effort
 
 /obj/item/soap/nanotrasen
-	desc = "A heavy duty bar of Nanotrasen brand soap. Smells of plasma."
-	grind_results = list(/datum/reagent/toxin/plasma = 10, /datum/reagent/lye = 10)
+	desc = "A heavy duty bar of Nanotrasen brand soap. Smells of phoron."
+	grind_results = list(/datum/reagent/toxin/phoron = 10, /datum/reagent/lye = 10)
 	icon_state = "soapnt"
 	inhand_icon_state = "soapnt"
 	worn_icon_state = "soapnt"
@@ -243,7 +243,7 @@
 		return
 	var/turf/T = get_turf(src)
 	for(M in ohearers(7, T))
-		if(M.can_hear())
+		if(!HAS_TRAIT(M, TRAIT_DEAF))
 			M.emote("flip")
 	COOLDOWN_START(src, golden_horn_cooldown, 1 SECONDS)
 

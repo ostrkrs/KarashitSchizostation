@@ -356,7 +356,7 @@
 	speed = 6 SECONDS, \
 	butcher_sound = 'sound/items/weapons/blade1.ogg', \
 	)
-	RegisterSignal(src, COMSIG_DETECTIVE_SCANNED, PROC_REF(on_scan))
+	RegisterSignal(src, COMSIG_CRIMINALIST_SCANNED, PROC_REF(on_scan))
 
 /obj/item/pen/edagger/create_transform_component()
 	AddComponent( \

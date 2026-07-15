@@ -13,10 +13,10 @@ Assistant
 	supervisors = "absolutely everyone"
 	exp_granted_type = EXP_TYPE_CREW
 	outfit = /datum/outfit/job/assistant
-	plasmaman_outfit = /datum/outfit/plasmaman
-	paycheck = PAYCHECK_LOWER // Get a job. Job reassignment changes your paycheck now. Get over it.
 
+	paycheck = PAYCHECK_LOWER // Get a job. Job reassignment changes your paycheck now. Get over it.
 	paycheck_department = ACCOUNT_CIV
+
 	display_order = JOB_DISPLAY_ORDER_ASSISTANT
 
 	liver_traits = list(TRAIT_MAINTENANCE_METABOLISM)
@@ -81,10 +81,7 @@ Assistant
 
 	//We don't cache these, because they can delete on init
 	//Too fragile, better to just eat the cost
-	if (target.jumpsuit_style == PREF_SUIT)
-		uniform = GLOB.colored_assistant.jumpsuits[index]
-	else
-		uniform = GLOB.colored_assistant.jumpskirts[index]
+	uniform = GLOB.colored_assistant.jumpsuits[index]
 
 /datum/outfit/job/assistant/consistent
 	name = "Assistant - Consistent"
@@ -107,7 +104,4 @@ Assistant
 	name = "Assistant - Preview"
 
 /datum/outfit/job/assistant/preview/give_jumpsuit(mob/living/carbon/human/target)
-	if (target.jumpsuit_style == PREF_SUIT)
-		uniform = /obj/item/clothing/under/color/grey
-	else
-		uniform = /obj/item/clothing/under/color/jumpskirt/grey
+	uniform = /obj/item/clothing/under/color/grey

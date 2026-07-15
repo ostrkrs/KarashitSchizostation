@@ -275,7 +275,7 @@
 					to_chat(H, span_revenminor("You feel [pick("suddenly sick", "a surge of nausea", "like your skin is <i>wrong</i>")]."))
 			else
 				if(mob.reagents)
-					mob.reagents.add_reagent(/datum/reagent/toxin/plasma, 5)
+					mob.reagents.add_reagent(/datum/reagent/toxin/phoron, 5)
 		else
 			mob.adjustToxLoss(5)
 	for(var/obj/structure/spacevine/vine in victim) //Fucking with botanists, the ability.

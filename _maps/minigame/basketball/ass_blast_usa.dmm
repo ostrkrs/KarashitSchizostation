@@ -153,13 +153,6 @@
 /area/centcom/basketball)
 "my" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/tommygun{
-	pixel_y = 10
-	},
-/obj/item/gun/ballistic/automatic/tommygun{
-	pixel_y = 5
-	},
-/obj/item/gun/ballistic/automatic/tommygun,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "mM" = (
@@ -186,7 +179,7 @@
 /turf/open/floor/carpet,
 /area/centcom/basketball)
 "rU" = (
-/obj/structure/sign/poster/official/twelve_gauge,
+/obj/structure/sign/poster/contraband/twelve_gauge,
 /turf/closed/indestructible/fakeglass,
 /area/centcom/basketball)
 "su" = (
@@ -339,21 +332,8 @@
 /turf/open/floor/iron,
 /area/centcom/basketball)
 "EW" = (
-/obj/structure/sign/poster/contraband/revolver,
+/obj/structure/sign/poster/old_syndie/revolver,
 /turf/closed/indestructible/fakeglass,
-/area/centcom/basketball)
-"Gh" = (
-/obj/structure/rack,
-/obj/item/gun/ballistic/automatic/pistol/deagle/gold{
-	pixel_x = 5;
-	pixel_y = -5
-	},
-/obj/item/gun/ballistic/automatic/pistol/deagle/camo{
-	pixel_x = 10;
-	pixel_y = -10
-	},
-/obj/item/gun/ballistic/automatic/pistol/deagle,
-/turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "Gi" = (
 /obj/structure/reagent_dispensers/beerkeg,
@@ -416,7 +396,7 @@
 /turf/open/floor/iron,
 /area/centcom/basketball)
 "LV" = (
-/obj/structure/sign/poster/contraband/syndicate_pistol,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol,
 /turf/closed/indestructible/fakeglass,
 /area/centcom/basketball)
 "Ma" = (
@@ -520,7 +500,7 @@
 /area/centcom/basketball)
 "WK" = (
 /obj/structure/rack,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "Xm" = (
@@ -784,7 +764,7 @@ EW
 Ql
 Ql
 Cw
-Gh
+my
 my
 cz
 dS

@@ -9,8 +9,6 @@
 
 // Creature factions
 
-/// Ashwalker related creatures
-#define FACTION_ASHWALKER "ashwalker"
 /// Bears of all varieties
 #define FACTION_BEAR "bear"
 /// Megafauna bosses of mining
@@ -51,7 +49,7 @@
 #define FACTION_WATCHER "watcher"
 /// Monkeys and gorillas
 #define FACTION_MONKEY "monkey"
-/// Mushrooms and mushroompeople
+/// Mushrooms
 #define FACTION_MUSHROOM "mushroom"
 /// Nanotrasen private security
 #define FACTION_NANOTRASEN_PRIVATE "nanotrasen_private"

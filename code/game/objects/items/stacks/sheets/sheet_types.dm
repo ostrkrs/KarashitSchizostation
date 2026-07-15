@@ -14,7 +14,7 @@
 /*
  * Iron
  */
-GLOBAL_LIST_INIT(metal_recipes, list ( \
+GLOBAL_LIST_INIT(iron_recipes, list ( \
 	new/datum/stack_recipe("stool", /obj/structure/chair/stool, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 	new/datum/stack_recipe("bar stool", /obj/structure/chair/stool/bar, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 	new/datum/stack_recipe("bed", /obj/structure/bed, 2, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
@@ -76,7 +76,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 	)),
 	null, \
 	new/datum/stack_recipe("rack parts", /obj/item/rack_parts, category = CAT_FURNITURE), \
-	new/datum/stack_recipe("closet", /obj/structure/closet, 2, time = 1.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
+	new/datum/stack_recipe("closet", /obj/structure/closet, 5, time = 1.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE), \
 	null, \
 	new/datum/stack_recipe("atmos canister", /obj/machinery/portable_atmospherics/canister, 10, time = 3 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_ATMOSPHERIC), \
 	new/datum/stack_recipe("pipe", /obj/item/pipe/quaternary/pipe/crafted, 1, time = 4 SECONDS, crafting_flags = NONE, category = CAT_ATMOSPHERIC), \
@@ -207,7 +207,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 
 /obj/item/stack/sheet/iron/get_main_recipes()
 	. = ..()
-	. += GLOB.metal_recipes
+	. += GLOB.iron_recipes
 
 /obj/item/stack/sheet/iron/suicide_act(mob/living/carbon/user)
 	user.visible_message(span_suicide("[user] begins whacking [user.p_them()]self over the head with \the [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
@@ -261,7 +261,7 @@ GLOBAL_LIST_INIT(metal_recipes, list ( \
 			frame_path = /obj/structure/frame/machine
 		else
 			frame_path = /obj/structure/frame/computer
-		for(var/datum/stack_recipe/recipe in GLOB.metal_recipes)
+		for(var/datum/stack_recipe/recipe in GLOB.iron_recipes)
 			if(recipe.result_type == frame_path)
 				time = recipe.time
 				cost = recipe.req_amount
@@ -304,7 +304,7 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
 /obj/item/stack/sheet/plasteel
 	name = "plasteel"
 	singular_name = "plasteel sheet"
-	desc = "This sheet is an alloy of iron and plasma."
+	desc = "This sheet is an alloy of iron and phoron."
 	icon_state = "sheet-plasteel"
 	inhand_icon_state = "sheet-plasteel"
 	mats_per_unit = list(/datum/material/alloy/plasteel=SHEET_MATERIAL_AMOUNT)
@@ -314,7 +314,7 @@ GLOBAL_LIST_INIT(plasteel_recipes, list ( \
 	armor_type = /datum/armor/sheet_plasteel
 	resistance_flags = FIRE_PROOF
 	merge_type = /obj/item/stack/sheet/plasteel
-	grind_results = list(/datum/reagent/iron = 20, /datum/reagent/toxin/plasma = 20)
+	grind_results = list(/datum/reagent/iron = 20, /datum/reagent/toxin/phoron = 20)
 	gulag_valid = TRUE
 	table_type = /obj/structure/table/reinforced
 	material_flags = NONE
@@ -594,7 +594,8 @@ GLOBAL_LIST_INIT(durathread_recipes, list ( \
 	. = ..()
 	. += GLOB.durathread_recipes
 
-/obj/item/stack/sheet/durathread/on_item_crafted(mob/builder, atom/created)
+/obj/item/stack/sheet/durathread/used_in_craft(atom/created, datum/crafting_recipe/recipe)
+	. = ..()
 	created.set_armor_rating(CONSUME, max(50, created.get_armor_rating(CONSUME)))
 
 /obj/item/stack/sheet/cotton
@@ -665,9 +666,9 @@ GLOBAL_LIST_INIT(cardboard_recipes, list ( \
 		new /datum/stack_recipe("cigar case", /obj/item/storage/fancy/cigarettes/cigars, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		null, \
 
-		new /datum/stack_recipe("lethal ammo box", /obj/item/storage/box/lethalshot, crafting_flags = NONE, category = CAT_CONTAINERS), \
-		new /datum/stack_recipe("rubber shot ammo box", /obj/item/storage/box/rubbershot, crafting_flags = NONE, category = CAT_CONTAINERS), \
-		new /datum/stack_recipe("bean bag ammo box", /obj/item/storage/box/beanbag, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("lethal ammo box", /obj/item/storage/box/ammo/buckshot, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("rubber shot ammo box", /obj/item/storage/box/ammo/rubbershot, crafting_flags = NONE, category = CAT_CONTAINERS), \
+		new /datum/stack_recipe("bean bag ammo box", /obj/item/storage/box/ammo/beanbags, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("flashbang box", /obj/item/storage/box/flashbangs, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("flashes box", /obj/item/storage/box/flashes, crafting_flags = NONE, category = CAT_CONTAINERS), \
 		new /datum/stack_recipe("handcuffs box", /obj/item/storage/box/handcuffs, crafting_flags = NONE, category = CAT_CONTAINERS), \
@@ -936,6 +937,7 @@ GLOBAL_LIST_INIT(paperframe_recipes, list(
 /obj/item/stack/sheet/paperframes/get_main_recipes()
 	. = ..()
 	. += GLOB.paperframe_recipes
+
 /obj/item/stack/sheet/paperframes/five
 	amount = 5
 /obj/item/stack/sheet/paperframes/twenty

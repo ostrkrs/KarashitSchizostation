@@ -139,8 +139,8 @@
 	time = 2 SECONDS
 	tool_behaviors = list(TOOL_SCREWDRIVER, TOOL_WIRECUTTER)
 	reqs = list(/obj/item/clothing/glasses/hud/security = 1,
-				  /obj/item/clothing/glasses/sunglasses = 1,
-				  /obj/item/stack/cable_coil = 5)
+				/obj/item/clothing/glasses/sunglasses = 1,
+				/obj/item/stack/cable_coil = 5)
 	category = CAT_EQUIPMENT
 
 /datum/crafting_recipe/hudsunsecremoval
@@ -261,16 +261,6 @@
 	result = /obj/item/clothing/head/costume/lizard
 	time = 1 SECONDS
 	reqs = list(/obj/item/stack/sheet/animalhide/lizard = 1)
-	category = CAT_CLOTHING
-
-/datum/crafting_recipe/kittyears
-	name = "Kitty Ears"
-	result = /obj/item/clothing/head/costume/kitty/genuine
-	time = 1 SECONDS
-	reqs = list(
-		/obj/item/organ/tail/cat = 1,
-		/obj/item/organ/ears/cat = 1,
-	)
 	category = CAT_CLOTHING
 
 /datum/crafting_recipe/bonearmor
@@ -651,5 +641,23 @@
 	tool_paths = list(/obj/item/toy/crayon/green)
 	reqs = list(
 		/obj/item/clothing/mask/gas/clown_hat = 1,
+	)
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/party_hat
+	name = "party hat"
+	result = /obj/item/clothing/head/costume/party
+	time = 10 SECONDS
+	reqs = list(
+		/obj/item/paper = 1,
+	)
+	category = CAT_CLOTHING
+
+/datum/crafting_recipe/festive_paper_hat
+	name = "festive paper hat"
+	result = /obj/item/clothing/head/costume/party/festive
+	time = 10 SECONDS
+	reqs = list(
+		/obj/item/paper = 1,
 	)
 	category = CAT_CLOTHING

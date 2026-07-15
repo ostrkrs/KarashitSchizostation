@@ -11,4 +11,6 @@
 
 	become_uncliented()
 
+	logout_time = world.time
+
 	return TRUE

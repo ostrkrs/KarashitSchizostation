@@ -27,7 +27,7 @@
 	var/static/list/ore_values = list(
 		/datum/material/iron = 1,
 		/datum/material/glass = 1,
-		/datum/material/plasma = 15,
+		/datum/material/phoron = 15,
 		/datum/material/silver = 16,
 		/datum/material/gold = 18,
 		/datum/material/titanium = 30,

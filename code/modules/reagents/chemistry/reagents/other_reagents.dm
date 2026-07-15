@@ -41,7 +41,7 @@
 /datum/reagent/blood/get_taste_description(mob/living/taster)
 	if(isnull(taster))
 		return ..()
-	if(!HAS_TRAIT(taster, TRAIT_DETECTIVES_TASTE))
+	if(!HAS_TRAIT(taster, TRAIT_CRIMINALIST_TASTE))
 		return ..()
 	var/blood_type = data?["blood_type"]
 	if(!blood_type)
@@ -209,7 +209,7 @@
 		if(!HAS_TRAIT(exposed_mob, TRAIT_WATER_HATER) || HAS_TRAIT(exposed_mob, TRAIT_WATER_ADAPTATION))
 			return
 
-		exposed_mob.incapacitate(1) // startles the felinid, canceling any do_after
+		exposed_mob.incapacitate(1)
 		exposed_mob.add_mood_event("watersprayed", /datum/mood_event/watersprayed)
 
 	if(methods & (TOUCH|VAPOR)) // wakey wakey eggs and bakey
@@ -702,7 +702,7 @@
 		to_chat(affected_mob, span_warning("You've become \a [LOWER_TEXT(initial(species_type.name))]!"))
 		return
 
-/datum/reagent/mutationtoxin/classic //The one from plasma on green slimes
+/datum/reagent/mutationtoxin/classic //The one from phoron on green slimes
 	name = "Mutation Toxin"
 	description = "A corruptive toxin."
 	color = "#13BC5E" // rgb: 19, 188, 94
@@ -1740,18 +1740,18 @@
 	addiction_types = null
 	default_container = /obj/effect/decal/cleanable/blood/oil
 
-/datum/reagent/stable_plasma
-	name = "Stable Plasma"
-	description = "Non-flammable plasma locked into a liquid form that cannot ignite or become gaseous/solid."
+/datum/reagent/stable_phoron
+	name = "Stable Phoron"
+	description = "Non-flammable phoron locked into a liquid form that cannot ignite or become gaseous/solid."
 	color = "#2D2D2D"
 	taste_description = "bitterness"
 	taste_mult = 1.5
 	ph = 1.5
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/stable_plasma/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
+/datum/reagent/stable_phoron/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
-	affected_mob.adjustPlasma(10 * REM * seconds_per_tick)
+	affected_mob.adjustPhoron(10 * REM * seconds_per_tick)
 
 /datum/reagent/iodine
 	name = "Iodine"
@@ -2323,14 +2323,14 @@
 	taste_description = "bitterness"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/toxin/plasma/plasmavirusfood
+/datum/reagent/toxin/phoron/virusfood
 	name = "Virus Plasma"
 	color = "#A270A8" // rgb: 166,157,169
 	taste_description = "bitterness"
 	taste_mult = 1.5
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/toxin/plasma/plasmavirusfood/weak
+/datum/reagent/toxin/phoron/virusfood/weak
 	name = "Weakened Virus Plasma"
 	color = "#A28CA5" // rgb: 206,195,198
 	taste_description = "bitterness"
@@ -2671,8 +2671,8 @@
 	taste_description = "bananas"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/plasma_oxide
-	name = "Hyper-Plasmium Oxide"
+/datum/reagent/phoron_oxide
+	name = "Hyper-Phoronium Oxide"
 	description = "Compound created deep in the cores of demon-class planets. Commonly found through deep geysers."
 	color = "#470750" // rgb: 255, 255, 255
 	taste_description = "hell"
@@ -2680,7 +2680,7 @@
 
 /datum/reagent/exotic_stabilizer
 	name = "Exotic Stabilizer"
-	description = "Advanced compound created by mixing stabilizing agent and hyper-plasmium oxide."
+	description = "Advanced compound created by mixing stabilizing agent and hyper-phoronium oxide."
 	color = "#180000" // rgb: 255, 255, 255
 	taste_description = "blood"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
@@ -2958,7 +2958,7 @@
 
 /datum/reagent/ants/fire
 	name = "Fire ants"
-	description = "A rare mutation of space ants, born from the heat of a plasma fire. Their bites land a 3.7 on the Schmidt Pain Scale."
+	description = "A rare mutation of space ants, born from the heat of a phoron fire. Their bites land a 3.7 on the Schmidt Pain Scale."
 	color = "#b51f1f"
 	taste_description = "tiny flaming legs scuttling down the back of your throat"
 	ant_damage = 0.05 // Roughly 64 brute with 100u
@@ -3139,8 +3139,7 @@
 	RegisterSignal(affected_human, COMSIG_CARBON_LOSE_ORGAN, PROC_REF(on_organ_removed))
 	var/obj/item/organ/eyes/eyes = affected_human.get_organ_slot(ORGAN_SLOT_EYES)
 	if (eyes && !IS_ROBOTIC_ORGAN(eyes))
-		prev_ignore_lighting = eyes.overlay_ignore_lighting
-		eyes.overlay_ignore_lighting = TRUE
+		ADD_TRAIT(affected_human, TRAIT_LUMINESCENT_EYES, REF(src))
 
 /datum/reagent/luminescent_fluid/on_mob_end_metabolize(mob/living/affected_mob)
 	. = ..()
@@ -3152,7 +3151,7 @@
 	affected_human.remove_eye_color(EYE_COLOR_LUMINESCENT_PRIORITY)
 	var/obj/item/organ/eyes/eyes = affected_human.get_organ_slot(ORGAN_SLOT_EYES)
 	if (eyes && !IS_ROBOTIC_ORGAN(eyes) && !overdosed)
-		eyes.overlay_ignore_lighting = prev_ignore_lighting
+		REMOVE_TRAIT(affected_human, TRAIT_LUMINESCENT_EYES, REF(src))
 
 /datum/reagent/luminescent_fluid/on_mob_life(mob/living/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
@@ -3171,14 +3170,13 @@
 	SIGNAL_HANDLER
 
 	if (istype(new_eyes) && !IS_ROBOTIC_ORGAN(new_eyes))
-		prev_ignore_lighting = new_eyes.overlay_ignore_lighting
-		new_eyes.overlay_ignore_lighting = TRUE
+		ADD_TRAIT(source, TRAIT_LUMINESCENT_EYES, REF(src))
 
 /datum/reagent/luminescent_fluid/proc/on_organ_removed(mob/living/source, obj/item/organ/eyes/old_eyes)
 	SIGNAL_HANDLER
 
 	if (istype(old_eyes) && !IS_ROBOTIC_ORGAN(old_eyes) && !overdosed)
-		old_eyes.overlay_ignore_lighting = prev_ignore_lighting
+		REMOVE_TRAIT(source, TRAIT_LUMINESCENT_EYES, REF(src))
 
 /datum/reagent/luminescent_fluid/overdose_start(mob/living/affected_mob)
 	. = ..()

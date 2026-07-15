@@ -50,7 +50,7 @@
 	return random_eye_color()
 
 /datum/preference/choiced/facial_hairstyle
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE
+	priority = PREFERENCE_PRIORITY_FACIAL_HAIR
 	savefile_key = "facial_style_name"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_FEATURES
@@ -92,7 +92,7 @@
 	return data
 
 /datum/preference/color/facial_hair_color
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE // Need to happen after hair oclor is set so we can match by default
+	priority = PREFERENCE_PRIORITY_FACIAL_HAIR // Need to happen after hair oclor is set so we can match by default
 	savefile_key = "facial_hair_color"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
@@ -105,7 +105,7 @@
 	return preferences.read_preference(/datum/preference/color/hair_color) || random_hair_color()
 
 /datum/preference/choiced/facial_hair_gradient
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE
+	priority = PREFERENCE_PRIORITY_FACIAL_HAIR
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "facial_hair_gradient"
@@ -122,7 +122,7 @@
 	return /datum/sprite_accessory/gradient/none::name
 
 /datum/preference/color/facial_hair_gradient
-	priority = PREFERENCE_PRORITY_LATE_BODY_TYPE
+	priority = PREFERENCE_PRIORITY_FACIAL_HAIR
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "facial_hair_gradient_color"
@@ -137,7 +137,7 @@
 	return preferences.read_preference(/datum/preference/choiced/facial_hair_gradient) != /datum/sprite_accessory/gradient/none::name
 
 /datum/preference/color/hair_color
-	priority = PREFERENCE_PRIORITY_BODY_TYPE
+	priority = PREFERENCE_PRIORITY_HAIR
 	savefile_key = "hair_color"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SUPPLEMENTAL_FEATURES
@@ -153,7 +153,7 @@
 	return random_hair_color()
 
 /datum/preference/choiced/hairstyle
-	priority = PREFERENCE_PRIORITY_BODY_TYPE // Happens after gender so we can picka hairstyle based on that
+	priority = PREFERENCE_PRIORITY_HAIR
 	savefile_key = "hairstyle_name"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_FEATURES
@@ -199,7 +199,7 @@
 	return data
 
 /datum/preference/choiced/hair_gradient
-	priority = PREFERENCE_PRIORITY_BODY_TYPE
+	priority = PREFERENCE_PRIORITY_HAIR
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "hair_gradient"
@@ -216,7 +216,7 @@
 	return /datum/sprite_accessory/gradient/none::name
 
 /datum/preference/color/hair_gradient
-	priority = PREFERENCE_PRIORITY_BODY_TYPE
+	priority = PREFERENCE_PRIORITY_HAIR
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "hair_gradient_color"

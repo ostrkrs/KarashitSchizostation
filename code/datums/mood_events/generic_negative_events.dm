@@ -105,13 +105,6 @@
 	mood_change = -2
 	timeout = 2 MINUTES
 
-/datum/mood_event/table/add_effects()
-	if(isfelinid(owner)) //Holy snowflake batman!
-		var/mob/living/carbon/human/feline = owner
-		feline.wag_tail(3 SECONDS)
-		description = "They want to play on the table!"
-		mood_change = 2
-
 /datum/mood_event/table_limbsmash
 	description = "That fucking table, man that hurts..."
 	mood_change = -3
@@ -531,11 +524,6 @@
 	description = "Ow.. my head, I feel a bit foolish now!"
 	mood_change = -1
 	timeout = 3 MINUTES
-
-/datum/mood_event/bapped/add_effects()
-	// Felinids apparently hate being hit over the head with cardboard
-	if(isfelinid(owner))
-		mood_change = -2
 
 /datum/mood_event/encountered_evil
 	description = "I didn't want to believe it, but there are people out there that are genuinely evil."

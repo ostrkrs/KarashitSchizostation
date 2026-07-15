@@ -499,8 +499,8 @@
 	custom_materials = list(/datum/material/gold=SMALL_MATERIAL_AMOUNT*5)
 
 /obj/item/reagent_containers/cup/glass/flask/det
-	name = "detective's flask"
-	desc = "The detective's only true friend."
+	name = "criminalist's flask"
+	desc = "The criminalist's only true friend."
 	icon_state = "detflask"
 	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 30)
 

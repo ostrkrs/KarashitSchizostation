@@ -20,7 +20,7 @@
 	new /obj/item/storage/photo_album/captain(src)
 
 /obj/structure/closet/secure_closet/captains/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
+	new /obj/item/gun/energy/laser(src)
 	new /obj/item/storage/belt/sheath/sabre(src)
 
 
@@ -47,13 +47,12 @@
 	new /obj/item/storage/lockbox/medal/hop(src)
 
 /obj/structure/closet/secure_closet/hop/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
+	new /obj/item/gun/energy/laser(src)
 
 
 /obj/structure/closet/secure_closet/iso
 	name = "internal security operative's locker"
-	icon_state = "law"
-	icon_door = "iso"
+	icon_state = "iso"
 	req_access = list(ACCESS_ISO)
 
 /obj/structure/closet/secure_closet/iso/PopulateContents()
@@ -65,14 +64,13 @@
 	new /obj/item/storage/bag/garment/iso(src)
 
 /obj/structure/closet/secure_closet/iso/populate_contents_immediate()
-	new /obj/item/gun/energy/e_gun(src)
+	new /obj/item/gun/energy/laser(src)
 	new /obj/item/gun/energy/taser(src)
 
 
 /obj/structure/closet/secure_closet/iaa
 	name = "internal affairs agent's locker"
-	icon_state = "law"
-	icon_door = "iaa"
+	icon_state = "iaa"
 	req_access = list(ACCESS_IAA)
 
 /obj/structure/closet/secure_closet/iaa/PopulateContents()

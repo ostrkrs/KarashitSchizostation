@@ -58,6 +58,7 @@
 					/obj/item/clothing/head/utility/hardhat/red = 2,
 				)
 	crate_name = "firefighting crate"
+	crate_type = /obj/structure/closet/crate/firefighting
 
 /datum/supply_pack/emergency/atmostank
 	name = "Firefighting Tank Backpack"

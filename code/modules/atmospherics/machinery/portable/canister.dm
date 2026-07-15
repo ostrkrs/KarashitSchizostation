@@ -264,10 +264,10 @@
 	greyscale_config = /datum/greyscale_config/canister/double_stripe
 	greyscale_colors = "#008200#33cc33"
 
-/obj/machinery/portable_atmospherics/canister/plasma
-	name = "Plasma canister"
-	gas_type = /datum/gas/plasma
-	icon_state = "/obj/machinery/portable_atmospherics/canister/plasma"
+/obj/machinery/portable_atmospherics/canister/phoron
+	name = "Phoron canister"
+	gas_type = /datum/gas/phoron
+	icon_state = "/obj/machinery/portable_atmospherics/canister/phoron"
 	post_init_icon_state = ""
 	greyscale_config = /datum/greyscale_config/canister/hazard
 	greyscale_colors = "#f62800#000000"

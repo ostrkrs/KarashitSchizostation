@@ -378,18 +378,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost)
 "bH" = (
-/obj/item/ammo_casing/c45{
-	caliber = null;
-	desc = "A .45 bullet casing. This one is spent.";
-	name = "spent bullet casing"
-	},
 /obj/machinery/light/directional/west,
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/derelictoutpost/powerstorage)
-"bI" = (
-/obj/item/gun/ballistic/automatic/pistol/m1911{
-	spawnwithmagazine = 0
-	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost/powerstorage)
 "bJ" = (
@@ -650,14 +639,6 @@
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/derelictoutpost)
-"cT" = (
-/obj/item/ammo_casing/c45{
-	caliber = null;
-	desc = "A .45 bullet casing. This one is spent.";
-	name = "spent bullet casing"
-	},
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/derelictoutpost/cargobay)
 "cU" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/machinery/door/firedoor,
@@ -685,15 +666,6 @@
 /obj/structure/alien/weeds/creature,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/derelictoutpost)
-"db" = (
-/obj/item/ammo_casing/c45{
-	caliber = null;
-	desc = "A .45 bullet casing. This one is spent.";
-	name = "spent bullet casing"
-	},
-/obj/structure/alien/weeds/creature,
-/turf/open/floor/iron,
-/area/ruin/space/has_grav/derelictoutpost/cargobay)
 "dc" = (
 /obj/structure/alien/weeds/creature,
 /obj/machinery/light/directional/south,
@@ -809,9 +781,6 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/derelictoutpost)
 "dJ" = (
-/obj/item/gun/ballistic/automatic/pistol/m1911{
-	spawnwithmagazine = 0
-	},
 /obj/structure/alien/weeds/creature,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/iron,
@@ -1218,14 +1187,6 @@
 /obj/structure/alien/weeds/creature,
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/derelictoutpost)
-"wh" = (
-/obj/structure/alien/weeds/creature,
-/obj/item/gun/ballistic/automatic/pistol/m1911{
-	spawnwithmagazine = 0
-	},
-/obj/item/ammo_box/magazine/m45,
-/turf/open/misc/asteroid,
-/area/ruin/space/has_grav/derelictoutpost)
 "xT" = (
 /obj/structure/alien/weeds/creature,
 /obj/structure/glowshroom/single,
@@ -1298,11 +1259,6 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "DL" = (
-/obj/item/ammo_casing/c45{
-	caliber = null;
-	desc = "A .45 bullet casing. This one is spent.";
-	name = "spent bullet casing"
-	},
 /obj/structure/alien/weeds/creature,
 /obj/effect/decal/cleanable/blood/old{
 	dir = 5;
@@ -1618,7 +1574,7 @@ aA
 aA
 bb
 br
-bI
+bJ
 bY
 co
 aS
@@ -1658,10 +1614,10 @@ bs
 bs
 bJ
 aS
-cT
 ak
 ak
-cT
+ak
+ak
 bx
 dJ
 bx
@@ -1694,7 +1650,7 @@ bJ
 ca
 cq
 aS
-cT
+ak
 bx
 dq
 bx
@@ -1767,7 +1723,7 @@ cb
 an
 cG
 ak
-db
+bx
 ab
 ZN
 dm
@@ -2848,7 +2804,7 @@ Hw
 vr
 au
 oU
-wh
+vr
 vr
 xT
 vr

@@ -27,7 +27,7 @@
 	///Note that this spawn list is also in the lavaland generator
 	weighted_feature_spawn_list = list(
 		/obj/structure/geyser/hollowwater = 10,
-		/obj/structure/geyser/plasma_oxide = 10,
+		/obj/structure/geyser/phoron_oxide = 10,
 		/obj/structure/geyser/protozine = 10,
 		/obj/structure/geyser/random = 2,
 		/obj/structure/geyser/wittel = 10,
@@ -46,7 +46,7 @@
 	feature_spawn_chance = 0.15
 	weighted_feature_spawn_list = list(
 		/obj/structure/geyser/hollowwater = 10,
-		/obj/structure/geyser/plasma_oxide = 10,
+		/obj/structure/geyser/phoron_oxide = 10,
 		/obj/structure/geyser/protozine = 10,
 		/obj/structure/geyser/random = 2,
 		/obj/structure/geyser/wittel = 10,

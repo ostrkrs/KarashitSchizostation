@@ -2,7 +2,7 @@
 	filename = "notepad"
 	filedesc = "Notepad"
 	downloader_category = PROGRAM_CATEGORY_DEVICE
-	program_open_overlay = "generic"
+	program_open_overlay = "notes"
 	extended_desc = "Jot down your work-safe thoughts and what not."
 	size = 2
 	tgui_id = "NtosNotepad"

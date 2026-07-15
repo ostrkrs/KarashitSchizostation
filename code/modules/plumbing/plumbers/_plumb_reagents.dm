@@ -1,7 +1,7 @@
 
 /**
  * Specialized reagent container for plumbing. Uses the round robin approach of transferring reagents
- * so transfer 5 from 15 water, 15 sugar and 15 plasma becomes 10, 15, 15 instead of 13.3333, 13.3333 13.3333. Good if you hate floating point errors
+ * so transfer 5 from 15 water, 15 sugar and 15 phoron becomes 10, 15, 15 instead of 13.3333, 13.3333 13.3333. Good if you hate floating point errors
  */
 /datum/reagents/plumbing
 

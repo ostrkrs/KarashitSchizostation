@@ -43,7 +43,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "do" = (
 /turf/open/floor/iron/white,
@@ -96,7 +96,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "gY" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -287,7 +287,7 @@
 /obj/effect/decal/cleanable/blood/splatter/over_window{
 	pixel_y = 32
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/north,
 /turf/open/floor/wood/parquet,
 /area/ruin/comms_agent)
 "sB" = (
@@ -306,7 +306,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "tu" = (
 /obj/structure/table,
@@ -463,7 +463,7 @@
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/flour,
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /obj/item/storage/box/donkpockets,
 /obj/item/coffee_cartridge,
 /obj/item/coffee_cartridge/decaf,
@@ -620,8 +620,8 @@
 	},
 /obj/item/reagent_containers/cup/maunamug,
 /obj/item/toy/plush/nukeplushie,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/clothing/head/costume/ushanka,
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
@@ -735,8 +735,8 @@
 	},
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/structure/cable,
-/obj/item/stack/sheet/mineral/plasma/thirty,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/comms_agent/maint)
@@ -775,7 +775,7 @@
 "NJ" = (
 /obj/item/storage/medkit/regular,
 /obj/item/reagent_containers/syringe,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/white,
 /area/ruin/comms_agent)
 "NL" = (
@@ -796,7 +796,7 @@
 /turf/open/floor/plating/snowed/standard_air,
 /area/ruin/comms_agent)
 "OB" = (
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "OM" = (
 /turf/open/misc/asteroid/snow/icemoon,

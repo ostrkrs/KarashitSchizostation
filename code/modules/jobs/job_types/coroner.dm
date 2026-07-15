@@ -12,7 +12,6 @@
 	config_tag = "CORONER"
 
 	outfit = /datum/outfit/job/coroner
-	plasmaman_outfit = /datum/outfit/plasmaman/coroner
 
 	mind_traits = list(TRAIT_MORBID, MEDICAL_MIND_TRAITS)
 	liver_traits = list(TRAIT_CORONER_METABOLISM)
@@ -72,5 +71,3 @@
 	satchel = /obj/item/storage/backpack/satchel/coroner
 	duffelbag = /obj/item/storage/backpack/duffelbag/coroner
 	messenger = /obj/item/storage/backpack/messenger/coroner
-
-	skillchips = list(/obj/item/skillchip/entrails_reader)

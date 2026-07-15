@@ -1,4 +1,4 @@
-/// Any humanoid (non-Xeno) mob, such as humans, plasmamen, lizards.
+/// Any humanoid (non-Xeno) mob, such as humans.
 /mob/living/carbon/human
 	name = "Unknown"
 	real_name = "Unknown"
@@ -13,6 +13,7 @@
 	can_be_shoved_into = TRUE
 	initial_language_holder = /datum/language_holder/empty // We get stuff from our species
 	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
+	living_flags = STOP_OVERLAY_UPDATE_BODY_PARTS
 	max_grab = GRAB_KILL
 	examine_thats = "This is"
 
@@ -62,7 +63,6 @@
 	var/socks = "Nude" //Which socks the player wants
 	var/socks_color = COLOR_BLACK
 	var/backpack = DBACKPACK //Which backpack type the player has chosen.
-	var/jumpsuit_style = PREF_SUIT //suit/skirt
 
 	//Equipment slots
 	var/obj/item/clothing/wear_suit = null

@@ -169,7 +169,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /turf/open/floor/iron/white/textured_corner{
 	dir = 1
 	},
@@ -183,7 +183,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/obj/item/stack/ore/plasma,
+/obj/item/stack/ore/phoron,
 /turf/open/floor/iron/white/textured_half{
 	dir = 1
 	},

@@ -24,7 +24,7 @@
 	. = ..()
 
 	// Traitor steal objectives
-	new /obj/item/gun/energy/e_gun/hos(src)
+	new /obj/item/gun/energy/laser/hos(src)
 	new /obj/item/pinpointer/nuke(src)
 
 /obj/structure/closet/secure_closet/warden
@@ -64,7 +64,6 @@
 	new /obj/item/radio/headset/headset_sec/alt(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses(src)
 	new /obj/item/flashlight/seclite(src)
-	new /obj/item/clothing/gloves/tackler(src)
 
 /obj/structure/closet/secure_closet/security/sec
 
@@ -100,26 +99,28 @@
 	new /obj/item/clothing/accessory/armband/medblue(src)
 	new /obj/item/encryptionkey/headset_med(src)
 
-/obj/structure/closet/secure_closet/detective
-	name = "\improper detective's cabinet"
-	icon_state = "cabinet"
+/obj/structure/closet/secure_closet/criminalist
+	name = "\improper criminalist's cabinet"
+	icon_state = "cabinet_secure"
+	icon_locked = "cabinet_secure_locked"
+	icon_unlocked = "cabinet_secure_unlocked"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
 	door_anim_time = 0 // no animation
 	open_sound = 'sound/machines/closet/wooden_closet_open.ogg'
 	close_sound = 'sound/machines/closet/wooden_closet_close.ogg'
-	req_access = list(ACCESS_DETECTIVE)
+	req_access = list(ACCESS_CRIMINALIST)
 
-/obj/structure/closet/secure_closet/detective/PopulateContents()
+/obj/structure/closet/secure_closet/criminalist/PopulateContents()
 	..()
 	new /obj/item/storage/box/evidence(src)
 	new /obj/item/radio/headset/headset_sec(src)
-	new /obj/item/detective_scanner(src)
+	new /obj/item/criminalist_scanner(src)
 	new /obj/item/flashlight/seclite(src)
 	new /obj/item/holosign_creator/security(src)
 	new /obj/item/reagent_containers/spray/pepper(src)
-	new /obj/item/clothing/suit/armor/vest/det_suit(src)
-	new /obj/item/storage/belt/holster/detective/full(src)
+	new /obj/item/clothing/suit/armor/vest/criminalist(src)
+	new /obj/item/storage/belt/holster/criminalist/full(src)
 	new /obj/item/pinpointer/crew(src)
 	new /obj/item/binoculars(src)
 	new /obj/item/storage/box/rxglasses/spyglasskit(src)
@@ -179,7 +180,7 @@
 /obj/structure/closet/secure_closet/evidence
 	anchored = TRUE
 	name = "secure evidence closet"
-	req_one_access = list(ACCESS_ARMORY, ACCESS_DETECTIVE)
+	req_one_access = list(ACCESS_ARMORY, ACCESS_CRIMINALIST)
 
 /obj/structure/closet/secure_closet/brig/PopulateContents()
 	..()
@@ -215,7 +216,7 @@
 	anchored = TRUE
 
 /obj/structure/closet/secure_closet/armory1
-	name = "armory armor locker"
+	name = "riot armor locker"
 	icon_state = "armory"
 	req_access = list(ACCESS_ARMORY)
 
@@ -235,7 +236,7 @@
 	new /obj/item/clothing/suit/hooded/ablative(src)
 
 /obj/structure/closet/secure_closet/armory2
-	name = "armory ballistics locker"
+	name = "riot shotguns locker"
 	icon_state = "tac"
 	icon_door = "armory_shotgun"
 	req_access = list(ACCESS_ARMORY)
@@ -244,14 +245,16 @@
 	..()
 	new /obj/item/storage/box/firingpins(src)
 	for(var/i in 1 to 3)
-		new /obj/item/storage/box/rubbershot(src)
+		new /obj/item/storage/box/ammo/rubbershot(src)
+	for(var/i in 1 to 2)
+		new /obj/item/storage/box/ammo/manstoppers(src)
 
 /obj/structure/closet/secure_closet/armory2/populate_contents_immediate()
 	for(var/i in 1 to 3)
 		new /obj/item/gun/ballistic/shotgun/riot(src)
 
 /obj/structure/closet/secure_closet/armory3
-	name = "armory energy gun locker"
+	name = "energy guns locker"
 	icon_state = "tac"
 	icon_door = "armory_energy"
 	req_access = list(ACCESS_ARMORY)
@@ -260,14 +263,27 @@
 	..()
 	new /obj/item/storage/box/firingpins(src)
 	new /obj/item/gun/energy/ionrifle(src)
-	for(var/i in 1 to 3)
-		new /obj/item/gun/energy/laser/thermal(src)
 
 /obj/structure/closet/secure_closet/armory3/populate_contents_immediate()
 	for(var/i in 1 to 3)
-		new /obj/item/gun/energy/e_gun(src)
+		new /obj/item/gun/energy/laser/brand/irix(src)
+
+/obj/structure/closet/secure_closet/armory4
+	name = "SMGs locker"
+	icon_state = "tac"
+	icon_door = "armory_ballistic"
+	req_access = list(ACCESS_ARMORY)
+
+/obj/structure/closet/secure_closet/armory4/PopulateContents()
+	..()
+	new /obj/item/storage/box/firingpins(src)
+	new /obj/item/storage/toolbox/ammobox/smg8mm_c20r(src)
+	new /obj/item/storage/toolbox/ammobox/smg8mm_c20r_hp(src)
+
+/obj/structure/closet/secure_closet/armory4/populate_contents_immediate()
 	for(var/i in 1 to 3)
-		new /obj/item/gun/energy/laser(src)
+		new /obj/item/gun/ballistic/automatic/smg/c20r/brand/solstice_reach(src)
+
 
 /obj/structure/closet/secure_closet/tac
 	name = "armory tac locker"
@@ -276,7 +292,7 @@
 
 /obj/structure/closet/secure_closet/tac/PopulateContents()
 	..()
-	new /obj/item/gun/ballistic/automatic/wt550(src)
+	new /obj/item/gun/ballistic/automatic/smg/c20r/brand/solstice_reach(src)
 	new /obj/item/clothing/head/helmet/alt(src)
 	new /obj/item/clothing/mask/gas/sechailer(src)
 	new /obj/item/clothing/suit/armor/bulletproof(src)

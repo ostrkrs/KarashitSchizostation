@@ -64,7 +64,7 @@
 /turf/template_noop,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "aq" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment,
 /turf/closed/wall/r_wall/plastitanium/syndicate,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "ar" = (
@@ -87,7 +87,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "au" = (
-/obj/structure/window/reinforced/plasma/plastitanium,
+/obj/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/door/poddoor{
 	id = "fslockdown";
 	name = "Ship Blast Door";
@@ -250,7 +250,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_cargopod)
 "bg" = (
-/obj/structure/sign/poster/contraband/syndicate_pistol,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol,
 /turf/closed/wall/r_wall/plastitanium/syndicate,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bh" = (
@@ -339,8 +339,6 @@
 	secure = 1
 	},
 /obj/item/crowbar/red,
-/obj/item/ammo_box/magazine/m9mm_aps,
-/obj/item/ammo_box/magazine/m9mm_aps,
 /turf/open/floor/carpet/royalblack,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bx" = (
@@ -485,8 +483,8 @@
 	secure = 1
 	},
 /obj/item/crowbar/red,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "bZ" = (
@@ -522,14 +520,7 @@
 	req_access = list("syndicate");
 	secure = 1
 	},
-/obj/item/ammo_box/c9mm,
-/turf/open/floor/mineral/plastitanium/red,
-/area/ruin/space/has_grav/syndicate_forgotten_ship)
-"cf" = (
-/obj/structure/displaycase{
-	req_access = list("syndicate");
-	start_showpiece_type = /obj/item/gun/ballistic/automatic/pistol/deagle/camo
-	},
+/obj/item/ammo_box/c8mm,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "cg" = (
@@ -845,7 +836,7 @@
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "da" = (
 /obj/structure/table/reinforced,
-/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c8mm,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "db" = (
@@ -968,7 +959,7 @@
 /obj/structure/closet/crate/secure/gear{
 	req_access = list("syndicate")
 	},
-/obj/item/stack/ore/plasma{
+/obj/item/stack/ore/phoron{
 	amount = 19
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -1913,7 +1904,7 @@ aa
 aa
 aa
 bZ
-cf
+aw
 aw
 ch
 ao

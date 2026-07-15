@@ -181,7 +181,7 @@
 
 /datum/chemical_reaction/lexorin
 	results = list(/datum/reagent/toxin/lexorin = 3)
-	required_reagents = list(/datum/reagent/toxin/plasma = 1, /datum/reagent/hydrogen = 1, /datum/reagent/medicine/salbutamol = 1)
+	required_reagents = list(/datum/reagent/toxin/phoron = 1, /datum/reagent/hydrogen = 1, /datum/reagent/medicine/salbutamol = 1)
 	mix_message = "The mixture turns clear and stops reacting."
 	is_cold_recipe = FALSE
 	required_temp = 100
@@ -200,7 +200,7 @@
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_DAMAGING | REACTION_TAG_OXY
 
 /datum/chemical_reaction/hot_ice_melt
-	results = list(/datum/reagent/toxin/plasma = 12) //One sheet of hot ice makes 200m of plasma
+	results = list(/datum/reagent/toxin/phoron = 12) //One sheet of hot ice makes 200m of phoron
 	required_reagents = list(/datum/reagent/toxin/hot_ice = 1)
 	required_temp = T0C + 30 //Don't burst into flames when you melt
 	thermic_constant = -200//Counter the heat

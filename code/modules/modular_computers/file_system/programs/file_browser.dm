@@ -2,7 +2,7 @@
 	filename = "filemanager"
 	filedesc = "File Manager"
 	extended_desc = "This program allows management of files."
-	program_open_overlay = "generic"
+	program_open_overlay = "files"
 	size = 8
 	program_flags = NONE
 	undeletable = TRUE

@@ -76,14 +76,14 @@ GLOBAL_DATUM_INIT(communications_controller, /datum/communciations_controller, n
 	if(isnull(greenshift)) // if we're not forced to be greenshift or not - check if we are an actual greenshift
 		greenshift = SSdynamic.current_tier.tier == 0 && dynamic_report == /datum/dynamic_tier/greenshift::advisory_report
 
-	. = "<b><i>Nanotrasen Department of Intelligence Threat Advisory, Spinward Sector, TCD [time2text(world.realtime, "DDD, MMM DD")], [CURRENT_STATION_YEAR]:</i></b><hr>"
+	. = "<b><i>Nanotrasen Department of Intelligence Threat Advisory, Spinward Sector, TCD [time2text(world.realtime, "DDD, MMM DD")], [CURRENT_YEAR]:</i></b><hr>"
 	. += dynamic_report
 
 	SSstation.generate_station_goals(greenshift ? INFINITY : CONFIG_GET(number/station_goal_budget))
 
 	var/list/datum/station_goal/goals = SSstation.get_station_goals()
 	if(length(goals))
-		var/list/texts = list("<hr><b>Special Orders for [station_name()]:</b><br>")
+		var/list/texts = list("<hr><b>Special Orders for [ship_name()]:</b><br>")
 		for(var/datum/station_goal/station_goal as anything in goals)
 			station_goal.on_report()
 			texts += station_goal.get_report()
@@ -112,7 +112,7 @@ GLOBAL_DATUM_INIT(communications_controller, /datum/communciations_controller, n
 	if(greenshift)
 		priority_announce(
 			"Thanks to the tireless efforts of our security and intelligence divisions, \
-				there are currently no credible threats to [station_name()]. \
+				there are currently no credible threats to [ship_name()]. \
 				All station construction projects have been authorized. Have a secure shift!",
 			"Security Report",
 			SSstation.announcer.get_rand_report_sound(),

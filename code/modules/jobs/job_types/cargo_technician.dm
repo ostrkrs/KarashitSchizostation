@@ -13,7 +13,6 @@
 	config_tag = "CARGO_TECHNICIAN"
 
 	outfit = /datum/outfit/job/cargo_tech
-	plasmaman_outfit = /datum/outfit/plasmaman/cargo
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_CAR
@@ -30,8 +29,6 @@
 		/obj/item/stack/sheet/mineral/gold = 5,
 		/obj/item/stack/sheet/mineral/uranium = 4,
 		/obj/item/stack/sheet/mineral/diamond = 3,
-		/obj/item/gun/ballistic/rifle/boltaction = 1,
-		/obj/item/gun/ballistic/automatic/wt550 = 1,
 	)
 	rpg_title = "Merchantman"
 	job_flags = SHIP_JOB_FLAGS
@@ -43,13 +40,13 @@
 
 	backpack_contents = list(
 		/obj/item/boxcutter = 1,
+		/obj/item/universal_scanner = 1,
 	)
 	id_trim = /datum/id_trim/job/cargo_technician
 	uniform = /obj/item/clothing/under/rank/cargo/tech
 	belt = /obj/item/modular_computer/pda/cargo
 	suit = /obj/item/clothing/suit/toggle/cargo_tech
 	ears = /obj/item/radio/headset/headset_cargo
-	l_hand = /obj/item/universal_scanner
 
 /datum/outfit/job/cargo_tech/mod
 	name = "Cargo Technician (MODsuit)"

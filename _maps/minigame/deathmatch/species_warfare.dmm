@@ -239,7 +239,7 @@
 /obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
 	dir = 4
 	},
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "jn" = (
@@ -346,7 +346,7 @@
 /area/deathmatch)
 "nT" = (
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "oq" = (
@@ -621,7 +621,7 @@
 /obj/effect/turf_decal/tile/light_blue/half/contrasted{
 	dir = 8
 	},
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "wM" = (
@@ -940,7 +940,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 1
 	},
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/indestructible,
 /area/deathmatch)
 "Hy" = (
@@ -961,7 +961,6 @@
 "Iq" = (
 /obj/effect/turf_decal/tile/dark_blue/full,
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun/mini/practice_phaser,
 /obj/machinery/light/built/directional/north,
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
@@ -1015,10 +1014,6 @@
 	},
 /obj/effect/turf_decal/tile/yellow,
 /turf/open/indestructible,
-/area/deathmatch)
-"JX" = (
-/obj/item/melee/chainofcommand/tailwhip/kitty,
-/turf/open/floor/wood,
 /area/deathmatch)
 "Ka" = (
 /obj/machinery/door/airlock{
@@ -1107,7 +1102,7 @@
 /obj/effect/turf_decal/tile/purple/full,
 /obj/effect/turf_decal/tile/purple/full,
 /obj/effect/turf_decal/tile/purple/full,
-/obj/structure/table/reinforced/plasmarglass,
+/obj/structure/table/reinforced/phoronglass,
 /obj/machinery/door/window/right/directional/north,
 /turf/open/indestructible/white/smooth_large,
 /area/deathmatch)
@@ -1299,7 +1294,6 @@
 	},
 /obj/structure/table/glass,
 /obj/item/storage/medkit/fire,
-/obj/item/toy/plush/plasmamanplushie,
 /turf/open/indestructible,
 /area/deathmatch)
 "Wy" = (
@@ -1321,18 +1315,16 @@
 /area/deathmatch)
 "Yb" = (
 /obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/indestructible,
 /area/deathmatch)
 "Yo" = (
-/mob/living/basic/cat_butcherer,
 /obj/structure/bed,
 /obj/item/bedsheet/runtime,
 /obj/machinery/light/small/blacklight/directional/north,
 /turf/open/floor/wood,
 /area/deathmatch)
 "Yr" = (
-/mob/living/basic/alien/maid,
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
 /obj/effect/decal/cleanable/vomit,
@@ -2060,7 +2052,7 @@ rV
 rV
 zJ
 Yo
-JX
+sJ
 zJ
 Ia
 uq

@@ -26,7 +26,7 @@
 	var/operating = FALSE//cooldown
 	var/obj/item/weldingtool/fueled/big/weldtool = null
 	var/obj/item/assembly/igniter/igniter = null
-	var/obj/item/tank/internals/plasma/ptank = null
+	var/obj/item/tank/internals/phoron/ptank = null
 	var/warned_admins = FALSE //for the message_admins() when lit
 	//variables for prebuilt flamethrowers
 	var/create_full = FALSE
@@ -132,12 +132,12 @@
 		update_appearance()
 		return
 
-	else if(istype(W, /obj/item/tank/internals/plasma))
+	else if(istype(W, /obj/item/tank/internals/phoron))
 		if(ptank)
 			if(user.transferItemToLoc(W,src))
 				ptank.forceMove(get_turf(src))
 				ptank = W
-				to_chat(user, span_notice("You swap the plasma tank in [src]!"))
+				to_chat(user, span_notice("You swap the phoron tank in [src]!"))
 			return
 		if(!user.transferItemToLoc(W, src))
 			return
@@ -163,7 +163,7 @@
 
 	user.put_in_hands(ptank)
 	ptank = null
-	to_chat(user, span_notice("You remove the plasma tank from [src]!"))
+	to_chat(user, span_notice("You remove the phoron tank from [src]!"))
 	update_appearance()
 	return CLICK_ACTION_SUCCESS
 
@@ -174,7 +174,7 @@
 
 /obj/item/flamethrower/proc/toggle_igniter(mob/user)
 	if(!ptank)
-		to_chat(user, span_notice("Attach a plasma tank first!"))
+		to_chat(user, span_notice("Attach a phoron tank first!"))
 		return
 	if(!status)
 		to_chat(user, span_notice("Secure the igniter first!"))
@@ -228,8 +228,8 @@
 	var/datum/gas_mixture/tank_mix = ptank.return_air()
 	var/datum/gas_mixture/air_transfer = tank_mix.remove_ratio(release_amount)
 
-	if(air_transfer.gases[/datum/gas/plasma])
-		air_transfer.gases[/datum/gas/plasma][MOLES] *= 5 //Suffering
+	if(air_transfer.gases[/datum/gas/phoron])
+		air_transfer.gases[/datum/gas/phoron][MOLES] *= 5 //Suffering
 	target.assume_air(air_transfer)
 	//Burn it based on transferred gas
 	target.hotspot_expose((tank_mix.temperature*2) + 380,500)
@@ -254,7 +254,7 @@
 		igniter.secured = FALSE
 		status = TRUE
 		if(create_with_tank)
-			ptank = new /obj/item/tank/internals/plasma/full(src)
+			ptank = new /obj/item/tank/internals/phoron/full(src)
 		update_appearance()
 	RegisterSignal(src, COMSIG_ITEM_RECHARGED, PROC_REF(instant_refill))
 
@@ -284,8 +284,8 @@
 	SIGNAL_HANDLER
 	if(ptank)
 		var/datum/gas_mixture/tank_mix = ptank.return_air()
-		tank_mix.assert_gas(/datum/gas/plasma)
-		tank_mix.gases[/datum/gas/plasma][MOLES] = (10*ONE_ATMOSPHERE)*ptank.volume/(R_IDEAL_GAS_EQUATION*T20C)
+		tank_mix.assert_gas(/datum/gas/phoron)
+		tank_mix.gases[/datum/gas/phoron][MOLES] = (10*ONE_ATMOSPHERE)*ptank.volume/(R_IDEAL_GAS_EQUATION*T20C)
 	else
-		ptank = new /obj/item/tank/internals/plasma/full(src)
+		ptank = new /obj/item/tank/internals/phoron/full(src)
 	update_appearance()

@@ -34,13 +34,10 @@ GLOBAL_LIST_INIT(bioscrambler_organs_blacklist, typecacheof(list (
 	/obj/item/organ/brain,
 	/obj/item/organ/body_egg,
 	/obj/item/organ/cyberimp,
-	/obj/item/organ/ears/dullahan,
-	/obj/item/organ/eyes/dullahan,
 	/obj/item/organ/heart/cursed,
 	/obj/item/organ/heart/demon,
 	/obj/item/organ/lungs,
 	/obj/item/organ/monster_core,
-	/obj/item/organ/tongue/dullahan,
 	/obj/item/organ/vocal_cords/colossus,
 	/obj/item/organ/zombie_infection,
 )))

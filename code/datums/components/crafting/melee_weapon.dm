@@ -57,27 +57,6 @@
 /datum/crafting_recipe/balloon_mallet/check_requirements(mob/user, list/collected_requirements)
 	return HAS_TRAIT(user, TRAIT_BALLOON_SUTRA)
 
-/datum/crafting_recipe/tailwhip
-	name = "Liz O' Nine Tails"
-	result = /obj/item/melee/chainofcommand/tailwhip
-	reqs = list(
-		/obj/item/organ/tail/lizard = 1,
-		/obj/item/stack/cable_coil = 1,
-	)
-	blacklist = list(/obj/item/organ/tail/lizard/fake)
-	time = 4 SECONDS
-	category = CAT_WEAPON_MELEE
-
-/datum/crafting_recipe/catwhip
-	name = "Cat O' Nine Tails"
-	result = /obj/item/melee/chainofcommand/tailwhip/kitty
-	reqs = list(
-		/obj/item/organ/tail/cat = 1,
-		/obj/item/stack/cable_coil = 1,
-	)
-	time = 4 SECONDS
-	category = CAT_WEAPON_MELEE
-
 /datum/crafting_recipe/chainsaw
 	name = "Chainsaw"
 	result = /obj/item/chainsaw

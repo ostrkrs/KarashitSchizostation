@@ -237,7 +237,7 @@
 	var/list/gas_types = list(
 		/datum/gas/bz = 30,
 		/datum/gas/miasma = 50,
-		/datum/gas/plasma = 20,
+		/datum/gas/phoron = 20,
 	)
 
 /obj/item/organ/lungs/corrupt/Initialize(mapload)
@@ -264,8 +264,7 @@
 		hearer.adjust_timed_status_effect(15 SECONDS, /datum/status_effect/speech/slurring/heretic)
 		hearer.emote("scream")
 		hearer.add_mood_event("gates_of_mansus", /datum/mood_event/gates_of_mansus)
-		var/obj/item/organ/ears/regret = hearer.get_organ_slot(ORGAN_SLOT_EARS)
-		regret?.adjustEarDamage(10,20)
+		hearer.sound_damage(10, 40 SECONDS)
 	return "[owner.p_Their()] lungs emit [span_hypnophrase(breath_noise)]"
 
 /// It's full of worms

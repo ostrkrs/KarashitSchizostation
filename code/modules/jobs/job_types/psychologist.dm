@@ -12,7 +12,6 @@
 	config_tag = "PSYCHOLOGIST"
 
 	outfit = /datum/outfit/job/psychologist
-	plasmaman_outfit = /datum/outfit/plasmaman/psychologist
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_MED
@@ -52,7 +51,6 @@
 	belt = /obj/item/modular_computer/pda/psychologist
 	ears = /obj/item/radio/headset/headset_srvmed
 	shoes = /obj/item/clothing/shoes/laceup
-	l_hand = /obj/item/clipboard
 	neck = /obj/item/clothing/neck/tie/black/tied
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
@@ -60,4 +58,3 @@
 	messenger = /obj/item/storage/backpack/messenger/med
 
 	pda_slot = ITEM_SLOT_BELT
-	skillchips = list(/obj/item/skillchip/job/psychology)

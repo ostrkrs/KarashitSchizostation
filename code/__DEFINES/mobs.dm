@@ -122,7 +122,7 @@
 #define MOB_SLIME (1 << 11)
 ///The mob is fish or water-related.
 #define MOB_AQUATIC (1 << 12)
-///The mob is a mining-related mob. It's the plasma, you see. Gets in ya bones.
+///The mob is a mining-related mob. It's the phoron, you see. Gets in ya bones.
 #define MOB_MINING (1 << 13)
 ///The mob is a crustacean. Like crabs. Or lobsters.
 #define MOB_CRUSTACEAN (1 << 14)
@@ -132,7 +132,7 @@
 //Lung respiration type flags
 #define RESPIRATION_OXYGEN (1 << 0)
 #define RESPIRATION_N2 (1 << 1)
-#define RESPIRATION_PLASMA (1 << 2)
+#define RESPIRATION_PHORON (1 << 2)
 #define DEFAULT_BODYPART_ICON_ORGANIC 'icons/mob/human/bodyparts_greyscale.dmi'
 
 //Bodytype defines for surgery, and other misc things.
@@ -177,25 +177,20 @@
 // Aliens
 #define SPECIES_ABDUCTOR "abductor"
 #define SPECIES_ANDROID "android"
-#define SPECIES_DULLAHAN "dullahan"
 #define SPECIES_ETHEREAL "ethereal"
 #define SPECIES_ETHEREAL_LUSTROUS "lustrous"
 #define SPECIES_GHOST "ghost"
 #define SPECIES_GOLEM "golem"
-#define SPECIES_FELINE "felinid"
 #define SPECIES_FLYPERSON "fly"
 #define SPECIES_JELLYPERSON "jelly"
 #define SPECIES_SLIMEPERSON "slime"
 #define SPECIES_LUMINESCENT "luminescent"
 #define SPECIES_STARGAZER "stargazer"
 #define SPECIES_LIZARD "lizard"
-#define SPECIES_LIZARD_ASH "ashwalker"
 #define SPECIES_LIZARD_SILVER "silverscale"
 #define SPECIES_NIGHTMARE "nightmare"
 #define SPECIES_MONKEY "monkey"
 #define SPECIES_MOTH "moth"
-#define SPECIES_MUSHROOM "mush"
-#define SPECIES_PLASMAMAN "plasmaman"
 #define SPECIES_PODPERSON "pod"
 #define SPECIES_SHADOW "shadow"
 #define SPECIES_SKELETON "skeleton"
@@ -210,21 +205,10 @@
 // Like species IDs, but not specifically attached a species.
 #define BODYPART_ID_ALIEN "alien"
 #define BODYPART_ID_ROBOTIC "robotic"
-#define BODYPART_ID_DIGITIGRADE "digitigrade"
-#define BODYPART_ID_DIGITIGRADE_CAVER "digicaver"
 #define BODYPART_ID_LARVA "larva"
 #define BODYPART_ID_PSYKER "psyker"
 #define BODYPART_ID_MEAT "meat"
 #define BODYPART_ID_PEG "peg"
-
-
-//See: datum/species/var/digitigrade_customization
-///The species does not have digitigrade legs in generation.
-#define DIGITIGRADE_NEVER 0
-///The species can have digitigrade legs in generation
-#define DIGITIGRADE_OPTIONAL 1
-///The species is forced to have digitigrade legs in generation.
-#define DIGITIGRADE_FORCED 2
 
 // Preferences for leg types
 /// Legs that are normal
@@ -1072,7 +1056,7 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 #define BUTT_SPRITE_CAT "cat"
 #define BUTT_SPRITE_FLOWERPOT "flowerpot"
 #define BUTT_SPRITE_GREY "grey"
-#define BUTT_SPRITE_PLASMA "plasma"
+#define BUTT_SPRITE_SKELETON "skeleton"
 #define BUTT_SPRITE_FUZZY "fuzzy"
 #define BUTT_SPRITE_SLIME "slime"
 #define BUTT_SPRITE_SERPENTID "serpentid"

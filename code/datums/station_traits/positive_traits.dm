@@ -272,7 +272,7 @@
 		/datum/job/cook = /obj/item/organ/cyberimp/chest/nutriment/plus,
 		/datum/job/coroner = /obj/item/organ/tongue/bone, //hes got a bone to pick with you
 		/datum/job/curator = /obj/item/organ/cyberimp/brain/connector,
-		/datum/job/detective = /obj/item/organ/lungs/cybernetic/tier3,
+		/datum/job/criminalist = /obj/item/organ/lungs/cybernetic/tier3,
 		/datum/job/doctor = /obj/item/organ/cyberimp/arm/toolkit/surgery,
 		/datum/job/geneticist = /obj/item/organ/fly, //we don't care about implants, we have cancer.
 		/datum/job/head_of_personnel = /obj/item/organ/eyes/robotic,
@@ -282,9 +282,7 @@
 		/datum/job/iaa = /obj/item/organ/heart/cybernetic/tier2,
 		/datum/job/mime = /obj/item/organ/tongue/robot, //...
 		/datum/job/paramedic = /obj/item/organ/cyberimp/eyes/hud/medical,
-		/datum/job/prisoner = /obj/item/organ/eyes/robotic/shield,
 		/datum/job/psychologist = /obj/item/organ/ears/cybernetic/whisper,
-		/datum/job/pun_pun = /obj/item/organ/cyberimp/arm/strongarm,
 		/datum/job/quartermaster = /obj/item/organ/stomach/cybernetic/tier3,
 		/datum/job/research_director = /obj/item/organ/cyberimp/bci,
 		/datum/job/roboticist = /obj/item/organ/cyberimp/eyes/hud/diagnostic,
@@ -402,7 +400,7 @@
 /// Spawns assistants with some gear, either gimmicky or functional. Maybe, one day, it will inspire an assistant to do something productive or fun
 /datum/station_trait/assistant_gimmicks
 	name = "Geared Assistants Pilot"
-	report_message = "The Nanotrassen Assistant Affairs division is performing a pilot to see if different assistant equipment helps improve productivity!"
+	report_message = "The Assistant Affairs division is performing a pilot to see if different assistant equipment helps improve productivity!"
 	trait_type = STATION_TRAIT_POSITIVE
 	weight = 3
 	trait_to_give = STATION_TRAIT_ASSISTANT_GIMMICKS

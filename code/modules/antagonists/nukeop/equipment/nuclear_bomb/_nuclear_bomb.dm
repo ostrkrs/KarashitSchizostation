@@ -651,7 +651,7 @@ GLOBAL_VAR(station_nuke_source)
 	if(HAS_TRAIT(gibbed, TRAIT_NUKEIMMUNE))
 		return FALSE
 
-	if(istype(gibbed.loc, /obj/structure/closet/secure_closet/freezer))
+	if(istype(gibbed.loc, /obj/structure/closet/secure_closet/freezer) || istype(gibbed.loc, /obj/structure/closet/freezer))
 		var/obj/structure/closet/secure_closet/freezer/freezer = gibbed.loc
 		if(!freezer.jones)
 			to_chat(gibbed, span_bolddanger("You hold onto [freezer] as [source] goes off. \

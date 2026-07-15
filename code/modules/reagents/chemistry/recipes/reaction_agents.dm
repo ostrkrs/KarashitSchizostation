@@ -42,7 +42,7 @@
 
 /datum/chemical_reaction/prefactor_a
 	results = list(/datum/reagent/prefactor_a = 5)
-	required_reagents = list(/datum/reagent/phenol = 1, /datum/reagent/consumable/ethanol = 3, /datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/phenol = 1, /datum/reagent/consumable/ethanol = 3, /datum/reagent/toxin/phoron = 1)
 	mix_message = "The solution's viscosity increases."
 	is_cold_recipe = TRUE
 	required_temp = 800
@@ -107,7 +107,7 @@
 //The actual results
 /datum/chemical_reaction/prefactor_a/purity_tester
 	results = list(/datum/reagent/reaction_agent/purity_tester = 5)
-	required_reagents = list(/datum/reagent/prefactor_a = 5, /datum/reagent/stable_plasma = 5)
+	required_reagents = list(/datum/reagent/prefactor_a = 5, /datum/reagent/stable_phoron = 5)
 	H_ion_release = 0.05
 	thermic_constant = 0
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_CHEMICAL | REACTION_TAG_COMPETITIVE
@@ -115,7 +115,7 @@
 
 /datum/chemical_reaction/prefactor_b/speed_agent
 	results = list(/datum/reagent/reaction_agent/speed_agent = 5)
-	required_reagents = list(/datum/reagent/prefactor_b = 5, /datum/reagent/stable_plasma = 5)
+	required_reagents = list(/datum/reagent/prefactor_b = 5, /datum/reagent/stable_phoron = 5)
 	H_ion_release = -0.15
 	thermic_constant = 0
 	reaction_tags = REACTION_TAG_HARD | REACTION_TAG_DANGEROUS | REACTION_TAG_CHEMICAL | REACTION_TAG_COMPETITIVE

@@ -2,16 +2,6 @@
 	category = "Miscellaneous"
 	abstract_path = /datum/market_item/misc
 
-/datum/market_item/misc/clear_pda
-	name = "Clear PDA"
-	desc = "Show off your style with this limited edition clear PDA!."
-	item = /obj/item/modular_computer/pda/clear
-
-	price_min = CARGO_CRATE_VALUE * 1.25
-	price_max = CARGO_CRATE_VALUE *3
-	stock_max = 2
-	availability_prob = 50
-
 /datum/market_item/misc/jade_lantern
 	name = "Jade Lantern"
 	desc = "Found in a box labeled 'Danger: Radioactive'. Probably safe."

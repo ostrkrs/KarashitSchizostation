@@ -1367,7 +1367,7 @@
 	trim = /datum/id_trim/highlander
 	wildcard_slots = WILDCARD_LIMIT_ADMIN
 
-/// An ID that you can flip with attack_self_secondary, overriding the appearance of the ID (useful for plainclothes detectives for example).
+/// An ID that you can flip with attack_self_secondary, overriding the appearance of the ID.
 /obj/item/card/id/advanced/plainclothes
 	name = "Plainclothes ID"
 	///The trim that we use as plainclothes identity

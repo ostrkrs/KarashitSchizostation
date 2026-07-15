@@ -34,7 +34,7 @@
 	icon_state = "riflestock"
 
 /obj/item/weaponcrafting/stock/create_slapcraft_component()
-	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/smoothbore_disabler, /datum/crafting_recipe/laser_musket)
+	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/laser_musket)
 
 	AddElement(
 		/datum/element/slapcrafting,\
@@ -97,10 +97,6 @@
 /obj/item/weaponcrafting/gunkit/hellgun
 	name = "hellfire laser gun degradation kit (warcrime lethal)"
 	desc = "Take a perfectly functioning laser gun. Butcher the inside of the gun so it runs hot and mean. You now have a hellfire laser. You monster."
-
-/obj/item/weaponcrafting/gunkit/photon
-	name = "photon cannon parts kit (nonlethal)"
-	desc = "A suitcase containing the necessary gun parts to construct a photon cannon around a stabilized flux anomaly. Harness the power of the sun, in the palms of your hands."
 
 /obj/item/weaponcrafting/gunkit/sks
 	name = "\improper Sakhno SKS semi-automatic rifle parts kit (lethal)"

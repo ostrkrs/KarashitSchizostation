@@ -142,10 +142,6 @@
 /obj/structure/flora/grass/jungle/a/style_random,
 /turf/open/floor/bronze/filled/lavaland,
 /area/ruin/unpowered/gaia)
-"V" = (
-/obj/item/mod/construction/lavalandcore,
-/turf/open/misc/grass/lavaland,
-/area/ruin/unpowered/gaia)
 "Z" = (
 /obj/structure/flora/grass/jungle/b/style_random,
 /turf/closed/wall/mineral/bronze,
@@ -340,7 +336,7 @@ o
 d
 c
 x
-V
+c
 I
 n
 I

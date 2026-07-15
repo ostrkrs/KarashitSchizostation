@@ -1,4 +1,4 @@
-/obj/item/gun/energy/e_gun/advtaser/mounted
+/obj/item/gun/energy/taser/advanced/mounted
 	name = "mounted taser"
 	desc = "An arm mounted dual-mode weapon that fires electrodes and disabler shots."
 	icon = 'icons/obj/items_cyborg.dmi'
@@ -9,7 +9,7 @@
 	selfcharge = 1
 	trigger_guard = TRIGGER_GUARD_ALLOW_ALL // Has no trigger at all, uses neural signals instead
 
-/obj/item/gun/energy/e_gun/advtaser/mounted/add_seclight_point()
+/obj/item/gun/energy/taser/advanced/mounted/add_seclight_point()
 	return
 
 /obj/item/gun/energy/laser/mounted

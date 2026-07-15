@@ -608,7 +608,7 @@
 	desc = "You shouldn't see this."
 
 /obj/item/hothands/get_temperature()
-	return 290 //Below what's required to ignite plasma.
+	return 290 //Below what's required to ignite phoron.
 
 /datum/status_effect/stabilized/darkpurple
 	id = "stabilizeddarkpurple"

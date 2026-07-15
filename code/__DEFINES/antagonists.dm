@@ -382,7 +382,6 @@ GLOBAL_LIST_INIT(human_invader_antagonists, list(
 #define ANTAG_GROUP_ABDUCTORS "Abductors"
 #define ANTAG_GROUP_ABOMINATIONS "Extradimensional Abominations"
 #define ANTAG_GROUP_ARACHNIDS "Arachnid Infestation"
-#define ANTAG_GROUP_ASHWALKERS "Ash Walkers"
 #define ANTAG_GROUP_BIOHAZARDS "Biohazards"
 #define ANTAG_GROUP_CLOWNOPS "Clown Operatives"
 #define ANTAG_GROUP_ERT "Emergency Response Team"
@@ -402,7 +401,7 @@ GLOBAL_LIST_INIT(human_invader_antagonists, list(
 
 
 /// Used to denote an antag datum that either isn't necessarily "evil" (like Valentines)
-/// or isn't necessarily a "real" antag (like Ashwalkers)
+/// or isn't necessarily a "real" antag
 #define ANTAG_FAKE (1 << 0)
 /// Antag is not added to the global list of antags
 #define ANTAG_SKIP_GLOBAL_LIST (1 << 1)

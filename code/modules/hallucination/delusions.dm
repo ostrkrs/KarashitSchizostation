@@ -262,8 +262,8 @@
 		r_hand = pick(
 			/obj/item/knife/combat/survival,
 			/obj/item/melee/energy/sword/saber,
-			/obj/item/gun/ballistic/automatic/pistol,
-			/obj/item/gun/ballistic/automatic/c20r,
+			/obj/item/gun/ballistic/automatic/pistol/wt23,
+			/obj/item/gun/ballistic/automatic/smg/c20r,
 			/obj/item/gun/ballistic/shotgun/bulldog,
 		),
 	)

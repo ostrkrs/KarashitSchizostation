@@ -7,11 +7,7 @@
 	zone = BODY_ZONE_PRECISE_GROIN
 	slot = ORGAN_SLOT_EXTERNAL_TAIL
 
-	dna_block = /datum/dna_block/feature/tail
 	restyle_flags = EXTERNAL_RESTYLE_FLESH
-
-	// defaults to cat, but the parent type shouldn't be created regardless
-	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/cat
 
 	organ_flags = parent_type::organ_flags | ORGAN_EXTERNAL
 
@@ -149,26 +145,6 @@
 
 /datum/bodypart_overlay/mutant/tail/can_draw_on_bodypart(obj/item/bodypart/bodypart_owner)
 	return !(bodypart_owner.owner?.obscured_slots & HIDEJUMPSUIT)
-
-/obj/item/organ/tail/cat
-	name = "tail"
-	preference = "feature_human_tail"
-
-	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/cat
-	restyle_flags = EXTERNAL_RESTYLE_FLESH
-
-	wag_flags = WAG_ABLE
-
-/obj/item/organ/tail/cat/get_butt_sprite()
-	return icon('icons/mob/butts.dmi', BUTT_SPRITE_CAT)
-
-///Cat tail bodypart overlay
-/datum/bodypart_overlay/mutant/tail/cat
-	feature_key = FEATURE_TAIL
-	color_source = ORGAN_COLOR_HAIR
-
-/datum/bodypart_overlay/mutant/tail/cat/get_global_feature_list()
-	return SSaccessories.tails_list_felinid
 
 /obj/item/organ/tail/monkey
 	name = "monkey tail"

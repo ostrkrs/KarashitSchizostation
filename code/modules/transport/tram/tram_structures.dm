@@ -43,7 +43,7 @@
 	/// What state of de/construction it's in
 	var/state = TRAM_SCREWED_TO_FRAME
 	/// Mineral to return when deconstructed
-	var/mineral = /obj/item/stack/sheet/titaniumglass
+	var/mineral = /obj/item/stack/sheet/titanium_glass
 	/// Amount of mineral to return when deconstructed
 	var/mineral_amount = 2
 	/// Type of structure made out of girder
@@ -254,7 +254,7 @@
 
 /obj/structure/tram/alt/plastitanium
 	name = "reinforced tram"
-	desc = "An evil tram of plasma and titanium."
+	desc = "An evil tram of phoron and titanium."
 	icon = 'icons/turf/walls/plastitanium_wall.dmi'
 	icon_state = "plastitanium_wall-0"
 	base_icon_state = "plastitanium_wall"
@@ -358,15 +358,15 @@
 	last_event = world.time
 	active = FALSE
 
-/obj/structure/tram/alt/plasma
-	name = "plasma tram"
-	desc = "A composite structure with plasma plating. This is definitely a bad idea."
-	icon = 'icons/turf/walls/plasma_wall.dmi'
-	icon_state = "plasma_wall-0"
-	base_icon_state = "plasma_wall"
-	mineral = /obj/item/stack/sheet/mineral/plasma
-	tram_wall_type = /obj/structure/tram/alt/plasma
-	custom_materials = list(/datum/material/plasma = SHEET_MATERIAL_AMOUNT*2)
+/obj/structure/tram/alt/phoron
+	name = "phorona tram"
+	desc = "A composite structure with phoron plating. This is definitely a bad idea."
+	icon = 'icons/turf/walls/phoron_wall.dmi'
+	icon_state = "phoron_wall-0"
+	base_icon_state = "phoron_wall"
+	mineral = /obj/item/stack/sheet/mineral/phoron
+	tram_wall_type = /obj/structure/tram/alt/phoron
+	custom_materials = list(/datum/material/phoron = SHEET_MATERIAL_AMOUNT*2)
 
 /obj/structure/tram/alt/wood
 	name = "wooden tram"

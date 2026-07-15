@@ -224,8 +224,8 @@
 	. = ..()
 
 /obj/structure/lattice/catwalk/boulder/proc/pre_self_destruct()
-	if(istype(loc, /turf/open/lava/plasma))
-		add_overlay("plasma_cracks")
+	if(istype(loc, /turf/open/lava/phoron))
+		add_overlay("phoron_cracks")
 	else
 		add_overlay("lava_cracks")
 	animate(src, alpha = 0, time = 2 SECONDS, pixel_y = -16, easing = QUAD_EASING|EASE_IN)

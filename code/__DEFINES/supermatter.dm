@@ -21,7 +21,7 @@
 #define HEAT_PENALTY_THRESHOLD 40 //Higher == Crystal safe operational temperature is higher.
 
 #define THERMAL_RELEASE_MODIFIER 4 //Higher == less heat released during reaction, not to be confused with the above values
-#define PLASMA_RELEASE_MODIFIER 650 //Higher == less plasma released by reaction
+#define PHORON_RELEASE_MODIFIER 650 //Higher == less phoron released by reaction
 #define OXYGEN_RELEASE_MODIFIER 340 //Higher == less oxygen released at high temperature/power
 
 #define REACTION_POWER_MODIFIER 0.65 //Higher == more waste gas

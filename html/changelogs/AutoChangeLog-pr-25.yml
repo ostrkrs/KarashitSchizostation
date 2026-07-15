@@ -1,0 +1,4 @@
+author: "ostrkrs"
+delete-after: True
+changes:
+  - code_imp: "Если это видно в игре, то все ок;"

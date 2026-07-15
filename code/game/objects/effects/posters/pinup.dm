@@ -1,16 +1,16 @@
 /obj/item/poster/random_pinup
 	name = "random pin-up poster"
 	poster_type = /obj/structure/sign/poster/pinup/random
-	icon_state = "rolled_poster_pinup"
+	icon_state = "rolled_pinup"
 
 /obj/structure/sign/poster/pinup
 	poster_item_desc = "This poster comes with its own automatic adhesive mechanism, for easy pinning to any vertical surface. And it's so vulgar!"
 	poster_item_name = "pin-up poster"
-	poster_item_icon_state = "rolled_poster_pinup"
+	poster_item_icon_state = "rolled_pinup"
 
 /obj/structure/sign/poster/pinup/random
 	name = "random pin-up poster"
-	icon_state = "random_anything"
+	icon_state = "random_pinup"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/pinup
 

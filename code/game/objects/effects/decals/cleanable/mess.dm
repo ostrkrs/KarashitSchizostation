@@ -47,8 +47,8 @@
 	qdel(src)
 	return TRUE
 
-/obj/effect/decal/cleanable/glass/plasma
-	icon_state = "plasmatiny"
+/obj/effect/decal/cleanable/glass/phoron
+	icon_state = "phorontiny"
 
 /obj/effect/decal/cleanable/glass/titanium
 	icon_state = "titaniumtiny"
@@ -303,9 +303,9 @@ GLOBAL_LIST_EMPTY(nebula_vomits)
 	. = ..()
 	add_overlay(mutable_appearance('icons/effects/glitter.dmi', "glitter_sparkle[rand(1,9)]", appearance_flags = EMISSIVE_APPEARANCE_FLAGS))
 
-/obj/effect/decal/cleanable/plasma
-	name = "stabilized plasma"
-	desc = "A puddle of stabilized plasma."
+/obj/effect/decal/cleanable/phoron
+	name = "stabilized phoron"
+	desc = "A puddle of stabilized phoron."
 	icon_state = "flour"
 	icon = 'icons/effects/tomatodecal.dmi'
 	color = "#2D2D2D"

@@ -792,10 +792,6 @@
 /area/shuttle/escape)
 "TL" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/energy/e_gun/mini{
-	pixel_x = -3;
-	pixel_y = 4
-	},
 /obj/item/reagent_containers/spray/pepper{
 	pixel_x = 8
 	},

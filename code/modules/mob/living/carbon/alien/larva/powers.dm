@@ -2,7 +2,7 @@
 	name = "Hide"
 	desc = "Allows you to hide beneath tables and certain objects."
 	button_icon_state = "alien_hide"
-	plasma_cost = 0
+	phoron_cost = 0
 	/// The layer we are on while hiding
 	var/hide_layer = ABOVE_NORMAL_TURF_LAYER
 
@@ -29,7 +29,7 @@
 	name = "Evolve"
 	desc = "Evolve into a higher alien caste."
 	button_icon_state = "alien_evolve_larva"
-	plasma_cost = 0
+	phoron_cost = 0
 
 /datum/action/cooldown/alien/larva_evolve/IsAvailable(feedback = FALSE)
 	. = ..()

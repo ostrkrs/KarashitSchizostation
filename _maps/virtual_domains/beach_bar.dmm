@@ -242,7 +242,7 @@
 /turf/template_noop,
 /area/virtual_domain/safehouse)
 "mq" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/kitchen/all_access,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "mG" = (
@@ -306,7 +306,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "qg" = (
-/obj/structure/sign/poster/contraband/space_up/directional/west,
+/obj/structure/sign/poster/legal/space_up/directional/west,
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "qR" = (
@@ -728,7 +728,7 @@
 /area/virtual_domain/fullbright)
 "Gh" = (
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/legal/starkist/directional/north,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Gz" = (
@@ -794,7 +794,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "JE" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/kitchen/all_access,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/mayonnaise,
 /obj/item/reagent_containers/condiment/flour,
@@ -1106,7 +1106,7 @@
 /turf/open/floor/wood,
 /area/virtual_domain/fullbright)
 "Zd" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/legal/space_cola/directional/north,
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Zg" = (

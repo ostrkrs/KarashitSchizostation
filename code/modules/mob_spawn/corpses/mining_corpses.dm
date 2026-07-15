@@ -99,41 +99,29 @@
 	shoes = /obj/item/clothing/shoes/workboots/mining
 
 /datum/outfit/consumed_miner/pre_equip(mob/living/carbon/human/miner, visuals_only = FALSE)
-	var/regular_uniform = FALSE
-	if(visuals_only)
-		regular_uniform = TRUE //assume human
-	else
-		var/new_species_type = pick_weight(list(
-			/datum/species/human = 70,
-			/datum/species/lizard = 26,
-			/datum/species/fly = 2,
-			/datum/species/plasmaman = 2,
+	var/new_species_type = pick_weight(list(
+		/datum/species/human = 70,
+		/datum/species/lizard = 26,
+		/datum/species/fly = 2,
+	))
+	miner.set_species(new_species_type)
+	if(new_species_type == /datum/species/lizard)
+		shoes = null //digitigrade says no
+	uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
+	if(prob(4))
+		belt = pick_weight(list(
+			/obj/item/storage/belt/mining = 2,
+			/obj/item/storage/belt/mining/alt = 2,
 		))
-		miner.set_species(new_species_type)
-		if(new_species_type != /datum/species/plasmaman)
-			regular_uniform = TRUE
-		else
-			uniform = /obj/item/clothing/under/plasmaman
-			belt = /obj/item/tank/internals/plasmaman/belt
-			head = /obj/item/clothing/head/helmet/space/plasmaman
-		if(new_species_type == /datum/species/lizard)
-			shoes = null //digitigrade says no
-	if(regular_uniform)
-		uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
-		if(prob(4))
-			belt = pick_weight(list(
-				/obj/item/storage/belt/mining = 2,
-				/obj/item/storage/belt/mining/alt = 2,
-			))
-		else if(prob(10))
-			belt = pick_weight(list(
-				/obj/item/pickaxe = 8,
-				/obj/item/pickaxe/mini = 4,
-				/obj/item/pickaxe/silver = 2,
-				/obj/item/pickaxe/diamond = 1,
-			))
-		else
-			belt = /obj/item/tank/internals/emergency_oxygen/engi
+	else if(prob(10))
+		belt = pick_weight(list(
+			/obj/item/pickaxe = 8,
+			/obj/item/pickaxe/mini = 4,
+			/obj/item/pickaxe/silver = 2,
+			/obj/item/pickaxe/diamond = 1,
+		))
+	else
+		belt = /obj/item/tank/internals/emergency_oxygen/engi
 
 	if(prob(20))
 		suit = pick_weight(list(

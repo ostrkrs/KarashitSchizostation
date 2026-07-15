@@ -72,7 +72,7 @@
 		/obj/item/stack/sheet/runed_metal/ten = 20,
 		/obj/item/stack/sheet/mineral/diamond{amount = 15} = 15,
 		/obj/item/stack/sheet/mineral/uranium{amount = 15} = 15,
-		/obj/item/stack/sheet/mineral/plasma{amount = 15} = 15,
+		/obj/item/stack/sheet/mineral/phoron{amount = 15} = 15,
 		/obj/item/stack/sheet/mineral/gold{amount = 15} = 15,
 		/obj/item/stack/sheet/plastic/fifty = 5,
 		/obj/item/stack/sheet/runed_metal/fifty = 5,
@@ -129,7 +129,7 @@
 	name = "wardrobe vending restock spawner"
 	icon_state = "vending_restock"
 	loot = list(
-		/obj/item/vending_refill/wardrobe/det_wardrobe = 1,
+		/obj/item/vending_refill/wardrobe/criminalist_wardrobe = 1,
 		/obj/item/vending_refill/wardrobe/medi_wardrobe = 1,
 		/obj/item/vending_refill/wardrobe/chem_wardrobe = 1,
 		/obj/item/vending_refill/wardrobe/viro_wardrobe = 1,
@@ -214,7 +214,7 @@
 	loot = list(
 		/obj/item/vending_refill/syndichem = 1,
 		/obj/item/vending_refill/cigarette/syndicate = 1,
-		/obj/item/vending_refill/plasmaresearch = 1,
+		/obj/item/vending_refill/phoron_research = 1,
 		/obj/item/vending_refill/donksnackvendor = 1,
 		/obj/item/vending_refill/donksoft = 1,
 		/obj/item/vending_refill/hotdog = 1,
@@ -227,7 +227,6 @@
 	loot = list(
 
 		/obj/item/vending_refill/magivend = 1,
-		/obj/item/vending_refill/liberation = 1,
 		/obj/item/vending_refill/wardrobe/cent_wardrobe = 1,
 
 	)

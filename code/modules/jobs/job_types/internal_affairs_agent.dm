@@ -3,7 +3,7 @@
 	alt_titles = JOB_INTERNAL_AFFAIRS_AGENT_ALT_TITLES
 	description = "Advocate for prisoners, create law-binding contracts, \
 		ensure Security is following protocol and Space Law."
-	department_head = list(JOB_CENTCOM_COMMANDER)
+	department_head = list("Solstice Reach HQ")
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -12,7 +12,6 @@
 	config_tag = "INTERNAL_AFFAIRS_AGENT"
 
 	outfit = /datum/outfit/job/iaa
-	plasmaman_outfit = /datum/outfit/plasmaman/bar
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -52,9 +51,7 @@
 	ears = /obj/item/radio/headset/headset_comsec
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/tie/red/tied
-	l_pocket = /obj/item/laser_pointer/red
 	r_pocket = /obj/item/clothing/accessory/iaa_badge
-	l_hand = /obj/item/storage/briefcase/iaa
 
 	chameleon_extras = /obj/item/stamp/law
 	implants = list(/obj/item/implant/mindshield)

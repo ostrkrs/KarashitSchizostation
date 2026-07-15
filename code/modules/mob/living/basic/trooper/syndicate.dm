@@ -101,9 +101,9 @@
 /mob/living/basic/trooper/syndicate/ranged
 	corpse = /obj/effect/gibspawner/human
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
-	r_hand = /obj/item/gun/ballistic/automatic/pistol
+	r_hand = /obj/item/gun/ballistic/automatic/pistol/wt23
 	/// Type of bullet we use
-	var/casingtype = /obj/item/ammo_casing/c9mm
+	var/casingtype = /obj/item/ammo_casing/c8mm
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/gun/pistol/shot.ogg'
 	/// number of burst shots
@@ -147,12 +147,12 @@
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/syndicatestormtrooper
 
 /mob/living/basic/trooper/syndicate/ranged/smg
-	casingtype = /obj/item/ammo_casing/c45
+	casingtype = /obj/item/ammo_casing/c8mm
 	projectilesound = 'sound/items/weapons/gun/smg/shot.ogg'
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged/burst
 	burst_shots = 3
 	ranged_cooldown = 3 SECONDS
-	r_hand = /obj/item/gun/ballistic/automatic/c20r
+	r_hand = /obj/item/gun/ballistic/automatic/smg/c20r
 
 ///Spawns from an emagged orion trail machine set to kill the player.
 /mob/living/basic/trooper/syndicate/ranged/smg/orion

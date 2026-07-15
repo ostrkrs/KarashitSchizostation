@@ -244,7 +244,7 @@
 	desc = "A high energy incendiary Diode Disk."
 	id = "diode_disk_incendiary"
 	build_type = PROTOLATHE | AWAY_LATHE
-	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 0.5, /datum/material/glass =SMALL_MATERIAL_AMOUNT, /datum/material/diamond =SMALL_MATERIAL_AMOUNT * 0.5, /datum/material/plasma =SMALL_MATERIAL_AMOUNT * 2)
+	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 0.5, /datum/material/glass =SMALL_MATERIAL_AMOUNT, /datum/material/diamond =SMALL_MATERIAL_AMOUNT * 0.5, /datum/material/phoron =SMALL_MATERIAL_AMOUNT * 2)
 	construction_time = 0.5 SECONDS
 	build_path = /obj/item/emitter_disk/incendiary
 	category = list(

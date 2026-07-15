@@ -1,7 +1,7 @@
 ///////////////////////////PRECURSOR////////////////////////////
 /datum/chemical_reaction/catalyst_precursor_temp
 	results = list(/datum/reagent/catalyst_precursor_temp = 5)
-	required_reagents = list(/datum/reagent/phenol = 1, /datum/reagent/toxin/mutagen = 3, /datum/reagent/toxin/plasma = 1)
+	required_reagents = list(/datum/reagent/phenol = 1, /datum/reagent/toxin/mutagen = 3, /datum/reagent/toxin/phoron = 1)
 	mix_message = "The solution steams and froths."
 	is_cold_recipe = TRUE
 	required_temp = 800
@@ -55,14 +55,14 @@
 
 /datum/chemical_reaction/thermic_modulator
 	results = list(/datum/reagent/catalyst_agent/temperature/generic = 5)
-	required_reagents = list(/datum/reagent/catalyst_precursor_temp = 5, /datum/reagent/stable_plasma = 5)
+	required_reagents = list(/datum/reagent/catalyst_precursor_temp = 5, /datum/reagent/stable_phoron = 5)
 	H_ion_release = 0
 	thermic_constant = 0
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_CHEMICAL | REACTION_TAG_COMPETITIVE
 
 /datum/chemical_reaction/ionic_modulator
 	results = list(/datum/reagent/catalyst_agent/ph/generic = 5)
-	required_reagents = list(/datum/reagent/catalyst_precursor_ph = 5, /datum/reagent/stable_plasma = 5)
+	required_reagents = list(/datum/reagent/catalyst_precursor_ph = 5, /datum/reagent/stable_phoron = 5)
 	H_ion_release = 0
 	thermic_constant = 0
 	reaction_tags = REACTION_TAG_EASY | REACTION_TAG_CHEMICAL | REACTION_TAG_COMPETITIVE
@@ -74,7 +74,7 @@
 
 /datum/chemical_reaction/medical_speed_catalyst
 	results = list(/datum/reagent/catalyst_agent/speed/medicine = 2)
-	required_reagents = list(/datum/reagent/medicine/c2/libital = 3, /datum/reagent/medicine/c2/probital = 4, /datum/reagent/toxin/plasma = 2)
+	required_reagents = list(/datum/reagent/medicine/c2/libital = 3, /datum/reagent/medicine/c2/probital = 4, /datum/reagent/toxin/phoron = 2)
 	mix_message = "The reaction evaporates slightly as the mixture solidifies"
 	mix_sound = 'sound/effects/chemistry/catalyst.ogg'
 	reaction_tags = REACTION_TAG_MODERATE | REACTION_TAG_UNIQUE | REACTION_TAG_CHEMICAL

@@ -269,12 +269,12 @@
 	if(use_mob_sprite_as_obj_sprite)
 		update_appearance(UPDATE_OVERLAYS)
 
-	color = bodypart_overlay.draw_color // so a pink felinid doesn't drop a gray tail
+	color = bodypart_overlay.draw_color
 
 	if(greyscale_config)
 		get_greyscale_color_from_draw_color()
 	else
-		color = bodypart_overlay.draw_color // so a pink felinid doesn't drop a gray tail
+		color = bodypart_overlay.draw_color
 
 ///Here we define how draw_color from the bodypart overlay sets the greyscale colors of organs that use GAGS
 /obj/item/organ/proc/get_greyscale_color_from_draw_color()

@@ -21,7 +21,6 @@
 		'sound/announcer/intern/alerts/13.ogg',
 		'sound/announcer/intern/alerts/14.ogg')
 
-
 	command_report_sounds = list('sound/announcer/intern/commandreport/1.ogg',
 		'sound/announcer/intern/commandreport/2.ogg',
 		'sound/announcer/intern/commandreport/3.ogg')

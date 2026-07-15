@@ -15,28 +15,28 @@
 	if(health <= HEALTH_THRESHOLD_CRIT)
 		adjustOxyLoss(2)
 
-	var/plasma_used = 0
+	var/phoron_used = 0
 	var/plas_detect_threshold = 0.02
 	var/breath_pressure = (breath.total_moles()*R_IDEAL_GAS_EQUATION*breath.temperature)/BREATH_VOLUME
 	var/list/breath_gases = breath.gases
 
-	breath.assert_gases(/datum/gas/plasma, /datum/gas/oxygen)
+	breath.assert_gases(/datum/gas/phoron, /datum/gas/oxygen)
 
-	//Partial pressure of the plasma in our breath
-	var/Plasma_pp = (breath_gases[/datum/gas/plasma][MOLES]/breath.total_moles())*breath_pressure
+	//Partial pressure of the phoron in our breath
+	var/Phoron_pp = (breath_gases[/datum/gas/phoron][MOLES]/breath.total_moles())*breath_pressure
 
-	if(Plasma_pp > plas_detect_threshold) // Detect plasma in air
-		adjustPlasma(breath_gases[/datum/gas/plasma][MOLES]*250)
-		throw_alert(ALERT_XENO_PLASMA, /atom/movable/screen/alert/alien_plas)
+	if(Phoron_pp > plas_detect_threshold) // Detect phoron in air
+		adjustPhoron(breath_gases[/datum/gas/phoron][MOLES]*250)
+		throw_alert(ALERT_XENO_PHORON, /atom/movable/screen/alert/alien_plas)
 
-		plasma_used = breath_gases[/datum/gas/plasma][MOLES]
+		phoron_used = breath_gases[/datum/gas/phoron][MOLES]
 
 	else
-		clear_alert(ALERT_XENO_PLASMA)
+		clear_alert(ALERT_XENO_PHORON)
 
-	//Breathe in plasma and out oxygen
-	breath_gases[/datum/gas/plasma][MOLES] -= plasma_used
-	breath_gases[/datum/gas/oxygen][MOLES] += plasma_used
+	//Breathe in phoron and out oxygen
+	breath_gases[/datum/gas/phoron][MOLES] -= phoron_used
+	breath_gases[/datum/gas/oxygen][MOLES] += phoron_used
 
 	breath.garbage_collect()
 

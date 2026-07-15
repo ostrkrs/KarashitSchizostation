@@ -6,14 +6,12 @@
 /datum/supply_pack/security/ammo
 	name = "Ammo Crate"
 	desc = "Contains three boxes of beanbag shotgun shells, three boxes \
-		of rubbershot shotgun shells and one of each special .38 speedloaders."
+		of rubbershot shotgun shells and special tracking .38 speedloader."
 	cost = CARGO_CRATE_VALUE * 8
 	access_view = ACCESS_ARMORY
-	contains = list(/obj/item/storage/box/beanbag = 3,
-					/obj/item/storage/box/rubbershot = 3,
+	contains = list(/obj/item/storage/box/ammo/beanbags = 3,
+					/obj/item/storage/box/ammo/rubbershot = 3,
 					/obj/item/ammo_box/speedloader/c38/trac,
-					/obj/item/ammo_box/speedloader/c38/hotshot,
-					/obj/item/ammo_box/speedloader/c38/iceblox,
 				)
 	crate_name = "ammo crate"
 
@@ -33,28 +31,20 @@
 	contains = list(/obj/item/mod/construction/plating/security)
 	crate_name = "MOD plating crate"
 
-/datum/supply_pack/security/disabler
-	name = "Disabler Crate"
-	desc = "Three stamina-draining disabler weapons."
-	cost = CARGO_CRATE_VALUE * 3
-	access_view = ACCESS_SECURITY
-	contains = list(/obj/item/gun/energy/disabler = 3)
-	crate_name = "disabler crate"
-
 /datum/supply_pack/security/forensics
 	name = "Forensics Crate"
-	desc = "Stay hot on the criminal's heels with Nanotrasen's Detective Essentials™. \
-		Contains a forensics scanner, six evidence bags, camera, special board for evidences, tape recorder, stick of chalk, \
-		and of course, a fedora."
+	desc = "Stay hot on the criminal's heels with Forensics Essentials™. \
+		Contains a forensics scanner, six evidence bags, camera, special board for evidences, \
+		tape recorder, stick of chalk, and of course, a fedora."
 	cost = CARGO_CRATE_VALUE * 2.5
 	access_view = ACCESS_MORGUE
-	contains = list(/obj/item/detective_scanner,
+	contains = list(/obj/item/criminalist_scanner,
 					/obj/item/storage/box/evidence,
-					/obj/item/camera/detective,
+					/obj/item/camera/criminalist,
 					/obj/item/taperecorder,
 					/obj/item/toy/crayon/white,
-					/obj/item/clothing/head/fedora/det_hat,
-					/obj/item/wallframe/detectiveboard
+					/obj/item/clothing/head/fedora/criminalist,
+					/obj/item/wallframe/criminalistboard
 				)
 	crate_name = "forensics crate"
 
@@ -140,9 +130,9 @@
 /datum/supply_pack/security/justiceinbound
 	name = "Standard Justice Enforcer Crate"
 	desc = "This is it. The Bee's Knees. The Creme of the Crop. The Pick of the Litter. \
-		The best of the best of the best. The Crown Jewel of Nanotrasen. \
-		The Alpha and the Omega of security headwear. Guaranteed to strike fear into the hearts \
-		of each and every criminal aboard the station. Also comes with a security gasmask."
+		The best of the best of the best. The Alpha and the Omega of security headwear. \
+		Guaranteed to strike fear into the hearts of each and every criminal aboard the ship. \
+		Also comes with a security gasmask."
 	cost = CARGO_CRATE_VALUE * 6 //justice comes at a price. An expensive, noisy price.
 	contraband = TRUE
 	contains = list(/obj/item/clothing/head/helmet/toggleable/justice,
@@ -212,79 +202,49 @@
 	crate_name = "chemical implant crate"
 
 /datum/supply_pack/security/armory/ballistic
-	name = "Combat Shotguns Crate"
+	name = "S-40a Semi-Auto Shotguns Crate"
 	desc = "For when the enemy absolutely needs to be replaced with lead. \
-		Contains three Aussec-designed Combat Shotguns, and three Shotgun Bandoliers."
-	cost = CARGO_CRATE_VALUE * 17.5
-	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat = 3,
+		Contains three Scarborough-designed S-40a Shotguns, and three Shotgun Bandoliers."
+	cost = CARGO_CRATE_VALUE * 10
+	contains = list(/obj/item/gun/ballistic/shotgun/automatic/combat/brand/scarborough = 3,
 					/obj/item/storage/belt/bandolier = 3)
-	crate_name = "combat shotguns crate"
+	crate_name = "S-40a semi-auto shotguns crate"
 
-/datum/supply_pack/security/armory/dragnet
-	name = "DRAGnet Translocation Shotgun Crate"
-	desc = "Contains two \"Dynamic Rapid-Apprehension of the Guilty Network\" translocation shotguns, \
-		a recent breakthrough in law enforcement prisoner management technology. Includes a DRAGnet beacon."
-	cost = CARGO_CRATE_VALUE * 18
-	contains = list(
-		/obj/item/gun/energy/e_gun/dragnet = 2,
-		/obj/item/dragnet_beacon = 1
-	)
-	crate_name = "\improper DRAGnet crate"
-
-/datum/supply_pack/security/armory/energy
-	name = "Energy Guns Crate"
-	desc = "Contains three Energy Guns, capable of firing both nonlethal and lethal \
-		blasts of light."
-	cost = CARGO_CRATE_VALUE * 18
-	contains = list(/obj/item/gun/energy/e_gun = 3)
-	crate_name = "energy gun crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+/datum/supply_pack/security/armory/wt550
+	name = "WT-550 SMGs Crate"
+	desc = "For when the enemy absolutely needs to be replaced with lead. \
+		Contains three Ward-Takahashi-designed WT-550 SMGs."
+	cost = CARGO_CRATE_VALUE * 8
+	contains = list(/obj/item/gun/ballistic/automatic/smg/wt550/brand/ward_takahashi = 3)
+	crate_name = "WT-550 SMGs crate"
 
 /datum/supply_pack/security/armory/laser
-	name = "Lasers Crate"
-	desc = "Contains three lethal, high-energy laser guns."
+	name = "Flashpoint-V Laser Guns Crate"
+	desc = "Contains three lethal, high-energy laser guns, designed by Irix Optics."
 	cost = CARGO_CRATE_VALUE * 4
-	contains = list(/obj/item/gun/energy/laser = 3)
+	contains = list(/obj/item/gun/energy/laser/brand/irix = 3)
 	crate_name = "laser crate"
 	crate_type = /obj/structure/closet/crate/secure/photo
 
-/datum/supply_pack/security/armory/laser_carbine
-	name = "Laser Carbine Crate"
-	desc = "Contains three laser carbines, capable of rapidly firing weak lasers."
-	cost = CARGO_CRATE_VALUE * 9
-	contains = list(/obj/item/gun/energy/laser/carbine = 3)
-	crate_name = "laser carbine crate"
-	crate_type = /obj/structure/closet/crate/secure/photo
-
-/datum/supply_pack/security/armory/disabler_smg
-	name = "Disabler SMG Crate"
-	desc = "Contains three disabler SMGs, capable of rapidly firing weak disabler beams."
-	cost = CARGO_CRATE_VALUE * 7
-	contains = list(/obj/item/gun/energy/disabler/smg = 3)
-	crate_name = "disabler smg crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
-
 /datum/supply_pack/security/armory/battle_rifle
-	name = "NT BR-38 Crate"
+	name = "SR BR-38 Crate"
 	desc = "An experimental energy-based ballistic battle rifle. Only available to \
-		Nanotrasen stations for security purposes. DO NOT RESELL TO OUTSIDE COMPANIES. \
-		Contains three NT BR-38 rifles and 6 magazines containing .38 Standard."
-	cost = CARGO_CRATE_VALUE * 100
+		Solstice Reach vessels for security purposes. DO NOT RESELL TO OUTSIDE COMPANIES. \
+		Contains three SR BR-38 rifles and 6 magazines containing .38 Standard."
+	cost = CARGO_CRATE_VALUE * 10
 	contains = list(
-		/obj/item/gun/ballistic/automatic/battle_rifle = 3,
+		/obj/item/gun/ballistic/automatic/assault_rifle/battle_rifle = 3,
 		/obj/item/ammo_box/magazine/m38 = 6,
 	)
 	crate_name = "battle rifle crate"
 
 /datum/supply_pack/security/armory/br_mag
-	name = "NT BR-38 Magazine Crate"
-	desc = "Six .38 magazines, able to fit into the NT BR-38. Contains \
-		two standard magazines, two Hot Shot magazines and two Iceblox magazines."
+	name = "SR BR-38 Magazine Crate"
+	desc = "Six .38 magazines, able to fit into the SR BR-38. Contains \
+		four standard magazines."
 	cost = CARGO_CRATE_VALUE * 7
 	contains = list(
-		/obj/item/ammo_box/magazine/m38 = 2,
-		/obj/item/ammo_box/magazine/m38/hotshot = 2,
-		/obj/item/ammo_box/magazine/m38/iceblox =2,
+		/obj/item/ammo_box/magazine/m38 = 4,
 	)
 	crate_name = ".38 magazine crate"
 
@@ -297,16 +257,16 @@
 
 /datum/supply_pack/security/armory/fire
 	name = "Incendiary Weapons Crate"
-	desc = "Burn, baby burn. Contains three incendiary grenades, three plasma canisters, \
+	desc = "Burn, baby burn. Contains three incendiary grenades, three phoron canisters, \
 		and a flamethrower."
 	cost = CARGO_CRATE_VALUE * 7
 	access = ACCESS_COMMAND
 	contains = list(/obj/item/flamethrower/full,
-					/obj/item/tank/internals/plasma = 3,
+					/obj/item/tank/internals/phoron = 3,
 					/obj/item/grenade/chem_grenade/incendiary = 3,
 				)
 	crate_name = "incendiary weapons crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_type = /obj/structure/closet/crate/secure/phoron
 	dangerous = TRUE
 
 /datum/supply_pack/security/armory/mindshield
@@ -360,9 +320,8 @@
 
 /datum/supply_pack/security/armory/swat
 	name = "SWAT Crate"
-	desc = "Contains two fullbody sets of tough, fireproof suits designed in a joint \
-		effort by IS-ERI and Nanotrasen. Each set contains a suit, helmet, mask, combat belt, \
-		and gorilla gloves."
+	desc = "Contains two fullbody sets of tough, fireproof suits. \
+		Each set contains a suit, helmet, mask, combat belt, and gorilla gloves."
 	cost = CARGO_CRATE_VALUE * 7
 	contains = list(/obj/item/clothing/head/helmet/swat/nanotrasen = 2,
 					/obj/item/clothing/suit/armor/swat = 2,

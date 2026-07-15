@@ -54,24 +54,12 @@
 	else
 		new /obj/item/flashlight/glowstick(src)
 
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_RADIOACTIVE_NEBULA))
-		new /obj/item/storage/pill_bottle/potassiodide(src)
-
 	if(give_hook && length(SSmapping.levels_by_trait(ZTRAIT_STATION)) > 1 && SSmapping.current_map.give_players_hooks)
 		new /obj/item/climbing_hook/emergency(src)
 
 /obj/item/storage/box/survival/radio/PopulateContents()
 	..() // we want the survival stuff too.
 	new /obj/item/radio/off(src)
-
-/obj/item/storage/box/survival/proc/wardrobe_removal()
-	if(!isplasmaman(loc)) //We need to specially fill the box with plasmaman gear, since it's intended for one
-		return
-	var/obj/item/mask = locate(mask_type) in src
-	var/obj/item/internals = locate(internal_type) in src
-	new /obj/item/tank/internals/plasmaman/belt(src)
-	qdel(mask) // Get rid of the items that shouldn't be
-	qdel(internals)
 
 // Prisoners don't get an escape hook
 /obj/item/storage/box/survival/prisoner
@@ -241,7 +229,6 @@
 	if(!random_funny_internals)
 		return ..()
 	internal_type = pick(
-			/obj/item/tank/internals/emergency_oxygen/engi/clown/n2o,
 			/obj/item/tank/internals/emergency_oxygen/engi/clown/bz,
 			/obj/item/tank/internals/emergency_oxygen/engi/clown/helium,
 			)

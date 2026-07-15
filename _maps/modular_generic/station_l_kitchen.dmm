@@ -177,7 +177,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /obj/item/storage/box/ingredients/wildcard,
@@ -385,7 +385,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /obj/item/storage/box/ingredients/wildcard,

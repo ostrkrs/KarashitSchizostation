@@ -131,7 +131,7 @@
 /area/ruin/space/has_grav/dangerous_research/medical)
 "bP" = (
 /obj/structure/bed,
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/east,
+/obj/structure/sign/poster/legal/interdyne_gene_clinics/directional/east,
 /obj/effect/spawner/random/contraband/narcotics,
 /obj/item/bedsheet/purple,
 /obj/effect/turf_decal/tile/purple/anticorner/contrasted{
@@ -217,9 +217,8 @@
 /obj/item/food/donkpocket/spicy,
 /obj/item/food/ready_donk,
 /obj/item/food/ready_donk/mac_n_cheese,
-/obj/structure/sign/poster/contraband/donk_co/directional/west,
 /obj/machinery/light/dim/directional/west,
-/obj/structure/closet/secure_closet/freezer/empty{
+/obj/structure/closet/secure_closet/freezer{
 	name = "fridge"
 	},
 /turf/open/floor/iron/dark/diagonal,
@@ -2119,7 +2118,7 @@
 "AU" = (
 /obj/effect/turf_decal/tile/neutral/diagonal_edge,
 /obj/item/trash/ready_donk,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/dark/diagonal,
 /area/ruin/space/has_grav/dangerous_research)
 "Ba" = (
@@ -2176,7 +2175,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "BG" = (
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/item/stack/sheet/mineral/wood/fifty,
 /obj/item/stack/sheet/iron/fifty,
 /obj/item/stack/sheet/glass/fifty,
@@ -2300,7 +2299,7 @@
 /obj/machinery/atmospherics/pipe/layer_manifold/supply/visible{
 	dir = 4
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/dangerous_research/maint)
 "CS" = (
@@ -3155,7 +3154,7 @@
 	pixel_x = 5;
 	pixel_y = 3
 	},
-/obj/structure/sign/poster/contraband/andromeda_bitters/directional/east,
+/obj/structure/sign/poster/legal/andromeda_bitters/directional/east,
 /turf/open/floor/wood/parquet,
 /area/ruin/space/has_grav/dangerous_research/dorms)
 "Pu" = (
@@ -3622,7 +3621,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/dangerous_research/maint)
 "Vj" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/dangerous_research/maint)
 "Vo" = (
@@ -3647,7 +3646,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "VO" = (
-/obj/effect/spawner/structure/window/reinforced/plasma,
+/obj/effect/spawner/structure/window/reinforced/phoron,
 /obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/dangerous_research/maint)

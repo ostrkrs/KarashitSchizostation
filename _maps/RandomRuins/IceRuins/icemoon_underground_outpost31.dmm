@@ -128,7 +128,7 @@
 /area/ruin/outpost31/medical)
 "ck" = (
 /obj/structure/closet,
-/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/phoron/full,
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "cm" = (
@@ -994,7 +994,7 @@
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "tC" = (
-/obj/structure/closet/secure_closet/freezer/fridge/preopen,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/outpost31/kitchendiningroom)
@@ -1377,7 +1377,7 @@
 /obj/structure/closet/secure_closet{
 	req_access = list("noopen")
 	},
-/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c8mm,
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "AE" = (

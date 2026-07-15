@@ -3,7 +3,7 @@
 	"Engineering Division" = /area/station/engineering, \
 	"Medbay" = /area/station/medical, \
 	"Recreation and Relaxation Division" = /area/station/commons, \
-	"Science Division" = /area/station/science, \
+	"Science Division" = /area/station/research, \
 	"Security Department" = /area/station/security, \
 	"Station Corridors" = /area/station/hallway, \
 )
@@ -120,7 +120,7 @@
 		/obj/item/coin/iron = 100,
 		/obj/item/coin/plastic = 100,
 		/obj/item/coin/silver = 60,
-		/obj/item/coin/plasma = 30,
+		/obj/item/coin/phoron = 30,
 		/obj/item/coin/uranium = 30,
 		/obj/item/coin/titanium = 30,
 		/obj/item/coin/diamond = 20,

@@ -13,7 +13,7 @@
 	filedesc = "debug_finder"
 	downloader_category = PROGRAM_CATEGORY_EQUIPMENT
 	ui_header = "borg_mon.gif" //DEBUG -- new icon before PR
-	program_open_overlay = "radarntos"
+	program_open_overlay = "radar"
 	program_flags = PROGRAM_REQUIRES_NTNET
 	can_run_on_flags = PROGRAM_LAPTOP | PROGRAM_PDA
 	size = 5

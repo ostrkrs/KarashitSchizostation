@@ -134,7 +134,7 @@ Buildable meters
 	// Only 'normal' pipes
 	if(type != /obj/item/pipe/quaternary)
 		return ..()
-	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/ghettojetpack, /datum/crafting_recipe/pipegun, /datum/crafting_recipe/smoothbore_disabler, /datum/crafting_recipe/improvised_pneumatic_cannon)
+	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/ghettojetpack, /datum/crafting_recipe/pipegun, /datum/crafting_recipe/improvised_pneumatic_cannon)
 
 	AddElement(
 		/datum/element/slapcrafting,\

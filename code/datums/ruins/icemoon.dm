@@ -203,12 +203,12 @@
 	suffix = "icemoon_underground_outpost31.dmm"
 
 //TODO: Bottom-Level ONLY Spawns after Refactoring Related Code
-/datum/map_template/ruin/icemoon/underground/plasma_facility
-	name = "Ice-Ruin Abandoned Plasma Facility"
-	id = "plasma_facility"
-	description = "Rumors have developed over the many years of Freyja plasma mining. These rumors suggest that the ghosts of dead mistreated excavation staff have returned to \
+/datum/map_template/ruin/icemoon/underground/phoron_facility
+	name = "Ice-Ruin Abandoned Phoron Facility"
+	id = "phoron_facility"
+	description = "Rumors have developed over the many years of Freyja phoron mining. These rumors suggest that the ghosts of dead mistreated excavation staff have returned to \
 	exact revenge on their (now former) employers. Coorperate reminds all staff that rumors are just that: Old Housewife tales meant to scare misbehaving kids to bed."
-	suffix = "icemoon_underground_abandoned_plasma_facility.dmm"
+	suffix = "icemoon_underground_abandoned_phoron_facility.dmm"
 
 /datum/map_template/ruin/icemoon/underground/hotsprings
 	name = "Ice-Ruin Hot Springs"

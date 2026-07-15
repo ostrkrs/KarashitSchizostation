@@ -18,25 +18,6 @@
 /datum/experimental_cloner_fuckup/proc/post_emerged(mob/living/victim)
 	return
 
-/// Become cat
-/datum/experimental_cloner_fuckup/felinise
-	weight = CLONER_FAILURE_COMMON
-
-/datum/experimental_cloner_fuckup/felinise/is_valid(species_type)
-	return !ispath(species_type, /datum/species/human/felinid)
-
-/datum/experimental_cloner_fuckup/felinise/apply_to_mob(mob/living/carbon/human/victim)
-	if (is_species(victim, /datum/species/human))
-		victim.set_species(/datum/species/human/felinid)
-	else // I think this is funnier
-		var/obj/item/organ/tail/cat/new_tail = new(victim)
-		var/obj/item/organ/ears/cat/new_ears = new(victim)
-		var/obj/item/organ/tongue/cat/new_tongue = new(victim)
-
-		new_tail.replace_into(victim)
-		new_ears.replace_into(victim)
-		new_tongue.replace_into(victim)
-
 /// Bald
 /datum/experimental_cloner_fuckup/bald
 	weight = CLONER_FAILURE_COMMON

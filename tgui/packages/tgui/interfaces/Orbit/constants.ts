@@ -1,6 +1,5 @@
 export const ANTAG2COLOR = {
   Abductors: 'pink',
-  'Ash Walkers': 'olive',
   Biohazards: 'brown',
   'Bounty Hunters': 'yellow',
   CentCom: 'teal',
@@ -47,7 +46,7 @@ export const DEPARTMENT2COLOR: Record<string, Department> = {
   },
   security: {
     color: 'red',
-    trims: ['Detective', 'Head of Security', 'Security Officer', 'Warden'],
+    trims: ['Criminalist', 'Head of Security', 'Security Officer', 'Warden'],
   },
   service: {
     color: 'green',

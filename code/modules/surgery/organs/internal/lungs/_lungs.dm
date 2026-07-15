@@ -2,6 +2,7 @@
 	name = "lungs"
 	icon_state = "lungs"
 
+	visual = FALSE
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_LUNGS
 	gender = PLURAL
@@ -48,9 +49,9 @@
 	var/safe_oxygen_max = 0 // Maximum safe partial pressure of O2, in kPa
 	var/safe_nitro_min = 0
 	var/safe_co2_max = 10 // Yes it's an arbitrary value who cares?
-	var/safe_plasma_min = 0
-	///How much breath partial pressure is a safe amount of plasma. 0 means that we are immune to plasma.
-	var/safe_plasma_max = 0.05
+	var/safe_phoron_min = 0
+	///How much breath partial pressure is a safe amount of phoron. 0 means that we are immune to phoron.
+	var/safe_phoron_max = 0.05
 	var/n2o_detect_min = 0.08 //Minimum n2o for effects
 	var/n2o_para_min = 1 //Sleeping agent
 	var/n2o_sleep_min = 5 //Sleeping agent
@@ -122,8 +123,8 @@
 		respiration_type |= RESPIRATION_N2
 	if(safe_oxygen_min)
 		respiration_type |= RESPIRATION_OXYGEN
-	if(safe_plasma_min)
-		respiration_type |= RESPIRATION_PLASMA
+	if(safe_phoron_min)
+		respiration_type |= RESPIRATION_PHORON
 
 	// Sets up what gases we want to react to, and in what way
 	// always is always processed, while_present is called when the gas is in the breath, and on_loss is called right after a gas is lost
@@ -145,10 +146,10 @@
 		add_gas_reaction(/datum/gas/nitrogen, always = PROC_REF(breathe_nitro))
 	if(safe_co2_max)
 		add_gas_reaction(/datum/gas/carbon_dioxide, while_present = PROC_REF(too_much_co2), on_loss = PROC_REF(safe_co2))
-	if(safe_plasma_min)
-		add_gas_reaction(/datum/gas/plasma, always = PROC_REF(breathe_plasma))
-	if(safe_plasma_max)
-		add_gas_reaction(/datum/gas/plasma, while_present = PROC_REF(too_much_plasma), on_loss = PROC_REF(safe_plasma))
+	if(safe_phoron_min)
+		add_gas_reaction(/datum/gas/phoron, always = PROC_REF(breathe_phoron))
+	if(safe_phoron_max)
+		add_gas_reaction(/datum/gas/phoron, while_present = PROC_REF(too_much_phoron), on_loss = PROC_REF(safe_phoron))
 	add_gas_reaction(/datum/gas/bz, while_present = PROC_REF(too_much_bz))
 	add_gas_reaction(/datum/gas/freon, while_present = PROC_REF(too_much_freon))
 	add_gas_reaction(/datum/gas/halon, while_present = PROC_REF(too_much_halon))
@@ -169,7 +170,7 @@
 	receiver.clear_alert(ALERT_NOT_ENOUGH_OXYGEN)
 	receiver.clear_alert(ALERT_NOT_ENOUGH_CO2)
 	receiver.clear_alert(ALERT_NOT_ENOUGH_NITRO)
-	receiver.clear_alert(ALERT_NOT_ENOUGH_PLASMA)
+	receiver.clear_alert(ALERT_NOT_ENOUGH_PHORON)
 	receiver.clear_alert(ALERT_NOT_ENOUGH_N2O)
 	update_bronchodilation_alerts()
 
@@ -344,46 +345,46 @@
 	breather.co2overloadtime = 0
 	breather.clear_alert(ALERT_TOO_MUCH_CO2)
 
-/// If the lungs need Plasma to breathe properly, Plasma is exchanged with CO2.
-/obj/item/organ/lungs/proc/breathe_plasma(mob/living/carbon/breather, datum/gas_mixture/breath, plasma_pp, old_plasma_pp)
+/// If the lungs need Phoron to breathe properly, Phoron is exchanged with CO2.
+/obj/item/organ/lungs/proc/breathe_phoron(mob/living/carbon/breather, datum/gas_mixture/breath, phoron_pp, old_phoron_pp)
 	// Suffocation side-effects.
-	if(plasma_pp < safe_plasma_min && !HAS_TRAIT(breather, TRAIT_NO_BREATHLESS_DAMAGE))
-		// Could check old_plasma_pp but vacuum breathing hates me
+	if(phoron_pp < safe_phoron_min && !HAS_TRAIT(breather, TRAIT_NO_BREATHLESS_DAMAGE))
+		// Could check old_phoron_pp but vacuum breathing hates me
 		if(!HAS_TRAIT(breather, TRAIT_ANOSMIA))
-			breather.throw_alert(ALERT_NOT_ENOUGH_PLASMA, /atom/movable/screen/alert/not_enough_plas)
-		// Breathe insufficient amount of Plasma, exhale CO2.
-		var/gas_breathed = handle_suffocation(breather, plasma_pp, safe_plasma_min, breath.gases[/datum/gas/plasma][MOLES])
-		if(plasma_pp)
-			breathe_gas_volume(breath, /datum/gas/plasma, /datum/gas/carbon_dioxide, volume = gas_breathed)
+			breather.throw_alert(ALERT_NOT_ENOUGH_PHORON, /atom/movable/screen/alert/not_enough_phoron)
+		// Breathe insufficient amount of Phoron, exhale CO2.
+		var/gas_breathed = handle_suffocation(breather, phoron_pp, safe_phoron_min, breath.gases[/datum/gas/phoron][MOLES])
+		if(phoron_pp)
+			breathe_gas_volume(breath, /datum/gas/phoron, /datum/gas/carbon_dioxide, volume = gas_breathed)
 		return
 
-	if(old_plasma_pp < safe_plasma_min)
+	if(old_phoron_pp < safe_phoron_min)
 		breather.failed_last_breath = FALSE
-		breather.clear_alert(ALERT_NOT_ENOUGH_PLASMA)
-	// Inhale Plasma, exhale equivalent amount of CO2.
-	breathe_gas_volume(breath, /datum/gas/plasma, /datum/gas/carbon_dioxide)
+		breather.clear_alert(ALERT_NOT_ENOUGH_PHORON)
+	// Inhale Phoron, exhale equivalent amount of CO2.
+	breathe_gas_volume(breath, /datum/gas/phoron, /datum/gas/carbon_dioxide)
 	// Heal mob if not in crit.
 	if(breather.health >= breather.crit_threshold && breather.oxyloss)
 		breather.adjustOxyLoss(-5)
 
-/// Maximum Plasma effects. "Too much Plasma!"
-/obj/item/organ/lungs/proc/too_much_plasma(mob/living/carbon/breather, datum/gas_mixture/breath, plasma_pp, old_plasma_pp)
-	if(plasma_pp <= safe_plasma_max)
-		if(old_plasma_pp > safe_plasma_max)
+/// Maximum Phoron effects. "Too much Phoron!"
+/obj/item/organ/lungs/proc/too_much_phoron(mob/living/carbon/breather, datum/gas_mixture/breath, phoron_pp, old_phoron_pp)
+	if(phoron_pp <= safe_phoron_max)
+		if(old_phoron_pp > safe_phoron_max)
 			return BREATH_LOST
 		return
 
 	// If it's the first breath with too much CO2 in it, lets start a counter, then have them pass out after 12s or so.
-	if(old_plasma_pp < safe_plasma_max)
+	if(old_phoron_pp < safe_phoron_max)
 		if(!HAS_TRAIT(breather, TRAIT_ANOSMIA))
-			breather.throw_alert(ALERT_TOO_MUCH_PLASMA, /atom/movable/screen/alert/too_much_plas)
+			breather.throw_alert(ALERT_TOO_MUCH_PHORON, /atom/movable/screen/alert/too_much_phoron)
 
-	var/ratio = (breath.gases[/datum/gas/plasma][MOLES] / safe_plasma_max) * 10
+	var/ratio = (breath.gases[/datum/gas/phoron][MOLES] / safe_phoron_max) * 10
 	breather.apply_damage(clamp(ratio, plas_breath_dam_min, plas_breath_dam_max), plas_damage_type, spread_damage = TRUE)
 
-/// Resets plasma side effects
-/obj/item/organ/lungs/proc/safe_plasma(mob/living/carbon/breather, datum/gas_mixture/breath, old_plasma_pp)
-	breather.clear_alert(ALERT_TOO_MUCH_PLASMA)
+/// Resets phoron side effects
+/obj/item/organ/lungs/proc/safe_phoron(mob/living/carbon/breather, datum/gas_mixture/breath, old_phoron_pp)
+	breather.clear_alert(ALERT_TOO_MUCH_PHORON)
 
 /// Too much funny gas, time to get brain damage
 /obj/item/organ/lungs/proc/too_much_bz(mob/living/carbon/breather, datum/gas_mixture/breath, bz_pp, old_bz_pp)
@@ -883,35 +884,17 @@
 #define SMOKER_ORGAN_HEALTH (STANDARD_ORGAN_THRESHOLD * 0.75)
 #define SMOKER_LUNG_HEALING (STANDARD_ORGAN_HEALING * 0.75)
 
-/obj/item/organ/lungs/plasmaman
-	name = "plasma filter"
-	desc = "A spongy rib-shaped mass for filtering plasma from the air."
-	icon_state = "lungs-plasma"
-	organ_traits = list(TRAIT_NOHUNGER) // A fresh breakfast of plasma is a great start to any morning.
-	breath_noise = "a crackle, like crushed foam"
-	safe_oxygen_min = 0 //We don't breathe this
-	safe_plasma_min = 4 //We breathe THIS!
-	safe_plasma_max = 0
-
-/obj/item/organ/lungs/plasmaman/plasmaman_smoker
-	name = "smoker plasma filter"
-	desc = "A plasma filter that look discolored, a result from smoking a lot."
-	icon_state = "lungs_plasma_smoker"
-	breath_noise = "a wheezing crackle, like crushed foam"
-	maxHealth = SMOKER_ORGAN_HEALTH
-	healing_factor = SMOKER_LUNG_HEALING
-
 /obj/item/organ/lungs/slime
 	name = "slime vacuole"
 	desc = "A large organelle designed to store oxygen and other important gasses."
 	breath_noise = "a low burbling"
-	safe_plasma_max = 0 //We breathe this to gain POWER.
+	safe_phoron_max = 0 //We breathe this to gain POWER.
 
 /obj/item/organ/lungs/slime/check_breath(datum/gas_mixture/breath, mob/living/carbon/human/breather_slime)
 	. = ..()
-	if (breath?.gases[/datum/gas/plasma])
-		var/plasma_pp = breath.get_breath_partial_pressure(breath.gases[/datum/gas/plasma][MOLES])
-		breather_slime.blood_volume += (0.2 * plasma_pp) // 10/s when breathing literally nothing but plasma, which will suffocate you.
+	if (breath?.gases[/datum/gas/phoron])
+		var/phoron_pp = breath.get_breath_partial_pressure(breath.gases[/datum/gas/phoron][MOLES])
+		breather_slime.blood_volume += (0.2 * phoron_pp) // 10/s when breathing literally nothing but phoron, which will suffocate you.
 
 /obj/item/organ/lungs/smoker_lungs
 	name = "smoker lungs"
@@ -951,9 +934,9 @@
 
 /obj/item/organ/lungs/cybernetic/tier3
 	name = "upgraded cybernetic lungs"
-	desc = "A more advanced version of the stock cybernetic lungs. Features the ability to filter out lower levels of plasma and carbon dioxide."
+	desc = "A more advanced version of the stock cybernetic lungs. Features the ability to filter out lower levels of phoron and carbon dioxide."
 	icon_state = "lungs-c-u2"
-	safe_plasma_max = 20
+	safe_phoron_max = 20
 	safe_co2_max = 20
 	maxHealth = 2 * STANDARD_ORGAN_THRESHOLD
 	safe_oxygen_min = 13
@@ -990,11 +973,10 @@
 /obj/item/organ/lungs/lavaland
 	name = "blackened frilled lungs" // blackened from necropolis exposure
 	desc = "Exposure to the necropolis has mutated these lungs to breathe the air of Indecipheres, the lava-covered moon."
-	icon_state = "lungs-ashwalker"
+	icon_state = "lungs-lavaland"
 	breath_noise = "a throbbing smoke-like hiss"
 
-// Normal oxygen is 21 kPa partial pressure, but SS13 humans can tolerate down
-// to 16 kPa. So it follows that ashwalkers, as humanoids, follow the same rules.
+// Normal oxygen is 21 kPa partial pressure, but SS13 humans can tolerate down to 16 kPa.
 #define GAS_TOLERANCE 5
 
 /obj/item/organ/lungs/lavaland/Initialize(mapload)
@@ -1010,7 +992,7 @@
 
 	breath.assert_gases(
 		/datum/gas/oxygen,
-		/datum/gas/plasma,
+		/datum/gas/phoron,
 		/datum/gas/carbon_dioxide,
 		/datum/gas/nitrogen,
 		/datum/gas/bz,
@@ -1019,20 +1001,17 @@
 
 	var/oxygen_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/oxygen][MOLES])
 	var/nitrogen_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/nitrogen][MOLES])
-	var/plasma_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/plasma][MOLES])
+	var/phoron_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/phoron][MOLES])
 	var/carbon_dioxide_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/carbon_dioxide][MOLES])
 	var/bz_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/bz][MOLES])
 	var/miasma_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/miasma][MOLES])
 
 	safe_oxygen_min = max(0, oxygen_pp - GAS_TOLERANCE)
 	safe_nitro_min = max(0, nitrogen_pp - GAS_TOLERANCE)
-	safe_plasma_min = max(0, plasma_pp - GAS_TOLERANCE)
+	safe_phoron_min = max(0, phoron_pp - GAS_TOLERANCE)
 
-	// Increase plasma tolerance based on amount in base air
-	safe_plasma_max += plasma_pp
-
-	// CO2 is always a waste gas, so none is required, but ashwalkers
-	// tolerate the base amount plus tolerance*2 (humans tolerate only 10 pp)
+	// Increase phoron tolerance based on amount in base air
+	safe_phoron_max += phoron_pp
 
 	safe_co2_max = carbon_dioxide_pp + GAS_TOLERANCE * 2
 
@@ -1123,7 +1102,7 @@
 
 	icon_state = "lungs-evolved"
 
-	safe_plasma_max = 8
+	safe_phoron_max = 8
 	safe_co2_max = 8
 	maxHealth = 1.2 * STANDARD_ORGAN_THRESHOLD
 	safe_oxygen_min = 8

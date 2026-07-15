@@ -16,7 +16,9 @@
 /obj/structure/closet/secure_closet/bar
 	name = "booze storage"
 	req_access = list(ACCESS_BAR)
-	icon_state = "cabinet"
+	icon_state = "cabinet_secure"
+	icon_locked = "cabinet_secure_locked"
+	icon_unlocked = "cabinet_secure_unlocked"
 	resistance_flags = FLAMMABLE
 	max_integrity = 70
 	open_sound = 'sound/machines/closet/wooden_closet_open.ogg'
@@ -61,7 +63,7 @@
 
 /obj/structure/closet/secure_closet/bartender/PopulateContents()
 	..()
-	new /obj/item/storage/box/beanbag(src)
+	new /obj/item/storage/box/ammo/beanbags(src)
 	new /obj/item/clothing/suit/armor/vest/alt(src)
 	new /obj/item/storage/belt/bandolier(src)
 	new /obj/item/gun/ballistic/shotgun/doublebarrel(src)

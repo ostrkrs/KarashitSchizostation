@@ -12,7 +12,7 @@
 	name = "weird note"
 	},
 /obj/item/paper/guides/antag/supermatter_sliver,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	pixel_x = 5
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -201,7 +201,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "mi" = (
-/obj/structure/sign/poster/contraband/cybersun_six_hundred/directional/west,
+/obj/structure/sign/poster/legal/cybersun_commemorative/directional/west,
 /obj/item/vending_refill/donksoft{
 	pixel_x = 2;
 	pixel_y = 8
@@ -225,7 +225,7 @@
 	pixel_x = -3
 	},
 /obj/structure/closet/crate/preopen,
-/obj/structure/sign/poster/contraband/gorlex_recruitment/directional/west,
+/obj/structure/sign/poster/old_syndie/gorlex_recruitment/directional/west,
 /obj/effect/decal/cleanable/plastic,
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/mineral/plastitanium/red,
@@ -242,7 +242,7 @@
 	dir = 1;
 	target_pressure = 180
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
 "oY" = (
@@ -277,7 +277,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "qC" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
 "ry" = (
@@ -357,13 +357,13 @@
 	},
 /area/ruin/syndielab)
 "vr" = (
-/obj/structure/sign/poster/contraband/revolver/directional/east,
+/obj/structure/sign/poster/old_syndie/revolver/directional/east,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/syndielab)
 "vE" = (
 /obj/structure/safe,
 /obj/item/book/granter/crafting_recipe/donk_secret_recipe,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/item/storage/wallet/money{
 	desc = "It can hold a few small and personal things."
 	},
@@ -590,7 +590,7 @@
 	pixel_x = 12;
 	pixel_y = 1
 	},
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics/directional/north,
+/obj/structure/sign/poster/legal/interdyne_gene_clinics/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
@@ -660,11 +660,6 @@
 "MW" = (
 /turf/template_noop,
 /area/template_noop)
-"NM" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/east,
-/obj/structure/cable/layer1,
-/turf/open/floor/iron/dark/textured,
-/area/ruin/syndielab)
 "Qj" = (
 /obj/structure/flora/bush/grassy{
 	pixel_x = 15;
@@ -772,15 +767,15 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "UM" = (
-/obj/item/ammo_box/c9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/c8mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/structure/closet/crate/secure/syndicate/gorlex/weapons,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/syndielab)
 "Vf" = (
 /obj/effect/decal/cleanable/molten_object,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/item/stack/ore/plasma{
+/obj/item/stack/ore/phoron{
 	pixel_x = 7;
 	pixel_y = 10
 	},
@@ -808,14 +803,6 @@
 /area/ruin/syndielab)
 "Wo" = (
 /obj/structure/table/wood,
-/obj/item/ammo_casing/shotgun/flechette/donk{
-	pixel_y = 6
-	},
-/obj/item/ammo_casing/shotgun/flechette/donk{
-	pixel_x = 8;
-	pixel_y = 6
-	},
-/obj/item/gun/ballistic/shotgun/musket,
 /turf/open/floor/carpet/red,
 /area/ruin/syndielab)
 "WO" = (
@@ -837,7 +824,7 @@
 	pixel_x = 8
 	},
 /obj/item/mod/paint,
-/obj/structure/sign/poster/contraband/energy_swords/directional/south,
+/obj/structure/sign/poster/old_syndie/syndicate_pistol/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/syndielab)
 "Xm" = (
@@ -864,7 +851,7 @@
 /area/icemoon/underground/explored)
 "YH" = (
 /obj/item/storage/medkit,
-/obj/structure/sign/poster/contraband/free_key/directional/south,
+/obj/structure/sign/poster/old_syndie/free_key/directional/south,
 /obj/structure/rack,
 /obj/item/stack/medical/suture,
 /obj/item/clothing/neck/stethoscope,
@@ -1169,7 +1156,7 @@ MW
 Xt
 AR
 sV
-NM
+tC
 tC
 tC
 tC

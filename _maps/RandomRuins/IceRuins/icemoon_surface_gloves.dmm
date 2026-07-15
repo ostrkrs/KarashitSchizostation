@@ -900,17 +900,6 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
-"BO" = (
-/obj/effect/turf_decal/tile/brown,
-/obj/effect/turf_decal/tile/dark_red{
-	dir = 8
-	},
-/obj/structure/sign/poster/contraband/roroco/directional/north,
-/obj/machinery/duct,
-/turf/open/floor/iron/edge{
-	dir = 1
-	},
-/area/ruin/roroco)
 "BS" = (
 /turf/closed/wall/r_wall,
 /area/ruin/roroco/harvesting)
@@ -1799,7 +1788,7 @@ xK
 UV
 ok
 pK
-BO
+FB
 md
 ES
 Mg

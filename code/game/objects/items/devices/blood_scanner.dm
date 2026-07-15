@@ -66,8 +66,6 @@
 		render_list += "<span class='danger ml-1'>Warning: Dangerously low blood flow.</span>\n"
 	if(tox_loss > 10)
 		render_list += "<span class='danger ml-1'>Warning: Toxic buildup detected in bloodstream.</span>\n"
-	if(scanned_person.has_status_effect(/datum/status_effect/eigenstasium))
-		render_list += "<span class='danger ml-1'>Warning: Dimensional instability detected. Administer stabilizers.</span>\n"
 	if(scanned_person.has_reagent(/datum/reagent/gold/cursed) || scanned_person.has_status_effect(/datum/status_effect/midas_blight))
 		render_list += "<span class='danger ml-1'>Warning: Hemo-aurificating hexes present.</span>\n" //can it detect normal things? barely. But ancient greed-cursed magicks? Spot on.
 	if(HAS_TRAIT_FROM(scanned_person, TRAIT_NODEATH, /datum/reagent/inverse/penthrite))

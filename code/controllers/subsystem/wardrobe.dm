@@ -301,7 +301,7 @@ SUBSYSTEM_DEF(wardrobe)
 	if(!length(stock_info[WARDROBE_STOCK_CONTENTS]))
 		preloaded_stock -= unload_type
 
-/// Sets up insertion and removal callbacks by typepath
+/// Sets up insertion callbacks by typepath
 /// We will always use the deepest path. So /obj/item/blade/knife superceeds the entries of /obj/item and /obj/item/blade
 /// Mind this
 /datum/controller/subsystem/wardrobe/proc/setup_callbacks()
@@ -313,7 +313,6 @@ SUBSYSTEM_DEF(wardrobe)
 	initial_callbacks[/obj/item/organ] = play_with
 
 	play_with = new /list(WARDROBE_CALLBACK_REMOVE)
-	play_with[WARDROBE_CALLBACK_REMOVE] = CALLBACK(null, TYPE_PROC_REF(/obj/item/storage/box/survival, wardrobe_removal))
 	initial_callbacks[/obj/item/storage/box/survival] = play_with
 
 /datum/controller/subsystem/wardrobe/proc/load_outfits()

@@ -6,6 +6,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SERVICE)
+	default_radio_channel = RADIO_CHANNEL_SERVICE
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -17,7 +18,7 @@
 	config_tag = "STEWARD"
 
 	outfit = /datum/outfit/job/steward
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_personnel // PLACEHOLDER, will delete plasmaman outfit later
+
 	departments_list = list(
 		/datum/job_department/service,
 		/datum/job_department/command,
@@ -57,7 +58,6 @@
 	belt = /obj/item/modular_computer/pda/heads/steward
 	ears = /obj/item/radio/headset/heads/steward
 	shoes = /obj/item/clothing/shoes/laceup
-	l_hand = /obj/item/clipboard
 
 	chameleon_extras = /obj/item/stamp/head/steward
 	implants = list(/obj/item/implant/mindshield)

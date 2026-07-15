@@ -36,7 +36,7 @@
 	///Whether the magazine should start with nothing in it
 	var/start_empty = FALSE
 
-	/// If this and ammo_band_icon aren't null, run update_ammo_band(). Is the color of the band, such as blue on the detective's Iceblox.
+	/// If this and ammo_band_icon aren't null, run update_ammo_band(). Is the color of the band.
 	var/ammo_band_color
 	/// If this and ammo_band_color aren't null, run update_ammo_band(). Is the greyscale icon used for the ammo band.
 	var/ammo_band_icon

@@ -33,14 +33,14 @@ Difficulty: Extremely Hard
 	gps_name = "Bloodchilling Signal"
 	ranged = TRUE
 	crusher_loot = /obj/item/crusher_trophy/ice_block_talisman
-	loot = list(/obj/effect/decal/remains/plasma, /obj/item/ice_energy_crystal)
+	loot = list(/obj/item/ice_energy_crystal)
 	wander = FALSE
 	del_on_death = TRUE
 	blood_volume = BLOOD_VOLUME_NORMAL
 	achievement_type = /datum/award/achievement/boss/demonic_miner_kill
 	crusher_achievement_type = /datum/award/achievement/boss/demonic_miner_crusher
 	score_achievement_type = /datum/award/score/demonic_miner_score
-	death_message = "falls to the ground, decaying into plasma particles."
+	death_message = "falls to the ground, decaying into phoron particles."
 	death_sound = SFX_BODYFALL
 	footstep_type = FOOTSTEP_MOB_HEAVY
 	summon_line = "I'M WIDE AWAKE! AND YOU'RE WIIIIIIIDE OPEN!"

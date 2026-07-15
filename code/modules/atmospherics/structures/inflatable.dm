@@ -71,7 +71,7 @@
 
 
 /obj/item/storage/briefcase/inflatable
-	name = "inflatable barrier box"
+	name = "inflatable barrier case"
 	desc = "Contains inflatable walls and doors."
 	icon_state = "inflatables_box"
 	inhand_icon_state = "lockbox"

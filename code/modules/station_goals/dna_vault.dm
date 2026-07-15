@@ -132,7 +132,7 @@
 		/datum/mutation/dextrous,
 		/datum/mutation/quick,
 		/datum/mutation/fire_immunity,
-		/datum/mutation/plasmocile,
+		/datum/mutation/phoricile,
 		/datum/mutation/quick_recovery,
 		/datum/mutation/tough,
 	)
@@ -185,7 +185,7 @@
 		"Dextrous" = /datum/mutation/dextrous,
 		"Quick" = /datum/mutation/quick,
 		"Fire Immunity" = /datum/mutation/fire_immunity,
-		"Plasmocile" = /datum/mutation/plasmocile,
+		"Phoricile" = /datum/mutation/phoricile,
 		"Quick Recovery" = /datum/mutation/quick_recovery,
 		"Tough" = /datum/mutation/tough,
 	)

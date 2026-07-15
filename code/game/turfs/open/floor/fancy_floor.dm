@@ -143,7 +143,6 @@
 	icon_state = "grass"
 	floor_tile = /obj/item/stack/tile/grass
 	flags_1 = NONE
-	bullet_bounce_sound = null
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_GRASS
 	clawfootstep = FOOTSTEP_GRASS
@@ -197,7 +196,6 @@
 	base_icon_state = "hay"
 	floor_tile = /obj/item/stack/tile/hay
 	flags_1 = NONE
-	bullet_bounce_sound = null
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_GRASS
 	clawfootstep = FOOTSTEP_GRASS
@@ -215,7 +213,6 @@
 	flags_1 = NONE
 	floor_tile = null
 	initial_gas_mix = FROZEN_ATMOS
-	bullet_bounce_sound = null
 	tiled_dirt = FALSE
 	rust_resistance = RUST_RESISTANCE_ORGANIC
 	slowdown = 1.5
@@ -246,7 +243,6 @@
 	icon_state = "basalt"
 	floor_tile = /obj/item/stack/tile/basalt
 	flags_1 = NONE
-	bullet_bounce_sound = null
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
@@ -275,7 +271,6 @@
 	smoothing_groups = SMOOTH_GROUP_TURF_OPEN + SMOOTH_GROUP_CARPET
 	canSmoothWith = SMOOTH_GROUP_CARPET
 	flags_1 = NONE
-	bullet_bounce_sound = null
 	footstep = FOOTSTEP_CARPET
 	barefootstep = FOOTSTEP_CARPET_BAREFOOT
 	clawfootstep = FOOTSTEP_CARPET_BAREFOOT

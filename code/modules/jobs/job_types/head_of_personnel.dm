@@ -5,6 +5,7 @@
 		protect Ian, run the station when the captain dies."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
+	default_radio_channel = RADIO_CHANNEL_COMMAND
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -19,7 +20,7 @@
 	config_tag = "HEAD_OF_PERSONNEL"
 
 	outfit = /datum/outfit/job/hop
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_personnel
+
 	departments_list = list(
 		/datum/job_department/command,
 		)
@@ -106,7 +107,7 @@
 	suit = /obj/item/clothing/suit/armor/vest/hop
 
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
+		/obj/item/gun/energy/laser,
 		/obj/item/stamp/head/hop,
 		)
 
@@ -114,11 +115,3 @@
 	..()
 	if(check_holidays(IAN_HOLIDAY))
 		underwear_top = /datum/sprite_accessory/clothing/underwear_top/ian
-
-//only pet worth reviving
-/datum/job/head_of_personnel/get_mail_goodies(mob/recipient)
-	. = ..()
-	// Strange Reagent if the pet is dead.
-	for(var/mob/living/basic/pet/dog/corgi/ian/staff_pet in GLOB.dead_mob_list)
-		. += list(/datum/reagent/medicine/strange_reagent = 20)
-		break

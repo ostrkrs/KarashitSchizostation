@@ -83,6 +83,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	set_broadcasting(TRUE)
 	recalculateChannels()
 	possibly_deactivate_in_loc()
+	register_context()
 
 /obj/item/radio/headset/proc/possibly_deactivate_in_loc()
 	if(ismob(loc))
@@ -162,6 +163,12 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	if (!broadcasting)
 		return
 	return ..()
+
+/obj/item/radio/headset/no_mic
+	name = "receiver radio headset"
+	desc = "A simple single-ended headset without any microphone. Takes encryption keys."
+	icon_state = "headset_receiver"
+	can_broadcast = FALSE
 
 /obj/item/radio/headset/syndicate //disguised to look like a normal headset for stealth ops
 
@@ -524,7 +531,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		remove_headset_languages(mob_loc)
 		grant_headset_languages(mob_loc)
 
-/obj/item/radio/headset/click_alt(mob/living/user)
+/obj/item/radio/headset/click_alt_secondary(mob/living/user)
 	if(!istype(user) || !command)
 		return CLICK_ACTION_BLOCKING
 	use_command = !use_command

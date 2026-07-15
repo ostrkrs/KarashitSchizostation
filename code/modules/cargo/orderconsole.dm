@@ -14,8 +14,8 @@
 	var/contraband = FALSE
 	var/self_paid = FALSE
 	var/safety_warning = "For safety and ethical reasons, the automated supply shuttle cannot transport live organisms, \
-		human remains, classified nuclear weaponry, mail, undelivered departmental order crates, syndicate bombs, \
-		homing beacons, unstable eigenstates, fax machines, or machinery housing any form of artificial intelligence."
+		human remains, classified nuclear weaponry, mail, undelivered departmental order crates, homing beacons, fax machines, \
+		or machinery housing any form of artificial intelligence."
 	var/blockade_warning = "Bluespace instability detected. Shuttle movement impossible."
 	/// var that tracks message cooldown
 	var/message_cooldown
@@ -356,7 +356,7 @@
 				if(length(SSshuttle.shopping_list))
 					var/obj/item/paper/requisition/requisition_paper = new(get_turf(src))
 					requisition_paper.name = "requisition form - [station_time_timestamp()]"
-					var/requisition_text = "<h2>[station_name()] Supply Requisition</h2>"
+					var/requisition_text = "<h2>[ship_name()] Supply Requisition</h2>"
 					requisition_text += "<hr/>"
 					requisition_text += "Time of Order: [station_time_timestamp()]<br/><br/>"
 					for(var/datum/supply_order/order as anything in SSshuttle.shopping_list)

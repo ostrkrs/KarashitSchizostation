@@ -67,7 +67,7 @@
 /// The amount of ore that is mined from a wall that is VENT_PROX_FAR tiles to a vent.
 #define ORE_WALL_FAR 1
 
-/// Lifetime of a boulder platform in seconds when spawned in lava/plasma.
+/// Lifetime of a boulder platform in seconds when spawned in lava/phoron.
 #define PLATFORM_LIFE_DEFAULT 10 SECONDS
 
 #define PLATFORM_LIFE_GULAG 1 SECONDS

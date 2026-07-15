@@ -253,7 +253,7 @@ GLOBAL_LIST_EMPTY(exploration_sites)
 /datum/exploration_site/spacemine
 	name = "mining facility"
 	description = "An abandoned mining facility attached to an ore-rich asteroid."
-	band_info = list(EXOSCANNER_BAND_PLASMA = 3)
+	band_info = list(EXOSCANNER_BAND_PHORON = 3)
 	site_traits = list(EXPLORATION_SITE_RUINS,EXPLORATION_SITE_HABITABLE,EXPLORATION_SITE_SURFACE)
 	fluff_type = "fluff_ruins"
 

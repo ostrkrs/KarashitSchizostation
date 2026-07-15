@@ -9,6 +9,5 @@
 * It keeps the work tree in SDMM nice and pretty :)
 */
 /area/station
-	name = "Station Areas"
 	icon = 'icons/area/areas_station.dmi'
-	icon_state = "station"
+	icon_state = "dont_use_me"

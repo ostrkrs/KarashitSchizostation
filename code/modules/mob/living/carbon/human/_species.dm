@@ -26,7 +26,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/allow_numbers_in_names = FALSE
 	/**
 	 * The formatting of the name of the species in plural context. Defaults to "[name]\s" if unset.
-	 *  Ex "[Plasmamen] are weak", "[Mothmen] are strong", "[Lizardpeople] don't like", "[Golems] hate"
+	 *  Ex "[Mothmen] are strong", "[Lizardpeople] don't like", "[Golems] hate"
 	 */
 	var/plural_form
 
@@ -45,8 +45,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	///The alpha used by the facial hair. 255 is completely solid, 0 is invisible.
 	var/facial_hair_alpha = 255
 
-	///Never, Optional, or Forced digi legs?
-	var/digitigrade_customization = DIGITIGRADE_NEVER
 	///If your race uses a non standard bloodtype (A+, O-, AB-, etc). For example, lizards have L type blood.
 	///Reagent that your species bleeds, and what chemical can be used to recover lost blood depend on this
 	var/exotic_bloodtype
@@ -122,7 +120,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/death_sound
 	///Special sound for grabbing
 	var/grab_sound
-	/// A path to an outfit that is important for species life e.g. plasmaman outfit
+	/// A path to an outfit that is important for species life
 	var/datum/outfit/outfit_important_for_life
 
 	/// The natural temperature for a body
@@ -169,7 +167,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	/// Should we preload this species's organs?
 	var/preload = TRUE
 
-	/// Do we try to prevent reset_perspective() from working? Useful for Dullahans to stop perspective changes when they're looking through their head.
+	/// Do we try to prevent reset_perspective() from working?
 	var/prevent_perspective_change = FALSE
 
 	///Was the species changed from its original type at the start of the round?
@@ -1964,15 +1962,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
 /datum/species/proc/replace_body(mob/living/carbon/target, datum/species/new_species)
 	new_species ||= target.dna.species //If no new species is provided, assume its src.
 	//Note for future: Potentionally add a new C.dna.species() to build a template species for more accurate limb replacement
-
 	var/list/final_bodypart_overrides = new_species.bodypart_overrides.Copy()
-	if((new_species.digitigrade_customization == DIGITIGRADE_OPTIONAL && target.dna.features[FEATURE_LEGS] == DIGITIGRADE_LEGS) || new_species.digitigrade_customization == DIGITIGRADE_FORCED)
-		var/obj/item/bodypart/leg/right/r_leg = new_species.bodypart_overrides[BODY_ZONE_R_LEG]
-		if(r_leg)
-			final_bodypart_overrides[BODY_ZONE_R_LEG] = initial(r_leg.digitigrade_type)
-		var/obj/item/bodypart/leg/left/l_leg = new_species.bodypart_overrides[BODY_ZONE_L_LEG]
-		if(l_leg)
-			final_bodypart_overrides[BODY_ZONE_L_LEG] = initial(l_leg.digitigrade_type)
 
 	for(var/obj/item/bodypart/old_part as anything in target.bodyparts)
 		if((old_part.change_exempt_flags & BP_BLOCK_CHANGE_SPECIES) || (old_part.bodypart_flags & BODYPART_IMPLANTED))

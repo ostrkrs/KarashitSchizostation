@@ -16,15 +16,21 @@
 	if(isclothing(wear_mask)) //Mask
 		. += wear_mask.flash_protect
 
+/mob/living/carbon/sound_damage(damage, deafen)
+	if(HAS_TRAIT(src, TRAIT_GODMODE))
+		return
+	var/obj/item/organ/ears/ears = get_organ_slot(ORGAN_SLOT_EARS)
+	if(QDELETED(ears))
+		return
+	if(damage)
+		ears.apply_organ_damage(damage * ears.damage_multiplier)
+	if(deafen)
+		ears.adjust_temporary_deafness(deafen)
+
 /mob/living/carbon/get_ear_protection()
 	. = ..()
-	if(HAS_TRAIT(src, TRAIT_DEAF))
-		return INFINITY //For all my homies that can not hear in the world
-	var/obj/item/organ/ears/E = get_organ_slot(ORGAN_SLOT_EARS)
-	if(!E)
-		return INFINITY
-	else
-		. += E.bang_protect
+	var/obj/item/organ/ears/ears = get_organ_slot(ORGAN_SLOT_EARS)
+	return ..() + ears?.bang_protect
 
 /mob/living/carbon/is_mouth_covered(check_flags = ALL)
 	if((check_flags & ITEM_SLOT_HEAD) && head && (head.flags_cover & HEADCOVERSMOUTH))
@@ -517,8 +523,8 @@
 
 	if(ears && (deafen_pwr || damage_pwr))
 		var/ear_damage = damage_pwr * effect_amount
-		var/deaf = deafen_pwr * effect_amount
-		ears.adjustEarDamage(ear_damage,deaf)
+		var/deaf = deafen_pwr * effect_amount * 2 SECONDS
+		sound_damage(ear_damage, deaf)
 
 		. = effect_amount //how soundbanged we are
 		SEND_SOUND(src, sound('sound/items/weapons/flash_ring.ogg',0,1,0,250))
@@ -546,15 +552,6 @@
 			hit_clothes = head
 		if(hit_clothes)
 			hit_clothes.take_damage(damage_amount, damage_type, damage_flag, 0)
-
-/mob/living/carbon/can_hear()
-	. = FALSE
-	var/obj/item/organ/ears/ears = get_organ_slot(ORGAN_SLOT_EARS)
-	if(ears && !HAS_TRAIT(src, TRAIT_DEAF))
-		. = TRUE
-	if(health <= hardcrit_threshold && !HAS_TRAIT(src, TRAIT_NOHARDCRIT))
-		. = FALSE
-
 
 /mob/living/carbon/adjustOxyLoss(amount, updating_health = TRUE, forced, required_biotype, required_respiration_type)
 	if(!forced && HAS_TRAIT(src, TRAIT_NOBREATH))

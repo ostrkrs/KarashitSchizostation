@@ -3,7 +3,7 @@
 	alt_titles = JOB_INTERNAL_SECURITY_OPERATIVE_ALT_TITLES
 	description = "Protect Internal Affairs Agent you're assigned to, \
 		enforce the crew to follow directives when fine papers alone isn't enough."
-	department_head = list(JOB_CENTCOM_COMMANDER)
+	department_head = list("Internal Affairs Agent and Solstice Reach HQ")
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -12,7 +12,6 @@
 	config_tag = "INTERNAL_SECURITY_OPERATIVE"
 
 	outfit = /datum/outfit/job/iso
-	plasmaman_outfit = /datum/outfit/plasmaman/bar
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV

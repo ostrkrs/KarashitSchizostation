@@ -72,7 +72,7 @@
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
 	head = /obj/item/clothing/head/helmet/swat/nanotrasen
 	back = /obj/item/storage/backpack/security
-	l_pocket = /obj/item/ammo_box/magazine/m45
+
 // Corpse Spawner
 /obj/effect/mob_spawn/corpse/human/waystation/cargo_technician
 	name = "Waystation Cargo Hauler"

@@ -243,17 +243,17 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /obj/item/clothing/mask/fakemoustache/italian/add_stealing_item_objective()
 	return add_item_to_steal(src, /obj/item/clothing/mask/fakemoustache/italian)
 
-/datum/objective_item/steal/traitor/det_revolver
-	name = "detective's revolver"
-	targetitem = /obj/item/gun/ballistic/revolver/c38/detective
+/datum/objective_item/steal/traitor/criminalist_revolver
+	name = "criminalist's revolver"
+	targetitem = /obj/item/gun/ballistic/revolver/c38/criminalist
 	excludefromjob = list(JOB_CRIMINALIST)
 	exists_on_map = TRUE
 	difficulty = 3
-	steal_hint = "A .38 special revolver found in the Detective's holder. \
-		Usually found on the Detective's person, or if none are around, in the detective's locker, in their office."
+	steal_hint = "A .38 special revolver found in the Criminalist's holder. \
+		Usually found on the Criminalist's person, or if none are around, in the criminalist's locker, in their office."
 
-/obj/item/gun/ballistic/revolver/c38/detective/add_stealing_item_objective()
-	return add_item_to_steal(src, /obj/item/gun/ballistic/revolver/c38/detective)
+/obj/item/gun/ballistic/revolver/c38/criminalist/add_stealing_item_objective()
+	return add_item_to_steal(src, /obj/item/gun/ballistic/revolver/c38/criminalist)
 
 /datum/objective_item/steal/traitor/iaa_badge
 	name = "the IAA's badge"
@@ -361,19 +361,6 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 
 /obj/item/gun/energy/laser/captain/add_stealing_item_objective()
 	return add_item_to_steal(src, /obj/item/gun/energy/laser/captain)
-
-/datum/objective_item/steal/hoslaser
-	name = "the head of security's personal laser gun"
-	targetitem = /obj/item/gun/energy/e_gun/hos
-	excludefromjob = list(JOB_HEAD_OF_SECURITY)
-	item_owner = list(JOB_HEAD_OF_SECURITY)
-	exists_on_map = TRUE
-	difficulty = 4
-	steal_hint = "The Head of Security's unique three mode laser gun. \
-		Always found on their person, if they are alive, but may otherwise be found in their locker."
-
-/obj/item/gun/energy/e_gun/hos/add_stealing_item_objective()
-	return add_item_to_steal(src, /obj/item/gun/energy/e_gun/hos)
 
 /datum/objective_item/steal/compactshotty
 	name = "the warden's personal compact shotgun"
@@ -741,46 +728,6 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 /obj/item/clothing/mask/facehugger/lamarr/add_stealing_item_objective()
 	return add_item_to_steal(src, /obj/item/clothing/mask/facehugger/lamarr)
 
-/datum/objective_item/steal/spy/disabler
-	name = "a disabler"
-	targetitem = /obj/item/gun/energy/disabler
-	excludefromjob = list(
-		JOB_CAPTAIN,
-		JOB_CRIMINALIST,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
-		JOB_WARDEN,
-	)
-	difficulty = 2
-	steal_hint = "A hand-held disabler, often found in the possession of Security Officers."
-
-/datum/objective_item/steal/spy/energy_gun
-	name = "an energy gun"
-	targetitem = /obj/item/gun/energy/e_gun
-	excludefromjob = list(
-		JOB_CAPTAIN,
-		JOB_CHIEF_ENGINEER,
-		JOB_CHIEF_MEDICAL_OFFICER,
-		JOB_CRIMINALIST,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
-		JOB_QUARTERMASTER,
-		JOB_RESEARCH_DIRECTOR,
-		JOB_SECURITY_OFFICER,
-		JOB_WARDEN,
-	)
-	exists_on_map = TRUE
-	difficulty = 2
-	steal_hint = "A two-mode energy gun, found in the station's Armory, as well as in the hands of some heads of staff for personal defense."
-
-/datum/objective_item/steal/spy/energy_gun/check_special_completion(obj/item/thing)
-	return thing.type == /obj/item/gun/energy/e_gun
-
-/obj/item/gun/energy/e_gun/add_stealing_item_objective()
-	if(type == /obj/item/gun/energy/e_gun)
-		return add_item_to_steal(src, /obj/item/gun/energy/e_gun)
-
 /datum/objective_item/steal/spy/laser_gun
 	name = "a laser gun"
 	targetitem = /obj/item/gun/energy/laser
@@ -939,28 +886,6 @@ GLOBAL_DATUM_INIT(steal_item_handler, /datum/objective_item_handler, new())
 
 /datum/objective_item/steal/spy/stun_baton/check_special_completion(obj/item/thing)
 	return !istype(thing, /obj/item/melee/baton/security/cattleprod)
-
-/datum/objective_item/steal/spy/det_baton
-	name = "the detective's baton"
-	targetitem = /obj/item/melee/baton
-	excludefromjob = list(
-		JOB_CAPTAIN,
-		JOB_CRIMINALIST,
-		JOB_HEAD_OF_PERSONNEL,
-		JOB_HEAD_OF_SECURITY,
-		JOB_SECURITY_OFFICER,
-		JOB_WARDEN,
-	)
-	exists_on_map = TRUE
-	difficulty = 2
-	steal_hint = "The detective's old wooden truncheon, commonly found on their person for self defense."
-
-/datum/objective_item/steal/spy/det_baton/check_special_completion(obj/item/thing)
-	return thing.type == /obj/item/melee/baton
-
-/obj/item/melee/baton/add_stealing_item_objective()
-	if(type == /obj/item/melee/baton)
-		return add_item_to_steal(src, /obj/item/melee/baton)
 
 /datum/objective_item/steal/spy/captain_sabre_sheathe
 	name = "the captain's sabre sheathe"

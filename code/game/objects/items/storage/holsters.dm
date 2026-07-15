@@ -33,45 +33,29 @@
 		/obj/item/gun/energy/laser/thermal/cryo = 1,
 	),src)
 
-/obj/item/storage/belt/holster/energy/disabler
-	desc = "A rather plain pair of shoulder holsters with a bit of insulated padding inside. Designed to hold energy weaponry. A production stamp indicates that it was shipped with a disabler."
-
-/obj/item/storage/belt/holster/energy/disabler/PopulateContents()
-	generate_items_inside(list(
-		/obj/item/gun/energy/disabler = 1,
-	),src)
-
-/obj/item/storage/belt/holster/energy/smoothbore
-	desc = "A rather plain pair of shoulder holsters with a bit of insulated padding inside. Designed to hold energy weaponry. Seems it was meant to fit two smoothbores."
-
-/obj/item/storage/belt/holster/energy/smoothbore/PopulateContents()
-	generate_items_inside(list(
-		/obj/item/gun/energy/disabler/smoothbore = 2,
-	),src)
-
-/obj/item/storage/belt/holster/detective
-	name = "detective's holster"
+/obj/item/storage/belt/holster/criminalist
+	name = "criminalist's holster"
 	desc = "A holster able to carry handguns and some ammo. WARNING: Badasses only."
 	w_class = WEIGHT_CLASS_BULKY
-	storage_type = /datum/storage/holster/detective
+	storage_type = /datum/storage/holster/criminalist
 
-/obj/item/storage/belt/holster/detective/full/PopulateContents()
+/obj/item/storage/belt/holster/criminalist/full/PopulateContents()
 	generate_items_inside(list(
 		/obj/item/ammo_box/speedloader/c38 = 2,
-		/obj/item/gun/ballistic/revolver/c38/detective = 1,
+		/obj/item/gun/ballistic/revolver/c38/criminalist = 1,
 	), src)
 
-/obj/item/storage/belt/holster/detective/full/ert
+/obj/item/storage/belt/holster/criminalist/full/ert
 	name = "marine's holster"
-	desc = "Wearing this makes you feel badass, but you suspect it's just a repainted detective's holster from the NT surplus."
+	desc = "Wearing this makes you feel badass, but you suspect it's just a repainted criminalist's holster from the NT surplus."
 	icon_state = "syndicate_holster"
 	inhand_icon_state = "syndicate_holster"
 	worn_icon_state = "syndicate_holster"
 
-/obj/item/storage/belt/holster/detective/full/ert/PopulateContents()
+/obj/item/storage/belt/holster/criminalist/full/ert/PopulateContents()
 	generate_items_inside(list(
-		/obj/item/ammo_box/magazine/m45 = 2,
-		/obj/item/gun/ballistic/automatic/pistol/m1911 = 1,
+		/obj/item/ammo_box/speedloader/c357 = 2,
+		/obj/item/gun/ballistic/revolver/badass = 1,
 	),src)
 
 /obj/item/storage/belt/holster/chameleon

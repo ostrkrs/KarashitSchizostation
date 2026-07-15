@@ -51,7 +51,7 @@
 		/datum/reagent/uranium/radium,
 		/datum/reagent/silicon,
 		/datum/reagent/sodium,
-		/datum/reagent/stable_plasma,
+		/datum/reagent/stable_phoron,
 		/datum/reagent/consumable/sugar,
 		/datum/reagent/sulfur,
 		/datum/reagent/toxin/acid,

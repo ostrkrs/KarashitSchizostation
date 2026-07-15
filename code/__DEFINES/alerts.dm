@@ -2,8 +2,8 @@
 #define ALERT_TOO_MUCH_OXYGEN "too_much_oxy"
 #define ALERT_NOT_ENOUGH_OXYGEN "not_enough_oxy"
 
-#define ALERT_TOO_MUCH_PLASMA "too_much_plas"
-#define ALERT_NOT_ENOUGH_PLASMA "not_enough_plas"
+#define ALERT_TOO_MUCH_PHORON "too_much_phoron"
+#define ALERT_NOT_ENOUGH_PHORON "not_enough_phoron"
 
 #define ALERT_TOO_MUCH_CO2 "too_much_co2"
 #define ALERT_NOT_ENOUGH_CO2 "not_enough_co2"
@@ -39,7 +39,7 @@
 
 /** Alien related */
 #define ALERT_XENO_FIRE "alien_fire"
-#define ALERT_XENO_PLASMA "alien_plas"
+#define ALERT_XENO_PHORON "alien_phoron"
 #define ALERT_XENO_NOQUEEN "alien_noqueen"
 
 /** Silicon related */

@@ -265,7 +265,7 @@
 		/obj/item/autopsy_scanner,
 		/obj/item/camera,
 		/obj/item/cane,
-		/obj/item/detective_scanner,
+		/obj/item/criminalist_scanner,
 		/obj/item/door_remote,
 		/obj/item/flashlight,
 		/obj/item/geiger_counter,

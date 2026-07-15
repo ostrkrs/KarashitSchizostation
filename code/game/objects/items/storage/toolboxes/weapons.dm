@@ -6,7 +6,6 @@
 	force = 15
 	throwforce = 18
 	material_flags = NONE
-	storage_type = /datum/storage/toolbox/syndicate
 
 /obj/item/storage/toolbox/syndicate/PopulateContents()
 	new /obj/item/screwdriver/nuke(src)
@@ -44,13 +43,25 @@
 /obj/item/storage/toolbox/ammobox/strilka310/surplus
 	ammo_to_spawn = /obj/item/ammo_box/speedloader/strilka310/surplus
 
-/obj/item/storage/toolbox/ammobox/wt550m9
+/obj/item/storage/toolbox/ammobox/smg46mm_wt550
 	name = "4.6x30mm ammo box"
-	ammo_to_spawn = /obj/item/ammo_box/magazine/wt550m9
+	ammo_to_spawn = /obj/item/ammo_box/magazine/smg46mm_wt550
 
-/obj/item/storage/toolbox/ammobox/wt550m9ap
+/obj/item/storage/toolbox/ammobox/smg46mm_wt550ap
 	name = "4.6x30mm AP ammo box"
-	ammo_to_spawn = /obj/item/ammo_box/magazine/wt550m9/wtap
+	ammo_to_spawn = /obj/item/ammo_box/magazine/smg46mm_wt550/wtap
+
+/obj/item/storage/toolbox/ammobox/smg8mm_c20r
+	name = "8x22mm ammo box"
+	ammo_to_spawn = /obj/item/ammo_box/magazine/smgm8mm_c20r
+
+/obj/item/storage/toolbox/ammobox/smg8mm_c20r_ap
+	name = "8x22mm AP ammo box"
+	ammo_to_spawn = /obj/item/ammo_box/magazine/smgm8mm_c20r/ap
+
+/obj/item/storage/toolbox/ammobox/smg8mm_c20r_hp
+	name = "8x22mm HP ammo box"
+	ammo_to_spawn = /obj/item/ammo_box/magazine/smgm8mm_c20r/hp
 
 
 /obj/item/storage/toolbox/guncase
@@ -64,9 +75,9 @@
 	has_latches = FALSE
 	storage_type = /datum/storage/toolbox/guncase
 	/// What weapon do we spawn in our case?
-	var/weapon_to_spawn = /obj/item/gun/ballistic/automatic/pistol
+	var/weapon_to_spawn = /obj/item/gun/ballistic/automatic/pistol/wt23
 	/// What magazine do we spawn in our case?
-	var/extra_to_spawn = /obj/item/ammo_box/magazine/m9mm
+	var/extra_to_spawn = /obj/item/ammo_box/magazine/m10mm
 
 /obj/item/storage/toolbox/guncase/PopulateContents()
 	if(weapon_to_spawn)
@@ -76,12 +87,12 @@
 			new extra_to_spawn (src)
 
 /obj/item/storage/toolbox/guncase/traitor
-	name = "makarov gun case"
+	name = "pistol case"
 	desc = "A weapon's case. Has a blood-red 'S' stamped on the cover. There seems to be a strange switch along the side inside a plastic flap."
 	icon_state = "pistol_case"
 	base_icon_state = "pistol_case"
 	// What ammo box do we spawn in our case?
-	var/ammo_box_to_spawn = /obj/item/ammo_box/c9mm
+	var/ammo_box_to_spawn = /obj/item/ammo_box/c8mm
 	// Timer for the bomb in the case.
 	var/explosion_timer
 	// Whether or not our case is exploding. Used for determining sprite changes.
@@ -138,8 +149,8 @@
 	qdel(src)
 
 /obj/item/storage/toolbox/guncase/traitor/ammunition
-	name = "makarov 9mm magazine case"
-	weapon_to_spawn = /obj/item/ammo_box/magazine/m9mm
+	name = "pistol 9mm magazine case"
+	weapon_to_spawn = /obj/item/ammo_box/magazine/m10mm
 
 /obj/item/storage/toolbox/guncase/traitor/donksoft
 	name = "\improper Donksoft riot pistol gun case"
@@ -160,29 +171,13 @@
 
 /obj/item/storage/toolbox/guncase/c20r
 	name = "c-20r gun case"
-	weapon_to_spawn = /obj/item/gun/ballistic/automatic/c20r
-	extra_to_spawn = /obj/item/ammo_box/magazine/smgm45
+	weapon_to_spawn = /obj/item/gun/ballistic/automatic/smg/c20r
+	extra_to_spawn = /obj/item/ammo_box/magazine/smgm8mm_c20r
 
 /obj/item/storage/toolbox/guncase/smartgun
 	name = "adielle smartgun case"
-	weapon_to_spawn = /obj/item/gun/ballistic/automatic/smartgun
+	weapon_to_spawn = /obj/item/gun/ballistic/automatic/smg/smartgun
 	extra_to_spawn = /obj/item/ammo_box/magazine/smartgun
-
-/obj/item/storage/toolbox/guncase/clandestine
-	name = "clandestine gun case"
-	weapon_to_spawn = /obj/item/gun/ballistic/automatic/pistol/clandestine
-	extra_to_spawn = /obj/item/ammo_box/magazine/m10mm
-
-/obj/item/storage/toolbox/guncase/m90gl
-	name = "m-90gl gun case"
-	weapon_to_spawn = /obj/item/gun/ballistic/automatic/m90
-	extra_to_spawn = /obj/item/ammo_box/magazine/m223
-
-/obj/item/storage/toolbox/guncase/m90gl/PopulateContents()
-	new weapon_to_spawn (src)
-	for(var/i in 1 to 2)
-		new extra_to_spawn (src)
-	new /obj/item/ammo_box/a40mm/rubber (src)
 
 /obj/item/storage/toolbox/guncase/rocketlauncher
 	name = "rocket launcher gun case"
@@ -239,65 +234,6 @@
 	inhand_icon_state = "sakhno_case"
 	weapon_to_spawn = /obj/effect/spawner/random/sakhno
 	extra_to_spawn = /obj/effect/spawner/random/sakhno/ammo
-
-/obj/item/storage/toolbox/guncase/monkeycase
-	name = "monkey gun case"
-	desc = "Everything a monkey needs to truly go ape-shit. There's a paw-shaped hand scanner lock on the front of the case."
-	storage_type = /datum/storage/toolbox/guncase/monkey
-
-/obj/item/storage/toolbox/guncase/monkeycase/attack_self(mob/user, modifiers)
-	if(!monkey_check(user))
-		return
-	return ..()
-
-/obj/item/storage/toolbox/guncase/monkeycase/attack_self_secondary(mob/user, modifiers)
-	attack_self(user, modifiers)
-	return
-
-/obj/item/storage/toolbox/guncase/monkeycase/attack_hand(mob/user, list/modifiers)
-	if(!monkey_check(user))
-		return
-	return ..()
-
-/obj/item/storage/toolbox/guncase/monkeycase/proc/monkey_check(mob/user)
-	if(atom_storage.locked == STORAGE_NOT_LOCKED)
-		return TRUE
-
-	if(is_simian(user))
-		atom_storage.locked = STORAGE_NOT_LOCKED
-		to_chat(user, span_notice("You place your paw on the paw scanner, and hear a soft click as [src] unlocks!"))
-		playsound(src, 'sound/items/click.ogg', 25, TRUE)
-		return TRUE
-	to_chat(user, span_warning("You put your hand on the hand scanner, and it rejects it with an angry chimpanzee screech!"))
-	playsound(src, SFX_SCREECH, 75, TRUE)
-	return FALSE
-
-/obj/item/storage/toolbox/guncase/monkeycase/PopulateContents()
-	switch(rand(1, 3))
-		if(1)
-			// Uzi with a boxcutter.
-			new /obj/item/gun/ballistic/automatic/mini_uzi/chimpgun(src)
-			new /obj/item/ammo_box/magazine/uzim9mm(src)
-			new /obj/item/ammo_box/magazine/uzim9mm(src)
-			new /obj/item/boxcutter/extended(src)
-		if(2)
-			// Thompson with a boxcutter.
-			new /obj/item/gun/ballistic/automatic/tommygun/chimpgun(src)
-			new /obj/item/ammo_box/magazine/tommygunm45(src)
-			new /obj/item/ammo_box/magazine/tommygunm45(src)
-			new /obj/item/boxcutter/extended(src)
-		if(3)
-			// M1911 with a switchblade and an extra banana bomb.
-			new /obj/item/gun/ballistic/automatic/pistol/m1911/chimpgun(src)
-			new /obj/item/ammo_box/magazine/m45(src)
-			new /obj/item/ammo_box/magazine/m45(src)
-			new /obj/item/switchblade/extended(src)
-			new /obj/item/food/grown/banana/bunch/monkeybomb(src)
-
-	// Banana bomb! Basically a tiny flashbang for monkeys.
-	new /obj/item/food/grown/banana/bunch/monkeybomb(src)
-	// Somewhere to store it all.
-	new /obj/item/storage/backpack/messenger(src)
 
 /obj/item/storage/toolbox/emergency/turret
 	desc = "You feel a strange urge to hit this with a wrench."

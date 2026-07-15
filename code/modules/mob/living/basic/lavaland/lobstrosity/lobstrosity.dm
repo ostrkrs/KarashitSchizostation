@@ -138,7 +138,7 @@
 /datum/action/cooldown/mob_cooldown/charge/basic_charge/lobster/proc/apply_post_charge(mob/living/charger)
 	charger.apply_status_effect(/datum/status_effect/tired_post_charge)
 
-///A weaker, yet somewhat faster lobstrosity. Sources include aquarium chasm chrabs, chasms, plasma rivers and perhaps xenobio.
+///A weaker, yet somewhat faster lobstrosity. Sources include aquarium chasm chrabs, chasms, phoron rivers and perhaps xenobio.
 /mob/living/basic/mining/lobstrosity/juvenile
 	name = "juvenile arctic lobstrosity"
 	desc = "A youngling of the behemothic arctic lobstrosity. They usually stay put in the underground lakes they reside in until they're fully grown."

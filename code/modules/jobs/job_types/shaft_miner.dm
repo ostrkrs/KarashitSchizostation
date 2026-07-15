@@ -12,7 +12,6 @@
 	config_tag = "SHAFT_MINER"
 
 	outfit = /datum/outfit/job/miner
-	plasmaman_outfit = /datum/outfit/plasmaman/mining
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_CAR
@@ -36,7 +35,6 @@
 
 	id_trim = /datum/id_trim/job/shaft_miner
 	uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
-	skillchips = list(/obj/item/skillchip/job/miner)
 	backpack_contents = list(
 		/obj/item/flashlight/seclite = 1,
 		/obj/item/knife/combat/survival = 1,

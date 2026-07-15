@@ -885,11 +885,11 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/research)
 "dn" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /turf/open/floor/iron/freezer,
 /area/awaymission/snowdin/post/kitchen)
 "do" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/structure/spider/stickyweb,
 /turf/open/floor/iron/freezer,
 /area/awaymission/snowdin/post/kitchen)
@@ -1019,7 +1019,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 6
 	},
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/awaymission/snowdin/post/kitchen)
@@ -1155,7 +1155,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/structure/closet/kitchen,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/awaymission/snowdin/post/kitchen)
@@ -1211,7 +1211,7 @@
 /turf/closed/wall/mineral/cult,
 /area/awaymission/snowdin/cave/cavern)
 "eL" = (
-/turf/closed/mineral/plasma/ice,
+/turf/closed/mineral/phoron/ice,
 /area/awaymission/snowdin/cave/cavern)
 "eN" = (
 /obj/structure/dresser,
@@ -1390,7 +1390,7 @@
 /turf/open/floor/wood,
 /area/awaymission/snowdin/outside)
 "fr" = (
-/turf/open/lava/plasma,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "fs" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -1558,7 +1558,7 @@
 /area/awaymission/snowdin/outside)
 "gc" = (
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -1786,14 +1786,14 @@
 "gU" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
 "gV" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -1968,7 +1968,7 @@
 "hF" = (
 /obj/structure/destructible/cult/pylon,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -2121,7 +2121,7 @@
 	},
 /obj/item/restraints/handcuffs,
 /obj/item/assembly/flash,
-/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/ammo/rubbershot,
 /obj/structure/fireaxecabinet/directional/north,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/secpost)
@@ -2167,7 +2167,7 @@
 	max_mobs = 5
 	},
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -2177,7 +2177,7 @@
 	name = "Caleb Reed"
 	},
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -2696,7 +2696,7 @@
 	name = "Jacob Ullman"
 	},
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -2820,8 +2820,8 @@
 "km" = (
 /obj/structure/sign/poster/contraband/tools/directional/east,
 /obj/structure/closet/crate/preopen,
-/obj/item/tank/internals/plasma,
-/obj/item/tank/internals/plasma,
+/obj/item/tank/internals/phoron,
+/obj/item/tank/internals/phoron,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/garage)
 "kn" = (
@@ -3852,7 +3852,7 @@
 /area/awaymission/snowdin/post/engineering)
 "nU" = (
 /obj/machinery/power/port_gen/pacman,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /turf/open/floor/iron,
@@ -4479,7 +4479,7 @@
 "qg" = (
 /obj/structure/flora/rock/pile/icy/style_random,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -4631,16 +4631,13 @@
 /turf/open/floor/engine/cult,
 /area/awaymission/snowdin/post/cavern2)
 "qI" = (
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /turf/open/floor/iron/cafeteria,
 /area/awaymission/snowdin/post/cavern2)
 "qK" = (
 /obj/structure/rack,
-/obj/item/storage/box/lethalshot,
-/obj/item/storage/box/lethalshot{
-	pixel_x = 2;
-	pixel_y = 2
-	},
+/obj/item/storage/box/ammo/buckshot,
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/floor/iron/dark,
 /area/awaymission/snowdin/post/secpost)
 "qL" = (
@@ -4906,13 +4903,13 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored{
 	dir = 1
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/post/engineering)
 "rN" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored{
 	dir = 1
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/post/engineering)
 "rO" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored{
@@ -4955,12 +4952,12 @@
 /area/awaymission/snowdin/cave/cavern)
 "rV" = (
 /obj/structure/lattice/catwalk,
-/turf/open/lava/plasma,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "rW" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/turf/open/lava/plasma,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "rY" = (
 /obj/structure/table/wood,
@@ -4984,7 +4981,7 @@
 /turf/open/floor/engine/cult,
 /area/awaymission/snowdin/post/cavern2)
 "sc" = (
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /turf/open/floor/plating,
@@ -5029,7 +5026,7 @@
 /obj/machinery/air_sensor{
 	chamber_id = "snowdinmix"
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/post/engineering)
 "sj" = (
 /obj/machinery/air_sensor{
@@ -5054,17 +5051,17 @@
 /obj/structure/fence/door{
 	dir = 4
 	},
-/turf/open/lava/plasma,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "sn" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
-/turf/open/lava/plasma,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "so" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
-/turf/open/lava/plasma,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "sp" = (
 /obj/structure/fence/door{
@@ -5142,8 +5139,8 @@
 /area/awaymission/snowdin/cave/cavern)
 "sG" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
-/turf/open/lava/plasma,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "sI" = (
 /obj/effect/turf_decal/weather/snow,
@@ -5322,7 +5319,7 @@
 /turf/open/misc/asteroid/snow,
 /area/awaymission/snowdin/outside)
 "tt" = (
-/mob/living/basic/skeleton/plasmaminer/jackhammer,
+/mob/living/basic/skeleton/phoron_miner/jackhammer,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "tu" = (
@@ -5516,7 +5513,7 @@
 /area/awaymission/snowdin/post/cavern1)
 "uK" = (
 /obj/structure/cable,
-/mob/living/basic/skeleton/plasmaminer,
+/mob/living/basic/skeleton/phoron_miner,
 /turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern1)
 "uM" = (
@@ -5536,7 +5533,7 @@
 /turf/open/floor/iron,
 /area/awaymission/snowdin/post/mining_main/mechbay)
 "uS" = (
-/mob/living/basic/skeleton/plasmaminer,
+/mob/living/basic/skeleton/phoron_miner,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern1)
@@ -5626,7 +5623,7 @@
 "vi" = (
 /mob/living/basic/skeleton/templar,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -5998,13 +5995,6 @@
 	},
 /turf/closed/wall/ice,
 /area/awaymission/snowdin/post/mining_main/mechbay)
-"xs" = (
-/obj/item/gun/energy/e_gun{
-	dead_cell = 1
-	},
-/obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/plating,
-/area/awaymission/snowdin/post/mining_dock)
 "xt" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -6133,7 +6123,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "xN" = (
@@ -6164,7 +6154,7 @@
 /area/awaymission/snowdin/post/mining_dock)
 "xS" = (
 /obj/machinery/power/port_gen/pacman,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 3
 	},
 /turf/open/floor/plating/snowed/smoothed,
@@ -6240,7 +6230,7 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/cave)
 "yg" = (
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/cave)
 "yi" = (
 /obj/effect/turf_decal/stripes/line{
@@ -6280,7 +6270,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 8
 	},
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating/snowed/smoothed,
 /area/awaymission/snowdin/cave)
 "yp" = (
@@ -6323,9 +6313,9 @@
 "yu" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
 	dir = 8;
-	name = "plasma vent"
+	name = "phoron vent"
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/cave)
 "yv" = (
 /turf/closed/wall/mineral/snow,
@@ -6499,9 +6489,9 @@
 "za" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
 	dir = 4;
-	name = "plasma vent"
+	name = "phoron vent"
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/cave)
 "zc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible{
@@ -6558,9 +6548,9 @@
 /area/awaymission/snowdin/cave/cavern)
 "zl" = (
 /obj/structure/lattice/catwalk,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/turf/open/lava/plasma,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "zm" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -7037,7 +7027,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/turf/open/lava/plasma,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "Bi" = (
 /obj/effect/turf_decal/stripes/line{
@@ -7138,7 +7128,7 @@
 /area/awaymission/snowdin/post/minipost)
 "BC" = (
 /obj/machinery/power/port_gen/pacman,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 3
 	},
 /obj/structure/cable,
@@ -7165,7 +7155,7 @@
 "BF" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/fence/door,
-/turf/open/lava/plasma,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "BG" = (
 /obj/effect/turf_decal/stripes/line{
@@ -7219,7 +7209,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/turf/open/lava/plasma,
+/turf/open/lava/phoron,
 /area/awaymission/snowdin/cave/cavern)
 "BQ" = (
 /obj/effect/turf_decal/stripes/end{
@@ -7611,7 +7601,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/snowdin/cave)
 "DH" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/awaymission/snowdin/cave)
 "DI" = (
@@ -7930,7 +7920,7 @@
 /area/awaymission/snowdin/post/mining_main/mechbay)
 "Fn" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/outside)
 "Fo" = (
@@ -8280,14 +8270,14 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/mining_main)
 "Ho" = (
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/outside)
 "Hp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on{
 	dir = 1;
-	name = "plasma vent"
+	name = "phoron vent"
 	},
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/outside)
 "Hq" = (
 /obj/effect/turf_decal/bot,
@@ -8600,7 +8590,7 @@
 /area/awaymission/snowdin/post/mining_main)
 "IX" = (
 /obj/structure/closet/crate/preopen,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /turf/open/floor/plating,
@@ -8933,7 +8923,7 @@
 /obj/structure/closet/crate/wooden,
 /obj/effect/spawner/random/exotic/antag_gear,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -9191,7 +9181,7 @@
 /obj/structure/closet/crate/wooden,
 /obj/effect/spawner/random/exotic/antag_gear_weak,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -10267,7 +10257,7 @@
 /turf/open/misc/asteroid/snow,
 /area/awaymission/snowdin/cave)
 "Sb" = (
-/mob/living/basic/skeleton/plasmaminer/jackhammer,
+/mob/living/basic/skeleton/phoron_miner/jackhammer,
 /turf/open/misc/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "Sd" = (
@@ -10385,9 +10375,6 @@
 	anchored = 1;
 	name = "Officer Norm"
 	},
-/obj/item/gun/energy/e_gun/mini{
-	pixel_y = -5
-	},
 /obj/item/clothing/head/helmet{
 	pixel_y = 8
 	},
@@ -10436,7 +10423,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 1
 	},
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
@@ -10614,12 +10601,12 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/snowdin/cave)
 "TW" = (
-/mob/living/basic/skeleton/plasmaminer,
+/mob/living/basic/skeleton/phoron_miner,
 /turf/open/floor/plating/snowed/cavern,
 /area/awaymission/snowdin/cave/cavern)
 "TY" = (
 /obj/machinery/power/port_gen/pacman,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 3
 	},
 /turf/open/misc/asteroid/snow,
@@ -10640,7 +10627,7 @@
 /area/awaymission/snowdin/post/garage)
 "Ub" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
@@ -10674,7 +10661,7 @@
 /area/awaymission/snowdin/post/mining_main/mechbay)
 "Un" = (
 /obj/machinery/light/small/directional/south,
-/turf/open/floor/engine/plasma,
+/turf/open/floor/engine/phoron,
 /area/awaymission/snowdin/post/engineering)
 "Up" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4,
@@ -10798,7 +10785,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/snowdin/post/mining_main/robotics)
 "Ve" = (
-/mob/living/basic/skeleton/plasmaminer,
+/mob/living/basic/skeleton/phoron_miner,
 /turf/open/misc/asteroid/snow/ice,
 /area/awaymission/snowdin/cave/cavern)
 "Vf" = (
@@ -11032,7 +11019,7 @@
 /area/awaymission/snowdin/post/mining_main/mechbay)
 "WA" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
-/obj/machinery/portable_atmospherics/canister/plasma,
+/obj/machinery/portable_atmospherics/canister/phoron,
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/outside)
@@ -11175,12 +11162,9 @@
 /area/awaymission/snowdin/outside)
 "Xt" = (
 /obj/structure/rack,
-/obj/item/storage/box/rubbershot,
+/obj/item/storage/box/ammo/rubbershot,
 /obj/machinery/light/small/directional/south,
-/obj/item/storage/box/rubbershot{
-	pixel_x = 2;
-	pixel_y = 2
-	},
+/obj/item/storage/box/ammo/rubbershot,
 /turf/open/floor/iron/dark,
 /area/awaymission/snowdin/post/secpost)
 "Xw" = (
@@ -11240,7 +11224,7 @@
 "XP" = (
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/engine/cult{
-	initial_gas_mix = "n2=82;plasma=24;TEMP=120";
+	initial_gas_mix = "n2=82;phoron=24;TEMP=120";
 	temperature = 120
 	},
 /area/awaymission/snowdin/cave/cavern)
@@ -62365,7 +62349,7 @@ eJ
 wD
 wT
 xe
-xs
+xe
 xA
 xI
 xN

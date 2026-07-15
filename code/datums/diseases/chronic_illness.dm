@@ -79,7 +79,7 @@
 					affected_mob.emote("scream")
 					for(var/mob/living/viewers in viewers(3, affected_mob.loc))
 						viewers.flash_act()
-					new /obj/effect/decal/cleanable/plasma(affected_mob.loc)
+					new /obj/effect/decal/cleanable/phoron(affected_mob.loc)
 					new /obj/effect/decal/cleanable/ash(affected_mob.loc)
 					affected_mob.visible_message(span_warning("[affected_mob] is erased from the timeline!"), span_userdanger("You are ripped from the timeline!"))
 					affected_mob.investigate_log("has been dusted / deleted by [name].", INVESTIGATE_DEATHS)

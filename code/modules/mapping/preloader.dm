@@ -39,4 +39,3 @@ GLOBAL_LIST_INIT(_preloader_path, null)
 /turf/template_noop
 	name = "Turf Passthrough"
 	icon_state = "noop"
-	bullet_bounce_sound = null

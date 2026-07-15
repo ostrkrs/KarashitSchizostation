@@ -13,7 +13,7 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver/alien,
 		ORGAN_SLOT_EARS = /obj/item/organ/ears,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach/alien,
-		ORGAN_SLOT_XENO_PLASMAVESSEL = /obj/item/organ/alien/plasmavessel/large,
+		ORGAN_SLOT_XENO_PHORONVESSEL = /obj/item/organ/alien/phoron_vessel/large,
 		ORGAN_SLOT_XENO_RESINSPINNER = /obj/item/organ/alien/resinspinner,
 		ORGAN_SLOT_XENO_ACIDGLAND = /obj/item/organ/alien/acid,
 		ORGAN_SLOT_EXTERNAL_TAIL = /obj/item/organ/tail/xeno,
@@ -27,7 +27,7 @@
 	name = "Evolve to Praetorian"
 	desc = "Praetorian"
 	button_icon_state = "alien_evolve_drone"
-	plasma_cost = 500
+	phoron_cost = 500
 
 /datum/action/cooldown/alien/evolve_to_praetorian/IsAvailable(feedback = FALSE)
 	. = ..()

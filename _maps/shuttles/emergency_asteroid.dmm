@@ -387,10 +387,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "JM" = (
-/obj/machinery/wall_healer/free{
-	name = "Emergency NanoMed";
-	use_power = 0
-	},
+/obj/machinery/wall_healer/free,
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
 "Mp" = (

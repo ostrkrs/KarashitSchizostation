@@ -816,7 +816,7 @@
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/melee/baton/security/loaded,
-		/obj/item/gun/energy/disabler/cyborg,
+		/obj/item/gun/energy/taser/advanced/cyborg,
 		/obj/item/clothing/mask/gas/sechailer/cyborg,
 		/obj/item/extinguisher/mini,
 	)
@@ -836,7 +836,7 @@
 
 /obj/item/robot_model/security/respawn_consumable(mob/living/silicon/robot/cyborg, coeff = 1)
 	..()
-	var/obj/item/gun/energy/e_gun/advtaser/cyborg/taser = locate(/obj/item/gun/energy/e_gun/advtaser/cyborg) in basic_modules
+	var/obj/item/gun/energy/taser/advanced/cyborg/taser = locate(/obj/item/gun/energy/taser/advanced/cyborg) in basic_modules
 	if(taser)
 		if(taser.cell.charge < taser.cell.maxcharge)
 			. = TRUE

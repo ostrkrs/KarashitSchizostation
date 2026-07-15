@@ -674,39 +674,8 @@
 	if(!dna_check(user))
 		return MOD_CANCEL_REMOVAL
 
-///Plasma Stabilizer - Prevents plasmamen from igniting in the suit
-/obj/item/mod/module/plasma_stabilizer
-	name = "MOD plasma stabilizer module"
-	desc = "This system essentially forms an atmosphere of its own, within the suit, \
-		efficiently and quickly preventing oxygen from causing the user's head to burst into flame. \
-		This allows plasmamen to safely remove their helmet, allowing for easier \
-		equipping of any MODsuit-related equipment, or otherwise. \
-		The purple glass of the visor seems to be constructed for nostalgic purposes."
-	icon_state = "plasma_stabilizer"
-	complexity = 1
-	idle_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
-	incompatible_modules = list(/obj/item/mod/module/plasma_stabilizer)
-	required_slots = list(ITEM_SLOT_HEAD)
-
-/obj/item/mod/module/plasma_stabilizer/generate_worn_overlay(obj/item/source, mutable_appearance/standing)
-	. = ..()
-	if (!.)
-		return
-
-	var/mutable_appearance/visor_overlay = mod.get_visor_overlay(standing)
-	visor_overlay.appearance_flags |= RESET_COLOR
-	visor_overlay.color = COLOR_VIOLET
-	. += visor_overlay
-
-/obj/item/mod/module/plasma_stabilizer/on_equip()
-	ADD_TRAIT(mod.wearer, TRAIT_HEAD_ATMOS_SEALED, REF(src))
-
-/obj/item/mod/module/plasma_stabilizer/on_unequip()
-	REMOVE_TRAIT(mod.wearer, TRAIT_HEAD_ATMOS_SEALED, REF(src))
-
-
 //Finally, https://pipe.miroware.io/5b52ba1d94357d5d623f74aa/mspfa/Nuke%20Ops/Panels/0648.gif can be real:
-///Hat Stabilizer - Allows displaying a hat over the MOD-helmet, à la plasmamen helmets.
+///Hat Stabilizer - Allows displaying a hat over the MOD-helmet.
 /obj/item/mod/module/hat_stabilizer
 	name = "MOD hat stabilizer module"
 	desc = "A simple set of deployable stands, directly atop one's head; \

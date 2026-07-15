@@ -143,6 +143,18 @@
 /datum/storage/briefcase
 	max_total_storage = 21
 
+/datum/storage/briefcase/emergency
+	max_specific_storage = WEIGHT_CLASS_BULKY
+	max_total_storage = WEIGHT_CLASS_BULKY * 2
+	max_slots = 2
+
+/datum/storage/briefcase/emergency/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound)
+	. = ..()
+	set_holdable(list(
+		/obj/item/clothing/head/helmet/space,
+		/obj/item/clothing/suit/space,
+	))
+
 ///Pill bottle
 /datum/storage/pillbottle
 	allow_quick_gather = TRUE

@@ -14,7 +14,6 @@
 	config_tag = "STATION_ENGINEER"
 
 	outfit = /datum/outfit/job/engineer
-	plasmaman_outfit = /datum/outfit/plasmaman/engineering
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_ENG
@@ -65,7 +64,6 @@
 
 	box = /obj/item/storage/box/survival/engineer
 	pda_slot = ITEM_SLOT_LPOCKET
-	skillchips = list(/obj/item/skillchip/job/engineer)
 
 /datum/outfit/job/engineer/gloved
 	name = "Deck Engineer (Gloves)"

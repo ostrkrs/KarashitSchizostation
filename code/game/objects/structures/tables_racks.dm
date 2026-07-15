@@ -110,7 +110,7 @@
 ///Adds the element used to make the object climbable, and also the one that shift the mob buckled to it up.
 /obj/structure/table/proc/make_climbable()
 	AddComponent(/datum/component/climb_walkable)
-	AddElement(/datum/element/climbable)
+	AddElement(/datum/element/climbable, climb_time = 4 SECONDS)
 	AddElement(/datum/element/elevation, pixel_shift = 12)
 
 //proc that adds elements present in normal tables
@@ -137,7 +137,7 @@
 /obj/structure/table/proc/flip_table(new_dir = SOUTH)
 	playsound(src, flipped_table_sound, 100)
 	qdel(GetComponent(/datum/component/climb_walkable))
-	RemoveElement(/datum/element/climbable)
+	RemoveElement(/datum/element/climbable, climb_time = 4 SECONDS)
 	RemoveElement(/datum/element/footstep_override, priority = STEP_SOUND_TABLE_PRIORITY)
 	RemoveElement(/datum/element/give_turf_traits, turf_traits)
 	RemoveElement(/datum/element/elevation, pixel_shift = 12)
@@ -602,15 +602,15 @@
 /obj/structure/table/glass/narsie_act()
 	color = NARSIE_WINDOW_COLOUR
 
-/obj/structure/table/glass/plasmaglass
-	name = "plasma glass table"
+/obj/structure/table/glass/phoronglass
+	name = "phoron glass table"
 	desc = "Someone thought this was a good idea."
-	icon = 'icons/obj/smooth_structures/plasmaglass_table.dmi'
-	icon_state = "plasmaglass_table-0"
-	base_icon_state = "plasmaglass_table"
-	custom_materials = list(/datum/material/alloy/plasmaglass = SHEET_MATERIAL_AMOUNT)
-	buildstack = /obj/item/stack/sheet/plasmaglass
-	glass_shard_type = /obj/item/shard/plasma
+	icon = 'icons/obj/smooth_structures/phoronglass_table.dmi'
+	icon_state = "phoronglass_table-0"
+	base_icon_state = "phoronglass_table"
+	custom_materials = list(/datum/material/alloy/phoronglass = SHEET_MATERIAL_AMOUNT)
+	buildstack = /obj/item/stack/sheet/phoron_glass
+	glass_shard_type = /obj/item/shard/phoron
 	max_integrity = 100
 
 /*
@@ -867,14 +867,14 @@
 	buildstack = /obj/item/stack/sheet/rglass
 	max_integrity = 150
 
-/obj/structure/table/reinforced/plasmarglass
-	name = "reinforced plasma glass table"
-	desc = "A reinforced version of the plasma glass table."
-	icon = 'icons/obj/smooth_structures/rplasmaglass_table.dmi'
-	icon_state = "rplasmaglass_table-0"
-	base_icon_state = "rplasmaglass_table"
-	custom_materials = list(/datum/material/alloy/plasmaglass = SHEET_MATERIAL_AMOUNT, /datum/material/iron = SHEET_MATERIAL_AMOUNT)
-	buildstack = /obj/item/stack/sheet/plasmarglass
+/obj/structure/table/reinforced/phoronglass
+	name = "reinforced phoron glass table"
+	desc = "A reinforced version of the phoron glass table."
+	icon = 'icons/obj/smooth_structures/rphoronglass_table.dmi'
+	icon_state = "rphoronglass_table-0"
+	base_icon_state = "rphoronglass_table"
+	custom_materials = list(/datum/material/alloy/phoronglass = SHEET_MATERIAL_AMOUNT, /datum/material/iron = SHEET_MATERIAL_AMOUNT)
+	buildstack = /obj/item/stack/sheet/phoron_rglass
 
 /obj/structure/table/reinforced/titaniumglass
 	name = "titanium glass table"
@@ -883,17 +883,17 @@
 	icon_state = "titaniumglass_table-0"
 	base_icon_state = "titaniumglass_table"
 	custom_materials = list(/datum/material/alloy/titaniumglass = SHEET_MATERIAL_AMOUNT)
-	buildstack = /obj/item/stack/sheet/titaniumglass
+	buildstack = /obj/item/stack/sheet/titanium_glass
 	max_integrity = 250
 
 /obj/structure/table/reinforced/plastitaniumglass
 	name = "plastitanium glass table"
-	desc = "A table made of titanium reinforced silica-plasma composite. About as durable as it sounds."
+	desc = "A table made of titanium reinforced silica-phoron composite. About as durable as it sounds."
 	icon = 'icons/obj/smooth_structures/plastitaniumglass_table.dmi'
 	icon_state = "plastitaniumglass_table-0"
 	base_icon_state = "plastitaniumglass_table"
 	custom_materials = list(/datum/material/alloy/plastitaniumglass = SHEET_MATERIAL_AMOUNT)
-	buildstack = /obj/item/stack/sheet/plastitaniumglass
+	buildstack = /obj/item/stack/sheet/plastitanium_glass
 	max_integrity = 300
 
 /*
@@ -1331,7 +1331,7 @@
 
 /obj/structure/rack/Initialize(mapload)
 	. = ..()
-	AddElement(/datum/element/climbable)
+	AddElement(/datum/element/climbable, climb_time = 4 SECONDS)
 	AddElement(/datum/element/elevation, pixel_shift = 12)
 	register_context()
 	ADD_TRAIT(src, TRAIT_COMBAT_MODE_SKIP_INTERACTION, INNATE_TRAIT)

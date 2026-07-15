@@ -7,6 +7,7 @@
 	desc = "Pairing suggestion: chianti and fava beans."
 	icon_state = "liver"
 
+	visual = FALSE
 	w_class = WEIGHT_CLASS_SMALL
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_LIVER
@@ -97,7 +98,7 @@
 		if(HAS_TRAIT(src, TRAIT_ENGINEER_METABOLISM))
 			. += span_info("Signs of radiation exposure and space adaption, implies that this is the liver of an <em>engineer</em>.")
 		if(HAS_TRAIT(src, TRAIT_BALLMER_SCIENTIST))
-			. += span_info("Strange glowing residues, sprinklings of congealed solid plasma, and what seem to be tumors indicate this is the radiated liver of a <em>scientist</em>.")
+			. += span_info("Strange glowing residues, sprinklings of congealed solid phoron, and what seem to be tumors indicate this is the radiated liver of a <em>scientist</em>.")
 		if(HAS_TRAIT(src, TRAIT_MAINTENANCE_METABOLISM))
 			. += span_info("A half-digested rat's tail (somehow), disgusting sludge, and the faint smell of Grey Bull imply this is what remains of an <em>assistant</em>'s liver.")
 		if(HAS_TRAIT(src, TRAIT_CORONER_METABOLISM))

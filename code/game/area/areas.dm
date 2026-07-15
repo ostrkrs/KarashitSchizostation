@@ -617,11 +617,6 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 /area/proc/place_on_top_react(list/new_baseturfs, turf/added_layer, flags)
 	return flags
 
-
-/// Called when a living mob that spawned here, joining the round, receives the player client.
-/area/proc/on_joining_game(mob/living/boarder)
-	return
-
 /**
  * Returns the name of an area, with the original name if the area name has been changed.
  *

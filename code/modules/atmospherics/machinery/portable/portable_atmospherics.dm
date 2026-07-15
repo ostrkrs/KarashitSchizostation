@@ -60,7 +60,7 @@
 		air_contents.temperature = T20C
 	air_contents.volume = volume
 	SSair.start_processing_machine(src)
-	AddElement(/datum/element/climbable, climb_time = 3 SECONDS, climb_stun = 3 SECONDS)
+	AddElement(/datum/element/climbable, climb_time = 3 SECONDS)
 	AddElement(/datum/element/elevation, pixel_shift = 8)
 	register_context()
 

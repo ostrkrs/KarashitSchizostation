@@ -80,7 +80,7 @@
 /obj/effect/turf_decal/tile/brown/fourcorners,
 /obj/item/mail/junkmail,
 /obj/item/ammo_casing/c357,
-/obj/item/reagent_containers/syringe/plasma,
+/obj/item/reagent_containers/syringe/phoron,
 /turf/open/indestructible,
 /area/deathmatch)
 "dF" = (
@@ -274,7 +274,6 @@
 /area/deathmatch)
 "kC" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun/mini,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "kD" = (
@@ -624,7 +623,7 @@
 /obj/item/mail/junkmail,
 /obj/item/stack/medical/suture,
 /obj/item/food/pie/cream,
-/turf/open/floor/glass/reinforced/plasma,
+/turf/open/floor/glass/reinforced/phoron,
 /area/deathmatch)
 "zB" = (
 /obj/structure/grille/broken,
@@ -682,11 +681,11 @@
 "Bt" = (
 /obj/effect/spawner/random/structure/closet_maintenance,
 /obj/item/reagent_containers/cup/glass/drinkingglass,
-/obj/item/reagent_containers/syringe/plasma,
+/obj/item/reagent_containers/syringe/phoron,
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "BC" = (
-/turf/open/floor/glass/reinforced/plasma,
+/turf/open/floor/glass/reinforced/phoron,
 /area/deathmatch)
 "Cf" = (
 /obj/effect/turf_decal/bot,
@@ -736,7 +735,7 @@
 /obj/structure/closet/crate/cardboard,
 /obj/item/mail/junkmail,
 /obj/effect/spawner/random/maintenance,
-/turf/open/floor/glass/reinforced/plasma,
+/turf/open/floor/glass/reinforced/phoron,
 /area/deathmatch)
 "Et" = (
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
@@ -770,7 +769,7 @@
 /area/deathmatch)
 "EZ" = (
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
-/obj/item/reagent_containers/syringe/plasma,
+/obj/item/reagent_containers/syringe/phoron,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "Fg" = (
@@ -855,7 +854,7 @@
 /obj/structure/closet/crate/large,
 /obj/item/mail/junkmail,
 /obj/item/ammo_casing/shotgun/buckshot,
-/turf/open/floor/glass/reinforced/plasma,
+/turf/open/floor/glass/reinforced/phoron,
 /area/deathmatch)
 "Ke" = (
 /obj/machinery/computer{
@@ -889,7 +888,7 @@
 /area/deathmatch)
 "KJ" = (
 /obj/effect/landmark/deathmatch_player_spawn,
-/turf/open/floor/glass/reinforced/plasma,
+/turf/open/floor/glass/reinforced/phoron,
 /area/deathmatch)
 "KM" = (
 /obj/effect/turf_decal/tile/light_blue/full,
@@ -1028,7 +1027,7 @@
 /area/deathmatch)
 "Pp" = (
 /obj/structure/ore_box,
-/turf/open/floor/glass/reinforced/plasma,
+/turf/open/floor/glass/reinforced/phoron,
 /area/deathmatch)
 "PH" = (
 /obj/machinery/computer{

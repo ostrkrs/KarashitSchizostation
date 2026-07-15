@@ -133,10 +133,6 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 	if(possible_target.current.stat == DEAD)
 		return FALSE
 
-	var/target_area = get_area(possible_target.current)
-	if(!HAS_TRAIT(SSstation, STATION_TRAIT_LATE_ARRIVALS) && istype(target_area, /area/shuttle/arrival))
-		return FALSE
-
 	return TRUE
 
 //dupe_search_range is a list of antag datums / minds / teams

@@ -5,7 +5,7 @@
 	icon_state = "grass"
 	base_icon_state = "grass"
 	baseturfs = /turf/open/misc/sandy_dirt
-	bullet_bounce_sound = null
+	bullet_bounce_sound = FALSE
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_GRASS
 	clawfootstep = FOOTSTEP_GRASS

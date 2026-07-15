@@ -5,6 +5,7 @@
 	department_head = list(JOB_CAPTAIN)
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	head_announce = list(RADIO_CHANNEL_MEDICAL)
+	default_radio_channel = RADIO_CHANNEL_MEDICAL
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -19,7 +20,7 @@
 	config_tag = "CHIEF_MEDICAL_OFFICER"
 
 	outfit = /datum/outfit/job/cmo
-	plasmaman_outfit = /datum/outfit/plasmaman/chief_medical_officer
+
 	departments_list = list(
 		/datum/job_department/medical,
 		/datum/job_department/command,
@@ -63,13 +64,13 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/cmo
 	backpack_contents = list(
 		/obj/item/melee/baton/telescopic/silver = 1,
+		/obj/item/storage/medkit/surgery = 1,
 		)
 	belt = /obj/item/modular_computer/pda/heads/cmo
 	ears = /obj/item/radio/headset/heads/cmo
 	shoes = /obj/item/clothing/shoes/sneakers/blue
 	l_pocket = /obj/item/laser_pointer/blue
 	r_pocket = /obj/item/pinpointer/crew
-	l_hand = /obj/item/storage/medkit/surgery
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
@@ -81,7 +82,6 @@
 		/obj/item/gun/syringe,
 		/obj/item/stamp/head/cmo,
 		)
-	skillchips = list(/obj/item/skillchip/entrails_reader)
 
 /datum/outfit/job/cmo/mod
 	name = "Chief Medical Officer (MODsuit)"

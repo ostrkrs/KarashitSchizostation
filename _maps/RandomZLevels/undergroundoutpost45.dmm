@@ -158,7 +158,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "aH" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/north,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "aI" = (
@@ -424,13 +424,13 @@
 /turf/open/floor/iron/freezer,
 /area/awaymission/undergroundoutpost45/central)
 "bK" = (
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "bN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/south,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
@@ -444,7 +444,7 @@
 /area/awaymission/undergroundoutpost45/central)
 "ci" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "cm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5902,7 +5902,7 @@
 /area/awaymission/undergroundoutpost45/mining)
 "we" = (
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 26
 	},
 /obj/item/stock_parts/power_store/cell/high,
@@ -6274,7 +6274,7 @@
 "xW" = (
 /obj/machinery/firealarm/directional/east,
 /obj/structure/closet/crate,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 6
 	},
 /obj/effect/mapping_helpers/burnt_floor,
@@ -6375,7 +6375,7 @@
 "zb" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/wall,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "ze" = (
 /obj/structure/table,
@@ -6405,7 +6405,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/engineering)
 "zq" = (
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "zr" = (
 /obj/machinery/door/firedoor,
@@ -6441,11 +6441,11 @@
 "zK" = (
 /obj/structure/alien/weeds,
 /obj/structure/bed/nest,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "zO" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "zX" = (
 /obj/structure/closet/secure_closet{
@@ -6567,7 +6567,7 @@
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/blood/gibs/down,
 /obj/effect/mob_spawn/corpse/human,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "BN" = (
 /obj/machinery/computer/monitor{
@@ -6580,13 +6580,13 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "BQ" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Cd" = (
 /obj/structure/alien/weeds,
 /obj/structure/glowshroom/single,
 /obj/effect/decal/cleanable/blood/gibs/down,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Cj" = (
 /obj/structure/table/reinforced,
@@ -6714,7 +6714,7 @@
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 6
 	},
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "DL" = (
 /obj/effect/turf_decal/tile/green/half/contrasted{
@@ -6854,7 +6854,7 @@
 /area/awaymission/undergroundoutpost45/central)
 "Gn" = (
 /obj/structure/alien/weeds,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Gp" = (
 /obj/structure/table/reinforced,
@@ -6906,7 +6906,7 @@
 "HW" = (
 /obj/structure/alien/weeds,
 /obj/structure/glowshroom/single,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Ic" = (
 /obj/structure/cable,
@@ -6957,7 +6957,7 @@
 "IT" = (
 /obj/structure/alien/weeds,
 /obj/effect/mob_spawn/corpse/human,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "IV" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7050,7 +7050,7 @@
 "KN" = (
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "KO" = (
 /obj/machinery/door/firedoor,
@@ -7070,7 +7070,7 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "KU" = (
 /obj/structure/closet/crate,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "KW" = (
 /obj/machinery/airalarm/directional/north,
@@ -7094,18 +7094,18 @@
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/mob_spawn/corpse/human,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Lk" = (
 /obj/effect/decal/cleanable/blood/splatter,
 /obj/effect/mob_spawn/corpse/human,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Lo" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2{
 	dir = 4
 	},
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "LT" = (
 /obj/structure/table/reinforced,
@@ -7155,11 +7155,11 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "Mx" = (
 /obj/machinery/light/small/directional/east,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "MC" = (
 /obj/machinery/light/small/directional/west,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "MJ" = (
 /obj/machinery/light/blacklight/directional/west,
@@ -7276,7 +7276,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "OF" = (
 /obj/effect/turf_decal/stripes/asteroid/line,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "OL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/green,
@@ -7372,7 +7372,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Qw" = (
 /obj/structure/disposalpipe/segment{
@@ -7433,7 +7433,7 @@
 /area/awaymission/undergroundoutpost45/gateway)
 "RA" = (
 /obj/machinery/light/small/directional/south,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "RC" = (
 /obj/machinery/airalarm/directional/west,
@@ -7540,7 +7540,7 @@
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "Tr" = (
 /obj/structure/alien/resin/membrane,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Tu" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
@@ -7593,13 +7593,13 @@
 "UH" = (
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/blood/gibs/down,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "UM" = (
 /obj/effect/turf_decal/stripes/asteroid/line{
 	dir = 10
 	},
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "UU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7663,7 +7663,7 @@
 "Wd" = (
 /obj/structure/alien/resin/wall,
 /obj/structure/alien/weeds,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Wk" = (
 /obj/structure/cable,
@@ -7753,7 +7753,7 @@
 /area/awaymission/undergroundoutpost45/research)
 "XF" = (
 /obj/structure/ore_box,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "XJ" = (
 /obj/structure/table/reinforced,
@@ -7771,7 +7771,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "XQ" = (
 /obj/structure/glowshroom/single,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "XU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -7781,7 +7781,7 @@
 /obj/structure/alien/weeds,
 /obj/structure/bed/nest,
 /obj/effect/mob_spawn/corpse/human,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "Yf" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -7839,12 +7839,12 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "Zs" = (
 /obj/machinery/light/small/directional/north,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "ZD" = (
 /obj/structure/alien/weeds,
 /obj/effect/decal/cleanable/blood/gibs/core,
-/turf/open/misc/asteroid/plasma,
+/turf/open/misc/asteroid/phoron,
 /area/awaymission/undergroundoutpost45/caves)
 "ZH" = (
 /obj/machinery/airalarm/directional/east,

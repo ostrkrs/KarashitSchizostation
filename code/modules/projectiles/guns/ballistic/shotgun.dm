@@ -1,6 +1,7 @@
 /obj/item/gun/ballistic/shotgun
 	name = "shotgun"
 	desc = "A traditional shotgun with wood furniture and a four-shell capacity underneath."
+	icon = 'icons/obj/weapons/guns/wide/ballistic.dmi'
 	icon_state = "shotgun"
 	worn_icon_state = null
 	lefthand_file = 'icons/mob/inhands/weapons/64x_guns_left.dmi'
@@ -15,7 +16,9 @@
 	drop_sound = 'sound/items/handling/gun/ballistics/shotgun/shotgun_drop1.ogg'
 	pickup_sound = 'sound/items/handling/gun/ballistics/shotgun/shotgun_pickup1.ogg'
 	w_class = WEIGHT_CLASS_BULKY
+	fire_delay = 8
 	force = 10
+	recoil = RECOIL_SHOTGUN
 	obj_flags = CONDUCTS_ELECTRICITY
 	slot_flags = ITEM_SLOT_BACK
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot
@@ -27,8 +30,6 @@
 	tac_reloads = FALSE
 	weapon_weight = WEAPON_HEAVY
 	misfire_probability_cap = 35 // Even if the misfire probability and increment are both zero, we've some shots that may do that.
-
-	pb_knockback = 2
 
 /obj/item/gun/ballistic/shotgun/blow_up(mob/user)
 	. = 0
@@ -43,22 +44,22 @@
 
 /obj/item/gun/ballistic/shotgun/riot //for spawn in the armory
 	name = "riot shotgun"
-	desc = "A sturdy shotgun with a longer magazine and a fixed tactical stock designed for non-lethal riot control."
+	desc = "A sturdy shotgun designed for non-lethal riot control."
 	icon_state = "riotshotgun"
 	inhand_icon_state = "shotgun"
-	fire_delay = 8
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/riot
 	sawn_desc = "Come with me if you want to live."
 	can_be_sawn_off = TRUE
-	//component for seclight attachment
+
 /obj/item/gun/ballistic/shotgun/riot/add_seclight_point()
 	AddComponent(/datum/component/seclite_attachable, \
 		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
 		light_overlay = "flight", \
 		overlay_x = 20, \
 		overlay_y = 11)
-// Automatic Shotguns//
 
+
+// Automatic Shotguns//
 /obj/item/gun/ballistic/shotgun/automatic/shoot_live_shot(mob/living/user)
 	..()
 	rack()
@@ -68,16 +69,33 @@
 	desc = "A semi automatic shotgun with tactical furniture and a six-shell capacity underneath."
 	icon_state = "cshotgun"
 	inhand_icon_state = "shotgun_combat"
-	projectile_damage_multiplier = 1.5
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/com
 	w_class = WEIGHT_CLASS_HUGE
-//component for seclight attachment
+
 /obj/item/gun/ballistic/shotgun/automatic/combat/add_seclight_point()
 	AddComponent(/datum/component/seclite_attachable, \
 		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
 		light_overlay = "flight", \
 		overlay_x = 20, \
 		overlay_y = 11)
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/brand/scarborough
+	name = "\improper SA S-40a Semi-Auto Shotgun"
+	manufacturer = CORPORATION_SCARBOROUGH_ARMS
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/brand/scarborough/update_overlays()
+	. = ..()
+	. += "[icon_state]_sa"
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/brand/solstice_reach
+	name = "\improper SR S-40a Semi-Auto Shotgun"
+	manufacturer = CORPORATION_SOLSTICE_REACH
+	licensor = CORPORATION_SCARBOROUGH_ARMS
+
+/obj/item/gun/ballistic/shotgun/automatic/combat/brand/solstice_reach/update_overlays()
+	. = ..()
+	. += "[icon_state]_sr"
+
 /obj/item/gun/ballistic/shotgun/automatic/combat/compact
 	name = "compact combat shotgun"
 	desc = "A compact version of the semi automatic combat shotgun. Lower magazine capacity, but more easily carried."
@@ -85,18 +103,20 @@
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
-//component for seclight attachment
+	fire_delay = 3
+
 /obj/item/gun/ballistic/shotgun/automatic/combat/compact/add_seclight_point()
 	AddComponent(/datum/component/seclite_attachable, \
 		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
 		light_overlay = "flight", \
 		overlay_x = 16, \
 		overlay_y = 11)
-//Dual Feed Shotgun
+
 
 /obj/item/gun/ballistic/shotgun/automatic/dual_tube
 	name = "cycler shotgun"
 	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
+	icon = 'icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "cycler"
 	inhand_icon_state = "bulldog"
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
@@ -165,6 +185,7 @@
 	desc = "A 2-round burst fire, mag-fed shotgun for combat in narrow corridors, \
 		nicknamed 'Bulldog' by boarding parties. Compatible only with specialized 8-round drum magazines. \
 		Can have a secondary magazine attached to quickly swap between ammo types, or just to keep shooting."
+	icon = 'icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "bulldog"
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
@@ -297,17 +318,10 @@
 	sawn_desc = "Omar's coming!"
 	obj_flags = UNIQUE_RENAME
 	rack_sound_volume = 0
-	unique_reskin = list("Default" = "dshotgun",
-						"Dark Red Finish" = "dshotgun_d",
-						"Ash" = "dshotgun_f",
-						"Faded Grey" = "dshotgun_g",
-						"Maple" = "dshotgun_l",
-						"Rosewood" = "dshotgun_p"
-						)
 	semi_auto = TRUE
 	bolt_type = BOLT_TYPE_NO_BOLT
 	can_be_sawn_off = TRUE
-	pb_knockback = 3 // it's a super shotgun!
+	fire_delay = 4
 
 /obj/item/gun/ballistic/shotgun/doublebarrel/sawoff(mob/user)
 	. = ..()
@@ -326,9 +340,11 @@
 	sawn_desc = "A sawn-off breaching shotgun, making for a more compact configuration while still having the same capability as before."
 	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/dual/breacherslug
 
+
 /obj/item/gun/ballistic/shotgun/hook
 	name = "hook modified sawn-off shotgun"
 	desc = "Range isn't an issue when you can bring your victim to you."
+	icon = 'icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "hookshotgun"
 	inhand_icon_state = "hookshotgun"
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
@@ -364,10 +380,12 @@
 		return hook.try_fire_gun(target, user, params)
 	return ..()
 
+
 ///An underpowered shotgun given to Pun Pun when the station job trait roll.
 /obj/item/gun/ballistic/shotgun/monkey
 	name = "\improper Barback's Shot"
 	desc = "A chimp-sized, single-shot and break-action shotgun with an unpractical stock."
+	icon = 'icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "chimp_shottie"
 	inhand_icon_state = "shotgun"
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
@@ -386,21 +404,4 @@
 	spread = 10
 	projectile_damage_multiplier = 0.5
 	projectile_wound_bonus = -25
-	recoil = 1
 	pin = /obj/item/firing_pin/monkey
-	pb_knockback = 1
-
-/obj/item/gun/ballistic/shotgun/musket
-	name = "\improper Donk Co. Musket"
-	icon = 'icons/obj/weapons/guns/ballistic.dmi'
-	icon_state = "donk_musket"
-	inhand_icon_state = "donk_musket"
-	worn_icon_state = "donk_musket"
-	desc = "A large-bore boltloading firearm with a classy wooden frame. Cheap, accurate, and easy to maintain. Reload and rack after every shot."
-	semi_auto = TRUE
-	alternative_caliber = CALIBER_50BMG
-	casing_ejector = TRUE
-	bolt_type = BOLT_TYPE_LOCKING
-	bolt_wording = "bolt"
-	internal_magazine = TRUE
-	accepted_magazine_type = /obj/item/ammo_box/magazine/internal/shot/single/musket

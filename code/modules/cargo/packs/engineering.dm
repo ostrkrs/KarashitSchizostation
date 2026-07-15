@@ -4,7 +4,7 @@
 
 /datum/supply_pack/engineering/shieldgen
 	name = "Anti-breach Shield Projector Crate"
-	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! \
+	desc = "Hull breaches again? Say no more with the Anti-Breach Shield Projector! \
 		Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
 	cost = CARGO_CRATE_VALUE * 3
 	access_view = ACCESS_ENGINE_EQUIP
@@ -70,8 +70,8 @@
 	crate_type = /obj/structure/closet/crate/engineering/electrical
 
 /datum/supply_pack/engineering/inducers
-	name = "NT-75 Electromagnetic Power Inducers Crate"
-	desc = "No rechargers? No problem, with the NT-75 EPI, you can recharge any standard \
+	name = "Electromagnetic Power Inducers Crate"
+	desc = "No rechargers? No problem, with the EPI, you can recharge any standard \
 		cell-based equipment anytime, anywhere. Contains two Inducers."
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/inducer/orderable = 2)
@@ -81,7 +81,7 @@
 /datum/supply_pack/engineering/pacman
 	name = "P.A.C.M.A.N Generator Crate"
 	desc = "Engineers can't set up the engine? Not an issue for you, once you get your hands \
-		on this P.A.C.M.A.N. Generator! Takes in plasma and spits out sweet sweet energy."
+		on this P.A.C.M.A.N. Generator! Takes in phoron and spits out sweet sweet energy."
 	cost = CARGO_CRATE_VALUE * 5
 	access_view = ACCESS_ENGINEERING
 	contains = list(/obj/machinery/power/port_gen/pacman)
@@ -130,7 +130,7 @@
 
 /datum/supply_pack/engineering/portascrubber
 	name = "Portable Scrubber Crate"
-	desc = "Clean up that pesky plasma leak with your very own set of two portable scrubbers."
+	desc = "Clean up that pesky phoron leak with your very own set of two portable scrubbers."
 	cost = CARGO_CRATE_VALUE * 4.5
 	access_view = ACCESS_ATMOSPHERICS
 	contains = list(/obj/machinery/portable_atmospherics/scrubber = 2)
@@ -156,9 +156,8 @@
 
 /datum/supply_pack/engineering/bsa
 	name = "Bluespace Artillery Parts"
-	desc = "The pride of Nanotrasen Naval Command. The legendary Bluespace Artillery Cannon is a \
-		devastating feat of human engineering and testament to wartime determination. \
-		Highly advanced research is required for proper construction."
+	desc = "The legendary Bluespace Artillery Cannon is a devastating feat of human engineering and \
+		testament to wartime determination. Highly advanced research is required for proper construction."
 	cost = CARGO_CRATE_VALUE * 30
 	special = TRUE
 	access_view = ACCESS_COMMAND
@@ -310,20 +309,6 @@
 	hidden = TRUE
 	contains = list(/obj/item/mod/module/rad_protection = 3)
 	crate_name = "modsuit radiation modules"
-	crate_type = /obj/structure/closet/crate/engineering
-
-/datum/supply_pack/engineering/rad_nebula_shielding_kit
-	name = "Radioactive Nebula Shielding"
-	desc = "Contains circuitboards and radiation modules for constructing radioactive nebula shielding."
-	cost = CARGO_CRATE_VALUE * 2
-
-	special = TRUE
-	contains = list(
-		/obj/item/mod/module/rad_protection = 5,
-		/obj/item/circuitboard/machine/radioactive_nebula_shielding = 5,
-		/obj/item/paper/fluff/radiation_nebula = 1,
-	)
-	crate_name = "radioactive nebula shielding (IMPORTANT)"
 	crate_type = /obj/structure/closet/crate/engineering
 
 /datum/supply_pack/engineering/portagrav

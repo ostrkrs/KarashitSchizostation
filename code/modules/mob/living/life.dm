@@ -100,7 +100,7 @@
 
 	if(living_flags & QUEUE_NUTRITION_UPDATE)
 		mob_mood?.update_nutrition_moodlets()
-		hud_used?.hunger?.update_hunger_bar()
+		hud_used?.hunger?.update_appearance()
 
 		living_flags &= ~QUEUE_NUTRITION_UPDATE
 
@@ -127,7 +127,7 @@
 
 	if(living_flags & QUEUE_HYDRATION_UPDATE)
 		mob_mood?.update_hydration_moodlets()
-		hud_used?.thirst?.update_thirst_bar()
+		hud_used?.thirst?.update_appearance()
 
 		living_flags &= ~QUEUE_HYDRATION_UPDATE
 

@@ -7,7 +7,7 @@
 	id = "syndieshutters";
 	name = "Blast Shutters"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/syndicate/bridge)
 "ac" = (
@@ -292,7 +292,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate/airlock)
 "aQ" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/syndicate/eva)
 "aR" = (
@@ -714,7 +714,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/syndicate/medical)
 "bQ" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/syndicate/hallway)
 "bR" = (
@@ -753,7 +753,7 @@
 	},
 /obj/item/storage/box/lights/bulbs,
 /obj/item/storage/toolbox/mechanical,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 20
 	},
 /obj/effect/turf_decal/delivery,
@@ -1021,7 +1021,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/syndicate/medical)
 "cx" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/power/shuttle_engine/heater,
 /turf/open/floor/plating,
 /area/shuttle/syndicate/medical)
@@ -1080,7 +1080,7 @@
 /turf/closed/wall/r_wall/plastitanium/syndicate,
 /area/shuttle/syndicate/armory)
 "cH" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/power/shuttle_engine/heater,
 /turf/open/floor/plating,
 /area/shuttle/syndicate/armory)
@@ -1110,7 +1110,7 @@
 /turf/closed/wall/r_wall/plastitanium/syndicate,
 /area/shuttle/syndicate/hallway)
 "cN" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/power/shuttle_engine/heater,
 /turf/open/floor/plating,
 /area/shuttle/syndicate/hallway)

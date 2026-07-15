@@ -109,7 +109,7 @@
 /datum/round_event/meteor_wave/dust_storm/announce(fake)
 	var/list/reasons = list()
 
-	reasons += "[station_name()] is passing through a debris cloud, expect minor damage \
+	reasons += "[ship_name()] is passing through a debris cloud, expect minor damage \
 		to external fittings and fixtures."
 
 	reasons += "Nanotrasen Superweapons Division is testing a new prototype \
@@ -120,13 +120,13 @@
 	reasons += "A neighbouring station is throwing rocks at you. (Perhaps they've \
 		grown tired of your messages.)"
 
-	reasons += "[station_name()]'s orbit is passing through a cloud of remnants from an asteroid \
+	reasons += "[ship_name()]'s orbit is passing through a cloud of remnants from an asteroid \
 		mining operation. Minor hull damage is to be expected."
 
-	reasons += "A large meteoroid on intercept course with [station_name()] has been demolished. \
+	reasons += "A large meteoroid on intercept course with [ship_name()] has been demolished. \
 		Residual debris may impact the station exterior."
 
-	reasons += "[station_name()] has hit a particularly rough patch of space. \
+	reasons += "[ship_name()] has hit a particularly rough patch of space. \
 		Please mind any turbulence or damage from debris."
 
 	priority_announce(pick(reasons), "Collision Alert")

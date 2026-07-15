@@ -5,6 +5,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SECURITY)
+	default_radio_channel = RADIO_CHANNEL_SECURITY
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -19,7 +20,7 @@
 	config_tag = "HEAD_OF_SECURITY"
 
 	outfit = /datum/outfit/job/hos
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_security
+
 	departments_list = list(
 		/datum/job_department/security,
 		/datum/job_department/command,
@@ -73,7 +74,7 @@
 
 	box = /obj/item/storage/box/survival/security
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun/hos,
+		/obj/item/gun/energy/laser/hos,
 		/obj/item/stamp/head/hos,
 		)
 	implants = list(/obj/item/implant/mindshield)

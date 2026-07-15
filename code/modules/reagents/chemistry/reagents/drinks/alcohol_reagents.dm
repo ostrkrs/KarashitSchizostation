@@ -889,7 +889,7 @@
 
 /datum/reagent/consumable/ethanol/manhattan
 	name = "Manhattan"
-	description = "The Detective's undercover drink of choice. He never could stomach gin..."
+	description = "The Criminalist's undercover drink of choice. He never could stomach gin..."
 	color = "#ff3300" // rgb: 255,51,0
 	boozepwr = 30
 	quality = DRINK_NICE
@@ -2785,15 +2785,6 @@
 	color = "#F54040"
 	quality = DRINK_VERYGOOD
 	taste_description = "sweet nectar of the gods"
-	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
-
-/datum/reagent/consumable/ethanol/nekomimosa
-	name = "Nekomimosa"
-	description = "An overly sweet cocktail, made with melon liqueur, melon juice, and champagne (which contains no melon, unfortunately)."
-	boozepwr = 17
-	color = "#FF0C8D"
-	quality = DRINK_GOOD
-	taste_description = "MELON"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
 /datum/reagent/consumable/ethanol/sentai_quencha //melon soda, triple citrus, shochu, blue curacao

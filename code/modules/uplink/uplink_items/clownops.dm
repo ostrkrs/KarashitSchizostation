@@ -48,7 +48,7 @@
 /datum/uplink_item/weapon_kits/foamsmg
 	name = "Toy Submachine Gun"
 	desc = "A fully-loaded Donksoft bullpup submachine gun that fires riot grade darts with a 20-round magazine."
-	item = /obj/item/gun/ballistic/automatic/c20r/toy
+	item = /obj/item/gun/ballistic/automatic/smg/c20r/toy
 	cost = 5
 	surplus = 0
 	purchasable_from = UPLINK_CLOWN_OPS | UPLINK_SPY
@@ -120,16 +120,6 @@
 		They've been trained to operate machinery and can read, but they can't speak Common."
 	item = /obj/item/antag_spawner/loadout/monkey_man
 	cost = 7
-	purchasable_from = UPLINK_CLOWN_OPS
-	restricted = TRUE
-	refundable = TRUE
-
-/datum/uplink_item/reinforcement/monkey_supplies
-	name = "Simian Agent Supplies"
-	desc = "Sometimes you need a bit more firepower than a rabid monkey. Such as a rabid, armed monkey! \
-		Monkeys can unpack this kit to receive a bag with a bargain-bin gun, ammunition, and some miscellaneous supplies."
-	item = /obj/item/storage/toolbox/guncase/monkeycase
-	cost = 4
 	purchasable_from = UPLINK_CLOWN_OPS
 	restricted = TRUE
 	refundable = TRUE

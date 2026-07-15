@@ -49,9 +49,6 @@
 
 	var/datum/outfit/outfit = null
 
-	/// The job's outfit that will be assigned for plasmamen.
-	var/datum/outfit/plasmaman/plasmaman_outfit = null
-
 	/// Minutes of experience-time required to play in this job. The type is determined by [exp_required_type] and [exp_required_type_department] depending on configs.
 	var/exp_requirements = 0
 	/// Experience required to play this job, if the config is enabled, and `exp_required_type_department` is not enabled with the proper config.
@@ -134,6 +131,8 @@
 
 	/// If set, look for a policy with this instead of the job title
 	var/policy_override
+
+	var/default_radio_channel = null
 
 /datum/job/New()
 	. = ..()
@@ -371,12 +370,7 @@
 
 	//converts the uniform string into the path we'll wear, whether it's the skirt or regular variant
 	var/holder
-	if(H.jumpsuit_style == PREF_SKIRT)
-		holder = "[uniform]/skirt"
-		if(!text2path(holder))
-			holder = "[uniform]"
-	else
-		holder = "[uniform]"
+	holder = "[uniform]"
 	uniform = text2path(holder)
 
 	var/client/client = GLOB.directory[ckey(H.mind?.key)]
@@ -460,10 +454,6 @@
 /// Returns an atom where the mob should spawn in.
 /datum/job/proc/get_roundstart_spawn_point()
 	if(random_spawns_possible)
-		if(HAS_TRAIT(SSstation, STATION_TRAIT_LATE_ARRIVALS))
-			return get_latejoin_spawn_point()
-		if(HAS_TRAIT(SSstation, STATION_TRAIT_RANDOM_ARRIVALS))
-			return get_safe_random_station_turf(typesof(/area/station/hallway)) || get_latejoin_spawn_point()
 		if(HAS_TRAIT(SSstation, STATION_TRAIT_HANGOVER))
 			var/obj/effect/landmark/start/hangover_spawn_point
 			for(var/obj/effect/landmark/start/hangover/hangover_landmark in GLOB.start_landmarks_list)
@@ -494,13 +484,13 @@
 	if(!.)
 		log_mapping("Job [title] ([type]) couldn't find a round start spawn point.")
 
+
 /// Finds a valid latejoin spawn point, checking for events and special conditions.
 /datum/job/proc/get_latejoin_spawn_point()
 	if(length(GLOB.jobspawn_overrides[title])) //We're doing something special today.
 		return pick(GLOB.jobspawn_overrides[title])
 	if(length(SSjob.latejoin_trackers))
 		return pick(SSjob.latejoin_trackers)
-	return SSjob.get_last_resort_spawn_points()
 
 
 /// Spawns the mob to be played as, taking into account preferences and the desired spawn point.

@@ -135,7 +135,7 @@
 /datum/outfit/syndicate_empty/battlecruiser
 	name = "Syndicate Battlecruiser Ship Operative"
 	belt = /obj/item/storage/belt/military/assault
-	l_pocket = /obj/item/gun/ballistic/automatic/pistol/clandestine
+	l_pocket = /obj/item/gun/ballistic/automatic/pistol/wt23
 	r_pocket = /obj/item/knife/combat/survival
 
 	box = /obj/item/storage/box/survival/syndie
@@ -153,7 +153,7 @@
 	name = "Syndicate Battlecruiser Assault Operative"
 	uniform = /obj/item/clothing/under/syndicate/combat
 	suit = /obj/item/clothing/suit/armor/vest
-	suit_store = /obj/item/gun/ballistic/automatic/pistol/clandestine
+	suit_store = /obj/item/gun/ballistic/automatic/pistol/wt23
 	back = /obj/item/storage/backpack
 	belt = /obj/item/storage/belt/military
 	mask = /obj/item/clothing/mask/gas/syndicate

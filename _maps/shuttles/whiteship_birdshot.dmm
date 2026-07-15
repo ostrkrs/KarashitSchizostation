@@ -197,7 +197,7 @@
 	amount = 10
 	},
 /obj/item/stack/sheet/iron/twenty,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /obj/structure/cable,
@@ -360,7 +360,7 @@
 /turf/open/floor/catwalk_floor,
 /area/shuttle/abandoned/crew)
 "nz" = (
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/item/food/meat/slab/synthmeat{
 	pixel_x = -3;
@@ -854,7 +854,7 @@
 /turf/open/floor/catwalk_floor,
 /area/shuttle/abandoned/crew)
 "CG" = (
-/obj/structure/closet/firecloset/full{
+/obj/structure/closet/firecloset{
 	anchored = 1
 	},
 /obj/machinery/light/small/broken/directional/north,

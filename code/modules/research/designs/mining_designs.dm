@@ -73,7 +73,7 @@
 	materials = list(
 		/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT * 1.5,
 		/datum/material/glass =SMALL_MATERIAL_AMOUNT*5,
-		/datum/material/plasma = SMALL_MATERIAL_AMOUNT*4,
+		/datum/material/phoron = SMALL_MATERIAL_AMOUNT*4,
 	)
 	build_path = /obj/item/gun/energy/plasmacutter
 	category = list(
@@ -89,7 +89,7 @@
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT * 1.5,
 		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =SHEET_MATERIAL_AMOUNT,
 		/datum/material/gold =SMALL_MATERIAL_AMOUNT*5,
 	)
 	build_path = /obj/item/gun/energy/plasmacutter/adv

@@ -1,7 +1,7 @@
 /datum/computer_file/program/ntnetdownload
 	filename = "ntsoftwarehub"
 	filedesc = "NT Software Hub"
-	program_open_overlay = "generic"
+	program_open_overlay = "downloads"
 	extended_desc = "This program allows downloads of software from official NT repositories"
 	undeletable = TRUE
 	size = 4

@@ -40,7 +40,7 @@
 
 	id = /obj/item/card/id/advanced/centcom/ert
 	back = /obj/item/mod/control/pre_equipped/responsory/commander
-	l_hand = /obj/item/gun/energy/e_gun
+	l_hand = /obj/item/gun/energy/laser
 	box = /obj/item/storage/box/survival/centcom
 	backpack_contents = list(
 		/obj/item/melee/baton/security/loaded = 1,
@@ -66,7 +66,7 @@
 
 	id = /obj/item/card/id/advanced/centcom/ert/security
 	back = /obj/item/mod/control/pre_equipped/responsory/security
-	l_hand = /obj/item/gun/energy/e_gun/stun
+	l_hand = /obj/item/gun/energy/laser
 	box = /obj/item/storage/box/survival/centcom
 	backpack_contents = list(
 		/obj/item/melee/baton/security/loaded = 1,
@@ -101,7 +101,7 @@
 	belt = /obj/item/storage/belt/medical/ert
 	glasses = /obj/item/clothing/glasses/hud/health
 	l_hand = /obj/item/storage/medkit/regular
-	r_hand = /obj/item/gun/energy/e_gun
+	r_hand = /obj/item/gun/energy/laser
 	l_pocket = /obj/item/healthanalyzer/advanced
 	additional_radio = /obj/item/encryptionkey/heads/cmo
 
@@ -124,7 +124,7 @@
 
 	id = /obj/item/card/id/advanced/centcom/ert/engineer
 	back = /obj/item/mod/control/pre_equipped/responsory/engineer
-	l_hand = /obj/item/gun/energy/e_gun
+	l_hand = /obj/item/gun/energy/laser
 	box = /obj/item/storage/box/survival/centcom
 	backpack_contents = list(
 		/obj/item/construction/rcd/loaded/upgraded = 1,
@@ -160,7 +160,7 @@
 	backpack_contents = list(
 		/obj/item/stamp/centcom = 1,
 	)
-	belt = /obj/item/gun/energy/e_gun
+	belt = /obj/item/gun/energy/laser
 	ears = /obj/item/radio/headset/headset_cent
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/color/black
@@ -215,7 +215,7 @@
 
 	id = /obj/item/card/id/advanced/centcom/ert/chaplain
 	back = /obj/item/mod/control/pre_equipped/responsory/chaplain
-	l_hand = /obj/item/gun/energy/e_gun
+	l_hand = /obj/item/gun/energy/laser
 	belt = /obj/item/storage/belt/soulstone
 	glasses = /obj/item/clothing/glasses/hud/health
 	box = /obj/item/storage/box/survival/centcom
@@ -489,7 +489,7 @@
 
 	id = /obj/item/card/id/advanced/centcom/ert
 	suit = /obj/item/clothing/suit/armor/vest/marine
-	suit_store = /obj/item/gun/ballistic/automatic/wt550
+	suit_store = /obj/item/gun/ballistic/automatic/smg/wt550
 	back = /obj/item/shield/riot
 	belt = /obj/item/storage/belt/military/assault/full
 	ears = /obj/item/radio/headset/headset_cent/alt/leader
@@ -516,7 +516,7 @@
 
 	id = /obj/item/card/id/advanced/centcom/ert/medical
 	suit = /obj/item/clothing/suit/armor/vest/marine/medic
-	suit_store = /obj/item/storage/belt/holster/detective/full/ert
+	suit_store = /obj/item/storage/belt/holster/criminalist/full/ert
 	back = /obj/item/storage/backpack/ert/medical
 	l_pocket = /obj/item/healthanalyzer
 	head = /obj/item/clothing/head/helmet/marine/medic
@@ -552,7 +552,7 @@
 	name = "Militia Man"
 
 	id = /obj/item/card/id/advanced/centcom/ert/militia
-	belt = /obj/item/storage/belt/holster/energy/smoothbore
+	belt = /obj/item/storage/belt/holster/criminalist/full/ert
 	suit = /obj/item/clothing/suit/armor/militia
 	suit_store = /obj/item/gun/energy/laser/musket
 	head = /obj/item/clothing/head/cowboy/black
@@ -574,7 +574,7 @@
 	name = "Militia General"
 
 	id = /obj/item/card/id/advanced/centcom/ert/militia/general
-	belt = /obj/item/gun/energy/disabler/smoothbore/prime
+	belt = /obj/item/gun/energy/taser
 	head = /obj/item/clothing/head/beret/militia
 	l_hand = /obj/item/megaphone
 	suit_store = /obj/item/gun/energy/laser/musket/prime

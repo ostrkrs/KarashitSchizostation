@@ -128,7 +128,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/allamericandiner)
 "fV" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
@@ -194,7 +194,7 @@
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "jl" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/legal/space_cola/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
@@ -304,7 +304,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/allamericandiner)
 "oh" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
@@ -577,7 +577,7 @@
 /turf/open/floor/iron/kitchen,
 /area/ruin/space/has_grav/allamericandiner)
 "Bl" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/effect/turf_decal/bot,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
@@ -706,7 +706,7 @@
 /obj/item/storage/fancy/egg_box,
 /obj/effect/turf_decal/bot,
 /obj/item/storage/fancy/egg_box,
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /turf/open/floor/iron/freezer,
@@ -738,7 +738,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/allamericandiner)
 "Hz" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
 /obj/item/food/meat/slab/monkey,
@@ -860,7 +860,7 @@
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
 /obj/effect/turf_decal/bot,
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /turf/open/floor/iron/freezer,
@@ -1271,7 +1271,7 @@
 /obj/item/storage/box/ingredients/american,
 /obj/item/storage/box/ingredients/american,
 /obj/effect/turf_decal/bot,
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /turf/open/floor/iron/freezer,

@@ -63,7 +63,6 @@
 			/obj/item/clothing/mask = "MASK",
 			/obj/item/clothing/gloves = "GLOVES",
 			/obj/item/clothing/shoes = "SHOES",
-			/obj/item/clothing/under/plasmaman = "PLASMAMAN_SUIT",
 			/obj/item/clothing/under = "JUMPSUIT",
 			/obj/item/clothing/suit/armor = "ARMOR",
 			/obj/item/clothing/suit = "SUIT",

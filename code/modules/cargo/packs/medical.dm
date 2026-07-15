@@ -174,7 +174,7 @@
 					/obj/item/reagent_containers/cup/bottle/mutagen,
 				)
 	crate_name = "virus crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_type = /obj/structure/closet/crate/secure/phoron
 	dangerous = TRUE
 
 /datum/supply_pack/medical/cmoturtlenecks

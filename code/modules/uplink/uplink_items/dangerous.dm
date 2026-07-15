@@ -18,8 +18,8 @@
 	purchasable_from = ~UPLINK_SERIOUS_OPS
 
 /datum/uplink_item/dangerous/pistol
-	name = "Makarov Pistol Case"
-	desc = "A weapon case containing an unknown variant of the Makarov pistol, along with two spare magazines and a box of loose 9mm ammunition. \
+	name = "Pistol Case"
+	desc = "A weapon case containing a pistol, along with two spare magazines and a box of loose 9mm ammunition. \
 		Chambered in 9mm. Perfect for frequent skirmishes with security, as well as ensuring you have enough firepower to outlast the competition. \
 		While not included in the kit, the pistol is compatible with suppressors, which can be purchased separately."
 	item = /obj/item/storage/toolbox/guncase/traitor

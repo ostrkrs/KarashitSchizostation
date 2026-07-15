@@ -217,11 +217,11 @@
 	icon_state = "apda_gas_hydrogen"
 
 /obj/structure/shipping_container/gas/nthi
-	name = "\improper NTHI bulk plasma tank"
-	desc = "A standard-measure gas tank for bulk transport of gases. This one is from NTHI, Nanotrasen's mining and refining subdivision, and contains high-grade gaseous plasma from the Spinward Sector."
-	icon_state = "nthi_gas_plasma"
+	name = "\improper NTHI bulk phoron tank"
+	desc = "A standard-measure gas tank for bulk transport of gases. This one is from NTHI, Nanotrasen's mining and refining subdivision, and contains high-grade gaseous phoron from the Spinward Sector."
+	icon_state = "nthi_gas_phoron"
 
 /obj/structure/shipping_container/gas/exagon
-	name = "\improper Exagon-Ichikawa bulk plasma tank"
-	desc = "A standard-measure gas tank for bulk transport of gases. This one is from Exagon-Ichikawa, Cybersun Industries' mining and refining subdivision, and contains gaseous plasma most likely sourced from Mars."
-	icon_state = "exagon_gas_plasma"
+	name = "\improper Exagon-Ichikawa bulk phoron tank"
+	desc = "A standard-measure gas tank for bulk transport of gases. This one is from Exagon-Ichikawa, Cybersun Industries' mining and refining subdivision, and contains gaseous phoron most likely sourced from Mars."
+	icon_state = "exagon_gas_phoron"

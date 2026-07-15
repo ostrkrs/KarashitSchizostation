@@ -3,22 +3,18 @@
 	argument_hash_start_idx = 2
 	///Time it takes to climb onto the object
 	var/climb_time
-	///Stun duration for when you get onto the object
-	var/climb_stun
 	///Assoc list of object being climbed on - climbers.  This allows us to check who needs to be shoved off a climbable object when its clicked on.
 	var/list/current_climbers
 
 /datum/element/climbable/Attach(
 	datum/target,
 	climb_time = 2 SECONDS,
-	climb_stun = 2 SECONDS,
 )
 	. = ..()
 
 	if(!isatom(target) || isarea(target))
 		return ELEMENT_INCOMPATIBLE
 	src.climb_time = climb_time
-	src.climb_stun = climb_stun
 
 	RegisterSignal(target, COMSIG_ATOM_ATTACK_HAND, PROC_REF(attack_hand))
 	RegisterSignal(target, COMSIG_ATOM_EXAMINE_TAGS, PROC_REF(get_examine_tags))
@@ -66,8 +62,6 @@
 								span_notice("You start climbing onto [climbed_thing]..."))
 	// Time in deciseoncds it takes to complete the climb do_after()
 	var/adjusted_climb_time = climb_time
-	// Time in deciseonds that the mob is stunned after climbing successfully.
-	var/adjusted_climb_stun = climb_stun
 	// Our climbers fitness level, which removes some climb time and speeds up our climbing do_after, assuming they worked out
 	var/fitness_level = user.mind?.get_skill_level(/datum/skill/athletics) - 1
 	adjusted_climb_time = clamp(adjusted_climb_time - fitness_level, 1, climb_time) //Here we adjust the number of deciseconds we shave off per level of fitness, with a minimum of 1 decisecond and a maximum of climb_time (just in case)
@@ -75,7 +69,6 @@
 	var/obj/item/organ/cyberimp/chest/spine/potential_spine = user.get_organ_slot(ORGAN_SLOT_SPINE)
 	if(istype(potential_spine))
 		adjusted_climb_time *= potential_spine.athletics_boost_multiplier
-		adjusted_climb_stun *= potential_spine.athletics_boost_multiplier
 
 	if(HAS_TRAIT(user, TRAIT_HANDS_BLOCKED)) //climbing takes twice as long without help from the hands.
 		adjusted_climb_time *= 2
@@ -83,10 +76,8 @@
 		adjusted_climb_time *= 0.25 //aliens are terrifyingly fast
 	if(HAS_TRAIT(user, TRAIT_FREERUNNING)) //do you have any idea how fast I am???
 		adjusted_climb_time *= 0.8
-		adjusted_climb_stun *= 0.8
 	if(HAS_TRAIT(user, TRAIT_STUBBY_BODY)) //hold on, gimme a moment, my tiny legs can't get over the goshdamn table
 		adjusted_climb_time *= 1.5
-		adjusted_climb_stun *= 1.5
 	LAZYADDASSOCLIST(current_climbers, climbed_thing, user)
 	if(do_after(user, adjusted_climb_time, climbed_thing))
 		if(QDELETED(climbed_thing)) //Checking if structure has been destroyed
@@ -95,8 +86,6 @@
 			user.visible_message(span_warning("[user] climbs onto [climbed_thing]."), \
 								span_notice("You climb onto [climbed_thing]."))
 			log_combat(user, climbed_thing, "climbed onto")
-			if(adjusted_climb_stun)
-				user.Stun(adjusted_climb_stun)
 			var/atom/movable/buckle_target = climbed_thing
 			if(istype(buckle_target))
 				if(buckle_target.is_buckle_possible(user))

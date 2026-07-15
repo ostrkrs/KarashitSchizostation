@@ -19,7 +19,7 @@
 /datum/supply_pack/organic/hydroponics/beekeeping_fullkit
 	name = "Beekeeping Starter Crate"
 	desc = "BEES BEES BEES. Contains three honey frames, a beekeeper suit and helmet, \
-		flyswatter, bee house, and, of course, a pure-bred Nanotrasen-Standardized Queen Bee!"
+		flyswatter, bee house, and, of course, a pure-bred Queen Bee!"
 	cost = CARGO_CRATE_VALUE * 3
 	contains = list(/obj/structure/beebox/unwrenched,
 					/obj/item/honey_frame = 3,
@@ -237,16 +237,15 @@
 
 /// tells crew that an infinite pizza box exists, half of the time, based on a roll in the anamolous box proc
 /datum/supply_pack/organic/pizza/proc/anomalous_pizza_report()
-	print_command_report("[station_name()], our anomalous materials divison has reported a missing object that is highly likely to have been sent to your station during a routine cargo \
+	print_command_report("[ship_name()], our anomalous materials divison has reported a missing object that is highly likely to have been sent to your station during a routine cargo \
 	delivery. Please search all crates and manifests provided with the delivery and return the object if is located. The object resembles a standard <b>\[DATA EXPUNGED\]</b> and is to be \
 	considered <b>\[REDACTED\]</b> and returned at your leisure. Note that objects the anomaly produces are specifically attuned exactly to the individual opening the anomaly; regardless \
 	of species, the individual will find the object edible and it will taste great according to their personal definitions, which vary significantly based on person and species.")
 
 /datum/supply_pack/organic/potted_plants
 	name = "Potted Plants Crate"
-	desc = "Spruce up the station with these lovely plants! Contains a random \
-		assortment of five potted plants from Nanotrasen's potted plant research division. \
-		Warranty void if thrown."
+	desc = "Spruce up the deck with these lovely plants! \
+		Contains a random assortment of five potted plants."
 	cost = CARGO_CRATE_VALUE * 1.5
 	contains = list(/obj/item/kirbyplants/random = 5)
 	crate_name = "potted plants crate"
@@ -345,9 +344,7 @@
 
 /datum/supply_pack/organic/cooking_oil
 	name = "Cooking Oil Vat"
-	desc = "This high-grade cooking oil can make almost anything edible. \
-	From a plasma cutter to a Syndicate bomb, if it fits in the fryer, it's a snack. \
-	Contains a vat of cooking oil."
+	desc = "Contains a vat of cooking oil."
 	cost = CARGO_CRATE_VALUE * 4.75
 	contains = list(/obj/structure/reagent_dispensers/cooking_oil)
 	crate_name = "cooking oil crate"
@@ -356,8 +353,8 @@
 /datum/supply_pack/organic/beer_keg
 	name = "Beer Keg"
 	desc = "The perfect way to start your shift... or end it. \
-	Contains a full barrel of Nanotrasen brewed, low-grade alcoholic beverage, \
-	perfect for getting loose after a hard day of not dying."
+		Contains a full barrel of low-grade alcoholic beverage, \
+		perfect for getting loose after a hard day of not dying."
 	cost = CARGO_CRATE_VALUE * 6.25
 	contains = list(/obj/structure/reagent_dispensers/beerkeg)
 	crate_name = "beer keg crate"
@@ -365,9 +362,7 @@
 
 /datum/supply_pack/organic/nutraslop
 	name = "Nutraslop Serving Dish"
-	desc = "A culinary masterpiece created from all of Nanotrasen's previous culinary... innovations. \
-	A single bite will transport you back to the taste of yesterday's prison rations. \
-	Contains a serving dish filled with Nutraslop."
+	desc = "Contains a serving dish filled with Nutraslop."
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/structure/reagent_dispensers/servingdish)
 	crate_name = "nutraslop serving dish crate"

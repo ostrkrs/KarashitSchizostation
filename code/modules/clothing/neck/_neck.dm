@@ -228,9 +228,9 @@
 	greyscale_config_worn = null
 	greyscale_colors = null
 
-/obj/item/clothing/neck/tie/detective
+/obj/item/clothing/neck/tie/criminalist
 	name = "loose tie"
-	desc = "A loosely tied necktie, a perfect accessory for the over-worked detective."
+	desc = "A loosely tied necktie, a perfect accessory for the over-worked criminal investigator."
 	icon = 'icons/obj/clothing/neck.dmi'
 	icon_state = "detective"
 	post_init_icon_state = null
@@ -278,7 +278,7 @@
 	switch (body_part)
 		if(BODY_ZONE_CHEST)//Listening to the chest
 			user.visible_message(span_notice("[user] places [src] against [carbon_patient]'s [body_part] and listens attentively."), ignored_mobs = user)
-			if(!user.can_hear())
+			if(HAS_TRAIT(user, TRAIT_DEAF))
 				to_chat(user, span_notice("You place [src] against [carbon_patient]'s [body_part]. Fat load of good it does you though, since you can't hear."))
 				return
 			else

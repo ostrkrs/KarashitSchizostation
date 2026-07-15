@@ -12,7 +12,6 @@
 	config_tag = "CHAPLAIN"
 
 	outfit = /datum/outfit/job/chaplain
-	plasmaman_outfit = /datum/outfit/plasmaman/chaplain
 
 	mind_traits = list(TRAIT_SPIRITUAL, TRAIT_DESENSITIZED)
 
@@ -129,4 +128,3 @@
 	satchel = /obj/item/storage/backpack/cultpack
 
 	chameleon_extras = /obj/item/stamp/chap
-	skillchips = list(/obj/item/skillchip/entrails_reader)

@@ -15,7 +15,7 @@
 	var/volume_rate = 1000
 	///List of gases that can be scrubbed
 	var/list/scrubbing = list(
-		/datum/gas/plasma,
+		/datum/gas/phoron,
 		/datum/gas/carbon_dioxide,
 		/datum/gas/nitrous_oxide,
 		/datum/gas/bz,

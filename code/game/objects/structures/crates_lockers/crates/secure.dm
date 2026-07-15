@@ -44,11 +44,11 @@
 	icon_state = "weaponcrate"
 	base_icon_state = "weaponcrate"
 
-/obj/structure/closet/crate/secure/plasma
-	desc = "A secure plasma crate."
-	name = "plasma crate"
-	icon_state = "plasmacrate"
-	base_icon_state = "plasmacrate"
+/obj/structure/closet/crate/secure/phoron
+	desc = "A secure phoron crate."
+	name = "phoron crate"
+	icon_state = "phoroncrate"
+	base_icon_state = "phoroncrate"
 
 /obj/structure/closet/crate/secure/gear
 	desc = "A secure gear crate."
@@ -79,10 +79,10 @@
 	. = ..()
 	new /obj/effect/spawner/random/food_or_drink/pizzaparty(src)
 
-/obj/structure/closet/crate/secure/centcom
-	name = "secure centcom crate"
-	icon_state = "centcom_secure"
-	base_icon_state = "centcom_secure"
+/obj/structure/closet/crate/secure/nanotrasen
+	name = "secure nanotrasen crate"
+	icon_state = "nanotrasen_secure"
+	base_icon_state = "nanotrasen_secure"
 
 /obj/structure/closet/crate/secure/cargo
 	name = "secure cargo crate"
@@ -265,17 +265,17 @@
 	name = "\improper Cybersun crate"
 
 /obj/structure/closet/crate/secure/syndicate/cybersun/dawn
-	desc = "A secure crate from Cybersun Industries. It has distinct orange-green colouring, probably of some departament or division, but you cannot tell what is it."
+	desc = "A secure crate from Cybersun Industries. It has distinct orange-green colouring, probably of some department or division, but you cannot tell what is it."
 	icon_state = "cyber_dawncrate"
 	base_icon_state = "cyber_dawncrate"
 
 /obj/structure/closet/crate/secure/syndicate/cybersun/noon
-	desc = "A secure crate from Cybersun Industries. It has distinct yellow-orange colouring, probably of some departament or division, but you cannot tell what is it."
+	desc = "A secure crate from Cybersun Industries. It has distinct yellow-orange colouring, probably of some department or division, but you cannot tell what is it."
 	icon_state = "cyber_nooncrate"
 	base_icon_state = "cyber_nooncrate"
 
 /obj/structure/closet/crate/secure/syndicate/cybersun/dusk
-	desc = "A secure crate from Cybersun Industries. It has distinct purple-green colouring, probably of some departament or division, but you cannot tell what is it."
+	desc = "A secure crate from Cybersun Industries. It has distinct purple-green colouring, probably of some department or division, but you cannot tell what is it."
 	icon_state = "cyber_duskcrate"
 	base_icon_state = "cyber_duskcrate"
 

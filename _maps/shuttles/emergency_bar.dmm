@@ -229,11 +229,6 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /turf/open/floor/iron,
 /area/shuttle/escape)
-"aU" = (
-/mob/living/basic/alien/maid/barmaid,
-/obj/effect/turf_decal/tile/bar/opposingcorners,
-/turf/open/floor/iron,
-/area/shuttle/escape)
 "aW" = (
 /obj/structure/chair/wood,
 /turf/open/floor/iron/grimy,
@@ -732,7 +727,7 @@ aF
 bH
 aP
 aE
-aU
+aE
 aX
 aE
 aE

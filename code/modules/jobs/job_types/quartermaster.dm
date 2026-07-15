@@ -5,6 +5,7 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SUPPLY)
+	default_radio_channel = RADIO_CHANNEL_SUPPLY
 	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
@@ -16,7 +17,6 @@
 	config_tag = "QUARTERMASTER"
 
 	outfit = /datum/outfit/job/quartermaster
-	plasmaman_outfit = /datum/outfit/plasmaman/cargo
 
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_CAR
@@ -52,6 +52,5 @@
 	suit = /obj/item/clothing/suit/jacket/quartermaster
 	ears = /obj/item/radio/headset/heads/qm
 	shoes = /obj/item/clothing/shoes/laceup
-	l_hand = /obj/item/clipboard
 
 	chameleon_extras = /obj/item/stamp/head/qm

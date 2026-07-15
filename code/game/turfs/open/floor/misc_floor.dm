@@ -263,13 +263,11 @@
 	AddElement(/datum/element/rust/heretic)
 	color = null
 
-/turf/open/floor/plating/plasma
-	initial_gas_mix = ATMOS_TANK_PLASMA
+/turf/open/floor/plating/phoron
+	initial_gas_mix = ATMOS_TANK_PHORON
 
-/turf/open/floor/plating/plasma/rust/Initialize(mapload)
+/turf/open/floor/plating/phoron/rust/Initialize(mapload)
 	. = ..()
-	// Because this is a fluff turf explicitly for KiloStation it doesn't make sense to ChangeTurf like usual
-	// Especially since it looks like we don't even change the default icon/iconstate???
 	AddElement(/datum/element/rust)
 
 /turf/open/floor/stone

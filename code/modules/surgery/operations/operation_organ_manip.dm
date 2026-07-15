@@ -29,9 +29,14 @@
 		/obj/item/kitchen/fork = 2.85,
 	)
 
+	/// Implements used to remove brain
+	var/list/brain_remove_implements = list(
+		/obj/item/mmi = 1,
+	)
+
 /datum/surgery_operation/limb/organ_manipulation/New()
 	. = ..()
-	implements = remove_implements + insert_implements
+	implements = remove_implements + insert_implements + brain_remove_implements
 
 /datum/surgery_operation/limb/organ_manipulation/get_recommended_tool()
 	return "[..()] / organ"
@@ -95,14 +100,16 @@
 	return TRUE
 
 /datum/surgery_operation/limb/organ_manipulation/snowflake_check_availability(obj/item/bodypart/limb, mob/living/surgeon, obj/item/tool, operated_zone)
+	if(istype(tool, /obj/item/mmi))
+		return length(get_remove_options(limb, tool, operated_zone))
 	return isorgan(tool) ? is_insert_available(limb, tool, operated_zone) : is_remove_available(limb, operated_zone)
 
 /datum/surgery_operation/limb/organ_manipulation/get_radial_options(obj/item/bodypart/limb, obj/item/tool, operating_zone)
-	return isorgan(tool) ? get_insert_options(limb, tool, operating_zone) : get_remove_options(limb, operating_zone)
+	return isorgan(tool) ? get_insert_options(limb, tool, operating_zone) : get_remove_options(limb, tool, operating_zone)
 
-/datum/surgery_operation/limb/organ_manipulation/proc/get_remove_options(obj/item/bodypart/limb, operating_zone)
+/datum/surgery_operation/limb/organ_manipulation/proc/get_remove_options(obj/item/bodypart/limb, obj/item/tool, operating_zone)
 	var/list/options = list()
-	for(var/obj/item/organ/organ as anything in get_removable_organs(limb, operating_zone))
+	for(var/obj/item/organ/organ in get_remove_options_list(limb, tool, operating_zone))
 		var/datum/radial_menu_choice/option = LAZYACCESS(cached_organ_manipulation_options, "[organ.type]_remove")
 		if(!option)
 			option = new()
@@ -115,6 +122,15 @@
 		options[option] = list("[OPERATION_ACTION]" = "remove", "[OPERATION_REMOVED_ORGAN]" = organ)
 
 	return options
+
+/datum/surgery_operation/limb/organ_manipulation/proc/get_remove_options_list(obj/item/bodypart/limb, obj/item/tool, operating_zone)
+	var/list/readable_organs = get_removable_organs(limb, operating_zone)
+	if(istype(tool, /obj/item/mmi))
+		readable_organs = list()
+		for(var/obj/item/organ/organ in get_removable_organs(limb, operating_zone))
+			if(organ.slot == ORGAN_SLOT_BRAIN)
+				readable_organs += organ
+	return readable_organs
 
 /datum/surgery_operation/limb/organ_manipulation/proc/get_insert_options(obj/item/bodypart/limb, obj/item/organ/organ)
 	var/datum/radial_menu_choice/option = LAZYACCESS(cached_organ_manipulation_options, "[organ.type]_insert")
@@ -193,7 +209,14 @@
 	display_pain(limb.owner, "Your [limb.plaintext_zone] throbs with pain, you can't feel your [organ.name] anymore!")
 	log_combat(surgeon, limb.owner, "surgically removed [organ.name] from")
 	organ.Remove(limb.owner)
-	organ.forceMove(limb.owner.drop_location())
+	if(istype(tool, /obj/item/mmi) && organ.slot == ORGAN_SLOT_BRAIN)
+		var/obj/item/mmi/man_machine_interface = tool
+		man_machine_interface.force_brain_into(organ)
+	else if(organ.slot == ORGAN_SLOT_BRAIN)
+		organ.set_organ_damage(organ.maxHealth)
+		organ.forceMove(limb.owner.drop_location())
+	else
+		organ.forceMove(limb.owner.drop_location())
 	organ.on_surgical_removal(surgeon, limb, tool)
 
 /datum/surgery_operation/limb/organ_manipulation/proc/on_success_insert_organ(obj/item/bodypart/limb, mob/living/surgeon, obj/item/organ/organ)

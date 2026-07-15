@@ -23,7 +23,7 @@ GLOBAL_LIST_EMPTY(jam_on_wardec)
 		return
 
 	declaring_war = TRUE
-	var/are_you_sure = tgui_alert(user, "Consult your team carefully before you declare war on [station_name()]. Are you sure you want to alert the enemy crew? You have [DisplayTimeText(CHALLENGE_TIME_LIMIT - world.time - SSticker.round_start_time)] to decide.", "Declare war?", list("Yes", "No"))
+	var/are_you_sure = tgui_alert(user, "Consult your team carefully before you declare war on [ship_name()]. Are you sure you want to alert the enemy crew? You have [DisplayTimeText(CHALLENGE_TIME_LIMIT - world.time - SSticker.round_start_time)] to decide.", "Declare war?", list("Yes", "No"))
 	declaring_war = FALSE
 
 	if(!check_allowed(user))
@@ -33,7 +33,7 @@ GLOBAL_LIST_EMPTY(jam_on_wardec)
 		to_chat(user, span_notice("On second thought, the element of surprise isn't so bad after all."))
 		return
 
-	var/war_declaration = "A syndicate fringe group has declared their intent to utterly destroy [station_name()] with a nuclear device, and dares the crew to try and stop them."
+	var/war_declaration = "A syndicate fringe group has declared their intent to utterly destroy [ship_name()] with a nuclear device, and dares the crew to try and stop them."
 
 	declaring_war = TRUE
 	var/custom_threat = tgui_alert(user, "Do you want to customize your declaration?", "Customize?", list("Yes", "No"))
@@ -59,7 +59,7 @@ GLOBAL_LIST_EMPTY(jam_on_wardec)
 	if(are_you_sure != "Yes")
 		return
 
-	var/war_declaration = "A syndicate fringe group has declared their intent to utterly destroy [station_name()] with a nuclear device, and dares the crew to try and stop them."
+	var/war_declaration = "A syndicate fringe group has declared their intent to utterly destroy [ship_name()] with a nuclear device, and dares the crew to try and stop them."
 
 	var/custom_threat = tgui_alert(usr, "Do you want to customize the declaration?", "Customize?", list("Yes", "No"))
 

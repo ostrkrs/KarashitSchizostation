@@ -96,9 +96,6 @@
 	power_light = FALSE
 	ambient_buzz = 'sound/ambience/lavaland/magma.ogg'
 
-//ash walker nest
-/area/ruin/unpowered/ash_walkers
-	ambient_buzz = 'sound/ambience/lavaland/magma.ogg'
 /area/ruin/unpowered/ratvar
 	outdoors = TRUE
 	ambient_buzz = 'sound/ambience/lavaland/magma.ogg'

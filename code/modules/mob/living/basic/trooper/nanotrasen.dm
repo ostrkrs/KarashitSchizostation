@@ -17,9 +17,9 @@
 
 /mob/living/basic/trooper/nanotrasen/ranged
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged
-	r_hand = /obj/item/gun/ballistic/automatic/pistol/m1911
+	r_hand = /obj/item/gun/ballistic/automatic/smg/wt550
 	/// Type of bullet we use
-	var/casingtype = /obj/item/ammo_casing/c45
+	var/casingtype = /obj/item/ammo_casing/c46x30mm
 	/// Sound to play when firing weapon
 	var/projectilesound = 'sound/items/weapons/gun/pistol/shot_alt.ogg'
 	/// number of burst shots
@@ -43,7 +43,7 @@
 	ai_controller = /datum/ai_controller/basic_controller/trooper/ranged/burst
 	casingtype = /obj/item/ammo_casing/c46x30mm
 	projectilesound = 'sound/items/weapons/gun/smg/shot.ogg'
-	r_hand = /obj/item/gun/ballistic/automatic/wt550
+	r_hand = /obj/item/gun/ballistic/automatic/smg/wt550
 	burst_shots = 3
 	ranged_cooldown = 3 SECONDS
 
@@ -51,11 +51,11 @@
 	name = "Nanotrasen Assault Officer"
 	desc = "Nanotrasen Assault Officer. Contact CentCom if you saw him on your station. Prepare to die, if you've been found near Syndicate property."
 
-	casingtype = /obj/item/ammo_casing/a223/weak
+	casingtype = /obj/item/ammo_casing/c46x30mm
 	burst_shots = 4
 	ranged_cooldown = 3 SECONDS
 	projectilesound = 'sound/items/weapons/gun/smg/shot.ogg'
-	r_hand = /obj/item/gun/ballistic/automatic/ar
+	r_hand = /obj/item/gun/ballistic/automatic/smg/wt550
 	corpse = /obj/effect/mob_spawn/corpse/human/nanotrasenassaultsoldier
 	mob_spawner = /obj/effect/mob_spawn/corpse/human/nanotrasenassaultsoldier
 

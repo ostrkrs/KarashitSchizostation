@@ -2,7 +2,7 @@
 	filename = "plexagoncrew"
 	filedesc = "Plexagon Crew List"
 	downloader_category = PROGRAM_CATEGORY_DEVICE
-	program_open_overlay = "id"
+	program_open_overlay = "crew"
 	extended_desc = "Program for viewing and printing the current crew manifest"
 	program_flags = PROGRAM_ON_NTNET_STORE | PROGRAM_REQUIRES_NTNET
 	size = 0

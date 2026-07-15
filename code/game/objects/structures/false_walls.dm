@@ -255,14 +255,14 @@
 	walltype = /turf/closed/wall/mineral/diamond
 	max_integrity = 800
 
-/obj/structure/falsewall/plasma
-	name = "plasma wall"
-	desc = "A wall with plasma plating. This is definitely a bad idea."
-	fake_icon = 'icons/turf/walls/plasma_wall.dmi'
-	icon_state = "plasma_wall-open"
-	base_icon_state = "plasma_wall"
-	mineral = /obj/item/stack/sheet/mineral/plasma
-	walltype = /turf/closed/wall/mineral/plasma
+/obj/structure/falsewall/phoron
+	name = "phoron wall"
+	desc = "A wall with phoron plating. This is definitely a bad idea."
+	fake_icon = 'icons/turf/walls/phoron_wall.dmi'
+	icon_state = "phoron_wall-open"
+	base_icon_state = "phoron_wall"
+	mineral = /obj/item/stack/sheet/mineral/phoron
+	walltype = /turf/closed/wall/mineral/phoron
 
 /obj/structure/falsewall/bananium
 	name = "bananium wall"
@@ -331,7 +331,7 @@
 
 /obj/structure/falsewall/plastitanium
 	name = "wall"
-	desc = "An evil wall of plasma and titanium."
+	desc = "An evil wall of phoron and titanium."
 	fake_icon = 'icons/turf/walls/plastitanium_wall.dmi'
 	icon_state = "plastitanium_wall-open"
 	base_icon_state = "plastitanium_wall"

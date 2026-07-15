@@ -165,11 +165,11 @@
 	radial_icon = "lava"
 	safe = FALSE
 
-/datum/map_template/shelter/fishing/plasma
-	name = "Plasma Fishing Spot"
-	shelter_id = "fishing_plasma"
-	mappath = "_maps/templates/fishing_plasma.dmm"
-	description = "A small 2x2 puddle of not-safe-for-live plasma. You can catch lava loops and arctic chrabs here."
+/datum/map_template/shelter/fishing/phoron
+	name = "Phoron Fishing Spot"
+	shelter_id = "fishing_phoron"
+	mappath = "_maps/templates/fishing_phoron.dmm"
+	description = "A small 2x2 puddle of not-safe-for-live phoron. You can catch lava loops and arctic chrabs here."
 	radial_icon = "plasma"
 	safe = FALSE
 

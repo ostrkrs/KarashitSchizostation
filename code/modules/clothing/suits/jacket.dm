@@ -5,7 +5,6 @@
 	allowed = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/toy,
 		/obj/item/storage/fancy/cigarettes,
 		/obj/item/lighter,
@@ -27,7 +26,6 @@
 	allowed = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/tank/jetpack/oxygen/captain,
 		/obj/item/toy,
 		/obj/item/storage/fancy/cigarettes,

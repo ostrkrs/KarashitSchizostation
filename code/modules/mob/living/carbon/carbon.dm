@@ -678,16 +678,8 @@
 
 		if(shown_stamina_loss >= stam_crit_threshold)
 			hud_used.stamina.icon_state = "stamina_crit"
-		else if(shown_stamina_loss > maxHealth*0.8)
-			hud_used.stamina.icon_state = "stamina_5"
-		else if(shown_stamina_loss > maxHealth*0.6)
-			hud_used.stamina.icon_state = "stamina_4"
-		else if(shown_stamina_loss > maxHealth*0.4)
-			hud_used.stamina.icon_state = "stamina_3"
-		else if(shown_stamina_loss > maxHealth*0.2)
-			hud_used.stamina.icon_state = "stamina_2"
-		else if(shown_stamina_loss > 0)
-			hud_used.stamina.icon_state = "stamina_1"
+		else if(shown_stamina_loss > 0 && maxHealth > 0)
+			hud_used.stamina.icon_state = "stamina_[ceil(shown_stamina_loss / (maxHealth * 0.2))]"
 		else
 			hud_used.stamina.icon_state = "stamina_full"
 
@@ -814,10 +806,6 @@
 
 	return ..()
 
-/mob/living/carbon/do_strange_reagent_revival(healing_amount)
-	set_heartattack(FALSE)
-	return ..()
-
 /mob/living/carbon/can_be_revived()
 	if(!get_organ_by_type(/obj/item/organ/brain) && (!IS_CHANGELING(src)) || HAS_TRAIT(src, TRAIT_HUSK))
 		return FALSE
@@ -851,7 +839,7 @@
 	if (QDELETED(current_brain))
 		return DEFIB_FAIL_NO_BRAIN
 
-	if (current_brain.organ_flags & ORGAN_FAILING)
+	if ((current_brain.organ_flags & ORGAN_FAILING) || (current_brain.damage >= BRAIN_DAMAGE_DEATH))
 		return DEFIB_FAIL_FAILING_BRAIN
 
 	if (current_brain.suicided || (current_brain.brainmob && HAS_TRAIT(current_brain.brainmob, TRAIT_SUICIDED)))
