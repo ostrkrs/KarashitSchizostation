@@ -133,9 +133,8 @@
 #define JOB_MORTUARY_AUDITOR "Mortuary Auditor"
 
 #define JOB_MEDICAL_DOCTOR "Medical Doctor"
-#define JOB_MEDICAL_PRACTITIONER "Medical Practitioner"
 #define JOB_PHYSICIAN "Physician"
-#define JOB_TREATMENT_SPECIALIST "Treatment Specialist"
+#define JOB_TRAUMATOLOGIST "Traumatologist"
 #define JOB_NURSE "Nurse"
 #define JOB_SURGEON "Surgeon"
 
@@ -369,9 +368,8 @@
 )
 #define JOB_MEDICAL_DOCTOR_ALT_TITLES list( \
 	JOB_MEDICAL_DOCTOR, \
-	JOB_MEDICAL_PRACTITIONER, \
 	JOB_PHYSICIAN, \
-	JOB_TREATMENT_SPECIALIST, \
+	JOB_TRAUMATOLOGIST, \
 	JOB_NURSE, \
 	JOB_SURGEON, \
 )
