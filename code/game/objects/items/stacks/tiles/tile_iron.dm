@@ -177,6 +177,13 @@
 	turf_type = /turf/open/floor/iron/large
 	merge_type = /obj/item/stack/tile/iron/large
 
+/obj/item/stack/tile/iron/ridged
+	name = "ridged tile"
+	singular_name = "ridged floor tile"
+	icon_state = "tile_ridged"
+	turf_type = /turf/open/floor/iron/ridged
+	merge_type = /obj/item/stack/tile/iron/ridged
+
 /obj/item/stack/tile/iron/textured
 	name = "textured tile"
 	singular_name = "textured floor tile"

@@ -11,6 +11,7 @@ GLOBAL_LIST_INIT(floor_designs, list(
 			list("name" = "Edge", "type" = /obj/item/stack/tile/iron/edge, "tile_cost" = 5),
 			list("name" = "Half", "type" = /obj/item/stack/tile/iron/half, "tile_cost" = 5),
 			list("name" = "Corner", "type" = /obj/item/stack/tile/iron/corner, "tile_cost" = 5),
+			list("name" = "Ridged", "type" = /obj/item/stack/tile/iron/ridged, "tile_cost" = 5),
 			list("name" = "Textured", "type" = /obj/item/stack/tile/iron/textured, "tile_cost" = 5),
 			list("name" = "Textured Edge", "type" = /obj/item/stack/tile/iron/textured_edge, "tile_cost" = 6),
 			list("name" = "Textured Half", "type" = /obj/item/stack/tile/iron/textured_half, "tile_cost" = 6),

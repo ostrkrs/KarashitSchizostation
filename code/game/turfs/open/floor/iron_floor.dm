@@ -53,6 +53,11 @@
 	base_icon_state = "floor_large"
 	floor_tile = /obj/item/stack/tile/iron/large
 
+/turf/open/floor/iron/ridged
+	icon_state = "ridged"
+	base_icon_state = "ridged"
+	floor_tile = /obj/item/stack/tile/iron/ridged
+
 /turf/open/floor/iron/textured
 	icon_state = "textured"
 	base_icon_state = "textured"
