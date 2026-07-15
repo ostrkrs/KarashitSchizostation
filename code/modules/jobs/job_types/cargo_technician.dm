@@ -26,9 +26,9 @@
 
 	mail_goodies = list(
 		/obj/item/pizzabox = 10,
-		/obj/item/stack/sheet/mineral/gold = 5,
-		/obj/item/stack/sheet/mineral/uranium = 4,
-		/obj/item/stack/sheet/mineral/diamond = 3,
+		/obj/item/coin/gold = 20,
+		/obj/item/coin/silver = 20,
+		/obj/item/clothing/neck/necklace/dope = 5,
 	)
 	rpg_title = "Merchantman"
 	job_flags = SHIP_JOB_FLAGS
@@ -39,7 +39,6 @@
 	jobtype = /datum/job/cargo_technician
 
 	backpack_contents = list(
-		/obj/item/boxcutter = 1,
 		/obj/item/universal_scanner = 1,
 	)
 	id_trim = /datum/id_trim/job/cargo_technician
