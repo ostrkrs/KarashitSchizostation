@@ -165,3 +165,15 @@
 	remote.pad = WEAKREF(src.pad)
 	to_chat(user, span_notice("You link [pad] to [remote]."))
 	return ITEM_INTERACT_BLOCKING
+
+/obj/item/storage/briefcase/emergency_suit
+	name = "emergency spacesuit case"
+	desc = "Used for compact storage of fragile emergency suits."
+	icon_state = "emergency_box"
+	inhand_icon_state = "lockbox"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	storage_type = /datum/storage/briefcase/emergency
+
+/obj/item/storage/briefcase/emergency_suit/PopulateContents()
+	new /obj/item/clothing/head/helmet/space/fragile(src)
+	new /obj/item/clothing/suit/space/fragile(src)

@@ -202,13 +202,6 @@
 	tank_holder_icon_state = "holder_emergency_clown"
 	distribute_pressure = TANK_CLOWN_RELEASE_PRESSURE
 
-/obj/item/tank/internals/emergency_oxygen/engi/clown/n2o
-
-/obj/item/tank/internals/emergency_oxygen/engi/clown/n2o/populate_gas()
-	air_contents.assert_gases(/datum/gas/oxygen, /datum/gas/nitrous_oxide)
-	air_contents.gases[/datum/gas/oxygen][MOLES] = (10*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C) * 0.95
-	air_contents.gases[/datum/gas/nitrous_oxide][MOLES] = (10*ONE_ATMOSPHERE)*volume/(R_IDEAL_GAS_EQUATION*T20C) * 0.05
-
 /obj/item/tank/internals/emergency_oxygen/engi/clown/bz
 
 /obj/item/tank/internals/emergency_oxygen/engi/clown/bz/populate_gas()

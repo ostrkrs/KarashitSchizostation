@@ -229,7 +229,6 @@
 	if(!random_funny_internals)
 		return ..()
 	internal_type = pick(
-			/obj/item/tank/internals/emergency_oxygen/engi/clown/n2o,
 			/obj/item/tank/internals/emergency_oxygen/engi/clown/bz,
 			/obj/item/tank/internals/emergency_oxygen/engi/clown/helium,
 			)

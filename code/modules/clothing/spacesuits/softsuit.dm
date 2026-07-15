@@ -71,19 +71,19 @@
 	name = "emergency space helmet"
 	desc = "A bulky, airtight helmet meant to protect the user during emergency situations. It doesn't look very durable."
 	icon_state = "syndicate-helm-orange"
-	inhand_icon_state = "syndicate-helm-orange" //resprite?
+	inhand_icon_state = "syndicate-helm-orange"
 	armor_type = /datum/armor/space_fragile
 	strip_delay = 6.5 SECONDS
 
 /obj/item/clothing/suit/space/fragile
 	name = "emergency space suit"
 	desc = "A bulky, airtight suit meant to protect the user during emergency situations. It doesn't look very durable."
-	var/torn = FALSE
 	icon_state = "syndicate-orange"
 	inhand_icon_state = "syndicate-orange"
 	slowdown = 1.5
 	armor_type = /datum/armor/space_fragile
 	strip_delay = 6.5 SECONDS
+	var/torn = FALSE
 
 /datum/armor/space_fragile
 	melee = 5

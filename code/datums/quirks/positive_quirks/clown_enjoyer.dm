@@ -18,7 +18,6 @@
 		/obj/item/storage/backpack/duffelbag/clown,
 		/obj/item/toy/crayon/rainbow,
 		/obj/item/toy/figure/clown,
-		/obj/item/tank/internals/emergency_oxygen/engi/clown/n2o,
 		/obj/item/tank/internals/emergency_oxygen/engi/clown/bz,
 		/obj/item/tank/internals/emergency_oxygen/engi/clown/helium,
 	)
