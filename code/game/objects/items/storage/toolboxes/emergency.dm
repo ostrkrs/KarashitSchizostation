@@ -5,7 +5,7 @@
 	material_flags = NONE
 
 /obj/item/storage/toolbox/emergency/PopulateContents()
-	new /obj/item/crowbar/red(src)
+	new /obj/item/crowbar/small/red(src)
 	new /obj/item/weldingtool/fueled/mini(src)
 	new /obj/item/extinguisher/mini(src)
 	switch(rand(1,3))

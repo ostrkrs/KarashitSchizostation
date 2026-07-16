@@ -144,6 +144,7 @@
 		"multitool",
 		"wrench",
 		"crowbar",
+		"crowbar_small",
 		"screwdriver",
 		"wirecutters",
 		"light_bulb",

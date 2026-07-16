@@ -63,7 +63,7 @@
 	new /obj/item/extinguisher(src)
 	new /obj/item/flashlight(src)
 	new /obj/item/clothing/head/utility/hardhat/red(src)
-	new /obj/item/crowbar/large/emergency(src)
+	new /obj/item/crowbar/large(src)
 
 /*
  * Tool Closet

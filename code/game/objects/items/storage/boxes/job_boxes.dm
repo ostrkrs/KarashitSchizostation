@@ -74,7 +74,7 @@
 
 /obj/item/storage/box/survival/mining/PopulateContents()
 	..()
-	new /obj/item/crowbar/red(src)
+	new /obj/item/crowbar/small/red(src)
 	new /obj/item/healthanalyzer/simple/miner(src)
 
 // Engineer survival box
@@ -100,7 +100,7 @@
 
 /obj/item/storage/box/survival/syndie/PopulateContents()
 	..()
-	new /obj/item/crowbar/red(src)
+	new /obj/item/crowbar/small/red(src)
 	new /obj/item/screwdriver/red(src)
 	new /obj/item/weldingtool/fueled/mini(src)
 	new /obj/item/paper/fluff/operative(src)
