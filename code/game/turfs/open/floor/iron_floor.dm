@@ -181,6 +181,11 @@
 	base_icon_state = "dark_herringbone"
 	floor_tile = /obj/item/stack/tile/iron/dark/herringbone
 
+/turf/open/floor/iron/dark/ridged
+	icon_state = "ridged_dark"
+	base_icon_state = "ridged_dark"
+	floor_tile = /obj/item/stack/tile/iron/dark/ridged
+
 /turf/open/floor/iron/dark/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
@@ -189,8 +194,82 @@
 
 /turf/open/floor/iron/dark/textured/airless
 	initial_gas_mix = AIRLESS_ATMOS
+
 /turf/open/floor/iron/dark/smooth_large/airless
 	initial_gas_mix = AIRLESS_ATMOS
+
+/turf/open/floor/iron/gray
+	icon_state = "gray"
+	base_icon_state = "gray"
+	floor_tile = /obj/item/stack/tile/iron/gray
+
+/turf/open/floor/iron/gray/smooth_edge
+	icon_state = "gray_edge"
+	base_icon_state = "gray_edge"
+	floor_tile = /obj/item/stack/tile/iron/gray/smooth_edge
+
+/turf/open/floor/iron/gray/smooth_half
+	icon_state = "gray_half"
+	base_icon_state = "gray_half"
+	floor_tile = /obj/item/stack/tile/iron/gray/smooth_half
+
+/turf/open/floor/iron/gray/smooth_corner
+	icon_state = "gray_corner"
+	base_icon_state = "gray_corner"
+	floor_tile = /obj/item/stack/tile/iron/gray/smooth_corner
+
+/turf/open/floor/iron/gray/smooth_large
+	icon_state = "gray_large"
+	base_icon_state = "gray_large"
+	floor_tile = /obj/item/stack/tile/iron/gray/smooth_large
+
+/turf/open/floor/iron/gray/textured
+	icon_state = "textured_gray"
+	base_icon_state = "textured_gray"
+	floor_tile = /obj/item/stack/tile/iron/gray/textured
+
+/turf/open/floor/iron/gray/textured_edge
+	icon_state = "textured_gray_edge"
+	base_icon_state = "textured_gray_edge"
+	floor_tile = /obj/item/stack/tile/iron/gray/textured_edge
+
+/turf/open/floor/iron/gray/textured_half
+	icon_state = "textured_gray_half"
+	base_icon_state = "textured_gray_half"
+	floor_tile = /obj/item/stack/tile/iron/gray/textured_half
+
+/turf/open/floor/iron/gray/textured_corner
+	icon_state = "textured_gray_corner"
+	base_icon_state = "textured_gray_corner"
+	floor_tile = /obj/item/stack/tile/iron/gray/textured_corner
+
+/turf/open/floor/iron/gray/textured_large
+	icon_state = "textured_gray_large"
+	base_icon_state = "textured_gray_large"
+	floor_tile = /obj/item/stack/tile/iron/gray/textured_large
+
+/turf/open/floor/iron/gray/small
+	icon_state = "gray_small"
+	base_icon_state = "gray_small"
+	floor_tile = /obj/item/stack/tile/iron/gray/small
+
+/turf/open/floor/iron/gray/diagonal
+	icon_state = "gray_diagonal"
+	base_icon_state = "gray_diagonal"
+	floor_tile = /obj/item/stack/tile/iron/gray/diagonal
+
+/turf/open/floor/iron/gray/herringbone
+	icon_state = "gray_herringbone"
+	base_icon_state = "gray_herringbone"
+	floor_tile = /obj/item/stack/tile/iron/gray/herringbone
+
+/turf/open/floor/iron/gray/airless
+	initial_gas_mix = AIRLESS_ATMOS
+
+/turf/open/floor/iron/gray/ridged
+	icon_state = "ridged_gray"
+	base_icon_state = "ridged_gray"
+	floor_tile = /obj/item/stack/tile/iron/gray/ridged
 
 /turf/open/floor/iron/white
 	icon_state = "white"
@@ -262,6 +341,11 @@
 
 /turf/open/floor/iron/white/telecomms
 	initial_gas_mix = TCOMMS_ATMOS
+
+/turf/open/floor/iron/white/ridged
+	icon_state = "ridged_white"
+	base_icon_state = "ridged_white"
+	floor_tile = /obj/item/stack/tile/iron/white/ridged
 
 /turf/open/floor/iron/recharge_floor
 	icon_state = "recharge_floor"
