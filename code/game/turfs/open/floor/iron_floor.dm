@@ -126,21 +126,6 @@
 	base_icon_state = "dark_large"
 	floor_tile = /obj/item/stack/tile/iron/dark/smooth_large
 
-/turf/open/floor/iron/dark/side
-	icon_state = "dark"
-	base_icon_state = "dark"
-	floor_tile = /obj/item/stack/tile/iron/dark_side
-
-/turf/open/floor/iron/dark/corner
-	icon_state = "darkcorner"
-	base_icon_state = "darkcorner"
-	floor_tile = /obj/item/stack/tile/iron/dark_corner
-
-/turf/open/floor/iron/checker
-	icon_state = "checker"
-	base_icon_state = "checker"
-	floor_tile = /obj/item/stack/tile/iron/checker
-
 /turf/open/floor/iron/dark/textured
 	icon_state = "textured_dark"
 	base_icon_state = "textured_dark"
@@ -206,14 +191,6 @@
 	initial_gas_mix = AIRLESS_ATMOS
 /turf/open/floor/iron/dark/smooth_large/airless
 	initial_gas_mix = AIRLESS_ATMOS
-/turf/open/floor/iron/dark/side/airless
-	initial_gas_mix = AIRLESS_ATMOS
-
-/turf/open/floor/iron/dark/corner/airless
-	initial_gas_mix = AIRLESS_ATMOS
-
-/turf/open/floor/iron/checker/airless
-	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/iron/white
 	icon_state = "white"
@@ -239,21 +216,6 @@
 	icon_state = "white_large"
 	base_icon_state = "white_large"
 	floor_tile = /obj/item/stack/tile/iron/white/smooth_large
-
-/turf/open/floor/iron/white/side
-	icon_state = "whitehall"
-	base_icon_state = "whitehall"
-	floor_tile = /obj/item/stack/tile/iron/white_side
-
-/turf/open/floor/iron/white/corner
-	icon_state = "whitecorner"
-	base_icon_state = "whitecorner"
-	floor_tile = /obj/item/stack/tile/iron/white_corner
-
-/turf/open/floor/iron/cafeteria
-	icon_state = "cafeteria"
-	base_icon_state = "cafeteria"
-	floor_tile = /obj/item/stack/tile/iron/cafeteria
 
 /turf/open/floor/iron/white/textured
 	icon_state = "textured_white"
@@ -300,15 +262,6 @@
 
 /turf/open/floor/iron/white/telecomms
 	initial_gas_mix = TCOMMS_ATMOS
-
-/turf/open/floor/iron/white/side/airless
-	initial_gas_mix = AIRLESS_ATMOS
-
-/turf/open/floor/iron/white/corner/airless
-	initial_gas_mix = AIRLESS_ATMOS
-
-/turf/open/floor/iron/cafeteria/airless
-	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/iron/recharge_floor
 	icon_state = "recharge_floor"

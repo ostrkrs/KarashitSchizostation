@@ -199,7 +199,7 @@
 /area/virtual_domain)
 "fK" = (
 /obj/structure/chair/stool/bar/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain)
 "fR" = (
 /obj/effect/turf_decal/trimline/yellow/line{
@@ -658,7 +658,7 @@
 /obj/machinery/light/dim{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain)
 "uv" = (
 /obj/structure/disposalpipe/segment{
@@ -1033,7 +1033,7 @@
 "DP" = (
 /obj/structure/table/reinforced,
 /obj/effect/spawner/random/food_or_drink/snack,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain)
 "Ex" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1073,10 +1073,6 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/virtual_domain)
-"Fo" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/cafeteria,
 /area/virtual_domain)
 "Fr" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1155,9 +1151,6 @@
 	},
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
-/area/virtual_domain)
-"Hn" = (
-/turf/open/floor/iron/cafeteria,
 /area/virtual_domain)
 "HI" = (
 /obj/structure/broken_flooring/pile/directional/north,
@@ -1489,7 +1482,7 @@
 "QI" = (
 /obj/structure/sign/calendar/directional/north,
 /obj/effect/spawner/random/trash/garbage,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain)
 "QK" = (
 /obj/structure/table,
@@ -1675,7 +1668,7 @@
 /area/virtual_domain)
 "Vh" = (
 /obj/structure/table/reinforced,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain)
 "Vy" = (
 /obj/structure/broken_flooring/singular{
@@ -2124,7 +2117,7 @@ um
 DP
 Vh
 Vh
-Hn
+hi
 tr
 fg
 ZP
@@ -2170,11 +2163,11 @@ gc
 eg
 RJ
 eg
-Hn
+hi
 fK
 fK
 fK
-Hn
+hi
 lC
 hi
 FK
@@ -2221,10 +2214,10 @@ eg
 RJ
 eg
 QI
-Fo
-Hn
-Hn
-Hn
+lN
+hi
+hi
+hi
 tr
 hi
 Ln

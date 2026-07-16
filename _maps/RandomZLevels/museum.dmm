@@ -19,7 +19,7 @@
 /obj/structure/closet/crate/bin,
 /obj/machinery/light/warm/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "ai" = (
 /obj/structure/railing{
@@ -330,7 +330,7 @@
 /turf/open/floor/mineral/silver,
 /area/awaymission/museum/mothroachvoid)
 "cF" = (
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/awaymission/museum)
@@ -385,7 +385,7 @@
 	},
 /obj/machinery/light/warm/directional/east,
 /obj/structure/fluff/fake_scrubber,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "cZ" = (
 /obj/structure/fluff/divine/nexus,
@@ -681,7 +681,7 @@
 	pixel_x = -32;
 	firstline_to_secondline = list(CAFETERIA="YUMMY", CAFETERIA="HOTDOGS", ENJOY="YOUR MEAL")
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "fn" = (
 /turf/open/floor/holofloor/hyperspace/ns,
@@ -896,7 +896,7 @@
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/condiment,
 /obj/machinery/light/floor,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "hp" = (
 /mob/living/basic/mothroach/bar,
@@ -1748,7 +1748,7 @@
 /obj/structure/chair/sofa/bench/left{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "od" = (
 /obj/structure/fluff/fake_vent,
@@ -1856,7 +1856,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "pc" = (
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 6
 	},
 /area/awaymission/museum)
@@ -1975,7 +1975,7 @@
 /area/awaymission/museum)
 "ql" = (
 /obj/structure/chair/sofa/bench,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "qo" = (
 /obj/effect/oneway{
@@ -2028,7 +2028,7 @@
 /area/awaymission/museum)
 "qK" = (
 /obj/machinery/vending/hotdog/museum,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "qL" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
@@ -2572,7 +2572,7 @@
 /area/awaymission/museum)
 "uH" = (
 /obj/structure/sign/clock/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "uM" = (
 /obj/structure/fluff/fake_camera{
@@ -2882,7 +2882,7 @@
 /area/awaymission/museum/mothroachvoid)
 "xp" = (
 /obj/structure/table,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "xr" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2956,7 +2956,7 @@
 "xO" = (
 /obj/structure/table,
 /obj/item/reagent_containers/cup/soda_cans/canned_laughter,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "xP" = (
 /obj/structure/closet/crate/cardboard,
@@ -3701,7 +3701,7 @@
 "DX" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light/warm/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "DY" = (
 /turf/closed/indestructible/reinforced/titanium,
@@ -3764,7 +3764,7 @@
 "Es" = (
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "EA" = (
 /obj/machinery/door/airlock/shuttle/glass,
@@ -3986,7 +3986,7 @@
 /area/awaymission/museum/cafeteria)
 "FY" = (
 /obj/structure/chair/sofa/bench/left,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Ga" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4030,7 +4030,7 @@
 /obj/item/reagent_containers/cup/soda_cans/thirteenloko{
 	pixel_y = 7
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "GE" = (
 /obj/structure/plaque/static_plaque/golden/commission/meta,
@@ -4195,9 +4195,6 @@
 "HP" = (
 /turf/open/floor/iron/freezer,
 /area/awaymission/museum)
-"HQ" = (
-/turf/open/floor/iron/cafeteria,
-/area/awaymission/museum/cafeteria)
 "HU" = (
 /obj/structure/railing{
 	dir = 4
@@ -4311,7 +4308,7 @@
 	dir = 1
 	},
 /obj/effect/mapping_helpers/mob_buckler,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "IZ" = (
 /mob/living/basic/mothroach,
@@ -4320,9 +4317,6 @@
 	},
 /obj/effect/mapping_helpers/mob_buckler,
 /turf/open/floor/wood/large,
-/area/awaymission/museum)
-"Jb" = (
-/turf/open/floor/iron/dark/side,
 /area/awaymission/museum)
 "Jc" = (
 /obj/structure/window/spawner/directional/north,
@@ -4363,7 +4357,7 @@
 	pixel_x = 32;
 	firstline_to_secondline = list(CAFETERIA="YUMMY", CAFETERIA="HOTDOGS", ENJOY="YOUR MEAL")
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Jn" = (
 /obj/structure/table/reinforced,
@@ -4506,10 +4500,10 @@
 /area/awaymission/museum/cafeteria)
 "KB" = (
 /obj/structure/sign/warning/no_smoking/circle/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "KI" = (
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 10
 	},
 /area/awaymission/museum)
@@ -5116,7 +5110,7 @@
 /turf/open/floor/iron,
 /area/awaymission/museum)
 "Qv" = (
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/awaymission/museum)
@@ -5178,7 +5172,7 @@
 /area/awaymission/museum)
 "QX" = (
 /obj/structure/sign/poster/party_game/directional/south,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/awaymission/museum)
 "Re" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -5633,7 +5627,7 @@
 	pixel_y = 30;
 	target_path = /obj/structure/sign/painting/eldritch/weeping
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Vc" = (
 /obj/machinery/light/warm/directional/east,
@@ -5903,7 +5897,7 @@
 /obj/structure/chair/sofa/bench{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Xa" = (
 /obj/structure/broken_flooring/corner/always_floorplane{
@@ -5929,7 +5923,7 @@
 /area/awaymission/museum)
 "Xi" = (
 /obj/structure/chair/sofa/bench/right,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Xo" = (
 /obj/structure/lattice/catwalk/mining,
@@ -6061,7 +6055,7 @@
 	dir = 8;
 	content = list("We're once again asking for your financial support; We love our job, but love alone can only get us so far. Please consider leaving a donation to help keep the musuem running. Thank you.")
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Yz" = (
 /mob/living/basic/statue/mannequin{
@@ -6120,7 +6114,7 @@
 /obj/structure/chair/sofa/bench/right{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Zf" = (
 /obj/structure/plaque/static_plaque/golden/commission/donut,
@@ -6141,7 +6135,7 @@
 "Zo" = (
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/snack,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Zp" = (
 /obj/structure/plaque/static_plaque/golden/commission/icebox,
@@ -6170,12 +6164,12 @@
 "Zx" = (
 /obj/structure/chair/sofa/bench,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "Zz" = (
 /obj/effect/mapping_helpers/turn_off_lights_with_lightswitch,
 /obj/machinery/light_switch/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/museum/cafeteria)
 "ZB" = (
 /obj/machinery/door/airlock/maintenance_hatch,
@@ -31026,7 +31020,7 @@ LB
 Am
 iN
 uc
-Jb
+uY
 Ps
 eA
 gM
@@ -31283,7 +31277,7 @@ Ls
 Ec
 uc
 CT
-Jb
+uY
 xT
 MF
 Jd
@@ -31797,7 +31791,7 @@ az
 Jc
 Pb
 FG
-Jb
+uY
 MF
 eP
 eP
@@ -32054,7 +32048,7 @@ vO
 Wg
 TR
 Pb
-Jb
+uY
 vU
 eP
 gu
@@ -46233,12 +46227,12 @@ re
 re
 Ph
 DX
-HQ
+ms
 fl
 Zz
-HQ
-HQ
-HQ
+ms
+ms
+ms
 ac
 Ph
 re
@@ -46490,13 +46484,13 @@ re
 re
 Ph
 qK
-HQ
-HQ
-HQ
-HQ
-HQ
-HQ
-HQ
+ms
+ms
+ms
+ms
+ms
+ms
+ms
 vG
 re
 re
@@ -46747,7 +46741,7 @@ re
 re
 Ph
 uH
-HQ
+ms
 Xi
 xp
 nZ
@@ -47004,7 +46998,7 @@ re
 re
 Ph
 Vb
-HQ
+ms
 Zx
 hm
 WZ
@@ -47260,8 +47254,8 @@ re
 re
 re
 Ph
-HQ
-HQ
+ms
+ms
 ql
 Zo
 WZ
@@ -47518,7 +47512,7 @@ re
 re
 Ph
 Db
-HQ
+ms
 FY
 xO
 Za
@@ -47776,11 +47770,11 @@ re
 Ph
 LK
 Yy
-HQ
-HQ
+ms
+ms
 KB
 Jl
-HQ
+ms
 cY
 Ph
 re

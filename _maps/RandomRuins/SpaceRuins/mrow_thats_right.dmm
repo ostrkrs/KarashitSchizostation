@@ -311,13 +311,10 @@
 /area/ruin/space/has_grav/powered/cat_man)
 "be" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/white/corner,
-/area/ruin/space/has_grav/powered/cat_man)
-"bf" = (
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bg" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/powered/cat_man)
@@ -400,7 +397,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/gloves/latex,
 /obj/item/surgical_drapes,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/powered/cat_man)
@@ -429,17 +426,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bA" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/powered/cat_man)
 "bB" = (
-/turf/open/floor/iron/white/side{
-	dir = 1
-	},
-/area/ruin/space/has_grav/powered/cat_man)
-"bC" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/ruin/space/has_grav/powered/cat_man)
@@ -809,11 +801,6 @@
 	outfit_override = list("head"=/obj/item/clothing/head/costume/kitty)
 	},
 /turf/open/floor/plating,
-/area/ruin/space/has_grav/powered/cat_man)
-"uy" = (
-/turf/open/floor/iron/white/side{
-	dir = 4
-	},
 /area/ruin/space/has_grav/powered/cat_man)
 "yx" = (
 /obj/machinery/light/small/directional/east,
@@ -1312,7 +1299,7 @@ ay
 aP
 aw
 be
-uy
+bA
 bA
 aG
 aP
@@ -1343,7 +1330,7 @@ az
 aJ
 aP
 aw
-bf
+aI
 bt
 bB
 bE
@@ -1377,7 +1364,7 @@ aQ
 aU
 bg
 bu
-bC
+bB
 aG
 bO
 aK

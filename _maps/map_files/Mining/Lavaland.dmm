@@ -139,7 +139,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "aV" = (
 /obj/structure/marker_beacon/teal,
@@ -225,7 +225,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 10
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "bB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -383,7 +383,7 @@
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "cm" = (
 /obj/machinery/door/airlock/external{
@@ -792,7 +792,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "eR" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -891,7 +891,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "fx" = (
 /obj/structure/railing,
@@ -1316,7 +1316,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "hE" = (
 /obj/machinery/button/door/directional/north{
@@ -1398,7 +1398,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/cup/bowl,
 /obj/item/kitchen/spoon,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "hY" = (
 /obj/machinery/door/airlock/public/glass{
@@ -1414,7 +1414,7 @@
 	name = "Infirmary"
 	},
 /obj/effect/turf_decal/tile/light_blue/fourcorners,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/mine/medical)
@@ -1449,7 +1449,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/mine/hydroponics)
@@ -1548,7 +1548,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "iN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -1766,7 +1766,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "jU" = (
 /obj/machinery/conveyor{
@@ -1800,7 +1800,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "kf" = (
 /obj/structure/railing{
@@ -1961,7 +1961,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "kR" = (
 /obj/structure/chair{
@@ -1971,7 +1971,7 @@
 	dir = 1
 	},
 /obj/machinery/mining_weather_monitor/directional/west,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "kV" = (
 /obj/machinery/atmospherics/components/tank/air{
@@ -2682,7 +2682,7 @@
 /obj/effect/spawner/random/trash/food_packaging,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/food_packaging,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "nO" = (
 /obj/structure/railing{
@@ -2751,7 +2751,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "oh" = (
 /obj/effect/spawner/structure/window,
@@ -3152,7 +3152,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "qh" = (
 /obj/structure/table,
@@ -3177,7 +3177,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown/opposingcorners,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/mine/storage/public)
 "qp" = (
 /obj/machinery/door/airlock/glass{
@@ -3188,7 +3188,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "qq" = (
 /obj/structure/stone_tile,
@@ -3488,7 +3488,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 8
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "sk" = (
 /obj/structure/closet/emcloset,
@@ -3526,7 +3526,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating_new,
 /obj/effect/spawner/random/trash/mess,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "su" = (
 /obj/structure/disposalpipe/trunk{
@@ -3584,7 +3584,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 6
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "sU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3786,7 +3786,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "uj" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -3802,7 +3802,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "ul" = (
 /obj/item/crowbar/large/emergency,
@@ -3865,7 +3865,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 9
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "uD" = (
 /obj/structure/railing,
@@ -4143,7 +4143,7 @@
 /obj/structure/chair/stool/directional/north,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating_new,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "wa" = (
 /obj/machinery/camera/autoname/directional/north{
@@ -4158,7 +4158,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "wg" = (
 /obj/structure/chair/sofa/corp{
@@ -4395,7 +4395,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "xQ" = (
 /obj/structure/table,
@@ -4490,7 +4490,7 @@
 "yn" = (
 /obj/structure/chair/stool/directional/north,
 /obj/effect/turf_decal/siding/wideplating_new,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "yp" = (
 /obj/structure/lattice/catwalk/mining,
@@ -4557,7 +4557,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "yR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -5034,7 +5034,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "Cn" = (
 /obj/structure/table/wood,
@@ -5297,7 +5297,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "DY" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -5490,7 +5490,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "Ff" = (
 /turf/open/floor/glass/reinforced,
@@ -5940,7 +5940,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "If" = (
 /obj/structure/cable,
@@ -6472,7 +6472,7 @@
 	dir = 1
 	},
 /obj/item/radio/intercom/directional/east,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "KI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -6494,7 +6494,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "KO" = (
 /obj/structure/railing{
@@ -6542,7 +6542,7 @@
 	dir = 1
 	},
 /obj/effect/spawner/random/trash/mess,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "Lg" = (
 /turf/open/floor/plating,
@@ -6866,7 +6866,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "MQ" = (
 /obj/structure/railing/corner{
@@ -7001,7 +7001,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "Nz" = (
 /obj/effect/turf_decal/bot,
@@ -7128,7 +7128,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "Ok" = (
 /obj/structure/table,
@@ -7424,7 +7424,7 @@
 "PY" = (
 /obj/structure/table,
 /obj/effect/spawner/random/entertainment/toy,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "Qa" = (
 /obj/item/kirbyplants/random,
@@ -7625,7 +7625,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "Rf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8240,7 +8240,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 4
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "UN" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -8276,7 +8276,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "UV" = (
 /obj/machinery/door/airlock/external/glass{
@@ -8444,14 +8444,14 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/plate,
 /obj/item/kitchen/fork,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "VG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 5
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "VI" = (
 /obj/effect/spawner/random/food_or_drink/donkpockets,
@@ -8775,7 +8775,7 @@
 /obj/effect/turf_decal/siding/wideplating_new{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "XA" = (
 /obj/effect/turf_decal/trimline/light_blue/filled/line{
@@ -8975,7 +8975,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/toy/cards/deck,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/laborcamp)
 "Ys" = (
 /obj/machinery/vending/coffee,
@@ -9062,7 +9062,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "Zj" = (
 /obj/structure/chair/sofa/middle/brown,
@@ -9070,7 +9070,7 @@
 	dir = 1
 	},
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/mine/cafeteria)
 "Zl" = (
 /obj/structure/cable,

@@ -824,9 +824,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
-"eh" = (
-/turf/open/floor/iron/white/corner,
-/area/awaymission/research/interior)
 "ei" = (
 /obj/effect/turf_decal/tile/yellow/half/contrasted,
 /turf/open/floor/iron/white,
@@ -847,7 +844,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "en" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/awaymission/research/interior)
@@ -1558,7 +1555,7 @@
 	},
 /area/awaymission/research/interior/genetics)
 "hL" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/awaymission/research/interior)
@@ -1599,7 +1596,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hQ" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/awaymission/research/interior)
@@ -40965,7 +40962,7 @@ aH
 aH
 cY
 cp
-eh
+gD
 eI
 eI
 fN

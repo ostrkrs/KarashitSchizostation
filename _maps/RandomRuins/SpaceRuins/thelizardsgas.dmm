@@ -3,7 +3,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/random/food_or_drink/seed,
 /obj/structure/cable,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "aK" = (
 /obj/structure/chair/stool/bar/directional/south,
@@ -22,7 +22,7 @@
 	desc = "You can hear a faint hissing from inside the boots."
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "bp" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -48,13 +48,13 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/thelizardsgas)
 "ct" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/thelizardsgas)
 "cv" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/hidden,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/thelizardsgas)
@@ -79,11 +79,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/structure/cable,
-/turf/open/floor/iron/white/side,
-/area/ruin/space/has_grav/thelizardsgas)
-"hl" = (
-/obj/structure/cable,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "ig" = (
 /obj/structure/table/wood,
@@ -121,7 +117,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "kS" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored,
@@ -134,7 +130,7 @@
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/structure/closet/secure_closet/freezer/all_access,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/thelizardsgas)
@@ -144,7 +140,7 @@
 "na" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/hidden,
 /obj/structure/cable,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "nL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -153,7 +149,7 @@
 	dir = 5
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "oZ" = (
 /obj/structure/disposalpipe/segment,
@@ -208,7 +204,7 @@
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
 /obj/effect/spawner/random/food_or_drink/refreshing_beverage,
 /obj/structure/closet/secure_closet/freezer/all_access,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "wb" = (
 /turf/open/misc/asteroid/airless,
@@ -216,7 +212,7 @@
 "xb" = (
 /obj/structure/cable,
 /obj/structure/sign/warning/fire/directional/north,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "xy" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -289,11 +285,6 @@
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/thelizardsgas)
-"EH" = (
-/turf/open/floor/iron/white/corner{
-	dir = 1
-	},
-/area/ruin/space/has_grav/thelizardsgas)
 "Gr" = (
 /obj/structure/rack,
 /turf/open/floor/iron/white,
@@ -323,7 +314,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/thelizardsgas)
 "Je" = (
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/thelizardsgas)
@@ -367,7 +358,7 @@
 /area/ruin/space/has_grav/thelizardsgas)
 "JY" = (
 /obj/structure/cable,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/thelizardsgas)
 "Kw" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
@@ -458,7 +449,7 @@
 	desc = "How are you ALIVE?!";
 	name = "Blarpo"
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/ruin/space/has_grav/thelizardsgas)
@@ -481,7 +472,7 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/thelizardsgas)
 "UO" = (
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/ruin/space/has_grav/thelizardsgas)
@@ -501,7 +492,7 @@
 /area/ruin/space/has_grav/thelizardsgas)
 "Wh" = (
 /obj/machinery/light/directional/south,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/ruin/space/has_grav/thelizardsgas)
@@ -524,13 +515,6 @@
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ruin/space/has_grav/thelizardsgas)
-"YK" = (
-/obj/effect/spawner/random/food_or_drink/refreshing_beverage,
-/obj/effect/spawner/random/food_or_drink/refreshing_beverage,
-/obj/effect/spawner/random/food_or_drink/refreshing_beverage,
-/obj/structure/closet/secure_closet/freezer/all_access,
-/turf/open/floor/iron/white/side,
 /area/ruin/space/has_grav/thelizardsgas)
 "Zr" = (
 /obj/effect/turf_decal/tile/dark{
@@ -688,7 +672,7 @@ mR
 jv
 aK
 Ow
-hl
+JY
 Zr
 ct
 mR
@@ -715,7 +699,7 @@ mR
 eV
 PF
 VP
-hl
+JY
 Gr
 UO
 mR
@@ -742,7 +726,7 @@ LA
 rC
 rC
 rC
-hl
+JY
 Gr
 UO
 mR
@@ -796,7 +780,7 @@ DG
 WY
 QQ
 rC
-hl
+JY
 bp
 GR
 Wh
@@ -823,7 +807,7 @@ Uh
 DG
 DG
 rC
-hl
+JY
 Zs
 GR
 UO
@@ -1038,7 +1022,7 @@ wb
 wb
 Um
 mR
-YK
+vj
 GR
 GR
 zn
@@ -1069,7 +1053,7 @@ mN
 Je
 Je
 Je
-EH
+UO
 mR
 Qg
 Hc

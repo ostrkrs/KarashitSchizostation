@@ -29,7 +29,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/turf/open/floor/iron/white/corner/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "ea" = (
 /obj/effect/spawner/random/engineering/atmospherics_portable,
@@ -96,7 +96,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav)
@@ -126,7 +126,7 @@
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "oP" = (
 /obj/structure/lattice,
@@ -255,7 +255,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav)
@@ -269,7 +269,7 @@
 	dir = 1
 	},
 /obj/item/computer_disk/ordnance,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 1
 	},
 /area/ruin/space/has_grav)
@@ -411,7 +411,7 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/firelock_frame,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 1
 	},
 /area/ruin/space/has_grav)
@@ -446,7 +446,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/open/floor/iron/white/corner/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav)
@@ -462,7 +462,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav)
@@ -481,7 +481,7 @@
 /obj/effect/turf_decal/trimline/neutral/corner{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/corner/airless{
+/turf/open/floor/iron/airless{
 	dir = 4
 	},
 /area/ruin/space/has_grav)

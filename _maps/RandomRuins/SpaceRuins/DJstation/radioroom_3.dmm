@@ -5,25 +5,25 @@
 "b" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "f" = (
 /obj/modular_map_root/djstation{
 	key = "kitchen"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "g" = (
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "h" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "r" = (
 /obj/structure/table,
 /obj/effect/spawner/random/maintenance,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "x" = (
 /obj/structure/lattice,
@@ -38,18 +38,18 @@
 /obj/structure/chair/office/light{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "A" = (
 /obj/machinery/duct,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "K" = (
 /obj/machinery/duct,
 /obj/modular_map_root/djstation{
 	key = "quarters"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "M" = (
 /turf/template_noop,
@@ -57,12 +57,12 @@
 "N" = (
 /obj/modular_map_connector,
 /obj/machinery/light/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "O" = (
 /obj/structure/table,
 /obj/item/paper/fluff/ruins/djstation,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "Q" = (
 /obj/structure/table,
@@ -73,7 +73,7 @@
 	listening = 0;
 	name = "Pirate Radio Broadcast Channel"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "V" = (
 /obj/structure/table,
@@ -82,7 +82,7 @@
 	freerange = 1;
 	name = "Pirate Radio Listening Channel"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 "W" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -90,7 +90,7 @@
 /area/ruin/space/djstation)
 "Z" = (
 /obj/machinery/light/floor,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/djstation)
 
 (1,1,1) = {"

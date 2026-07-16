@@ -730,7 +730,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 4
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/centcom/central_command_areas/evacuation)
@@ -4680,7 +4680,7 @@
 /obj/effect/turf_decal/tile/dark_blue{
 	dir = 4
 	},
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
 "vf" = (
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
@@ -4689,7 +4689,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 1
 	},
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/evacuation)
 "vg" = (
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
@@ -4704,7 +4704,7 @@
 /obj/effect/turf_decal/tile/dark_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/centcom/central_command_areas/evacuation)
@@ -4885,7 +4885,7 @@
 /obj/effect/turf_decal/tile/dark_blue{
 	dir = 8
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 5
 	},
 /area/centcom/central_command_areas/evacuation)
@@ -5078,7 +5078,7 @@
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted{
 	dir = 8
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/centcom/central_command_areas/evacuation)
@@ -5454,7 +5454,7 @@
 	},
 /obj/effect/turf_decal/tile/dark_blue,
 /obj/effect/turf_decal/tile/dark_blue,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/centcom/central_command_areas/evacuation)
@@ -5608,14 +5608,14 @@
 /obj/effect/turf_decal/tile/dark_blue{
 	dir = 8
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/centcom/central_command_areas/evacuation)
 "zm" = (
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
 /obj/effect/turf_decal/tile/dark_blue/half/contrasted,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/centcom/central_command_areas/evacuation)
@@ -10005,7 +10005,7 @@
 /obj/effect/turf_decal/tile/dark_blue{
 	dir = 4
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 10
 	},
 /area/centcom/central_command_areas/evacuation)

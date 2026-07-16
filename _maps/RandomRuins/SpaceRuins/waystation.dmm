@@ -49,7 +49,7 @@
 /area/ruin/space/has_grav/waystation/securestorage)
 "bG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "bN" = (
 /obj/effect/turf_decal/bot,
@@ -106,7 +106,7 @@
 /obj/machinery/oven/range,
 /obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "dd" = (
 /obj/structure/broken_flooring/pile/directional/west,
@@ -133,7 +133,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "dz" = (
 /obj/structure/rack,
@@ -229,7 +229,7 @@
 /area/ruin/space/has_grav/waystation/securestorage)
 "ez" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "eV" = (
 /obj/effect/decal/cleanable/dirt,
@@ -359,7 +359,7 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "hd" = (
 /obj/effect/turf_decal/tile/red/half/contrasted,
@@ -558,7 +558,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/mapping_helpers/airlock/access/any,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "kq" = (
 /obj/effect/turf_decal/tile/bar{
@@ -578,7 +578,7 @@
 "kX" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "li" = (
 /obj/effect/turf_decal/siding/red{
@@ -646,7 +646,7 @@
 	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "mr" = (
 /turf/closed/wall,
@@ -754,7 +754,7 @@
 "nu" = (
 /obj/machinery/processor,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "nv" = (
 /obj/effect/turf_decal/tile/bar{
@@ -942,7 +942,7 @@
 "pF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "pH" = (
 /obj/effect/turf_decal/tile/brown/half/contrasted,
@@ -1572,7 +1572,7 @@
 	pixel_y = -2
 	},
 /obj/item/storage/box/monkeycubes,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "Cx" = (
 /obj/effect/turf_decal/tile/brown/half/contrasted,
@@ -1613,7 +1613,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "Dx" = (
 /obj/machinery/door/airlock/mining/glass,
@@ -1656,7 +1656,7 @@
 "Ez" = (
 /obj/machinery/deepfryer,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "EK" = (
 /obj/effect/turf_decal/tile/red/anticorner/contrasted{
@@ -1910,7 +1910,7 @@
 "Kg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "Kn" = (
 /obj/effect/turf_decal/bot,
@@ -1955,7 +1955,7 @@
 /obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/storage/box/ingredients/random,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "KW" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -2058,7 +2058,7 @@
 "Mi" = (
 /obj/machinery/vending/dinnerware,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "Mk" = (
 /obj/structure/table/wood,
@@ -2305,7 +2305,7 @@
 	pixel_x = -7
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "PX" = (
 /obj/effect/turf_decal/tile/red/anticorner/contrasted,
@@ -2365,7 +2365,7 @@
 /obj/structure/table,
 /obj/machinery/microwave,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "Rw" = (
 /obj/structure/rack,
@@ -2719,7 +2719,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/waystation/kitchen)
 "XT" = (
 /obj/effect/turf_decal/bot,

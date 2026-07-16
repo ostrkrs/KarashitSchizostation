@@ -229,7 +229,7 @@
 "gy" = (
 /obj/machinery/griddle,
 /obj/item/kitchen/rollingpin,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "gK" = (
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -531,7 +531,7 @@
 /area/centcom/central_command_areas/holding)
 "nA" = (
 /obj/structure/sink/kitchen/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "nR" = (
 /obj/machinery/light/small/directional/east,
@@ -791,7 +791,7 @@
 /area/centcom/central_command_areas/holding)
 "rQ" = (
 /obj/machinery/duct,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "rR" = (
 /turf/open/floor/bamboo/tatami/purple{
@@ -915,7 +915,7 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/central_command_areas/holding)
 "wV" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "xe" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1063,7 +1063,7 @@
 /obj/structure/table/reinforced,
 /obj/item/book/manual/chef_recipes,
 /obj/item/knife/kitchen,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "Ar" = (
 /obj/structure/sink/kitchen/directional/west,
@@ -1121,7 +1121,7 @@
 /obj/item/reagent_containers/condiment/rice{
 	pixel_y = 12
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "Cb" = (
 /obj/machinery/vending/hydroseeds,
@@ -1203,7 +1203,7 @@
 /area/centcom/central_command_areas/holding)
 "Ea" = (
 /obj/structure/closet/crate/bin,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "Ed" = (
 /turf/closed/indestructible/rock,
@@ -1424,7 +1424,7 @@
 	desc = "Used to grind things up into raw materials and liquids.";
 	pixel_y = 5
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "Ig" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1435,7 +1435,7 @@
 /area/centcom/central_command_areas/holding)
 "Io" = (
 /obj/machinery/deepfryer,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "II" = (
 /mob/living/basic/bot/medbot/stationary{
@@ -1597,7 +1597,7 @@
 /obj/machinery/microwave{
 	pixel_y = 6
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "My" = (
 /obj/item/kirbyplants/organic/plant10,
@@ -1796,7 +1796,7 @@
 "Rg" = (
 /obj/machinery/oven/range,
 /obj/machinery/light/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/centcom/central_command_areas/holding)
 "Ry" = (
 /obj/structure/dresser,

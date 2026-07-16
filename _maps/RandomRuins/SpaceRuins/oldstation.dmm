@@ -858,13 +858,9 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/hall)
-"dY" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white/corner,
-/area/ruin/space/ancientstation/delta/rnd)
 "ea" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/ancientstation/delta/rnd)
@@ -894,7 +890,7 @@
 /obj/machinery/microwave{
 	pixel_y = 6
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "ei" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1171,7 +1167,7 @@
 /obj/machinery/reagentgrinder{
 	pixel_y = 6
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "fn" = (
 /obj/machinery/door/firedoor,
@@ -1597,16 +1593,16 @@
 "hr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/dinnerware,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "ht" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "hu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/food/flour,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "hw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1619,7 +1615,7 @@
 	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
 	name = "old sink"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "hz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1815,7 +1811,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "ij" = (
 /obj/structure/table/reinforced,
@@ -1949,21 +1945,21 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /obj/item/plate/small,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "iJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "iK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "iN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1971,7 +1967,7 @@
 	dir = 8
 	},
 /obj/machinery/light/small/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "iP" = (
 /obj/structure/chair{
@@ -2576,12 +2572,12 @@
 "lx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/food/egg_smudge,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "ly" = (
 /obj/structure/chair,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "lB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2744,7 +2740,7 @@
 /turf/open/floor/iron/white/textured,
 /area/ruin/space/ancientstation/delta/proto)
 "mo" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/ruin/space/ancientstation/delta/rnd)
@@ -3436,7 +3432,7 @@
 /area/ruin/space/ancientstation/beta/supermatter)
 "pV" = (
 /obj/machinery/light/broken/directional/south,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/ancientstation/delta/rnd)
@@ -3618,7 +3614,7 @@
 /obj/effect/mapping_helpers/apc/no_charge,
 /obj/effect/mapping_helpers/apc/unlocked,
 /obj/effect/mapping_helpers/apc/away_general_access,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "rt" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -3868,7 +3864,7 @@
 "td" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/duct,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "tf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3973,7 +3969,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/food/pie_smudge,
 /obj/item/plate_shard,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "ua" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4565,7 +4561,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /obj/item/reagent_containers/condiment/enzyme,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "xY" = (
 /obj/effect/turf_decal/caution/stand_clear,
@@ -4584,7 +4580,7 @@
 "ye" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "yk" = (
 /obj/machinery/atmospherics/components/binary/pump/on{
@@ -4857,7 +4853,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kitchen/rollingpin,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Af" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5106,7 +5102,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "BN" = (
 /obj/machinery/firealarm/directional/north,
@@ -5455,7 +5451,7 @@
 "EB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "ED" = (
 /obj/structure/transit_tube{
@@ -5508,7 +5504,7 @@
 "EP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "ES" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5554,7 +5550,7 @@
 "Fd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/firealarm/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Fi" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5716,7 +5712,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/away_general_access,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Ga" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5823,7 +5819,7 @@
 	pixel_x = 5;
 	pixel_y = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "GX" = (
 /turf/closed/wall/rust,
@@ -5868,7 +5864,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/proto)
 "Hp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6045,7 +6041,7 @@
 	pixel_y = 10;
 	pixel_x = 9
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Is" = (
 /obj/effect/spawner/structure/window,
@@ -6062,7 +6058,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/away/general,
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/delta/proto)
 "Ix" = (
 /obj/effect/spawner/random/maintenance,
@@ -6150,7 +6146,7 @@
 "Ja" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Jb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6303,7 +6299,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "JL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6442,12 +6438,12 @@
 /obj/structure/closet/crate/bin,
 /obj/effect/spawner/random/trash/garbage,
 /obj/effect/spawner/random/trash/garbage,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Kv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/oven/range,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Kw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -6488,7 +6484,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /obj/item/plate_shard,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "KL" = (
 /obj/effect/decal/cleanable/generic,
@@ -6630,7 +6626,7 @@
 "Lp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light_switch/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Ls" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6660,7 +6656,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "LC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6895,7 +6891,7 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Nh" = (
 /obj/machinery/power/emitter{
@@ -7649,7 +7645,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/duct,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Sx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7934,7 +7930,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/generic,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Up" = (
 /obj/structure/closet/crate/medical,
@@ -8057,7 +8053,7 @@
 "Vp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/griddle,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Vw" = (
 /obj/effect/turf_decal/stripes/line{
@@ -8175,7 +8171,7 @@
 /obj/machinery/duct,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Wx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8427,7 +8423,7 @@
 /obj/machinery/processor{
 	pixel_y = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Yf" = (
 /obj/structure/chair{
@@ -8456,7 +8452,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/north,
 /obj/structure/sign/poster/official/cleanliness/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/kitchen)
 "Yl" = (
 /obj/machinery/door/window/right/directional/east{
@@ -14462,7 +14458,7 @@ FH
 of
 WV
 ca
-dY
+jL
 jL
 Zt
 pV

@@ -142,7 +142,7 @@
 /obj/item/flashlight/seclite{
 	pixel_y = 6
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "hI" = (
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
@@ -302,7 +302,7 @@
 	base_pixel_w = 4;
 	pixel_x = -6
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "qK" = (
 /turf/closed/indestructible/fakedoor,
@@ -406,7 +406,7 @@
 /area/virtual_domain)
 "ud" = (
 /obj/effect/decal/cleanable/confetti,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "ur" = (
 /obj/structure/chair/sofa/corp{
@@ -556,7 +556,7 @@
 /area/virtual_domain)
 "BU" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "Ce" = (
 /obj/effect/turf_decal/tile/dark_red/opposingcorners,
@@ -579,7 +579,7 @@
 "Dx" = (
 /obj/effect/decal/cleanable/fuel_pool,
 /obj/effect/decal/cleanable/confetti,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "Dz" = (
 /mob/living/basic/bear/fightpit,
@@ -587,7 +587,7 @@
 /area/virtual_domain)
 "DV" = (
 /obj/machinery/door/airlock,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "EO" = (
 /obj/effect/turf_decal/tile/light_blue/opposingcorners,
@@ -668,7 +668,7 @@
 /obj/machinery/button/door/directional/east{
 	id = "door2"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "HG" = (
 /obj/structure/curtain/cloth/fancy/mechanical,
@@ -916,7 +916,7 @@
 /turf/closed/indestructible/reinforced,
 /area/virtual_domain)
 "Vd" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "Ve" = (
 /obj/structure/table,
@@ -933,7 +933,7 @@
 "VS" = (
 /obj/structure/table/reinforced,
 /obj/item/modular_computer/laptop/preset/civilian,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "VW" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -991,7 +991,7 @@
 /obj/machinery/button/door/directional/west{
 	id = "door1"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/virtual_domain/protected_space/fullbright)
 "Zf" = (
 /obj/machinery/deepfryer,

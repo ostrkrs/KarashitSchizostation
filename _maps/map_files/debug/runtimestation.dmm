@@ -379,7 +379,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -425,7 +425,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "cN" = (
 /turf/closed/wall/r_wall,
@@ -713,7 +713,7 @@
 	locked = 0
 	},
 /obj/item/healthanalyzer/advanced,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -722,7 +722,7 @@
 /obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "et" = (
 /turf/closed/wall/r_wall,
@@ -1197,7 +1197,7 @@
 	pixel_y = 9;
 	pixel_x = 7
 	},
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "jJ" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -1220,7 +1220,7 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/camera/directional/north,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -1628,7 +1628,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "vK" = (
 /obj/machinery/door/airlock,
@@ -1654,7 +1654,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -1665,12 +1665,6 @@
 	},
 /turf/open/floor/iron,
 /area/station/research)
-"wk" = (
-/obj/effect/turf_decal/tile/light_blue{
-	dir = 4
-	},
-/turf/open/floor/iron/cafeteria,
-/area/station/medical/medbay)
 "wl" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/stripes/corner{
@@ -1935,7 +1929,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "CG" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -1989,7 +1983,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -2019,7 +2013,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "Ef" = (
 /obj/machinery/light/directional/north,
@@ -2076,7 +2070,7 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/north,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -2348,7 +2342,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/south,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "LS" = (
 /obj/machinery/quantum_server,
@@ -2456,7 +2450,7 @@
 	},
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/unlocked,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -2545,7 +2539,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "Qi" = (
 /obj/effect/turf_decal/stripes/line,
@@ -2653,7 +2647,7 @@
 	pixel_x = 4;
 	pixel_y = -6
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -2683,7 +2677,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "SA" = (
 /obj/machinery/vending/cigarette,
@@ -2839,7 +2833,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/sign/warning/vacuum/external/directional/east,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/station/medical/medbay)
 "XC" = (
 /obj/structure/cable,
@@ -2955,7 +2949,7 @@
 	pixel_x = 6;
 	pixel_y = -4
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/station/medical/medbay)
@@ -8813,7 +8807,7 @@ aX
 ad
 aI
 by
-wk
+PK
 PK
 PK
 CF

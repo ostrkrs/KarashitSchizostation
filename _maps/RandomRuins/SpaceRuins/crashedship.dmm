@@ -51,7 +51,7 @@
 	name = "E.V.A. Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/eva,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/crashedship/midship)
 "cR" = (
 /obj/structure/table/reinforced,
@@ -230,7 +230,7 @@
 "lf" = (
 /obj/structure/cable,
 /obj/machinery/light/warm/directional/west,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -387,7 +387,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 10
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -401,7 +401,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -488,7 +488,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -560,7 +560,7 @@
 	},
 /obj/machinery/light/cold/directional/north,
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 1
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -614,13 +614,13 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/midship)
 "yL" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -663,7 +663,7 @@
 /obj/effect/turf_decal/tile/neutral/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Af" = (
 /obj/item/chair,
@@ -677,7 +677,7 @@
 	name = "Teleport Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/teleporter,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 6
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -700,7 +700,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 6
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -784,7 +784,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -801,7 +801,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 5
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -818,7 +818,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/half/contrasted,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 1
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -852,7 +852,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -884,7 +884,7 @@
 /obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -895,7 +895,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 5
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -903,7 +903,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 9
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -936,7 +936,7 @@
 	},
 /obj/item/kirbyplants/organic/plant21,
 /obj/effect/turf_decal/tile/light_blue,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -970,7 +970,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/side/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Jv" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -983,7 +983,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -991,13 +991,13 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 4
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
 "Ko" = (
 /obj/structure/cable,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -1099,7 +1099,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -1203,7 +1203,7 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/tile/neutral,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 9
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -1299,7 +1299,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrasted{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/side/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/aft)
 "WN" = (
 /obj/structure/lattice,
