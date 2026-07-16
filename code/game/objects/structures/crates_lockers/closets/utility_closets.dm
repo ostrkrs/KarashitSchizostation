@@ -30,12 +30,15 @@
 	..()
 	new /obj/item/storage/briefcase/emergency_suit(src)
 	new /obj/item/clothing/mask/breath(src)
+	new /obj/item/clothing/mask/breath(src)
 
-	switch(pick_weight(list("default" = 30, "bigtank" = 15)))
+	switch(pick_weight(list("default" = 4, "bigtank" = 1)))
 		if("default")
+			new /obj/item/tank/internals/emergency_oxygen(src)
 			new /obj/item/tank/internals/emergency_oxygen(src)
 
 		if("bigtank")
+			new /obj/item/tank/internals/emergency_oxygen/engi(src)
 			new /obj/item/tank/internals/emergency_oxygen/engi(src)
 
 	if(prob(30))
