@@ -3284,9 +3284,6 @@
 	},
 /turf/open/floor/iron/white/textured_large,
 /area/virtual_domain)
-"OM" = (
-/turf/open/floor/iron/stairs/old,
-/area/virtual_domain/fullbright)
 "OO" = (
 /obj/structure/flora/tree/palm{
 	pixel_y = 16;
@@ -8841,7 +8838,7 @@ ka
 ka
 iy
 ut
-OM
+py
 ka
 ka
 ka

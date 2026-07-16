@@ -2065,7 +2065,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/turf/open/floor/iron/stairs/old{
+/turf/open/floor/iron/stairs{
 	dir = 8
 	},
 /area/ruin/space/has_grav/hotel/bar)
@@ -2464,7 +2464,7 @@
 /area/ruin/space/has_grav/hotel/guestroom/room_5)
 "zz" = (
 /obj/structure/railing,
-/turf/open/floor/iron/stairs/old{
+/turf/open/floor/iron/stairs{
 	dir = 8
 	},
 /area/ruin/space/has_grav/hotel/bar)

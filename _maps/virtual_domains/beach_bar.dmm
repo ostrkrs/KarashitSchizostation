@@ -989,7 +989,7 @@
 /turf/open/misc/beach/sand,
 /area/virtual_domain/fullbright)
 "Uh" = (
-/turf/open/floor/iron/stairs/old,
+/turf/open/floor/iron/stairs,
 /area/virtual_domain/fullbright)
 "Uq" = (
 /obj/structure/weightmachine/weightlifter,

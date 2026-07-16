@@ -3591,9 +3591,6 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
-"St" = (
-/turf/open/floor/iron/stairs/old,
-/area/awaymission/beach)
 "Sw" = (
 /obj/structure/chair/stool/directional/south{
 	dir = 8
@@ -20982,7 +20979,7 @@ VY
 VY
 Ft
 wC
-St
+JQ
 VY
 VY
 VY

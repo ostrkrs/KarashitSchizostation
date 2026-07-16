@@ -122,7 +122,7 @@
 	},
 /area/ruin/powered/beach)
 "bM" = (
-/turf/open/floor/iron/stairs/old,
+/turf/open/floor/iron/stairs,
 /area/ruin/powered/beach)
 "bY" = (
 /obj/machinery/light/directional/north,
