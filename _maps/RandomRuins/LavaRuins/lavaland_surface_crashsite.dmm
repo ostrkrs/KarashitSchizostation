@@ -181,7 +181,7 @@
 /obj/structure/rack,
 /obj/item/pickaxe/emergency,
 /obj/item/pickaxe/emergency,
-/obj/item/crowbar/large/emergency,
+/obj/item/crowbar/large,
 /turf/open/floor/pod/dark,
 /area/ruin/powered)
 "N" = (

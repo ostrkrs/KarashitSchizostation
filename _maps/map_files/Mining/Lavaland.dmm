@@ -3805,7 +3805,7 @@
 /turf/open/floor/iron/checker,
 /area/mine/cafeteria)
 "ul" = (
-/obj/item/crowbar/large/emergency,
+/obj/item/crowbar/large,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "up" = (
