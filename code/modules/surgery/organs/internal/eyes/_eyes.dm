@@ -26,6 +26,8 @@
 	var/tint = 0
 	/// How much innare flash protection these eyes have, usually paired with tint
 	var/flash_protect = FLASH_PROTECTION_NONE
+	/// How much more damage eyes take if flashed
+	var/flash_damage_mod = 1
 	/// What level of invisibility these eyes can see
 	var/see_invisible = SEE_INVISIBLE_LIVING
 	/// How much darkness to cut out of your view (basically, night vision)
@@ -617,7 +619,7 @@
 	icon_state = "lizard_eyes"
 	lighting_cutoff = LIGHTING_CUTOFF_LOW
 	organ_traits = list(TRAIT_LUMINESCENT_EYES)
-	flash_protect = FLASH_PROTECTION_SENSITIVE
+	flash_damage_mod = 3
 	pupils_name = "slit pupils"
 	penlight_message = "have vertically slit pupils and tinted whites"
 

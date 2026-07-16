@@ -22,7 +22,7 @@
 		var/obj/item/organ/eyes/burning_orbs = locate() in viewer.organs
 		if(!burning_orbs)
 			continue
-		burning_orbs.apply_organ_damage(damage_per_second * seconds_per_tick)
+		burning_orbs.apply_organ_damage(damage_per_second * burning_orbs.flash_damage_mod * seconds_per_tick)
 		if(silent)
 			return
 		if(SPT_PROB(50, seconds_per_tick))

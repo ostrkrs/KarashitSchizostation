@@ -56,7 +56,7 @@
 	var/mob/living/carbon/carbon = user
 	if(carbon.get_eye_protection() < 1)
 		var/obj/item/organ/eyes/burning_orbs = locate() in carbon.organs
-		burning_orbs?.apply_organ_damage(5)
+		burning_orbs?.apply_organ_damage(5 * burning_orbs.flash_damage_mod)
 
 /mob/living/basic/voidwalker/sunwalker/UnarmedAttack(atom/target, proximity_flag, list/modifiers)
 	. = ..()
