@@ -20,7 +20,7 @@
 
 #define PREFERENCE_PRIORITY_FACIAL_HAIR 7
 
-/// Equpping items based on preferences.
+/// Equipping items based on preferences.
 /// Should happen after species and body type to make sure it looks right.
 /// Mostly redundant, but a safety net for saving/loading.
 #define PREFERENCE_PRIORITY_LOADOUT 8
