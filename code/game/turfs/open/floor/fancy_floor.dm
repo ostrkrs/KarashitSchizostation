@@ -8,9 +8,80 @@
  * Fake space
  */
 
+/// Automatically generates all subtypes for a wooden floor with tiles.
+#define WOODEN_FLOOR_HELPER(type, floor_name, floor_color)\
+/turf/open/floor/wood/##type {\
+	color = ##floor_color;\
+	floor_tile = /obj/item/stack/tile/wood/##type;\
+};\
+/obj/item/stack/tile/wood/##type {\
+	name = ##floor_name + " floor tiles";\
+	singular_name = ##floor_name + " floor tile";\
+	color = ##floor_color;\
+	turf_type = /turf/open/floor/wood/##type;\
+	merge_type = /obj/item/stack/tile/wood/##type;\
+	tile_reskin_types = list(\
+		/obj/item/stack/tile/wood/##type,\
+		/obj/item/stack/tile/wood/large/##type,\
+		/obj/item/stack/tile/wood/parquet/##type,\
+		/obj/item/stack/tile/wood/tile/##type,\
+	);\
+};\
+/turf/open/floor/wood/large/##type {\
+	color = ##floor_color;\
+	floor_tile = /obj/item/stack/tile/wood/large/##type;\
+};\
+/obj/item/stack/tile/wood/large/##type {\
+	name = "large " + ##floor_name + " floor tiles";\
+	singular_name = "large " + ##floor_name + " floor tile";\
+	color = ##floor_color;\
+	turf_type = /turf/open/floor/wood/large/##type;\
+	merge_type = /obj/item/stack/tile/wood/large/##type;\
+	tile_reskin_types = list(\
+		/obj/item/stack/tile/wood/##type,\
+		/obj/item/stack/tile/wood/large/##type,\
+		/obj/item/stack/tile/wood/parquet/##type,\
+		/obj/item/stack/tile/wood/tile/##type,\
+	);\
+};\
+/turf/open/floor/wood/parquet/##type {\
+	color = ##floor_color;\
+	floor_tile = /obj/item/stack/tile/wood/parquet/##type;\
+};\
+/obj/item/stack/tile/wood/parquet/##type {\
+	name = ##floor_name + " parquet floor tiles";\
+	singular_name = ##floor_name + " parquet floor tile";\
+	color = ##floor_color;\
+	turf_type = /turf/open/floor/wood/parquet/##type;\
+	merge_type = /obj/item/stack/tile/wood/parquet/##type;\
+	tile_reskin_types = list(\
+		/obj/item/stack/tile/wood/##type,\
+		/obj/item/stack/tile/wood/large/##type,\
+		/obj/item/stack/tile/wood/parquet/##type,\
+		/obj/item/stack/tile/wood/tile/##type,\
+	);\
+};\
+/turf/open/floor/wood/tile/##type {\
+	color = ##floor_color;\
+	floor_tile = /obj/item/stack/tile/wood/tile/##type;\
+};\
+/obj/item/stack/tile/wood/tile/##type {\
+	name = "tiled " + ##floor_name + " parquet floor tiles";\
+	singular_name = "tiled " + ##floor_name + " parquet floor tile";\
+	color = ##floor_color;\
+	turf_type = /turf/open/floor/wood/tile/##type;\
+	merge_type = /obj/item/stack/tile/wood/tile/##type;\
+	tile_reskin_types = list(\
+		/obj/item/stack/tile/wood/##type,\
+		/obj/item/stack/tile/wood/large/##type,\
+		/obj/item/stack/tile/wood/parquet/##type,\
+		/obj/item/stack/tile/wood/tile/##type,\
+	);\
+};\
+
 /turf/open/floor/wood
-	desc = "Stylish dark wood."
 	icon_state = "wood"
+	color = COLOR_WOOD
 	floor_tile = /obj/item/stack/tile/wood
 	footstep = FOOTSTEP_WOOD
 	barefootstep = FOOTSTEP_WOOD_BAREFOOT
@@ -97,6 +168,14 @@
 
 /turf/open/floor/wood/large/broken_states()
 	return list("wood_large-broken", "wood_large-broken2", "wood_large-broken3")
+
+WOODEN_FLOOR_HELPER(oak, "oak", COLOR_OAK)
+WOODEN_FLOOR_HELPER(birch, "birch", COLOR_BIRCH)
+WOODEN_FLOOR_HELPER(cherry, "cherry", COLOR_CHERRY)
+WOODEN_FLOOR_HELPER(amaranth, "amaranth", COLOR_AMARANTH)
+WOODEN_FLOOR_HELPER(ebonite, "ebonite", COLOR_EBONITE)
+WOODEN_FLOOR_HELPER(pink_ivory, "pink ivory", COLOR_PINK_IVORY)
+WOODEN_FLOOR_HELPER(guaiacum, "guaiacum", COLOR_GUAIACUM)
 
 /turf/open/floor/bamboo
 	desc = "A bamboo mat with a decorative trim."

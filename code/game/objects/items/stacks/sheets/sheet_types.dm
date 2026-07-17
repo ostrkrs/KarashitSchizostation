@@ -383,7 +383,6 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 	new/datum/stack_recipe("noticeboard", /obj/item/wallframe/noticeboard, 1, time = 1 SECONDS, crafting_flags = NONE, category = CAT_FURNITURE), \
 	new/datum/stack_recipe("fish mount", /obj/item/wallframe/fish, 2, time = 3 SECONDS, crafting_flags = NONE, category = CAT_FURNITURE),\
 	new/datum/stack_recipe("test tube rack", /obj/item/storage/test_tube_rack, 1, time = 1 SECONDS, crafting_flags = NONE, category = CAT_CHEMISTRY), \
-	null, \
 	new/datum/stack_recipe_list("pews", list(
 		new /datum/stack_recipe("pew (middle)", /obj/structure/chair/pew, 3, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE),
 		new /datum/stack_recipe("pew (left)", /obj/structure/chair/pew/left, 3, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_FURNITURE),
@@ -394,8 +393,17 @@ GLOBAL_LIST_INIT(wood_recipes, list ( \
 		new /datum/stack_recipe("peg arm (right)", /obj/item/bodypart/arm/right/ghetto, 2, crafting_flags = NONE, category = CAT_MISC),
 		new /datum/stack_recipe("peg leg (left)", /obj/item/bodypart/leg/left/ghetto, 2, crafting_flags = NONE, category = CAT_MISC),
 		new /datum/stack_recipe("peg leg (right)", /obj/item/bodypart/leg/right/ghetto, 2, crafting_flags = NONE, category = CAT_MISC)
-	)),
-	null, \
+		)),
+	new /datum/stack_recipe_list("wooden floors", list(
+		new /datum/stack_recipe("wood", /obj/item/stack/tile/wood, 1, 4, 20),
+		new /datum/stack_recipe("oak", /obj/item/stack/tile/wood/oak, 1, 4, 20),
+		new /datum/stack_recipe("birch", /obj/item/stack/tile/wood/birch, 1, 4, 20),
+		new /datum/stack_recipe("cherry", /obj/item/stack/tile/wood/cherry, 1, 4, 20),
+		new /datum/stack_recipe("amaranth", /obj/item/stack/tile/wood/amaranth, 1, 4, 20),
+		new /datum/stack_recipe("ebonite", /obj/item/stack/tile/wood/ebonite, 1, 4, 20),
+		new /datum/stack_recipe("pink ivory", /obj/item/stack/tile/wood/pink_ivory, 1, 4, 20),
+		new /datum/stack_recipe("guaiacum", /obj/item/stack/tile/wood/guaiacum, 1, 4, 20),
+		)),
 	))
 
 /obj/item/stack/sheet/mineral/wood
