@@ -1264,7 +1264,13 @@
 			to_chat(user, span_warning("You need to be wielding [tool] to do that!"))
 			return
 
-		INVOKE_ASYNC(src, density ? PROC_REF(open) : PROC_REF(close), BYPASS_DOOR_CHECKS)
+		if(density)
+			var/pry_delay = 3.5 SECONDS
+			playsound(src, 'sound/machines/airlock/airlock_alien_prying.ogg', 75, TRUE)
+			if(tool.use_tool(src, user, pry_delay * tool.toolspeed, volume = 0))
+				INVOKE_ASYNC(src, density ? PROC_REF(open) : PROC_REF(close), BYPASS_DOOR_CHECKS)
+		else
+			INVOKE_ASYNC(src, density ? PROC_REF(open) : PROC_REF(close), BYPASS_DOOR_CHECKS)
 		return
 
 	if(!forced)

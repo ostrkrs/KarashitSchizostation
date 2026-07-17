@@ -43,6 +43,38 @@
 	icon_state = "crowbar_red"
 	inhand_icon_state = "crowbar_red"
 
+/obj/item/crowbar/small
+	name = "pocket crowbar"
+	desc = "A small crowbar. Useful for prying doors in case of emergency. Shortened handle makes it a bit awkward to use though."
+	icon_state = "crowbar_small"
+	force = 3
+	throwforce = 5
+	custom_materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT*0.5)
+	w_class = WEIGHT_CLASS_SMALL
+	toolspeed = 1.7
+
+/obj/item/crowbar/small/red
+	icon_state = "crowbar_small_red"
+	inhand_icon_state = "crowbar_red"
+	worn_icon_state = "crowbar_red"
+
+/obj/item/crowbar/large
+	name = "large crowbar"
+	desc = "It's a bulky crowbar. It almost seems deliberately designed to not be able to fit inside of a backpack."
+	icon_state = "crowbar_large"
+	worn_icon_state = "crowbar"
+	force = 12
+	w_class = WEIGHT_CLASS_BULKY
+	throw_speed = 3
+	throw_range = 3
+	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*3)
+	toolspeed = 0.7
+
+/obj/item/crowbar/large/red
+	icon_state = "crowbar_large_red"
+	inhand_icon_state = "crowbar_red"
+	worn_icon_state = "crowbar_red"
+
 /obj/item/crowbar/abductor
 	name = "alien crowbar"
 	desc = "A hard-light crowbar. It appears to pry by itself, without any effort required."
@@ -52,32 +84,6 @@
 	icon_state = "crowbar"
 	inside_belt_icon_state = "crowbar_alien"
 	toolspeed = 0.1
-
-/obj/item/crowbar/small
-	name = "pocket crowbar"
-	desc = "A small crowbar. Useful for prying doors in case of emergency. Shortened handle makes it a bit awkward to use though."
-	icon_state = "crowbar_small"
-	force = 3
-	throwforce = 5
-	custom_materials = list(/datum/material/iron =SMALL_MATERIAL_AMOUNT*0.5)
-	w_class = WEIGHT_CLASS_SMALL
-	toolspeed = 2
-
-/obj/item/crowbar/small/red
-	icon_state = "crowbar_small_red"
-	inhand_icon_state = "crowbar_red"
-
-/obj/item/crowbar/large
-	name = "large crowbar"
-	desc = "It's a bulky crowbar. It almost seems deliberately designed to not be able to fit inside of a backpack."
-	force = 12
-	w_class = WEIGHT_CLASS_BULKY
-	throw_speed = 3
-	throw_range = 3
-	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*3)
-	icon_state = "crowbar_large"
-	worn_icon_state = "crowbar"
-	toolspeed = 0.7
 
 /obj/item/crowbar/hammer
 	name = "claw hammer"
@@ -114,7 +120,7 @@
 	usesound = 'sound/items/tools/jaws_pry.ogg'
 	hitsound = SFX_SWING_HIT
 	force = 15
-	toolspeed = 0.7
+	toolspeed = 0.5
 	force_opens = TRUE
 	/// Used on Initialize, how much time to cut cable restraints and zipties.
 	var/snap_time_weak_handcuffs = 0 SECONDS
@@ -157,10 +163,9 @@
 
 /obj/item/crowbar/power/syndicate
 	name = "jaws of death"
-	desc = "An improved, faster, and smaller copy of Nanotrasen's standard jaws of life. Can be used to force open airlocks in its crowbar configuration."
+	desc = "An improved and smaller copy of Nanotrasen's standard jaws of life. Can be used to force open airlocks in its crowbar configuration."
 	icon_state = "jaws_syndie"
 	w_class = WEIGHT_CLASS_SMALL
-	toolspeed = 0.5
 	force_opens = TRUE
 
 /obj/item/crowbar/power/examine()
@@ -191,7 +196,7 @@
 	icon_angle = 0
 	usesound = 'sound/items/tools/jaws_pry.ogg'
 	force = 10
-	toolspeed = 0.5
+	toolspeed = 0.7
 
 /obj/item/crowbar/mechremoval
 	name = "mech removal tool"
