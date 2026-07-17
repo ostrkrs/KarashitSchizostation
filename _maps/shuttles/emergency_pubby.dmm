@@ -250,7 +250,7 @@
 "aW" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "aX" = (
 /obj/machinery/stasis{
@@ -262,7 +262,7 @@
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "ba" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "bb" = (
 /obj/effect/turf_decal/tile/light_blue/opposingcorners{
@@ -282,7 +282,7 @@
 	pixel_x = 3;
 	pixel_y = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "be" = (
 /obj/structure/chair/comfy/shuttle,
@@ -488,7 +488,7 @@
 /obj/item/food/cakeslice/lemon,
 /obj/item/food/cakeslice/lime,
 /obj/item/food/cakeslice/orange,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "kE" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -574,7 +574,7 @@
 /obj/item/storage/bag/tray,
 /obj/item/clothing/under/suit/waiter,
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "Uu" = (
 /obj/structure/window/reinforced/spawner/directional/east,

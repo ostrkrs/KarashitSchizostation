@@ -1587,7 +1587,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/centcom/syndicate_mothership/control)
 "rf" = (
-/turf/open/floor/iron/stairs/old,
+/turf/open/floor/iron/stairs,
 /area/centcom/syndicate_mothership/control)
 "rk" = (
 /obj/structure/table/rolling,
@@ -4090,7 +4090,7 @@
 /area/centcom/syndicate_mothership/expansion_bioterrorism)
 "Sc" = (
 /obj/structure/railing,
-/turf/open/floor/iron/stairs/old{
+/turf/open/floor/iron/stairs{
 	dir = 8;
 	initial_gas_mix = "TEMP=2.7"
 	},

@@ -11,6 +11,7 @@ GLOBAL_LIST_INIT(floor_designs, list(
 			list("name" = "Edge", "type" = /obj/item/stack/tile/iron/edge, "tile_cost" = 5),
 			list("name" = "Half", "type" = /obj/item/stack/tile/iron/half, "tile_cost" = 5),
 			list("name" = "Corner", "type" = /obj/item/stack/tile/iron/corner, "tile_cost" = 5),
+			list("name" = "Ridged", "type" = /obj/item/stack/tile/iron/ridged, "tile_cost" = 5),
 			list("name" = "Textured", "type" = /obj/item/stack/tile/iron/textured, "tile_cost" = 5),
 			list("name" = "Textured Edge", "type" = /obj/item/stack/tile/iron/textured_edge, "tile_cost" = 6),
 			list("name" = "Textured Half", "type" = /obj/item/stack/tile/iron/textured_half, "tile_cost" = 6),
@@ -52,8 +53,6 @@ GLOBAL_LIST_INIT(floor_designs, list(
 			list("name" = "Small", "type" = /obj/item/stack/tile/iron/dark/small, "tile_cost" = 4),
 			list("name" = "Diagonal", "type" = /obj/item/stack/tile/iron/dark/diagonal, "tile_cost" = 4),
 			list("name" = "Herringbone", "type" = /obj/item/stack/tile/iron/dark/herringbone, "tile_cost" = 4),
-			list("name" = "Half Dark", "type" = /obj/item/stack/tile/iron/dark_side, "tile_cost" = 4),
-			list("name" = "Dark Corner" ,"type" = /obj/item/stack/tile/iron/dark_corner, "tile_cost" = 4),
 		),
 
 		//White Colored tiles
@@ -66,8 +65,6 @@ GLOBAL_LIST_INIT(floor_designs, list(
 			list("name" = "Small", "type" = /obj/item/stack/tile/iron/white/small, "tile_cost" = 5),
 			list("name" = "Diagonal", "type" = /obj/item/stack/tile/iron/white/diagonal, "tile_cost" = 5),
 			list("name" = "Herringbone", "type" = /obj/item/stack/tile/iron/white/herringbone, "tile_cost" = 5),
-			list("name" = "Half White", "type" = /obj/item/stack/tile/iron/white_side, "tile_cost" = 5),
-			list("name" = "White Corner", "type" = /obj/item/stack/tile/iron/white_corner, "tile_cost" = 5),
 		),
 
 		//Textured tiles
@@ -93,7 +90,6 @@ GLOBAL_LIST_INIT(floor_designs, list(
 			list("name" = "Kitchen Small", "type" = /obj/item/stack/tile/iron/kitchen/small, "tile_cost" = 4),
 			list("name" = "Diagonal Kitchen", "type" = /obj/item/stack/tile/iron/kitchen/diagonal, "tile_cost" = 4),
 			list("name" = "Chapel", "type" = /obj/item/stack/tile/iron/chapel, "tile_cost" = 4),
-			list("name" = "Cafeteria", "type" = /obj/item/stack/tile/iron/cafeteria, "tile_cost" = 4),
 			list("name" = "Grimy", "type" = /obj/item/stack/tile/iron/grimy, "tile_cost" = 5),
 			list("name" = "Sepia", "type" = /obj/item/stack/tile/iron/sepia, "tile_cost" = 5),
 			list("name" = "Herringbone", "type" = /obj/item/stack/tile/iron/kitchen/herringbone, "tile_cost" = 5),
@@ -105,7 +101,6 @@ GLOBAL_LIST_INIT(floor_designs, list(
 			list("name" = "Small", "type" = /obj/item/stack/tile/iron/terracotta/small, "tile_cost" = 5),
 			list("name" = "Diagonal", "type" = /obj/item/stack/tile/iron/terracotta/diagonal, "tile_cost" = 5),
 			list("name" = "Herrigone", "type" = /obj/item/stack/tile/iron/terracotta/herringbone, "tile_cost" = 5),
-			list("name" = "Checkered", "type" = /obj/item/stack/tile/iron/checker, "tile_cost" = 5),
 			list("name" = "Herringbone", "type" = /obj/item/stack/tile/iron/herringbone, "tile_cost" = 5),
 		)
 	)

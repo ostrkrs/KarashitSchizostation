@@ -97,7 +97,7 @@
 	dir = 1;
 	name = "Captain's Station"
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 5
 	},
 /area/shuttle/escape)
@@ -1094,7 +1094,7 @@
 	},
 /area/shuttle/escape)
 "ph" = (
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/escape)
@@ -1757,7 +1757,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 9
 	},
 /area/shuttle/escape)
@@ -2972,7 +2972,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
 "Oc" = (
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/escape)
@@ -3687,7 +3687,7 @@
 	},
 /obj/machinery/light/directional/west,
 /obj/structure/fireaxecabinet/directional/west,
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/escape)

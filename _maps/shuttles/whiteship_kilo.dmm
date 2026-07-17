@@ -71,7 +71,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/abandoned/bar)
@@ -105,7 +105,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/abandoned/bar)
@@ -175,7 +175,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/abandoned/bar)
@@ -220,7 +220,7 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/turf/open/floor/iron/cafeteria{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/bar)
@@ -279,7 +279,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/bar)
@@ -568,7 +568,7 @@
 	pixel_x = 5
 	},
 /obj/effect/turf_decal/tile/brown,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/abandoned/cargo)
@@ -731,7 +731,7 @@
 /obj/item/storage/box/gum/happiness,
 /obj/item/stack/cable_coil/five,
 /obj/effect/turf_decal/tile/brown,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/abandoned/cargo)
@@ -760,7 +760,7 @@
 /obj/machinery/light/warm/no_nightlight/directional/north,
 /obj/item/food/grown/potato,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/turf/open/floor/iron/cafeteria{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/bar)

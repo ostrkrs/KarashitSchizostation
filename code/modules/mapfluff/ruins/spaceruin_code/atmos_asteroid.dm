@@ -9,10 +9,7 @@
 /turf/open/floor/iron/dark/co2_pressurized
 	initial_gas_mix = CO2_PRESSURIZED_MIX
 
-/turf/open/floor/iron/dark/corner/co2_pressurized
-	initial_gas_mix = CO2_PRESSURIZED_MIX
-
-/turf/open/floor/iron/dark/side/co2_pressurized
+/turf/open/floor/iron/co2_pressurized
 	initial_gas_mix = CO2_PRESSURIZED_MIX
 
 /turf/open/floor/plating/co2_pressurized

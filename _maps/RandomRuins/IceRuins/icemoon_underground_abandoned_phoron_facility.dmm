@@ -1345,7 +1345,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/brown,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/phoron_facility/operations)

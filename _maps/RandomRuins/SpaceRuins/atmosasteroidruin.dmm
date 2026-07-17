@@ -241,7 +241,7 @@
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible/layer4,
-/turf/open/floor/iron/dark/side/co2_pressurized{
+/turf/open/floor/iron/co2_pressurized{
 	dir = 1
 	},
 /area/ruin/space/has_grav/atmosasteroid)
@@ -258,7 +258,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible/layer4,
-/turf/open/floor/iron/dark/corner/co2_pressurized{
+/turf/open/floor/iron/co2_pressurized{
 	dir = 1
 	},
 /area/ruin/space/has_grav/atmosasteroid)
@@ -376,7 +376,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/pink/visible/layer4,
-/turf/open/floor/iron/dark/corner/co2_pressurized{
+/turf/open/floor/iron/co2_pressurized{
 	dir = 4
 	},
 /area/ruin/space/has_grav/atmosasteroid)
@@ -507,7 +507,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/corner/co2_pressurized{
+/turf/open/floor/iron/co2_pressurized{
 	dir = 8
 	},
 /area/ruin/space/has_grav/atmosasteroid)
@@ -643,7 +643,7 @@
 "RK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,
 /obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/iron/dark/corner/co2_pressurized,
+/turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "So" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -707,7 +707,7 @@
 /obj/structure/tank_holder/extinguisher/advanced{
 	anchored = 1
 	},
-/turf/open/floor/iron/dark/side/co2_pressurized,
+/turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "Wc" = (
 /obj/effect/turf_decal/tile/yellow/half,

@@ -3,7 +3,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 1
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -52,7 +52,7 @@
 /obj/item/clothing/under/costume/pirate,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/head/costume/pirate/bandana,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 5
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -258,7 +258,7 @@
 	normaldoorcontrol = 1;
 	specialfunctions = 4
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -302,7 +302,7 @@
 	pixel_x = 4
 	},
 /obj/machinery/light/small/directional/west,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -622,7 +622,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 10
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -651,7 +651,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -733,7 +733,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -748,7 +748,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 9
 	},
 /area/shuttle/ruin/caravan/pirate)
@@ -840,7 +840,7 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/west,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 6
 	},
 /area/shuttle/ruin/caravan/pirate)

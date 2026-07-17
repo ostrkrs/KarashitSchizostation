@@ -1258,7 +1258,7 @@
 /obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/deathmatch)
 "UD" = (
 /obj/effect/turf_decal/tile/green,

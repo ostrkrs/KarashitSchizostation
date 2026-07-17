@@ -139,7 +139,7 @@
 	},
 /obj/machinery/light/warm/directional/north,
 /obj/structure/chair/comfy/shuttle,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "aE" = (
 /obj/structure/chair/comfy/shuttle{
@@ -238,7 +238,7 @@
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 8
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "bb" = (
 /obj/machinery/conveyor/auto,
@@ -253,7 +253,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "bd" = (
 /obj/machinery/conveyor/auto{
@@ -298,7 +298,7 @@
 	dir = 8
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "bq" = (
 /turf/closed/wall/r_wall,
@@ -361,7 +361,7 @@
 	output_dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/east,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "gn" = (
 /obj/effect/decal/cleanable/rubble,
@@ -373,7 +373,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "hq" = (
 /obj/machinery/recycler{
@@ -405,7 +405,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "jK" = (
 /obj/machinery/light/small/dim/directional/south,
@@ -432,7 +432,7 @@
 	},
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/closet/crate/preopen,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "lP" = (
 /obj/machinery/wall_healer/free/directional/south,
@@ -450,7 +450,7 @@
 	dir = 8
 	},
 /obj/structure/chair/plastic,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "nZ" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -541,7 +541,7 @@
 	pixel_y = 32
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "xg" = (
 /obj/effect/spawner/structure/window/hollow/middle{

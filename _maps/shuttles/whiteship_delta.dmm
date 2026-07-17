@@ -1386,7 +1386,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 9
 	},
 /area/shuttle/abandoned/medbay)
@@ -1396,7 +1396,7 @@
 	dir = 1
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/medbay)
@@ -1404,7 +1404,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/cable,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/medbay)
@@ -1415,7 +1415,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 5
 	},
 /area/shuttle/abandoned/medbay)
@@ -1561,7 +1561,7 @@
 	req_access = null
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/shuttle/abandoned/medbay)
 "dE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1569,7 +1569,7 @@
 /obj/machinery/airalarm/directional/east,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/structure/spider/stickyweb,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/shuttle/abandoned/medbay)
 "dG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1635,7 +1635,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/abandoned/medbay)
@@ -1883,7 +1883,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/spider/stickyweb,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/abandoned/medbay)

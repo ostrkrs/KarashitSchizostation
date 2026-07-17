@@ -22,7 +22,7 @@
 /obj/machinery/computer/monitor{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/pirate)
@@ -97,7 +97,7 @@
 /obj/machinery/computer/shuttle/pirate{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/pirate)
@@ -673,7 +673,7 @@
 	y_offset = 5;
 	view_range = 10
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/pirate)

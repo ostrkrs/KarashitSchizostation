@@ -1684,12 +1684,12 @@
 /turf/open/floor/plating/snowed,
 /area/awaymission/snowdin/cave)
 "gA" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "gB" = (
 /obj/effect/decal/cleanable/food/pie_smudge,
 /obj/item/trash/can,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "gD" = (
 /turf/open/floor/plating,
@@ -1890,11 +1890,11 @@
 /area/awaymission/snowdin/post/mining_main/mechbay)
 "hp" = (
 /obj/item/chair,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "hq" = (
 /obj/structure/table,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "hr" = (
 /obj/structure/chair{
@@ -1906,13 +1906,13 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "hu" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "hv" = (
 /obj/effect/spawner/structure/window,
@@ -2090,11 +2090,11 @@
 /area/awaymission/snowdin/post/gateway)
 "hV" = (
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "hW" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "hX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2322,19 +2322,19 @@
 /area/awaymission/snowdin/post/gateway)
 "iE" = (
 /obj/item/trash/candy,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "iF" = (
 /obj/machinery/holopad,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "iG" = (
 /obj/effect/decal/cleanable/vomit/old,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "iH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "iI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2606,13 +2606,13 @@
 "jy" = (
 /obj/structure/table,
 /obj/item/trash/candle,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "jz" = (
 /obj/structure/table,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/item/kitchen/fork,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "jB" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -2776,7 +2776,7 @@
 /area/awaymission/snowdin/post/messhall)
 "kd" = (
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "ke" = (
 /obj/machinery/door/airlock/external/ruin{
@@ -2934,7 +2934,7 @@
 	name = "Mess Hall"
 	},
 /obj/machinery/door/firedoor,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "kN" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -3164,7 +3164,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "lz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -3188,7 +3188,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "lC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -3196,7 +3196,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "lD" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
@@ -3204,7 +3204,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "lE" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -3217,7 +3217,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/service/hydroponics,
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "lF" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -3440,13 +3440,13 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "mo" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "mp" = (
 /obj/structure/fence/door{
@@ -3460,7 +3460,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/service/hydroponics,
 /obj/machinery/door/firedoor,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "mr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -3585,7 +3585,7 @@
 /obj/effect/mapping_helpers/airlock/access/all/engineering/construction,
 /obj/machinery/door/firedoor,
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "mQ" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -4161,16 +4161,16 @@
 /area/awaymission/snowdin/post/cavern2)
 "pe" = (
 /obj/structure/table,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern2)
 "pf" = (
 /obj/machinery/light/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern2)
 "pg" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern2)
 "pj" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -4306,7 +4306,7 @@
 /turf/closed/wall/mineral/cult,
 /area/awaymission/snowdin/post/cavern2)
 "pF" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern2)
 "pG" = (
 /turf/open/floor/plating,
@@ -4508,7 +4508,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern2)
 "qn" = (
 /obj/structure/guncase/shotgun,
@@ -4632,7 +4632,7 @@
 /area/awaymission/snowdin/post/cavern2)
 "qI" = (
 /obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern2)
 "qK" = (
 /obj/structure/rack,
@@ -4767,7 +4767,7 @@
 "ri" = (
 /obj/structure/window/spawner/directional/south,
 /obj/structure/table,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/cavern2)
 "rk" = (
 /obj/structure/rack,
@@ -9208,7 +9208,7 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "Ml" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible{
@@ -10187,7 +10187,7 @@
 /area/awaymission/snowdin/post/mining_main/mechbay)
 "RH" = (
 /obj/machinery/airalarm/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "RL" = (
 /obj/structure/cable,
@@ -11571,7 +11571,7 @@
 /area/awaymission/snowdin/cave)
 "ZU" = (
 /obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/snowdin/post/messhall)
 "ZV" = (
 /obj/machinery/door/firedoor,

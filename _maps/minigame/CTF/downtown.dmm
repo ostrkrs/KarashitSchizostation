@@ -122,7 +122,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 10
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 5
 	},
 /area/centcom/ctf)
@@ -179,7 +179,7 @@
 /area/centcom/ctf)
 "ei" = (
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/centcom/ctf)
@@ -460,12 +460,6 @@
 /obj/structure/sign/poster/contraband/random/directional/north,
 /turf/open/floor/eighties,
 /area/centcom/ctf)
-"jf" = (
-/obj/effect/turf_decal/tile/green/fourcorners,
-/turf/open/floor/iron/dark/corner{
-	dir = 1
-	},
-/area/centcom/ctf)
 "jk" = (
 /obj/item/ctf_flag/red,
 /turf/open/floor/circuit/green,
@@ -516,7 +510,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/centcom/ctf)
@@ -577,7 +571,7 @@
 /area/centcom/ctf)
 "lz" = (
 /obj/effect/turf_decal/tile/green/fourcorners,
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/centcom/ctf)
@@ -629,7 +623,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 5
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 10
 	},
 /area/centcom/ctf)
@@ -660,7 +654,7 @@
 /area/centcom/ctf)
 "nS" = (
 /obj/effect/turf_decal/tile/green/fourcorners,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/centcom/ctf)
@@ -676,7 +670,7 @@
 /area/centcom/ctf)
 "on" = (
 /obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/centcom/ctf)
@@ -743,7 +737,7 @@
 "pc" = (
 /obj/item/toy/basketball,
 /obj/effect/turf_decal/tile/green/fourcorners,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/centcom/ctf)
@@ -1021,7 +1015,7 @@
 /area/centcom/ctf)
 "xK" = (
 /obj/effect/turf_decal/stripes/white/line,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/centcom/ctf)
 "yf" = (
 /obj/effect/turf_decal/siding/wood{
@@ -1143,7 +1137,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/centcom/ctf)
@@ -1175,7 +1169,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 9
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 6
 	},
 /area/centcom/ctf)
@@ -1262,10 +1256,6 @@
 	resistance_flags = 64
 	},
 /turf/open/floor/iron/dark,
-/area/centcom/ctf)
-"Ch" = (
-/obj/effect/turf_decal/tile/green/fourcorners,
-/turf/open/floor/iron/dark/side,
 /area/centcom/ctf)
 "CB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1583,10 +1573,6 @@
 	},
 /turf/open/floor/iron,
 /area/centcom/ctf)
-"IY" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/dark/side,
-/area/centcom/ctf)
 "Jc" = (
 /obj/effect/turf_decal/trimline/red/line,
 /obj/effect/decal/cleanable/shreds,
@@ -1628,7 +1614,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/centcom/ctf)
@@ -1829,10 +1815,6 @@
 	},
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/iron/dark,
-/area/centcom/ctf)
-"Ol" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/dark/corner,
 /area/centcom/ctf)
 "Om" = (
 /obj/effect/turf_decal/trimline/red/corner{
@@ -2044,12 +2026,6 @@
 /obj/effect/turf_decal/trimline/red/line,
 /turf/open/floor/iron,
 /area/centcom/ctf)
-"Ty" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/dark/side{
-	dir = 4
-	},
-/area/centcom/ctf)
 "TA" = (
 /obj/effect/turf_decal/siding/yellow/corner{
 	dir = 1
@@ -2216,7 +2192,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 6
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 9
 	},
 /area/centcom/ctf)
@@ -3493,7 +3469,7 @@ nO
 zA
 jS
 JS
-Ch
+Lr
 XU
 nS
 xK
@@ -3531,7 +3507,7 @@ Ad
 zA
 jS
 JS
-Ch
+Lr
 XU
 nS
 xK
@@ -3571,7 +3547,7 @@ jS
 JS
 lz
 pc
-jf
+nS
 xK
 TD
 Am
@@ -3607,8 +3583,8 @@ Kh
 jS
 jS
 JS
-Ol
-Ty
+or
+on
 on
 xK
 da
@@ -3645,7 +3621,7 @@ Kh
 jS
 jS
 JS
-IY
+or
 Mb
 ei
 xK
@@ -3683,7 +3659,7 @@ ru
 jS
 jS
 JS
-IY
+or
 Mb
 ei
 xK

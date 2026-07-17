@@ -321,7 +321,7 @@
 	pixel_y = 3
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/shuttle/syndicate/engineering)
 "by" = (
 /obj/machinery/status_display/evac/directional/north,
@@ -330,7 +330,7 @@
 	},
 /obj/item/assembly/infra,
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/shuttle/syndicate/engineering)
 "bz" = (
 /obj/machinery/light/directional/north,
@@ -341,7 +341,7 @@
 /obj/item/wrench,
 /obj/item/crowbar/red,
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/shuttle/syndicate/engineering)
 "bA" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -933,7 +933,7 @@
 /obj/structure/sink/directional/west,
 /obj/structure/mirror/directional/east,
 /obj/effect/turf_decal/tile/light_blue,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/shuttle/syndicate/medical)
 "Km" = (
 /obj/structure/chair/stool/directional/east,
@@ -950,9 +950,6 @@
 	dir = 4
 	},
 /area/shuttle/syndicate/airlock)
-"KQ" = (
-/turf/open/floor/iron/white/side,
-/area/shuttle/syndicate/medical)
 "Lh" = (
 /obj/structure/rack,
 /obj/item/toy/plush/nukeplushie,
@@ -971,7 +968,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/syndie/surgery,
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/shuttle/syndicate/medical)
 "Ma" = (
 /turf/open/floor/iron/dark/smooth_corner{
@@ -1189,7 +1186,7 @@ lJ
 ZL
 bQ
 Ro
-KQ
+br
 cp
 cu
 cA

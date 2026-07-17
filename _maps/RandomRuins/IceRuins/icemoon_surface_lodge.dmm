@@ -60,7 +60,7 @@
 /obj/structure/table,
 /obj/machinery/gibber,
 /obj/machinery/light/warm/directional/south,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "ca" = (
 /obj/effect/decal/cleanable/dirt,
@@ -96,7 +96,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood/gibs/old,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "cO" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -556,7 +556,7 @@
 /area/ruin/huntinglodge)
 "jQ" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "jR" = (
 /obj/effect/decal/cleanable/blood/trail_holder{
@@ -986,7 +986,7 @@
 	},
 /obj/structure/sink/kitchen/directional/west,
 /obj/machinery/light/warm/directional/north,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "pX" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -1008,7 +1008,7 @@
 /obj/effect/decal/cleanable/blood/gibs/body,
 /obj/effect/decal/cleanable/blood/trail_holder,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "qL" = (
 /obj/structure/table/wood/fancy/orange,
@@ -1148,7 +1148,7 @@
 "uc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/cook,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "uU" = (
 /obj/structure/barricade/wooden/crude/snow,
@@ -1265,7 +1265,7 @@
 "ww" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/dinnerware,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "wC" = (
 /obj/structure/chair/wood/wings{
@@ -1346,7 +1346,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /mob/living/basic/viscerator,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "xv" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
@@ -1602,7 +1602,7 @@
 "AV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/oven/range,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "AZ" = (
 /obj/effect/turf_decal/siding/wood,
@@ -2140,7 +2140,7 @@
 "Hx" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/decal/cleanable/blood/gibs/core,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "HC" = (
 /obj/structure/chair/wood/wings{
@@ -2838,7 +2838,7 @@
 	pixel_y = 2
 	},
 /obj/item/knife,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "UB" = (
 /obj/structure/bed{
@@ -2969,7 +2969,7 @@
 "Ws" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "WC" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -2998,7 +2998,7 @@
 "Xa" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "Xf" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -3054,7 +3054,7 @@
 	dir = 1
 	},
 /obj/machinery/griddle,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/huntinglodge)
 "XL" = (
 /obj/effect/turf_decal/siding/wood{

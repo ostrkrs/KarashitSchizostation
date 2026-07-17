@@ -168,9 +168,6 @@
 "aA" = (
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
-"aB" = (
-/turf/open/floor/iron/checker,
-/area/ruin/space/has_grav/hellfactory)
 "aC" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple,
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple/layer2,
@@ -305,7 +302,7 @@
 /area/ruin/space/has_grav/hellfactoryoffice)
 "aZ" = (
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "ba" = (
 /obj/structure/plasticflaps,
@@ -337,7 +334,7 @@
 /area/ruin/space/has_grav/hellfactory)
 "bk" = (
 /obj/structure/tank_dispenser/oxygen,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "bl" = (
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -820,7 +817,7 @@
 /area/ruin/space/has_grav/hellfactory)
 "kD" = (
 /obj/structure/sign/poster/random/directional/east,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "lP" = (
 /obj/item/chair/plastic{
@@ -842,7 +839,7 @@
 "oH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/west,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/hellfactory)
 "oJ" = (
 /turf/open/floor/iron/dark,
@@ -917,10 +914,6 @@
 /obj/structure/table,
 /obj/machinery/microwave,
 /turf/open/floor/iron,
-/area/ruin/space/has_grav/hellfactory)
-"GE" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/checker,
 /area/ruin/space/has_grav/hellfactory)
 "GU" = (
 /obj/structure/sign/warning/chem_diamond,
@@ -1415,7 +1408,7 @@ ao
 ao
 ao
 ah
-aB
+aA
 bL
 bZ
 by
@@ -1443,7 +1436,7 @@ aP
 aP
 ah
 by
-aB
+aA
 aW
 ac
 ac
@@ -1474,7 +1467,7 @@ bo
 aL
 vB
 ab
-aB
+aA
 bR
 PO
 ab
@@ -1493,17 +1486,17 @@ aa
 ac
 ar
 aA
-aB
+aA
 aS
 aL
 bk
-aB
+aA
 ab
 qK
 EJ
-aB
+aA
 ab
-GE
+bL
 iE
 iE
 by
@@ -1521,10 +1514,10 @@ aW
 ab
 bL
 kD
-aB
+aA
 ab
 sk
-aB
+aA
 ab
 ab
 ab
@@ -1548,16 +1541,16 @@ ac
 as
 aA
 ab
-aB
+aA
 aA
 bL
-aB
-aB
-aB
+aA
+aA
+aA
 oH
-aB
+aA
 ab
-aB
+aA
 pf
 aA
 by
@@ -1573,18 +1566,18 @@ aa
 aa
 ac
 at
-GE
+bL
 aL
-GE
-aB
+bL
+aA
 aZ
-aB
+aA
 aL
 by
 ab
 aA
 bS
-aB
+aA
 ab
 as
 aL

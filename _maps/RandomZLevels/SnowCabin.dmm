@@ -383,22 +383,22 @@
 /area/awaymission/cabin)
 "bw" = (
 /obj/machinery/vending/dinnerware,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "bx" = (
 /obj/machinery/smartfridge,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "by" = (
 /obj/machinery/oven/range,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "bz" = (
 /obj/structure/sink/kitchen/directional/south{
 	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
 	name = "sink"
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "bA" = (
 /obj/machinery/chem_master/condimaster,
@@ -455,7 +455,7 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "bO" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "bP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/general/visible{
@@ -504,12 +504,12 @@
 /area/awaymission/cabin)
 "cj" = (
 /obj/machinery/griddle,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "ck" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "cl" = (
 /obj/structure/kitchenspike,
@@ -580,7 +580,7 @@
 "cF" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "cG" = (
 /obj/structure/closet/secure_closet/freezer/meat/all_access,
@@ -617,7 +617,7 @@
 	pixel_x = -8
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "cK" = (
 /obj/structure/table/wood/fancy,
@@ -1466,7 +1466,7 @@
 /area/awaymission/cabin)
 "hz" = (
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "hA" = (
 /obj/structure/cable,
@@ -3628,7 +3628,7 @@
 /obj/structure/table,
 /obj/machinery/microwave,
 /obj/machinery/light/cold/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/awaymission/cabin)
 "ze" = (
 /obj/structure/chair{

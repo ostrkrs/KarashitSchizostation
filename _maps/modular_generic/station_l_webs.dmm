@@ -24,7 +24,7 @@
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/structure/closet/crate/bin,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/template_noop)
 "dy" = (
 /obj/structure/railing{
@@ -86,7 +86,7 @@
 /obj/structure/flora/bush/jungle/b/style_random,
 /obj/effect/spawner/random/trash/bin,
 /obj/item/fireaxe,
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/template_noop)
@@ -138,7 +138,7 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/filingcabinet,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/template_noop)
 "vI" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -153,7 +153,7 @@
 /obj/structure/barricade/sandbags{
 	color = "#737373"
 	},
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 6
 	},
 /area/template_noop)
@@ -186,7 +186,7 @@
 /obj/structure/sign/poster/contraband/random/directional/west,
 /obj/machinery/light/warm/dim/directional/west,
 /obj/structure/chair/stool/directional/east,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/template_noop)
@@ -231,7 +231,7 @@
 	dir = 1
 	},
 /obj/machinery/light/warm/dim/directional/east,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/template_noop)
@@ -245,14 +245,14 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner,
 /obj/structure/rack,
 /obj/effect/spawner/random/engineering/toolbox,
-/turf/open/floor/iron/dark/corner,
+/turf/open/floor/iron,
 /area/template_noop)
 "Cd" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner,
 /obj/structure/barricade/sandbags{
 	color = "#737373"
 	},
-/turf/open/floor/iron/dark/corner,
+/turf/open/floor/iron,
 /area/template_noop)
 "Dp" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark/corner{
@@ -261,7 +261,7 @@
 /obj/structure/barricade/sandbags{
 	color = "#737373"
 	},
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/template_noop)
@@ -271,7 +271,7 @@
 	},
 /obj/structure/table,
 /obj/effect/spawner/random/contraband/armory,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/template_noop)
@@ -338,7 +338,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/bush/jungle/c/style_2,
 /obj/effect/spawner/random/engineering/tank,
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/template_noop)
@@ -389,7 +389,7 @@
 /obj/structure/guncase/wt550,
 /obj/structure/fireaxecabinet/empty/directional/south,
 /obj/item/gun/ballistic/automatic/smg/wt550,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/template_noop)
@@ -409,7 +409,7 @@
 /obj/structure/sign/clock/directional/east,
 /obj/effect/spawner/random/bureaucracy/folder,
 /obj/effect/spawner/random/bureaucracy/pen,
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/template_noop)
@@ -433,7 +433,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table,
 /obj/item/emptysandbag,
-/turf/open/floor/iron/dark/side{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/template_noop)

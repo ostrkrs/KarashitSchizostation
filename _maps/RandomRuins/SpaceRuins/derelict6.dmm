@@ -127,21 +127,21 @@
 "aI" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aJ" = (
 /obj/structure/table,
 /obj/item/storage/box/drinkingglasses,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aK" = (
 /obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/machinery/light/broken/directional/north,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aL" = (
 /obj/structure/closet/kitchen,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aM" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
@@ -166,12 +166,9 @@
 /obj/item/stack/tile/iron/base,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
-"aR" = (
-/turf/open/floor/iron/cafeteria/airless,
-/area/ruin/space/has_grav)
 "aS" = (
 /obj/structure/table_frame,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aT" = (
 /obj/item/kitchen/fork,
@@ -192,7 +189,7 @@
 /area/ruin/space/has_grav)
 "aW" = (
 /obj/structure/table,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "aX" = (
 /obj/item/chair/stool/bar,
@@ -209,18 +206,14 @@
 /obj/item/shard,
 /turf/template_noop,
 /area/template_noop)
-"ba" = (
-/mob/living/basic/ghost,
-/turf/open/floor/iron/cafeteria/airless,
-/area/ruin/space/has_grav)
 "bb" = (
 /obj/item/food/donkpocket,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "bc" = (
 /obj/structure/table,
 /obj/item/shard,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "bd" = (
 /obj/structure/chair/stool/bar/directional/west,
@@ -235,7 +228,7 @@
 "bh" = (
 /obj/machinery/light/broken/directional/west,
 /obj/structure/table_frame,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "bi" = (
 /obj/item/stack/sheet/iron,
@@ -246,7 +239,7 @@
 "bj" = (
 /obj/item/plate,
 /obj/effect/decal/remains/human,
-/turf/open/floor/iron/cafeteria/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav)
 "bk" = (
 /obj/structure/table_frame/wood,
@@ -555,7 +548,7 @@ ag
 aC
 ai
 aI
-aR
+ag
 aW
 aW
 bh
@@ -578,9 +571,9 @@ aw
 ag
 ai
 aJ
-aR
-aR
-aR
+ag
+ag
+ag
 bi
 ah
 aB
@@ -601,9 +594,9 @@ ax
 ag
 ai
 aK
-aR
-ba
-aR
+ag
+ax
+ag
 bj
 bg
 ah
@@ -624,12 +617,12 @@ ag
 ag
 ai
 aL
-aR
-aR
+ag
+ag
 bb
-aR
-aR
-aR
+ag
+ag
+ag
 ai
 ac
 ac
@@ -650,7 +643,7 @@ ai
 aS
 aW
 bc
-aR
+ag
 aS
 ai
 ai
