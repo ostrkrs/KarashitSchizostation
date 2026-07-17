@@ -5,7 +5,6 @@
 	armor_type = /datum/armor/shoes_cowboy
 	custom_price = PAYCHECK_CREW
 	fastening_type = SHOES_SLIPON
-	supports_variations_flags = CLOTHING_DIGITIGRADE_MASK
 	interaction_flags_mouse_drop = NEED_HANDS | NEED_DEXTERITY
 
 	var/max_occupants = 4
