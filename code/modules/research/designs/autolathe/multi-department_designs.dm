@@ -29,7 +29,7 @@
 	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT*0.5)
 	build_path = /obj/item/crowbar/small
 	category = list(
-		RND_CATEGORY_HACKED,
+		RND_CATEGORY_INITIAL,
 		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_ENGINEERING,
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING | DEPARTMENT_BITFLAG_SCIENCE
