@@ -442,7 +442,7 @@
 /obj/item/weldingtool/fueled/big
 	name = "industrial welding torch"
 	desc = "A heavy, industrial-grade fueled welder, trades all compactness for unparalleled welding speed."
-	icon = 'icons/obj/tools_wide.dmi'
+	icon = 'icons/obj/tools_large.dmi'
 	icon_state = "bigwelder"
 	inhand_icon_state = "bigwelder"
 	force_when_on = 20

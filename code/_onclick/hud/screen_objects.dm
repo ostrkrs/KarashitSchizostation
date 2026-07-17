@@ -1044,7 +1044,7 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/splash)
 	screen_loc = ui_hunger_thirst
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	VAR_PRIVATE/icon_key
-	VAR_PRIVATE/fullness
+	VAR_PRIVATE/hydration
 
 /atom/movable/screen/thirst/update_appearance(updates)
 	icon_state = "thirst_[get_icon_key()]"
@@ -1059,8 +1059,8 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/splash)
 		icon_key = 7
 		return
 
-	fullness = round(thirsty.get_fullness(), 0.05)
-	switch(fullness)
+	hydration = round(thirsty.get_hydration(), 0.05)
+	switch(hydration)
 		if(1 + HYDRATION_LEVEL_FULL to HYDRATION_LEVEL_OVERHYDRATED)
 			icon_key = 7
 

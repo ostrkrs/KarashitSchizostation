@@ -476,15 +476,15 @@
 			if(1)
 				to_chat(src, span_warning("Your eyes sting a little."))
 				if(prob(40))
-					eyes.apply_organ_damage(1)
+					eyes.apply_organ_damage(1 * eyes.flash_damage_mod)
 
 			if(2)
 				to_chat(src, span_warning("Your eyes burn."))
-				eyes.apply_organ_damage(rand(2, 4))
+				eyes.apply_organ_damage(rand(2, 4) * eyes.flash_damage_mod)
 
 			if(3 to INFINITY)
 				to_chat(src, span_warning("Your eyes itch and burn severely!"))
-				eyes.apply_organ_damage(rand(12, 16))
+				eyes.apply_organ_damage(rand(12, 16) * eyes.flash_damage_mod)
 
 		if(eyes.damage > 10)
 			adjust_temp_blindness(damage * 2 SECONDS)
@@ -493,11 +493,11 @@
 			if(eyes.damage > eyes.low_threshold)
 				if(!is_nearsighted_from(EYE_DAMAGE) && prob(eyes.damage - eyes.low_threshold))
 					to_chat(src, span_warning("Your eyes start to burn badly!"))
-					eyes.apply_organ_damage(eyes.low_threshold)
+					eyes.apply_organ_damage(eyes.low_threshold * eyes.flash_damage_mod)
 
 				else if(!is_blind() && prob(eyes.damage - eyes.high_threshold))
 					to_chat(src, span_warning("You can't see anything!"))
-					eyes.apply_organ_damage(eyes.maxHealth)
+					eyes.apply_organ_damage(eyes.maxHealth * eyes.flash_damage_mod)
 
 			else
 				to_chat(src, span_warning("Your eyes are really starting to hurt. This can't be good for you!"))

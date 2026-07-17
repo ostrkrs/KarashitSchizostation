@@ -2,6 +2,7 @@
 /datum/storage/toolbox
 	open_sound = 'sound/items/handling/toolbox/toolbox_open.ogg'
 	rustle_sound = 'sound/items/handling/toolbox/toolbox_rustle.ogg'
+	max_total_storage = 21
 
 ///Heirloom toolbox
 /datum/storage/toolbox/heirloom
@@ -9,7 +10,6 @@
 
 ///Artistic toolbox
 /datum/storage/toolbox/artistic
-	max_total_storage = 20
 	max_slots = 11
 
 ///Guncase toolbox
@@ -39,5 +39,4 @@
 
 ///Crafter toolbox
 /datum/storage/toolbox/crafter
-	max_total_storage = 20
 	max_slots = 11

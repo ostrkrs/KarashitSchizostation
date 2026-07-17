@@ -489,7 +489,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "LG" = (
 /obj/structure/lattice/catwalk,
-/obj/item/crowbar/large/emergency,
+/obj/item/crowbar/large,
 /turf/template_noop,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "LI" = (

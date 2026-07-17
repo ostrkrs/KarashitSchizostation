@@ -2,7 +2,7 @@
 /obj/item/construction/plumbing
 	name = "Plumbing Constructor"
 	desc = "An expertly modified RCD outfitted to construct plumbing machinery."
-	icon_state = "plumberer2"
+	icon_state = "plumberer"
 	inhand_icon_state = "plumberer"
 	lefthand_file = 'icons/mob/inhands/equipment/tools_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/tools_righthand.dmi'
