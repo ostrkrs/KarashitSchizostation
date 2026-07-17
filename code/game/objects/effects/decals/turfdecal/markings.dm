@@ -1,3 +1,33 @@
+// Generates colored wood sidings
+#define DEFINE_WOOD_SIDING(wood_name, wood_color) \
+	/obj/effect/turf_decal/siding/wood/##wood_name { \
+		color = wood_color; \
+	} \
+	/obj/effect/turf_decal/siding/wood/##wood_name/corner { \
+		icon_state = "siding_wood_corner"; \
+	} \
+	/obj/effect/turf_decal/siding/wood/##wood_name/end { \
+		icon_state = "siding_wood_end"; \
+	}
+
+/obj/effect/turf_decal/siding/wood
+	icon_state = "siding_wood"
+	color = COLOR_WOOD
+
+/obj/effect/turf_decal/siding/wood/corner
+	icon_state = "siding_wood_corner"
+
+/obj/effect/turf_decal/siding/wood/end
+	icon_state = "siding_wood_end"
+
+DEFINE_WOOD_SIDING(oak, COLOR_OAK)
+DEFINE_WOOD_SIDING(birch, COLOR_BIRCH)
+DEFINE_WOOD_SIDING(cherry, COLOR_CHERRY)
+DEFINE_WOOD_SIDING(amaranth, COLOR_AMARANTH)
+DEFINE_WOOD_SIDING(ebonite, COLOR_EBONITE)
+DEFINE_WOOD_SIDING(ivory, COLOR_PINK_IVORY)
+DEFINE_WOOD_SIDING(guaiacum, COLOR_GUAIACUM)
+
 /obj/effect/turf_decal/stripes/line
 	icon_state = "warningline"
 
@@ -373,16 +403,6 @@
 /obj/effect/turf_decal/siding/dark/end
 	icon_state = "siding_plain_end"
 
-/obj/effect/turf_decal/siding/wood
-	icon_state = "siding_wood"
-	color = "#5d341f"
-
-/obj/effect/turf_decal/siding/wood/corner
-	icon_state = "siding_wood_corner"
-
-/obj/effect/turf_decal/siding/wood/end
-	icon_state = "siding_wood_end"
-
 /obj/effect/turf_decal/siding/thinplating
 	icon_state = "siding_thinplating"
 	color = "#aaaaaa"
@@ -591,3 +611,5 @@
 
 /obj/effect/turf_decal/recharge
 	icon_state = "recharge"
+
+#undef DEFINE_WOOD_SIDING
