@@ -81,6 +81,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/light_switch, 24)
 /obj/machinery/light_switch/interact(mob/user)
 	. = ..()
 	if(last_switch > world.time - 2.1 SECONDS)
+		balloon_alert(user, "light switch is cycling!")
 		return
 	last_switch = world.time
 
