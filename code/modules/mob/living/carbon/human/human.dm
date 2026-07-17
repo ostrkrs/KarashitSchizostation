@@ -149,10 +149,10 @@
 		id_examine += jointext(list(
 			"&bull; Name: [id_name || "Unknown"]",
 			"&bull; Job: [id_job || "Unassigned"]",
+			"&bull; Species: [id_species || "Unknown"]",
 			"&bull; Age: [id_age || "Unknown"]",
 			"&bull; Gender: [id_gender || "Unknown"]",
 			"&bull; Blood Type: [id_blood_type || "?"]",
-			"&bull; Species: [id_species || "Unknown"]",
 		), "<br>")
 		id_examine += "</div>" // container
 		id_examine += "</div>" // text
