@@ -68,14 +68,14 @@ GLOBAL_LIST_INIT(color_list_serpentid, list(
 
 /// List of possible caver colours
 GLOBAL_LIST_INIT(color_list_caver, list(
-	"Purple" = "#6f6679",
-	"Violet" = "#737896",
-	"Light Blue" = "#7e8e99",
-	"Blue" = "#6c7b8d",
-	"Tan" = "#9c8775",
-	"Brown" = "#7a6a61",
 	"Silver" = "#a19e9a",
 	"Ash" = "#7b8083",
 	"Slate" = "#5f5d5c",
 	"Charcoal" = "#504b4a",
+	"Purple" = "#716b79",
+	"Violet" = "#737896",
+	"Light Blue" = "#85929b",
+	"Blue" = "#73808f",
+	"Tan" = "#9b8b7e",
+	"Brown" = "#72655d",
 ))
