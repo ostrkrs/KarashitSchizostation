@@ -4,7 +4,7 @@
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
 	base_icon_state = "sleeper"
-	density = FALSE
+	density = TRUE
 	obj_flags = BLOCKS_CONSTRUCTION
 	state_open = TRUE
 	interaction_flags_mouse_drop = NEED_DEXTERITY
@@ -95,7 +95,7 @@
 	if (!state_open)
 		container_resist_act(user)
 
-/obj/machinery/sleeper/open_machine(drop = TRUE, density_to_set = FALSE)
+/obj/machinery/sleeper/open_machine(drop = TRUE, density_to_set = TRUE)
 	if(!state_open && !panel_open)
 		flick("[initial(icon_state)]-anim", src)
 	return ..()
