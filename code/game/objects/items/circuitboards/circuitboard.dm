@@ -70,6 +70,7 @@ micro-manipulator, console screen, beaker, Microlaser, matter bin, power cells.
 /obj/item/circuitboard/machine
 	abstract_type = /obj/item/circuitboard/machine
 	name_extension = "(Machine Board)"
+	var/frame_type = MACHINE_FRAME_TYPE_DEFAULT
 	/// Whether this machine must be anchored to be constructed.
 	var/needs_anchored = TRUE
 	/// Components required by the machine.
@@ -192,3 +193,4 @@ micro-manipulator, console screen, beaker, Microlaser, matter bin, power cells.
 		nice_list += list("[component_amount] [component_name]\s")
 
 	. += span_info("It requires [english_list(nice_list)].")
+	. += span_info("It must be inserted into [frame_type] machine frame.")

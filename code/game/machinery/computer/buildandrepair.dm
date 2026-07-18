@@ -261,6 +261,7 @@
 	if(!cable.tool_start_check(user, amount = 5))
 		return FALSE
 	if(time > 0)
+		playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)
 		balloon_alert(user, "adding cables...")
 	if(!cable.use_tool(src, user, time, volume = 50, amount = 5) || state != FRAME_COMPUTER_STATE_BOARD_SECURED)
 		return FALSE

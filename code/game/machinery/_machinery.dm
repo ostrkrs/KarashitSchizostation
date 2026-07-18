@@ -936,8 +936,15 @@
  * Arguments:
  * * disassembled - If FALSE, the machine was destroyed instead of disassembled and the frame spawns at reduced integrity.
  */
-/obj/machinery/proc/spawn_frame(disassembled)
-	var/obj/structure/frame/machine/new_frame = new /obj/structure/frame/machine(loc)
+/obj/machinery/proc/spawn_frame(disassembled, obj/structure/frame/machine/new_frame)
+	if(istype(circuit, /obj/item/circuitboard/machine))
+		var/obj/item/circuitboard/machine/machine_circuit = circuit
+		if(machine_circuit.frame_type == MACHINE_FRAME_TYPE_SMALL)
+			new_frame = new /obj/structure/frame/machine/small(loc)
+		else
+			new_frame = new /obj/structure/frame/machine(loc)
+	else
+		new_frame = new /obj/structure/frame/machine(loc)
 
 	new_frame.state = FRAME_STATE_WIRED
 

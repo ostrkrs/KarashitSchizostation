@@ -147,11 +147,11 @@
 				if(prob(10))
 					atom_break(ENERGY)
 
-/obj/machinery/computer/spawn_frame(disassembled)
+/obj/machinery/computer/spawn_frame(disassembled, obj/structure/frame/computer/new_frame)
 	if(QDELETED(circuit)) //no circuit, no computer frame
 		return
 
-	var/obj/structure/frame/computer/new_frame = new(loc)
+	new_frame = new(loc)
 	new_frame.setDir(dir)
 	new_frame.set_anchored(TRUE)
 	new_frame.circuit = circuit

@@ -94,6 +94,7 @@ GLOBAL_LIST_INIT(iron_recipes, list ( \
 	new/datum/stack_recipe("computer frame", /obj/structure/frame/computer, 5, time = 2.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE), \
 	new/datum/stack_recipe("modular console", /obj/machinery/modular_computer, 10, time = 2.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE), \
 	new/datum/stack_recipe("machine frame", /obj/structure/frame/machine, 5, time = 2.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE), \
+	new/datum/stack_recipe("small machine frame", /obj/structure/frame/machine/small, 2, time = 2.5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_STRUCTURE), \
 	null, \
 	new /datum/stack_recipe_list("airlock assemblies", list( \
 		new /datum/stack_recipe("standard airlock assembly", /obj/structure/door_assembly, 4, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND, category = CAT_DOORS), \
@@ -191,7 +192,6 @@ GLOBAL_LIST_INIT(iron_recipes, list ( \
 	. = ..()
 	. += span_notice("Right click on floor to build:")
 	. += span_notice("- Unanchored wall girder")
-	. += span_notice("- Computer or Machine frame (with circuitboard)")
 
 /obj/item/stack/sheet/iron/fifty
 	amount = 50
@@ -255,17 +255,6 @@ GLOBAL_LIST_INIT(iron_recipes, list ( \
 	var/frame_path = null
 	var/cost = 2 // Default girder cost
 	var/time = 4 SECONDS //Default girder build time
-	var/obj/item/circuitboard/held_board = locate() in user.held_items
-	if(!isnull(held_board))
-		if(istype(held_board, /obj/item/circuitboard/machine))
-			frame_path = /obj/structure/frame/machine
-		else
-			frame_path = /obj/structure/frame/computer
-		for(var/datum/stack_recipe/recipe in GLOB.iron_recipes)
-			if(recipe.result_type == frame_path)
-				time = recipe.time
-				cost = recipe.req_amount
-				break
 	if(get_amount() < cost)
 		user.balloon_alert(user, "need [cost] metal sheets!")
 		return ITEM_INTERACT_BLOCKING
