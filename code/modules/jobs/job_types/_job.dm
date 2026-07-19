@@ -1,7 +1,6 @@
 /datum/job
 	/// The name of the job , used for preferences, bans and more. Make sure you know what you're doing before changing this.
 	var/title = "NOPE"
-
 	/// The list of alternative job titles people can pick from, null by default.
 	var/list/alt_titles = null
 
