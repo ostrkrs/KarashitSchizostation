@@ -42,7 +42,7 @@
 		/obj/item/storage/box/ammo/buckshot = 5
 	)
 	rpg_title = "Jailor"
-	job_flags = SHIP_JOB_FLAGS | JOB_BOLD_SELECT_TEXT | JOB_ANTAG_PROTECTED
+	job_flags = SHIP_JOB_FLAGS | JOB_ANTAG_PROTECTED
 
 /datum/outfit/job/warden
 	name = "Warden"
