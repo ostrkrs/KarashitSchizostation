@@ -47,7 +47,6 @@
 //No department
 #define JOB_ASSISTANT "Assistant"
 #define JOB_CIVILIAN "Civilian"
-#define JOB_INTERN "Intern"
 #define JOB_OFFDUTY "Off-Duty"
 #define JOB_PASSENGER "Passenger"
 #define JOB_RETIRED "Retired"
@@ -297,7 +296,6 @@
 #define JOB_CIVILIAN_ALT_TITLES list( \
 	JOB_ASSISTANT, \
 	JOB_CIVILIAN, \
-	JOB_INTERN, \
 	JOB_OFFDUTY, \
 	JOB_PASSENGER, \
 	JOB_RETIRED, \
