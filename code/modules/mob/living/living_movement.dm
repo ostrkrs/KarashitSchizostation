@@ -74,7 +74,7 @@
 
 /mob/living/proc/update_move_intent_slowdown()
 	var/modifier
-	if(move_intent == MOVE_INTENT_RUN)
+	if(move_intent == MOVE_INTENT_RUN && !iscyborg(src))
 		modifier = /datum/movespeed_modifier/config_creep_walk_run/run
 	if(move_intent == MOVE_INTENT_WALK)
 		modifier = /datum/movespeed_modifier/config_creep_walk_run/walk
