@@ -25,7 +25,7 @@ GLOBAL_DATUM(bridge_axe, /obj/item/fireaxe)
 	resistance_flags = FIRE_PROOF
 	wound_bonus = -15
 	exposed_wound_bonus = 20
-	toolspeed = 0.5
+	toolspeed = 0.4
 	/// How much damage to do unwielded
 	var/force_unwielded = 5
 	/// How much damage to do wielded
