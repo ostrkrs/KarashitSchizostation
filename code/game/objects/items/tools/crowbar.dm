@@ -166,7 +166,6 @@
 	desc = "An improved and smaller copy of Nanotrasen's standard jaws of life. Can be used to force open airlocks in its crowbar configuration."
 	icon_state = "jaws_syndie"
 	w_class = WEIGHT_CLASS_SMALL
-	force_opens = TRUE
 
 /obj/item/crowbar/power/examine()
 	. = ..()
