@@ -2,7 +2,7 @@
 	icon_greyscale = 'icons/mob/human/species/human_subtypes/caver/bodyparts.dmi'
 	limb_id = SPECIES_HUMAN_CAVER
 	head_flags = HEAD_HAIR|HEAD_LIPS|HEAD_EYESPRITES|HEAD_EYECOLOR|HEAD_EYEHOLES|HEAD_DEBRAIN
-	brute_modifier = 0.9
+	wound_damage_multiplier = 2.75
 
 
 /obj/item/bodypart/chest/caver

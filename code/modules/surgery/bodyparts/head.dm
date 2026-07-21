@@ -12,7 +12,7 @@
 	throw_range = 2 //No head bowling
 	px_x = 0
 	px_y = -8
-	wound_damage_multiplier = 2
+	wound_damage_multiplier = 3
 	disabled_wound_penalty = 25
 	scars_covered_by_clothes = FALSE
 	grind_results = null
