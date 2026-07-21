@@ -65,7 +65,7 @@
 /obj/projectile/bullet/pellet/shotgun_buckshot
 	name = "buckshot pellet"
 	damage = 8
-	wound_bonus = 6
+	wound_bonus = 8
 	exposed_wound_bonus = 12
 	wound_falloff_tile = -1
 	damage_falloff_tile = -0.25
@@ -73,7 +73,7 @@
 
 /obj/projectile/bullet/pellet/shotgun_birdshot
 	name = "birdshot pellet"
-	damage = 4
+	damage = 6
 	wound_bonus = 2
 	exposed_wound_bonus = 6
 	wound_falloff_tile = -1
