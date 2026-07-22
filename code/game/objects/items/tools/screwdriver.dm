@@ -14,7 +14,7 @@
 	slot_flags = ITEM_SLOT_BELT
 	force = 5
 	demolition_mod = 0.5
-	w_class = WEIGHT_CLASS_TINY
+	w_class = WEIGHT_CLASS_SMALL
 	throwforce = 5
 	throw_speed = 3
 	throw_range = 5
