@@ -55,6 +55,10 @@
 
 #define JOB_PRISONER "Prisoner"
 
+#define JOB_UNASSIGNED "Unassigned Crewmember"
+
+#define JOB_VAGABOND "Undefined Crewmember"
+
 //Heads
 #define JOB_CAPTAIN "Captain"
 #define JOB_HEAD_OF_SECURITY "Head of Security"
@@ -531,6 +535,7 @@
 #define JOB_DISPLAY_ORDER_CRIMINALIST 40
 #define JOB_DISPLAY_ORDER_SECURITY_OFFICER 41
 #define JOB_DISPLAY_ORDER_PRISONER 42
+#define JOB_DISPLAY_ORDER_VAGABOND 43
 
 #define DEPARTMENT_UNASSIGNED "No Department"
 

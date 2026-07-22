@@ -152,7 +152,7 @@
 			"&bull; Species: [id_species || "Unknown"]",
 			"&bull; Age: [id_age || "Unknown"]",
 			"&bull; Gender: [id_gender || "Unknown"]",
-			"&bull; Blood Type: [id_blood_type || "?"]",
+			"&bull; Blood Type: [id_blood_type || "Unknown"]",
 		), "<br>")
 		id_examine += "</div>" // container
 		id_examine += "</div>" // text

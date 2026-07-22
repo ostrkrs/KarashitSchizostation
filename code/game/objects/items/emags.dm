@@ -17,6 +17,10 @@
 	var/prox_check = TRUE //If the emag requires you to be in range
 	var/type_blacklist //List of types that require a specialized emag
 
+/obj/item/card/emag/Initialize(mapload)
+	. = ..()
+	AddElement(/datum/element/item_scaling, 0.7, 1)
+
 /obj/item/card/emag/get_displayed_name(honorifics = FALSE)
 	return name // That's Grey Tider (as "cryptographic sequencer")
 

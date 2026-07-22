@@ -57,5 +57,6 @@ export const JOB2ICON = {
   'Syndicate Operative': 'dragon',
   'Veteran Security Advisor': 'ribbon',
   'Pun Pun': 'paw',
+  'Undefined Crewmember': 'question',
   Warden: 'person-military-rifle',
 } as const;

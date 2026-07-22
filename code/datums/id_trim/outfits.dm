@@ -78,3 +78,8 @@
 	. = ..()
 
 	access |= SSid_access.get_region_access_list(list(REGION_ALL_GLOBAL))
+
+/datum/id_trim/vagabond
+	assignment = "Unknown"
+	access = list(ACCESS_MAINT_TUNNELS)
+	threat_modifier = 1
