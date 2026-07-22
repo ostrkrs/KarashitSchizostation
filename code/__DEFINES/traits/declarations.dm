@@ -20,8 +20,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 /// Traits given by station traits
 #define STATION_TRAIT_BIGGER_PODS "station_trait_bigger_pods"
 #define STATION_TRAIT_BRIGHT_DAY "station_trait_bright_day"
-#define STATION_TRAIT_CARP_INFESTATION "station_trait_carp_infestation"
-#define STATION_TRAIT_CYBERNETIC_REVOLUTION "station_trait_cybernetic_revolution"
 #define STATION_TRAIT_ECONOMY_ALERTS "station_trait_economy_alerts"
 #define STATION_TRAIT_EMPTY_MAINT "station_trait_empty_maint"
 #define STATION_TRAIT_FILLED_MAINT "station_trait_filled_maint"
@@ -32,7 +30,6 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define STATION_TRAIT_PDA_GLITCHED "station_trait_pda_glitched"
 #define STATION_TRAIT_PREMIUM_INTERNALS "station_trait_premium_internals"
 #define STATION_TRAIT_REVOLUTIONARY_TRASHING "station_trait_revolutionary_trashing"
-#define STATION_TRAIT_SHUTTLE_SALE "station_trait_shuttle_sale"
 #define STATION_TRAIT_SMALLER_PODS "station_trait_smaller_pods"
 #define STATION_TRAIT_SPIDER_INFESTATION "station_trait_spider_infestation"
 #define STATION_TRAIT_UNIQUE_AI "station_trait_unique_ai"

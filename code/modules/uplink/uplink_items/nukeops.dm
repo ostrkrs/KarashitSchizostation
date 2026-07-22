@@ -424,11 +424,6 @@
 	item = /obj/item/sbeacondrop/emp
 	cost = 6
 
-/datum/uplink_item/explosives/military_grade/syndicate_bomb/emp/New()
-	. = ..()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_CYBERNETIC_REVOLUTION))
-		cost *= 2
-
 // Support (Borgs and Reinforcements)
 
 /datum/uplink_category/reinforcements

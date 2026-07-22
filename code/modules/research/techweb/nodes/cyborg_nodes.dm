@@ -167,11 +167,6 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 	announce_channels = list(RADIO_CHANNEL_SCIENCE, RADIO_CHANNEL_MEDICAL)
 
-/datum/techweb_node/cyber/New()
-	..()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_CYBERNETIC_REVOLUTION))
-		research_costs[TECHWEB_POINT_TYPE_GENERIC] /= 2
-
 /datum/techweb_node/cyber/combat_implants
 	id = TECHWEB_NODE_COMBAT_IMPLANTS
 	display_name = "Combat Implants"
