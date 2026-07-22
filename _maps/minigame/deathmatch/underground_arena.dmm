@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aj" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/old,
@@ -15,7 +15,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "aD" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /obj/machinery/light/floor,
@@ -25,7 +25,7 @@
 /turf/open/chasm/true,
 /area/deathmatch)
 "bg" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -97,7 +97,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "eC" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/old,
@@ -115,7 +115,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "hb" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -126,11 +126,11 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "ir" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "jA" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
 	},
 /turf/open/indestructible/vault,
@@ -168,13 +168,13 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "mz" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 6
 	},
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "mI" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/structure/barricade/security/murderdome,
@@ -196,7 +196,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -230,7 +230,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/indestructible/vault,
@@ -244,21 +244,21 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "qP" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "rc" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "sd" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
 /turf/open/indestructible/vault,
@@ -276,7 +276,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "sK" = (
@@ -292,7 +292,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "tF" = (
@@ -333,7 +333,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "vW" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/item/gun/ballistic/automatic/m90/unrestricted,
@@ -376,7 +376,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/old,
@@ -424,11 +424,11 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "Br" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
 	},
 /turf/open/indestructible/vault,
@@ -452,7 +452,7 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "Ef" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /turf/open/indestructible/vault,
@@ -462,7 +462,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "EQ" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -478,7 +478,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "Go" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -501,7 +501,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Ig" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/indestructible/vault,
@@ -561,7 +561,7 @@
 	light_color = "#DEEFFF";
 	set_luminosity = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "KT" = (
@@ -571,7 +571,7 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "KX" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/machinery/light/floor,
@@ -587,7 +587,7 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "Ml" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
 /obj/structure/barricade/security/murderdome,
@@ -597,7 +597,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -618,8 +618,8 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "OK" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/structure/barricade/security/murderdome,
@@ -655,7 +655,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -716,7 +716,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "UV" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /obj/machinery/deployable_turret,
@@ -728,7 +728,7 @@
 /area/deathmatch)
 "Vx" = (
 /obj/structure/barricade/security/murderdome,
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/vault,
 /area/deathmatch)
@@ -741,7 +741,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -752,13 +752,13 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "We" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "Ws" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
 	},
 /obj/structure/barricade/security/murderdome,
@@ -771,7 +771,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "WP" = (
@@ -804,7 +804,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "XR" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/indestructible/vault,
@@ -817,15 +817,15 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "Yc" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/old,
@@ -854,14 +854,14 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "ZR" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "ZZ" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/structure/barricade/security/murderdome,

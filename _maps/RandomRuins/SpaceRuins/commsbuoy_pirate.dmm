@@ -108,7 +108,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "E" = (
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "F" = (
 /obj/structure/lattice,

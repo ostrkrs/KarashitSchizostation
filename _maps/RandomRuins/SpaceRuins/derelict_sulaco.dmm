@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ag" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/textured_corner/airless{
@@ -82,7 +82,7 @@
 	},
 /area/ruin/space/has_grav/derelictsulaco)
 "dw" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/textured_edge/airless{
@@ -132,7 +132,7 @@
 /turf/open/floor/iron/dark/textured_large/airless,
 /area/ruin/space)
 "fg" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured_corner/airless{
@@ -170,7 +170,7 @@
 	dir = 1;
 	anchored = 1
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth_edge,
 /area/ruin/space/has_grav/derelictsulaco)
 "gE" = (
@@ -215,10 +215,10 @@
 	},
 /area/ruin/space/has_grav/derelictsulaco)
 "hV" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/floor/iron/dark/textured_corner/airless,
@@ -333,7 +333,7 @@
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/derelictsulaco)
 "lf" = (
-/obj/effect/turf_decal/siding/wideplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/floor/iron/dark/textured_edge/airless,
 /area/ruin/space)
 "li" = (
@@ -396,7 +396,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/derelictsulaco)
 "mz" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/floor/iron/dark/textured_corner/airless,
@@ -484,7 +484,7 @@
 /obj/structure/frame/computer{
 	anchored = 1
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
 	},
@@ -617,7 +617,7 @@
 	dir = 1;
 	anchored = 1
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth_edge,
 /area/ruin/space/has_grav/derelictsulaco)
 "ur" = (
@@ -672,7 +672,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/derelictsulaco)
 "vJ" = (
-/obj/effect/turf_decal/siding/wideplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_corner/airless{
@@ -736,7 +736,7 @@
 	anchored = 1
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/derelictsulaco)
 "yS" = (
@@ -868,7 +868,7 @@
 /obj/structure/window/reinforced/spawner/directional/north,
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/machinery/computer/terminal/sulaco/map,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /obj/machinery/light/dim/directional/north,
 /turf/open/floor/iron/smooth_edge{
 	dir = 1
@@ -929,7 +929,7 @@
 	dir = 1;
 	anchored = 1
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth_edge,
 /area/ruin/space/has_grav/derelictsulaco)
 "FK" = (
@@ -1030,7 +1030,7 @@
 /turf/open/floor/iron/smooth_edge,
 /area/ruin/space/has_grav/derelictsulaco)
 "HY" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_edge/airless{
@@ -1063,7 +1063,7 @@
 	},
 /obj/machinery/light/broken/directional/north,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/derelictsulaco)
 "JO" = (
@@ -1078,7 +1078,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/derelictsulaco)
 "Ki" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured_edge/airless{
@@ -1113,10 +1113,10 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/derelictsulaco)
 "KG" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
 /turf/open/floor/iron/dark/textured_corner/airless{
@@ -1195,7 +1195,7 @@
 	dir = 1;
 	anchored = 1
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth_edge,
 /area/ruin/space/has_grav/derelictsulaco)
 "Mj" = (
@@ -1409,7 +1409,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/derelictsulaco)
 "SS" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
 /turf/open/floor/iron/dark/textured_corner/airless{
@@ -1567,7 +1567,7 @@
 /area/template_noop)
 "WQ" = (
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/smooth_edge,
 /area/ruin/space/has_grav/derelictsulaco)
 "Xg" = (
@@ -1640,7 +1640,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space)
 "YB" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /turf/open/floor/iron/dark/textured_corner/airless{

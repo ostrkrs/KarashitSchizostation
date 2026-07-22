@@ -106,7 +106,7 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/sign/poster/random/directional/north,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "ce" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -124,7 +124,7 @@
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/blood,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/white/smooth_corner,
+/turf/open/floor/iron/white/corner,
 /area/ruin/outpost31/medical)
 "ck" = (
 /obj/structure/closet,
@@ -301,7 +301,7 @@
 /area/ruin/outpost31/recroom)
 "eS" = (
 /obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "eT" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -626,7 +626,7 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "lW" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -1035,7 +1035,7 @@
 "tZ" = (
 /obj/structure/table,
 /obj/item/storage/medkit,
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1135,7 +1135,7 @@
 /area/ruin/outpost31/crewquarters)
 "wr" = (
 /obj/machinery/smartfridge/petri/preloaded,
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1277,7 +1277,7 @@
 	pixel_x = -4;
 	pixel_y = 1
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "zu" = (
 /obj/effect/light_emitter{
@@ -1358,7 +1358,7 @@
 /area/ruin/outpost31/kitchendiningroom)
 "Ai" = (
 /obj/item/kirbyplants/random/dead,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1371,7 +1371,7 @@
 /obj/machinery/iv_drip,
 /obj/structure/bed/medical/anchored,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "Aw" = (
 /obj/structure/closet/secure_closet{
@@ -1440,7 +1440,7 @@
 /area/ruin/outpost31/recroom)
 "BM" = (
 /obj/structure/table,
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1755,7 +1755,7 @@
 	},
 /obj/effect/mapping_helpers/broken_machine,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "HW" = (
 /turf/open/floor/iron,
@@ -1763,7 +1763,7 @@
 "Id" = (
 /obj/structure/table,
 /obj/item/food/icecreamsandwich,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "Ie" = (
 /obj/machinery/door/airlock/external/glass/ruin,
@@ -1855,7 +1855,7 @@
 "JP" = (
 /obj/structure/table,
 /obj/item/storage/medkit/fire,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 4
 	},
 /area/ruin/outpost31/medical)
@@ -1886,7 +1886,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "Lx" = (
 /turf/closed/wall,
@@ -2270,7 +2270,7 @@
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_y = -32
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "SJ" = (
 /obj/machinery/door/airlock/external/glass/ruin,
@@ -2528,7 +2528,7 @@
 "Xk" = (
 /obj/machinery/light_switch/directional/north,
 /obj/structure/tank_holder/extinguisher,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 8
 	},
 /area/ruin/outpost31/medical)

@@ -143,7 +143,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -157,7 +157,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -166,7 +166,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -180,7 +180,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -238,7 +238,7 @@
 /obj/item/food/burrito,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -302,7 +302,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -313,7 +313,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/crew)
 "aM" = (
@@ -321,7 +321,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/personal,
 /obj/item/storage/photo_album,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/crew)
 "aN" = (
@@ -331,7 +331,7 @@
 	},
 /obj/structure/table,
 /obj/machinery/microwave,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -360,7 +360,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -457,7 +457,7 @@
 	pixel_x = -6;
 	pixel_y = 4
 	},
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -466,7 +466,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/crew)
 "bd" = (
@@ -478,7 +478,7 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/item/trash/can,
 /obj/item/light/bulb/broken,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/crew)
 "be" = (
@@ -638,7 +638,7 @@
 /obj/item/pen{
 	pixel_x = 4
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/bridge)
 "by" = (
@@ -762,7 +762,7 @@
 /obj/machinery/computer/crew{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -866,7 +866,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -906,7 +906,7 @@
 /obj/machinery/computer/shuttle/white_ship/bridge{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -1043,7 +1043,7 @@
 	x_offset = -7;
 	y_offset = -8
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -1115,7 +1115,7 @@
 	pixel_x = 3;
 	pixel_y = -3
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -1681,7 +1681,7 @@
 	},
 /obj/item/storage/box/donkpockets,
 /obj/machinery/light/small/built/directional/east,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/crew)
 "vk" = (
@@ -1696,7 +1696,7 @@
 /obj/machinery/door/airlock{
 	name = "Cabin 1"
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned/crew)
 "Fg" = (
@@ -1712,7 +1712,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/crew)
 "FW" = (
@@ -1721,7 +1721,7 @@
 /obj/machinery/door/airlock{
 	name = "Cabin 2"
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned/crew)
 "JU" = (
@@ -1743,7 +1743,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned/crew)
 "Tw" = (
@@ -1761,7 +1761,7 @@
 /obj/effect/mapping_helpers/airalarm/all_access,
 /obj/item/bedsheet,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/abandoned/crew)
 

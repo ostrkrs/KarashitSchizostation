@@ -30,14 +30,14 @@
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/effect/turf_decal/bot,
 /obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "g" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/light_blue{
@@ -51,7 +51,7 @@
 /area/template_noop)
 "h" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /obj/effect/turf_decal/tile/light_blue,
 /obj/structure/closet/crate/trashcart/filled,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -90,7 +90,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /obj/effect/turf_decal/delivery,
 /obj/structure/mop_bucket/janitorialcart{
 	dir = 4
@@ -102,7 +102,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /obj/effect/turf_decal/tile/light_blue,
 /obj/structure/closet/crate/trashcart/filled,
 /obj/effect/turf_decal/tile/light_blue,
@@ -130,7 +130,7 @@
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet/directional/west,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -146,7 +146,7 @@
 	},
 /obj/item/reagent_containers/cup/bucket,
 /obj/item/mop,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/light_blue,
@@ -168,7 +168,7 @@
 	},
 /obj/effect/turf_decal/loading_area,
 /obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/light_blue{
@@ -246,7 +246,7 @@
 /area/template_noop)
 "C" = (
 /obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/light_blue{
@@ -304,7 +304,7 @@
 "J" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/stripes/corner,
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /obj/effect/turf_decal/tile/light_blue,
 /obj/structure/sign/poster/random/directional/south,
 /obj/structure/closet/crate/trashcart/filled,
@@ -350,7 +350,7 @@
 /obj/effect/turf_decal/bot,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /obj/structure/sign/poster/random/directional/west,
@@ -366,7 +366,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /obj/structure/sign/poster/random/directional/north,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -392,7 +392,7 @@
 	pixel_x = 8;
 	req_access = list("janitor")
 	},
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /obj/effect/spawner/random/clothing/gloves,
@@ -411,7 +411,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -423,7 +423,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -432,7 +432,7 @@
 /turf/open/floor/plating,
 /area/template_noop)
 "V" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /obj/effect/turf_decal/tile/light_blue,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron,
@@ -460,7 +460,7 @@
 	pixel_y = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,

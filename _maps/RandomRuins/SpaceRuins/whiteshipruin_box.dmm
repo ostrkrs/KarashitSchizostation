@@ -26,7 +26,7 @@
 "aP" = (
 /obj/structure/closet/firecloset,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating/end{
+/obj/effect/turf_decal/siding/white/end{
 	dir = 4
 	},
 /turf/open/floor/iron/smooth_large,
@@ -35,7 +35,7 @@
 /obj/machinery/sleeper{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating/terracotta{
+/obj/effect/turf_decal/siding/brown{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -50,8 +50,8 @@
 /obj/effect/turf_decal/trimline/yellow/arrow_ccw{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating/corner,
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner,
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -78,14 +78,14 @@
 /obj/effect/turf_decal/trimline/yellow/arrow_ccw{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/smooth_large,
 /area/ruin/space/has_grav/whiteship/box)
 "dm" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -134,7 +134,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)
 "eN" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /obj/item/defibrillator/loaded,
 /turf/open/floor/iron/showroomfloor/airless,
 /area/ruin/space/has_grav/whiteship/box)
@@ -143,7 +143,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)
 "fc" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/dark_red/warning,
@@ -154,7 +154,7 @@
 /turf/open/floor/iron/large,
 /area/ruin/space/has_grav/whiteship/box)
 "fK" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/showroomfloor/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "gg" = (
@@ -198,13 +198,13 @@
 /area/ruin/space/has_grav/whiteship/box)
 "gU" = (
 /obj/structure/closet/emcloset,
-/obj/effect/turf_decal/siding/wideplating/end{
+/obj/effect/turf_decal/siding/white/end{
 	dir = 8
 	},
 /turf/open/floor/iron/smooth_large,
 /area/ruin/space/has_grav/whiteship/box)
 "hf" = (
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /obj/structure/table/glass,
@@ -233,7 +233,7 @@
 	icon_state = "small"
 	},
 /obj/effect/decal/cleanable/blood/footprints,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/showroomfloor/airless,
@@ -241,13 +241,13 @@
 "hR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/corp/right,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
 /turf/open/floor/iron/textured_corner,
 /area/ruin/space/has_grav/whiteship/box)
 "hT" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /obj/structure/rack,
@@ -265,7 +265,7 @@
 /obj/effect/turf_decal/trimline/yellow/arrow_ccw{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating,
+/obj/effect/turf_decal/siding/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/random/directional/south,
 /turf/open/floor/iron/smooth_large,
@@ -281,7 +281,7 @@
 "iK" = (
 /obj/machinery/light/broken/directional/north,
 /obj/structure/chair/sofa/corp,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron/textured_edge{
@@ -296,7 +296,7 @@
 /turf/open/floor/iron/large,
 /area/ruin/space/has_grav/whiteship/box)
 "jb" = (
-/obj/effect/turf_decal/siding/wideplating/terracotta{
+/obj/effect/turf_decal/siding/brown{
 	dir = 5
 	},
 /turf/open/floor/carpet,
@@ -311,7 +311,7 @@
 /area/ruin/space/has_grav/whiteship/box)
 "jq" = (
 /obj/effect/spawner/random/entertainment/plushie,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/floor/iron/textured_edge{
@@ -324,7 +324,7 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "jP" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -341,7 +341,7 @@
 /turf/open/floor/iron/textured,
 /area/ruin/space/has_grav/whiteship/box)
 "kr" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /obj/structure/rack,
@@ -400,7 +400,7 @@
 /turf/open/floor/iron/textured,
 /area/ruin/space/has_grav/whiteship/box)
 "lO" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -431,7 +431,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "lZ" = (
-/obj/effect/turf_decal/siding/wideplating,
+/obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron/textured_edge,
 /area/ruin/space/has_grav/whiteship/box)
 "md" = (
@@ -441,7 +441,7 @@
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -461,10 +461,10 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)
 "mN" = (
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -509,7 +509,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/whiteship/box)
 "nM" = (
-/obj/effect/turf_decal/siding/wideplating/terracotta{
+/obj/effect/turf_decal/siding/brown{
 	dir = 4
 	},
 /turf/open/floor/carpet,
@@ -524,7 +524,7 @@
 	},
 /area/ruin/space/has_grav/whiteship/box)
 "or" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /obj/item/storage/medkit{
@@ -556,7 +556,7 @@
 /obj/effect/turf_decal/trimline/yellow/arrow_ccw{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -595,7 +595,7 @@
 /turf/open/floor/mineral/titanium/white/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "qi" = (
-/obj/effect/turf_decal/siding/wideplating/corner,
+/obj/effect/turf_decal/siding/white/corner,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/whiteship/box)
@@ -640,12 +640,12 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating/terracotta,
+/obj/effect/turf_decal/siding/brown,
 /turf/open/floor/carpet,
 /area/ruin/space/has_grav/whiteship/box)
 "rp" = (
 /obj/structure/closet/wardrobe/pjs,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
 /turf/open/floor/iron/textured_corner{
@@ -671,7 +671,7 @@
 /area/ruin/space/has_grav/whiteship/box)
 "sp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
 /turf/open/floor/iron/textured_corner{
@@ -681,10 +681,10 @@
 "sJ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/titanium,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/floor/iron/large,
@@ -738,7 +738,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "vo" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -811,20 +811,20 @@
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/whiteship/box)
 "zO" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/reinforced,
 /turf/open/floor/iron/showroomfloor/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "zY" = (
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/whiteship/box)
 "Al" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -850,7 +850,7 @@
 "AL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/dark,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/engine,
@@ -876,7 +876,7 @@
 "BB" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/machinery/light/broken/directional/north,
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/engine,
@@ -898,7 +898,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "Cd" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
 /obj/structure/chair{
@@ -907,7 +907,7 @@
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/whiteship/box)
 "Cf" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /turf/open/floor/mineral/titanium/white,
@@ -989,7 +989,7 @@
 /turf/template_noop,
 /area/template_noop)
 "FX" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /obj/machinery/sleeper{
 	dir = 1
 	},
@@ -997,7 +997,7 @@
 /turf/open/floor/iron/showroomfloor/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "FZ" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -1031,7 +1031,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)
 "HC" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
 /turf/open/floor/mineral/titanium/white,
@@ -1044,7 +1044,7 @@
 /turf/open/floor/mineral/titanium/tiled/white,
 /area/ruin/space/has_grav/whiteship/box)
 "HW" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/dark_red/corner{
@@ -1074,7 +1074,7 @@
 /turf/open/floor/catwalk_floor/iron_white,
 /area/ruin/space/has_grav/whiteship/box)
 "IV" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /obj/structure/closet/crate/medical,
 /turf/open/floor/iron/showroomfloor/airless,
 /area/ruin/space/has_grav/whiteship/box)
@@ -1142,7 +1142,7 @@
 "KE" = (
 /obj/structure/dresser,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron/textured_edge{
@@ -1150,7 +1150,7 @@
 	},
 /area/ruin/space/has_grav/whiteship/box)
 "KT" = (
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -1210,7 +1210,7 @@
 /area/ruin/space/has_grav/whiteship/box)
 "Nf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating,
+/obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron/textured_edge,
 /area/ruin/space/has_grav/whiteship/box)
 "NH" = (
@@ -1227,7 +1227,7 @@
 /turf/open/floor/iron/showroomfloor/airless,
 /area/ruin/space/has_grav/whiteship/box)
 "NQ" = (
-/obj/effect/turf_decal/siding/wideplating/terracotta{
+/obj/effect/turf_decal/siding/brown{
 	dir = 6
 	},
 /turf/open/floor/carpet,
@@ -1247,15 +1247,15 @@
 /area/ruin/space/has_grav/whiteship/box)
 "Oa" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating/corner,
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner,
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/textured_edge,
 /area/ruin/space/has_grav/whiteship/box)
 "Oq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/engine,
@@ -1269,7 +1269,7 @@
 	pixel_y = -12
 	},
 /obj/machinery/light/broken/directional/east,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /obj/structure/rack,
@@ -1291,7 +1291,7 @@
 "Pe" = (
 /obj/structure/closet/wardrobe/pjs,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /turf/open/floor/iron/textured_corner{
@@ -1328,7 +1328,7 @@
 /turf/open/floor/carpet,
 /area/ruin/space/has_grav/whiteship/box)
 "PT" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /obj/machinery/vending/medical,
@@ -1397,7 +1397,7 @@
 /obj/effect/turf_decal/trimline/light_blue/arrow_cw{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/showroomfloor/airless,
@@ -1412,7 +1412,7 @@
 /area/ruin/space/has_grav/whiteship/box)
 "TC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron/textured_edge{
@@ -1470,7 +1470,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/whiteship/box)
 "VG" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /obj/machinery/sleeper{
 	dir = 1
 	},
@@ -1518,7 +1518,7 @@
 	},
 /area/ruin/space/has_grav/whiteship/box)
 "Xr" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/dark_red/warning,
@@ -1542,7 +1542,7 @@
 /area/ruin/space/has_grav/whiteship/box)
 "XZ" = (
 /obj/machinery/light/broken/directional/south,
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -1553,7 +1553,7 @@
 /area/ruin/space/has_grav/whiteship/box)
 "YB" = (
 /obj/structure/chair/sofa/corp/left,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron/textured_edge{

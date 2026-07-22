@@ -11,7 +11,7 @@
 /turf/open/floor/carpet/airless,
 /area/ruin/space/has_grav)
 "bU" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white/airless,

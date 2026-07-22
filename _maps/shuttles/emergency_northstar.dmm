@@ -14,7 +14,7 @@
 /obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/shuttle/escape)
 "cs" = (
 /obj/machinery/shieldgen,
@@ -40,7 +40,7 @@
 /obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/shuttle/escape)
 "ez" = (
 /obj/structure/railing,
@@ -69,7 +69,7 @@
 "gt" = (
 /obj/machinery/iv_drip,
 /obj/effect/turf_decal/tile/light_blue/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/shuttle/escape)
 "gI" = (
 /obj/effect/turf_decal/trimline/white/filled/corner{
@@ -99,7 +99,7 @@
 /obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/shuttle/escape)
@@ -122,7 +122,7 @@
 /obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
-/turf/open/floor/iron/white/smooth_corner,
+/turf/open/floor/iron/white/corner,
 /area/shuttle/escape)
 "nC" = (
 /obj/structure/table/reinforced/rglass,
@@ -134,7 +134,7 @@
 	dir = 8
 	},
 /obj/item/radio/intercom/directional/south,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 4
 	},
 /area/shuttle/escape)
@@ -191,7 +191,7 @@
 "qK" = (
 /obj/machinery/stasis,
 /obj/effect/turf_decal/tile/light_blue/anticorner,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 1
 	},
 /area/shuttle/escape)
@@ -215,7 +215,7 @@
 /area/shuttle/escape)
 "si" = (
 /obj/effect/turf_decal/tile/light_blue/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/shuttle/escape)
 "tq" = (
 /obj/structure/chair/comfy/shuttle{
@@ -257,7 +257,7 @@
 /obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 8
 	},
 /area/shuttle/escape)
@@ -341,7 +341,7 @@
 /obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/shuttle/escape)
 "DW" = (
 /obj/machinery/door/airlock/survival_pod/glass{
@@ -581,7 +581,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/shuttle/escape)
 "Xw" = (
 /obj/structure/chair/comfy/shuttle{
@@ -592,7 +592,7 @@
 	},
 /obj/machinery/light/directional/east,
 /obj/machinery/status_display/evac/directional/east,
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/shuttle/escape)

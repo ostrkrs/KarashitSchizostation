@@ -20,7 +20,7 @@
 /turf/open/floor/iron,
 /area/centcom/basketball)
 "bA" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -32,13 +32,13 @@
 /area/centcom/basketball)
 "dr" = (
 /obj/structure/chair/sofa/right/maroon,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "dJ" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -47,7 +47,7 @@
 /obj/structure/chair/sofa/right/maroon{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "dS" = (
@@ -56,7 +56,7 @@
 "eU" = (
 /obj/structure/showcase/machinery/tv/broken,
 /obj/structure/table/wood,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/centcom/basketball)
 "fi" = (
 /obj/item/kirbyplants/random,
@@ -88,11 +88,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/centcom/basketball)
 "gq" = (
 /obj/structure/chair/sofa/right/maroon,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -113,23 +113,23 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/centcom/basketball)
 "ku" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "kT" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "ly" = (
 /obj/structure/chair/sofa/left/maroon,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -148,7 +148,7 @@
 /obj/structure/chair/sofa/right/maroon{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "my" = (
@@ -171,7 +171,7 @@
 /obj/structure/chair/sofa/left/maroon{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "qU" = (
@@ -190,7 +190,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "tX" = (
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/centcom/basketball)
 "vb" = (
 /obj/effect/turf_decal/tile/bar{
@@ -218,7 +218,7 @@
 	pixel_y = 12;
 	pixel_x = 10
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -296,7 +296,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/centcom/basketball)
 "Cw" = (
 /turf/closed/indestructible/fakeglass,
@@ -308,7 +308,7 @@
 /area/centcom/basketball)
 "CV" = (
 /obj/structure/chair/comfy/brown,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/centcom/basketball)
 "Dt" = (
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
@@ -322,7 +322,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/centcom/basketball)
 "Ev" = (
 /obj/effect/turf_decal/tile/bar{
@@ -352,11 +352,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/centcom/basketball)
 "JM" = (
 /obj/structure/chair/sofa/left/maroon,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -402,7 +402,7 @@
 "Ma" = (
 /obj/structure/table/wood,
 /obj/item/clothing/head/costume/foilhat,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/centcom/basketball)
 "MW" = (
 /obj/effect/turf_decal/tile/dark_blue/full,
@@ -415,7 +415,7 @@
 /obj/structure/chair/sofa/left/maroon{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -426,7 +426,7 @@
 /area/centcom/basketball)
 "PU" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /obj/item/storage/bag/tray,
@@ -463,7 +463,7 @@
 /turf/open/floor/iron,
 /area/centcom/basketball)
 "Qi" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -504,7 +504,7 @@
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "Xm" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
 "Xn" = (
@@ -524,7 +524,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/half,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/centcom/basketball)
 
 (1,1,1) = {"

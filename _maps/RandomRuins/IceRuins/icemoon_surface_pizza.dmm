@@ -124,7 +124,7 @@
 	name = "Kitchen"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/ruin/pizzeria/kitchen)
 "fo" = (
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden{
@@ -208,7 +208,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/ruin/pizzeria)
@@ -279,7 +279,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/ruin/pizzeria/kitchen)
 "jY" = (
 /obj/structure/cable,
@@ -331,7 +331,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 8
 	},
 /area/ruin/pizzeria)
@@ -574,7 +574,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 8
 	},
 /area/ruin/pizzeria)
@@ -598,7 +598,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/service/kitchen,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/ruin/pizzeria/kitchen)
 "AP" = (
 /obj/structure/table,
@@ -636,7 +636,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/ruin/pizzeria)
@@ -679,7 +679,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 8
 	},
 /area/ruin/pizzeria)
@@ -967,7 +967,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/ruin/pizzeria)
@@ -1179,7 +1179,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/pizzeria)
 "TK" = (
 /turf/open/misc/asteroid/snow/icemoon,

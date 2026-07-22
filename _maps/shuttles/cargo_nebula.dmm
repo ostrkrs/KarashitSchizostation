@@ -205,7 +205,7 @@
 /obj/effect/turf_decal/trimline/dark/warning{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron{

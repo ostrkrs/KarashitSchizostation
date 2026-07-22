@@ -1071,13 +1071,13 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/derelictoutpost)
 "iK" = (
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "ks" = (
 /obj/structure/table/reinforced,
 /obj/structure/window/reinforced/spawner/directional/north,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "lk" = (
@@ -1174,7 +1174,7 @@
 /obj/structure/table_frame,
 /obj/item/stack/sheet/iron,
 /obj/item/stack/sheet/plasteel,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "we" = (
@@ -1194,7 +1194,7 @@
 /area/ruin/space/has_grav/derelictoutpost)
 "ye" = (
 /obj/structure/filingcabinet,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
@@ -1255,7 +1255,7 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/table,
 /obj/machinery/recharger,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "DL" = (
@@ -1294,7 +1294,7 @@
 	name = "Security Checkpoint"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "Hc" = (
@@ -1351,7 +1351,7 @@
 	id = "bigderelictcheckpoint";
 	name = "security checkpoint control"
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "Pr" = (
@@ -1366,13 +1366,13 @@
 "PF" = (
 /obj/item/shard,
 /obj/structure/alien/weeds/creature,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "Qo" = (
 /obj/item/chair,
 /obj/structure/alien/weeds/creature,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "RH" = (
@@ -1397,7 +1397,7 @@
 /area/ruin/space/has_grav/derelictoutpost)
 "Ve" = (
 /obj/structure/alien/weeds/creature,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/derelictoutpost)
 "Vy" = (

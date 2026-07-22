@@ -136,13 +136,13 @@
 /area/shuttle/escape)
 "aF" = (
 /obj/structure/musician/piano,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "aG" = (
 /obj/structure/chair/stool/directional/west{
 	can_buckle = 1
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "aH" = (
 /obj/machinery/flasher/directional/west{
@@ -231,7 +231,7 @@
 /area/shuttle/escape)
 "aW" = (
 /obj/structure/chair/wood,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "aX" = (
 /mob/living/basic/drone/snowflake/bardrone,
@@ -247,12 +247,12 @@
 /obj/structure/chair/wood{
 	dir = 4
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "ba" = (
 /obj/structure/table/wood/shuttle_bar,
 /obj/effect/spawner/random/entertainment/gambling,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "bd" = (
 /obj/structure/table/wood/shuttle_bar{
@@ -367,9 +367,6 @@
 /obj/machinery/power/shuttle_engine/propulsion,
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
-"bH" = (
-/turf/open/floor/iron/grimy,
-/area/shuttle/escape)
 "bI" = (
 /obj/structure/table/wood/shuttle_bar,
 /obj/item/instrument/guitar,
@@ -379,23 +376,17 @@
 "bJ" = (
 /obj/structure/table/wood/shuttle_bar,
 /obj/item/storage/fancy/donut_box,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "bK" = (
 /obj/structure/chair/wood{
 	dir = 8
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "bL" = (
 /obj/structure/table/wood/shuttle_bar,
-/turf/open/floor/iron/grimy,
-/area/shuttle/escape)
-"bM" = (
-/obj/structure/chair/comfy/brown{
-	dir = 8
-	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "bN" = (
 /obj/structure/table,
@@ -408,7 +399,7 @@
 "bO" = (
 /obj/structure/table/wood/shuttle_bar,
 /obj/item/folder/red,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "bP" = (
 /obj/structure/table/wood/shuttle_bar,
@@ -416,13 +407,13 @@
 /obj/item/toy/cards/deck/cas/black{
 	pixel_y = 6
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "bQ" = (
 /obj/structure/chair/wood{
 	dir = 1
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "bR" = (
 /obj/structure/extinguisher_cabinet/directional/south,
@@ -459,7 +450,7 @@
 /area/shuttle/escape)
 "bW" = (
 /obj/machinery/light/small/directional/east,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "ca" = (
 /obj/machinery/light/directional/south,
@@ -489,7 +480,7 @@
 /area/shuttle/escape)
 "zw" = (
 /obj/machinery/light/small/directional/west,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "EL" = (
 /obj/machinery/status_display/evac/directional/south,
@@ -522,7 +513,7 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 
 (1,1,1) = {"
@@ -610,7 +601,7 @@ ab
 aE
 aW
 bJ
-bM
+am
 bP
 bQ
 aE
@@ -632,11 +623,11 @@ aJ
 ac
 ae
 aE
-bH
+an
 bK
-bH
+an
 bK
-bH
+an
 EL
 ab
 bp
@@ -724,7 +715,7 @@ ap
 au
 ab
 aF
-bH
+an
 aP
 aE
 aE

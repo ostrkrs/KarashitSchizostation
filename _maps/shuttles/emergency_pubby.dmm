@@ -61,7 +61,7 @@
 "ap" = (
 /obj/structure/chair/comfy,
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -76,7 +76,7 @@
 /turf/open/floor/carpet/black,
 /area/shuttle/escape)
 "at" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -95,7 +95,7 @@
 /obj/structure/chair/comfy{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -114,7 +114,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -124,7 +124,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aC" = (
@@ -132,14 +132,14 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aD" = (
 /obj/structure/chair/comfy{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -148,7 +148,7 @@
 /obj/structure/chair/comfy{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aH" = (
@@ -162,20 +162,20 @@
 /area/shuttle/escape)
 "aJ" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aL" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aM" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -183,7 +183,7 @@
 "aN" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/cup/glass/bottle/wine,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -193,7 +193,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -203,7 +203,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aQ" = (
@@ -211,11 +211,11 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aR" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -224,7 +224,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -233,7 +233,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "aV" = (
@@ -452,7 +452,7 @@
 	pixel_x = -3;
 	pixel_y = 3
 	},
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -462,7 +462,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
@@ -471,7 +471,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
@@ -505,7 +505,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -514,7 +514,7 @@
 /obj/machinery/light/directional/east,
 /obj/structure/window/reinforced/spawner/directional/south,
 /obj/item/kirbyplants/organic/plant11,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "nK" = (
@@ -522,7 +522,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /obj/machinery/light/directional/west,
@@ -532,7 +532,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "wZ" = (
@@ -547,7 +547,7 @@
 /obj/structure/chair/comfy{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Lu" = (
@@ -556,7 +556,7 @@
 "Pb" = (
 /obj/structure/chair/comfy,
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,

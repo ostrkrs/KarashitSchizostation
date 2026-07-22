@@ -92,7 +92,7 @@
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "eU" = (
-/obj/effect/turf_decal/tile/dark_green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -131,7 +131,7 @@
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "gk" = (
-/obj/effect/turf_decal/tile/dark_green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_green/anticorner{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -224,10 +224,10 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "mp" = (
-/obj/effect/turf_decal/tile/dark_green/half/contrasted{
+/obj/effect/turf_decal/tile/dark_green/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/wood,
@@ -270,8 +270,8 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "oR" = (
-/obj/effect/turf_decal/tile/dark_green/half/contrasted,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/dark_green/half,
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -281,10 +281,10 @@
 /turf/open/floor/carpet/red,
 /area/centcom/basketball)
 "qU" = (
-/obj/effect/turf_decal/tile/dark_green/half/contrasted{
+/obj/effect/turf_decal/tile/dark_green/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -318,7 +318,7 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "su" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "tO" = (
@@ -552,7 +552,7 @@
 /turf/open/floor/wood/parquet,
 /area/centcom/basketball)
 "Lu" = (
-/obj/effect/turf_decal/tile/dark_green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_green/anticorner,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "LI" = (
@@ -561,10 +561,10 @@
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "LS" = (
-/obj/effect/turf_decal/tile/dark_green/half/contrasted{
+/obj/effect/turf_decal/tile/dark_green/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "LU" = (
@@ -743,7 +743,7 @@
 /turf/closed/wall/mineral/wood/nonmetal,
 /area/centcom/basketball)
 "Xm" = (
-/obj/effect/turf_decal/tile/dark_green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/wood,
@@ -773,7 +773,7 @@
 "YX" = (
 /obj/item/toy/basketball,
 /obj/effect/turf_decal/trimline/dark_green,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/wood,
 /area/centcom/basketball)
 "ZM" = (

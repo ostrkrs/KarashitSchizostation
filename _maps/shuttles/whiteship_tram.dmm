@@ -572,7 +572,7 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 1
 	},
 /area/shuttle/abandoned/cargo)
@@ -723,7 +723,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 1
 	},
 /area/shuttle/abandoned/bridge)
@@ -913,7 +913,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 1
 	},
 /area/shuttle/abandoned/crew)
@@ -1192,7 +1192,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 1
 	},
 /area/shuttle/abandoned/crew)
@@ -1451,7 +1451,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/structure/cable,
 /obj/machinery/light/broken/directional/north,
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 1
 	},
 /area/shuttle/abandoned/bridge)

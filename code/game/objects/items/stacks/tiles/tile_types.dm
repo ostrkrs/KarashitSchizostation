@@ -123,8 +123,8 @@
 
 //Wood
 /obj/item/stack/tile/wood
-	name = "wood floor tile"
-	singular_name = "wood floor tile"
+	name = "walnut floor tile"
+	singular_name = "walnut floor tile"
 	desc = "An easy to fit wood floor tile. Use while in your hand to change what pattern you want."
 	icon_state = "tile_wood"
 	inhand_icon_state = "tile-wood"
@@ -140,22 +140,22 @@
 	)
 
 /obj/item/stack/tile/wood/parquet
-	name = "parquet wood floor tile"
-	singular_name = "parquet wood floor tile"
+	name = "parquet walnut floor tile"
+	singular_name = "parquet walnut floor tile"
 	icon_state = "tile_wood_parquet"
 	turf_type = /turf/open/floor/wood/parquet
 	merge_type = /obj/item/stack/tile/wood/parquet
 
 /obj/item/stack/tile/wood/large
-	name = "large wood floor tile"
-	singular_name = "large wood floor tile"
+	name = "large walnut floor tile"
+	singular_name = "large walnut floor tile"
 	icon_state = "tile_wood_large"
 	turf_type = /turf/open/floor/wood/large
 	merge_type = /obj/item/stack/tile/wood/large
 
 /obj/item/stack/tile/wood/tile
-	name = "tiled wood floor tile"
-	singular_name = "tiled wood floor tile"
+	name = "tiled walnut floor tile"
+	singular_name = "tiled walnut floor tile"
 	icon_state = "tile_wood_tile"
 	turf_type = /turf/open/floor/wood/tile
 	merge_type = /obj/item/stack/tile/wood/tile

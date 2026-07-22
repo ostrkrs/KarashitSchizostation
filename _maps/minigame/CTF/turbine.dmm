@@ -21,13 +21,13 @@
 	dir = 4;
 	resistance_flags = 115
 	},
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/centcom/ctf)
 "dx" = (
 /obj/structure/shipping_container/nanotrasen{
 	resistance_flags = 115
 	},
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/centcom/ctf)
 "eW" = (
 /turf/open/floor/iron/stairs/medium{
@@ -117,7 +117,7 @@
 	},
 /area/centcom/ctf)
 "no" = (
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/centcom/ctf)
 "nJ" = (
 /obj/structure/railing{
@@ -153,7 +153,7 @@
 /turf/open/floor/iron/stairs/left,
 /area/centcom/ctf)
 "tr" = (
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/centcom/ctf)
 "tO" = (
 /obj/structure/railing{
@@ -207,7 +207,7 @@
 /obj/structure/table/wood{
 	resistance_flags = 115
 	},
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/centcom/ctf)
 "ya" = (
 /obj/effect/turf_decal/tile/dark/half{
@@ -222,7 +222,7 @@
 /obj/structure/chair/comfy/teal{
 	resistance_flags = 115
 	},
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/centcom/ctf)
 "ys" = (
 /turf/open/floor/iron/stairs/right,
@@ -292,7 +292,7 @@
 	dir = 8;
 	resistance_flags = 115
 	},
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/centcom/ctf)
 "Cj" = (
 /obj/structure/railing{
@@ -342,7 +342,7 @@
 	dir = 1;
 	resistance_flags = 115
 	},
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/centcom/ctf)
 "Ga" = (
 /obj/structure/trap/ctf/blue,
@@ -511,7 +511,7 @@
 /obj/structure/shipping_container/gorlex/red{
 	resistance_flags = 115
 	},
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/centcom/ctf)
 "QU" = (
 /obj/effect/turf_decal/stripes,

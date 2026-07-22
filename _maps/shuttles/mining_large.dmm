@@ -10,7 +10,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/emergency,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
+/obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -18,20 +18,20 @@
 "d" = (
 /obj/machinery/computer/shuttle/mining,
 /obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/brown/half/contrasted,
+/obj/effect/turf_decal/tile/brown/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "e" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/mask/gas,
 /obj/item/tank/internals/emergency_oxygen,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted,
+/obj/effect/turf_decal/tile/brown/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "f" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
+/obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -41,7 +41,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
@@ -52,7 +52,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "i" = (
@@ -60,7 +60,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/brown{
@@ -78,7 +78,7 @@
 	pixel_x = -2;
 	pixel_y = -8
 	},
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
+/obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -91,13 +91,13 @@
 /obj/item/folder/yellow,
 /obj/item/pen,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted,
+/obj/effect/turf_decal/tile/brown/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "m" = (
 /obj/effect/turf_decal/stripes/white/corner,
 /obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/brown{
@@ -107,7 +107,7 @@
 /area/shuttle/mining/large)
 "n" = (
 /obj/effect/turf_decal/stripes/white/line,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "o" = (
@@ -119,7 +119,7 @@
 	pixel_y = -29
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown,
@@ -132,7 +132,7 @@
 /obj/item/screwdriver{
 	pixel_y = 18
 	},
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
+/obj/effect/turf_decal/tile/brown/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -145,7 +145,7 @@
 /obj/machinery/door/airlock/mining{
 	name = "Mining Shuttle Cockpit"
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "s" = (
@@ -242,7 +242,7 @@
 /obj/effect/turf_decal/stripes/white/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "v" = (
@@ -274,7 +274,7 @@
 "z" = (
 /obj/effect/turf_decal/stripes/white/line,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "A" = (

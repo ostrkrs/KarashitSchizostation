@@ -82,7 +82,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
 /obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -94,7 +94,7 @@
 /obj/machinery/light/small/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -114,18 +114,18 @@
 /obj/machinery/computer/camera_advanced/shuttle_docker/caravan/syndicate3{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "iN" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "kc" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "kk" = (
@@ -251,7 +251,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -260,14 +260,14 @@
 /obj/machinery/computer/shuttle/caravan/syndicate3{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "GU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "HI" = (
@@ -294,7 +294,7 @@
 /turf/open/floor/plating,
 /area/shuttle/ruin/caravan/syndicate3)
 "Ib" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -318,7 +318,7 @@
 	specialfunctions = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/turf_decal/tile/red/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "Jv" = (
@@ -365,7 +365,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "Mc" = (
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "Nn" = (
@@ -405,13 +405,13 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "RT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -426,7 +426,7 @@
 	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/ruin/caravan/syndicate3)
 "Te" = (
@@ -462,7 +462,7 @@
 /obj/item/storage/medkit/regular,
 /obj/item/assembly/flash/handheld,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,

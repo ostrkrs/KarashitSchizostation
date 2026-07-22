@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
@@ -38,7 +38,7 @@
 /turf/open/floor/iron/dark/textured_half,
 /area/template_noop)
 "g" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/spawner/random/trash/mess,
@@ -46,7 +46,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "h" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/machinery/door/airlock/grunge{
@@ -63,10 +63,10 @@
 /turf/open/floor/plating,
 /area/template_noop)
 "j" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/structure/railing{
 	dir = 8
 	},
@@ -75,7 +75,7 @@
 	},
 /area/template_noop)
 "k" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -89,10 +89,10 @@
 /turf/open/floor/iron/dark/textured_half,
 /area/template_noop)
 "m" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/effect/turf_decal/siding/dark/corner,
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
 	dir = 8
 	},
@@ -110,7 +110,7 @@
 /obj/effect/spawner/random/medical/memeorgans{
 	spawn_loot_count = 1
 	},
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/template_noop)
 "o" = (
 /obj/structure/bodycontainer/morgue{
@@ -130,14 +130,14 @@
 /obj/effect/spawner/random/medical/patient_stretcher,
 /obj/machinery/iv_drip,
 /obj/machinery/light/small/blacklight/directional/east,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/template_noop)
 "r" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/effect/spawner/random/medical/memeorgans,
 /obj/structure/railing{
 	dir = 4
@@ -152,8 +152,8 @@
 /turf/open/floor/iron/dark/textured_half,
 /area/template_noop)
 "t" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/broken_floor,
@@ -191,7 +191,7 @@
 /turf/open/floor/iron/dark/textured_half,
 /area/template_noop)
 "z" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/machinery/computer/operating,
@@ -233,7 +233,7 @@
 /turf/open/floor/plating,
 /area/template_noop)
 "D" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/corner{
@@ -247,7 +247,7 @@
 /area/template_noop)
 "E" = (
 /obj/structure/sign/poster/official/random/directional/east,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/template_noop)
 "F" = (
 /obj/structure/bodycontainer/morgue{
@@ -259,7 +259,7 @@
 	},
 /area/template_noop)
 "G" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/neutral/filled/line{
@@ -268,11 +268,11 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "H" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /obj/effect/mob_spawn/corpse/human/assistant,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/iron/dark,
@@ -285,7 +285,7 @@
 /turf/open/floor/plating,
 /area/template_noop)
 "J" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/spawner/random/trash/mess,
 /turf/open/floor/iron/dark,
@@ -298,7 +298,7 @@
 /obj/structure/chair/office/tactical{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /turf/open/floor/iron/dark/textured_edge{
 	dir = 1
 	},
@@ -339,8 +339,8 @@
 	},
 /area/template_noop)
 "R" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/spawner/random/medical/surgery_tool_advanced,
@@ -357,7 +357,7 @@
 	},
 /area/template_noop)
 "T" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/structure/table/reinforced/plastitaniumglass,

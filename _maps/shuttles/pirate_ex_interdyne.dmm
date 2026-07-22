@@ -18,7 +18,7 @@
 	pixel_y = -24;
 	req_access = null
 	},
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -29,7 +29,7 @@
 	name = "Bridge Bolt Control";
 	specialfunctions = 4
 	},
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
@@ -50,8 +50,8 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -63,7 +63,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "ak" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -90,14 +90,14 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ap" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /obj/machinery/chem_master,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ar" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/item/stack/sheet/mineral/phoron/five,
 /obj/item/stack/sheet/mineral/phoron/five,
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -111,7 +111,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "av" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 4
 	},
 /obj/machinery/door/window/brigdoor/right/directional/west{
@@ -121,7 +121,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "aw" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /obj/machinery/chem_heater,
@@ -134,7 +134,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ay" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /obj/structure/extinguisher_cabinet/directional/east,
@@ -145,7 +145,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "aC" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/mob_spawn/ghost_role/human/pirate/interdyne/junior{
 	dir = 8
@@ -158,7 +158,7 @@
 	start_charge = 100
 	},
 /obj/effect/mapping_helpers/apc/cut_AI_wire,
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
@@ -175,7 +175,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "aG" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /obj/machinery/piratepad,
@@ -241,7 +241,7 @@
 	width = 100
 	},
 /obj/effect/mapping_helpers/airlock/cutaiwire,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /obj/structure/fans/tiny,
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/iron/dark,
@@ -253,14 +253,14 @@
 	req_access = null
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/structure/fans/tiny,
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "aM" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -278,7 +278,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "aQ" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 4
 	},
 /obj/machinery/chem_dispenser/fullupgrade,
@@ -302,14 +302,14 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "be" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /obj/machinery/computer/pandemic,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bf" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 8
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -317,7 +317,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bk" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /obj/machinery/suit_storage_unit/interdyne,
@@ -325,7 +325,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bl" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/storage/box/syndie_kit/tuberculosisgrenade,
 /obj/machinery/light/small/blacklight/directional/south,
@@ -337,7 +337,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bo" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/medbeam,
 /obj/item/gun/syringe/rapidsyringe,
@@ -348,7 +348,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "br" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /obj/machinery/suit_storage_unit/interdyne,
 /obj/item/screwdriver/nuke,
 /turf/open/floor/iron/dark,
@@ -359,7 +359,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bv" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /obj/structure/window/reinforced,
@@ -371,7 +371,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bx" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/dark_blue,
@@ -379,14 +379,14 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bA" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bB" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/dark_blue{
@@ -403,7 +403,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bF" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 8
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -416,21 +416,21 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bH" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /obj/machinery/vending/drugs{
 	name = "\improper SyndicateDrug Plus"
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bK" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /obj/machinery/smartfridge/chemistry/virology/preloaded,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "bQ" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 4
 	},
 /obj/machinery/suit_storage_unit/interdyne,
@@ -458,7 +458,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ep" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 8
 	},
 /obj/machinery/computer/piratepad_control{
@@ -467,7 +467,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ey" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 8
 	},
 /obj/effect/mob_spawn/ghost_role/human/pirate/interdyne/junior{
@@ -476,7 +476,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "eE" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /obj/machinery/door/window/brigdoor/right/directional/south{
@@ -495,14 +495,14 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "fY" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "gY" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /obj/structure/window/reinforced,
@@ -533,7 +533,7 @@
 	normaldoorcontrol = 1;
 	specialfunctions = 4
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/effect/mob_spawn/ghost_role/human/pirate/interdyne/senior{
 	dir = 1
 	},
@@ -545,23 +545,23 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "jY" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "lW" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "mD" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "mU" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "ne" = (
@@ -599,7 +599,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "vB" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -618,7 +618,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "wf" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/stack/sheet/mineral/phoron,
 /obj/item/stack/sheet/mineral/phoron,
@@ -680,7 +680,7 @@
 	name = "Bridge";
 	req_access = null
 	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/iron/dark,
@@ -730,12 +730,12 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/pirate)
 "GS" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Hg" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/structure/closet/l3closet/virology,
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/iron/dark,
@@ -750,7 +750,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/pirate)
 "JT" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -774,7 +774,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "OL" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/machinery/vending/medical/syndicate,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
@@ -788,7 +788,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/pirate)
 "Rq" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /obj/machinery/light/no_nightlight/directional/north,
@@ -798,7 +798,7 @@
 /obj/machinery/door/airlock/hatch{
 	req_access = null
 	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
 /obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/iron/dark,
@@ -811,7 +811,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "Ur" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 8
 	},
 /obj/machinery/atmospherics/components/tank/air,

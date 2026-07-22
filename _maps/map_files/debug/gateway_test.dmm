@@ -3,12 +3,12 @@
 /turf/closed/indestructible/reinforced,
 /area/misc/testroom/gateway_room)
 "c" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/white/full,
 /turf/open/indestructible/dark,
 /area/misc/testroom/gateway_room)
 "d" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
 	},
@@ -38,7 +38,7 @@
 /turf/open/indestructible,
 /area/misc/testroom/gateway_room)
 "j" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/white/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 6
@@ -65,7 +65,7 @@
 /turf/open/indestructible,
 /area/misc/testroom/gateway_room)
 "n" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/white/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
@@ -73,7 +73,7 @@
 /turf/open/indestructible/dark,
 /area/misc/testroom/gateway_room)
 "p" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/white/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 10
@@ -82,7 +82,7 @@
 /turf/open/indestructible/dark,
 /area/misc/testroom/gateway_room)
 "q" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/white/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 8
@@ -101,7 +101,7 @@
 /turf/open/indestructible,
 /area/misc/testroom/gateway_room)
 "u" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/white/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
@@ -117,7 +117,7 @@
 /area/misc/testroom/gateway_room)
 "y" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
@@ -181,7 +181,7 @@
 /turf/open/indestructible,
 /area/misc/testroom/gateway_room)
 "J" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 1
 	},
@@ -224,7 +224,7 @@
 /turf/open/indestructible,
 /area/misc/testroom/gateway_room)
 "N" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/white/full,
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4

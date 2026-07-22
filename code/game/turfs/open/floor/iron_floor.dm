@@ -58,6 +58,11 @@
 	base_icon_state = "ridged"
 	floor_tile = /obj/item/stack/tile/iron/ridged
 
+/turf/open/floor/iron/grid
+	icon_state = "grid"
+	base_icon_state = "grid"
+	floor_tile = /obj/item/stack/tile/iron/grid
+
 /turf/open/floor/iron/textured
 	icon_state = "textured"
 	base_icon_state = "textured"
@@ -101,30 +106,55 @@
 	base_icon_state = "herringbone"
 	floor_tile = /obj/item/stack/tile/iron/herringbone
 
+/turf/open/floor/iron/industrial
+	icon_state = "industrial"
+	base_icon_state = "industrial"
+	floor_tile = /obj/item/stack/tile/iron/industrial
+
+/turf/open/floor/iron/industrial_edge
+	icon_state = "industrial_edge"
+	base_icon_state = "industrial_edge"
+	floor_tile = /obj/item/stack/tile/iron/industrial_edge
+
+/turf/open/floor/iron/industrial_half
+	icon_state = "industrial_half"
+	base_icon_state = "industrial_half"
+	floor_tile = /obj/item/stack/tile/iron/industrial_half
+
+/turf/open/floor/iron/industrial_corner
+	icon_state = "industrial_corner"
+	base_icon_state = "industrial_corner"
+	floor_tile = /obj/item/stack/tile/iron/industrial_corner
+
+/turf/open/floor/iron/industrial_large
+	icon_state = "industrial_large"
+	base_icon_state = "industrial_large"
+	floor_tile = /obj/item/stack/tile/iron/industrial_large
+
 /turf/open/floor/iron/dark
 	icon_state = "darkfull"
 	base_icon_state = "darkfull"
 	floor_tile = /obj/item/stack/tile/iron/dark
 
-/turf/open/floor/iron/dark/smooth_edge
+/turf/open/floor/iron/dark/edge
 	icon_state = "dark_edge"
 	base_icon_state = "dark_edge"
-	floor_tile = /obj/item/stack/tile/iron/dark/smooth_edge
+	floor_tile = /obj/item/stack/tile/iron/dark/edge
 
-/turf/open/floor/iron/dark/smooth_half
+/turf/open/floor/iron/dark/half
 	icon_state = "dark_half"
 	base_icon_state = "dark_half"
-	floor_tile = /obj/item/stack/tile/iron/dark/smooth_half
+	floor_tile = /obj/item/stack/tile/iron/dark/half
 
-/turf/open/floor/iron/dark/smooth_corner
+/turf/open/floor/iron/dark/corner
 	icon_state = "dark_corner"
 	base_icon_state = "dark_corner"
-	floor_tile = /obj/item/stack/tile/iron/dark/smooth_corner
+	floor_tile = /obj/item/stack/tile/iron/dark/corner
 
-/turf/open/floor/iron/dark/smooth_large
+/turf/open/floor/iron/dark/large
 	icon_state = "dark_large"
 	base_icon_state = "dark_large"
-	floor_tile = /obj/item/stack/tile/iron/dark/smooth_large
+	floor_tile = /obj/item/stack/tile/iron/dark/large
 
 /turf/open/floor/iron/dark/textured
 	icon_state = "textured_dark"
@@ -186,6 +216,11 @@
 	base_icon_state = "ridged_dark"
 	floor_tile = /obj/item/stack/tile/iron/dark/ridged
 
+/turf/open/floor/iron/dark/grid
+	icon_state = "grid_dark"
+	base_icon_state = "grid_dark"
+	floor_tile = /obj/item/stack/tile/iron/dark/grid
+
 /turf/open/floor/iron/dark/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
@@ -195,7 +230,7 @@
 /turf/open/floor/iron/dark/textured/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
-/turf/open/floor/iron/dark/smooth_large/airless
+/turf/open/floor/iron/dark/large/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
 /turf/open/floor/iron/white
@@ -203,25 +238,25 @@
 	base_icon_state = "white"
 	floor_tile = /obj/item/stack/tile/iron/white
 
-/turf/open/floor/iron/white/smooth_edge
+/turf/open/floor/iron/white/edge
 	icon_state = "white_edge"
 	base_icon_state = "white_edge"
-	floor_tile = /obj/item/stack/tile/iron/white/smooth_edge
+	floor_tile = /obj/item/stack/tile/iron/white/edge
 
-/turf/open/floor/iron/white/smooth_half
+/turf/open/floor/iron/white/half
 	icon_state = "white_half"
 	base_icon_state = "white_half"
-	floor_tile = /obj/item/stack/tile/iron/white/smooth_half
+	floor_tile = /obj/item/stack/tile/iron/white/half
 
-/turf/open/floor/iron/white/smooth_corner
+/turf/open/floor/iron/white/corner
 	icon_state = "white_corner"
 	base_icon_state = "white_corner"
-	floor_tile = /obj/item/stack/tile/iron/white/smooth_corner
+	floor_tile = /obj/item/stack/tile/iron/white/corner
 
-/turf/open/floor/iron/white/smooth_large
+/turf/open/floor/iron/white/large
 	icon_state = "white_large"
 	base_icon_state = "white_large"
-	floor_tile = /obj/item/stack/tile/iron/white/smooth_large
+	floor_tile = /obj/item/stack/tile/iron/white/large
 
 /turf/open/floor/iron/white/textured
 	icon_state = "textured_white"
@@ -273,18 +308,6 @@
 	icon_state = "ridged_white"
 	base_icon_state = "ridged_white"
 	floor_tile = /obj/item/stack/tile/iron/white/ridged
-
-/turf/open/floor/iron/recharge_floor
-	icon_state = "recharge_floor"
-	base_icon_state = "recharge_floor"
-	floor_tile = /obj/item/stack/tile/iron/recharge_floor
-
-/turf/open/floor/iron/recharge_floor/airless
-	initial_gas_mix = AIRLESS_ATMOS
-
-/turf/open/floor/iron/recharge_floor/asteroid
-	icon_state = "recharge_floor_asteroid"
-	base_icon_state = "recharge_floor_asteroid"
 
 /turf/open/floor/iron/smooth
 	icon_state = "smooth"
@@ -379,15 +402,6 @@
 /turf/open/floor/iron/showroomfloor/airless
 	initial_gas_mix = AIRLESS_ATMOS
 
-/turf/open/floor/iron/solarpanel
-	icon_state = "solarpanel"
-	base_icon_state = "solarpanel"
-	floor_tile = /obj/item/stack/tile/iron/solarpanel
-
-/turf/open/floor/iron/solarpanel/airless
-	initial_gas_mix = AIRLESS_ATMOS
-
-
 /turf/open/floor/iron/freezer
 	icon_state = "freezer"
 	base_icon_state = "freezer"
@@ -454,24 +468,10 @@
 	base_icon_state = "freezerfloor"
 	floor_tile = /obj/item/stack/tile/iron/freezer/alt
 
-/turf/open/floor/iron/grimy
-	icon_state = "grimy"
-	base_icon_state = "grimy"
-	tiled_dirt = FALSE
-	floor_tile = /obj/item/stack/tile/iron/grimy
-
 /turf/open/floor/iron/vaporwave
 	icon_state = "pinkblack"
 	base_icon_state = "pinkblack"
 	floor_tile = /obj/item/stack/tile/iron/vaporwave
-
-/turf/open/floor/iron/goonplaque
-	name = "commemorative plaque"
-	desc = "\"This is a plaque in honour of our comrades on the G4407 Stations. Hopefully TG4407 model can live up to your fame and fortune.\" Scratched in beneath that is a crude image of a meteor and a spaceman. The spaceman is laughing. The meteor is exploding."
-	icon_state = "plaque"
-	base_icon_state = "plaque"
-	tiled_dirt = FALSE
-	floor_tile = /obj/item/stack/tile/iron/goonplaque
 
 /turf/open/floor/iron/stairs
 	icon_state = "stairs"

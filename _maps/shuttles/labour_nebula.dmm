@@ -29,14 +29,14 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /obj/item/kirbyplants/organic/plant17,
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/smooth_corner{
+/turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
 /area/shuttle/labor)
@@ -196,14 +196,14 @@
 	dir = 10
 	},
 /obj/structure/railing,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 4
 	},
 /obj/structure/sign/poster/official/obey/directional/west,
-/turf/open/floor/iron/dark/smooth_corner{
+/turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
 /area/shuttle/labor)
@@ -212,16 +212,16 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_corner,
+/turf/open/floor/iron/dark/corner,
 /area/shuttle/labor)
 "F" = (
 /obj/effect/turf_decal/siding/dark_red/corner,
@@ -273,7 +273,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/dark,
@@ -287,7 +287,7 @@
 /obj/machinery/digital_clock/directional/north{
 	pixel_y = 24
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 1
 	},
 /area/shuttle/labor)
@@ -306,13 +306,13 @@
 	dir = 6
 	},
 /obj/structure/railing,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 6
 	},
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_corner{
+/turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
 /area/shuttle/labor)
@@ -330,7 +330,7 @@
 /area/shuttle/labor)
 "Z" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/trimline/dark,
 /obj/effect/turf_decal/trimline/dark/corner{
 	dir = 4
@@ -345,7 +345,7 @@
 /obj/structure/railing/corner/end{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_edge,
+/turf/open/floor/iron/dark/edge,
 /area/shuttle/labor)
 
 (1,1,1) = {"

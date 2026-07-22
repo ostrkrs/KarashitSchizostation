@@ -56,7 +56,7 @@
 /area/centcom/basketball)
 "oR" = (
 /obj/structure/cable,
-/turf/open/floor/iron/solarpanel{
+/turf/open/floor/plating{
 	underfloor_accessibility = 1
 	},
 /area/centcom/basketball)
@@ -83,7 +83,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "uH" = (
-/turf/open/floor/iron/solarpanel{
+/turf/open/floor/plating{
 	underfloor_accessibility = 1
 	},
 /area/centcom/basketball)
@@ -98,7 +98,7 @@
 /area/centcom/basketball)
 "yO" = (
 /obj/effect/landmark/basketball/team_spawn/home,
-/turf/open/floor/iron/solarpanel{
+/turf/open/floor/plating{
 	underfloor_accessibility = 1
 	},
 /area/centcom/basketball)
@@ -139,7 +139,7 @@
 "Gh" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable,
-/turf/open/floor/iron/solarpanel{
+/turf/open/floor/plating{
 	underfloor_accessibility = 1
 	},
 /area/centcom/basketball)
@@ -158,7 +158,7 @@
 /area/centcom/basketball)
 "MR" = (
 /obj/effect/landmark/basketball/team_spawn/away,
-/turf/open/floor/iron/solarpanel{
+/turf/open/floor/plating{
 	underfloor_accessibility = 1
 	},
 /area/centcom/basketball)
@@ -218,7 +218,7 @@
 "Vr" = (
 /obj/machinery/power/solar/fake,
 /obj/structure/cable,
-/turf/open/floor/iron/solarpanel{
+/turf/open/floor/plating{
 	underfloor_accessibility = 1
 	},
 /area/centcom/basketball)

@@ -9,7 +9,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "bx" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "bF" = (
@@ -37,7 +37,7 @@
 /obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 6
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "df" = (
@@ -57,7 +57,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "eF" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -195,7 +195,7 @@
 "iT" = (
 /obj/effect/turf_decal/stripes/white/line,
 /obj/effect/turf_decal/trimline/red/filled/warning,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "ja" = (
@@ -238,7 +238,7 @@
 /obj/effect/turf_decal/trimline/light_blue/filled/end{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "lL" = (
@@ -256,7 +256,7 @@
 /obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 5
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "oB" = (
@@ -293,7 +293,7 @@
 /obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "qL" = (
@@ -380,7 +380,7 @@
 /obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "vz" = (
@@ -423,7 +423,7 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "yV" = (
@@ -495,7 +495,7 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "BT" = (
@@ -513,7 +513,7 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "CH" = (
@@ -646,7 +646,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape)
 "GQ" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -691,7 +691,7 @@
 /obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Ji" = (
@@ -722,7 +722,7 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Kq" = (
@@ -816,7 +816,7 @@
 /turf/open/floor/mineral/titanium/purple,
 /area/shuttle/escape)
 "OK" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "OX" = (
@@ -842,7 +842,7 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 6
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Qy" = (
@@ -874,7 +874,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "SV" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -932,7 +932,7 @@
 "Ua" = (
 /obj/effect/turf_decal/stripes/white/line,
 /obj/effect/turf_decal/trimline/light_blue/filled/warning,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Uh" = (
@@ -945,14 +945,14 @@
 /obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "VX" = (
 /obj/effect/turf_decal/trimline/red/filled/end{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Wg" = (
@@ -962,7 +962,7 @@
 /obj/effect/turf_decal/trimline/red/filled/warning{
 	dir = 5
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "XF" = (

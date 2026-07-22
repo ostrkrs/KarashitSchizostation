@@ -65,7 +65,7 @@
 "s" = (
 /obj/structure/table,
 /obj/item/storage/medkit,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_3)
 "t" = (
@@ -74,14 +74,14 @@
 /area/ruin/powered/shuttle/medium_3)
 "z" = (
 /obj/machinery/sleeper,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_3)
 "A" = (
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_3)
 "C" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_3)
 "E" = (
@@ -99,16 +99,16 @@
 /obj/structure/chair/comfy{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_3)
 "K" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_3)
 "R" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_3)
 

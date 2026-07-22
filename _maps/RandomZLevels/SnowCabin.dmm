@@ -28,7 +28,7 @@
 	name = "The Most Annoying Organization Ever";
 	pixel_y = 32
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -827,7 +827,7 @@
 /area/awaymission/cabin/lumbermill)
 "eB" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -849,7 +849,7 @@
 /area/awaymission/cabin)
 "eP" = (
 /obj/structure/reagent_dispensers/wall/peppertank/directional/north,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -910,7 +910,7 @@
 /area/awaymission/cabin/lumbermill)
 "fg" = (
 /obj/structure/filingcabinet/security,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -920,7 +920,7 @@
 	desc = "Used to manage tracking implants placed inside criminals and the prison cells.";
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -929,21 +929,21 @@
 /obj/machinery/computer/records/security{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fl" = (
 /obj/structure/filingcabinet/security,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fm" = (
 /obj/structure/reagent_dispensers/wall/peppertank/directional/north,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -955,19 +955,19 @@
 	product_ads = "Sufficiently healthy.;Mmm! So good!;Have a meal.;You need food to live!";
 	product_slogans = "Enjoy your meal."
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fp" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fq" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -988,7 +988,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fu" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -1008,7 +1008,7 @@
 	name = "Grate";
 	pixel_y = -10
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -1035,17 +1035,17 @@
 /turf/open/floor/carpet,
 /area/awaymission/cabin/caves/mountain)
 "fM" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fN" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fO" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "fP" = (
@@ -1959,7 +1959,7 @@
 	set_luminosity = 6;
 	light_color = "#9bbbff"
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "jR" = (
@@ -2867,7 +2867,7 @@
 	name = "fun baton"
 	},
 /obj/structure/table,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "re" = (
@@ -2924,7 +2924,7 @@
 	start_showpiece_type = /obj/item/dice/d6/space;
 	desc = "Contains an artifact stolen from dice collector before he could enjoy his day."
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "st" = (
@@ -2991,7 +2991,7 @@
 /obj/item/clothing/under/rank/security/officer/spacepol{
 	desc = "Anyone enjoying their time while working in a megacorporation, planetary government, or band of pirates is under the jurisdiction of the fun police."
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "tc" = (
@@ -3006,7 +3006,7 @@
 /turf/open/floor/wood/freezing,
 /area/awaymission/cabin/snowforest)
 "td" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "te" = (
@@ -3028,7 +3028,7 @@
 	light_color = "#9bbbff"
 	},
 /obj/structure/sign/poster/official/space_cops/directional/north,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "tk" = (
@@ -3118,7 +3118,7 @@
 	icon_state = "seraph";
 	name = "illegally acquired seraph"
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "ue" = (
@@ -3555,7 +3555,7 @@
 	name = "easter egg"
 	},
 /obj/structure/table,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "yy" = (
@@ -3589,7 +3589,7 @@
 /obj/structure/sign/poster/contraband/free_drone{
 	desc = "This poster seems to be meant for a bunch of machines that used to be deployed on space stations."
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "yP" = (
@@ -3781,7 +3781,7 @@
 /area/awaymission/cabin/snowforest)
 "AC" = (
 /obj/structure/sign/poster/official/no_erp/directional/south,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "AD" = (
@@ -3976,7 +3976,7 @@
 	set_luminosity = 6;
 	light_color = "#9bbbff"
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -4273,7 +4273,7 @@
 	desc = "An open sleeper. It looks as though it would be awaiting another patient.";
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "IX" = (
@@ -4445,7 +4445,7 @@
 	pixel_y = 32;
 	question = "We have a case of fun happening. Get out there and do your job."
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "KP" = (
@@ -4502,7 +4502,7 @@
 	anchored = 1;
 	force = 4
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "LG" = (
@@ -4715,7 +4715,7 @@
 /turf/open/floor/wood,
 /area/awaymission/cabin)
 "Pd" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "Pi" = (
@@ -4822,7 +4822,7 @@
 /turf/closed/wall/mineral/wood,
 /area/awaymission/cabin/snowforest)
 "QA" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/blue/full,
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
@@ -4832,7 +4832,7 @@
 	desc = "Don't try it.";
 	name = "\improper Nanotrasen Saber SMG"
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "QC" = (
@@ -4940,7 +4940,7 @@
 /area/awaymission/cabin/snowforest)
 "RY" = (
 /obj/structure/sign/poster/official/do_not_question/directional/east,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "Sb" = (
@@ -5044,7 +5044,7 @@
 	set_luminosity = 6;
 	light_color = "#9bbbff"
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "SQ" = (
@@ -5113,7 +5113,7 @@
 	anchored = 1;
 	desc = "He keeps breaking out somehow due to the help of cultists that utilize cargo shipments or atmospherical sabotage."
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "TG" = (
@@ -5147,7 +5147,7 @@
 	set_luminosity = 6;
 	light_color = "#9bbbff"
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "TK" = (
@@ -5226,7 +5226,7 @@
 	set_luminosity = 6;
 	light_color = "#9bbbff"
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/cabin/caves/mountain)
 "UG" = (
@@ -5319,7 +5319,7 @@
 	desc = "An ancient canvas that was used to produce art so fine, the universe can't handle it!";
 	name = "Ancient Canvas Art"
 	},
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible,
 /area/awaymission/cabin/caves/mountain)
 "Wg" = (

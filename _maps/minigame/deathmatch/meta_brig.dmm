@@ -14,7 +14,7 @@
 	pixel_x = -3;
 	pixel_y = 2
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "al" = (
 /obj/structure/marker_beacon/burgundy,
@@ -282,7 +282,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "eT" = (
 /obj/effect/turf_decal/tile/red{
@@ -386,7 +386,7 @@
 /area/deathmatch)
 "gI" = (
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "hi" = (
 /turf/open/floor/plating,
@@ -650,7 +650,7 @@
 /area/deathmatch)
 "lC" = (
 /obj/structure/filingcabinet,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "lT" = (
 /obj/machinery/button/flasher{
@@ -1108,7 +1108,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "qy" = (
 /obj/structure/table,
@@ -1175,7 +1175,7 @@
 /area/deathmatch)
 "sg" = (
 /obj/machinery/light/small/directional/south,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "sr" = (
 /obj/structure/cable,
@@ -1707,7 +1707,7 @@
 /area/deathmatch)
 "zq" = (
 /obj/structure/window/reinforced/spawner/directional/north,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "zu" = (
 /obj/machinery/door/firedoor,
@@ -1779,7 +1779,7 @@
 /area/deathmatch)
 "As" = (
 /obj/machinery/vending/wardrobe/criminalist,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Ay" = (
 /obj/structure/table,
@@ -2137,7 +2137,7 @@
 "Fr" = (
 /obj/machinery/light/small/directional/south,
 /obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Fx" = (
 /obj/effect/turf_decal/trimline/light_blue/filled/line{
@@ -2539,7 +2539,7 @@
 /area/deathmatch)
 "Ks" = (
 /obj/effect/decal/cleanable/blood/oil/slippery,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Ku" = (
 /obj/structure/disposalpipe/segment{
@@ -2616,7 +2616,7 @@
 	pixel_x = 8;
 	pixel_y = -1
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Ma" = (
 /obj/effect/turf_decal/tile/red{
@@ -2643,7 +2643,7 @@
 	pixel_y = -1
 	},
 /obj/structure/table/wood,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Mx" = (
 /obj/structure/table,
@@ -2826,7 +2826,7 @@
 /obj/machinery/door/airlock/security/glass{
 	name = "Security Airlock"
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Pj" = (
 /obj/machinery/door/firedoor,
@@ -2856,9 +2856,6 @@
 	pixel_y = 10
 	},
 /turf/open/indestructible/hotelwood,
-/area/deathmatch)
-"Pt" = (
-/turf/open/floor/iron/grimy,
 /area/deathmatch)
 "PM" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
@@ -2940,7 +2937,7 @@
 /obj/machinery/disposal/delivery_chute{
 	dir = 4
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Qz" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -2953,7 +2950,7 @@
 /area/deathmatch)
 "QG" = (
 /obj/machinery/door/window/left/directional/north,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "Rd" = (
 /obj/structure/cable,
@@ -3593,11 +3590,11 @@
 	},
 /obj/item/storage/box/evidence,
 /obj/item/flashlight/seclite,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "ZC" = (
 /obj/structure/chair,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/deathmatch)
 "ZF" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -4428,8 +4425,8 @@ Hz
 Ik
 Zv
 ad
-Pt
-Pt
+dp
+dp
 eD
 QG
 lC
@@ -4514,7 +4511,7 @@ Yh
 hS
 FY
 dp
-Pt
+dp
 du
 Zq
 Zq
@@ -4588,7 +4585,7 @@ Wg
 Yh
 mC
 Yh
-Pt
+dp
 ZC
 th
 Ux

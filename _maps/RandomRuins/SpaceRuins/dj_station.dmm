@@ -87,7 +87,7 @@
 "E" = (
 /obj/machinery/power/solar/fake,
 /obj/structure/cable,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/space/djstation/solars)
 "G" = (
 /obj/structure/cable,

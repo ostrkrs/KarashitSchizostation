@@ -54,7 +54,7 @@
 	pixel_y = 2
 	},
 /obj/item/lighter,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -82,7 +82,7 @@
 	},
 /obj/structure/sign/poster/contraband/ion_rifle/directional/north,
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark/textured_half,
 /area/shuttle/escape)
 "ct" = (
@@ -163,7 +163,7 @@
 /obj/machinery/computer/atmos_alert{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -204,7 +204,7 @@
 /area/shuttle/escape)
 "eY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/floor/iron/herringbone,
@@ -285,7 +285,7 @@
 /obj/item/flashlight/lantern{
 	pixel_y = 4
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -316,7 +316,7 @@
 /obj/item/flashlight/lantern{
 	pixel_y = 4
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -380,7 +380,7 @@
 /obj/machinery/door/airlock/security/glass{
 	name = "Escape Shuttle Brig"
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
@@ -432,7 +432,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/floor/iron/herringbone,
@@ -551,7 +551,7 @@
 /turf/open/floor/iron/smooth_half,
 /area/shuttle/escape)
 "kK" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/floor/iron/herringbone,
@@ -573,10 +573,6 @@
 	},
 /turf/open/water,
 /area/shuttle/escape)
-"kU" = (
-/obj/effect/turf_decal/plaque,
-/turf/open/floor/wood/large,
-/area/shuttle/escape)
 "ll" = (
 /obj/structure/railing/corner,
 /obj/effect/turf_decal/siding/dark/corner,
@@ -584,7 +580,7 @@
 /turf/open/floor/iron/dark/small,
 /area/shuttle/escape)
 "lF" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/structure/table/reinforced,
@@ -675,7 +671,7 @@
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -881,7 +877,7 @@
 /obj/structure/chair/pew/right{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -931,7 +927,7 @@
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "rR" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -959,7 +955,7 @@
 /turf/open/floor/stone,
 /area/shuttle/escape)
 "sI" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -1074,7 +1070,7 @@
 /turf/open/floor/catwalk_floor,
 /area/shuttle/escape)
 "vy" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/item/storage/fancy/cigarettes/cigars/cohiba,
@@ -1098,7 +1094,7 @@
 	},
 /area/shuttle/escape)
 "vI" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/small,
@@ -1116,7 +1112,7 @@
 "wi" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1151,7 +1147,7 @@
 /obj/structure/chair/pew/right{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -1177,7 +1173,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -1186,7 +1182,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark/textured_half,
 /area/shuttle/escape)
 "xS" = (
@@ -1341,7 +1337,7 @@
 /obj/item/storage/box/handcuffs{
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark/textured_half,
 /area/shuttle/escape)
@@ -1387,7 +1383,7 @@
 /area/shuttle/escape)
 "At" = (
 /obj/structure/table/wood,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -1489,7 +1485,7 @@
 /obj/machinery/computer/station_alert{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1533,7 +1529,7 @@
 /turf/open/floor/carpet/red,
 /area/shuttle/escape)
 "DE" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -1621,7 +1617,7 @@
 /obj/structure/table/reinforced{
 	color = "#c1b6a5"
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1753,17 +1749,17 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/dark/textured_half,
 /area/shuttle/escape)
 "GR" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "Hj" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/small,
@@ -1976,7 +1972,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/spirit_board,
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/iron/dark/herringbone,
@@ -2033,7 +2029,7 @@
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "LD" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2101,7 +2097,7 @@
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "Nm" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /mob/living/basic/bot/medbot,
@@ -2170,7 +2166,7 @@
 /obj/machinery/door/airlock/security/glass{
 	name = "Escape Shuttle Brig"
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
@@ -2208,7 +2204,7 @@
 /obj/item/modular_computer/laptop{
 	pixel_y = 1
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Pa" = (
@@ -2396,11 +2392,11 @@
 	pixel_x = -5;
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "SR" = (
-/obj/effect/turf_decal/siding/wideplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2609,7 +2605,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/escape)
 "Yh" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -3198,7 +3194,7 @@ mc
 rL
 CR
 wM
-kU
+AQ
 Bn
 bq
 zb

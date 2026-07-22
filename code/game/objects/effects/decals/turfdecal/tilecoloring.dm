@@ -2,7 +2,6 @@
 	name = "tile decal"
 	icon_state = "tile_corner"
 	layer = TURF_PLATING_DECAL_LAYER
-	alpha = 110
 	use_holiday_colors = TRUE
 
 /obj/effect/turf_decal/tile/neutral/tram
@@ -16,49 +15,52 @@
 ##path/half {\
 	icon_state = "tile_half";\
 }\
-##path/half/contrasted {\
-	icon_state = "tile_half_contrasted";\
+##path/half/smooth {\
+	icon_state = "tile_half_smooth";\
 }\
 ##path/anticorner {\
 	icon_state = "tile_anticorner";\
 }\
-##path/anticorner/contrasted {\
-	icon_state = "tile_anticorner_contrasted";\
-}\
-##path/fourcorners {\
-	icon_state = "tile_fourcorners";\
+##path/anticorner/smooth {\
+	icon_state = "tile_anticorner_smooth";\
 }\
 ##path/full {\
 	icon_state = "tile_full";\
 }\
+##path/full/smooth {\
+	icon_state = "tile_full_smooth";\
+}\
 ##path/diagonal_centre {\
 	icon_state = "diagonal_centre";\
+	alpha = 110;\
 }\
 ##path/diagonal_edge {\
 	icon_state = "diagonal_edge";\
+	alpha = 110;\
 }\
 ##path/tram {\
 	icon_state = "tile_tram";\
+	alpha = 110;\
 }
 
 /// Blue tiles
 /obj/effect/turf_decal/tile/blue
 	name = "blue tile decal"
-	color = "#4586af"
+	color = "#5990b3"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/blue)
 
 /// Light blue tiles
 /obj/effect/turf_decal/tile/light_blue
 	name = "light blue tile decal"
-	color = "#52B4E9"
+	color = "#6cbfec"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/light_blue)
 
 /// Dark blue tiles
 /obj/effect/turf_decal/tile/dark_blue
 	name = "dark blue tile decal"
-	color = "#486091"
+	color = "#566da0"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark_blue)
 
@@ -66,15 +68,23 @@ TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark_blue)
 
 /obj/effect/turf_decal/tile/green
 	name = "green tile decal"
-	color = "#9FED58"
+	color = "#599b59"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/green)
+
+/// Light green tiles
+
+/obj/effect/turf_decal/tile/light_green
+	name = "light green tile decal"
+	color = "#8fcc56"
+
+TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/light_green)
 
 /// Dark green tiles
 
 /obj/effect/turf_decal/tile/dark_green
 	name = "dark green tile decal"
-	color = "#439C1E"
+	color = "#4a8332"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark_green)
 
@@ -82,9 +92,17 @@ TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark_green)
 
 /obj/effect/turf_decal/tile/teal
 	name = "teal tile decal"
-	color = "#008080"
+	color = "#35aca2"
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/teal)
+
+/// Dark teal tiles
+
+/obj/effect/turf_decal/tile/dark_teal
+	name = "teal tile decal"
+	color = "#008080"
+
+TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark_teal)
 
 /// Yellow tiles
 
@@ -140,7 +158,6 @@ TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/brown)
 /obj/effect/turf_decal/tile/neutral
 	name = "neutral tile decal"
 	color = "#D4D4D4"
-	alpha = 50
 
 TILE_DECAL_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/neutral)
 
@@ -345,14 +362,12 @@ TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/brown)
 /// Neutral trimlines
 /obj/effect/turf_decal/trimline/neutral
 	color = "#D4D4D4"
-	alpha = 50
 
 TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/neutral)
 
 /// Tram trimlines
 /obj/effect/turf_decal/trimline/tram
 	color = "#D4D4D4"
-	alpha = 50
 
 TRIMLINE_SUBTYPE_HELPER(/obj/effect/turf_decal/trimline/tram)
 

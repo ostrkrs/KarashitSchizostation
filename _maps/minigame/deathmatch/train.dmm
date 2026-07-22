@@ -14,7 +14,7 @@
 /turf/open/floor/wood/tile,
 /area/deathmatch)
 "be" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -80,7 +80,7 @@
 /area/deathmatch)
 "dB" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/indestructible/plating,
@@ -109,7 +109,7 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "fJ" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -117,7 +117,7 @@
 /area/deathmatch)
 "gL" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /obj/effect/decal/fakelattice{
@@ -179,7 +179,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "jq" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -212,7 +212,7 @@
 /area/deathmatch)
 "lJ" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/indestructible/plating,
@@ -286,7 +286,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "qJ" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -384,7 +384,7 @@
 /area/deathmatch)
 "vl" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /obj/effect/decal/fakelattice{
@@ -418,7 +418,7 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "wv" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -440,7 +440,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "wR" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -528,7 +528,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Bx" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -648,7 +648,7 @@
 "Gl" = (
 /obj/structure/barricade/wooden/crude,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/indestructible/plating,
@@ -880,7 +880,7 @@
 "Xr" = (
 /obj/structure/barricade/wooden/crude,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/indestructible/plating,
@@ -909,7 +909,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Yi" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,

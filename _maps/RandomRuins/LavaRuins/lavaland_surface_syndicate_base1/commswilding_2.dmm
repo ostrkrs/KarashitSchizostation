@@ -51,13 +51,13 @@
 /obj/machinery/door/window/brigdoor/left/directional/south{
 	req_access = list("syndicate")
 	},
-/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/floor/circuit/green,
 /area/ruin/syndicate_lava_base/telecomms)
 "s" = (
 /obj/machinery/light/directional/west,
 /obj/structure/filingcabinet/medical,
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 6
 	},
 /turf/open/floor/circuit,
@@ -99,7 +99,7 @@
 /area/ruin/syndicate_lava_base/telecomms)
 "H" = (
 /obj/structure/filingcabinet/security,
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /obj/machinery/airalarm/directional/west,
@@ -125,7 +125,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,

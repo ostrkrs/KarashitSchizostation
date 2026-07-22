@@ -4,12 +4,12 @@
 /turf/open/floor/plating,
 /area/virtual_domain/safehouse)
 "b" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)
 "c" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -25,7 +25,7 @@
 /turf/closed/wall/mineral/titanium/overspace,
 /area/virtual_domain/safehouse)
 "l" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/stripes/line,
@@ -33,7 +33,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)
 "n" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
@@ -114,11 +114,11 @@
 /turf/closed/wall/mineral/titanium,
 /area/virtual_domain/safehouse)
 "H" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)
 "I" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -127,7 +127,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)
 "L" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
@@ -149,7 +149,7 @@
 /turf/open/floor/plating/airless,
 /area/virtual_domain/safehouse)
 "O" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
@@ -157,7 +157,7 @@
 /turf/open/floor/iron,
 /area/virtual_domain/safehouse)
 "U" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/decal/cleanable/dirt,

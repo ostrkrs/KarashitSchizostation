@@ -137,7 +137,7 @@
 /area/ruin/powered/mailroom)
 "nM" = (
 /obj/machinery/telecomms/relay/preset/mining,
-/obj/effect/turf_decal/siding/thinplating,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron,
 /area/ruin/powered/mailroom)
 "nS" = (
@@ -183,10 +183,6 @@
 /obj/machinery/modular_computer/preset/civilian{
 	dir = 8
 	},
-/turf/open/floor/carpet/green,
-/area/ruin/powered/mailroom)
-"tN" = (
-/obj/effect/turf_decal/plaque,
 /turf/open/floor/carpet/green,
 /area/ruin/powered/mailroom)
 "uA" = (
@@ -345,7 +341,7 @@
 /area/ruin/powered/mailroom)
 "MP" = (
 /obj/structure/filingcabinet,
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
@@ -378,7 +374,7 @@
 /area/ruin/powered/mailroom)
 "PO" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/siding/thinplating/corner,
+/obj/effect/turf_decal/siding/corner,
 /obj/item/paper/crumpled/fluff/poem,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/carpet/royalblack,
@@ -883,7 +879,7 @@ nS
 ms
 PO
 NN
-tN
+NN
 uI
 Rn
 PQ

@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "af" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -13,7 +13,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "ao" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/anticorner,
 /turf/open/floor/iron{
 	dir = 1
 	},
@@ -41,7 +41,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "bj" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -105,7 +105,7 @@
 	dir = 4
 	},
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -137,7 +137,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "eD" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -179,7 +179,7 @@
 /obj/machinery/computer/operating{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /obj/machinery/light/small/directional/south,
@@ -189,7 +189,7 @@
 /obj/machinery/door/airlock/grunge{
 	name = "Shuttle Medical Center"
 	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "gF" = (
@@ -278,7 +278,7 @@
 /obj/effect/turf_decal/stripes/red/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -348,7 +348,7 @@
 /area/shuttle/escape)
 "kh" = (
 /obj/item/radio/intercom/directional/north,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -364,7 +364,7 @@
 	},
 /area/shuttle/escape)
 "kt" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -372,7 +372,7 @@
 "kx" = (
 /obj/machinery/iv_drip,
 /obj/structure/bed/medical/emergency,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron{
 	dir = 1
@@ -398,7 +398,7 @@
 /obj/machinery/door/airlock/grunge{
 	name = "Secondary Chamber"
 	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "mb" = (
@@ -411,7 +411,7 @@
 "mc" = (
 /obj/structure/table/reinforced,
 /obj/item/borg_restart_board,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -432,7 +432,7 @@
 "mw" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -492,7 +492,7 @@
 /turf/open/space/basic,
 /area/shuttle/escape)
 "od" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -500,7 +500,7 @@
 	},
 /area/shuttle/escape)
 "oe" = (
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -523,7 +523,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "pb" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -589,7 +589,7 @@
 /area/shuttle/escape)
 "re" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /turf/open/floor/iron{
 	dir = 1
 	},
@@ -628,7 +628,7 @@
 "sp" = (
 /obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "sE" = (
@@ -672,7 +672,7 @@
 /area/shuttle/escape)
 "uF" = (
 /obj/structure/sign/departments/medbay/alt/directional/south,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -695,7 +695,7 @@
 /area/template_noop)
 "va" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -718,7 +718,7 @@
 	},
 /area/shuttle/escape)
 "vy" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -727,7 +727,7 @@
 /area/shuttle/escape)
 "vI" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -751,7 +751,7 @@
 /obj/machinery/recharger,
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/directional/east,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -762,7 +762,7 @@
 /obj/structure/table/reinforced,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/turf_decal/stripes/red/corner,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -799,14 +799,14 @@
 "zh" = (
 /obj/structure/closet/secure_closet/atmospherics,
 /obj/effect/decal/cleanable/phoron,
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/escape)
 "zP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -836,7 +836,7 @@
 "AS" = (
 /obj/structure/table/optable,
 /obj/effect/decal/cleanable/blood/splatter,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -858,7 +858,7 @@
 /area/shuttle/escape)
 "Cv" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -937,7 +937,7 @@
 	pixel_y = -26;
 	req_access = list("command")
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "ET" = (
@@ -969,7 +969,7 @@
 /obj/effect/spawner/surgery_tray/full{
 	pixel_x = 5
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -997,14 +997,14 @@
 /obj/structure/closet/crate/engineering,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/wrench/bolter,
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/escape)
 "Gt" = (
 /obj/machinery/recharge_station,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -1017,7 +1017,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "GA" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -1034,7 +1034,7 @@
 /obj/machinery/door/airlock/grunge{
 	name = "Central Entrance"
 	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Hu" = (
@@ -1051,7 +1051,7 @@
 /obj/item/reagent_containers/blood/universal{
 	pixel_x = 3
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -1067,14 +1067,14 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "In" = (
 /obj/machinery/wall_healer/free/directional/south,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -1175,7 +1175,7 @@
 	dir = 4
 	},
 /obj/item/radio/intercom/directional/west,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -1189,7 +1189,7 @@
 	pixel_y = 6;
 	req_access = list("command")
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -1222,7 +1222,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -1238,7 +1238,7 @@
 /area/shuttle/escape)
 "MA" = (
 /obj/machinery/wall_healer/free/directional/west,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -1249,14 +1249,14 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/iv_drip,
 /obj/structure/bed/medical/emergency,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/escape)
 "MK" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron{
 	dir = 1
@@ -1276,7 +1276,7 @@
 /area/shuttle/escape)
 "Nk" = (
 /obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Nx" = (
@@ -1323,13 +1323,13 @@
 /area/shuttle/escape)
 "OG" = (
 /obj/structure/table/optable,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "OY" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -1356,12 +1356,12 @@
 /area/shuttle/escape)
 "Qu" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Qv" = (
 /obj/item/radio/intercom/directional/east,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron{
@@ -1379,7 +1379,7 @@
 	name = "Secondary Chamber"
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "QL" = (
@@ -1392,7 +1392,7 @@
 "QP" = (
 /obj/structure/fireaxecabinet/directional/south,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Rj" = (
@@ -1405,7 +1405,7 @@
 /area/shuttle/escape)
 "RO" = (
 /obj/machinery/stasis,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /turf/open/floor/iron{
 	dir = 1
 	},
@@ -1428,7 +1428,7 @@
 /area/shuttle/escape)
 "SD" = (
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -1461,7 +1461,7 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "TQ" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -1476,7 +1476,7 @@
 /area/shuttle/escape)
 "Uq" = (
 /obj/item/radio/intercom/directional/north,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "UG" = (
@@ -1510,13 +1510,13 @@
 /obj/machinery/stasis{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/escape)
 "WI" = (
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "WN" = (
@@ -1528,7 +1528,7 @@
 /area/shuttle/escape/brig)
 "WO" = (
 /obj/effect/decal/cleanable/blood/splatter/oil,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -1548,13 +1548,13 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Xj" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted,
+/obj/effect/turf_decal/tile/dark_blue/half,
 /turf/open/floor/iron{
 	dir = 1
 	},
@@ -1574,7 +1574,7 @@
 /area/shuttle/escape)
 "XY" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Yk" = (
@@ -1611,7 +1611,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark_blue/fourcorners,
+/obj/effect/turf_decal/tile/dark_blue/full,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "ZZ" = (

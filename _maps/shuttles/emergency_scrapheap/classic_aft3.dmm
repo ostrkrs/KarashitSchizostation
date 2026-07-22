@@ -50,7 +50,7 @@
 "o" = (
 /obj/machinery/light/small/directional/north,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
@@ -124,7 +124,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
@@ -135,7 +135,7 @@
 /obj/effect/mob_spawn/corpse/human/damaged,
 /obj/structure/closet/crate/trashcart,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 6
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
@@ -231,7 +231,7 @@
 /obj/item/organ/tongue/lizard,
 /obj/item/organ/stomach,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,

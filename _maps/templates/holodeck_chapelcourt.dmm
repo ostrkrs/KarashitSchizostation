@@ -39,7 +39,7 @@
 /area/template_noop)
 "an" = (
 /obj/structure/table/wood,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "at" = (
@@ -114,7 +114,7 @@
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "aJ" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /turf/open/floor/holofloor/dark,
@@ -129,7 +129,7 @@
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "aP" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "aQ" = (
@@ -137,7 +137,7 @@
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "aR" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "aT" = (
@@ -159,11 +159,11 @@
 /obj/item/gavelblock,
 /obj/item/gavelhammer,
 /obj/structure/table/wood,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "aZ" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 8
 	},
 /turf/open/floor/holofloor/dark,
@@ -172,31 +172,31 @@
 /obj/item/clothing/suit/costume/judgerobe,
 /obj/item/clothing/head/costume/powdered_wig,
 /obj/structure/table/wood/fancy,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "hg" = (
 /obj/structure/table/wood/fancy,
 /obj/item/book/manual/wiki/security_corp_law,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "hE" = (
 /obj/item/clothing/suit/chaplainsuit/bishoprobe,
 /obj/structure/table/wood/fancy,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "kv" = (
 /obj/structure/table/wood/fancy,
 /obj/item/book/bible,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "oy" = (
 /obj/item/clothing/head/helmet/chaplain/witchunter_hat,
 /obj/structure/table/wood/fancy,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "vi" = (
@@ -204,17 +204,17 @@
 /obj/item/clothing/suit/chaplainsuit/nun,
 /obj/item/clothing/head/chaplain/nun_hood,
 /obj/item/clothing/suit/chaplainsuit/holidaypriest,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "FR" = (
 /obj/item/toy/figure/chaplain,
 /obj/structure/table/wood/fancy,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/holofloor/dark,
 /area/template_noop)
 "Kk" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/holofloor/dark,

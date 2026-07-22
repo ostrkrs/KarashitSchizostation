@@ -79,13 +79,10 @@
 "s" = (
 /turf/open/floor/fakespace,
 /area/centcom/mafia)
-"t" = (
-/turf/open/floor/iron/solarpanel,
-/area/centcom/mafia)
 "u" = (
 /obj/effect/baseturf_helper/asteroid,
 /obj/effect/landmark/mafia/town_center,
-/turf/open/floor/iron/solarpanel,
+/turf/open/floor/plating,
 /area/centcom/mafia)
 "v" = (
 /obj/mafia_game_board,
@@ -358,7 +355,7 @@ q
 m
 p
 s
-t
+d
 s
 p
 n
@@ -382,9 +379,9 @@ p
 b
 p
 p
-t
+d
 u
-t
+d
 p
 p
 b
@@ -408,7 +405,7 @@ r
 n
 p
 s
-t
+d
 s
 p
 m

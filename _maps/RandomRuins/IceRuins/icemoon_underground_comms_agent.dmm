@@ -114,7 +114,7 @@
 /turf/open/floor/iron,
 /area/ruin/comms_agent)
 "hW" = (
-/obj/effect/turf_decal/siding/wideplating/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /obj/structure/cable,
@@ -127,7 +127,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "ij" = (
-/obj/effect/turf_decal/siding/wideplating/light/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -354,7 +354,7 @@
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "vK" = (
-/obj/effect/turf_decal/siding/wideplating/light,
+/obj/effect/turf_decal/siding/white,
 /obj/machinery/computer/arcade/orion_trail,
 /turf/open/floor/wood,
 /area/ruin/comms_agent)
@@ -436,7 +436,7 @@
 /turf/open/misc/asteroid/snow/standard_air,
 /area/ruin/comms_agent)
 "Ac" = (
-/obj/effect/turf_decal/siding/wideplating/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /obj/structure/table,

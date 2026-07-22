@@ -737,7 +737,7 @@
 /area/shuttle/escape)
 "we" = (
 /obj/machinery/computer/slot_machine,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/floor/carpet/green,
@@ -1101,7 +1101,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "Lb" = (
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 4
 	},
 /turf/open/floor/carpet/green,
@@ -1173,7 +1173,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Nw" = (
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
@@ -1190,7 +1190,7 @@
 /area/shuttle/escape)
 "NN" = (
 /obj/structure/chair/stool/directional/north,
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 1
 	},
 /turf/open/floor/carpet/green,
@@ -1200,7 +1200,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
 "NV" = (
-/obj/effect/turf_decal/siding/thinplating/corner,
+/obj/effect/turf_decal/siding/corner,
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
 "Oa" = (
@@ -1221,7 +1221,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Pb" = (
-/obj/effect/turf_decal/siding/thinplating,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
 "Pf" = (
@@ -1235,7 +1235,7 @@
 /obj/machinery/recharge_station,
 /obj/effect/turf_decal/delivery,
 /obj/structure/sign/poster/random/directional/west,
-/turf/open/floor/iron/recharge_floor,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "Pu" = (
 /obj/structure/table/wood,
@@ -1254,7 +1254,7 @@
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
 "PM" = (
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/structure/window/reinforced/tinted/spawner/directional/west,
@@ -1374,7 +1374,7 @@
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "Xl" = (
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/floor/carpet/green,

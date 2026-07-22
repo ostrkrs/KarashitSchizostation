@@ -77,19 +77,19 @@
 /area/deathmatch)
 "dw" = (
 /obj/structure/closet/crate/cardboard,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/item/mail/junkmail,
 /obj/item/ammo_casing/c357,
 /obj/item/reagent_containers/syringe/phoron,
 /turf/open/indestructible,
 /area/deathmatch)
 "dF" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/effect/turf_decal/delivery,
 /turf/open/indestructible,
 /area/deathmatch)
 "dV" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/stack/medical/mesh,
 /turf/open/indestructible/white,
@@ -120,7 +120,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "eV" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/epinephrine,
 /turf/open/indestructible/white,
@@ -157,7 +157,7 @@
 /area/deathmatch)
 "gf" = (
 /obj/structure/closet/crate/cardboard,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/effect/turf_decal/delivery,
 /obj/item/mail/junkmail,
 /obj/effect/spawner/random/maintenance,
@@ -183,7 +183,7 @@
 /area/deathmatch)
 "gR" = (
 /obj/structure/closet/crate/large,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/effect/turf_decal/delivery,
 /obj/item/mail/junkmail,
 /obj/item/stack/cable_coil,
@@ -302,7 +302,7 @@
 /turf/open/indestructible/white,
 /area/deathmatch)
 "mz" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/contraband/morphine,
 /turf/open/indestructible/white,
@@ -352,7 +352,7 @@
 /area/deathmatch)
 "oL" = (
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/effect/spawner/random/medical/surgery_tool,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -427,11 +427,11 @@
 /area/deathmatch)
 "rj" = (
 /obj/structure/ore_box,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/indestructible,
 /area/deathmatch)
 "rk" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/item/knife/kitchen,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -461,7 +461,7 @@
 /area/deathmatch)
 "rR" = (
 /obj/structure/closet/crate/large,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/item/mail/junkmail,
 /obj/item/mail/junkmail,
 /obj/item/stack/medical/mesh,
@@ -527,7 +527,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "to" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/light/directional/east,
 /turf/open/indestructible,
@@ -599,7 +599,7 @@
 /turf/open/indestructible/white,
 /area/deathmatch)
 "wd" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -643,7 +643,7 @@
 /turf/open/indestructible/dark/smooth_large,
 /area/deathmatch)
 "zK" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "Ax" = (
@@ -710,12 +710,12 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "CX" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/bed/medical/emergency,
 /turf/open/indestructible/white,
 /area/deathmatch)
 "Df" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/indestructible,
 /area/deathmatch)
 "DA" = (
@@ -725,7 +725,7 @@
 /turf/open/indestructible/large,
 /area/deathmatch)
 "DD" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/light/directional/south,
 /obj/structure/tank_holder/extinguisher,
@@ -738,7 +738,7 @@
 /turf/open/floor/glass/reinforced/phoron,
 /area/deathmatch)
 "Et" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -768,7 +768,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "EZ" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/item/reagent_containers/syringe/phoron,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -812,7 +812,7 @@
 /turf/open/indestructible/vault,
 /area/deathmatch)
 "Iw" = (
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/structure/bed/medical/emergency,
 /obj/effect/landmark/deathmatch_player_spawn,
 /turf/open/indestructible/white,
@@ -869,7 +869,7 @@
 /area/deathmatch)
 "Ky" = (
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/item/reagent_containers/syringe/calomel,
 /turf/open/indestructible/white,
 /area/deathmatch)
@@ -880,7 +880,7 @@
 /area/deathmatch)
 "KC" = (
 /obj/structure/closet/crate/cardboard,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/item/mail/junkmail,
 /obj/item/mail/junkmail,
 /obj/effect/spawner/random/maintenance,
@@ -957,7 +957,7 @@
 /area/deathmatch)
 "MN" = (
 /obj/structure/ore_box,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/effect/turf_decal/delivery,
 /turf/open/indestructible,
 /area/deathmatch)
@@ -1113,7 +1113,7 @@
 /turf/open/indestructible/large,
 /area/deathmatch)
 "SI" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/structure/closet/crate/mail,
 /obj/item/clothing/under/misc/mailman,
 /obj/item/clothing/head/costume/mailman,
@@ -1121,7 +1121,7 @@
 /area/deathmatch)
 "SV" = (
 /obj/structure/closet/crate/cardboard,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/item/mail/junkmail,
 /obj/effect/spawner/random/maintenance,
 /turf/open/indestructible,
@@ -1196,7 +1196,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Ye" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/structure/closet/crate/large,
 /obj/item/mail/junkmail,
 /obj/item/mail/junkmail,

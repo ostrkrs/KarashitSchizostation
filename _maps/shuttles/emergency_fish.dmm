@@ -35,7 +35,7 @@
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bB" = (
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -57,7 +57,7 @@
 /obj/structure/chair/pew{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "ey" = (
@@ -73,7 +73,7 @@
 /area/shuttle/escape)
 "fh" = (
 /obj/machinery/door/airlock/shuttle/glass,
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "fA" = (
@@ -105,7 +105,7 @@
 	pixel_y = 3
 	},
 /obj/item/storage/medkit/toxin,
-/obj/effect/turf_decal/tile/light_blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "gI" = (
@@ -132,7 +132,7 @@
 /area/shuttle/escape/brig)
 "gY" = (
 /obj/structure/chair/pew/right,
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "hL" = (
@@ -150,14 +150,14 @@
 /obj/structure/chair/pew/right{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "jh" = (
 /obj/structure/chair/pew{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "jw" = (
@@ -165,7 +165,7 @@
 	name = "Holding Area"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "jL" = (
@@ -223,7 +223,7 @@
 /area/shuttle/escape)
 "og" = (
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
@@ -233,7 +233,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/shuttle/escape)
 "oB" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -272,7 +272,7 @@
 /area/shuttle/escape)
 "pQ" = (
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -281,7 +281,7 @@
 /obj/structure/aquarium{
 	fluid_type = "Saltwater"
 	},
-/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark/anticorner{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -317,7 +317,7 @@
 /obj/item/bait_can/worm{
 	pixel_y = 13
 	},
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /obj/item/fishing_hook{
@@ -330,11 +330,11 @@
 	name = "Angler's Choice emergency shuttle"
 	},
 /obj/machinery/door/airlock/shuttle/glass,
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "sh" = (
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
@@ -359,7 +359,7 @@
 /obj/structure/chair/pew/right{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "ut" = (
@@ -408,7 +408,7 @@
 "xH" = (
 /obj/structure/sign/warning/yes_smoking/circle/directional/south,
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark/anticorner{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
@@ -432,7 +432,7 @@
 /area/shuttle/escape)
 "zP" = (
 /obj/structure/chair/pew/right,
-/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "Am" = (
@@ -446,7 +446,7 @@
 "AV" = (
 /obj/structure/chair/stool/directional/east,
 /obj/structure/fluff/beach_umbrella,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -457,14 +457,14 @@
 /area/shuttle/escape)
 "BA" = (
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "CI" = (
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark/anticorner{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
@@ -479,7 +479,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "DB" = (
-/obj/effect/turf_decal/tile/brown/half/contrasted{
+/obj/effect/turf_decal/tile/brown/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/brown,
@@ -501,35 +501,35 @@
 /obj/structure/aquarium{
 	fluid_type = "Saltwater"
 	},
-/obj/effect/turf_decal/tile/dark/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark/anticorner,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "EQ" = (
 /obj/structure/chair/pew,
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "Fc" = (
 /obj/structure/chair/pew,
-/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "FA" = (
 /obj/machinery/stasis{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "GK" = (
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "GP" = (
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
@@ -562,7 +562,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Id" = (
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
@@ -591,7 +591,7 @@
 	pixel_x = -5;
 	pixel_y = 13
 	},
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /obj/item/fishing_hook{
@@ -653,7 +653,7 @@
 /area/shuttle/escape)
 "Lo" = (
 /obj/structure/chair/pew/left,
-/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark/anticorner{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
@@ -665,7 +665,7 @@
 /obj/machinery/wall_healer/free/directional/north{
 	use_power = 0
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -680,7 +680,7 @@
 "NM" = (
 /obj/structure/chair/stool/directional/east,
 /obj/structure/fluff/beach_umbrella/cap,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -707,7 +707,7 @@
 /obj/machinery/wall_healer/free/directional/north{
 	use_power = 0
 	},
-/obj/effect/turf_decal/tile/dark/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark/anticorner{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
@@ -721,7 +721,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "PQ" = (
-/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "PS" = (
@@ -734,7 +734,7 @@
 /obj/item/defibrillator/compact/loaded{
 	pixel_y = 3
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "QN" = (
@@ -761,14 +761,14 @@
 /obj/structure/chair/pew/left{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "SB" = (
 /obj/structure/chair/pew/left{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark/half/contrasted,
+/obj/effect/turf_decal/tile/dark/half,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "SE" = (
@@ -787,7 +787,7 @@
 /area/shuttle/escape)
 "Tq" = (
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/dark/anticorner/contrasted,
+/obj/effect/turf_decal/tile/dark/anticorner,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "TL" = (
@@ -804,7 +804,7 @@
 /area/shuttle/escape/brig)
 "TN" = (
 /obj/structure/sign/calendar/directional/east,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
@@ -833,7 +833,7 @@
 "Vo" = (
 /obj/machinery/wall_healer/free/directional/west,
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
@@ -843,7 +843,7 @@
 /obj/effect/spawner/surgery_tray/full{
 	pixel_y = 6
 	},
-/obj/effect/turf_decal/tile/light_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -857,7 +857,7 @@
 "Wj" = (
 /obj/structure/chair/pew,
 /obj/item/toy/plush/carpplushie,
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "WO" = (
@@ -894,14 +894,14 @@
 /obj/machinery/wall_healer/free/directional/north{
 	use_power = 0
 	},
-/obj/effect/turf_decal/tile/dark/half/contrasted{
+/obj/effect/turf_decal/tile/dark/half{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "YO" = (
 /obj/structure/chair/pew/left,
-/obj/effect/turf_decal/tile/dark/fourcorners,
+/obj/effect/turf_decal/tile/dark/full,
 /turf/open/floor/wood/tile,
 /area/shuttle/escape)
 "ZO" = (

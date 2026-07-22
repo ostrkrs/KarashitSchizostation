@@ -34,7 +34,7 @@
 /obj/structure/toilet{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "l" = (
@@ -94,7 +94,7 @@
 /area/ruin/space/prison_shuttle)
 "A" = (
 /obj/effect/spawner/random/contraband/narcotics,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/machinery/light/dim/directional/east,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
@@ -119,7 +119,7 @@
 /turf/open/floor/mineral/titanium/tiled/airless,
 /area/ruin/space/prison_shuttle)
 "I" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /obj/effect/decal/cleanable/blood/splatter/xeno,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
@@ -140,18 +140,18 @@
 	},
 /obj/effect/mob_spawn/corpse/human/prisoner,
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "N" = (
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "P" = (
 /obj/structure/bed,
 /obj/item/bedsheet/orange,
 /obj/effect/spawner/random/contraband/narcotics,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "Q" = (
@@ -164,7 +164,7 @@
 /area/ruin/space/prison_shuttle)
 "T" = (
 /obj/effect/decal/cleanable/vomit/old,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "V" = (
@@ -174,7 +174,7 @@
 /obj/item/bedsheet/orange{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "W" = (
@@ -185,7 +185,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/orange,
 /obj/effect/mob_spawn/corpse/human/prisoner,
-/obj/effect/turf_decal/tile/brown/fourcorners,
+/obj/effect/turf_decal/tile/brown/full,
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space/prison_shuttle)
 "Y" = (

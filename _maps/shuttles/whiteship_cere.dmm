@@ -15,7 +15,7 @@
 "al" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/cargo)
 "am" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
@@ -72,7 +72,7 @@
 "aF" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/crew)
 "aG" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -405,7 +405,7 @@
 "pr" = (
 /obj/structure/cable,
 /obj/machinery/power/tracker,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/crew)
 "pw" = (
 /obj/structure/cable/multilayer/connected,
@@ -519,7 +519,7 @@
 "yD" = (
 /obj/structure/cable,
 /obj/machinery/power/tracker,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/engine)
 "yX" = (
 /obj/machinery/suit_storage_unit/spaceruin,
@@ -722,7 +722,7 @@
 "Id" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/engine)
 "Im" = (
 /obj/structure/table/reinforced,

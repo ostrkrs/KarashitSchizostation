@@ -1154,14 +1154,6 @@
 "or" = (
 /turf/open/floor/iron,
 /area/ruin/space/ks13/science/ordnance)
-"ot" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict12"
-	},
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "ou" = (
 /obj/structure/door_assembly/door_assembly_eng,
 /turf/open/floor/plating/airless,
@@ -1230,9 +1222,6 @@
 /area/ruin/space/ks13/service/kitchen)
 "oM" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict10"
-	},
 /obj/structure/cable,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/hallway/aft)
@@ -1776,14 +1765,6 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/service/jani)
-"rG" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict3"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "rI" = (
 /obj/structure/table_frame/wood,
 /turf/open/floor/wood,
@@ -1809,15 +1790,6 @@
 	initial_gas_mix = "o2=20000;n2=80000;TEMP=293.15"
 	},
 /area/ruin/space/ks13/engineering/atmos)
-"rO" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict11"
-	},
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "rQ" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/glass,
@@ -1866,7 +1838,6 @@
 "sa" = (
 /obj/structure/table/wood,
 /obj/item/clothing/head/hats/caphat{
-	armor = null;
 	desc = "A worn captains hat. This probably won't protect your noggin too well.";
 	pixel_x = 7;
 	pixel_y = 9
@@ -2174,18 +2145,6 @@
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/white/airless,
 /area/ruin/space/ks13/medical/medbay)
-"tA" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict4"
-	},
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
-"tE" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict5"
-	},
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "tG" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -2547,15 +2506,6 @@
 /obj/item/clothing/under/rank/rnd/scientist/skirt,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/science/rnd)
-"vR" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict15"
-	},
-/obj/structure/cable,
-/obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "vV" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
@@ -2879,14 +2829,6 @@
 	dir = 4
 	},
 /area/ruin/space/ks13/service/chapel)
-"xD" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict13"
-	},
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "xE" = (
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/glass,
@@ -4361,14 +4303,6 @@
 "Fj" = (
 /turf/open/floor/iron,
 /area/ruin/space/ks13/engineering/supermatter)
-"Fk" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict2"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "Fn" = (
 /obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt,
@@ -4412,14 +4346,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/white/airless,
 /area/ruin/space/ks13/science/genetics)
-"Fx" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict14"
-	},
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "FB" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/closet,
@@ -5516,9 +5442,6 @@
 /turf/closed/wall/r_wall,
 /area/ruin/space/ks13/security/sec)
 "Lt" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict8"
-	},
 /obj/effect/decal/cleanable/glass,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/airless,
@@ -6269,9 +6192,6 @@
 /area/ruin/space/ks13/command/bridge)
 "Pl" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict16"
-	},
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/airless,
@@ -7392,9 +7312,6 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/service/kitchen)
 "UG" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict7"
-	},
 /obj/item/shard{
 	icon_state = "small"
 	},
@@ -7476,12 +7393,6 @@
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/engineering/supermatter)
-"Va" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict6"
-	},
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "Vb" = (
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating/airless,
@@ -8082,14 +7993,6 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/ai/vault)
-"Yn" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict9"
-	},
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "Yo" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/decal/cleanable/dirt,
@@ -8377,13 +8280,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron/white/airless,
 /area/ruin/space/ks13/science/genetics)
-"ZG" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict1"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/airless,
-/area/ruin/space/ks13/hallway/aft)
 "ZH" = (
 /obj/machinery/door/window/left/directional/west{
 	name = "Cell 1";
@@ -12608,8 +12504,8 @@ YP
 vq
 Af
 od
-Yn
-ZG
+xk
+gG
 jV
 NW
 aa
@@ -12722,7 +12618,7 @@ bd
 Jl
 od
 oM
-Fk
+yi
 ZK
 Gf
 aa
@@ -12834,8 +12730,8 @@ re
 LQ
 re
 od
-rO
-rG
+Pe
+yi
 jV
 NW
 aa
@@ -12947,8 +12843,8 @@ YP
 JR
 JR
 od
-ot
-tA
+xk
+vN
 jV
 NW
 aa
@@ -13060,8 +12956,8 @@ YP
 eH
 eH
 od
-xD
-tE
+xk
+vN
 jV
 NW
 aa
@@ -13173,8 +13069,8 @@ vy
 tY
 tY
 od
-Fx
-Va
+xk
+vN
 jV
 NW
 aa
@@ -13286,7 +13182,7 @@ Kv
 tY
 aa
 ZK
-vR
+Pu
 UG
 jV
 NW

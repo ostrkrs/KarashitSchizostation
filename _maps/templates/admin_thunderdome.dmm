@@ -46,7 +46,7 @@
 	resistance_flags = 64
 	},
 /obj/effect/landmark/thunderdome/two,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -116,7 +116,7 @@
 /area/template_noop)
 "aq" = (
 /obj/effect/landmark/thunderdome/one,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -132,7 +132,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "as" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -236,7 +236,7 @@
 /area/template_noop)
 "aF" = (
 /obj/effect/landmark/thunderdome/two,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -332,7 +332,7 @@
 	resistance_flags = 64
 	},
 /obj/effect/landmark/thunderdome/one,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
@@ -378,28 +378,28 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "ib" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
 "nu" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
 "SV" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /obj/effect/light_emitter/thunderdome,
 /turf/open/floor/iron,
 /area/template_noop)
 "XQ" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /obj/effect/light_emitter/thunderdome,

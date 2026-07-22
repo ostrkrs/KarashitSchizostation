@@ -5,7 +5,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "aI" = (
@@ -21,7 +21,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/food/pie_smudge,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "ba" = (
@@ -37,7 +37,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "bp" = (
@@ -58,7 +58,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "bR" = (
@@ -77,7 +77,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "cM" = (
@@ -94,7 +94,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "ed" = (
@@ -117,7 +117,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "gd" = (
@@ -186,7 +186,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "lj" = (
@@ -211,14 +211,14 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "lx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "ly" = (
@@ -228,7 +228,7 @@
 /turf/closed/indestructible/binary,
 /area/virtual_domain/fullbright)
 "lP" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "mD" = (
@@ -236,7 +236,7 @@
 /area/lavaland/surface/outdoors/virtual_domain)
 "mE" = (
 /obj/structure/disposalpipe/segment,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "mF" = (
@@ -247,7 +247,7 @@
 /turf/closed/wall/r_wall,
 /area/lavaland/surface/outdoors/virtual_domain)
 "oA" = (
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "oI" = (
@@ -257,14 +257,14 @@
 /area/lavaland/surface/outdoors/virtual_domain)
 "pl" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "ps" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "qg" = (
@@ -275,7 +275,7 @@
 	invisibility = 101
 	},
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "rg" = (
@@ -298,12 +298,12 @@
 	invisibility = 101
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "sq" = (
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "sT" = (
@@ -327,7 +327,7 @@
 "tv" = (
 /obj/effect/mob_spawn/corpse/human/damaged,
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "tF" = (
@@ -373,7 +373,7 @@
 /area/virtual_domain/safehouse)
 "yd" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "yz" = (
@@ -391,12 +391,12 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "zm" = (
 /obj/effect/decal/cleanable/cobweb,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "zA" = (
@@ -416,7 +416,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Bi" = (
@@ -425,7 +425,7 @@
 	invisibility = 101
 	},
 /obj/effect/decal/cleanable/cobweb,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Cp" = (
@@ -442,7 +442,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Do" = (
@@ -450,7 +450,7 @@
 	dir = 4;
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "DL" = (
@@ -458,14 +458,14 @@
 	dir = 5
 	},
 /obj/item/bikehorn,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Ex" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Fb" = (
@@ -501,7 +501,7 @@
 	dir = 10
 	},
 /obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Ie" = (
@@ -515,7 +515,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "IN" = (
@@ -537,12 +537,12 @@
 	invisibility = 101
 	},
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Ka" = (
 /obj/effect/decal/cleanable/food/pie_smudge,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Kh" = (
@@ -600,7 +600,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Ov" = (
@@ -608,7 +608,7 @@
 	dir = 6
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "PJ" = (
@@ -658,7 +658,7 @@
 	invisibility = 101
 	},
 /obj/effect/decal/cleanable/food/pie_smudge,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Sm" = (
@@ -672,7 +672,7 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Tx" = (
@@ -717,14 +717,14 @@
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "UY" = (
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "Vx" = (
@@ -748,7 +748,7 @@
 	invisibility = 101
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible/permalube,
 /area/lavaland/surface/outdoors/virtual_domain)
 "WB" = (

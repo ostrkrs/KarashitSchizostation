@@ -457,7 +457,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "dR" = (
-/obj/effect/turf_decal/siding/wideplating/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
@@ -646,7 +646,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "eX" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /turf/open/floor/holofloor/beach/coast{
@@ -732,7 +732,7 @@
 	},
 /area/awaymission/museum)
 "fK" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/structure/sign/painting{
 	pixel_y = 32;
 	persistence_id = "museumgate"
@@ -780,7 +780,7 @@
 /turf/open/floor/mineral/diamond,
 /area/awaymission/museum/mothroachvoid)
 "go" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/dark_blue{
@@ -869,7 +869,7 @@
 	},
 /area/awaymission/museum/mothroachvoid)
 "hi" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "hj" = (
@@ -1053,7 +1053,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "iI" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/structure/sign/painting{
 	pixel_y = 32;
 	persistence_id = "museumgate"
@@ -1106,7 +1106,7 @@
 /turf/open/misc/grass,
 /area/awaymission/museum/mothroachvoid)
 "iW" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1211,7 +1211,7 @@
 /turf/open/floor/iron/freezer,
 /area/awaymission/museum)
 "jN" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
@@ -1409,7 +1409,7 @@
 /turf/open/floor/catwalk_floor,
 /area/awaymission/museum)
 "lk" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /turf/open/floor/holofloor/beach/coast,
@@ -1801,7 +1801,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "oA" = (
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /turf/open/floor/holofloor/beach/water,
@@ -1926,7 +1926,7 @@
 /area/awaymission/museum)
 "pF" = (
 /obj/structure/hedge/opaque,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/museum)
 "pI" = (
@@ -2434,7 +2434,7 @@
 /turf/open/floor/iron,
 /area/awaymission/museum)
 "tB" = (
-/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding,
 /turf/open/chasm,
 /area/awaymission/museum)
 "tC" = (
@@ -2602,7 +2602,7 @@
 /turf/open/indestructible/plating,
 /area/awaymission/museum)
 "vc" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/structure/sign/painting/large{
 	dir = 1;
 	persistence_id = "museumgate_big"
@@ -2753,7 +2753,7 @@
 /area/awaymission/museum)
 "wC" = (
 /obj/structure/hedge,
-/obj/effect/turf_decal/siding/wideplating{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/diagonal,
@@ -2798,7 +2798,7 @@
 /turf/open/floor/grass,
 /area/awaymission/museum)
 "wN" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/structure/sign/painting/large{
 	dir = 1;
 	persistence_id = "museumgate_big"
@@ -3233,7 +3233,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/museum)
 "Ag" = (
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -3529,7 +3529,7 @@
 /turf/open/floor/iron,
 /area/awaymission/museum)
 "CC" = (
-/obj/effect/turf_decal/siding/wideplating,
+/obj/effect/turf_decal/siding/white,
 /turf/open/misc/beach/sand,
 /area/awaymission/museum/mothroachvoid)
 "CD" = (
@@ -3685,7 +3685,7 @@
 /turf/open/floor/black,
 /area/awaymission/museum)
 "DU" = (
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -4753,7 +4753,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/awaymission/museum)
 "NB" = (
-/obj/effect/turf_decal/siding/wideplating/corner,
+/obj/effect/turf_decal/siding/white/corner,
 /turf/open/misc/beach/sand,
 /area/awaymission/museum/mothroachvoid)
 "ND" = (
@@ -5725,7 +5725,7 @@
 /obj/effect/turf_decal/tile/dark_blue{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,

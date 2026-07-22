@@ -55,7 +55,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -67,7 +67,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/phoron_facility/commons)
 "aY" = (
@@ -95,7 +95,7 @@
 "bv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -108,14 +108,14 @@
 	pixel_y = 7
 	},
 /obj/effect/decal/cleanable/blood/tracks,
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/ruin/phoron_facility/commons)
 "bM" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "bT" = (
@@ -183,7 +183,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "dr" = (
@@ -211,7 +211,7 @@
 /obj/item/shard,
 /obj/effect/decal/cleanable/glass,
 /obj/item/stock_parts/capacitor,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/phoron_facility/commons)
 "dO" = (
@@ -234,7 +234,7 @@
 	},
 /obj/effect/decal/cleanable/phoron,
 /obj/effect/decal/cleanable/blood,
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/ruin/phoron_facility/commons)
 "dR" = (
 /obj/structure/lattice/catwalk,
@@ -268,7 +268,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/broken/directional/north,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "ed" = (
@@ -283,7 +283,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "eD" = (
@@ -397,7 +397,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/built/directional/north,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/phoron_facility/commons)
 "gH" = (
 /obj/structure/cable,
@@ -425,7 +425,7 @@
 	pixel_y = -2
 	},
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/ruin/phoron_facility/commons)
 "hc" = (
 /obj/structure/rack,
@@ -750,7 +750,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "lX" = (
@@ -844,7 +844,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -853,7 +853,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -968,7 +968,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -978,7 +978,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -1113,7 +1113,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -1130,7 +1130,7 @@
 /obj/structure/table/reinforced/rglass,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/disk/design_disk/modkit_disc/resonator_blast,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/phoron_facility/commons)
 "sr" = (
@@ -1270,7 +1270,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -1363,7 +1363,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "wF" = (
@@ -1393,7 +1393,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -1421,7 +1421,7 @@
 "yv" = (
 /obj/machinery/light_switch/directional/south,
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -1449,7 +1449,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/brown/half{
@@ -1499,7 +1499,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -1509,7 +1509,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -1563,7 +1563,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -1673,7 +1673,7 @@
 /area/icemoon/underground/explored)
 "DN" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "DQ" = (
@@ -1976,7 +1976,7 @@
 	dir = 4
 	},
 /obj/machinery/light/small/broken/directional/west,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/phoron_facility/commons)
 "JQ" = (
@@ -2010,7 +2010,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/mob_spawn/corpse/human/miner/explorer,
 /obj/machinery/light/small/blacklight/directional/south,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/phoron_facility/commons)
 "Km" = (
 /obj/structure/girder,
@@ -2228,7 +2228,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -2259,7 +2259,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron/edge{
@@ -2310,7 +2310,7 @@
 /obj/effect/decal/cleanable/dirt,
 /mob/living/basic/skeleton/phoron_miner/jackhammer,
 /obj/machinery/light_switch/directional/south,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/phoron_facility/commons)
 "OF" = (
@@ -2337,7 +2337,7 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/table/reinforced/rglass,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/phoron_facility/commons)
 "Pt" = (
@@ -2388,7 +2388,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -2399,7 +2399,7 @@
 /obj/item/clothing/glasses/thermal/eyepatch{
 	pixel_y = 8
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/phoron_facility/commons)
 "PQ" = (
 /obj/structure/flora/tree/dead/style_random,
@@ -2471,7 +2471,7 @@
 /area/icemoon/underground/explored)
 "QQ" = (
 /obj/structure/dresser,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/phoron_facility/commons)
 "QY" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -2509,7 +2509,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -2575,7 +2575,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -2606,7 +2606,7 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/ruin/phoron_facility/commons)
 "TY" = (
@@ -2652,7 +2652,7 @@
 /area/ruin/phoron_facility/operations)
 "VD" = (
 /obj/effect/turf_decal/tile/brown/half,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/edge,
@@ -2843,7 +2843,7 @@
 /obj/effect/turf_decal/tile/brown/half{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron/edge{
 	dir = 1
 	},
@@ -2901,7 +2901,7 @@
 /obj/structure/filingcabinet/chestdrawer/wheeled,
 /obj/effect/decal/cleanable/glass,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark/textured,
 /area/ruin/phoron_facility/commons)
 "ZC" = (
@@ -2928,7 +2928,7 @@
 /obj/structure/chair/office/light{
 	dir = 1
 	},
-/turf/open/floor/iron/white/smooth_large,
+/turf/open/floor/iron/white/large,
 /area/ruin/phoron_facility/commons)
 
 (1,1,1) = {"

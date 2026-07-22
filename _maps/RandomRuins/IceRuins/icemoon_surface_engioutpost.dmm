@@ -65,7 +65,7 @@
 /area/ruin/planetengi)
 "ax" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /obj/structure/statue/snow/snowman,
@@ -108,7 +108,7 @@
 /area/ruin/planetengi)
 "aE" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /obj/item/toy/snowball,
@@ -163,7 +163,7 @@
 /area/icemoon/surface/outdoors/nospawn)
 "aT" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/misc/snow/actually_safe,
@@ -836,7 +836,7 @@
 /area/ruin/planetengi)
 "Lh" = (
 /obj/effect/turf_decal/weather/snow/corner,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /turf/open/floor/plating/icemoon,

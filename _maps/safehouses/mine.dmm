@@ -2,7 +2,7 @@
 "a" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/landmark/bitrunning/hololadder_spawn,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 1
 	},
 /area/virtual_domain/safehouse)
@@ -66,7 +66,7 @@
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_edge,
+/turf/open/floor/iron/dark/edge,
 /area/virtual_domain/safehouse)
 "P" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -88,7 +88,7 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/mining,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/virtual_domain/safehouse)
@@ -98,7 +98,7 @@
 	},
 /obj/machinery/suit_storage_unit/mining,
 /obj/machinery/light/directional/west,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/virtual_domain/safehouse)

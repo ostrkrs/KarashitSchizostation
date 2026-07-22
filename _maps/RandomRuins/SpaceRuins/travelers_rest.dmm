@@ -76,7 +76,7 @@
 "gF" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/travelers_rest)
 "gN" = (
 /obj/machinery/shower/directional/east,
@@ -219,7 +219,7 @@
 /obj/machinery/power/tracker,
 /obj/structure/cable,
 /obj/effect/turf_decal/trimline/neutral,
-/turf/open/floor/iron/recharge_floor,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/travelers_rest)
 "Dq" = (
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -328,7 +328,7 @@
 /obj/structure/cable,
 /obj/machinery/power/solar,
 /obj/machinery/atmospherics/components/unary/passive_vent/layer2,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/travelers_rest)
 "LS" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{

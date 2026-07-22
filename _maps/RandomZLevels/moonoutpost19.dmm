@@ -101,7 +101,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/moonoutpost19/research)
 "ay" = (
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
 /turf/open/floor/iron,
@@ -237,7 +237,7 @@
 "bo" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -249,7 +249,7 @@
 /obj/item/stack/ore/glass{
 	pixel_y = -10
 	},
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/broken_floor,
@@ -1188,7 +1188,7 @@
 	pixel_y = 3
 	},
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -1249,12 +1249,12 @@
 	pixel_y = 9
 	},
 /obj/item/pen,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/turf_decal/tile/red/anticorner,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/research)
 "iD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
 /turf/open/floor/iron,
@@ -1391,7 +1391,7 @@
 /area/awaymission/moonoutpost19/syndicate)
 "jJ" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -1825,7 +1825,7 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/awaymission/moonoutpost19/arrivals)
 "mf" = (
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -1860,7 +1860,7 @@
 "mn" = (
 /obj/structure/noticeboard/directional/north,
 /obj/item/paper/fluff/awaymissions/moonoutpost19/food_specials,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2057,7 +2057,7 @@
 "nq" = (
 /obj/structure/filingcabinet,
 /obj/item/paper/fluff/awaymissions/moonoutpost19/log/kenneth,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -2125,7 +2125,7 @@
 	pixel_x = 9;
 	pixel_y = 10
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -2377,7 +2377,7 @@
 "pH" = (
 /obj/structure/table,
 /obj/item/folder/red,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/research)
 "pL" = (
@@ -2476,7 +2476,7 @@
 "qg" = (
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
 /obj/machinery/duct,
@@ -2530,7 +2530,7 @@
 /obj/item/extinguisher{
 	pixel_x = 7
 	},
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/broken_floor,
@@ -2573,7 +2573,7 @@
 "qI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/effect/turf_decal/siding/thinplating_new/light/corner,
+/obj/effect/turf_decal/siding/white/corner,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "qJ" = (
@@ -2626,7 +2626,7 @@
 /area/awaymission/moonoutpost19/syndicate)
 "qP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -2769,7 +2769,7 @@
 	pixel_y = -1
 	},
 /obj/item/multitool,
-/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "rC" = (
@@ -3014,7 +3014,7 @@
 /area/awaymission/moonoutpost19/syndicate)
 "sY" = (
 /obj/machinery/vending/coffee,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
 /obj/effect/mapping_helpers/burnt_floor,
@@ -3174,7 +3174,7 @@
 "uo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/tank_holder,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
 /turf/open/floor/iron,
@@ -3268,7 +3268,7 @@
 /obj/structure/table,
 /obj/machinery/cell_charger,
 /obj/item/stock_parts/power_store/cell/high,
-/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "uR" = (
@@ -3646,7 +3646,7 @@
 /obj/machinery/light/small/directional/south,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "xr" = (
@@ -3747,7 +3747,7 @@
 /obj/structure/chair/comfy/black{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -3954,7 +3954,7 @@
 /area/awaymission/moonoutpost19/arrivals)
 "zz" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "zB" = (
@@ -4016,7 +4016,7 @@
 "zV" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/blood/xeno,
-/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/effect/turf_decal/siding/white,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
 "zY" = (
@@ -4099,7 +4099,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
 /turf/open/floor/iron,
@@ -4174,7 +4174,7 @@
 	pixel_x = -2;
 	pixel_y = -7
 	},
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /obj/machinery/duct,
@@ -4235,7 +4235,7 @@
 "BC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/ash,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -4484,7 +4484,7 @@
 /area/awaymission/moonoutpost19/arrivals/shed)
 "CZ" = (
 /obj/machinery/vending/cola,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -4636,7 +4636,7 @@
 /area/awaymission/moonoutpost19/arrivals)
 "DZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/light/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -4985,7 +4985,7 @@
 /obj/structure/table,
 /obj/item/book/manual/wiki/detective,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -5044,7 +5044,7 @@
 /obj/effect/mapping_helpers/apc/unlocked,
 /obj/effect/mapping_helpers/apc/cell_10k,
 /obj/structure/cable,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -5080,7 +5080,7 @@
 "HD" = (
 /obj/machinery/firealarm/directional/south,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/light,
+/obj/effect/turf_decal/siding/white,
 /obj/machinery/duct,
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/arrivals)
@@ -5155,7 +5155,7 @@
 /area/awaymission/moonoutpost19/arrivals)
 "HU" = (
 /obj/structure/reagent_dispensers/wall/peppertank/directional/west,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -5421,7 +5421,7 @@
 	},
 /area/awaymission/moonoutpost19/hive)
 "Jz" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/awaymission/moonoutpost19/syndicate)
@@ -5783,7 +5783,7 @@
 /area/awaymission/moonoutpost19/research)
 "MS" = (
 /obj/structure/closet/emcloset,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
 /turf/open/floor/iron,
@@ -5898,7 +5898,7 @@
 	},
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -6148,7 +6148,7 @@
 /area/awaymission/moonoutpost19/main)
 "OV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/moonoutpost19/syndicate)
 "OW" = (
@@ -6476,7 +6476,7 @@
 	pixel_x = 11;
 	pixel_y = 8
 	},
-/obj/effect/turf_decal/siding/thinplating_new/light/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -6496,7 +6496,7 @@
 /area/awaymission/moonoutpost19/syndicate)
 "Rk" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/light/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 4
 	},
 /turf/open/floor/iron{
@@ -6508,7 +6508,7 @@
 /obj/structure/table,
 /obj/item/book/manual/wiki/security_corp_law,
 /obj/machinery/computer/security/telescreen/entertainment/directional/west,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -6703,7 +6703,7 @@
 /area/awaymission/moonoutpost19/research)
 "Sv" = (
 /obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -6892,7 +6892,7 @@
 /turf/open/floor/plating,
 /area/awaymission/moonoutpost19/arrivals/shed)
 "TR" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/moonoutpost19/syndicate)
 "TS" = (
@@ -7261,7 +7261,7 @@
 	dir = 8;
 	icon_state = "ltrails_1"
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -7322,7 +7322,7 @@
 	name = "Biohazard Shutter Control";
 	req_access = "101"
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -7330,7 +7330,7 @@
 "WW" = (
 /obj/item/radio/off,
 /obj/structure/sign/poster/official/safety_report/directional/north,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -7489,7 +7489,7 @@
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/syndicate)
 "Ye" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -7580,7 +7580,7 @@
 /turf/open/floor/plating,
 /area/awaymission/moonoutpost19/arrivals/shed)
 "YO" = (
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /obj/item/vending_refill/snack,

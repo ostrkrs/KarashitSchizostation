@@ -2,7 +2,7 @@
 "a" = (
 /obj/effect/turf_decal/trimline/brown/filled/line,
 /obj/effect/landmark/bitrunning/hololadder_spawn,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 1
 	},
 /area/virtual_domain/safehouse)
@@ -70,7 +70,7 @@
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
-/turf/open/floor/iron/dark/smooth_edge,
+/turf/open/floor/iron/dark/edge,
 /area/virtual_domain/safehouse)
 "B" = (
 /obj/effect/turf_decal/trimline/brown/filled/line{
@@ -104,7 +104,7 @@
 /obj/item/ammo_casing/rocket,
 /obj/item/energy_katana,
 /obj/item/ammo_box/magazine/m7mm,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 8
 	},
 /area/virtual_domain/safehouse)
@@ -120,7 +120,7 @@
 /obj/effect/turf_decal/trimline/brown/filled/line{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_edge,
+/turf/open/floor/iron/dark/edge,
 /area/virtual_domain/safehouse)
 "N" = (
 /obj/modular_map_connector,
@@ -167,7 +167,7 @@
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/mining,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/virtual_domain/safehouse)
@@ -177,7 +177,7 @@
 	},
 /obj/machinery/suit_storage_unit/mining,
 /obj/machinery/light/directional/west,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/virtual_domain/safehouse)

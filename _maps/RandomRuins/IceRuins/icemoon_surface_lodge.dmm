@@ -1396,7 +1396,7 @@
 /obj/structure/railing{
 	color = "#beada5"
 	},
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	color = "#beada5"
 	},
 /obj/effect/decal/cleanable/blood/drip,
@@ -2678,7 +2678,7 @@
 /turf/open/floor/wood,
 /area/ruin/huntinglodge)
 "RH" = (
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	color = "#beada5"
 	},
 /obj/structure/railing{
@@ -2870,7 +2870,7 @@
 /obj/structure/railing{
 	color = "#beada5"
 	},
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	color = "#beada5"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
