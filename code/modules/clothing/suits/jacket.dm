@@ -91,6 +91,12 @@
 	greyscale_colors = "#414344"
 	flags_1 = IS_PLAYER_COLORABLE_1
 
+/obj/item/clothing/suit/jacket/leather_trenchcoat
+	name = "leather trenchcoat"
+	desc = "A long, black trenchcoat. Makes you feel like you're the one, but you're not."
+	icon_state = "leather_trenchcoat"
+	flags_inv = HIDEBELT
+
 /obj/item/clothing/suit/jacket/fancy
 	name = "fancy fur coat"
 	desc = "Rated 10 out of 10 in Cosmo for best coat brand."

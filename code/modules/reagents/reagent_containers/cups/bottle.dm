@@ -569,7 +569,6 @@
 	return CLICK_ACTION_SUCCESS
 
 //types of syrups
-
 /obj/item/reagent_containers/cup/bottle/syrup_bottle/caramel
 	name = "bottle of caramel syrup"
 	desc = "A pump bottle containing caramelized sugar, also known as caramel. Do not lick."

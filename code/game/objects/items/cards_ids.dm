@@ -769,6 +769,9 @@
 
 	update_label()
 
+/obj/item/card/id/black
+	icon_state = "card_black"
+
 /obj/item/card/id/away
 	name = "\proper a perfectly generic identification card"
 	desc = "A perfectly generic identification card. Looks like it could use some flavor."

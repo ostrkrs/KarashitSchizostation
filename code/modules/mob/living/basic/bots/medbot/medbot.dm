@@ -387,7 +387,6 @@
 	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_PARAMEDIC
 	access = list(
-		ACCESS_BIT_DEN,
 		ACCESS_CARGO,
 		ACCESS_CONSTRUCTION,
 		ACCESS_HYDROPONICS,

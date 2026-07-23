@@ -7,7 +7,6 @@ import {
   Section,
   Stack,
   Table,
-  Tabs,
   Tooltip,
 } from 'tgui-core/components';
 import type { BooleanLike } from 'tgui-core/react';
@@ -23,11 +22,9 @@ type Data =
       connected: 1;
       generated_domain: string | null;
       occupants: number;
-      points: number;
       randomized: BooleanLike;
       ready: BooleanLike;
       retries_left: number;
-      scanner_tier: number;
       broadcasting: BooleanLike;
       broadcasting_on_cd: BooleanLike;
     }
@@ -47,12 +44,9 @@ type Avatar = {
 
 type Domain = {
   announce_ghosts: BooleanLike;
-  cost: number;
   desc: string;
-  difficulty: number;
   id: string;
   is_modular: BooleanLike;
-  has_secondary_objectives: BooleanLike;
   name: string;
   reward: number | string;
 };
@@ -67,28 +61,8 @@ type DisplayDetailsProps = {
   icon: string;
 };
 
-enum Difficulty {
-  None,
-  Low,
-  Medium,
-  High,
-}
-
 function isConnected(data: Data): data is Data & { connected: 1 } {
   return data.connected === 1;
-}
-
-function getColor(difficulty: number) {
-  switch (difficulty) {
-    case Difficulty.Low:
-      return 'yellow';
-    case Difficulty.Medium:
-      return 'average';
-    case Difficulty.High:
-      return 'bad';
-    default:
-      return 'green';
-  }
 }
 
 export function QuantumConsole(props) {
@@ -118,22 +92,15 @@ function AccessView(props) {
     broadcasting_on_cd,
     generated_domain,
     occupants,
-    points,
     randomized,
     ready,
   } = data;
-
-  const sorted = available_domains.sort((a, b) => a.cost - b.cost);
-
-  const filtered = sorted.filter((domain) => {
-    return domain.difficulty === tab;
-  });
 
   let selected;
   if (generated_domain) {
     selected = randomized
       ? '???'
-      : sorted.find(({ id }) => id === generated_domain)?.name;
+      : available_domains.find(({ id }) => id === generated_domain)?.name;
   } else {
     selected = 'Nothing loaded';
   }
@@ -145,8 +112,8 @@ function AccessView(props) {
           buttons={
             <Stack fill>
               <Tooltip
-                content="Toggles whether you broadcast your
-                  bitrun to station Entertainment Monitors."
+                content="Toggles whether to broadcast running
+                  domain to station Entertainment Monitors."
               >
                 <Button.Checkbox
                   checked={broadcasting}
@@ -156,14 +123,9 @@ function AccessView(props) {
                   Broadcast
                 </Button.Checkbox>
               </Tooltip>
-              <Tooltip
-                content="Get a random domain for more rewards.
-                  Weighted towards your current points. Minimum: 1 point."
-              >
+              <Tooltip content="Get a random domain.">
                 <Button
-                  disabled={
-                    !ready || occupants > 0 || points < 1 || !!generated_domain
-                  }
+                  disabled={!ready || occupants > 0 || !!generated_domain}
                   icon="random"
                   onClick={() => act('random_domain')}
                   mr={1}
@@ -171,55 +133,13 @@ function AccessView(props) {
                   Randomize
                 </Button>
               </Tooltip>
-              <Tooltip content="Accrued points for purchasing domains.">
-                <Icon color="pink" name="star" mr={1} />
-                {points}
-              </Tooltip>
             </Stack>
           }
           fill
           scrollable
           title="Virtual Domains"
         >
-          <Tabs fluid>
-            <Tabs.Tab
-              backgroundColor={getColor(Difficulty.None)}
-              textColor="white"
-              selected={tab === 0}
-              onClick={() => setTab(0)}
-              icon="chevron-down"
-            >
-              Peaceful
-            </Tabs.Tab>
-            <Tabs.Tab
-              backgroundColor={getColor(Difficulty.Low)}
-              textColor="black"
-              selected={tab === 1}
-              onClick={() => setTab(1)}
-              icon="chevron-down"
-            >
-              Easy
-            </Tabs.Tab>
-            <Tabs.Tab
-              backgroundColor={getColor(Difficulty.Medium)}
-              textColor="white"
-              selected={tab === 2}
-              onClick={() => setTab(2)}
-              icon="chevron-down"
-            >
-              Medium
-            </Tabs.Tab>
-            <Tabs.Tab
-              backgroundColor={getColor(Difficulty.High)}
-              textColor="white"
-              selected={tab === 3}
-              onClick={() => setTab(3)}
-              icon="chevron-down"
-            >
-              Hard <Icon name="skull" ml={1} />{' '}
-            </Tabs.Tab>
-          </Tabs>
-          {filtered.map((domain) => (
+          {available_domains.map((domain) => (
             <DomainEntry key={domain.id} domain={domain} />
           ))}
         </Section>
@@ -252,24 +172,14 @@ function AccessView(props) {
 
 function DomainEntry(props: DomainEntryProps) {
   const {
-    domain: {
-      announce_ghosts,
-      cost,
-      desc,
-      difficulty,
-      id,
-      is_modular,
-      has_secondary_objectives,
-      name,
-      reward,
-    },
+    domain: { announce_ghosts, desc, id, is_modular, name },
   } = props;
   const { act, data } = useBackend<Data>();
   if (!isConnected(data)) {
     return null;
   }
 
-  const { generated_domain, ready, occupants, randomized, points } = data;
+  const { generated_domain, ready, occupants, randomized } = data;
 
   const current = generated_domain === id;
   const occupied = occupants > 0;
@@ -292,7 +202,7 @@ function DomainEntry(props: DomainEntryProps) {
       buttons={
         <Tooltip content={!!generated_domain && 'Stop current domain first.'}>
           <Button
-            disabled={!!generated_domain || !ready || occupied || points < cost}
+            disabled={!!generated_domain || !ready || occupied}
             icon={buttonIcon}
             onClick={() => act('set_domain', { id })}
           >
@@ -300,12 +210,10 @@ function DomainEntry(props: DomainEntryProps) {
           </Button>
         </Tooltip>
       }
-      color={getColor(difficulty)}
       title={
         <>
           {name}
           {!!is_modular && canView && <Icon name="cubes" ml={1} />}
-          {!!has_secondary_objectives && canView && <Icon name="gem" ml={1} />}
           {!!announce_ghosts && canView && <Icon name="ghost" ml={1} />}
         </>
       }
@@ -314,23 +222,7 @@ function DomainEntry(props: DomainEntryProps) {
         <Stack.Item color="label" grow={4}>
           {desc}
           {!!is_modular && ' (Modular)'}
-          {!!has_secondary_objectives && ' (Secondary Objective Available)'}
           {!!announce_ghosts && ' (Ghost Interaction)'}
-        </Stack.Item>
-        <Stack.Divider />
-        <Stack.Item grow>
-          <Table>
-            <Table.Row>
-              <Tooltip content="Points cost for deploying domain.">
-                <DisplayDetails amount={cost} color="pink" icon="star" />
-              </Tooltip>
-            </Table.Row>
-            <Table.Row>
-              <Tooltip content="Reward for competing domain.">
-                <DisplayDetails amount={reward} color="gold" icon="coins" />
-              </Tooltip>
-            </Table.Row>
-          </Table>
         </Stack.Item>
       </Stack>
     </Collapsible>

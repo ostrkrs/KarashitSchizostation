@@ -1037,7 +1037,7 @@
 		return FALSE
 	if(!antag_check(candidate))
 		return FALSE
-	// checks for stuff like bitrunner avatars and ghost mafia
+	// checks for stuff like ghost mafia
 	if(HAS_TRAIT(candidate, TRAIT_MIND_TEMPORARILY_GONE) || HAS_TRAIT(candidate, TRAIT_TEMPORARY_BODY))
 		return FALSE
 	if(SEND_SIGNAL(candidate, COMSIG_MOB_MIND_BEFORE_MIDROUND_ROLL, src, pref_flag) & CANCEL_ROLL)

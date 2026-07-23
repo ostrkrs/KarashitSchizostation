@@ -50,13 +50,6 @@
 /obj/effect/mob_spawn/corpse/goliath,
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface)
-"j" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/item/bitrunning_disk/item/pka_mods,
-/turf/open/floor/mineral/titanium/blue,
-/area/ruin/unpowered)
 "k" = (
 /obj/structure/girder,
 /turf/open/floor/plating/lavaland_atmos,
@@ -644,7 +637,7 @@ o
 o
 o
 q
-j
+e
 Q
 N
 K
