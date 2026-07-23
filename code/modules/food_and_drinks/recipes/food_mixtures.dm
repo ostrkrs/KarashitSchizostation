@@ -200,6 +200,12 @@
 	reaction_flags = REACTION_INSTANT
 	resulting_food_path = /obj/item/food/rice_dough
 
+/datum/chemical_reaction/food/korta_dough
+	required_reagents = list(/datum/reagent/water = 10, /datum/reagent/consumable/korta_flour = 15)
+	mix_message = "The ingredients form a korta dough."
+	reaction_flags = REACTION_INSTANT
+	resulting_food_path = /obj/item/food/korta_dough
+
 /datum/chemical_reaction/food/cakebatter
 	required_reagents = list(/datum/reagent/consumable/eggyolk = 6, /datum/reagent/consumable/eggwhite = 12, /datum/reagent/consumable/flour = 15, /datum/reagent/consumable/sugar = 5)
 	mix_message = "The ingredients form a cake batter."

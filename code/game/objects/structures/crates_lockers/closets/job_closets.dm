@@ -51,6 +51,8 @@
 	..()
 	var/static/items_inside = list(
 		/obj/item/reagent_containers/condiment/flour = 3,
+		/obj/item/reagent_containers/condiment/cornmeal = 1,
+		/obj/item/reagent_containers/condiment/korta_flour = 1,
 		/obj/item/reagent_containers/condiment/rice = 1,
 		/obj/item/reagent_containers/condiment/sugar =1)
 	generate_items_inside(items_inside,src)

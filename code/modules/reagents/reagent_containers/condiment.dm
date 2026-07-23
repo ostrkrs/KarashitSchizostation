@@ -217,6 +217,24 @@
 	. += span_notice("[dough_flour_required] flour, [dough_water_required] water makes normal dough. You can make flat dough from it.")
 	. += span_notice("[cakebatter_flour_required] flour, [cakebatter_eggyolk_required] egg yolk (or soy milk), [cakebatter_sugar_required] sugar makes cake dough. You can make pie dough from it.")
 
+/obj/item/reagent_containers/condiment/korta_flour
+	name = "korta flour sack"
+	desc = "A big bag of flour. Good for baking!"
+	icon_state = "korta_flour"
+	inhand_icon_state = "carton"
+	lefthand_file = 'icons/mob/inhands/items/drinks_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/items/drinks_righthand.dmi'
+	list_reagents = list(/datum/reagent/consumable/korta_flour = 30)
+	fill_icon_thresholds = null
+
+/obj/item/reagent_containers/condiment/korta_flour/examine(mob/user)
+	. = ..()
+	var/datum/chemical_reaction/recipe_korta_dough = GLOB.chemical_reactions_list[/datum/chemical_reaction/food/korta_dough]
+	var/korta_dough_flour_required = recipe_korta_dough.required_reagents[/datum/reagent/consumable/korta_flour]
+	var/korta_dough_water_required = recipe_korta_dough.required_reagents[/datum/reagent/water]
+	. += "<b><i>You retreat inward and recall the teachings of... Making Dough...</i></b>"
+	. += span_notice("[korta_dough_flour_required] flour, [korta_dough_water_required] water makes korta dough. You can make flat korta dough from it.")
+
 /obj/item/reagent_containers/condiment/soymilk
 	name = "soy milk"
 	desc = "It's soy milk. White and nutritious goodness!"

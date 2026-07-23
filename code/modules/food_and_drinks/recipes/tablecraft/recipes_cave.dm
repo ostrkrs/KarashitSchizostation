@@ -9,30 +9,6 @@
 	result = /obj/item/food/honey_roll
 	category = CAT_CAVER
 
-/datum/crafting_recipe/food/rootdough_without_eggs
-	name = "Rootdough (Without Eggs)"
-	reqs = list(
-		/obj/item/food/grown/potato = 2,
-		/datum/reagent/consumable/soymilk = 15,
-		/datum/reagent/consumable/korta_flour = 5,
-		/datum/reagent/water = 10
-	)
-	result = /obj/item/food/rootdough
-	added_foodtypes = NUTS
-	category = CAT_CAVER
-
-/datum/crafting_recipe/food/rootdough_with_eggs
-	name = "Rootdough (With Eggs)"
-	reqs = list(
-		/obj/item/food/grown/potato = 2,
-		/obj/item/food/egg = 1,
-		/datum/reagent/consumable/korta_flour = 5,
-		/datum/reagent/water = 10
-	)
-	result = /obj/item/food/rootdough/egg
-	removed_foodtypes = RAW
-	category = CAT_CAVER
-
 /datum/crafting_recipe/food/snail_pasta
 	name = "Snail root pasta"
 	reqs = list(

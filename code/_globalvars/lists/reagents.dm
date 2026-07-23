@@ -7,6 +7,7 @@ GLOBAL_LIST_INIT(reagent_containers, list(
 		/obj/item/reagent_containers/condiment/sugar,
 		/obj/item/reagent_containers/condiment/rice,
 		/obj/item/reagent_containers/condiment/cornmeal,
+		/obj/item/reagent_containers/condiment/korta_flour,
 		/obj/item/reagent_containers/condiment/milk,
 		/obj/item/reagent_containers/condiment/soymilk,
 		/obj/item/reagent_containers/condiment/yoghurt,

@@ -21,6 +21,11 @@
 	purchase_path = /obj/item/reagent_containers/condiment/cornmeal
 	cost_per_order = 30
 
+/datum/orderable_item/reagents/cornmeal
+	name = "Korta Flour Sack"
+	purchase_path = /obj/item/reagent_containers/condiment/korta_flour
+	cost_per_order = 30
+
 /datum/orderable_item/reagents/enzyme
 	name = "Universal Enzyme"
 	purchase_path = /obj/item/reagent_containers/condiment/enzyme

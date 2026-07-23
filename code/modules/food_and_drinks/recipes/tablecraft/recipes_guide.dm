@@ -205,7 +205,7 @@
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/rollingpin/flatrootdough
-	reqs = list(/obj/item/food/rootdough = 1)
+	reqs = list(/obj/item/food/korta_dough = 1)
 	result = /obj/item/food/flatrootdough
 	category = CAT_CAVER
 
@@ -258,7 +258,7 @@
 
 /datum/crafting_recipe/food/knife/rootdoughslice
 	reqs = list(/obj/item/food/flatrootdough = 1)
-	result = /obj/item/food/rootdoughslice
+	result = /obj/item/food/korta_doughslice
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/knife/rawpastrybase
@@ -276,7 +276,7 @@
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/knife/root_spaghetti
-	reqs = list(/obj/item/food/rootdoughslice = 1)
+	reqs = list(/obj/item/food/korta_doughslice = 1)
 	result = /obj/item/food/spaghetti/root
 	category = CAT_CAVER
 
@@ -705,7 +705,7 @@
 	result = /obj/item/food/bread/plain
 
 /datum/crafting_recipe/food/oven/rootbread
-	reqs = list(/obj/item/food/rootdough = 1)
+	reqs = list(/obj/item/food/korta_dough = 1)
 	result = /obj/item/food/bread/root
 
 /datum/crafting_recipe/food/oven/bun
@@ -713,7 +713,7 @@
 	result = /obj/item/food/bun
 
 /datum/crafting_recipe/food/oven/rootroll
-	reqs = list(/obj/item/food/rootdoughslice = 1)
+	reqs = list(/obj/item/food/korta_doughslice = 1)
 	result = /obj/item/food/rootroll
 
 /datum/crafting_recipe/food/oven/pastrybase

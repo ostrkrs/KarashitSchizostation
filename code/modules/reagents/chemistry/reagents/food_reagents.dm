@@ -1140,6 +1140,7 @@
 	taste_description = "earthy heat"
 	color = "#EEC39A"
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
+	default_container = /obj/item/reagent_containers/condiment/korta_flour
 	hydration_factor = -10
 
 /datum/reagent/consumable/korta_milk

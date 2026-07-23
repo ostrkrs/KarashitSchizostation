@@ -562,7 +562,7 @@
 					crafted_items++
 				if(crafted_items)
 					to_chat(user, span_notice("You made [crafted_items] item\s."))
-			else
+			else if(action == "make")
 				make_action(crafting_recipe, user)
 			busy = FALSE
 		if("toggle_recipes")

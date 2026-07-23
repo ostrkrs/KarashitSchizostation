@@ -258,30 +258,22 @@
 
 //Dough Dishes
 
-/obj/item/food/rootdough
+/obj/item/food/korta_dough
 	name = "root dough"
 	desc = "A root based dough, made with nuts and tubers. Used in a wide range of cavers cooking."
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "rootdough"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6)
 	w_class = WEIGHT_CLASS_SMALL
-	tastes = list("potato" = 1, "earthy heat" = 1)
+	tastes = list("earthy heat" = 1, "nuts" = 2)
 	foodtypes = VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_1
-	var/bread_type = /obj/item/food/bread/root
-	var/flat_type = /obj/item/food/flatrootdough
 
-/obj/item/food/rootdough/make_bakeable()
-	AddComponent(/datum/component/bakeable, bread_type, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
+/obj/item/food/korta_dough/make_bakeable()
+	AddComponent(/datum/component/bakeable, /obj/item/food/bread/root, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
 
-/obj/item/food/rootdough/make_processable()
-	AddElement(/datum/element/processable, TOOL_ROLLINGPIN, flat_type, 1, 3 SECONDS, table_required = TRUE, screentip_verb = "Flatten")
-
-/obj/item/food/rootdough/egg
-	desc = "A root based dough, made with nuts, tubers and eggs. Used in a wide range of cavers cooking."
-	foodtypes = parent_type::foodtypes | MEAT
-	bread_type = /obj/item/food/bread/root/egg
-	flat_type = /obj/item/food/flatrootdough/egg
+/obj/item/food/korta_dough/make_processable()
+	AddElement(/datum/element/processable, TOOL_ROLLINGPIN, /obj/item/food/flatrootdough, 1, 3 SECONDS, table_required = TRUE, screentip_verb = "Flatten")
 
 /obj/item/food/flatrootdough
 	name = "flat rootdough"
@@ -289,48 +281,35 @@
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "flat_rootdough"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6)
-	tastes = list("potato" = 1, "earthy heat" = 1)
+	tastes = list("earthy heat" = 1, "nuts" = 2)
 	foodtypes = VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_1
-	var/process_type = /obj/item/food/rootdoughslice
-	var/grill_type = /obj/item/food/root_flatbread
 
 /obj/item/food/flatrootdough/make_processable()
-	AddElement(/datum/element/processable, TOOL_KNIFE, process_type, 3, 3 SECONDS, table_required = TRUE, screentip_verb = "Slice")
+	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/korta_doughslice, 3, 3 SECONDS, table_required = TRUE, screentip_verb = "Slice")
 
 /obj/item/food/flatrootdough/make_grillable()
-	AddComponent(/datum/component/grillable, grill_type, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
+	AddComponent(/datum/component/grillable, /obj/item/food/root_flatbread, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
 
-/obj/item/food/flatrootdough/egg
-	foodtypes = parent_type::foodtypes | MEAT
-	process_type = /obj/item/food/rootdoughslice/egg
-	grill_type = /obj/item/food/root_flatbread/egg
-
-/obj/item/food/rootdoughslice
+/obj/item/food/korta_doughslice
 	name = "rootdough ball"
 	desc = "A ball of root dough. Perfect for making pasta or rolls."
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "rootdough_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
 	w_class = WEIGHT_CLASS_SMALL
-	tastes = list("potato" = 1, "earthy heat" = 1)
+	tastes = list("earthy heat" = 1, "nuts" = 2)
 	foodtypes = VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_1
-	var/process_type = /obj/item/food/spaghetti/root
-	var/bake_type = /obj/item/food/rootroll
 
-/obj/item/food/rootdoughslice/egg
+/obj/item/food/korta_doughslice/egg
 	foodtypes = parent_type::foodtypes | MEAT
 
-/obj/item/food/rootdoughslice/make_processable()
+/obj/item/food/korta_doughslice/make_processable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/spaghetti/root, 1, 3 SECONDS, table_required = TRUE, screentip_verb = "Slice")
 
-/obj/item/food/rootdoughslice/make_bakeable()
+/obj/item/food/korta_doughslice/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/food/rootroll, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
-
-/obj/item/food/rootdoughslice/egg
-	process_type = /obj/item/food/spaghetti/root/egg
-	bake_type = /obj/item/food/rootroll/egg
 
 /obj/item/food/root_flatbread
 	name = "root flatbread"
@@ -338,12 +317,9 @@
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "root_flatbread"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 8)
-	tastes = list("bread" = 1, "earthy heat" = 1)
+	tastes = list("bread" = 1, "earthy heat" = 1, "nuts" = 2)
 	foodtypes = VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_2
-
-/obj/item/food/root_flatbread/egg
-	foodtypes = parent_type::foodtypes | MEAT
 
 /obj/item/food/rootroll
 	name = "rootroll"
@@ -352,12 +328,9 @@
 	icon_state = "rootroll"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 4)
 	w_class = WEIGHT_CLASS_SMALL
-	tastes = list("roll" = 1) // the roll tastes of roll.
+	tastes = list("roll" = 1, "nuts" = 2) // the roll tastes of roll.
 	foodtypes = VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_2
-
-/obj/item/food/rootroll/egg
-	foodtypes = parent_type::foodtypes | MEAT
 
 //Bread Dishes
 
@@ -377,10 +350,6 @@
 	. = ..()
 	AddComponent(/datum/component/ingredients_holder, /obj/item/food/bread/empty, CUSTOM_INGREDIENT_ICON_FILL, max_ingredients = 8)
 
-/obj/item/food/bread/root/egg
-	foodtypes = parent_type::foodtypes | MEAT
-	slice_type = /obj/item/food/breadslice/root/egg
-
 /obj/item/food/breadslice/root
 	name = "rootbread slice"
 	desc = "A slice of dense, chewy rootbread."
@@ -394,9 +363,6 @@
 /obj/item/food/breadslice/root/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/ingredients_holder, null, CUSTOM_INGREDIENT_ICON_STACK)
-
-/obj/item/food/breadslice/root/egg
-	foodtypes = parent_type::foodtypes | MEAT
 
 //Pizza Dishes
 /obj/item/food/pizza/flatbread
