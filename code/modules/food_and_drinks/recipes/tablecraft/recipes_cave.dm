@@ -9,7 +9,7 @@
 	result = /obj/item/food/honey_roll
 	category = CAT_CAVER
 
-/datum/crafting_recipe/food/rootdough
+/datum/crafting_recipe/food/rootdough_without_eggs
 	name = "Rootdough (Without Eggs)"
 	reqs = list(
 		/obj/item/food/grown/potato = 2,
@@ -22,7 +22,7 @@
 	category = CAT_CAVER
 	crafting_flags = CRAFT_CLEARS_REAGENTS
 
-/datum/crafting_recipe/food/rootdough/with_eggs
+/datum/crafting_recipe/food/rootdough_with_eggs
 	name = "Rootdough (With Eggs)"
 	reqs = list(
 		/obj/item/food/grown/potato = 2,
