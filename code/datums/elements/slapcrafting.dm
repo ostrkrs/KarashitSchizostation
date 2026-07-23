@@ -93,12 +93,7 @@
 		final_recipe = result_to_recipe[string_chosen_recipe]
 
 
-	var/datum/crafting_recipe/actual_recipe = final_recipe
-
-	if(istype(actual_recipe, /datum/crafting_recipe/food))
-		actual_recipe = locate(final_recipe) in GLOB.cooking_recipes
-	else
-		actual_recipe = locate(final_recipe) in GLOB.crafting_recipes
+	var/datum/crafting_recipe/actual_recipe = GLOB.cooking_recipes_by_typepath[final_recipe] || GLOB.crafting_recipes_by_typepath[final_recipe]
 
 	if(!actual_recipe)
 		CRASH("Recipe not located in cooking or crafting recipes: [final_recipe]")
@@ -198,4 +193,3 @@
 		to_chat(user, boxed_message(span_notice(tool_list)))
 
 	qdel(cur_recipe)
-
