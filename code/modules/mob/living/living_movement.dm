@@ -59,6 +59,8 @@
 	. = ..()
 	if(.)
 		return
+	if(SEND_SIGNAL(src, COMSIG_LIVING_CAN_ALLOW_THROUGH, mover, border_dir) & COMPONENT_LIVING_PASSABLE)
+		return TRUE
 	if(mover.throwing)
 		var/mob/thrower = mover.throwing.get_thrower()
 		return (!density || (body_position == LYING_DOWN) || (thrower == src && !ismob(mover)))
@@ -163,3 +165,6 @@
 	if(stat > SOFT_CRIT)
 		return
 	return ..()
+
+/mob/living/add_pixel_shift_component()
+	AddComponent(/datum/component/pixel_shift)

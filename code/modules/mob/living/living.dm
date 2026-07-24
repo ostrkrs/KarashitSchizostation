@@ -498,6 +498,7 @@
 			if(mob_to_set.lying_angle == LYING_ANGLE_EAST)
 				mob_to_set.set_lying_angle(LYING_ANGLE_WEST)
 			mob_to_set.add_offsets(GRABBING_TRAIT, x_add = -offset, y_add = 0, animate = animate)
+	SEND_SIGNAL(mob_to_set, COMSIG_LIVING_SET_PULL_OFFSET)
 
 /**
  * Removes any offsets from the passed mob that are related to being grabbed
@@ -510,6 +511,7 @@
 	if(!override && M.buckled)
 		return
 	M.remove_offsets(GRABBING_TRAIT)
+	SEND_SIGNAL(M, COMSIG_LIVING_RESET_PULL_OFFSETS)
 
 //mob verbs are a lot faster than object verbs
 //for more info on why this is not atom/pull, see examinate() in mob.dm

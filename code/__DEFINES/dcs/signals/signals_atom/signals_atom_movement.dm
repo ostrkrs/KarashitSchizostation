@@ -27,6 +27,10 @@
 #define COMSIG_ATOM_TRIED_PASS "atom_tried_pass"
 /// called on /movable when something attempts to pass through it (atom/movable/source, atom/movable/passing, dir) AND WHEN general_movement = FALSE for some fucking reason
 #define COMSIG_MOVABLE_CAN_PASS_THROUGH "movable_can_pass_through"
+///from base of living/CanAllowThrough(): (atom/movable/mover, border_dir)
+#define COMSIG_LIVING_CAN_ALLOW_THROUGH "living_can_allow_through"
+	/// Allow to movable atoms to pass through this living mob
+	#define COMPONENT_LIVING_PASSABLE (1<<0)
 /// If given, we permit passage through
 #define COMSIG_COMPONENT_PERMIT_PASSAGE (1 << 0)
 /// If given, we DONT permit passage through
@@ -41,6 +45,10 @@
 #define COMSIG_LIVING_TRYING_TO_PULL "living_tried_pulling"
 /// Called from /mob/living/update_pull_movespeed
 #define COMSIG_LIVING_UPDATING_PULL_MOVESPEED "living_updating_pull_movespeed"
+///from base of living/set_pull_offset(): (mob/living/pull_target, grab_state)
+#define COMSIG_LIVING_SET_PULL_OFFSET "living_set_pull_offset"
+///from base of living/reset_pull_offsets(): (mob/living/pull_target, override)
+#define COMSIG_LIVING_RESET_PULL_OFFSETS "living_reset_pull_offsets"
 /// Called from /mob/living/PushAM -- Called when this mob is about to push a movable, but before it moves
 /// (aotm/movable/being_pushed)
 #define COMSIG_LIVING_PUSHING_MOVABLE "living_pushing_movable"

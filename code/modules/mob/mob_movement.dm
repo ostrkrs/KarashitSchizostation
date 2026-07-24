@@ -642,3 +642,6 @@
 	if(new_turf && (istype(new_turf, /turf/cordon/secret) || is_secret_level(new_turf.z)) && !client?.holder)
 		return
 	return ..()
+
+/mob/proc/add_pixel_shift_component()
+	return
