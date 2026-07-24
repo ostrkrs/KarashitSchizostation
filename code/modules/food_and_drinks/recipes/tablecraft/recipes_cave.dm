@@ -45,7 +45,7 @@
 /datum/crafting_recipe/food/rustic_flatbread
 	name = "Rustic flatbread"
 	reqs = list(
-		/obj/item/food/root_flatbread = 1,
+		/obj/item/food/korta_flatbread = 1,
 		/obj/item/food/grown/garlic = 1,
 		/datum/reagent/consumable/lemonjuice = 2,
 		/datum/reagent/consumable/nutriment/fat/oil/olive = 3
@@ -56,7 +56,7 @@
 /datum/crafting_recipe/food/italic_flatbread
 	name = "Italic flatbread"
 	reqs = list(
-		/obj/item/food/root_flatbread = 1,
+		/obj/item/food/korta_flatbread = 1,
 		/obj/item/food/grown/garlic = 1,
 		/obj/item/food/grown/tomato = 1,
 		/obj/item/food/meatball = 2,
@@ -68,7 +68,7 @@
 /datum/crafting_recipe/food/rawmeat_flatbread
 	name = "Meatlovers flatbread"
 	reqs = list(
-		/obj/item/food/root_flatbread = 1,
+		/obj/item/food/korta_flatbread = 1,
 		/obj/item/food/meat/slab = 1
 	)
 	result = /obj/item/food/pizza/flatbread/rawmeat
@@ -77,7 +77,7 @@
 /datum/crafting_recipe/food/swedish_flatbread
 	name = "Smörgåstårta flatbread"
 	reqs = list(
-		/obj/item/food/root_flatbread = 1,
+		/obj/item/food/korta_flatbread = 1,
 		/obj/item/food/grown/cucumber = 2,
 		/obj/item/food/egg = 1,
 		/obj/item/organ/liver = 1
@@ -89,7 +89,7 @@
 /datum/crafting_recipe/food/fish_flatbread
 	name = "BBQ fish flatbread"
 	reqs = list(
-		/obj/item/food/root_flatbread = 1,
+		/obj/item/food/korta_flatbread = 1,
 		/obj/item/food/fishmeat = 2,
 		/datum/reagent/consumable/bbqsauce = 5
 	)
@@ -99,7 +99,7 @@
 /datum/crafting_recipe/food/mushroom_flatbread
 	name = "Mushroom and tomato flatbread"
 	reqs = list(
-		/obj/item/food/root_flatbread = 1,
+		/obj/item/food/korta_flatbread = 1,
 		/obj/item/food/grown/tomato = 1,
 		/obj/item/food/grown/mushroom = 3,
 		/datum/reagent/consumable/nutriment/fat/oil/olive = 3
@@ -110,7 +110,7 @@
 /datum/crafting_recipe/food/nutty_flatbread
 	name = "Nut paste flatbread"
 	reqs = list(
-		/obj/item/food/root_flatbread = 1,
+		/obj/item/food/korta_flatbread = 1,
 		/datum/reagent/consumable/korta_flour = 5,
 		/datum/reagent/consumable/korta_milk = 5
 	)
@@ -270,4 +270,20 @@
 	)
 	result = /obj/item/food/cake/korta_brittle
 	added_foodtypes = SUGAR
+	category = CAT_CAVER
+
+/datum/crafting_recipe/food/korta_wellington
+	name = "Korta Wellington"
+	reqs = list(
+		/obj/item/food/meat/steak = 1,
+		/obj/item/food/grown/mushroom = 1,
+		/obj/item/food/grown/garlic = 1,
+		/obj/item/food/meat/bacon = 1,
+		/obj/item/food/flat_korta_dough = 1,
+		/datum/reagent/consumable/korta_milk = 5,
+		/datum/reagent/consumable/salt = 2,
+		/datum/reagent/consumable/blackpepper = 2
+	)
+	result = /obj/item/food/korta_wellington
+	removed_foodtypes = BREAKFAST
 	category = CAT_CAVER

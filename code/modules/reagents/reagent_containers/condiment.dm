@@ -196,7 +196,7 @@
 
 /obj/item/reagent_containers/condiment/flour
 	name = "flour sack"
-	desc = "A big bag of flour. Good for baking!"
+	desc = "A big bag of wheat flour. Good for baking!"
 	icon_state = "flour"
 	inhand_icon_state = "carton"
 	lefthand_file = 'icons/mob/inhands/items/drinks_lefthand.dmi'
@@ -219,7 +219,7 @@
 
 /obj/item/reagent_containers/condiment/korta_flour
 	name = "korta flour sack"
-	desc = "A big bag of flour. Good for baking!"
+	desc = "A big bag of korta flour. Good for baking!"
 	icon_state = "korta_flour"
 	inhand_icon_state = "carton"
 	lefthand_file = 'icons/mob/inhands/items/drinks_lefthand.dmi'

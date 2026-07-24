@@ -206,7 +206,7 @@
 
 /datum/crafting_recipe/food/rollingpin/flatrootdough
 	reqs = list(/obj/item/food/korta_dough = 1)
-	result = /obj/item/food/flatrootdough
+	result = /obj/item/food/flat_korta_dough
 	category = CAT_CAVER
 
 /datum/crafting_recipe/food/rollingpin/piedough
@@ -257,7 +257,7 @@
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/knife/rootdoughslice
-	reqs = list(/obj/item/food/flatrootdough = 1)
+	reqs = list(/obj/item/food/flat_korta_dough = 1)
 	result = /obj/item/food/korta_doughslice
 	category = CAT_BREAD
 
@@ -415,8 +415,8 @@
 	category = CAT_SEAFOOD
 
 /datum/crafting_recipe/food/grill/rootflatbread
-	reqs = list(/obj/item/food/flatrootdough = 1)
-	result = /obj/item/food/root_flatbread
+	reqs = list(/obj/item/food/flat_korta_dough = 1)
+	result = /obj/item/food/korta_flatbread
 	category = CAT_CAVER
 
 /datum/crafting_recipe/food/grill/griddle_toast
@@ -732,8 +732,8 @@
 	category = CAT_PIZZA
 
 /datum/crafting_recipe/food/oven/rootflatbread
-	reqs = list(/obj/item/food/flatrootdough = 1)
-	result = /obj/item/food/root_flatbread
+	reqs = list(/obj/item/food/flat_korta_dough = 1)
+	result = /obj/item/food/korta_flatbread
 
 /datum/crafting_recipe/food/oven/pie
 	reqs = list(/obj/item/food/piedough = 1)

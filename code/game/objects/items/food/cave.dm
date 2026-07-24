@@ -1,5 +1,4 @@
 //Misc
-
 /obj/item/food/root_escargot
 	name = "snail cocleas"
 	desc = "Snail escargot is closer to the Roman dish cocleas than the contemporary French escargot. It's a common street food in the underground cities."
@@ -99,8 +98,42 @@
 	foodtypes = FRUIT | VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_3
 
-//Root Burgers
+/obj/item/food/korta_wellington
+	name = "Korta wellington"
+	desc = "A luxurious log of beef, covered in a fine mushroom duxelle and pancetta ham, then bound in korta pastry."
+	icon = 'icons/obj/food/meat.dmi'
+	icon_state = "korta_wellington"
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment/protein = 21,
+		/datum/reagent/consumable/nutriment/vitamin = 6,
+	)
+	tastes = list("beef" = 3, "mushrooms" = 1, "pancetta" = 1)
+	foodtypes = MEAT | VEGETABLES | NUTS
+	w_class = WEIGHT_CLASS_NORMAL
+	venue_value = FOOD_PRICE_EXOTIC
+	crafting_complexity = FOOD_COMPLEXITY_5
+	custom_materials = list(/datum/material/meat = MEATDISH_MATERIAL_AMOUNT * 4)
 
+/obj/item/food/korta_wellington/make_processable()
+	AddElement(/datum/element/processable, TOOL_KNIFE,  /obj/item/food/korta_wellington_slice, 3, 3 SECONDS, table_required = TRUE,  screentip_verb = "Cut")
+
+/obj/item/food/korta_wellington_slice
+	name = "korta wellington slice"
+	desc = "A slice of korta & beef wellington, topped with a rich gravy. Simply delicious."
+	icon = 'icons/obj/food/meat.dmi'
+	icon_state = "korta_wellington_slice"
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment/protein = 7,
+		/datum/reagent/consumable/nutriment/vitamin = 2,
+	)
+	tastes = list("beef" = 3, "mushrooms" = 1, "pancetta" = 1)
+	foodtypes = MEAT | VEGETABLES | NUTS
+	w_class = WEIGHT_CLASS_SMALL
+	venue_value = FOOD_PRICE_NORMAL
+	crafting_complexity = FOOD_COMPLEXITY_5
+	custom_materials = list(/datum/material/meat = MEATDISH_MATERIAL_AMOUNT * (4/3))
+
+//Root Burgers
 /obj/item/food/burger/rootguffin
 	name = "root-guffin"
 	desc = "A cheap and greasy imitation of an eggs benedict."
@@ -199,7 +232,6 @@
 	custom_materials = list(/datum/material/meat = MEATDISH_MATERIAL_AMOUNT)
 
 //Spaghetti Dishes
-
 /obj/item/food/spaghetti/root
 	name = "root pasta"
 	desc = "It's similar in texture and appearance to gnocchi."
@@ -257,10 +289,9 @@
 	crafting_complexity = FOOD_COMPLEXITY_4
 
 //Dough Dishes
-
 /obj/item/food/korta_dough
-	name = "root dough"
-	desc = "A root based dough, made with nuts and tubers. Used in a wide range of cavers cooking."
+	name = "korta dough"
+	desc = "A rootnut based dough. Used in a wide range of cavers cooking."
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "rootdough"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6)
@@ -273,11 +304,11 @@
 	AddComponent(/datum/component/bakeable, /obj/item/food/bread/root, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
 
 /obj/item/food/korta_dough/make_processable()
-	AddElement(/datum/element/processable, TOOL_ROLLINGPIN, /obj/item/food/flatrootdough, 1, 3 SECONDS, table_required = TRUE, screentip_verb = "Flatten")
+	AddElement(/datum/element/processable, TOOL_ROLLINGPIN, /obj/item/food/flat_korta_dough, 1, 3 SECONDS, table_required = TRUE, screentip_verb = "Flatten")
 
-/obj/item/food/flatrootdough
-	name = "flat rootdough"
-	desc = "Flattened rootdough, ready to be made into a flatbread, or cut into segments."
+/obj/item/food/flat_korta_dough
+	name = "flat korta dough"
+	desc = "Flattened korta dough, ready to be made into a flatbread, or cut into segments."
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "flat_rootdough"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 6)
@@ -285,15 +316,15 @@
 	foodtypes = VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_1
 
-/obj/item/food/flatrootdough/make_processable()
+/obj/item/food/flat_korta_dough/make_processable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/korta_doughslice, 3, 3 SECONDS, table_required = TRUE, screentip_verb = "Slice")
 
-/obj/item/food/flatrootdough/make_grillable()
-	AddComponent(/datum/component/grillable, /obj/item/food/root_flatbread, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
+/obj/item/food/flat_korta_dough/make_grillable()
+	AddComponent(/datum/component/grillable, /obj/item/food/korta_flatbread, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
 
 /obj/item/food/korta_doughslice
-	name = "rootdough ball"
-	desc = "A ball of root dough. Perfect for making pasta or rolls."
+	name = "korta dough ball"
+	desc = "A ball of korta dough. Perfect for making pasta or rolls."
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "rootdough_slice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 2)
@@ -302,17 +333,14 @@
 	foodtypes = VEGETABLES | NUTS
 	crafting_complexity = FOOD_COMPLEXITY_1
 
-/obj/item/food/korta_doughslice/egg
-	foodtypes = parent_type::foodtypes | MEAT
-
 /obj/item/food/korta_doughslice/make_processable()
 	AddElement(/datum/element/processable, TOOL_KNIFE, /obj/item/food/spaghetti/root, 1, 3 SECONDS, table_required = TRUE, screentip_verb = "Slice")
 
 /obj/item/food/korta_doughslice/make_bakeable()
 	AddComponent(/datum/component/bakeable, /obj/item/food/rootroll, rand(15 SECONDS, 25 SECONDS), TRUE, TRUE)
 
-/obj/item/food/root_flatbread
-	name = "root flatbread"
+/obj/item/food/korta_flatbread
+	name = "korta flatbread"
 	desc = "A plain grilled root flatbread. Can be topped with a variety of foods that cavers like to eat."
 	icon = 'icons/obj/food/cave.dmi'
 	icon_state = "root_flatbread"
