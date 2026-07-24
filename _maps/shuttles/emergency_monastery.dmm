@@ -2521,7 +2521,7 @@
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "LK" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/escape)
 "LN" = (
 /obj/item/paper{

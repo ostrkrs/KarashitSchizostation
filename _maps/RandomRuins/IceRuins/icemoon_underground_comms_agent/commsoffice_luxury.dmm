@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent)
 "f" = (
 /obj/machinery/door/window/brigdoor/left/directional/south,
@@ -167,7 +167,7 @@
 /area/ruin/comms_agent)
 "X" = (
 /obj/modular_map_connector,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent)
 
 (1,1,1) = {"

@@ -7,7 +7,7 @@
 /turf/template_noop,
 /area/template_noop)
 "ad" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ancientstation/delta/ai)
 "ae" = (
 /obj/structure/closet/crate/bin,
@@ -2692,7 +2692,7 @@
 /area/ruin/space/ancientstation/charlie/dorms)
 "md" = (
 /obj/structure/sign/warning/secure_area,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ancientstation/delta/biolab)
 "me" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -3605,7 +3605,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/hydro)
 "rp" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ancientstation/delta/biolab)
 "rq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3981,7 +3981,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ancientstation/charlie/sec)
 "uj" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ancientstation/delta/proto)
 "un" = (
 /obj/effect/turf_decal/stripes/line{

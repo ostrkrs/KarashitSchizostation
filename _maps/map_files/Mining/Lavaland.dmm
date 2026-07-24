@@ -1781,7 +1781,7 @@
 /turf/open/misc/hay/lavaland,
 /area/mine/lobby/raptor)
 "kg" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/mine/laborcamp)
 "ki" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -3372,7 +3372,7 @@
 /turf/open/floor/carpet/red,
 /area/mine/lobby/raptor)
 "rF" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/mine/maintenance/labor)
 "rG" = (
 /obj/structure/railing/corner{
@@ -4305,7 +4305,7 @@
 /turf/closed/wall,
 /area/mine/maintenance/public/north)
 "xD" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/mine/maintenance/service/comms)
 "xF" = (
 /obj/machinery/door/airlock/external/glass{
@@ -5924,7 +5924,7 @@
 /turf/open/floor/iron/smooth,
 /area/mine/laborcamp/quarters)
 "Ia" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/mine/laborcamp/security)
 "If" = (
 /obj/structure/cable,

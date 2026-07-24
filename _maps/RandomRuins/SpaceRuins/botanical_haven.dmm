@@ -42,7 +42,6 @@
 /turf/open/misc/grass,
 /area/ruin/space/has_grav/powered/botanical_haven)
 "j" = (
-/turf/closed/wall/rock,
 /area/ruin/space/has_grav/powered/botanical_haven)
 "k" = (
 /obj/effect/turf_decal/siding/brown/corner{

@@ -545,7 +545,7 @@
 /area/ruin/space/ks13/medical/medbay)
 "fE" = (
 /obj/effect/mapping_helpers/broken_floor,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/supermatter)
 "fH" = (
 /obj/machinery/door/morgue{
@@ -696,7 +696,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "ig" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/command/eva)
 "ih" = (
 /obj/structure/bed,
@@ -1055,7 +1055,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/tool_storage)
 "mR" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/aft_solars_control)
 "mS" = (
 /obj/structure/cable,
@@ -1126,7 +1126,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/ks13/service/chapel)
 "od" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/hallway/aft)
 "om" = (
 /obj/structure/lattice,
@@ -1696,7 +1696,7 @@
 /turf/template_noop,
 /area/space/nearstation)
 "rl" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/command/bridge)
 "rm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1714,7 +1714,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/service/bar)
 "rr" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/secure_storage)
 "rw" = (
 /turf/closed/wall,
@@ -2057,7 +2057,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "sU" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/supermatter)
 "sX" = (
 /obj/effect/decal/cleanable/blood/footprints{
@@ -2079,7 +2079,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/engineering/supermatter)
 "tb" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/science/ordnance_hall)
 "td" = (
 /turf/open/floor/plating/airless,
@@ -2205,7 +2205,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ks13/engineering/supermatter)
 "tY" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/atmos)
 "ua" = (
 /obj/machinery/door/airlock/medical{
@@ -2236,10 +2236,10 @@
 /area/ruin/space/ks13/engineering/sb_bow_solars_control)
 "ue" = (
 /obj/machinery/atmospherics/pipe/smart/simple/dark/visible,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/science/ordnance)
 "uf" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/service/chapel)
 "ug" = (
 /obj/structure/table/glass,
@@ -2347,7 +2347,7 @@
 /turf/open/floor/engine/airless,
 /area/ruin/space/ks13/science/ordnance)
 "uU" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/science/ordnance)
 "uV" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/end{
@@ -2396,7 +2396,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/engineering/aux_storage)
 "vk" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/aux_storage)
 "vl" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2526,7 +2526,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/ks13/hallway/starboard_bow)
 "wc" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/dorms)
 "we" = (
 /obj/effect/decal/cleanable/blood/footprints,
@@ -2740,7 +2740,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/hallway/central)
 "xf" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/ai/vault)
 "xg" = (
 /obj/structure/cable,
@@ -2928,7 +2928,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/dorms)
 "yf" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/grav_gen)
 "yg" = (
 /obj/structure/cable,
@@ -3782,7 +3782,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/hallway/aft)
 "Cy" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/science/rnd)
 "CC" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
@@ -3873,7 +3873,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/science/genetics)
 "De" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/command/bridge_hall)
 "Df" = (
 /obj/effect/mapping_helpers/burnt_floor,
@@ -4795,7 +4795,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/service/cafe)
 "HH" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/service/jani)
 "HI" = (
 /obj/structure/cable,
@@ -5231,7 +5231,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ks13/engineering/sb_bow_solars_control)
 "Kb" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/space/nearstation)
 "Kc" = (
 /obj/effect/spawner/structure/window/hollow/reinforced/directional{
@@ -5439,7 +5439,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/ks13/medical/morgue)
 "Lq" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/security/sec)
 "Lt" = (
 /obj/effect/decal/cleanable/glass,
@@ -5572,7 +5572,7 @@
 /area/ruin/space/ks13/engineering/supermatter)
 "Mc" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/science/ordnance)
 "Me" = (
 /obj/structure/girder,
@@ -6307,7 +6307,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/ks13/medical/morgue)
 "PG" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "PH" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -6463,7 +6463,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/ks13/security/cell)
 "QG" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/engineering/tech_storage)
 "QI" = (
 /turf/open/floor/iron/airless,
@@ -6495,7 +6495,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/ks13/ai/corridor)
 "QP" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/security/cell)
 "QQ" = (
 /obj/structure/rack,
@@ -7489,7 +7489,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ks13/engineering/sb_bow_solars_control)
 "VD" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/hallway/central)
 "VE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7942,7 +7942,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/ks13/engineering/sb_bow_solars_control)
 "Yc" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/ks13/ai/corridor)
 "Ye" = (
 /obj/effect/decal/cleanable/dirt,

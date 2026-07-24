@@ -19,7 +19,7 @@
 /turf/open/floor/catwalk_floor,
 /area/ruin/roroco/packing)
 "as" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/roroco/harvesting)
 "aM" = (
 /obj/effect/turf_decal/stripes/line{
@@ -392,7 +392,7 @@
 	pixel_x = -6;
 	puzzle_id = "roro_factory"
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/roroco/harvesting)
 "mD" = (
 /obj/effect/turf_decal/delivery/red,
@@ -544,7 +544,7 @@
 /turf/open/floor/plating,
 /area/ruin/roroco/janitor)
 "rQ" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/roroco/extraction)
 "sr" = (
 /obj/effect/turf_decal/tile/dark_red{
@@ -901,7 +901,7 @@
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors/nospawn)
 "BS" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/roroco/harvesting)
 "Ce" = (
 /obj/structure/cable,
@@ -1494,7 +1494,7 @@
 /turf/open/floor/plating,
 /area/ruin/roroco/maintenance)
 "Xs" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/roroco)
 "Xv" = (
 /obj/structure/cable,

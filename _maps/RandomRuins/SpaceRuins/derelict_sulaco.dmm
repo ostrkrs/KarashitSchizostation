@@ -792,7 +792,7 @@
 /area/ruin/space/has_grav/derelictsulaco)
 "zH" = (
 /obj/machinery/status_display,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/derelictsulaco)
 "zM" = (
 /obj/effect/decal/cleanable/blood/splatter/xeno,
@@ -1200,7 +1200,7 @@
 /area/ruin/space/has_grav/derelictsulaco)
 "Mj" = (
 /obj/structure/alien/weeds,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/derelictsulaco)
 "Mk" = (
 /obj/machinery/door/airlock/maintenance/external{
@@ -1523,7 +1523,7 @@
 /turf/open/floor/iron/smooth_edge,
 /area/ruin/space/has_grav/derelictsulaco)
 "VT" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/derelictsulaco)
 "WC" = (
 /obj/structure/chair/office{
@@ -1556,7 +1556,7 @@
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/derelictsulaco)
 "WN" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space)
 "WO" = (
 /obj/item/stack/tile/iron/smooth_large,

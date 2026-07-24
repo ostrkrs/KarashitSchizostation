@@ -160,7 +160,7 @@
 /area/ruin/space/has_grav/listeningstation)
 "fG" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/listeningstation)
 "gc" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -672,7 +672,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "JB" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/listeningstation)
 "JD" = (
 /obj/docking_port/stationary{
@@ -938,7 +938,7 @@
 /area/ruin/space)
 "WW" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/listeningstation)
 "XQ" = (
 /obj/structure/sign/departments/medbay/alt/directional/north,

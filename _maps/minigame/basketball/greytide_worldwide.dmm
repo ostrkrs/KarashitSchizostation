@@ -100,7 +100,7 @@
 /area/centcom/basketball)
 "fp" = (
 /obj/structure/sign/poster/contraband/grey_tide,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/centcom/basketball)
 "fu" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -684,7 +684,7 @@
 /turf/open/floor/plating,
 /area/centcom/basketball)
 "WM" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/centcom/basketball)
 "Xm" = (
 /obj/effect/turf_decal/delivery,
@@ -720,7 +720,7 @@
 /area/centcom/basketball)
 "Yp" = (
 /obj/structure/sign/poster/contraband/hacking_guide,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/centcom/basketball)
 "YH" = (
 /obj/structure/girder,

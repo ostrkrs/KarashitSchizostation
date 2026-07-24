@@ -9,7 +9,7 @@
 /turf/closed/mineral/random/labormineral,
 /area/awaymission/undergroundoutpost45/caves)
 "ae" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/central)
 "af" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -39,7 +39,7 @@
 /turf/open/floor/plating,
 /area/awaymission/undergroundoutpost45/central)
 "an" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/undergroundoutpost45/central)
 "ao" = (
 /turf/open/floor/iron/dark,
@@ -1226,7 +1226,7 @@
 /area/awaymission/undergroundoutpost45/central)
 "fv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/engineering)
 "fw" = (
 /obj/structure/disposalpipe/segment{
@@ -1321,7 +1321,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "fK" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "fN" = (
 /turf/closed/wall/rust,
@@ -1411,7 +1411,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/central)
 "gg" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "gh" = (
 /obj/machinery/light/small/directional/west,
@@ -1486,10 +1486,10 @@
 /turf/open/floor/iron/showroomfloor,
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "gv" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/gateway)
 "gw" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/undergroundoutpost45/gateway)
 "gx" = (
 /turf/closed/wall/rust,
@@ -1498,7 +1498,7 @@
 /turf/closed/wall,
 /area/awaymission/undergroundoutpost45/research)
 "gz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/research)
 "gA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1642,7 +1642,7 @@
 	},
 /area/awaymission/undergroundoutpost45/research)
 "hc" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/undergroundoutpost45/research)
 "hf" = (
 /obj/machinery/light/small/directional/west,
@@ -2735,7 +2735,7 @@
 /turf/open/floor/iron,
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "ln" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/engineering)
 "lq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -3376,7 +3376,7 @@
 /turf/open/floor/plating,
 /area/awaymission/undergroundoutpost45/engineering)
 "ni" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/undergroundoutpost45/engineering)
 "nj" = (
 /obj/machinery/door/firedoor,
@@ -5504,7 +5504,7 @@
 /area/awaymission/undergroundoutpost45/engineering)
 "uH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/engineering)
 "uI" = (
 /obj/machinery/meter,
@@ -5793,10 +5793,10 @@
 /turf/open/floor/engine/o2,
 /area/awaymission/undergroundoutpost45/engineering)
 "vI" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/undergroundoutpost45/mining)
 "vJ" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/undergroundoutpost45/mining)
 "vK" = (
 /turf/closed/wall,

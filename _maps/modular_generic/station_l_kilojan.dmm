@@ -192,7 +192,7 @@
 /turf/open/floor/iron,
 /area/template_noop)
 "v" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "w" = (
 /obj/structure/broken_flooring/pile/directional/west,

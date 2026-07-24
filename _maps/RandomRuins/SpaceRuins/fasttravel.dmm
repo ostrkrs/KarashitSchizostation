@@ -222,7 +222,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/massdriverhub)
 "FY" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/massdriverhub)
 "Gx" = (
 /obj/machinery/mass_driver{

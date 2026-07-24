@@ -57,7 +57,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/research/interior/engineering)
 "ar" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/engineering)
 "as" = (
 /mob/living/basic/trooper/syndicate/ranged/smg,
@@ -133,7 +133,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/engineering)
 "aH" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/maint)
 "aI" = (
 /obj/structure/girder,
@@ -241,7 +241,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bl" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/gateway)
 "bm" = (
 /obj/structure/cable,
@@ -495,7 +495,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "cp" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior)
 "cq" = (
 /obj/machinery/door/airlock/engineering{
@@ -532,7 +532,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/gateway)
 "cx" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/genetics)
 "cy" = (
 /obj/machinery/door/airlock/maintenance_hatch{
@@ -595,7 +595,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "cQ" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/secure)
 "cR" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -693,7 +693,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "do" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/security)
 "dp" = (
 /obj/structure/closet/crate,
@@ -801,7 +801,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "ea" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/cryo)
 "eb" = (
 /obj/machinery/door/poddoor{
@@ -1313,7 +1313,7 @@
 /area/awaymission/research/interior)
 "gB" = (
 /obj/structure/sign/departments/science,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior)
 "gD" = (
 /turf/open/floor/iron,
@@ -1800,7 +1800,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/maint)
 "iW" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/medbay)
 "iX" = (
 /turf/closed/wall,
@@ -1957,7 +1957,7 @@
 /area/awaymission/research/interior)
 "jK" = (
 /obj/structure/sign/departments/medbay,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior)
 "jP" = (
 /obj/item/kirbyplants/organic/plant16,
@@ -2521,7 +2521,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "ma" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/escapepods)
 "mb" = (
 /turf/closed/wall,

@@ -392,7 +392,7 @@
 /area/ruin/powered/mailroom)
 "Qx" = (
 /obj/structure/sign/poster/official/obey,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/mailroom)
 "QU" = (
 /obj/effect/turf_decal/bot,
@@ -479,7 +479,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/ruin/powered/mailroom)
 "WE" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/mailroom)
 "Xa" = (
 /obj/structure/sign/warning/secure_area,

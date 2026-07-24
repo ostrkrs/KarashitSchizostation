@@ -248,7 +248,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "mV" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "nX" = (
 /obj/structure/closet/crate/engineering/electrical,
@@ -787,7 +787,7 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "Pz" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "PE" = (
 /obj/machinery/door/airlock/shuttle,

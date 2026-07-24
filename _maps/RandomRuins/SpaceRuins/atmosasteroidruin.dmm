@@ -49,7 +49,7 @@
 /turf/open/floor/iron/co2_pressurized,
 /area/ruin/space/has_grav/atmosasteroid)
 "gG" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/atmosasteroid)
 "gU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/cyan/visible,

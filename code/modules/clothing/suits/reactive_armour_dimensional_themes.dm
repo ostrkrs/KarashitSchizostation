@@ -139,12 +139,6 @@
 	replace_floor = /turf/open/floor/fake_snow
 	barricade = /obj/structure/statue/snow/snowman
 
-/datum/armour_dimensional_theme/safe/space
-	material = /datum/material/glass
-	replace_wall = /turf/closed/wall/rock/porous
-	replace_floor = /turf/open/floor/fakespace
-	barricade = /obj/machinery/door/airlock/external/glass/ruin
-
 /datum/armour_dimensional_theme/safe/glass
 	material = /datum/material/glass
 	replace_floor = /turf/open/floor/glass

@@ -81,7 +81,7 @@
 /turf/open/floor/plating,
 /area/centcom/mafia)
 "w" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/centcom/mafia)
 "x" = (
 /obj/structure/chair/office{

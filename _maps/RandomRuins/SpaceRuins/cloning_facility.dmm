@@ -3,18 +3,18 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "c" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "d" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "e" = (
 /obj/machinery/defibrillator_mount/loaded,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "f" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -141,7 +141,7 @@
 /obj/structure/sign/directions/science{
 	dir = 8
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "r" = (
 /obj/effect/decal/remains/human,
@@ -319,7 +319,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/powered/ancient_shuttle)
 "V" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/space/nearstation)
 "W" = (
 /obj/machinery/experimental_cloner_scanner,

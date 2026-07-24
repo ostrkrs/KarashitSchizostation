@@ -1,5 +1,5 @@
 /turf/closed/indestructible
-	name = "wall"
+	name = "hull"
 	desc = "Effectively impervious to conventional methods of destruction."
 	icon = 'icons/turf/walls.dmi'
 	explosive_resistance = 50
@@ -28,7 +28,7 @@
 	return ..()
 
 /turf/closed/indestructible/oldshuttle
-	name = "strange shuttle wall"
+	name = "strange shuttle hull"
 	icon = 'icons/turf/shuttleold.dmi'
 	icon_state = "block"
 
@@ -100,7 +100,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 	return ..()
 
 /turf/closed/indestructible/reinforced
-	name = "reinforced wall"
+	name = "reinforced hull"
 	desc = "A huge chunk of reinforced metal used to separate rooms. Effectively impervious to conventional methods of destruction."
 	icon = 'icons/turf/walls/reinforced_wall.dmi'
 	icon_state = "reinforced_wall-0"
@@ -112,7 +112,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 	smoothing_flags = SMOOTH_BITMASK
 
 /turf/closed/indestructible/reinforced/titanium
-	name = "reinforced titanium imitation wall"
+	name = "reinforced titanium imitation hull"
 	desc = "A huge chunk of reinforced metal used to separate rooms. Naturally, to cut down on costs, this is just a really good paint job to resemble titanium. Effectively impervious to conventional methods of destruction."
 	icon = 'icons/turf/walls/shuttle_wall.dmi'
 	icon_state = "shuttle_wall-0"
@@ -145,7 +145,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 	base_icon_state = "wood_wall"
 
 /turf/closed/indestructible/alien
-	name = "alien wall"
+	name = "alien hull"
 	desc = "A wall with alien alloy plating."
 	icon = 'icons/turf/walls/abductor_wall.dmi'
 	icon_state = "abductor_wall-0"

@@ -399,7 +399,7 @@
 /turf/open/floor/plating,
 /area/ruin/outpost31/kennel)
 "he" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/medical)
 "hi" = (
 /obj/item/ammo_casing/spent,
@@ -673,7 +673,7 @@
 	},
 /area/ruin/outpost31/lab)
 "ne" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/commander_room)
 "nj" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -724,7 +724,7 @@
 	},
 /area/ruin/outpost31/lab)
 "oa" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/recroom)
 "ob" = (
 /obj/effect/turf_decal/stripes/line,
@@ -842,7 +842,7 @@
 /turf/open/floor/plating,
 /area/ruin/outpost31)
 "qz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/kennel)
 "qH" = (
 /obj/structure/closet/preopen{
@@ -1194,7 +1194,7 @@
 /turf/open/floor/wood,
 /area/ruin/outpost31/kennel)
 "xc" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/radiomap)
 "xk" = (
 /turf/closed/wall,
@@ -1292,7 +1292,7 @@
 	},
 /area/ruin/outpost31/lab)
 "zv" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/crewquarters)
 "zw" = (
 /obj/effect/turf_decal/siding/blue{
@@ -1679,7 +1679,7 @@
 /turf/open/floor/wood,
 /area/ruin/outpost31/crewquarters)
 "Gz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/kitchendiningroom)
 "GR" = (
 /obj/structure/closet/firecloset,
@@ -2241,7 +2241,7 @@
 /turf/open/floor/plating,
 /area/ruin/outpost31/kennel)
 "Sg" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31)
 "Sm" = (
 /obj/effect/turf_decal/siding/wood{

@@ -6,7 +6,7 @@
 /turf/closed/wall,
 /area/ruin/space/has_grav/hellfactory)
 "ac" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hellfactory)
 "ad" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
@@ -289,7 +289,7 @@
 /turf/open/floor/plastic,
 /area/ruin/space/has_grav/hellfactory)
 "aW" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/hellfactory)
 "aX" = (
 /obj/item/ammo_casing/spent{
@@ -848,7 +848,7 @@
 /obj/structure/sign/warning/cold_temp{
 	name = "\improper BLAST FREEZER"
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hellfactory)
 "pf" = (
 /obj/effect/decal/cleanable/dirt,

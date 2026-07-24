@@ -685,7 +685,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/dangerous_research)
 "jp" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/dangerous_research/dorms)
 "jq" = (
 /obj/structure/table,
@@ -778,7 +778,7 @@
 	},
 /area/space)
 "jR" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/dangerous_research/maint)
 "kc" = (
 /obj/machinery/air_sensor{
@@ -2360,7 +2360,7 @@
 /turf/open/floor/plating/rust,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "DA" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/dangerous_research)
 "DB" = (
 /obj/effect/turf_decal/stripes/asteroid{
@@ -3223,7 +3223,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "Qe" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/dangerous_research/dorms)
 "Qn" = (
 /obj/structure/table,
@@ -3312,7 +3312,7 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/dangerous_research/dorms)
 "Rf" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/dangerous_research/medical)
 "Rj" = (
 /obj/machinery/light/small/directional/north,
@@ -3490,7 +3490,7 @@
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/dangerous_research)
 "Tc" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "Te" = (
 /obj/effect/turf_decal/tile/purple/diagonal_edge,
@@ -3541,7 +3541,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "Um" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/dangerous_research/lab)
 "Uu" = (
 /obj/effect/turf_decal/stripes/end{
@@ -3869,7 +3869,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/dangerous_research/medical)
 "Zv" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/dangerous_research/medical)
 "Zw" = (
 /obj/effect/decal/cleanable/dirt,

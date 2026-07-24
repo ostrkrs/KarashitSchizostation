@@ -58,7 +58,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "al" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/escape/brig)
 "am" = (
 /obj/structure/table,
@@ -301,7 +301,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "bq" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/escape)
 "br" = (
 /turf/closed/wall,

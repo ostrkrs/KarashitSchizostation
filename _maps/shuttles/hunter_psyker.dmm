@@ -576,7 +576,7 @@
 /turf/open/floor/carpet/black,
 /area/shuttle/hunter)
 "CW" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/hunter)
 "De" = (
 /obj/structure/curtain/cloth/fancy/mechanical/start_closed{

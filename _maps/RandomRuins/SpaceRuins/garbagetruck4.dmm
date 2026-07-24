@@ -198,7 +198,7 @@
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "rb" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "rc" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -573,7 +573,7 @@
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "Gt" = (
 /obj/structure/sign/flag/mothic,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "He" = (
 /obj/structure/spider/passage,
@@ -863,7 +863,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "Yr" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "Yz" = (
 /obj/structure/spider/stickyweb,

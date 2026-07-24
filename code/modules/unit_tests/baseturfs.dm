@@ -34,9 +34,6 @@
 	// Do this instead of just ChangeTurf to guarantee that baseturfs is completely default on-init behavior
 	RESET_TO_EXPECTED(run_loc_floor_bottom_left)
 
-	run_loc_floor_bottom_left.place_on_top(/turf/closed/wall/rock)
-	TEST_ASSERT_EQUAL(run_loc_floor_bottom_left.type, /turf/closed/wall/rock, "Rock wall should've been placed on top")
-
 	run_loc_floor_bottom_left.ScrapeAway()
 	TEST_ASSERT_EQUAL(run_loc_floor_bottom_left.type, EXPECTED_FLOOR_TYPE, "Rock wall should've been scraped off, back into the expected type")
 
@@ -53,17 +50,11 @@
 	// Do this instead of just ChangeTurf to guarantee that baseturfs is completely default on-init behavior
 	RESET_TO_EXPECTED(run_loc_floor_bottom_left)
 
-	run_loc_floor_bottom_left.place_on_bottom(/turf/closed/wall/rock)
-	TEST_ASSERT_EQUAL(run_loc_floor_bottom_left.type, EXPECTED_FLOOR_TYPE, "PlaceOnBottom shouldn't have changed turf")
-
 	run_loc_floor_bottom_left.ScrapeAway()
 	TEST_ASSERT_EQUAL(run_loc_floor_bottom_left.type, /turf/open/floor/plating, "Iron floors should scrape away to plating")
 
 	run_loc_floor_bottom_left.ScrapeAway()
 	TEST_ASSERT_EQUAL(run_loc_floor_bottom_left.type, /turf/open/space, "Plating should've scraped off to space")
-
-	run_loc_floor_bottom_left.ScrapeAway()
-	TEST_ASSERT_EQUAL(run_loc_floor_bottom_left.type, /turf/closed/wall/rock, "Space should've scraped down to a rock wall")
 
 	run_loc_floor_bottom_left.ScrapeAway()
 	TEST_ASSERT_EQUAL(run_loc_floor_bottom_left.type, /turf/open/floor/plating, "Rock wall should've scraped down back to plating (because it's a wall)")

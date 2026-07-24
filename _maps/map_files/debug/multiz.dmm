@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ad" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/maintenance/department/bridge)
 "af" = (
 /turf/open/floor/plating,
@@ -12,13 +12,13 @@
 /turf/open/floor/plating,
 /area/station/engineering/construction)
 "ah" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/engineering/atmos)
 "aj" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/engineering/main)
 "ak" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/engineering/gravity_generator)
 "al" = (
 /obj/machinery/airalarm/directional/north{
@@ -258,21 +258,21 @@
 /turf/open/floor/iron,
 /area/station/engineering/atmos)
 "bu" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/command/bridge)
 "bv" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/station/command/bridge)
 "by" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/hallway/primary)
 "bz" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating,
 /area/station/maintenance/department/bridge)
 "bA" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/hallway/primary/central)
 "bB" = (
 /obj/machinery/airalarm/directional/north{
@@ -436,7 +436,7 @@
 /area/station/command/bridge)
 "cv" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/command/bridge)
 "cw" = (
 /obj/machinery/door/airlock,
@@ -522,7 +522,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary)
 "cS" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/commons/storage/primary)
 "cT" = (
 /obj/machinery/elevator_control_panel/directional/north{
@@ -533,7 +533,7 @@
 /area/station/hallway/secondary/service)
 "cU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/commons/storage/primary)
 "cV" = (
 /obj/machinery/door/airlock/glass,
@@ -1285,7 +1285,7 @@
 /turf/open/floor/iron,
 /area/station/engineering/construction)
 "vX" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/engineering/construction)
 "wb" = (
 /obj/machinery/elevator_control_panel/directional/north{
@@ -1411,7 +1411,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/construction)
 "AG" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/engineering/storage)
 "Bm" = (
 /obj/structure/sign/warning/directional/east,
@@ -1815,7 +1815,7 @@
 /turf/open/floor/plating,
 /area/station/engineering/storage)
 "TY" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/hallway/secondary/service)
 "TZ" = (
 /obj/machinery/light/directional/west,
@@ -1832,7 +1832,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/commons/storage/primary)
 "Ui" = (
 /obj/machinery/door/airlock,
@@ -1961,7 +1961,7 @@
 /area/station/hallway/primary/central)
 "XK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/station/engineering/construction)
 "XN" = (
 /obj/structure/railing,

@@ -727,7 +727,7 @@
 /turf/open/floor/carpet/orange,
 /area/ruin/space/has_grav/hauntedtradingpost/public/corridor)
 "gz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/maint/disposals)
 "gH" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1270,7 +1270,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/corridor)
 "kI" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/breakroom)
 "kR" = (
 /obj/structure/cable/layer1,
@@ -1357,7 +1357,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/corridor)
 "lQ" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/workstation)
 "lR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1775,7 +1775,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/office)
 "pw" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/public/corridor)
 "py" = (
 /obj/effect/spawner/structure/window/reinforced/indestructible,
@@ -1783,7 +1783,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/office/meetingroom)
 "pz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/office/meetingroom)
 "pB" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -1993,7 +1993,7 @@
 /turf/open/floor/carpet/donk,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/breakroom)
 "rs" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/corridor)
 "ru" = (
 /obj/structure/cable/layer1,
@@ -2272,7 +2272,7 @@
 /turf/open/floor/carpet/donk,
 /area/ruin/space/has_grav/hauntedtradingpost/employees)
 "tl" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/employees)
 "tm" = (
 /turf/open/floor/catwalk_floor/iron_dark,
@@ -2363,7 +2363,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/hauntedtradingpost/public)
 "ur" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/office)
 "uA" = (
 /obj/structure/cable/layer1,
@@ -2397,7 +2397,7 @@
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/hauntedtradingpost/public)
 "uZ" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/public)
 "va" = (
 /obj/effect/spawner/random/structure/grille,
@@ -2550,7 +2550,7 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/ruin/space/has_grav/hauntedtradingpost/maint/toolstorage)
 "wn" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/maint/toolstorage)
 "ws" = (
 /obj/machinery/light/warm/directional/west,
@@ -2801,7 +2801,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/hauntedtradingpost/aicore)
 "yi" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/maint)
 "ys" = (
 /obj/structure/cable/layer1,
@@ -2843,7 +2843,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/hauntedtradingpost/maint/toolstorage)
 "yF" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/maint/toystorage)
 "yI" = (
 /obj/structure/cable/layer1,
@@ -4242,7 +4242,7 @@
 /turf/open/floor/carpet/orange,
 /area/ruin/space/has_grav/hauntedtradingpost/public)
 "Li" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/aicore)
 "Ls" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
@@ -4431,7 +4431,7 @@
 /area/ruin/space/has_grav/hauntedtradingpost/public)
 "Mu" = (
 /obj/effect/mapping_helpers/bombable_wall,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/employees/workstation)
 "Mx" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -4483,7 +4483,7 @@
 /turf/open/floor/catwalk_floor/iron_smooth,
 /area/ruin/space/has_grav/hauntedtradingpost/public/corridor)
 "MR" = (
-/turf/closed/wall/r_wall/plastitanium/syndicate/nodiagonal{
+/turf/closed/wall/reinforced/plastitanium/syndicate/nodiagonal{
 	desc = "An ominous looking wall.";
 	name = "reinforced wall"
 	},
@@ -5216,7 +5216,7 @@
 /area/ruin/space/has_grav/hauntedtradingpost/maint/disposals)
 "TF" = (
 /obj/effect/mapping_helpers/bombable_wall,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/hauntedtradingpost/aicore)
 "TH" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,

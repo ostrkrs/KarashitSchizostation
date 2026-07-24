@@ -30,7 +30,7 @@
 	))
 	/// List of turfs that take extra thermite to burn through
 	var/static/list/resistlist = typecacheof(list(
-		/turf/closed/wall/r_wall,
+		/turf/closed/wall/reinforced,
 	))
 
 /datum/component/thermite/Initialize(amount = 50, thermite_overlay = default_thermite_overlay)

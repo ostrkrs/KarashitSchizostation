@@ -1444,7 +1444,7 @@
 /turf/closed/wall,
 /area/misc/anomaly_research)
 "MJ" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/misc/anomaly_research)
 "MN" = (
 /obj/structure/flora/grass/green/style_random,

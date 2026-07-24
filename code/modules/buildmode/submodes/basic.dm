@@ -26,7 +26,7 @@
 		else if(isfloorturf(object))
 			clicked_turf.place_on_top(/turf/closed/wall)
 		else if(iswallturf(object))
-			clicked_turf.place_on_top(/turf/closed/wall/r_wall)
+			clicked_turf.place_on_top(/turf/closed/wall/reinforced)
 		else
 			clicked_turf.place_on_top(/turf/open/floor/plating, flags = CHANGETURF_INHERIT_AIR) // Gotta do something
 		log_admin("Build Mode: [key_name(c)] built [clicked_turf] at [AREACOORD(clicked_turf)]")

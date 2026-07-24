@@ -539,7 +539,7 @@
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "yi" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "yv" = (
 /obj/item/trash/can{
@@ -1114,7 +1114,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "Sa" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "Sb" = (
 /obj/item/food/deadmouse/moldy,

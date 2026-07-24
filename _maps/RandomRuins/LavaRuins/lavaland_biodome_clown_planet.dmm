@@ -26,13 +26,13 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "an" = (
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "ao" = (
 /obj/structure/disposalpipe/segment{
@@ -64,7 +64,7 @@
 	dir = 1
 	},
 /obj/effect/mapping_helpers/mail_sorting/command/qm_office,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "aw" = (
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -77,14 +77,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 5
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "aL" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	invisibility = 101
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "aP" = (
 /obj/structure/disposalpipe/segment{
@@ -341,13 +341,13 @@
 /turf/open/indestructible/honk,
 /area/ruin/powered/clownplanet)
 "cc" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "ch" = (
 /obj/structure/disposalpipe/segment{
 	invisibility = 101
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "cu" = (
 /turf/open/floor/plating,
@@ -402,7 +402,7 @@
 /area/ruin/powered/clownplanet)
 "eE" = (
 /obj/effect/mapping_helpers/no_lava,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/clownplanet)
 "eS" = (
 /obj/structure/disposalpipe/segment{

@@ -509,7 +509,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "MC" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "NJ" = (
 /obj/structure/table/reinforced,
@@ -667,7 +667,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "XC" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "XD" = (
 /obj/structure/sinkframe,

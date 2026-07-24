@@ -92,7 +92,7 @@
 /turf/open/floor/plating,
 /area/awaymission/moonoutpost19/research)
 "at" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/moonoutpost19/syndicate)
 "au" = (
 /obj/effect/turf_decal/stripes/line{
@@ -559,14 +559,14 @@
 /turf/open/floor/iron,
 /area/awaymission/moonoutpost19/research)
 "dZ" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/moonoutpost19/research)
 "ea" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/moonoutpost19/research)
 "ec" = (
 /obj/structure/sign/warning/biohazard,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/moonoutpost19/research)
 "ed" = (
 /obj/machinery/vending/snack,
@@ -3349,11 +3349,11 @@
 /area/awaymission/moonoutpost19/tent)
 "vk" = (
 /obj/structure/extinguisher_cabinet/directional/north,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/moonoutpost19/research)
 "vp" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/moonoutpost19/research)
 "vr" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3442,7 +3442,7 @@
 /area/awaymission/moonoutpost19/mines)
 "vG" = (
 /obj/effect/mapping_helpers/broken_floor,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/moonoutpost19/research)
 "vK" = (
 /obj/machinery/power/terminal{
@@ -5765,7 +5765,7 @@
 /area/awaymission/moonoutpost19/arrivals)
 "MM" = (
 /obj/effect/mapping_helpers/broken_floor,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/moonoutpost19/research)
 "MN" = (
 /obj/machinery/light/directional/east,

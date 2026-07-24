@@ -558,14 +558,14 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/onehalf/hallway)
 "bR" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/onehalf/hallway)
 "bT" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/onehalf/hallway)
 "bU" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/onehalf/bridge)
 "bV" = (
 /obj/item/stack/sheet/iron,

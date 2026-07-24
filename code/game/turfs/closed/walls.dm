@@ -1,5 +1,5 @@
 /turf/closed/wall
-	name = "wall"
+	name = "hull"
 	desc = "A huge chunk of iron used to separate rooms."
 	icon = 'icons/turf/walls/wall.dmi'
 	icon_state = "wall-0"
@@ -63,7 +63,7 @@
 	. = NONE
 	if(!isnull(held_item))
 		if((initial(smoothing_flags) & SMOOTH_DIAGONAL_CORNERS) && held_item.tool_behaviour == TOOL_WRENCH)
-			context[SCREENTIP_CONTEXT_LMB] = "Adjust Wall Corner"
+			context[SCREENTIP_CONTEXT_LMB] = "Adjust Hull Corner"
 			return CONTEXTUAL_SCREENTIP_SET
 
 /turf/closed/wall/mouse_drop_receive(atom/dropping, mob/user, params)
@@ -195,7 +195,7 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	to_chat(user, span_notice("You push the wall but nothing happens!"))
+	to_chat(user, span_notice("You push the [src] but nothing happens!"))
 	playsound(src, 'sound/items/weapons/genhit.ogg', 25, TRUE)
 	add_fingerprint(user)
 

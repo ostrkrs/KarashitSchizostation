@@ -2370,7 +2370,7 @@
 /area/deathmatch)
 "IU" = (
 /obj/structure/sign/warning/pods,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/deathmatch)
 "Jb" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -2979,7 +2979,7 @@
 /area/deathmatch)
 "Rx" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/deathmatch)
 "Ry" = (
 /obj/structure/rack,
@@ -3452,7 +3452,7 @@
 /turf/open/indestructible,
 /area/deathmatch)
 "Yh" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/deathmatch)
 "Yz" = (
 /obj/structure/disposalpipe/segment{

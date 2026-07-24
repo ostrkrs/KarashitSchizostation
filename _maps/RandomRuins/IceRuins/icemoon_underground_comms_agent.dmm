@@ -247,7 +247,7 @@
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/comms_agent)
 "nP" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent)
 "od" = (
 /obj/machinery/oven/range,
@@ -712,7 +712,7 @@
 /turf/open/misc/asteroid/snow/standard_air,
 /area/ruin/comms_agent)
 "LP" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent/maint)
 "Mj" = (
 /obj/structure/fireplace,
@@ -780,7 +780,7 @@
 /area/ruin/comms_agent)
 "NL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent/maint)
 "Ok" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -853,7 +853,7 @@
 /area/ruin/comms_agent)
 "QU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent)
 "QW" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/general/visible,

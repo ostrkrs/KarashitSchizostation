@@ -317,7 +317,7 @@
 /turf/open/floor/plating/foam,
 /area/ruin/space/has_grav/derelictconstruction)
 "IR" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/derelictconstruction)
 "Jj" = (
 /obj/effect/decal/cleanable/dirt,

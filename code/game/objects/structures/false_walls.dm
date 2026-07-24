@@ -163,7 +163,7 @@
 	fake_icon = 'icons/turf/walls/reinforced_wall.dmi'
 	icon_state = "reinforced_wall-open"
 	base_icon_state = "reinforced_wall"
-	walltype = /turf/closed/wall/r_wall
+	walltype = /turf/closed/wall/reinforced
 	mineral = /obj/item/stack/sheet/plasteel
 
 /obj/structure/falsewall/reinforced/examine_status(mob/user)

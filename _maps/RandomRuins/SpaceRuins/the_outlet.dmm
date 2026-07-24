@@ -173,7 +173,7 @@
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "fa" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "fk" = (
 /obj/structure/cable,
@@ -643,7 +643,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "qs" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/the_outlet/cultinfluence)
 "qv" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -824,7 +824,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "uE" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "uR" = (
 /obj/effect/decal/cleanable/cobweb,
@@ -1303,7 +1303,7 @@
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "Fm" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "Ft" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -1702,7 +1702,7 @@
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "Pb" = (
 /obj/structure/sign/departments/security,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "Pg" = (
 /obj/structure/table/reinforced/rglass,
@@ -1737,7 +1737,7 @@
 /area/ruin/space/has_grav/the_outlet/cultinfluence)
 "PN" = (
 /obj/structure/sign/warning/cold_temp,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "PS" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1795,7 +1795,7 @@
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "Rs" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "Rx" = (
 /obj/structure/rack,
@@ -1817,7 +1817,7 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "RN" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/the_outlet/cultinfluence)
 "RO" = (
 /obj/structure/headpike/bone,
@@ -1872,7 +1872,7 @@
 /turf/open/floor/cult,
 /area/ruin/space/has_grav/the_outlet/cultinfluence)
 "Ts" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/the_outlet/employeesection)
 "Tw" = (
 /obj/structure/chair/wood{
@@ -1896,7 +1896,7 @@
 /turf/open/floor/iron/white,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "UF" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/ruin/space/has_grav/the_outlet/researchrooms)
 "UH" = (
 /obj/structure/cable,

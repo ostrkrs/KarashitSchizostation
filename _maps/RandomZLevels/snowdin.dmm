@@ -4312,10 +4312,10 @@
 /turf/open/floor/plating,
 /area/awaymission/snowdin/post/cavern2)
 "pH" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/snowdin/post/secpost)
 "pI" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/awaymission/snowdin/post/secpost)
 "pJ" = (
 /obj/machinery/door/airlock/vault{
@@ -4791,7 +4791,7 @@
 /turf/closed/wall/ice,
 /area/awaymission/snowdin/post/engineering)
 "rp" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/snowdin/post/engineering)
 "rq" = (
 /obj/effect/mapping_helpers/airlock/locked,
@@ -4809,7 +4809,7 @@
 /area/awaymission/snowdin/post/engineering)
 "rr" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/orange/visible,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/snowdin/post/engineering)
 "rs" = (
 /obj/effect/spawner/structure/window/reinforced,

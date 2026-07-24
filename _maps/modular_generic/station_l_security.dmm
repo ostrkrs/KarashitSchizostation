@@ -14,7 +14,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 9
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "aU" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -65,7 +65,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "fA" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "fC" = (
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -252,7 +252,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "BA" = (
 /obj/structure/sign/departments/security/directional/south,

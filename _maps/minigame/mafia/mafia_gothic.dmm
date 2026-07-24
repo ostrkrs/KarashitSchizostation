@@ -136,7 +136,7 @@
 	},
 /area/centcom/mafia)
 "U" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/centcom/mafia)
 "X" = (
 /turf/open/floor/iron/chapel{

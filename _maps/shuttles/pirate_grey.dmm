@@ -369,7 +369,7 @@
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "pk" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/shuttle/pirate)
 "pw" = (
 /obj/structure/closet,
@@ -968,7 +968,7 @@
 /area/shuttle/pirate)
 "EA" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/shuttle/pirate)
 "EC" = (
 /obj/effect/spawner/structure/window,
@@ -1299,7 +1299,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "Sh" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/pirate)
 "Si" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{

@@ -474,7 +474,7 @@
 /area/deathmatch)
 "tl" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/closed/wall/r_wall/heretic_rust,
+/turf/closed/wall/reinforced/heretic_rust,
 /area/deathmatch)
 "tm" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -959,7 +959,7 @@
 /turf/open/misc/asteroid/moon,
 /area/deathmatch)
 "Qf" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/deathmatch)
 "QF" = (
 /obj/effect/visible_heretic_influence,
@@ -970,7 +970,7 @@
 /turf/open/misc/dirt/jungle/dark,
 /area/deathmatch)
 "QQ" = (
-/turf/closed/wall/r_wall/heretic_rust,
+/turf/closed/wall/reinforced/heretic_rust,
 /area/deathmatch)
 "Rj" = (
 /obj/structure/flora/rock/style_random,

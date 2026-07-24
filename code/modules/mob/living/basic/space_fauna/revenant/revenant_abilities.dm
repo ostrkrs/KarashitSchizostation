@@ -165,7 +165,7 @@
 	if(victim.type == /turf/closed/wall && prob(15) && !HAS_TRAIT(victim, TRAIT_RUSTY))
 		new /obj/effect/temp_visual/revenant(victim)
 		victim.AddElement(/datum/element/rust)
-	if(victim.type == /turf/closed/wall/r_wall && prob(10) && !HAS_TRAIT(victim, TRAIT_RUSTY))
+	if(victim.type == /turf/closed/wall/reinforced && prob(10) && !HAS_TRAIT(victim, TRAIT_RUSTY))
 		new /obj/effect/temp_visual/revenant(victim)
 		victim.AddElement(/datum/element/rust)
 	for(var/obj/machinery/shower/cursed_shower in victim)

@@ -1382,7 +1382,7 @@
 /turf/closed/wall,
 /area/ruin/space/has_grav/waystation/power)
 "yi" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/waystation/securestorage)
 "ym" = (
 /obj/structure/cable,
@@ -1589,7 +1589,7 @@
 /area/ruin/space/has_grav/waystation/cargooffice)
 "CY" = (
 /obj/structure/sign/poster/official/here_for_your_safety,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/waystation/securestorage)
 "Dc" = (
 /obj/structure/cable,
@@ -2171,7 +2171,7 @@
 /area/ruin/space/has_grav/waystation/cargobay)
 "NI" = (
 /obj/effect/baseturf_helper/asteroid/airless,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/waystation/securestorage)
 "NK" = (
 /obj/effect/turf_decal/bot,

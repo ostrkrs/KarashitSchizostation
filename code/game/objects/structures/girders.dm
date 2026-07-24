@@ -220,7 +220,7 @@
 					return
 				stack.use(amount)
 				var/turf/T = get_turf(src)
-				T.place_on_top(/turf/closed/wall/r_wall)
+				T.place_on_top(/turf/closed/wall/reinforced)
 				transfer_fingerprints_to(T)
 				qdel(src)
 			return
@@ -248,7 +248,7 @@
 					return
 				stack.use(1)
 				var/turf/T = get_turf(src)
-				T.place_on_top(/turf/closed/wall/r_wall/plastitanium)
+				T.place_on_top(/turf/closed/wall/reinforced/plastitanium)
 				transfer_fingerprints_to(T)
 				qdel(src)
 			return
