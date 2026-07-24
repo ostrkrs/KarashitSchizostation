@@ -116,6 +116,7 @@
 	var/obj/machinery/door/airlock/closeOther
 	var/list/obj/machinery/door/airlock/close_others = list()
 	var/obj/item/electronics/airlock/electronics
+	COOLDOWN_DECLARE(deniedbeepCooldown)
 	COOLDOWN_DECLARE(shockCooldown)
 	/// Any papers pinned to the airlock
 	var/obj/item/note
@@ -664,8 +665,9 @@
 			use_energy(50 JOULES)
 			playsound(src, soundin = doorClose, vol = 30, vary = TRUE)
 		if(DOOR_DENY_ANIMATION)
-			if(feedback)
+			if(feedback && COOLDOWN_FINISHED(src, deniedbeepCooldown))
 				playsound(src, soundin = doorDeni, vol = 50, vary = FALSE, extrarange = 3)
+				COOLDOWN_START(src, deniedbeepCooldown, AIRLOCK_DENY_ANIMATION_TIME)
 			addtimer(CALLBACK(src, PROC_REF(handle_deny_end)), AIRLOCK_DENY_ANIMATION_TIME)
 
 /obj/machinery/door/airlock/proc/handle_deny_end()
