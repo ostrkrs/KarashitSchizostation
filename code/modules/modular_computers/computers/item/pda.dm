@@ -35,6 +35,8 @@
 	shell_capacity = SHELL_CAPACITY_SMALL
 	action_slots = ALL
 
+	internal_cell = /obj/item/stock_parts/power_store/cell/device
+
 	///The item currently inserted into the PDA, starts with a pen.
 	var/obj/item/inserted_item = /obj/item/pen
 
