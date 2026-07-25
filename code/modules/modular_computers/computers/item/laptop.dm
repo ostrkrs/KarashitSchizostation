@@ -12,11 +12,9 @@
 	max_idle_programs = 3
 	w_class = WEIGHT_CLASS_NORMAL
 	interaction_flags_mouse_drop = NEED_HANDS
-
-
-	// No running around with open laptops in hands.
 	item_flags = SLOWS_WHILE_IN_HAND
 
+	internal_cell = /obj/item/stock_parts/power_store/cell/device/upgraded
 	drag_slowdown = 0
 	screen_on = FALSE // Starts closed
 	var/start_open = TRUE // unless this var is set to 1
