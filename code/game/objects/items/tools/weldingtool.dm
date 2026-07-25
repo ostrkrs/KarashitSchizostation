@@ -94,6 +94,10 @@
 	INVOKE_ASYNC(src, PROC_REF(try_heal_loop), interacting_with, user, TRUE)
 	return ITEM_INTERACT_SUCCESS
 
+/obj/item/weldingtool/fueled/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
 /// MARK: FUELED WELDERS
 /obj/item/weldingtool/fueled
 	name = "welding torch"
@@ -174,9 +178,9 @@
 	if(welding)
 		force = force_when_on
 		damtype = BURN
-		burned_fuel_for += seconds_per_tick
 		if(need_oxygen && !check_oxydizer(src.loc))
 			switched_off()
+		burned_fuel_for += seconds_per_tick
 		if(burned_fuel_for >= TOOL_FUEL_BURN_INTERVAL)
 			use(TRUE)
 		update_appearance()
@@ -278,6 +282,7 @@
 		balloon_alert(user, "no tank!")
 		return
 	if(need_oxygen && !check_oxydizer(user)) //torches need oxygen
+		balloon_alert(user, "can't lit!")
 		return
 	if(inserted_tank && !inserted_tank.reagents)
 		balloon_alert(user, "no fuel!")
@@ -566,7 +571,7 @@
 	icon_state = "elwelder"
 	light_system = NO_LIGHT_SUPPORT
 	light_range = 0
-	toolspeed = 2
+	toolspeed = 2.25
 	usesound = 'sound/items/tools/welder2.ogg'
 	var/obj/item/stock_parts/power_store/cell/inserted_cell = /obj/item/stock_parts/power_store/cell
 	var/power_use_amount = STANDARD_CELL_CHARGE * 0.5
@@ -717,6 +722,19 @@
 	else
 		. = ..()
 	update_appearance()
+
+/obj/item/weldingtool/electric/afterattack(atom/target, mob/user, list/modifiers, list/attack_modifiers)
+	if(!isOn())
+		return
+	use(used = power_use_amount)
+	var/turf/location = get_turf(user)
+	location.hotspot_expose(700, 50, 1)
+	if(QDELETED(target) || !isliving(target)) // can't ignite something that doesn't exist
+		return
+	var/mob/living/attacked_mob = target
+	if(attacked_mob.ignite_mob())
+		message_admins("[ADMIN_LOOKUPFLW(user)] set [key_name_admin(attacked_mob)] on fire with [src] at [AREACOORD(user)]")
+		user.log_message("set [key_name(attacked_mob)] on fire with [src].", LOG_ATTACK)
 
 /obj/item/weldingtool/electric/attack_hand_secondary(mob/user as mob)
 	. = ..()
