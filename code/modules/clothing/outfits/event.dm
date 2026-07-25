@@ -10,7 +10,7 @@
 	gloves = /obj/item/clothing/gloves/color/red
 	head = /obj/item/clothing/head/helmet/space/santahat/beardless
 	shoes = /obj/item/clothing/shoes/sneakers/red
-	r_pocket = /obj/item/flashlight
+	r_pocket = /obj/item/flashlight/cell_powered
 
 	box = /obj/item/storage/box/survival/engineer
 

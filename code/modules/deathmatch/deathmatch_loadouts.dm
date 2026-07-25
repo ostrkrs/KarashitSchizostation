@@ -48,7 +48,7 @@
 	uniform = /obj/item/clothing/under/color/grey
 	back = /obj/item/storage/backpack
 	box = /obj/item/storage/box/survival
-	belt = /obj/item/flashlight
+	belt = /obj/item/flashlight/cell_powered
 
 /datum/outfit/deathmatch_loadout/assistant/weaponless
 	name = "Deathmatch: Assistant loadout (Weaponless)"
@@ -101,7 +101,7 @@
 	gloves = /datum/outfit/job/security::gloves
 	head = /datum/outfit/job/security::head
 	shoes = /datum/outfit/job/security::shoes
-	l_pocket = /obj/item/flashlight/seclite
+	l_pocket = /obj/item/flashlight/cell_powered/seclite
 	l_hand = /obj/item/gun/energy/taser
 	r_pocket = /obj/item/knife/combat/survival
 	back = /datum/outfit/job/security::backpack

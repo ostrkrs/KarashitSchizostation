@@ -267,7 +267,7 @@
 /obj/item/weldingtool/fueled/afterattack(atom/target, mob/user, list/modifiers, list/attack_modifiers)
 	if(!isOn())
 		return
-	use(1)
+	use(TRUE)
 	var/turf/location = get_turf(user)
 	location.hotspot_expose(700, 50, 1)
 	if(QDELETED(target) || !isliving(target)) // can't ignite something that doesn't exist
@@ -345,6 +345,8 @@
 	. = ..()
 	if(inserted_tank)
 		. += "It contains [inserted_tank.get_fuel()] unit\s of fuel out of [inserted_tank.max_fuel]."
+	else
+		. += span_warning("It has no fuel tank attached.")
 
 /// If welding tool ran out of fuel during a construction task, construction fails.
 /obj/item/weldingtool/fueled/tool_use_check(mob/living/user, amount, heat_required)
@@ -589,8 +591,8 @@
 
 	if(!prohibited_cells)
 		prohibited_cells = typecacheof(list(
-			/obj/item/stock_parts/power_store/cell/crap,
-			/obj/item/stock_parts/power_store/cell/upgraded,
+			/obj/item/stock_parts/power_store/cell/device,
+			/obj/item/stock_parts/power_store/cell/device/upgraded,
 			/obj/item/stock_parts/power_store/cell/secborg,
 			/obj/item/stock_parts/power_store/cell/mini_egun,
 			/obj/item/stock_parts/power_store/cell/hos_gun,
@@ -616,6 +618,8 @@
 	. = ..()
 	if(inserted_cell)
 		. += "The charge meter reads [CEILING(inserted_cell.percent(), 0.1)]%."
+	else
+		. += span_warning("It has no power cell inserted.")
 
 /obj/item/weldingtool/electric/update_overlays()
 	. = ..()

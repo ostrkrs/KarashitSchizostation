@@ -41,7 +41,7 @@
 	new /obj/item/storage/box/zipties(src)
 	new /obj/item/storage/box/flashbangs(src)
 	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/flashlight/seclite(src)
+	new /obj/item/flashlight/cell_powered/seclite(src)
 	new /obj/item/door_remote/head_of_security(src)
 
 
@@ -63,7 +63,7 @@
 	new /obj/item/radio/headset/headset_sec(src)
 	new /obj/item/radio/headset/headset_sec/alt(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses(src)
-	new /obj/item/flashlight/seclite(src)
+	new /obj/item/flashlight/cell_powered/seclite(src)
 
 /obj/structure/closet/secure_closet/security/sec
 
@@ -116,7 +116,7 @@
 	new /obj/item/storage/box/evidence(src)
 	new /obj/item/radio/headset/headset_sec(src)
 	new /obj/item/criminalist_scanner(src)
-	new /obj/item/flashlight/seclite(src)
+	new /obj/item/flashlight/cell_powered/seclite(src)
 	new /obj/item/holosign_creator/security(src)
 	new /obj/item/reagent_containers/spray/pepper(src)
 	new /obj/item/clothing/suit/armor/vest/criminalist(src)
@@ -309,4 +309,4 @@
 	new /obj/item/clothing/under/rank/security/officer(src)
 	new /obj/item/clothing/under/rank/security/officer/skirt(src)
 	new /obj/item/clothing/glasses/hud/security/sunglasses(src)
-	new /obj/item/flashlight/seclite(src)
+	new /obj/item/flashlight/cell_powered/seclite(src)

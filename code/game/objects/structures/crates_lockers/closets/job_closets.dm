@@ -70,7 +70,7 @@
 	new /obj/item/clothing/head/soft/purple(src)
 	new /obj/item/paint/paint_remover(src)
 	new /obj/item/melee/flyswatter(src)
-	new /obj/item/flashlight(src)
+	new /obj/item/flashlight/cell_powered(src)
 	for(var/i in 1 to 3)
 		new /obj/item/clothing/suit/caution(src)
 	new /obj/item/holosign_creator(src)

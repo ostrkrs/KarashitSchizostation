@@ -577,7 +577,7 @@
 				build_step++
 
 		if(ASSEMBLY_SECOND_STEP)
-			if(istype(part, /obj/item/flashlight))
+			if(istype(part, /obj/item/flashlight/cell_powered))
 				if(!user.temporarilyRemoveItemFromInventory(part))
 					return
 				balloon_alert(user, "flashlight added")

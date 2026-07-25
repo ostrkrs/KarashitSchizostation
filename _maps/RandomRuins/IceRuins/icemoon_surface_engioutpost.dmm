@@ -343,7 +343,7 @@
 /area/ruin/planetengi)
 "bS" = (
 /obj/structure/table,
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_y = 4
 	},
 /turf/open/floor/iron,

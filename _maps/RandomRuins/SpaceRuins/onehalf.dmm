@@ -844,7 +844,7 @@
 "cY" = (
 /obj/structure/table/reinforced,
 /obj/item/gps/spaceruin,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/onehalf/bridge)

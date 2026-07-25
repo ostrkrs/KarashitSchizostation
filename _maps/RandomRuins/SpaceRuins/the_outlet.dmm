@@ -1136,7 +1136,7 @@
 /turf/closed/wall/rust,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "Bg" = (
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/eighties,
 /area/ruin/space/has_grav/the_outlet/storefront)
 "Bo" = (

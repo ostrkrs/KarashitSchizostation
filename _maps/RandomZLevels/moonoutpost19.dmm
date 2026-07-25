@@ -3202,12 +3202,12 @@
 	pixel_x = 12;
 	pixel_y = 24
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = -3;
 	pixel_y = 4
 	},
 /obj/structure/rack,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/awaymission/moonoutpost19/arrivals/shed)
 "ut" = (
@@ -3494,7 +3494,7 @@
 /area/awaymission/moonoutpost19/mines)
 "wc" = (
 /obj/structure/table,
-/obj/item/stock_parts/power_store/cell/crap/empty{
+/obj/item/stock_parts/power_store/cell/device/empty{
 	pixel_x = -4
 	},
 /turf/open/floor/pod/dark,
@@ -7187,9 +7187,9 @@
 /area/awaymission/moonoutpost19/mines)
 "VY" = (
 /obj/structure/table,
-/obj/item/stock_parts/power_store/cell/crap/empty,
-/obj/item/stock_parts/power_store/cell/crap/empty,
-/obj/item/stock_parts/power_store/cell/crap/empty{
+/obj/item/stock_parts/power_store/cell/device/empty,
+/obj/item/stock_parts/power_store/cell/device/empty,
+/obj/item/stock_parts/power_store/cell/device/empty{
 	pixel_x = -16;
 	pixel_y = 4
 	},

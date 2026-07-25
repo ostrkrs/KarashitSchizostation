@@ -344,7 +344,7 @@
 /obj/item/storage/box/lights/bulbs{
 	pixel_y = -1
 	},
-/obj/item/flashlight/seclite{
+/obj/item/flashlight/cell_powered/seclite{
 	pixel_y = -8
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,

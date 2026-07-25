@@ -64,7 +64,7 @@
 	new /obj/item/clothing/mask/gas(src)
 	new /obj/item/tank/internals/oxygen/red(src)
 	new /obj/item/extinguisher(src)
-	new /obj/item/flashlight(src)
+	new /obj/item/flashlight/cell_powered(src)
 	new /obj/item/clothing/head/utility/hardhat/red(src)
 	new /obj/item/crowbar/large/red(src)
 
@@ -82,7 +82,7 @@
 	if(prob(40))
 		new /obj/item/clothing/suit/hazardvest(src)
 	if(prob(70))
-		new /obj/item/flashlight(src)
+		new /obj/item/flashlight/cell_powered(src)
 	if(prob(70))
 		new /obj/item/screwdriver(src)
 	if(prob(70))

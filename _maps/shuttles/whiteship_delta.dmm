@@ -648,7 +648,7 @@
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 4
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 3;
 	pixel_y = 3
 	},

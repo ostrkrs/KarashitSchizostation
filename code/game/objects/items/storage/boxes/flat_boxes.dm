@@ -31,12 +31,12 @@
 	for(var/i = 1 to 3)
 		new /obj/item/reagent_containers/applicator/patch/fent(src)
 
-/obj/item/storage/box/flat/crap_cells
-	name = "box of AA cells"
-	desc = "A small box containing some crappy power cells."
+/obj/item/storage/box/flat/device_cells
+	name = "box of device power cells"
+	desc = "A small box of crappy device power cells."
 	illustration = "battery"
 
-/obj/item/storage/box/flat/crap_cells/Initialize(mapload)
+/obj/item/storage/box/flat/device_cells/Initialize(mapload)
 	. = ..()
 	for(var/i = 1 to 3)
-		new /obj/item/stock_parts/power_store/cell/crap(src)
+		new /obj/item/stock_parts/power_store/cell/device(src)

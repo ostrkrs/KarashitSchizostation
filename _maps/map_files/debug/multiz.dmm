@@ -128,7 +128,7 @@
 /area/station/engineering/atmos)
 "aS" = (
 /obj/structure/table,
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_y = 5
 	},
 /obj/item/airlock_painter,
@@ -1466,7 +1466,7 @@
 /area/station/engineering/storage)
 "DU" = (
 /obj/structure/table,
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_y = 5
 	},
 /turf/open/floor/iron,

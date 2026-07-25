@@ -751,7 +751,7 @@
 	id = "seclite"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = HALF_SHEET_MATERIAL_AMOUNT*2.5)
-	build_path = /obj/item/flashlight/seclite
+	build_path = /obj/item/flashlight/cell_powered/seclite
 	category = list(
 		RND_CATEGORY_EQUIPMENT + RND_SUBCATEGORY_EQUIPMENT_SECURITY
 	)

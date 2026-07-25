@@ -3,7 +3,7 @@
 	id = "flashlight"
 	build_type = AUTOLATHE | PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT*0.5, /datum/material/glass = SMALL_MATERIAL_AMOUNT*0.2)
-	build_path = /obj/item/flashlight
+	build_path = /obj/item/flashlight/cell_powered
 	category = list(
 		RND_CATEGORY_INITIAL,
 		RND_CATEGORY_TOOLS + RND_SUBCATEGORY_TOOLS_MISC,

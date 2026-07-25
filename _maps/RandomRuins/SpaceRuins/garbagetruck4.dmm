@@ -857,7 +857,7 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 4
 	},
 /turf/open/floor/iron/smooth,

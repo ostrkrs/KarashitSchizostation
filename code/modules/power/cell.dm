@@ -18,7 +18,7 @@
 	throw_range = 5
 	emp_damage_modifier = 1
 	w_class = WEIGHT_CLASS_SMALL
-	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*7, /datum/material/glass=SMALL_MATERIAL_AMOUNT*0.5)
+	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*3, /datum/material/glass=SMALL_MATERIAL_AMOUNT*0.25)
 	grind_results = list(/datum/reagent/lithium = 15, /datum/reagent/iron = 5, /datum/reagent/silicon = 5)
 
 /obj/item/stock_parts/power_store/cell/Initialize(mapload)
@@ -35,37 +35,33 @@
 /obj/item/stock_parts/power_store/cell/empty
 	empty = TRUE
 
-/obj/item/stock_parts/power_store/cell/crap
-	name = "rechargeable AA cell"
+/obj/item/stock_parts/power_store/cell/device
+	name = "device power cell"
 	desc = "You can't top the phoron top." //TOTALLY TRADEMARK INFRINGEMENT
 	icon_state = "aa_cell"
 	maxcharge = STANDARD_CELL_CHARGE * 0.5
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT*0.4)
+	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 2.5, /datum/material/glass =SMALL_MATERIAL_AMOUNT * 0.25)
 
-/obj/item/stock_parts/power_store/cell/crap/Initialize(mapload)
+/obj/item/stock_parts/power_store/cell/device/Initialize(mapload)
 	AddElement(/datum/element/update_icon_blocker)
 	return ..()
 
-/obj/item/stock_parts/power_store/cell/crap/empty
+/obj/item/stock_parts/power_store/cell/device/empty
 	empty = TRUE
 
-/obj/item/stock_parts/power_store/cell/upgraded
-	name = "upgraded power cell"
+/obj/item/stock_parts/power_store/cell/device/upgraded
+	name = "upgraded device power cell"
 	desc = "A power cell with a slightly higher capacity than normal!"
 	icon_state = "9v_cell"
-	maxcharge = STANDARD_CELL_CHARGE * 2.5
+	maxcharge = STANDARD_CELL_CHARGE * 1.5
+	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 5, /datum/material/glass =SMALL_MATERIAL_AMOUNT * 0.5)
 
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT*0.5)
-	chargerate = STANDARD_CELL_RATE * 0.5
-
-/obj/item/stock_parts/power_store/cell/upgraded/Initialize(mapload)
+/obj/item/stock_parts/power_store/cell/device/upgraded/Initialize(mapload)
 	AddElement(/datum/element/update_icon_blocker)
 	return ..()
 
-/obj/item/stock_parts/power_store/cell/upgraded/plus
-	name = "upgraded power cell+"
-	desc = "A power cell with an even higher capacity than the base model!"
-	maxcharge = STANDARD_CELL_CHARGE * 5
+/obj/item/stock_parts/power_store/cell/device/upgraded/empty
+	empty = TRUE
 
 /obj/item/stock_parts/power_store/cell/secborg
 	name = "security borg rechargeable D cell"
@@ -102,7 +98,6 @@
 	icon_state = "bscell"
 	emp_damage_modifier = 3
 	maxcharge = STANDARD_CELL_CHARGE * 10
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT*0.6)
 	chargerate = STANDARD_CELL_RATE
 
 /obj/item/stock_parts/power_store/cell/high
@@ -110,7 +105,7 @@
 	icon_state = "hcell"
 	emp_damage_modifier = 3
 	maxcharge = STANDARD_CELL_CHARGE * 10
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT*0.6)
+	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*7, /datum/material/glass=SMALL_MATERIAL_AMOUNT*0.5)
 	chargerate = STANDARD_CELL_RATE * 0.75
 
 
@@ -122,7 +117,7 @@
 	icon_state = "scell"
 	emp_damage_modifier = 5
 	maxcharge = STANDARD_CELL_CHARGE * 20
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT * 3)
+	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 8, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.7)
 	chargerate = STANDARD_CELL_RATE
 
 /obj/item/stock_parts/power_store/cell/super/empty
@@ -133,7 +128,7 @@
 	icon_state = "hpcell"
 	emp_damage_modifier = 5
 	maxcharge = STANDARD_CELL_CHARGE * 30
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT * 4)
+	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 9, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.8)
 	chargerate = STANDARD_CELL_RATE * 1.5
 
 /obj/item/stock_parts/power_store/cell/hyper/empty
@@ -145,7 +140,7 @@
 	icon_state = "bscell"
 	emp_damage_modifier = 5
 	maxcharge = STANDARD_CELL_CHARGE * 40
-	custom_materials = list(/datum/material/glass=SMALL_MATERIAL_AMOUNT*6)
+	custom_materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 10, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 1.6)
 	chargerate = STANDARD_CELL_RATE * 2
 
 /obj/item/stock_parts/power_store/cell/bluespace/empty

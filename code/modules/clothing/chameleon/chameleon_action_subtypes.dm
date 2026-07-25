@@ -267,7 +267,7 @@
 		/obj/item/cane,
 		/obj/item/criminalist_scanner,
 		/obj/item/door_remote,
-		/obj/item/flashlight,
+		/obj/item/flashlight/cell_powered,
 		/obj/item/geiger_counter,
 		/obj/item/healthanalyzer,
 		/obj/item/mining_scanner,

@@ -36,7 +36,7 @@
 	id_trim = /datum/id_trim/job/shaft_miner
 	uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
 	backpack_contents = list(
-		/obj/item/flashlight/seclite = 1,
+		/obj/item/flashlight/cell_powered/seclite = 1,
 		/obj/item/knife/combat/survival = 1,
 		/obj/item/mining_voucher = 1,
 		/obj/item/stack/marker_beacon/ten = 1,
@@ -63,7 +63,7 @@
 	suit = /obj/item/clothing/suit/hooded/explorer
 	suit_store = /obj/item/tank/internals/oxygen
 	backpack_contents = list(
-		/obj/item/flashlight/seclite = 1,
+		/obj/item/flashlight/cell_powered/seclite = 1,
 		/obj/item/gun/energy/recharge/kinetic_accelerator = 1,
 		/obj/item/knife/combat/survival = 1,
 		/obj/item/mining_voucher = 1,
@@ -113,6 +113,6 @@
 	for(var/obj/item/gun/energy/recharge/kinetic_accelerator/accelerator in miner_contents)
 		var/datum/component/bayonet_attachable/bayonet = accelerator.GetComponent(/datum/component/bayonet_attachable)
 		bayonet.add_bayonet(new /obj/item/knife/combat/survival(accelerator))
-		var/obj/item/flashlight/seclite/flashlight = new()
+		var/obj/item/flashlight/cell_powered/seclite/flashlight = new()
 		var/datum/component/seclite_attachable/light_component = accelerator.GetComponent(/datum/component/seclite_attachable)
 		light_component.add_light(flashlight)

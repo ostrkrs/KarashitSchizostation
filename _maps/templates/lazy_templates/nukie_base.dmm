@@ -3958,11 +3958,11 @@
 /turf/open/floor/iron,
 /area/centcom/syndicate_mothership/control)
 "QD" = (
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_y = 6
 	},
 /obj/structure/rack,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom/syndicate_mothership)
 "QJ" = (

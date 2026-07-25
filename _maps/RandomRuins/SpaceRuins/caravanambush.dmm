@@ -850,6 +850,17 @@
 "JI" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
+/obj/item/flashlight/cell_powered,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/turf_decal/tile/light_blue/half/contrasted{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/rack,
+/obj/item/storage/toolbox/mechanical,
 /obj/item/flashlight,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/light_blue/half{

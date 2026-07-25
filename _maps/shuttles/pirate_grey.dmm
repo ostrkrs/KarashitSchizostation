@@ -13,7 +13,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "ax" = (
@@ -301,7 +301,7 @@
 /area/shuttle/pirate)
 "lO" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "mT" = (
@@ -512,7 +512,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "sN" = (
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating/rust,
 /area/shuttle/pirate)
 "sO" = (
@@ -922,7 +922,7 @@
 /area/shuttle/pirate)
 "CY" = (
 /obj/structure/cable,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "De" = (
@@ -1109,7 +1109,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "KU" = (
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "KZ" = (

@@ -773,7 +773,7 @@
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 4
 	},
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/item/storage/box/lights/bulbs,
 /obj/item/stack/sheet/mineral/phoron{
 	amount = 10

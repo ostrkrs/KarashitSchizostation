@@ -5,7 +5,8 @@
 
 /obj/item/flashlight
 	name = "flashlight"
-	desc = "A hand-held emergency light."
+	desc = "You probably shouldn't see this."
+	abstract_type = /obj/item/flashlight
 	custom_price = PAYCHECK_CREW
 	icon = 'icons/obj/lighting.dmi'
 	dir = WEST
@@ -41,13 +42,28 @@
 	/// When true, painting the flashlight won't change its light color
 	var/ignore_base_color = FALSE
 
+	/// Is our flashlight depends on energy from its cell?
+	var/cell_powered = FALSE
+	/// Replaceable power cell
+	var/obj/item/stock_parts/power_store/cell/inserted_cell = /obj/item/stock_parts/power_store/cell/device
+	/// When charge was last removed.
+	var/used_charge_for = 0
+	/// How much energy flashlight uses per TOOL_DISCHARGE_INTERVAL
+	var/power_use_amount = 2.5 JOULES
+
 /obj/item/flashlight/Initialize(mapload)
 	. = ..()
+	if(ispath(inserted_cell) && cell_powered)
+		inserted_cell = new inserted_cell
 	if(start_on)
 		set_light_on(TRUE)
 	update_brightness()
 	register_context()
 	init_slapcrafting()
+
+/obj/item/flashlight/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
 
 /obj/item/flashlight/proc/init_slapcrafting()
 	var/static/list/slapcraft_recipe_list = list(/datum/crafting_recipe/flashlight_eyes)
@@ -58,15 +74,13 @@
 	)
 
 /obj/item/flashlight/add_context(atom/source, list/context, obj/item/held_item, mob/living/user)
-	// single use lights can be toggled on once
-	if(isnull(held_item) && (toggle_context || !light_on))
-		context[SCREENTIP_CONTEXT_RMB] = "Toggle light"
-		return CONTEXTUAL_SCREENTIP_SET
-
-	if(istype(held_item, /obj/item/flashlight) && (toggle_context || !light_on))
-		context[SCREENTIP_CONTEXT_LMB] = "Toggle light"
-		return CONTEXTUAL_SCREENTIP_SET
-
+	if(cell_powered)
+		if(istype(held_item, /obj/item/stock_parts/power_store/cell/device) && !inserted_cell)
+			context[SCREENTIP_CONTEXT_LMB] = "Insert Cell"
+			return CONTEXTUAL_SCREENTIP_SET
+		if(isnull(held_item) && inserted_cell)
+			context[SCREENTIP_CONTEXT_RMB] = "Remove Cell"
+			return CONTEXTUAL_SCREENTIP_SET
 	return NONE
 
 /obj/item/flashlight/update_icon_state()
@@ -87,32 +101,92 @@
 
 /obj/item/flashlight/proc/toggle_light(mob/user)
 	playsound(src, light_on ? sound_off : sound_on, 40, TRUE)
+	if(cell_powered)
+		if(!inserted_cell)
+			balloon_alert(user, "no cell!")
+			return FALSE
+		if(!inserted_cell.charge())
+			balloon_alert(user, "no charge!")
+			return FALSE
 	if(!COOLDOWN_FINISHED(src, disabled_time))
 		if(user)
 			balloon_alert(user, "disrupted!")
-		set_light_on(FALSE)
-		update_brightness()
-		update_item_action_buttons()
+		switched_light_off()
 		return FALSE
 	var/old_light_on = light_on
-	set_light_on(!light_on)
+	if(!light_on)
+		switched_light_on()
+	else
+		switched_light_off()
+	return light_on != old_light_on // If the value of light_on didn't change, return false. Otherwise true.
+
+/obj/item/flashlight/proc/switched_light_on(mob/user)
+	if(cell_powered)
+		if(inserted_cell.charge())
+			START_PROCESSING(SSobj, src)
+		else
+			balloon_alert(user, "no power!")
+			switched_light_off(user)
+			return
+	set_light_on(TRUE)
 	update_brightness()
 	update_item_action_buttons()
-	return light_on != old_light_on // If the value of light_on didn't change, return false. Otherwise true.
+	update_icon()
+
+/obj/item/flashlight/proc/switched_light_off(mob/user)
+	STOP_PROCESSING(SSobj, src)
+	set_light_on(FALSE)
+	update_brightness()
+	update_item_action_buttons()
+	update_icon()
+
+/obj/item/flashlight/process(seconds_per_tick)
+	if(light_on)
+		used_charge_for += seconds_per_tick
+		if(used_charge_for >= TOOL_DISCHARGE_INTERVAL)
+			inserted_cell.use(power_use_amount)
+			used_charge_for = 0
+		if(inserted_cell.charge() < power_use_amount)
+			if(ismob(loc))
+				to_chat(loc, span_warning("Your [src] dies. You are alone now."))
+			switched_light_off()
+	else
+		switched_light_off()
 
 /obj/item/flashlight/attack_self(mob/user)
 	return toggle_light(user)
 
 /obj/item/flashlight/attack_hand_secondary(mob/user, list/modifiers)
-	attack_self(user)
-	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+	if(cell_powered)
+		if(!inserted_cell)
+			return
+		if(light_on)
+			switched_light_off()
+		balloon_alert(user, "removed cell")
+		user.put_in_hands(inserted_cell)
+		inserted_cell = NONE
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /obj/item/flashlight/suicide_act(mob/living/carbon/human/user)
-	if (user.is_blind())
+	if(user.is_blind())
 		user.visible_message(span_suicide("[user] is putting [src] close to [user.p_their()] eyes and turning it on... but [user.p_theyre()] blind!"))
 		return SHAME
 	user.visible_message(span_suicide("[user] is putting [src] close to [user.p_their()] eyes and turning it on! It looks like [user.p_theyre()] trying to commit suicide!"))
 	return FIRELOSS
+
+/obj/item/flashlight/cell_powered/attackby(obj/item/tool, mob/user, list/modifiers, list/attack_modifiers)
+	if(cell_powered && istype(tool, /obj/item/stock_parts/power_store/cell/device))
+		if(inserted_cell)
+			to_chat(user, span_warning("\The [src] already has a cell inserted - remove it first."))
+			return TRUE
+		inserted_cell = tool
+		balloon_alert(user, "inserted cell")
+		user.transferItemToLoc(tool, src)
+		playsound(src, 'sound/items/handling/component_drop.ogg', 50)
+		update_icon()
+		return TRUE
+	else
+		. = ..()
 
 /obj/item/flashlight/proc/eye_examine(mob/living/carbon/human/patient, mob/living/user)
 	. = list()
@@ -373,21 +447,6 @@
 	playsound(loc, 'sound/machines/ping.ogg', 50, FALSE) //make some noise!
 	if(creator)
 		visible_message(span_danger("[creator] created a medical hologram!"))
-
-/obj/item/flashlight/seclite
-	name = "seclite"
-	desc = "A robust flashlight used by security."
-	dir = EAST
-	icon_state = "seclite"
-	inhand_icon_state = "seclite"
-	worn_icon_state = "seclite"
-	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
-	force = 9 // Not as good as a stun baton.
-	light_range = 5 // A little better than the standard flashlight.
-	light_power = 0.8
-	light_color = "#99ccff"
-	hitsound = 'sound/items/weapons/genhit1.ogg'
 
 // the desk lamps are a bit special
 /obj/item/flashlight/lamp
@@ -1204,3 +1263,37 @@
 ///Pre-core activated one for admin spawning.
 /obj/item/flashlight/lamp/space_bubble/preactivated
 	installed_pyro_core = TRUE
+
+
+/obj/item/flashlight/cell_powered
+	name = "flashlight"
+	desc = "A hand-held emergency light."
+	cell_powered = TRUE
+
+/obj/item/flashlight/cell_powered/examine()
+	. = ..()
+	if(inserted_cell)
+		. += "The charge meter reads [CEILING(inserted_cell.percent(), 0.1)]%."
+	else
+		. += span_warning("It has no power cell inserted.")
+
+/obj/item/flashlight/cell_powered/empty
+	inserted_cell = NONE
+
+/obj/item/flashlight/cell_powered/upgraded_cell
+	inserted_cell = /obj/item/stock_parts/power_store/cell/device/upgraded
+
+/obj/item/flashlight/cell_powered/seclite
+	name = "seclite"
+	desc = "A robust flashlight used by security."
+	dir = EAST
+	icon_state = "seclite"
+	inhand_icon_state = "seclite"
+	worn_icon_state = "seclite"
+	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
+	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'
+	force = 9 // Not as good as a stun baton.
+	light_range = 5 // A little better than the standard flashlight.
+	light_power = 0.8
+	light_color = "#99ccff"
+	hitsound = 'sound/items/weapons/genhit1.ogg'

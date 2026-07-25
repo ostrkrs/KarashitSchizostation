@@ -1556,8 +1556,8 @@
 	pixel_y = 6
 	},
 /obj/item/pickaxe/mini,
-/obj/item/flashlight/seclite,
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/item/extinguisher/mini,
 /obj/machinery/power/apc/auto_name/directional/east{
 	area = "/area/shuttle/syndicate/armory"

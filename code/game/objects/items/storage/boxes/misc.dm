@@ -54,3 +54,13 @@
 		/obj/item/cigarette/pipe/crackpipe = 2,
 	)
 	generate_items_inside(items_inside, src)
+
+/obj/item/storage/box/device_cells
+	name = "box of device power cells"
+	desc = "A box of crappy device power cells."
+	illustration = "battery"
+
+/obj/item/storage/box/device_cells/Initialize(mapload)
+	. = ..()
+	for(var/i = 1 to 7)
+		new /obj/item/stock_parts/power_store/cell/device(src)

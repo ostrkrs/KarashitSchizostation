@@ -1255,7 +1255,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "xU" = (
 /mob/living/basic/living_floor/white,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "yf" = (

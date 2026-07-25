@@ -435,7 +435,7 @@
 	box = /obj/item/storage/box/survival/centcom
 	backpack_contents = list(
 		/obj/item/ammo_box/speedloader/c357 = 1,
-		/obj/item/flashlight = 1,
+		/obj/item/flashlight/cell_powered = 1,
 		/obj/item/grenade/c4/x4 = 1,
 		/obj/item/storage/box/flashbangs = 1,
 		/obj/item/storage/medkit/regular = 1,

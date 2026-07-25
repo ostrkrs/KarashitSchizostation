@@ -52,7 +52,7 @@
 	cost = CARGO_CRATE_VALUE * 2
 	contains = list(/obj/item/clothing/suit/utility/fire/firefighter = 2,
 					/obj/item/clothing/mask/gas = 2,
-					/obj/item/flashlight = 2,
+					/obj/item/flashlight/cell_powered = 2,
 					/obj/item/tank/internals/oxygen/red = 2,
 					/obj/item/extinguisher/advanced = 2,
 					/obj/item/clothing/head/utility/hardhat/red = 2,

@@ -10,7 +10,7 @@
 	new /obj/item/extinguisher/mini(src)
 	switch(rand(1,3))
 		if(1)
-			new /obj/item/flashlight(src)
+			new /obj/item/flashlight/cell_powered(src)
 		if(2)
 			new /obj/item/flashlight/glowstick(src)
 		if(3)

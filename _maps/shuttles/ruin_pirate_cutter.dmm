@@ -665,7 +665,7 @@
 	amount = 10
 	},
 /obj/item/storage/toolbox/mechanical,
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 3;
 	pixel_y = 3
 	},

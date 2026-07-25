@@ -1102,7 +1102,7 @@
 "jk" = (
 /obj/structure/cable/layer1,
 /obj/structure/rack,
-/obj/item/flashlight/seclite{
+/obj/item/flashlight/cell_powered/seclite{
 	name = "syndicate flashlight";
 	desc = "A robust flashlight used by syndicate security."
 	},

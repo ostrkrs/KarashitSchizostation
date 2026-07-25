@@ -253,7 +253,7 @@
 /obj/structure/rack,
 /obj/item/crowbar/red,
 /obj/item/wrench,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1

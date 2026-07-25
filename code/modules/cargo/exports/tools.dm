@@ -64,7 +64,7 @@
 /datum/export/flashlight
 	cost = CARGO_CRATE_VALUE * 0.025
 	unit_name = "flashlight"
-	export_types = list(/obj/item/flashlight)
+	export_types = list(/obj/item/flashlight/cell_powered)
 	include_subtypes = FALSE
 
 /datum/export/flashlight/flare
@@ -75,7 +75,7 @@
 /datum/export/flashlight/seclite
 	cost = CARGO_CRATE_VALUE * 0.05
 	unit_name = "seclite"
-	export_types = list(/obj/item/flashlight/seclite)
+	export_types = list(/obj/item/flashlight/cell_powered/seclite)
 
 
 /datum/export/analyzer

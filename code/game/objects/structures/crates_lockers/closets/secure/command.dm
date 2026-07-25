@@ -60,7 +60,7 @@
 	new /obj/item/radio/headset/headset_comsec(src)
 	new /obj/item/radio/headset/headset_comsec/alt(src)
 	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/flashlight/seclite(src)
+	new /obj/item/flashlight/cell_powered/seclite(src)
 	new /obj/item/storage/bag/garment/iso(src)
 
 /obj/structure/closet/secure_closet/iso/populate_contents_immediate()

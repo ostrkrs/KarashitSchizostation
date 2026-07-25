@@ -341,6 +341,20 @@
 /obj/structure/rack,
 /obj/item/crowbar/red,
 /obj/item/wrench,
+/obj/item/flashlight/cell_powered,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/rack,
+/obj/item/crowbar/red,
+/obj/item/wrench,
 /obj/item/flashlight,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1

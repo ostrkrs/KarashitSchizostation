@@ -187,7 +187,7 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "kb" = (
 /obj/effect/decal/cleanable/fuel_pool,
-/obj/item/stock_parts/power_store/cell/crap/empty,
+/obj/item/stock_parts/power_store/cell/device/empty,
 /obj/effect/decal/cleanable/plastic,
 /obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/plating/dumpsterair,
@@ -592,7 +592,7 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 4
 	},
 /turf/open/floor/iron/smooth,
@@ -754,7 +754,7 @@
 /turf/template_noop,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "MQ" = (
-/obj/item/stock_parts/power_store/cell/crap/empty{
+/obj/item/stock_parts/power_store/cell/device/empty{
 	pixel_x = -4;
 	pixel_y = 10
 	},

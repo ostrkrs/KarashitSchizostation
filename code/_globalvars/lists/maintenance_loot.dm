@@ -111,6 +111,8 @@ GLOBAL_LIST_INIT(common_loot, list( //common: basic items
 		/obj/item/stack/sheet/iron/twenty = 1,
 		/obj/item/stack/sheet/mineral/phoron = 1,
 		/obj/item/stock_parts/power_store/cell = 1,
+		/obj/item/stock_parts/power_store/cell/device = 1,
+		/obj/item/storage/box/flat/device_cells = 1,
 		/obj/effect/spawner/random/engineering/vending_restock = 1,
 		//assemblies
 		/obj/item/assembly/health = 1,
@@ -155,7 +157,7 @@ GLOBAL_LIST_INIT(common_loot, list( //common: basic items
 		//light sources
 		/obj/effect/spawner/random/decoration/glowstick = 1,
 		/obj/item/clothing/head/utility/hardhat/red = 1,
-		/obj/item/flashlight = 1,
+		/obj/item/flashlight/cell_powered = 1,
 		/obj/item/flashlight/flare = 1,
 		) = 1,
 	))

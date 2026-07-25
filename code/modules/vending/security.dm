@@ -13,7 +13,7 @@
 		/obj/item/assembly/flash/handheld = 5,
 		/obj/item/food/donut/plain = 12,
 		/obj/item/storage/box/evidence = 6,
-		/obj/item/flashlight/seclite = 4,
+		/obj/item/flashlight/cell_powered/seclite = 4,
 		/obj/item/restraints/legcuffs/bola/energy = 7,
 		/obj/item/holosign_creator/security = 2,
 		/obj/item/gun_maintenance_supplies = 2,
@@ -39,8 +39,8 @@
 	if(isgrenade(thrown_item))
 		var/obj/item/grenade/thrown_grenade = thrown_item
 		thrown_grenade.arm_grenade()
-	else if(istype(thrown_item, /obj/item/flashlight))
-		var/obj/item/flashlight/thrown_flashlight = thrown_item
+	else if(istype(thrown_item, /obj/item/flashlight/cell_powered))
+		var/obj/item/flashlight/cell_powered/thrown_flashlight = thrown_item
 		thrown_flashlight.set_light_on(TRUE)
 		thrown_flashlight.update_brightness()
 

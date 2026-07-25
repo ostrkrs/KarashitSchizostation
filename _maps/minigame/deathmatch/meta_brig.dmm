@@ -31,7 +31,7 @@
 /area/deathmatch)
 "aB" = (
 /obj/structure/table,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/indestructible/dark,
 /area/deathmatch)
 "aE" = (
@@ -3589,7 +3589,7 @@
 	pixel_x = 3
 	},
 /obj/item/storage/box/evidence,
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /turf/open/floor/carpet,
 /area/deathmatch)
 "ZC" = (

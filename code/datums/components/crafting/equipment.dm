@@ -163,17 +163,13 @@
 	result = /obj/item/organ/eyes/robotic/flashlight
 	time = 1 SECONDS
 	reqs = list(
-		/obj/item/flashlight = 2,
+		/obj/item/flashlight/cell_powered = 2,
 		/obj/item/restraints/handcuffs/cable = 1
 	)
 	blacklist = list(
-		/obj/item/flashlight/lamp/space_bubble,
+		/obj/item/flashlight/cell_powered/seclite,
 	)
 	category = CAT_EQUIPMENT
-
-/datum/crafting_recipe/flashlight_eyes/New()
-	. = ..()
-	blacklist += typesof(/obj/item/flashlight/flare)
 
 /datum/crafting_recipe/extendohand_r
 	name = "Extendo-Hand (Right Arm)"

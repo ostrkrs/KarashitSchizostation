@@ -7,7 +7,7 @@
 	desc = "A basic power cell that holds 10 KW of energy."
 	id = "basic_cell"
 	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE |MECHFAB
-	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 7, /datum/material/glass =SMALL_MATERIAL_AMOUNT * 0.5)
+	materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*3, /datum/material/glass=SMALL_MATERIAL_AMOUNT*0.25)
 	build_path = /obj/item/stock_parts/power_store/cell/empty
 	category = list(
 		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_1
@@ -19,7 +19,7 @@
 	desc = "A power cell that holds 100 KW of energy."
 	id = "high_cell"
 	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE | MECHFAB
-	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 7, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.6)
+	materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*7, /datum/material/glass=SMALL_MATERIAL_AMOUNT*0.5)
 	build_path = /obj/item/stock_parts/power_store/cell/high/empty
 	category = list(
 		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_1
@@ -31,7 +31,7 @@
 	desc = "A power cell that holds 200 KW of energy."
 	id = "super_cell"
 	build_type = PROTOLATHE | AWAY_LATHE | MECHFAB
-	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 7, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.7)
+	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 8, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.7)
 	build_path = /obj/item/stock_parts/power_store/cell/super/empty
 	category = list(
 		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_2
@@ -43,7 +43,7 @@
 	desc = "A power cell that holds 300 KW of energy."
 	id = "hyper_cell"
 	build_type = PROTOLATHE | AWAY_LATHE | MECHFAB
-	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 7, /datum/material/gold = SMALL_MATERIAL_AMOUNT * 1.5, /datum/material/silver = SMALL_MATERIAL_AMOUNT * 1.5, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.8)
+	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 9, /datum/material/gold = SMALL_MATERIAL_AMOUNT * 1.5, /datum/material/silver = SMALL_MATERIAL_AMOUNT * 1.5, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 0.8)
 	build_path = /obj/item/stock_parts/power_store/cell/hyper/empty
 	category = list(
 		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_3
@@ -55,10 +55,34 @@
 	desc = "A power cell that holds 400 KW of energy."
 	id = "bluespace_cell"
 	build_type = PROTOLATHE | AWAY_LATHE | MECHFAB
-	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 8, /datum/material/gold = SMALL_MATERIAL_AMOUNT * 1.2, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 1.6, /datum/material/diamond = SMALL_MATERIAL_AMOUNT * 1.6, /datum/material/titanium =SMALL_MATERIAL_AMOUNT * 3, /datum/material/bluespace =SMALL_MATERIAL_AMOUNT)
+	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 10, /datum/material/gold = SMALL_MATERIAL_AMOUNT * 1.2, /datum/material/glass = SMALL_MATERIAL_AMOUNT * 1.6, /datum/material/diamond = SMALL_MATERIAL_AMOUNT * 1.6, /datum/material/titanium =SMALL_MATERIAL_AMOUNT * 3, /datum/material/bluespace =SMALL_MATERIAL_AMOUNT)
 	build_path = /obj/item/stock_parts/power_store/cell/bluespace/empty
 	category = list(
 		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_4
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
+
+/datum/design/device_cell
+	name = "Device Power Cell"
+	desc = "A basic device power cell that holds 5 KW of energy."
+	id = "device_cell"
+	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE |MECHFAB
+	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 2.5, /datum/material/glass =SMALL_MATERIAL_AMOUNT * 0.25)
+	build_path = /obj/item/stock_parts/power_store/cell/device/empty
+	category = list(
+		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_1
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
+
+/datum/design/upgraded_device_cell
+	name = "Upgraded Device Power Cell"
+	desc = "A device power cell that holds 15 KW of energy."
+	id = "upgraded_device_cell"
+	build_type = PROTOLATHE | AWAY_LATHE | AUTOLATHE |MECHFAB
+	materials = list(/datum/material/iron = SMALL_MATERIAL_AMOUNT * 5, /datum/material/glass =SMALL_MATERIAL_AMOUNT * 0.5)
+	build_path = /obj/item/stock_parts/power_store/cell/device/upgraded/empty
+	category = list(
+		RND_CATEGORY_STOCK_PARTS + RND_SUBCATEGORY_STOCK_PARTS_1
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE | DEPARTMENT_BITFLAG_ENGINEERING
 

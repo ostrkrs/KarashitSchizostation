@@ -1261,7 +1261,7 @@
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 4
 	},
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /obj/item/clothing/head/utility/welding,
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,

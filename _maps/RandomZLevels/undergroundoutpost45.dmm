@@ -3149,9 +3149,9 @@
 "mB" = (
 /obj/structure/table,
 /obj/item/hand_labeler,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
+/obj/item/flashlight/cell_powered,
+/obj/item/flashlight/cell_powered,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
 	},

@@ -104,7 +104,7 @@
 	loot = list(
 		/obj/item/toy/crayon/spraycan,
 		/obj/item/crowbar,
-		/obj/item/flashlight/seclite,
+		/obj/item/flashlight/cell_powered/seclite,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/restraints/handcuffs,
 		/obj/item/paper/fluff/jobs/prisoner/letter,

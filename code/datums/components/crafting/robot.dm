@@ -125,7 +125,7 @@
 		/obj/item/clothing/head/helmet/space/eva = 1,
 		/obj/item/bodypart/leg/left/robot = 1,
 		/obj/item/bodypart/leg/right/robot = 1,
-		/obj/item/flashlight = 1,
+		/obj/item/flashlight/cell_powered = 1,
 		/obj/item/assembly/voice = 1,
 	)
 	tool_behaviors = list(TOOL_SCREWDRIVER)

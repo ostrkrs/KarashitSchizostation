@@ -231,4 +231,4 @@
 	component_parts += GLOB.stock_part_datums[/datum/stock_part/capacitor]
 	component_parts += GLOB.stock_part_datums[/datum/stock_part/servo/tier2]
 	component_parts += GLOB.stock_part_datums[/datum/stock_part/servo]
-	power_cell = new /obj/item/stock_parts/power_store/cell/upgraded/plus(src)
+	power_cell = new /obj/item/stock_parts/power_store/cell/device/upgraded(src)

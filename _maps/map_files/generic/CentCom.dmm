@@ -601,7 +601,7 @@
 /area/centcom/central_command_areas/evacuation/ship)
 "cL" = (
 /obj/item/gun/energy/pulse/carbine/loyalpin,
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/structure/table/reinforced,
 /obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/stripes/line{
@@ -1025,6 +1025,17 @@
 /turf/open/floor/iron,
 /area/centcom/central_command_areas/admin)
 "eE" = (
+/obj/structure/table/reinforced,
+/obj/item/toy/figure/dsquad{
+	pixel_x = -3;
+	pixel_y = 11
+	},
+/obj/item/flashlight/cell_powered/seclite,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/structure/table/reinforced,
 /obj/item/toy/figure/dsquad{
 	pixel_x = -3;
@@ -2538,7 +2549,7 @@
 /area/centcom/central_command_areas/prison)
 "lv" = (
 /obj/structure/table/reinforced,
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
@@ -3098,6 +3109,16 @@
 /turf/open/space/basic,
 /area/space)
 "oo" = (
+/obj/structure/table/wood,
+/obj/item/taperecorder,
+/obj/item/storage/box/handcuffs,
+/obj/item/flashlight/cell_powered/seclite,
+/obj/structure/noticeboard/directional/north,
+/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/structure/table/wood,
 /obj/item/taperecorder,
 /obj/item/storage/box/handcuffs,
@@ -10234,7 +10255,7 @@
 "Wd" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/ballistic/automatic/smg/wt550,
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/structure/noticeboard/directional/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron,

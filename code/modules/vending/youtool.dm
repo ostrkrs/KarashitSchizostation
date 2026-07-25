@@ -16,9 +16,8 @@
 		/obj/item/analyzer = 5,
 		/obj/item/t_scanner = 5,
 		/obj/item/screwdriver = 5,
-		/obj/item/flashlight/glowstick = 3,
-		/obj/item/flashlight/glowstick/red = 3,
-		/obj/item/flashlight = 5,
+		/obj/item/flashlight/glowstick = 6,
+		/obj/item/flashlight/cell_powered = 5,
 		/obj/item/clothing/ears/earmuffs = 1,
 	)
 	contraband = list(

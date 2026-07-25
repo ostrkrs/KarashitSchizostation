@@ -464,7 +464,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/clothing/shoes/galoshes = 2,
 		/obj/item/storage/belt/janitor = 2,
 		/obj/item/watertank/janitor = 1,
-		/obj/item/flashlight = 2,
+		/obj/item/flashlight/cell_powered = 2,
 		/obj/item/pushbroom = 2,
 		/obj/item/paint/paint_remover = 2,
 		/obj/item/melee/flyswatter = 2,

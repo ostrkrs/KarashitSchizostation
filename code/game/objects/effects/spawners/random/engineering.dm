@@ -91,11 +91,11 @@
 	name = "flashlight spawner"
 	icon_state = "flashlight"
 	loot = list(
-		/obj/item/flashlight = 20,
+		/obj/item/flashlight/cell_powered = 20,
 		/obj/item/flashlight/flare = 10,
 		/obj/effect/spawner/random/decoration/glowstick = 10,
 		/obj/item/flashlight/lantern = 5,
-		/obj/item/flashlight/seclite = 4,
+		/obj/item/flashlight/cell_powered/seclite = 4,
 		/obj/item/flashlight/lantern/jade = 1,
 	)
 

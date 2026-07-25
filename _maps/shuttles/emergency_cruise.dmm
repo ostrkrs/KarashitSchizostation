@@ -2035,7 +2035,7 @@
 "Cq" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/north,
-/obj/item/flashlight/seclite{
+/obj/item/flashlight/cell_powered/seclite{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -2944,15 +2944,15 @@
 	pixel_x = 1;
 	pixel_y = -3
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 9;
 	pixel_y = 11
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 9;
 	pixel_y = 5
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 9;
 	pixel_y = -1
 	},

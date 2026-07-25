@@ -1254,7 +1254,7 @@
 /obj/structure/rack,
 /obj/item/crowbar,
 /obj/item/wrench,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "dw" = (
