@@ -33,9 +33,9 @@
 
 	var/rand_letter = "[ascii2text(rand(97, 122))]"
 	if(prob(50))
-		return "[pick(GLOB.serpentid_prefix)]-[rand(1, 999)]"
+		return "[pick(GLOB.serpentid_prefix)]-[rand(11, 99)]"
 	else
-		return "[rand_letter]+[capitalize(rand_letter)]-[rand(1, 999)]"
+		return "[rand_letter][capitalize(rand_letter)]-[rand(11, 99)]"
 
 /datum/language_holder/serpentid
 	understood_languages = list(
