@@ -89,6 +89,7 @@
 	pressuremod = 0.5
 	bodytemp_normal = (BODYTEMP_NORMAL - 5)
 	bodytemp_heat_damage_limit = (BODYTEMP_HEAT_DAMAGE_LIMIT - 10)
+
 	mutantbrain = /obj/item/organ/brain/serpentid
 	mutanteyes = /obj/item/organ/eyes/serpentid
 	mutanttongue = /obj/item/organ/tongue/serpentid
@@ -99,6 +100,7 @@
 	mutantstomach = /obj/item/organ/stomach/serpentid
 	mutantears = /obj/item/organ/ears/serpentid
 	mutantappendix = null
+
 	bodypart_overrides = list(
 		BODY_ZONE_HEAD = /obj/item/bodypart/head/serpentid,
 		BODY_ZONE_CHEST = /obj/item/bodypart/chest/serpentid,
