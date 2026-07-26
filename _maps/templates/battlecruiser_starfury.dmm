@@ -1336,11 +1336,11 @@
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/rack,
-/obj/item/flashlight/seclite{
+/obj/item/flashlight/cell_powered/seclite{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/item/analyzer,
 /obj/machinery/firealarm/directional/south,
 /obj/effect/turf_decal/siding/dark{
@@ -2994,7 +2994,7 @@
 /obj/item/pipe_dispenser{
 	pixel_y = -3
 	},
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 1
 	},

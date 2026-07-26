@@ -333,17 +333,17 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/merge_conflict_marker{
 	name = "---Merge Conflict Marker---";
 	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
 	},
 /obj/structure/rack,
-/obj/item/flashlight/seclite{
+/obj/item/flashlight/cell_powered/seclite{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
