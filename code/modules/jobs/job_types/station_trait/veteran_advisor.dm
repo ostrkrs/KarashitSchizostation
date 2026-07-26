@@ -1,13 +1,14 @@
 /datum/job/veteran_advisor
 	title = JOB_VETERAN_ADVISOR
 	description = "Advise HoS, and Captain on matters of Security. Train green Officers. \
-		Lay back in your wheelchair and say \"I told you\" to the HoS when all of the station collapses."
+		Lay back in your wheelchair and say \"I told you\" to the HoS when all of the vessel collapses."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_HEAD_OF_SECURITY)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = SUPERVISOR_HOS
+	required_character_age = 45
 	minimal_player_age = 7
 	exp_requirements = 6000 //100 HOURS! We want really hard boiled people
 	exp_required_type = EXP_TYPE_CREW
@@ -16,7 +17,6 @@
 	config_tag = "VETERAN_ADVISOR"
 
 	outfit = /datum/outfit/job/veteran_advisor
-	plasmaman_outfit = /datum/outfit/plasmaman/security
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SEC
@@ -35,7 +35,7 @@
 	)
 	rpg_title = "Royal Advisor"
 	allow_bureaucratic_error = FALSE
-	job_flags = STATION_JOB_FLAGS | STATION_TRAIT_JOB_FLAGS | JOB_ANTAG_PROTECTED
+	job_flags = SHIP_JOB_FLAGS | SHIP_TRAIT_JOB_FLAGS | JOB_ANTAG_PROTECTED
 
 /datum/job/veteran_advisor/get_default_roundstart_spawn_point()
 	for(var/obj/effect/landmark/start/spawn_point as anything in GLOB.start_landmarks_list)
@@ -74,9 +74,8 @@
 	head = /obj/item/clothing/head/soft/veteran
 	mask = /obj/item/cigarette/cigar
 	suit = /obj/item/clothing/suit/jacket/leather_trenchcoat
-	belt = /obj/item/storage/belt/holster/detective/full/ert //M1911 pistol
+	belt = /obj/item/storage/belt/holster/criminalist/full/ert //M1911 pistol
 	ears = /obj/item/radio/headset/heads/hos/advisor
-	glasses = /obj/item/clothing/glasses/eyepatch
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/coin/antagtoken
 	r_pocket = /obj/item/melee/baton/telescopic

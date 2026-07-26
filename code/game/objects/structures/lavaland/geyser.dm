@@ -96,9 +96,9 @@
 	true_name = "wittel geyser"
 	discovery_message = "It's a rare wittel geyser! This could be very powerful in the right hands... "
 
-/obj/structure/geyser/plasma_oxide
-	reagent_id = /datum/reagent/plasma_oxide
-	true_name = "plasma-oxide geyser"
+/obj/structure/geyser/phoron_oxide
+	reagent_id = /datum/reagent/phoron_oxide
+	true_name = "phoron-oxide geyser"
 
 /obj/structure/geyser/protozine
 	reagent_id = /datum/reagent/medicine/omnizine/protozine

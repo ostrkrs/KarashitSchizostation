@@ -33,7 +33,7 @@
 
 /datum/loadout_item/neck/necktie_loose
 	name = "Necktie (Loose)"
-	item_path = /obj/item/clothing/neck/tie/detective
+	item_path = /obj/item/clothing/neck/tie/criminalist
 
 /datum/loadout_item/neck/bowtie
 	name = "Bowtie"

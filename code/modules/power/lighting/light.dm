@@ -1,3 +1,6 @@
+#define LIGHT_TURN_ON_DELAY_MIN 0.5 SECONDS
+#define LIGHT_TURN_ON_DELAY_MAX 2 SECONDS
+
 // the standard tube light fixture
 /obj/machinery/light
 	name = "light fixture"
@@ -228,18 +231,18 @@
 		if(reagents)
 			START_PROCESSING(SSmachines, src)
 		var/area/local_area = get_room_area()
-		if (flickering)
+		if(flickering)
 			brightness_set = brightness * bulb_low_power_brightness_mul
 			power_set = bulb_low_power_pow_mul
 			color_set = nightshift_light_color
-		else if (local_area?.fire)
+		else if(local_area?.fire)
 			color_set = fire_colour
 			power_set = fire_power
 			brightness_set = fire_brightness
-		else if (major_emergency)
+		else if(major_emergency)
 			color_set = bulb_emergency_colour
 			brightness_set = brightness * bulb_major_emergency_brightness_mul
-		else if (nightshift_enabled)
+		else if(nightshift_enabled)
 			brightness_set = nightshift_brightness
 			power_set = nightshift_light_power
 			if(!color)
@@ -249,7 +252,7 @@
 		var/matching = light && brightness_set == light.light_range && power_set == light.light_power && color_set == light.light_color
 		if(!matching)
 			switchcount++
-			if( prob( min(60, (switchcount**2)*0.01) ) )
+			if(prob(min(60, (switchcount**2)*0.01) ) )
 				if(trigger)
 					burn_out()
 			else
@@ -324,8 +327,10 @@
 
 // attempt to set the light's on/off status
 // will not switch on if broken/burned/empty
-/obj/machinery/light/proc/set_on(turn_on)
+/obj/machinery/light/proc/set_on(turn_on, play_sound = TRUE)
 	on = (turn_on && status == LIGHT_OK)
+	if(play_sound)
+		playsound(src, 'sound/machines/light_on.ogg', 60, TRUE)
 	update()
 
 /obj/machinery/light/get_cell()
@@ -687,7 +692,10 @@
 /obj/machinery/light/power_change()
 	SHOULD_CALL_PARENT(FALSE)
 	var/area/local_area = get_room_area()
-	set_on(local_area.lightswitch && local_area.power_light)
+	if(!on)
+		addtimer(CALLBACK(src, PROC_REF(set_on), local_area.lightswitch && local_area.power_light), rand(LIGHT_TURN_ON_DELAY_MIN, LIGHT_TURN_ON_DELAY_MAX))
+	else
+		set_on(local_area.lightswitch && local_area.power_light, play_sound = FALSE)
 
 // called when heated
 
@@ -761,3 +769,6 @@
 	// has to render above tram things (trams are stupid)
 	layer = BELOW_OPEN_DOOR_LAYER
 	plane = GAME_PLANE
+
+#undef LIGHT_TURN_ON_DELAY_MIN
+#undef LIGHT_TURN_ON_DELAY_MAX

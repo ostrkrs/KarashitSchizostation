@@ -28,7 +28,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/inventory_shown = FALSE //Equipped item inventory
 	var/hotkey_ui_hidden = FALSE //This is to hide the buttons that can be used via hotkeys. (hotkeybuttons list of buttons)
 
-	var/atom/movable/screen/alien_plasma_display
+	var/atom/movable/screen/alien_phoron_display
 	var/atom/movable/screen/alien_queen_finder
 
 	var/atom/movable/screen/action_intent
@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/list/static_inventory = list() //the screen objects which are static
 	var/list/toggleable_inventory = list() //the screen objects which can be hidden
 	var/list/atom/movable/screen/hotkeybuttons = list() //the buttons that can be used via hotkeys
-	var/list/infodisplay = list() //the screen objects that display mob info (health, alien plasma, etc...)
+	var/list/infodisplay = list() //the screen objects that display mob info (health, alien phoron, etc...)
 	/// Screen objects that never exit view.
 	var/list/always_visible_inventory = list()
 	var/list/inv_slots[SLOTS_AMT] // /atom/movable/screen/inventory objects, ordered by their slot ID.
@@ -95,6 +95,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	var/atom/movable/screen/healthdoll/healthdoll
 	var/atom/movable/screen/spacesuit
 	var/atom/movable/screen/hunger/hunger
+	var/atom/movable/screen/thirst/thirst
 
 	/// Subtypes can override this to force a specific UI style
 	var/ui_style
@@ -233,6 +234,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	rest_icon = null
 	sleep_icon = null
 	floor_change = null
+
 	hand_slots.Cut()
 
 	QDEL_LIST(toggleable_inventory)
@@ -247,7 +249,8 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 	healthdoll = null
 	spacesuit = null
 	hunger = null
-	alien_plasma_display = null
+	thirst = null
+	alien_phoron_display = null
 	alien_queen_finder = null
 
 	QDEL_LIST_ASSOC_VAL(master_groups)
@@ -486,7 +489,9 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 		var/atom/movable/screen/inventory/hand/H = hand_slots[h]
 		if(H)
 			static_inventory -= H
+
 	hand_slots = list()
+
 	var/atom/movable/screen/inventory/hand/hand_box
 	for(var/i in 1 to mymob.held_items.len)
 		hand_box = new /atom/movable/screen/inventory/hand(null, src)
@@ -498,6 +503,15 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 		hand_slots["[i]"] = hand_box
 		static_inventory += hand_box
 		hand_box.update_appearance()
+
+		// Create a separate screen object for the wide hand overlay
+		var/atom/movable/screen/inventory/hand/wide_hand = new(null, src)
+		wide_hand.name = mymob.get_held_index_name(i)
+		wide_hand.icon = ui_style
+		wide_hand.icon_state = "hand2_[mymob.held_index_to_dir(i)]"
+		wide_hand.screen_loc = ui_widehand_position(i)
+		wide_hand.held_index = i
+		static_inventory += wide_hand
 
 	var/num_of_swaps = 0
 	for(var/atom/movable/screen/swap_hand/swap_hands in static_inventory)
@@ -511,6 +525,7 @@ GLOBAL_LIST_INIT(available_ui_styles, list(
 		swap_hands.screen_loc = ui_swaphand_position(mymob, hand_ind)
 		hand_num += 1
 	hand_num = 1
+
 	for(var/atom/movable/screen/drop/swap_hands in static_inventory)
 		var/hand_ind = LEFT_HANDS
 		if (num_of_swaps > 1)

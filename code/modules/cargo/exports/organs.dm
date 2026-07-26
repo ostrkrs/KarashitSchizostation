@@ -46,21 +46,4 @@
 	unit_name = "humanoid tongue"
 	export_types = list(/obj/item/organ/tongue)
 
-/datum/export/organ/external/tail/lizard
-	cost = CARGO_CRATE_VALUE * 1.25
-	unit_name = "lizard tail"
-	export_types = list(/obj/item/organ/tail/lizard)
-
-
-/datum/export/organ/external/tail/cat
-	cost = CARGO_CRATE_VALUE * 1.5
-	unit_name = "cat tail"
-	export_types = list(/obj/item/organ/tail/cat)
-
-/datum/export/organ/ears/cat
-	cost = CARGO_CRATE_VALUE
-	unit_name = "cat ears"
-	export_types = list(/obj/item/organ/ears/cat)
-
-
 #undef CLIENT_ORGAN_MULT

@@ -118,8 +118,8 @@ GLOBAL_LIST_INIT(sm_gas_behavior, init_sm_gas())
 	ASSERT_GAS(/datum/gas/pluoxium, sm.absorbed_gasmix)
 	sm.absorbed_gasmix.gases[/datum/gas/pluoxium][MOLES] += consumed_co2
 
-/datum/sm_gas/plasma
-	gas_path = /datum/gas/plasma
+/datum/sm_gas/phoron
+	gas_path = /datum/gas/phoron
 	heat_modifier = 14
 	power_transmission = 0.4
 	heat_power_generation = 1

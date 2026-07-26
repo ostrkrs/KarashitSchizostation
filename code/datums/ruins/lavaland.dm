@@ -29,13 +29,6 @@
 	description = "WELCOME TO CLOWN PLANET! HONK HONK HONK etc.!"
 	suffix = "lavaland_biodome_clown_planet.dmm"
 
-/datum/map_template/ruin/lavaland/lizgas
-	name = "Lava-Ruin The Lizard's Gas"
-	id = "lizgas2"
-	description = "A recently opened gas station from the Lizard's Gas franchise."
-	suffix = "lavaland_surface_gas.dmm"
-	allow_duplicates = FALSE
-
 /datum/map_template/ruin/lavaland/cube
 	name = "Lava-Ruin The Wishgranter Cube"
 	id = "wishgranter-cube"
@@ -51,15 +44,6 @@
 	However, all the inhabitants seem to do is grow drugs and guns."
 	suffix = "lavaland_surface_seed_vault.dmm"
 	cost = 10
-	allow_duplicates = FALSE
-
-/datum/map_template/ruin/lavaland/ash_walker
-	name = "Lava-Ruin Ash Walker Nest"
-	id = "ash-walker"
-	description = "A race of unbreathing lizards live here, that run faster than a human can, worship a broken dead city, and are capable of reproducing by something involving tentacles? \
-	Probably best to stay clear."
-	suffix = "lavaland_surface_ash_walker1.dmm"
-	cost = 20
 	allow_duplicates = FALSE
 
 /datum/map_template/ruin/lavaland/syndicate_base

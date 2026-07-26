@@ -31,11 +31,7 @@
 	},
 /area/ruin/space/has_grav/powered)
 "i" = (
-/obj/structure/closet{
-	icon_state = "oldcloset";
-	name = "strange closet";
-	enable_door_overlay = 0
-	},
+/obj/structure/closet,
 /turf/open/floor/oldshuttle,
 /area/ruin/space/has_grav/powered)
 "j" = (
@@ -57,13 +53,6 @@
 /obj/structure/chair/old{
 	dir = 1
 	},
-/turf/open/floor/oldshuttle,
-/area/ruin/space/has_grav/powered)
-"n" = (
-/obj/structure/chair/old{
-	dir = 1
-	},
-/obj/item/crowbar/large/twenty_force,
 /turf/open/floor/oldshuttle,
 /area/ruin/space/has_grav/powered)
 "o" = (
@@ -287,7 +276,7 @@ h
 i
 i
 c
-n
+m
 m
 m
 o

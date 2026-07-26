@@ -114,7 +114,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "gW" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /obj/machinery/vending/boozeomat,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
@@ -197,7 +197,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "mF" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "mI" = (
@@ -240,7 +240,7 @@
 /turf/open/floor/iron/smooth,
 /area/shuttle/escape)
 "oP" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/chem_dispenser/drinks{
 	dir = 4
@@ -306,10 +306,10 @@
 /turf/template_noop,
 /area/shuttle/escape)
 "sQ" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
 /obj/structure/bonfire/prelit,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
@@ -596,13 +596,13 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "KP" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/reagentgrinder,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "KX" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/escape/brig)
 "Lk" = (
@@ -683,7 +683,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "Oq" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /turf/open/floor/plating,
 /area/shuttle/escape/brig)
@@ -778,7 +778,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "Xh" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/chem_dispenser/drinks/beer{
 	dir = 4
@@ -786,7 +786,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/escape)
 "Xi" = (
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
 /obj/machinery/light/directional/south,
 /obj/structure/closet/cabinet,
 /obj/item/reagent_containers/cup/glass/shaker,

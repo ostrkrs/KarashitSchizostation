@@ -23,7 +23,7 @@ jobs:
 
       - name: "Setup python"
         if: steps.value_holder.outputs.ACTIONS_ENABLED
-        uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@v7.0.0
         with:
           python-version: "3.x"
 
@@ -35,7 +35,7 @@ jobs:
 
       - name: "Checkout"
         if: steps.value_holder.outputs.ACTIONS_ENABLED
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 25
           persist-credentials: false
@@ -43,7 +43,7 @@ jobs:
       - name: "Compile"
         if: steps.value_holder.outputs.ACTIONS_ENABLED
         run: |
-          python tools/ss13_genchangelog.py html/changelogs/bandastation
+          python tools/ss13_genchangelog.py html/changelogs
 
       - name: Commit
         if: steps.value_holder.outputs.ACTIONS_ENABLED
@@ -51,12 +51,12 @@ jobs:
           git config --local user.name "tgstation-ci[bot]"
           git config --local user.email "179393467+tgstation-ci[bot]@users.noreply.github.com"
           git pull origin master
-          git add html/changelogs/bandastation
+          git add html/changelogs
           git commit -m "Automatic changelog compile [ci skip]" -a || true
 
       - name: Generate App Token
         id: app-token-generation
-        uses: actions/create-github-app-token@v3
+        uses: actions/create-github-app-token@v3.2.0
         if: env.APP_PRIVATE_KEY != '' && env.APP_ID != ''
         with:
           app-id: ${{ secrets.APP_ID }}

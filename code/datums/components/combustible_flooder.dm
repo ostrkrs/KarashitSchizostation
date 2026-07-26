@@ -11,7 +11,7 @@
 	src.gas_amount = initialize_gas_amount
 	src.temp_amount = initialize_temp_amount
 
-// Any item made of plasma is going to have this component, making it extremely difficult to blacklist fire hazards during create_and_destroy.
+// Any item made of phoron is going to have this component, making it extremely difficult to blacklist fire hazards during create_and_destroy.
 // So let's just completely neuter them during unit tests so we don't burn down the testing area and cause spurious runtimes.
 #ifndef UNIT_TESTS
 	RegisterSignal(parent, COMSIG_ATOM_ATTACKBY, PROC_REF(attackby_react))
@@ -61,7 +61,7 @@
 			var/obj/obj_parent = parent
 			obj_parent.deconstruct(disassembled = FALSE)
 		else
-			qdel(parent) // For things with the explodable component like plasma mats this isn't necessary, but there's no harm.
+			qdel(parent) // For things with the explodable component like phoron mats this isn't necessary, but there's no harm.
 	qdel(src)
 
 /// fire_act reaction.

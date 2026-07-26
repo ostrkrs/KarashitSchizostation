@@ -58,10 +58,24 @@ GLOBAL_LIST_INIT(color_list_lustrous, list(
 	"Bright Red" = "#fa2d2d",
 ))
 
-/// List of possible ethereal colours
+/// List of possible serpentid colours
 GLOBAL_LIST_INIT(color_list_serpentid, list(
 	"Green" = "#00AF3F",
 	"Teal" = "#01C07A",
 	"Cyan" = "#00A98F",
 	"Blue" = "#05b8c5",
+))
+
+/// List of possible caver colours
+GLOBAL_LIST_INIT(color_list_caver, list(
+	"Silver" = "#a19e9a",
+	"Ash" = "#7b8083",
+	"Slate" = "#5f5d5c",
+	"Charcoal" = "#504b4a",
+	"Purple" = "#716b79",
+	"Violet" = "#737896",
+	"Light Blue" = "#85929b",
+	"Blue" = "#73808f",
+	"Tan" = "#9b8b7e",
+	"Brown" = "#72655d",
 ))

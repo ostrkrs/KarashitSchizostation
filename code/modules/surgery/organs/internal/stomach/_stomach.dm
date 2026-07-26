@@ -6,6 +6,7 @@
 	desc = "Onaka ga suite imasu."
 	icon_state = "stomach"
 
+	visual = FALSE
 	w_class = WEIGHT_CLASS_SMALL
 	zone = BODY_ZONE_CHEST
 	slot = ORGAN_SLOT_STOMACH
@@ -193,9 +194,7 @@
 			to_chat(human, span_notice("You no longer feel vigorous."))
 		human.metabolism_efficiency = 1
 
-	//Hunger slowdown for if mood isn't enabled
-	if(CONFIG_GET(flag/disable_human_mood))
-		handle_hunger_slowdown(human)
+	handle_hunger_slowdown(human)
 
 ///for when mood is disabled and hunger should handle slowdowns
 /obj/item/organ/stomach/proc/handle_hunger_slowdown(mob/living/carbon/human/human)
@@ -388,7 +387,7 @@
 
 /obj/item/organ/stomach/on_mob_insert(mob/living/carbon/receiver, special, movement_flags)
 	. = ..()
-	receiver.hud_used?.hunger?.update_hunger_bar()
+	receiver.hud_used?.hunger?.update_appearance()
 	RegisterSignal(receiver, COMSIG_CARBON_VOMITED, PROC_REF(on_vomit))
 	RegisterSignal(receiver, COMSIG_HUMAN_GOT_PUNCHED, PROC_REF(on_punched))
 
@@ -397,7 +396,7 @@
 		var/mob/living/carbon/human/human_owner = stomach_owner
 		human_owner.clear_alert(ALERT_DISGUST)
 		human_owner.clear_mood_event("disgust")
-	stomach_owner.hud_used?.hunger?.update_hunger_bar()
+	stomach_owner.hud_used?.hunger?.update_appearance()
 	UnregisterSignal(stomach_owner, list(COMSIG_CARBON_VOMITED, COMSIG_HUMAN_GOT_PUNCHED))
 	return ..()
 
@@ -481,13 +480,6 @@
 	icon_state = "stomach-bone"
 	metabolism_efficiency = 0.025 //very bad
 	organ_traits = list(TRAIT_NOHUNGER)
-
-/obj/item/organ/stomach/bone/plasmaman
-	name = "digestive crystal"
-	desc = "A strange crystal that is responsible for metabolizing the unseen energy force that feeds plasmamen."
-	icon_state = "stomach-p"
-	metabolism_efficiency = 0.06
-	organ_traits = null
 
 /obj/item/organ/stomach/cybernetic
 	name = "basic cybernetic stomach"
@@ -584,5 +576,6 @@
 
 	maxHealth = 1.2 * STANDARD_ORGAN_THRESHOLD
 	disgust_metabolism = 2.5
+	hunger_modifier = 1.3
 
 #undef STOMACH_METABOLISM_CONSTANT

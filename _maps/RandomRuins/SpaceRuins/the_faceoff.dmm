@@ -39,7 +39,7 @@
 /obj/effect/turf_decal/stripes/red/full,
 /obj/machinery/light/small/built,
 /obj/item/light/bulb/broken,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "bz" = (
 /turf/template_noop,
@@ -182,7 +182,7 @@
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "fa" = (
-/obj/structure/sign/poster/contraband/interdyne_gene_clinics,
+/obj/structure/sign/poster/legal/interdyne_gene_clinics,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "fO" = (
@@ -248,7 +248,7 @@
 "hA" = (
 /obj/effect/decal/cleanable/blood/oil/slippery,
 /obj/effect/turf_decal/stripes/red/full,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "hS" = (
 /obj/item/ammo_casing/shotgun/buckshot{
@@ -272,7 +272,7 @@
 /area/ruin/space)
 "ij" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "ja" = (
@@ -498,7 +498,7 @@
 "sZ" = (
 /obj/structure/sign/poster/contraband/random/directional/east,
 /obj/effect/turf_decal/stripes/red/full,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "tm" = (
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -595,7 +595,7 @@
 /turf/open/floor/iron/dark/textured/airless,
 /area/ruin/space)
 "xm" = (
-/obj/structure/sign/poster/contraband/syndicate_recruitment,
+/obj/structure/sign/poster/old_syndie/syndicate_recruitment,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "xI" = (
@@ -603,8 +603,7 @@
 /obj/effect/mob_spawn/corpse/human/nanotrasensoldier,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/gibs/limb,
-/obj/item/gun/energy/e_gun/mini,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "xT" = (
 /obj/structure/sign/poster/contraband/soviet_propaganda,
@@ -761,7 +760,7 @@
 /area/ruin/space)
 "Ef" = (
 /obj/effect/turf_decal/stripes/red/full,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "Ep" = (
 /obj/structure/door_assembly/door_assembly_highsecurity,
@@ -810,7 +809,7 @@
 "GX" = (
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/remains/human,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "Ho" = (
 /obj/effect/mapping_helpers/burnt_floor,
@@ -826,7 +825,7 @@
 /turf/open/floor/iron/dark/airless,
 /area/ruin/space)
 "HG" = (
-/obj/structure/sign/poster/contraband/gorlex_recruitment,
+/obj/structure/sign/poster/old_syndie/gorlex_recruitment,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ruin/space)
 "HI" = (
@@ -1002,7 +1001,7 @@
 /turf/open/floor/mineral/plastitanium/airless,
 /area/ruin/space)
 "Qx" = (
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "Rt" = (
 /obj/item/wallframe/firealarm,
@@ -1036,7 +1035,7 @@
 "Ts" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/structure/girder,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "Tu" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1186,7 +1185,7 @@
 /area/ruin/space)
 "YI" = (
 /obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/iron/dark/smooth_large/airless,
+/turf/open/floor/iron/dark/large/airless,
 /area/ruin/space)
 "YJ" = (
 /obj/effect/decal/cleanable/dirt,

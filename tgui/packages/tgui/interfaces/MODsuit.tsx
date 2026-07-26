@@ -83,6 +83,7 @@ type ModuleCustomStatus = {
   shift_id: string;
   body_temperature: number;
   nutrition: number;
+  hydration: number;
   dna_unique_identity: string;
   dna_unique_enzymes: string;
   viruses: VirusData[];
@@ -538,6 +539,7 @@ const UserStatusSection = (props) => {
     background_radiation_level,
     body_temperature,
     nutrition,
+    hydration,
     dna_unique_identity,
     dna_unique_enzymes,
     viruses,
@@ -639,6 +641,11 @@ const UserStatusSection = (props) => {
         {nutrition !== undefined && (
           <LabeledList.Item label="Satiety Level">
             {`${active ? Math.round(nutrition) : 0}`}
+          </LabeledList.Item>
+        )}
+        {hydration !== undefined && (
+          <LabeledList.Item label="Hydration Level">
+            {`${active ? Math.round(hydration) : 0}`}
           </LabeledList.Item>
         )}
         <LabeledList.Item label="Name">{user_name}</LabeledList.Item>

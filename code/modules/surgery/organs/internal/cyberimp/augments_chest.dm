@@ -244,11 +244,11 @@
 	if(environment && environment.return_pressure() > 30)
 		return TRUE
 
-	// Priority 2: use plasma from internal plasma storage.
+	// Priority 2: use phoron from internal phoron storage.
 	// (just in case someone would ever use this implant system to make cyber-alien ops with jetpacks and taser arms)
-	if(owner.getPlasma() >= num * 100)
+	if(owner.getPhoron() >= num * 100)
 		if(use_fuel)
-			owner.adjustPlasma(-num * 100)
+			owner.adjustPhoron(-num * 100)
 		return TRUE
 
 	// Priority 3: use internals tank.

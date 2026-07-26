@@ -13,7 +13,6 @@
 /turf/open/misc/asteroid/airless,
 /area/ruin/space)
 "T" = (
-/turf/closed/wall/rock,
 /area/ruin/space)
 
 (1,1,1) = {"

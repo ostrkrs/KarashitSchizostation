@@ -9,6 +9,7 @@
 	equip_delay_other = 5 SECONDS
 	armor_type = /datum/armor/shoes_sandal
 	fastening_type = SHOES_SLIPON
+	supports_variations_flags = CLOTHING_DIGITIGRADE_VARIATION
 	species_exception = list(/datum/species/golem)
 
 	lace_time = 3 SECONDS

@@ -93,9 +93,9 @@
 	name = "Oxygen Supply Control"
 	build_path = /obj/machinery/computer/atmos_control/oxygen_tank
 
-/obj/item/circuitboard/computer/atmos_control/plasma_tank
-	name = "Plasma Supply Control"
-	build_path = /obj/machinery/computer/atmos_control/plasma_tank
+/obj/item/circuitboard/computer/atmos_control/phoron_tank
+	name = "Phoron Supply Control"
+	build_path = /obj/machinery/computer/atmos_control/phoron_tank
 
 /obj/item/circuitboard/computer/atmos_control/air_tank
 	name = "Mixed Air Supply Control"
@@ -607,10 +607,6 @@
 /obj/item/circuitboard/computer/order_console/mining/golem
 	name = "Golem Ship Equipment Vendor Console"
 	build_path = /obj/machinery/computer/order_console/mining/golem
-
-/obj/item/circuitboard/computer/order_console/bitrunning
-	name = "Bitrunning Vendor Console"
-	build_path = /obj/machinery/computer/order_console/bitrunning
 
 /obj/item/circuitboard/computer/ferry
 	name = "Transport Ferry"

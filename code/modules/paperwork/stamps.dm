@@ -75,6 +75,11 @@
 	icon_state = "stamp-qm"
 	dye_color = DYE_QM
 
+/obj/item/stamp/head/steward
+	name = "steward's rubber stamp"
+	icon_state = "stamp-steward"
+	dye_color = DYE_STEWARD
+
 /obj/item/stamp/denied
 	name = "\improper DENIED rubber stamp"
 	icon_state = "stamp-deny"

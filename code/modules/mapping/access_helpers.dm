@@ -170,6 +170,11 @@
 	access_list += ACCESS_CMO
 	return access_list
 
+/obj/effect/mapping_helpers/airlock/access/any/medical/paramedic/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_PARAMEDIC
+	return access_list
+
 /obj/effect/mapping_helpers/airlock/access/any/medical/pharmacy/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_PHARMACY
@@ -263,14 +268,9 @@
 	access_list += ACCESS_ARMORY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/any/security/detective/get_access()
+/obj/effect/mapping_helpers/airlock/access/any/security/criminalist/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_DETECTIVE
-	return access_list
-
-/obj/effect/mapping_helpers/airlock/access/any/security/court/get_access()
-	var/list/access_list = ..()
-	access_list += ACCESS_COURT
+	access_list += ACCESS_CRIMINALIST
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/any/security/hos/get_access()
@@ -332,9 +332,9 @@
 	access_list += ACCESS_THEATRE
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/any/service/lawyer/get_access()
+/obj/effect/mapping_helpers/airlock/access/any/service/steward/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_LAWYER
+	access_list += ACCESS_STEWARD
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/any/service/maintenance/get_access()
@@ -386,9 +386,23 @@
 	access_list += list(ACCESS_CARGO, ACCESS_MAINT_TUNNELS)
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/any/supply/bit_den/get_access()
+// -------------------- Law access helpers
+/obj/effect/mapping_helpers/airlock/access/any/law
+	icon_state = "access_helper_law"
+
+/obj/effect/mapping_helpers/airlock/access/any/law/iaa/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_BIT_DEN
+	access_list += ACCESS_IAA
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/law/iso/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_ISO
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/law/court/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_COURT
 	return access_list
 
 // -------------------- Syndicate access helpers
@@ -651,6 +665,11 @@
 	access_list += ACCESS_CMO
 	return access_list
 
+/obj/effect/mapping_helpers/airlock/access/all/medical/paramedic/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_PARAMEDIC
+	return access_list
+
 /obj/effect/mapping_helpers/airlock/access/all/medical/pharmacy/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_PHARMACY
@@ -734,14 +753,9 @@
 	access_list += ACCESS_ARMORY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/all/security/detective/get_access()
+/obj/effect/mapping_helpers/airlock/access/all/security/criminalist/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_DETECTIVE
-	return access_list
-
-/obj/effect/mapping_helpers/airlock/access/all/security/court/get_access()
-	var/list/access_list = ..()
-	access_list += ACCESS_COURT
+	access_list += ACCESS_CRIMINALIST
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/all/security/hos/get_access()
@@ -798,9 +812,9 @@
 	access_list += ACCESS_THEATRE
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/all/service/lawyer/get_access()
+/obj/effect/mapping_helpers/airlock/access/all/service/steward/get_access()
 	var/list/access_list = ..()
-	access_list += ACCESS_LAWYER
+	access_list += ACCESS_STEWARD
 	return access_list
 
 // -------------------- Supply access helpers
@@ -840,6 +854,25 @@
 /obj/effect/mapping_helpers/airlock/access/all/supply/vault/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_VAULT
+	return access_list
+
+// -------------------- Law access helpers
+/obj/effect/mapping_helpers/airlock/access/all/law
+	icon_state = "access_helper_law"
+
+/obj/effect/mapping_helpers/airlock/access/all/law/iaa/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_IAA
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/law/iso/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_ISO
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/law/court/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_COURT
 	return access_list
 
 // -------------------- Syndicate access helpers

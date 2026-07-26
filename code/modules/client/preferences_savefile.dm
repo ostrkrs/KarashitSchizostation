@@ -111,9 +111,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	if (current_version < 41)
 		migrate_character_to_tgui_prefs_menu()
 
-	if (current_version < 42)
-		migrate_body_types(save_data)
-
 	if (current_version < 43)
 		migrate_legacy_sound_toggles(savefile)
 
@@ -357,6 +354,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//Load prefs
 	job_preferences = save_data?["job_preferences"]
+	alt_job_titles = save_data?["alt_job_titles"]
 
 	//Quirks
 	all_quirks = save_data?["all_quirks"]
@@ -369,6 +367,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//Sanitize
 	randomise = SANITIZE_LIST(randomise)
 	job_preferences = SANITIZE_LIST(job_preferences)
+	alt_job_titles = SANITIZE_LIST(alt_job_titles)
 	all_quirks = SANITIZE_LIST(all_quirks)
 
 	//Validate job prefs
@@ -404,17 +403,12 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	save_data["version"] = SAVEFILE_VERSION_MAX //load_character will sanitize any bad data, so assume up-to-date.
 
-	// This is the version when the random security department was removed.
-	// When the minimum is higher than that version, it's impossible for someone to have the "Random" department.
-	#if SAVEFILE_VERSION_MIN > 40
-	#warn The prefered_security_department check in code/modules/client/preferences/security_department.dm is no longer necessary.
-	#endif
-
 	//Character
 	save_data["randomise"] = randomise
 
 	//Write prefs
 	save_data["job_preferences"] = job_preferences
+	save_data["alt_job_titles"] = alt_job_titles
 
 	//Quirks
 	save_data["all_quirks"] = all_quirks

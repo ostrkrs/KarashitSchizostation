@@ -24,7 +24,7 @@
 
 /obj/item/fish/goldfish/gill
 	name = "McGill"
-	desc = "A great rubber duck tool for Lawyers who can't get a grasp over their case."
+	desc = "A great rubber duck tool for Internal Affairs Agents who can't get a grasp over their case."
 	fish_id_redirect_path = /obj/item/fish/goldfish
 	stable_population = 1
 	random_case_rarity = FISH_RARITY_NOPE
@@ -61,7 +61,7 @@
 
 /obj/item/fish/goldfish/three_eyes/gill
 	name = "McGill"
-	desc = "A great rubber duck tool for Lawyers who can't get a grasp over their case. It looks kinda different today..."
+	desc = "A great rubber duck tool for Internal Affairs Agents who can't get a grasp over their case. It looks kinda different today..."
 	fish_id_redirect_path = /obj/item/fish/goldfish/three_eyes
 	compatible_types = list(/obj/item/fish/goldfish, /obj/item/fish/goldfish/three_eyes)
 	beauty = FISH_BEAUTY_GREAT

@@ -188,10 +188,10 @@ const GASES = [
     color: 'grey',
   },
   {
-    id: 'plasma',
-    path: '/datum/gas/plasma',
-    name: 'Plasma',
-    label: 'Plasma',
+    id: 'phoron',
+    path: '/datum/gas/phoron',
+    name: 'Phoron',
+    label: 'Phoron',
     color: 'pink',
   },
   {

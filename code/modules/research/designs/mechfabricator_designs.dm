@@ -640,7 +640,7 @@
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*17.5,
 		/datum/material/glass =SHEET_MATERIAL_AMOUNT*5,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*10,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*10,
 	)
 	construction_time = 30 SECONDS
 	category = list(
@@ -655,7 +655,7 @@
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*7.5,
 		/datum/material/glass =SHEET_MATERIAL_AMOUNT * 2.5,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*5,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*5,
 	)
 	construction_time = 20 SECONDS
 	category = list(
@@ -669,7 +669,7 @@
 	build_path = /obj/item/mecha_parts/part/phazon_left_arm
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*10,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*5,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*5,
 	)
 	construction_time = 20 SECONDS
 	category = list(
@@ -683,7 +683,7 @@
 	build_path = /obj/item/mecha_parts/part/phazon_right_arm
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*10,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*5,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*5,
 	)
 	construction_time = 20 SECONDS
 	category = list(
@@ -697,7 +697,7 @@
 	build_path = /obj/item/mecha_parts/part/phazon_left_leg
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*10,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*5,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*5,
 	)
 	construction_time = 20 SECONDS
 	category = list(
@@ -711,7 +711,7 @@
 	build_path = /obj/item/mecha_parts/part/phazon_right_leg
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*10,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*5,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*5,
 	)
 	construction_time = 20 SECONDS
 	category = list(
@@ -725,7 +725,7 @@
 	build_path = /obj/item/mecha_parts/part/phazon_armor
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*12.5,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*10,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*10,
 		/datum/material/titanium=SHEET_MATERIAL_AMOUNT*10,
 	)
 	construction_time = 30 SECONDS
@@ -977,7 +977,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/ripleyupgrade
 	materials = list(
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*5,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT*5,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT*5,
 	)
 	construction_time = 10 SECONDS
 	category = list(
@@ -1073,7 +1073,7 @@
 	)
 
 /datum/design/mech_generator
-	name = "Plasma Generator"
+	name = "Phoron Generator"
 	id = "mech_generator"
 	build_type = MECHFAB
 	build_path = /obj/item/mecha_parts/mecha_equipment/generator
@@ -1081,7 +1081,7 @@
 		/datum/material/iron=SHEET_MATERIAL_AMOUNT*5,
 		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
 		/datum/material/silver=SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma=SHEET_MATERIAL_AMOUNT * 2.5,
+		/datum/material/phoron=SHEET_MATERIAL_AMOUNT * 2.5,
 	)
 	construction_time = 10 SECONDS
 	category = list(
@@ -1232,7 +1232,7 @@
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*5,
 		/datum/material/glass =SHEET_MATERIAL_AMOUNT*3,
-		/datum/material/plasma =SHEET_MATERIAL_AMOUNT * 2.5,
+		/datum/material/phoron =SHEET_MATERIAL_AMOUNT * 2.5,
 		/datum/material/uranium =SHEET_MATERIAL_AMOUNT*3,
 	)
 	construction_time = 12 SECONDS
@@ -1293,7 +1293,7 @@
 	build_path = /obj/item/borg/upgrade/lavaproof
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*5,
-		/datum/material/plasma =SHEET_MATERIAL_AMOUNT*2,
+		/datum/material/phoron =SHEET_MATERIAL_AMOUNT*2,
 		/datum/material/titanium =SHEET_MATERIAL_AMOUNT * 2.5,
 	)
 	construction_time = 12 SECONDS
@@ -1353,7 +1353,7 @@
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*7.5,
 		/datum/material/glass =SHEET_MATERIAL_AMOUNT*7.5,
-		/datum/material/plasma =SHEET_MATERIAL_AMOUNT*4,
+		/datum/material/phoron =SHEET_MATERIAL_AMOUNT*4,
 		/datum/material/uranium =SHEET_MATERIAL_AMOUNT*4,
 	)
 	construction_time = 8 SECONDS
@@ -1530,7 +1530,7 @@
 	materials = list(
 		/datum/material/iron = SHEET_MATERIAL_AMOUNT*7.5,
 		/datum/material/glass = SHEET_MATERIAL_AMOUNT*6,
-		/datum/material/plasma = SHEET_MATERIAL_AMOUNT*3,
+		/datum/material/phoron = SHEET_MATERIAL_AMOUNT*3,
 		/datum/material/uranium = SHEET_MATERIAL_AMOUNT*3,
 	) //a bit cheaper than an expanded hypo for medical borg,
 	construction_time = 4 SECONDS
@@ -1726,7 +1726,7 @@
 	build_path = /obj/item/borg/upgrade/bs_syringe
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 		/datum/material/diamond =HALF_SHEET_MATERIAL_AMOUNT,
 		/datum/material/bluespace =SMALL_MATERIAL_AMOUNT*5
 	)
@@ -1840,7 +1840,7 @@
 	materials = list(
 		/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT,
 		/datum/material/glass =SMALL_MATERIAL_AMOUNT*5,
-		/datum/material/plasma =SMALL_MATERIAL_AMOUNT * 2,
+		/datum/material/phoron =SMALL_MATERIAL_AMOUNT * 2,
 		/datum/material/titanium =SMALL_MATERIAL_AMOUNT * 2,
 	)
 	construction_time = 5 SECONDS
@@ -1883,7 +1883,7 @@
 	build_type = MECHFAB
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*5,
-		/datum/material/plasma =SHEET_MATERIAL_AMOUNT * 2.5,
+		/datum/material/phoron =SHEET_MATERIAL_AMOUNT * 2.5,
 	)
 	construction_time = 25 SECONDS
 	build_path = /obj/item/mod/construction/shell
@@ -1947,7 +1947,7 @@
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*3,
 		/datum/material/glass =SHEET_MATERIAL_AMOUNT*1.5,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	construction_time = 15 SECONDS
 	build_path = /obj/item/mod/construction/plating
@@ -1970,7 +1970,7 @@
 	materials = list(
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*3,
 		/datum/material/glass =SHEET_MATERIAL_AMOUNT*1.5,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	research_icon_state = "civilian-plating"
 
@@ -1982,7 +1982,7 @@
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*3,
 		/datum/material/gold =SHEET_MATERIAL_AMOUNT,
 		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 	research_icon_state = "engineering-plating"
@@ -1995,7 +1995,7 @@
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*3,
 		/datum/material/titanium =SHEET_MATERIAL_AMOUNT,
 		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_ENGINEERING
 	research_icon_state = "atmospheric-plating"
@@ -2008,7 +2008,7 @@
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*3,
 		/datum/material/silver =SHEET_MATERIAL_AMOUNT,
 		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_MEDICAL
 	research_icon_state = "medical-plating"
@@ -2021,7 +2021,7 @@
 		/datum/material/iron =SHEET_MATERIAL_AMOUNT*3,
 		/datum/material/bananium =SHEET_MATERIAL_AMOUNT,
 		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SERVICE
 	research_icon_state = "cosmohonk-plating"
@@ -2199,7 +2199,7 @@
 /datum/design/module/mod_jetpack
 	name = "Ion Jetpack Module"
 	id = "mod_jetpack"
-	materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT * 1.5, /datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT)
+	materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT * 1.5, /datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT)
 	build_path = /obj/item/mod/module/jetpack
 
 /datum/design/module/mod_magboot
@@ -2260,7 +2260,7 @@
 	id = "mod_emp_shield"
 	materials = list(
 		/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
+		/datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	build_path = /obj/item/mod/module/emp_shield
 
@@ -2439,15 +2439,6 @@
 		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
 	)
 	build_path = /obj/item/mod/module/dna_lock
-
-/datum/design/module/mod_plasma_stabilizer
-	name = "Plasma Stabilizer Module"
-	id = "mod_plasma"
-	materials = list(
-		/datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT,
-		/datum/material/glass =HALF_SHEET_MATERIAL_AMOUNT,
-	)
-	build_path = /obj/item/mod/module/plasma_stabilizer
 
 /datum/design/module/mod_glove_translator
 	name = "Glove Translator Module"

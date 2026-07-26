@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ab" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/machinery/door/airlock/engineering,
 /obj/structure/cable,
 /turf/open/indestructible,
@@ -26,7 +26,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "ay" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/item/flashlight/flare/candle{
 	pixel_x = 7;
 	pixel_y = 4
@@ -112,7 +112,7 @@
 	},
 /area/ruin/space/has_grav/powered/biooutpost)
 "dD" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
@@ -226,7 +226,7 @@
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "fm" = (
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /obj/machinery/computer/old{
 	dir = 8
 	},
@@ -259,7 +259,7 @@
 /obj/effect/turf_decal/siding/purple/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/indestructible/white,
@@ -301,7 +301,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 4
 	},
 /turf/open/indestructible,
@@ -377,7 +377,7 @@
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "iA" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -469,8 +469,8 @@
 	dir = 8
 	},
 /obj/structure/rack,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9{
+/obj/item/ammo_box/magazine/smg46mm_wt550,
+/obj/item/ammo_box/magazine/smg46mm_wt550{
 	pixel_x = 6;
 	pixel_y = 6
 	},
@@ -492,7 +492,7 @@
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "ki" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
@@ -580,7 +580,6 @@
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 10
 	},
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "lJ" = (
@@ -660,13 +659,13 @@
 	puzzle_id = "md_42069";
 	desc = "This door only opens from the other side. It looks virtually indestructible."
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "nP" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /obj/structure/table/reinforced,
@@ -764,7 +763,7 @@
 	},
 /area/ruin/space/has_grav/powered/biooutpost)
 "pl" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /obj/effect/turf_decal/trimline/yellow/filled/warning,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
@@ -784,7 +783,7 @@
 "pC" = (
 /obj/structure/table,
 /obj/item/flashlight/lamp,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "pK" = (
@@ -804,7 +803,7 @@
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "pY" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/indestructible,
@@ -813,7 +812,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/turf_decal/tile/red/anticorner,
 /obj/structure/chair{
 	dir = 1
 	},
@@ -857,11 +856,11 @@
 "qV" = (
 /obj/machinery/power/rtg/old_station,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "qY" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "qZ" = (
@@ -872,7 +871,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "ra" = (
 /obj/structure/closet/emcloset/anchored,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -897,7 +896,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "rm" = (
 /obj/effect/spawner/random/engineering/flashlight,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -971,13 +970,6 @@
 	},
 /turf/open/floor/plating/airless,
 /area/ruin/space)
-"sM" = (
-/obj/item/ammo_casing/spent,
-/obj/item/ammo_casing/spent,
-/obj/item/ammo_casing/c45/spent,
-/obj/item/ammo_casing/c45/spent,
-/turf/open/indestructible/white,
-/area/ruin/space/has_grav/powered/biooutpost)
 "sR" = (
 /obj/effect/turf_decal/trimline/yellow/filled/end,
 /turf/open/indestructible,
@@ -1015,7 +1007,7 @@
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "tN" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/indestructible,
@@ -1037,7 +1029,7 @@
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "uh" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /obj/structure/chair/office{
@@ -1093,7 +1085,7 @@
 /area/ruin/space/has_grav/powered/biooutpost/vault)
 "uZ" = (
 /obj/machinery/door/airlock/security,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /turf/open/indestructible{
@@ -1112,7 +1104,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "vl" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 4
 	},
 /obj/item/crowbar,
@@ -1183,7 +1175,7 @@
 	dir = 1
 	},
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/wt550{
+/obj/item/gun/ballistic/automatic/smg/wt550{
 	pin = /obj/item/firing_pin/explorer
 	},
 /turf/open/indestructible/dark,
@@ -1201,7 +1193,7 @@
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "wR" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 1
 	},
 /obj/machinery/computer/old{
@@ -1235,7 +1227,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "xm" = (
 /obj/item/kirbyplants/random/dead,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -1244,7 +1236,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost/vault)
 "xA" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/open/indestructible,
@@ -1252,7 +1244,7 @@
 "xE" = (
 /obj/lightning_thrower,
 /obj/machinery/light/small/dim/directional/north,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
@@ -1263,7 +1255,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "xU" = (
 /mob/living/basic/living_floor/white,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "yf" = (
@@ -1295,7 +1287,7 @@
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "yw" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/indestructible,
@@ -1319,7 +1311,7 @@
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "zg" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 8
 	},
 /obj/structure/table/reinforced,
@@ -1344,7 +1336,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "zP" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/structure/cable,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -1356,7 +1348,7 @@
 "An" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/structure/table,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -1449,7 +1441,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "By" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 8
 	},
 /turf/open/indestructible,
@@ -1473,7 +1465,7 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 5
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/blood/splatter,
@@ -1481,7 +1473,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "Cl" = (
 /obj/machinery/door/airlock/science,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "CD" = (
@@ -1516,7 +1508,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "CW" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -1675,7 +1667,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "Gd" = (
 /obj/machinery/light/cold/dim/directional/east,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /turf/open/indestructible/white,
@@ -1701,16 +1693,13 @@
 /obj/effect/turf_decal/siding/purple{
 	dir = 8
 	},
-/obj/item/ammo_casing/c45/spent,
-/obj/item/ammo_casing/c45/spent,
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "GC" = (
 /obj/effect/turf_decal/siding/purple{
 	dir = 6
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /obj/structure/table/reinforced/rglass,
@@ -1722,7 +1711,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/powered/biooutpost/vault)
 "GF" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/structure/grille/indestructible,
 /obj/structure/cable,
 /turf/open/indestructible,
@@ -1750,7 +1739,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "Hm" = (
 /obj/structure/grille/indestructible,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
+/obj/effect/turf_decal/tile/yellow/anticorner,
 /obj/effect/turf_decal/trimline/yellow/filled/warning,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
@@ -1793,12 +1782,8 @@
 /obj/effect/turf_decal/stripes/full,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
-"Jb" = (
-/obj/item/ammo_casing/c45/spent,
-/turf/open/indestructible/white,
-/area/ruin/space/has_grav/powered/biooutpost)
 "Jf" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /obj/structure/sign/departments/security/directional/east,
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/indestructible/white,
@@ -1817,7 +1802,7 @@
 	id = "md_tosci";
 	name = "shield power panel"
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
@@ -1889,7 +1874,7 @@
 /obj/structure/chair/office{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/machinery/light/small/broken/directional/east,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -1906,7 +1891,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "KU" = (
 /obj/machinery/door/airlock/engineering,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Lc" = (
@@ -1945,7 +1930,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Mo" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/plasma/end{
+/obj/effect/spawner/structure/window/hollow/reinforced/phoron/end{
 	dir = 4
 	},
 /obj/structure/sign/warning/electric_shock/directional/west,
@@ -1959,7 +1944,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "MF" = (
 /obj/structure/grille/indestructible,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning,
@@ -1982,7 +1967,7 @@
 /obj/structure/table,
 /obj/item/paper/crumpled/fluff/meatderelict,
 /obj/item/pen,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Nn" = (
@@ -2014,7 +1999,7 @@
 "NI" = (
 /obj/lightning_thrower,
 /obj/machinery/light/small/dim/directional/north,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
@@ -2050,11 +2035,11 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "Oi" = (
 /obj/structure/sign/warning/biohazard/directional/north,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/item/book/manual/wiki/security_corp_law,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Oo" = (
@@ -2163,7 +2148,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/space/has_grav/powered/biooutpost/vault)
 "Qh" = (
-/obj/effect/spawner/structure/window/hollow/reinforced/plasma/end{
+/obj/effect/spawner/structure/window/hollow/reinforced/phoron/end{
 	dir = 8
 	},
 /obj/structure/sign/warning/electric_shock/directional/east,
@@ -2205,7 +2190,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "Rb" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Rf" = (
@@ -2250,7 +2235,7 @@
 /turf/open/indestructible/dark,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Se" = (
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /obj/structure/chair/office{
 	dir = 8
 	},
@@ -2259,7 +2244,7 @@
 "Sj" = (
 /obj/machinery/power/rtg/old_station,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/machinery/light/small/directional/south,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -2276,7 +2261,7 @@
 /area/ruin/space/has_grav/powered/biooutpost)
 "SZ" = (
 /obj/machinery/door/airlock/engineering,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/indestructible,
@@ -2351,12 +2336,12 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/biooutpost)
 "UD" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
+/obj/effect/turf_decal/tile/yellow/anticorner,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "UG" = (
 /obj/machinery/vending/tool,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
@@ -2371,7 +2356,7 @@
 /area/ruin/space/has_grav/powered/biooutpost/vault)
 "Vc" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/yellow/filled/warning{
@@ -2380,7 +2365,7 @@
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Vj" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /obj/structure/cable,
@@ -2401,7 +2386,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/indestructible,
@@ -2414,11 +2399,6 @@
 /obj/effect/turf_decal/siding/blue{
 	dir = 4
 	},
-/turf/open/indestructible/white,
-/area/ruin/space/has_grav/powered/biooutpost)
-"VN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "VT" = (
@@ -2437,14 +2417,14 @@
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "VW" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /obj/machinery/light/floor,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "We" = (
 /obj/machinery/door/airlock/engineering,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/indestructible,
 /area/ruin/space/has_grav/powered/biooutpost)
 "Wj" = (
@@ -2461,7 +2441,7 @@
 /turf/open/indestructible/meat,
 /area/ruin/space/has_grav/powered/biooutpost)
 "WJ" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2507,7 +2487,7 @@
 /obj/machinery/door/puzzle/keycard{
 	puzzle_id = "md_engpost"
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/indestructible,
@@ -2567,7 +2547,6 @@
 /obj/item/ammo_casing/spent,
 /obj/item/ammo_casing/spent,
 /obj/effect/decal/cleanable/blood/tracks,
-/obj/item/ammo_casing/c45/spent,
 /turf/open/indestructible/white,
 /area/ruin/space/has_grav/powered/biooutpost)
 "YI" = (
@@ -2595,7 +2574,7 @@
 	},
 /area/ruin/space/has_grav/powered/biooutpost)
 "Zd" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 8
 	},
 /obj/structure/chair/office{
@@ -3435,8 +3414,8 @@ Se
 Jh
 sk
 at
-sM
-Jb
+Hx
+jE
 Pa
 Jh
 Uv
@@ -3478,7 +3457,7 @@ Jh
 Kl
 zF
 Bu
-VN
+at
 HA
 ph
 FE

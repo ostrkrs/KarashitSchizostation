@@ -146,13 +146,13 @@
 	max_syringes = 6
 	force = 4
 
-/obj/item/gun/syringe/syndicate
+/obj/item/gun/syringe/compact
 	name = "dart pistol"
 	desc = "A small spring-loaded sidearm that functions identically to a syringe gun."
 	icon_state = "dartsyringegun"
 	lefthand_file = 'icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/guns_righthand.dmi'
-	inhand_icon_state = "gun" //Smaller inhand
+	inhand_icon_state = "gun"
 	inhand_x_dimension = 32
 	inhand_y_dimension = 32
 	worn_icon_state = "gun"

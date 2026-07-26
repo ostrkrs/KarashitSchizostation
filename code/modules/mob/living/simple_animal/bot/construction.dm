@@ -171,7 +171,7 @@
 						build_step++
 
 		if(ASSEMBLY_EIGHTH_STEP)
-			if(istype(W, /obj/item/gun/energy/disabler))
+			if(istype(W, /obj/item/gun/energy/taser))
 				if(!user.temporarilyRemoveItemFromInventory(W))
 					return
 				name = "[W.name] ED-209 assembly"
@@ -577,7 +577,7 @@
 				build_step++
 
 		if(ASSEMBLY_SECOND_STEP)
-			if(istype(part, /obj/item/flashlight))
+			if(istype(part, /obj/item/flashlight/cell_powered))
 				if(!user.temporarilyRemoveItemFromInventory(part))
 					return
 				balloon_alert(user, "flashlight added")

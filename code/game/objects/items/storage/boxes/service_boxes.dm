@@ -19,7 +19,6 @@
 	for(var/i in 1 to 7)
 		new /obj/item/reagent_containers/cup/glass/sillycup(src)
 
-//Some spare PDAs in a box
 /obj/item/storage/box/pdas
 	name = "spare PDAs"
 	desc = "A box of spare PDA microcomputers."
@@ -70,7 +69,7 @@
 
 /obj/item/storage/box/matches
 	name = "matchbox"
-	desc = "A small box of Almost But Not Quite Plasma Premium Matches."
+	desc = "A small box of Almost But Not Quite Phoron Premium Matches."
 	icon = 'icons/obj/cigarettes.dmi'
 	icon_state = "matchbox"
 	inhand_icon_state = "zippo"

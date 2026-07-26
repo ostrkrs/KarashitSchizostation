@@ -13,7 +13,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "ax" = (
@@ -97,7 +97,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -134,7 +134,7 @@
 /area/shuttle/pirate)
 "eU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/item/assembly/flash,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
@@ -167,7 +167,7 @@
 "gg" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "gz" = (
@@ -188,7 +188,7 @@
 /area/shuttle/pirate)
 "hk" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/spawner/random/maintenance/five,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
@@ -251,7 +251,7 @@
 /area/shuttle/pirate)
 "jS" = (
 /obj/effect/spawner/random/trash/mess,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/item/knife/butcher,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
@@ -264,7 +264,7 @@
 "kw" = (
 /obj/structure/closet,
 /obj/effect/spawner/random/maintenance/two,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "lk" = (
@@ -301,7 +301,7 @@
 /area/shuttle/pirate)
 "lO" = (
 /obj/effect/mapping_helpers/burnt_floor,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "mT" = (
@@ -312,14 +312,14 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/pirate)
 "nJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/structure/steam_vent,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "nK" = (
@@ -359,17 +359,17 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/firealarm/directional/south,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/turf_decal/tile/red/anticorner,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "oy" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/spawner/random/structure/tank_holder,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "pk" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/shuttle/pirate)
 "pw" = (
 /obj/structure/closet,
@@ -472,7 +472,7 @@
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/pirate)
@@ -512,7 +512,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "sN" = (
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating/rust,
 /area/shuttle/pirate)
 "sO" = (
@@ -525,7 +525,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /obj/item/clothing/suit/utility/fire/firefighter,
@@ -588,7 +588,7 @@
 /area/shuttle/pirate)
 "vI" = (
 /obj/effect/spawner/random/structure/steam_vent,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "vJ" = (
@@ -626,7 +626,7 @@
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/two,
 /obj/item/crowbar/red,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "wY" = (
@@ -634,7 +634,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -679,7 +679,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -742,7 +742,7 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -759,12 +759,12 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "zh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /obj/item/knife/butcher,
@@ -788,7 +788,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Aa" = (
@@ -880,7 +880,7 @@
 	},
 /obj/effect/turf_decal/tile/yellow/opposingcorners,
 /obj/structure/sign/warning/gas_mask/directional/north,
-/turf/open/floor/iron/dark/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/pirate)
@@ -897,7 +897,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /obj/effect/spawner/random/maintenance/eight,
@@ -922,7 +922,7 @@
 /area/shuttle/pirate)
 "CY" = (
 /obj/structure/cable,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "De" = (
@@ -934,7 +934,7 @@
 /area/shuttle/pirate)
 "Dn" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /obj/item/nullrod/tribal_knife,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
@@ -963,12 +963,12 @@
 "Eq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/random/trash/graffiti,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "EA" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/shuttle/pirate)
 "EC" = (
 /obj/effect/spawner/structure/window,
@@ -1109,14 +1109,14 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "KU" = (
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "KZ" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Lk" = (
@@ -1133,7 +1133,7 @@
 /obj/effect/turf_decal/bot,
 /obj/structure/sign/warning/gas_mask/directional/north,
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -1179,7 +1179,7 @@
 /obj/effect/spawner/random/entertainment/arcade{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Oa" = (
@@ -1208,7 +1208,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
 "OG" = (
@@ -1245,7 +1245,7 @@
 /area/shuttle/pirate)
 "Qe" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/spawner/random/engineering/toolbox,
 /turf/open/floor/iron,
 /area/shuttle/pirate)
@@ -1262,7 +1262,7 @@
 /area/shuttle/pirate)
 "QO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -1299,7 +1299,7 @@
 /turf/open/floor/plating,
 /area/shuttle/pirate)
 "Sh" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/pirate)
 "Si" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
@@ -1474,7 +1474,7 @@
 "YQ" = (
 /obj/machinery/computer/shuttle/pirate,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/dark,
 /area/shuttle/pirate)
 "Zc" = (
@@ -1486,7 +1486,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,

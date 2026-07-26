@@ -49,8 +49,8 @@
 	clear_alert(ALERT_TOO_MUCH_OXYGEN)
 	clear_alert(ALERT_NOT_ENOUGH_OXYGEN)
 
-	clear_alert(ALERT_TOO_MUCH_PLASMA)
-	clear_alert(ALERT_NOT_ENOUGH_PLASMA)
+	clear_alert(ALERT_TOO_MUCH_PHORON)
+	clear_alert(ALERT_NOT_ENOUGH_PHORON)
 
 	clear_alert(ALERT_TOO_MUCH_NITRO)
 	clear_alert(ALERT_NOT_ENOUGH_NITRO)
@@ -108,3 +108,7 @@
 	SIGNAL_HANDLER
 
 	dna?.remove_all_mutations()
+
+/mob/living/carbon/on_hearing_loss(datum/source)
+	. = ..()
+	breathing_loop.stop()

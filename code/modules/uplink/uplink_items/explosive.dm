@@ -62,11 +62,6 @@
 	item = /obj/item/storage/box/syndie_kit/emp
 	cost = 2
 
-/datum/uplink_item/explosives/emp/New()
-	..()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_CYBERNETIC_REVOLUTION))
-		cost *= 3
-
 /datum/uplink_item/explosives/smoke
 	name = "Smoke Grenades"
 	desc = "A box that contains five smoke grenades a smoke implant with three uses and a gas smask. For when you want to sow discord, vanish \
@@ -101,11 +96,6 @@
 	cost = 7
 	purchasable_from = ~UPLINK_ALL_SYNDIE_OPS /// Ops get their own version.
 	limited_discount_stock = 4
-
-/datum/uplink_item/explosives/syndicate_bomb/emp/New()
-	..()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_CYBERNETIC_REVOLUTION))
-		cost *= 2
 
 /datum/uplink_item/explosives/syndicate_bomb
 	name = "Syndicate Bomb"

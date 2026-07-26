@@ -6,7 +6,7 @@
 /turf/open/misc/asteroid/basalt/lava_land_surface,
 /area/lavaland/surface/outdoors)
 "ac" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/seedvault)
 "ad" = (
 /obj/machinery/vending/hydronutrients,
@@ -496,7 +496,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/seedvault)
 "bz" = (
 /obj/structure/disposalpipe/segment{
@@ -508,7 +508,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/seedvault)
 "bB" = (
 /obj/effect/turf_decal/trimline/green/line{
@@ -525,7 +525,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/powered/seedvault)
 "bD" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/lavaland/surface/outdoors)
 "ca" = (
 /obj/machinery/atmospherics/components/tank/air{

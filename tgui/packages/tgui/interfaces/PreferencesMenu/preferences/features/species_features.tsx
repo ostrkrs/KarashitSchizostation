@@ -77,8 +77,26 @@ export const feature_monkey_tail: FeatureChoiced = {
   },
 };
 
-export const feature_lizard_legs: FeatureChoiced = {
-  name: 'Legs',
+export const feature_caver_tail: FeatureChoiced = {
+  name: 'Tail',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
+export const feature_caver_boneplate: FeatureChoiced = {
+  name: 'Boneplate',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
+export const feature_caver_skincolor: FeatureChoiced = {
+  name: 'Skin Color',
   component: (
     props: FeatureValueProps<string, string, FeatureChoicedServerData>,
   ) => {
@@ -109,8 +127,18 @@ export const feature_mcolor: Feature<string> = {
   component: FeatureColorInput,
 };
 
-export const underwear_color: Feature<string> = {
-  name: 'Underwear color',
+export const bottom_underwear_color: Feature<string> = {
+  name: 'Bottom underwear color',
+  component: FeatureColorInput,
+};
+
+export const top_underwear_color: Feature<string> = {
+  name: 'Top underwear color',
+  component: FeatureColorInput,
+};
+
+export const socks_color: Feature<string> = {
+  name: 'Socks color',
   component: FeatureColorInput,
 };
 

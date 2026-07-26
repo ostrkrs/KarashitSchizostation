@@ -93,14 +93,6 @@
 	item = /obj/item/ammo_box/magazine/m12g/flechette
 	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
 
-/datum/uplink_item/ammo_nuclear/basic/donk
-	name = "12g Donk Co. 'Donk Spike' Flechette Magazine Box (Bulldog)"
-	desc = "A whole box of 8-round Donk Co. 'Donk Spike' flechette magazines for use in the \
-		Bulldog shotgun. Sponsored by the Donk Corporation! A whole box of these magazines for \
-		the price of one purchase! WARNING: DO NOT SNIFF THE MAGAZINES!"
-	item = /obj/item/storage/box/syndie_kit/shotgun_surplus
-	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
-
 /datum/uplink_item/ammo_nuclear/incendiary/dragon
 	name = "12g Dragon's Breath Drum (Bulldog)"
 	desc = "An alternative 8-round dragon's breath magazine for use in the Bulldog shotgun. \
@@ -113,41 +105,6 @@
 	desc = "An alternative 8-round meteorslug magazine for use in the Bulldog shotgun. \
 		Great for blasting holes into the hull and knocking down enemies."
 	item = /obj/item/ammo_box/magazine/m12g/meteor
-	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
-
-// ~~ Ansem Pistol ~~
-
-/datum/uplink_item/weapon_kits/low_cost/clandestine
-	name = "Ansem Pistol Case (Easy/Spare)"
-	desc = "A small, easily concealable handgun that uses 10mm auto rounds in 8-round magazines and is compatible \
-			with suppressors. Comes with three spare magazines."
-	item = /obj/item/storage/toolbox/guncase/clandestine
-
-/datum/uplink_item/ammo_nuclear/basic/m10mm
-	name = "10mm Handgun Magazine (Ansem)"
-	desc = "An additional 8-round 10mm magazine, compatible with the Ansem pistol."
-	item = /obj/item/ammo_box/magazine/m10mm
-	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
-
-/datum/uplink_item/ammo_nuclear/ap/m10mm
-	name = "10mm Armour Piercing Magazine (Ansem)"
-	desc = "An additional 8-round 10mm magazine, compatible with the Ansem pistol. \
-		These rounds are less effective at injuring the target but penetrate protective gear."
-	item = /obj/item/ammo_box/magazine/m10mm/ap
-	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
-
-/datum/uplink_item/ammo_nuclear/hp/m10mm
-	name = "10mm Hollow Point Magazine (Ansem)"
-	desc = "An additional 8-round 10mm magazine, compatible with the Ansem pistol. \
-		These rounds are more damaging but ineffective against armour."
-	item = /obj/item/ammo_box/magazine/m10mm/hp
-	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
-
-/datum/uplink_item/ammo_nuclear/incendiary/m10mm
-	name = "10mm Incendiary Magazine (Ansem)"
-	desc = "An additional 8-round 10mm magazine, compatible with the Ansem pistol. \
-		Loaded with incendiary rounds which inflict less damage, but ignite the target."
-	item = /obj/item/ammo_box/magazine/m10mm/fire
 	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
 
 //Medium-cost: 14 TC each. Meant for more expensive purchases with a goal in mind.
@@ -166,27 +123,27 @@
 	item = /obj/item/storage/toolbox/guncase/c20r
 
 /datum/uplink_item/ammo_nuclear/basic/smg
-	name = ".45 SMG Magazine (C-20r)"
-	desc = "An additional 24-round .45 magazine suitable for use with the C-20r submachine gun."
-	item = /obj/item/ammo_box/magazine/smgm45
+	name = "8mm SMG Magazine (C-20r)"
+	desc = "An additional 24-round 8mm magazine suitable for use with the C-20r submachine gun."
+	item = /obj/item/ammo_box/magazine/smgm8mm_c20r
 
 /datum/uplink_item/ammo_nuclear/ap/smg
-	name = ".45 Armor Piercing SMG Magazine (C-20r)"
-	desc = "An additional 24-round .45 magazine suitable for use with the C-20r submachine gun.\
+	name = "8mm Armor Piercing SMG Magazine (C-20r)"
+	desc = "An additional 24-round 8mm magazine suitable for use with the C-20r submachine gun.\
 		These rounds are less effective at injuring the target but penetrate protective gear."
-	item = /obj/item/ammo_box/magazine/smgm45/ap
+	item = /obj/item/ammo_box/magazine/smgm8mm_c20r/ap
 
 /datum/uplink_item/ammo_nuclear/hp/smg
-	name = ".45 Hollow Point SMG Magazine (C-20r)"
-	desc = "An additional 24-round .45 magazine suitable for use with the C-20r submachine gun.\
+	name = "8mm Hollow Point SMG Magazine (C-20r)"
+	desc = "An additional 24-round 8mm magazine suitable for use with the C-20r submachine gun.\
 		These rounds are more damaging but ineffective against armour."
-	item = /obj/item/ammo_box/magazine/smgm45/hp
+	item = /obj/item/ammo_box/magazine/smgm8mm_c20r/hp
 
 /datum/uplink_item/ammo_nuclear/incendiary/smg
-	name = ".45 Incendiary SMG Magazine (C-20r)"
-	desc = "An additional 24-round .45 magazine suitable for use with the C-20r submachine gun.\
+	name = "8mm Incendiary SMG Magazine (C-20r)"
+	desc = "An additional 24-round 8mm magazine suitable for use with the C-20r submachine gun.\
 		Loaded with incendiary rounds which inflict little damage, but ignite the target."
-	item = /obj/item/ammo_box/magazine/smgm45/incen
+	item = /obj/item/ammo_box/magazine/smgm8mm_c20r/incen
 	cost = 4
 	purchasable_from = UPLINK_SERIOUS_OPS
 
@@ -219,23 +176,6 @@
 	desc = "A speed loader that contains seven additional .357 Magnum rounds; usable with the Syndicate revolver. \
 		For when you really need a lot of things dead. Unlike field agents, operatives get a premium price for their speedloaders!"
 	item = /obj/item/ammo_box/speedloader/c357
-	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
-
-/datum/uplink_item/ammo_nuclear/special/revolver/phasic
-	name = ".357 Phasic Speed Loader (Revolver)"
-	desc = "A speed loader that contains seven additional .357 Magnum phasic rounds; usable with the Syndicate revolver. \
-		These bullets are made from an experimental alloy, 'Ghost Lead', that allows it to pass through almost any non-organic material. \
-		The name is a misnomer. It doesn't contain any lead whatsoever!"
-	item = /obj/item/ammo_box/speedloader/c357/phasic
-	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
-
-/datum/uplink_item/ammo_nuclear/special/revolver/heartseeker
-	name = ".357 Heartseeker Speed Loader (Revolver)"
-	desc = "A speed loader that contains seven additional .357 Magnum heartseeker rounds; usable with the Syndicate revolver. \
-		Able to veer straight into targets! Don't miss a shot with heartseeker! As seen in the hit NTFlik horror-space western film, Forget-Me-Not!	\
-		Brought to you by Roseus Galactic!"
-	item = /obj/item/ammo_box/speedloader/c357/heartseeker
-	cost = 3
 	purchasable_from = parent_type::purchasable_from | UPLINK_SPY
 
 // ~~ Grenade Launcher ~~
@@ -296,41 +236,6 @@
 	desc = "A 50-round magazine of 7mm ammunition for use in the L6 SAW; tipped with a special flammable \
 		mixture that'll ignite anyone struck by the bullet. Some men just want to watch the world burn."
 	item = /obj/item/ammo_box/magazine/m7mm/incen
-
-/datum/uplink_item/ammo_nuclear/special/machinegun
-	name = "7mm (Match) Box Magazine (L6 SAW)"
-	desc = "A 50-round magazine of 7mm ammunition for use in the L6 SAW; you didn't know there was a demand for match grade \
-		precision bullet hose ammo, but these rounds are finely tuned and perfect for ricocheting off walls all fancy-like."
-	item = /obj/item/ammo_box/magazine/m7mm/match
-
-// ~~ M-90gl Carbine ~~
-
-/datum/uplink_item/weapon_kits/high_cost/carbine
-	name = "M-90gl Carbine Case (Hard)"
-	desc = "A fully-loaded, specialized three-round burst carbine that fires .223 ammunition from a 30 round magazine.\
-		Comes with a 40mm underbarrel grenade launcher. Use secondary-fire to fire the grenade launcher. Also comes with two spare magazines \
-		and a box of 40mm rubber slugs."
-	item = /obj/item/storage/toolbox/guncase/m90gl
-
-/datum/uplink_item/ammo_nuclear/basic/carbine
-	name = ".223 Toploader Magazine (M-90gl)"
-	desc = "An additional 30-round .223 magazine; suitable for use with the M-90gl carbine. \
-		These bullets pack less punch than 7mm rounds, but they still offer more power than .45 ammo due to their innate armour penetration."
-	item = /obj/item/ammo_box/magazine/m223
-
-/datum/uplink_item/ammo_nuclear/special/carbine
-	name = ".223 Toploader Phasic Magazine (M-90gl)"
-	desc = "An additional 30-round .223 magazine; suitable for use with the M-90gl carbine. \
-		These bullets are made from an experimental alloy, 'Ghost Lead', that allows it to pass through almost any non-organic material. \
-		The name is a misnomer. It doesn't contain any lead whatsoever!"
-	item = /obj/item/ammo_box/magazine/m223/phasic
-
-/datum/uplink_item/ammo_nuclear/basic/carbine/a40mm
-	name = "40mm Grenade Box (M-90gl)"
-	desc = "A box of 40mm HE grenades for use with the M-90gl's under-barrel grenade launcher. \
-		Your teammates will ask you to not shoot these down small hallways. \
-		You'll do it anyway."
-	item = /obj/item/ammo_box/a40mm
 
 // ~~ Anti-Materiel Sniper Rifle ~~
 
@@ -395,7 +300,7 @@
 		operator effort from absurd recoil contradicted advertized advantages, resulting in poor market performance. However, \
 		there sure are a lots still lying around in poorly secured warehouses. So we took them. And now you can have them. \
 		If you REALLY want it. All I'm saying is: good luck."
-	item = /obj/item/gun/ballistic/automatic/smartgun
+	item = /obj/item/gun/ballistic/automatic/smg/smartgun
 	cost = 2
 	purchasable_from = UPLINK_SERIOUS_OPS
 
@@ -518,11 +423,6 @@
 	desc = "A variation of the syndicate bomb designed to produce a large EMP effect."
 	item = /obj/item/sbeacondrop/emp
 	cost = 6
-
-/datum/uplink_item/explosives/military_grade/syndicate_bomb/emp/New()
-	. = ..()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_CYBERNETIC_REVOLUTION))
-		cost *= 2
 
 // Support (Borgs and Reinforcements)
 

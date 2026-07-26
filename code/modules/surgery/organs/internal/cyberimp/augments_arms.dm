@@ -257,7 +257,7 @@
 	name = "arm-mounted taser implant"
 	desc = "A variant of the arm cannon implant that fires electrodes and disabler shots. The cannon emerges from the subject's arm and remains inside when not in use."
 	icon_state = "arm_taser"
-	items_to_create = list(/obj/item/gun/energy/e_gun/advtaser/mounted)
+	items_to_create = list(/obj/item/gun/energy/taser/advanced/mounted)
 
 /obj/item/organ/cyberimp/arm/toolkit/toolset
 	name = "integrated toolset implant"

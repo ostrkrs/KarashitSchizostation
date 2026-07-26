@@ -77,10 +77,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Cargo Technician"
 	icon_state = "Cargo Technician"
 
-/obj/effect/landmark/start/bitrunner
-	name = "Bitrunner"
-	icon_state = "Bitrunner"
-
 /obj/effect/landmark/start/bartender
 	name = "Bartender"
 	icon_state = "Bartender"
@@ -92,6 +88,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/mime
 	name = "Mime"
 	icon_state = "Mime"
+
+/obj/effect/landmark/start/steward
+	name = "Steward"
+	icon_state = "Steward"
 
 /obj/effect/landmark/start/quartermaster
 	name = "Quartermaster"
@@ -125,9 +125,9 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Captain"
 	icon_state = "Captain"
 
-/obj/effect/landmark/start/detective
-	name = "Detective"
-	icon_state = "Detective"
+/obj/effect/landmark/start/criminalist
+	name = "Criminalist"
+	icon_state = "Criminalist"
 
 /obj/effect/landmark/start/warden
 	name = "Warden"
@@ -145,13 +145,17 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Curator"
 	icon_state = "Curator"
 
-/obj/effect/landmark/start/lawyer
-	name = "Lawyer"
-	icon_state = "Lawyer"
+/obj/effect/landmark/start/internal_affairs_agent
+	name = "Internal Affairs Agent"
+	icon_state = "Internal Affairs Agent"
+
+/obj/effect/landmark/start/internal_security_operative
+	name = "Internal Security Operative"
+	icon_state = "Internal Security Operative"
 
 /obj/effect/landmark/start/station_engineer
-	name = "Station Engineer"
-	icon_state = "Station Engineer"
+	name = "Deck Engineer"
+	icon_state = "Deck Engineer"
 
 /obj/effect/landmark/start/medical_doctor
 	name = "Medical Doctor"
@@ -189,7 +193,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	name = "Chief Medical Officer"
 	icon_state = "Chief Medical Officer"
 
-
 /obj/effect/landmark/start/psychologist
 	name = "Psychologist"
 	icon_state = "Psychologist"
@@ -197,6 +200,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/chaplain
 	name = "Chaplain"
 	icon_state = "Chaplain"
+
+/obj/effect/landmark/start/vagabond
+	name = "Undefined Crewmember"
+	icon_state = "Undefined Crewmember"
 
 /obj/effect/landmark/start/cyborg
 	name = "Cyborg"
@@ -219,38 +226,6 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "ai_spawn"
 	primary_ai = FALSE
 	latejoin_active = FALSE
-
-//Department Security spawns
-
-/obj/effect/landmark/start/depsec
-	name = "department_sec"
-	icon_state = "Security Officer"
-	/// What department this spawner is for
-	var/department
-
-/obj/effect/landmark/start/depsec/Initialize(mapload)
-	. = ..()
-	LAZYADDASSOCLIST(GLOB.department_security_spawns, department, src)
-
-/obj/effect/landmark/start/depsec/Destroy()
-	LAZYREMOVEASSOC(GLOB.department_security_spawns, department, src)
-	return ..()
-
-/obj/effect/landmark/start/depsec/supply
-	name = "supply_sec"
-	department = SEC_DEPT_SUPPLY
-
-/obj/effect/landmark/start/depsec/medical
-	name = "medical_sec"
-	department = SEC_DEPT_MEDICAL
-
-/obj/effect/landmark/start/depsec/engineering
-	name = "engineering_sec"
-	department = SEC_DEPT_ENGINEERING
-
-/obj/effect/landmark/start/depsec/science
-	name = "science_sec"
-	department = SEC_DEPT_SCIENCE
 
 //Antagonist spawns
 
@@ -490,37 +465,15 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	/// A list of everything this hangover spawn created as part of the hangover station trait
 	var/list/hangover_debris = list()
 
-	/// A list of everything this hangover spawn created as part of the birthday station trait
-	var/list/party_debris = list()
-
 /obj/effect/landmark/start/hangover/Initialize(mapload)
 	. = ..()
 	return INITIALIZE_HINT_LATELOAD
 
 /obj/effect/landmark/start/hangover/Destroy()
 	hangover_debris = null
-	party_debris = null
 	return ..()
 
 /obj/effect/landmark/start/hangover/LateInitialize()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_BIRTHDAY))
-		party_debris += new /obj/effect/decal/cleanable/confetti(get_turf(src)) //a birthday celebration can also be a hangover
-		var/list/bonus_confetti = GLOB.alldirs
-		for(var/confettis in bonus_confetti)
-			var/party_turf_to_spawn_on = get_step(src, confettis)
-			if(!isopenturf(party_turf_to_spawn_on))
-				continue
-			var/dense_object = FALSE
-			for(var/atom/content in party_turf_to_spawn_on)
-				if(content.density)
-					dense_object = TRUE
-					break
-			if(dense_object)
-				continue
-			if(prob(50))
-				party_debris += new /obj/effect/decal/cleanable/confetti(party_turf_to_spawn_on)
-			if(prob(10))
-				party_debris += new /obj/item/toy/balloon(party_turf_to_spawn_on)
 	if(!HAS_TRAIT(SSstation, STATION_TRAIT_HANGOVER))
 		return
 	if(prob(60))
@@ -628,7 +581,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 	location = "Security"
 
 /obj/effect/landmark/navigate_destination/det
-	location = "Detective's Office"
+	location = "Criminalist's Office"
 
 /obj/effect/landmark/navigate_destination/research
 	location = "Research"
@@ -683,13 +636,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark/start/new_player)
 /obj/effect/landmark/navigate_destination/janitor
 	location = "Janitor's Closet"
 
-/obj/effect/landmark/navigate_destination/lawyer
-	location = "Lawyer's Office"
+/obj/effect/landmark/navigate_destination/iaa
+	location = "IAA's Office"
 
 //Shuttle docks
-/obj/effect/landmark/navigate_destination/dockarrival
-	location = "Arrival Shuttle Dock"
-
 /obj/effect/landmark/navigate_destination/dockesc
 	location = "Escape Shuttle Dock"
 

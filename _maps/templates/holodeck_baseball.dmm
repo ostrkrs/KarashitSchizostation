@@ -9,10 +9,10 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "b" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /turf/open/floor/holofloor/grass,
@@ -27,17 +27,17 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "d" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark,
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "e" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/holofloor/grass,
@@ -66,7 +66,7 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "q" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner,
+/obj/effect/turf_decal/siding/dark/corner,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "s" = (
@@ -84,7 +84,7 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "w" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
 	},
 /turf/open/floor/holofloor/grass,
@@ -105,22 +105,22 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "B" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "E" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 6
 	},
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "F" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/floor/holofloor/grass,
@@ -140,7 +140,7 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "M" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 10
 	},
 /turf/open/floor/holofloor/grass,
@@ -151,7 +151,7 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "O" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
 	},
 /turf/open/floor/holofloor/grass,
@@ -166,51 +166,51 @@
 /turf/open/floor/holofloor/asteroid,
 /area/template_noop)
 "R" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner{
+/obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "S" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "T" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 6
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "V" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/siding/dark,
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "W" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "X" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "Y" = (
-/obj/effect/turf_decal/siding/thinplating/dark/corner,
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark/corner,
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/floor/holofloor/grass,
 /area/template_noop)
 "Z" = (
-/obj/effect/turf_decal/siding/thinplating/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /turf/open/floor/holofloor/grass,

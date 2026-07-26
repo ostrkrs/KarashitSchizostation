@@ -2,11 +2,10 @@
 	savefile_key = "feature_serpcolor"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_FEATURES
-	main_feature_name = "Serpentid color"
+	main_feature_name = "Chitin color"
 	should_generate_icons = TRUE
 
 /datum/preference/choiced/serpentid_color/has_relevant_feature(datum/preferences/preferences)
-	// Skips checks for relevant_organ, relevant trait etc. because serpentid color is tied directly to species (atm)
 	return current_species_has_savekey(preferences)
 
 /datum/preference/choiced/serpentid_color/init_possible_values()

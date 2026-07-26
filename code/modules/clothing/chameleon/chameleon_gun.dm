@@ -157,7 +157,7 @@
 
 /obj/item/gun/energy/laser/chameleon/ballistic_only
 	actions_types = list(/datum/action/item_action/chameleon/change/gun/ballistic)
-	default_look = /obj/item/gun/ballistic/automatic/mini_uzi
+	default_look = /obj/item/gun/ballistic/automatic/smg/wt550
 
 /obj/item/gun/energy/laser/chameleon/ballistic_only/Initialize(mapload)
 	. = ..()

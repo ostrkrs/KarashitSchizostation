@@ -186,7 +186,7 @@
 				not_eaten += 1
 				continue
 
-		if (istype(thing, /obj/item/organ/brain) || istype(thing, /obj/item/dullahan_relay))
+		if (istype(thing, /obj/item/organ/brain))
 			living_detected = TRUE
 
 		if (istype(thing, /obj/item/mmi))

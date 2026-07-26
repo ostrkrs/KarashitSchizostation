@@ -215,7 +215,6 @@ GLOBAL_LIST_INIT(any_suit_storage, typecacheof(list(
 	/obj/item/clipboard,
 	/obj/item/flashlight,
 	/obj/item/tank/internals/emergency_oxygen,
-	/obj/item/tank/internals/plasmaman,
 	/obj/item/lighter,
 	/obj/item/pen,
 	/obj/item/modular_computer/pda,
@@ -236,8 +235,8 @@ GLOBAL_LIST_INIT(any_suit_storage, typecacheof(list(
 
 //Allowed equipment lists for security vests.
 
-GLOBAL_LIST_INIT(detective_vest_allowed, list(
-	/obj/item/detective_scanner,
+GLOBAL_LIST_INIT(criminalist_vest_allowed, list(
+	/obj/item/criminalist_scanner,
 	/obj/item/flashlight,
 	/obj/item/gun/ballistic,
 	/obj/item/gun/energy,
@@ -248,8 +247,7 @@ GLOBAL_LIST_INIT(detective_vest_allowed, list(
 	/obj/item/storage/fancy/cigarettes,
 	/obj/item/taperecorder,
 	/obj/item/tank/internals/emergency_oxygen,
-	/obj/item/tank/internals/plasmaman,
-	/obj/item/storage/belt/holster/detective,
+	/obj/item/storage/belt/holster/criminalist,
 	/obj/item/storage/belt/holster/nukie,
 	/obj/item/storage/belt/holster/energy,
 	/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
@@ -264,8 +262,7 @@ GLOBAL_LIST_INIT(security_vest_allowed, list(
 	/obj/item/reagent_containers/spray/pepper,
 	/obj/item/restraints/handcuffs,
 	/obj/item/tank/internals/emergency_oxygen,
-	/obj/item/tank/internals/plasmaman,
-	/obj/item/storage/belt/holster/detective,
+	/obj/item/storage/belt/holster/criminalist,
 	/obj/item/storage/belt/holster/nukie,
 	/obj/item/storage/belt/holster/energy,
 	/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
@@ -278,7 +275,7 @@ GLOBAL_LIST_INIT(security_wintercoat_allowed, list(
 	/obj/item/melee/baton,
 	/obj/item/reagent_containers/spray/pepper,
 	/obj/item/restraints/handcuffs,
-	/obj/item/storage/belt/holster/detective,
+	/obj/item/storage/belt/holster/criminalist,
 	/obj/item/storage/belt/holster/nukie,
 	/obj/item/storage/belt/holster/energy,
 	/obj/item/gun/ballistic/shotgun/automatic/combat/compact,
@@ -293,7 +290,6 @@ GLOBAL_LIST_INIT(chaplain_suit_allowed, list(
 	/obj/item/storage/fancy/candle_box,
 	/obj/item/flashlight/flare/candle,
 	/obj/item/tank/internals/emergency_oxygen,
-	/obj/item/tank/internals/plasmaman,
 	/obj/item/gun/ballistic/bow/divine,
 	/obj/item/gun/ballistic/revolver/chaplain,
 ))
@@ -325,7 +321,6 @@ GLOBAL_LIST_INIT(personal_carry_allowed, list(
 	/obj/item/storage/belt/holster,
 	/obj/item/gun/ballistic/automatic/pistol,
 	/obj/item/gun/ballistic/revolver,
-	/obj/item/gun/energy/disabler/smoothbore,
 ))
 
 /// Allowed list for improvised firearms
@@ -333,7 +328,6 @@ GLOBAL_LIST_INIT(personal_carry_allowed, list(
 GLOBAL_LIST_INIT(improvised_firearm_allowed, list(
 	/obj/item/gun/ballistic/rifle/boltaction/pipegun,
 	/obj/item/gun/energy/laser/musket,
-	/obj/item/gun/energy/disabler/smoothbore,
 ))
 
 /// List of all "tools" that can fit into belts or work from toolboxes

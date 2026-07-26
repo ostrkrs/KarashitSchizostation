@@ -21,14 +21,14 @@
 
 	// Internal vars.
 	/// A reference to the actual light that's attached.
-	var/obj/item/flashlight/seclite/light
+	var/obj/item/flashlight/cell_powered/seclite/light
 	/// A weakref to the item action we add with the light.
 	var/datum/weakref/toggle_action_ref
 	/// Static typecache of all lights we consider seclites (all lights we can attach).
-	var/static/list/valid_lights = typecacheof(list(/obj/item/flashlight/seclite))
+	var/static/list/valid_lights = typecacheof(list(/obj/item/flashlight/cell_powered/seclite))
 
 /datum/component/seclite_attachable/Initialize(
-	obj/item/flashlight/seclite/starting_light,
+	obj/item/flashlight/cell_powered/seclite/starting_light,
 	is_light_removable = TRUE,
 	light_icon_state,
 	light_overlay_icon,
@@ -59,7 +59,7 @@
 /datum/component/seclite_attachable/InheritComponent(
 	datum/component/seclite_attachable/new_component,
 	original,
-	obj/item/flashlight/seclite/starting_light,
+	obj/item/flashlight/cell_powered/seclite/starting_light,
 	is_light_removable = TRUE,
 	light_icon_state,
 	light_overlay_icon,
@@ -244,7 +244,7 @@
 	tool?.play_tool_sound(source)
 	source.balloon_alert(user, "unscrewed [light]")
 
-	var/obj/item/flashlight/seclite/to_remove = light
+	var/obj/item/flashlight/cell_powered/seclite/to_remove = light
 
 	// The forcemove here will call exited on the light, and automatically update our references / etc
 	to_remove.forceMove(source.drop_location())

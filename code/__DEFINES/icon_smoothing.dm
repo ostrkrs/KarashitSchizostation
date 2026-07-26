@@ -146,7 +146,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 #define SMOOTH_GROUP_PAPERFRAME S_OBJ(3) ///obj/structure/window/paperframe, /obj/structure/mineral_door/paperframe
 
-#define SMOOTH_GROUP_WINDOW_FULLTILE S_OBJ(4) ///turf/closed/indestructible/fakeglass, /obj/structure/window/fulltile, /obj/structure/window/reinforced/fulltile, /obj/structure/window/reinforced/tinted/fulltile, /obj/structure/window/plasma/fulltile, /obj/structure/window/reinforced/plasma/fulltile
+#define SMOOTH_GROUP_WINDOW_FULLTILE S_OBJ(4) ///turf/closed/indestructible/fakeglass, /obj/structure/window/fulltile, /obj/structure/window/reinforced/fulltile, /obj/structure/window/reinforced/tinted/fulltile, /obj/structure/window/phoron/fulltile, /obj/structure/window/reinforced/phoron/fulltile
 
 #define SMOOTH_GROUP_LATTICE S_OBJ(5) ///obj/structure/lattice
 #define SMOOTH_GROUP_CATWALK S_OBJ(6) ///obj/structure/lattice/catwalk

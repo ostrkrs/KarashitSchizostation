@@ -58,13 +58,13 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "al" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/escape/brig)
 "am" = (
 /obj/structure/table,
 /obj/machinery/recharger,
 /obj/effect/decal/cleanable/blood/old,
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = 12
 	},
 /obj/effect/decal/cleanable/glass,
@@ -81,12 +81,12 @@
 "ao" = (
 /obj/machinery/computer/crew,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "ap" = (
 /obj/machinery/computer/emergency_shuttle,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "aq" = (
 /obj/structure/chair/comfy/shuttle{
@@ -116,7 +116,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "ay" = (
 /obj/structure/girder/reinforced,
@@ -139,14 +139,14 @@
 	},
 /obj/machinery/light/warm/directional/north,
 /obj/structure/chair/comfy/shuttle,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "aE" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
 /obj/structure/window/spawner/directional/south,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "aG" = (
 /turf/open/floor/mineral/plastitanium/red,
@@ -238,7 +238,7 @@
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 8
 	},
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "bb" = (
 /obj/machinery/conveyor/auto,
@@ -253,7 +253,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "bd" = (
 /obj/machinery/conveyor/auto{
@@ -298,10 +298,10 @@
 	dir = 8
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "bq" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/escape)
 "br" = (
 /turf/closed/wall,
@@ -361,7 +361,7 @@
 	output_dir = 1
 	},
 /obj/structure/window/reinforced/spawner/directional/east,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "gn" = (
 /obj/effect/decal/cleanable/rubble,
@@ -373,7 +373,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "hq" = (
 /obj/machinery/recycler{
@@ -405,7 +405,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "jK" = (
 /obj/machinery/light/small/dim/directional/south,
@@ -420,7 +420,7 @@
 /obj/item/storage/medkit/fire,
 /mob/living/basic/bot/medbot/derelict,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "ld" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -432,7 +432,7 @@
 	},
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/closet/crate/preopen,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "lP" = (
 /obj/machinery/wall_healer/free/directional/south,
@@ -443,14 +443,14 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "nN" = (
 /obj/effect/turf_decal/tile/yellow/opposingcorners{
 	dir = 8
 	},
 /obj/structure/chair/plastic,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "nZ" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -541,7 +541,7 @@
 	pixel_y = 32
 	},
 /obj/structure/chair/comfy/shuttle,
-/turf/open/floor/iron/checker,
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "xg" = (
 /obj/effect/spawner/structure/window/hollow/middle{
@@ -626,7 +626,7 @@
 "FL" = (
 /obj/machinery/computer/communications,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "Gw" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -682,7 +682,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "MN" = (
 /obj/machinery/door/airlock/command/glass{
@@ -740,11 +740,11 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "SX" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "Tq" = (
 /turf/closed/wall/rust,
@@ -765,7 +765,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape/brig)
 "XE" = (
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/shuttle/escape)
 "Yk" = (
 /obj/effect/decal/cleanable/dirt/dust,

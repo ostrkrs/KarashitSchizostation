@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "b" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/abandoned_tele)
 "c" = (
 /obj/structure/lattice,
@@ -72,7 +72,7 @@
 /area/ruin/space/abandoned_tele)
 "q" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /turf/open/floor/plating/airless,
 /area/ruin/space/abandoned_tele)
 "r" = (

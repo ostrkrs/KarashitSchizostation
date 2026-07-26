@@ -45,10 +45,13 @@
 	new /obj/item/clothing/glasses/hud/health(src)
 	return
 
+
 /obj/structure/closet/secure_closet/psychology
 	name = "psychology locker"
 	req_access = list(ACCESS_PSYCHOLOGY)
-	icon_state = "cabinet"
+	icon_state = "cabinet_secure"
+	icon_locked = "cabinet_secure_locked"
+	icon_unlocked = "cabinet_secure_unlocked"
 	door_anim_time = 0 // no animation
 	open_sound = 'sound/machines/closet/wooden_closet_open.ogg'
 	close_sound = 'sound/machines/closet/wooden_closet_close.ogg'
@@ -57,8 +60,8 @@
 
 /obj/structure/closet/secure_closet/psychology/PopulateContents()
 	..()
-	new /obj/item/clothing/under/costume/buttondown/slacks/service(src)
-	new /obj/item/clothing/under/costume/buttondown/skirt/service(src)
+	new /obj/item/clothing/under/costume/buttondown/slacks/psychologist(src)
+	new /obj/item/clothing/under/costume/buttondown/skirt/psychologist(src)
 	new /obj/item/clothing/neck/tie/black(src)
 	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/storage/backpack/medic(src)
@@ -68,6 +71,7 @@
 	new /obj/item/clothing/ears/earmuffs(src)
 	new /obj/item/clothing/mask/muzzle(src)
 	new /obj/item/clothing/glasses/blindfold(src)
+
 
 /obj/structure/closet/secure_closet/chief_medical
 	name = "chief medical officer's locker"
@@ -101,6 +105,7 @@
 	// Traitor steal objective
 	new /obj/item/reagent_containers/hypospray/cmo(src)
 
+
 /obj/structure/closet/secure_closet/animal
 	name = "animal control locker"
 	icon_door = "chemical"
@@ -111,6 +116,7 @@
 	new /obj/item/assembly/signaler(src)
 	for(var/i in 1 to 3)
 		new /obj/item/electropack(src)
+
 
 /obj/structure/closet/secure_closet/chemical
 	name = "chemical closet"
@@ -141,3 +147,22 @@
 	new /obj/item/storage/box/syringes/variety(src)
 	new /obj/item/storage/box/beakers/variety(src)
 	new /obj/item/clothing/glasses/science(src)
+
+
+/obj/structure/closet/secure_closet/paramedic
+	name = "paramedic's locker"
+	req_access = list(ACCESS_PARAMEDIC)
+	icon_state = "paramedic"
+
+/obj/structure/closet/secure_closet/paramedic/PopulateContents()
+	..()
+	new /obj/item/storage/backpack/duffelbag/med(src)
+	new /obj/item/storage/backpack/medic(src)
+	new /obj/item/storage/backpack/satchel/med(src)
+	new /obj/item/storage/backpack/messenger/med(src)
+	new /obj/item/clothing/under/rank/medical/paramedic(src)
+	new /obj/item/clothing/under/rank/medical/paramedic/skirt(src)
+	new /obj/item/clothing/suit/toggle/labcoat/paramedic(src)
+	new /obj/item/clothing/head/soft/paramedic(src)
+	new /obj/item/clothing/shoes/workboots/black(src)
+	new /obj/item/radio/headset/headset_med(src)

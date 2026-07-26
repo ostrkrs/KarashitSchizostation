@@ -33,7 +33,7 @@
 		/obj/item/rag,
 		/obj/item/soap,
 		/obj/item/card/emag,
-		/obj/item/detective_scanner,
+		/obj/item/criminalist_scanner,
 	)
 
 	dummy.set_combat_mode(TRUE)

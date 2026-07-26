@@ -22,7 +22,6 @@
 	var/broken_inhand_icon_state = "broken_beer"
 	lefthand_file = 'icons/mob/inhands/items/drinks_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/items/drinks_righthand.dmi'
-	age_restricted = TRUE // wrryy can't set an init value to see if drink_type contains ALCOHOL so here we go
 	///Directly relates to the 'knockdown' duration. Lowered by armor (i.e. helmets)
 	var/bottle_knockdown_duration = BOTTLE_KNOCKDOWN_DEFAULT_DURATION
 	tool_behaviour = TOOL_ROLLINGPIN // Glass bottles can be used as rolling pins when empty
@@ -359,7 +358,6 @@
 	desc = "A bottle filled with nothing."
 	icon_state = "bottleofnothing"
 	list_reagents = list(/datum/reagent/consumable/nothing = 100)
-	age_restricted = FALSE
 
 /obj/item/reagent_containers/cup/glass/bottle/patron
 	name = "Wrapp Artiste Patron"
@@ -450,14 +448,14 @@
 		LAZYSET(located_wine.data, "vintage", wine_info)
 
 /obj/item/reagent_containers/cup/glass/bottle/wine/proc/generate_vintage()
-	return "[CURRENT_STATION_YEAR] Nanotrasen Light Red"
+	return "[CURRENT_YEAR] Nanotrasen Light Red"
 
 /obj/item/reagent_containers/cup/glass/bottle/wine/unlabeled
 	name = "unlabeled wine bottle"
 	desc = "There's no label on this wine bottle."
 
 /obj/item/reagent_containers/cup/glass/bottle/wine/unlabeled/generate_vintage()
-	var/year = rand(CURRENT_STATION_YEAR - 50, CURRENT_STATION_YEAR)
+	var/year = rand(CURRENT_YEAR - 50, CURRENT_YEAR)
 	var/type = pick(
 		"Bold Red",
 		"Dessert",
@@ -630,7 +628,6 @@
 	icon_state = "grenadine"
 	list_reagents = list(/datum/reagent/consumable/grenadine = 100)
 	drink_type = FRUIT
-	age_restricted = FALSE
 
 /obj/item/reagent_containers/cup/glass/bottle/applejack
 	name = "Buckin' Bronco's Applejack"
@@ -890,7 +887,7 @@
 		/datum/reagent/phlogiston,
 		/datum/reagent/napalm,
 		/datum/reagent/hellwater,
-		/datum/reagent/toxin/plasma,
+		/datum/reagent/toxin/phoron,
 		/datum/reagent/toxin/spore_burning,
 	)
 
@@ -1021,7 +1018,6 @@
 	lefthand_file = 'icons/mob/inhands/items/drinks_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/items/drinks_righthand.dmi'
 	isGlass = FALSE
-	age_restricted = FALSE
 
 /obj/item/reagent_containers/cup/glass/bottle/juice/orangejuice
 	name = "orange juice"
@@ -1083,6 +1079,5 @@
 	name = "menthol"
 	desc = "Tastes naturally minty, and imparts a very mild numbing sensation."
 	list_reagents = list(/datum/reagent/consumable/menthol = 100)
-	age_restricted = TRUE
 
 #undef BOTTLE_KNOCKDOWN_DEFAULT_DURATION

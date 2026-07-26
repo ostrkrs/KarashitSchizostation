@@ -634,7 +634,7 @@
 /turf/open/floor/carpet,
 /area/awaymission/beach)
 "iy" = (
-/obj/structure/sign/poster/contraband/pwr_game/directional/west,
+/obj/structure/sign/poster/legal/pwr_game/directional/west,
 /turf/open/floor/eighties,
 /area/awaymission/beach)
 "iA" = (
@@ -813,7 +813,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "ko" = (
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /obj/item/food/popsicle/creamsicle_berry,
 /obj/item/food/popsicle/creamsicle_berry,
 /obj/item/food/popsicle/creamsicle_orange,
@@ -1828,7 +1828,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/beach)
 "xp" = (
-/obj/structure/sign/poster/official/tactical_game_cards/directional/west,
+/obj/structure/sign/poster/old_nt/tactical_game_cards/directional/west,
 /turf/open/floor/eighties,
 /area/awaymission/beach)
 "xr" = (
@@ -3591,9 +3591,6 @@
 	},
 /turf/open/floor/iron/smooth_large,
 /area/awaymission/beach)
-"St" = (
-/turf/open/floor/iron/stairs/old,
-/area/awaymission/beach)
 "Sw" = (
 /obj/structure/chair/stool/directional/south{
 	dir = 8
@@ -3751,7 +3748,7 @@
 /turf/open/misc/beach/sand,
 /area/awaymission/beach)
 "Vc" = (
-/obj/structure/closet/gmcloset,
+/obj/structure/closet/barcloset,
 /turf/open/floor/plastic,
 /area/awaymission/beach)
 "Vd" = (
@@ -20982,7 +20979,7 @@ VY
 VY
 Ft
 wC
-St
+JQ
 VY
 VY
 VY

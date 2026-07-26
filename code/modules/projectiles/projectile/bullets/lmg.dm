@@ -51,19 +51,3 @@
 	name = "7mm incendiary bullet"
 	damage = 15
 	fire_stacks = 3
-
-/obj/projectile/bullet/a7mm/match
-	name = "7mm match bullet"
-	ricochets_max = 2
-	ricochet_chance = 60
-	ricochet_auto_aim_range = 4
-	ricochet_incidence_leeway = 55
-
-/obj/projectile/bullet/a7mm/bouncy
-	name = "7mm rubber bullet"
-	damage = 20
-	ricochets_max = 40
-	ricochet_chance = 500 // will bounce off anything and everything, whether they like it or not
-	ricochet_auto_aim_range = 4
-	ricochet_incidence_leeway = 0
-	ricochet_decay_chance = 0.9

@@ -120,7 +120,6 @@
 /obj/item/reagent_containers/cup/glass/bottle/vodka,
 /obj/item/reagent_containers/cup/glass/bottle/vodka,
 /obj/item/reagent_containers/cup/glass/bottle/vodka,
-/obj/item/crowbar/large/old,
 /obj/item/lighter/greyscale,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
@@ -481,7 +480,7 @@
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 4
 	},
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 10
 	},
 /obj/item/multitool,
@@ -592,14 +591,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/pod/dark,
 /area/shuttle/hunter/russian)
-"Th" = (
-/obj/effect/mob_spawn/ghost_role/human/fugitive/russian{
-	dir = 1
-	},
-/obj/effect/turf_decal/bot_red,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/pod/dark,
-/area/shuttle/hunter/russian)
 "Uu" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 1
@@ -609,7 +600,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/ballistic/automatic/pistol,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/ammo_box/speedloader/strilka310,
 /obj/item/crowbar,
 /turf/open/floor/pod/dark,
@@ -841,7 +832,7 @@ XW
 yo
 LW
 CB
-Th
+eQ
 Me
 "}
 (7,1,1) = {"

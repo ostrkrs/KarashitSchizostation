@@ -26,7 +26,7 @@
 	attacker.set_combat_mode(TRUE)
 	click_wrapper(attacker, victim)
 	TEST_ASSERT_NOTEQUAL(victim.getBruteLoss(), 0, "Victim did not take brute damage from being fired upon point-blank.")
-	TEST_ASSERT(locate(/obj/item/ammo_casing/c9mm) in attacker.loc, "The gun did not eject a casing when it was used for a point-blank shot.")
+	TEST_ASSERT(locate(/obj/item/ammo_casing/c8mm) in attacker.loc, "The gun did not eject a casing when it was used for a point-blank shot.")
 	TEST_ASSERT_EQUAL(gun.get_ammo(countchambered = TRUE), expected_ammo - 1, "The gun did not fire a shot when it was used for a point-blank shot.")
 	victim.fully_heal()
 

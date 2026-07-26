@@ -45,10 +45,10 @@
 	database_id = MAFIA_MEDAL_OFFICER
 	icon_state = "town"
 
-/datum/award/achievement/mafia/lawyer
-	name = "Lawyer Victory"
+/datum/award/achievement/mafia/iaa
+	name = "Internal Affairs Agent Victory"
 	desc = "Oh don't mind me, i'm just the worst rol- Oops, I just instantly ended the game."
-	database_id = MAFIA_MEDAL_LAWYER
+	database_id = MAFIA_MEDAL_IAA
 	icon_state = "town"
 
 /datum/award/achievement/mafia/hop

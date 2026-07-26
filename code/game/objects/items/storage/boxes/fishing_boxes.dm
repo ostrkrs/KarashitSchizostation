@@ -27,19 +27,6 @@
 	. = ..()
 	new /obj/item/fishing_line/auto_reel(src)
 
-///From the fishing mystery box. It's basically a lazarus and a few bottles of strange reagents.
-/obj/item/storage/box/fish_revival_kit
-	name = "fish revival kit"
-	desc = "Become a fish doctor today. A label on the side indicates that fish require two to ten reagent units to be splashed onto them for revival, depending on size."
-	illustration = "fish"
-
-/obj/item/storage/box/fish_revival_kit/PopulateContents()
-	new /obj/item/lazarus_injector(src)
-	new /obj/item/reagent_containers/cup/bottle/fishy_reagent(src)
-	new /obj/item/reagent_containers/cup(src) //to splash the reagents on the fish.
-	new /obj/item/storage/fish_case(src)
-	new /obj/item/storage/fish_case(src)
-
 /obj/item/storage/box/fishing_lures
 	name = "fishing lures set"
 	desc = "A small tackle box containing all the fishing lures you will ever need to curb randomness."

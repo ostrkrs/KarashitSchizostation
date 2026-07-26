@@ -14,7 +14,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 9
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "aU" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -65,7 +65,7 @@
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "fA" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "fC" = (
 /obj/structure/window/reinforced/spawner/directional/south,
@@ -216,7 +216,7 @@
 "vv" = (
 /obj/effect/turf_decal/trimline/red/filled/line,
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/contraband/donut_corp/directional/south,
+/obj/structure/sign/poster/legal/donut_corp/directional/south,
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/iron/dark,
 /area/template_noop)
@@ -252,7 +252,7 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "BA" = (
 /obj/structure/sign/departments/security/directional/south,
@@ -329,7 +329,7 @@
 /obj/effect/turf_decal/siding/dark_red{
 	dir = 8
 	},
-/obj/item/gun/ballistic/automatic/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
 /turf/open/floor/iron/dark,
 /area/template_noop)
 "TA" = (

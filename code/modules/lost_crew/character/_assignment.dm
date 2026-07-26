@@ -63,8 +63,8 @@
 /datum/id_trim/job/visiting_doctor
 	assignment = JOB_LOSTCREW_MEDICAL
 	trim_state = "trim_medicaldoctor"
-	department_color = COLOR_MEDICAL_BLUE
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	department_color = COLOR_MEDICAL_TEAL
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_MEDICAL_DOCTOR
 
 	minimal_access = list(
@@ -87,8 +87,8 @@
 /datum/id_trim/job/visiting_security
 	assignment = JOB_LOSTCREW_SECURITY
 	trim_state = "trim_securityofficer"
-	department_color = COLOR_SECURITY_RED
-	subdepartment_color = COLOR_SECURITY_RED
+	department_color = COLOR_SECURITY_BLUE
+	subdepartment_color = COLOR_SECURITY_BLUE
 	sechud_icon_state = SECHUD_SECURITY_OFFICER
 
 	minimal_access = list(

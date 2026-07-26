@@ -164,19 +164,19 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	mine_experience = 0
 	merge_type = /obj/item/stack/ore/glass/basalt
 
-/obj/item/stack/ore/plasma
-	name = "plasma ore"
-	icon_state = "plasma"
-	singular_name = "plasma ore chunk"
+/obj/item/stack/ore/phoron
+	name = "phoron ore"
+	icon_state = "phoron"
+	singular_name = "phoron ore chunk"
 	points = 15
-	mats_per_unit = list(/datum/material/plasma=SHEET_MATERIAL_AMOUNT)
-	refined_type = /obj/item/stack/sheet/mineral/plasma
+	mats_per_unit = list(/datum/material/phoron=SHEET_MATERIAL_AMOUNT)
+	refined_type = /obj/item/stack/sheet/mineral/phoron
 	mine_experience = 5
-	scan_state = "rock_plasma"
+	scan_state = "rock_phoron"
 	spreadChance = 8
-	merge_type = /obj/item/stack/ore/plasma
+	merge_type = /obj/item/stack/ore/phoron
 
-/obj/item/stack/ore/plasma/welder_act(mob/living/user, obj/item/I)
+/obj/item/stack/ore/phoron/welder_act(mob/living/user, obj/item/I)
 	to_chat(user, span_warning("You can't hit a high enough temperature to smelt [src] properly!"))
 	return TRUE
 
@@ -559,9 +559,9 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	custom_materials = list(/datum/material/diamond = COIN_MATERIAL_AMOUNT)
 	grind_results = list(/datum/reagent/carbon = 4)
 
-/obj/item/coin/plasma
-	custom_materials = list(/datum/material/plasma = COIN_MATERIAL_AMOUNT)
-	grind_results = list(/datum/reagent/toxin/plasma = 4)
+/obj/item/coin/phoron
+	custom_materials = list(/datum/material/phoron = COIN_MATERIAL_AMOUNT)
+	grind_results = list(/datum/reagent/toxin/phoron = 4)
 
 /obj/item/coin/uranium
 	custom_materials = list(/datum/material/uranium = COIN_MATERIAL_AMOUNT)
@@ -648,12 +648,12 @@ GLOBAL_LIST_INIT(sand_recipes, list(\
 	name = "eldritch coin"
 	desc = "A surprisingly heavy, ornate coin. Its sides seem to depict a different image each time you look."
 	icon_state = "coin_heretic"
-	custom_materials = list(/datum/material/diamond =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT)
+	custom_materials = list(/datum/material/diamond =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT)
 	sideslist = list("heretic", "blade")
 	heads_name = "heretic"
 	has_action = TRUE
 	material_flags = NONE
-	grind_results = list(/datum/reagent/carbon = 5, /datum/reagent/toxin/plasma = 5, /datum/reagent/eldritch = 4)
+	grind_results = list(/datum/reagent/carbon = 5, /datum/reagent/toxin/phoron = 5, /datum/reagent/eldritch = 4)
 	/// The range at which airlocks are effected.
 	var/airlock_range = 5
 

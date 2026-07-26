@@ -47,11 +47,11 @@
 
 /datum/lazy_template/basketball/stadium
 	name = "Stadium"
-	description = "The homecourt for the Nanotrasen Basketball Department."
+	description = "The homecourt for the Solstice Reach Basketball Department."
 	map_name = "stadium"
 	key = "stadium"
-	team_name = "Nanotrasen Basketball Department"
-	home_team_uniform = /datum/outfit/basketball/nanotrasen
+	team_name = "Solstice Reach Basketball Department"
+	home_team_uniform = /datum/outfit/basketball/solreach
 
 /datum/lazy_template/basketball/lusty_xenomorphs
 	name = "Lusty Xenomorphs Stadium"
@@ -92,14 +92,6 @@
 	key = "soviet_bear"
 	team_name = "Soviet Bears"
 	home_team_uniform = /datum/outfit/basketball/soviet_bears
-
-/datum/lazy_template/basketball/ash_gladiators
-	name = "Ash Gladiators Stadium"
-	description = "The homecourt of the Ash Gladiators."
-	map_name = "ash_gladiators"
-	key = "ash_gladiators"
-	team_name = "Ash Gladiators"
-	home_team_uniform = /datum/outfit/basketball/ash_gladiators
 
 /datum/lazy_template/basketball/beach_bums
 	name = "Beach Bums Stadium"

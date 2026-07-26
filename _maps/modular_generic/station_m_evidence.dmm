@@ -114,7 +114,7 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/template_noop)
 "G" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/template_noop)
 "J" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/east,

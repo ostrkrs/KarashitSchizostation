@@ -61,7 +61,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/folder/blue,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -119,7 +119,7 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/cell_charger,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/airless,
@@ -135,7 +135,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/sheet/iron,
 /obj/machinery/power/port_gen/pacman,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -147,7 +147,7 @@
 /area/shuttle/abandoned)
 "jP" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/sheet/mineral/plasma{
+/obj/item/stack/sheet/mineral/phoron{
 	amount = 15
 	},
 /turf/open/floor/plating/airless,
@@ -156,7 +156,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/directional/south,
 /obj/effect/spawner/random/exotic/ripley,
-/turf/open/floor/iron/recharge_floor,
+/turf/open/floor/iron,
 /area/shuttle/abandoned)
 "mY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -210,7 +210,7 @@
 "vu" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "vW" = (
@@ -225,7 +225,7 @@
 /obj/structure/fluff/paper/stack{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -258,7 +258,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "CC" = (
@@ -282,7 +282,7 @@
 "DG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/mecha_wreckage/ripley,
-/turf/open/floor/iron/recharge_floor,
+/turf/open/floor/iron,
 /area/shuttle/abandoned)
 "Ef" = (
 /obj/effect/decal/cleanable/dirt,
@@ -376,7 +376,7 @@
 /area/shuttle/abandoned)
 "Ng" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "Nm" = (
@@ -398,7 +398,7 @@
 "OK" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -416,7 +416,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "PT" = (
@@ -427,7 +427,7 @@
 "Qx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/cup/glass/mug,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "SB" = (
@@ -459,7 +459,7 @@
 /obj/item/paper_bin{
 	total_paper = 20
 	},
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/airless,
@@ -472,7 +472,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/item/disk/holodisk/donutstation/whiteship,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/airless,
 /area/shuttle/abandoned)
 "YO" = (

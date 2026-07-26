@@ -135,8 +135,8 @@
 		ADD_TRAIT(src, TRAIT_COMMISSIONED, INNATE_TRAIT)
 
 	// Doing this hurts my soul, but simplebot access reworks are for another day.
-	var/datum/id_trim/job/det_trim = SSid_access.trim_singletons_by_path[/datum/id_trim/job/detective]
-	access_card.add_access(det_trim.access + det_trim.wildcard_access)
+	var/datum/id_trim/job/crim_trim = SSid_access.trim_singletons_by_path[/datum/id_trim/job/criminalist]
+	access_card.add_access(crim_trim.access + crim_trim.wildcard_access)
 	prev_access = access_card.access.Copy()
 
 	var/static/list/loc_connections = list(
@@ -524,9 +524,9 @@
 			ed_assembly.add_overlay("hs_hole")
 			ed_assembly.created_name = name
 			new /obj/item/assembly/prox_sensor(Tsec)
-			var/obj/item/gun/energy/disabler/disabler_gun = new(Tsec)
-			disabler_gun.cell.charge = 0
-			disabler_gun.update_appearance()
+			var/obj/item/gun/energy/taser/taser_gun = new(Tsec)
+			taser_gun.cell.charge = 0
+			taser_gun.update_appearance()
 			if(prob(50))
 				new /obj/item/bodypart/leg/left/robot(Tsec)
 				if(prob(25))

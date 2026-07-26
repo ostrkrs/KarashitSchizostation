@@ -43,7 +43,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "do" = (
 /turf/open/floor/iron/white,
@@ -96,7 +96,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "gY" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -114,7 +114,7 @@
 /turf/open/floor/iron,
 /area/ruin/comms_agent)
 "hW" = (
-/obj/effect/turf_decal/siding/wideplating/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /obj/structure/cable,
@@ -127,7 +127,7 @@
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "ij" = (
-/obj/effect/turf_decal/siding/wideplating/light/corner{
+/obj/effect/turf_decal/siding/white/corner{
 	dir = 8
 	},
 /turf/open/floor/wood,
@@ -247,7 +247,7 @@
 /turf/open/floor/iron/white/diagonal,
 /area/ruin/comms_agent)
 "nP" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent)
 "od" = (
 /obj/machinery/oven/range,
@@ -273,7 +273,7 @@
 "qE" = (
 /obj/item/pickaxe,
 /obj/structure/closet/crate,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /obj/item/tank/internals/emergency_oxygen,
 /obj/item/tank/internals/emergency_oxygen,
 /turf/open/floor/wood/parquet,
@@ -287,7 +287,7 @@
 /obj/effect/decal/cleanable/blood/splatter/over_window{
 	pixel_y = 32
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo/directional/north,
+/obj/structure/sign/poster/old_nt/nanotrasen_logo/directional/north,
 /turf/open/floor/wood/parquet,
 /area/ruin/comms_agent)
 "sB" = (
@@ -306,7 +306,7 @@
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "tu" = (
 /obj/structure/table,
@@ -354,7 +354,7 @@
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
 "vK" = (
-/obj/effect/turf_decal/siding/wideplating/light,
+/obj/effect/turf_decal/siding/white,
 /obj/machinery/computer/arcade/orion_trail,
 /turf/open/floor/wood,
 /area/ruin/comms_agent)
@@ -436,7 +436,7 @@
 /turf/open/misc/asteroid/snow/standard_air,
 /area/ruin/comms_agent)
 "Ac" = (
-/obj/effect/turf_decal/siding/wideplating/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /obj/structure/table,
@@ -463,7 +463,7 @@
 /obj/item/reagent_containers/condiment/rice,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/flour,
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /obj/item/storage/box/donkpockets,
 /obj/item/coffee_cartridge,
 /obj/item/coffee_cartridge/decaf,
@@ -479,7 +479,7 @@
 "CS" = (
 /obj/structure/rack,
 /obj/item/clothing/head/utility/welding,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
 /obj/item/weldingtool/fueled/largetank,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable,
@@ -620,8 +620,8 @@
 	},
 /obj/item/reagent_containers/cup/maunamug,
 /obj/item/toy/plush/nukeplushie,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
 /obj/item/clothing/head/costume/ushanka,
 /turf/open/floor/wood/tile,
 /area/ruin/comms_agent)
@@ -712,7 +712,7 @@
 /turf/open/misc/asteroid/snow/standard_air,
 /area/ruin/comms_agent)
 "LP" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent/maint)
 "Mj" = (
 /obj/structure/fireplace,
@@ -735,8 +735,8 @@
 	},
 /obj/item/reagent_containers/condiment/enzyme,
 /obj/structure/cable,
-/obj/item/stack/sheet/mineral/plasma/thirty,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/comms_agent/maint)
@@ -775,12 +775,12 @@
 "NJ" = (
 /obj/item/storage/medkit/regular,
 /obj/item/reagent_containers/syringe,
-/obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/structure/closet/secure_closet/freezer/all_access,
 /turf/open/floor/iron/white,
 /area/ruin/comms_agent)
 "NL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent/maint)
 "Ok" = (
 /obj/effect/turf_decal/siding/wood/corner{
@@ -796,7 +796,7 @@
 /turf/open/floor/plating/snowed/standard_air,
 /area/ruin/comms_agent)
 "OB" = (
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "OM" = (
 /turf/open/misc/asteroid/snow/icemoon,
@@ -853,7 +853,7 @@
 /area/ruin/comms_agent)
 "QU" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/comms_agent)
 "QW" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/general/visible,

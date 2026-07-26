@@ -19,13 +19,13 @@ $include map_vote.txt
 # There are various options which are hard-locked for security reasons.
 
 ## Server name: This appears at the top of the screen in-game and in the BYOND hub. Uncomment and replace 'tgstation' with the name of your choice.
-# SERVERNAME tgstation
+SERVERNAME Andromedae! Voyagers
 
 ## Server SQL name: This is the name used to identify the server to the SQL DB, distinct from SERVERNAME as it must be at most 32 characters.
 # SERVERSQLNAME tgstation
 
-## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
-STATIONNAME Space Station 13
+## Ship name: The name of the ship as it is referred to in-game. If commented out, the game will generate a random name instead.
+SHIPNAME Solstice Reach Vessel
 
 ## Put on byond hub: Uncomment this to put your server on the byond hub.
 #HUB
@@ -95,13 +95,13 @@ PICTURE_LOGGING_CAMERA
 # KICK_INACTIVE
 
 ## Comment this out to stop admins being able to choose their personal ooccolor
-ALLOW_ADMIN_OOCCOLOR
+# ALLOW_ADMIN_OOCCOLOR
 
 ## Comment this out to stop admins being able to choose their personal asay color
-ALLOW_ADMIN_ASAYCOLOR
+# ALLOW_ADMIN_ASAYCOLOR
 
 ## Job slot open/close by identification consoles delay in seconds
-ID_CONSOLE_JOBSLOT_DELAY 30
+ID_CONSOLE_JOBSLOT_DELAY 60
 
 ## Request Emergency Temporary Access - RETA System
 ## Enables temporary department access when Requests Console emergency calls are made
@@ -141,17 +141,21 @@ VOTE_PERIOD 600
 ## 0 = Cannot respawn (default)
 ## 1 = Can respawn
 ## 2 = Can respawn if choosing a different character
-ALLOW_RESPAWN 0
+ALLOW_RESPAWN 2
 
 ## Respawn delay (deciseconds), which doesn't allow to return to lobby
-RESPAWN_DELAY 0
+RESPAWN_DELAY 6000
+
+# Cryo
+## Time in deciseconds the mob must be clientless for to be despawned by cryptopod. 30 minutes by default
+#CRYO_MIN_SSD_TIME 18000
 
 ## set a hosted by name for unix platforms
 HOSTEDBY Yournamehere
 
 ## Uncomment this to stop people connecting to your server without a registered ckey. (i.e. guest-* are all blocked from connecting).
 ## You probably want this enabled for a production server.
-#GUEST_BAN
+GUEST_BAN
 
 ## IPINTEL:
 ## This allows you to detect likely proxies by checking ips against getipintel.net
@@ -588,10 +592,10 @@ SMART_CACHE_ASSETS
 ## Minimum number settable for this is 1.
 SECONDS_COOLDOWN_FOR_PREFERENCES_EXPORT 10
 
-## Uncomment to allow the station name to be in the hub entry.
-## You should only enable this if you can guarantee a station name doesn't break BYOND's TOS.
-## BYOND staff have gotten upset at us in the past for inappropriate station names.
-#STATION_NAME_IN_HUB_ENTRY
+## Uncomment to allow the ship name to be in the hub entry.
+## You should only enable this if you can guarantee a ship name doesn't break BYOND's TOS.
+## BYOND staff have gotten upset at us in the past for inappropriate ship names.
+#SHIP_NAME_IN_HUB_ENTRY
 
 ## The number of PR announcements allowed for the same pull request per round
 ## This makes sure that somebody can only spam a few reopens and closes before being ignored

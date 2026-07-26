@@ -123,13 +123,14 @@
 
 //Wood
 /obj/item/stack/tile/wood
-	name = "wood floor tile"
-	singular_name = "wood floor tile"
+	name = "walnut floor tile"
+	singular_name = "walnut floor tile"
 	desc = "An easy to fit wood floor tile. Use while in your hand to change what pattern you want."
-	icon_state = "tile-wood"
+	icon_state = "tile_wood"
 	inhand_icon_state = "tile-wood"
-	turf_type = /turf/open/floor/wood
+	color = COLOR_WOOD
 	resistance_flags = FLAMMABLE
+	turf_type = /turf/open/floor/wood
 	merge_type = /obj/item/stack/tile/wood
 	tile_reskin_types = list(
 		/obj/item/stack/tile/wood,
@@ -139,23 +140,23 @@
 	)
 
 /obj/item/stack/tile/wood/parquet
-	name = "parquet wood floor tile"
-	singular_name = "parquet wood floor tile"
-	icon_state = "tile-wood_parquet"
+	name = "parquet walnut floor tile"
+	singular_name = "parquet walnut floor tile"
+	icon_state = "tile_wood_parquet"
 	turf_type = /turf/open/floor/wood/parquet
 	merge_type = /obj/item/stack/tile/wood/parquet
 
 /obj/item/stack/tile/wood/large
-	name = "large wood floor tile"
-	singular_name = "large wood floor tile"
-	icon_state = "tile-wood_large"
+	name = "large walnut floor tile"
+	singular_name = "large walnut floor tile"
+	icon_state = "tile_wood_large"
 	turf_type = /turf/open/floor/wood/large
 	merge_type = /obj/item/stack/tile/wood/large
 
 /obj/item/stack/tile/wood/tile
-	name = "tiled wood floor tile"
-	singular_name = "tiled wood floor tile"
-	icon_state = "tile-wood_tile"
+	name = "tiled walnut floor tile"
+	singular_name = "tiled walnut floor tile"
+	icon_state = "tile_wood_tile"
 	turf_type = /turf/open/floor/wood/tile
 	merge_type = /obj/item/stack/tile/wood/tile
 
@@ -1321,20 +1322,20 @@
 /obj/item/stack/tile/rglass/sixty
 	amount = 60
 
-/obj/item/stack/tile/glass/plasma
-	name = "plasma glass floor"
-	singular_name = "plasma glass floor tile"
-	desc = "Plasma glass window floors, for when... Whatever is down there is too scary for normal glass."
+/obj/item/stack/tile/glass/phoron
+	name = "phoron glass floor"
+	singular_name = "phoron glass floor tile"
+	desc = "Phoron glass window floors, for when... Whatever is down there is too scary for normal glass."
 	icon_state = "tile_pglass"
-	turf_type = /turf/open/floor/glass/plasma
-	merge_type = /obj/item/stack/tile/glass/plasma
-	mats_per_unit = list(/datum/material/alloy/plasmaglass = SHEET_MATERIAL_AMOUNT * 0.25)
+	turf_type = /turf/open/floor/glass/phoron
+	merge_type = /obj/item/stack/tile/glass/phoron
+	mats_per_unit = list(/datum/material/alloy/phoronglass = SHEET_MATERIAL_AMOUNT * 0.25)
 
-/obj/item/stack/tile/rglass/plasma
-	name = "reinforced plasma glass floor"
-	singular_name = "reinforced plasma glass floor tile"
-	desc = "Reinforced plasma glass window floors, because whatever's downstairs should really stay down there."
+/obj/item/stack/tile/rglass/phoron
+	name = "reinforced phoron glass floor"
+	singular_name = "reinforced phoron glass floor tile"
+	desc = "Reinforced phoron glass window floors, because whatever's downstairs should really stay down there."
 	icon_state = "tile_rpglass"
-	turf_type = /turf/open/floor/glass/reinforced/plasma
-	merge_type = /obj/item/stack/tile/rglass/plasma
-	mats_per_unit = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 0.125, /datum/material/alloy/plasmaglass = SHEET_MATERIAL_AMOUNT * 0.25)
+	turf_type = /turf/open/floor/glass/reinforced/phoron
+	merge_type = /obj/item/stack/tile/rglass/phoron
+	mats_per_unit = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 0.125, /datum/material/alloy/phoronglass = SHEET_MATERIAL_AMOUNT * 0.25)

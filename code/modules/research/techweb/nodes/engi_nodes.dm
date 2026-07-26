@@ -9,6 +9,7 @@
 		"basic_battery",
 		"basic_capacitor",
 		"basic_cell",
+		"device_cell",
 		"basic_matter_bin",
 		"basic_micro_laser",
 		"basic_scanning",
@@ -40,6 +41,7 @@
 		"adv_scanning",
 		"super_battery",
 		"super_cell",
+		"upgraded_device_cell",
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_2_POINTS)
 	announce_channels = list(RADIO_CHANNEL_ENGINEERING)
@@ -144,6 +146,7 @@
 		"multitool",
 		"wrench",
 		"crowbar",
+		"crowbar_small",
 		"screwdriver",
 		"wirecutters",
 		"light_bulb",

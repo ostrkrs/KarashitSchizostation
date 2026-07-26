@@ -359,7 +359,7 @@
 // Rations
 /obj/item/food/rationpack
 	name = "ration pack"
-	desc = "A square bar that sadly <i>looks</i> like chocolate, packaged in a nondescript grey wrapper. Has saved soldiers' lives before - usually by stopping bullets."
+	desc = "A square bar that sadly <i>looks</i> like energy bar, packaged in a nondescript grey wrapper. Has saved soldiers' lives before - usually by stopping bullets."
 	icon_state = "rationpack"
 	bite_consumption = 3
 	junkiness = 15

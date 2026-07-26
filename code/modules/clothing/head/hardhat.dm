@@ -1,6 +1,10 @@
 /obj/item/clothing/head/utility
 	icon = 'icons/obj/clothing/head/utility.dmi'
 	worn_icon = 'icons/mob/clothing/head/utility.dmi'
+	sound_vary = TRUE
+	pickup_sound = SFX_HARD_HAT_PICKUP
+	drop_sound = SFX_HARD_HAT_DROP
+	equip_sound = SFX_HARD_HAT_EQUIP
 
 /obj/item/clothing/head/utility/hardhat
 	name = "hard hat"
@@ -235,6 +239,9 @@
 	clothing_flags = SNUG_FIT | STACKABLE_HELMET_EXEMPT
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 	hair_mask = ""
+	pickup_sound = null
+	drop_sound = null
+	equip_sound = null
 
 	armor_type = /datum/armor/none
 	light_range = 2 //luminosity when on

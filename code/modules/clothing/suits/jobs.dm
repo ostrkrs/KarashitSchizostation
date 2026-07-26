@@ -78,7 +78,6 @@
 		/obj/item/storage/fancy/cigarettes,
 		/obj/item/storage/lockbox/medal,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 	)
 
 //Chef
@@ -116,8 +115,8 @@
 		/obj/item/storage/bag/tray,
 	)
 
-//Detective
-/obj/item/clothing/suit/toggle/jacket/det_trench
+//Criminalist
+/obj/item/clothing/suit/toggle/jacket/criminalist_trench
 	name = "brown trenchcoat"
 	desc = "A 18th-century multi-purpose trenchcoat. Someone who wears this means serious business."
 	icon_state = "det_trenchcoat"
@@ -133,38 +132,38 @@
 	energy = 35
 	acid = 45
 
-/obj/item/clothing/suit/toggle/jacket/det_trench/Initialize(mapload)
+/obj/item/clothing/suit/toggle/jacket/criminalist_trench/Initialize(mapload)
 	. = ..()
-	allowed = GLOB.detective_vest_allowed
+	allowed = GLOB.criminalist_vest_allowed
 
-/obj/item/clothing/suit/toggle/jacket/det_trench/noir
+/obj/item/clothing/suit/toggle/jacket/criminalist_trench/noir
 	name = "noir trenchcoat"
 	desc = "A hard-boiled private investigator's dark trenchcoat."
 	icon_state = "noir_trenchcoat"
 	inhand_icon_state = null
 
-/obj/item/clothing/suit/jacket/det_suit
+/obj/item/clothing/suit/jacket/criminalist_suit
 	name = "brown blazer jacket"
 	desc = "A suit jacket perfect for dinner dates and criminal investigations."
 	icon_state = "det_blazer"
 	armor_type = /datum/armor/jacket_det_suit
 	inhand_icon_state = null
 
-/obj/item/clothing/suit/jacket/det_suit/Initialize(mapload)
+/obj/item/clothing/suit/jacket/criminalist_suit/Initialize(mapload)
 	. = ..()
-	allowed = GLOB.detective_vest_allowed
+	allowed = GLOB.criminalist_vest_allowed
 
-/obj/item/clothing/suit/jacket/det_suit/noir
+/obj/item/clothing/suit/jacket/criminalist_suit/noir
 	name = "noir blazer jacket"
 	desc = "A dapper private investigator's dark suit jacket."
 	icon_state = "noir_blazer"
 
-/obj/item/clothing/suit/jacket/det_suit/kim
+/obj/item/clothing/suit/jacket/criminalist_suit/kim
 	name = "aerostatic bomber jacket"
 	desc = "A jacket once worn by the revolutionary air brigades during the Antecentennial Revolution. There are quite a few pockets on the inside, mostly for storing notebooks and compasses."
 	icon_state = "aerostatic_bomber_jacket"
 
-/obj/item/clothing/suit/jacket/det_suit/disco
+/obj/item/clothing/suit/jacket/criminalist_suit/disco
 	name = "disco ass blazer"
 	desc = "Looks like someone skinned this blazer off some long extinct disco-animal. It has an enigmatic white rectangle on the back and the right sleeve."
 	icon_state = "jamrock_blazer"
@@ -184,7 +183,6 @@
 		/obj/item/radio,
 		/obj/item/storage/bag/construction,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/t_scanner,
 		/obj/item/gun/ballistic/rifle/boltaction/pipegun,
 		/obj/item/storage/bag/rebar_quiver,
@@ -203,8 +201,8 @@
 	desc = "A blue high-visibility vest used to distinguish <i>non-combatant</i> \"PRESS\" members, like if anyone cares."
 	icon_state = "hazard_press"
 
-//Lawyer
-/obj/item/clothing/suit/toggle/lawyer
+//Internal Affairs Agent
+/obj/item/clothing/suit/toggle/iaa
 	name = "blue formal suit jacket"
 	desc = "A professional suit jacket."
 	icon_state = "suitjacket_blue"
@@ -215,15 +213,18 @@
 	body_parts_covered = CHEST|ARMS
 	species_exception = list(/datum/species/golem)
 
-/obj/item/clothing/suit/toggle/lawyer/purple
+/obj/item/clothing/suit/toggle/iaa/purple
 	name = "purple formal suit jacket"
 	icon_state = "suitjacket_purp"
-	inhand_icon_state = null
 
-/obj/item/clothing/suit/toggle/lawyer/black
+/obj/item/clothing/suit/toggle/iaa/black
 	name = "black formal suit jacket"
 	icon_state = "suitjacket_black"
 	inhand_icon_state = "ro_suit"
+
+/obj/item/clothing/suit/toggle/iaa/red
+	name = "red formal suit jacket"
+	icon_state = "suitjacket_red"
 
 // Cargo
 
@@ -238,7 +239,6 @@
 	body_parts_covered = CHEST|ARMS
 	allowed = list(
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/boxcutter,
 		/obj/item/dest_tagger,
 		/obj/item/stamp,
@@ -264,14 +264,14 @@
 		/obj/item/melee/baton/telescopic,
 	)
 
-/obj/item/clothing/suit/toggle/lawyer/greyscale
+/obj/item/clothing/suit/toggle/iaa/greyscale
 	name = "formal suit jacket"
 	icon = 'icons/map_icons/clothing/suit/_suit.dmi'
-	icon_state = "/obj/item/clothing/suit/toggle/lawyer/greyscale"
-	post_init_icon_state = "jacket_lawyer"
+	icon_state = "/obj/item/clothing/suit/toggle/iaa/greyscale"
+	post_init_icon_state = "jacket_iaa"
 	inhand_icon_state = ""
-	greyscale_config = /datum/greyscale_config/jacket_lawyer
-	greyscale_config_worn = /datum/greyscale_config/jacket_lawyer/worn
+	greyscale_config = /datum/greyscale_config/jacket_iaa
+	greyscale_config_worn = /datum/greyscale_config/jacket_iaa/worn
 	greyscale_colors = "#ffffff"
 	flags_1 = IS_PLAYER_COLORABLE_1
 
@@ -293,7 +293,7 @@
 	flags_1 = IS_PLAYER_COLORABLE_1
 
 //Security
-/obj/item/clothing/suit/jacket/officer/blue
+/obj/item/clothing/suit/jacket/officer
 	name = "security officer's jacket"
 	desc = "This jacket is for those special occasions when a security officer isn't required to wear their armor."
 	icon_state = "officerbluejacket"
@@ -307,7 +307,7 @@
 	inhand_icon_state = null
 	body_parts_covered = CHEST|ARMS
 
-/obj/item/clothing/suit/jacket/warden/blue
+/obj/item/clothing/suit/jacket/warden
 	name = "warden's jacket"
 	desc = "Perfectly suited for the warden that wants to leave an impression of style on those who visit the brig."
 	icon_state = "wardenbluejacket"
@@ -321,7 +321,7 @@
 	inhand_icon_state = null
 	body_parts_covered = CHEST|ARMS
 
-/obj/item/clothing/suit/jacket/hos/blue
+/obj/item/clothing/suit/jacket/hos
 	name = "head of security's jacket"
 	desc = "This piece of clothing was specifically designed for asserting superior authority."
 	icon_state = "hosbluejacket"
@@ -428,7 +428,6 @@
 		/obj/item/storage/bag/construction,
 		/obj/item/t_scanner,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/extinguisher,
 		/obj/item/construction/rtd,
 		/obj/item/gun/ballistic/rifle/rebarxbow,

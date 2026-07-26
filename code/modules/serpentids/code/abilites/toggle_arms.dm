@@ -91,6 +91,10 @@
 /datum/action/cooldown/toggle_arms/proc/rise_arms()
 	var/mob/living/carbon/human/serpentid = owner
 
+	if(serpentid.blood_volume < BLOOD_VOLUME_OKAY)
+		serpentid.balloon_alert(serpentid, "Low blood pressure!")
+		return FALSE
+
 	serpentid.balloon_alert(serpentid, "Begin pumping blood in!")
 	serpentid.visible_message(span_warning("[serpentid] starts to pump blood into their mantis arms!"), span_warning("You start pumping blood into your mantis arms and emmitting defensive screech!"), span_hear("You hear ramping up screech!"))
 	playsound(serpentid, 'sound/mobs/humanoids/serpentids/serpentidscream.ogg', 70)

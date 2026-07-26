@@ -2,15 +2,19 @@
 	abstract_hallucination_parent = /datum/hallucination/station_message
 	random_hallucination_weight = 1
 	hallucination_tier = HALLUCINATION_TIER_RARE
+	var/require_hearing = TRUE
 
 /datum/hallucination/station_message/start()
+	if(require_hearing && HAS_TRAIT(hallucinator, TRAIT_DEAF))
+		return FALSE
+
 	qdel(src) // To be implemented by subtypes, call parent for easy cleanup
 	return TRUE
 
 /datum/hallucination/station_message/blob_alert
 
 /datum/hallucination/station_message/blob_alert/start()
-	priority_announce("Confirmed outbreak of level 5 biohazard aboard [station_name()]. All personnel must contain the outbreak.", \
+	priority_announce("Confirmed outbreak of level 5 biohazard aboard [ship_name()]. All personnel must contain the outbreak.", \
 		"Biohazard Alert", ANNOUNCER_OUTBREAK5, players = list(hallucinator))
 	return ..()
 

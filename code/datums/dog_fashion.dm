@@ -112,14 +112,10 @@
 	speak = list("le woof!", "le bark!", "JAPPE!!")
 	emote_see = list("cowers in fear.", "surrenders.", "plays dead.","looks as though there is a wall in front of them.")
 
-/datum/dog_fashion/head/detective
-	name = "Detective %REAL_NAME%"
+/datum/dog_fashion/head/investigator
+	name = "Investigator %REAL_NAME%"
 	desc = "%NAME% sees through your lies..."
 	emote_see = list("investigates the area.","sniffs around for clues.","searches for scooby snacks.","takes a candycorn from the hat.")
-
-/datum/dog_fashion/head/nurse
-	name = "Nurse %REAL_NAME%"
-	desc = "%NAME% needs 100cc of beef jerky... STAT!"
 
 /datum/dog_fashion/head/pirate
 	name = "Pirate-title Pirate-name"

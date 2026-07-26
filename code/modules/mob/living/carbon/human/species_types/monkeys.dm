@@ -3,6 +3,7 @@
 /datum/species/monkey
 	name = "\improper Monkey"
 	id = SPECIES_MONKEY
+	examine_color = COLOR_DARK_MODERATE_ORANGE
 	mutant_organs = list(
 		/obj/item/organ/tail/monkey = "Monkey",
 	)
@@ -37,7 +38,7 @@
 	fire_overlay = "monkey"
 	gib_anim = "gibbed-m"
 
-	payday_modifier = 1.5
+	payday_modifier = 0.5
 	ai_controlled_species = TRUE
 
 /datum/species/monkey/on_species_gain(mob/living/carbon/human/human_who_gained_species, datum/species/old_species, pref_load, regenerate_icons)

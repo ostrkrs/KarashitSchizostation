@@ -65,7 +65,7 @@
 // For base materials, see materials.dm
 
 /datum/export/stack/plasteel
-	cost = CARGO_CRATE_VALUE * 0.41 // 100u of plasma + 100u of iron.
+	cost = CARGO_CRATE_VALUE * 0.41 // 100u of phoron + 100u of iron.
 	message = "of plasteel"
 	export_types = list(/obj/item/stack/sheet/plasteel)
 
@@ -76,7 +76,7 @@
 	export_types = list(/obj/item/stack/sheet/rglass)
 
 /datum/export/stack/plastitanium
-	cost = CARGO_CRATE_VALUE * 0.65 // plasma + titanium costs
+	cost = CARGO_CRATE_VALUE * 0.65 // phoron + titanium costs
 	message = "of plastitanium"
 	export_types = list(/obj/item/stack/sheet/mineral/plastitanium)
 

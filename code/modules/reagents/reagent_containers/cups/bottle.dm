@@ -91,10 +91,10 @@
 	desc = "A small bottle of unstable mutagen. Randomly changes the DNA structure of whoever comes in contact."
 	list_reagents = list(/datum/reagent/toxin/mutagen = 30)
 
-/obj/item/reagent_containers/cup/bottle/plasma
-	name = "liquid plasma bottle"
-	desc = "A small bottle of liquid plasma. Extremely toxic and reacts with micro-organisms inside blood."
-	list_reagents = list(/datum/reagent/toxin/plasma = 30)
+/obj/item/reagent_containers/cup/bottle/phoron
+	name = "liquid phoron bottle"
+	desc = "A small bottle of liquid phoron. Extremely toxic and reacts with micro-organisms inside blood."
+	list_reagents = list(/datum/reagent/toxin/phoron = 30)
 
 /obj/item/reagent_containers/cup/bottle/synaptizine
 	name = "synaptizine bottle"
@@ -133,16 +133,6 @@
 	name = "Frost Oil Bottle"
 	desc = "A small bottle. Contains cold sauce."
 	list_reagents = list(/datum/reagent/consumable/frostoil = 30)
-
-/obj/item/reagent_containers/cup/bottle/strange_reagent
-	name = "Strange Reagent Bottle"
-	desc = "A small bottle. May be used to revive people."
-	list_reagents = list(/datum/reagent/medicine/strange_reagent = 30)
-
-/obj/item/reagent_containers/cup/bottle/fishy_reagent
-	name = "Fishy Reagent Bottle"
-	desc = "A small bottle. May be used to revive fish."
-	list_reagents = list(/datum/reagent/medicine/strange_reagent/fishy_reagent = 30)
 
 /obj/item/reagent_containers/cup/bottle/traitor
 	name = "syndicate bottle"
@@ -579,7 +569,6 @@
 	return CLICK_ACTION_SUCCESS
 
 //types of syrups
-
 /obj/item/reagent_containers/cup/bottle/syrup_bottle/caramel
 	name = "bottle of caramel syrup"
 	desc = "A pump bottle containing caramelized sugar, also known as caramel. Do not lick."

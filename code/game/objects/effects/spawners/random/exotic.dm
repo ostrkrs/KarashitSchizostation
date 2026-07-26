@@ -65,7 +65,7 @@
 		/obj/item/shield/riot = 12,
 		/obj/item/stack/sheet/mineral/diamond{amount = 15} = 5,
 		/obj/item/stack/sheet/mineral/uranium{amount = 15} = 5,
-		/obj/item/stack/sheet/mineral/plasma{amount = 15} = 5,
+		/obj/item/stack/sheet/mineral/phoron{amount = 15} = 5,
 		/obj/item/stack/sheet/mineral/gold{amount = 15} = 5,
 		/obj/item/grenade/clusterbuster/smoke = 15,
 		/obj/item/clothing/under/chameleon = 13,

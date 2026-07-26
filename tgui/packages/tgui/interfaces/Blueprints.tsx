@@ -13,7 +13,7 @@ type Data = {
   legend_viewing_list: string;
   legend_off: string;
   fluff_notice: string;
-  station_name: string;
+  ship_name: string;
   wires_name: string;
   wire_devices: WireDevices[];
   viewing: BooleanLike;
@@ -105,7 +105,7 @@ const MainMenu = () => {
     area_name,
     area_allows_shuttle_docking,
     fluff_notice,
-    station_name,
+    ship_name,
     viewing,
   } = data;
 
@@ -116,7 +116,7 @@ const MainMenu = () => {
   };
 
   return (
-    <Section title={`${station_name} blueprints`}>
+    <Section title={`${ship_name} blueprints`}>
       <Box italic fontSize={0.9}>
         {fluff_notice}
       </Box>

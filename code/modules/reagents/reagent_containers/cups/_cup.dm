@@ -70,6 +70,12 @@
 		return ITEM_INTERACT_BLOCKING
 
 	if(target_mob != user)
+		if(target_mob.hydration >= HYDRATION_LEVEL_OVERHYDRATED)
+			target_mob.visible_message(
+				span_danger("[user] attempts to feed [target_mob] something from [src], but [target_mob] is too full!"),
+				span_userdanger("[user] attempts to feed you something from [src], but you're too full!"),
+			)
+			return ITEM_INTERACT_BLOCKING
 		target_mob.visible_message(
 			span_danger("[user] attempts to feed [target_mob] something from [src]."),
 			span_userdanger("[user] attempts to feed you something from [src]."),
@@ -84,6 +90,9 @@
 		)
 		log_combat(user, target_mob, "fed", reagents.get_reagent_log_string())
 	else
+		if(target_mob.hydration >= HYDRATION_LEVEL_OVERHYDRATED)
+			to_chat(user, span_warning("You're too quenched!"))
+			return ITEM_INTERACT_BLOCKING
 		to_chat(user, span_notice("You swallow a gulp of [src]."))
 
 	. = ITEM_INTERACT_SUCCESS
@@ -242,7 +251,7 @@
 		and Element Cuban combined with the Compound Pete. Can hold up to \
 		300 units."
 	icon_state = "beakerbluespace"
-	custom_materials = list(/datum/material/glass =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/plasma =SHEET_MATERIAL_AMOUNT * 1.5, /datum/material/diamond =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/bluespace =HALF_SHEET_MATERIAL_AMOUNT)
+	custom_materials = list(/datum/material/glass =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/phoron =SHEET_MATERIAL_AMOUNT * 1.5, /datum/material/diamond =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/bluespace =HALF_SHEET_MATERIAL_AMOUNT)
 	volume = 300
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,300)

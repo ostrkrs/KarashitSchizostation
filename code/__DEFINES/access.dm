@@ -47,8 +47,8 @@
 #define ACCESS_WEAPONS "weapons"
 /// Access used for the Head of Security's personal quarters in mapping, as well as other HoS-related things.
 #define ACCESS_HOS "hos"
-/// Access for the detective to get into their office, the medical data console, and some other detective-related stuff.
-#define ACCESS_DETECTIVE "detective"
+/// Access for the criminalist to get into their office, the medical data console, and some other criminalist-related stuff.
+#define ACCESS_CRIMINALIST "criminalist"
 
 /// Engineering General Access, grants access to the standard parts of engineering (as well as the Supermatter and related equipment).
 #define ACCESS_ENGINEERING "engineering"
@@ -89,6 +89,8 @@
 #define ACCESS_PSYCHOLOGY "psychology"
 /// Access for the Chief Medical Officer's personal quarters in mapping, as well as some other CMO-related things.
 #define ACCESS_CMO "cmo"
+/// Access to the Paramedic's areas and lockers.
+#define ACCESS_PARAMEDIC "paramedic"
 
 /// General access for Cargo, allows for entry to Cargo Bay and Cargo's Office.
 #define ACCESS_CARGO "cargo"
@@ -104,8 +106,6 @@
 #define ACCESS_VAULT "vault"
 /// Access for the Quartermaster's personal quarters in mapping, as well as some other QM-related things.
 #define ACCESS_QM "qm"
-/// Access for the bitrunning den
-#define ACCESS_BIT_DEN "bit_den"
 
 /// General access for Science, allows for entry to the general hallways of Science, as well as the main lathe room.
 #define ACCESS_SCIENCE "science"
@@ -142,8 +142,12 @@
 #define ACCESS_HYDROPONICS "hydroponics"
 /// Access to the Janitor's room, and some tablet apps for control of the station's janitorial equipment.
 #define ACCESS_JANITOR "janitor"
-/// Access to the Lawyer's office.
-#define ACCESS_LAWYER "lawyer"
+/// Access to the IAA's office.
+#define ACCESS_IAA "internal affairs agent"
+/// Access to the ISO's office.
+#define ACCESS_ISO "internal security operative"
+/// Access used for the Steward's personal quarters in mapping.
+#define ACCESS_STEWARD "steward"
 
 /// - - - AWAY MISSIONS - - -
 /*For generic away-mission/ruin access. Why would normal crew have access to a long-abandoned derelict
@@ -290,7 +294,6 @@
 	ACCESS_ATMOSPHERICS, \
 	ACCESS_AUX_BASE, \
 	ACCESS_BAR, \
-	ACCESS_BIT_DEN, \
 	ACCESS_BRIG, \
 	ACCESS_BRIG_ENTRANCE, \
 	ACCESS_CARGO, \
@@ -298,7 +301,7 @@
 	ACCESS_CONSTRUCTION, \
 	ACCESS_COURT, \
 	ACCESS_CREMATORIUM, \
-	ACCESS_DETECTIVE, \
+	ACCESS_CRIMINALIST, \
 	ACCESS_ENGINE_EQUIP, \
 	ACCESS_ENGINEERING, \
 	ACCESS_EVA, \
@@ -308,7 +311,8 @@
 	ACCESS_HYDROPONICS, \
 	ACCESS_JANITOR, \
 	ACCESS_KITCHEN, \
-	ACCESS_LAWYER, \
+	ACCESS_IAA, \
+	ACCESS_ISO, \
 	ACCESS_LIBRARY, \
 	ACCESS_MAINT_TUNNELS, \
 	ACCESS_MECH_MINING, \
@@ -325,6 +329,7 @@
 	ACCESS_NETWORK, \
 	ACCESS_ORDNANCE, \
 	ACCESS_ORDNANCE_STORAGE, \
+	ACCESS_PARAMEDIC, \
 	ACCESS_PHARMACY, \
 	ACCESS_PLUMBING, \
 	ACCESS_PSYCHOLOGY, \
@@ -366,6 +371,7 @@
 	ACCESS_HOP, \
 	ACCESS_QM, \
 	ACCESS_RD, \
+	ACCESS_STEWARD, \
 )
 
 /// Captains private rooms. Do not use direct, access via SSid_access.get_flag_access_list(ACCESS_FLAG_CAPTAIN)
@@ -422,7 +428,7 @@
 #define REGION_ACCESS_ALL_STATION COMMON_ACCESS + COMMAND_ACCESS + PRIVATE_COMMAND_ACCESS + CAPTAIN_ACCESS
 /// Name for the General region.
 #define REGION_GENERAL "General"
-/// Used to seed the accesses_by_region list in SSid_access. A list of general service accesses that are overseen by the HoP.
+/// Used to seed the accesses_by_region list in SSid_access. A list of general service accesses that are overseen by the Steward.
 #define REGION_ACCESS_GENERAL list( \
 	ACCESS_BAR, \
 	ACCESS_CHAPEL_OFFICE, \
@@ -430,10 +436,10 @@
 	ACCESS_HYDROPONICS, \
 	ACCESS_JANITOR, \
 	ACCESS_KITCHEN, \
-	ACCESS_LAWYER, \
 	ACCESS_LIBRARY, \
 	ACCESS_SERVICE, \
 	ACCESS_THEATRE, \
+	ACCESS_STEWARD, \
 )
 /// Name for the Security region.
 #define REGION_SECURITY "Security"
@@ -443,7 +449,7 @@
 	ACCESS_BRIG, \
 	ACCESS_BRIG_ENTRANCE, \
 	ACCESS_COURT, \
-	ACCESS_DETECTIVE, \
+	ACCESS_CRIMINALIST, \
 	ACCESS_HOS, \
 	ACCESS_MECH_SECURITY, \
 	ACCESS_SECURITY, \
@@ -463,6 +469,7 @@
 	ACCESS_PSYCHOLOGY, \
 	ACCESS_SURGERY, \
 	ACCESS_VIROLOGY, \
+	ACCESS_PARAMEDIC, \
 )
 /// Name for the Research region.
 #define REGION_RESEARCH "Research"
@@ -502,7 +509,6 @@
 #define REGION_SUPPLY "Supply"
 /// Used to seed the accesses_by_region list in SSid_access. A list of all cargo regional accesses that are overseen by the HoP.
 #define REGION_ACCESS_SUPPLY list( \
-	ACCESS_BIT_DEN, \
 	ACCESS_CARGO, \
 	ACCESS_MECH_MINING, \
 	ACCESS_MINERAL_STOREROOM, \
@@ -548,10 +554,11 @@
 	/obj/item/modular_computer/pda/coroner = list(REGION_MEDBAY), \
 	/obj/item/modular_computer/pda/engineering = list(REGION_ENGINEERING), \
 	/obj/item/modular_computer/pda/security = list(REGION_SECURITY), \
-	/obj/item/modular_computer/pda/detective = list(REGION_SECURITY), \
+	/obj/item/modular_computer/pda/criminalist = list(REGION_SECURITY), \
 	/obj/item/modular_computer/pda/warden = list(REGION_SECURITY), \
 	/obj/item/modular_computer/pda/janitor = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/science = list(REGION_RESEARCH), \
+	/obj/item/modular_computer/pda/heads/steward = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/heads/quartermaster = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/hop = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/hos = list(REGION_COMMAND), \
@@ -559,11 +566,11 @@
 	/obj/item/modular_computer/pda/heads/ce = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/rd = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/heads/captain = list(REGION_COMMAND), \
+	/obj/item/modular_computer/pda/heads/iaa = list(REGION_COMMAND), \
+	/obj/item/modular_computer/pda/iso = list(REGION_COMMAND), \
 	/obj/item/modular_computer/pda/cargo = list(REGION_SUPPLY), \
-	/obj/item/modular_computer/pda/bitrunner = list(REGION_SUPPLY), \
 	/obj/item/modular_computer/pda/shaftminer = list(REGION_SUPPLY), \
 	/obj/item/modular_computer/pda/chaplain = list(REGION_GENERAL), \
-	/obj/item/modular_computer/pda/lawyer = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/botanist = list(REGION_GENERAL), \
 	/obj/item/modular_computer/pda/roboticist = list(REGION_RESEARCH), \
 	/obj/item/modular_computer/pda/curator = list(REGION_GENERAL), \

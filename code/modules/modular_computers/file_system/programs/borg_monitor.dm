@@ -3,7 +3,7 @@
 	filedesc = "SiliConnect"
 	downloader_category = PROGRAM_CATEGORY_SCIENCE
 	ui_header = "borg_mon.gif"
-	program_open_overlay = "generic"
+	program_open_overlay = "robot"
 	extended_desc = "This program allows for remote monitoring of station cyborgs."
 	program_flags = PROGRAM_ON_NTNET_STORE | PROGRAM_REQUIRES_NTNET
 	download_access = list(ACCESS_ROBOTICS)

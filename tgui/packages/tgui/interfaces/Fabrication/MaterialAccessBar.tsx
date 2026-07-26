@@ -14,7 +14,7 @@ const MATERIAL_RARITY: Record<string, number> = {
   iron: 1,
   plastic: 2,
   titanium: 3,
-  plasma: 4,
+  phoron: 4,
   silver: 5,
   gold: 6,
   uranium: 7,

@@ -45,12 +45,6 @@
 	area_flags = CULT_PERMITTED
 	ambience_index = AMBIENCE_SPOOKY
 
-/area/ruin/thelizardsgas_lavaland
-	name = "\improper The Lizard's Gas"
-	icon_state = "lizardgas"
-	sound_environment = SOUND_ENVIRONMENT_ROOM
-	ambient_buzz = 'sound/ambience/lavaland/magma.ogg'
-
 //Syndicate lavaland base
 
 /area/ruin/syndicate_lava_base/engineering
@@ -96,9 +90,6 @@
 	power_light = FALSE
 	ambient_buzz = 'sound/ambience/lavaland/magma.ogg'
 
-//ash walker nest
-/area/ruin/unpowered/ash_walkers
-	ambient_buzz = 'sound/ambience/lavaland/magma.ogg'
 /area/ruin/unpowered/ratvar
 	outdoors = TRUE
 	ambient_buzz = 'sound/ambience/lavaland/magma.ogg'

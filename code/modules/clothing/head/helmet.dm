@@ -49,7 +49,7 @@
 	if(issignaler(attacking_item))
 		var/obj/item/assembly/signaler/attached_signaler = attacking_item
 		// There's a flashlight in us. Remove it first, or it'll be lost forever!
-		var/obj/item/flashlight/seclite/blocking_us = locate() in src
+		var/obj/item/flashlight/cell_powered/seclite/blocking_us = locate() in src
 		if(blocking_us)
 			to_chat(user, span_warning("[blocking_us] is in the way, remove it first!"))
 			return TRUE
@@ -170,7 +170,7 @@
 
 /obj/item/clothing/head/helmet/marine/Initialize(mapload)
 	. = ..()
-	AddComponent(/datum/component/seclite_attachable, starting_light = new /obj/item/flashlight/seclite(src), light_icon_state = "flight")
+	AddComponent(/datum/component/seclite_attachable, starting_light = new /obj/item/flashlight/cell_powered/seclite(src), light_icon_state = "flight")
 
 /obj/item/clothing/head/helmet/marine/security
 	name = "marine heavy helmet"
@@ -294,8 +294,8 @@
 	icon_state = "justice"
 	base_icon_state = "justice"
 	inhand_icon_state = "justice_helmet"
-	toggle_message = "You turn off the lights on"
-	alt_toggle_message = "You turn on the lights on"
+	toggle_message = "You turn off the lights"
+	alt_toggle_message = "You turn on the lights"
 	actions_types = list(/datum/action/item_action/toggle_helmet_light)
 	///Cooldown for toggling the visor.
 	COOLDOWN_DECLARE(visor_toggle_cooldown)

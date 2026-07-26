@@ -320,10 +320,6 @@ All ShuttleMove procs go here
 
 /mob/living/lateShuttleMove(turf/oldT, list/movement_force, move_dir)
 	var/knockdown = movement_force["KNOCKDOWN"]
-	if(buckled && istype(get_area(src), /area/shuttle/arrival))
-		//if we're on the arrival shuttle, unbuckle so that new player's don't get stuck in there
-		buckled.user_unbuckle_mob(src, src)
-		return
 	if(knockdown > 0)
 		if(buckled)
 			Immobilize(knockdown * 0.5)

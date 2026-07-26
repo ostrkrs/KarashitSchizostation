@@ -7,7 +7,7 @@
 	"required_site_traits": ["in space"],
 	"loot_categories": ["cash", "drugs"],
 	"scan_band_mods": {
-		"Plasma absorption band": 5
+		"Phoron absorption band": 5
 	},
 	"deep_scan_description": "",
 	"triggers": [],
@@ -100,7 +100,7 @@
 		},
 		{
 			"name": "You fall down!",
-			"description": "As you are crawling through the vents of this Space Yacht, the vent gives way! You're dropped into an empty room, completely filled with plasma! There is a desk and filing cabinet in here, along with a window observing the main portion of the yacht. The music is deafening at this point, it sounds like a horrible mix of sea shanties and EDM. ",
+			"description": "As you are crawling through the vents of this Space Yacht, the vent gives way! You're dropped into an empty room, completely filled with phoron! There is a desk and filing cabinet in here, along with a window observing the main portion of the yacht. The music is deafening at this point, it sounds like a horrible mix of sea shanties and EDM. ",
 			"choices": [
 				{
 					"key": "choice 8",
@@ -184,7 +184,7 @@
 		},
 		{
 			"name": "A rockin' party.",
-			"description": "Looking down through the window, you can see up to 20 plasmamen dancing on a disco floor. They look to be enjoying themselves, and none of them have noticed you. Oh, hey! Theres a key on the floor right next to you!",
+			"description": "Looking down through the window, you can see up to 20 dudes dancing on a disco floor. They look to be enjoying themselves, and none of them have noticed you. Oh, hey! Theres a key on the floor right next to you!",
 			"choices": [
 				{
 					"key": "choice 16",
@@ -236,7 +236,7 @@
 		},
 		{
 			"name": "The atmospherics scan",
-			"description": "100% plasma, jam packed with it. This is definitely the home of some plasma-party-people.",
+			"description": "100% phoron, jam packed with it. This is definitely the home of some phoron-party-people.",
 			"choices": [
 				{
 					"key": "choice 22",

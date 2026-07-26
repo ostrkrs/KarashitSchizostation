@@ -56,6 +56,10 @@
 		laws += replacetext(replacetext(law, "human being", subject), "human", subject)
 	..()
 
+/obj/item/ai_module/core/full/sr_standard
+	name = "'SR Standard' Core AI Module"
+	law_id = "sr_standard"
+
 /obj/item/ai_module/core/full/corp
 	name = "'Corporate' Core AI Module"
 	law_id = "corporate"
@@ -63,10 +67,6 @@
 /obj/item/ai_module/core/full/paladin // -- NEO
 	name = "'P.A.L.A.D.I.N. version 3.5e' Core AI Module"
 	law_id = "paladin"
-
-/obj/item/ai_module/core/full/paladin_devotion
-	name = "'P.A.L.A.D.I.N. version 5e' Core AI Module"
-	law_id = "paladin5"
 
 /obj/item/ai_module/core/full/tyrant
 	name = "'T.Y.R.A.N.T.' Core AI Module"
@@ -123,10 +123,6 @@
 /obj/item/ai_module/core/full/ten_commandments
 	name = "'10 Commandments' Core AI Module"
 	law_id = "ten_commandments"
-
-/obj/item/ai_module/core/full/nutimov
-	name = "'Nutimov' Core AI Module"
-	law_id = "nutimov"
 
 /obj/item/ai_module/core/full/dungeon_master
 	name = "'Dungeon Master' Core AI Module"

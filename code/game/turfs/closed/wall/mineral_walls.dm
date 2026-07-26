@@ -126,16 +126,16 @@
 /turf/closed/wall/mineral/uranium/hulk_recoil(obj/item/bodypart/arm, mob/living/carbon/human/hulkman, damage = 41)
 	return ..()
 
-/turf/closed/wall/mineral/plasma
-	name = "plasma wall"
-	desc = "A wall with plasma plating. This is definitely a bad idea."
-	icon = 'icons/turf/walls/plasma_wall.dmi'
-	icon_state = "plasma_wall-0"
-	base_icon_state = "plasma_wall"
-	sheet_type = /obj/item/stack/sheet/mineral/plasma
+/turf/closed/wall/mineral/phoron
+	name = "phoron wall"
+	desc = "A wall with phoron plating. This is definitely a bad idea."
+	icon = 'icons/turf/walls/phoron_wall.dmi'
+	icon_state = "phoron_wall-0"
+	base_icon_state = "phoron_wall"
+	sheet_type = /obj/item/stack/sheet/mineral/phoron
 	hardness = 70 // I'll tentatively compare it to Bismuth
 	thermal_conductivity = 0.04
-	custom_materials = list(/datum/material/plasma = SHEET_MATERIAL_AMOUNT*2)
+	custom_materials = list(/datum/material/phoron = SHEET_MATERIAL_AMOUNT*2)
 	rust_resistance = RUST_RESISTANCE_BASIC
 
 /turf/closed/wall/mineral/wood
@@ -203,7 +203,6 @@
 	sheet_type = /obj/item/stack/sheet/mineral/snow
 	girder_type = null
 	bullet_sizzle = TRUE
-	bullet_bounce_sound = null
 	custom_materials = list(/datum/material/snow = SHEET_MATERIAL_AMOUNT*2)
 	rust_resistance = RUST_RESISTANCE_BASIC
 
@@ -211,7 +210,7 @@
 	return ..() //No recoil damage, snow is weak
 
 /turf/closed/wall/mineral/abductor
-	name = "alien wall"
+	name = "alien hull"
 	desc = "A wall with alien alloy plating."
 	icon = 'icons/turf/walls/abductor_wall.dmi'
 	icon_state = "abductor_wall-0"
@@ -226,7 +225,7 @@
 /////////////////////Titanium walls/////////////////////
 
 /turf/closed/wall/mineral/titanium //has to use this path due to how building walls works
-	name = "wall"
+	name = "hull"
 	desc = "A light-weight titanium wall used in shuttles."
 	icon = 'icons/turf/walls/shuttle_wall.dmi'
 	icon_state = "shuttle_wall-0"
@@ -287,8 +286,8 @@
 /////////////////////Plastitanium walls/////////////////////
 
 /turf/closed/wall/mineral/plastitanium
-	name = "wall"
-	desc = "A durable wall made of an alloy of plasma and titanium."
+	name = "hull"
+	desc = "A durable wall made of an alloy of phoron and titanium."
 	icon = 'icons/turf/walls/plastitanium_wall.dmi'
 	icon_state = "plastitanium_wall-0"
 	base_icon_state = "plastitanium_wall"

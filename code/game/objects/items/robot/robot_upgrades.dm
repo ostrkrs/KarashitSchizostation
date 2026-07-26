@@ -112,7 +112,7 @@
 	if(!.)
 		return .
 
-	var/obj/item/gun/energy/disabler/cyborg/disabler = locate() in borg.model.modules
+	var/obj/item/gun/energy/taser/advanced/cyborg/disabler = locate() in borg.model.modules
 	if(isnull(disabler))
 		to_chat(user, span_warning("There's no disabler in this unit!"))
 		return FALSE
@@ -127,7 +127,7 @@
 	. = ..()
 	if(!.)
 		return .
-	var/obj/item/gun/energy/disabler/cyborg/disabler = locate() in borg.model.modules
+	var/obj/item/gun/energy/taser/advanced/cyborg/disabler = locate() in borg.model.modules
 	if(isnull(disabler))
 		return FALSE
 	disabler.charge_delay = initial(disabler.charge_delay)
@@ -260,7 +260,7 @@
 
 /obj/item/borg/upgrade/lavaproof
 	name = "mining cyborg lavaproof chassis"
-	desc = "An upgrade kit to apply specialized coolant systems and insulation layers to a mining cyborg's chassis, enabling them to withstand exposure to molten rock and liquid plasma."
+	desc = "An upgrade kit to apply specialized coolant systems and insulation layers to a mining cyborg's chassis, enabling them to withstand exposure to molten rock and liquid phoron."
 	icon_state = "module_miner"
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | FREEZE_PROOF
 	require_model = TRUE

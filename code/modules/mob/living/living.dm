@@ -498,6 +498,7 @@
 			if(mob_to_set.lying_angle == LYING_ANGLE_EAST)
 				mob_to_set.set_lying_angle(LYING_ANGLE_WEST)
 			mob_to_set.add_offsets(GRABBING_TRAIT, x_add = -offset, y_add = 0, animate = animate)
+	SEND_SIGNAL(mob_to_set, COMSIG_LIVING_SET_PULL_OFFSET)
 
 /**
  * Removes any offsets from the passed mob that are related to being grabbed
@@ -510,6 +511,7 @@
 	if(!override && M.buckled)
 		return
 	M.remove_offsets(GRABBING_TRAIT)
+	SEND_SIGNAL(M, COMSIG_LIVING_RESET_PULL_OFFSETS)
 
 //mob verbs are a lot faster than object verbs
 //for more info on why this is not atom/pull, see examinate() in mob.dm
@@ -982,6 +984,7 @@
 
 	// I don't really care to keep this under a flag
 	set_nutrition(NUTRITION_LEVEL_FED + 50)
+	set_hydration(HYDRATION_LEVEL_HYDRATED + 50)
 	overeatduration = 0
 	satiety = 0
 
@@ -1003,25 +1006,6 @@
 	updatehealth()
 	stop_sound_channel(CHANNEL_HEARTBEAT)
 	SEND_SIGNAL(src, COMSIG_LIVING_POST_FULLY_HEAL, heal_flags)
-
-/**
- * Called by strange_reagent, with the amount of healing the strange reagent is doing
- * It uses the healing amount on brute/fire damage, and then uses the excess healing for revive
- */
-/mob/living/proc/do_strange_reagent_revival(healing_amount)
-	var/brute_loss = getBruteLoss()
-	if(brute_loss)
-		var/brute_healing = min(healing_amount * 0.5, brute_loss) // 50% of the healing goes to brute
-		setBruteLoss(round(brute_loss - brute_healing, DAMAGE_PRECISION), updating_health=FALSE, forced=TRUE)
-		healing_amount = max(0, healing_amount - brute_healing)
-
-	var/fire_loss = getFireLoss()
-	if(fire_loss && healing_amount)
-		var/fire_healing = min(healing_amount, fire_loss) // rest of the healing goes to fire
-		setFireLoss(round(fire_loss - fire_healing, DAMAGE_PRECISION), updating_health=TRUE, forced=TRUE)
-		healing_amount = max(0, healing_amount - fire_healing)
-
-	revive(NONE, excess_healing=max(healing_amount, 0), force_grab_ghost=FALSE) // and any excess healing is passed along
 
 /// Checks if we are actually able to ressuscitate this mob.
 /// (We don't want to revive then to have them instantly die again)
@@ -1152,7 +1136,7 @@
 	if(buckled && last_special <= world.time)
 		resist_buckle()
 
-	//Breaking out of a container (Locker, sleeper, cryo...)
+	//Breaking out of a container
 	else if(loc != get_turf(src))
 		loc.container_resist_act(src)
 
@@ -1513,7 +1497,6 @@
 				/mob/living/basic/bot/vibebot = 25,
 				/mob/living/basic/hivebot/strong = 50,
 				/mob/living/basic/hivebot/mechanic = 50,
-				/mob/living/basic/netguardian = 1,
 				/mob/living/silicon/robot/model/syndicate = 1,
 				/mob/living/silicon/robot/model/syndicate/medical = 1,
 				/mob/living/silicon/robot/model/syndicate/saboteur = 1,
@@ -1542,13 +1525,11 @@
 				picked_xeno_type = pick(
 					/mob/living/carbon/alien/adult/hunter,
 					/mob/living/carbon/alien/adult/sentinel,
-					/mob/living/basic/alien/maid,
 				)
 			else
 				picked_xeno_type = pick(
 					/mob/living/carbon/alien/adult/hunter,
 					/mob/living/basic/alien/sentinel,
-					/mob/living/basic/alien/maid,
 				)
 			new_mob = new picked_xeno_type(loc)
 
@@ -2092,6 +2073,7 @@ GLOBAL_LIST_EMPTY(fire_appearances)
 	VV_DROPDOWN_OPTION(VV_HK_GIVE_DELUSION_HALLUCINATION, "Give Delusion Hallucination")
 	VV_DROPDOWN_OPTION(VV_HK_GIVE_GUARDIAN_SPIRIT, "Give Guardian Spirit")
 	VV_DROPDOWN_OPTION(VV_HK_ADMIN_RENAME, "Force Change Name")
+	VV_DROPDOWN_OPTION(VV_HK_SEND_CRYPTOPOD, "Send to Cryptostasis Storage")
 
 /mob/living/vv_do_topic(list/href_list)
 	. = ..()
@@ -2151,6 +2133,9 @@ GLOBAL_LIST_EMPTY(fire_appearances)
 			"updated_prefs" = replace_preferences,
 		))
 		message_admins("[key_name_admin(usr)] has forcibly changed the real name of [key_name(src)] from '[old_name]' to '[real_name]'[(replace_preferences ? " and their preferences" : "")]")
+
+	if(href_list[VV_HK_SEND_CRYPTOPOD])
+		vv_send_to_cryptopod()
 
 /mob/living/proc/move_to_error_room()
 	var/obj/effect/landmark/error/error_landmark = locate(/obj/effect/landmark/error) in GLOB.landmarks_list
@@ -2387,7 +2372,9 @@ GLOBAL_LIST_EMPTY(fire_appearances)
 		if(HARD_CRIT)
 			if(stat != UNCONSCIOUS)
 				cure_blind(UNCONSCIOUS_TRAIT)
+			REMOVE_TRAIT(src, TRAIT_DEAF, STAT_TRAIT)
 		if(DEAD)
+			REMOVE_TRAIT(src, TRAIT_DEAF, STAT_TRAIT)
 			remove_from_dead_mob_list()
 			add_to_alive_mob_list()
 	switch(stat) //Current stat.
@@ -2415,17 +2402,14 @@ GLOBAL_LIST_EMPTY(fire_appearances)
 			if(. != UNCONSCIOUS)
 				become_blind(UNCONSCIOUS_TRAIT)
 			ADD_TRAIT(src, TRAIT_CRITICAL_CONDITION, STAT_TRAIT)
+			ADD_TRAIT(src, TRAIT_DEAF, STAT_TRAIT)
 			log_combat(src, src, "entered hard crit")
 		if(DEAD)
 			REMOVE_TRAIT(src, TRAIT_CRITICAL_CONDITION, STAT_TRAIT)
+			ADD_TRAIT(src, TRAIT_DEAF, STAT_TRAIT)
 			remove_from_alive_mob_list()
 			add_to_dead_mob_list()
 			log_combat(src, src, "died")
-	if(!can_hear())
-		stop_sound_channel(CHANNEL_AMBIENCE)
-	refresh_looping_ambience()
-
-
 
 ///Reports the event of the change in value of the buckled variable.
 /mob/living/proc/set_buckled(new_buckled)
@@ -3000,3 +2984,39 @@ GLOBAL_LIST_EMPTY(fire_appearances)
 	if(HAS_TRAIT(src, TRAIT_ANALGESIA) && !force)
 		return
 	INVOKE_ASYNC(src, PROC_REF(emote), "scream")
+
+/// Send player in not-quiet cryptopod.
+/mob/living/proc/send_to_cryptopod()
+	var/obj/machinery/cryptopod/valid_pod
+	for(var/obj/machinery/cryptopod/pod as anything in SSmachines.get_machines_by_type_and_subtypes(/obj/machinery/cryptopod))
+		if(!pod.can_be_put_inside(src))
+			continue
+
+		valid_pod = pod
+		break
+
+	if(!valid_pod)
+		message_admins("no valid pod found for [key_name_admin(name)]")
+		return
+
+	if(buckled)
+		buckled.unbuckle_mob(src, TRUE)
+
+	if(buckled_mobs)
+		for(var/mob/buckled_mob as anything in buckled_mobs)
+			unbuckle_mob(buckled_mob)
+
+	playsound(loc, 'sound/items/internals/internals_on.ogg', 50, TRUE)
+	valid_pod.close_machine(src)
+
+/mob/living/proc/vv_send_to_cryptopod()
+	if(!check_rights(R_SPAWN))
+		return
+
+	//log/message
+	log_admin("[key_name(usr)] has put [key_name(src)] into a cryptopod.")
+	var/msg = span_notice("[key_name_admin(usr)] has put [key_name(src)] into a cryptopod from [ADMIN_VERBOSEJMP(src)].")
+	message_admins(msg)
+	admin_ticket_log(src, msg)
+
+	send_to_cryptopod()

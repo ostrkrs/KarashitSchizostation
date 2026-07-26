@@ -1,10 +1,11 @@
 /datum/job/cargo_technician
 	title = JOB_CARGO_TECHNICIAN
+	alt_titles = JOB_CARGO_TECHNICIAN_ALT_TITLES
 	description = "Distribute supplies to the departments that ordered them, \
 		collect empty crates, load and unload the supply shuttle, \
 		ship bounty cubes."
 	department_head = list(JOB_QUARTERMASTER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 5
 	spawn_positions = 3
 	supervisors = SUPERVISOR_QM
@@ -12,7 +13,6 @@
 	config_tag = "CARGO_TECHNICIAN"
 
 	outfit = /datum/outfit/job/cargo_tech
-	plasmaman_outfit = /datum/outfit/plasmaman/cargo
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_CAR
@@ -26,14 +26,12 @@
 
 	mail_goodies = list(
 		/obj/item/pizzabox = 10,
-		/obj/item/stack/sheet/mineral/gold = 5,
-		/obj/item/stack/sheet/mineral/uranium = 4,
-		/obj/item/stack/sheet/mineral/diamond = 3,
-		/obj/item/gun/ballistic/rifle/boltaction = 1,
-		/obj/item/gun/ballistic/automatic/wt550 = 1,
+		/obj/item/coin/gold = 20,
+		/obj/item/coin/silver = 20,
+		/obj/item/clothing/neck/necklace/dope = 5,
 	)
 	rpg_title = "Merchantman"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/cargo_tech
@@ -41,14 +39,13 @@
 	jobtype = /datum/job/cargo_technician
 
 	backpack_contents = list(
-		/obj/item/boxcutter = 1,
+		/obj/item/universal_scanner = 1,
 	)
 	id_trim = /datum/id_trim/job/cargo_technician
 	uniform = /obj/item/clothing/under/rank/cargo/tech
 	belt = /obj/item/modular_computer/pda/cargo
 	suit = /obj/item/clothing/suit/toggle/cargo_tech
 	ears = /obj/item/radio/headset/headset_cargo
-	l_hand = /obj/item/universal_scanner
 
 /datum/outfit/job/cargo_tech/mod
 	name = "Cargo Technician (MODsuit)"

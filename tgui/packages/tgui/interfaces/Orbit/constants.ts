@@ -1,6 +1,5 @@
 export const ANTAG2COLOR = {
   Abductors: 'pink',
-  'Ash Walkers': 'olive',
   Biohazards: 'brown',
   'Bounty Hunters': 'yellow',
   CentCom: 'teal',
@@ -21,7 +20,7 @@ type Department = {
 export const DEPARTMENT2COLOR: Record<string, Department> = {
   cargo: {
     color: 'brown',
-    trims: ['Bitrunner', 'Cargo Technician', 'Shaft Miner', 'Quartermaster'],
+    trims: ['Cargo Technician', 'Shaft Miner', 'Quartermaster'],
   },
   command: {
     color: 'blue',
@@ -29,7 +28,7 @@ export const DEPARTMENT2COLOR: Record<string, Department> = {
   },
   engineering: {
     color: 'orange',
-    trims: ['Atmospheric Technician', 'Chief Engineer', 'Station Engineer'],
+    trims: ['Atmospheric Technician', 'Chief Engineer', 'Deck Engineer'],
   },
   medical: {
     color: 'teal',
@@ -47,7 +46,7 @@ export const DEPARTMENT2COLOR: Record<string, Department> = {
   },
   security: {
     color: 'red',
-    trims: ['Detective', 'Head of Security', 'Security Officer', 'Warden'],
+    trims: ['Criminalist', 'Head of Security', 'Security Officer', 'Warden'],
   },
   service: {
     color: 'green',
@@ -60,7 +59,7 @@ export const DEPARTMENT2COLOR: Record<string, Department> = {
       'Cook',
       'Curator',
       'Janitor',
-      'Lawyer',
+      'Internal Affairs Agent',
       'Mime',
       'Psychologist',
     ],

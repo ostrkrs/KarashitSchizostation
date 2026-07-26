@@ -102,7 +102,6 @@
 	tracer_type = /obj/effect/projectile/tracer/legion
 	muzzle_type = /obj/effect/projectile/tracer/legion
 	impact_type = /obj/effect/projectile/tracer/legion
-	hitscan = TRUE
 	projectile_piercing = ALL
 
 /// Used for the legion turret beam.

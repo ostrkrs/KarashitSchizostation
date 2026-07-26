@@ -7,8 +7,8 @@
 	//we dont want people messing with these special vents using the air alarm interface
 	disconnect_from_area()
 
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/plasma_output
-	name = "plasma tank output inlet"
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/phoron_output
+	name = "phoron tank output inlet"
 
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/monitored/oxygen_output
 	name = "oxygen tank output inlet"

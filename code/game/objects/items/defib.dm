@@ -55,12 +55,23 @@
 	. = ..()
 	paddles = new paddle_type(src)
 	update_power()
+	register_context()
 	RegisterSignal(paddles, COMSIG_DEFIBRILLATOR_SUCCESS, PROC_REF(on_defib_success))
 
 /obj/item/defibrillator/loaded/Initialize(mapload) //starts with hicap
 	. = ..()
 	cell = new(src)
 	update_power()
+
+/obj/item/defibrillator/add_context(atom/source, list/context, obj/item/held_item, mob/user)
+	. = NONE
+	if(isnull(held_item) && !on)
+		context[SCREENTIP_CONTEXT_RMB] = "Take paddles"
+
+	if(held_item.tool_behaviour == TOOL_SCREWDRIVER && cell_removable)
+		context[SCREENTIP_CONTEXT_LMB] = "Remove cell"
+
+	return CONTEXTUAL_SCREENTIP_SET
 
 /obj/item/defibrillator/examine(mob/user)
 	. = ..()
@@ -83,7 +94,7 @@
 
 /obj/item/defibrillator/proc/update_power()
 	if(!QDELETED(cell))
-		if(QDELETED(paddles) || cell.charge < paddles.revivecost)
+		if(QDELETED(paddles) || cell.charge < paddles.defibcost)
 			powered = FALSE
 		else
 			powered = TRUE
@@ -117,23 +128,13 @@
 /obj/item/defibrillator/ui_action_click()
 	INVOKE_ASYNC(src, PROC_REF(toggle_paddles))
 
-//ATTACK HAND IGNORING PARENT RETURN VALUE
-/obj/item/defibrillator/attack_hand(mob/user, list/modifiers)
-	if(loc == user)
-		if(slot_flags & ITEM_SLOT_BACK)
-			if(user.get_item_by_slot(ITEM_SLOT_BACK) == src)
-				ui_action_click()
-			else
-				to_chat(user, span_warning("Put the defibrillator on your back first!"))
+/obj/item/defibrillator/attack_hand_secondary(mob/user, list/modifiers)
+	toggle_paddles()
+	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
-		else if(slot_flags & ITEM_SLOT_BELT)
-			if(user.get_item_by_slot(ITEM_SLOT_BELT) == src)
-				ui_action_click()
-			else
-				to_chat(user, span_warning("Strap the defibrillator's belt on first!"))
-		return
-	else if(istype(loc, /obj/machinery/defibrillator_mount))
-		ui_action_click() //checks for this are handled in defibrillator.mount.dm
+/obj/item/defibrillator/attack_hand(mob/user, list/modifiers)
+	if(istype(loc, /obj/machinery/defibrillator_mount))
+		toggle_paddles()
 	return ..()
 
 /obj/item/defibrillator/mouse_drop_dragged(atom/over_object, mob/user, src_location, over_location, params)
@@ -167,7 +168,7 @@
 		to_chat(user, span_warning("[src] already has a cell!"))
 		return ITEM_INTERACT_BLOCKING
 
-	if(new_cell.maxcharge < paddles.revivecost)
+	if(new_cell.maxcharge < paddles.defibcost)
 		to_chat(user, span_notice("[src] requires a higher capacity cell."))
 		return ITEM_INTERACT_BLOCKING
 	if(!user.transferItemToLoc(new_cell, src))
@@ -202,14 +203,12 @@
 
 	var/mob/living/carbon/user = usr
 	if(on)
-		//Detach the paddles into the user's hands
 		if(!usr.put_in_hands(paddles))
 			on = FALSE
 			to_chat(user, span_warning("You need a free hand to hold the paddles!"))
 			update_power()
 			return
 	else
-		//Remove from their hands and back onto the defib unit
 		remove_paddles(user)
 
 	update_power()
@@ -222,7 +221,7 @@
 		remove_paddles(user)
 		update_power()
 
-/obj/item/defibrillator/proc/remove_paddles(mob/user) //this fox the bug with the paddles when other player stole you the defib when you have the paddles equiped
+/obj/item/defibrillator/proc/remove_paddles(mob/user)
 	if(ismob(paddles.loc))
 		var/mob/M = paddles.loc
 		M.dropItemToGround(paddles, TRUE)
@@ -240,7 +239,7 @@
 	if(QDELETED(cell))
 		return
 
-	if(cell.charge < (paddles.revivecost + chrgdeductamt))
+	if(cell.charge < (paddles.defibcost + chrgdeductamt))
 		powered = FALSE
 	if(!cell.use(chrgdeductamt))
 		powered = FALSE
@@ -252,7 +251,7 @@
 
 /obj/item/defibrillator/proc/finish_charging()
 	if(cell)
-		if(cell.charge >= paddles.revivecost)
+		if(cell.charge >= paddles.defibcost)
 			visible_message(span_notice("[src] beeps: Unit ready."))
 			playsound(src, 'sound/machines/defib/defib_ready.ogg', 50, FALSE)
 		else
@@ -263,7 +262,7 @@
 	update_power()
 
 /obj/item/defibrillator/proc/on_defib_success(obj/item/shockpaddles/source)
-	deductcharge(source.revivecost)
+	deductcharge(source.defibcost)
 	source.cooldown = TRUE
 	cooldowncheck()
 	return COMPONENT_DEFIB_STOP
@@ -289,7 +288,7 @@
 
 /obj/item/defibrillator/compact/combat
 	name = "combat defibrillator"
-	desc = "A belt-equipped blood-red defibrillator. Can revive through thick clothing, has an experimental self-recharging battery, and can be utilized as a weapon via applying the paddles while in a combat stance."
+	desc = "A belt-equipped blood-red defibrillator. Can shock through thick clothing, has an experimental self-recharging battery, and can be utilized as a weapon via applying the paddles while in a combat stance."
 	icon_state = "defibcombat" //needs defib inhand sprites
 	inhand_icon_state = null
 	worn_icon_state = "defibcombat"
@@ -309,15 +308,6 @@
 	cell = new /obj/item/stock_parts/power_store/cell/infinite(src)
 	update_power()
 
-/obj/item/defibrillator/compact/combat/loaded/nanotrasen
-	name = "elite Nanotrasen defibrillator"
-	desc = "A belt-equipped state-of-the-art defibrillator. Can revive through thick clothing, has an experimental self-recharging battery, and can be utilized as a weapon via applying the paddles while in a combat stance."
-	icon_state = "defibnt" //needs defib inhand sprites
-	inhand_icon_state = null
-	worn_icon_state = "defibnt"
-	paddle_type = /obj/item/shockpaddles/syndicate/nanotrasen
-	paddle_state = "defibnt-paddles"
-
 //paddles
 
 /obj/item/shockpaddles
@@ -336,7 +326,7 @@
 	resistance_flags = INDESTRUCTIBLE
 	base_icon_state = "defibpaddles"
 
-	var/revivecost = STANDARD_CELL_CHARGE * 0.1
+	var/defibcost = STANDARD_CELL_CHARGE * 0.1
 	var/cooldown = FALSE
 	var/busy = FALSE
 	var/obj/item/defibrillator/defib
@@ -410,7 +400,7 @@
 /obj/item/shockpaddles/suicide_act(mob/living/user)
 	user.visible_message(span_danger("[user] is putting the live paddles on [user.p_their()] chest! It looks like [user.p_theyre()] trying to commit suicide!"))
 	if(req_defib)
-		defib.deductcharge(revivecost)
+		defib.deductcharge(defibcost)
 	playsound(src, 'sound/machines/defib/defib_zap.ogg', 50, TRUE, -1)
 	return OXYLOSS
 
@@ -465,9 +455,9 @@
 
 	if(!iscarbon(M))
 		if(req_defib)
-			to_chat(user, span_warning("The instructions on [defib] don't mention how to revive that..."))
+			to_chat(user, span_warning("The instructions on [defib] don't mention how to defibrillate that..."))
 		else
-			to_chat(user, span_warning("You aren't sure how to revive that..."))
+			to_chat(user, span_warning("You aren't sure how to defibrillate that..."))
 		return
 	var/mob/living/carbon/H = M
 
@@ -608,7 +598,7 @@
 					if (DEFIB_FAIL_HUSK)
 						fail_reason = "Patient's body is a mere husk, repair and try again."
 					if (DEFIB_FAIL_FAILING_BRAIN)
-						fail_reason = "Patient's brain is too damaged, repair and try again."
+						fail_reason = "Patient's brain is too damaged. Further attempts futile."
 					if (DEFIB_FAIL_NO_INTELLIGENCE)
 						fail_reason = "No intelligence pattern can be detected in patient's brain. Further attempts futile."
 					if (DEFIB_FAIL_NO_BRAIN)
@@ -641,8 +631,6 @@
 					H.set_heartattack(FALSE)
 					if(defib_result == DEFIB_POSSIBLE)
 						H.grab_ghost()
-					H.revive()
-					H.emote("gasp")
 					H.set_jitter_if_lower(200 SECONDS)
 					SEND_SIGNAL(H, COMSIG_LIVING_MINOR_SHOCK)
 					if(HAS_MIND_TRAIT(user, TRAIT_MORBID))
@@ -703,13 +691,6 @@
 	icon_state = "syndiepaddles0"
 	inhand_icon_state = "syndiepaddles0"
 	base_icon_state = "syndiepaddles"
-
-/obj/item/shockpaddles/syndicate/nanotrasen
-	name = "elite Nanotrasen defibrillator paddles"
-	desc = "A pair of paddles used to revive deceased ERT members. They possess both the ability to penetrate armor and to deliver powerful or disabling shocks offensively."
-	icon_state = "ntpaddles0"
-	inhand_icon_state = "ntpaddles0"
-	base_icon_state = "ntpaddles"
 
 /obj/item/shockpaddles/syndicate/cyborg
 	req_defib = FALSE

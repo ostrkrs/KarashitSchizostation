@@ -122,7 +122,7 @@
 	},
 /area/ruin/powered/beach)
 "bM" = (
-/turf/open/floor/iron/stairs/old,
+/turf/open/floor/iron/stairs,
 /area/ruin/powered/beach)
 "bY" = (
 /obj/machinery/light/directional/north,
@@ -351,7 +351,7 @@
 "jh" = (
 /obj/machinery/hydroponics/constructable,
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "kd" = (
 /obj/structure/table/wood,
@@ -434,7 +434,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "nI" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/kitchen/all_access,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/mayonnaise,
 /obj/item/reagent_containers/condiment/flour,
@@ -579,7 +579,7 @@
 /area/ruin/powered/beach)
 "sV" = (
 /obj/machinery/hydroponics/constructable,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "ta" = (
 /obj/structure/curtain,
@@ -712,7 +712,7 @@
 /area/ruin/powered/beach)
 "zK" = (
 /obj/effect/turf_decal/sand,
-/obj/structure/sign/poster/contraband/starkist/directional/north,
+/obj/structure/sign/poster/legal/starkist/directional/north,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "zT" = (
@@ -756,7 +756,7 @@
 /obj/item/shovel/spade,
 /obj/item/reagent_containers/cup/bucket,
 /obj/item/cultivator,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "Bg" = (
 /obj/structure/chair/stool/bar/directional/south,
@@ -827,7 +827,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "Df" = (
 /obj/structure/table,
@@ -839,10 +839,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden{
 	dir = 4
 	},
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "Ds" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/kitchen/all_access,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Eq" = (
@@ -891,7 +891,7 @@
 /area/ruin/powered/beach)
 "FD" = (
 /obj/structure/sign/poster/contraband/ambrosia_vulgaris/directional/north,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "FH" = (
 /obj/machinery/light/directional/south,
@@ -906,7 +906,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "FZ" = (
-/obj/structure/sign/poster/contraband/space_up/directional/west,
+/obj/structure/sign/poster/legal/space_up/directional/west,
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Ga" = (
@@ -917,7 +917,7 @@
 /turf/open/floor/wood,
 /area/ruin/powered/beach)
 "Gf" = (
-/obj/structure/sign/poster/contraband/space_cola/directional/north,
+/obj/structure/sign/poster/legal/space_cola/directional/north,
 /turf/open/misc/beach/sand,
 /area/ruin/powered/beach)
 "GA" = (
@@ -1044,7 +1044,7 @@
 /obj/item/food/grown/ambrosia/vulgaris,
 /obj/item/food/grown/ambrosia/vulgaris,
 /obj/item/food/grown/ambrosia/vulgaris,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "Ld" = (
 /turf/open/misc/beach/coast/corner{
@@ -1117,7 +1117,7 @@
 /area/ruin/powered/beach)
 "Pr" = (
 /obj/machinery/vending/hydronutrients,
-/turf/open/floor/iron/grimy,
+/turf/open/floor/carpet,
 /area/ruin/powered/beach)
 "PJ" = (
 /obj/structure/chair/stool/directional/south,

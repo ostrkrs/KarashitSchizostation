@@ -722,9 +722,7 @@
 	. = ..()
 	var/static/list/bloody_footprints_cache = list()
 	var/icon_state_to_use = "blood"
-	if(LAZYACCESS(species_types, BODYPART_ID_DIGITIGRADE))
-		icon_state_to_use += "claw"
-	else if(LAZYACCESS(species_types, SPECIES_MONKEY))
+	if(LAZYACCESS(species_types, SPECIES_MONKEY))
 		icon_state_to_use += "paw"
 	else if(LAZYACCESS(species_types, "bot"))
 		icon_state_to_use += "bot"

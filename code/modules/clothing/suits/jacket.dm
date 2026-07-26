@@ -5,7 +5,6 @@
 	allowed = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/toy,
 		/obj/item/storage/fancy/cigarettes,
 		/obj/item/lighter,
@@ -27,7 +26,6 @@
 	allowed = list(
 		/obj/item/flashlight,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		/obj/item/tank/jetpack/oxygen/captain,
 		/obj/item/toy,
 		/obj/item/storage/fancy/cigarettes,
@@ -92,6 +90,12 @@
 	greyscale_config_worn = /datum/greyscale_config/jacket_oversized/worn
 	greyscale_colors = "#414344"
 	flags_1 = IS_PLAYER_COLORABLE_1
+
+/obj/item/clothing/suit/jacket/leather_trenchcoat
+	name = "leather trenchcoat"
+	desc = "A long, black trenchcoat. Makes you feel like you're the one, but you're not."
+	icon_state = "leather_trenchcoat"
+	flags_inv = HIDEBELT
 
 /obj/item/clothing/suit/jacket/fancy
 	name = "fancy fur coat"

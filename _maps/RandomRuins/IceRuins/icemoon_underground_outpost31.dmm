@@ -81,7 +81,7 @@
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/machinery/light_switch/directional/south,
 /obj/effect/turf_decal/siding/white,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "bW" = (
 /obj/effect/turf_decal/tile/purple/opposingcorners,
@@ -106,7 +106,7 @@
 	},
 /obj/effect/decal/cleanable/blood/old,
 /obj/structure/sign/poster/random/directional/north,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "ce" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -124,11 +124,11 @@
 /obj/structure/closet/crate/freezer,
 /obj/item/reagent_containers/blood,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/white/smooth_corner,
+/turf/open/floor/iron/white/corner,
 /area/ruin/outpost31/medical)
 "ck" = (
 /obj/structure/closet,
-/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/phoron/full,
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "cm" = (
@@ -151,7 +151,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "cw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
@@ -301,7 +301,7 @@
 /area/ruin/outpost31/recroom)
 "eS" = (
 /obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "eT" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -309,7 +309,7 @@
 	dir = 9
 	},
 /obj/effect/spawner/random/entertainment/arcade,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "fb" = (
 /obj/machinery/shower/directional/west,
@@ -325,7 +325,7 @@
 "fC" = (
 /obj/structure/chair/stool/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "fH" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -335,7 +335,7 @@
 "fI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "fL" = (
 /obj/machinery/door/airlock/grunge,
@@ -371,7 +371,7 @@
 /area/ruin/outpost31/medical)
 "gu" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "gC" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -399,7 +399,7 @@
 /turf/open/floor/plating,
 /area/ruin/outpost31/kennel)
 "he" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/medical)
 "hi" = (
 /obj/item/ammo_casing/spent,
@@ -526,7 +526,7 @@
 	},
 /area/ruin/outpost31/lab)
 "kh" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "ko" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
@@ -613,7 +613,7 @@
 /area/ruin/outpost31)
 "lR" = (
 /obj/structure/table/wood,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "lT" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -626,7 +626,7 @@
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "lW" = (
 /obj/effect/decal/cleanable/blood/old,
@@ -635,7 +635,7 @@
 "me" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/vending/snack,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "mq" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -665,7 +665,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "mW" = (
 /turf/open/floor/circuit/red/off{
@@ -673,7 +673,7 @@
 	},
 /area/ruin/outpost31/lab)
 "ne" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/commander_room)
 "nj" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -705,7 +705,7 @@
 "nJ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light_switch/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "nP" = (
 /obj/structure/cable,
@@ -724,7 +724,7 @@
 	},
 /area/ruin/outpost31/lab)
 "oa" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/recroom)
 "ob" = (
 /obj/effect/turf_decal/stripes/line,
@@ -735,7 +735,7 @@
 "og" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/random/maintenance/no_decals,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "oj" = (
 /turf/open/floor/iron/freezer,
@@ -766,7 +766,7 @@
 /area/ruin/outpost31)
 "oJ" = (
 /obj/structure/chair/stool/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "oN" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -776,7 +776,7 @@
 "oV" = (
 /obj/structure/table/wood,
 /obj/item/storage/cans/sixbeer,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "pa" = (
 /obj/item/keycard{
@@ -791,7 +791,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
 /obj/machinery/coffeemaker,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "pe" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -807,7 +807,7 @@
 /obj/effect/spawner/random/food_or_drink/any_snack_or_beverage,
 /obj/structure/table,
 /obj/machinery/light/warm/dim/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "pw" = (
 /obj/structure/closet/cabinet,
@@ -819,7 +819,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "pQ" = (
 /obj/item/knife,
@@ -830,7 +830,7 @@
 "qa" = (
 /obj/structure/table/wood,
 /obj/effect/spawner/random/food_or_drink/booze,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "qt" = (
 /obj/machinery/door/airlock/external/glass/ruin,
@@ -842,7 +842,7 @@
 /turf/open/floor/plating,
 /area/ruin/outpost31)
 "qz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/kennel)
 "qH" = (
 /obj/structure/closet/preopen{
@@ -907,7 +907,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/mapping_helpers/airlock/autoname,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "sd" = (
 /obj/structure/table/wood,
@@ -920,7 +920,7 @@
 /area/ruin/outpost31/recroom)
 "sg" = (
 /obj/structure/chair/stool/directional/west,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "si" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -980,7 +980,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "to" = (
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -994,7 +994,7 @@
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "tC" = (
-/obj/structure/closet/secure_closet/freezer/fridge/preopen,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/kitchen/small,
 /area/ruin/outpost31/kitchendiningroom)
@@ -1035,7 +1035,7 @@
 "tZ" = (
 /obj/structure/table,
 /obj/item/storage/medkit,
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1079,7 +1079,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "vn" = (
 /obj/structure/closet/preopen{
@@ -1135,7 +1135,7 @@
 /area/ruin/outpost31/crewquarters)
 "wr" = (
 /obj/machinery/smartfridge/petri/preloaded,
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1194,7 +1194,7 @@
 /turf/open/floor/wood,
 /area/ruin/outpost31/kennel)
 "xc" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/radiomap)
 "xk" = (
 /turf/closed/wall,
@@ -1225,7 +1225,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "yx" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1277,7 +1277,7 @@
 	pixel_x = -4;
 	pixel_y = 1
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "zu" = (
 /obj/effect/light_emitter{
@@ -1292,7 +1292,7 @@
 	},
 /area/ruin/outpost31/lab)
 "zv" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/crewquarters)
 "zw" = (
 /obj/effect/turf_decal/siding/blue{
@@ -1336,7 +1336,7 @@
 "zO" = (
 /obj/effect/turf_decal/siding/white,
 /obj/structure/extinguisher_cabinet/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "zY" = (
 /obj/machinery/door/airlock/external/ruin,
@@ -1354,11 +1354,11 @@
 /obj/machinery/vending/cigarette{
 	onstation = 0
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "Ai" = (
 /obj/item/kirbyplants/random/dead,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1371,13 +1371,13 @@
 /obj/machinery/iv_drip,
 /obj/structure/bed/medical/anchored,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "Aw" = (
 /obj/structure/closet/secure_closet{
 	req_access = list("noopen")
 	},
-/obj/item/ammo_box/c9mm,
+/obj/item/ammo_box/c8mm,
 /turf/open/floor/carpet/green,
 /area/ruin/outpost31/commander_room)
 "AE" = (
@@ -1440,7 +1440,7 @@
 /area/ruin/outpost31/recroom)
 "BM" = (
 /obj/structure/table,
-/turf/open/floor/iron/white/smooth_half{
+/turf/open/floor/iron/white/half{
 	dir = 1
 	},
 /area/ruin/outpost31/medical)
@@ -1476,7 +1476,7 @@
 "Cb" = (
 /obj/machinery/light/warm/directional/south,
 /obj/effect/turf_decal/siding/white,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "Cc" = (
 /obj/structure/cable,
@@ -1500,7 +1500,7 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "CM" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1546,7 +1546,7 @@
 "DM" = (
 /obj/structure/table/wood,
 /obj/effect/mapping_helpers/turn_off_lights_with_lightswitch,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "DU" = (
 /obj/machinery/door/airlock/grunge,
@@ -1599,7 +1599,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "EY" = (
 /obj/structure/extinguisher_cabinet/directional/east,
@@ -1631,7 +1631,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/spawner/random/food_or_drink/any_snack_or_beverage,
 /obj/structure/table,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "FH" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1650,7 +1650,7 @@
 "FP" = (
 /obj/structure/chair/stool/directional/north,
 /obj/effect/mapping_helpers/burnt_floor,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "FQ" = (
 /obj/machinery/door/airlock/grunge,
@@ -1679,7 +1679,7 @@
 /turf/open/floor/wood,
 /area/ruin/outpost31/crewquarters)
 "Gz" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31/kitchendiningroom)
 "GR" = (
 /obj/structure/closet/firecloset,
@@ -1755,7 +1755,7 @@
 	},
 /obj/effect/mapping_helpers/broken_machine,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "HW" = (
 /turf/open/floor/iron,
@@ -1763,7 +1763,7 @@
 "Id" = (
 /obj/structure/table,
 /obj/item/food/icecreamsandwich,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "Ie" = (
 /obj/machinery/door/airlock/external/glass/ruin,
@@ -1779,7 +1779,7 @@
 /obj/structure/table,
 /obj/item/food/waffles,
 /obj/machinery/microwave,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "Il" = (
 /obj/effect/turf_decal/siding/white{
@@ -1795,7 +1795,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "ID" = (
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -1823,7 +1823,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "Jd" = (
 /turf/closed/indestructible/reinforced,
@@ -1839,7 +1839,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "JG" = (
 /obj/machinery/door/poddoor/preopen,
@@ -1855,7 +1855,7 @@
 "JP" = (
 /obj/structure/table,
 /obj/item/storage/medkit/fire,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 4
 	},
 /area/ruin/outpost31/medical)
@@ -1886,7 +1886,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "Lx" = (
 /turf/closed/wall,
@@ -1937,11 +1937,11 @@
 /obj/machinery/door/airlock/public/glass,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/autoname,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "Mn" = (
 /obj/structure/chair/stool/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "Ms" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2028,7 +2028,7 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/turf_decal/siding/white,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "Nw" = (
 /obj/structure/reagent_dispensers/plumbed,
@@ -2060,7 +2060,7 @@
 /area/ruin/outpost31)
 "Oo" = (
 /obj/structure/chair/stool/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "Or" = (
 /obj/structure/table/wood,
@@ -2164,7 +2164,7 @@
 /area/ruin/outpost31/radiomap)
 "Qy" = (
 /obj/effect/turf_decal/siding/white,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "QA" = (
 /obj/effect/turf_decal/tile/brown/opposingcorners,
@@ -2187,13 +2187,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/any_snack_or_beverage,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "Rm" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "RD" = (
 /obj/effect/turf_decal/stripes/line{
@@ -2241,7 +2241,7 @@
 /turf/open/floor/plating,
 /area/ruin/outpost31/kennel)
 "Sg" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/outpost31)
 "Sm" = (
 /obj/effect/turf_decal/siding/wood{
@@ -2270,7 +2270,7 @@
 /obj/machinery/defibrillator_mount/loaded{
 	pixel_y = -32
 	},
-/turf/open/floor/iron/white/smooth_half,
+/turf/open/floor/iron/white/half,
 /area/ruin/outpost31/medical)
 "SJ" = (
 /obj/machinery/door/airlock/external/glass/ruin,
@@ -2329,7 +2329,7 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "Tx" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -2385,7 +2385,7 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/burnt_floor,
 /obj/effect/turf_decal/siding/white,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "UI" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2494,7 +2494,7 @@
 "Wu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/bin,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/kitchendiningroom)
 "Wy" = (
 /obj/machinery/light/small/dim/directional/north,
@@ -2528,7 +2528,7 @@
 "Xk" = (
 /obj/machinery/light_switch/directional/north,
 /obj/structure/tank_holder/extinguisher,
-/turf/open/floor/iron/white/smooth_corner{
+/turf/open/floor/iron/white/corner{
 	dir = 8
 	},
 /area/ruin/outpost31/medical)
@@ -2551,7 +2551,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 6
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "XN" = (
 /turf/open/floor/wood,
@@ -2572,7 +2572,7 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 5
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/outpost31/recroom)
 "Yk" = (
 /obj/effect/turf_decal/siding/blue{

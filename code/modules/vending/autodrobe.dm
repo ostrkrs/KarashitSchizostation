@@ -6,7 +6,6 @@ GLOBAL_LIST_INIT(autodrobe_costumes_items, list(
 	/obj/item/clothing/suit/bio_suit/plaguedoctorsuit = 3,
 	/obj/item/clothing/head/bio_hood/plague = 3,
 	/obj/item/clothing/mask/gas/plaguedoctor = 3,
-	/obj/item/clothing/under/rank/medical/doctor/nurse = 3,
 	/obj/item/clothing/suit/toggle/owlwings = 1,
 	/obj/item/clothing/under/costume/owl = 1,
 	/obj/item/clothing/mask/gas/owl_mask = 1,

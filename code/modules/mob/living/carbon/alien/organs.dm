@@ -2,89 +2,89 @@
 	icon_state = "acid"
 	food_reagents = list(/datum/reagent/consumable/nutriment/organ_tissue = 5, /datum/reagent/toxin/acid = 10)
 
-/obj/item/organ/alien/plasmavessel
-	name = "plasma vessel"
-	icon_state = "plasma"
+/obj/item/organ/alien/phoron_vessel
+	name = "phoron vessel"
+	icon_state = "phoron"
 	w_class = WEIGHT_CLASS_NORMAL
 	zone = BODY_ZONE_CHEST
-	slot = ORGAN_SLOT_XENO_PLASMAVESSEL
-	food_reagents = list(/datum/reagent/consumable/nutriment/organ_tissue = 5, /datum/reagent/toxin/plasma = 10)
+	slot = ORGAN_SLOT_XENO_PHORONVESSEL
+	food_reagents = list(/datum/reagent/consumable/nutriment/organ_tissue = 5, /datum/reagent/toxin/phoron = 10)
 	actions_types = list(
 		/datum/action/cooldown/alien/make_structure/plant_weeds,
 		/datum/action/cooldown/alien/transfer,
 	)
 
-	/// The current amount of stored plasma.
-	var/stored_plasma = 100
-	/// The maximum plasma this organ can store.
-	var/max_plasma = 250
+	/// The current amount of stored phoron.
+	var/stored_phoron = 100
+	/// The maximum phoron this organ can store.
+	var/max_phoron = 250
 	/// The rate this organ regenerates its owners health at per damage type per second.
 	var/heal_rate = 2.5
-	/// The rate this organ regenerates plasma at per second.
-	var/plasma_rate = 5
+	/// The rate this organ regenerates phoron at per second.
+	var/phoron_rate = 5
 
-/obj/item/organ/alien/plasmavessel/large
-	name = "large plasma vessel"
-	icon_state = "plasma_large"
+/obj/item/organ/alien/phoron_vessel/large
+	name = "large phoron vessel"
+	icon_state = "phoron_large"
 	w_class = WEIGHT_CLASS_BULKY
-	stored_plasma = 200
-	max_plasma = 500
-	plasma_rate = 7.5
+	stored_phoron = 200
+	max_phoron = 500
+	phoron_rate = 7.5
 
-/obj/item/organ/alien/plasmavessel/large/queen
-	plasma_rate = 10
+/obj/item/organ/alien/phoron_vessel/large/queen
+	phoron_rate = 10
 
-/obj/item/organ/alien/plasmavessel/small
-	name = "small plasma vessel"
-	icon_state = "plasma_small"
+/obj/item/organ/alien/phoron_vessel/small
+	name = "small phoron vessel"
+	icon_state = "phoron_small"
 	w_class = WEIGHT_CLASS_SMALL
-	stored_plasma = 100
-	max_plasma = 150
-	plasma_rate = 2.5
+	stored_phoron = 100
+	max_phoron = 150
+	phoron_rate = 2.5
 
-/obj/item/organ/alien/plasmavessel/small/tiny
-	name = "tiny plasma vessel"
-	icon_state = "plasma_tiny"
+/obj/item/organ/alien/phoron_vessel/small/tiny
+	name = "tiny phoron vessel"
+	icon_state = "phoron_tiny"
 	w_class = WEIGHT_CLASS_TINY
-	max_plasma = 100
+	max_phoron = 100
 	actions_types = list(/datum/action/cooldown/alien/transfer)
 
-/obj/item/organ/alien/plasmavessel/on_life(seconds_per_tick, times_fired)
+/obj/item/organ/alien/phoron_vessel/on_life(seconds_per_tick, times_fired)
 	var/delta_time = DELTA_WORLD_TIME(SSmobs)
 	//Instantly healing to max health in a single tick would be silly. If it takes 8 seconds to fire, then something's fucked.
 	var/delta_time_capped = min(delta_time, 8)
-	//If there are alien weeds on the ground then heal if needed or give some plasma
+	//If there are alien weeds on the ground then heal if needed or give some phoron
 	if(locate(/obj/structure/alien/weeds) in owner.loc)
 		if(owner.health >= owner.maxHealth)
-			owner.adjustPlasma(plasma_rate * delta_time)
+			owner.adjustPhoron(phoron_rate * delta_time)
 		else
 			var/heal_amt = heal_rate
 			if(!isalien(owner))
 				heal_amt *= 0.2
-			owner.adjustPlasma(0.5 * plasma_rate * delta_time_capped)
+			owner.adjustPhoron(0.5 * phoron_rate * delta_time_capped)
 			owner.adjustBruteLoss(-heal_amt * delta_time_capped)
 			owner.adjustFireLoss(-heal_amt * delta_time_capped)
 			owner.adjustOxyLoss(-heal_amt * delta_time_capped)
 	else
-		owner.adjustPlasma(0.1 * plasma_rate * delta_time)
+		owner.adjustPhoron(0.1 * phoron_rate * delta_time)
 
-/obj/item/organ/alien/plasmavessel/on_mob_insert(mob/living/carbon/organ_owner)
+/obj/item/organ/alien/phoron_vessel/on_mob_insert(mob/living/carbon/organ_owner)
 	. = ..()
 	if(isalien(organ_owner))
 		var/mob/living/carbon/alien/target_alien = organ_owner
-		target_alien.updatePlasmaDisplay()
+		target_alien.updatePhoronDisplay()
 	RegisterSignal(organ_owner, COMSIG_MOB_GET_STATUS_TAB_ITEMS, PROC_REF(get_status_tab_item))
 
-/obj/item/organ/alien/plasmavessel/on_mob_remove(mob/living/carbon/organ_owner)
+/obj/item/organ/alien/phoron_vessel/on_mob_remove(mob/living/carbon/organ_owner)
 	. = ..()
 	if(isalien(organ_owner))
 		var/mob/living/carbon/alien/organ_owner_alien = organ_owner
-		organ_owner_alien.updatePlasmaDisplay()
+		organ_owner_alien.updatePhoronDisplay()
 	UnregisterSignal(organ_owner, COMSIG_MOB_GET_STATUS_TAB_ITEMS)
 
-/obj/item/organ/alien/plasmavessel/proc/get_status_tab_item(mob/living/carbon/source, list/items)
+/obj/item/organ/alien/phoron_vessel/proc/get_status_tab_item(mob/living/carbon/source, list/items)
 	SIGNAL_HANDLER
-	items += "Plasma Stored: [stored_plasma]/[max_plasma]"
+	items += "Phoron Stored: [stored_phoron]/[max_phoron]"
 
 #define QUEEN_DEATH_DEBUFF_DURATION 2400
 

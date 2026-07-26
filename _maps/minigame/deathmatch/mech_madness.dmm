@@ -410,7 +410,7 @@
 /turf/open/floor/light/colour_cycle/dancefloor_b,
 /area/deathmatch)
 "cm" = (
-/obj/item/gun/ballistic/revolver/c38/detective,
+/obj/item/gun/ballistic/revolver/c38/criminalist,
 /obj/structure/table/wood,
 /turf/open/floor/sepia,
 /area/deathmatch)

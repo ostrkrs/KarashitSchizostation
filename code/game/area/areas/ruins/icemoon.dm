@@ -31,14 +31,14 @@
 	name = "\improper Listening Post Maintenance"
 	sound_environment = SOUND_AREA_TUNNEL_ENCLOSED
 
-/area/ruin/plasma_facility/commons
-	name = "\improper Abandoned Plasma Facility Commons"
+/area/ruin/phoron_facility/commons
+	name = "\improper Abandoned Phoron Facility Commons"
 	sound_environment = SOUND_AREA_STANDARD_STATION
 	mood_bonus = -5
 	mood_message = "I feel like I am being watched..."
 
-/area/ruin/plasma_facility/operations
-	name = "\improper Abandoned Plasma Facility Operations"
+/area/ruin/phoron_facility/operations
+	name = "\improper Abandoned Phoron Facility Operations"
 	sound_environment = SOUND_AREA_SMALL_ENCLOSED
 	mood_bonus = -5
 	mood_message = "I feel like I am being watched..."

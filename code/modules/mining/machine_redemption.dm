@@ -27,7 +27,7 @@
 	var/static/list/ore_values = list(
 		/datum/material/iron = 1,
 		/datum/material/glass = 1,
-		/datum/material/plasma = 15,
+		/datum/material/phoron = 15,
 		/datum/material/silver = 16,
 		/datum/material/gold = 18,
 		/datum/material/titanium = 30,
@@ -406,7 +406,7 @@
 			ore_output.pixel_w = 32
 
 	ore_input.color = COLOR_MODERATE_BLUE
-	ore_output.color = COLOR_SECURITY_RED
+	ore_output.color = COLOR_LAW_RED
 	var/mutable_appearance/light_in = emissive_appearance(ore_input.icon, ore_input.icon_state, offset_spokesman = src, alpha = ore_input.alpha)
 	light_in.pixel_z = ore_input.pixel_z
 	light_in.pixel_w = ore_input.pixel_w

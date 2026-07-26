@@ -22,6 +22,9 @@
 	interaction_flags_click = NEED_DEXTERITY
 	throw_range = 1
 	throw_speed = 1
+	sound_vary = TRUE
+	pickup_sound = SFX_GENERIC_DEVICE_PICKUP
+	drop_sound = SFX_GENERIC_DEVICE_DROP
 	///How long it takes to print on time each mode, ordered NORMAL, FAST, HONK
 	var/list/time_list = list(5 SECONDS, 1 SECONDS, 0.1 SECONDS)
 	///Which print time mode we're on.
@@ -29,7 +32,7 @@
 	///determines the sound that plays when printing a report
 	var/print_sound_mode = INSPECTOR_PRINT_SOUND_MODE_NORMAL
 	///Power cell used to power the scanner. Paths g
-	var/obj/item/stock_parts/power_store/cell = /obj/item/stock_parts/power_store/cell/crap
+	var/obj/item/stock_parts/power_store/cell = /obj/item/stock_parts/power_store/cell/device
 	///Cell cover status
 	var/cell_cover_open = FALSE
 	///Energy used per print.

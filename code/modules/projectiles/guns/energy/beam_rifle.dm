@@ -49,7 +49,6 @@
 	armor_flag = ENERGY
 	range = 150
 	jitter = 20 SECONDS
-	hitscan = TRUE
 	tracer_type = /obj/effect/projectile/tracer/tracer/beam_rifle
 
 /obj/projectile/beam/event_horizon/on_hit(atom/target, blocked, pierce_hit)

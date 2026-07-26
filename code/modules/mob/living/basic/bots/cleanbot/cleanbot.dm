@@ -45,15 +45,15 @@
 		JOB_CAPTAIN = "Cpt.",
 
 		JOB_HEAD_OF_PERSONNEL = "Lt.",
-		JOB_LAWYER = "Esq.",
+		JOB_INTERNAL_AFFAIRS_AGENT = "Esq.",
 
 		JOB_HEAD_OF_SECURITY = "Maj.",
 		JOB_WARDEN = "Sgt.",
-		JOB_DETECTIVE = "Det.",
+		JOB_CRIMINALIST = "Det.",
 		JOB_SECURITY_OFFICER = "Officer",
 
 		JOB_CHIEF_ENGINEER = "Chief Engineer",
-		JOB_STATION_ENGINEER = "Engineer",
+		JOB_DECK_ENGINEER = "Engineer",
 		JOB_ATMOSPHERIC_TECHNICIAN = "Technician",
 
 		JOB_CHIEF_MEDICAL_OFFICER = "C.M.O.",

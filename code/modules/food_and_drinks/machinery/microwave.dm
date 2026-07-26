@@ -944,12 +944,12 @@
 /obj/machinery/microwave/engineering/Initialize(mapload)
 	. = ..()
 	if(mapload)
-		cell = new /obj/item/stock_parts/power_store/cell/upgraded/plus
+		cell = new /obj/item/stock_parts/power_store/cell/device/upgraded
 	update_appearance()
 
 /obj/machinery/microwave/engineering/cell_included/Initialize(mapload)
 	. = ..()
-	cell = new /obj/item/stock_parts/power_store/cell/upgraded/plus
+	cell = new /obj/item/stock_parts/power_store/cell/device/upgraded
 	update_appearance()
 
 #undef MICROWAVE_NORMAL

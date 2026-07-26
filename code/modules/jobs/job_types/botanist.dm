@@ -1,16 +1,16 @@
 /datum/job/botanist
 	title = JOB_BOTANIST
+	alt_titles = JOB_BOTANIST_ALT_TITLES
 	description = "Grow plants for the cook, for medicine, and for recreation."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_STEWARD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "BOTANIST"
 
 	outfit = /datum/outfit/job/botanist
-	plasmaman_outfit = /datum/outfit/plasmaman/botany
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -36,7 +36,7 @@
 		/obj/item/food/monkeycube/bee = 2
 	)
 
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 	rpg_title = "Gardener"
 
 /datum/outfit/job/botanist

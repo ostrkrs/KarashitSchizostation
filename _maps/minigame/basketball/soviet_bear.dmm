@@ -14,12 +14,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
-"aE" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict6"
-	},
-/turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
 "be" = (
 /obj/machinery/power/shuttle_engine/heater,
 /obj/effect/turf_decal/stripes/full,
@@ -48,12 +42,6 @@
 	},
 /turf/open/floor/engine,
 /area/centcom/basketball)
-"dC" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict7"
-	},
-/turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
 "dJ" = (
 /obj/structure/training_machine,
 /obj/item/target/syndicate,
@@ -71,12 +59,6 @@
 	pixel_x = 8
 	},
 /turf/open/floor/iron/dark,
-/area/centcom/basketball)
-"dS" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict9"
-	},
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "eS" = (
 /turf/open/floor/catwalk_floor,
@@ -114,12 +96,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/centcom/basketball)
-"hf" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict15"
-	},
-/turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
 "hB" = (
 /obj/effect/decal/cleanable/blood/oil/slippery,
 /turf/open/floor/plating,
@@ -135,12 +111,6 @@
 /area/centcom/basketball)
 "kc" = (
 /turf/open/floor/engine,
-/area/centcom/basketball)
-"kp" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict5"
-	},
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "ku" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -203,12 +173,6 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
-"oh" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict14"
-	},
-/turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
 "oR" = (
 /obj/item/weldingtool/fueled,
 /obj/effect/decal/cleanable/dirt,
@@ -223,12 +187,6 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/centcom/basketball)
-"qU" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict10"
-	},
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "rS" = (
 /obj/structure/stairs/east,
@@ -263,21 +221,9 @@
 "tX" = (
 /turf/open/floor/iron,
 /area/centcom/basketball)
-"uH" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict16"
-	},
-/turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
 "uR" = (
 /obj/structure/chair/stool/directional/south,
 /turf/open/floor/plating,
-/area/centcom/basketball)
-"uW" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict4"
-	},
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "vo" = (
 /obj/effect/turf_decal/stripes/line{
@@ -306,9 +252,6 @@
 /turf/open/floor/iron/large,
 /area/centcom/basketball)
 "zr" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict13"
-	},
 /obj/effect/landmark/basketball/team_spawn/referee,
 /turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
@@ -421,13 +364,6 @@
 "Hu" = (
 /turf/closed/indestructible/reinforced,
 /area/centcom/basketball)
-"HH" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict1"
-	},
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
 "Ic" = (
 /obj/structure/stairs/east,
 /turf/open/floor/iron,
@@ -449,12 +385,6 @@
 	},
 /obj/item/wrench,
 /turf/open/floor/plating,
-/area/centcom/basketball)
-"KH" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict3"
-	},
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "Lu" = (
 /obj/structure/table/reinforced/titaniumglass,
@@ -479,12 +409,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/broken_bottle,
 /turf/open/floor/plating,
-/area/centcom/basketball)
-"LU" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict12"
-	},
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "LV" = (
 /obj/item/kirbyplants/organic/plant22,
@@ -563,16 +487,6 @@
 /obj/effect/turf_decal/stripes/full,
 /turf/open/floor/plating,
 /area/centcom/basketball)
-"Qh" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict11"
-	},
-/turf/open/floor/iron/dark/small,
-/area/centcom/basketball)
-"Qi" = (
-/obj/structure/sign/poster/contraband/soviet_propaganda,
-/turf/closed/indestructible/fakeglass,
-/area/centcom/basketball)
 "Ql" = (
 /obj/item/kirbyplants/organic/plant22,
 /obj/structure/sign/poster/random/directional/east,
@@ -585,9 +499,7 @@
 "Rl" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/training_machine,
-/obj/item/reagent_containers/cup/glass/trophy/gold_cup{
-	pixel_x = 0
-	},
+/obj/item/reagent_containers/cup/glass/trophy/gold_cup,
 /turf/open/floor/engine,
 /area/centcom/basketball)
 "Se" = (
@@ -607,15 +519,6 @@
 	icon_state = "cyka"
 	},
 /turf/open/floor/plating,
-/area/centcom/basketball)
-"Uq" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict2"
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
-	},
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "Uv" = (
 /obj/effect/turf_decal/stripes/corner,
@@ -642,9 +545,6 @@
 /obj/effect/turf_decal/stripes/full,
 /turf/open/floor/plating,
 /area/centcom/basketball)
-"WM" = (
-/turf/closed/indestructible/reinforced/titanium,
-/area/centcom/basketball)
 "Xm" = (
 /obj/structure/table,
 /obj/item/clothing/glasses/sunglasses{
@@ -668,13 +568,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /turf/open/floor/plating,
-/area/centcom/basketball)
-"YH" = (
-/obj/effect/turf_decal/plaque{
-	icon_state = "derelict8"
-	},
-/obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/iron/dark/small,
 /area/centcom/basketball)
 "YX" = (
 /obj/effect/turf_decal/tile/dark_red/full,
@@ -727,7 +620,6 @@ tO
 tO
 Tc
 Tc
-WM
 Tc
 Tc
 Tc
@@ -737,7 +629,8 @@ Tc
 Tc
 Tc
 Tc
-WM
+Tc
+Tc
 Tc
 Tc
 tO
@@ -899,8 +792,8 @@ IA
 mp
 mp
 Cw
-dS
-HH
+eU
+nW
 tO
 tO
 JW
@@ -917,7 +810,7 @@ Cw
 ZM
 Cw
 ly
-Qi
+Cw
 mp
 mp
 mp
@@ -926,8 +819,8 @@ mp
 mp
 mp
 fB
-qU
-Uq
+eU
+ku
 Gh
 Gh
 my
@@ -953,8 +846,8 @@ mp
 mp
 mp
 Cw
-Qh
-KH
+eU
+eU
 be
 be
 uR
@@ -980,8 +873,8 @@ mp
 mp
 mp
 Cw
-LU
-uW
+eU
+eU
 mV
 LI
 tU
@@ -1008,7 +901,7 @@ mp
 mp
 Cw
 zr
-kp
+eU
 rU
 wZ
 eS
@@ -1034,8 +927,8 @@ mp
 mp
 mp
 Cw
-oh
-aE
+eU
+eU
 PW
 LS
 su
@@ -1061,8 +954,8 @@ mp
 mp
 mp
 Cw
-hf
-dC
+eU
+eU
 oR
 hB
 uR
@@ -1079,7 +972,7 @@ sb
 Cw
 Nt
 Cw
-Qi
+Cw
 mp
 mp
 mp
@@ -1088,8 +981,8 @@ mp
 mp
 mp
 fB
-uH
-YH
+eU
+Uv
 WK
 WK
 zZ
@@ -1267,7 +1160,6 @@ tO
 tO
 Tc
 Tc
-WM
 Tc
 Tc
 Tc
@@ -1277,7 +1169,8 @@ Tc
 Tc
 Tc
 Tc
-WM
+Tc
+Tc
 Tc
 Tc
 tO

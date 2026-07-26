@@ -108,7 +108,7 @@ GLOBAL_LIST_EMPTY(exodrone_launchers)
 		last_pad = WEAKREF(pad)
 		drone_log("Launched from [pad.name] and set course for [target_site.display_name()]")
 	else
-		drone_log("Launched from [location.display_name()] and set course for [target_site ? target_site.display_name() : station_name()]")
+		drone_log("Launched from [location.display_name()] and set course for [target_site ? target_site.display_name() : ship_name()]")
 	set_status(EXODRONE_TRAVEL)
 	moveToNullspace()
 	var/distance_to_travel = target_site ? target_site.distance : location.distance //If we're going home distance is distance of our current location
@@ -130,10 +130,10 @@ GLOBAL_LIST_EMPTY(exodrone_launchers)
 		var/obj/machinery/exodrone_launcher = find_landing_pad()
 		if(exodrone_launcher)
 			forceMove(get_turf(exodrone_launcher))
-			drone_log("Arrived at [station_name()]. Landing at [exodrone_launcher].")
+			drone_log("Arrived at [ship_name()]. Landing at [exodrone_launcher].")
 		else
 			var/turf/drop_zone = drop_somewhere_on_station()
-			drone_log("Arrived at [station_name()]. Emergency landing at [drop_zone.loc.name].")
+			drone_log("Arrived at [ship_name()]. Emergency landing at [drop_zone.loc.name].")
 		set_status(EXODRONE_IDLE)
 
 /obj/item/exodrone/proc/set_status(new_status)

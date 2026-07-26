@@ -185,7 +185,7 @@
 
 /obj/item/storage/backpack/science
 	name = "science backpack"
-	desc = "A specially designed backpack. It's fire resistant and smells vaguely of plasma."
+	desc = "A specially designed backpack. It's fire resistant and smells vaguely of phoron."
 	icon_state = "backpack-science"
 	inhand_icon_state = "scipack"
 

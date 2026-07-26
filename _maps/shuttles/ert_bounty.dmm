@@ -54,7 +54,7 @@
 /turf/open/floor/pod/light,
 /area/shuttle/hunter)
 "h" = (
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/hunter)
 "i" = (
@@ -68,7 +68,7 @@
 /area/shuttle/hunter)
 "k" = (
 /obj/structure/table/reinforced,
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_y = 6;
 	pixel_x = -5
 	},

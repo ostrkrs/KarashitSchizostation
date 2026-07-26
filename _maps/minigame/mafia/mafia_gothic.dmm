@@ -62,7 +62,7 @@
 	max_integrity = 99999;
 	name = "Station Night Shutters"
 	},
-/obj/effect/spawner/structure/window/reinforced/plasma/plastitanium,
+/obj/effect/spawner/structure/window/reinforced/phoron/plastitanium,
 /turf/open/space/basic,
 /area/centcom/mafia)
 "q" = (
@@ -136,7 +136,7 @@
 	},
 /area/centcom/mafia)
 "U" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/centcom/mafia)
 "X" = (
 /turf/open/floor/iron/chapel{

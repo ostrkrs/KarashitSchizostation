@@ -17,7 +17,7 @@
 		/obj/item/grenade/chem_grenade/adv_release = 5,
 		/obj/item/reagent_containers/cup/glass/bottle/holywater = 1
 	)
-	product_slogans = "It's not pyromania if you're getting paid!;You smell that? Plasma, son. Nothing else in the world smells like that.;I love the smell of Plasma in the morning."
+	product_slogans = "It's not pyromania if you're getting paid!;You smell that? Phoron, son. Nothing else in the world smells like that.;I love the smell of Phoron in the morning."
 	resistance_flags = FIRE_PROOF
 	refill_canister = /obj/item/vending_refill/syndichem
 

@@ -4,11 +4,13 @@
 		keep the crew alive, be prepared to do anything and everything or die \
 		horribly trying."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
-	department_head = list("CentCom")
-	faction = FACTION_STATION
+	department_head = list("Solstice Reach HQ")
+	default_radio_channel = RADIO_CHANNEL_COMMAND
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "Nanotrasen officials and Space Law"
+	supervisors = "the Solstice Reach Headquarters and Space Law"
+	required_character_age = 38
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 180
@@ -18,7 +20,6 @@
 	config_tag = "CAPTAIN"
 
 	outfit = /datum/outfit/job/captain
-	plasmaman_outfit = /datum/outfit/plasmaman/captain
 
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
@@ -27,7 +28,7 @@
 	liver_traits = list(TRAIT_ROYAL_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_CAPTAIN
-	department_for_prefs = /datum/job_department/captain
+	department_for_prefs = /datum/job_department/command
 	departments_list = list(
 		/datum/job_department/command,
 	)
@@ -43,7 +44,7 @@
 		/obj/item/skillchip/sabrage = 5,
 	)
 
-	job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS | JOB_ANTAG_PROTECTED
+	job_flags = SHIP_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS | JOB_ANTAG_PROTECTED
 	rpg_title = "Star Duke"
 
 	human_authority = JOB_AUTHORITY_HUMANS_ONLY
@@ -72,7 +73,6 @@
 		)
 	belt = /obj/item/modular_computer/pda/heads/captain
 	ears = /obj/item/radio/headset/heads/captain/alt
-	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/captain
 	head = /obj/item/clothing/head/hats/caphat
 	shoes = /obj/item/clothing/shoes/laceup
@@ -85,7 +85,7 @@
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
+		/obj/item/gun/energy/laser,
 		/obj/item/stamp/head/captain,
 		)
 	implants = list(/obj/item/implant/mindshield)

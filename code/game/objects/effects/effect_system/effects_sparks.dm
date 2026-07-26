@@ -57,7 +57,7 @@
 */
 /obj/effect/particle_effect/sparks/proc/affect_location(turf/location, just_initialized = FALSE)
 	location.hotspot_expose(1000,100)
-	SEND_SIGNAL(location, COMSIG_ATOM_TOUCHED_SPARKS, src) // for plasma floors; other floor types only have to worry about the mysterious HAZARDOUS sparks
+	SEND_SIGNAL(location, COMSIG_ATOM_TOUCHED_SPARKS, src) // for phoron floors; other floor types only have to worry about the mysterious HAZARDOUS sparks
 	if(just_initialized)
 		for(var/atom/movable/singed in location)
 			sparks_touched(src, singed)

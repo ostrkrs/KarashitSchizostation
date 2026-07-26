@@ -1,5 +1,3 @@
-//If you're looking for spawners like ash walker eggs, check ghost_role_spawners.dm
-
 ///Wizard tower item
 /obj/item/disk/design_disk/knight_gear
 	name = "Magic Disk of Smithing"

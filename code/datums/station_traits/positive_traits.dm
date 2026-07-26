@@ -6,7 +6,7 @@
 	trait_type = STATION_TRAIT_POSITIVE
 	weight = 1
 	show_in_report = TRUE
-	report_message = "Your station has won the grand prize of the annual station charity event. Free snacks will be delivered to the bar every now and then."
+	report_message = "Your ship has won the grand prize of the annual ship  charity event. Free snacks will be delivered to the bar every now and then."
 	trait_processes = TRUE
 	COOLDOWN_DECLARE(party_cooldown)
 
@@ -46,7 +46,7 @@
 	trait_type = STATION_TRAIT_POSITIVE
 	weight = 5
 	show_in_report = TRUE
-	report_message = "Your station has been selected for a special grant. Some extra funds has been made available to your cargo department."
+	report_message = "Your ship has been selected for a special grant. Some extra funds has been made available to your cargo department."
 
 /datum/station_trait/galactic_grant/on_round_start()
 	var/datum/bank_account/cargo_bank = SSeconomy.get_dep_account(ACCOUNT_CAR)
@@ -228,11 +228,11 @@
 	department_name = "Medical"
 
 /datum/station_trait/deathrattle_all
-	name = "Deathrattled Station"
+	name = "Deathrattled Crew"
 	trait_type = STATION_TRAIT_POSITIVE
 	show_in_report = TRUE
 	weight = 1
-	report_message = "All members of the station have received an implant to notify each other if one of them dies. This should help improve job-safety!"
+	report_message = "All crewmembers have received an implant to notify each other if one of them dies. This should help improve job-safety!"
 	var/datum/deathrattle_group/deathrattle_group
 
 /datum/station_trait/deathrattle_all/New()
@@ -247,72 +247,6 @@
 	var/obj/item/implant/deathrattle/implant_to_give = new()
 	deathrattle_group.register(implant_to_give)
 	implant_to_give.implant(spawned, spawned, TRUE, TRUE)
-
-/datum/station_trait/cybernetic_revolution
-	name = "Cybernetic Revolution"
-	trait_type = STATION_TRAIT_POSITIVE
-	show_in_report = TRUE
-	weight = 1
-	report_message = "The new trends in cybernetics have come to the station! Everyone has some form of cybernetic implant."
-	trait_to_give = STATION_TRAIT_CYBERNETIC_REVOLUTION
-	/// List of all job types with the cybernetics they should receive.
-	var/static/list/job_to_cybernetic = list(
-		/datum/job/assistant = /obj/item/organ/heart/cybernetic, //real cardiac
-		/datum/job/atmospheric_technician = /obj/item/organ/cyberimp/mouth/breathing_tube,
-		/datum/job/bartender = /obj/item/organ/liver/cybernetic/tier3,
-		/datum/job/bitrunner = /obj/item/organ/eyes/robotic/thermals,
-		/datum/job/botanist = /obj/item/organ/cyberimp/chest/nutriment,
-		/datum/job/captain = /obj/item/organ/heart/cybernetic/tier3,
-		/datum/job/cargo_technician = /obj/item/organ/stomach/cybernetic/tier2,
-		/datum/job/chaplain = /obj/item/organ/cyberimp/brain/anti_drop,
-		/datum/job/chemist = /obj/item/organ/liver/cybernetic/tier2,
-		/datum/job/chief_engineer = /obj/item/organ/cyberimp/chest/thrusters,
-		/datum/job/chief_medical_officer = /obj/item/organ/cyberimp/chest/reviver,
-		/datum/job/clown = /obj/item/organ/cyberimp/brain/anti_stun, //HONK!
-		/datum/job/cook = /obj/item/organ/cyberimp/chest/nutriment/plus,
-		/datum/job/coroner = /obj/item/organ/tongue/bone, //hes got a bone to pick with you
-		/datum/job/curator = /obj/item/organ/cyberimp/brain/connector,
-		/datum/job/detective = /obj/item/organ/lungs/cybernetic/tier3,
-		/datum/job/doctor = /obj/item/organ/cyberimp/arm/toolkit/surgery,
-		/datum/job/geneticist = /obj/item/organ/fly, //we don't care about implants, we have cancer.
-		/datum/job/head_of_personnel = /obj/item/organ/eyes/robotic,
-		/datum/job/head_of_security = /obj/item/organ/eyes/robotic/thermals,
-		/datum/job/human_ai = /obj/item/organ/brain/cybernetic,
-		/datum/job/janitor = /obj/item/organ/eyes/robotic/xray,
-		/datum/job/lawyer = /obj/item/organ/heart/cybernetic/tier2,
-		/datum/job/mime = /obj/item/organ/tongue/robot, //...
-		/datum/job/paramedic = /obj/item/organ/cyberimp/eyes/hud/medical,
-		/datum/job/prisoner = /obj/item/organ/eyes/robotic/shield,
-		/datum/job/psychologist = /obj/item/organ/ears/cybernetic/whisper,
-		/datum/job/pun_pun = /obj/item/organ/cyberimp/arm/strongarm,
-		/datum/job/quartermaster = /obj/item/organ/stomach/cybernetic/tier3,
-		/datum/job/research_director = /obj/item/organ/cyberimp/bci,
-		/datum/job/roboticist = /obj/item/organ/cyberimp/eyes/hud/diagnostic,
-		/datum/job/scientist = /obj/item/organ/ears/cybernetic,
-		/datum/job/security_officer = /obj/item/organ/cyberimp/arm/toolkit/flash,
-		/datum/job/shaft_miner = /obj/item/organ/monster_core/rush_gland,
-		/datum/job/station_engineer = /obj/item/organ/cyberimp/arm/toolkit/toolset,
-		/datum/job/warden = /obj/item/organ/cyberimp/eyes/hud/security,
-	)
-
-/datum/station_trait/cybernetic_revolution/New()
-	. = ..()
-	RegisterSignal(SSdcs, COMSIG_GLOB_JOB_AFTER_SPAWN, PROC_REF(on_job_after_spawn))
-
-/datum/station_trait/cybernetic_revolution/proc/on_job_after_spawn(datum/source, datum/job/job, mob/living/spawned, client/player_client)
-	SIGNAL_HANDLER
-
-	var/datum/quirk/body_purist/body_purist = /datum/quirk/body_purist
-	if(initial(body_purist.name) in player_client.prefs.all_quirks)
-		return
-	var/cybernetic_type = job_to_cybernetic[job.type]
-	if(!cybernetic_type)
-		if(isAI(spawned))
-			var/mob/living/silicon/ai/ai = spawned
-			ai.eyeobj.relay_speech = TRUE //surveillance upgrade. the ai gets cybernetics too.
-		return
-	var/obj/item/organ/cybernetic = new cybernetic_type()
-	cybernetic.Insert(spawned, special = TRUE, movement_flags = DELETE_IF_REPLACED)
 
 /datum/station_trait/luxury_escape_pods
 	name = "Luxury Escape Pods"
@@ -350,14 +284,6 @@
 	show_in_report = TRUE
 	trait_flags = STATION_TRAIT_PLANETARY
 	trait_to_give = STATION_TRAIT_BRIGHT_DAY
-
-/datum/station_trait/shuttle_sale
-	name = "Shuttle Firesale"
-	report_message = "The Nanotrasen Emergency Dispatch team is celebrating a record number of shuttle calls in the recent quarter. Some of your emergency shuttle options have been discounted!"
-	trait_type = STATION_TRAIT_POSITIVE
-	weight = 4
-	trait_to_give = STATION_TRAIT_SHUTTLE_SALE
-	show_in_report = TRUE
 
 /datum/station_trait/missing_wallet
 	name = "Misplaced Wallet"
@@ -398,18 +324,3 @@
 	assignment = "Repair Technician"
 	trim_state = "trim_stationengineer"
 	department_color = COLOR_ASSISTANT_GRAY
-
-/// Spawns assistants with some gear, either gimmicky or functional. Maybe, one day, it will inspire an assistant to do something productive or fun
-/datum/station_trait/assistant_gimmicks
-	name = "Geared Assistants Pilot"
-	report_message = "The Nanotrassen Assistant Affairs division is performing a pilot to see if different assistant equipment helps improve productivity!"
-	trait_type = STATION_TRAIT_POSITIVE
-	weight = 3
-	trait_to_give = STATION_TRAIT_ASSISTANT_GIMMICKS
-	show_in_report = TRUE
-	blacklist = list(/datum/station_trait/colored_assistants)
-
-/datum/station_trait/random_event_weight_modifier/assistant_gimmicks/get_pulsar_message()
-	var/advisory_string = "Advisory Level: <b>Grey Sky</b></center><BR>"
-	advisory_string += "Your sector's advisory level is Grey Sky. Our sensors detect abnormal activity among the assistants assigned to your station. We advise you to closely monitor the Tool Storage, Bridge, Tech Storage, and Brig for gathering crowds or petty thievery."
-	return advisory_string

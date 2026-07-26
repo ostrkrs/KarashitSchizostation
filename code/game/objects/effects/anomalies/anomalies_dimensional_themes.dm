@@ -256,11 +256,11 @@
 		/obj/structure/platform = list(/obj/structure/platform/gold = 1),
 	)
 
-/datum/dimension_theme/plasma
-	name = "Plasma"
+/datum/dimension_theme/phoron
+	name = "Phoron"
 	icon = 'icons/obj/clothing/masks.dmi'
 	icon_state = "gas_alt"
-	material = /datum/material/plasma
+	material = /datum/material/phoron
 
 /datum/dimension_theme/clown
 	name = "Clown"
@@ -365,16 +365,6 @@
 	)
 	random_spawns = list(/mob/living/basic/mining/goldgrub)
 	random_spawn_chance = 1
-
-/datum/dimension_theme/space
-	name = "Space"
-	icon = 'icons/effects/effects.dmi'
-	icon_state = "blessed"
-	window_colour = COLOR_BLACK
-	material = /datum/material/glass
-	replace_floors = list(/turf/open/floor/fakespace = 1)
-	replace_walls = /turf/closed/wall/rock/porous
-	replace_objs = list(/obj/machinery/door/airlock = list(/obj/machinery/door/airlock/external/glass/ruin = 1))
 
 /datum/dimension_theme/glass
 	name = "Glass"

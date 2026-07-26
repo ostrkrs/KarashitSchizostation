@@ -12,6 +12,7 @@
 	VAR_FINAL/obj/item/circuitboard/machine/circuit
 	/// The current (de/con)struction state of the frame
 	var/state = FRAME_STATE_EMPTY
+	var/buildstackamount = 5
 
 /obj/structure/frame/Initialize(mapload)
 	. = ..()
@@ -29,7 +30,7 @@
 
 /obj/structure/frame/atom_deconstruct(disassembled = TRUE)
 	var/atom/movable/drop_loc = drop_location()
-	new /obj/item/stack/sheet/iron(drop_loc, 5)
+	new /obj/item/stack/sheet/iron(drop_loc, buildstackamount)
 	circuit?.forceMove(drop_loc)
 
 /// Called when circuit has been set to a new board

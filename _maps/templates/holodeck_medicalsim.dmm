@@ -3,7 +3,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/dropper,
 /obj/item/assembly/igniter,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -17,14 +17,14 @@
 /obj/item/clothing/mask/surgical,
 /obj/structure/window/spawner/directional/east,
 /obj/item/surgicaldrill,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/turf_decal/tile/red/anticorner,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "ba" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -34,7 +34,7 @@
 "bw" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -44,7 +44,7 @@
 "cI" = (
 /obj/structure/closet/crate/freezer/blood,
 /obj/structure/window/spawner/directional/east,
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -53,13 +53,13 @@
 /area/template_noop)
 "cO" = (
 /obj/machinery/stasis,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "cR" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -69,7 +69,7 @@
 "cT" = (
 /obj/structure/table,
 /obj/item/folder/white,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -80,7 +80,7 @@
 /obj/structure/table,
 /obj/item/flashlight/lamp,
 /obj/structure/window/spawner/directional/west,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -91,7 +91,7 @@
 /obj/structure/window/spawner/directional/north,
 /obj/structure/table/glass,
 /obj/item/storage/box/masks,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -100,7 +100,7 @@
 /area/template_noop)
 "gp" = (
 /obj/structure/window/spawner/directional/south,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -109,7 +109,7 @@
 /area/template_noop)
 "gr" = (
 /obj/structure/table/glass,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /obj/item/stack/medical/gauze,
@@ -126,7 +126,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -137,7 +137,7 @@
 /obj/structure/window/spawner/directional/north,
 /obj/structure/table/glass,
 /obj/item/healthanalyzer,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -145,13 +145,13 @@
 	},
 /area/template_noop)
 "jr" = (
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "kJ" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -161,7 +161,7 @@
 "lU" = (
 /obj/structure/table,
 /obj/item/storage/box/syringes,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -170,7 +170,7 @@
 /area/template_noop)
 "nj" = (
 /obj/structure/window/spawner/directional/north,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -180,7 +180,7 @@
 "pe" = (
 /obj/structure/window/spawner/directional/south,
 /obj/item/kirbyplants/organic/plant10,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
@@ -189,13 +189,13 @@
 /obj/machinery/computer/operating{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "qw" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -204,7 +204,7 @@
 /area/template_noop)
 "qV" = (
 /obj/machinery/shower/directional/east,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -214,7 +214,7 @@
 "qX" = (
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -228,7 +228,7 @@
 /area/template_noop)
 "uj" = (
 /obj/machinery/chem_master,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -237,7 +237,7 @@
 /area/template_noop)
 "wu" = (
 /obj/structure/filingcabinet,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -247,7 +247,7 @@
 "wV" = (
 /obj/structure/window/spawner/directional/north,
 /obj/structure/bed/medical/emergency,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -256,14 +256,14 @@
 /area/template_noop)
 "xf" = (
 /obj/structure/table/optable,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "xz" = (
 /obj/structure/closet/wardrobe/white,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -275,7 +275,7 @@
 /obj/machinery/computer/crew{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -286,7 +286,7 @@
 /obj/structure/table,
 /obj/item/paper_bin,
 /obj/item/pen,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -295,7 +295,7 @@
 /area/template_noop)
 "Ac" = (
 /obj/machinery/washing_machine,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -306,14 +306,14 @@
 /obj/machinery/computer/operating{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "BI" = (
 /obj/structure/window/spawner/directional/east,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -322,7 +322,7 @@
 /area/template_noop)
 "BS" = (
 /obj/machinery/computer/pandemic,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
+/obj/effect/turf_decal/tile/yellow/anticorner,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
@@ -330,7 +330,7 @@
 "BT" = (
 /obj/structure/bed,
 /obj/item/bedsheet/medical,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -339,7 +339,7 @@
 /area/template_noop)
 "Ck" = (
 /obj/machinery/shower/directional/east,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -350,7 +350,7 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -360,7 +360,7 @@
 "CQ" = (
 /obj/structure/table,
 /obj/item/clothing/neck/stethoscope,
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -368,7 +368,7 @@
 	},
 /area/template_noop)
 "DT" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -376,7 +376,7 @@
 	},
 /area/template_noop)
 "DW" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -388,7 +388,7 @@
 /obj/item/reagent_containers/cup/beaker,
 /obj/item/reagent_containers/cup/beaker,
 /obj/item/reagent_containers/cup/beaker,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -396,7 +396,7 @@
 	},
 /area/template_noop)
 "Ga" = (
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -405,27 +405,27 @@
 /area/template_noop)
 "GN" = (
 /obj/machinery/door/window/left/directional/south,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "Ig" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "Ke" = (
 /obj/structure/window/spawner/directional/south,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "KD" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -433,7 +433,7 @@
 	},
 /area/template_noop)
 "Lt" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -443,7 +443,7 @@
 "LW" = (
 /obj/structure/window/spawner/directional/north,
 /obj/item/kirbyplants/organic/plant21,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -451,7 +451,7 @@
 	},
 /area/template_noop)
 "NV" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -461,7 +461,7 @@
 "PJ" = (
 /obj/structure/window/spawner/directional/north,
 /obj/item/kirbyplants/organic/plant8,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -469,7 +469,7 @@
 	},
 /area/template_noop)
 "Qu" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /obj/structure/closet/crate/freezer/organ,
@@ -482,7 +482,7 @@
 /obj/machinery/computer/records/medical{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/opposingcorners{
+/obj/effect/turf_decal/tile/light_blue/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -492,7 +492,7 @@
 "RJ" = (
 /obj/structure/table,
 /obj/item/reagent_containers/cup/beaker/large,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -505,7 +505,7 @@
 	pixel_y = 10
 	},
 /obj/item/saw,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -513,7 +513,7 @@
 	},
 /area/template_noop)
 "Sj" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
@@ -522,13 +522,13 @@
 /obj/machinery/stasis{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
 /area/template_noop)
 "TI" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 4
 	},
 /turf/open/floor/holofloor{
@@ -539,7 +539,7 @@
 /obj/structure/bodycontainer/morgue{
 	dir = 2
 	},
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 1
 	},
 /turf/open/floor/holofloor{
@@ -547,7 +547,7 @@
 	},
 /area/template_noop)
 "Xm" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/holofloor{
@@ -556,7 +556,7 @@
 /area/template_noop)
 "XM" = (
 /obj/structure/window/spawner/directional/south,
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/holofloor{
 	icon_state = "white"
 	},
@@ -568,7 +568,7 @@
 /obj/item/hemostat,
 /obj/item/bonesetter,
 /obj/item/stack/medical/bone_gel,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor{

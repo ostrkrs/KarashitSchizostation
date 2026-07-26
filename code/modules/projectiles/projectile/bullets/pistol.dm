@@ -1,11 +1,11 @@
-// 9mm (Makarov and Stechkin APS)
+// 8mm
 
-/obj/projectile/bullet/c9mm
-	name = "9mm bullet"
+/obj/projectile/bullet/c8mm
+	name = "8mm bullet"
 	damage = 30
-	embed_type = /datum/embedding/bullet/c9mm
+	embed_type = /datum/embedding/bullet/c8mm
 
-/datum/embedding/bullet/c9mm
+/datum/embedding/bullet/c8mm
 	embed_chance = 15
 	fall_chance = 3
 	jostle_chance = 4
@@ -15,20 +15,20 @@
 	jostle_pain_mult = 6
 	rip_time = 1 SECONDS
 
-/obj/projectile/bullet/c9mm/ap
-	name = "9mm armor-piercing bullet"
+/obj/projectile/bullet/c8mm/ap
+	name = "8mm armor-piercing bullet"
 	damage = 27
 	armour_penetration = 40
 	embed_type = null
 	shrapnel_type = null
 
-/obj/projectile/bullet/c9mm/hp
-	name = "9mm hollow-point bullet"
+/obj/projectile/bullet/c8mm/hp
+	name = "8mm hollow-point bullet"
 	damage = 40
 	weak_against_armour = TRUE
 
-/obj/projectile/bullet/incendiary/c9mm
-	name = "9mm incendiary bullet"
+/obj/projectile/bullet/incendiary/c8mm
+	name = "8mm incendiary bullet"
 	damage = 15
 	fire_stacks = 2
 
@@ -73,6 +73,13 @@
 	impact_light_range = 1
 	impact_light_color_override = LIGHT_COLOR_DIM_YELLOW
 
+/obj/projectile/bullet/c10mm/rubber
+	name = "10mm rubber bullet"
+	damage = 5
+	stamina = 25
+	sharpness = NONE
+	weak_against_armour = TRUE
+
 // .160 Smart
 
 /obj/projectile/bullet/c160smart
@@ -80,7 +87,7 @@
 	icon_state = "smartgun"
 	damage = 10
 	embed_type = /datum/embedding/bullet/c160smart
-	speed = 0.5
+	speed = 2
 	homing_turn_speed = 5
 	homing_inaccuracy_min = 4
 	homing_inaccuracy_max = 10

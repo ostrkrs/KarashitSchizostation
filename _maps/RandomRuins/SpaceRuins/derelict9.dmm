@@ -26,7 +26,6 @@
 /turf/template_noop,
 /area/template_noop)
 "m" = (
-/turf/closed/wall/rock,
 /area/ruin/space)
 "q" = (
 /obj/effect/mob_spawn/corpse/human/pirate/melee/space,
@@ -78,7 +77,7 @@
 /area/ruin/space/has_grav)
 "I" = (
 /obj/machinery/porta_turret/syndicate/pod,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space)
 "J" = (
 /obj/item/gun/energy/laser/musket,

@@ -114,14 +114,14 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/cat_man)
 "aw" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "ax" = (
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -169,16 +169,16 @@
 /area/ruin/space/has_grav/powered/cat_man)
 "aF" = (
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "aG" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "aH" = (
 /obj/machinery/firealarm/directional/south,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "aI" = (
@@ -255,7 +255,7 @@
 /area/ruin/space/has_grav/powered/cat_man)
 "aU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -263,13 +263,13 @@
 "aV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "aW" = (
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
+/obj/effect/turf_decal/tile/neutral/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -310,21 +310,17 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "be" = (
-/obj/item/organ/tail/cat,
 /obj/effect/decal/cleanable/blood/old,
-/turf/open/floor/iron/white/corner,
-/area/ruin/space/has_grav/powered/cat_man)
-"bf" = (
-/turf/open/floor/iron/white/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bg" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/powered/cat_man)
 "bh" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -401,7 +397,7 @@
 /obj/structure/table/reinforced,
 /obj/item/clothing/gloves/latex,
 /obj/item/surgical_drapes,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/powered/cat_man)
@@ -430,17 +426,12 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bA" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/powered/cat_man)
 "bB" = (
-/turf/open/floor/iron/white/side{
-	dir = 1
-	},
-/area/ruin/space/has_grav/powered/cat_man)
-"bC" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/ruin/space/has_grav/powered/cat_man)
@@ -454,18 +445,18 @@
 /area/ruin/space/has_grav/powered/cat_man)
 "bE" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bG" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
+/obj/effect/turf_decal/tile/neutral/anticorner,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bH" = (
@@ -489,28 +480,28 @@
 /area/ruin/space/has_grav/powered/cat_man)
 "bJ" = (
 /obj/structure/closet/crate/bin,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bK" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bL" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bM" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -559,7 +550,7 @@
 /area/ruin/space/has_grav/powered/cat_man)
 "bT" = (
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/powered/cat_man)
 "bU" = (
@@ -780,18 +771,6 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/powered/cat_man)
-"cx" = (
-/obj/structure/closet/crate/freezer{
-	name = "cat tails"
-	},
-/obj/item/organ/tail/cat,
-/obj/item/organ/tail/cat,
-/obj/item/organ/tail/cat,
-/obj/item/organ/tail/cat,
-/obj/item/organ/tail/cat,
-/obj/item/organ/tail/cat,
-/turf/open/floor/iron/freezer,
-/area/ruin/space/has_grav/powered/cat_man)
 "jc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/outlet_injector/monitored,
@@ -823,12 +802,6 @@
 	},
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/powered/cat_man)
-"uy" = (
-/mob/living/basic/cat_butcherer,
-/turf/open/floor/iron/white/side{
-	dir = 4
-	},
-/area/ruin/space/has_grav/powered/cat_man)
 "yx" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/carpet,
@@ -846,7 +819,7 @@
 	atmos_chambers = list("catstation1"="Chamber 1","catstation2"="Chamber 2","catstation3"="Chamber 3","catstation4"="Chamber 4","catstation5"="Chamber 5","catstation6"="Chamber 6","catstationsupply"="Supply");
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -1326,7 +1299,7 @@ ay
 aP
 aw
 be
-uy
+bA
 bA
 aG
 aP
@@ -1357,7 +1330,7 @@ az
 aJ
 aP
 aw
-bf
+aI
 bt
 bB
 bE
@@ -1370,7 +1343,7 @@ cf
 cj
 ad
 cu
-cx
+ct
 ad
 ab
 ab
@@ -1391,7 +1364,7 @@ aQ
 aU
 bg
 bu
-bC
+bB
 aG
 bO
 aK

@@ -3,7 +3,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/powered/icemoon_phone_booth)
 "c" = (
 /turf/open/floor/plating/snowed/smoothed/icemoon,
@@ -17,7 +17,7 @@
 	all_products_free = 0
 	},
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{
@@ -34,7 +34,7 @@
 "v" = (
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /obj/item/gps/spaceruin{
@@ -50,12 +50,12 @@
 /obj/machinery/door/window/left/directional/north,
 /obj/machinery/door/window/left/directional/south,
 /obj/effect/turf_decal/weather/snow/corner,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 1
 	},
 /area/ruin/powered/icemoon_phone_booth)
 "J" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/tank/air/layer4{
@@ -75,12 +75,12 @@
 /obj/machinery/holopad,
 /obj/machinery/airalarm/directional/north,
 /obj/effect/mapping_helpers/airalarm/all_access,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/powered/icemoon_phone_booth)
 "V" = (
 /obj/machinery/vending/coffee,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/snow/corner{

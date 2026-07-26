@@ -47,7 +47,6 @@
 			else
 				new_record.price = premium_custom_price || extra_price
 
-		new_record.age_restricted = initial(temp.age_restricted)
 		new_record.colorable = !!(initial(temp.greyscale_config) && initial(temp.greyscale_colors) && (initial(temp.flags_1) & IS_PLAYER_COLORABLE_1))
 		new_record.category = product_to_category[typepath]
 		recordlist += new_record
@@ -162,7 +161,7 @@
 		flick(icon_deny, src)
 		return
 	if(!all_products_free)
-		// Here we do additional handing ahead of the payment component's logic, such as age restrictions and additional logging
+		// Here we do additional handing ahead of the payment component's logic, such as additional logging
 		var/obj/item/card/id/card_used
 		var/mob/living/living_user
 		if(isliving(user))
@@ -170,19 +169,6 @@
 			card_used = living_user.get_idcard(TRUE)
 		if(QDELETED(card_used))
 			speak("You do not possess an ID to purchase [item_record.name].")
-			return
-
-		if(age_restrictions && item_record.age_restricted && (!card_used.registered_age || card_used.registered_age < AGE_MINOR))
-			speak("You are not of legal age to purchase [item_record.name].")
-			if(!(user in GLOB.narcd_underages))
-				aas_config_announce(/datum/aas_config_entry/vendomat_age_control, list(
-					"PERSON" = usr.name,
-					"LOCATION" = get_area_name(src),
-					"VENDOR" = name,
-					"PRODUCT" = item_record.name
-				), src, list(RADIO_CHANNEL_SECURITY))
-				GLOB.narcd_underages += user
-			flick(icon_deny, src)
 			return
 
 		if(!proceed_payment(card_used, living_user, item_record, price_to_use, params["discountless"]))

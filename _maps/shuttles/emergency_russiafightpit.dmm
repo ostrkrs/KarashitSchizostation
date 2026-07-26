@@ -152,10 +152,10 @@
 /turf/open/floor/engine,
 /area/shuttle/escape)
 "aD" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/shuttle/escape)
 "aE" = (
-/turf/closed/wall/r_wall/rust,
+/turf/closed/wall/reinforced/rust,
 /area/shuttle/escape)
 "aG" = (
 /obj/effect/decal/cleanable/dirt,

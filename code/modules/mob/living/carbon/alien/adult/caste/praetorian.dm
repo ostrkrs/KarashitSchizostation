@@ -14,7 +14,7 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver/alien,
 		ORGAN_SLOT_EARS = /obj/item/organ/ears,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach/alien,
-		ORGAN_SLOT_XENO_PLASMAVESSEL = /obj/item/organ/alien/plasmavessel/large,
+		ORGAN_SLOT_XENO_PHORONVESSEL = /obj/item/organ/alien/phoron_vessel/large,
 		ORGAN_SLOT_XENO_RESINSPINNER = /obj/item/organ/alien/resinspinner,
 		ORGAN_SLOT_XENO_ACIDGLAND = /obj/item/organ/alien/acid,
 		ORGAN_SLOT_XENO_NEUROTOXINGLAND = /obj/item/organ/alien/neurotoxin,
@@ -37,7 +37,7 @@
 	name = "Evolve"
 	desc = "Produce an internal egg sac capable of spawning children. Only one queen can exist at a time."
 	button_icon_state = "alien_evolve_praetorian"
-	plasma_cost = 500
+	phoron_cost = 500
 
 /datum/action/cooldown/alien/evolve_to_queen/IsAvailable(feedback = FALSE)
 	. = ..()

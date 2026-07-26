@@ -35,7 +35,6 @@
 #define WIRE_ACTIVATE "Activate"
 #define WIRE_LAUNCH "Launch"
 #define WIRE_SAFETIES "Safeties"
-#define WIRE_AGELIMIT "Age Limit"
 #define WIRE_AI "AI Connection"
 #define WIRE_ALARM "Alarm"
 #define WIRE_AVOIDANCE "Avoidance"

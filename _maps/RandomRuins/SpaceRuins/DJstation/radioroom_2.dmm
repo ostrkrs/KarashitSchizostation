@@ -19,22 +19,22 @@
 /obj/structure/chair/office{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 1
 	},
 /area/ruin/space/djstation)
 "g" = (
 /obj/machinery/duct,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 8
 	},
 /area/ruin/space/djstation)
 "j" = (
 /obj/machinery/duct,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron/dark,
 /area/ruin/space/djstation)
 "k" = (
@@ -45,7 +45,7 @@
 /area/ruin/space/djstation)
 "l" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -73,13 +73,13 @@
 /obj/item/paper/fluff/ruins/djstation,
 /obj/item/pen/fountain,
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/space/djstation)
 "r" = (
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/smooth_edge,
+/turf/open/floor/iron/dark/edge,
 /area/ruin/space/djstation)
 "s" = (
 /obj/effect/spawner/random/structure/grille,
@@ -97,22 +97,22 @@
 	name = "Pirate Radio Listening Channel"
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/space/djstation)
 "v" = (
 /obj/structure/lattice,
 /turf/template_noop,
 /area/space/nearstation)
 "w" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 4
 	},
 /area/ruin/space/djstation)
 "x" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/dark,
@@ -124,10 +124,10 @@
 /turf/open/floor/wood/parquet,
 /area/ruin/space/djstation)
 "z" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 8
 	},
 /area/ruin/space/djstation)
@@ -135,20 +135,20 @@
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /obj/machinery/duct,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron/dark,
 /area/ruin/space/djstation)
 "F" = (
 /obj/item/clipboard,
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/space/djstation)
 "I" = (
 /obj/structure/chair/office,
-/turf/open/floor/iron/dark/smooth_edge,
+/turf/open/floor/iron/dark/edge,
 /area/ruin/space/djstation)
 "K" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
@@ -157,16 +157,16 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/smooth_edge,
+/turf/open/floor/iron/dark/edge,
 /area/ruin/space/djstation)
 "M" = (
 /obj/modular_map_connector,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/dark,
 /area/ruin/space/djstation)
 "N" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -176,7 +176,7 @@
 /obj/effect/turf_decal/tile/green{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 1
 	},
 /area/ruin/space/djstation)
@@ -190,7 +190,7 @@
 	pixel_y = -2
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/space/djstation)
 "R" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -200,7 +200,7 @@
 /obj/structure/cable,
 /obj/machinery/duct,
 /obj/effect/turf_decal/tile/green,
-/turf/open/floor/iron/dark/smooth_edge{
+/turf/open/floor/iron/dark/edge{
 	dir = 1
 	},
 /area/ruin/space/djstation)
@@ -213,21 +213,21 @@
 	name = "Pirate Radio Broadcast Channel"
 	},
 /obj/structure/table/reinforced/plastitaniumglass,
-/turf/open/floor/iron/dark/smooth_large,
+/turf/open/floor/iron/dark/large,
 /area/ruin/space/djstation)
 "W" = (
 /turf/open/floor/wood/parquet,
 /area/ruin/space/djstation)
 "Y" = (
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/djstation)
 "Z" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/dark,

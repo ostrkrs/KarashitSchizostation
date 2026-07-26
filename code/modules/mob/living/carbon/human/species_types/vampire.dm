@@ -13,6 +13,7 @@
 		TRAIT_DRINKS_BLOOD,
 		TRAIT_NOBREATH,
 		TRAIT_NOHUNGER,
+		TRAIT_NOTHIRST,
 		TRAIT_USES_SKINTONES,
 		TRAIT_NO_MIRROR_REFLECTION,
 	)
@@ -138,7 +139,7 @@
 
 	return to_add
 
-// There isn't a "Minor Undead" biotype, so we have to explain it in an override (see: dullahans)
+// There isn't a "Minor Undead" biotype, so we have to explain it in an override
 /datum/species/human/vampire/create_pref_biotypes_perks()
 	var/list/to_add = list()
 

@@ -53,7 +53,7 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver/alien,
 		ORGAN_SLOT_EARS = /obj/item/organ/ears,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach/alien,
-		ORGAN_SLOT_XENO_PLASMAVESSEL = /obj/item/organ/alien/plasmavessel/large/queen,
+		ORGAN_SLOT_XENO_PHORONVESSEL = /obj/item/organ/alien/phoron_vessel/large/queen,
 		ORGAN_SLOT_XENO_RESINSPINNER = /obj/item/organ/alien/resinspinner,
 		ORGAN_SLOT_XENO_ACIDGLAND = /obj/item/organ/alien/acid,
 		ORGAN_SLOT_XENO_NEUROTOXINGLAND = /obj/item/organ/alien/neurotoxin,
@@ -79,7 +79,7 @@
 	name = "Lay Egg"
 	desc = "Lay an egg to produce huggers to impregnate prey with."
 	button_icon_state = "alien_egg"
-	plasma_cost = 75
+	phoron_cost = 75
 	made_structure_type = /obj/structure/alien/egg
 
 /datum/action/cooldown/alien/make_structure/lay_egg/Activate(atom/target)
@@ -91,15 +91,15 @@
 	name = "Create Royal Parasite"
 	desc = "Produce a royal parasite to grant one of your children the honor of being your Praetorian."
 	button_icon_state = "alien_queen_promote"
-	/// The promotion only takes plasma when completed, not on activation.
-	var/promotion_plasma_cost = 500
+	/// The promotion only takes phoron when completed, not on activation.
+	var/promotion_phoron_cost = 500
 
 /datum/action/cooldown/alien/promote/set_statpanel_format()
 	. = ..()
 	if(!islist(.))
 		return
 
-	.[PANEL_DISPLAY_STATUS] = "PLASMA - [promotion_plasma_cost]"
+	.[PANEL_DISPLAY_STATUS] = "PHORON - [promotion_phoron_cost]"
 
 /datum/action/cooldown/alien/promote/IsAvailable(feedback = FALSE)
 	. = ..()
@@ -107,7 +107,7 @@
 		return FALSE
 
 	var/mob/living/carbon/carbon_owner = owner
-	if(carbon_owner.getPlasma() < promotion_plasma_cost)
+	if(carbon_owner.getPhoron() < promotion_phoron_cost)
 		return FALSE
 
 	if(get_alien_type(/mob/living/carbon/alien/adult/royal/praetorian))
@@ -162,7 +162,7 @@
 	if(to_promote.stat != CONSCIOUS || !to_promote.mind || !to_promote.key)
 		return
 
-	queen.adjustPlasma(-promotion.promotion_plasma_cost)
+	queen.adjustPhoron(-promotion.promotion_phoron_cost)
 
 	to_chat(queen, span_noticealien("You have promoted [to_promote] to a Praetorian!"))
 	to_promote.visible_message(

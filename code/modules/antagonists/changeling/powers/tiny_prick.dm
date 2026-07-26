@@ -77,7 +77,7 @@
 	VAR_FINAL/datum/changeling_profile/selected_dna
 	/// Duration of the sting
 	var/sting_duration = 8 MINUTES
-	/// Set this to false via VV to allow golem, plasmaman, or monkey changelings to turn other people into golems, plasmamen, or monkeys
+	/// Set this to false via VV to allow golem or monkey changelings to turn other people into golems or monkeys
 	var/verify_valid_species = TRUE
 
 /datum/action/changeling/sting/transformation/Grant(mob/grant_to)

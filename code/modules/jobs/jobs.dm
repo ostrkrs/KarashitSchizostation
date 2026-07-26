@@ -4,7 +4,6 @@ GLOBAL_LIST_INIT(exp_specialmap, list(
 	EXP_TYPE_ANTAG = list(),
 	EXP_TYPE_SPECIAL = list(
 		ROLE_LIFEBRINGER,
-		ROLE_ASHWALKER,
 		ROLE_EXILE,
 		ROLE_SERVANT_GOLEM,
 		ROLE_FREE_GOLEM,
@@ -65,7 +64,7 @@ GLOBAL_PROTECT(exp_specialmap)
 	job = ce_expand.Replace(job, "chief engineer")
 	job = qm_expand.Replace(job, "quartermaster")
 	job = sec_expand.Replace(job, "security officer")
-	job = engi_expand.Replace(job, "station engineer")
+	job = engi_expand.Replace(job, "deck engineer")
 	job = atmos_expand.Replace(job, "atmospheric technician")
 	job = doc_expand.Replace(job, "medical doctor")
 	job = mine_expand.Replace(job, "shaft miner")

@@ -5,7 +5,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	filename = "plexagoncore"
 	filedesc = "Plexagon HR Core"
 	downloader_category = PROGRAM_CATEGORY_EQUIPMENT
-	program_open_overlay = "id"
+	program_open_overlay = "crew"
 	extended_desc = "Program for viewing and changing job slot availability."
 	download_access = list(ACCESS_COMMAND)
 	program_flags = PROGRAM_ON_NTNET_STORE | PROGRAM_REQUIRES_NTNET

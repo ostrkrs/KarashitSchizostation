@@ -23,7 +23,7 @@
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "ai" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "ak" = (
@@ -183,9 +183,9 @@
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
-/obj/item/flashlight,
-/obj/item/flashlight,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
+/obj/item/flashlight/cell_powered,
+/obj/item/flashlight/cell_powered,
 /obj/item/shovel,
 /obj/item/pickaxe/drill,
 /obj/item/pickaxe/drill,
@@ -262,16 +262,16 @@
 	dir = 6
 	},
 /obj/machinery/firealarm/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bc" = (
 /obj/structure/sink/kitchen/directional/south,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bd" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "be" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -327,28 +327,28 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bu" = (
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bw" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bx" = (
 /obj/structure/table,
 /obj/machinery/microwave,
 /obj/structure/extinguisher_cabinet/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bz" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -371,7 +371,7 @@
 /area/ruin/space/has_grav/deepstorage/hydroponics)
 "bE" = (
 /obj/machinery/griddle,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bG" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -384,18 +384,18 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/storage)
 "bI" = (
-/obj/structure/closet/secure_closet/freezer/fridge/open,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
 /obj/item/storage/box/ingredients/wildcard,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bK" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 6
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bL" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -403,7 +403,7 @@
 	},
 /obj/structure/cable,
 /obj/machinery/vending/dinnerware,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bM" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -417,14 +417,14 @@
 	},
 /obj/item/reagent_containers/condiment/peppermill,
 /obj/item/knife/kitchen,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bN" = (
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/effect/mapping_helpers/apc/away_general_access,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/apc/cell_5k,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "bP" = (
 /obj/machinery/firealarm/directional/west,
@@ -591,7 +591,7 @@
 /area/ruin/space/has_grav/deepstorage)
 "cM" = (
 /obj/machinery/shower/directional/east,
-/obj/structure/window/reinforced/plasma/spawner/directional/south,
+/obj/structure/window/reinforced/phoron/spawner/directional/south,
 /turf/open/floor/iron/freezer,
 /area/ruin/space/has_grav/deepstorage)
 "cN" = (
@@ -864,8 +864,8 @@
 "eP" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/drone,
-/obj/item/flashlight,
-/obj/item/flashlight,
+/obj/item/flashlight/cell_powered,
+/obj/item/flashlight/cell_powered,
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
 /obj/item/flashlight/flare,
@@ -1570,7 +1570,7 @@
 	},
 /obj/machinery/oven/range,
 /obj/machinery/light/directional/north,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "qq" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4{
@@ -1598,7 +1598,7 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/airalarm/away_general_access,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "qO" = (
 /obj/structure/closet/cardboard,
@@ -1662,12 +1662,12 @@
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/deepstorage/pharmacy)
 "tx" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/all_access,
+/obj/structure/closet/kitchen/all_access,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
 /obj/item/storage/box/drinkingglasses,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "tG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1874,7 +1874,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 5
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "yI" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
@@ -2374,7 +2374,7 @@
 /obj/structure/table,
 /obj/item/storage/box/cups,
 /obj/item/reagent_containers/cup/beaker,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "Mx" = (
 /obj/machinery/iv_drip,
@@ -2407,7 +2407,7 @@
 "Ny" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "Ob" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
@@ -2472,7 +2472,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2{
 	dir = 5
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/deepstorage/kitchen)
 "Re" = (
 /obj/effect/decal/cleanable/dirt,

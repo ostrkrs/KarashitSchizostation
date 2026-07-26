@@ -1,11 +1,11 @@
 // Closets for specific jobs
 
-/obj/structure/closet/gmcloset
-	name = "formal closet"
-	desc = "It's a storage unit for formal clothing."
+/obj/structure/closet/barcloset
+	name = "bartender's closet"
+	desc = "It's a storage unit for bartender's clothing."
 	icon_door = "bar_wardrobe"
 
-/obj/structure/closet/gmcloset/PopulateContents()
+/obj/structure/closet/barcloset/PopulateContents()
 	..()
 	var/static/items_inside = list(
 		/obj/item/clothing/head/hats/tophat = 2,
@@ -15,13 +15,12 @@
 		/obj/item/clothing/head/soft/black = 2,
 		/obj/item/clothing/shoes/sneakers/black = 2,
 		/obj/item/rag = 2,
-		/obj/item/storage/box/beanbag = 1,
-		/obj/item/clothing/suit/armor/vest/alt = 1,
 		/obj/item/circuitboard/machine/dish_drive = 1,
 		/obj/item/clothing/glasses/sunglasses/reagent = 1,
 		/obj/item/clothing/neck/petcollar = 1,
-		/obj/item/storage/belt/bandolier = 1)
+		)
 	generate_items_inside(items_inside,src)
+
 
 /obj/structure/closet/chefcloset
 	name = "chef's closet"
@@ -44,6 +43,21 @@
 		/obj/item/rag = 1)
 	generate_items_inside(items_inside,src)
 
+/obj/structure/closet/kitchen
+	name = "kitchen closet"
+	desc = "It's a storage unit for non-perishable ingredients and condiments."
+
+/obj/structure/closet/kitchen/PopulateContents()
+	..()
+	var/static/items_inside = list(
+		/obj/item/reagent_containers/condiment/flour = 3,
+		/obj/item/reagent_containers/condiment/cornmeal = 1,
+		/obj/item/reagent_containers/condiment/korta_flour = 1,
+		/obj/item/reagent_containers/condiment/rice = 1,
+		/obj/item/reagent_containers/condiment/sugar =1)
+	generate_items_inside(items_inside,src)
+
+
 /obj/structure/closet/jcloset
 	name = "custodial closet"
 	desc = "It's a storage unit for janitorial clothes and gear."
@@ -56,7 +70,7 @@
 	new /obj/item/clothing/head/soft/purple(src)
 	new /obj/item/paint/paint_remover(src)
 	new /obj/item/melee/flyswatter(src)
-	new /obj/item/flashlight(src)
+	new /obj/item/flashlight/cell_powered(src)
 	for(var/i in 1 to 3)
 		new /obj/item/clothing/suit/caution(src)
 	new /obj/item/holosign_creator(src)
@@ -76,24 +90,25 @@
 /obj/structure/closet/lawcloset/PopulateContents()
 	..()
 	new /obj/item/clothing/under/suit/black(src)
-	new /obj/item/clothing/under/rank/civilian/lawyer/beige(src)
-	new /obj/item/clothing/under/rank/civilian/lawyer/black(src)
-	new /obj/item/clothing/under/rank/civilian/lawyer/red(src)
-	new /obj/item/clothing/under/rank/civilian/lawyer/bluesuit(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/beige(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/black(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/red(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/bluesuit(src)
 	new /obj/item/clothing/neck/tie/blue(src)
-	new /obj/item/clothing/suit/toggle/lawyer(src)
-	new /obj/item/clothing/under/rank/civilian/lawyer/purpsuit(src)
-	new /obj/item/clothing/suit/toggle/lawyer/purple(src)
+	new /obj/item/clothing/suit/toggle/iaa(src)
+	new /obj/item/clothing/under/rank/civilian/iaa/purpsuit(src)
+	new /obj/item/clothing/suit/toggle/iaa/purple(src)
 	new /obj/item/clothing/under/costume/buttondown/slacks/service(src)
 	new /obj/item/clothing/neck/tie/black(src)
-	new /obj/item/clothing/suit/toggle/lawyer/black(src)
+	new /obj/item/clothing/suit/toggle/iaa/black(src)
 	new /obj/item/clothing/shoes/laceup(src)
 	new /obj/item/clothing/shoes/laceup(src)
 
 /obj/structure/closet/lawcloset/populate_contents_immediate()
 	. = ..()
-	new /obj/item/clothing/accessory/lawyers_badge(src)
-	new /obj/item/clothing/accessory/lawyers_badge(src)
+	new /obj/item/clothing/accessory/iaa_badge(src)
+	new /obj/item/clothing/accessory/iaa_badge(src)
+
 
 /obj/structure/closet/wardrobe/chaplain_black
 	name = "chapel wardrobe"
@@ -113,6 +128,7 @@
 	new /obj/item/storage/fancy/candle_box(src)
 	new /obj/item/storage/fancy/candle_box(src)
 	return
+
 
 /obj/structure/closet/wardrobe/red
 	name = "security wardrobe"
@@ -134,6 +150,7 @@
 	generate_items_inside(items_inside,src)
 	return
 
+
 /obj/structure/closet/wardrobe/cargotech
 	name = "cargo wardrobe"
 	icon_door = "cargo_wardrobe"
@@ -147,6 +164,7 @@
 		/obj/item/clothing/head/soft = 3,
 		/obj/item/radio/headset/headset_cargo = 1)
 	generate_items_inside(items_inside,src)
+
 
 /obj/structure/closet/wardrobe/atmospherics_yellow
 	name = "atmospherics wardrobe"
@@ -165,6 +183,7 @@
 		/obj/item/clothing/shoes/sneakers/black = 3)
 	generate_items_inside(items_inside,src)
 	return
+
 
 /obj/structure/closet/wardrobe/engineering_yellow
 	name = "engineering wardrobe"
@@ -185,28 +204,26 @@
 	generate_items_inside(items_inside,src)
 	return
 
+
 /obj/structure/closet/wardrobe/white/medical
 	name = "medical doctor's wardrobe"
 	icon_door = "med_wardrobe"
 
 /obj/structure/closet/wardrobe/white/medical/PopulateContents()
 	var/static/items_inside = list(
-		/obj/item/clothing/accessory/pocketprotector = 1,
 		/obj/item/storage/backpack/duffelbag/med = 1,
 		/obj/item/storage/backpack/medic = 1,
 		/obj/item/storage/backpack/satchel/med = 1,
 		/obj/item/storage/backpack/messenger/med = 1,
 		/obj/item/clothing/suit/hooded/wintercoat/medical = 1,
-		/obj/item/clothing/head/costume/nursehat = 1,
 		/obj/item/clothing/under/rank/medical/scrubs/blue = 1,
 		/obj/item/clothing/under/rank/medical/scrubs/green = 1,
 		/obj/item/clothing/under/rank/medical/scrubs/purple = 1,
-		/obj/item/clothing/suit/toggle/labcoat = 3,
-		/obj/item/clothing/suit/toggle/labcoat/paramedic = 3,
-		/obj/item/clothing/shoes/sneakers/white = 3,
-		/obj/item/clothing/head/soft/paramedic = 3)
+		/obj/item/clothing/suit/toggle/labcoat/medical = 3,
+		/obj/item/clothing/shoes/sneakers/white = 3)
 	generate_items_inside(items_inside,src)
 	return
+
 
 /obj/structure/closet/wardrobe/robotics_black
 	name = "robotics wardrobe"
@@ -280,6 +297,7 @@
 	generate_items_inside(items_inside,src)
 	return
 
+
 /obj/structure/closet/wardrobe/science_white
 	name = "science wardrobe"
 	icon_door = "sci_wardrobe"
@@ -299,6 +317,7 @@
 	generate_items_inside(items_inside,src)
 	return
 
+
 /obj/structure/closet/wardrobe/botanist
 	name = "botanist wardrobe"
 	icon_door = "botany_wardrobe"
@@ -315,6 +334,7 @@
 		/obj/item/clothing/under/rank/civilian/hydroponics = 3,
 		/obj/item/clothing/mask/bandana/striped/botany = 3)
 	generate_items_inside(items_inside,src)
+
 
 /obj/structure/closet/wardrobe/curator
 	name = "treasure hunting wardrobe"

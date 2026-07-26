@@ -117,9 +117,9 @@
 
 /obj/item/gun/energy/plasmacutter/attackby(obj/item/I, mob/user)
 	var/charge_multiplier = 0 //2 = Refined stack, 1 = Ore
-	if(istype(I, /obj/item/stack/sheet/mineral/plasma))
+	if(istype(I, /obj/item/stack/sheet/mineral/phoron))
 		charge_multiplier = 2
-	if(istype(I, /obj/item/stack/ore/plasma))
+	if(istype(I, /obj/item/stack/ore/phoron))
 		charge_multiplier = 1
 	if(charge_multiplier)
 		if(cell.charge == cell.maxcharge)
@@ -426,83 +426,3 @@ it is often confused with the mech weapon of the same name, since it is a bit mo
 
 	update_appearance()
 	balloon_alert_to_viewers("[ready_to_fire ? "unfolded" : "folded"] stock")
-
-/obj/item/gun/energy/marksman_revolver
-	name = "marksman revolver"
-	desc = "Uses electric pulses to fire microscopic pieces of metal at incredibly high speeds. Alternate fire flips a coin that can be targeted for extra firepower."
-	icon = 'icons/obj/weapons/guns/ballistic.dmi'
-	icon_state = "revolver"
-	ammo_type = list(/obj/item/ammo_casing/energy/marksman)
-	fire_sound = 'sound/items/weapons/gun/revolver/shot_alt.ogg'
-	automatic_charge_overlays = FALSE
-	/// How many coins we can have at a time. Set to 0 for infinite
-	var/max_coins = 4
-	/// How many coins we currently have available
-	var/coin_count = 0
-	/// How long it takes to regen a coin
-	var/coin_regen_rate = 2 SECONDS
-	/// The cooldown for regenning coins
-	COOLDOWN_DECLARE(coin_regen_cd)
-
-/obj/item/gun/energy/marksman_revolver/Initialize(mapload)
-	. = ..()
-	coin_count = max_coins
-
-/obj/item/gun/energy/marksman_revolver/examine(mob/user)
-	. = ..()
-	if(max_coins)
-		. += "It currently has [coin_count] out of [max_coins] coins, and takes [coin_regen_rate/10] seconds to recharge each one."
-	else
-		. += "It has infinite coins available for use."
-
-/obj/item/gun/energy/marksman_revolver/process(seconds_per_tick)
-	if(!max_coins || coin_count >= max_coins)
-		STOP_PROCESSING(SSobj, src)
-		return
-
-	if(COOLDOWN_FINISHED(src, coin_regen_cd))
-		if(ismob(loc))
-			var/mob/owner = loc
-			owner.playsound_local(owner, 'sound/machines/ding.ogg', 20)
-		coin_count++
-		COOLDOWN_START(src, coin_regen_cd, coin_regen_rate)
-
-/obj/item/gun/energy/marksman_revolver/try_fire_gun(atom/target, mob/living/user, params)
-	if(!LAZYACCESS(params2list(params), RIGHT_CLICK))
-		return ..()
-	if(!CAN_THEY_SEE(target, user))
-		return ITEM_INTERACT_BLOCKING
-
-	if(max_coins && coin_count <= 0)
-		to_chat(user, span_warning("You don't have any coins right now!"))
-		return ITEM_INTERACT_BLOCKING
-
-	if(max_coins)
-		START_PROCESSING(SSobj, src)
-		coin_count = max(0, coin_count - 1)
-
-	var/turf/target_turf = get_offset_target_turf(target, rand(-1, 1), rand(-1, 1)) // choose a random tile adjacent to the clicked one
-	playsound(user.loc, 'sound/effects/coin2.ogg', 50, TRUE)
-	user.visible_message(span_warning("[user] flips a coin towards [target]!"), span_danger("You flip a coin towards [target]!"))
-	var/obj/projectile/bullet/coin/new_coin = new(get_turf(user), target_turf, user)
-	new_coin.aim_projectile(target_turf, user)
-	new_coin.fire()
-	return ITEM_INTERACT_SUCCESS
-
-/obj/item/gun/energy/photon
-	name = "photon cannon"
-	desc = "A competitive design to the tesla cannon, that instead of charging latent electrons, releases energy into photons. Eye protection is recommended."
-	icon_state = "photon"
-	inhand_icon_state = "tesla"
-	fire_sound = 'sound/items/weapons/lasercannonfire.ogg'
-	ammo_type = list(/obj/item/ammo_casing/energy/photon)
-	shaded_charge = TRUE
-	weapon_weight = WEAPON_HEAVY
-	light_color = LIGHT_COLOR_DEFAULT
-	light_system = OVERLAY_LIGHT
-	light_power = 2
-	light_range = 1
-
-/obj/item/gun/energy/photon/Initialize(mapload)
-	. = ..()
-	set_light_on(TRUE) // The gun quite literally shoots mini-suns.

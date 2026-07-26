@@ -83,6 +83,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	set_broadcasting(TRUE)
 	recalculateChannels()
 	possibly_deactivate_in_loc()
+	register_context()
 
 /obj/item/radio/headset/proc/possibly_deactivate_in_loc()
 	if(ismob(loc))
@@ -163,6 +164,12 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		return
 	return ..()
 
+/obj/item/radio/headset/no_mic
+	name = "receiver radio headset"
+	desc = "A simple single-ended headset without any microphone. Takes encryption keys."
+	icon_state = "headset_receiver"
+	can_broadcast = FALSE
+
 /obj/item/radio/headset/syndicate //disguised to look like a normal headset for stealth ops
 
 /obj/item/radio/headset/syndicate/Initialize(mapload)
@@ -238,12 +245,22 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	worn_icon_state = "medsci_headset"
 	keyslot = /obj/item/encryptionkey/headset_medsci
 
-/obj/item/radio/headset/headset_srvsec
+/obj/item/radio/headset/headset_comsec
 	name = "law and order headset"
-	desc = "In the criminal justice headset, the encryption key represents two separate but equally important groups. Sec, who investigate crime, and Service, who provide services. These are their comms."
-	icon_state = "srvsec_headset"
-	worn_icon_state = "srvsec_headset"
-	keyslot = /obj/item/encryptionkey/headset_srvsec
+	desc = "A headset allowing the wearer to communicate with command and security."
+	icon_state = "comsec_headset"
+	worn_icon_state = "comsec_headset"
+	keyslot = /obj/item/encryptionkey/headset_comsec
+
+/obj/item/radio/headset/headset_comsec/alt
+	name = "law and order bowman headset"
+	desc = "A headset allowing the wearer to communicate with command and security. Protects ears from flashbangs."
+	icon_state = "comsec_headset_alt"
+	worn_icon_state = "comsec_headset_alt"
+
+/obj/item/radio/headset/headset_comsec/alt/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/wearertargeting/earprotection)
 
 /obj/item/radio/headset/headset_srvmed
 	name = "service medical headset"
@@ -345,6 +362,13 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	icon_state = "com_headset"
 	worn_icon_state = "com_headset"
 	keyslot = /obj/item/encryptionkey/heads/qm
+
+/obj/item/radio/headset/heads/steward
+	name = "\proper the steward's headset"
+	desc = "The headset of the guy who manages the service department."
+	icon_state = "com_headset"
+	worn_icon_state = "com_headset"
+	keyslot = /obj/item/encryptionkey/heads/steward
 
 /obj/item/radio/headset/headset_cargo
 	name = "supply radio headset"
@@ -507,7 +531,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 		remove_headset_languages(mob_loc)
 		grant_headset_languages(mob_loc)
 
-/obj/item/radio/headset/click_alt(mob/living/user)
+/obj/item/radio/headset/click_alt_secondary(mob/living/user)
 	if(!istype(user) || !command)
 		return CLICK_ACTION_BLOCKING
 	use_command = !use_command

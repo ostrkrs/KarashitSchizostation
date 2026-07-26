@@ -229,12 +229,12 @@
 
 #undef FAILED_ACTIVATION_COOLDOWN
 
-///Status Readout - Puts a lot of information including health, nutrition, fingerprints, temperature to the suit TGUI.
+///Status Readout - Puts a lot of information including health, nutrition, hydration, fingerprints, temperature to the suit TGUI.
 /obj/item/mod/module/status_readout
 	name = "MOD status readout module"
 	desc = "A once-common module, this technology unfortunately went out of fashion in the safer regions of space; \
 		and found new life in the research networks of the Periphery. This particular unit hooks into the suit's spine, \
-		capable of capturing and displaying all possible biometric data of the wearer; sleep, nutrition, fitness, fingerprints, \
+		capable of capturing and displaying all possible biometric data of the wearer; sleep, nutrition, hydration, fitness, fingerprints, \
 		and even useful information such as their overall health and wellness. The vitals monitor also comes with a speaker, loud enough \
 		to alert anyone nearby that someone has, in fact, died."
 	icon_state = "status"
@@ -270,6 +270,7 @@
 		.["loss_oxy"] = mod.wearer?.getOxyLoss() || 0
 		.["body_temperature"] = mod.wearer?.bodytemperature || 0
 		.["nutrition"] = mod.wearer?.nutrition || 0
+		.["hydration"] = mod.wearer?.hydration || 0
 	if(display_dna)
 		.["dna_unique_identity"] = mod.wearer ? md5(mod.wearer.dna.unique_identity) : null
 		.["dna_unique_enzymes"] = mod.wearer?.dna.unique_enzymes
@@ -673,39 +674,8 @@
 	if(!dna_check(user))
 		return MOD_CANCEL_REMOVAL
 
-///Plasma Stabilizer - Prevents plasmamen from igniting in the suit
-/obj/item/mod/module/plasma_stabilizer
-	name = "MOD plasma stabilizer module"
-	desc = "This system essentially forms an atmosphere of its own, within the suit, \
-		efficiently and quickly preventing oxygen from causing the user's head to burst into flame. \
-		This allows plasmamen to safely remove their helmet, allowing for easier \
-		equipping of any MODsuit-related equipment, or otherwise. \
-		The purple glass of the visor seems to be constructed for nostalgic purposes."
-	icon_state = "plasma_stabilizer"
-	complexity = 1
-	idle_power_cost = DEFAULT_CHARGE_DRAIN * 0.3
-	incompatible_modules = list(/obj/item/mod/module/plasma_stabilizer)
-	required_slots = list(ITEM_SLOT_HEAD)
-
-/obj/item/mod/module/plasma_stabilizer/generate_worn_overlay(obj/item/source, mutable_appearance/standing)
-	. = ..()
-	if (!.)
-		return
-
-	var/mutable_appearance/visor_overlay = mod.get_visor_overlay(standing)
-	visor_overlay.appearance_flags |= RESET_COLOR
-	visor_overlay.color = COLOR_VIOLET
-	. += visor_overlay
-
-/obj/item/mod/module/plasma_stabilizer/on_equip()
-	ADD_TRAIT(mod.wearer, TRAIT_HEAD_ATMOS_SEALED, REF(src))
-
-/obj/item/mod/module/plasma_stabilizer/on_unequip()
-	REMOVE_TRAIT(mod.wearer, TRAIT_HEAD_ATMOS_SEALED, REF(src))
-
-
 //Finally, https://pipe.miroware.io/5b52ba1d94357d5d623f74aa/mspfa/Nuke%20Ops/Panels/0648.gif can be real:
-///Hat Stabilizer - Allows displaying a hat over the MOD-helmet, à la plasmamen helmets.
+///Hat Stabilizer - Allows displaying a hat over the MOD-helmet.
 /obj/item/mod/module/hat_stabilizer
 	name = "MOD hat stabilizer module"
 	desc = "A simple set of deployable stands, directly atop one's head; \

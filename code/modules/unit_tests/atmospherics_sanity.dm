@@ -35,7 +35,7 @@
 		/area/station/ai_monitored/turret_protected/ai,
 		/area/station/engineering/atmos,
 		/area/station/medical/virology,
-		/area/station/science/xenobiology,
+		/area/station/research/xenobiology,
 		)
 
 	if(!length(starting_areas))
@@ -76,15 +76,14 @@
 /datum/unit_test/atmospherics_sanity/proc/mark_station_areas_as_goals()
 	// We don't want to check these areas
 	var/static/list/area/ignored_types = list(
-		/area/station/asteroid,
 		/area/station/engineering/supermatter,
 		/area/station/holodeck,
 		/area/station/maintenance,
-		/area/station/science/ordnance/bomb,
-		/area/station/science/ordnance/burnchamber,
-		/area/station/science/ordnance/freezerchamber,
+		/area/station/research/ordnance/bomb,
+		/area/station/research/ordnance/burnchamber,
+		/area/station/research/ordnance/freezerchamber,
 		/area/station/solars,
-		/area/station/tcommsat/server,
+		/area/station/tcomms/server,
 	)
 
 	for(var/area/ignored as anything in ignored_types)

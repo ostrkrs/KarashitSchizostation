@@ -272,7 +272,7 @@
 			title = "Name change",
 			default = real_name,
 			max_length = MAX_NAME_LEN,
-		)),
+		))
 	)
 	if (isnull(new_name) || QDELETED(src))
 		return

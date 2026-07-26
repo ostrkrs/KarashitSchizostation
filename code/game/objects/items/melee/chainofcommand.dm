@@ -67,16 +67,3 @@
 	name = "Commanded"
 	desc = "You are inspired to do things faster!"
 	icon_state = "commanded"
-
-/obj/item/melee/chainofcommand/tailwhip
-	name = "liz o' nine tails"
-	desc = "A whip fashioned from the severed tails of lizards."
-	icon_state = "tailwhip"
-	inhand_icon_state = "tailwhip"
-	item_flags = NONE
-
-/obj/item/melee/chainofcommand/tailwhip/kitty
-	name = "cat o' nine tails"
-	desc = "A whip fashioned from the severed tails of cats."
-	icon_state = "catwhip"
-	inhand_icon_state = "catwhip"

@@ -1,9 +1,10 @@
 /datum/job/shaft_miner
 	title = JOB_SHAFT_MINER
+	alt_titles = JOB_SHAFT_MINER_ALT_TITLES
 	description = "Travel to strange lands. Mine ores. \
 		Meet strange creatures. Kill them for their gold."
 	department_head = list(JOB_QUARTERMASTER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = SUPERVISOR_QM
@@ -11,7 +12,6 @@
 	config_tag = "SHAFT_MINER"
 
 	outfit = /datum/outfit/job/miner
-	plasmaman_outfit = /datum/outfit/plasmaman/mining
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_CAR
@@ -26,7 +26,7 @@
 
 	family_heirlooms = list(/obj/item/pickaxe/mini, /obj/item/shovel)
 	rpg_title = "Adventurer"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/miner
@@ -35,9 +35,8 @@
 
 	id_trim = /datum/id_trim/job/shaft_miner
 	uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
-	skillchips = list(/obj/item/skillchip/job/miner)
 	backpack_contents = list(
-		/obj/item/flashlight/seclite = 1,
+		/obj/item/flashlight/cell_powered/seclite = 1,
 		/obj/item/knife/combat/survival = 1,
 		/obj/item/mining_voucher = 1,
 		/obj/item/stack/marker_beacon/ten = 1,
@@ -64,7 +63,7 @@
 	suit = /obj/item/clothing/suit/hooded/explorer
 	suit_store = /obj/item/tank/internals/oxygen
 	backpack_contents = list(
-		/obj/item/flashlight/seclite = 1,
+		/obj/item/flashlight/cell_powered/seclite = 1,
 		/obj/item/gun/energy/recharge/kinetic_accelerator = 1,
 		/obj/item/knife/combat/survival = 1,
 		/obj/item/mining_voucher = 1,
@@ -114,6 +113,6 @@
 	for(var/obj/item/gun/energy/recharge/kinetic_accelerator/accelerator in miner_contents)
 		var/datum/component/bayonet_attachable/bayonet = accelerator.GetComponent(/datum/component/bayonet_attachable)
 		bayonet.add_bayonet(new /obj/item/knife/combat/survival(accelerator))
-		var/obj/item/flashlight/seclite/flashlight = new()
+		var/obj/item/flashlight/cell_powered/seclite/flashlight = new()
 		var/datum/component/seclite_attachable/light_component = accelerator.GetComponent(/datum/component/seclite_attachable)
 		light_component.add_light(flashlight)

@@ -286,6 +286,14 @@ GLOBAL_LIST_EMPTY(sfx_datum_by_key)
 #define SFX_CIG_PACK_RUSTLE "cig_pack_rustle"
 #define SFX_CIG_PACK_THROW_DROP "cig_pack_throw_drop"
 #define	SFX_RORO_WARBLE "roro_warble"
+#define SFX_GAS_MASK_PICKUP "gas_mask_pickup"
+#define SFX_GAS_MASK_DROP "gas_mask_drop"
+#define SFX_GAS_MASK_EQUIP "gas_mask_equip"
+#define SFX_HARD_HAT_PICKUP "hard_hat_pickup"
+#define SFX_HARD_HAT_DROP "hard_hat_drop"
+#define SFX_HARD_HAT_EQUIP "hard_hat_equip"
+#define SFX_GENERIC_DEVICE_PICKUP "generic_device_pickup"
+#define SFX_GENERIC_DEVICE_DROP "generic_device_drop"
 
 // Standard is 44.1khz
 #define MIN_EMOTE_PITCH 40000

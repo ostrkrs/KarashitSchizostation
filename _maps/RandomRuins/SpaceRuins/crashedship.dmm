@@ -51,7 +51,7 @@
 	name = "E.V.A. Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/eva,
-/turf/open/floor/iron/white/corner,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/crashedship/midship)
 "cR" = (
 /obj/structure/table/reinforced,
@@ -87,8 +87,8 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/crashedship/fore)
 "eh" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning,
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning,
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle{
@@ -164,8 +164,8 @@
 /turf/open/misc/asteroid,
 /area/ruin/space/has_grav/crashedship/fore)
 "hI" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning,
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning,
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
 /obj/structure/table,
@@ -230,7 +230,7 @@
 "lf" = (
 /obj/structure/cable,
 /obj/machinery/light/warm/directional/west,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -302,14 +302,14 @@
 "nY" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/spawner/random/structure/crate_abandoned,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/crashedship/aft)
 "om" = (
 /obj/effect/turf_decal/loading_area,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -387,7 +387,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 10
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -401,7 +401,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -418,10 +418,10 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "qB" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/structure/closet/firecloset,
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/crashedship/aft)
@@ -485,10 +485,10 @@
 /obj/structure/chair{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -505,7 +505,7 @@
 /area/ruin/space/has_grav/crashedship/fore)
 "uf" = (
 /obj/machinery/suit_storage_unit/open,
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/floor/engine,
@@ -518,7 +518,7 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/aft)
 "uz" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "uF" = (
@@ -559,8 +559,8 @@
 	dir = 1
 	},
 /obj/machinery/light/cold/directional/north,
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
-/turf/open/floor/iron/dark/side/airless{
+/obj/effect/turf_decal/tile/neutral/half,
+/turf/open/floor/iron/airless{
 	dir = 1
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -576,7 +576,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/structure/closet/crate/large,
 /obj/structure/fluff/broken_canister_frame,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -592,7 +592,7 @@
 /obj/effect/turf_decal/delivery,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
@@ -611,16 +611,16 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/midship)
 "yL" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -663,7 +663,7 @@
 /obj/effect/turf_decal/tile/neutral/opposingcorners{
 	dir = 1
 	},
-/turf/open/floor/iron/checker/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Af" = (
 /obj/item/chair,
@@ -677,7 +677,7 @@
 	name = "Teleport Access"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/command/teleporter,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 6
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -700,7 +700,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 6
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -724,7 +724,7 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/edge{
@@ -781,10 +781,10 @@
 	dir = 1
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -801,7 +801,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 5
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -817,8 +817,8 @@
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
-/turf/open/floor/iron/dark/side/airless{
+/obj/effect/turf_decal/tile/neutral/half,
+/turf/open/floor/iron/airless{
 	dir = 1
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -831,7 +831,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/aft)
 "EO" = (
-/obj/effect/turf_decal/siding/thinplating_new/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /obj/machinery/suit_storage_unit/standard_unit,
@@ -849,10 +849,10 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -867,10 +867,10 @@
 	},
 /area/ruin/space/has_grav/crashedship/aft)
 "Fy" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/machinery/atmospherics/components/unary/portables_connector/layer4,
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/pod/light,
@@ -881,10 +881,10 @@
 /area/ruin/space/has_grav/crashedship/fore)
 "FY" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -895,7 +895,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 5
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -903,7 +903,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 9
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -935,8 +935,8 @@
 	dir = 4
 	},
 /obj/item/kirbyplants/organic/plant21,
-/obj/effect/turf_decal/tile/blue,
-/turf/open/floor/iron/white/corner{
+/obj/effect/turf_decal/tile/light_blue,
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -967,10 +967,10 @@
 /area/space/nearstation)
 "Jr" = (
 /obj/effect/turf_decal/stripes/line,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/side/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Jv" = (
 /obj/effect/mapping_helpers/broken_floor,
@@ -980,10 +980,10 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 8
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -991,13 +991,13 @@
 /obj/effect/turf_decal/siding/white/corner{
 	dir = 4
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
 "Ko" = (
 /obj/structure/cable,
-/turf/open/floor/iron/white/side{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -1099,7 +1099,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/visible/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/neutral/opposingcorners,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 4
 	},
 /area/ruin/space/has_grav/crashedship/aft)
@@ -1157,8 +1157,8 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "Pb" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning,
-/obj/effect/turf_decal/trimline/blue/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning,
+/obj/effect/turf_decal/trimline/light_blue/line{
 	dir = 1
 	},
 /obj/structure/table,
@@ -1203,7 +1203,7 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/tile/neutral,
-/turf/open/floor/iron/dark/side/airless{
+/turf/open/floor/iron/airless{
 	dir = 9
 	},
 /area/ruin/space/has_grav/crashedship/midship)
@@ -1223,10 +1223,10 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/crashedship/midship)
 "TP" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/effect/spawner/random/structure/tank_holder,
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/crashedship/aft)
@@ -1238,10 +1238,10 @@
 /turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/aft)
 "Uk" = (
-/obj/effect/turf_decal/trimline/blue/filled/warning{
+/obj/effect/turf_decal/trimline/light_blue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/line,
+/obj/effect/turf_decal/trimline/light_blue/line,
 /obj/structure/chair/comfy/shuttle,
 /turf/open/floor/pod/light,
 /area/ruin/space/has_grav/crashedship/aft)
@@ -1296,10 +1296,10 @@
 "Wi" = (
 /obj/machinery/light/broken/directional/south,
 /obj/effect/turf_decal/trimline/red/filled/line,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
-/turf/open/floor/iron/dark/side/airless,
+/turf/open/floor/iron/airless,
 /area/ruin/space/has_grav/crashedship/aft)
 "WN" = (
 /obj/structure/lattice,

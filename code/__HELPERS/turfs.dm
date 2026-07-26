@@ -458,7 +458,7 @@ Turf and target are separate in case you want to teleport some distance from a t
 		department_areas = list(
 				subtypesof(/area/station/engineering), \
 				subtypesof(/area/station/medical), \
-				subtypesof(/area/station/science), \
+				subtypesof(/area/station/research), \
 				subtypesof(/area/station/security), \
 				subtypesof(/area/station/service), \
 				subtypesof(/area/station/command), \

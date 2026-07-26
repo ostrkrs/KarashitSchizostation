@@ -85,7 +85,7 @@
 	///We only try to show a gibbing animation if this exists.
 	var/icon_gib = null
 
-	///If the mob can be spawned with a gold slime core. HOSTILE_SPAWN are spawned with plasma, FRIENDLY_SPAWN are spawned with blood.
+	///If the mob can be spawned with a gold slime core. HOSTILE_SPAWN are spawned with phoron, FRIENDLY_SPAWN are spawned with blood.
 	var/gold_core_spawnable = NO_SPAWN
 	///Sentience type, for slime potions. SHOULD BE AN ELEMENT BUT I DONT CARE ABOUT IT FOR NOW
 	var/sentience_type = SENTIENCE_ORGANIC

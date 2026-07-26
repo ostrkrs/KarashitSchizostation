@@ -1,11 +1,12 @@
 /datum/job/cyborg
 	title = JOB_CYBORG
+	alt_titles = JOB_CYBORG_ALT_TITLES
 	description = "Assist the crew, follow your laws, obey your AI."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON
-	faction = FACTION_STATION
-	total_positions = 0
-	spawn_positions = 3
-	supervisors = "your laws and the AI" //Nodrak
+	faction = FACTION_SHIP
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "your laws and the AI"
 	spawn_type = /mob/living/silicon/robot
 	minimal_player_age = 21
 	exp_requirements = 120
@@ -28,8 +29,6 @@
 		return
 	var/mob/living/silicon/robot/robot_spawn = spawned
 	robot_spawn.notify_ai(AI_NOTIFICATION_NEW_BORG)
-	if(player_client)
-		robot_spawn.set_gender(player_client)
 	if(!robot_spawn.connected_ai) // Only log if there's no Master AI
 		robot_spawn.log_current_laws()
 

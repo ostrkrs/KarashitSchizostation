@@ -14,6 +14,8 @@
 	var/medipen_type = /obj/item/reagent_containers/hypospray/medipen/ekit
 	/// What food should be present in this box?
 	var/ration_type = /obj/item/food/rationpack
+	/// What drink should be present in this box?
+	var/drink_type = /obj/item/reagent_containers/cup/glass/waterbottle
 	/// Are we crafted?
 	var/crafted = FALSE
 	/// Should we contain an escape hook on maps with z-levels?
@@ -43,14 +45,14 @@
 	if(!isnull(ration_type))
 		new ration_type(src)
 
+	if(!isnull(drink_type))
+		new drink_type(src)
+
 	if(give_premium_goods && HAS_TRAIT(SSstation, STATION_TRAIT_PREMIUM_INTERNALS))
 		new /obj/item/flashlight/flare(src)
 		new /obj/item/radio/off(src)
 	else
 		new /obj/item/flashlight/glowstick(src)
-
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_RADIOACTIVE_NEBULA))
-		new /obj/item/storage/pill_bottle/potassiodide(src)
 
 	if(give_hook && length(SSmapping.levels_by_trait(ZTRAIT_STATION)) > 1 && SSmapping.current_map.give_players_hooks)
 		new /obj/item/climbing_hook/emergency(src)
@@ -58,15 +60,6 @@
 /obj/item/storage/box/survival/radio/PopulateContents()
 	..() // we want the survival stuff too.
 	new /obj/item/radio/off(src)
-
-/obj/item/storage/box/survival/proc/wardrobe_removal()
-	if(!isplasmaman(loc)) //We need to specially fill the box with plasmaman gear, since it's intended for one
-		return
-	var/obj/item/mask = locate(mask_type) in src
-	var/obj/item/internals = locate(internal_type) in src
-	new /obj/item/tank/internals/plasmaman/belt(src)
-	qdel(mask) // Get rid of the items that shouldn't be
-	qdel(internals)
 
 // Prisoners don't get an escape hook
 /obj/item/storage/box/survival/prisoner
@@ -81,7 +74,7 @@
 
 /obj/item/storage/box/survival/mining/PopulateContents()
 	..()
-	new /obj/item/crowbar/red(src)
+	new /obj/item/crowbar/small/red(src)
 	new /obj/item/healthanalyzer/simple/miner(src)
 
 // Engineer survival box
@@ -107,7 +100,7 @@
 
 /obj/item/storage/box/survival/syndie/PopulateContents()
 	..()
-	new /obj/item/crowbar/red(src)
+	new /obj/item/crowbar/small/red(src)
 	new /obj/item/screwdriver/red(src)
 	new /obj/item/weldingtool/fueled/mini(src)
 	new /obj/item/paper/fluff/operative(src)
@@ -140,6 +133,10 @@
 
 /obj/item/storage/box/survival/engineer/crafted
 	crafted = TRUE
+
+// Bartender survival box with flask
+/obj/item/storage/box/survival/bartender
+	drink_type = /obj/item/reagent_containers/cup/glass/flask/bartender
 
 //Mime spell boxes
 
@@ -232,7 +229,6 @@
 	if(!random_funny_internals)
 		return ..()
 	internal_type = pick(
-			/obj/item/tank/internals/emergency_oxygen/engi/clown/n2o,
 			/obj/item/tank/internals/emergency_oxygen/engi/clown/bz,
 			/obj/item/tank/internals/emergency_oxygen/engi/clown/helium,
 			)

@@ -83,12 +83,12 @@
 
 /datum/reagent/prefactor_a
 	name = "Interim Product Alpha"
-	description = "This reagent is a prefactor to the purity tester reagent, and will react with stable plasma to create it"
+	description = "This reagent is a prefactor to the purity tester reagent, and will react with stable phoron to create it"
 	color = "#bafa69"
 
 /datum/reagent/prefactor_b
 	name = "Interim Product Beta"
-	description = "This reagent is a prefactor to the reaction speed agent reagent, and will react with stable plasma to create it"
+	description = "This reagent is a prefactor to the reaction speed agent reagent, and will react with stable phoron to create it"
 	color = "#8a3aa9"
 
 /datum/reagent/reaction_agent/purity_tester

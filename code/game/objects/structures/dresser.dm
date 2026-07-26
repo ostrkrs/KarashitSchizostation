@@ -52,29 +52,37 @@
 		to_chat(dressing_human, span_warning("You are not capable of wearing underwear."))
 		return
 
-	var/choice = tgui_input_list(user, "Underwear, Undershirt, or Socks?", "Changing", list("Underwear","Underwear Color","Undershirt","Socks"))
+	var/choice = tgui_input_list(user, "Bottoms, Tops, or Socks?", "Changing", list("Bottom","Bottom Color","Top","Top Color","Socks"))
 	if(isnull(choice))
 		return
 
 	if(!Adjacent(user))
 		return
 	switch(choice)
-		if("Underwear")
-			var/new_undies = tgui_input_list(user, "Select your underwear", "Changing", SSaccessories.underwear_list)
+		if("Bottom")
+			var/new_undies = tgui_input_list(user, "Select your bottom", "Changing", SSaccessories.bottom_underwear_list)
 			if(new_undies)
-				dressing_human.underwear = new_undies
-		if("Underwear Color")
-			var/new_underwear_color = input(dressing_human, "Choose your underwear color", "Underwear Color", dressing_human.underwear_color) as color|null
+				dressing_human.bottom_underwear = new_undies
+		if("Bottom Color")
+			var/new_underwear_color = input(dressing_human, "Choose your bottom color", "Bottom Color", dressing_human.bottom_underwear_color) as color|null
 			if(new_underwear_color)
-				dressing_human.underwear_color = sanitize_hexcolor(new_underwear_color)
-		if("Undershirt")
-			var/new_undershirt = tgui_input_list(user, "Select your undershirt", "Changing", SSaccessories.undershirt_list)
-			if(new_undershirt)
-				dressing_human.undershirt = new_undershirt
+				dressing_human.bottom_underwear_color = sanitize_hexcolor(new_underwear_color)
+		if("Top")
+			var/new_top_underwear = tgui_input_list(user, "Select your top", "Changing", SSaccessories.top_underwear_list)
+			if(new_top_underwear)
+				dressing_human.top_underwear = new_top_underwear
+		if("Top Color")
+			var/new_top_underwear_color = input(dressing_human, "Choose your top color", "Top Color", dressing_human.top_underwear_color) as color|null
+			if(new_top_underwear_color)
+				dressing_human.top_underwear_color = sanitize_hexcolor(new_top_underwear_color)
 		if("Socks")
 			var/new_socks = tgui_input_list(user, "Select your socks", "Changing", SSaccessories.socks_list)
 			if(new_socks)
 				dressing_human.socks = new_socks
+		if("Socks Color")
+			var/new_socks_color = input(dressing_human, "Choose your socks color", "Socks Color", dressing_human.socks_color) as color|null
+			if(new_socks_color)
+				dressing_human.socks_color = sanitize_hexcolor(new_socks_color)
 
 	add_fingerprint(dressing_human)
 	dressing_human.update_body()

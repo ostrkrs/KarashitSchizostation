@@ -79,72 +79,72 @@
 	addtimer(TRAIT_CALLBACK_REMOVE(fish, TRAIT_FISH_MUTAGENIC, type), fish.feeding_frequency * 0.8, TIMER_UNIQUE|TIMER_OVERRIDE)
 	return TRUE
 
-#define LIQUID_PLASMA_BP (50+T0C)
-#define LIQUID_PLASMA_IG (325+T0C)
+#define LIQUID_PHORON_BP (50+T0C)
+#define LIQUID_PHORON_IG (325+T0C)
 
-/datum/reagent/toxin/plasma
-	name = "Plasma"
-	description = "Plasma in its liquid form."
+/datum/reagent/toxin/phoron
+	name = "Phoron"
+	description = "Phoron in its liquid form."
 	taste_description = "bitterness"
-	specific_heat = SPECIFIC_HEAT_PLASMA
+	specific_heat = SPECIFIC_HEAT_PHORON
 	taste_mult = 1.5
 	color = "#8228A0"
 	toxpwr = 3
-	material = /datum/material/plasma
+	material = /datum/material/phoron
 	penetrates_skin = NONE
 	ph = 4
-	burning_temperature = 4500//plasma is hot!!
-	burning_volume = 0.3//But burns fast
+	burning_temperature = 4500
+	burning_volume = 0.3
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
 
-/datum/reagent/toxin/plasma/on_new(data)
+/datum/reagent/toxin/phoron/on_new(data)
 	. = ..()
 	RegisterSignal(holder, COMSIG_REAGENTS_TEMP_CHANGE, PROC_REF(on_temp_change))
 
-/datum/reagent/toxin/plasma/Destroy()
+/datum/reagent/toxin/phoron/Destroy()
 	UnregisterSignal(holder, COMSIG_REAGENTS_TEMP_CHANGE)
 	return ..()
 
-/datum/reagent/toxin/plasma/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
+/datum/reagent/toxin/phoron/on_mob_life(mob/living/carbon/affected_mob, seconds_per_tick, times_fired)
 	. = ..()
 	if(holder.has_reagent(/datum/reagent/medicine/epinephrine))
 		holder.remove_reagent(/datum/reagent/medicine/epinephrine, 2 * REM * seconds_per_tick)
-	affected_mob.adjustPlasma(20 * REM * seconds_per_tick)
+	affected_mob.adjustPhoron(20 * REM * seconds_per_tick)
 
-/datum/reagent/toxin/plasma/on_mob_metabolize(mob/living/carbon/affected_mob)
+/datum/reagent/toxin/phoron/on_mob_metabolize(mob/living/carbon/affected_mob)
 	. = ..()
-	if(HAS_TRAIT(affected_mob, TRAIT_PLASMA_LOVER_METABOLISM)) // sometimes mobs can temporarily metabolize plasma (e.g. plasma fixation disease symptom)
+	if(HAS_TRAIT(affected_mob, TRAIT_PHORON_LOVER_METABOLISM)) // sometimes mobs can temporarily metabolize phoron (e.g. phoron fixation disease symptom)
 		toxpwr = 0
 
-/datum/reagent/toxin/plasma/on_mob_end_metabolize(mob/living/carbon/affected_mob)
+/datum/reagent/toxin/phoron/on_mob_end_metabolize(mob/living/carbon/affected_mob)
 	. = ..()
 	toxpwr = initial(toxpwr)
 
-/// Handles plasma boiling.
-/datum/reagent/toxin/plasma/proc/on_temp_change(datum/reagents/_holder, old_temp)
+/// Handles phoron boiling.
+/datum/reagent/toxin/phoron/proc/on_temp_change(datum/reagents/_holder, old_temp)
 	SIGNAL_HANDLER
-	if(holder.chem_temp < LIQUID_PLASMA_BP)
+	if(holder.chem_temp < LIQUID_PHORON_BP)
 		return
 	if(!holder.my_atom)
 		return
-	if((holder.flags & SEALED_CONTAINER) && (holder.chem_temp < LIQUID_PLASMA_IG))
+	if((holder.flags & SEALED_CONTAINER) && (holder.chem_temp < LIQUID_PHORON_IG))
 		return
 	var/atom/A = holder.my_atom
-	A.atmos_spawn_air("[GAS_PLASMA]=[volume];[TURF_TEMPERATURE(holder.chem_temp)]")
+	A.atmos_spawn_air("[GAS_PHORON]=[volume];[TURF_TEMPERATURE(holder.chem_temp)]")
 	holder.del_reagent(type)
 
-/datum/reagent/toxin/plasma/expose_turf(turf/open/exposed_turf, reac_volume)
+/datum/reagent/toxin/phoron/expose_turf(turf/open/exposed_turf, reac_volume)
 	if(!istype(exposed_turf))
 		return
 	var/temp = holder ? holder.chem_temp : T20C
-	if(temp >= LIQUID_PLASMA_BP)
-		exposed_turf.atmos_spawn_air("[GAS_PLASMA]=[reac_volume];[TURF_TEMPERATURE(temp)]")
+	if(temp >= LIQUID_PHORON_BP)
+		exposed_turf.atmos_spawn_air("[GAS_PHORON]=[reac_volume];[TURF_TEMPERATURE(temp)]")
 	return ..()
 
-#undef LIQUID_PLASMA_BP
-#undef LIQUID_PLASMA_IG
+#undef LIQUID_PHORON_BP
+#undef LIQUID_PHORON_IG
 
-/datum/reagent/toxin/plasma/expose_mob(mob/living/exposed_mob, methods=TOUCH, reac_volume)//Splashing people with plasma is stronger than fuel!
+/datum/reagent/toxin/phoron/expose_mob(mob/living/exposed_mob, methods=TOUCH, reac_volume)//Splashing people with phoron is stronger than fuel!
 	. = ..()
 	if(methods & (TOUCH|VAPOR))
 		exposed_mob.adjust_fire_stacks(reac_volume / 5)
@@ -152,10 +152,10 @@
 
 /datum/reagent/toxin/hot_ice
 	name = "Hot Ice Slush"
-	description = "Frozen plasma, worth its weight in gold, to the right people."
+	description = "Frozen phoron, worth its weight in gold, to the right people."
 	color = "#724cb8" // rgb: 114, 76, 184
 	taste_description = "thick and smokey"
-	specific_heat = SPECIFIC_HEAT_PLASMA
+	specific_heat = SPECIFIC_HEAT_PHORON
 	toxpwr = 3
 	material = /datum/material/hot_ice
 	chemical_flags = REAGENT_CAN_BE_SYNTHESIZED
@@ -164,7 +164,7 @@
 	. = ..()
 	if(holder.has_reagent(/datum/reagent/medicine/epinephrine))
 		holder.remove_reagent(/datum/reagent/medicine/epinephrine, 2 * REM * seconds_per_tick)
-	affected_mob.adjustPlasma(20 * REM * seconds_per_tick)
+	affected_mob.adjustPhoron(20 * REM * seconds_per_tick)
 	affected_mob.adjust_bodytemperature(-7 * TEMPERATURE_DAMAGE_COEFFICIENT * REM * seconds_per_tick, affected_mob.get_body_temp_normal())
 	if(ishuman(affected_mob))
 		var/mob/living/carbon/human/humi = affected_mob
@@ -172,7 +172,7 @@
 
 /datum/reagent/toxin/hot_ice/on_mob_metabolize(mob/living/carbon/affected_mob)
 	. = ..()
-	if(HAS_TRAIT(affected_mob, TRAIT_PLASMA_LOVER_METABOLISM))
+	if(HAS_TRAIT(affected_mob, TRAIT_PHORON_LOVER_METABOLISM))
 		toxpwr = 0
 
 /datum/reagent/toxin/hot_ice/on_mob_end_metabolize(mob/living/carbon/affected_mob)

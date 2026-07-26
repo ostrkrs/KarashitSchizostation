@@ -53,10 +53,10 @@
 	whitelist_weather_reagents = list(/datum/reagent/blood)
 	probability = 0 // admeme event
 
-// Fun fact - if you increase the weather_temperature higher than LIQUID_PLASMA_BP
-// the plasma rain will vaporize into a gas on whichever turf it lands on
-/datum/weather/rain_storm/plasma
-	whitelist_weather_reagents = list(/datum/reagent/toxin/plasma)
+// Fun fact - if you increase the weather_temperature higher than LIQUID_PHORON_BP
+// the phorona rain will vaporize into a gas on whichever turf it lands on
+/datum/weather/rain_storm/phoron
+	whitelist_weather_reagents = list(/datum/reagent/toxin/phoron)
 	probability = 0 // maybe for icebox maps one day?
 
 /datum/weather/rain_storm/deep_fried
@@ -97,7 +97,7 @@
 		/area/station/ai_monitored/turret_protected/ai_upload_foyer, /area/station/ai_monitored/turret_protected/aisat/maint,
 		/area/station/ai_monitored/command/storage/satellite, /area/station/ai_monitored/turret_protected/ai,
 		/area/station/commons/storage/emergency/starboard, /area/station/commons/storage/emergency/port,
-		/area/shuttle, /area/station/security/prison/safe, /area/station/security/prison/toilet, /area/mine/maintenance,
+		/area/shuttle, /area/station/security/prison/cells, /area/station/security/prison/toilet, /area/mine/maintenance,
 		/area/icemoon/underground, /area/ruin/comms_agent/maint
 	)
 
@@ -122,7 +122,6 @@
 	var/list/allowed_medicine = list(
 		/datum/reagent/medicine/c2/synthflesh,
 		/datum/reagent/medicine/adminordrazine,
-		/datum/reagent/medicine/strange_reagent,
 		// include a random medicine
 		pick(subtypesof(/datum/reagent/medicine)),
 	)
@@ -186,7 +185,6 @@
 		/datum/reagent/gondola_mutation_toxin,
 		/datum/reagent/metalgen,
 		/datum/reagent/flightpotion,
-		/datum/reagent/eigenstate,
 		/datum/reagent/magillitis,
 		/datum/reagent/pax,
 		/datum/reagent/gluttonytoxin,

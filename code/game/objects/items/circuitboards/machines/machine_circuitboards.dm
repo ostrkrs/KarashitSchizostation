@@ -75,6 +75,7 @@
 /obj/item/circuitboard/machine/grounding_rod
 	name = "Grounding Rod"
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/power/energy_accumulator/grounding_rod
 	req_components = list(/datum/stock_part/capacitor = 1)
 	needs_anchored = FALSE
@@ -82,6 +83,7 @@
 /obj/item/circuitboard/machine/telecomms/broadcaster
 	name = "Subspace Broadcaster"
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/telecomms/broadcaster
 	req_components = list(
 		/datum/stock_part/servo = 2,
@@ -137,6 +139,7 @@
 /obj/item/circuitboard/machine/telecomms/receiver
 	name = "Subspace Receiver"
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/telecomms/receiver
 	req_components = list(
 		/datum/stock_part/ansible = 1,
@@ -167,8 +170,9 @@
 
 /obj/item/circuitboard/machine/tesla_coil
 	name = "Tesla Controller"
-	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
 	desc = "Does not let you shoot lightning from your hands."
+	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/power/energy_accumulator/tesla_coil
 	req_components = list(/datum/stock_part/capacitor = 1)
 	needs_anchored = FALSE
@@ -242,6 +246,7 @@
 /obj/item/circuitboard/machine/cell_charger
 	name = "Cell Charger"
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/cell_charger
 	req_components = list(/datum/stock_part/capacitor = 1)
 	needs_anchored = FALSE
@@ -289,13 +294,13 @@
 
 /obj/item/circuitboard/machine/pacman/examine(mob/user)
 	. = ..()
-	var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
+	var/message = high_production_profile ? "high-power uranium mode" : "medium-power phoron mode"
 	. += span_notice("It's set to [message].")
 	. += span_notice("You can switch the mode by using a screwdriver on [src].")
 
 /obj/item/circuitboard/machine/pacman/screwdriver_act(mob/living/user, obj/item/tool)
 	high_production_profile = !high_production_profile
-	var/message = high_production_profile ? "high-power uranium mode" : "medium-power plasma mode"
+	var/message = high_production_profile ? "high-power uranium mode" : "medium-power phoron mode"
 	to_chat(user, span_notice("You set the board for [message]"))
 
 /obj/item/circuitboard/machine/turbine_compressor
@@ -330,6 +335,7 @@
 /obj/item/circuitboard/machine/rtg
 	name = "RTG"
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/power/rtg
 	req_components = list(
 		/obj/item/stack/cable_coil = 5,
@@ -344,7 +350,7 @@
 		/datum/stock_part/capacitor = 1,
 		/datum/stock_part/micro_laser = 1,
 		/obj/item/stack/sheet/mineral/uranium = 10,
-		/obj/item/stack/sheet/mineral/plasma = 5)
+		/obj/item/stack/sheet/mineral/phoron = 5)
 
 /obj/item/circuitboard/machine/scanner_gate
 	name = "Scanner Gate"
@@ -506,6 +512,7 @@
 /obj/item/circuitboard/machine/holopad
 	name = "AI Holopad"
 	greyscale_colors = CIRCUIT_COLOR_GENERIC
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/holopad
 	req_components = list(/datum/stock_part/capacitor = 1)
 	needs_anchored = FALSE //wew lad
@@ -557,6 +564,7 @@
 /obj/item/circuitboard/machine/reagentgrinder
 	name = "All-In-One Grinder"
 	greyscale_colors = CIRCUIT_COLOR_GENERIC
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/reagentgrinder
 	req_components = list(
 		/datum/stock_part/servo = 1,
@@ -611,6 +619,7 @@
 /obj/item/circuitboard/machine/space_heater
 	name = "Space Heater"
 	greyscale_colors = CIRCUIT_COLOR_GENERIC
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/space_heater
 	req_components = list(
 		/datum/stock_part/micro_laser = 1,
@@ -789,6 +798,7 @@
 /obj/item/circuitboard/machine/chem_heater
 	name = "Chemical Thermoregulator"
 	greyscale_colors = CIRCUIT_COLOR_MEDICAL
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/chem_heater
 	req_components = list(
 		/datum/stock_part/micro_laser = 1,
@@ -1041,6 +1051,7 @@
 /obj/item/circuitboard/machine/quantumpad
 	name = "Quantum Pad"
 	greyscale_colors = CIRCUIT_COLOR_SCIENCE
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/quantumpad
 	req_components = list(
 		/obj/item/stack/ore/bluespace_crystal = 1,
@@ -1153,6 +1164,7 @@
 /obj/item/circuitboard/machine/recharger
 	name = "Weapon Recharger"
 	greyscale_colors = CIRCUIT_COLOR_SECURITY
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/recharger
 	req_components = list(/datum/stock_part/capacitor = 1)
 	needs_anchored = FALSE
@@ -1190,6 +1202,7 @@
 /obj/item/circuitboard/machine/chem_dispenser/drinks
 	name = "Soda Dispenser"
 	greyscale_colors = CIRCUIT_COLOR_SERVICE
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/chem_dispenser/drinks
 
 /obj/item/circuitboard/machine/chem_dispenser/drinks/fullupgrade
@@ -1260,6 +1273,7 @@
 /obj/item/circuitboard/machine/dish_drive
 	name = "Dish Drive"
 	greyscale_colors = CIRCUIT_COLOR_SERVICE
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/dish_drive
 	req_components = list(
 		/obj/item/stack/sheet/glass = 1,
@@ -1337,6 +1351,7 @@
 /obj/item/circuitboard/machine/processor
 	name = "Food Processor"
 	greyscale_colors = CIRCUIT_COLOR_SERVICE
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/processor
 	req_components = list(
 		/datum/stock_part/matter_bin = 1,
@@ -1641,6 +1656,7 @@
 /obj/item/circuitboard/machine/coffeemaker
 	name = "Coffeemaker"
 	greyscale_colors = CIRCUIT_COLOR_SERVICE
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/coffeemaker
 	req_components = list(
 		/obj/item/stack/sheet/glass = 1,
@@ -1667,16 +1683,6 @@
 	greyscale_colors = CIRCUIT_COLOR_SCIENCE
 	build_path = /obj/machinery/navbeacon
 	req_components = list()
-
-/obj/item/circuitboard/machine/radioactive_nebula_shielding
-	name = "Radioactive Nebula Shielding"
-	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
-	build_path = /obj/machinery/nebula_shielding/radiation
-	req_components = list(
-		/datum/stock_part/capacitor = 2,
-		/obj/item/mod/module/rad_protection = 1,
-		/obj/item/stack/sheet/plasteel = 2,
-	)
 
 /obj/item/circuitboard/machine/brm
 	name = "Boulder Retrieval Matrix"
@@ -1838,6 +1844,7 @@
 /obj/item/circuitboard/machine/atmos_shield_gen
 	name = /obj/machinery/atmos_shield_gen::name
 	greyscale_colors = CIRCUIT_COLOR_ENGINEERING
+	frame_type = MACHINE_FRAME_TYPE_SMALL
 	build_path = /obj/machinery/atmos_shield_gen
 	req_components = list(
 		/datum/stock_part/micro_laser = 1,
@@ -1861,35 +1868,3 @@
 /obj/item/circuitboard/machine/engine/propulsion
 	name = "Shuttle Engine Propulsion"
 	build_path = /obj/machinery/power/shuttle_engine/propulsion
-
-/obj/item/circuitboard/machine/quantum_server
-	name = "Quantum Server"
-	greyscale_colors = CIRCUIT_COLOR_SUPPLY
-	build_path = /obj/machinery/quantum_server
-	req_components = list(
-		/datum/stock_part/servo = 2,
-		/datum/stock_part/scanning_module = 1,
-		/datum/stock_part/capacitor = 1,
-	)
-
-/obj/item/circuitboard/machine/netpod
-	name = "Netpod"
-	greyscale_colors = CIRCUIT_COLOR_SUPPLY
-	build_path = /obj/machinery/netpod
-	req_components = list(
-		/datum/stock_part/servo = 1,
-		/datum/stock_part/matter_bin = 2,
-	)
-
-/obj/item/circuitboard/computer/quantum_console
-	name = "Quantum Console"
-	greyscale_colors = CIRCUIT_COLOR_SUPPLY
-	build_path = /obj/machinery/computer/quantum_console
-
-/obj/item/circuitboard/machine/byteforge
-	name = "Byteforge"
-	greyscale_colors = CIRCUIT_COLOR_SUPPLY
-	build_path = /obj/machinery/byteforge
-	req_components = list(
-		/datum/stock_part/micro_laser = 1,
-	)

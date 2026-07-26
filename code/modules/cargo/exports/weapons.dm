@@ -19,22 +19,12 @@
 /datum/export/weapon/taser
 	cost = CARGO_CRATE_VALUE
 	unit_name = "advanced taser"
-	export_types = list(/obj/item/gun/energy/e_gun/advtaser)
+	export_types = list(/obj/item/gun/energy/taser/advanced)
 
 /datum/export/weapon/laser
 	cost = CARGO_CRATE_VALUE
 	unit_name = "laser gun"
 	export_types = list(/obj/item/gun/energy/laser)
-
-/datum/export/weapon/disabler
-	cost = CARGO_CRATE_VALUE * 0.5
-	unit_name = "disabler"
-	export_types = list(/obj/item/gun/energy/disabler)
-
-/datum/export/weapon/energy_gun
-	cost = CARGO_CRATE_VALUE * 1.5
-	unit_name = "energy gun"
-	export_types = list(/obj/item/gun/energy/e_gun)
 
 /datum/export/weapon/inferno
 	cost = CARGO_CRATE_VALUE * 1.5
@@ -78,5 +68,5 @@
 /datum/export/weapon/wt550
 	cost = CARGO_CRATE_VALUE * 1.5
 	unit_name = "WT-550 automatic rifle"
-	export_types = list(/obj/item/gun/ballistic/automatic/wt550)
-	
+	export_types = list(/obj/item/gun/ballistic/automatic/smg/wt550)
+

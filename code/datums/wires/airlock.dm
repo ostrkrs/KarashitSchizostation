@@ -14,6 +14,10 @@
 	dictionary_key = /datum/wires/airlock/command
 	proper_name = "Command Airlock"
 
+/datum/wires/airlock/law
+	dictionary_key = /datum/wires/airlock/law
+	proper_name = "Law Airlock"
+
 /datum/wires/airlock/service
 	dictionary_key = /datum/wires/airlock/service
 	proper_name = "Service Airlock"

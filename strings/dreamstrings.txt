@@ -1,16 +1,12 @@
 %A% %ADJECTIVE% admiral
 %A% %ADJECTIVE% army
 %A% %ADJECTIVE% airlock
-%A% %ADJECTIVE% alien
 %A% %ADJECTIVE% ally
 %A% %ADJECTIVE% angel
-%A% %ADJECTIVE% armblade
 %A% %ADJECTIVE% bear
 %A% %ADJECTIVE% bee
-%A% %ADJECTIVE% blob
 %A% %ADJECTIVE% bottle
 %A% %ADJECTIVE% chemist
-%A% %ADJECTIVE% corgi
 %A% %ADJECTIVE% crewmember
 %A% %ADJECTIVE% crowd
 %A% %ADJECTIVE% cyborg
@@ -21,10 +17,8 @@
 %A% %ADJECTIVE% ending
 %A% %ADJECTIVE% enemy
 %A% %ADJECTIVE% engineer
-%A% %ADJECTIVE% ethereal
 %A% %ADJECTIVE% explosion
 %A% %ADJECTIVE% familiar face
-%A% %ADJECTIVE% felinid
 %A% %ADJECTIVE% foe
 %A% %ADJECTIVE% friend
 %A% %ADJECTIVE% ghost
@@ -37,7 +31,6 @@
 %A% %ADJECTIVE% imposter
 %A% %ADJECTIVE% inspector
 %A% %ADJECTIVE% laboratory
-%A% %ADJECTIVE% lizard
 %A% %ADJECTIVE% loved one
 %A% %ADJECTIVE% meat grinder
 %A% %ADJECTIVE% memory
@@ -51,7 +44,6 @@
 %A% %ADJECTIVE% ocean
 %A% %ADJECTIVE% pill
 %A% %ADJECTIVE% planet
-%A% %ADJECTIVE% plasmaman
 %A% %ADJECTIVE% pool
 %A% %ADJECTIVE% rat
 %A% %ADJECTIVE% scientist
@@ -83,21 +75,17 @@
 %ADJECTIVE% operatives
 %ADJECTIVE% paperwork
 %ADJECTIVE% plasma
+%ADJECTIVE% phoron
 %ADJECTIVE% power
 %ADJECTIVE% riches
 %ADJECTIVE% waves
 %ADJECTIVE% wind
 cigarettes
-Ian
 mutiny
-Nanotrasen
-Poly
-Runtime
 some %ADJECTIVE% cultists
 some %ADJECTIVE% lovers
 some %ADJECTIVE% melons
 some %ADJECTIVE% strangers
-some %ADJECTIVE% Xenomorphs
 the %ADJECTIVE% bartender
 the %ADJECTIVE% bridge
 the %ADJECTIVE% brig
@@ -105,7 +93,6 @@ the %ADJECTIVE% captain
 the %ADJECTIVE% clown
 the %ADJECTIVE% depths
 the %ADJECTIVE% gods
-the %ADJECTIVE% Icemoon wastes
 the %ADJECTIVE% maintenance tunnels
 the %ADJECTIVE% recycler
 the %ADJECTIVE% sun
@@ -115,15 +102,11 @@ the bar
 the bottom of a chasm
 the chapel
 the curator's back room
-the departure lounge
 the engine
-the emergency shuttle
 the library
 the medical bay
 the station
 the sun
-the Syndicate
 the tram
-the Wizard Federation
 time itself
 water

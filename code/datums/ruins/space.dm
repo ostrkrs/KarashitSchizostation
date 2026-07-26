@@ -138,12 +138,6 @@
 	name = "Space-Ruin Empty Shell"
 	description = "Cosy, rural property available for young professional couple. Only twelve parsecs from the nearest hyperspace lane!"
 
-/datum/map_template/ruin/space/the_lizards_gas
-	id = "the-lizards-gas"
-	suffix = "thelizardsgas.dmm"
-	name = "Space-Ruin The Lizard's Gas"
-	description = "A refueling station stocked with enough plasma for any space-worthy vessel. Well, maybe if it weren't 50 years ago."
-
 /datum/map_template/ruin/space/intact_empty_ship
 	id = "intact-empty-ship"
 	suffix = "intactemptyship.dmm"
@@ -541,14 +535,6 @@
 	suffix = "film_studio.dmm"
 	name = "Space-Ruin Space Sector 13 Local Channel"
 	description = "A local TV station serving areas surrounding Space Sector 13, shows including but not limited to: talk shows, operas, stage plays and more!"
-
-/datum/map_template/ruin/space/dragoon
-	id = "dragoon"
-	suffix = "dragoontomb.dmm"
-	name = "Sky Bulge Tomb"
-	description = "A tomb of a dice-loving dragoon in space. \
-		Turns out he got too good and jumped too high. \
-		Contains the Sky Bulge, which allows the user to jump onto targets."
 
 /datum/map_template/ruin/space/experimental_cloning
 	id = "cloning_facility"

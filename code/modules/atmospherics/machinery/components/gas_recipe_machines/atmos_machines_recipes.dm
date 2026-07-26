@@ -60,7 +60,7 @@ GLOBAL_LIST_INIT(gas_recipe_meta, gas_recipes_list())
 	min_temp = 200
 	max_temp = 400
 	energy_release = -2000000
-	requirements = list(/datum/gas/healium = 100, /datum/gas/oxygen = 120, /datum/gas/plasma = 50)
+	requirements = list(/datum/gas/healium = 100, /datum/gas/oxygen = 120, /datum/gas/phoron = 50)
 	products = list(/obj/item/grenade/gas_crystal/healium_crystal = 1)
 
 /datum/gas_recipe/crystallizer/proto_nitrate_grenade
@@ -78,7 +78,7 @@ GLOBAL_LIST_INIT(gas_recipe_meta, gas_recipes_list())
 	min_temp = 15
 	max_temp = 35
 	energy_release = -3000000
-	requirements = list(/datum/gas/freon = 60, /datum/gas/plasma = 160, /datum/gas/oxygen = 80)
+	requirements = list(/datum/gas/freon = 60, /datum/gas/phoron = 160, /datum/gas/oxygen = 80)
 	products = list(/obj/item/stack/sheet/hot_ice = 1)
 
 /datum/gas_recipe/crystallizer/ammonia_crystal
@@ -97,7 +97,7 @@ GLOBAL_LIST_INIT(gas_recipe_meta, gas_recipes_list())
 	max_temp = 20
 	energy_release = 3500000
 	dangerous = TRUE
-	requirements = list(/datum/gas/hypernoblium = 250, /datum/gas/antinoblium = 250, /datum/gas/bz = 200, /datum/gas/plasma = 5000, /datum/gas/oxygen = 4500)
+	requirements = list(/datum/gas/hypernoblium = 250, /datum/gas/antinoblium = 250, /datum/gas/bz = 200, /datum/gas/phoron = 5000, /datum/gas/oxygen = 4500)
 	products = list(/obj/machinery/power/supermatter_crystal/shard = 1)
 
 /datum/gas_recipe/crystallizer/n2o_crystal
@@ -118,14 +118,14 @@ GLOBAL_LIST_INIT(gas_recipe_meta, gas_recipes_list())
 	requirements = list(/datum/gas/carbon_dioxide = 1500)
 	products = list(/obj/item/stack/sheet/mineral/diamond = 1)
 
-/datum/gas_recipe/crystallizer/plasma_sheet
-	id = "plasma_sheet"
-	name = "Plasma sheet"
+/datum/gas_recipe/crystallizer/phoron_sheet
+	id = "phoron_sheet"
+	name = "Phoron sheet"
 	min_temp = 10
 	max_temp = 20
 	energy_release = 3500000
-	requirements = list(/datum/gas/plasma = 450)
-	products = list(/obj/item/stack/sheet/mineral/plasma = 1)
+	requirements = list(/datum/gas/phoron = 450)
+	products = list(/obj/item/stack/sheet/mineral/phoron = 1)
 
 /datum/gas_recipe/crystallizer/crystal_cell
 	id = "crystal_cell"
@@ -133,7 +133,7 @@ GLOBAL_LIST_INIT(gas_recipe_meta, gas_recipes_list())
 	min_temp = 50
 	max_temp = 90
 	energy_release = -800000
-	requirements = list(/datum/gas/plasma = 800, /datum/gas/helium = 100, /datum/gas/bz = 50)
+	requirements = list(/datum/gas/phoron = 800, /datum/gas/helium = 100, /datum/gas/bz = 50)
 	products = list(/obj/item/stock_parts/power_store/cell/crystal_cell = 1)
 
 /datum/gas_recipe/crystallizer/zaukerite
@@ -149,7 +149,7 @@ GLOBAL_LIST_INIT(gas_recipe_meta, gas_recipes_list())
 	id = "fuel_basic"
 	name = "standard fuel pellet"
 	energy_release = -6000000
-	requirements = list(/datum/gas/oxygen = 50, /datum/gas/plasma = 100)
+	requirements = list(/datum/gas/oxygen = 50, /datum/gas/phoron = 100)
 	products = list(/obj/item/fuel_pellet = 1)
 
 /datum/gas_recipe/crystallizer/fuel_pellet_advanced

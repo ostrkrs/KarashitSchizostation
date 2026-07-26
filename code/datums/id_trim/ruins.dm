@@ -38,7 +38,7 @@
 /datum/id_trim/away/cat_surgeon
 	assignment = "Cat Surgeon"
 	trim_state = "trim_medicaldoctor"
-	department_color = COLOR_MEDICAL_BLUE
+	department_color = COLOR_MEDICAL_TEAL
 	subdepartment_color = COLOR_SERVICE_LIME
 	access = list(ACCESS_AWAY_GENERAL, ACCESS_AWAY_MAINTENANCE)
 

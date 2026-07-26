@@ -27,10 +27,10 @@
 	for(var/i in 1 to 6)
 		new /obj/item/paper(folder)
 
-/obj/item/storage/briefcase/lawyer
-	folder_path = /obj/item/folder/blue
+/obj/item/storage/briefcase/iaa
+	folder_path = /obj/item/folder/red
 
-/obj/item/storage/briefcase/lawyer/PopulateContents()
+/obj/item/storage/briefcase/iaa/PopulateContents()
 	new /obj/item/stamp/law(src)
 	..()
 
@@ -110,7 +110,7 @@
 /// A briefcase that contains various sought-after spoils
 /obj/item/storage/briefcase/secure/riches/PopulateContents()
 	new /obj/item/clothing/suit/armor/vest(src)
-	new /obj/item/gun/ballistic/automatic/pistol(src)
+	new /obj/item/gun/ballistic/automatic/pistol/wt23(src)
 	new /obj/item/suppressor(src)
 	new /obj/item/melee/baton/telescopic(src)
 	new /obj/item/clothing/mask/balaclava(src)
@@ -165,3 +165,15 @@
 	remote.pad = WEAKREF(src.pad)
 	to_chat(user, span_notice("You link [pad] to [remote]."))
 	return ITEM_INTERACT_BLOCKING
+
+/obj/item/storage/briefcase/emergency_suit
+	name = "emergency spacesuit case"
+	desc = "Used for compact storage of fragile emergency suits."
+	icon_state = "emergency_box"
+	inhand_icon_state = "lockbox"
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	storage_type = /datum/storage/briefcase/emergency
+
+/obj/item/storage/briefcase/emergency_suit/PopulateContents()
+	new /obj/item/clothing/head/helmet/space/fragile(src)
+	new /obj/item/clothing/suit/space/fragile(src)

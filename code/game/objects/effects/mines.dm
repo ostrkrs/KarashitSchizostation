@@ -204,9 +204,9 @@
 /obj/effect/mine/gas/mineEffect(mob/victim)
 	atmos_spawn_air("[gas_type]=[gas_amount]")
 
-/obj/effect/mine/gas/plasma
-	name = "plasma mine"
-	gas_type = GAS_PLASMA
+/obj/effect/mine/gas/phoron
+	name = "phoron mine"
+	gas_type = GAS_PHORON
 
 /obj/effect/mine/gas/n2o
 	name = "\improper N2O mine"

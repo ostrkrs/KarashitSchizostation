@@ -10,7 +10,11 @@
 /datum/preference/choiced/gender/apply_to_human(mob/living/carbon/human/target, value)
 	if(!target.dna.species.sexes)
 		value = PLURAL //disregard gender preferences on this species
+
 	target.gender = value
+
+	if(target.dna.species.sexes)
+		target.physique = value
 
 /datum/preference/choiced/gender/create_informed_default_value(datum/preferences/preferences)
 	// The only reason I'm limiting this to male or female

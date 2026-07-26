@@ -250,7 +250,7 @@
 	pixel_x = -8;
 	pixel_y = 6
 	},
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "ki" = (
@@ -330,7 +330,7 @@
 /obj/item/food/cheese/firm_cheese,
 /obj/item/food/cheese/firm_cheese,
 /obj/item/thermometer,
-/obj/structure/closet/secure_closet/freezer/empty,
+/obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "oL" = (
@@ -342,7 +342,7 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 4
 	},
 /turf/open/floor/iron/smooth,
@@ -539,7 +539,7 @@
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "yi" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "yv" = (
 /obj/item/trash/can{
@@ -1114,7 +1114,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "Sa" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "Sb" = (
 /obj/item/food/deadmouse/moldy,
@@ -1142,7 +1142,7 @@
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "UX" = (
 /obj/structure/lattice/catwalk,
-/obj/item/crowbar/large/emergency,
+/obj/item/crowbar/large,
 /turf/template_noop,
 /area/ruin/space/has_grav/garbagetruck/foodwaste)
 "Vb" = (

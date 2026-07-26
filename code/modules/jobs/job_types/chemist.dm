@@ -1,9 +1,10 @@
 /datum/job/chemist
 	title = JOB_CHEMIST
+	alt_titles = JOB_CHEMIST_ALT_TITLES
 	description = "Supply the doctors with chemicals, make medicine, as well as \
 		less likable substances in the comfort of a fully reinforced room."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CMO
@@ -13,7 +14,6 @@
 	config_tag = "CHEMIST"
 
 	outfit = /datum/outfit/job/chemist
-	plasmaman_outfit = /datum/outfit/plasmaman/chemist
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_MED
@@ -35,7 +35,7 @@
 		/obj/item/paper/secretrecipe = 1
 	)
 	rpg_title = "Alchemist"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/chemist
@@ -47,7 +47,6 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat/chemist
 	belt = /obj/item/modular_computer/pda/chemist
 	ears = /obj/item/radio/headset/headset_med
-	glasses = /obj/item/clothing/glasses/science
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	l_pocket = /obj/item/reagent_containers/cup/bottle/random_buffer
 	r_pocket = /obj/item/reagent_containers/dropper

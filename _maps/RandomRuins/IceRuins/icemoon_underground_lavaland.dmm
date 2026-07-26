@@ -124,7 +124,7 @@
 "qv" = (
 /obj/structure/stone_tile/surrounding/burnt,
 /obj/structure/stone_tile/center/burnt,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "qN" = (
 /obj/structure/stone_tile{
@@ -266,7 +266,7 @@
 /obj/structure/stone_tile/cracked{
 	dir = 8
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "GN" = (
 /obj/structure/stone_tile/slab/cracked,
@@ -278,7 +278,7 @@
 /turf/closed/indestructible/boss,
 /area/lavaland/surface)
 "Ja" = (
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "JE" = (
 /turf/closed/mineral/volcanic/lava_land_surface,
@@ -317,7 +317,7 @@
 /area/lavaland/surface)
 "QC" = (
 /obj/structure/stone_tile/slab/cracked,
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "QL" = (
 /obj/structure/stone_tile/slab/burnt,
@@ -411,7 +411,7 @@
 /obj/structure/stone_tile/block/cracked{
 	dir = 1
 	},
-/turf/open/lava/plasma/ice_moon,
+/turf/open/lava/phoron/ice_moon,
 /area/icemoon/underground/explored)
 "Wm" = (
 /turf/open/misc/asteroid/snow/icemoon,

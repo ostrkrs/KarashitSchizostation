@@ -213,7 +213,7 @@
 	dir = 1
 	},
 /obj/structure/table/wood,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /obj/item/gun/ballistic/shotgun/automatic/combat,
 /turf/open/floor/wood/airless,
 /area/shuttle/pirate/flying_dutchman)
@@ -475,7 +475,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/pirate/flying_dutchman)
 "vt" = (
 /obj/structure/chair/comfy/shuttle{
@@ -858,7 +858,7 @@
 "RY" = (
 /obj/machinery/power/solar/fake,
 /obj/structure/cable,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/pirate/flying_dutchman)
 "Sp" = (
 /obj/effect/turf_decal/siding/wood{
@@ -933,7 +933,6 @@
 /obj/item/restraints/legcuffs/bola,
 /obj/item/gun/energy/laser,
 /obj/item/megaphone,
-/obj/item/melee/chainofcommand/tailwhip/kitty,
 /obj/item/claymore/cutlass,
 /turf/open/floor/carpet/royalblack/airless,
 /area/shuttle/pirate/flying_dutchman)

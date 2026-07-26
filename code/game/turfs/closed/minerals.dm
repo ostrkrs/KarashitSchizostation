@@ -290,7 +290,7 @@
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/iron = 40,
-		/obj/item/stack/ore/plasma = 20,
+		/obj/item/stack/ore/phoron = 20,
 		/obj/item/stack/ore/silver = 12,
 		/obj/item/stack/ore/titanium = 11,
 		/obj/item/stack/ore/uranium = 5,
@@ -349,7 +349,7 @@
 		/obj/item/stack/ore/bluespace_crystal = 20,
 		/obj/item/stack/ore/diamond = 30,
 		/obj/item/stack/ore/gold = 45,
-		/obj/item/stack/ore/plasma = 50,
+		/obj/item/stack/ore/phoron = 50,
 		/obj/item/stack/ore/silver = 50,
 		/obj/item/stack/ore/titanium = 45,
 		/obj/item/stack/ore/uranium = 35,
@@ -367,7 +367,7 @@
 		/obj/item/stack/ore/bluespace_crystal = 1,
 		/obj/item/stack/ore/diamond = 30,
 		/obj/item/stack/ore/gold = 45,
-		/obj/item/stack/ore/plasma = 50,
+		/obj/item/stack/ore/phoron = 50,
 		/obj/item/stack/ore/silver = 50,
 		/obj/item/stack/ore/titanium = 45,
 		/obj/item/stack/ore/uranium = 35,
@@ -383,7 +383,7 @@
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 4,
 		/obj/item/stack/ore/iron = 40,
-		/obj/item/stack/ore/plasma = 15,
+		/obj/item/stack/ore/phoron = 15,
 		/obj/item/stack/ore/silver = 6,
 		/obj/item/stack/ore/titanium = 4,
 		/obj/item/stack/ore/uranium = 2,
@@ -400,7 +400,7 @@
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 3,
 		/obj/item/stack/ore/iron = 50,
-		/obj/item/stack/ore/plasma = 3,
+		/obj/item/stack/ore/phoron = 3,
 		/obj/item/stack/ore/silver = 4,
 		/obj/item/stack/ore/titanium = 5,
 		/obj/item/stack/ore/uranium = 1,
@@ -420,7 +420,7 @@
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/iron = 40,
-		/obj/item/stack/ore/plasma = 20,
+		/obj/item/stack/ore/phoron = 20,
 		/obj/item/stack/ore/silver = 12,
 		/obj/item/stack/ore/titanium = 11,
 		/obj/item/stack/ore/uranium = 5,
@@ -455,7 +455,7 @@
 		/obj/item/stack/ore/diamond = 1,
 		/obj/item/stack/ore/gold = 10,
 		/obj/item/stack/ore/iron = 40,
-		/obj/item/stack/ore/plasma = 20,
+		/obj/item/stack/ore/phoron = 20,
 		/obj/item/stack/ore/silver = 12,
 		/obj/item/stack/ore/titanium = 11,
 		/obj/item/stack/ore/uranium = 5,
@@ -480,7 +480,7 @@
 		/obj/item/stack/ore/diamond = 4,
 		/obj/item/stack/ore/gold = 20,
 		/obj/item/stack/ore/iron = 20,
-		/obj/item/stack/ore/plasma = 20,
+		/obj/item/stack/ore/phoron = 20,
 		/obj/item/stack/ore/silver = 24,
 		/obj/item/stack/ore/titanium = 22,
 		/obj/item/stack/ore/uranium = 10,
@@ -495,7 +495,7 @@
 		/obj/item/stack/ore/bluespace_crystal = 20,
 		/obj/item/stack/ore/diamond = 30,
 		/obj/item/stack/ore/gold = 45,
-		/obj/item/stack/ore/plasma = 50,
+		/obj/item/stack/ore/phoron = 50,
 		/obj/item/stack/ore/silver = 50,
 		/obj/item/stack/ore/titanium = 45,
 		/obj/item/stack/ore/uranium = 35,
@@ -635,18 +635,18 @@
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	defer_change = TRUE
 
-/turf/closed/mineral/plasma
-	mineralType = /obj/item/stack/ore/plasma
-	scan_state = "rock_plasma"
+/turf/closed/mineral/phoron
+	mineralType = /obj/item/stack/ore/phoron
+	scan_state = "rock_phoron"
 
-/turf/closed/mineral/plasma/volcanic
+/turf/closed/mineral/phoron/volcanic
 	turf_type = /turf/open/misc/asteroid/basalt/lava_land_surface
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	initial_gas_mix = LAVALAND_DEFAULT_ATMOS
 	defer_change = TRUE
 
-/turf/closed/mineral/plasma/ice
-	icon_state = "icerock_plasma"
+/turf/closed/mineral/phoron/ice
+	icon_state = "icerock_phoron"
 	icon = MAP_SWITCH('icons/turf/walls/icerock_wall.dmi', 'icons/turf/mining.dmi')
 	base_icon_state = "icerock_wall"
 	smoothing_flags = SMOOTH_BITMASK | SMOOTH_BORDER

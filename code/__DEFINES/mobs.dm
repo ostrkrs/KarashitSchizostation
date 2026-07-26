@@ -122,7 +122,7 @@
 #define MOB_SLIME (1 << 11)
 ///The mob is fish or water-related.
 #define MOB_AQUATIC (1 << 12)
-///The mob is a mining-related mob. It's the plasma, you see. Gets in ya bones.
+///The mob is a mining-related mob. It's the phoron, you see. Gets in ya bones.
 #define MOB_MINING (1 << 13)
 ///The mob is a crustacean. Like crabs. Or lobsters.
 #define MOB_CRUSTACEAN (1 << 14)
@@ -132,7 +132,7 @@
 //Lung respiration type flags
 #define RESPIRATION_OXYGEN (1 << 0)
 #define RESPIRATION_N2 (1 << 1)
-#define RESPIRATION_PLASMA (1 << 2)
+#define RESPIRATION_PHORON (1 << 2)
 #define DEFAULT_BODYPART_ICON_ORGANIC 'icons/mob/human/bodyparts_greyscale.dmi'
 
 //Bodytype defines for surgery, and other misc things.
@@ -171,28 +171,26 @@
 #define BODYTYPE_CAN_BE_BIOSCRAMBLED(bodytype) (!(bodytype & BODYTYPE_BIOSCRAMBLE_INCOMPATIBLE))
 
 // Defines for Species IDs. Used to refer to the name of a species, for things like bodypart names or species preferences.
+// Humans and xenohumans
+#define SPECIES_HUMAN "human"
+#define SPECIES_HUMAN_CAVER "caver"
+// Aliens
 #define SPECIES_ABDUCTOR "abductor"
 #define SPECIES_ANDROID "android"
-#define SPECIES_DULLAHAN "dullahan"
 #define SPECIES_ETHEREAL "ethereal"
 #define SPECIES_ETHEREAL_LUSTROUS "lustrous"
 #define SPECIES_GHOST "ghost"
 #define SPECIES_GOLEM "golem"
-#define SPECIES_FELINE "felinid"
 #define SPECIES_FLYPERSON "fly"
-#define SPECIES_HUMAN "human"
 #define SPECIES_JELLYPERSON "jelly"
 #define SPECIES_SLIMEPERSON "slime"
 #define SPECIES_LUMINESCENT "luminescent"
 #define SPECIES_STARGAZER "stargazer"
 #define SPECIES_LIZARD "lizard"
-#define SPECIES_LIZARD_ASH "ashwalker"
 #define SPECIES_LIZARD_SILVER "silverscale"
 #define SPECIES_NIGHTMARE "nightmare"
 #define SPECIES_MONKEY "monkey"
 #define SPECIES_MOTH "moth"
-#define SPECIES_MUSHROOM "mush"
-#define SPECIES_PLASMAMAN "plasmaman"
 #define SPECIES_PODPERSON "pod"
 #define SPECIES_SHADOW "shadow"
 #define SPECIES_SKELETON "skeleton"
@@ -207,20 +205,10 @@
 // Like species IDs, but not specifically attached a species.
 #define BODYPART_ID_ALIEN "alien"
 #define BODYPART_ID_ROBOTIC "robotic"
-#define BODYPART_ID_DIGITIGRADE "digitigrade"
 #define BODYPART_ID_LARVA "larva"
 #define BODYPART_ID_PSYKER "psyker"
 #define BODYPART_ID_MEAT "meat"
 #define BODYPART_ID_PEG "peg"
-
-
-//See: datum/species/var/digitigrade_customization
-///The species does not have digitigrade legs in generation.
-#define DIGITIGRADE_NEVER 0
-///The species can have digitigrade legs in generation
-#define DIGITIGRADE_OPTIONAL 1
-///The species is forced to have digitigrade legs in generation.
-#define DIGITIGRADE_FORCED 2
 
 // Preferences for leg types
 /// Legs that are normal
@@ -304,9 +292,23 @@
 #define NUTRITION_LEVEL_HUNGRY 250
 #define NUTRITION_LEVEL_VERY_HUNGRY 200
 #define NUTRITION_LEVEL_STARVING 150
+#define NUTRITION_LEVEL_LIFE_THREATENING 25
 
 #define NUTRITION_LEVEL_START_MIN 250
 #define NUTRITION_LEVEL_START_MAX 400
+
+//Hydration levels for humans
+#define HYDRATION_LEVEL_OVERHYDRATED 600
+#define HYDRATION_LEVEL_FULL 550
+#define HYDRATION_LEVEL_WELL_HYDRATED 450
+#define HYDRATION_LEVEL_HYDRATED 350
+#define HYDRATION_LEVEL_THIRSTY 250
+#define HYDRATION_LEVEL_VERY_THIRSTY 200
+#define HYDRATION_LEVEL_DEHYDRATED 150
+#define HYDRATION_LEVEL_LIFE_THREATENING 25
+
+#define HYDRATION_LEVEL_START_MIN 250
+#define HYDRATION_LEVEL_START_MAX 450
 
 //Disgust levels for humans
 #define DISGUST_LEVEL_MAXEDOUT 150
@@ -469,9 +471,8 @@
 #define OFFSET_ACCESSORY "accessory"
 
 //MINOR TWEAKS/MISC
-#define AGE_MIN 18 //youngest a character can be
+#define AGE_MIN 21 //youngest a character can be
 #define AGE_MAX 85 //oldest a character can be
-#define AGE_MINOR 20 //legal age of space drinking and smoking
 #define WIZARD_AGE_MIN 30 //youngest a wizard can be
 #define APPRENTICE_AGE_MIN 29 //youngest an apprentice can be
 #define SHOES_SLOWDOWN 0 //How much shoes slow you down by default. Negative values speed you up
@@ -479,6 +480,7 @@
 #define DOOR_CRUSH_DAMAGE 20 //the amount of damage that airlocks deal when they crush you
 
 #define HUNGER_FACTOR 0.05 //factor at which mob nutrition decreases
+#define THIRST_FACTOR 0.08 //factor at which mob hydration decreases
 #define ETHEREAL_DISCHARGE_RATE (1e-3 * STANDARD_ETHEREAL_CHARGE) // Rate at which ethereal stomach charge decreases
 /// How much nutrition eating clothes as moth gives and drains
 #define CLOTHING_NUTRITION_GAIN 15
@@ -717,59 +719,61 @@ GLOBAL_LIST_INIT(human_heights_to_offsets, list(
 /// Total number of layers for mob overlays
 /// KEEP THIS UP-TO-DATE OR SHIT WILL BREAK
 /// Also consider updating layers_to_offset
-#define TOTAL_LAYERS 39
+#define TOTAL_LAYERS 40
 /// Mutations layer - Tk headglows, cold resistance glow, etc
-#define MUTATIONS_LAYER 38
+#define MUTATIONS_LAYER 39
 /// Mutantrace features (tail when looking south) that must appear behind the body parts
-#define BODY_BEHIND_LAYER 37
+#define BODY_BEHIND_LAYER 38
 /// Layer for bodyparts that should appear behind every other bodypart - Mostly, legs when facing WEST or EAST
-#define BODYPARTS_LOW_LAYER 36
+#define BODYPARTS_LOW_LAYER 37
 /// Layer for most bodyparts, appears above BODYPARTS_LOW_LAYER and below BODYPARTS_HIGH_LAYER
-#define BODYPARTS_LAYER 35
+#define BODYPARTS_LAYER 36
 /// Mutantrace features (snout, body markings) that must appear above the body parts
-#define BODY_ADJ_LAYER 34
-/// Underwear, undershirts, socks
-#define BODY_LAYER 33
+#define BODY_ADJ_LAYER 35
+/// Underwear, tops, socks
+#define BODY_LAYER 34
 /// Eyes and eyelids
-#define EYES_LAYER 32
+#define EYES_LAYER 33
 /// Mutations that should appear above body, body_adj and bodyparts layer (e.g. laser eyes)
-#define FRONT_MUTATIONS_LAYER 31
+#define FRONT_MUTATIONS_LAYER 32
 /// Damage indicators (cuts and burns)
-#define DAMAGE_LAYER 30
+#define DAMAGE_LAYER 31
 /// Jumpsuit clothing layer
-#define UNIFORM_LAYER 29
+#define UNIFORM_LAYER 30
 /// ID card layer
-#define ID_LAYER 28
+#define ID_LAYER 29
 /// ID card layer (might be deprecated)
-#define ID_CARD_LAYER 27
+#define ID_CARD_LAYER 28
 /// Layer for bodyparts that should appear above every other bodypart - Currently only used for hands
-#define BODYPARTS_HIGH_LAYER 26
+#define BODYPARTS_HIGH_LAYER 27
 /// Gloves layer
-#define GLOVES_LAYER 25
+#define GLOVES_LAYER 26
 /// Shoes layer
-#define SHOES_LAYER 24
+#define SHOES_LAYER 25
 /// Layer for masks that are worn below ears and eyes (like Balaclavas) (layers below hair, use flagsinv=HIDEHAIR as needed)
-#define LOW_FACEMASK_LAYER 23
+#define LOW_FACEMASK_LAYER 24
 /// Ears layer (Spessmen have ears? Wow)
-#define EARS_LAYER 22
+#define EARS_LAYER 23
 /// Layer for neck apperal that should appear below the suit slot (like neckties)
-#define LOW_NECK_LAYER 21
+#define LOW_NECK_LAYER 22
 /// Suit layer (armor, coats, etc.)
-#define SUIT_LAYER 20
+#define SUIT_LAYER 21
 /// Glasses layer
-#define GLASSES_LAYER 19
+#define GLASSES_LAYER 20
 /// Belt layer
-#define BELT_LAYER 18 //Possible make this an overlay of something required to wear a belt?
+#define BELT_LAYER 19 //Possible make this an overlay of something required to wear a belt?
 /// Suit storage layer (tucking a gun or baton underneath your armor)
-#define SUIT_STORE_LAYER 17
+#define SUIT_STORE_LAYER 18
 /// Neck layer (for wearing capes and bedsheets)
-#define NECK_LAYER 16
+#define NECK_LAYER 17
 /// Back layer (for backpacks and equipment on your back)
-#define BACK_LAYER 15
+#define BACK_LAYER 16
 /// Special layer for rendering beneath hair, for special facemasks
-#define BENEATH_HAIR_LAYER 14
+#define BENEATH_HAIR_LAYER 15
 /// Hair layer (mess with the fro and you got to go!)
-#define HAIR_LAYER 13 //TODO: make part of head layer?
+#define HAIR_LAYER 14 //TODO: make part of head layer?
+/// Above hair layer for horns and stuff
+#define ABOVE_HAIR_LAYER 13
 /// Facemask layer (gas masks, breath masks, etc.)
 #define FACEMASK_LAYER 12
 /// Head layer (hats, helmets, etc.)
@@ -851,6 +855,8 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 #define EXTERNAL_ADJACENT (1 << 1)
 /// Draws overlay on the BODY_BEHIND_LAYER
 #define EXTERNAL_BEHIND (1 << 2)
+/// Draws overlay on the ABOVE_HAIR_LAYER
+#define EXTERNAL_ABOVE_HAIR (1 << 3)
 /// Draws organ on all EXTERNAL layers
 #define ALL_EXTERNAL_OVERLAYS EXTERNAL_FRONT | EXTERNAL_ADJACENT | EXTERNAL_BEHIND
 
@@ -1050,7 +1056,7 @@ GLOBAL_LIST_INIT(layers_to_offset, list(
 #define BUTT_SPRITE_CAT "cat"
 #define BUTT_SPRITE_FLOWERPOT "flowerpot"
 #define BUTT_SPRITE_GREY "grey"
-#define BUTT_SPRITE_PLASMA "plasma"
+#define BUTT_SPRITE_SKELETON "skeleton"
 #define BUTT_SPRITE_FUZZY "fuzzy"
 #define BUTT_SPRITE_SLIME "slime"
 #define BUTT_SPRITE_SERPENTID "serpentid"

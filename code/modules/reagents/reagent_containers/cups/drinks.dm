@@ -484,7 +484,7 @@
 
 /obj/item/reagent_containers/cup/glass/flask
 	name = "flask"
-	desc = "Every good spaceman knows it's a good idea to bring along a couple of pints of whiskey wherever they go."
+	desc = "Every good spaceman knows it's a good idea to bring along a couple of pints of booze wherever they go."
 	custom_price = PAYCHECK_COMMAND * 2
 	icon = 'icons/obj/drinks/bottles.dmi'
 	icon_state = "flask"
@@ -499,10 +499,10 @@
 	custom_materials = list(/datum/material/gold=SMALL_MATERIAL_AMOUNT*5)
 
 /obj/item/reagent_containers/cup/glass/flask/det
-	name = "detective's flask"
-	desc = "The detective's only true friend."
+	name = "criminalist's flask"
+	desc = "The criminalist's only true friend."
 	icon_state = "detflask"
 	list_reagents = list(/datum/reagent/consumable/ethanol/whiskey = 30)
 
-/obj/item/reagent_containers/cup/glass/flask/det/minor
-	list_reagents = list(/datum/reagent/consumable/applejuice = 30)
+/obj/item/reagent_containers/cup/glass/flask/bartender
+	list_reagents = list(/datum/reagent/consumable/ethanol/cognac = 30)

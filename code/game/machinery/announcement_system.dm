@@ -328,20 +328,3 @@ GLOBAL_LIST_EMPTY(announcement_systems)
 		"R/NT1M3 A= ANNOUN-*#nt_SY!?EM.dm, LI%£ 86: N=0DE NULL!",
 		"BEPIS BEPIS BEPIS",
 		"ERR)#R - B*@ TEXT F*O(ND!")
-
-/datum/aas_config_entry/arrivals_broken
-	name = "Engineering Alert: Arrivals Shuttle Malfunction Announcement"
-	announcement_lines_map = list(
-		"Message" = "The arrivals shuttle has been damaged. Docking for repairs...")
-	general_tooltip = "Broadcasted, when arrivals shuttle docks for repairs. No replacable variables provided."
-	modifiable = FALSE
-
-/datum/aas_config_entry/announce_officer
-	name = "Security Alert: Officer Arrival Announcement"
-	announcement_lines_map = list(
-		"Message" = "Officer %OFFICER has been assigned to %DEPARTMENT.")
-	vars_and_tooltips_map = list(
-		"OFFICER" = "will be replaced with the officer's name.",
-		"DEPARTMENT" = "with the department they were assigned to."
-	)
-	modifiable = FALSE

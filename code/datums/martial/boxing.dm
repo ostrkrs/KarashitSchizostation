@@ -118,7 +118,7 @@
 	var/current_atk_verb = atk_verb
 	var/current_atk_verbed = atk_verbed
 
-	if(is_detective_job(attacker.mind?.assigned_role)) //In short: discombobulate
+	if(is_criminalist_job(attacker.mind?.assigned_role)) //In short: discombobulate
 		current_atk_verb = "discombobulate"
 		current_atk_verbed = "discombulated"
 

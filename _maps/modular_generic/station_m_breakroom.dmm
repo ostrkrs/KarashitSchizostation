@@ -13,7 +13,7 @@
 /area/template_noop)
 "i" = (
 /obj/effect/spawner/random/vending/colavend,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/template_noop)
 "j" = (
 /obj/effect/turf_decal/stripes/line{
@@ -26,7 +26,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/template_noop)
 "r" = (
 /turf/closed/wall,
@@ -37,11 +37,11 @@
 /area/template_noop)
 "z" = (
 /obj/effect/spawner/random/trash/graffiti,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/template_noop)
 "A" = (
 /obj/effect/spawner/random/vending/snackvend,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/template_noop)
 "B" = (
 /obj/machinery/light/small/blacklight/directional/north,
@@ -71,7 +71,7 @@
 /area/template_noop)
 "O" = (
 /obj/effect/spawner/random/trash/mess,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/template_noop)
 "P" = (
 /obj/effect/spawner/random/structure/chair_maintenance{
@@ -94,11 +94,11 @@
 "T" = (
 /obj/structure/sign/poster/random/directional/east,
 /obj/machinery/light/small/blacklight/directional/east,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/template_noop)
 "U" = (
 /obj/effect/spawner/random/trash/caution_sign,
-/turf/open/floor/iron/cafeteria,
+/turf/open/floor/iron,
 /area/template_noop)
 "V" = (
 /obj/effect/turf_decal/stripes/corner{

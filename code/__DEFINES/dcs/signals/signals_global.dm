@@ -78,9 +78,9 @@
 /// Global signal sent when a puzzle piece is completed (light mechanism, etc.) (try_id)
 #define COMSIG_GLOB_PUZZLE_COMPLETED "!puzzle_completed"
 
-/// Global signal called after the station changes its name.
+/// Global signal called after the ship changes its name.
 /// (new_name, old_name)
-#define COMSIG_GLOB_STATION_NAME_CHANGED "!station_name_changed"
+#define COMSIG_GLOB_SHIP_NAME_CHANGED "!ship_name_changed"
 
 /// Global signal sent before we decide what job everyone has
 #define COMSIG_GLOB_PRE_JOBS_ASSIGNED "!pre_roles_assigned"

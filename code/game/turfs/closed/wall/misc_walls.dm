@@ -30,10 +30,10 @@
 	new /obj/effect/temp_visual/cult/turf(get_turf(src))
 
 /turf/closed/wall/ice
+	desc = "A wall covered in a thick sheet of ice."
 	icon = 'icons/turf/walls/icedmetal_wall.dmi'
 	icon_state = "icedmetal_wall-0"
 	base_icon_state = "icedmetal_wall"
-	desc = "A wall covered in a thick sheet of ice."
 	turf_flags = IS_SOLID
 	smoothing_flags = SMOOTH_BITMASK
 	canSmoothWith = null
@@ -62,24 +62,24 @@
 	. = ..()
 	AddElement(/datum/element/rust/heretic)
 
-/turf/closed/wall/r_wall/rust
+/turf/closed/wall/reinforced/rust
 	icon = 'icons/turf/walls/rusty_reinforced_wall.dmi'
 	icon_state = "rusty_reinforced_wall-0"
 	base_icon_state = "rusty_reinforced_wall"
 	base_decon_state = "rusty_r_wall"
 
-/turf/closed/wall/r_wall/rust/Initialize(mapload)
+/turf/closed/wall/reinforced/rust/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/rust)
 
-/turf/closed/wall/r_wall/rust/nodiagonal
+/turf/closed/wall/reinforced/rust/nodiagonal
 	icon_state = "rusty_reinforced_wall-15"
 	smoothing_flags = SMOOTH_BITMASK
 
-/turf/closed/wall/r_wall/heretic_rust
+/turf/closed/wall/reinforced/heretic_rust
 	color = MAP_SWITCH(null, COLOR_GREEN_GRAY)
 
-/turf/closed/wall/r_wall/heretic_rust/Initialize(mapload)
+/turf/closed/wall/reinforced/heretic_rust/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/rust/heretic)
 
@@ -94,23 +94,6 @@
 	sheet_type = /obj/item/stack/sheet/bronze
 	sheet_amount = 2
 	girder_type = /obj/structure/girder/bronze
-
-/turf/closed/wall/rock
-	name = "reinforced rock"
-	desc = "It has metal struts that need to be welded away before it can be mined."
-	icon = 'icons/turf/walls/reinforced_rock.dmi'
-	icon_state = "porous_rock-0"
-	base_icon_state = "porous_rock"
-	turf_flags = NO_RUST
-	sheet_amount = 1
-	hardness = 50
-	girder_type = null
-	decon_type = /turf/closed/mineral/asteroid
-
-/turf/closed/wall/rock/porous
-	name = "reinforced porous rock"
-	desc = "This rock is filled with pockets of breathable air. It has metal struts to protect it from mining."
-	decon_type = /turf/closed/mineral/asteroid/porous
 
 /turf/closed/wall/space
 	name = "illusionist wall"

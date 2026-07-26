@@ -12,22 +12,10 @@
 * Departmental Maintenance
 */
 
-/area/station/maintenance/department/chapel
-	name = "Chapel Maintenance"
-	icon_state = "maint_chapel"
-
-/area/station/maintenance/department/chapel/monastery
-	name = "Monastery Maintenance"
-	icon_state = "maint_monastery"
-
-/area/station/maintenance/department/crew_quarters/bar
-	name = "Bar Maintenance"
-	icon_state = "maint_bar"
-	sound_environment = SOUND_AREA_WOODFLOOR
-
-/area/station/maintenance/department/crew_quarters/dorms
+/area/station/maintenance/department/commons/dorms
 	name = "Dormitory Maintenance"
 	icon_state = "maint_dorms"
+
 
 /area/station/maintenance/department/eva
 	name = "EVA Maintenance"
@@ -36,65 +24,52 @@
 /area/station/maintenance/department/eva/abandoned
 	name = "Abandoned EVA Storage"
 
-/area/station/maintenance/department/electrical
-	name = "Electrical Maintenance"
-	icon_state = "maint_electrical"
-
-/area/station/maintenance/department/engine/atmos
-	name = "Atmospherics Maintenance"
-	icon_state = "maint_atmos"
 
 /area/station/maintenance/department/security
 	name = "Security Maintenance"
 	icon_state = "maint_sec"
 
-/area/station/maintenance/department/security/upper
-	name = "Upper Security Maintenance"
+/area/station/maintenance/department/security/prison
+	name = "Prison Maintenance"
+	icon_state = "maint_prison"
 
-/area/station/maintenance/department/security/brig
-	name = "Brig Maintenance"
-	icon_state = "maint_brig"
 
 /area/station/maintenance/department/medical
 	name = "Medbay Maintenance"
 	icon_state = "medbay_maint"
 
-/area/station/maintenance/department/medical/central
-	name = "Central Medbay Maintenance"
-	icon_state = "medbay_maint_central"
-
-/area/station/maintenance/department/medical/morgue
-	name = "Morgue Maintenance"
-	icon_state = "morgue_maint"
 
 /area/station/maintenance/department/science
 	name = "Science Maintenance"
 	icon_state = "maint_sci"
 
-/area/station/maintenance/department/science/central
-	name = "Central Science Maintenance"
-	icon_state = "maint_sci_central"
+/area/station/maintenance/department/science/xenobiology
+	name = "Xenobiology Maintenance"
+	icon_state = "maint_xenobio"
+	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | XENOBIOLOGY_COMPATIBLE | CULT_PERMITTED
+
 
 /area/station/maintenance/department/cargo
 	name = "Cargo Maintenance"
 	icon_state = "maint_cargo"
 
+
 /area/station/maintenance/department/bridge
 	name = "Bridge Maintenance"
 	icon_state = "maint_bridge"
 
-/area/station/maintenance/department/engine
+
+/area/station/maintenance/department/engineering
 	name = "Engineering Maintenance"
 	icon_state = "maint_engi"
 
-/area/station/maintenance/department/prison
-	name = "Prison Maintenance"
-	icon_state = "sec_prison"
+/area/station/maintenance/department/engineering/electrical
+	name = "Electrical Maintenance"
+	icon_state = "maint_electrical"
 
-/area/station/maintenance/department/science/xenobiology
-	name = "Xenobiology Maintenance"
-	icon_state = "xenomaint"
-	area_flags = VALID_TERRITORY | BLOBS_ALLOWED | UNIQUE_AREA | XENOBIOLOGY_COMPATIBLE | CULT_PERMITTED
+/area/station/maintenance/department/engineering/atmos
+	name = "Atmospherics Maintenance"
+	icon_state = "maint_atmos"
 
 /*
 * Generic Maintenance Tunnels
@@ -205,21 +180,6 @@
 	name = "Fore Port Maintenance"
 	icon_state = "fpmaint"
 
-/area/station/maintenance/tram
-	name = "Primary Tram Maintenance"
-
-/area/station/maintenance/tram/left
-	name = "\improper Port Tram Underpass"
-	icon_state = "mainttramL"
-
-/area/station/maintenance/tram/mid
-	name = "\improper Central Tram Underpass"
-	icon_state = "mainttramM"
-
-/area/station/maintenance/tram/right
-	name = "\improper Starboard Tram Underpass"
-	icon_state = "mainttramR"
-
 /*
 * Discrete Maintenance Areas
 */
@@ -247,37 +207,8 @@
 /area/station/maintenance/space_hut/cabin
 	name = "Abandoned Cabin"
 
-/area/station/maintenance/space_hut/plasmaman
-	name = "\improper Abandoned Plasmaman Friendly Startup"
-
 /area/station/maintenance/space_hut/observatory
 	name = "\improper Space Observatory"
-
-/*
-* Radation Storm Shelters
-*/
-
-/area/station/maintenance/radshelter
-	name = "\improper Radstorm Shelter"
-	icon_state = "radstorm_shelter"
-
-/area/station/maintenance/radshelter/medical
-	name = "\improper Medical Radstorm Shelter"
-
-/area/station/maintenance/radshelter/sec
-	name = "\improper Security Radstorm Shelter"
-
-/area/station/maintenance/radshelter/service
-	name = "\improper Service Radstorm Shelter"
-
-/area/station/maintenance/radshelter/civil
-	name = "\improper Civilian Radstorm Shelter"
-
-/area/station/maintenance/radshelter/sci
-	name = "\improper Science Radstorm Shelter"
-
-/area/station/maintenance/radshelter/cargo
-	name = "\improper Cargo Radstorm Shelter"
 
 /*
 * External Hull Access Areas

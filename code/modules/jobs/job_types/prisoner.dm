@@ -2,16 +2,15 @@
 	title = JOB_PRISONER
 	description = "Keep yourself occupied in permabrig."
 	department_head = list("The Security Team")
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 0
 	spawn_positions = 2
 	supervisors = "the security team"
 	exp_granted_type = EXP_TYPE_CREW
-	paycheck = PAYCHECK_LOWER
+	paycheck = PAYCHECK_ZERO
 	config_tag = "PRISONER"
 
 	outfit = /datum/outfit/job/prisoner
-	plasmaman_outfit = /datum/outfit/plasmaman/prisoner
 
 	display_order = JOB_DISPLAY_ORDER_PRISONER
 	department_for_prefs = /datum/job_department/assistant
@@ -23,7 +22,7 @@
 
 	family_heirlooms = list(/obj/item/pen/blue)
 	rpg_title = "Defeated Miniboss"
-	job_flags = STATION_JOB_FLAGS | JOB_CANNOT_OPEN_SLOTS | JOB_ANTAG_PROTECTED & ~JOB_REOPEN_ON_ROUNDSTART_LOSS
+	job_flags = SHIP_JOB_FLAGS | JOB_CANNOT_OPEN_SLOTS | JOB_ANTAG_PROTECTED & ~JOB_REOPEN_ON_ROUNDSTART_LOSS
 
 /datum/job/prisoner/New()
 	. = ..()
@@ -42,7 +41,7 @@
 		crime_name = pick(assoc_to_keys(GLOB.prisoner_crimes))
 
 	var/datum/prisoner_crime/crime = GLOB.prisoner_crimes[crime_name]
-	var/datum/crime/past_crime = new(crime.name, crime.desc, "Central Command", "Indefinite.")
+	var/datum/crime/past_crime = new(crime.name, crime.desc, "Solstice Reach", "Indefinite.")
 	var/datum/record/crew/target_record = find_record(crewmember.real_name)
 	target_record.crimes += past_crime
 	target_record.recreate_manifest_photos(add_height_chart = TRUE)

@@ -32,16 +32,6 @@
 	stock_max = 4
 	availability_prob = 50
 
-/datum/market_item/tool/medsechud
-	name = "MedSec HUD"
-	desc = "A mostly defunct combination of security and health scanner HUDs. They don't produce these around anymore."
-	item = /obj/item/clothing/glasses/hud/medsechud
-
-	price_min = CARGO_CRATE_VALUE * 2
-	price_max = CARGO_CRATE_VALUE * 3.5
-	stock_max = 3
-	availability_prob = 50
-
 /datum/market_item/clothing/full_spacesuit_set
 	name = "\improper Nanotrasen Branded Spacesuit Box"
 	desc = "A few boxes of \"Old Style\" space suits fell off the back of a space truck."

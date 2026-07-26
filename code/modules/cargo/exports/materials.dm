@@ -33,11 +33,11 @@
 // Materials. Static materials exist as parent types, while materials subject to the stock market have a fluid cost as determined by material/market types
 // If you're adding a new material to the stock market, make sure its export type is added here.
 
-/datum/export/material/plasma
+/datum/export/material/phoron
 	cost = CARGO_CRATE_VALUE * 0.4
 	k_elasticity = 0
-	material_id = /datum/material/plasma
-	message = "cm3 of plasma"
+	material_id = /datum/material/phoron
+	message = "cm3 of phoron"
 
 /datum/export/material/bananium
 	cost = CARGO_CRATE_VALUE * 2

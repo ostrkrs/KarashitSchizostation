@@ -1,5 +1,5 @@
-/datum/corpse_damage/cause_of_death/plasmafire
-	cause_of_death = "when I got caught in a plasmafire!"
+/datum/corpse_damage/cause_of_death/phoronfire
+	cause_of_death = "when I got caught in a phoronfire!"
 	/// The max tox damage we deal
 	var/tox_damage_max = 40
 	/// Guaranteed burn damage
@@ -7,7 +7,7 @@
 	/// Burn damage that fluctuates with severity
 	var/burn_damage_max = 100
 
-/datum/corpse_damage/cause_of_death/plasmafire/apply_to_body(mob/living/carbon/human/body, severity, list/storage, list/datum/callback/on_revive_and_player_occupancy)
+/datum/corpse_damage/cause_of_death/phoronfire/apply_to_body(mob/living/carbon/human/body, severity, list/storage, list/datum/callback/on_revive_and_player_occupancy)
 	body.apply_damage(burn_damage_base + burn_damage_max * severity, BURN, wound_bonus = 100 * severity, spread_damage = TRUE)
 	body.apply_damage(tox_damage_max * severity, TOX)
 

@@ -57,7 +57,7 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/awaymission/research/interior/engineering)
 "ar" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/engineering)
 "as" = (
 /mob/living/basic/trooper/syndicate/ranged/smg,
@@ -84,7 +84,7 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "ay" = (
@@ -105,7 +105,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/engineering)
 "aB" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -133,7 +133,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/engineering)
 "aH" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/maint)
 "aI" = (
 /obj/structure/girder,
@@ -195,7 +195,7 @@
 "aW" = (
 /obj/machinery/light/directional/east,
 /obj/structure/tank_dispenser,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -203,7 +203,7 @@
 "aZ" = (
 /obj/machinery/light/directional/west,
 /obj/machinery/airalarm/directional/west,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /obj/structure/cable,
@@ -218,7 +218,6 @@
 /area/awaymission/research/interior/engineering)
 "be" = (
 /obj/item/stack/rods,
-/obj/item/ammo_casing/c45,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/engineering)
@@ -236,20 +235,20 @@
 /obj/structure/table,
 /obj/item/storage/toolbox/electrical,
 /obj/item/clothing/gloves/color/yellow,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bl" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/gateway)
 "bm" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/engineering)
 "bn" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -258,7 +257,6 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bs" = (
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
@@ -266,7 +264,7 @@
 "bw" = (
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -309,22 +307,22 @@
 /area/awaymission/research/interior/engineering)
 "bF" = (
 /obj/structure/closet/secure_closet/engineering_personal,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bG" = (
 /obj/item/stack/sheet/iron,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bH" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -333,25 +331,21 @@
 /obj/effect/mob_spawn/corpse/human/syndicatesoldier{
 	brute_damage = 200
 	},
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bK" = (
 /obj/item/wrench,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "bL" = (
 /obj/item/stack/sheet/plasteel,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -359,7 +353,7 @@
 "bM" = (
 /obj/item/storage/toolbox/mechanical,
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -368,7 +362,7 @@
 /obj/effect/mob_spawn/corpse/human/engineer{
 	brute_damage = 200
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -413,7 +407,7 @@
 /area/awaymission/research/interior/gateway)
 "bV" = (
 /obj/structure/sign/warning/no_smoking/circle/directional/west,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -422,11 +416,10 @@
 /obj/effect/mob_spawn/corpse/human/engineer{
 	brute_damage = 200
 	},
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -457,7 +450,7 @@
 /area/awaymission/research/interior/gateway)
 "cf" = (
 /obj/item/ammo_casing/c46x30mm,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -502,7 +495,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "cp" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior)
 "cq" = (
 /obj/machinery/door/airlock/engineering{
@@ -510,7 +503,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -529,7 +522,7 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -539,7 +532,7 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/gateway)
 "cx" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/genetics)
 "cy" = (
 /obj/machinery/door/airlock/maintenance_hatch{
@@ -560,7 +553,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "cC" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -587,7 +580,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "cN" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron,
@@ -596,13 +589,13 @@
 /obj/effect/mob_spawn/corpse/human/nanotrasensoldier{
 	brute_damage = 200
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "cQ" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/secure)
 "cR" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -614,7 +607,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/gateway)
 "cY" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
@@ -623,7 +616,7 @@
 	name = "Engine Room"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -633,7 +626,7 @@
 	name = "Engine Room"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -687,21 +680,20 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "dl" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "dn" = (
-/obj/item/ammo_casing/c45,
 /mob/living/basic/trooper/syndicate,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "do" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/security)
 "dp" = (
 /obj/structure/closet/crate,
@@ -724,14 +716,14 @@
 /obj/effect/mob_spawn/corpse/human/nanotrasensoldier{
 	brute_damage = 200
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "dB" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -778,14 +770,9 @@
 /area/awaymission/research/interior/secure)
 "dP" = (
 /mob/living/basic/trooper/syndicate/ranged/smg,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
-"dR" = (
-/obj/item/ammo_casing/c45,
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/awaymission/research/interior/maint)
 "dW" = (
 /obj/effect/mapping_helpers/airlock/locked,
 /obj/machinery/door/airlock/highsecurity{
@@ -814,7 +801,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "ea" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/cryo)
 "eb" = (
 /obj/machinery/door/poddoor{
@@ -827,10 +814,6 @@
 /mob/living/basic/trooper/syndicate/ranged/smg,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
-"ed" = (
-/obj/item/ammo_casing/c45,
-/turf/open/floor/plating,
-/area/awaymission/research/interior/maint)
 "ee" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
@@ -841,30 +824,27 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
-"eh" = (
-/turf/open/floor/iron/white/corner,
-/area/awaymission/research/interior)
 "ei" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "ej" = (
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/tile/yellow/half/contrasted,
+/obj/effect/turf_decal/tile/yellow/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "ek" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted,
+/obj/effect/turf_decal/tile/yellow/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "em" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "en" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/awaymission/research/interior)
@@ -883,48 +863,48 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "eu" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "ev" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "ew" = (
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "ez" = (
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "eA" = (
 /obj/structure/extinguisher_cabinet/directional/north,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "eB" = (
 /mob/living/basic/trooper/nanotrasen/ranged,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "eC" = (
-/obj/item/ammo_casing/c9mm,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/item/ammo_casing/c8mm,
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -950,7 +930,7 @@
 /area/awaymission/research/interior/maint)
 "eI" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -959,26 +939,26 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "eK" = (
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "eL" = (
 /mob/living/basic/trooper/syndicate,
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "eN" = (
-/obj/effect/turf_decal/tile/yellow/anticorner/contrasted{
+/obj/effect/turf_decal/tile/yellow/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "eO" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -992,7 +972,7 @@
 	name = "Cell Door";
 	req_access = list("brig_entrance")
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -1003,7 +983,7 @@
 	name = "Brig"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/entrance,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -1034,7 +1014,7 @@
 /area/awaymission/research/interior)
 "fb" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1068,13 +1048,13 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "ff" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fg" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1085,14 +1065,13 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fk" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fl" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/item/ammo_casing/c45,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fn" = (
@@ -1100,7 +1079,7 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fo" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -1110,17 +1089,17 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "fq" = (
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "fr" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "fu" = (
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "fv" = (
@@ -1160,17 +1139,17 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/secure)
 "fD" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fE" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fF" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fH" = (
@@ -1178,17 +1157,17 @@
 	brute_damage = 200
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fI" = (
-/obj/item/ammo_casing/c9mm,
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/item/ammo_casing/c8mm,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fJ" = (
 /obj/structure/barricade/security,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fK" = (
@@ -1196,11 +1175,11 @@
 	name = "Cryogenetics Research"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/genetics,
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "fL" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fM" = (
@@ -1211,26 +1190,26 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fN" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fO" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fQ" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/turf_decal/tile/red/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fR" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1241,25 +1220,25 @@
 	name = "Brig"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fT" = (
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "fU" = (
 /obj/structure/barricade/security,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "fV" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted,
+/obj/effect/turf_decal/tile/red/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "gc" = (
 /obj/structure/extinguisher_cabinet/directional/east,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1334,7 +1313,7 @@
 /area/awaymission/research/interior)
 "gB" = (
 /obj/structure/sign/departments/science,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior)
 "gD" = (
 /turf/open/floor/iron,
@@ -1344,20 +1323,19 @@
 /obj/item/stack/cable_coil{
 	amount = 1
 	},
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "gP" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "gQ" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -1365,46 +1343,46 @@
 "gS" = (
 /obj/item/reagent_containers/spray/pepper,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "gT" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "gU" = (
 /obj/structure/barricade/security,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "gV" = (
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "gX" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "gZ" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "ha" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1415,33 +1393,33 @@
 	name = "Brig"
 	},
 /obj/effect/mapping_helpers/airlock/access/all/security/general,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hc" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hd" = (
 /obj/structure/barricade/security,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "he" = (
-/obj/effect/turf_decal/tile/red/anticorner/contrasted{
+/obj/effect/turf_decal/tile/red/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "hk" = (
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1453,21 +1431,21 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "hn" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "ho" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "hq" = (
 /mob/living/basic/trooper/nanotrasen/ranged/smg,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1475,7 +1453,7 @@
 "hr" = (
 /obj/machinery/light/directional/east,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1486,34 +1464,34 @@
 /area/awaymission/research/interior/secure)
 "ht" = (
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted,
+/obj/effect/turf_decal/tile/purple/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "hy" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hz" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hA" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hB" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hC" = (
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hD" = (
@@ -1526,7 +1504,7 @@
 	name = "Cell Door";
 	req_access = list("security")
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "hF" = (
@@ -1536,7 +1514,7 @@
 /area/awaymission/research/interior/security)
 "hG" = (
 /obj/structure/closet/secure_closet/security,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -1544,7 +1522,7 @@
 "hH" = (
 /obj/machinery/vending/security,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1577,12 +1555,12 @@
 	},
 /area/awaymission/research/interior/genetics)
 "hL" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/awaymission/research/interior)
 "hM" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -1592,13 +1570,13 @@
 	brute_damage = 200
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hO" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -1612,20 +1590,20 @@
 	pixel_x = 32;
 	pixel_y = -24
 	},
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "hQ" = (
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/awaymission/research/interior)
 "hR" = (
 /obj/structure/table,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1664,13 +1642,13 @@
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/secure)
 "hZ" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "ia" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1690,7 +1668,7 @@
 /area/awaymission/research/interior/security)
 "ij" = (
 /mob/living/simple_animal/bot/secbot/genesky,
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /obj/structure/cable,
@@ -1727,14 +1705,14 @@
 /area/awaymission/research/interior/bathroom)
 "ir" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "it" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1769,7 +1747,7 @@
 /area/awaymission/research/interior)
 "iE" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1805,7 +1783,7 @@
 /area/awaymission/research/interior/bathroom)
 "iQ" = (
 /mob/living/basic/trooper/syndicate,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -1822,7 +1800,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/maint)
 "iW" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/medbay)
 "iX" = (
 /turf/closed/wall,
@@ -1835,27 +1813,27 @@
 /area/awaymission/research/interior/dorm)
 "iZ" = (
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "ja" = (
 /obj/machinery/sleeper,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jb" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jc" = (
 /obj/structure/table,
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "je" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1865,11 +1843,11 @@
 /area/awaymission/research/interior/medbay)
 "jg" = (
 /obj/structure/sink/directional/east,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jh" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jj" = (
@@ -1898,50 +1876,55 @@
 /area/awaymission/research/interior/dorm)
 "jp" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "jq" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "js" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "jt" = (
 /obj/machinery/door/airlock/medical{
 	name = "Medical"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "ju" = (
+/obj/effect/turf_decal/tile/blue/half,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jv" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted,
+/obj/effect/turf_decal/tile/light_blue/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jx" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jz" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "jB" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -1967,14 +1950,14 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "jH" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "jK" = (
 /obj/structure/sign/departments/medbay,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior)
 "jP" = (
 /obj/item/kirbyplants/organic/plant16,
@@ -1990,7 +1973,7 @@
 "jS" = (
 /obj/structure/table,
 /obj/item/surgical_drapes,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2051,11 +2034,11 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "kd" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron,
 /area/awaymission/research/interior)
 "ke" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2064,33 +2047,40 @@
 /obj/machinery/door/airlock/medical{
 	name = "Medical"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "kg" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kh" = (
+/obj/effect/turf_decal/tile/blue/half{
+	dir = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "ki" = (
-/obj/effect/turf_decal/tile/blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/light_blue/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kl" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2098,7 +2088,7 @@
 "km" = (
 /obj/structure/table,
 /obj/item/saw,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2106,13 +2096,13 @@
 "kn" = (
 /obj/structure/table,
 /obj/item/scalpel,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "ko" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2144,10 +2134,6 @@
 	},
 /turf/open/floor/wood,
 /area/awaymission/research/interior/dorm)
-"kt" = (
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/turf/open/floor/iron,
-/area/awaymission/research/interior/dorm)
 "ku" = (
 /obj/structure/closet/wardrobe/pjs,
 /obj/effect/turf_decal/siding/yellow{
@@ -2156,13 +2142,13 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "kv" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "kw" = (
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2172,21 +2158,21 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kz" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kA" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2217,12 +2203,12 @@
 /area/awaymission/research/interior/medbay)
 "kN" = (
 /obj/machinery/vending/cola,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kO" = (
 /obj/structure/chair/comfy/beige,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kP" = (
@@ -2231,7 +2217,7 @@
 	oxy_damage = 55
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kR" = (
@@ -2245,7 +2231,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "kW" = (
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kX" = (
@@ -2253,24 +2239,24 @@
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kY" = (
 /obj/machinery/vending/coffee,
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "kZ" = (
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "la" = (
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2278,7 +2264,7 @@
 "lb" = (
 /obj/structure/table,
 /obj/machinery/microwave,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2290,21 +2276,28 @@
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
 /obj/item/reagent_containers/blood/random,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lf" = (
+/obj/effect/turf_decal/tile/blue/half{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lh" = (
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2312,7 +2305,7 @@
 "li" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2321,7 +2314,7 @@
 /obj/structure/table,
 /obj/item/storage/box/donkpockets,
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2340,7 +2333,7 @@
 /area/awaymission/research/interior/dorm)
 "lq" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2349,13 +2342,11 @@
 /obj/machinery/computer/dna_console{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /obj/machinery/light/small/broken/directional/south,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "lu" = (
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
 /obj/item/shard{
 	icon_state = "small"
 	},
@@ -2363,9 +2354,18 @@
 /area/awaymission/research/interior/medbay)
 "lv" = (
 /obj/effect/decal/cleanable/blood/drip,
+/obj/item/stack/rods,
+/obj/effect/turf_decal/tile/blue/half{
+	dir = 4
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2373,7 +2373,7 @@
 "lx" = (
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes/dromedaryco,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2396,35 +2396,35 @@
 /area/awaymission/research/interior/dorm)
 "lC" = (
 /obj/machinery/iv_drip,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lD" = (
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lG" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lH" = (
 /obj/machinery/vending/cigarette,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "lI" = (
 /obj/machinery/vending/snack,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2433,7 +2433,7 @@
 /obj/structure/closet/crate/bin,
 /obj/item/trash/can,
 /obj/item/trash/chips,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2521,7 +2521,7 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "ma" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/awaymission/research/interior/escapepods)
 "mb" = (
 /turf/closed/wall,
@@ -2546,25 +2546,25 @@
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mi" = (
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mj" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "ml" = (
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mm" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted,
+/obj/effect/turf_decal/tile/green/anticorner,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mo" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2615,7 +2615,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/escapepods)
 "mw" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
@@ -2624,7 +2624,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2637,7 +2637,7 @@
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2647,19 +2647,19 @@
 /area/awaymission/research/exterior)
 "mC" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mD" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mE" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2668,7 +2668,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2676,27 +2676,27 @@
 "mG" = (
 /obj/structure/table,
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mH" = (
-/obj/effect/turf_decal/tile/green/anticorner/contrasted{
+/obj/effect/turf_decal/tile/green/anticorner{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mI" = (
 /obj/structure/sign/warning/pods/directional/west,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mJ" = (
 /obj/item/kirbyplants,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -2730,13 +2730,13 @@
 /area/awaymission/research/interior/escapepods)
 "mP" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mQ" = (
 /obj/structure/table,
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mS" = (
@@ -2756,14 +2756,14 @@
 /area/awaymission/research/interior/escapepods)
 "mV" = (
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "mW" = (
 /obj/structure/sign/warning/vacuum/directional/south,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -2818,15 +2818,15 @@
 /area/awaymission/research/interior/engineering)
 "nC" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/wt550,
-/obj/item/gun/ballistic/automatic/wt550,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/gun/ballistic/automatic/smg/wt550,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
+/obj/item/ammo_box/magazine/smg46mm_wt550,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "ok" = (
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "oO" = (
@@ -2840,7 +2840,7 @@
 /area/awaymission/research/interior/dorm)
 "oT" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "pt" = (
@@ -2854,7 +2854,7 @@
 /area/awaymission/research/interior/escapepods)
 "pv" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "pS" = (
@@ -2864,7 +2864,7 @@
 /obj/item/stack/cable_coil{
 	amount = 1
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "pW" = (
@@ -2874,7 +2874,7 @@
 /area/awaymission/research/interior/maint)
 "pX" = (
 /obj/item/stack/sheet/iron,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "qi" = (
@@ -2885,17 +2885,17 @@
 	name = "panic lockdown button"
 	},
 /obj/machinery/airalarm/directional/south,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "qp" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "qP" = (
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "qQ" = (
@@ -2911,28 +2911,28 @@
 	dir = 8
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "qZ" = (
 /obj/structure/chair/stool/directional/west,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "rh" = (
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "rk" = (
 /obj/structure/barricade/security,
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "ry" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "rB" = (
@@ -2942,25 +2942,25 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "rK" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "si" = (
 /obj/structure/chair/stool/directional/south,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "sn" = (
 /mob/living/basic/trooper/syndicate/ranged/smg,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "sq" = (
 /obj/machinery/door/airlock/medical{
 	name = "Medical Storage"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "su" = (
@@ -2970,7 +2970,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "sM" = (
@@ -2990,8 +2990,14 @@
 /area/awaymission/research/exterior)
 "tv" = (
 /obj/effect/decal/cleanable/blood/drip,
+/obj/effect/turf_decal/tile/blue/full,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "tE" = (
@@ -3001,31 +3007,31 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "tW" = (
 /obj/item/kirbyplants/organic/applebush,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "uf" = (
 /obj/machinery/dna_scannernew,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "uh" = (
 /obj/structure/chair/office,
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "ut" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "va" = (
@@ -3036,12 +3042,12 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/purple/half/contrasted,
+/obj/effect/turf_decal/tile/purple/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "vh" = (
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "vv" = (
@@ -3053,12 +3059,12 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "vT" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "vX" = (
 /obj/machinery/door/window/left/directional/east,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "wa" = (
@@ -3080,19 +3086,19 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "wN" = (
 /obj/structure/chair{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "xe" = (
 /obj/item/kirbyplants/organic/plant16,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "xl" = (
@@ -3114,7 +3120,7 @@
 /obj/item/clothing/head/helmet/alt,
 /obj/item/clothing/head/helmet/alt,
 /obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "xG" = (
@@ -3127,7 +3133,7 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/escapepods)
 "xS" = (
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
@@ -3136,7 +3142,7 @@
 /obj/item/paper_bin,
 /obj/item/pen,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "yj" = (
@@ -3156,12 +3162,20 @@
 	pixel_y = 26
 	},
 /mob/living/basic/trooper/syndicate/ranged/smg,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "yn" = (
+/obj/effect/turf_decal/tile/blue/half{
+	dir = 1
+	},
+/obj/structure/cable,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /obj/structure/cable,
@@ -3169,12 +3183,12 @@
 /area/awaymission/research/interior/medbay)
 "yM" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "yW" = (
 /mob/living/basic/trooper/nanotrasen,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/cryo)
 "zn" = (
@@ -3191,14 +3205,14 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "zt" = (
-/obj/item/ammo_casing/c9mm,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/item/ammo_casing/c8mm,
+/obj/effect/turf_decal/tile/purple/full,
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "zU" = (
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /obj/structure/cable,
@@ -3209,22 +3223,28 @@
 /obj/item/clothing/suit/armor/riot,
 /obj/item/clothing/head/helmet/toggleable/riot,
 /obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "Ba" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
 /obj/item/storage/medkit/toxin,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Bp" = (
 /obj/effect/decal/cleanable/blood,
+/obj/effect/turf_decal/tile/blue/full,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/cleanable/blood,
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Bx" = (
@@ -3235,26 +3255,26 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 4
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "By" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /obj/machinery/light/directional/north,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "BN" = (
 /obj/structure/window/reinforced/spawner/directional/west,
 /mob/living/carbon/human/species/monkey,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "BQ" = (
 /mob/living/basic/trooper/nanotrasen/ranged/smg,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "BY" = (
@@ -3263,46 +3283,41 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "Ch" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Cs" = (
 /obj/machinery/door/window/left/directional/west,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Cu" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "CF" = (
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "CK" = (
 /obj/structure/table,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
-"CN" = (
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior)
 "CV" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "CW" = (
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -3317,75 +3332,77 @@
 	},
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
-"Dt" = (
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior)
 "DC" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/effect/mapping_helpers/apc/cell_5k,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "DO" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "DY" = (
 /mob/living/basic/trooper/nanotrasen/ranged,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "Em" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Ez" = (
 /obj/effect/decal/cleanable/blood,
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "EC" = (
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "EE" = (
 /obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "EV" = (
 /obj/effect/mob_spawn/corpse/human/engineer{
 	brute_damage = 200
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "Fl" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/shard{
+	icon_state = "small"
+	},
+/obj/effect/turf_decal/tile/blue/full,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/item/ammo_casing/c45,
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Fn" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Fx" = (
 /obj/machinery/light/directional/east,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "FB" = (
@@ -3394,7 +3411,7 @@
 /obj/item/clothing/suit/armor/vest,
 /obj/item/clothing/head/helmet,
 /obj/item/clothing/head/helmet,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "FQ" = (
@@ -3403,41 +3420,41 @@
 	oxy_damage = 55
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "FY" = (
 /obj/item/stack/sheet/plasteel,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "Gd" = (
 /obj/item/kirbyplants/organic/plant10,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "Ge" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Gk" = (
 /obj/item/shard{
 	icon_state = "small"
 	},
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "Gn" = (
 /obj/structure/table,
 /obj/item/folder,
 /obj/item/folder,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "Ha" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Hc" = (
@@ -3448,43 +3465,33 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "HD" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "HE" = (
 /obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "HS" = (
-/obj/effect/turf_decal/tile/green/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior)
-"HW" = (
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "It" = (
 /obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
-/obj/item/book/manual/wiki/security_space_law,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/item/book/manual/wiki/security_corp_law,
+/obj/item/book/manual/wiki/security_corp_law,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "Iv" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "IN" = (
 /obj/structure/rack,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
-/obj/item/ammo_box/magazine/m45,
-/obj/item/ammo_box/magazine/m45,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "IO" = (
@@ -3494,11 +3501,11 @@
 /area/awaymission/research/interior/dorm)
 "IT" = (
 /obj/machinery/door/window/right/directional/west,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "IX" = (
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 8
 	},
 /obj/machinery/light/directional/east,
@@ -3542,34 +3549,34 @@
 "Jw" = (
 /obj/machinery/light/directional/west,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Jz" = (
 /obj/item/shard,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "JT" = (
 /obj/machinery/light/small/directional/north,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "Kd" = (
 /obj/structure/window/reinforced/spawner/directional/west,
 /mob/living/carbon/human,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Kf" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "Kg" = (
 /obj/structure/table,
 /obj/item/storage/fancy/donut_box,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "Km" = (
@@ -3581,43 +3588,42 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "KF" = (
 /obj/structure/rack,
 /obj/item/clothing/suit/hooded/ablative,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "KJ" = (
 /obj/item/ammo_casing/c46x30mm,
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "KK" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "KN" = (
 /obj/structure/table,
 /obj/item/storage/medkit/brute,
 /obj/item/storage/medkit/fire,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Le" = (
 /obj/structure/table/optable,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Lm" = (
 /obj/effect/decal/cleanable/blood,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "LP" = (
@@ -3628,19 +3634,12 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "LX" = (
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
-"Mo" = (
-/obj/item/stack/rods,
-/obj/item/ammo_casing/c45,
-/obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior/engineering)
 "Mz" = (
 /obj/machinery/light/directional/west,
-/obj/effect/turf_decal/tile/purple/half/contrasted{
+/obj/effect/turf_decal/tile/purple/half{
 	dir = 8
 	},
 /obj/structure/cable,
@@ -3652,41 +3651,41 @@
 	oxy_damage = 55
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "Nf" = (
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Nu" = (
 /obj/machinery/door/airlock/medical{
 	name = "Medical Surgery"
 	},
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "NF" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "NI" = (
 /obj/effect/spawner/random/entertainment/arcade,
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "NW" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "Ob" = (
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Ok" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 1
 	},
 /obj/structure/cable,
@@ -3699,20 +3698,20 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "Ov" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "OF" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "OG" = (
@@ -3725,16 +3724,16 @@
 /turf/open/floor/iron,
 /area/awaymission/research/interior/dorm)
 "OH" = (
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "OU" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/cryo)
 "OW" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "Pt" = (
@@ -3745,12 +3744,12 @@
 	name = "panic lockdown button"
 	},
 /obj/machinery/airalarm/directional/north,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "PG" = (
 /mob/living/carbon/human,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Qd" = (
@@ -3760,7 +3759,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -3768,21 +3767,21 @@
 "Qg" = (
 /obj/structure/window/reinforced/spawner/directional/east,
 /mob/living/carbon/human/species/monkey,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Qi" = (
 /obj/machinery/door/window/right/directional/east,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Qq" = (
 /mob/living/basic/trooper/nanotrasen/ranged,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "Qs" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Qz" = (
@@ -3794,7 +3793,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -3804,14 +3803,13 @@
 /obj/item/stack/cable_coil{
 	amount = 1
 	},
-/obj/item/ammo_casing/c45,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "QQ" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/security)
 "Re" = (
@@ -3821,18 +3819,18 @@
 /area/awaymission/research/interior/maint)
 "Rn" = (
 /obj/structure/reagent_dispensers/wall/peppertank/directional/south,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "Ro" = (
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "RI" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Sf" = (
@@ -3840,7 +3838,7 @@
 	brute_damage = 200
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -3858,24 +3856,29 @@
 /area/awaymission/research/exterior)
 "Th" = (
 /mob/living/basic/trooper/syndicate,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Tj" = (
 /obj/item/melee/baton/telescopic,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "Tz" = (
 /obj/structure/chair/office{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "TC" = (
+/obj/effect/turf_decal/tile/blue/full,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
 /obj/item/ammo_casing/c45,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "TD" = (
@@ -3886,7 +3889,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/yellow/half/contrasted{
+/obj/effect/turf_decal/tile/yellow/half{
 	dir = 8
 	},
 /turf/open/floor/iron/white,
@@ -3902,7 +3905,7 @@
 /area/awaymission/research/interior/escapepods)
 "TK" = (
 /obj/machinery/computer/dna_console,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /obj/machinery/light/small/broken/directional/north,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
@@ -3924,7 +3927,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted,
+/obj/effect/turf_decal/tile/red/half,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "UA" = (
@@ -3936,18 +3939,18 @@
 /turf/open/floor/plating,
 /area/awaymission/research/interior/maint)
 "UC" = (
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "UO" = (
 /obj/item/stack/rods,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "UU" = (
-/obj/effect/turf_decal/tile/purple/anticorner/contrasted{
+/obj/effect/turf_decal/tile/purple/anticorner{
 	dir = 8
 	},
 /obj/structure/cable,
@@ -3955,34 +3958,34 @@
 /area/awaymission/research/interior/cryo)
 "UY" = (
 /obj/item/ammo_casing/c46x30mm,
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Vt" = (
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "VD" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/engineering)
 "VW" = (
 /obj/structure/closet,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "VY" = (
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior)
 "Wf" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/cryo)
 "Ws" = (
@@ -3997,7 +4000,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/red/half/contrasted{
+/obj/effect/turf_decal/tile/red/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -4028,36 +4031,30 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "XR" = (
 /obj/structure/table,
-/obj/effect/turf_decal/tile/green/half/contrasted{
+/obj/effect/turf_decal/tile/green/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
-"XU" = (
-/obj/item/ammo_casing/c45,
-/obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
-/turf/open/floor/iron/white,
-/area/awaymission/research/interior/engineering)
 "XV" = (
 /mob/living/carbon/human/species/monkey,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/genetics)
 "Ye" = (
-/obj/item/ammo_casing/c9mm,
+/obj/item/ammo_casing/c8mm,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/cryo)
 "Yf" = (
 /obj/structure/reagent_dispensers/wall/peppertank/directional/north,
-/obj/effect/turf_decal/tile/purple/fourcorners,
+/obj/effect/turf_decal/tile/purple/full,
 /turf/open/floor/iron/dark,
 /area/awaymission/research/interior/genetics)
 "Yx" = (
@@ -4065,13 +4062,13 @@
 	brute_damage = 200
 	},
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 "Yz" = (
 /obj/structure/bed,
 /obj/item/bedsheet,
-/obj/effect/turf_decal/tile/red/fourcorners,
+/obj/effect/turf_decal/tile/red/full,
 /turf/open/floor/iron,
 /area/awaymission/research/interior/security)
 "YV" = (
@@ -4086,13 +4083,13 @@
 /turf/open/misc/asteroid,
 /area/awaymission/research/exterior)
 "Zk" = (
-/obj/effect/turf_decal/tile/green/half/contrasted,
+/obj/effect/turf_decal/tile/green/half,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/escapepods)
 "ZJ" = (
 /obj/effect/decal/cleanable/blood,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/white,
 /area/awaymission/research/interior/medbay)
 
@@ -38908,7 +38905,7 @@ aH
 aH
 aH
 aH
-dR
+bD
 ea
 eD
 ff
@@ -39165,7 +39162,7 @@ ad
 ad
 ad
 aH
-dR
+bD
 ea
 ea
 cp
@@ -39422,7 +39419,7 @@ ad
 ad
 ad
 aH
-dR
+bD
 ec
 eE
 cp
@@ -39680,7 +39677,7 @@ ad
 ad
 aH
 bD
-ed
+aO
 eF
 cp
 fL
@@ -40216,7 +40213,7 @@ iY
 jn
 jF
 jF
-kt
+jF
 kE
 jF
 jF
@@ -40965,7 +40962,7 @@ aH
 aH
 cY
 cp
-eh
+gD
 eI
 eI
 fN
@@ -41725,7 +41722,7 @@ an
 an
 aT
 aU
-Mo
+UO
 bI
 bV
 cf
@@ -41983,7 +41980,7 @@ aK
 au
 be
 bb
-XU
+VD
 EC
 cg
 cr
@@ -41994,11 +41991,11 @@ RI
 Lm
 cp
 Vt
-Dt
 Qs
-CN
+Qs
+Qs
 gD
-HW
+HS
 HS
 HS
 HS

@@ -215,7 +215,7 @@
 /datum/unit_test/location_accessibility/Run()
 	var/mob/living/carbon/human/test_mob = allocate(/mob/living/carbon/human/consistent)
 
-	test_mob.equipOutfit(/datum/outfit/job/assistant/consistent)
+	test_mob.equipOutfit(/datum/outfit/job/assistant)
 	TEST_ASSERT(!test_mob.is_location_accessible(BODY_ZONE_CHEST), "Chest should be inaccessible when wearing a jumpsuit")
 
 	var/obj/item/clothing/under/jumpsuit = test_mob.get_item_by_slot(ITEM_SLOT_ICLOTHING)

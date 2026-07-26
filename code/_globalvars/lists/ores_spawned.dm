@@ -11,7 +11,7 @@
 GLOBAL_LIST_INIT(ore_vent_minerals_lavaland, list(
 		/datum/material/iron = 13,
 		/datum/material/glass = 12,
-		/datum/material/plasma = 9,
+		/datum/material/phoron = 9,
 		/datum/material/titanium = 6,
 		/datum/material/silver = 5,
 		/datum/material/gold = 5,
@@ -24,7 +24,7 @@ GLOBAL_LIST_INIT(ore_vent_minerals_lavaland, list(
 GLOBAL_LIST_INIT(ore_vent_minerals_triple_z, list(
 		/datum/material/iron = 24,
 		/datum/material/glass = 23,
-		/datum/material/plasma = 16,
+		/datum/material/phoron = 16,
 		/datum/material/titanium = 10,
 		/datum/material/silver = 8,
 		/datum/material/gold = 7,

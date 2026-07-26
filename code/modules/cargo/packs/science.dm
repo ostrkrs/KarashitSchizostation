@@ -3,21 +3,21 @@
 	access_view = ACCESS_RESEARCH
 	crate_type = /obj/structure/closet/crate/science
 
-/datum/supply_pack/science/plasma
-	name = "Plasma Assembly Crate"
+/datum/supply_pack/science/phoron
+	name = "Phoron Assembly Crate"
 	desc = "Everything you need to burn something to the ground, this contains three \
-		plasma assembly sets. Each set contains a plasma tank, igniter, proximity sensor, \
+		phoron assembly sets. Each set contains a phoron tank, igniter, proximity sensor, \
 		and timer! Warranty void if exposed to high temperatures."
 	cost = CARGO_CRATE_VALUE * 2
 	access = ACCESS_ORDNANCE
 	access_view = ACCESS_ORDNANCE
-	contains = list(/obj/item/tank/internals/plasma = 3,
+	contains = list(/obj/item/tank/internals/phoron = 3,
 					/obj/item/assembly/igniter = 3,
 					/obj/item/assembly/prox_sensor = 3,
 					/obj/item/assembly/timer = 3,
 				)
-	crate_name = "plasma assembly crate"
-	crate_type = /obj/structure/closet/crate/secure/plasma
+	crate_name = "phoron assembly crate"
+	crate_type = /obj/structure/closet/crate/secure/phoron
 
 /datum/supply_pack/science/raw_flux_anomaly
 	name = "Raw Flux Anomaly"
@@ -127,13 +127,13 @@
 	crate_name = "robotics assembly crate"
 	crate_type = /obj/structure/closet/crate/secure/science/robo
 
-/datum/supply_pack/science/rped
-	name = "RPED crate"
-	desc = "Need to rebuild the ORM but science got annihilated after a bomb test? \
-		Buy this for the most advanced parts NT can give you."
-	cost = CARGO_CRATE_VALUE * 3
-	contains = list(/obj/item/storage/part_replacer/cargo)
-	crate_name = "\improper RPED crate"
+/datum/supply_pack/science/stock_parts
+	name = "Surplus Stock Parts Crate"
+	desc = "Need to rebuild the deck but science got annihilated after a bomb test? \
+		No worries! Just order these ready-to-install spare parts."
+	cost = CARGO_CRATE_VALUE * 1.5
+	contains = list(/obj/item/storage/box/stockparts/basic = 2)
+	crate_name = "\improper stock parts crate"
 
 /datum/supply_pack/science/shieldwalls
 	name = "Shield Generator Crate"

@@ -43,7 +43,7 @@
 	RegisterSignal(owner, SIGNAL_ADDTRAIT(TRAIT_NOBREATH), PROC_REF(no_breathing))
 	RegisterSignal(owner, COMSIG_MOB_LOGOUT, PROC_REF(on_logout))
 	RegisterSignal(owner, COMSIG_LIVING_DEATH, PROC_REF(on_death))
-	// Of note, this means plasma lovers lose some methods of vomiting up
+	// Of note, this means phoron lovers lose some methods of vomiting up
 	RegisterSignal(owner, COMSIG_CARBON_VOMITED, PROC_REF(on_vomit))
 	RegisterSignal(owner, COMSIG_CARBON_ATTEMPT_EAT, PROC_REF(attempt_eat))
 	RegisterSignal(owner, COMSIG_CARBON_PRE_HELP, PROC_REF(helped))

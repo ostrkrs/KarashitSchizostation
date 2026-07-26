@@ -14,7 +14,7 @@
 /turf/open/floor/wood/tile,
 /area/deathmatch)
 "be" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -80,7 +80,7 @@
 /area/deathmatch)
 "dB" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/indestructible/plating,
@@ -109,7 +109,7 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "fJ" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -117,7 +117,7 @@
 /area/deathmatch)
 "gL" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /obj/effect/decal/fakelattice{
@@ -179,7 +179,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "jq" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -197,7 +197,6 @@
 /area/deathmatch)
 "kt" = (
 /obj/structure/table/reinforced,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood,
 /area/deathmatch)
@@ -213,7 +212,7 @@
 /area/deathmatch)
 "lJ" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/indestructible/plating,
@@ -287,7 +286,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "qJ" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -385,7 +384,7 @@
 /area/deathmatch)
 "vl" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /obj/effect/decal/fakelattice{
@@ -419,7 +418,7 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "wv" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -441,7 +440,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "wR" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -529,7 +528,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Bx" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -615,11 +614,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/indestructible/plating,
 /area/deathmatch)
-"EX" = (
-/obj/structure/lattice/catwalk,
-/obj/item/ammo_box/speedloader/c38/match,
-/turf/open/chasm/true/no_smooth/fake_motion_sand/fast,
-/area/deathmatch)
 "Fa" = (
 /obj/structure/girder,
 /obj/structure/railing{
@@ -654,7 +648,7 @@
 "Gl" = (
 /obj/structure/barricade/wooden/crude,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/indestructible/plating,
@@ -742,7 +736,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "KT" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/deathmatch)
 "LX" = (
 /obj/effect/decal/cleanable/glass,
@@ -856,7 +850,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "VS" = (
-/obj/structure/closet/secure_closet/freezer/kitchen{
+/obj/structure/closet/kitchen{
 	req_access = null
 	},
 /obj/item/food/grown/potato,
@@ -886,7 +880,7 @@
 "Xr" = (
 /obj/structure/barricade/wooden/crude,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/indestructible/plating,
@@ -915,7 +909,7 @@
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "Yi" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -1255,7 +1249,7 @@ Je
 Je
 Je
 Je
-EX
+Je
 Mt
 Mt
 Mt

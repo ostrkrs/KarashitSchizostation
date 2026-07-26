@@ -9,7 +9,6 @@
 	mutantheart = /obj/item/organ/heart/ethereal
 	exotic_bloodtype = BLOOD_TYPE_ETHEREAL
 	siemens_coeff = 0.5 //They thrive on energy
-	payday_modifier = 1.0
 	inherent_traits = list(
 		TRAIT_MUTANT_COLORS,
 		TRAIT_FIXED_MUTANT_COLORS,

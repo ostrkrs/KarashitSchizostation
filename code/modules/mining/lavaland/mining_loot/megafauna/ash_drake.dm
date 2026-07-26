@@ -173,7 +173,6 @@
 			consumer.dna.features = list(
 				FEATURE_MUTANT_COLOR = "#A02720",
 				FEATURE_TAIL_LIZARD = "Dark Tiger",
-				FEATURE_TAIL = "None",
 				FEATURE_SNOUT = "Sharp",
 				FEATURE_HORNS = "Curled",
 				FEATURE_EARS = "None",
@@ -181,7 +180,6 @@
 				FEATURE_FRILLS = "None",
 				FEATURE_SPINES = "Long",
 				FEATURE_LIZARD_MARKINGS = "Dark Tiger Body",
-				FEATURE_LEGS = DIGITIGRADE_LEGS,
 			)
 			consumer.set_eye_color("#FEE5A3")
 			consumer.set_species(/datum/species/lizard)

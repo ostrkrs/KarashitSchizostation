@@ -76,11 +76,14 @@ export type Perk = {
 
 export type Department = {
   head?: string;
+  color?: string;
+  ui_color?: string;
 };
 
 export type Job = {
   description: string;
   department: string;
+  alt_titles?: string[];
 };
 
 export type Quirk = {
@@ -181,6 +184,7 @@ export type PreferencesMenuData = {
     }
   >;
   job_preferences: Record<string, JobPriority>;
+  alt_job_titles: Record<string, string>;
 
   keybindings: Record<string, string[]>;
   overflow_role: string;

@@ -121,12 +121,12 @@
 	greyscale_config = /datum/greyscale_config/encryptionkey_medical
 	greyscale_colors = "#ebebeb#9d1de8"
 
-/obj/item/encryptionkey/headset_srvsec
+/obj/item/encryptionkey/headset_comsec
 	name = "law and order radio encryption key"
 	icon = 'icons/map_icons/items/encryptionkey.dmi'
-	icon_state = "/obj/item/encryptionkey/headset_srvsec"
+	icon_state = "/obj/item/encryptionkey/headset_comsec"
 	post_init_icon_state = "cypherkey_service"
-	channels = list(RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_SECURITY = 1)
+	channels = list(RADIO_CHANNEL_COMMAND = 1, RADIO_CHANNEL_SECURITY = 1)
 	greyscale_config = /datum/greyscale_config/encryptionkey_service
 	greyscale_colors = "#820a16#3bca5a"
 
@@ -210,7 +210,7 @@
 	icon = 'icons/map_icons/items/encryptionkey.dmi'
 	icon_state = "/obj/item/encryptionkey/heads/hop"
 	post_init_icon_state = "cypherkey_cube"
-	channels = list(RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_COMMAND = 1)
+	channels = list(RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_COMMAND = 1)
 	greyscale_config = /datum/greyscale_config/encryptionkey_cube
 	greyscale_colors = "#2b2793#c2c1c9"
 
@@ -222,6 +222,15 @@
 	channels = list(RADIO_CHANNEL_SUPPLY = 1, RADIO_CHANNEL_COMMAND = 1)
 	greyscale_config = /datum/greyscale_config/encryptionkey_cargo
 	greyscale_colors = "#49241a#dca01b"
+
+/obj/item/encryptionkey/heads/steward
+	name = "\proper the steward's encryption key"
+	icon = 'icons/map_icons/items/encryptionkey.dmi'
+	icon_state = "/obj/item/encryptionkey/heads/steward"
+	post_init_icon_state = "cypherkey_service"
+	channels = list(RADIO_CHANNEL_SERVICE = 1, RADIO_CHANNEL_COMMAND = 1)
+	greyscale_config = /datum/greyscale_config/encryptionkey_service
+	greyscale_colors = "#820a16#3bca5a"
 
 /obj/item/encryptionkey/headset_cargo
 	name = "supply radio encryption key"

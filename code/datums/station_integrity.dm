@@ -40,8 +40,8 @@
 			if(iswallturf(T))
 				wall += 1
 
-			if(istype(T, /turf/closed/wall/r_wall))
-				var/turf/closed/wall/r_wall/TRW = T
+			if(istype(T, /turf/closed/wall/reinforced))
+				var/turf/closed/wall/reinforced/TRW = T
 				if(TRW.d_state == INTACT)
 					r_wall += 2
 				else

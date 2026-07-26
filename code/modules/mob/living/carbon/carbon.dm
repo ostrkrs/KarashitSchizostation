@@ -281,13 +281,14 @@
 	return ..()
 
 /// Proc that compels the mob to throw up. Returns TRUE if the mob actually threw up.
-/mob/living/carbon/proc/vomit(vomit_flags = VOMIT_CATEGORY_DEFAULT, vomit_type = /obj/effect/decal/cleanable/vomit/toxic, lost_nutrition = 10, distance = 1, purge_ratio = 0.1)
+/mob/living/carbon/proc/vomit(vomit_flags = VOMIT_CATEGORY_DEFAULT, vomit_type = /obj/effect/decal/cleanable/vomit/toxic, lost_nutrition = 10, lost_hydration = 10, distance = 1, purge_ratio = 0.1)
 	var/force = (vomit_flags & MOB_VOMIT_FORCE)
 	if((HAS_TRAIT(src, TRAIT_NOHUNGER) || HAS_TRAIT(src, TRAIT_TOXINLOVER)) && !force)
 		return FALSE
 
 	if(!force && HAS_TRAIT(src, TRAIT_STRONG_STOMACH))
 		lost_nutrition *= 0.5
+		lost_hydration *= 0.5
 
 	SEND_SIGNAL(src, COMSIG_CARBON_VOMITED, distance, force)
 
@@ -344,10 +345,12 @@
 	var/turf/location = get_turf(src)
 	if(!blood)
 		adjust_nutrition(-lost_nutrition)
+		adjust_nutrition(-lost_hydration)
 		need_mob_update += adjustToxLoss(-3, updating_health = FALSE)
 
 	for(var/i = 0 to distance)
 		if(blood)
+			adjust_nutrition(-lost_hydration)
 			if(location)
 				add_splatter_floor(location)
 			if(vomit_flags & MOB_VOMIT_HARM)
@@ -675,16 +678,8 @@
 
 		if(shown_stamina_loss >= stam_crit_threshold)
 			hud_used.stamina.icon_state = "stamina_crit"
-		else if(shown_stamina_loss > maxHealth*0.8)
-			hud_used.stamina.icon_state = "stamina_5"
-		else if(shown_stamina_loss > maxHealth*0.6)
-			hud_used.stamina.icon_state = "stamina_4"
-		else if(shown_stamina_loss > maxHealth*0.4)
-			hud_used.stamina.icon_state = "stamina_3"
-		else if(shown_stamina_loss > maxHealth*0.2)
-			hud_used.stamina.icon_state = "stamina_2"
-		else if(shown_stamina_loss > 0)
-			hud_used.stamina.icon_state = "stamina_1"
+		else if(shown_stamina_loss > 0 && maxHealth > 0)
+			hud_used.stamina.icon_state = "stamina_[ceil(shown_stamina_loss / (maxHealth * 0.2))]"
 		else
 			hud_used.stamina.icon_state = "stamina_full"
 
@@ -811,10 +806,6 @@
 
 	return ..()
 
-/mob/living/carbon/do_strange_reagent_revival(healing_amount)
-	set_heartattack(FALSE)
-	return ..()
-
 /mob/living/carbon/can_be_revived()
 	if(!get_organ_by_type(/obj/item/organ/brain) && (!IS_CHANGELING(src)) || HAS_TRAIT(src, TRAIT_HUSK))
 		return FALSE
@@ -848,7 +839,7 @@
 	if (QDELETED(current_brain))
 		return DEFIB_FAIL_NO_BRAIN
 
-	if (current_brain.organ_flags & ORGAN_FAILING)
+	if ((current_brain.organ_flags & ORGAN_FAILING) || (current_brain.damage >= BRAIN_DAMAGE_DEATH))
 		return DEFIB_FAIL_FAILING_BRAIN
 
 	if (current_brain.suicided || (current_brain.brainmob && HAS_TRAIT(current_brain.brainmob, TRAIT_SUICIDED)))

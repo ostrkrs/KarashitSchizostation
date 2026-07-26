@@ -31,7 +31,7 @@
 		ORGAN_SLOT_EYES = /obj/item/organ/eyes/alien,
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver/alien,
 		ORGAN_SLOT_EARS = /obj/item/organ/ears,
-		ORGAN_SLOT_XENO_PLASMAVESSEL = /obj/item/organ/alien/plasmavessel/small/tiny,
+		ORGAN_SLOT_XENO_PHORONVESSEL = /obj/item/organ/alien/phoron_vessel/small/tiny,
 	)
 
 	var/amount_grown = 0
@@ -61,7 +61,7 @@
 		return FALSE
 	to_chat(src, "<b>You are an alien larva. Hide from danger until you can evolve.<br>Use say :a to communicate with the hivemind.</b>")
 
-/mob/living/carbon/alien/larva/adjustPlasma(amount)
+/mob/living/carbon/alien/larva/adjustPhoron(amount)
 	if(stat != DEAD && amount > 0)
 		amount_grown = min(amount_grown + 1, max_grown)
 	..(amount)

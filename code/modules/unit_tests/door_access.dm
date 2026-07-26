@@ -13,7 +13,7 @@
 	subject.last_bumped = 0
 
 	// Alright, now let's test that someone with access can open a door that requires access when only req_access is set.
-	subject.equipOutfit(/datum/outfit/job/assistant/consistent) // set up the outfit here to ensure the last check is pure.
+	subject.equipOutfit(/datum/outfit/job/assistant) // set up the outfit here to ensure the last check is pure.
 	var/obj/item/card/id/advanced/keycard = subject.wear_id
 
 	// Test two accesses at once just to make sure the script hasn't changed on us.
@@ -77,7 +77,7 @@
 	var/obj/machinery/door/airlock/instant/door = allocate(__IMPLIED_TYPE__, run_loc_floor_bottom_left)
 	door.interaction_flags_machine |= INTERACT_MACHINE_OFFLINE
 	subject.dna.add_mutation(/datum/mutation/telekinesis, list(INNATE_TRAIT))
-	subject.equipOutfit(/datum/outfit/job/assistant/consistent)
+	subject.equipOutfit(/datum/outfit/job/assistant)
 
 	var/obj/item/card/id/advanced/keycard = subject.wear_id
 	keycard.access = list(ACCESS_ENGINEERING, ACCESS_MAINT_TUNNELS)
@@ -105,7 +105,7 @@
 	var/mob/living/carbon/human/consistent/subject_pilot = allocate(__IMPLIED_TYPE__, run_loc_floor_top_right)
 	var/obj/machinery/door/airlock/instant/door = allocate(__IMPLIED_TYPE__)
 	door.interaction_flags_machine |= INTERACT_MACHINE_OFFLINE
-	subject_pilot.equipOutfit(/datum/outfit/job/assistant/consistent)
+	subject_pilot.equipOutfit(/datum/outfit/job/assistant)
 	subject_mech.accesses = list()
 	subject_mech.mob_enter(subject_pilot)
 
@@ -135,7 +135,7 @@
 	var/mob/living/carbon/human/subject = allocate(__IMPLIED_TYPE__, run_loc_floor_bottom_left)
 	var/obj/machinery/door/airlock/instant/door = allocate(__IMPLIED_TYPE__)
 	door.interaction_flags_machine |= INTERACT_MACHINE_OFFLINE
-	subject.equipOutfit(/datum/outfit/job/assistant/consistent)
+	subject.equipOutfit(/datum/outfit/job/assistant)
 	ADD_TRAIT(subject, TRAIT_HANDS_BLOCKED, INNATE_TRAIT)
 
 	var/obj/item/card/id/advanced/keycard = subject.wear_id

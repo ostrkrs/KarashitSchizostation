@@ -1,5 +1,5 @@
 import { sortBy } from 'es-toolkit';
-import type { PropsWithChildren, ReactNode } from 'react';
+import type { CSSProperties, PropsWithChildren, ReactNode } from 'react';
 import { useBackend } from 'tgui/backend';
 import { Box, Button, Dropdown, Stack, Tooltip } from 'tgui-core/components';
 import { classes } from 'tgui-core/react';
@@ -28,27 +28,26 @@ type PriorityButtonProps = {
   modifier?: string;
   enabled: boolean;
   onClick: () => void;
+  departmentColor?: string;
 };
 
 function PriorityButton(props: PriorityButtonProps) {
   const className = `PreferencesMenu__Jobs__departments__priority`;
+  const inactiveColor = props.departmentColor ?? 'light-grey';
 
   return (
-    <Stack.Item height={PRIORITY_BUTTON_SIZE}>
-      <Button
-        className={classes([
-          className,
-          props.modifier && `${className}--${props.modifier}`,
-        ])}
-        color={props.enabled ? props.color : 'white'}
-        circular
-        onClick={props.onClick}
-        tooltip={props.name}
-        tooltipPosition="bottom"
-        height={PRIORITY_BUTTON_SIZE}
-        width={PRIORITY_BUTTON_SIZE}
-      />
-    </Stack.Item>
+    <Button
+      className={classes([
+        className,
+        props.modifier && `${className}--${props.modifier}`,
+        props.enabled && 'active',
+      ])}
+      color={props.enabled ? props.color : inactiveColor}
+      onClick={props.onClick}
+      height={PRIORITY_BUTTON_SIZE}
+    >
+      {props.name}
+    </Button>
   );
 }
 
@@ -91,18 +90,21 @@ type PriorityButtonsProps = {
   createSetPriority: CreateSetPriority;
   isOverflow: boolean;
   priority: JobPriority;
+  departmentColor?: string;
 };
 
 function PriorityButtons(props: PriorityButtonsProps) {
-  const { createSetPriority, isOverflow, priority } = props;
+  const { createSetPriority, isOverflow, priority, departmentColor } = props;
 
   return (
-    <Stack
+    <Box
       style={{
         alignItems: 'center',
         height: '100%',
         justifyContent: 'flex-end',
         paddingLeft: '0.3em',
+        paddingTop: '0.12em',
+        paddingBottom: '0.12em',
       }}
     >
       {isOverflow ? (
@@ -113,13 +115,15 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="light-grey"
             enabled={!priority}
             onClick={createSetPriority(null)}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
             name="On"
-            color="green"
+            color="good"
             enabled={!!priority}
             onClick={createSetPriority(JobPriority.High)}
+            departmentColor={departmentColor}
           />
         </>
       ) : (
@@ -130,31 +134,35 @@ function PriorityButtons(props: PriorityButtonsProps) {
             color="light-grey"
             enabled={!priority}
             onClick={createSetPriority(null)}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
             name="Low"
-            color="red"
+            color="bad"
             enabled={priority === JobPriority.Low}
             onClick={createSetPriority(JobPriority.Low)}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
-            name="Medium"
-            color="yellow"
+            name="Med"
+            color="average"
             enabled={priority === JobPriority.Medium}
             onClick={createSetPriority(JobPriority.Medium)}
+            departmentColor={departmentColor}
           />
 
           <PriorityButton
             name="High"
-            color="green"
+            color="good"
             enabled={priority === JobPriority.High}
             onClick={createSetPriority(JobPriority.High)}
+            departmentColor={departmentColor}
           />
         </>
       )}
-    </Stack>
+    </Box>
   );
 }
 
@@ -162,11 +170,13 @@ type JobRowProps = {
   className?: string;
   job: Job;
   name: string;
+  department: string;
+  departmentColor?: string;
 };
 
 function JobRow(props: JobRowProps) {
-  const { data } = useBackend<PreferencesMenuData>();
-  const { className, job, name } = props;
+  const { data, act } = useBackend<PreferencesMenuData>();
+  const { className, job, name, department, departmentColor } = props;
 
   const isOverflow = data.overflow_role === name;
   const priority = data.job_preferences[name];
@@ -175,6 +185,10 @@ function JobRow(props: JobRowProps) {
 
   const experienceNeeded = data.job_required_experience?.[name];
   const daysLeft = data.job_days_left ? data.job_days_left[name] : 0;
+
+  const alt_title_selected = data.alt_job_titles[name]
+    ? data.alt_job_titles[name]
+    : name;
 
   let rightSide: ReactNode;
 
@@ -211,6 +225,7 @@ function JobRow(props: JobRowProps) {
         createSetPriority={createSetPriority}
         isOverflow={isOverflow}
         priority={priority}
+        departmentColor={departmentColor}
       />
     );
   }
@@ -221,12 +236,27 @@ function JobRow(props: JobRowProps) {
         <Tooltip content={job.description} position="bottom-start">
           <Stack.Item
             className="job-name"
-            width="50%"
+            width="40%"
             style={{
               paddingLeft: '0.3em',
             }}
           >
-            {name}
+            {!job.alt_titles ? (
+              name
+            ) : (
+              <Dropdown
+                className={classes([
+                  'PreferencesMenu__Jobs__altTitleDropdown',
+                  `PreferencesMenu__Jobs__departments--${job.department}`,
+                ])}
+                width="100%"
+                options={job.alt_titles}
+                selected={alt_title_selected}
+                onSelected={(value) =>
+                  act('set_job_title', { job: name, new_title: value })
+                }
+              />
+            )}
           </Stack.Item>
         </Tooltip>
 
@@ -264,9 +294,14 @@ function Department(props: DepartmentProps) {
     Object.entries(jobs).filter(([_, job]) => job.department === name),
     department.head,
   );
+  const deptColor = department.ui_color || department.color || undefined;
+
+  const departmentStyle: CSSProperties | undefined = deptColor
+    ? ({ ['--department-color']: deptColor } as CSSProperties)
+    : undefined;
 
   return (
-    <Box>
+    <Box className="PreferencesMenu__Jobs__departments" style={departmentStyle}>
       <Stack fill vertical g={0}>
         {jobsForDepartment.map(([name, job]) => {
           return (
@@ -278,6 +313,8 @@ function Department(props: DepartmentProps) {
               key={name}
               job={job}
               name={name}
+              department={name}
+              departmentColor={deptColor}
             />
           );
         })}
@@ -332,24 +369,23 @@ export function JobsPage() {
           <Stack fill g={1} className="PreferencesMenu__Jobs">
             <Stack.Item>
               <Stack vertical>
-                <Department department="Engineering" />
                 <Department department="Science" />
                 <Department department="Medical" />
+                <Department department="Silicon" />
               </Stack>
             </Stack.Item>
-            <Stack.Item mt={-5.9}>
+            <Stack.Item>
               <Stack vertical>
-                <Department department="Captain" />
                 <Department department="Command" />
                 <Department department="Service" />
-                <Department department="Assistant" />
               </Stack>
             </Stack.Item>
             <Stack.Item>
               <Stack vertical>
                 <Department department="Security" />
+                <Department department="Engineering" />
                 <Department department="Cargo" />
-                <Department department="Silicon" />
+                <Department department="Assistant" />
               </Stack>
             </Stack.Item>
           </Stack>

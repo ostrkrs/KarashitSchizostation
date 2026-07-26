@@ -48,7 +48,7 @@
 
 /datum/element/wall_tearer/proc/rip_and_tear(mob/living/tearer, atom/target)
 	// We need to do this three times to actually destroy it
-	var/rip_time = (istype(target, /turf/closed/wall/r_wall) ? tear_time * reinforced_multiplier : tear_time) / 3
+	var/rip_time = (istype(target, /turf/closed/wall/reinforced) ? tear_time * reinforced_multiplier : tear_time) / 3
 	if (rip_time > 0)
 		tearer.visible_message(span_warning("[tearer] begins tearing through [target]!"))
 		playsound(tearer, 'sound/machines/airlock/airlock_alien_prying.ogg', vol = 100, vary = TRUE)
@@ -71,7 +71,7 @@
 	if (!isclosedturf(target) || isindestructiblewall(target))
 		return WALL_TEAR_INVALID
 
-	var/reinforced = istype(target, /turf/closed/wall/r_wall)
+	var/reinforced = istype(target, /turf/closed/wall/reinforced)
 	if (!allow_reinforced && reinforced)
 		target.balloon_alert(tearer, "it's too strong!")
 		return WALL_TEAR_FAIL_CANCEL_CHAIN

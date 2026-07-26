@@ -128,7 +128,7 @@
 /obj/structure/chem_separator/examine_more(mob/user)
 	. = ..()
 
-	. += span_notice("For burner fuel Plasma > Oil > Welding Fuel = Oxygen > Ethanol > Monkey Energy")
+	. += span_notice("For burner fuel Phoron > Oil > Welding Fuel = Oxygen > Ethanol > Monkey Energy")
 
 	. += span_notice("Upon cross examining the flasks reagents contents with its chart you see the boiling points of each reagent present.")
 	for(var/datum/reagent/reg as anything in reagents.reagent_list)
@@ -205,7 +205,7 @@
 
 	//map of reagents & how much burning potential they all have
 	var/static/list/reagent_coefficients = list(
-		/datum/reagent/toxin/plasma = 1,
+		/datum/reagent/toxin/phoron = 1,
 		/datum/reagent/fuel/oil = 0.9,
 		/datum/reagent/fuel = 0.8,
 		/datum/reagent/oxygen = 0.8,

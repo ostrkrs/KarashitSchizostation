@@ -396,7 +396,7 @@
 	haircolor = COLOR_BLACK
 	facial_hairstyle = "Shaved"
 	skin_tone = "caucasian1"
-	outfit = /datum/outfit/job/assistant/consistent
+	outfit = /datum/outfit/job/assistant
 
 /obj/effect/mob_spawn/corpse/human/prey_pod
 	husk = TRUE
@@ -405,7 +405,3 @@
 /datum/outfit/prey_pod_victim
 	name = "Prey Pod Victim"
 	uniform = /obj/item/clothing/under/rank/rnd/roboticist
-
-/obj/effect/mob_spawn/corpse/human/cyber_police
-	name = "Dead Cyber Police"
-	outfit = /datum/outfit/cyber_police

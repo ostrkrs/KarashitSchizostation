@@ -15,7 +15,6 @@
 		"mod_plating_civilian",
 		"mod_paint_kit",
 		"mod_storage",
-		"mod_plasma",
 		"mod_flashlight",
 	)
 
@@ -129,11 +128,6 @@
 	)
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = TECHWEB_TIER_3_POINTS)
 	announce_channels = list(RADIO_CHANNEL_SCIENCE, RADIO_CHANNEL_ENGINEERING)
-
-/datum/techweb_node/mod_engi_adv/New()
-	if(HAS_TRAIT(SSstation, STATION_TRAIT_RADIOACTIVE_NEBULA)) //we'll really need the rad protection modsuit module
-		starting_node = TRUE
-	return ..()
 
 /datum/techweb_node/mod_anomaly
 	id = TECHWEB_NODE_MOD_ANOMALY

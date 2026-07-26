@@ -93,7 +93,6 @@
 
 //Spawner roles
 #define ROLE_ANCIENT_CREW "Ancient Crew"
-#define ROLE_ASHWALKER "Ash Walker"
 #define ROLE_BATTLECRUISER_CAPTAIN "Battlecruiser Captain"
 #define ROLE_BATTLECRUISER_CREW "Battlecruiser Crew"
 #define ROLE_BEACH_BUM "Beach Bum"
@@ -119,12 +118,6 @@
 #define ROLE_SYNDICATE_DRONE "Syndicate Drone"
 #define ROLE_VENUSHUMANTRAP "Venus Human Trap"
 #define ROLE_ZOMBIE "Zombie"
-
-// Virtual dom related
-#define ROLE_GLITCH "Glitch" // the parent type of all vdom roles
-#define ROLE_CYBER_POLICE "Cyber Police"
-#define ROLE_CYBER_TAC "Cyber Tac"
-#define ROLE_NETGUARDIAN "NetGuardian Prime"
 
 //Job defines for what happens when you fail to qualify for any job during job selection
 #define BEOVERFLOW 1

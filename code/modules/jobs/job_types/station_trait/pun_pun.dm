@@ -3,7 +3,7 @@
 	title = JOB_PUN_PUN
 	description = "Assist the service department by serving drinks and food and entertaining the crew."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the Bartender"
@@ -25,7 +25,7 @@
 	)
 	rpg_title = "Homunculus"
 	allow_bureaucratic_error = FALSE
-	job_flags = (STATION_JOB_FLAGS|STATION_TRAIT_JOB_FLAGS)&~JOB_ASSIGN_QUIRKS
+	job_flags = (SHIP_JOB_FLAGS|SHIP_TRAIT_JOB_FLAGS)&~JOB_ASSIGN_QUIRKS
 
 /datum/job/pun_pun/get_spawn_mob(client/player_client, atom/spawn_point)
 	if (!player_client)
@@ -46,8 +46,4 @@
 	id_trim = /datum/id_trim/job/pun_pun
 	belt = /obj/item/modular_computer/pda/pun_pun
 	uniform = /obj/item/clothing/under/suit/waiter
-	backpack_contents = list(
-		/obj/item/gun/ballistic/shotgun/monkey = 1,
-		/obj/item/storage/box/beanbag = 1,
-	)
 	shoes = null //monkeys cannot equip shoes

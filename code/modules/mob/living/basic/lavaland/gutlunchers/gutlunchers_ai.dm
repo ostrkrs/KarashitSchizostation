@@ -17,7 +17,6 @@
 		/datum/ai_planning_subtree/target_retaliate/check_faction,
 		/datum/ai_planning_subtree/pet_planning,
 		/datum/ai_planning_subtree/basic_melee_attack_subtree,
-		/datum/ai_planning_subtree/befriend_ashwalkers,
 		/datum/ai_planning_subtree/make_babies/gutlunch,
 	)
 
@@ -25,31 +24,6 @@
 	if(GLOB.gutlunch_count >= MAXIMUM_GUTLUNCH_POP)
 		return
 	return ..()
-
-///find ashwalkers and add them to the list of masters
-/datum/ai_planning_subtree/befriend_ashwalkers
-
-/datum/ai_planning_subtree/befriend_ashwalkers/SelectBehaviors(datum/ai_controller/controller, seconds_per_tick)
-	controller.queue_behavior(/datum/ai_behavior/befriend_ashwalkers)
-
-/datum/ai_behavior/befriend_ashwalkers
-	action_cooldown = 5 SECONDS
-	behavior_flags = AI_BEHAVIOR_CAN_PLAN_DURING_EXECUTION
-
-/datum/ai_behavior/befriend_ashwalkers/perform(seconds_per_tick, datum/ai_controller/controller, target_key)
-	var/mob/living/living_pawn = controller.pawn
-
-	for(var/mob/living/potential_friend in oview(9, living_pawn))
-		if(!isashwalker(potential_friend))
-			continue
-		if((living_pawn.faction.Find(REF(potential_friend))))
-			continue
-		living_pawn.befriend(potential_friend)
-		to_chat(potential_friend, span_nicegreen("[living_pawn] looks at you with endearing eyes!"))
-		return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_SUCCEEDED
-
-	return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
-
 
 /datum/ai_controller/basic_controller/gutlunch/gutlunch_baby
 	blackboard = list(

@@ -1,17 +1,17 @@
 /datum/job/coroner
 	title = JOB_CORONER
+	alt_titles = JOB_CORONER_ALT_TITLES
 	description = "Perform Autopsies whenever needed, \
 		Update medical records accordingly, apply formaldehyde."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Head of Personnel and the Chief Medical Officer"
+	supervisors = SUPERVISOR_CMO
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "CORONER"
 
 	outfit = /datum/outfit/job/coroner
-	plasmaman_outfit = /datum/outfit/plasmaman/coroner
 
 	mind_traits = list(TRAIT_MORBID, MEDICAL_MIND_TRAITS)
 	liver_traits = list(TRAIT_CORONER_METABOLISM)
@@ -40,7 +40,7 @@
 
 	family_heirlooms = list(/obj/item/clothing/head/helmet/skull, /obj/item/table_clock, /obj/item/shovel, /obj/item/storage/fancy/pickles_jar)
 
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 	rpg_title = "Undertaker"
 
@@ -71,5 +71,3 @@
 	satchel = /obj/item/storage/backpack/satchel/coroner
 	duffelbag = /obj/item/storage/backpack/duffelbag/coroner
 	messenger = /obj/item/storage/backpack/messenger/coroner
-
-	skillchips = list(/obj/item/skillchip/entrails_reader)

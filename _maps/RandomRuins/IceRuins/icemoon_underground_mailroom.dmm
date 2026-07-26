@@ -137,7 +137,7 @@
 /area/ruin/powered/mailroom)
 "nM" = (
 /obj/machinery/telecomms/relay/preset/mining,
-/obj/effect/turf_decal/siding/thinplating,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron,
 /area/ruin/powered/mailroom)
 "nS" = (
@@ -185,10 +185,6 @@
 	},
 /turf/open/floor/carpet/green,
 /area/ruin/powered/mailroom)
-"tN" = (
-/obj/effect/turf_decal/plaque,
-/turf/open/floor/carpet/green,
-/area/ruin/powered/mailroom)
 "uA" = (
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
@@ -198,7 +194,7 @@
 /turf/open/floor/carpet/green,
 /area/ruin/powered/mailroom)
 "uK" = (
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /obj/machinery/light/small/red/directional/north,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/powered/mailroom)
@@ -345,7 +341,7 @@
 /area/ruin/powered/mailroom)
 "MP" = (
 /obj/structure/filingcabinet,
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
@@ -378,7 +374,7 @@
 /area/ruin/powered/mailroom)
 "PO" = (
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/siding/thinplating/corner,
+/obj/effect/turf_decal/siding/corner,
 /obj/item/paper/crumpled/fluff/poem,
 /obj/structure/closet/crate/bin,
 /turf/open/floor/carpet/royalblack,
@@ -396,7 +392,7 @@
 /area/ruin/powered/mailroom)
 "Qx" = (
 /obj/structure/sign/poster/official/obey,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/mailroom)
 "QU" = (
 /obj/effect/turf_decal/bot,
@@ -483,7 +479,7 @@
 /turf/open/floor/iron/smooth_large,
 /area/ruin/powered/mailroom)
 "WE" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/powered/mailroom)
 "Xa" = (
 /obj/structure/sign/warning/secure_area,
@@ -883,7 +879,7 @@ nS
 ms
 PO
 NN
-tN
+NN
 uI
 Rn
 PQ

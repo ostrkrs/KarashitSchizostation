@@ -14,14 +14,10 @@
 	set_holdable(list(
 		/obj/item/gun/ballistic/automatic/pistol,
 		/obj/item/gun/ballistic/revolver,
-		/obj/item/gun/energy/e_gun/mini,
-		/obj/item/gun/energy/disabler,
-		/obj/item/gun/energy/dueling,
 		/obj/item/food/grown/banana,
 		/obj/item/gun/energy/laser/thermal,
 		/obj/item/gun/ballistic/rifle/boltaction, //fits if you make it an obrez
 		/obj/item/gun/energy/laser/captain,
-		/obj/item/gun/energy/e_gun/hos,
 	))
 
 ///Energy holster
@@ -30,39 +26,30 @@
 
 /datum/storage/holster/energy/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound, list/holdables)
 	holdables = list(
-		/obj/item/gun/energy/e_gun/mini,
-		/obj/item/gun/energy/disabler,
-		/obj/item/gun/energy/dueling,
+		/obj/item/gun/energy/taser,
 		/obj/item/food/grown/banana,
 		/obj/item/gun/energy/laser/thermal,
 		/obj/item/gun/energy/recharge/ebow,
 		/obj/item/gun/energy/laser/captain,
-		/obj/item/gun/energy/e_gun/hos,
 	)
 
 	return ..()
 
-///Detective holster
-/datum/storage/holster/detective
+///Criminalist holster
+/datum/storage/holster/criminalist
 	max_slots = 3
 
-/datum/storage/holster/detective/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound, list/holdables)
+/datum/storage/holster/criminalist/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound, list/holdables)
 	holdables = list(
 		/obj/item/gun/ballistic/automatic/pistol,
-		/obj/item/ammo_box/magazine/m9mm, // Pistol magazines.
-		/obj/item/ammo_box/magazine/m9mm_aps,
-		/obj/item/ammo_box/magazine/m10mm,
-		/obj/item/ammo_box/magazine/m45,
-		/obj/item/ammo_box/magazine/m50,
+		/obj/item/ammo_box/magazine/m10mm, // Pistol magazines.
+		/obj/item/ammo_box/magazine/smgm8mm_c20r,
 		/obj/item/gun/ballistic/revolver,
 		/obj/item/ammo_box/speedloader, // Speedloaders, which includes stripper clips on a technicality.
 		/obj/item/ammo_box/magazine/toy/pistol,
-		/obj/item/gun/energy/e_gun/mini,
-		/obj/item/gun/energy/disabler,
-		/obj/item/gun/energy/dueling,
+		/obj/item/gun/energy/taser,
 		/obj/item/gun/energy/laser/thermal,
 		/obj/item/gun/energy/laser/captain,
-		/obj/item/gun/energy/e_gun/hos,
 		/obj/item/gun/ballistic/rifle/boltaction, //fits if you make it an obrez
 	)
 
@@ -76,20 +63,14 @@
 /datum/storage/holster/chameleon/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound, list/holdables)
 	holdables = list(
 		/obj/item/gun/ballistic/automatic/pistol,
-		/obj/item/ammo_box/magazine/m9mm,
-		/obj/item/ammo_box/magazine/m9mm_aps,
 		/obj/item/ammo_box/magazine/m10mm,
-		/obj/item/ammo_box/magazine/m45,
-		/obj/item/ammo_box/magazine/m50,
+		/obj/item/ammo_box/magazine/smgm8mm_c20r,
 		/obj/item/gun/ballistic/revolver,
 		/obj/item/ammo_box/speedloader,
 		/obj/item/ammo_box/magazine/toy/pistol,
 		/obj/item/gun/energy/recharge/ebow,
-		/obj/item/gun/energy/e_gun/mini,
-		/obj/item/gun/energy/disabler,
-		/obj/item/gun/energy/dueling,
+		/obj/item/gun/energy/taser,
 		/obj/item/gun/energy/laser/captain,
-		/obj/item/gun/energy/e_gun/hos,
 	)
 
 	return ..()

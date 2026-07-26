@@ -12,7 +12,7 @@
 /area/shuttle/escape)
 "f" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -113,7 +113,7 @@
 "x" = (
 /obj/machinery/computer/emergency_shuttle,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -125,7 +125,7 @@
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/dark_blue/anticorner/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/anticorner{
 	dir = 1
 	},
 /obj/item/radio/intercom/directional/west,
@@ -166,7 +166,7 @@
 /area/shuttle/escape)
 "I" = (
 /obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 8
 	},
 /obj/machinery/button/flasher{
@@ -177,7 +177,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "J" = (
-/obj/item/book/manual/wiki/security_space_law{
+/obj/item/book/manual/wiki/security_corp_law{
 	pixel_x = 9;
 	pixel_y = -1
 	},
@@ -234,7 +234,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/dark_blue/half/contrasted{
+/obj/effect/turf_decal/tile/dark_blue/half{
 	dir = 4
 	},
 /obj/effect/mapping_helpers/broken_floor,

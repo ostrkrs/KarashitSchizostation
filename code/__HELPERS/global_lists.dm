@@ -12,24 +12,33 @@
 	init_blooper_prefs()
 
 /// Inits crafting recipe lists
-/proc/init_crafting_recipes(list/crafting_recipes)
-	for(var/path in subtypesof(/datum/crafting_recipe))
-		if(ispath(path, /datum/crafting_recipe/stack))
+/proc/init_crafting_recipes()
+	for(var/datum/crafting_recipe_path as anything in valid_subtypesof(/datum/crafting_recipe))
+		var/datum/crafting_recipe/recipe = new crafting_recipe_path()
+		if(recipe.name == "" || !recipe.result)
+			qdel(recipe)
 			continue
-		var/datum/crafting_recipe/recipe = new path()
+
 		var/is_cooking = (recipe.category in GLOB.crafting_category_food)
 		recipe.reqs = sort_list(recipe.reqs, GLOBAL_PROC_REF(cmp_crafting_req_priority))
-		if(recipe.name != "" && recipe.result)
-			if(is_cooking)
-				GLOB.cooking_recipes += recipe
-			else
-				GLOB.crafting_recipes += recipe
+
+		if(is_cooking)
+			GLOB.cooking_recipes += recipe
+			GLOB.cooking_recipes_by_typepath[crafting_recipe_path] = recipe
+			if(!(recipe.crafting_flags & CRAFT_MUST_BE_LEARNED))
+				GLOB.cooking_recipes_default += recipe
+
+		else
+			GLOB.crafting_recipes += recipe
+			GLOB.crafting_recipes_by_typepath[crafting_recipe_path] = recipe
+			if(!(recipe.crafting_flags & CRAFT_MUST_BE_LEARNED))
+				GLOB.crafting_recipes_default += recipe
 
 	var/list/global_stack_recipes = list(
 		/obj/item/stack/sheet/glass = GLOB.glass_recipes,
-		/obj/item/stack/sheet/plasmaglass = GLOB.pglass_recipes,
+		/obj/item/stack/sheet/phoron_glass = GLOB.pglass_recipes,
 		/obj/item/stack/sheet/rglass = GLOB.reinforced_glass_recipes,
-		/obj/item/stack/sheet/plasmarglass = GLOB.prglass_recipes,
+		/obj/item/stack/sheet/phoron_rglass = GLOB.prglass_recipes,
 		/obj/item/stack/sheet/animalhide/gondola = GLOB.gondola_recipes,
 		/obj/item/stack/sheet/animalhide/corgi = GLOB.corgi_recipes,
 		/obj/item/stack/sheet/animalhide/monkey = GLOB.monkey_recipes,
@@ -41,7 +50,7 @@
 		/obj/item/stack/sheet/mineral/sandbags = GLOB.sandbag_recipes,
 		/obj/item/stack/sheet/mineral/diamond = GLOB.diamond_recipes,
 		/obj/item/stack/sheet/mineral/uranium = GLOB.uranium_recipes,
-		/obj/item/stack/sheet/mineral/plasma = GLOB.plasma_recipes,
+		/obj/item/stack/sheet/mineral/phoron = GLOB.phoron_recipes,
 		/obj/item/stack/sheet/mineral/gold = GLOB.gold_recipes,
 		/obj/item/stack/sheet/mineral/silver = GLOB.silver_recipes,
 		/obj/item/stack/sheet/mineral/bananium = GLOB.bananium_recipes,
@@ -50,7 +59,7 @@
 		/obj/item/stack/sheet/mineral/snow = GLOB.snow_recipes,
 		/obj/item/stack/sheet/mineral/adamantine = GLOB.adamantine_recipes,
 		/obj/item/stack/sheet/mineral/abductor = GLOB.abductor_recipes,
-		/obj/item/stack/sheet/iron = GLOB.metal_recipes,
+		/obj/item/stack/sheet/iron = GLOB.iron_recipes,
 		/obj/item/stack/sheet/plasteel = GLOB.plasteel_recipes,
 		/obj/item/stack/sheet/mineral/wood = GLOB.wood_recipes,
 		/obj/item/stack/sheet/mineral/bamboo = GLOB.bamboo_recipes,

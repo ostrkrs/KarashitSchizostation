@@ -3,7 +3,7 @@
 	description = "Assist the crew, open airlocks, follow your lawset, and coordinate your cyborgs."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON
 	department_head = list(JOB_RESEARCH_DIRECTOR)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 0
 	spawn_positions = 0
 	supervisors = "the Captain, Research Director, and your lawset"
@@ -16,7 +16,6 @@
 	config_tag = "HUMAN_AI"
 
 	outfit = /datum/outfit/job/human_ai
-	plasmaman_outfit = /datum/outfit/plasmaman/human_ai
 
 	paycheck = null
 	paycheck_department = null
@@ -39,7 +38,7 @@
 	rpg_title = "Omnissiah"
 	random_spawns_possible = FALSE
 	allow_bureaucratic_error = FALSE
-	job_flags = STATION_JOB_FLAGS | STATION_TRAIT_JOB_FLAGS | JOB_ANTAG_PROTECTED
+	job_flags = SHIP_JOB_FLAGS | SHIP_TRAIT_JOB_FLAGS | JOB_ANTAG_PROTECTED
 	human_authority = JOB_AUTHORITY_NON_HUMANS_ALLOWED //we can safely assume NT doesn't care what species AIs are made of, much less if they can't even afford an AI.
 
 /datum/job/human_ai/get_roundstart_spawn_point()
@@ -73,12 +72,6 @@
 		CRASH("Failed to find any AI spawn points.")
 	chosen_spawn_point.used = TRUE
 	return chosen_spawn_point
-
-/datum/job/human_ai/special_check_latejoin(client/latejoin_client)
-	for(var/obj/structure/ai_core/latejoin_inactive/latejoin_core as anything in GLOB.latejoin_ai_cores)
-		if(latejoin_core.is_available())
-			return TRUE
-	return FALSE
 
 /datum/job/human_ai/announce_job(mob/living/joining_mob)
 	. = ..()

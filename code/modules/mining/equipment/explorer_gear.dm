@@ -76,9 +76,6 @@
 	acid = 40
 	wound = 5
 
-/obj/item/clothing/mask/gas/explorer/plasmaman
-	starting_filter_type = /obj/item/gas_filter/plasmaman
-
 /obj/item/clothing/mask/gas/explorer/attack_self(mob/user)
 	adjust_visor(user)
 

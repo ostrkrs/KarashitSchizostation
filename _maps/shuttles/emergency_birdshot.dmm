@@ -903,7 +903,6 @@
 /obj/item/bodypart/leg/left/fly,
 /obj/item/bodypart/arm/right,
 /obj/item/bodypart/arm/right,
-/obj/item/organ/tail/cat,
 /obj/effect/turf_decal/stripes/white/end{
 	dir = 1
 	},

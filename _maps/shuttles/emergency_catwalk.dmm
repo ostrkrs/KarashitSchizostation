@@ -4,7 +4,7 @@
 	pixel_y = 8
 	},
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 10
 	},
 /turf/open/floor/iron/herringbone,
@@ -32,7 +32,7 @@
 "bu" = (
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/trimline/yellow/corner,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/machinery/status_display/evac/directional/east,
@@ -102,7 +102,7 @@
 /area/shuttle/escape)
 "ht" = (
 /obj/machinery/light/floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -113,10 +113,10 @@
 /area/shuttle/escape)
 "ir" = (
 /obj/effect/turf_decal/trimline/dark_blue/end,
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -153,11 +153,11 @@
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/escape)
 "kj" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue/half,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/machinery/computer/operating{
@@ -185,7 +185,7 @@
 /area/template_noop)
 "mF" = (
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding,
 /obj/machinery/chem_master/condimaster{
 	desc = "Looks like a knock-off chem-master. Perhaps useful for separating liquids when mixing drinks precisely. Also dispenses condiments.";
 	name = "HoochMaster Deluxe"
@@ -214,13 +214,13 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "po" = (
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 1
 	},
 /obj/structure/table/reinforced,
@@ -274,14 +274,14 @@
 /turf/open/floor/holofloor/stairs,
 /area/shuttle/escape)
 "tw" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted,
+/obj/effect/turf_decal/tile/light_blue/half,
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "tF" = (
-/obj/effect/turf_decal/trimline/blue/end{
+/obj/effect/turf_decal/trimline/light_blue/end{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -315,7 +315,7 @@
 /obj/machinery/computer/crew{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured,
@@ -326,38 +326,38 @@
 /area/shuttle/escape)
 "xP" = (
 /obj/machinery/light/floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating_new/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 4
 	},
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "yz" = (
 /obj/machinery/vending/cigarette/beach,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /obj/structure/sign/poster/contraband/random/directional/north,
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "yW" = (
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /obj/item/toy/plush/lizard_plushie/green{
 	name = "Hides-On-Shuttle"
 	},
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /obj/structure/sign/poster/contraband/random/directional/north,
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "zd" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 4
 	},
 /obj/structure/table/reinforced{
@@ -462,11 +462,11 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "CA" = (
-/obj/effect/turf_decal/siding/thinplating/corner,
+/obj/effect/turf_decal/siding/corner,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "CO" = (
-/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "Dx" = (
@@ -481,11 +481,11 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "DD" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner,
-/obj/effect/turf_decal/tile/blue{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner,
+/obj/effect/turf_decal/tile/light_blue{
 	dir = 4
 	},
 /obj/item/storage/medkit/regular{
@@ -524,7 +524,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/ion_rifle/directional/north,
+/obj/structure/sign/poster/contraband/ion_rifle/directional/north,
 /obj/machinery/button/flasher{
 	pixel_x = 26;
 	pixel_y = -6
@@ -536,14 +536,14 @@
 /area/shuttle/escape)
 "Gv" = (
 /obj/machinery/jukebox,
-/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "GX" = (
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /obj/machinery/status_display/evac/directional/west,
@@ -686,7 +686,7 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "KW" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -719,10 +719,10 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "MH" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 4
 	},
 /obj/structure/table/optable,
@@ -730,7 +730,7 @@
 /area/shuttle/escape)
 "ML" = (
 /obj/structure/chair/comfy/shuttle,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
 /turf/open/floor/iron/dark/textured,
@@ -759,13 +759,13 @@
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "OD" = (
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 1
 	},
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "OE" = (
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -786,20 +786,20 @@
 /obj/effect/turf_decal/trimline/yellow/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/corner{
+/obj/effect/turf_decal/trimline/light_blue/corner{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "PD" = (
-/obj/effect/turf_decal/trimline/blue/filled/line,
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/shuttle/escape)
 "PL" = (
-/obj/effect/turf_decal/trimline/blue/end,
+/obj/effect/turf_decal/trimline/light_blue/end,
 /turf/open/floor/iron,
 /area/shuttle/escape)
 "PP" = (
@@ -814,7 +814,7 @@
 /obj/effect/turf_decal/trimline/dark_blue/filled/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/blue/warning{
+/obj/effect/turf_decal/trimline/light_blue/warning{
 	dir = 8
 	},
 /obj/effect/turf_decal/trimline/yellow/warning{
@@ -823,13 +823,13 @@
 /turf/open/floor/iron/dark/textured,
 /area/shuttle/escape)
 "Rd" = (
-/obj/effect/turf_decal/tile/blue/half/contrasted{
+/obj/effect/turf_decal/tile/light_blue/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/blue/filled/corner{
+/obj/effect/turf_decal/trimline/light_blue/filled/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/blue,
+/obj/effect/turf_decal/tile/light_blue,
 /obj/machinery/stasis{
 	dir = 4
 	},
@@ -847,10 +847,10 @@
 /area/shuttle/escape)
 "RC" = (
 /obj/machinery/light/floor,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -936,7 +936,7 @@
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "Sz" = (
-/obj/effect/turf_decal/siding/thinplating/corner{
+/obj/effect/turf_decal/siding/corner{
 	dir = 4
 	},
 /turf/open/floor/iron,
@@ -1007,7 +1007,7 @@
 	pixel_y = 8
 	},
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 6
 	},
 /turf/open/floor/iron/herringbone,
@@ -1022,7 +1022,7 @@
 "YD" = (
 /obj/machinery/smartfridge/drinks,
 /obj/machinery/light/directional/north,
-/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron/herringbone,
 /area/shuttle/escape)
 "YV" = (

@@ -58,12 +58,12 @@
 /datum/outfit/mafia/detective
 	name = "Mafia Detective"
 
-	uniform = /obj/item/clothing/under/rank/security/detective
-	neck = /obj/item/clothing/neck/tie/detective
+	uniform = /obj/item/clothing/under/rank/security/criminalist
+	neck = /obj/item/clothing/neck/tie/criminalist
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/toggle/jacket/det_trench
+	suit = /obj/item/clothing/suit/toggle/jacket/criminalist_trench
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/fedora/det_hat
+	head = /obj/item/clothing/head/fedora/criminalist
 	mask = /obj/item/cigarette
 
 /datum/outfit/mafia/psychologist
@@ -95,11 +95,11 @@
 	suit = /obj/item/clothing/suit/armor/vest/alt
 	shoes = /obj/item/clothing/shoes/jackboots
 
-/datum/outfit/mafia/lawyer
-	name = "Mafia Lawyer"
+/datum/outfit/mafia/iaa
+	name = "Mafia Internal Affairs Agent"
 
-	uniform = /obj/item/clothing/under/rank/civilian/lawyer/bluesuit
-	suit = /obj/item/clothing/suit/toggle/lawyer
+	uniform = /obj/item/clothing/under/rank/civilian/iaa/bluesuit
+	suit = /obj/item/clothing/suit/toggle/iaa
 	shoes = /obj/item/clothing/shoes/laceup
 
 /datum/outfit/mafia/coroner
@@ -126,7 +126,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
 	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/hats/hos/beret
+	head = /obj/item/clothing/head/beret/sec/hos
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 /datum/outfit/mafia/warden
@@ -136,7 +136,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/armor/vest/warden/alt
 	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/hats/warden/red
+	head = /obj/item/clothing/head/hats/warden
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 //mafia

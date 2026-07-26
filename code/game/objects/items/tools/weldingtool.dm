@@ -94,6 +94,10 @@
 	INVOKE_ASYNC(src, PROC_REF(try_heal_loop), interacting_with, user, TRUE)
 	return ITEM_INTERACT_SUCCESS
 
+/obj/item/weldingtool/fueled/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
 /// MARK: FUELED WELDERS
 /obj/item/weldingtool/fueled
 	name = "welding torch"
@@ -174,9 +178,9 @@
 	if(welding)
 		force = force_when_on
 		damtype = BURN
-		burned_fuel_for += seconds_per_tick
 		if(need_oxygen && !check_oxydizer(src.loc))
 			switched_off()
+		burned_fuel_for += seconds_per_tick
 		if(burned_fuel_for >= TOOL_FUEL_BURN_INTERVAL)
 			use(TRUE)
 		update_appearance()
@@ -214,8 +218,8 @@
 	update_appearance()
 
 /obj/item/weldingtool/fueled/proc/explode()
-	var/plasmaAmount = inserted_tank.reagents.get_reagent_amount(/datum/reagent/toxin/plasma)
-	dyn_explosion(src, plasmaAmount/5, explosion_cause = src) // 20 plasma in a standard welder has a 4 power explosion. no breaches, but enough to kill/dismember holder
+	var/phoronAmount = inserted_tank.reagents.get_reagent_amount(/datum/reagent/toxin/phoron)
+	dyn_explosion(src, phoronAmount/5, explosion_cause = src)
 	QDEL_NULL(inserted_tank)
 	qdel(src)
 
@@ -263,7 +267,7 @@
 /obj/item/weldingtool/fueled/afterattack(atom/target, mob/user, list/modifiers, list/attack_modifiers)
 	if(!isOn())
 		return
-	use(1)
+	use(TRUE)
 	var/turf/location = get_turf(user)
 	location.hotspot_expose(700, 50, 1)
 	if(QDELETED(target) || !isliving(target)) // can't ignite something that doesn't exist
@@ -278,11 +282,12 @@
 		balloon_alert(user, "no tank!")
 		return
 	if(need_oxygen && !check_oxydizer(user)) //torches need oxygen
+		balloon_alert(user, "can't lit!")
 		return
 	if(inserted_tank && !inserted_tank.reagents)
 		balloon_alert(user, "no fuel!")
 		return
-	if(inserted_tank.reagents.has_reagent(/datum/reagent/toxin/plasma))
+	if(inserted_tank.reagents.has_reagent(/datum/reagent/toxin/phoron))
 		message_admins("[ADMIN_LOOKUPFLW(user)] activated a rigged welder at [AREACOORD(user)].")
 		user.log_message("activated a rigged welder", LOG_VICTIM)
 		explode()
@@ -340,6 +345,8 @@
 	. = ..()
 	if(inserted_tank)
 		. += "It contains [inserted_tank.get_fuel()] unit\s of fuel out of [inserted_tank.max_fuel]."
+	else
+		. += span_warning("It has no fuel tank attached.")
 
 /// If welding tool ran out of fuel during a construction task, construction fails.
 /obj/item/weldingtool/fueled/tool_use_check(mob/living/user, amount, heat_required)
@@ -398,7 +405,7 @@
 	icon = 'icons/obj/antags/abductor.dmi'
 	icon_state = "welder"
 	toolspeed = 0.1
-	custom_materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/silver = SHEET_MATERIAL_AMOUNT*1.25, /datum/material/plasma =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/titanium =SHEET_MATERIAL_AMOUNT, /datum/material/diamond =SHEET_MATERIAL_AMOUNT)
+	custom_materials = list(/datum/material/iron =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/silver = SHEET_MATERIAL_AMOUNT*1.25, /datum/material/phoron =SHEET_MATERIAL_AMOUNT * 2.5, /datum/material/titanium =SHEET_MATERIAL_AMOUNT, /datum/material/diamond =SHEET_MATERIAL_AMOUNT)
 	light_system = NO_LIGHT_SUPPORT
 	light_range = 0
 	change_icons = FALSE
@@ -418,7 +425,7 @@
 	desc = "An experimental welder capable of self-fuel generation, is less harmful to the eyes AND can weld in the vacuum of space!"
 	icon_state = "exwelder"
 	inhand_icon_state = "exwelder"
-	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass = SMALL_MATERIAL_AMOUNT*5, /datum/material/plasma =HALF_SHEET_MATERIAL_AMOUNT*1.5, /datum/material/uranium =SMALL_MATERIAL_AMOUNT * 2)
+	custom_materials = list(/datum/material/iron =HALF_SHEET_MATERIAL_AMOUNT, /datum/material/glass = SMALL_MATERIAL_AMOUNT*5, /datum/material/phoron =HALF_SHEET_MATERIAL_AMOUNT*1.5, /datum/material/uranium =SMALL_MATERIAL_AMOUNT * 2)
 	change_icons = FALSE
 	can_off_process = TRUE
 	light_range = 1
@@ -442,7 +449,7 @@
 /obj/item/weldingtool/fueled/big
 	name = "industrial welding torch"
 	desc = "A heavy, industrial-grade fueled welder, trades all compactness for unparalleled welding speed."
-	icon = 'icons/obj/tools_wide.dmi'
+	icon = 'icons/obj/tools_large.dmi'
 	icon_state = "bigwelder"
 	inhand_icon_state = "bigwelder"
 	force_when_on = 20
@@ -520,7 +527,7 @@
 	. = ..()
 
 /obj/item/welder_tank/proc/get_fuel()
-	return reagents.get_reagent_amount(/datum/reagent/fuel) + reagents.get_reagent_amount(/datum/reagent/toxin/plasma)
+	return reagents.get_reagent_amount(/datum/reagent/fuel) + reagents.get_reagent_amount(/datum/reagent/toxin/phoron)
 
 /obj/item/welder_tank/examine(mob/user)
 	. = ..()
@@ -566,7 +573,7 @@
 	icon_state = "elwelder"
 	light_system = NO_LIGHT_SUPPORT
 	light_range = 0
-	toolspeed = 2
+	toolspeed = 2.25
 	usesound = 'sound/items/tools/welder2.ogg'
 	var/obj/item/stock_parts/power_store/cell/inserted_cell = /obj/item/stock_parts/power_store/cell
 	var/power_use_amount = STANDARD_CELL_CHARGE * 0.5
@@ -584,8 +591,8 @@
 
 	if(!prohibited_cells)
 		prohibited_cells = typecacheof(list(
-			/obj/item/stock_parts/power_store/cell/crap,
-			/obj/item/stock_parts/power_store/cell/upgraded,
+			/obj/item/stock_parts/power_store/cell/device,
+			/obj/item/stock_parts/power_store/cell/device/upgraded,
 			/obj/item/stock_parts/power_store/cell/secborg,
 			/obj/item/stock_parts/power_store/cell/mini_egun,
 			/obj/item/stock_parts/power_store/cell/hos_gun,
@@ -611,6 +618,8 @@
 	. = ..()
 	if(inserted_cell)
 		. += "The charge meter reads [CEILING(inserted_cell.percent(), 0.1)]%."
+	else
+		. += span_warning("It has no power cell inserted.")
 
 /obj/item/weldingtool/electric/update_overlays()
 	. = ..()
@@ -717,6 +726,19 @@
 	else
 		. = ..()
 	update_appearance()
+
+/obj/item/weldingtool/electric/afterattack(atom/target, mob/user, list/modifiers, list/attack_modifiers)
+	if(!isOn())
+		return
+	use(used = power_use_amount)
+	var/turf/location = get_turf(user)
+	location.hotspot_expose(700, 50, 1)
+	if(QDELETED(target) || !isliving(target)) // can't ignite something that doesn't exist
+		return
+	var/mob/living/attacked_mob = target
+	if(attacked_mob.ignite_mob())
+		message_admins("[ADMIN_LOOKUPFLW(user)] set [key_name_admin(attacked_mob)] on fire with [src] at [AREACOORD(user)]")
+		user.log_message("set [key_name(attacked_mob)] on fire with [src].", LOG_ATTACK)
 
 /obj/item/weldingtool/electric/attack_hand_secondary(mob/user as mob)
 	. = ..()

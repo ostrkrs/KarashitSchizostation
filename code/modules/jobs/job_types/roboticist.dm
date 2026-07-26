@@ -1,8 +1,9 @@
 /datum/job/roboticist
 	title = JOB_ROBOTICIST
-	description = "Build and repair the AI and cyborgs, create mechs."
+	alt_titles = JOB_ROBOTICIST_ALT_TITLES
+	description = "Build and repair the AI and cyborgs, create mechs and MODsuits."
 	department_head = list(JOB_RESEARCH_DIRECTOR)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_RD
@@ -13,7 +14,7 @@
 	config_tag = "ROBOTICIST"
 
 	outfit = /datum/outfit/job/roboticist
-	plasmaman_outfit = /datum/outfit/plasmaman/robotics
+
 	departments_list = list(
 		/datum/job_department/science,
 		)
@@ -32,7 +33,7 @@
 
 	family_heirlooms = list(/obj/item/toy/plush/pkplush)
 	rpg_title = "Necromancer"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/job/roboticist/New()

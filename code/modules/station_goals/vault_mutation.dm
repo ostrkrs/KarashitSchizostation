@@ -93,14 +93,14 @@
 	. = ..()
 	owner.physiology.stun_mod /= 0.5
 
-/datum/mutation/plasmocile
-	name = "Plasmocile"
-	desc = "A mutation in the lungs that provides it immunity to plasma's toxic nature."
+/datum/mutation/phoricile
+	name = "Phoricile"
+	desc = "A mutation in the lungs that provides it immunity to phoron's toxic nature."
 	text_gain_indication = span_notice("Your lungs feel resistant to airborne contaminant.")
 	text_lose_indication = span_warning("Your lungs feel vulnerable to airborne contaminant again.")
 	locked = TRUE
 
-/datum/mutation/plasmocile/on_acquiring(mob/living/carbon/human/acquirer)
+/datum/mutation/phoricile/on_acquiring(mob/living/carbon/human/acquirer)
 	. = ..()
 	var/obj/item/organ/lungs/improved_lungs = acquirer.get_organ_slot(ORGAN_SLOT_LUNGS)
 	ADD_TRAIT(owner, TRAIT_VIRUSIMMUNE, GENETIC_MUTATION)
@@ -109,7 +109,7 @@
 	RegisterSignal(acquirer, COMSIG_CARBON_LOSE_ORGAN, PROC_REF(remove_modification))
 	RegisterSignal(acquirer, COMSIG_CARBON_GAIN_ORGAN, PROC_REF(reapply_modification))
 
-/datum/mutation/plasmocile/on_losing(mob/living/carbon/human/owner)
+/datum/mutation/phoricile/on_losing(mob/living/carbon/human/owner)
 	. = ..()
 	var/obj/item/organ/lungs/improved_lungs = owner.get_organ_slot(ORGAN_SLOT_LUNGS)
 	REMOVE_TRAIT(owner, TRAIT_VIRUSIMMUNE, GENETIC_MUTATION)
@@ -118,23 +118,23 @@
 	if(improved_lungs)
 		remove_buff(improved_lungs)
 
-/datum/mutation/plasmocile/proc/remove_modification(mob/source, obj/item/organ/old_organ)
+/datum/mutation/phoricile/proc/remove_modification(mob/source, obj/item/organ/old_organ)
 	SIGNAL_HANDLER
 
 	if(istype(old_organ, /obj/item/organ/lungs))
 		remove_buff(old_organ)
 
-/datum/mutation/plasmocile/proc/reapply_modification(mob/source, obj/item/organ/new_organ)
+/datum/mutation/phoricile/proc/reapply_modification(mob/source, obj/item/organ/new_organ)
 	SIGNAL_HANDLER
 
 	if(istype(new_organ, /obj/item/organ/lungs))
 		apply_buff(new_organ)
 
-/datum/mutation/plasmocile/proc/apply_buff(obj/item/organ/lungs/our_lungs)
+/datum/mutation/phoricile/proc/apply_buff(obj/item/organ/lungs/our_lungs)
 	our_lungs.plas_breath_dam_min *= 0
 	our_lungs.plas_breath_dam_max *= 0
 
-/datum/mutation/plasmocile/proc/remove_buff(obj/item/organ/lungs/our_lungs)
+/datum/mutation/phoricile/proc/remove_buff(obj/item/organ/lungs/our_lungs)
 	our_lungs.plas_breath_dam_min = initial(our_lungs.plas_breath_dam_min)
 	our_lungs.plas_breath_dam_max = initial(our_lungs.plas_breath_dam_max)
 

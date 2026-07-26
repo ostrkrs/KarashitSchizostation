@@ -125,7 +125,7 @@
 
 /obj/item/mod/control/pre_equipped/mining
 	theme = /datum/mod_theme/mining
-	applied_core = /obj/item/mod/core/plasma
+	applied_core = /obj/item/mod/core/phoron
 	applied_modules = list(
 		/obj/item/mod/module/storage/large_capacity,
 		/obj/item/mod/module/gps,
@@ -299,12 +299,6 @@
 
 /obj/item/mod/control/pre_equipped/nuclear/no_jetpack/Initialize(mapload, new_theme, new_skin, new_core)
 	applied_modules -= list(/obj/item/mod/module/jetpack/advanced, /obj/item/mod/module/jump_jet)
-	return ..()
-
-/obj/item/mod/control/pre_equipped/nuclear/plasmaman
-
-/obj/item/mod/control/pre_equipped/nuclear/plasmaman/Initialize(mapload, new_theme, new_skin, new_core)
-	applied_modules += /obj/item/mod/module/plasma_stabilizer
 	return ..()
 
 /obj/item/mod/control/pre_equipped/nuclear/unrestricted

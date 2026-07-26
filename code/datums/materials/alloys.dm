@@ -23,12 +23,12 @@
 
 /** Plasteel
  *
- * An alloy of iron and plasma.
+ * An alloy of iron and phoron.
  * Applies a significant slowdown effect to any and all items that contain it.
  */
 /datum/material/alloy/plasteel
 	name = "plasteel"
-	desc = "The heavy duty result of infusing iron with plasma."
+	desc = "The heavy duty result of infusing iron with phoron."
 	color = "#706374"
 	init_flags = MATERIAL_INIT_MAPLOAD
 	value_per_unit = 0.135
@@ -42,7 +42,7 @@
 		MAT_CATEGORY_ITEM_MATERIAL = TRUE,
 		MAT_CATEGORY_ITEM_MATERIAL_COMPLEMENTARY = TRUE,
 	)
-	composition = list(/datum/material/iron=1, /datum/material/plasma=1)
+	composition = list(/datum/material/iron=1, /datum/material/phoron=1)
 	mat_rust_resistance = RUST_RESISTANCE_REINFORCED
 	added_slowdown = 0.05
 	fish_weight_modifier = 1.75
@@ -62,11 +62,11 @@
 
 /** Plastitanium
  *
- * An alloy of titanium and plasma.
+ * An alloy of titanium and phoron.
  */
 /datum/material/alloy/plastitanium
 	name = "plastitanium"
-	desc = "The extremely heat resistant result of infusing titanium with plasma."
+	desc = "The extremely heat resistant result of infusing titanium with phoron."
 	color = "#3a313a"
 	init_flags = MATERIAL_INIT_MAPLOAD
 	value_per_unit = 0.225
@@ -80,7 +80,7 @@
 		MAT_CATEGORY_ITEM_MATERIAL = TRUE,
 		MAT_CATEGORY_ITEM_MATERIAL_COMPLEMENTARY = TRUE,
 	)
-	composition = list(/datum/material/titanium=1, /datum/material/plasma=1)
+	composition = list(/datum/material/titanium=1, /datum/material/phoron=1)
 	mat_rust_resistance = RUST_RESISTANCE_TITANIUM
 	fish_weight_modifier = 1.1
 	fishing_difficulty_modifier = -7
@@ -97,22 +97,22 @@
 	if(istype(target, /obj/item/fishing_rod))
 		REMOVE_TRAIT(target, TRAIT_ROD_LAVA_USABLE, REF(src))
 
-/** Plasmaglass
+/** Phoronglass
  *
- * An alloy of silicate and plasma.
+ * An alloy of silicate and phoron.
  */
-/datum/material/alloy/plasmaglass
-	name = "plasmaglass"
-	desc = "Plasma-infused silicate. It is much more durable and heat resistant than either of its component materials."
+/datum/material/alloy/phoronglass
+	name = "phoron glass"
+	desc = "Phoron-infused silicate. It is much more durable and heat resistant than either of its component materials."
 	color = "#ff80f4"
 	alpha = 150
 	starlight_color = COLOR_STRONG_MAGENTA
 	init_flags = MATERIAL_INIT_MAPLOAD
 	integrity_modifier = 0.5
 	armor_modifiers = list(MELEE = 0.8, BULLET = 0.8, LASER = 1.2, ENERGY = 1.2, BOMB = 0.3, BIO = 1.2, FIRE = 2, ACID = 2)
-	sheet_type = /obj/item/stack/sheet/plasmaglass
-	shard_type = /obj/item/shard/plasma
-	debris_type = /obj/effect/decal/cleanable/glass/plasma
+	sheet_type = /obj/item/stack/sheet/phoron_glass
+	shard_type = /obj/item/shard/phoron
+	debris_type = /obj/effect/decal/cleanable/glass/phoron
 	value_per_unit = 0.075
 	categories = list(
 		MAT_CATEGORY_RIGID=TRUE,
@@ -120,7 +120,7 @@
 		MAT_CATEGORY_ITEM_MATERIAL = TRUE,
 		MAT_CATEGORY_ITEM_MATERIAL_COMPLEMENTARY = TRUE,
 	)
-	composition = list(/datum/material/glass=1, /datum/material/plasma=0.5)
+	composition = list(/datum/material/glass=1, /datum/material/phoron=0.5)
 	fish_weight_modifier = 1.2
 	fishing_difficulty_modifier = 5
 	fishing_experience_multiplier = 1.3
@@ -138,7 +138,7 @@
 	starlight_color = COLOR_COMMAND_BLUE
 	init_flags = MATERIAL_INIT_MAPLOAD
 	armor_modifiers = list(MELEE = 1.2, BULLET = 1.2, LASER = 0.8, ENERGY = 0.8, BOMB = 0.5, BIO = 1.2, FIRE = 0.8, ACID = 2)
-	sheet_type = /obj/item/stack/sheet/titaniumglass
+	sheet_type = /obj/item/stack/sheet/titanium_glass
 	shard_type = /obj/item/shard/titanium
 	debris_type = /obj/effect/decal/cleanable/glass/titanium
 	value_per_unit = 0.04
@@ -167,7 +167,7 @@
 	init_flags = MATERIAL_INIT_MAPLOAD
 	integrity_modifier = 1.1
 	armor_modifiers = list(MELEE = 1.2, BULLET = 1.2, LASER = 1.2, ENERGY = 1.2, BOMB = 0.5, BIO = 1.2, FIRE = 2, ACID = 2)
-	sheet_type = /obj/item/stack/sheet/plastitaniumglass
+	sheet_type = /obj/item/stack/sheet/plastitanium_glass
 	shard_type = /obj/item/shard/plastitanium
 	debris_type = /obj/effect/decal/cleanable/glass/plastitanium
 	value_per_unit = 0.125
@@ -204,7 +204,7 @@
 		MAT_CATEGORY_ITEM_MATERIAL = TRUE,
 		MAT_CATEGORY_ITEM_MATERIAL_COMPLEMENTARY = TRUE,
 	)
-	composition = list(/datum/material/iron=2, /datum/material/plasma=2)
+	composition = list(/datum/material/iron=2, /datum/material/phoron=2)
 	added_slowdown = 0.1
 	fish_weight_modifier = 2.4
 	fishing_difficulty_modifier = -20

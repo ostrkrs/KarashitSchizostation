@@ -1,32 +1,32 @@
 /datum/job/head_of_personnel
 	title = JOB_HEAD_OF_PERSONNEL
-	description = "Alter access on ID cards, manage the service department, \
+	alt_titles = JOB_HEAD_OF_PERSONNEL_ALT_TITLES
+	description = "Alter access on ID cards, manage human resources, \
 		protect Ian, run the station when the captain dies."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD
 	department_head = list(JOB_CAPTAIN)
-	head_announce = list(RADIO_CHANNEL_SERVICE)
-	faction = FACTION_STATION
+	default_radio_channel = RADIO_CHANNEL_COMMAND
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_CAPTAIN
+	required_character_age = 35
 	req_admin_notify = 1
 	minimal_player_age = 10
 	exp_requirements = 180
 	exp_required_type = EXP_TYPE_CREW
-	exp_required_type_department = EXP_TYPE_SERVICE
+	exp_required_type_department = EXP_TYPE_COMMAND
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "HEAD_OF_PERSONNEL"
 
 	outfit = /datum/outfit/job/hop
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_personnel
+
 	departments_list = list(
-		/datum/job_department/service,
 		/datum/job_department/command,
 		)
 
 	paycheck = PAYCHECK_COMMAND
-	paycheck_department = ACCOUNT_SRV
-	bounty_types = CIV_JOB_RANDOM
+	paycheck_department = ACCOUNT_SEC
 
 	mind_traits = list(HEAD_OF_STAFF_MIND_TRAITS)
 	liver_traits = list(TRAIT_ROYAL_METABOLISM)
@@ -40,7 +40,7 @@
 
 	family_heirlooms = list(/obj/item/reagent_containers/cup/glass/trophy/silver_cup)
 	rpg_title = "Guild Questgiver"
-	job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS
 
 	human_authority = JOB_AUTHORITY_HUMANS_ONLY
 
@@ -107,19 +107,11 @@
 	suit = /obj/item/clothing/suit/armor/vest/hop
 
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun,
+		/obj/item/gun/energy/laser,
 		/obj/item/stamp/head/hop,
 		)
 
 /datum/outfit/job/hop/pre_equip(mob/living/carbon/human/H)
 	..()
 	if(check_holidays(IAN_HOLIDAY))
-		undershirt = /datum/sprite_accessory/undershirt/ian
-
-//only pet worth reviving
-/datum/job/head_of_personnel/get_mail_goodies(mob/recipient)
-	. = ..()
-	// Strange Reagent if the pet is dead.
-	for(var/mob/living/basic/pet/dog/corgi/ian/staff_pet in GLOB.dead_mob_list)
-		. += list(/datum/reagent/medicine/strange_reagent = 20)
-		break
+		underwear_top = /datum/sprite_accessory/clothing/underwear_top/ian

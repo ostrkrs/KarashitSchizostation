@@ -42,12 +42,11 @@
 		/obj/item/toy/katana,
 		/obj/item/nullrod/claymore/katana,
 		/obj/item/energy_katana,
-		/obj/item/gun/ballistic/automatic/tommygun,
 	))
 
-///Fedora detective pockets
-/datum/storage/pockets/small/fedora/detective
-	attack_hand_interact = TRUE // so the detectives would discover pockets in their hats
+///Fedora criminalist pockets
+/datum/storage/pockets/small/fedora/criminalist
+	attack_hand_interact = TRUE // so the criminalists would discover pockets in their hats
 	click_alt_open = FALSE
 
 ///Chef hat pocket
@@ -109,9 +108,8 @@
 			/obj/item/weldingtool/fueled/mini,
 			/obj/item/firing_pin,
 			/obj/item/suppressor,
-			/obj/item/ammo_box/magazine/m9mm,
 			/obj/item/ammo_box/magazine/m10mm,
-			/obj/item/ammo_box/magazine/m45,
+			/obj/item/ammo_box/magazine/smgm8mm_c20r,
 			/obj/item/ammo_box/magazine/toy/pistol,
 			/obj/item/ammo_casing,
 			/obj/item/lipstick,
@@ -139,10 +137,6 @@
 	. = ..()
 	set_holdable(
 		can_hold_list = list(
-			/obj/item/ammo_box/magazine/m10mm,
-			/obj/item/ammo_box/magazine/m45,
-			/obj/item/ammo_box/magazine/m9mm,
-			/obj/item/ammo_casing,
 			/obj/item/bikehorn,
 			/obj/item/cigarette,
 			/obj/item/dnainjector,

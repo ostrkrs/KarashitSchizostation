@@ -123,9 +123,9 @@
 	color = rgb(114,228,250)
 	loot = list(/obj/effect/decal/remains/human{color = rgb(114,228,250)})
 
-/mob/living/basic/skeleton/plasmaminer
+/mob/living/basic/skeleton/phoron_miner
 	name = "shambling miner"
-	desc = "A plasma-soaked miner, their exposed limbs turned into a grossly incandescent bone seemingly made of plasma."
+	desc = "A phoron-soaked miner, their exposed limbs turned into a grossly incandescent bone seemingly made of phoron."
 	icon_state = "plasma_miner"
 	icon_living = "plasma_miner"
 	icon_dead = "plasma_miner"
@@ -135,13 +135,10 @@
 	melee_damage_upper = 20
 	light_color = LIGHT_COLOR_PURPLE
 	light_range = 2
-	death_message = "collapses into a pile of bones, their suit dissolving among the plasma!"
-	loot = list(/obj/effect/decal/remains/plasma)
-	outfit = /datum/outfit/plasma_miner
-	species = /datum/species/plasmaman
+	death_message = "collapses into a pile of bones, their suit dissolving among the phoron!"
+	outfit = /datum/outfit/phoron_miner
 
-/mob/living/basic/skeleton/plasmaminer/jackhammer
-	desc = "A plasma-soaked miner, their exposed limbs turned into a grossly incandescent bone seemingly made of plasma. They seem to still have their mining tool in their hand, gripping tightly."
+/mob/living/basic/skeleton/phoron_miner/jackhammer
 	icon_state = "plasma_miner_tool"
 	icon_living = "plasma_miner_tool"
 	icon_dead = "plasma_miner_tool"
@@ -153,14 +150,15 @@
 	attack_verb_simple = "blast"
 	attack_sound = 'sound/items/weapons/sonic_jackhammer.ogg'
 	attack_vis_effect = null
-	loot = list(/obj/effect/decal/remains/plasma, /obj/item/pickaxe/drill/jackhammer)
+	loot = list(/obj/item/pickaxe/drill/jackhammer)
 	held_item = /obj/item/pickaxe/drill/jackhammer
 
-/datum/outfit/plasma_miner
-	name = "Plasma Miner"
+/datum/outfit/phoron_miner
+	name = "PHoron Miner"
 	uniform = /obj/item/clothing/under/rank/cargo/miner/lavaland
 	suit = /obj/item/clothing/suit/hooded/explorer
 	mask = /obj/item/clothing/mask/gas/explorer
+	shoes = /obj/item/clothing/shoes/workboots/mining
 
 // Skeleton AI
 

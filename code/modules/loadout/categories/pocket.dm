@@ -3,7 +3,7 @@
 	category_name = "Pocket"
 	category_ui_icon = FA_ICON_ENVELOPES_BULK
 	type_to_generate = /datum/loadout_item/pocket_items
-	tab_order = 10
+	tab_order = 11
 	/// How many pocket items are allowed
 	VAR_PRIVATE/max_allowed = 4
 
@@ -271,6 +271,14 @@
 /datum/loadout_item/pocket_items/misc/dye
 	name = "Hair Dye"
 	item_path = /obj/item/dyespray
+
+/datum/loadout_item/pocket_items/misc/poster_official
+	name = "Poster (Official)"
+	item_path = /obj/item/poster/random_official
+
+/datum/loadout_item/pocket_items/misc/poster_legal
+	name = "Poster (Legal)"
+	item_path = /obj/item/poster/random_legal
 
 /datum/loadout_item/pocket_items/misc/poster
 	name = "Poster (Contraband)"

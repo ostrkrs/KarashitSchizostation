@@ -49,7 +49,7 @@
 /area/template_noop)
 "m" = (
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor,
@@ -70,12 +70,11 @@
 /turf/open/floor/holofloor/plating,
 /area/template_noop)
 "s" = (
-/obj/effect/turf_decal/tile/neutral/half/contrasted,
+/obj/effect/turf_decal/tile/neutral/half,
 /turf/open/floor/holofloor,
 /area/template_noop)
 "t" = (
 /obj/structure/table/glass,
-/obj/item/gun/energy/e_gun/mini/practice_phaser,
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/machinery/recharger,
 /turf/open/floor/holofloor/plating,
@@ -85,7 +84,7 @@
 /obj/item/folder,
 /obj/item/pen/blue,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor,
@@ -130,7 +129,7 @@
 /obj/item/clothing/under/trek/engsec,
 /obj/item/clothing/under/trek/engsec,
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor,
@@ -141,14 +140,13 @@
 /area/template_noop)
 "J" = (
 /obj/structure/window/reinforced/spawner/directional/east,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor,
 /area/template_noop)
 "L" = (
 /obj/structure/table/glass,
-/obj/item/gun/energy/e_gun/mini/practice_phaser,
 /obj/structure/window/reinforced/spawner/directional/east,
 /turf/open/floor/holofloor/plating,
 /area/template_noop)
@@ -157,7 +155,7 @@
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/item/folder,
 /obj/item/pen/red,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor,
@@ -168,7 +166,7 @@
 /obj/item/clothing/under/trek/medsci,
 /obj/item/clothing/under/trek/command,
 /obj/structure/window/reinforced/spawner/directional/west,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor,
@@ -198,7 +196,7 @@
 /obj/structure/table,
 /obj/item/folder,
 /obj/item/pen,
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/holofloor,

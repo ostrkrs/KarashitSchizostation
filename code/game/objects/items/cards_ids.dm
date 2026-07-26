@@ -72,7 +72,7 @@
 	var/datum/bank_account/registered_account
 
 	/// Registered owner's age.
-	var/registered_age = 30
+	var/registered_age = null
 
 	/// The job name registered on the card (for example: Assistant).
 	var/assignment
@@ -492,10 +492,7 @@
 
 /obj/item/card/id/attack_self(mob/user)
 	if(Adjacent(user))
-		var/minor
-		if(registered_name && registered_age && registered_age < AGE_MINOR)
-			minor = " <b>(MINOR)</b>"
-		user.visible_message(span_notice("[user] shows you: [icon2html(src, viewers(user))] [src.name][minor]."), span_notice("You show \the [src.name][minor]."))
+		user.visible_message(span_notice("[user] shows you: [icon2html(src, viewers(user))] [src.name]."), span_notice("You show \the [src.name]."))
 	add_fingerprint(user)
 
 /obj/item/card/id/add_context(atom/source, list/context, obj/item/held_item, mob/user)
@@ -583,12 +580,24 @@
 	if(!user.can_read(src))
 		return
 
-	if(registered_account && !isnull(registered_account.account_id))
-		. += "The account linked to the ID belongs to '[registered_account.account_holder]' and reports a balance of [registered_account.account_balance] cr."
-		if(ACCESS_COMMAND in access)
-			var/datum/bank_account/linked_dept = SSeconomy.get_dep_account(registered_account.account_job.paycheck_department)
-			. += "The [linked_dept.account_holder] linked to the ID reports a balance of [linked_dept.account_balance] cr."
-	else
+	if(registered_account)
+		var/id_name = registered_name
+		var/id_age = registered_age
+		var/id_job = assignment
+
+		var/datum/record/crew/record = find_record(id_name)
+		var/id_blood_type = record?.blood_type
+		var/id_gender = record?.gender
+		var/id_species = record?.species
+
+		. += span_notice("Name: [id_name || "Unknown"]")
+		. += span_notice("Job: [id_job || "Unassigned"]")
+		. += span_notice("Species: [id_species || "Unknown"]")
+		. += span_notice("Age: [id_age || "Unknown"]")
+		. += span_notice("Gender: [id_gender || "Unknown"]")
+		. += span_notice("Blood Type: [id_blood_type || "Unknown"]")
+
+	if(!registered_account && isnull(registered_account.account_id))
 		. += span_notice("Alt-Right-Click the ID to set the linked bank account.")
 
 	if(HAS_TRAIT(user, TRAIT_ID_APPRAISER))
@@ -604,17 +613,6 @@
 			addtimer(CALLBACK(src, PROC_REF(drop_card), user), 10 SECONDS)
 	. += span_notice("<i>There's more information below, you can look again to take a closer look...</i>")
 
-/obj/item/card/id/proc/drop_card(mob/user)
-	user.stop_sound_channel(CHANNEL_HEARTBEAT)
-	REMOVE_TRAIT(src, TRAIT_NODROP, "psycho")
-	if(user.is_holding(src))
-		user.dropItemToGround(src)
-	for(var/mob/living/carbon/human/viewing_mob in viewers(user, 2))
-		if(viewing_mob.stat || viewing_mob == user)
-			continue
-		viewing_mob.say("Is something wrong? [first_name(user.name)]... you're sweating.", forced = "psycho")
-		break
-
 /obj/item/card/id/examine_more(mob/user)
 	. = ..()
 	if(!user.can_read(src))
@@ -622,18 +620,7 @@
 
 	. += span_notice("<i>You examine [src] closer, and note the following...</i>")
 
-	if(registered_age)
-		. += "The card indicates that the holder is [registered_age] years old. [(registered_age < AGE_MINOR) ? "There's a holographic stripe that reads <b>[span_danger("'MINOR: DO NOT SERVE ALCOHOL OR TOBACCO'")]</b> along the bottom of the card." : ""]"
 	if(registered_account)
-		if(registered_account.mining_points)
-			. += "There's [registered_account.mining_points] mining point\s loaded onto the card's bank account."
-		. += "The account linked to the ID belongs to '[registered_account.account_holder]' and reports a balance of [registered_account.account_balance] cr."
-		if(registered_account.account_debt)
-			. += span_warning("The account is currently indebted for [registered_account.account_debt] cr. [100*DEBT_COLLECTION_COEFF]% of all earnings will go towards extinguishing it.")
-		if(registered_account.account_job)
-			var/datum/bank_account/D = SSeconomy.get_dep_account(registered_account.account_job.paycheck_department)
-			if(D)
-				. += "The [D.account_holder] reports a balance of [D.account_balance] cr."
 		if(registered_account.replaceable)
 			. += span_info("Alt-Click the ID to change the linked bank account.")
 		if(registered_account.civilian_bounty)
@@ -647,6 +634,17 @@
 		. += span_info("There is no registered account linked to this card. Alt-Click to add one.")
 
 	return .
+
+/obj/item/card/id/proc/drop_card(mob/user)
+	user.stop_sound_channel(CHANNEL_HEARTBEAT)
+	REMOVE_TRAIT(src, TRAIT_NODROP, "psycho")
+	if(user.is_holding(src))
+		user.dropItemToGround(src)
+	for(var/mob/living/carbon/human/viewing_mob in viewers(user, 2))
+		if(viewing_mob.stat || viewing_mob == user)
+			continue
+		viewing_mob.say("Is something wrong? [first_name(user.name)]... you're sweating.", forced = "psycho")
+		break
 
 /obj/item/card/id/GetAccess()
 	var/list/total_access = access.Copy()
@@ -771,12 +769,14 @@
 
 	update_label()
 
+/obj/item/card/id/black
+	icon_state = "card_black"
+
 /obj/item/card/id/away
 	name = "\proper a perfectly generic identification card"
 	desc = "A perfectly generic identification card. Looks like it could use some flavor."
 	trim = /datum/id_trim/away
 	icon_state = "retro"
-	registered_age = null
 
 /obj/item/card/id/away/hotel
 	name = "Staff ID"
@@ -823,13 +823,18 @@
 	name = "Film Studio ID"
 	desc = "An ID card that allows access to the variety of airlocks present in the film studio"
 
+/obj/item/card/id/vagabond
+	name = "fiddled identification card"
+	desc = "It looks like someone has been messing around with its electronics."
+	icon_state = "card_vagabond"
+	trim = /datum/id_trim/vagabond
+
 /obj/item/card/id/departmental_budget
 	name = "departmental card (ERROR)"
 	desc = "Provides access to the departmental budget."
 	icon_state = "budgetcard"
 	var/department_ID = ACCOUNT_CIV
 	var/department_name = ACCOUNT_CIV_NAME
-	registered_age = null
 
 /obj/item/card/id/departmental_budget/Initialize(mapload)
 	. = ..()
@@ -1088,7 +1093,6 @@
 	desc = "The spare ID of the High Lord himself."
 	registered_name = "Captain"
 	trim = /datum/id_trim/job/captain
-	registered_age = null
 
 /obj/item/card/id/advanced/gold/captains_spare/update_label() //so it doesn't change to Captain's ID card (Captain) on a sneeze
 	if(registered_name == "Captain")
@@ -1103,14 +1107,12 @@
 	icon_state = "card_centcom"
 	assigned_icon_state = "assigned_centcom"
 	registered_name = JOB_CENTCOM
-	registered_age = null
 	trim = /datum/id_trim/centcom
 	wildcard_slots = WILDCARD_LIMIT_CENTCOM
 
 /obj/item/card/id/advanced/centcom/ert
 	name = "\improper CentCom ID"
 	desc = "An ERT ID card."
-	registered_age = null
 	registered_name = "Emergency Response Intern"
 	trim = /datum/id_trim/centcom/ert
 
@@ -1168,7 +1170,6 @@
 	name = "syndicate ID card"
 	desc = "An ID straight from the Syndicate."
 	registered_name = "Syndicate"
-	registered_age = null
 	trim = /datum/id_trim/syndicom
 	wildcard_slots = WILDCARD_LIMIT_SYNDICATE
 
@@ -1189,7 +1190,6 @@
 	name = "syndicate captain's spare ID"
 	desc = "The spare ID of the Dark Lord himself."
 	registered_name = "Captain"
-	registered_age = null
 
 /obj/item/card/id/advanced/black/syndicate_command/captain_id/syndie_spare/update_label()
 	if(registered_name == "Captain")
@@ -1236,7 +1236,6 @@
 	icon_state = "card_prisoner"
 	inhand_icon_state = "orange-id"
 	registered_name = "Scum"
-	registered_age = null
 	trim = /datum/id_trim/job/prisoner
 
 	wildcard_slots = WILDCARD_LIMIT_PRISONER
@@ -1370,7 +1369,7 @@
 	trim = /datum/id_trim/highlander
 	wildcard_slots = WILDCARD_LIMIT_ADMIN
 
-/// An ID that you can flip with attack_self_secondary, overriding the appearance of the ID (useful for plainclothes detectives for example).
+/// An ID that you can flip with attack_self_secondary, overriding the appearance of the ID.
 /obj/item/card/id/advanced/plainclothes
 	name = "Plainclothes ID"
 	///The trim that we use as plainclothes identity

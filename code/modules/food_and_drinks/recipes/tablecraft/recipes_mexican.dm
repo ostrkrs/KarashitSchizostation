@@ -33,7 +33,7 @@
 	category = CAT_MEXICAN
 
 /datum/crafting_recipe/food/fuegoburrito
-	name ="Fuego plasma burrito"
+	name ="Fuego burrito"
 	reqs = list(
 		/obj/item/food/tortilla = 1,
 		/obj/item/food/grown/ghost_chili = 2,

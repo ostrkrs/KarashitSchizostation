@@ -11,14 +11,6 @@
 	max_wizard_trigger_potency = 3
 	admin_setup = list(/datum/event_admin_setup/carp_migration)
 
-/datum/round_event_control/carp_migration/New()
-	. = ..()
-	if(!HAS_TRAIT(SSstation, STATION_TRAIT_CARP_INFESTATION))
-		return
-	weight *= 3
-	max_occurrences *= 2
-	earliest_start *= 0.5
-
 /datum/round_event/carp_migration
 	announce_when = 3
 	start_when = 50
@@ -37,7 +29,7 @@
 	start_when = rand(40, 60)
 
 /datum/round_event/carp_migration/announce(fake)
-	priority_announce("[fluff_signal] have been detected near [station_name()], please stand-by.", "Lifesign Alert")
+	priority_announce("[fluff_signal] have been detected near [ship_name()], please stand-by.", "Lifesign Alert")
 
 /datum/round_event/carp_migration/start()
 	// Stores the most recent fish we spawn

@@ -157,6 +157,7 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/bartender
 
@@ -184,30 +185,6 @@
 	honorifics = list(", Almighty Scourge")
 	honorific_positions = HONORIFIC_POSITION_LAST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/bitrunner
-	assignment = JOB_BITRUNNER
-	trim_state = "trim_bitrunner"
-	department_color = COLOR_CARGO_BROWN
-	subdepartment_color = COLOR_CARGO_BROWN
-	sechud_icon_state = SECHUD_BITRUNNER
-	minimal_access = list(
-		ACCESS_BIT_DEN,
-		ACCESS_CARGO,
-		ACCESS_MAINT_TUNNELS,
-		ACCESS_MECH_MINING,
-		ACCESS_MINERAL_STOREROOM,
-	)
-	extra_access = list(
-		ACCESS_MINING,
-		ACCESS_MINING_STATION,
-		)
-	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_QM,
-	)
-	job = /datum/job/bitrunner
-
 /datum/id_trim/job/botanist
 	assignment = JOB_BOTANIST
 	trim_state = "trim_botanist"
@@ -221,12 +198,12 @@
 	extra_access = list(
 		ACCESS_BAR,
 		ACCESS_KITCHEN,
-		ACCESS_MORGUE,
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/botanist
 
@@ -295,7 +272,6 @@
 		ACCESS_SHIPPING,
 		)
 	extra_access = list(
-		ACCESS_BIT_DEN,
 		ACCESS_MINING,
 		ACCESS_MINING_STATION,
 		)
@@ -327,6 +303,7 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/chaplain
 	honorifics = list("Chaplain", "Reverend")
@@ -335,8 +312,8 @@
 /datum/id_trim/job/chemist
 	assignment = JOB_CHEMIST
 	trim_state = "trim_chemist"
-	department_color = COLOR_MEDICAL_BLUE
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	department_color = COLOR_MEDICAL_TEAL
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_CHEMIST
 	minimal_access = list(
 		ACCESS_MECH_MEDICAL,
@@ -407,7 +384,7 @@
 	intern_alt_name = "Chief Medical Officer-in-Training"
 	trim_state = "trim_medicaldoctor"
 	department_color = COLOR_COMMAND_BLUE
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	department_state = "departmenthead"
 	sechud_icon_state = SECHUD_CHIEF_MEDICAL_OFFICER
 	extra_wildcard_access = list()
@@ -428,6 +405,7 @@
 		ACCESS_RC_ANNOUNCE,
 		ACCESS_SURGERY,
 		ACCESS_VIROLOGY,
+		ACCESS_PARAMEDIC,
 	)
 	minimal_wildcard_access = list(
 		ACCESS_CMO,
@@ -441,7 +419,7 @@
 	)
 	job = /datum/job/chief_medical_officer
 	big_pointer = TRUE
-	pointer_color = COLOR_MEDICAL_BLUE
+	pointer_color = COLOR_MEDICAL_TEAL
 	honorifics = list(", PhD.", ", MD.")
 	honorific_positions = HONORIFIC_POSITION_LAST_FULL | HONORIFIC_POSITION_NONE
 
@@ -460,6 +438,7 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/clown
 	honorifics = list("the Clown")
@@ -473,7 +452,6 @@
 	sechud_icon_state = SECHUD_COOK
 	minimal_access = list(
 		ACCESS_KITCHEN,
-		ACCESS_MORGUE,
 		ACCESS_SERVICE,
 		)
 	extra_access = list(
@@ -484,22 +462,17 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/cook
 	honorifics = list("Cook")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/cook/chef
-	assignment = JOB_CHEF
-	sechud_icon_state = SECHUD_CHEF
-	honorifics = list("Chef")
-	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
-
 /datum/id_trim/job/coroner
 	assignment = JOB_CORONER
 	trim_state = "trim_coroner"
-	department_color = COLOR_MEDICAL_BLUE
-	subdepartment_color = COLOR_SERVICE_LIME
+	department_color = COLOR_MEDICAL_TEAL
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_CORONER
 	minimal_access = list(
 		ACCESS_MEDICAL,
@@ -528,7 +501,6 @@
 	subdepartment_color = COLOR_SERVICE_LIME
 	sechud_icon_state = SECHUD_CURATOR
 	minimal_access = list(
-		ACCESS_AUX_BASE,
 		ACCESS_LIBRARY,
 		ACCESS_MINING_STATION,
 		ACCESS_SERVICE,
@@ -538,19 +510,20 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/curator
 
-/datum/id_trim/job/detective
-	assignment = JOB_DETECTIVE
-	trim_state = "trim_detective"
-	department_color = COLOR_SECURITY_RED
-	subdepartment_color = COLOR_SECURITY_RED
-	sechud_icon_state = SECHUD_DETECTIVE
+/datum/id_trim/job/criminalist
+	assignment = JOB_CRIMINALIST
+	trim_state = "trim_criminalist"
+	department_color = COLOR_SECURITY_BLUE
+	subdepartment_color = COLOR_SECURITY_BLUE
+	sechud_icon_state = SECHUD_CRIMINALIST
 	minimal_access = list(
 		ACCESS_BRIG_ENTRANCE,
 		ACCESS_COURT,
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MECH_SECURITY,
 		ACCESS_MORGUE,
@@ -566,11 +539,11 @@
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOS,
 	)
-	job = /datum/job/detective
+	job = /datum/job/criminalist
 	honorifics = list("Detective", "Investigator")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/detective/refresh_trim_access()
+/datum/id_trim/job/criminalist/refresh_trim_access()
 	. = ..()
 
 	if(!.)
@@ -579,6 +552,37 @@
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
+
+/datum/id_trim/job/station_engineer
+	assignment = JOB_DECK_ENGINEER
+	trim_state = "trim_stationengineer"
+	department_color = COLOR_ENGINEERING_ORANGE
+	subdepartment_color = COLOR_ENGINEERING_ORANGE
+	sechud_icon_state = SECHUD_STATION_ENGINEER
+	minimal_access = list(
+		ACCESS_AUX_BASE,
+		ACCESS_CONSTRUCTION,
+		ACCESS_ENGINEERING,
+		ACCESS_ENGINE_EQUIP,
+		ACCESS_EXTERNAL_AIRLOCKS,
+		ACCESS_MAINT_TUNNELS,
+		ACCESS_MECH_ENGINE,
+		ACCESS_MINERAL_STOREROOM,
+		ACCESS_MINISAT,
+		ACCESS_TCOMMS,
+		ACCESS_TECH_STORAGE,
+		)
+	extra_access = list(
+		ACCESS_ATMOSPHERICS,
+		)
+	template_access = list(
+		ACCESS_CAPTAIN,
+		ACCESS_CHANGE_IDS,
+		ACCESS_CE,
+		)
+	job = /datum/job/station_engineer
+	honorifics = list("Engineer")
+	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
 /datum/id_trim/job/geneticist
 	assignment = JOB_GENETICIST
@@ -613,41 +617,31 @@
 	intern_alt_name = "Head of Personnel-in-Training"
 	trim_state = "trim_headofpersonnel"
 	department_color = COLOR_COMMAND_BLUE
-	subdepartment_color = COLOR_SERVICE_LIME
+	subdepartment_color = COLOR_COMMAND_BLUE
 	department_state = "departmenthead"
 	sechud_icon_state = SECHUD_HEAD_OF_PERSONNEL
 	minimal_access = list(
 		ACCESS_AI_UPLOAD,
 		ACCESS_ALL_PERSONAL_LOCKERS,
 		ACCESS_AUX_BASE,
-		ACCESS_BAR,
 		ACCESS_BRIG_ENTRANCE,
 		ACCESS_CARGO,
-		ACCESS_CHAPEL_OFFICE,
 		ACCESS_CHANGE_IDS,
-		ACCESS_CREMATORIUM,
 		ACCESS_COMMAND,
 		ACCESS_COURT,
 		ACCESS_ENGINEERING,
 		ACCESS_EVA,
 		ACCESS_GATEWAY,
-		ACCESS_HYDROPONICS,
-		ACCESS_JANITOR,
 		ACCESS_KEYCARD_AUTH,
-		ACCESS_KITCHEN,
-		ACCESS_LAWYER,
-		ACCESS_LIBRARY,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MEDICAL,
 		ACCESS_MINERAL_STOREROOM,
 		ACCESS_MORGUE,
 		ACCESS_MORGUE_SECURE,
-		ACCESS_PSYCHOLOGY,
 		ACCESS_RC_ANNOUNCE,
 		ACCESS_SCIENCE,
 		ACCESS_SERVICE,
 		ACCESS_TELEPORTER,
-		ACCESS_THEATRE,
 		ACCESS_WEAPONS,
 	)
 	minimal_wildcard_access = list(
@@ -668,7 +662,7 @@
 	intern_alt_name = "Head of Security-in-Training"
 	trim_state = "trim_securityofficer"
 	department_color = COLOR_COMMAND_BLUE
-	subdepartment_color = COLOR_SECURITY_RED
+	subdepartment_color = COLOR_SECURITY_BLUE
 	department_state = "departmenthead"
 	sechud_icon_state = SECHUD_HEAD_OF_SECURITY
 	extra_access = list(ACCESS_TELEPORTER)
@@ -677,14 +671,13 @@
 		ACCESS_ALL_PERSONAL_LOCKERS,
 		ACCESS_ARMORY,
 		ACCESS_AUX_BASE,
-		ACCESS_BIT_DEN,
 		ACCESS_BRIG,
 		ACCESS_BRIG_ENTRANCE,
 		ACCESS_CARGO,
 		ACCESS_COMMAND,
 		ACCESS_CONSTRUCTION,
 		ACCESS_COURT,
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_ENGINEERING,
 		ACCESS_EVA,
 		ACCESS_GATEWAY,
@@ -712,7 +705,7 @@
 	)
 	job = /datum/job/head_of_security
 	big_pointer = TRUE
-	pointer_color = COLOR_SECURITY_RED
+	pointer_color = COLOR_SECURITY_BLUE
 	honorifics = list("Chief Officer", "Chief", "Officer")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
@@ -742,39 +735,51 @@
 		ACCESS_CAPTAIN,
 		ACCESS_HOP,
 		ACCESS_CHANGE_IDS,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/janitor
 	honorifics = list("Custodian")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
-/datum/id_trim/job/lawyer
-	assignment = JOB_LAWYER
-	trim_state = "trim_lawyer"
-	department_color = COLOR_SERVICE_LIME
-	subdepartment_color = COLOR_SECURITY_RED
-	sechud_icon_state = SECHUD_LAWYER
+/datum/id_trim/job/iaa
+	assignment = JOB_INTERNAL_AFFAIRS_AGENT
+	trim_state = "trim_iaa"
+	department_state = "departmenthead"
+	department_color = COLOR_CENTCOM_BLUE
+	subdepartment_color = COLOR_LAW_RED
+	sechud_icon_state = SECHUD_IAA
 	minimal_access = list(
 		ACCESS_BRIG_ENTRANCE,
 		ACCESS_COURT,
-		ACCESS_LAWYER,
-		ACCESS_SERVICE,
+		ACCESS_IAA,
 		ACCESS_COMMAND,
 		)
-	extra_access = list()
-	template_access = list(
-		ACCESS_CAPTAIN,
-		ACCESS_CHANGE_IDS,
-		ACCESS_HOP,
-		)
-	job = /datum/job/lawyer
+	job = /datum/job/iaa
 	honorifics = list(", Esq.")
+	honorific_positions = HONORIFIC_POSITION_LAST_FULL | HONORIFIC_POSITION_NONE
+
+/datum/id_trim/job/iso
+	assignment = JOB_INTERNAL_SECURITY_OPERATIVE
+	trim_state = "trim_iso"
+	department_color = COLOR_CENTCOM_BLUE
+	subdepartment_color = COLOR_LAW_RED
+	sechud_icon_state = SECHUD_ISO
+	minimal_access = list(
+		ACCESS_BRIG_ENTRANCE,
+		ACCESS_COURT,
+		ACCESS_ISO,
+		ACCESS_COMMAND,
+		ACCESS_WEAPONS,
+		)
+	job = /datum/job/iso
+	honorifics = list(", Exec.")
 	honorific_positions = HONORIFIC_POSITION_LAST_FULL | HONORIFIC_POSITION_NONE
 
 /datum/id_trim/job/medical_doctor
 	assignment = JOB_MEDICAL_DOCTOR
 	trim_state = "trim_medicaldoctor"
-	department_color = COLOR_MEDICAL_BLUE
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	department_color = COLOR_MEDICAL_TEAL
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_MEDICAL_DOCTOR
 	extra_access = list(
 		ACCESS_PLUMBING,
@@ -811,6 +816,7 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_HOP,
+		ACCESS_STEWARD,
 		)
 	job = /datum/job/mime
 	honorifics = list("the Mime")
@@ -819,10 +825,11 @@
 /datum/id_trim/job/paramedic
 	assignment = JOB_PARAMEDIC
 	trim_state = "trim_paramedic"
-	department_color = COLOR_MEDICAL_BLUE
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	department_color = COLOR_MEDICAL_TEAL
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_PARAMEDIC
 	minimal_access = list(
+		ACCESS_PARAMEDIC,
 		ACCESS_EXTERNAL_AIRLOCKS,
 		ACCESS_MEDICAL,
 		ACCESS_MAINT_TUNNELS,
@@ -830,7 +837,6 @@
 		ACCESS_MECH_MEDICAL,
 		)
 	extra_access = list(
-		ACCESS_BIT_DEN,
 		ACCESS_CARGO,
 		ACCESS_CONSTRUCTION,
 		ACCESS_HYDROPONICS,
@@ -899,13 +905,12 @@
 /datum/id_trim/job/psychologist
 	assignment = JOB_PSYCHOLOGIST
 	trim_state = "trim_psychologist"
-	department_color = COLOR_SERVICE_LIME
-	subdepartment_color = COLOR_MEDICAL_BLUE
+	department_color = COLOR_MEDICAL_TEAL
+	subdepartment_color = COLOR_MEDICAL_TEAL
 	sechud_icon_state = SECHUD_PSYCHOLOGIST
 	minimal_access = list(
 		ACCESS_MEDICAL,
 		ACCESS_PSYCHOLOGY,
-		ACCESS_SERVICE,
 	)
 	extra_access = list(
 		ACCESS_MORGUE,
@@ -915,7 +920,6 @@
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
 		ACCESS_CMO,
-		ACCESS_HOP,
 	)
 	job = /datum/job/psychologist
 	honorifics = list(", PhD.")
@@ -931,7 +935,6 @@
 	sechud_icon_state = SECHUD_QUARTERMASTER
 	minimal_access = list(
 		ACCESS_AUX_BASE,
-		ACCESS_BIT_DEN,
 		ACCESS_CARGO,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MECH_MINING,
@@ -989,7 +992,6 @@
 		ACCESS_MECH_SCIENCE,
 		ACCESS_MINERAL_STOREROOM,
 		ACCESS_MINISAT,
-		ACCESS_MORGUE,
 		ACCESS_ORDNANCE,
 		ACCESS_ORDNANCE_STORAGE,
 		ACCESS_RC_ANNOUNCE,
@@ -1022,10 +1024,8 @@
 	subdepartment_color = COLOR_SCIENCE_PINK
 	sechud_icon_state = SECHUD_ROBOTICIST
 	minimal_access = list(
-		ACCESS_AUX_BASE,
 		ACCESS_MECH_SCIENCE,
 		ACCESS_MINERAL_STOREROOM,
-		ACCESS_MORGUE,
 		ACCESS_RESEARCH,
 		ACCESS_ROBOTICS,
 		ACCESS_SCIENCE,
@@ -1036,7 +1036,6 @@
 	extra_access = list(
 		ACCESS_GENETICS,
 		ACCESS_XENOBIOLOGY,
-		ACCESS_MORGUE_SECURE,
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,
@@ -1052,7 +1051,6 @@
 	subdepartment_color = COLOR_SCIENCE_PINK
 	sechud_icon_state = SECHUD_SCIENTIST
 	minimal_access = list(
-		ACCESS_AUX_BASE,
 		ACCESS_MECH_SCIENCE,
 		ACCESS_MINERAL_STOREROOM,
 		ACCESS_ORDNANCE,
@@ -1078,8 +1076,8 @@
 /datum/id_trim/job/security_officer
 	assignment = JOB_SECURITY_OFFICER
 	trim_state = "trim_securityofficer"
-	department_color = COLOR_SECURITY_RED
-	subdepartment_color = COLOR_SECURITY_RED
+	department_color = COLOR_SECURITY_BLUE
+	subdepartment_color = COLOR_SECURITY_BLUE
 	sechud_icon_state = SECHUD_SECURITY_OFFICER
 	minimal_access = list(
 		ACCESS_BRIG,
@@ -1090,7 +1088,7 @@
 		ACCESS_WEAPONS,
 		)
 	extra_access = list(
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MORGUE,
 		)
@@ -1102,10 +1100,6 @@
 	job = /datum/job/security_officer
 	honorifics = list("Officer")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
-	/// List of bonus departmental accesses that departmental sec officers get by default.
-	var/department_access = list()
-	/// List of bonus departmental accesses that departmental security officers can in relation to how many overall security officers there are if the scaling system is set up. These can otherwise be granted via config settings.
-	var/elevated_access = list()
 
 /datum/id_trim/job/security_officer/refresh_trim_access()
 	. = ..()
@@ -1113,90 +1107,9 @@
 	if(!.)
 		return
 
-	access |= department_access
-
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
-
-	// Scaling access (POPULATION_SCALED_ACCESS) is a system directly tied into calculations derived via a config entered variable, as well as the amount of players in the shift.
-	// Thus, it makes it possible to judge if departmental security officers should have more access to their department on a lower population shift.
-	// Server operators can modify config to change it such that security officers can use this system, or alternatively either: A) always give the "elevated" access (ALWAYS_GETS_ACCESS) or B) never give this access (null value).
-
-	#define POPULATION_SCALED_ACCESS 1
-	#define ALWAYS_GETS_ACCESS 2
-
-	// If null, then the departmental security officer will not get any elevated access.
-	if(!CONFIG_GET(number/depsec_access_level))
-		return
-
-	if(CONFIG_GET(number/depsec_access_level) == POPULATION_SCALED_ACCESS)
-		var/minimal_security_officers = 3 // We do not spawn in any more lockers if there are 5 or less security officers, so let's keep it lower than that number.
-		var/datum/job/J = SSjob.get_job(JOB_SECURITY_OFFICER)
-		if((J.spawn_positions - minimal_security_officers) <= 0)
-			access |= elevated_access
-
-	if(CONFIG_GET(number/depsec_access_level) == ALWAYS_GETS_ACCESS)
-		access |= elevated_access
-
-/datum/id_trim/job/security_officer/supply
-	assignment = JOB_SECURITY_OFFICER_SUPPLY
-	subdepartment_color = COLOR_CARGO_BROWN
-	department_access = list(
-		ACCESS_BIT_DEN,
-		ACCESS_CARGO,
-		ACCESS_MINING,
-		ACCESS_SHIPPING,
-	)
-	elevated_access = list(
-		ACCESS_AUX_BASE,
-		ACCESS_MINING_STATION,
-	)
-
-/datum/id_trim/job/security_officer/engineering
-	assignment = JOB_SECURITY_OFFICER_ENGINEERING
-	subdepartment_color = COLOR_ENGINEERING_ORANGE
-	department_access = list(
-		ACCESS_ATMOSPHERICS,
-		ACCESS_ENGINEERING,
-	)
-	elevated_access = list(
-		ACCESS_AUX_BASE,
-		ACCESS_CONSTRUCTION,
-		ACCESS_ENGINE_EQUIP,
-		ACCESS_TCOMMS,
-	)
-
-/datum/id_trim/job/security_officer/medical
-	assignment = JOB_SECURITY_OFFICER_MEDICAL
-	subdepartment_color = COLOR_MEDICAL_BLUE
-	department_access = list(
-		ACCESS_MEDICAL,
-		ACCESS_MORGUE,
-	)
-	elevated_access = list(
-		ACCESS_PHARMACY,
-		ACCESS_PLUMBING,
-		ACCESS_SURGERY,
-		ACCESS_VIROLOGY,
-	)
-	honorifics = list("Orderly", "Officer")
-
-/datum/id_trim/job/security_officer/science
-	assignment = JOB_SECURITY_OFFICER_SCIENCE
-	subdepartment_color = COLOR_SCIENCE_PINK
-	department_access = list(
-		ACCESS_RESEARCH,
-		ACCESS_SCIENCE,
-	)
-	elevated_access = list(
-		ACCESS_AUX_BASE,
-		ACCESS_GENETICS,
-		ACCESS_ORDNANCE_STORAGE,
-		ACCESS_ORDNANCE,
-		ACCESS_ROBOTICS,
-		ACCESS_XENOBIOLOGY,
-	)
 
 /datum/id_trim/job/shaft_miner
 	assignment = JOB_SHAFT_MINER
@@ -1213,7 +1126,6 @@
 		ACCESS_MINING_STATION,
 		)
 	extra_access = list(
-		ACCESS_BIT_DEN,
 		ACCESS_MAINT_TUNNELS,
 		)
 	template_access = list(
@@ -1235,41 +1147,53 @@
 	extra_access = list()
 	template_access = null
 
-/datum/id_trim/job/station_engineer
-	assignment = JOB_STATION_ENGINEER
-	trim_state = "trim_stationengineer"
-	department_color = COLOR_ENGINEERING_ORANGE
-	subdepartment_color = COLOR_ENGINEERING_ORANGE
-	sechud_icon_state = SECHUD_STATION_ENGINEER
+/datum/id_trim/job/steward
+	assignment = JOB_STEWARD
+	intern_alt_name = "Steward-in-Training"
+	trim_state = "trim_steward"
+	department_color = COLOR_COMMAND_BLUE
+	subdepartment_color = COLOR_SERVICE_LIME
+	department_state = "departmenthead"
+	sechud_icon_state = SECHUD_STEWARD
 	minimal_access = list(
-		ACCESS_AUX_BASE,
-		ACCESS_CONSTRUCTION,
-		ACCESS_ENGINEERING,
-		ACCESS_ENGINE_EQUIP,
-		ACCESS_EXTERNAL_AIRLOCKS,
+		ACCESS_BAR,
+		ACCESS_BRIG_ENTRANCE,
+		ACCESS_CHAPEL_OFFICE,
+		ACCESS_CREMATORIUM,
+		ACCESS_COMMAND,
+		ACCESS_EVA,
+		ACCESS_HYDROPONICS,
+		ACCESS_JANITOR,
+		ACCESS_KEYCARD_AUTH,
+		ACCESS_KITCHEN,
+		ACCESS_LIBRARY,
 		ACCESS_MAINT_TUNNELS,
-		ACCESS_MECH_ENGINE,
+		ACCESS_MEDICAL,
 		ACCESS_MINERAL_STOREROOM,
-		ACCESS_MINISAT,
-		ACCESS_TCOMMS,
-		ACCESS_TECH_STORAGE,
-		)
+		ACCESS_RC_ANNOUNCE,
+		ACCESS_SERVICE,
+		ACCESS_THEATRE,
+	)
 	extra_access = list(
-		ACCESS_ATMOSPHERICS,
+		ACCESS_TELEPORTER,
+		)
+	minimal_wildcard_access = list(
+		ACCESS_STEWARD,
 		)
 	template_access = list(
 		ACCESS_CAPTAIN,
 		ACCESS_CHANGE_IDS,
-		ACCESS_CE,
-		)
-	job = /datum/job/station_engineer
-	honorifics = list("Engineer")
+	)
+	job = /datum/job/steward
+	big_pointer = TRUE
+	pointer_color = COLOR_SERVICE_LIME
+	honorifics = list("Host")
 	honorific_positions = HONORIFIC_POSITION_FIRST | HONORIFIC_POSITION_LAST | HONORIFIC_POSITION_FIRST_FULL | HONORIFIC_POSITION_NONE
 
 /datum/id_trim/job/veteran_advisor
 	assignment = JOB_VETERAN_ADVISOR
 	trim_state = "trim_veteranadvisor"
-	department_color = COLOR_SECURITY_RED
+	department_color = COLOR_SECURITY_BLUE
 	subdepartment_color = COLOR_COMMAND_BLUE
 	sechud_icon_state = SECHUD_VETERAN_ADVISOR
 	minimal_access = list(
@@ -1301,8 +1225,8 @@
 /datum/id_trim/job/warden
 	assignment = JOB_WARDEN
 	trim_state = "trim_warden"
-	department_color = COLOR_SECURITY_RED
-	subdepartment_color = COLOR_SECURITY_RED
+	department_color = COLOR_SECURITY_BLUE
+	subdepartment_color = COLOR_SECURITY_BLUE
 	sechud_icon_state = SECHUD_WARDEN
 	minimal_access = list(
 		ACCESS_ARMORY,
@@ -1314,7 +1238,7 @@
 		ACCESS_WEAPONS,
 		) // See /datum/job/warden/get_access()
 	extra_access = list(
-		ACCESS_DETECTIVE,
+		ACCESS_CRIMINALIST,
 		ACCESS_MAINT_TUNNELS,
 		ACCESS_MORGUE,
 		)
@@ -1336,9 +1260,6 @@
 	// Config check for if sec has maint access.
 	if(CONFIG_GET(flag/security_has_maint_access))
 		access |= list(ACCESS_MAINT_TUNNELS)
-
-#undef POPULATION_SCALED_ACCESS
-#undef ALWAYS_GETS_ACCESS
 
 /datum/id_trim/job/human_ai
 	assignment = JOB_HUMAN_AI

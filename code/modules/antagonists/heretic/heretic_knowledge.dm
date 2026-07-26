@@ -462,7 +462,7 @@
 		/obj/item/pen,
 		/obj/item/paper,
 		/obj/item/toy/crayon,
-		/obj/item/flashlight,
+		/obj/item/flashlight/cell_powered,
 		/obj/item/clipboard,
 	)
 

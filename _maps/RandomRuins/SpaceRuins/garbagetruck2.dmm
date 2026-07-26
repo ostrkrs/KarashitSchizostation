@@ -489,7 +489,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "LG" = (
 /obj/structure/lattice/catwalk,
-/obj/item/crowbar/large/emergency,
+/obj/item/crowbar/large,
 /turf/template_noop,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "LI" = (
@@ -509,7 +509,7 @@
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "MC" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "NJ" = (
 /obj/structure/table/reinforced,
@@ -627,7 +627,7 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 4
 	},
 /turf/open/floor/iron/smooth,
@@ -667,7 +667,7 @@
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "XC" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/medicalwaste)
 "XD" = (
 /obj/structure/sinkframe,

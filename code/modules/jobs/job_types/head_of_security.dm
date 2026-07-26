@@ -5,10 +5,12 @@
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD|DEADMIN_POSITION_SECURITY
 	department_head = list(JOB_CAPTAIN)
 	head_announce = list(RADIO_CHANNEL_SECURITY)
-	faction = FACTION_STATION
+	default_radio_channel = RADIO_CHANNEL_SECURITY
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = SUPERVISOR_CAPTAIN
+	required_character_age = 35
 	req_admin_notify = 1
 	minimal_player_age = 14
 	exp_requirements = 300
@@ -18,7 +20,7 @@
 	config_tag = "HEAD_OF_SECURITY"
 
 	outfit = /datum/outfit/job/hos
-	plasmaman_outfit = /datum/outfit/plasmaman/head_of_security
+
 	departments_list = list(
 		/datum/job_department/security,
 		/datum/job_department/command,
@@ -33,9 +35,9 @@
 	display_order = JOB_DISPLAY_ORDER_HEAD_OF_SECURITY
 	bounty_types = CIV_JOB_SEC
 
-	family_heirlooms = list(/obj/item/book/manual/wiki/security_space_law)
+	family_heirlooms = list(/obj/item/book/manual/wiki/security_corp_law)
 	rpg_title = "Guard Leader"
-	job_flags = STATION_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS | JOB_ANTAG_PROTECTED
+	job_flags = SHIP_JOB_FLAGS | HEAD_OF_STAFF_JOB_FLAGS | JOB_ANTAG_PROTECTED
 
 	human_authority = JOB_AUTHORITY_HUMANS_ONLY
 
@@ -54,16 +56,13 @@
 	id_trim = /datum/id_trim/job/head_of_security
 	uniform = /obj/item/clothing/under/rank/security/head_of_security
 	suit = /obj/item/clothing/suit/armor/hos/trenchcoat
-	suit_store = /obj/item/gun/energy/e_gun
 	backpack_contents = list(
-		/obj/item/evidencebag = 1,
 		/obj/item/melee/baton/security/loaded/hos = 1,
 		)
 	belt = /obj/item/modular_computer/pda/heads/hos
 	ears = /obj/item/radio/headset/heads/hos/alt
-	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	gloves = /obj/item/clothing/gloves/color/black/security
-	head = /obj/item/clothing/head/hats/hos/beret
+	head = /obj/item/clothing/head/beret/sec/hos
 	shoes = /obj/item/clothing/shoes/jackboots/sec
 	l_pocket = /obj/item/restraints/handcuffs
 	r_pocket = /obj/item/assembly/flash/handheld
@@ -75,7 +74,7 @@
 
 	box = /obj/item/storage/box/survival/security
 	chameleon_extras = list(
-		/obj/item/gun/energy/e_gun/hos,
+		/obj/item/gun/energy/laser/hos,
 		/obj/item/stamp/head/hos,
 		)
 	implants = list(/obj/item/implant/mindshield)

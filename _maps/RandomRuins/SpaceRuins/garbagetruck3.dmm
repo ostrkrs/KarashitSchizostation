@@ -37,11 +37,11 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "bb" = (
 /obj/item/food/badrecipe/moldy,
-/obj/item/tank/internals/plasma/empty{
+/obj/item/tank/internals/phoron/empty{
 	pixel_x = -10;
 	pixel_y = 4
 	},
-/obj/item/tank/internals/plasma/empty{
+/obj/item/tank/internals/phoron/empty{
 	pixel_y = 4
 	},
 /obj/item/popsicle_stick,
@@ -187,7 +187,7 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "kb" = (
 /obj/effect/decal/cleanable/fuel_pool,
-/obj/item/stock_parts/power_store/cell/crap/empty,
+/obj/item/stock_parts/power_store/cell/device/empty,
 /obj/effect/decal/cleanable/plastic,
 /obj/effect/spawner/random/maintenance/two,
 /turf/open/floor/plating/dumpsterair,
@@ -248,7 +248,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "mV" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "nX" = (
 /obj/structure/closet/crate/engineering/electrical,
@@ -532,7 +532,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "BN" = (
-/obj/item/tank/internals/plasma/full,
+/obj/item/tank/internals/phoron/full,
 /obj/effect/decal/cleanable/fuel_pool,
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating/dumpsterair,
@@ -554,7 +554,7 @@
 /turf/open/floor/plating/dumpsterair,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "DR" = (
-/obj/item/shard/plasma{
+/obj/item/shard/phoron{
 	pixel_x = -8;
 	pixel_y = 4
 	},
@@ -592,7 +592,7 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 4
 	},
 /turf/open/floor/iron/smooth,
@@ -750,11 +750,11 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "MJ" = (
 /obj/structure/lattice/catwalk,
-/obj/item/crowbar/large/emergency,
+/obj/item/crowbar/large,
 /turf/template_noop,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "MQ" = (
-/obj/item/stock_parts/power_store/cell/crap/empty{
+/obj/item/stock_parts/power_store/cell/device/empty{
 	pixel_x = -4;
 	pixel_y = 10
 	},
@@ -775,7 +775,6 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "Nd" = (
 /obj/item/binoculars,
-/obj/item/crowbar/large/old,
 /obj/item/tank/jetpack/improvised,
 /obj/effect/decal/cleanable/fuel_pool,
 /turf/open/floor/plating/dumpsterair,
@@ -788,7 +787,7 @@
 /area/ruin/space/has_grav/garbagetruck/squat)
 "Pz" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/squat)
 "PE" = (
 /obj/machinery/door/airlock/shuttle,

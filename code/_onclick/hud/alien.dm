@@ -10,10 +10,10 @@
 		var/mob/living/carbon/alien/adult/hunter/AH = usr
 		AH.toggle_leap()
 
-/atom/movable/screen/alien/plasma_display
-	name = "plasma stored"
+/atom/movable/screen/alien/phoron_display
+	name = "phoron stored"
 	icon_state = "power_display"
-	screen_loc = ui_alienplasmadisplay
+	screen_loc = ui_alien_phoron_display
 
 /atom/movable/screen/alien/alien_queen_finder
 	name = "queen sense"
@@ -120,8 +120,8 @@
 	healths = new /atom/movable/screen/healths/alien(null, src)
 	infodisplay += healths
 
-	alien_plasma_display = new /atom/movable/screen/alien/plasma_display(null, src)
-	infodisplay += alien_plasma_display
+	alien_phoron_display = new /atom/movable/screen/alien/phoron_display(null, src)
+	infodisplay += alien_phoron_display
 
 	if(!isalienqueen(mymob))
 		alien_queen_finder = new /atom/movable/screen/alien/alien_queen_finder(null, src)

@@ -4,7 +4,7 @@
 	can be found at https://hackmd.io/@Ryll/r1lb4SOwU
 
 	Wounds are datums that operate like a mix of diseases, brain traumas, and components, and are applied to a /obj/item/bodypart (preferably attached to a carbon) when they take large spikes of damage
-	or under other certain conditions (thrown hard against a wall, sustained exposure to plasma fire, etc). Wounds are categorized by the three following criteria:
+	or under other certain conditions (thrown hard against a wall, sustained exposure to phoron fire, etc). Wounds are categorized by the three following criteria:
 		1. Severity: Either MODERATE, SEVERE, or CRITICAL. See the hackmd for more details
 		2. Viable zones: What body parts the wound is applicable to. Generic wounds like broken bones and severe burns can apply to every zone, but you may want to add special wounds for certain limbs
 			like a twisted ankle for legs only, or open air exposure of the organs for particularly gruesome chest wounds. Wounds should be able to function for every zone they are marked viable for.

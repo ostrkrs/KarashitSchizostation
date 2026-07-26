@@ -98,7 +98,7 @@
 /obj/effect/turf_decal/tile/red/half{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 8
 	},
 /area/shuttle/escape/brig)
@@ -124,7 +124,7 @@
 	dir = 4
 	},
 /obj/effect/mapping_helpers/broken_floor,
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 8
 	},
 /area/shuttle/escape/brig)
@@ -145,7 +145,7 @@
 	dir = 4
 	},
 /obj/item/radio/intercom/directional/east,
-/turf/open/floor/iron/dark/smooth_half{
+/turf/open/floor/iron/dark/half{
 	dir = 8
 	},
 /area/shuttle/escape/brig)
@@ -180,7 +180,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/tile/iron/dark/smooth_half,
+/obj/item/stack/tile/iron/dark/half,
 /turf/open/floor/plating,
 /area/shuttle/escape/brig)
 "Z" = (

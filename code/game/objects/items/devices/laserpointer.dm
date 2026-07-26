@@ -223,8 +223,6 @@
 
 	//The message we send to the user upon using the pointer
 	var/outmsg
-	//The turf of the target we clicked on
-	var/turf/targloc = get_turf(target)
 
 	//human/alien mobs: if we aim for the eyes, chance to flash the target
 	if(iscarbon(target))
@@ -273,20 +271,6 @@
 		else
 			outmsg = span_warning("You miss the lens of [target_camera] with [src]!")
 
-	//catpeople: make any felinid near the target to face the target, chance for felinids to pounce at the light, stepping to the target
-	for(var/mob/living/carbon/human/target_felinid in view(1, targloc))
-		if(!isfelinid(target_felinid) || target_felinid.stat == DEAD || target_felinid.is_blind() || target_felinid.incapacitated)
-			continue
-		if(target_felinid.body_position == STANDING_UP)
-			target_felinid.setDir(get_dir(target_felinid, targloc)) // kitty always looks at the light
-			if(prob(effectchance * diode.rating))
-				target_felinid.visible_message(span_warning("[target_felinid] makes a grab for the light!"), span_userdanger("LIGHT!"))
-				target_felinid.Move(targloc, get_dir(target_felinid, targloc))
-				log_combat(user, target_felinid, "moved with a laser pointer", src)
-			else
-				target_felinid.visible_message(span_notice("[target_felinid] looks briefly distracted by the light."), span_warning("You're briefly tempted by the shiny light..."))
-		else
-			target_felinid.visible_message(span_notice("[target_felinid] stares at the light."), span_warning("You stare at the light..."))
 	//The pointer is shining, change its sprite to show
 	icon_state = "pointer_[pointer_icon_state]"
 

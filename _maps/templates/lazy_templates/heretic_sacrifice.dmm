@@ -387,7 +387,7 @@
 /turf/open/floor/stone,
 /area/centcom/heretic_sacrifice/flesh)
 "CV" = (
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /obj/effect/landmark/heretic/ash,
 /turf/open/misc/dirt/jungle/wasteland{
 	planetary_atmos = 0;

@@ -13,7 +13,7 @@
 	attack_verb_simple = list("attack", "slap", "whack")
 
 	///The brain's organ variables are significantly more different than the other organs, with half the decay rate for balance reasons, and twice the maxHealth
-	decay_factor = STANDARD_ORGAN_DECAY * 0.5 //30 minutes of decaying to result in a fully damaged brain, since a fast decay rate would be unfun gameplay-wise
+	decay_factor = STANDARD_ORGAN_DECAY * 1.5 //10 minutes
 
 	maxHealth = BRAIN_DAMAGE_DEATH
 	low_threshold = 45
@@ -23,11 +23,8 @@
 
 	var/suicided = FALSE
 	var/mob/living/brain/brainmob = null
-	/// If it's a fake brain with no brainmob assigned. Feedback messages will be faked as if it does have a brainmob. See changelings & dullahans.
+	/// If it's a fake brain with no brainmob assigned. Feedback messages will be faked as if it does have a brainmob. See changelings.
 	var/decoy_override = FALSE
-	/// Two variables necessary for calculating whether we get a brain trauma or not
-	var/damage_delta = 0
-
 
 	var/list/datum/brain_trauma/traumas = list()
 
@@ -341,32 +338,41 @@
 		owner.investigate_log("has been killed by brain damage.", INVESTIGATE_DEATHS)
 		owner.death()
 
-/obj/item/organ/brain/check_damage_thresholds(mob/M)
+/obj/item/organ/brain/apply_organ_damage(damage_amount, maximum = maxHealth, required_organ_flag = NONE)
 	. = ..()
+	var/delta_dam = . //for the sake of clarity
+	if(delta_dam <= 0 || damage < BRAIN_DAMAGE_MILD)
+		return
+
+	if(prob(delta_dam * (1 + max(0, (damage - BRAIN_DAMAGE_MILD)/100)))) //Base chance is the hit damage; for every point of damage past the threshold the chance is increased by 1% //learn how to do your bloody math properly goddamnit
+		gain_trauma_type(BRAIN_TRAUMA_MILD, natural_gain = TRUE)
+
+	var/is_boosted = (owner && HAS_TRAIT(owner, TRAIT_SPECIAL_TRAUMA_BOOST))
+	if(damage < BRAIN_DAMAGE_SEVERE)
+		return
+	if(prob(delta_dam * (1 + max(0, (damage - BRAIN_DAMAGE_SEVERE)/100)))) //Base chance is the hit damage; for every point of damage past the threshold the chance is increased by 1%
+		if(prob(20 + (is_boosted * 30)))
+			gain_trauma_type(BRAIN_TRAUMA_SPECIAL, is_boosted ? TRAUMA_RESILIENCE_SURGERY : null, natural_gain = TRUE)
+		else
+			gain_trauma_type(BRAIN_TRAUMA_SEVERE, natural_gain = TRUE)
+
+/obj/item/organ/brain/check_damage_thresholds()
+	. = ..()
+	if(!owner)
+		return
 	// If we crossed blinking brain damage thresholds either way, update our blinking
-	if (owner && ((prev_damage > BRAIN_DAMAGE_ASYNC_BLINKING && damage < BRAIN_DAMAGE_ASYNC_BLINKING) || (prev_damage < BRAIN_DAMAGE_ASYNC_BLINKING && damage > BRAIN_DAMAGE_ASYNC_BLINKING)))
+	if((prev_damage >= BRAIN_DAMAGE_ASYNC_BLINKING && damage < BRAIN_DAMAGE_ASYNC_BLINKING) || (prev_damage < BRAIN_DAMAGE_ASYNC_BLINKING && damage >= BRAIN_DAMAGE_ASYNC_BLINKING))
 		var/obj/item/organ/eyes/eyes = owner.get_organ_slot(ORGAN_SLOT_EYES)
 		if(eyes?.blink_animation)
 			eyes.animate_eyelids(owner)
 
+	if(damage >= 60 && prev_damage < 60)
+		owner.add_mood_event("brain_damage", /datum/mood_event/brain_damage)
+	else if(prev_damage >= 60 && damage < 60)
+		owner.clear_mood_event("brain_damage")
+
 	// If we're not more injured than before, return without gambling for a trauma
 	if(damage <= prev_damage)
-		return
-
-	damage_delta = damage - prev_damage
-	if(damage > BRAIN_DAMAGE_MILD)
-		if(prob(damage_delta * (1 + max(0, (damage - BRAIN_DAMAGE_MILD)/100)))) //Base chance is the hit damage; for every point of damage past the threshold the chance is increased by 1% //learn how to do your bloody math properly goddamnit
-			gain_trauma_type(BRAIN_TRAUMA_MILD, natural_gain = TRUE)
-
-	var/is_boosted = (owner && HAS_TRAIT(owner, TRAIT_SPECIAL_TRAUMA_BOOST))
-	if(damage > BRAIN_DAMAGE_SEVERE)
-		if(prob(damage_delta * (1 + max(0, (damage - BRAIN_DAMAGE_SEVERE)/100)))) //Base chance is the hit damage; for every point of damage past the threshold the chance is increased by 1%
-			if(prob(20 + (is_boosted * 30)))
-				gain_trauma_type(BRAIN_TRAUMA_SPECIAL, is_boosted ? TRAUMA_RESILIENCE_SURGERY : null, natural_gain = TRUE)
-			else
-				gain_trauma_type(BRAIN_TRAUMA_SEVERE, natural_gain = TRUE)
-
-	if (!owner || owner.stat > UNCONSCIOUS)
 		return
 
 	// Conscious or soft-crit
@@ -492,17 +498,6 @@
 	. = ..()
 	organ_owner.gain_trauma(/datum/brain_trauma/special/bluespace_prophet, TRAUMA_RESILIENCE_ABSOLUTE)
 	organ_owner.AddElement(/datum/element/tenacious)
-
-/obj/item/organ/brain/felinid //A bit smaller than average
-	brain_size = 0.8
-
-// Sometimes, felinids go a bit haywire and bite people. Based entirely on mania and hunger.
-/obj/item/organ/brain/felinid/get_attacking_limb(mob/living/carbon/human/target)
-	var/starving_cat_bonus = owner.nutrition <= NUTRITION_LEVEL_HUNGRY ? 1 : 10
-	var/crazy_feral_cat = clamp((starving_cat_bonus * owner.mob_mood?.sanity_level), 0, 100)
-	if(prob(crazy_feral_cat) || HAS_TRAIT(owner, TRAIT_FERAL_BITER))
-		return owner.get_bodypart(BODY_ZONE_HEAD) || ..()
-	return ..()
 
 /obj/item/organ/brain/lizard
 	name = "lizard brain"
@@ -658,15 +653,6 @@
 		amount_cured++
 	return amount_cured
 
-/obj/item/organ/brain/apply_organ_damage(damage_amount, maximum = maxHealth, required_organ_flag = NONE)
-	. = ..()
-	if(!owner)
-		return FALSE
-	if(damage >= 60)
-		owner.add_mood_event("brain_damage", /datum/mood_event/brain_damage)
-	else
-		owner.clear_mood_event("brain_damage")
-
 /// This proc lets the mob's brain decide what bodypart to attack with in an unarmed strike.
 /obj/item/organ/brain/proc/get_attacking_limb(mob/living/carbon/human/target)
 	var/obj/item/bodypart/arm/active_hand = owner.get_active_hand()
@@ -697,3 +683,4 @@
 	name = "serpentid brain"
 	icon_state = "brain_serpentid"
 	can_smoothen_out = FALSE
+	variant_traits_added = list(TRAIT_PRIMITIVE)

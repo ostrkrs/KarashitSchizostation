@@ -570,12 +570,6 @@
 	mood_change = 1
 	timeout = 2 MINUTES
 
-/datum/mood_event/birthday
-	description = "It's my birthday!"
-	mood_change = 2
-	special_screen_obj = "birthday"
-	special_screen_replace = FALSE
-
 /datum/mood_event/basketball_score
 	description = "Swish! Nothing but net."
 	mood_change = 2

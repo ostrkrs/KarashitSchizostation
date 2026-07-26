@@ -224,23 +224,23 @@
 	)
 	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE
 
-/datum/design/board/nutimov_module
-	name = "Nutimov Module"
-	desc = "Allows for the construction of a Nutimov AI Core Module."
-	id = "nutimov_module"
-	materials = AI_MODULE_MATERIALS_UNUSUAL
-	build_path = /obj/item/ai_module/core/full/nutimov
-	category = list(
-		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_CORE_MODULES
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE
-
 /datum/design/board/ten_commandments_module
 	name = "10 Commandments Module"
 	desc = "Allows for the construction of a 10 Commandments AI Core Module."
 	id = "ten_commandments_module"
 	materials = AI_MODULE_MATERIALS_UNUSUAL
 	build_path = /obj/item/ai_module/core/full/ten_commandments
+	category = list(
+		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_CORE_MODULES
+	)
+	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE
+
+/datum/design/board/sr_standard_module
+	name = "SR Standard Module"
+	desc = "Allows for the construction of a SR Standard AI Core Module."
+	id = "sr_standard_module"
+	materials = AI_MODULE_MATERIALS_UNUSUAL
+	build_path = /obj/item/ai_module/core/full/sr_standard
 	category = list(
 		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_CORE_MODULES
 	)
@@ -263,17 +263,6 @@
 	id = "hippocratic_module"
 	materials = AI_MODULE_MATERIALS_UNUSUAL
 	build_path = /obj/item/ai_module/core/full/hippocratic
-	category = list(
-		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_CORE_MODULES
-	)
-	departmental_flags = DEPARTMENT_BITFLAG_SCIENCE
-
-/datum/design/board/paladin_devotion_module
-	name = "Paladin Devotion Module"
-	desc = "Allows for the construction of a Paladin Devotion AI Core Module."
-	id = "paladin_devotion_module"
-	materials = AI_MODULE_MATERIALS_UNUSUAL
-	build_path = /obj/item/ai_module/core/full/paladin_devotion
 	category = list(
 		RND_CATEGORY_AI + RND_SUBCATEGORY_AI_CORE_MODULES
 	)

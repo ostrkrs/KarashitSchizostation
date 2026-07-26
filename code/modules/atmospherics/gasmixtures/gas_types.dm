@@ -99,16 +99,16 @@
 	desc = "What the fuck is carbon dioxide?"
 	primary_color = COLOR_GRAY
 
-/datum/gas/plasma
-	id = GAS_PLASMA
+/datum/gas/phoron
+	id = GAS_PHORON
 	specific_heat = 200
-	name = "Plasma"
-	gas_overlay = "plasma"
+	name = "Phoron"
+	gas_overlay = "phoron"
 	moles_visible = MOLES_GAS_VISIBLE
 	dangerous = TRUE
 	rarity = 800
 	base_value = 1.5
-	desc = "A flammable gas with many other curious properties. Its research is one of NT's primary objective."
+	desc = "A flammable gas with many other curious properties."
 	primary_color = "#ffc0cb"
 
 /datum/gas/water_vapor

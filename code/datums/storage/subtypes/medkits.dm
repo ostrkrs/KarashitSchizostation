@@ -76,7 +76,7 @@
 		/obj/item/stamp,
 		/obj/item/wrench/medical,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/gun/syringe/syndicate,
+		/obj/item/gun/syringe/compact,
 		/obj/item/pinpointer/crew,
 		/obj/item/holosign_creator/medical,
 		/obj/item/autosurgeon/syndicate/emaggedsurgerytoolset,

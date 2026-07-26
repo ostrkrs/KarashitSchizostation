@@ -248,6 +248,9 @@
 /atom/movable/screen/inventory/hand/update_overlays()
 	. = ..()
 
+	if(findtext(icon_state, "hand2_"))
+		return
+
 	if(!handcuff_overlay)
 		var/state = IS_RIGHT_INDEX(held_index) ? "markus" : "gabrielle"
 		handcuff_overlay = mutable_appearance('icons/hud/screen_gen.dmi', state)
@@ -265,7 +268,15 @@
 				. += blocked_overlay
 
 	if(held_index == hud.mymob.active_hand_index)
-		. += IS_LEFT_INDEX(held_index) ? "lhandactive" : "rhandactive"
+		var/active_state = IS_LEFT_INDEX(held_index) ? "lhandactive" : "rhandactive"
+		. += active_state
+		// add the paired active overlay with pixel offset using the same state
+		var/pixel_dx = IS_LEFT_INDEX(held_index) ? 32 : -32
+		var/active2_state = IS_LEFT_INDEX(held_index) ? "lhand2active" : "rhand2active"
+		var/mutable_appearance/active2 = mutable_appearance(icon, active2_state)
+		active2.pixel_x = pixel_dx
+		active2.layer = layer + 0.1
+		. += active2
 
 /atom/movable/screen/inventory/hand/Click(location, control, params)
 	// At this point in client Click() code we have passed the 1/10 sec check and little else
@@ -277,7 +288,7 @@
 		return TRUE
 	if(user.incapacitated)
 		return TRUE
-	if (ismecha(user.loc)) // stops inventory actions in a mech
+	if(ismecha(user.loc)) // stops inventory actions in a mech
 		return TRUE
 
 	if(user.active_hand_index == held_index)
@@ -724,10 +735,12 @@
 	layer = UI_DAMAGE_LAYER
 	plane = FULLSCREEN_PLANE
 
+
 /atom/movable/screen/healths
 	name = "health"
 	icon_state = "health0"
 	screen_loc = ui_health
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 /atom/movable/screen/healths/alien
 	icon = 'icons/hud/screen_alien.dmi'
@@ -740,8 +753,7 @@
 /atom/movable/screen/healths/blob
 	name = "blob health"
 	icon_state = "block"
-	screen_loc = ui_internal
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	screen_loc = ui_blobhealth
 
 /atom/movable/screen/healths/blob/overmind
 	name = "overmind health"
@@ -753,13 +765,12 @@
 	name = "summoner health"
 	icon = 'icons/hud/guardian.dmi'
 	icon_state = "base"
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 /atom/movable/screen/healths/revenant
 	name = "essence"
 	icon = 'icons/mob/actions/backgrounds.dmi'
 	icon_state = "bg_revenant"
-	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+
 
 /atom/movable/screen/healthdoll
 	name = "health doll"
@@ -868,11 +879,13 @@
 	screen_loc = ui_living_healthdoll
 	vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
 
+
 /atom/movable/screen/mood
 	name = "mood"
 	icon_state = "mood5"
 	screen_loc = ui_mood
 	mouse_over_pointer = MOUSE_HAND_POINTER
+
 
 /atom/movable/screen/splash
 	icon = 'icons/blanks/blank_title.png'
@@ -934,6 +947,7 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/splash)
 	if(parent)
 		parent.component_click(src, params)
 
+
 /atom/movable/screen/combo
 	icon_state = ""
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
@@ -965,190 +979,114 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/splash)
 		add_overlay(intent_icon)
 	return ..()
 
+
 /atom/movable/screen/stamina
 	name = "stamina"
-	icon_state = "stamina0"
-	screen_loc = ui_stamina
+	icon_state = "stamina_full"
+	screen_loc = ui_stamina_pain
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	appearance_flags = APPEARANCE_UI_IGNORE_ALPHA
 
-#define HUNGER_STATE_FAT 5
-#define HUNGER_STATE_FULL 4
-#define HUNGER_STATE_FINE 3
-#define HUNGER_STATE_HUNGRY 2
-#define HUNGER_STATE_VERY_HUNGRY 1
-#define HUNGER_STATE_STARVING 0
 
 /atom/movable/screen/hunger
 	name = "hunger"
-	icon_state = "hungerbar"
-	screen_loc = ui_hunger
+	icon_state = "hunger_7"
+	screen_loc = ui_hunger_thirst
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	/// What state of hunger are we in?
-	VAR_PRIVATE/state
-	/// What was the last fullness we recorded?
 	VAR_PRIVATE/fullness
-	/// What food icon do we show by the bar
-	var/food_icon = 'icons/obj/food/burgerbread.dmi'
-	/// What food icon state do we show by the bar
-	var/food_icon_state = "hburger"
-	/// The image shown by the bar.
-	VAR_PRIVATE/image/food_image
-	/// The actual bar
-	VAR_PRIVATE/atom/movable/screen/hunger_bar/hunger_bar
+	VAR_PRIVATE/icon_key
 
-/atom/movable/screen/hunger/Initialize(mapload, datum/hud/hud_owner)
-	. = ..()
-	var/mob/living/hungry = hud_owner?.mymob
-	if(!istype(hungry))
-		return
+/atom/movable/screen/hunger/update_appearance(updates)
+	icon_state = "hunger_[get_icon_key()]"
+	return ..()
 
-	if(!ishuman(hungry) || CONFIG_GET(flag/disable_human_mood))
-		screen_loc = ui_mood // Slot in where mood normally is if mood is disabled
-
-	// Burger next to the bar
-	food_image = image(icon = food_icon, icon_state = food_icon_state, pixel_x = -5)
-	food_image.plane = plane
-	food_image.appearance_flags |= KEEP_APART // To be unaffected by filters applied to src
-	food_image.add_filter("simple_outline", 2, outline_filter(1, COLOR_BLACK, OUTLINE_SHARP))
-	underlays += food_image // To be below filters applied to src
-
-	// The actual bar
-	hunger_bar = new(src, null)
-	vis_contents += hunger_bar
-
-	update_hunger_bar(instant = TRUE)
-
-/atom/movable/screen/hunger/proc/update_hunger_state()
+/atom/movable/screen/hunger/proc/get_icon_key()
 	var/mob/living/hungry = hud?.mymob
 	if(!istype(hungry))
 		return
 
-	if(HAS_TRAIT(hungry, TRAIT_NOHUNGER) || !hungry.get_organ_slot(ORGAN_SLOT_STOMACH))
-		fullness = NUTRITION_LEVEL_FED
-		state = HUNGER_STATE_FINE
-		return
-	if(HAS_TRAIT(hungry, TRAIT_FAT))
-		fullness = NUTRITION_LEVEL_FAT
-		state = HUNGER_STATE_FAT
+	if(HAS_TRAIT(hungry, TRAIT_NOHUNGER))
+		icon_key = 7
 		return
 
-	if(HAS_TRAIT(hungry, TRAIT_GLUTTON))
-		fullness = NUTRITION_LEVEL_VERY_HUNGRY
-		state = HUNGER_STATE_HUNGRY // Can't get enough
-		return
-
-	fullness = round(hungry.get_fullness(only_consumable = TRUE), 0.05)
+	fullness = round(hungry.get_fullness(), 0.05)
 	switch(fullness)
-		if(1 + NUTRITION_LEVEL_FULL to INFINITY)
-			state = HUNGER_STATE_FULL
-		if(1 + NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FULL)
-			state = HUNGER_STATE_FINE
-		if(1 + NUTRITION_LEVEL_VERY_HUNGRY to NUTRITION_LEVEL_HUNGRY)
-			state = HUNGER_STATE_FINE
-		if(1 + NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_VERY_HUNGRY)
-			state = HUNGER_STATE_HUNGRY
-		if(0 to NUTRITION_LEVEL_STARVING)
-			state = HUNGER_STATE_STARVING
+		if(1 + NUTRITION_LEVEL_FULL to NUTRITION_LEVEL_FAT)
+			icon_key = 7
 
-/atom/movable/screen/hunger/update_appearance(updates)
-	update_hunger_bar()
+		if(1 + NUTRITION_LEVEL_WELL_FED to NUTRITION_LEVEL_FULL)
+			icon_key = 6
+
+		if(1 + NUTRITION_LEVEL_FED to NUTRITION_LEVEL_WELL_FED)
+			icon_key = 5
+
+		if(1 + NUTRITION_LEVEL_HUNGRY to NUTRITION_LEVEL_FED)
+			icon_key = 4
+
+		if(1 + NUTRITION_LEVEL_VERY_HUNGRY to NUTRITION_LEVEL_HUNGRY)
+			icon_key = 3
+
+		if(1 + NUTRITION_LEVEL_STARVING to NUTRITION_LEVEL_VERY_HUNGRY)
+			icon_key = 2
+
+		if(1 + NUTRITION_LEVEL_LIFE_THREATENING to NUTRITION_LEVEL_STARVING)
+			icon_key = 2
+
+		if(0 to NUTRITION_LEVEL_LIFE_THREATENING)
+			icon_key = 0
+
+	return icon_key
+
+
+/atom/movable/screen/thirst
+	name = "thirst"
+	icon_state = "thirst_7"
+	screen_loc = ui_hunger_thirst
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	VAR_PRIVATE/icon_key
+	VAR_PRIVATE/hydration
+
+/atom/movable/screen/thirst/update_appearance(updates)
+	icon_state = "thirst_[get_icon_key()]"
 	return ..()
 
-/// Updates the hunger bar's appearance.
-/// If `instant` is TRUE, the bar will update immediately rather than animating.
-/atom/movable/screen/hunger/proc/update_hunger_bar(instant = FALSE)
-	var/old_state = state
-	var/old_fullness = fullness
-	update_hunger_state()
-	if(old_state != state || old_fullness != fullness)
-		// Fades out if we ARE "fine" AND if our stomach has no food digesting
-		var/mob/living/hungry = hud?.mymob
-		if(alpha == 255 && (state == HUNGER_STATE_FINE && abs(fullness - hungry.nutrition) < 1))
-			if(instant)
-				alpha = 0
-			else
-				animate(src, alpha = 0, time = 1 SECONDS)
-		// Fades in if we WERE "fine" OR if our stomach has food digesting
-		else if(alpha == 0 && (state != HUNGER_STATE_FINE || abs(fullness - hungry.nutrition) >= 1))
-			if(instant)
-				alpha = 255
-			else
-				animate(src, alpha = 255, time = 1 SECONDS)
-
-	if(old_state != state)
-		// Update filter around the bar
-		if(state == HUNGER_STATE_STARVING)
-			if(!get_filter("hunger_outline"))
-				add_filter("hunger_outline", 1, list("type" = "outline", "color" = "#FF0033", "alpha" = 0, "size" = 2))
-				animate(get_filter("hunger_outline"), alpha = 200, time = 1.5 SECONDS, loop = -1)
-				animate(alpha = 0, time = 1.5 SECONDS)
-
-		else if(old_state == HUNGER_STATE_STARVING)
-			remove_filter("hunger_outline")
-
-		// Update color of the food
-		if((state == HUNGER_STATE_FAT) != (old_state == HUNGER_STATE_FAT))
-			underlays -= food_image
-			food_image.color = state == HUNGER_STATE_FAT ? COLOR_DARK : null
-			underlays += food_image
-
-	// Update hunger bar
-	if(old_fullness != fullness)
-		// instant if invisible OR if instant is set
-		hunger_bar.update_fullness(fullness, alpha == 0 || instant)
-
-/atom/movable/screen/hunger_bar
-	icon_state = "hungerbar_bar"
-	screen_loc = ui_hunger
-	vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
-	/// Mask
-	VAR_PRIVATE/static/icon/bar_mask
-	/// Gradient used to color the bar
-	VAR_PRIVATE/static/list/hunger_gradient = list(
-		0.0, "#FF0000",
-		0.2, "#FF8000",
-		0.4, "#f0f000",
-		0.6, "#00FF00",
-		0.8, "#46daff",
-		1.0, "#2A72AA",
-		1.2, "#494949",
-	)
-	/// Offset of the mask
-	VAR_PRIVATE/bar_offset
-	/// Last "fullness" value (rounded) we used to update the bar
-	VAR_PRIVATE/last_fullness_band = -1
-
-/atom/movable/screen/hunger_bar/Initialize(mapload, datum/hud/hud_owner)
-	. = ..()
-	var/atom/movable/movable_loc = ismovable(loc) ? loc : null
-	screen_loc = movable_loc?.screen_loc
-	bar_mask ||= icon(icon, "hungerbar_mask")
-
-/atom/movable/screen/hunger_bar/proc/update_fullness(new_fullness, instant)
-	new_fullness = round(new_fullness / NUTRITION_LEVEL_FULL, 0.05)
-	if(new_fullness == last_fullness_band)
+/atom/movable/screen/thirst/proc/get_icon_key()
+	var/mob/living/thirsty = hud?.mymob
+	if(!istype(thirsty))
 		return
-	last_fullness_band = new_fullness
-	// Update color
-	var/new_color = gradient(hunger_gradient, clamp(new_fullness, 0, 1.2))
-	if(instant)
-		color = new_color
-	else
-		animate(src, color = new_color, 0.5 SECONDS)
-	// Update mask
-	var/old_bar_offset = bar_offset
-	bar_offset = clamp(-20 + (20 * new_fullness), -20, 0)
-	if(old_bar_offset != bar_offset)
-		if(instant || isnull(old_bar_offset))
-			add_filter("hunger_bar_mask", 1, alpha_mask_filter(0, bar_offset, bar_mask))
-		else
-			transition_filter("hunger_bar_mask", alpha_mask_filter(0, bar_offset), 0.5 SECONDS)
 
-#undef HUNGER_STATE_FAT
-#undef HUNGER_STATE_FINE
-#undef HUNGER_STATE_FULL
-#undef HUNGER_STATE_HUNGRY
-#undef HUNGER_STATE_STARVING
-#undef HUNGER_STATE_VERY_HUNGRY
+	if(HAS_TRAIT(thirsty, TRAIT_NOTHIRST))
+		icon_key = 7
+		return
+
+	hydration = round(thirsty.get_hydration(), 0.05)
+	switch(hydration)
+		if(1 + HYDRATION_LEVEL_FULL to HYDRATION_LEVEL_OVERHYDRATED)
+			icon_key = 7
+
+		if(1 + HYDRATION_LEVEL_WELL_HYDRATED to HYDRATION_LEVEL_FULL)
+			icon_key = 6
+
+		if(1 + HYDRATION_LEVEL_HYDRATED to HYDRATION_LEVEL_WELL_HYDRATED)
+			icon_key = 5
+
+		if(1 + HYDRATION_LEVEL_THIRSTY to HYDRATION_LEVEL_HYDRATED)
+			icon_key = 4
+
+		if(1 + HYDRATION_LEVEL_VERY_THIRSTY to HYDRATION_LEVEL_THIRSTY)
+			icon_key = 3
+
+		if(1 + HYDRATION_LEVEL_DEHYDRATED to HYDRATION_LEVEL_VERY_THIRSTY)
+			icon_key = 2
+
+		if(1 + HYDRATION_LEVEL_LIFE_THREATENING to HYDRATION_LEVEL_DEHYDRATED)
+			icon_key = 2
+
+		if(0 to HYDRATION_LEVEL_LIFE_THREATENING)
+			icon_key = 0
+
+	return icon_key
+
 
 #define FORMAT_BLOOD_LEVEL_HUD_MAPTEXT(value) MAPTEXT("<div align='center' valign='middle' style='position:relative; top:0px; left:6px'><font color='#FFDDDD'>[round(value,1)]</font></div>")
 

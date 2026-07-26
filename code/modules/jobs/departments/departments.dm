@@ -13,7 +13,7 @@
 	/// The header color to be displayed in the ban panel, classes defined in banpanel.css
 	var/label_class = "undefineddepartment"
 	/// The color used in TGUI or similar menus.
-	var/ui_color = "#9689db"
+	var/ui_color = "#969696"
 	/// Job singleton datums associated to this department. Populated on job initialization.
 	var/list/department_jobs = list()
 	/// For separatists, what independent name prefix does their nation get named?
@@ -65,13 +65,6 @@
 	var/nomadic_name = pick("roving clans", "barbaric tribes", "tides", "bandit kingdom", "tribal society", "marauder clans", "horde")
 	return "The [nomadic_name] of [..()]"
 
-/// A special captain only department, for use by the preferences menu
-/datum/job_department/captain
-	department_name = DEPARTMENT_CAPTAIN
-	department_bitflags = DEPARTMENT_BITFLAG_CAPTAIN
-	department_head = /datum/job/captain
-	primary_work_area = /area/station/command
-
 /datum/job_department/command
 	department_name = DEPARTMENT_COMMAND
 	department_bitflags = DEPARTMENT_BITFLAG_COMMAND
@@ -79,7 +72,7 @@
 	department_experience_type = EXP_TYPE_COMMAND
 	display_order = 1
 	label_class = "command"
-	ui_color = "#6681a5"
+	ui_color = "#4e6f97"
 	primary_work_area = /area/station/command
 	department_delivery_areas = list(
 		/area/station/command/bridge,
@@ -93,8 +86,8 @@
 	department_experience_type = EXP_TYPE_SECURITY
 	display_order = 2
 	label_class = "security"
-	ui_color = "#d46a78"
-	nation_prefixes = list("Securi", "Beepski", "Shitcuri", "Red", "Stunba", "Flashbango", "Flasha", "Stanfordi")
+	ui_color = "#6091c2"
+	nation_prefixes = list("Securi", "Beepski", "Shitcuri", "Stunba", "Flashbango", "Flasha", "Stanfordi")
 	primary_work_area = /area/station/security
 	department_delivery_areas = list(
 		/area/station/security/office,
@@ -116,7 +109,7 @@
 	department_experience_type = EXP_TYPE_ENGINEERING
 	display_order = 3
 	label_class = "engineering"
-	ui_color = "#dfb567"
+	ui_color = "#f09661"
 	nation_prefixes = list("Atomo", "Engino", "Power", "Teleco")
 	primary_work_area = /area/station/engineering
 	department_delivery_areas = list(
@@ -134,7 +127,7 @@
 	department_experience_type = EXP_TYPE_MEDICAL
 	display_order = 4
 	label_class = "medical"
-	ui_color = "#65b2bd"
+	ui_color = "#0db89b"
 	nation_prefixes = list("Mede", "Healtha", "Recova", "Chemi", "Viro", "Psych")
 	primary_work_area = /area/station/medical
 	department_delivery_areas = list(
@@ -154,18 +147,17 @@
 	department_experience_type = EXP_TYPE_SCIENCE
 	display_order = 5
 	label_class = "science"
-	ui_color = "#c973c9"
+	ui_color = "#e277cf"
 	nation_prefixes = list("Sci", "Griffa", "Geneti", "Explosi", "Mecha", "Xeno", "Nani", "Cyto")
-	primary_work_area = /area/station/science
+	primary_work_area = /area/station/research
 	department_delivery_areas = list(
-		/area/station/science/research,
-		/area/station/science/lobby,
-		/area/station/science/lab,
+		/area/station/research/division,
+		/area/station/research/division/lobby,
+		/area/station/research/division/lab,
 	)
 	associated_cargo_groups = list("Science", "Livestock", "Canisters & Materials")
 	head_of_staff_access = ACCESS_RD
 	department_access = REGION_ACCESS_RESEARCH
-
 
 /datum/job_department/cargo
 	department_name = DEPARTMENT_CARGO
@@ -174,7 +166,7 @@
 	department_experience_type = EXP_TYPE_SUPPLY
 	display_order = 6
 	label_class = "supply"
-	ui_color = "#cf9c6c"
+	ui_color = "#b08968"
 	nation_prefixes = list("Cargo", "Guna", "Suppli", "Mule", "Crate", "Ore", "Mini", "Shaf")
 	primary_work_area = /area/station/cargo
 	head_of_staff_access = ACCESS_QM
@@ -183,16 +175,16 @@
 /datum/job_department/service
 	department_name = DEPARTMENT_SERVICE
 	department_bitflags = DEPARTMENT_BITFLAG_SERVICE
-	department_head = /datum/job/head_of_personnel
+	department_head = /datum/job/steward
 	department_experience_type = EXP_TYPE_SERVICE
 	display_order = 7
 	label_class = "service"
-	ui_color = "#7cc46a"
+	ui_color = "#74ac46"
 	nation_prefixes = list("Honka", "Boozo", "Fatu", "Danka", "Mimi", "Libra", "Jani", "Religi")
 	primary_work_area = /area/station/service
-	department_delivery_areas = list(/area/station/hallway/secondary/service, /area/station/service/bar/atrium)
+	department_delivery_areas = list(/area/station/hallway/secondary/service)
 	associated_cargo_groups = list("Service", "Food & Hydroponics", "Livestock", "Costumes & Toys")
-	head_of_staff_access = ACCESS_HOP
+	head_of_staff_access = ACCESS_STEWARD
 	department_access = list(ACCESS_SERVICE)
 
 /datum/job_department/silicon
@@ -202,7 +194,7 @@
 	department_experience_type = EXP_TYPE_SILICON
 	display_order = 8
 	label_class = "silicon"
-	ui_color = "#5dbda0"
+	ui_color = "#628586"
 
 /datum/job_department/silicon/generate_nation_name()
 	return "United Nations" //For nations ruleset specifically, because all other sources of nation creation cannot choose silicons

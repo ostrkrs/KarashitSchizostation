@@ -6,7 +6,7 @@ Mineral Sheets
 		- Diamond
 		- Snow
 		- Uranium
-		- Plasma
+		- Phoron
 		- Gold
 		- Silver
 		- Clown
@@ -158,43 +158,43 @@ GLOBAL_LIST_INIT(uranium_recipes, list ( \
 	amount = 50
 
 /*
- * Plasma
+ * Phoron
  */
-/obj/item/stack/sheet/mineral/plasma
-	name = "solid plasma"
-	icon_state = "sheet-plasma"
-	inhand_icon_state = "sheet-plasma"
-	singular_name = "plasma sheet"
-	construction_path_type = "plasma"
+/obj/item/stack/sheet/mineral/phoron
+	name = "solid phoron"
+	icon_state = "sheet-phoron"
+	inhand_icon_state = "sheet-phoron"
+	singular_name = "phoron sheet"
+	construction_path_type = "phoron"
 	resistance_flags = FLAMMABLE
 	max_integrity = 100
-	mats_per_unit = list(/datum/material/plasma=SHEET_MATERIAL_AMOUNT)
-	grind_results = list(/datum/reagent/toxin/plasma = 20)
+	mats_per_unit = list(/datum/material/phoron=SHEET_MATERIAL_AMOUNT)
+	grind_results = list(/datum/reagent/toxin/phoron = 20)
 	gulag_valid = TRUE
-	merge_type = /obj/item/stack/sheet/mineral/plasma
-	material_type = /datum/material/plasma
-	walltype = /turf/closed/wall/mineral/plasma
+	merge_type = /obj/item/stack/sheet/mineral/phoron
+	material_type = /datum/material/phoron
+	walltype = /turf/closed/wall/mineral/phoron
 
-/obj/item/stack/sheet/mineral/plasma/suicide_act(mob/living/carbon/user)
+/obj/item/stack/sheet/mineral/phoron/suicide_act(mob/living/carbon/user)
 	user.visible_message(span_suicide("[user] begins licking \the [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
 	return TOXLOSS//dont you kids know that stuff is toxic?
 
-GLOBAL_LIST_INIT(plasma_recipes, list ( \
-	new/datum/stack_recipe("plasma door", /obj/structure/mineral_door/transparent/plasma, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND | CRAFT_APPLIES_MATS, category = CAT_DOORS), \
-	new/datum/stack_recipe("plasma tile", /obj/item/stack/tile/mineral/plasma, 1, 4, 20, crafting_flags = NONE, category = CAT_TILES), \
+GLOBAL_LIST_INIT(phoron_recipes, list ( \
+	new/datum/stack_recipe("phoron door", /obj/structure/mineral_door/transparent/phoron, 10, time = 5 SECONDS, crafting_flags = CRAFT_CHECK_DENSITY | CRAFT_ONE_PER_TURF | CRAFT_ON_SOLID_GROUND | CRAFT_APPLIES_MATS, category = CAT_DOORS), \
+	new/datum/stack_recipe("phoron tile", /obj/item/stack/tile/mineral/phoron, 1, 4, 20, crafting_flags = NONE, category = CAT_TILES), \
 	))
 
-/obj/item/stack/sheet/mineral/plasma/get_main_recipes()
+/obj/item/stack/sheet/mineral/phoron/get_main_recipes()
 	. = ..()
-	. += GLOB.plasma_recipes
+	. += GLOB.phoron_recipes
 
-/obj/item/stack/sheet/mineral/plasma/five
+/obj/item/stack/sheet/mineral/phoron/five
 	amount = 5
 
-/obj/item/stack/sheet/mineral/plasma/thirty
+/obj/item/stack/sheet/mineral/phoron/thirty
 	amount = 30
 
-/obj/item/stack/sheet/mineral/plasma/fifty
+/obj/item/stack/sheet/mineral/phoron/fifty
 	amount = 50
 
 /*

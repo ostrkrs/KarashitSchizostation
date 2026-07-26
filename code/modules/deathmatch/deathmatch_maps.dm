@@ -213,8 +213,6 @@
 		/datum/outfit/deathmatch_loadout/lizardkind,
 		/datum/outfit/deathmatch_loadout/mothman,
 		/datum/outfit/deathmatch_loadout/ethereal,
-		/datum/outfit/deathmatch_loadout/plasmamen,
-		/datum/outfit/deathmatch_loadout/felinid,
 	)
 	map_name = "species_warfare"
 	key = "species_warfare"

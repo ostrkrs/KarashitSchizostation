@@ -2,8 +2,8 @@
 #define ALERT_TOO_MUCH_OXYGEN "too_much_oxy"
 #define ALERT_NOT_ENOUGH_OXYGEN "not_enough_oxy"
 
-#define ALERT_TOO_MUCH_PLASMA "too_much_plas"
-#define ALERT_NOT_ENOUGH_PLASMA "not_enough_plas"
+#define ALERT_TOO_MUCH_PHORON "too_much_phoron"
+#define ALERT_NOT_ENOUGH_PHORON "not_enough_phoron"
 
 #define ALERT_TOO_MUCH_CO2 "too_much_co2"
 #define ALERT_NOT_ENOUGH_CO2 "not_enough_co2"
@@ -39,7 +39,7 @@
 
 /** Alien related */
 #define ALERT_XENO_FIRE "alien_fire"
-#define ALERT_XENO_PLASMA "alien_plas"
+#define ALERT_XENO_PHORON "alien_phoron"
 #define ALERT_XENO_NOQUEEN "alien_noqueen"
 
 /** Silicon related */
@@ -63,15 +63,5 @@
 #define ALERT_TEMPERATURE "temp"
 #define ALERT_TEMPERATURE_HOT "temphot"
 #define ALERT_TEMPERATURE_COLD "tempcold"
-
-/** Bitrunning */
-#define ALERT_BITRUNNER_CROWBAR "bitrunning_crowbar"
-#define ALERT_BITRUNNER_COMPLETED "bitrunning_complete"
-#define ALERT_BITRUNNER_INTEGRITY "bitrunning_integrity"
-#define ALERT_BITRUNNER_SHUTDOWN "bitrunning_shutdown"
-#define ALERT_BITRUNNER_RESET "bitrunning_reset"
-#define ALERT_BITRUNNER_THREAT "bitrunning_threat"
-#define ALERT_BITRUNNER_BREACH "bitrunning_breach"
-#define ALERT_BITRUNNER_GLITCH "bitrunning_glitch"
 
 #define ALERT_SILICON_RECORDING "silicon_recording"

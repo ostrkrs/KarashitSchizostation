@@ -27,7 +27,7 @@
 /turf/open/floor/grass,
 /area/ruin/space/has_grav/abandonedzoo)
 "at" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/abandonedzoo)
 "av" = (
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -47,13 +47,13 @@
 	},
 /obj/effect/mapping_helpers/airlock/access/all/science/research,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "aG" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/energy/floragun,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "aI" = (
 /obj/structure/table/reinforced,
@@ -61,7 +61,7 @@
 	dir = 8;
 	pixel_y = 1
 	},
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "aK" = (
 /obj/structure/window/reinforced/spawner/directional/east,
@@ -69,14 +69,14 @@
 /area/template_noop)
 "aL" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "aP" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/cup/bottle/random_virus,
 /obj/item/reagent_containers/dropper,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "aQ" = (
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -87,23 +87,23 @@
 /obj/item/clothing/suit/space/eva,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/head/helmet/space/eva,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "aV" = (
 /obj/machinery/smartfridge/chemistry,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "aW" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/syringe,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "aY" = (
 /obj/structure/table/reinforced,
 /obj/item/gun/energy/temperature{
 	pin = /obj/item/firing_pin
 	},
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bf" = (
 /obj/structure/cable,
@@ -111,34 +111,34 @@
 	dir = 4
 	},
 /obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bh" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk,
 /obj/structure/cable,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bi" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/hypospray/medipen/stimpack,
 /obj/item/reagent_containers/cup/bottle/mutagen,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bk" = (
 /obj/structure/table/optable,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bl" = (
 /obj/machinery/computer/operating{
 	dir = 8
 	},
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bm" = (
 /obj/structure/closet/wardrobe/science_white,
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bp" = (
 /obj/structure/bed{
@@ -148,12 +148,12 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "br" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bu" = (
 /obj/structure/flora/bush/sunny/style_random,
@@ -170,12 +170,12 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/abandonedzoo)
 "bA" = (
 /obj/structure/table/reinforced,
 /obj/machinery/reagentgrinder,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "bB" = (
 /obj/structure/alien/weeds,
@@ -192,7 +192,7 @@
 /area/ruin/space/has_grav/abandonedzoo)
 "bF" = (
 /obj/structure/disposalpipe/segment,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/abandonedzoo)
 "bH" = (
 /obj/structure/alien/resin/wall,
@@ -257,11 +257,11 @@
 /obj/structure/frame/machine,
 /obj/structure/cable,
 /obj/machinery/light/directional/west,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "eY" = (
 /obj/structure/reagent_dispensers/watertank,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "fn" = (
@@ -271,7 +271,7 @@
 	pixel_y = 5
 	},
 /obj/item/storage/box/beakers,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "gE" = (
 /mob/living/basic/bee,
@@ -282,7 +282,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "ix" = (
@@ -295,7 +295,7 @@
 	name = "Bio-Research Station"
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "iZ" = (
@@ -307,13 +307,13 @@
 	},
 /obj/item/wirecutters,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/abandonedzoo)
 "kp" = (
 /obj/machinery/light/small/directional/west,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "ly" = (
@@ -332,7 +332,7 @@
 /area/ruin/space/has_grav/abandonedzoo)
 "oS" = (
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "py" = (
@@ -349,7 +349,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "sb" = (
 /obj/structure/rack,
@@ -361,7 +361,7 @@
 	},
 /obj/item/melee/baton/security/cattleprod,
 /obj/effect/mapping_helpers/apc/unlocked,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "vU" = (
 /mob/living/basic/mining/goldgrub,
@@ -370,7 +370,7 @@
 "wc" = (
 /obj/machinery/light/small/directional/east,
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Ap" = (
@@ -380,7 +380,7 @@
 "Bh" = (
 /obj/structure/cable,
 /obj/machinery/power/smes/engineering,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "Bt" = (
 /obj/structure/table/reinforced,
@@ -390,7 +390,7 @@
 	dir = 9
 	},
 /obj/machinery/light/directional/west,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "Ep" = (
 /obj/structure/table/reinforced,
@@ -401,7 +401,7 @@
 /obj/item/retractor,
 /obj/item/cautery,
 /obj/item/saw,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "Gh" = (
 /obj/machinery/power/shieldwallgen/unlocked/anchored,
@@ -412,14 +412,14 @@
 /obj/structure/table/reinforced,
 /obj/item/food/carrotfries,
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "JW" = (
 /obj/structure/table/reinforced,
 /obj/item/cultivator,
 /obj/item/shovel,
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "KR" = (
 /obj/structure/cable,
@@ -442,7 +442,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav/abandonedzoo)
 "Ni" = (
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Qz" = (
@@ -456,12 +456,12 @@
 /area/ruin/space/has_grav/abandonedzoo)
 "Rh" = (
 /obj/machinery/light/small/directional/west,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Rr" = (
 /obj/machinery/light/small/directional/east,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Rz" = (
@@ -482,20 +482,20 @@
 	pixel_x = -3;
 	pixel_y = -1
 	},
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "Ti" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Bio-Research Station"
 	},
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "TQ" = (
 /obj/structure/rack,
 /obj/item/crowbar,
 /obj/item/shield/riot,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "Ua" = (
 /turf/open/misc/asteroid,
@@ -503,7 +503,7 @@
 "Uu" = (
 /obj/machinery/door/airlock/external/ruin,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Vq" = (
@@ -511,7 +511,7 @@
 /obj/item/clipboard,
 /obj/item/clothing/mask/surgical,
 /obj/item/razor,
-/turf/open/floor/iron/dark/side,
+/turf/open/floor/iron,
 /area/ruin/space/has_grav/abandonedzoo)
 "WV" = (
 /mob/living/basic/mining/basilisk,
@@ -529,7 +529,7 @@
 /obj/structure/chair/office/light{
 	dir = 8
 	},
-/obj/effect/turf_decal/tile/green/fourcorners,
+/obj/effect/turf_decal/tile/green/full,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/abandonedzoo)
 "Zq" = (

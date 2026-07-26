@@ -386,8 +386,8 @@ GLOBAL_VAR(restart_counter)
 			features += "AI disabled"
 		hostedby = CONFIG_GET(string/hostedby)
 
-	if (CONFIG_GET(flag/station_name_in_hub_entry))
-		new_status += " &#8212; <b>[station_name()]</b>"
+	if (CONFIG_GET(flag/ship_name_in_hub_entry))
+		new_status += " &#8212; <b>[ship_name()]</b>"
 
 	var/players = GLOB.clients.len
 

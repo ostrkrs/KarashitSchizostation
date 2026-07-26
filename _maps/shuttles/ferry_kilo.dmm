@@ -169,7 +169,7 @@
 /obj/item/radio{
 	pixel_y = 4
 	},
-/obj/effect/turf_decal/tile/neutral/half/contrasted{
+/obj/effect/turf_decal/tile/neutral/half{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,

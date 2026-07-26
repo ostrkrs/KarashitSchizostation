@@ -6,6 +6,7 @@
 	medical_record_text = "Patient demonstrates a fear of tight spaces."
 	hardcore_value = 5
 	quirk_flags = QUIRK_HUMAN_ONLY
+	mob_trait = TRAIT_CLAUSTROPHOBIA
 	mail_goodies = list(/obj/item/reagent_containers/syringe/convermol) // to help breathing
 
 /datum/quirk/claustrophobia/add(client/client_source)

@@ -1,17 +1,17 @@
 /datum/job/chaplain
 	title = JOB_CHAPLAIN
+	alt_titles = JOB_CHAPLAIN_ALT_TITLES
 	description = "Hold services and funerals, cremate people, preach your \
 		religion, protect the crew against cults."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_STEWARD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "CHAPLAIN"
 
 	outfit = /datum/outfit/job/chaplain
-	plasmaman_outfit = /datum/outfit/plasmaman/chaplain
 
 	mind_traits = list(TRAIT_SPIRITUAL, TRAIT_DESENSITIZED)
 
@@ -30,7 +30,7 @@
 		/obj/item/grenade/chem_grenade/holy = 5,
 	)
 	rpg_title = "Paladin"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 	voice_of_god_power = 2 //Chaplains are very good at speaking with the voice of god
 
@@ -128,4 +128,3 @@
 	satchel = /obj/item/storage/backpack/cultpack
 
 	chameleon_extras = /obj/item/stamp/chap
-	skillchips = list(/obj/item/skillchip/entrails_reader)

@@ -23,7 +23,7 @@
 /area/template_noop)
 "e" = (
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /turf/open/floor/iron,
 /area/template_noop)
 "f" = (
@@ -47,7 +47,7 @@
 /area/template_noop)
 "t" = (
 /obj/structure/broken_flooring/pile/directional/west,
-/obj/effect/decal/cleanable/plasma,
+/obj/effect/decal/cleanable/phoron,
 /turf/open/floor/plating,
 /area/template_noop)
 "C" = (
@@ -56,7 +56,7 @@
 /area/template_noop)
 "D" = (
 /obj/structure/broken_flooring/corner/directional/north,
-/obj/item/tank/internals/plasma/empty,
+/obj/item/tank/internals/phoron/empty,
 /turf/open/floor/plating,
 /area/template_noop)
 "E" = (

@@ -3,7 +3,7 @@
 	desc = "Sandy."
 	icon = 'icons/turf/sand.dmi'
 	flags_1 = NONE
-	bullet_bounce_sound = null
+	bullet_bounce_sound = FALSE
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
@@ -67,7 +67,6 @@
 	damaged_dmi = 'icons/turf/damaged.dmi'
 	icon_state = "sand"
 	base_icon_state = "sand"
-	bullet_bounce_sound = null
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND

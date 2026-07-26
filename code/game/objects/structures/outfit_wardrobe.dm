@@ -24,8 +24,6 @@
 	var/one_use = TRUE
 	/// All wardrobes that share this id, share the one use restriction. If one_use is FALSE, it effectively does nothing.
 	var/wardrobe_id = "asparagus"
-	/// Humanize species that need unique environments to survive.
-	var/humanize_plasmamen = TRUE
 
 /obj/structure/outfit_wardrobe/attack_hand(mob/living/user, list/modifiers)
 	. = ..()

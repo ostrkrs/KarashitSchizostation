@@ -18,7 +18,7 @@
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "d" = (
-/obj/item/ammo_box/magazine/m9mm/ap,
+/obj/item/ammo_box/magazine/m10mm/ap,
 /turf/open/floor/wood,
 /area/deathmatch)
 "e" = (
@@ -53,22 +53,22 @@
 /area/deathmatch)
 "k" = (
 /obj/structure/table/reinforced,
-/obj/item/ammo_box/magazine/m9mm/fire,
+/obj/item/ammo_box/magazine/m10mm/fire,
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "l" = (
 /obj/structure/table/reinforced,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
-/obj/item/ammo_box/magazine/m9mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
+/obj/item/ammo_box/magazine/m10mm,
 /turf/open/floor/wood/large,
 /area/deathmatch)
 "m" = (
@@ -82,7 +82,7 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "o" = (
-/obj/item/ammo_box/magazine/m9mm/ap,
+/obj/item/ammo_box/magazine/m10mm/ap,
 /obj/structure/closet/crate/secure/weapon{
 	locked = 0
 	},
@@ -128,11 +128,11 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "x" = (
-/obj/item/ammo_box/magazine/m9mm/fire,
+/obj/item/ammo_box/magazine/m10mm/fire,
 /turf/open/floor/wood,
 /area/deathmatch)
 "y" = (
-/obj/item/ammo_box/magazine/m9mm/fire,
+/obj/item/ammo_box/magazine/m10mm/fire,
 /obj/structure/closet/crate/secure/weapon{
 	locked = 0
 	},
@@ -191,7 +191,7 @@
 /turf/open/floor/wood,
 /area/deathmatch)
 "Q" = (
-/obj/item/ammo_box/magazine/m9mm/hp,
+/obj/item/ammo_box/magazine/m10mm/hp,
 /obj/structure/closet/crate/secure/weapon{
 	locked = 0
 	},

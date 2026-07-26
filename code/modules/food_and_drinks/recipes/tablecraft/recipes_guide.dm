@@ -18,6 +18,7 @@
 	result = /obj/item/stack/sheet/runed_metal
 	category = CAT_CULT
 	non_craftable = TRUE
+	crafting_flags = parent_type::crafting_flags | CRAFT_MUST_BE_LEARNED
 	steps = list("Use Twisted Construction on plasteel")
 
 /datum/crafting_recipe/constructshell
@@ -25,6 +26,7 @@
 	result = /obj/structure/constructshell
 	category = CAT_CULT
 	non_craftable = TRUE
+	crafting_flags = parent_type::crafting_flags | CRAFT_MUST_BE_LEARNED
 	steps = list("Use Twisted Construction on iron")
 
 // Food reactions
@@ -203,8 +205,8 @@
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/rollingpin/flatrootdough
-	reqs = list(/obj/item/food/rootdough = 1)
-	result = /obj/item/food/flatrootdough
+	reqs = list(/obj/item/food/korta_dough = 1)
+	result = /obj/item/food/flat_korta_dough
 	category = CAT_CAVER
 
 /datum/crafting_recipe/food/rollingpin/piedough
@@ -255,8 +257,8 @@
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/knife/rootdoughslice
-	reqs = list(/obj/item/food/flatrootdough = 1)
-	result = /obj/item/food/rootdoughslice
+	reqs = list(/obj/item/food/flat_korta_dough = 1)
+	result = /obj/item/food/korta_doughslice
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/knife/rawpastrybase
@@ -274,7 +276,7 @@
 	category = CAT_BREAD
 
 /datum/crafting_recipe/food/knife/root_spaghetti
-	reqs = list(/obj/item/food/rootdoughslice = 1)
+	reqs = list(/obj/item/food/korta_doughslice = 1)
 	result = /obj/item/food/spaghetti/root
 	category = CAT_CAVER
 
@@ -413,8 +415,8 @@
 	category = CAT_SEAFOOD
 
 /datum/crafting_recipe/food/grill/rootflatbread
-	reqs = list(/obj/item/food/flatrootdough = 1)
-	result = /obj/item/food/root_flatbread
+	reqs = list(/obj/item/food/flat_korta_dough = 1)
+	result = /obj/item/food/korta_flatbread
 	category = CAT_CAVER
 
 /datum/crafting_recipe/food/grill/griddle_toast
@@ -687,11 +689,6 @@
 	result = /obj/item/clothing/head/utility/hardhat/cakehat
 	category = CAT_CAKE
 
-/datum/crafting_recipe/food/microwave/cakehat/energycake
-	reqs = list(/obj/item/food/cake/birthday/energy = 1)
-	result = /obj/item/clothing/head/utility/hardhat/cakehat/energycake
-	category = CAT_CAKE
-
 /datum/crafting_recipe/food/microwave/cheese_curds
 	reqs = list(/obj/item/food/cheese/curd_cheese = 1)
 	result = /obj/item/food/cheese/cheese_curds
@@ -708,7 +705,7 @@
 	result = /obj/item/food/bread/plain
 
 /datum/crafting_recipe/food/oven/rootbread
-	reqs = list(/obj/item/food/rootdough = 1)
+	reqs = list(/obj/item/food/korta_dough = 1)
 	result = /obj/item/food/bread/root
 
 /datum/crafting_recipe/food/oven/bun
@@ -716,7 +713,7 @@
 	result = /obj/item/food/bun
 
 /datum/crafting_recipe/food/oven/rootroll
-	reqs = list(/obj/item/food/rootdoughslice = 1)
+	reqs = list(/obj/item/food/korta_doughslice = 1)
 	result = /obj/item/food/rootroll
 
 /datum/crafting_recipe/food/oven/pastrybase
@@ -735,8 +732,8 @@
 	category = CAT_PIZZA
 
 /datum/crafting_recipe/food/oven/rootflatbread
-	reqs = list(/obj/item/food/flatrootdough = 1)
-	result = /obj/item/food/root_flatbread
+	reqs = list(/obj/item/food/flat_korta_dough = 1)
+	result = /obj/item/food/korta_flatbread
 
 /datum/crafting_recipe/food/oven/pie
 	reqs = list(/obj/item/food/piedough = 1)

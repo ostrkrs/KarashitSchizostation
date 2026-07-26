@@ -163,13 +163,13 @@ GLOBAL_LIST_INIT(dye_registry, list(
 		DYE_SYNDICATE = /obj/item/bedsheet/syndie/double,
 		DYE_CENTCOM = /obj/item/bedsheet/centcom/double
 	),
-	DYE_LAWYER_SPECIAL = list(
-		DYE_COSMIC = /obj/item/clothing/under/rank/civilian/lawyer/galaxy,
-		DYE_SYNDICATE = /obj/item/clothing/under/rank/civilian/lawyer/galaxy/red
+	DYE_IAA_SPECIAL = list(
+		DYE_COSMIC = /obj/item/clothing/under/rank/civilian/iaa/galaxy,
+		DYE_SYNDICATE = /obj/item/clothing/under/rank/civilian/iaa/galaxy/red
 	),
-	DYE_LAWYER_SPECIAL_SKIRT = list(
-		DYE_COSMIC = /obj/item/clothing/under/rank/civilian/lawyer/galaxy/skirt,
-		DYE_SYNDICATE = /obj/item/clothing/under/rank/civilian/lawyer/galaxy/red/skirt
+	DYE_IAA_SPECIAL_SKIRT = list(
+		DYE_COSMIC = /obj/item/clothing/under/rank/civilian/iaa/galaxy/skirt,
+		DYE_SYNDICATE = /obj/item/clothing/under/rank/civilian/iaa/galaxy/red/skirt
 	),
 ))
 

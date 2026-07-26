@@ -27,7 +27,6 @@
 		/obj/item/stack/medical,
 		/obj/item/storage/pill_bottle,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		)
 	armor_type = /datum/armor/toggle_labcoat
 	species_exception = list(/datum/species/golem)
@@ -68,6 +67,16 @@
 	desc = "It makes you look capable of konking someone on the noggin and shooting them into space."
 	icon_state = "labgreen"
 	inhand_icon_state = null
+
+/obj/item/clothing/suit/toggle/labcoat/medical
+	name = "medical doctor's labcoat"
+	desc = "A suit that protects against minor chemical spills. Has a teal stripe on the shoulder."
+	icon = 'icons/map_icons/clothing/suit/_suit.dmi'
+	icon_state = "/obj/item/clothing/suit/toggle/labcoat/medical"
+	post_init_icon_state = "labcoat_job"
+	greyscale_config = /datum/greyscale_config/labcoat
+	greyscale_config_worn = /datum/greyscale_config/labcoat/worn
+	greyscale_colors = "#EEEEEE#7095C2#05887d#2a9c93"
 
 /obj/item/clothing/suit/toggle/labcoat/genetics
 	name = "geneticist labcoat"

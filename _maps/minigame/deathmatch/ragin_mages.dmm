@@ -245,9 +245,9 @@
 /area/deathmatch)
 "nk" = (
 /obj/item/gun/magic/wand/death,
-/obj/structure/window/reinforced/plasma/spawner/directional/east,
-/obj/structure/window/reinforced/plasma/spawner/directional/north,
-/obj/structure/window/reinforced/plasma/spawner/directional/west,
+/obj/structure/window/reinforced/phoron/spawner/directional/east,
+/obj/structure/window/reinforced/phoron/spawner/directional/north,
+/obj/structure/window/reinforced/phoron/spawner/directional/west,
 /turf/open/floor/grass,
 /area/deathmatch)
 "nx" = (

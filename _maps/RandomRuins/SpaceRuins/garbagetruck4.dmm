@@ -198,7 +198,7 @@
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "rb" = (
 /obj/structure/sign/warning,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "rc" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -207,7 +207,7 @@
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "ri" = (
 /obj/structure/lattice/catwalk,
-/obj/item/crowbar/large/emergency,
+/obj/item/crowbar/large,
 /turf/template_noop,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "rr" = (
@@ -568,13 +568,12 @@
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/suit/costume/whitedress,
 /obj/structure/broken_flooring/singular,
-/obj/item/clothing/head/costume/nursehat,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "Gt" = (
 /obj/structure/sign/flag/mothic,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "He" = (
 /obj/structure/spider/passage,
@@ -858,13 +857,13 @@
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/flashlight{
+/obj/item/flashlight/cell_powered{
 	pixel_x = 4
 	},
 /turf/open/floor/iron/smooth,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "Yr" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/has_grav/garbagetruck/toystore)
 "Yz" = (
 /obj/structure/spider/stickyweb,

@@ -50,7 +50,7 @@
 "o" = (
 /obj/machinery/light/small/directional/north,
 /obj/effect/mapping_helpers/broken_floor,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
@@ -68,7 +68,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/trimline/blue/filled/line,
+/obj/effect/turf_decal/trimline/light_blue/filled/line,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/freezer,
 /area/shuttle/escape)
@@ -106,7 +106,7 @@
 /area/shuttle/escape)
 "D" = (
 /obj/effect/decal/cleanable/blood/trail_holder,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /obj/structure/chair/comfy/carp,
@@ -124,7 +124,7 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/blood/drip,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
@@ -135,7 +135,7 @@
 /obj/effect/mob_spawn/corpse/human/damaged,
 /obj/structure/closet/crate/trashcart,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 6
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
@@ -147,7 +147,7 @@
 	pixel_y = 6
 	},
 /obj/machinery/light/small/blacklight/directional/east,
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 6
 	},
 /obj/effect/mapping_helpers/broken_floor,
@@ -165,7 +165,7 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
 "L" = (
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 1
 	},
 /obj/effect/mapping_helpers/broken_floor,
@@ -213,7 +213,7 @@
 	pixel_x = 2;
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/trimline/blue/filled/line{
+/obj/effect/turf_decal/trimline/light_blue/filled/line{
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -231,7 +231,7 @@
 /obj/item/organ/tongue/lizard,
 /obj/item/organ/stomach,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,

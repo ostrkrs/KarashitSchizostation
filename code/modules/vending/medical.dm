@@ -1,5 +1,5 @@
 /obj/machinery/vending/medical
-	name = "\improper NanoMed Plus"
+	name = "\improper MedVend"
 	desc = "Medical drug dispenser."
 	icon_state = "med"
 	icon_deny = "med-deny"
@@ -41,11 +41,11 @@
 	light_mask = "med-light-mask"
 
 /obj/item/vending_refill/medical
-	machine_name = "NanoMed Plus"
+	machine_name = "MedVend"
 	icon_state = "refill_medical"
 
 /obj/machinery/vending/medical/syndicate
-	name = "\improper SyndiMed Plus"
+	name = "\improper SyndiMed"
 	initial_language_holder = /datum/language_holder/syndicate
 	allow_custom = FALSE
 
@@ -69,7 +69,7 @@
 
 //Created out of a necessity to get these dumb chems out of the medical tools vendor.
 /obj/machinery/vending/drugs
-	name = "\improper NanoDrug Plus"
+	name = "\improper DrugVend"
 	desc = "Medical drugs dispenser."
 	icon_state = "drug"
 	icon_deny = "drug-deny"
@@ -111,5 +111,5 @@
 	allow_custom = TRUE
 
 /obj/item/vending_refill/drugs
-	machine_name = "NanoDrug Plus"
+	machine_name = "DrugVend"
 	icon_state = "refill_medical"

@@ -37,7 +37,7 @@
 /area/ruin/powered/shuttle/medium_1)
 "m" = (
 /obj/machinery/sleeper,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "n" = (
@@ -48,7 +48,7 @@
 /turf/open/floor/iron,
 /area/ruin/powered/shuttle/medium_1)
 "p" = (
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "s" = (
@@ -72,23 +72,23 @@
 "E" = (
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/blue/fourcorners,
+/obj/effect/turf_decal/tile/light_blue/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "R" = (
 /obj/structure/table/reinforced,
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "S" = (
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 "W" = (
 /obj/structure/chair/comfy{
 	dir = 4
 	},
-/obj/effect/turf_decal/tile/yellow/fourcorners,
+/obj/effect/turf_decal/tile/yellow/full,
 /turf/open/floor/iron/dark,
 /area/ruin/powered/shuttle/medium_1)
 

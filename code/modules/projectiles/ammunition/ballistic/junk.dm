@@ -7,6 +7,7 @@
 	caliber = CALIBER_JUNK
 	projectile_type = /obj/projectile/bullet/junk
 	custom_materials = list(/datum/material/iron=SMALL_MATERIAL_AMOUNT*2, /datum/material/glass=SMALL_MATERIAL_AMOUNT*1)
+	casing_sound = 'sound/items/weapons/gun/general/plastic_casing_drop.ogg'
 
 // Junk Shell Spawner; used to spawn in our random shells upon crafting
 

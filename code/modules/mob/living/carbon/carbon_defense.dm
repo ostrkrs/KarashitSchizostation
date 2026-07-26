@@ -16,15 +16,21 @@
 	if(isclothing(wear_mask)) //Mask
 		. += wear_mask.flash_protect
 
+/mob/living/carbon/sound_damage(damage, deafen)
+	if(HAS_TRAIT(src, TRAIT_GODMODE))
+		return
+	var/obj/item/organ/ears/ears = get_organ_slot(ORGAN_SLOT_EARS)
+	if(QDELETED(ears))
+		return
+	if(damage)
+		ears.apply_organ_damage(damage * ears.damage_multiplier)
+	if(deafen)
+		ears.adjust_temporary_deafness(deafen)
+
 /mob/living/carbon/get_ear_protection()
 	. = ..()
-	if(HAS_TRAIT(src, TRAIT_DEAF))
-		return INFINITY //For all my homies that can not hear in the world
-	var/obj/item/organ/ears/E = get_organ_slot(ORGAN_SLOT_EARS)
-	if(!E)
-		return INFINITY
-	else
-		. += E.bang_protect
+	var/obj/item/organ/ears/ears = get_organ_slot(ORGAN_SLOT_EARS)
+	return ..() + ears?.bang_protect
 
 /mob/living/carbon/is_mouth_covered(check_flags = ALL)
 	if((check_flags & ITEM_SLOT_HEAD) && head && (head.flags_cover & HEADCOVERSMOUTH))
@@ -470,15 +476,15 @@
 			if(1)
 				to_chat(src, span_warning("Your eyes sting a little."))
 				if(prob(40))
-					eyes.apply_organ_damage(1)
+					eyes.apply_organ_damage(1 * eyes.flash_damage_mod)
 
 			if(2)
 				to_chat(src, span_warning("Your eyes burn."))
-				eyes.apply_organ_damage(rand(2, 4))
+				eyes.apply_organ_damage(rand(2, 4) * eyes.flash_damage_mod)
 
 			if(3 to INFINITY)
 				to_chat(src, span_warning("Your eyes itch and burn severely!"))
-				eyes.apply_organ_damage(rand(12, 16))
+				eyes.apply_organ_damage(rand(12, 16) * eyes.flash_damage_mod)
 
 		if(eyes.damage > 10)
 			adjust_temp_blindness(damage * 2 SECONDS)
@@ -487,11 +493,11 @@
 			if(eyes.damage > eyes.low_threshold)
 				if(!is_nearsighted_from(EYE_DAMAGE) && prob(eyes.damage - eyes.low_threshold))
 					to_chat(src, span_warning("Your eyes start to burn badly!"))
-					eyes.apply_organ_damage(eyes.low_threshold)
+					eyes.apply_organ_damage(eyes.low_threshold * eyes.flash_damage_mod)
 
 				else if(!is_blind() && prob(eyes.damage - eyes.high_threshold))
 					to_chat(src, span_warning("You can't see anything!"))
-					eyes.apply_organ_damage(eyes.maxHealth)
+					eyes.apply_organ_damage(eyes.maxHealth * eyes.flash_damage_mod)
 
 			else
 				to_chat(src, span_warning("Your eyes are really starting to hurt. This can't be good for you!"))
@@ -517,8 +523,8 @@
 
 	if(ears && (deafen_pwr || damage_pwr))
 		var/ear_damage = damage_pwr * effect_amount
-		var/deaf = deafen_pwr * effect_amount
-		ears.adjustEarDamage(ear_damage,deaf)
+		var/deaf = deafen_pwr * effect_amount * 2 SECONDS
+		sound_damage(ear_damage, deaf)
 
 		. = effect_amount //how soundbanged we are
 		SEND_SOUND(src, sound('sound/items/weapons/flash_ring.ogg',0,1,0,250))
@@ -546,15 +552,6 @@
 			hit_clothes = head
 		if(hit_clothes)
 			hit_clothes.take_damage(damage_amount, damage_type, damage_flag, 0)
-
-/mob/living/carbon/can_hear()
-	. = FALSE
-	var/obj/item/organ/ears/ears = get_organ_slot(ORGAN_SLOT_EARS)
-	if(ears && !HAS_TRAIT(src, TRAIT_DEAF))
-		. = TRUE
-	if(health <= hardcrit_threshold && !HAS_TRAIT(src, TRAIT_NOHARDCRIT))
-		. = FALSE
-
 
 /mob/living/carbon/adjustOxyLoss(amount, updating_health = TRUE, forced, required_biotype, required_respiration_type)
 	if(!forced && HAS_TRAIT(src, TRAIT_NOBREATH))

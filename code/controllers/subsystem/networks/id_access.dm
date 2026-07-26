@@ -193,6 +193,12 @@ SUBSYSTEM_DEF(id_access)
 			"templates" = list(),
 			"pdas" = list(),
 		),
+		"[ACCESS_STEWARD]" = list(
+			"regions" = list(REGION_GENERAL),
+			"head" = JOB_STEWARD,
+			"templates" = list(),
+			"pdas" = list(),
+		),
 	)
 
 	var/list/station_job_trims = subtypesof(/datum/id_trim/job)
@@ -253,7 +259,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_SECURITY]"] = "Security"
 	desc_by_access["[ACCESS_BRIG]"] = "Holding Cells"
 	desc_by_access["[ACCESS_COURT]"] = "Courtroom"
-	desc_by_access["[ACCESS_DETECTIVE]"] = "Detective Office"
+	desc_by_access["[ACCESS_CRIMINALIST]"] = "Criminalist Office"
 	desc_by_access["[ACCESS_MEDICAL]"] = "Medical"
 	desc_by_access["[ACCESS_GENETICS]"] = "Genetics Lab"
 	desc_by_access["[ACCESS_MORGUE]"] = "Morgue"
@@ -285,11 +291,13 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_KITCHEN]"] = "Kitchen"
 	desc_by_access["[ACCESS_HYDROPONICS]"] = "Hydroponics"
 	desc_by_access["[ACCESS_LIBRARY]"] = "Library"
-	desc_by_access["[ACCESS_LAWYER]"] = "Law Office"
+	desc_by_access["[ACCESS_IAA]"] = "Internal Affairs Office"
+	desc_by_access["[ACCESS_ISO]"] = "Internal Security Office"
 	desc_by_access["[ACCESS_ROBOTICS]"] = "Robotics"
 	desc_by_access["[ACCESS_VIROLOGY]"] = "Virology"
 	desc_by_access["[ACCESS_PSYCHOLOGY]"] = "Psychology"
 	desc_by_access["[ACCESS_CMO]"] = "CMO Office"
+	desc_by_access["[ACCESS_PARAMEDIC]"] = "Paramedic Dispatch"
 	desc_by_access["[ACCESS_QM]"] = "QM Office"
 	desc_by_access["[ACCESS_SURGERY]"] = "Surgery"
 	desc_by_access["[ACCESS_THEATRE]"] = "Theatre"
@@ -328,7 +336,7 @@ SUBSYSTEM_DEF(id_access)
 	desc_by_access["[ACCESS_CENT_SPECOPS]"] = "Code Black"
 	desc_by_access["[ACCESS_CENT_CAPTAIN]"] = "Code Gold"
 	desc_by_access["[ACCESS_CENT_BAR]"] = "Code Scotch"
-	desc_by_access["[ACCESS_BIT_DEN]"] = "Bitrunner Den"
+	desc_by_access["[ACCESS_STEWARD]"] = "Steward Office"
 
 /**
  * Returns the access bitflags associated with any given access level.

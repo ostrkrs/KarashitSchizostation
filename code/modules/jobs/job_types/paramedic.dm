@@ -1,9 +1,10 @@
 /datum/job/paramedic
 	title = JOB_PARAMEDIC
+	alt_titles = JOB_PARAMEDIC_ALT_TITLES
 	description = "Run around the station looking for patients, respond to \
 		emergencies, give patients a roller bed ride to medbay."
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = SUPERVISOR_CMO
@@ -11,7 +12,6 @@
 	config_tag = "PARAMEDIC"
 
 	outfit = /datum/outfit/job/paramedic
-	plasmaman_outfit = /datum/outfit/plasmaman/paramedic
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_MED
@@ -37,7 +37,7 @@
 		/obj/item/storage/box/bandages = 5,
 	)
 	rpg_title = "Corpse Runner"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/paramedic
@@ -48,9 +48,9 @@
 	id_trim = /datum/id_trim/job/paramedic
 	uniform = /obj/item/clothing/under/rank/medical/paramedic
 	suit = /obj/item/clothing/suit/toggle/labcoat/paramedic
-	suit_store = /obj/item/flashlight/pen/paramedic
 	backpack_contents = list(
 		/obj/item/emergency_bed = 1,
+		/obj/item/storage/box/bandages = 1,
 		)
 	belt = /obj/item/storage/belt/medical/paramedic
 	ears = /obj/item/radio/headset/headset_med
@@ -58,7 +58,6 @@
 	gloves = /obj/item/clothing/gloves/latex/nitrile
 	shoes = /obj/item/clothing/shoes/workboots/black
 	l_pocket = /obj/item/modular_computer/pda/medical/paramedic
-	r_pocket = /obj/item/storage/box/bandages
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med

@@ -92,6 +92,7 @@
 		alt_hud.apply_to_new_mob(src)
 
 	set_nutrition(rand(NUTRITION_LEVEL_START_MIN, NUTRITION_LEVEL_START_MAX))
+	set_hydration(rand(HYDRATION_LEVEL_START_MIN, HYDRATION_LEVEL_START_MAX))
 	. = ..()
 	setup_hud_traits()
 	update_config_movespeed()
@@ -226,7 +227,7 @@
 /**
  * Show a message to this mob (visual or audible)
  */
-/mob/proc/show_message(msg, type, alt_msg, alt_type, avoid_highlighting = FALSE)//Message, type of message (1 or 2), alternative message, alt message type (1 or 2)
+/mob/proc/show_message(msg, type, alt_msg, alt_type, avoid_highlighting = FALSE) //Message, type of message (1 or 2), alternative message, alt message type (1 or 2)
 	if(!client)
 		return FALSE
 
@@ -235,7 +236,7 @@
 	// Return TRUE if we sent the original msg, otherwise return FALSE
 	. = TRUE
 	if(type)
-		if(type & MSG_VISUAL && is_blind())//Vision related
+		if(type & MSG_VISUAL && is_blind()) //Vision related
 			if(!alt_msg)
 				return FALSE
 			else
@@ -243,7 +244,7 @@
 				type = alt_type
 				. = FALSE
 
-		if(type & MSG_AUDIBLE && !can_hear())//Hearing related
+		if(type & MSG_AUDIBLE && HAS_TRAIT(src, TRAIT_DEAF)) //Hearing related
 			if(!alt_msg)
 				return FALSE
 			else
@@ -360,18 +361,20 @@
  * * audible_message_flags (optional) is the type of message being sent.
  */
 /atom/proc/audible_message(message, deaf_message, hearing_distance = DEFAULT_MESSAGE_RANGE, self_message, audible_message_flags = NONE)
-	var/list/hearers = get_hearers_in_view(hearing_distance, src)
-	if(self_message)
-		hearers -= src
+	var/list/hearers = mob_only_listeners(get_hearers_in_view(hearing_distance, src))
 	var/raw_msg = message
 	if(audible_message_flags & WITH_EMPHASIS_MESSAGE)
 		message = apply_message_emphasis(message)
 	if(audible_message_flags & EMOTE_MESSAGE)
 		message = span_emote("<b>[src]</b> [message]")
-	for(var/mob/M in hearers)
-		if(audible_message_flags & EMOTE_MESSAGE && runechat_prefs_check(M, audible_message_flags) && M.can_hear())
-			M.create_chat_message(src, raw_message = raw_msg, runechat_flags = audible_message_flags)
-		M.show_message(message, MSG_AUDIBLE, deaf_message, MSG_VISUAL)
+	for(var/mob/hearing_mob as anything in hearers)
+		if(!hearing_mob?.client)
+			continue
+		if(self_message && hearing_mob == src)
+			continue
+		if(audible_message_flags & EMOTE_MESSAGE && runechat_prefs_check(hearing_mob, audible_message_flags) && !HAS_TRAIT(hearing_mob, TRAIT_DEAF))
+			hearing_mob.create_chat_message(src, raw_message = raw_msg, runechat_flags = audible_message_flags)
+		hearing_mob.show_message(message, MSG_AUDIBLE, deaf_message, MSG_VISUAL)
 
 /**
  * Show a message to all mobs in earshot of this one
@@ -405,6 +408,18 @@
 	if(self_runechat && (audible_message_flags & EMOTE_MESSAGE) && runechat_prefs_check(src, audible_message_flags))
 		create_chat_message(src, raw_message = raw_self_message, runechat_flags = audible_message_flags)
 
+/// Gets a linked mob, letting atoms act as proxies for actions that rely on hearing sensitivity.
+/// For example, AIs hearing around their holopads.
+/// Normal say messages are handled by Hear(), this is for other visible/audible messages
+/atom/movable/proc/get_listening_mob()
+	return
+
+/obj/effect/overlay/holo_pad_hologram/get_listening_mob()
+	return Impersonation
+
+/mob/get_listening_mob()
+	return src
+
 ///Returns the client runechat visible messages preference according to the message type.
 /atom/proc/runechat_prefs_check(mob/target, visible_message_flags = NONE)
 	if(!target.client?.prefs.read_preference(/datum/preference/toggle/enable_runechat))
@@ -422,6 +437,12 @@
 		return FALSE
 	return TRUE
 
+/mob/dead/observer/runechat_prefs_check(mob/target, visible_message_flags = NONE)
+	if(!..())
+		return FALSE
+	if(!target.client?.prefs.read_preference(/datum/preference/toggle/enable_runechat_ghosts))
+		return FALSE
+	return TRUE
 
 ///Get the item on the mob in the storage slot identified by the id passed in
 /mob/proc/get_item_by_slot(slot_id)
@@ -1488,7 +1509,7 @@
 	// Queue update if change is small enough (6 is 1% of nutrition softcap)
 	if(abs(change) >= 6)
 		mob_mood?.update_nutrition_moodlets()
-		hud_used?.hunger?.update_hunger_bar()
+		hud_used?.hunger?.update_appearance()
 	else
 		living_flags |= QUEUE_NUTRITION_UPDATE
 
@@ -1505,9 +1526,40 @@
 	// Queue update if change is small enough (6 is 1% of nutrition softcap)
 	if(abs(old_nutrition - nutrition) >= 6)
 		mob_mood?.update_nutrition_moodlets()
-		hud_used?.hunger?.update_hunger_bar()
+		hud_used?.hunger?.update_appearance()
 	else
 		living_flags |= QUEUE_NUTRITION_UPDATE
+
+///Force set the mob hydration
+/mob/proc/set_hydration(set_to, forced = FALSE)
+	if(HAS_TRAIT(src, TRAIT_NOTHIRST) && !forced)
+		return
+
+	hydration = max(0, set_to)
+
+/mob/living/set_hydration(set_to, forced)
+	var/old_hydration = hydration
+	. = ..()
+	if(abs(old_hydration - hydration) >= 6)
+		mob_mood?.update_hydration_moodlets()
+		hud_used?.thirst?.update_appearance()
+	else
+		living_flags |= QUEUE_HYDRATION_UPDATE
+
+///Adjust the hydration of a mob
+/mob/proc/adjust_hydration(change, forced = FALSE)
+	if(HAS_TRAIT(src, TRAIT_NOTHIRST) && !forced)
+		return
+
+	hydration = max(0, hydration + change)
+
+/mob/living/adjust_hydration(change, forced)
+	. = ..()
+	if(abs(change) >= 6)
+		mob_mood?.update_hydration_moodlets()
+		hud_used?.thirst?.update_appearance()
+	else
+		living_flags |= QUEUE_HYDRATION_UPDATE
 
 /// Apply a proper movespeed modifier based on items we have equipped
 /mob/proc/update_equipment_speed_mods()
@@ -1553,6 +1605,9 @@
 			. = TRUE
 		if(NAMEOF(src, nutrition))
 			set_nutrition(var_value)
+			. = TRUE
+		if(NAMEOF(src, hydration))
+			set_hydration(var_value)
 			. = TRUE
 		if(NAMEOF(src, stat))
 			set_stat(var_value)

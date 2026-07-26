@@ -10,7 +10,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/oldteleporter)
 "d" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/oldteleporter)
 "e" = (
 /turf/open/floor/iron/airless,

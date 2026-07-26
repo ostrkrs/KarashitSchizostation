@@ -111,6 +111,9 @@
 	/// Our body temperatue as of the last process, prevents pointless work when handling alerts
 	var/old_bodytemperature = 0
 
+	/// Hydration level of the mob
+	var/hydration = HYDRATION_LEVEL_START_MIN // randomised in Initialize
+
 	/// Hunger level of the mob
 	var/nutrition = NUTRITION_LEVEL_START_MIN // randomised in Initialize
 	/// Satiation level of the mob
@@ -216,3 +219,5 @@
 
 	/// A ref of the area we're taking our ambient loop from.
 	var/area/ambience_tracked_area
+
+	var/logout_time = 0

@@ -22,7 +22,7 @@
 	icon_state = "corpsescientist"
 
 /obj/effect/mob_spawn/corpse/human/engineer
-	name = JOB_STATION_ENGINEER
+	name = JOB_DECK_ENGINEER
 	outfit = /datum/outfit/job/engineer/gloved
 	icon_state = "corpseengineer"
 
@@ -49,10 +49,6 @@
 
 /obj/effect/mob_spawn/corpse/human/miner/explorer
 	outfit = /datum/outfit/job/miner/equipped
-
-/obj/effect/mob_spawn/corpse/human/plasmaman
-	mob_species = /datum/species/plasmaman
-	outfit = /datum/outfit/plasmaman
 
 /obj/effect/mob_spawn/corpse/human/assistant
 	name = JOB_ASSISTANT
@@ -83,8 +79,3 @@
 	name = JOB_ROBOTICIST
 	outfit = /datum/outfit/job/roboticist
 	icon_state = "corpseroboticist"
-
-/obj/effect/mob_spawn/corpse/human/bitrunner
-	name = JOB_BITRUNNER
-	outfit = /datum/outfit/job/bitrunner
-	icon_state = "corpsecargotech"

@@ -245,9 +245,9 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	return TRUE
 
 ///Adds firestacks on hit (Still needs support to turn into gas on destruction)
-/datum/material/plasma
-	name = "plasma"
-	desc = "Isn't plasma a state of matter? Oh whatever."
+/datum/material/phoron
+	name = "phoron"
+	desc = "Very volatile element. Handle with care."
 	color = "#BA3692"
 	categories = list(
 		MAT_CATEGORY_SILO = TRUE,
@@ -256,8 +256,8 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 		MAT_CATEGORY_ITEM_MATERIAL = TRUE,
 		MAT_CATEGORY_ITEM_MATERIAL_COMPLEMENTARY = TRUE,
 	)
-	sheet_type = /obj/item/stack/sheet/mineral/plasma
-	ore_type = /obj/item/stack/ore/plasma
+	sheet_type = /obj/item/stack/sheet/mineral/phoron
+	ore_type = /obj/item/stack/ore/phoron
 	value_per_unit = 200 / SHEET_MATERIAL_AMOUNT
 	beauty_modifier = 0.15
 	armor_modifiers = list(MELEE = 1.4, BULLET = 0.7, ENERGY = 1.2, BIO = 1.2, ACID = 0.5)
@@ -267,15 +267,15 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	fishing_deceleration_mult = 1.3
 	fishing_bounciness_mult = 0.6
 
-/datum/material/plasma/on_applied(atom/source, mat_amount, multiplier)
+/datum/material/phoron/on_applied(atom/source, mat_amount, multiplier)
 	. = ..()
 	if(ismovable(source))
 		source.AddElement(/datum/element/firestacker, 1 * multiplier)
-	source.AddComponent(/datum/component/combustible_flooder, "plasma", mat_amount * 0.05 * multiplier) //Empty temp arg, fully dependent on whatever ignited it.
+	source.AddComponent(/datum/component/combustible_flooder, "phoron", mat_amount * 0.05 * multiplier) //Empty temp arg, fully dependent on whatever ignited it.
 	if(istype(source, /obj/item/fishing_rod))
 		ADD_TRAIT(source, TRAIT_ROD_LAVA_USABLE, REF(src))
 
-/datum/material/plasma/on_removed(atom/source, mat_amount, multiplier)
+/datum/material/phoron/on_removed(atom/source, mat_amount, multiplier)
 	. = ..()
 	source.RemoveElement(/datum/element/firestacker, mat_amount = 1 * multiplier)
 	qdel(source.GetComponent(/datum/component/combustible_flooder))
@@ -283,9 +283,9 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	if(istype(source, /obj/item/fishing_rod))
 		ADD_TRAIT(source, TRAIT_ROD_LAVA_USABLE, REF(src))
 
-/datum/material/plasma/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
-	victim.reagents.add_reagent(/datum/reagent/toxin/plasma, rand(6, 8))
-	source_item?.reagents?.add_reagent(/datum/reagent/toxin/plasma, source_item.reagents.total_volume*(2/5))
+/datum/material/phoron/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
+	victim.reagents.add_reagent(/datum/reagent/toxin/phoron, rand(6, 8))
+	source_item?.reagents?.add_reagent(/datum/reagent/toxin/phoron, source_item.reagents.total_volume*(2/5))
 	return TRUE
 
 ///Can cause bluespace effects on use. (Teleportation) (Not yet implemented)
@@ -669,7 +669,7 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 		victim.apply_damage(20, BRUTE, BODY_ZONE_HEAD, wound_bonus = 10)
 		return TRUE
 
-//formed when freon react with o2, emits a lot of plasma when heated
+//formed when freon react with o2, emits a lot of phoron when heated
 /datum/material/hot_ice
 	name = "hot ice"
 	desc = "A weird kind of ice, feels warm to the touch"
@@ -697,15 +697,15 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 
 /datum/material/hot_ice/on_applied(atom/source, mat_amount, multiplier)
 	. = ..()
-	source.AddComponent(/datum/component/combustible_flooder, "plasma", mat_amount * 1.5 * multiplier, (mat_amount * 0.2 + 300) * multiplier)
+	source.AddComponent(/datum/component/combustible_flooder, "phoron", mat_amount * 1.5 * multiplier, (mat_amount * 0.2 + 300) * multiplier)
 
 /datum/material/hot_ice/on_removed(atom/source, mat_amount, multiplier)
 	qdel(source.GetComponent(/datum/component/combustible_flooder))
 	return ..()
 
 /datum/material/hot_ice/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
-	victim.reagents.add_reagent(/datum/reagent/toxin/plasma, rand(5, 6))
-	source_item?.reagents?.add_reagent(/datum/reagent/toxin/plasma, source_item.reagents.total_volume*(3/5))
+	victim.reagents.add_reagent(/datum/reagent/toxin/phoron, rand(5, 6))
+	source_item?.reagents?.add_reagent(/datum/reagent/toxin/phoron, source_item.reagents.total_volume*(3/5))
 	return TRUE
 
 // It's basically adamantine, but it isn't!
@@ -1092,5 +1092,5 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 /datum/material/zaukerite/on_accidental_mat_consumption(mob/living/carbon/victim, obj/item/source_item)
 	if(!HAS_TRAIT(victim, TRAIT_ROCK_EATER))
 		victim.apply_damage(30, BURN, BODY_ZONE_HEAD, wound_bonus = 5)
-	source_item?.reagents?.add_reagent(/datum/reagent/toxin/plasma, source_item.reagents.total_volume*5)
+	source_item?.reagents?.add_reagent(/datum/reagent/toxin/phoron, source_item.reagents.total_volume*5)
 	return TRUE

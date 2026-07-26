@@ -1,9 +1,10 @@
 /datum/job/doctor
 	title = JOB_MEDICAL_DOCTOR
+	alt_titles = JOB_MEDICAL_DOCTOR_ALT_TITLES
 	description = "Save lives, run around the station looking for victims, \
 		scan everyone in sight"
 	department_head = list(JOB_CHIEF_MEDICAL_OFFICER)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 6
 	spawn_positions = 4
 	supervisors = SUPERVISOR_CMO
@@ -11,7 +12,6 @@
 	config_tag = "MEDICAL_DOCTOR"
 
 	outfit = /datum/outfit/job/doctor
-	plasmaman_outfit = /datum/outfit/plasmaman/medical
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_MED
@@ -37,7 +37,7 @@
 		/obj/effect/spawner/random/medical/memeorgans = 1
 	)
 	rpg_title = "Cleric"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 
 /datum/outfit/job/doctor
@@ -46,21 +46,21 @@
 
 	id_trim = /datum/id_trim/job/medical_doctor
 	uniform = /obj/item/clothing/under/rank/medical/doctor
-	suit = /obj/item/clothing/suit/toggle/labcoat
-	suit_store = /obj/item/flashlight/pen
+	suit = /obj/item/clothing/suit/toggle/labcoat/medical
 	belt = /obj/item/modular_computer/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	shoes = /obj/item/clothing/shoes/sneakers/white
-	l_hand = /obj/item/storage/medkit/surgery
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	messenger = /obj/item/storage/backpack/messenger/med
 
+	backpack_contents = list(
+		/obj/item/storage/medkit/surgery = 1,
+	)
 	box = /obj/item/storage/box/survival/medical
 	chameleon_extras = /obj/item/gun/syringe
-	skillchips = list(/obj/item/skillchip/entrails_reader)
 
 /datum/outfit/job/doctor/mod
 	name = "Medical Doctor (MODsuit)"

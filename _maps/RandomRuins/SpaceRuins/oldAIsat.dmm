@@ -24,7 +24,7 @@
 /turf/open/floor/plating/airless,
 /area/template_noop)
 "ag" = (
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/tcommsat_oldaisat)
 "ah" = (
 /obj/structure/girder,
@@ -206,7 +206,7 @@
 /area/template_noop)
 "aU" = (
 /obj/structure/sign/warning/secure_area,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/tcommsat_oldaisat)
 "aV" = (
 /obj/machinery/light/small/directional/west,
@@ -293,7 +293,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/tcommsat_oldaisat)
 "bm" = (
 /obj/structure/disposalpipe/segment{
@@ -709,7 +709,7 @@
 /area/ruin/space/tcommsat_oldaisat)
 "cL" = (
 /obj/structure/sign/warning/vacuum,
-/turf/closed/wall/r_wall,
+/turf/closed/wall/reinforced,
 /area/ruin/space/tcommsat_oldaisat)
 "cM" = (
 /obj/structure/closet/emcloset,

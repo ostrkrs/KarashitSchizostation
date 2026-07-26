@@ -18,7 +18,7 @@ GLOBAL_DATUM(escape_menu_title, /atom/movable/screen/escape_menu/title)
 
 	update_text()
 
-	RegisterSignal(SSdcs, COMSIG_GLOB_STATION_NAME_CHANGED, PROC_REF(on_station_name_changed))
+	RegisterSignal(SSdcs, COMSIG_GLOB_SHIP_NAME_CHANGED, PROC_REF(on_ship_name_changed))
 
 /atom/movable/screen/escape_menu/title/Destroy()
 	if (GLOB.escape_menu_title == src)
@@ -31,13 +31,13 @@ GLOBAL_DATUM(escape_menu_title, /atom/movable/screen/escape_menu/title)
 	var/subtitle_text = MAPTEXT("<span style='font-size: 8px'>Another day on...</span>")
 	var/title_text = {"
 		<span style='font-weight: bolder; font-size: 24px'>
-			[station_name()]
+			[ship_name()]
 		</span>
 	"}
 
 	maptext = "<font align='top'>" + subtitle_text + MAPTEXT_PIXELLARI(title_text) + "</font>"
 
-/atom/movable/screen/escape_menu/title/proc/on_station_name_changed()
+/atom/movable/screen/escape_menu/title/proc/on_ship_name_changed()
 	SIGNAL_HANDLER
 
 	update_text()

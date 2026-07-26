@@ -71,7 +71,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/abandoned/bar)
@@ -105,7 +105,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 4
 	},
 /area/shuttle/abandoned/bar)
@@ -175,7 +175,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/abandoned/bar)
@@ -216,11 +216,11 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 6
 	},
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/turf/open/floor/iron/cafeteria{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/bar)
@@ -279,7 +279,7 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/turf/open/floor/iron/cafeteria{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/bar)
@@ -568,7 +568,7 @@
 	pixel_x = 5
 	},
 /obj/effect/turf_decal/tile/brown,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/abandoned/cargo)
@@ -685,7 +685,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/abandoned/engine)
 "HD" = (
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -731,7 +731,7 @@
 /obj/item/storage/box/gum/happiness,
 /obj/item/stack/cable_coil/five,
 /obj/effect/turf_decal/tile/brown,
-/turf/open/floor/iron/white/corner{
+/turf/open/floor/iron{
 	dir = 8
 	},
 /area/shuttle/abandoned/cargo)
@@ -754,13 +754,13 @@
 /obj/item/food/sausage,
 /obj/item/reagent_containers/cup/glass/bottle/beer,
 /obj/item/food/sandwich,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 10
 	},
 /obj/machinery/light/warm/no_nightlight/directional/north,
 /obj/item/food/grown/potato,
 /obj/effect/turf_decal/tile/bar/opposingcorners,
-/turf/open/floor/iron/cafeteria{
+/turf/open/floor/iron{
 	dir = 1
 	},
 /area/shuttle/abandoned/bar)
@@ -817,8 +817,8 @@
 	},
 /obj/effect/spawner/random/maintenance/three,
 /obj/item/wirebrush,
-/obj/item/stack/sheet/mineral/plasma/five,
-/obj/item/stack/sheet/mineral/plasma/five,
+/obj/item/stack/sheet/mineral/phoron/five,
+/obj/item/stack/sheet/mineral/phoron/five,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "LK" = (
@@ -1076,7 +1076,7 @@
 /area/shuttle/abandoned/cargo)
 "TP" = (
 /obj/structure/closet/secure_closet/personal,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -1191,7 +1191,7 @@
 /area/shuttle/abandoned/bridge)
 "ZW" = (
 /obj/machinery/washing_machine,
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/turf_decal/siding/dark{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,

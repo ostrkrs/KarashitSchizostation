@@ -160,7 +160,7 @@ SUBSYSTEM_DEF(ticker)
 				start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
 			for(var/client/C in GLOB.clients)
 				window_flash(C, ignorepref = TRUE) //let them know lobby has opened up.
-			to_chat(world, span_notice("<b>Welcome to [station_name()]!</b>"))
+			to_chat(world, span_notice("<b>Welcome to [ship_name()]!</b>"))
 			for(var/channel_tag in CONFIG_GET(str_list/channel_announce_new_game))
 				send2chat(new /datum/tgs_message_content("New round starting on [SSmapping.current_map.map_name]!"), channel_tag)
 			current_state = GAME_STATE_PREGAME
@@ -285,7 +285,7 @@ SUBSYSTEM_DEF(ticker)
 	log_world("Game start took [(world.timeofday - init_start)/10]s")
 	INVOKE_ASYNC(SSdbcore, TYPE_PROC_REF(/datum/controller/subsystem/dbcore,SetRoundStart))
 
-	to_chat(world, span_notice(span_bold("Welcome to [station_name()], enjoy your stay!")))
+	to_chat(world, span_notice(span_bold("Welcome to [ship_name()], enjoy your stay!")))
 	SEND_SOUND(world, sound(SSstation.announcer.get_rand_welcome_sound()))
 
 	current_state = GAME_STATE_PLAYING
@@ -443,7 +443,7 @@ SUBSYSTEM_DEF(ticker)
 			var/suicide_command_report = {"
 				<font size = 3><b>[command_name()] Human Resources Board</b><br>
 				Notice of Personnel Change</font><hr>
-				To personnel management staff aboard [station_name()]:<br><br>
+				To personnel management staff aboard [ship_name()]:<br><br>
 				Our medical staff have detected a series of anomalies in the vital sensors
 				of some of the staff aboard your station.<br><br>
 				Further investigation into the situation on our end resulted in us discovering
@@ -492,11 +492,6 @@ SUBSYSTEM_DEF(ticker)
 
 
 /datum/controller/subsystem/ticker/proc/equip_characters()
-	GLOB.security_officer_distribution = decide_security_officer_departments(
-		shuffle(GLOB.new_player_list),
-		shuffle(GLOB.available_depts),
-	)
-
 	var/captainless = TRUE
 
 	var/highest_rank = length(SSjob.chain_of_command) + 1
@@ -565,32 +560,6 @@ SUBSYSTEM_DEF(ticker)
 			if(new_player_human)
 				to_chat(new_player_mob, span_notice("Captainship not forced on anyone."))
 			CHECK_TICK
-
-
-/datum/controller/subsystem/ticker/proc/decide_security_officer_departments(
-	list/new_players,
-	list/departments,
-)
-	var/list/officer_mobs = list()
-	var/list/officer_preferences = list()
-
-	for (var/mob/dead/new_player/new_player_mob as anything in new_players)
-		var/mob/living/carbon/human/character = new_player_mob.new_character
-		if (istype(character) && is_security_officer_job(character.mind?.assigned_role))
-			officer_mobs += character
-
-			var/datum/client_interface/client = GET_CLIENT(new_player_mob)
-			var/preference = client?.prefs?.read_preference(/datum/preference/choiced/security_department)
-			officer_preferences += preference
-
-	var/distribution = get_officer_departments(officer_preferences, departments)
-
-	var/list/output = list()
-
-	for (var/index in 1 to officer_mobs.len)
-		output[REF(officer_mobs[index])] = distribution[index]
-
-	return output
 
 /datum/controller/subsystem/ticker/proc/transfer_characters()
 	var/list/livings = list()
@@ -694,74 +663,74 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/send_news_report()
 	var/news_message
-	var/news_source = "Nanotrasen News Network"
-	var/decoded_station_name = html_decode(station_name()) //decode station_name to avoid minor_announce double encode
+	var/news_source = "News Network"
+	var/decoded_ship_name = html_decode(ship_name()) //decode ship_name to avoid minor_announce double encode
 	var/decoded_emergency_reason = html_decode(emergency_reason)
 
 	switch(news_report)
 		// The nuke was detonated on the syndicate recon outpost
 		if(NUKE_SYNDICATE_BASE)
-			news_message = "In a daring raid, the heroic crew of [decoded_station_name] \
+			news_message = "In a daring raid, the heroic crew of [decoded_ship_name] \
 				detonated a nuclear device in the heart of a terrorist base."
 		// The station was destroyed by nuke ops
 		if(STATION_DESTROYED_NUKE)
 			news_message = "We would like to reassure all employees that the reports of a Syndicate \
-				backed nuclear attack on [decoded_station_name] are, in fact, a hoax. Have a secure day!"
+				backed nuclear attack on [decoded_ship_name] are, in fact, a hoax. Have a secure day!"
 		// The station was evacuated (normal result)
 		if(STATION_EVACUATED)
 			// Had an emergency reason supplied to pass along
 			if(emergency_reason)
-				news_message = "[decoded_station_name] has been evacuated after transmitting \
+				news_message = "[decoded_ship_name] has been evacuated after transmitting \
 					the following distress beacon:\n\n[decoded_emergency_reason]"
 			else
-				news_message = "The crew of [decoded_station_name] has been \
+				news_message = "The crew of [decoded_ship_name] has been \
 					evacuated amid unconfirmed reports of enemy activity."
 		// A blob won
 		if(BLOB_WIN)
-			news_message = "[decoded_station_name] was overcome by an unknown biological outbreak, killing \
+			news_message = "[decoded_ship_name] was overcome by an unknown biological outbreak, killing \
 				all crew on board. Don't let it happen to you! Remember, a clean work station is a safe work station."
 		// A blob was destroyed
 		if(BLOB_DESTROYED)
-			news_message = "[decoded_station_name] is currently undergoing decontamination procedures \
+			news_message = "[decoded_ship_name] is currently undergoing decontamination procedures \
 				after the destruction of a biological hazard. As a reminder, any crew members experiencing \
 				cramps or bloating should report immediately to security for incineration."
 		// A certain percentage of all cultists managed to escape at the end of round
 		if(CULT_ESCAPE)
-			news_message = "Security Alert: A group of religious fanatics have escaped from [decoded_station_name]."
+			news_message = "Security Alert: A group of religious fanatics have escaped from [decoded_ship_name]."
 		// Cult was completely or almost completely wiped out
 		if(CULT_FAILURE)
-			news_message = "Following the dismantling of a restricted cult aboard [decoded_station_name], \
+			news_message = "Following the dismantling of a restricted cult aboard [decoded_ship_name], \
 				we would like to remind all employees that worship outside of the Chapel is strictly prohibited, \
 				and cause for termination."
 		// Cult summoned Nar'sie
 		if(CULT_SUMMON)
-			news_message = "Company officials would like to clarify that [decoded_station_name] was scheduled \
+			news_message = "Company officials would like to clarify that [decoded_ship_name] was scheduled \
 				to be decommissioned following meteor damage earlier this year. Earlier reports of an \
 				unknowable eldritch horror were made in error."
 		// Nuke detonated, but missed the station entirely
 		if(NUKE_MISS)
-			news_message = "The Syndicate have bungled a terrorist attack [decoded_station_name], \
+			news_message = "The Syndicate have bungled a terrorist attack [decoded_ship_name], \
 				detonating a nuclear weapon in empty space nearby."
 		// All nuke ops got killed
 		if(OPERATIVES_KILLED)
-			news_message = "Repairs to [decoded_station_name] are underway after an elite \
+			news_message = "Repairs to [decoded_ship_name] are underway after an elite \
 				Syndicate death squad was wiped out by the crew."
 		// Nuke ops results inconclusive - Crew escaped without the disk, or nukies were left alive, or something
 		if(OPERATIVE_SKIRMISH)
-			news_message = "A skirmish between security forces and Syndicate agents aboard [decoded_station_name] \
+			news_message = "A skirmish between security forces and Syndicate agents aboard [decoded_ship_name] \
 				ended with both sides bloodied but intact."
 		// Revolution victory
 		if(REVS_WIN)
 			news_message = "Company officials have reassured investors that despite a union led revolt \
-				aboard [decoded_station_name] there will be no wage increases for workers."
+				aboard [decoded_ship_name] there will be no wage increases for workers."
 		// Revolution defeat
 		if(REVS_LOSE)
-			news_message = "[decoded_station_name] quickly put down a misguided attempt at mutiny. \
+			news_message = "[decoded_ship_name] quickly put down a misguided attempt at mutiny. \
 				Remember, unionizing is illegal!"
 		// All wizards (plus apprentices) have been killed
 		if(WIZARD_KILLED)
 			news_message = "Tensions have flared with the Space Wizard Federation following the death \
-				of one of their members aboard [decoded_station_name]."
+				of one of their members aboard [decoded_ship_name]."
 		// The station was nuked generically
 		if(STATION_NUKED)
 			// There was a blob on board, guess it was nuked to stop it
@@ -770,23 +739,23 @@ SUBSYSTEM_DEF(ticker)
 					if(overmind.max_count < overmind.announcement_size)
 						continue
 
-					news_message = "[decoded_station_name] is currently undergoing decontanimation after a controlled \
+					news_message = "[decoded_ship_name] is currently undergoing decontanimation after a controlled \
 						burst of radiation was used to remove a biological ooze. All employees were safely evacuated prior, \
 						and are enjoying a relaxing vacation."
 					break
 			// A self destruct or something else
 			else
-				news_message = "[decoded_station_name] activated its self-destruct device for unknown reasons. \
+				news_message = "[decoded_ship_name] activated its self-destruct device for unknown reasons. \
 					Attempts to clone the Captain for arrest and execution are underway."
 		// The emergency escape shuttle was hijacked
 		if(SHUTTLE_HIJACK)
-			news_message = "During routine evacuation procedures, the emergency shuttle of [decoded_station_name] \
+			news_message = "During routine evacuation procedures, the emergency shuttle of [decoded_ship_name] \
 				had its navigation protocols corrupted and went off course, but was recovered shortly after. \
 				The following distress beacon was sent prior to evacuation:\n\n[Gibberish(decoded_emergency_reason, FALSE, 8)]"
 		// A supermatter cascade triggered
 		if(SUPERMATTER_CASCADE)
 			news_message = "Officials are advising nearby colonies about a newly declared exclusion zone in \
-				the sector surrounding [decoded_station_name]."
+				the sector surrounding [decoded_ship_name]."
 
 	if(news_message)
 		send2otherserver(news_source, news_message, "News_Report")

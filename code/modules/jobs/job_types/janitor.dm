@@ -1,16 +1,16 @@
 /datum/job/janitor
 	title = JOB_JANITOR
+	alt_titles = JOB_JANITOR_ALT_TITLES
 	description = "Clean up trash and blood. Replace broken lights. Slip people over."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_STEWARD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "JANITOR"
 
 	outfit = /datum/outfit/job/janitor
-	plasmaman_outfit = /datum/outfit/plasmaman/janitor
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -28,7 +28,7 @@
 		/obj/item/lightreplacer = 10
 	)
 	rpg_title = "Groundskeeper"
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 
 	job_tone = "slip"
 
@@ -40,7 +40,6 @@
 	uniform = /obj/item/clothing/under/rank/civilian/janitor
 	belt = /obj/item/modular_computer/pda/janitor
 	ears = /obj/item/radio/headset/headset_srv
-	skillchips = list(/obj/item/skillchip/job/janitor)
 	backpack_contents = list(/obj/item/access_key)
 
 /datum/outfit/job/janitor/pre_equip(mob/living/carbon/human/human_equipper, visuals_only)

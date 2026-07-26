@@ -129,7 +129,7 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	slowdown = 2
 	armor_type = /datum/armor/utility_bomb_suit
-	flags_inv = HIDEJUMPSUIT
+	flags_inv = HIDEJUMPSUIT|HIDESHOES
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = ARMOR_MAX_TEMP_PROTECT
 	cold_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
@@ -213,7 +213,7 @@
 	armor_type = /datum/armor/utility_radiation
 	strip_delay = 6 SECONDS
 	equip_delay_other = 6 SECONDS
-	flags_inv = HIDEJUMPSUIT
+	flags_inv = HIDEJUMPSUIT|HIDESHOES
 	resistance_flags = NONE
 
 /obj/item/clothing/suit/utility/radiation/Initialize(mapload)

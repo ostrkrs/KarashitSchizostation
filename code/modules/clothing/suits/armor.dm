@@ -60,6 +60,9 @@
 /obj/item/clothing/suit/armor/vest/alt/sec
 	icon_state = "armor_sec"
 
+/obj/item/clothing/suit/armor/vest/alt/iso
+	icon_state = "armor_iso"
+
 /obj/item/clothing/suit/armor/vest/press
 	name = "press armor vest"
 	desc = "A blue armor vest used to distinguish <i>non-combatant</i> \"PRESS\" members, like if anyone cares."
@@ -210,12 +213,12 @@
 
 /obj/item/clothing/suit/armor/vest/warden/alt
 	name = "warden's armored jacket"
-	desc = "A red jacket with silver rank pips and body armor strapped on top."
+	desc = "A navy-blue jacket with silver rank pips and body armor strapped on top."
 	icon_state = "warden_jacket"
 
 /obj/item/clothing/suit/armor/vest/secjacket
 	name = "security jacket"
-	desc = "A red jacket in red Security colors. It has hi-vis stripes all over it."
+	desc = "A jacket in navy-blue Security colors. It has hi-vis stripes all over it."
 	icon_state = "secjacket"
 	inhand_icon_state = "armor"
 	armor_type = /datum/armor/armor_secjacket
@@ -242,7 +245,7 @@
 
 /obj/item/clothing/suit/armor/vest/leather
 	name = "security overcoat"
-	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of Nanotrasen Security."
+	desc = "Lightly armored leather overcoat meant as casual wear for high-ranking officers. Bears the crest of the Security department."
 	icon_state = "leathercoat-sec"
 	inhand_icon_state = "hostrench"
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS
@@ -397,16 +400,16 @@
 	if (prob(hit_reflect_chance))
 		return TRUE
 
-/obj/item/clothing/suit/armor/vest/det_suit
-	name = "detective's flak vest"
-	desc = "An armored vest with a detective's badge on it."
+/obj/item/clothing/suit/armor/vest/criminalist
+	name = "criminalist's flak vest"
+	desc = "An armored vest with a criminalist's badge on it."
 	icon_state = "detective-armor"
 	resistance_flags = FLAMMABLE
 	dog_fashion = null
 
-/obj/item/clothing/suit/armor/vest/det_suit/Initialize(mapload)
+/obj/item/clothing/suit/armor/vest/criminalist/Initialize(mapload)
 	. = ..()
-	allowed = GLOB.detective_vest_allowed
+	allowed = GLOB.criminalist_vest_allowed
 
 /obj/item/clothing/suit/armor/swat
 	name = "MK.I SWAT Suit"
@@ -530,7 +533,6 @@
 		/obj/item/claymore,
 		/obj/item/nullrod,
 		/obj/item/tank/internals/emergency_oxygen,
-		/obj/item/tank/internals/plasmaman,
 		)
 /obj/item/clothing/suit/armor/riot/knight/init_rustle_component()
 	AddComponent(/datum/component/item_equipped_movement_rustle, SFX_PLATE_ARMOR_RUSTLE, 8)

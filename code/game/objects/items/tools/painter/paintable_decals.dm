@@ -173,25 +173,26 @@
 		"Neutral" = "#d4d4d432", // very lazy way to do transparent decal, should be remade in future
 		"White" = "#FFFFFF",
 		"Dark" = /obj/effect/turf_decal/tile/dark::color,
-		"Bar Burgundy" = /obj/effect/turf_decal/tile/bar::color,
-		"Cargo Brown" = /obj/effect/turf_decal/tile/brown::color,
-		"Dark Blue" = /obj/effect/turf_decal/tile/dark_blue::color,
-		"Dark Green" = /obj/effect/turf_decal/tile/dark_green::color,
+		"Law Red" = /obj/effect/turf_decal/tile/red::color,
 		"Dark Red" = /obj/effect/turf_decal/tile/dark_red::color,
+		"Bar Burgundy" = /obj/effect/turf_decal/tile/bar::color,
 		"Engi Yellow" = /obj/effect/turf_decal/tile/yellow::color,
-		"Med Blue" = /obj/effect/turf_decal/tile/blue::color,
-		"R&D Purple" = /obj/effect/turf_decal/tile/purple::color,
-		"Sec Red" = /obj/effect/turf_decal/tile/red::color,
+		"Light Green" = /obj/effect/turf_decal/tile/light_green::color,
 		"Service Green" = /obj/effect/turf_decal/tile/green::color,
+		"Dark Green" = /obj/effect/turf_decal/tile/dark_green::color,
+		"Med Teal" = /obj/effect/turf_decal/tile/teal::color,
+		"Light Blue" = /obj/effect/turf_decal/tile/light_blue::color,
+		"Sec Blue" = /obj/effect/turf_decal/tile/blue::color,
+		"Dark Blue" = /obj/effect/turf_decal/tile/dark_blue::color,
+		"R&D Purple" = /obj/effect/turf_decal/tile/purple::color,
+		"Cargo Brown" = /obj/effect/turf_decal/tile/brown::color,
 		"Custom" = "custom",
 	)
 
-// Tile trimlines
 /datum/paintable_decal_category/tile/trimline
 	category = "Trimlines"
 	paintable_decal_type = /datum/paintable_decal/trimline
 
-// Generic warning stripes
 /datum/paintable_decal_category/warning
 	paintable_decal_type = /datum/paintable_decal/warning
 	category = "Warning Stripes"
@@ -220,7 +221,6 @@
 		"[DECAL_INFO_ALPHA]" = default_alpha,
 	)
 
-// Plain colored siding
 /datum/paintable_decal_category/siding
 	paintable_decal_type = /datum/paintable_decal/colored_siding
 	category = "Colored Sidings"
@@ -233,32 +233,55 @@
 		"Dark Green" = /obj/effect/turf_decal/siding/dark_green::color,
 		"Dark Red" = /obj/effect/turf_decal/siding/dark_red::color,
 		"Engi Yellow" = /obj/effect/turf_decal/siding/yellow::color,
-		"Med Blue" = /obj/effect/turf_decal/siding/blue::color,
+		"Law Red" = /obj/effect/turf_decal/trimline/red::color,
+		"Med Teal" = /obj/effect/turf_decal/trimline/teal::color,
 		"R&D Purple" = /obj/effect/turf_decal/siding/purple::color,
-		"Sec Red" = /obj/effect/turf_decal/siding/red::color,
+		"Sec Blue" = /obj/effect/turf_decal/trimline/blue::color,
 		"Service Green" = /obj/effect/turf_decal/siding/green::color,
 		"Custom" = "custom",
 	)
 
-// Sidings which are not colored / have a specific pattern, texture, etc
-/datum/paintable_decal_category/normal_siding
+/datum/paintable_decal_category/wood_siding
 	paintable_decal_type = /datum/paintable_decal/siding
-	category = "Normal Sidings"
+	category = "Wood Sidings"
 	possible_colors = list(
-		"Default" = /obj/effect/turf_decal/siding/wood::color,
+		"Walnut" = /obj/effect/turf_decal/siding/wood::color,
+		"Oak" = /obj/effect/turf_decal/siding/wood/oak::color,
+		"Birch" = /obj/effect/turf_decal/siding/wood/birch::color,
+		"Cherry" = /obj/effect/turf_decal/siding/wood/cherry::color,
+		"Amaranth" = /obj/effect/turf_decal/siding/wood/amaranth::color,
+		"Ebonite" = /obj/effect/turf_decal/siding/wood/ebonite::color,
+		"Pink Ivory" = /obj/effect/turf_decal/siding/wood/ivory::color,
+		"Guaiacum" = /obj/effect/turf_decal/siding/wood/guaiacum::color,
 	)
 
-// Plating sidings and all color variations
-/datum/paintable_decal_category/plating
-	paintable_decal_type = /datum/paintable_decal/plating
-	category = "Plating Sidings"
+/datum/paintable_decal_category/tile_border
+	paintable_decal_type = /datum/paintable_decal/borderfloor
+	category = "Tile Borders"
 	possible_colors = list(
-		"Default" = "#949494",
-		"White" = "#FFFFFF",
-		"Terracotta" = "#b84221",
-		"Dark" = "#36373a",
-		"Light" = "#e2e2e2",
+		"Default" = "default",
+		"Black" = "dark",
+		"White" = "white",
 	)
+
+/datum/paintable_decal_category/tile_border/generate_colored_decal_spritesheet_icon(state, dir, color)
+	var/list/decal_data = get_decal_info(state, color, dir)
+	var/datum/universal_icon/floor = uni_icon(preview_floor_icon, preview_floor_state)
+	var/datum/universal_icon/decal = uni_icon('icons/turf/decals.dmi', decal_data[DECAL_INFO_ICON_STATE], dir = decal_data[DECAL_INFO_DIR])
+	floor.blend_icon(decal, ICON_OVERLAY)
+	return floor
+
+/datum/paintable_decal_category/tile_border/get_decal_info(state, color, dir)
+	if(color == "default")
+		color = ""
+
+	return list(
+		"[DECAL_INFO_ICON_STATE]" = "[state][color ? "_" : ""][color]",
+		"[DECAL_INFO_DIR]" = dir,
+		"[DECAL_INFO_COLOR]" = color,
+		"[DECAL_INFO_ALPHA]" = default_alpha,
+	)
+
 
 /// Global list of all paintable decal categories singletons
 GLOBAL_LIST_INIT(paintable_decals, init_subtypes(/datum/paintable_decal_category))
@@ -290,14 +313,14 @@ GLOBAL_LIST_INIT(paintable_decals, init_subtypes(/datum/paintable_decal_category
 // Basic tile decals
 /datum/paintable_decal/tile
 
-/datum/paintable_decal/tile/four_corners
-	name = "4 Corners"
-	icon_state = "tile_fourcorners"
-	directional = FALSE
-
 /datum/paintable_decal/tile/full
 	name = "Full Tile"
 	icon_state = "tile_full"
+	directional = FALSE
+
+/datum/paintable_decal/tile/four_corners_smooth
+	name = "Smooth Full Tile"
+	icon_state = "tile_full_smooth"
 	directional = FALSE
 
 /datum/paintable_decal/tile/corner
@@ -306,11 +329,11 @@ GLOBAL_LIST_INIT(paintable_decals, init_subtypes(/datum/paintable_decal_category
 
 /datum/paintable_decal/tile/half
 	name = "Half"
-	icon_state = "tile_half_contrasted"
-
-/datum/paintable_decal/tile/half_full
-	name = "Full Half"
 	icon_state = "tile_half"
+
+/datum/paintable_decal/tile/half_smooth
+	name = "Smooth Half"
+	icon_state = "tile_half_smooth"
 
 /datum/paintable_decal/tile/opposing_corners
 	name = "Opposing Corners"
@@ -318,7 +341,11 @@ GLOBAL_LIST_INIT(paintable_decals, init_subtypes(/datum/paintable_decal_category
 
 /datum/paintable_decal/tile/anticorner
 	name = "3 Corners"
-	icon_state = "tile_anticorner_contrasted"
+	icon_state = "tile_anticorner"
+
+/datum/paintable_decal/tile/anticorner_smooth
+	name = "Smooth 3 Corners"
+	icon_state = "tile_anticorner_smooth"
 
 /datum/paintable_decal/tile/tram
 	name = "Tram"
@@ -441,6 +468,9 @@ GLOBAL_LIST_INIT(paintable_decals, init_subtypes(/datum/paintable_decal_category
 /datum/paintable_decal/warning/line
 	name = "Warning Line"
 	icon_state = "warningline"
+/datum/paintable_decal/warning/line_inner_corner
+	name = "Warning Line Inner Corner"
+	icon_state = "warninglineinnercorner"
 
 /datum/paintable_decal/warning/line_corner
 	name = "Warning Line Corner"
@@ -518,86 +548,25 @@ GLOBAL_LIST_INIT(paintable_decals, init_subtypes(/datum/paintable_decal_category
 	name = "Wood Siding Corner"
 	icon_state = "siding_wood_corner"
 
+/datum/paintable_decal/siding/wood/line_inner_corner
+	name = "Wood Siding Inner Corner"
+	icon_state = "siding_wood_corner_inner"
+
 /datum/paintable_decal/siding/wood/line_end
 	name = "Wood Siding End"
 	icon_state = "siding_wood_end"
 
-/datum/paintable_decal/siding/wood/line_inner_corner
-	name = "Wood Siding Inner Corner"
-	icon_state = "siding_wood__8" // 8 dir sprite
+// Tile borders
+/datum/paintable_decal/borderfloor
 
-// Thin plating sidings and all color variations
-/datum/paintable_decal/plating/thinplating
+/datum/paintable_decal/borderfloor/border
+	name = "Tile Border"
+	icon_state = "borderfloor"
 
-/datum/paintable_decal/plating/thinplating/line
-	name = "Thin Plating Siding"
-	icon_state = "siding_thinplating"
+/datum/paintable_decal/borderfloor/corner
+	name = "Tile Border Corner"
+	icon_state = "borderfloorcorner"
 
-/datum/paintable_decal/plating/thinplating/line_corner
-	name = "Thin Plating Siding Corner"
-	icon_state = "siding_thinplating_corner"
-
-/datum/paintable_decal/plating/thinplating/line_end
-	name = "Thin Plating Siding End"
-	icon_state = "siding_thinplating_end"
-
-/datum/paintable_decal/plating/thinplating/line_inner_corner
-	name = "Thin Plating Siding Inner Corner"
-	icon_state = "siding_thinplating__8" // 8 dir sprite
-
-// Alt / new thin plating sidings and all color variations
-/datum/paintable_decal/plating/thinplatingalt
-
-/datum/paintable_decal/plating/thinplatingalt/line
-	name = "Thin Plating Alt Siding"
-	icon_state = "siding_thinplating_new"
-
-/datum/paintable_decal/plating/thinplatingalt/line_corner
-	name = "Thin Plating Alt Siding Corner"
-	icon_state = "siding_thinplating_new_corner"
-
-/datum/paintable_decal/plating/thinplatingalt/line_end
-	name = "Thin Plating Alt Siding End"
-	icon_state = "siding_thinplating_new_end"
-
-/datum/paintable_decal/plating/thinplatingalt/line_inner_corner
-	name = "Thin Plating Alt Siding Inner Corner"
-	icon_state = "siding_thinplating_new__8" // 8 dir sprite
-
-// Wide plating sidings and all color variations
-/datum/paintable_decal/plating/wideplating
-
-/datum/paintable_decal/plating/wideplating/line
-	name = "Wide Plating Siding"
-	icon_state = "siding_wideplating"
-
-/datum/paintable_decal/plating/wideplating/line_corner
-	name = "Wide Plating Siding Corner"
-	icon_state = "siding_wideplating_corner"
-
-/datum/paintable_decal/plating/wideplating/line_end
-	name = "Wide Plating Siding End"
-	icon_state = "siding_wideplating_end"
-
-/datum/paintable_decal/plating/wideplating/line_inner_corner
-	name = "Wide Plating Siding Inner Corner"
-	icon_state = "siding_wideplating__8"  // 8 dir sprite
-
-// Alt / new wide plating sidings and all color variations
-/datum/paintable_decal/plating/wideplatingalt
-
-/datum/paintable_decal/plating/wideplatingalt/line
-	name = "Wide Plating Alt Siding"
-	icon_state = "siding_wideplating_new"
-
-/datum/paintable_decal/plating/wideplatingalt/line_corner
-	name = "Wide Plating Alt Siding Corner"
-	icon_state = "siding_wideplating_new_corner"
-
-/datum/paintable_decal/plating/wideplatingalt/line_end
-	name = "Wide Plating Alt Siding End"
-	icon_state = "siding_wideplating_new_end"
-
-/datum/paintable_decal/plating/wideplatingalt/line_inner_corner
-	name = "Wide Plating Alt Siding Inner Corner"
-	icon_state = "siding_wideplating_new__8" // 8 dir sprite
+/datum/paintable_decal/borderfloor/inner_corner
+	name = "Tile Border Inner Corner"
+	icon_state = "borderfloorinnercorner"

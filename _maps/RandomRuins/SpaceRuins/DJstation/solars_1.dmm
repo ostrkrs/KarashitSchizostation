@@ -76,7 +76,7 @@
 "U" = (
 /obj/structure/cable,
 /obj/machinery/power/solar/fake,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/ruin/space/djstation/solars)
 
 (1,1,1) = {"

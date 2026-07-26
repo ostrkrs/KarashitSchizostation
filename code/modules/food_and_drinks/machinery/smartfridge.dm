@@ -786,7 +786,7 @@
 		/obj/item/reagent_containers/cup/bottle/flu_virion = 1,
 		/obj/item/reagent_containers/cup/bottle/mutagen = 1,
 		/obj/item/reagent_containers/cup/bottle/sugar = 1,
-		/obj/item/reagent_containers/cup/bottle/plasma = 1,
+		/obj/item/reagent_containers/cup/bottle/phoron = 1,
 		/obj/item/reagent_containers/cup/bottle/synaptizine = 1,
 		/obj/item/reagent_containers/cup/bottle/formaldehyde = 1)
 

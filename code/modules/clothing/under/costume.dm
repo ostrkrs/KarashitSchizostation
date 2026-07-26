@@ -108,10 +108,6 @@
 	can_adjust = FALSE
 	resistance_flags = NONE
 
-/obj/item/clothing/under/costume/gladiator/ash_walker
-	desc = "This gladiator uniform appears to be covered in ash and fairly dated."
-	has_sensor = NO_SENSORS
-
 /obj/item/clothing/under/costume/maid
 	name = "maid costume"
 	desc = "Maid in China."
@@ -332,6 +328,10 @@
 	icon_state = "/obj/item/clothing/under/costume/buttondown/slacks/service"
 	greyscale_colors = "#EEEEEE#CBDBFC#17171B#222227"
 
+/obj/item/clothing/under/costume/buttondown/slacks/psychologist
+	icon_state = "/obj/item/clothing/under/costume/buttondown/slacks/psychologist"
+	greyscale_colors = "#EEEEEE#b8eede#17171B#222227"
+
 /obj/item/clothing/under/costume/buttondown/shorts
 	name = "button-down shirt with shorts"
 	desc = "A fancy button-down shirt with shorts."
@@ -360,6 +360,10 @@
 /obj/item/clothing/under/costume/buttondown/skirt/service //preset one to be a formal white shirt and black skirt
 	icon_state = "/obj/item/clothing/under/costume/buttondown/skirt/service"
 	greyscale_colors = "#EEEEEE#CBDBFC#17171B#222227"
+
+/obj/item/clothing/under/costume/buttondown/skirt/psychologist
+	icon_state = "/obj/item/clothing/under/costume/buttondown/skirt/psychologist"
+	greyscale_colors = "#EEEEEE#b8eede#17171B#222227"
 
 /obj/item/clothing/under/costume/jackbros
 	name = "jack bros outfit"

@@ -166,3 +166,6 @@
 #define DISPLAY_PRIORITY_SHUTTLE 40
 /// Emergency alerts that temporarily interrupt even shuttle displays (30 seconds then revert)
 #define DISPLAY_PRIORITY_EMERGENCY_TEMP 50
+
+#define MACHINE_FRAME_TYPE_DEFAULT "standard"
+#define MACHINE_FRAME_TYPE_SMALL "small"

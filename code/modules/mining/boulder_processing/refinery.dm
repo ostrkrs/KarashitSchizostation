@@ -16,7 +16,7 @@
 	if(!length(processable_materials))
 		processable_materials = list(
 			/datum/material/glass,
-			/datum/material/plasma,
+			/datum/material/phoron,
 			/datum/material/diamond,
 			/datum/material/bluespace,
 			/datum/material/bananium,

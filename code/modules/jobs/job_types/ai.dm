@@ -2,7 +2,7 @@
 	title = JOB_AI
 	description = "Assist the crew, follow your laws, coordinate your cyborgs."
 	auto_deadmin_role_flags = DEADMIN_POSITION_SILICON
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "your laws"
@@ -31,8 +31,6 @@
 			if(!R.connected_ai)
 				R.TryConnectToAI()
 	var/mob/living/silicon/ai/ai_spawn = spawned
-	if(player_client)
-		ai_spawn.set_gender(player_client)
 	ai_spawn.log_current_laws()
 
 
@@ -68,18 +66,10 @@
 	chosen_spawn_point.used = TRUE
 	return chosen_spawn_point
 
-/datum/job/ai/special_check_latejoin(client/C)
-	for(var/obj/structure/ai_core/latejoin_inactive/latejoin_core as anything in GLOB.latejoin_ai_cores)
-		if(latejoin_core.is_available())
-			return TRUE
-	return FALSE
-
-
 /datum/job/ai/announce_job(mob/living/joining_mob)
 	. = ..()
 	if(SSticker.HasRoundStarted())
 		minor_announce("[joining_mob] has been downloaded to an empty bluespace-networked AI core at [AREACOORD(joining_mob)].")
-
 
 /datum/job/ai/config_check()
 	return CONFIG_GET(flag/allow_ai)

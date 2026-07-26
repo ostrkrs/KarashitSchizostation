@@ -10,13 +10,16 @@
 	. = ..()
 	if(!. || (movement_type & FLOATING)) //floating is easy
 		return
-	if(nutrition <= 0 || stat == DEAD)
+	if(nutrition <= 0 || hydration <= 0 || stat == DEAD)
 		return
 	var/hunger_loss = HUNGER_FACTOR / 10
+	var/hydration_loss = THIRST_FACTOR / 10
 	if(move_intent == MOVE_INTENT_WALK)
 		hunger_loss *= 2
+		hydration_loss *= 2
 	if(move_intent == MOVE_INTENT_RUN)
 		hunger_loss *= 4
+		hydration_loss *= 4
 
 		if(getStaminaLoss() < 60)
 			adjustStaminaLoss(0.35)
@@ -24,6 +27,7 @@
 			adjustStaminaLoss(0.1)
 
 	adjust_nutrition(-1 * hunger_loss)
+	adjust_hydration(-1 * hydration_loss)
 
 /mob/living/carbon/set_usable_legs(new_value)
 	. = ..()

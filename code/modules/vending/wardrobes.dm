@@ -46,18 +46,12 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 	products = list(
 		/obj/item/clothing/head/beret/sec = 3,
 		/obj/item/clothing/head/soft/sec = 3,
-		/obj/item/clothing/head/costume/ushanka/sec = 3,
-		/obj/item/clothing/mask/bandana/striped/security = 3,
 		/obj/item/clothing/under/rank/security/officer = 3,
 		/obj/item/clothing/under/rank/security/officer/skirt = 3,
 		/obj/item/clothing/under/rank/security/officer/grey = 3,
-		/obj/item/clothing/under/pants/slacks = 3,
-		/obj/item/clothing/under/rank/security/officer/blueshirt = 3,
-		/obj/item/clothing/gloves/color/black/security/blu = 3,
-		/obj/item/clothing/suit/armor/vest/secjacket = 3,
-		/obj/item/clothing/suit/hooded/wintercoat/security = 3,
-		/obj/item/clothing/suit/armor/vest = 3,
+		/obj/item/clothing/under/rank/security/officer/formal = 3,
 		/obj/item/clothing/gloves/color/black/security = 3,
+		/obj/item/clothing/suit/hooded/wintercoat/security = 3,
 		/obj/item/clothing/shoes/jackboots/sec = 3,
 		/obj/item/storage/backpack/security = 3,
 		/obj/item/storage/backpack/satchel/sec = 3,
@@ -65,9 +59,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/storage/backpack/messenger/sec = 3,
 	)
 	premium = list(
-		/obj/item/clothing/under/rank/security/officer/formal = 3,
-		/obj/item/clothing/suit/jacket/officer/blue = 3,
-		/obj/item/clothing/head/beret/sec/navyofficer = 3,
+		/obj/item/clothing/suit/jacket/officer = 3,
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/sec_wardrobe
 	payment_department = ACCOUNT_SEC
@@ -84,7 +76,6 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 	vend_reply = "Thank you for using the MediDrobe!"
 	products = list(
 		/obj/item/clothing/accessory/pocketprotector = 4,
-		/obj/item/clothing/head/costume/nursehat = 4,
 		/obj/item/clothing/head/beret/medical = 4,
 		/obj/item/clothing/head/utility/surgerycap = 4,
 		/obj/item/clothing/head/utility/surgerycap/purple = 4,
@@ -212,7 +203,6 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/flatpack/mailsorter = 1,
 		/obj/item/clothing/under/rank/cargo/miner = 3,
 		/obj/item/clothing/under/rank/cargo/miner/lavaland = 3,
-		/obj/item/clothing/under/rank/cargo/bitrunner = 3,
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/cargo_wardrobe
 	payment_department = ACCOUNT_CAR
@@ -258,7 +248,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 	name = "SciDrobe"
 	desc = "A simple vending machine suitable to dispense well tailored science clothing. Endorsed by Space Cubans."
 	icon_state = "scidrobe"
-	product_ads = "Longing for the smell of plasma burnt flesh? Buy your science clothing now!;Made with 10% Auxetics, so you don't have to worry about losing your arm!"
+	product_ads = "Longing for the smell of phoron burnt flesh? Buy your science clothing now!;Made with 10% Auxetics, so you don't have to worry about losing your arm!"
 	vend_reply = "Thank you for using the SciDrobe!"
 	products = list(
 		/obj/item/clothing/accessory/pocketprotector = 3,
@@ -332,7 +322,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/clothing/under/rank/captain/suit/skirt = 1,
 		/obj/item/clothing/under/rank/civilian/head_of_personnel/suit = 1,
 		/obj/item/clothing/under/rank/civilian/head_of_personnel/suit/skirt = 1,
-		/obj/item/clothing/suit/toggle/lawyer/greyscale = 1,
+		/obj/item/clothing/suit/toggle/iaa/greyscale = 1,
 		/obj/item/storage/backpack/satchel/explorer = 1,
 		/obj/item/storage/backpack/messenger/explorer = 1,
 		/obj/item/storage/bag/books = 1,
@@ -409,13 +399,10 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/clothing/under/costume/buttondown/slacks/service = 2,
 		/obj/item/clothing/under/costume/buttondown/skirt/service = 2,
 		/obj/item/clothing/under/rank/civilian/purple_bartender = 2,
-		/obj/item/clothing/suit/toggle/lawyer/greyscale = 1,
-		/obj/item/clothing/suit/armor/vest/alt = 1,
+		/obj/item/clothing/suit/toggle/iaa/greyscale = 1,
 		/obj/item/clothing/shoes/sneakers/black = 2,
-		/obj/item/storage/belt/bandolier = 1,
 		/obj/item/storage/bag/money = 2,
 		/obj/item/storage/dice/hazard = 1,
-		/obj/item/storage/box/beanbag = 1,
 		/obj/item/circuitboard/machine/dish_drive = 1,
 		/obj/item/rag = 2,
 		/obj/item/radio/headset/headset_srv = 2,
@@ -477,7 +464,7 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 		/obj/item/clothing/shoes/galoshes = 2,
 		/obj/item/storage/belt/janitor = 2,
 		/obj/item/watertank/janitor = 1,
-		/obj/item/flashlight = 2,
+		/obj/item/flashlight/cell_powered = 2,
 		/obj/item/pushbroom = 2,
 		/obj/item/paint/paint_remover = 2,
 		/obj/item/melee/flyswatter = 2,
@@ -501,38 +488,37 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 
 /obj/machinery/vending/wardrobe/law_wardrobe
 	name = "LawDrobe"
-	desc = "Objection! This wardrobe dispenses the rule of law... and lawyer clothing."
+	desc = "Objection! This wardrobe dispenses the rule of law... and internal affairs agent clothing."
 	icon_state = "lawdrobe"
 	product_ads = "OBJECTION! Get the rule of law for yourself!"
 	vend_reply = "Thank you for using the LawDrobe!"
 	products = list(
-		/obj/item/clothing/accessory/lawyers_badge = 2,
+		/obj/item/clothing/accessory/iaa_badge = 2,
 		/obj/item/clothing/neck/tie = 3,
-		/obj/item/clothing/under/rank/civilian/lawyer/bluesuit = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/bluesuit/skirt = 1,
-		/obj/item/clothing/suit/toggle/lawyer = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/purpsuit = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/purpsuit/skirt = 1,
-		/obj/item/clothing/suit/toggle/lawyer/purple = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/bluesuit = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/bluesuit/skirt = 1,
+		/obj/item/clothing/suit/toggle/iaa = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/purpsuit = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/purpsuit/skirt = 1,
+		/obj/item/clothing/suit/toggle/iaa/purple = 1,
 		/obj/item/clothing/under/costume/buttondown/slacks/service = 1,
 		/obj/item/clothing/under/costume/buttondown/skirt/service = 1,
-		/obj/item/clothing/suit/toggle/lawyer/black = 1,
-		/obj/item/clothing/suit/toggle/lawyer/greyscale = 1,
+		/obj/item/clothing/suit/toggle/iaa/black = 1,
+		/obj/item/clothing/suit/toggle/iaa/greyscale = 1,
 		/obj/item/clothing/under/suit/black = 1,
 		/obj/item/clothing/under/suit/black/skirt = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/beige = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/beige/skirt = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/beige = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/beige/skirt = 1,
 		/obj/item/clothing/under/suit/black_really = 1,
 		/obj/item/clothing/under/suit/black_really/skirt = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/blue = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/blue/skirt = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/red = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/red/skirt = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/black = 1,
-		/obj/item/clothing/under/rank/civilian/lawyer/black/skirt = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/blue = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/blue/skirt = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/red = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/red/skirt = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/black = 1,
+		/obj/item/clothing/under/rank/civilian/iaa/black/skirt = 1,
 		/obj/item/clothing/shoes/laceup = 2,
 		/obj/item/radio/headset/headset_srv = 2,
-		/obj/item/storage/box/evidence = 2,
 		/obj/item/reagent_containers/cup/fish_feed = 1,
 	)
 	refill_canister = /obj/item/vending_refill/wardrobe/law_wardrobe
@@ -668,50 +654,38 @@ GLOBAL_VAR_INIT(roaches_deployed, FALSE)
 /obj/item/vending_refill/wardrobe/viro_wardrobe
 	machine_name = "ViroDrobe"
 
-/obj/machinery/vending/wardrobe/det_wardrobe
-	name = "\improper DetDrobe"
-	desc = "A machine for all your detective needs, as long as you need clothes."
+/obj/machinery/vending/wardrobe/criminalist
+	name = "\improper InvestDrobe"
+	desc = "A machine for all your criminalistic needs, as long as you need clothes."
 	icon_state = "detdrobe"
 	product_ads = "Apply your brilliant deductive methods in style!"
 	vend_reply = "Thank you for using the DetDrobe!"
 	products = list(
-		/obj/item/clothing/head/fedora/det_hat = 2,
-		/obj/item/clothing/under/rank/security/detective = 2,
-		/obj/item/clothing/under/rank/security/detective/skirt = 2,
-		/obj/item/clothing/suit/toggle/jacket/det_trench = 2,
-		/obj/item/clothing/suit/jacket/det_suit = 2,
+		/obj/item/clothing/head/fedora/criminalist = 2,
+		/obj/item/clothing/under/rank/security/criminalist = 2,
+		/obj/item/clothing/under/rank/security/criminalist/skirt = 2,
+		/obj/item/clothing/suit/toggle/jacket/criminalist_trench = 2,
+		/obj/item/clothing/suit/jacket/criminalist_suit = 2,
 		/obj/item/clothing/shoes/sneakers/brown = 2,
 		/obj/item/clothing/gloves/latex = 2,
 		/obj/item/clothing/gloves/color/black = 2,
 		/obj/item/clothing/accessory/waistcoat = 2,
-		/obj/item/clothing/under/rank/security/detective/noir = 2,
-		/obj/item/clothing/under/rank/security/detective/noir/skirt = 2,
+		/obj/item/clothing/under/rank/security/criminalist/noir = 2,
+		/obj/item/clothing/under/rank/security/criminalist/noir/skirt = 2,
 		/obj/item/clothing/shoes/laceup = 2,
 		/obj/item/clothing/head/fedora = 2,
-		/obj/item/clothing/suit/toggle/jacket/det_trench/noir = 1,
-		/obj/item/clothing/suit/jacket/det_suit/noir = 1,
-		/obj/item/clothing/neck/tie/disco = 1,
-		/obj/item/clothing/under/rank/security/detective/disco = 1,
-		/obj/item/clothing/suit/jacket/det_suit/disco = 1,
-		/obj/item/clothing/shoes/discoshoes = 1,
-		/obj/item/clothing/glasses/regular/kim = 1,
-		/obj/item/clothing/under/rank/security/detective/kim = 1,
-		/obj/item/clothing/suit/jacket/det_suit/kim = 1,
-		/obj/item/clothing/gloves/kim = 1,
-		/obj/item/clothing/shoes/kim = 1,
-		/obj/item/reagent_containers/cup/glass/flask/det = 2,
-		/obj/item/storage/fancy/cigarettes = 5,
-		/obj/item/storage/fancy/cigarettes/cigpack_candy = 5,
+		/obj/item/clothing/suit/toggle/jacket/criminalist_trench/noir = 1,
+		/obj/item/clothing/suit/jacket/criminalist_suit/noir = 1,
 	)
 	premium = list(
 		/obj/item/clothing/head/flatcap = 1,
 		/obj/item/clothing/glasses/sunglasses/noir = 1,
 	)
-	refill_canister = /obj/item/vending_refill/wardrobe/det_wardrobe
+	refill_canister = /obj/item/vending_refill/wardrobe/criminalist_wardrobe
 	extra_price = PAYCHECK_COMMAND * 1.75
 	payment_department = ACCOUNT_SEC
 
-/obj/item/vending_refill/wardrobe/det_wardrobe
+/obj/item/vending_refill/wardrobe/criminalist_wardrobe
 	machine_name = "DetDrobe"
 
 /obj/machinery/vending/wardrobe/cent_wardrobe

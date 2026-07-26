@@ -17,22 +17,12 @@
 	desc = "These handy darts can be filled up with any chemical and be shot with a shotgun! \
 		Prank your friends by shooting them with laughter! \
 		Not recommended for commercial use."
-	item = /obj/item/storage/box/large_dart
+	item = /obj/item/storage/box/ammo/large_darts
 
 	price_min = CARGO_CRATE_VALUE * 1.375
 	price_max = CARGO_CRATE_VALUE * 2.875
 	stock_max = 4
 	availability_prob = 40
-
-/datum/market_item/weapon/buckshot
-	name = "Box of Buckshot Shells"
-	desc = "It wasn't easy since buckshot is so heavily taxed nowadays, but we managed to find \
-		a large cache of it... somewhere. A word of caution, the stuff may be a tad old."
-	stock_max = 7
-	availability_prob = 35
-	item = /obj/effect/spawner/random/armory/buckshot/sketchy
-	price_min = CARGO_CRATE_VALUE * 1
-	price_max = CARGO_CRATE_VALUE * 3
 
 /datum/market_item/weapon/strilka
 	name = "Ammobox of .310 Strilka"
@@ -134,15 +124,6 @@
 	price_max = CARGO_CRATE_VALUE * 5
 	stock_max = 1
 	availability_prob = 25
-
-/datum/market_item/weapon/liberator
-	name = "illegal 3D printer designs"
-	desc = "Designs for a dirt cheap 3D printable gun, well known for exploding in unfortunate assistants' hands."
-	item = /obj/item/disk/design_disk/liberator
-	price_min = CARGO_CRATE_VALUE * 2
-	price_max = CARGO_CRATE_VALUE * 5
-	stock_max = 1
-	availability_prob = 35
 
 /datum/market_item/weapon/surplus_esword
 	name = "Type I 'Iaito' Energy Sword"

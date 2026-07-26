@@ -13,39 +13,30 @@
 	light_range = 1
 	light_power = 1.4
 	light_color = COLOR_SOFT_RED
-	ricochets_max = 50 //Honk!
+	ricochets_max = 50
 	ricochet_chance = 80
 	reflectable = TRUE
+	hitscan = TRUE
 	wound_bonus = -20
 	exposed_wound_bonus = 10
-
 
 /obj/projectile/beam/laser
 	tracer_type = /obj/effect/projectile/tracer/laser
 	muzzle_type = /obj/effect/projectile/muzzle/laser
 	impact_type = /obj/effect/projectile/impact/laser
 	wound_bonus = -20
-	damage = 25
-	exposed_wound_bonus = 40
+	damage = 20
+	exposed_wound_bonus = 20
 
-/obj/projectile/beam/laser/carbine
-	icon_state = "carbine_laser"
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/yellow_laser
-	damage = 10
-
-/obj/projectile/beam/laser/carbine/practice
+/obj/projectile/beam/laser/practice
 	name = "practice laser"
+	tracer_type = /obj/effect/projectile/tracer/solar
+	muzzle_type = /obj/effect/projectile/muzzle/solar
+	impact_type = /obj/effect/projectile/impact/solar
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/yellow_laser
-	damage = 0
-
-/obj/projectile/beam/laser/carbine/cybersun
-	name = "red plasma beam"
-	icon_state = "lava"
-	light_color = COLOR_DARK_RED
-	impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser
-	damage = 9
-	wound_bonus = -40
-	speed = 0.9
+	wound_bonus = 0
+	damage = 1
+	exposed_wound_bonus = 5
 
 //overclocked laser, does a bit more damage but has much higher wound power (-0 vs -20)
 /obj/projectile/beam/laser/hellfire
@@ -223,6 +214,7 @@
 	light_color = LIGHT_COLOR_GREEN
 	wound_bonus = -40
 	exposed_wound_bonus = 70
+	hitscan = FALSE
 
 /obj/projectile/beam/emitter/singularity_pull(atom/singularity, current_size)
 	return //don't want the emitters to miss
@@ -385,23 +377,25 @@
 	suit_types = list(/obj/item/clothing/suit/bluetag)
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/red_laser
 	light_color = COLOR_SOFT_RED
-	tracer_type = /obj/effect/projectile/tracer/laser
-	muzzle_type = /obj/effect/projectile/muzzle/laser
-	impact_type = /obj/effect/projectile/impact/laser
+	hitscan = FALSE
 
 /obj/projectile/beam/lasertag/redtag/hitscan
 	icon_state = null
+	tracer_type = /obj/effect/projectile/tracer/laser
+	muzzle_type = /obj/effect/projectile/muzzle/laser
+	impact_type = /obj/effect/projectile/impact/laser
 	hitscan = TRUE
 
 /obj/projectile/beam/lasertag/bluetag
 	icon_state = "bluelaser"
 	suit_types = list(/obj/item/clothing/suit/redtag)
-	tracer_type = /obj/effect/projectile/tracer/laser/blue
-	muzzle_type = /obj/effect/projectile/muzzle/laser/blue
-	impact_type = /obj/effect/projectile/impact/laser/blue
+	hitscan = FALSE
 
 /obj/projectile/beam/lasertag/bluetag/hitscan
 	icon_state = null
+	tracer_type = /obj/effect/projectile/tracer/laser/blue
+	muzzle_type = /obj/effect/projectile/muzzle/laser/blue
+	impact_type = /obj/effect/projectile/impact/laser/blue
 	hitscan = TRUE
 
 /obj/projectile/magic/shrink/alien

@@ -238,36 +238,18 @@
 	desc = "A special containment helmet designed for detectives, protecting them from burning alive, alongside other undesirables."
 	icon_state = "white_envirohelm"
 	inhand_icon_state = null
-	armor_type = /datum/armor/fedora_det_hat/plasmaman
-
-/datum/armor/fedora_det_hat/plasmaman
-	bio = 100
-	fire = 100
-	acid = 75
 
 /obj/item/clothing/head/helmet/space/plasmaman/security/warden
 	name = "warden's plasma envirosuit helmet"
 	desc = "A plasmaman containment helmet designed for the warden. A pair of white stripes being added to differeciate them from other members of security."
 	icon_state = "warden_envirohelm"
 	inhand_icon_state = null
-	armor_type = /datum/armor/hats_warden/plasmaman
-
-/datum/armor/hats_warden/plasmaman
-	bio = 100
-	fire = 100
-	acid = 75
 
 /obj/item/clothing/head/helmet/space/plasmaman/security/head_of_security
 	name = "head of security's plasma envirosuit helmet"
 	desc = "A special containment helmet designed for the Head of Security. A pair of gold stripes are added to differentiate them from other members of security."
 	icon_state = "hos_envirohelm"
 	inhand_icon_state = null
-	armor_type = /datum/armor/hats_hos/plasmaman
-
-/datum/armor/hats_hos/plasmaman
-	bio = 100
-	fire = 100
-	acid = 75
 
 /obj/item/clothing/head/helmet/space/plasmaman/prisoner
 	name = "prisoner's plasma envirosuit helmet"
@@ -431,24 +413,12 @@
 	desc = "A special containment helmet designed for the Head of Personnel. Embarrassingly enough, it looks way too much like the captain's design save for the red stripes."
 	icon_state = "hop_envirohelm"
 	inhand_icon_state = null
-	armor_type = /datum/armor/hats_hopcap/plasmaman
-
-/datum/armor/hats_hopcap/plasmaman
-	bio = 100
-	fire = 100
-	acid = 75
 
 /obj/item/clothing/head/helmet/space/plasmaman/captain
 	name = "captain's plasma envirosuit helmet"
 	desc = "A special containment helmet designed for the Captain. Embarrassingly enough, it looks way too much like the Head of Personnel's design save for the gold stripes. I mean, come on. Gold stripes can fix anything."
 	icon_state = "captain_envirohelm"
 	inhand_icon_state = null
-	armor_type = /datum/armor/hats_caphat/plasmaman
-
-/datum/armor/hats_caphat/plasmaman
-	bio = 100
-	fire = 100
-	acid = 75
 
 /obj/item/clothing/head/helmet/space/plasmaman/centcom_commander
 	name = "CentCom commander plasma envirosuit helmet"
@@ -480,8 +450,3 @@
 		or they've murdered one of your fellow badasses and have taken it from them as a trophy. Either way, anyone wearing this deserves at least a cursory nod of respect."
 	icon_state = "syndie_envirohelm"
 	inhand_icon_state = null
-
-/obj/item/clothing/head/helmet/space/plasmaman/bitrunner
-	name = "bitrunner's plasma envirosuit helmet"
-	desc = "An envirohelmet with extended blue light filters for bitrunning plasmamen."
-	icon_state = "bitrunner_envirohelm"

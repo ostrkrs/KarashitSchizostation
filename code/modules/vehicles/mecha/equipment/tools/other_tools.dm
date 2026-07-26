@@ -290,8 +290,8 @@
 
 
 /obj/item/mecha_parts/mecha_equipment/generator
-	name = "plasma engine"
-	desc = "An exosuit module that generates power using solid plasma as fuel."
+	name = "phoron engine"
+	desc = "An exosuit module that generates power using solid phoron as fuel."
 	icon_state = "tesla"
 	range = MECHA_MELEE
 	equipment_slot = MECHA_POWER
@@ -385,7 +385,7 @@
 
 ///Introduces the actual fuel type to be used, as well as the starting amount of said fuel
 /obj/item/mecha_parts/mecha_equipment/generator/proc/generator_init()
-	fuel = new /obj/item/stack/sheet/mineral/plasma(src, 1)
+	fuel = new /obj/item/stack/sheet/mineral/phoron(src, 1)
 
 /////////////////////////////////////////// THRUSTERS /////////////////////////////////////////////
 

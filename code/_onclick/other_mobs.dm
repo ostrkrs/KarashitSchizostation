@@ -28,7 +28,7 @@
 			to_chat(src, span_warning("Your [check_arm.name] is in no condition to be used."))
 			return FALSE
 
-		to_chat(src, span_notice("You look at your arm and sigh."))
+		to_chat(src, span_warning("Your [check_arm.name] is missing!"))
 		return FALSE
 
 	return TRUE

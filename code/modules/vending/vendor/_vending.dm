@@ -14,8 +14,6 @@
 	var/max_amount = 0
 	///The price of the item
 	var/price
-	///Whether spessmen with an ID with an age below AGE_MINOR (20 by default) can buy this item
-	var/age_restricted = FALSE
 	///Whether the product can be recolored by the GAGS system
 	var/colorable
 	/// The category the product was in, if any.
@@ -154,8 +152,6 @@
 	var/displayed_currency_icon = "coins"
 	///String of the used currency to display in the vendor UI
 	var/displayed_currency_name = " cr"
-	///Whether our age check is currently functional
-	var/age_restrictions = TRUE
 	/// How many credits does this vending machine have? 20% of all sales go to this pool, and are given freely when the machine is restocked, or successfully tilted. Lost on deconstruction.
 	var/credits_contained = 0
 	/**

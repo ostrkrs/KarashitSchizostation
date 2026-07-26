@@ -60,9 +60,8 @@ GLOBAL_LIST_EMPTY(virtual_pets_list)
 		/obj/item/clothing/head/hats/bowler = 2,
 		/obj/item/clothing/head/hats/warden/police = 2,
 		/obj/item/clothing/head/wizard/tape = 2,
-		/obj/item/clothing/head/utility/hardhat/cakehat/energycake = 2,
 		/obj/item/clothing/head/cowboy/bounty = 2,
-		/obj/item/clothing/head/hats/warden/red = 3,
+		/obj/item/clothing/head/hats/warden = 3,
 		/obj/item/clothing/head/hats/caphat = 3,
 		/obj/item/clothing/head/costume/crown/fancy = 3,
 	)
@@ -71,7 +70,6 @@ GLOBAL_LIST_EMPTY(virtual_pets_list)
 		/obj/item/clothing/head/soft/fishing_hat = /datum/award/achievement/skill/legendary_fisher,
 		/obj/item/cigarette/dart = /datum/award/achievement/misc/cigarettes,
 		/obj/item/clothing/head/wizard/tape = /datum/award/achievement/misc/grand_ritual_finale,
-		/obj/item/clothing/head/utility/hardhat/cakehat/energycake = /datum/award/achievement/misc/cayenne_disk,
 		/obj/item/clothing/head/cowboy/bounty = /datum/award/achievement/misc/hot_damn,
 		/obj/item/clothing/head/costume/crown/fancy = /datum/award/achievement/misc/debt_extinguished,
 	)

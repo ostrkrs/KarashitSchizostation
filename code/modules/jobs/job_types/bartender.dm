@@ -1,16 +1,16 @@
 /datum/job/bartender
 	title = JOB_BARTENDER
+	alt_titles = JOB_BARTENDER_ALT_TITLES
 	description = "Serve booze, mix drinks, keep the crew drunk."
 	department_head = list(JOB_HEAD_OF_PERSONNEL)
-	faction = FACTION_STATION
+	faction = FACTION_SHIP
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = SUPERVISOR_HOP
+	supervisors = SUPERVISOR_STEWARD
 	exp_granted_type = EXP_TYPE_CREW
 	config_tag = "BARTENDER"
 
 	outfit = /datum/outfit/job/bartender
-	plasmaman_outfit = /datum/outfit/plasmaman/bar
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV
@@ -23,13 +23,13 @@
 	family_heirlooms = list(/obj/item/rag, /obj/item/clothing/head/hats/tophat, /obj/item/reagent_containers/cup/glass/shaker)
 
 	mail_goodies = list(
-		/obj/item/storage/box/rubbershot = 30,
-		/obj/item/reagent_containers/cup/bottle/clownstears = 10,
-		/obj/item/stack/sheet/mineral/plasma = 10,
-		/obj/item/stack/sheet/mineral/uranium = 10,
+		/obj/item/storage/box/coffeepack = 10,
+		/obj/item/storage/box/coffeepack/robusta = 5,
+		/obj/item/reagent_containers/cup/bottle/ethanol = 5,
+		/obj/item/reagent_containers/cup/glass/bottle/beer = 10
 	)
 
-	job_flags = STATION_JOB_FLAGS
+	job_flags = SHIP_JOB_FLAGS
 	rpg_title = "Tavernkeeper"
 
 /datum/job/bartender/award_service(client/winner, award)
@@ -50,21 +50,11 @@
 	id_trim = /datum/id_trim/job/bartender
 	neck = /obj/item/clothing/neck/bowtie
 	uniform = /obj/item/clothing/under/costume/buttondown/slacks/service
-	suit = /obj/item/clothing/suit/armor/vest
-	backpack_contents = list(
-		/obj/item/storage/box/beanbag = 1,
-		)
 	belt = /obj/item/modular_computer/pda/bar
 	ears = /obj/item/radio/headset/headset_srv
-	glasses = /obj/item/clothing/glasses/sunglasses/reagent
 	shoes = /obj/item/clothing/shoes/laceup
+	box = /obj/item/storage/box/survival/bartender
 
-	skillchips = list(/obj/item/skillchip/drunken_brawler)
-
-/datum/outfit/job/bartender/post_equip(mob/living/carbon/human/H, visuals_only)
-	. = ..()
-
-	var/obj/item/card/id/W = H.wear_id
-	if(H.age < AGE_MINOR)
-		W.registered_age = AGE_MINOR
-		to_chat(H, span_notice("You're not technically old enough to access or serve alcohol, but your ID has been discreetly modified to display your age as [AGE_MINOR]. Try to keep that a secret!"))
+/datum/outfit/job/bartender/post_equip(mob/living/carbon/human/equipped, visuals_only = FALSE)
+	..()
+	ADD_TRAIT(equipped, TRAIT_DRUNKEN_BRAWLER, INNATE_TRAIT)

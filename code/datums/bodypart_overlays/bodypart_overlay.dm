@@ -4,7 +4,7 @@
 	///Sometimes we need multiple layers, for like the back, middle and front of the person (EXTERNAL_FRONT, EXTERNAL_ADJACENT, EXTERNAL_BEHIND)
 	var/layers
 	///List of all possible layers. Used for looping through in drawing
-	var/static/list/all_layers = list(EXTERNAL_FRONT, EXTERNAL_ADJACENT, EXTERNAL_BEHIND)
+	var/static/list/all_layers = list(EXTERNAL_FRONT, EXTERNAL_ABOVE_HAIR, EXTERNAL_ADJACENT, EXTERNAL_BEHIND)
 
 	///Key of the icon states of all the sprite_datums for easy caching
 	var/cache_key = ""
@@ -55,6 +55,8 @@
 			return "BEHIND"
 		if(-BODY_ADJ_LAYER)
 			return "ADJ"
+		if(-ABOVE_HAIR_LAYER)
+			return "ABOVE_HAIR"
 		if(-BODY_FRONT_LAYER)
 			return "FRONT"
 
@@ -65,6 +67,8 @@
 			return -BODY_BEHIND_LAYER
 		if(EXTERNAL_ADJACENT)
 			return -BODY_ADJ_LAYER
+		if(EXTERNAL_ABOVE_HAIR)
+			return -ABOVE_HAIR_LAYER
 		if(EXTERNAL_FRONT)
 			return -BODY_FRONT_LAYER
 

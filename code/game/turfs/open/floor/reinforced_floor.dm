@@ -110,9 +110,9 @@
 	name = "\improper CO2 floor"
 	initial_gas_mix = ATMOS_TANK_CO2
 
-/turf/open/floor/engine/plasma
-	name = "plasma floor"
-	initial_gas_mix = ATMOS_TANK_PLASMA
+/turf/open/floor/engine/phoron
+	name = "\improper Phoron floor"
+	initial_gas_mix = ATMOS_TANK_PHORON
 
 /turf/open/floor/engine/o2
 	name = "\improper O2 floor"

@@ -173,11 +173,11 @@
 	},
 /area/template_noop)
 "n" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/siding/white{
 	dir = 10
 	},
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /obj/item/storage/box/ingredients/wildcard,
@@ -381,11 +381,11 @@
 /turf/open/floor/iron/dark/textured,
 /area/template_noop)
 "z" = (
-/obj/effect/turf_decal/tile/neutral/fourcorners,
+/obj/effect/turf_decal/tile/neutral/full,
 /obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
-/obj/structure/closet/secure_closet/freezer/fridge{
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs{
 	locked = 0
 	},
 /obj/item/storage/box/ingredients/wildcard,

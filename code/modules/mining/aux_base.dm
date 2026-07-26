@@ -327,7 +327,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/computer/auxiliary_base, 32)
 	dwidth = 3
 	width = 7
 	height = 5
-	area_type = /area/station/construction/mining/aux_base
+	area_type = /area/station/engineering/construction
 
 /obj/structure/mining_shuttle_beacon
 	name = "mining shuttle beacon"

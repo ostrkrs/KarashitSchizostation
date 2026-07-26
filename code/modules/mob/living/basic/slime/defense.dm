@@ -25,8 +25,8 @@
 
 /mob/living/basic/slime/attackby(obj/item/attacking_item, mob/living/user, list/modifiers, list/attack_modifiers)
 
-	//Lets you feed slimes plasma. Checks before the passthrough force check
-	if(istype(attacking_item, /obj/item/stack/sheet/mineral/plasma) && stat == CONSCIOUS)
+	//Lets you feed slimes phoron. Checks before the passthrough force check
+	if(istype(attacking_item, /obj/item/stack/sheet/mineral/phoron) && stat == CONSCIOUS)
 		use_sheet(attacking_item, user)
 		return
 
@@ -64,10 +64,10 @@
 	if(prob(10 + force_effect))
 		discipline_slime()
 
-///Handles feeding a sheet of plasma to a slime
-/mob/living/basic/slime/proc/use_sheet(obj/item/stack/sheet/mineral/plasma/delicious_sheet, mob/living/user)
+///Handles feeding a sheet of phoron to a slime
+/mob/living/basic/slime/proc/use_sheet(obj/item/stack/sheet/mineral/phoron/delicious_sheet, mob/living/user)
 	befriend(user)
-	to_chat(user, span_notice("You feed the slime the plasma. It chirps happily."))
+	to_chat(user, span_notice("You feed the slime the phoron. It chirps happily."))
 	delicious_sheet.use(1)
 	new /obj/effect/temp_visual/heart(loc)
 	return

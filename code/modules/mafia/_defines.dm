@@ -36,7 +36,7 @@
 #define TOWN_OVERFLOW "town overflow"
 /// roles that learn info about others in the game (chaplain, detective, psych)
 #define TOWN_INVEST "town invest"
-/// roles that keep other roles safe (doctor, sec officer, and weirdly enough lawyer counts)
+/// roles that keep other roles safe (doctor, sec officer, and weirdly enough IAA counts)
 #define TOWN_PROTECT "town protect"
 /// roles that are only there to kill bad guys.
 #define TOWN_KILLING "town killing"
@@ -98,7 +98,7 @@
 #define COMSIG_MAFIA_NIGHT_PRE_ACTION_PHASE "night_start"
 ///Sends the signal that all regular actions must go, such as
 #define COMSIG_MAFIA_NIGHT_ACTION_PHASE "night_actions"
-/// now killing happens from the roles that do that. the reason this is post action phase is to ensure doctors can protect and lawyers can block
+/// now killing happens from the roles that do that. the reason this is post action phase is to ensure doctors can protect and IAAs can block
 #define COMSIG_MAFIA_NIGHT_KILL_PHASE "night_kill"
 /// now clearing refs to prepare for the next day. Do not do any actions here, it's just for ref clearing.
 #define COMSIG_MAFIA_NIGHT_END "night_end"

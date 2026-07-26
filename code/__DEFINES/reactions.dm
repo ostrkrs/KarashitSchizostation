@@ -40,21 +40,21 @@
 /// Amount of heat released per mole of burnt carbon into the tile
 #define FIRE_CARBON_ENERGY_RELEASED 1e5
 
-// - Plasma:
-/// Minimum temperature to burn plasma
-#define PLASMA_MINIMUM_BURN_TEMPERATURE FIRE_MINIMUM_TEMPERATURE_TO_EXIST
-/// Upper temperature ceiling for plasmafire reaction calculations for fuel consumption
-#define PLASMA_UPPER_TEMPERATURE (PLASMA_MINIMUM_BURN_TEMPERATURE + 1270)
-/// The maximum and default amount of plasma consumed as oxydizer per mole of plasma burnt.
+// - Phoron:
+/// Minimum temperature to burn phoron
+#define PHORON_MINIMUM_BURN_TEMPERATURE FIRE_MINIMUM_TEMPERATURE_TO_EXIST
+/// Upper temperature ceiling for phoron fire reaction calculations for fuel consumption
+#define PHORON_UPPER_TEMPERATURE (PHORON_MINIMUM_BURN_TEMPERATURE + 1270)
+/// The maximum and default amount of phoron consumed as oxydizer per mole of phoron burnt.
 #define OXYGEN_BURN_RATIO_BASE 1.4
-/// Multiplier for plasmafire with O2 moles * PLASMA_OXYGEN_FULLBURN for the maximum fuel consumption
-#define PLASMA_OXYGEN_FULLBURN 10
-/// The minimum ratio of oxygen to plasma necessary to start producing tritium.
+/// Multiplier for phoron fire with O2 moles * PHORON_OXYGEN_FULLBURN for the maximum fuel consumption
+#define PHORON_OXYGEN_FULLBURN 10
+/// The minimum ratio of oxygen to phoron necessary to start producing tritium.
 #define SUPER_SATURATION_THRESHOLD 96
-/// The divisor for the maximum plasma burn rate. (1/9 of the plasma can burn in one reaction tick.)
-#define PLASMA_BURN_RATE_DELTA 9
-/// Amount of heat released per mole of burnt plasma into the tile
-#define FIRE_PLASMA_ENERGY_RELEASED 3e6
+/// The divisor for the maximum phoron burn rate. (1/9 of the phoron can burn in one reaction tick.)
+#define PHORON_BURN_RATE_DELTA 9
+/// Amount of heat released per mole of burnt phoron into the tile
+#define FIRE_PHORON_ENERGY_RELEASE 3e6
 
 // - Hydrogen:
 /// The minimum temperature hydrogen combusts at.
@@ -130,7 +130,7 @@
 // BZ:
 /// The maximum temperature BZ can form at. Deliberately set lower than the minimum burn temperature for most combustible gases in an attempt to prevent long fuse singlecaps.
 #define BZ_FORMATION_MAX_TEMPERATURE (FIRE_MINIMUM_TEMPERATURE_TO_EXIST - 60) // Yes, someone used this as a bomb timer. I hate players.
-/// The amount of energy 1 mole of BZ forming from N2O and plasma releases.
+/// The amount of energy 1 mole of BZ forming from N2O and phoron releases.
 #define BZ_FORMATION_ENERGY 80000
 
 // Pluoxium:
@@ -159,9 +159,9 @@
 #define NITRIUM_DECOMPOSITION_ENERGY 30000
 
 // Freon:
-/// The minimum temperature freon can form from plasma, CO2, and BZ at.
+/// The minimum temperature freon can form from phoron, CO2, and BZ at.
 #define FREON_FORMATION_MIN_TEMPERATURE (FIRE_MINIMUM_TEMPERATURE_TO_EXIST + 100)
-/// The amount of energy 2.5 moles of freon forming from plasma, CO2, and BZ consumes.
+/// The amount of energy 2.5 moles of freon forming from phoron, CO2, and BZ consumes.
 #define FREON_FORMATION_ENERGY 100
 
 // H-Nob:

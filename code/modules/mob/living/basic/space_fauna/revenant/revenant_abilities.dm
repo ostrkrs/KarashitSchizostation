@@ -165,7 +165,7 @@
 	if(victim.type == /turf/closed/wall && prob(15) && !HAS_TRAIT(victim, TRAIT_RUSTY))
 		new /obj/effect/temp_visual/revenant(victim)
 		victim.AddElement(/datum/element/rust)
-	if(victim.type == /turf/closed/wall/r_wall && prob(10) && !HAS_TRAIT(victim, TRAIT_RUSTY))
+	if(victim.type == /turf/closed/wall/reinforced && prob(10) && !HAS_TRAIT(victim, TRAIT_RUSTY))
 		new /obj/effect/temp_visual/revenant(victim)
 		victim.AddElement(/datum/element/rust)
 	for(var/obj/machinery/shower/cursed_shower in victim)
@@ -275,7 +275,7 @@
 					to_chat(H, span_revenminor("You feel [pick("suddenly sick", "a surge of nausea", "like your skin is <i>wrong</i>")]."))
 			else
 				if(mob.reagents)
-					mob.reagents.add_reagent(/datum/reagent/toxin/plasma, 5)
+					mob.reagents.add_reagent(/datum/reagent/toxin/phoron, 5)
 		else
 			mob.adjustToxLoss(5)
 	for(var/obj/structure/spacevine/vine in victim) //Fucking with botanists, the ability.

@@ -153,7 +153,7 @@
 				Backup exit route protocol decrypted. Calibrating route...",
 			"Emergency Shuttle", TRUE) // wait out until the rift on the station gets destroyed and the final message plays
 		var/list/mobs = mobs_in_area_type(list(/area/shuttle/escape))
-		for(var/mob/living/mob as anything in mobs) // emulate mob/living/lateShuttleMove() behaviour
+		for(var/mob/living/mob as anything in mobs)
 			if(mob.buckled)
 				continue
 			if(mob.client)
@@ -203,7 +203,7 @@
 	sleep(25 SECONDS)
 
 	priority_announce("[Gibberish("All attempts at evacuation have now ceased, and all assets have been retrieved from your sector.\n \
-		To the remaining survivors of [station_name()], farewell.", FALSE, 5)]")
+		To the remaining survivors of [ship_name()], farewell.", FALSE, 5)]")
 
 	if(SSshuttle.emergency.mode == SHUTTLE_ESCAPE)
 		// special message for hijacks

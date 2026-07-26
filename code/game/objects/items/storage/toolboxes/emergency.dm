@@ -3,15 +3,14 @@
 	icon_state = "red"
 	inhand_icon_state = "toolbox_red"
 	material_flags = NONE
-	throw_speed = 3 // red ones go faster
 
 /obj/item/storage/toolbox/emergency/PopulateContents()
-	new /obj/item/crowbar/red(src)
+	new /obj/item/crowbar/small/red(src)
 	new /obj/item/weldingtool/fueled/mini(src)
 	new /obj/item/extinguisher/mini(src)
 	switch(rand(1,3))
 		if(1)
-			new /obj/item/flashlight(src)
+			new /obj/item/flashlight/cell_powered(src)
 		if(2)
 			new /obj/item/flashlight/glowstick(src)
 		if(3)

@@ -5,7 +5,7 @@
 		/obj/item/popsicle_stick,
 		/obj/item/stack/rods,
 	)
-	crafting_flags = parent_type::crafting_flags | CRAFT_TRANSFERS_REAGENTS | CRAFT_CLEARS_REAGENTS | CRAFT_ENFORCE_MATERIALS_PARITY
+	crafting_flags = parent_type::crafting_flags | CRAFT_TRANSFERS_REAGENT_COMPONENTS | CRAFT_CLEARS_REAGENTS | CRAFT_ENFORCE_MATERIALS_PARITY
 	///The food types that are added to the result when the recipe is completed
 	var/added_foodtypes = NONE
 	///The food types that are removed to the result when the recipe is completed
@@ -199,6 +199,12 @@
 	mix_message = "The ingredients form a rice dough."
 	reaction_flags = REACTION_INSTANT
 	resulting_food_path = /obj/item/food/rice_dough
+
+/datum/chemical_reaction/food/korta_dough
+	required_reagents = list(/datum/reagent/water = 10, /datum/reagent/consumable/korta_flour = 15)
+	mix_message = "The ingredients form a korta dough."
+	reaction_flags = REACTION_INSTANT
+	resulting_food_path = /obj/item/food/korta_dough
 
 /datum/chemical_reaction/food/cakebatter
 	required_reagents = list(/datum/reagent/consumable/eggyolk = 6, /datum/reagent/consumable/eggwhite = 12, /datum/reagent/consumable/flour = 15, /datum/reagent/consumable/sugar = 5)

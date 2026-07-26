@@ -15,7 +15,7 @@
 "al" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/cargo)
 "am" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
@@ -72,7 +72,7 @@
 "aF" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/crew)
 "aG" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
@@ -171,7 +171,6 @@
 /turf/open/floor/catwalk_floor/iron_dark,
 /area/shuttle/abandoned/cargo)
 "dN" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/mining,
 /obj/machinery/light/small/broken/directional/west,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/titanium/white,
@@ -355,7 +354,6 @@
 /turf/open/floor/wood,
 /area/shuttle/abandoned/bar)
 "nx" = (
-/obj/structure/closet/secure_closet/freezer/kitchen/maintenance,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/firealarm/directional/west,
@@ -407,7 +405,7 @@
 "pr" = (
 /obj/structure/cable,
 /obj/machinery/power/tracker,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/crew)
 "pw" = (
 /obj/structure/cable/multilayer/connected,
@@ -521,7 +519,7 @@
 "yD" = (
 /obj/structure/cable,
 /obj/machinery/power/tracker,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/engine)
 "yX" = (
 /obj/machinery/suit_storage_unit/spaceruin,
@@ -563,7 +561,7 @@
 /area/shuttle/abandoned/cargo)
 "Bq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/firecloset/full,
+/obj/structure/closet/firecloset,
 /turf/open/floor/pod/dark,
 /area/shuttle/abandoned/cargo)
 "BN" = (
@@ -614,7 +612,7 @@
 	},
 /obj/machinery/firealarm/directional/south,
 /obj/structure/closet/crate/engineering/electrical,
-/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/phoron/thirty,
 /turf/open/floor/plating,
 /area/shuttle/abandoned/engine)
 "DC" = (
@@ -724,7 +722,7 @@
 "Id" = (
 /obj/structure/cable,
 /obj/machinery/power/solar,
-/turf/open/floor/iron/solarpanel/airless,
+/turf/open/floor/plating/airless,
 /area/shuttle/abandoned/engine)
 "Im" = (
 /obj/structure/table/reinforced,
@@ -774,7 +772,7 @@
 /turf/open/floor/pod/dark,
 /area/shuttle/abandoned/cargo)
 "Li" = (
-/obj/structure/closet/secure_closet/freezer/meat/open,
+/obj/structure/closet/secure_closet/freezer/meat/all_access,
 /obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -882,10 +880,10 @@
 /area/shuttle/abandoned/cargo)
 "Sw" = (
 /obj/item/toy/plush/lizard_plushie/green{
-	name = "Smuggles-The-Plasma";
+	name = "Smuggles-The-Fent";
 	pixel_y = 14
 	},
-/obj/item/stack/sheet/mineral/plasma,
+/obj/item/stack/sheet/mineral/phoron,
 /obj/structure/closet/crate,
 /obj/machinery/light/broken/directional/north,
 /turf/open/floor/pod/dark,

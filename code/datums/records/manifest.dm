@@ -103,7 +103,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 
 
 /// Injects a record into the manifest.
-/datum/manifest/proc/inject(mob/living/carbon/human/person, atom/appearance_proxy)
+/datum/manifest/proc/inject(mob/living/carbon/human/person, atom/appearance_proxy, client/person_client)
 	set waitfor = FALSE
 	if(!(person.mind?.assigned_role.job_flags & JOB_CREW_MANIFEST))
 		return
@@ -121,6 +121,8 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 	var/datum/dna/stored/record_dna = new()
 	person.dna.copy_dna(record_dna)
 
+	var/chosen_assignment = person_client?.prefs.alt_job_titles[assignment] || assignment
+
 	var/datum/record/locked/lockfile = new(
 		age = person.age,
 		blood_type = person.get_bloodtype()?.name || "UNKNOWN",
@@ -130,7 +132,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 		gender = person_gender,
 		initial_rank = assignment,
 		name = person.real_name,
-		rank = assignment,
+		rank = chosen_assignment,
 		species = record_dna.species.name,
 		trim = assignment,
 		// Locked specifics
@@ -147,7 +149,7 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 		gender = person_gender,
 		initial_rank = assignment,
 		name = person.real_name,
-		rank = assignment,
+		rank = chosen_assignment,
 		species = record_dna.species.name,
 		trim = assignment,
 		// Crew specific
@@ -217,7 +219,12 @@ GLOBAL_DATUM_INIT(manifest, /datum/manifest, new)
 			if(open_slots < 1)
 				continue
 			open += open_slots
-		positions[department.department_name] = list("exceptions" = exceptions, "open" = open)
+		positions[department.department_name] = list(
+			"exceptions" = exceptions,
+			"open" = open,
+			"color" = department.ui_color,
+			"ui_color" = department.ui_color,
+		)
 
 	return list(
 		"manifest" = get_manifest(),

@@ -465,7 +465,7 @@
 	var/obj/item/reagent_containers/cup/beaker/beaker_two = new(src)
 
 	beaker_one.reagents.add_reagent(/datum/reagent/phosphorus, 25)
-	beaker_two.reagents.add_reagent(/datum/reagent/stable_plasma, 25)
+	beaker_two.reagents.add_reagent(/datum/reagent/stable_phoron, 25)
 	beaker_two.reagents.add_reagent(/datum/reagent/toxin/acid, 25)
 
 	beakers += beaker_one

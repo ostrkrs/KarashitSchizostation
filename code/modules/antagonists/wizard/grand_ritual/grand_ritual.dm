@@ -61,13 +61,11 @@
 		/area/station/cargo,
 		/area/station/command,
 		/area/station/commons,
-		/area/station/construction,
+		/area/station/engineering/construction,
 		/area/station/engineering,
 		/area/station/maintenance/disposal,
-		/area/station/maintenance/radshelter,
-		/area/station/maintenance/tram,
 		/area/station/medical,
-		/area/station/science,
+		/area/station/research,
 		/area/station/security,
 		/area/station/service,
 	))
@@ -75,11 +73,11 @@
 	var/static/list/area_blacklist = typecacheof(list(
 		/area/station/engineering/supermatter,
 		/area/station/engineering/transit_tube,
-		/area/station/science/ordnance/bomb,
-		/area/station/science/ordnance/burnchamber,
-		/area/station/science/ordnance/freezerchamber,
-		/area/station/science/server,
-		/area/station/security/prison/safe,
+		/area/station/research/ordnance/bomb,
+		/area/station/research/ordnance/burnchamber,
+		/area/station/research/ordnance/freezerchamber,
+		/area/station/research/server,
+		/area/station/security/prison/cells,
 	))
 
 /datum/action/cooldown/grand_ritual/IsAvailable(feedback)

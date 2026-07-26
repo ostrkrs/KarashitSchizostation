@@ -13,10 +13,6 @@
 /obj/effect/turf_decal/caution,
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
-"cF" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/south,
-/turf/open/indestructible/rockyground,
-/area/deathmatch)
 "cH" = (
 /obj/structure/table,
 /obj/item/food/meatball{
@@ -141,13 +137,6 @@
 /obj/item/storage/medkit/advanced,
 /turf/open/indestructible/dark,
 /area/deathmatch)
-"jy" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
-/obj/structure/mystery_box/tdome{
-	pixel_y = 0
-	},
-/turf/open/indestructible/stone,
-/area/deathmatch)
 "jH" = (
 /turf/open/indestructible/dark,
 /area/deathmatch)
@@ -165,7 +154,6 @@
 /area/deathmatch)
 "ms" = (
 /obj/effect/spawner/random/trash/hobo_squat,
-/obj/item/gun/ballistic/automatic/pistol/m1911,
 /obj/item/clothing/suit/armor/vest/alt,
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
@@ -295,7 +283,6 @@
 /area/deathmatch)
 "Bf" = (
 /obj/item/clothing/suit/armor/vest/alt,
-/obj/item/gun/ballistic/revolver/nagant,
 /obj/item/suppressor,
 /obj/structure/closet/crate/cardboard,
 /turf/open/indestructible/rockyground,
@@ -376,9 +363,9 @@
 "EL" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/shotgun/lethal,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /obj/item/gun/ballistic/shotgun/lethal,
-/obj/item/storage/box/lethalshot,
+/obj/item/storage/box/ammo/buckshot,
 /turf/open/indestructible/stone,
 /area/deathmatch)
 "EZ" = (
@@ -435,7 +422,7 @@
 /area/deathmatch)
 "KL" = (
 /obj/structure/barricade/security/murderdome,
-/obj/effect/turf_decal/siding/thinplating/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/indestructible/rockyground,
@@ -546,7 +533,7 @@
 /area/deathmatch)
 "TE" = (
 /obj/machinery/light/floor,
-/obj/effect/turf_decal/siding/thinplating/light{
+/obj/effect/turf_decal/siding/white{
 	dir = 8
 	},
 /turf/open/indestructible/rockyground,
@@ -578,17 +565,13 @@
 /obj/effect/light_emitter/fake_outdoors,
 /turf/open/indestructible/rockyground,
 /area/deathmatch)
-"Yg" = (
-/obj/structure/sign/poster/contraband/donk_co/directional/north,
-/turf/open/indestructible/stone,
-/area/deathmatch)
 "YU" = (
 /obj/structure/barricade/wooden,
 /obj/structure/barricade/wooden/crude,
 /turf/open/indestructible/plating,
 /area/deathmatch)
 "YV" = (
-/obj/structure/closet/secure_closet/freezer/fridge/all_access,
+/obj/structure/closet/secure_closet/freezer/milk_cheese_eggs/all_access,
 /obj/item/reagent_containers/condiment/bbqsauce,
 /obj/item/reagent_containers/condiment/bbqsauce,
 /turf/open/indestructible/stone,
@@ -1002,9 +985,9 @@ NZ
 Bf
 Oz
 Oz
-cF
+Oz
 Qa
-jy
+Eb
 hN
 RX
 hN
@@ -1132,9 +1115,9 @@ xp
 Qa
 Oz
 Oz
-cF
+Oz
 Qa
-Yg
+hN
 uW
 hN
 hN

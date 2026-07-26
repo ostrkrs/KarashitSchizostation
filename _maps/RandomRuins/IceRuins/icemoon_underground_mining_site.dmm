@@ -241,7 +241,7 @@
 /area/icemoon/underground/explored)
 "EM" = (
 /obj/structure/closet/crate/preopen,
-/obj/item/stack/ore/plasma,
+/obj/item/stack/ore/phoron,
 /obj/item/stack/ore/iron,
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)

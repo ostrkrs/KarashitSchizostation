@@ -1,7 +1,7 @@
 /// Lets a mob walk cliffs and keeps track of if they're alive or not to add/remove the trait
 /datum/element/cliff_walking
 
-/datum/element/cliff_walking/Attach(datum/target, climb_time, climb_stun)
+/datum/element/cliff_walking/Attach(datum/target, climb_time)
 	. = ..()
 
 	if(!isliving(target))

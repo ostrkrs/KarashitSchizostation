@@ -57,19 +57,20 @@
 #define FEATURE_MUTANT_COLOR "mcolor"
 #define FEATURE_ETHEREAL_COLOR "ethcolor"
 #define FEATURE_SERPENTID_COLOR "serpcolor"
+#define FEATURE_CAVER_COLOR "cavercolor"
 #define FEATURE_EARS "ears"
-#define FEATURE_TAIL "tail_cat"
 #define FEATURE_TAIL_LIZARD "tail_lizard"
+#define FEATURE_TAIL_CAVER "tail_caver"
 #define FEATURE_TAIL_FISH "fish_tail"
 #define FEATURE_SNOUT "snout"
 #define FEATURE_LIZARD_MARKINGS "marking_lizard"
 #define FEATURE_HORNS "horns"
+#define FEATURE_BONEPLATE "boneplate"
 #define FEATURE_FRILLS "frills"
 #define FEATURE_SPINES "spines"
 #define FEATURE_MOTH_WINGS "moth_wings"
 #define FEATURE_MOTH_ANTENNAE "moth_antennae"
 #define FEATURE_MOTH_MARKINGS "moth_markings"
-#define FEATURE_MUSH_CAP "caps"
 #define FEATURE_POD_HAIR "pod_hair"
 
 // Other
@@ -77,7 +78,6 @@
 #define FEATURE_TAIL_MONKEY "tail_monkey"
 #define FEATURE_TAIL_XENO "tail_xeno"
 #define FEATURE_TAILSPINES "tailspines" // Different from regular spines, these appear on tails
-#define FEATURE_LEGS "legs"
 
 ///flag for the transfer_flag argument from dna/proc/copy_dna(). This one makes it so the SE is copied too.
 #define COPY_DNA_SE (1<<0)
@@ -130,7 +130,7 @@
 #define ORGAN_SLOT_XENO_EGGSAC "eggsac"
 #define ORGAN_SLOT_XENO_HIVENODE "hive_node"
 #define ORGAN_SLOT_XENO_NEUROTOXINGLAND "neurotoxin_gland"
-#define ORGAN_SLOT_XENO_PLASMAVESSEL "plasma_vessel"
+#define ORGAN_SLOT_XENO_PHORONVESSEL "phoron_vessel"
 #define ORGAN_SLOT_XENO_RESINSPINNER "resin_spinner"
 
 //organ defines
@@ -181,7 +181,7 @@ GLOBAL_LIST_INIT(organ_process_order, list(
 	ORGAN_SLOT_BRAIN_CNS,
 	ORGAN_SLOT_PARASITE_EGG,
 	ORGAN_SLOT_MONSTER_CORE,
-	ORGAN_SLOT_XENO_PLASMAVESSEL,
+	ORGAN_SLOT_XENO_PHORONVESSEL,
 	ORGAN_SLOT_XENO_HIVENODE,
 	ORGAN_SLOT_XENO_RESINSPINNER,
 	ORGAN_SLOT_XENO_ACIDGLAND,
@@ -210,7 +210,7 @@ GLOBAL_LIST_INIT(organ_process_order, list(
 #define GOLEM_FOOD_GLASS "golem_food_glass"
 #define GOLEM_FOOD_URANIUM "golem_food_uranium"
 #define GOLEM_FOOD_SILVER "golem_food_silver"
-#define GOLEM_FOOD_PLASMA "golem_food_plasma"
+#define GOLEM_FOOD_PHORON "golem_food_phoron"
 #define GOLEM_FOOD_GOLD "golem_food_gold"
 #define GOLEM_FOOD_DIAMOND "golem_food_diamond"
 #define GOLEM_FOOD_TITANIUM "golem_food_titanium"
@@ -226,7 +226,7 @@ GLOBAL_LIST_INIT(golem_stack_food_types, list(
 	GOLEM_FOOD_GLASS = new /datum/golem_food_buff/glass(),
 	GOLEM_FOOD_URANIUM = new /datum/golem_food_buff/uranium(),
 	GOLEM_FOOD_SILVER = new /datum/golem_food_buff/silver(),
-	GOLEM_FOOD_PLASMA = new /datum/golem_food_buff/plasma(),
+	GOLEM_FOOD_PHORON = new /datum/golem_food_buff/phoron(),
 	GOLEM_FOOD_GOLD = new /datum/golem_food_buff/gold(),
 	GOLEM_FOOD_DIAMOND = new /datum/golem_food_buff/diamond(),
 	GOLEM_FOOD_TITANIUM = new /datum/golem_food_buff/titanium(),
@@ -248,8 +248,8 @@ GLOBAL_LIST_INIT(golem_stack_food_directory, list(
 	/obj/item/stack/ore/uranium = GLOB.golem_stack_food_types[GOLEM_FOOD_URANIUM],
 	/obj/item/stack/sheet/mineral/silver = GLOB.golem_stack_food_types[GOLEM_FOOD_SILVER],
 	/obj/item/stack/ore/silver = GLOB.golem_stack_food_types[GOLEM_FOOD_SILVER],
-	/obj/item/stack/sheet/mineral/plasma = GLOB.golem_stack_food_types[GOLEM_FOOD_PLASMA],
-	/obj/item/stack/ore/plasma = GLOB.golem_stack_food_types[GOLEM_FOOD_PLASMA],
+	/obj/item/stack/sheet/mineral/phoron = GLOB.golem_stack_food_types[GOLEM_FOOD_PHORON],
+	/obj/item/stack/ore/phoron = GLOB.golem_stack_food_types[GOLEM_FOOD_PHORON],
 	/obj/item/stack/sheet/mineral/gold = GLOB.golem_stack_food_types[GOLEM_FOOD_GOLD],
 	/obj/item/stack/ore/gold = GLOB.golem_stack_food_types[GOLEM_FOOD_GOLD],
 	/obj/item/stack/sheet/mineral/diamond = GLOB.golem_stack_food_types[GOLEM_FOOD_DIAMOND],

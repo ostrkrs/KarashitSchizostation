@@ -36,7 +36,7 @@
 	icon_state = "commission_nt"
 	layer = BELOW_OPEN_DOOR_LAYER
 
-// Started working on /TG/Voyagers Oct 3, 2025
+// Started working on Andromedae Voyagers Oct 3, 2025
 /obj/structure/plaque/static_plaque/golden/voyager
 	name = "Golden Disk"
 	desc = "Spinward Sector Science Vessel\n'Voyager' Class Ship\nCommissioned 03/10/2256\n'Dedicated to the Pioneers'"
@@ -45,33 +45,9 @@
 
 //Current stations
 
-// Birdshot: added Apr 29, 2023 (#74371)
-/obj/structure/plaque/static_plaque/golden/commission/birdshot
-	desc = "Spinward Sector Station SS-13\n'Birdshot' Class Outpost\nCommissioned 29/04/2563\n'Shooting for the Stars'"
-
-// Deltastation: added Dec 17, 2016 (#22066)
-/obj/structure/plaque/static_plaque/golden/commission/delta
-	desc = "Spinward Sector Station SS-13\n'Delta' Class Outpost\nCommissioned 17/12/2556\n'Efficiency Through Redundancy'"
-
-// Icebox Station: added May 13, 2020 (#51090)
-/obj/structure/plaque/static_plaque/golden/commission/icebox
-	desc = "Spinward Sector Station SS-13\n'Box' Class Outpost (Revision 2.2: 'Icebox')\nCommissioned 13/05/2560\n'Cold Reliable'"
-
 // Metastation: added Mar 11, 2013 (best estimate, pre-git)
 /obj/structure/plaque/static_plaque/golden/commission/meta
 	desc = "Spinward Sector Station SS-13\n'Meta' Class Outpost\nCommissioned 11/03/2553\n'Theseus' Station'"
-
-// Nebulastation: added Nov 6, 2024 (#84826)
-/obj/structure/plaque/static_plaque/golden/commission/nebula
-	desc = "Spinward Sector Station SS-13\n'Nebula' Class Outpost\nCommissioned 06/11/2564\n'The New Future'"
-
-// Tramstation: added Mar 11, 2021 (#56509)
-/obj/structure/plaque/static_plaque/golden/commission/tram
-	desc = "Spinward Sector Station SS-13\n'Tram' Class Outpost\nCommissioned 11/03/2561\n'Making Moves'"
-
-// Wawastation: added Jun 4, 2024 (#82298)
-/obj/structure/plaque/static_plaque/golden/commission/wawa
-	desc = "Spinward Sector Station SS-13\n'Wawa' Class Outpost\nCommissioned 04/06/2564\n'Forever Vertical'"
 
 //Removed stations
 

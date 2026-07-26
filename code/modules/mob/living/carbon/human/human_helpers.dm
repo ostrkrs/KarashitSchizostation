@@ -242,12 +242,12 @@
 
 ///copies over clothing preferences like underwear to another human
 /mob/living/carbon/human/proc/copy_clothing_prefs(mob/living/carbon/human/destination)
-	destination.underwear = underwear
-	destination.underwear_color = underwear_color
-	destination.undershirt = undershirt
+	destination.bottom_underwear = bottom_underwear
+	destination.bottom_underwear_color = bottom_underwear_color
+	destination.top_underwear = top_underwear
+	destination.top_underwear_color = top_underwear_color
 	destination.socks = socks
-	destination.jumpsuit_style = jumpsuit_style
-
+	destination.socks_color = socks_color
 
 /// Fully randomizes everything according to the given flags.
 /mob/living/carbon/human/proc/randomize_human_appearance(randomize_flags = ALL)

@@ -85,7 +85,7 @@
 	explosion_block = 1
 	hud_possible = list(DIAG_AIRLOCK_HUD)
 	smoothing_groups = SMOOTH_GROUP_AIRLOCK
-	canSmoothWith = SMOOTH_GROUP_WALLS + SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_AIRLOCK + SMOOTH_GROUP_GIRDER
+	canSmoothWith = SMOOTH_GROUP_WALLS + SMOOTH_GROUP_WINDOW_FULLTILE + SMOOTH_GROUP_AIRLOCK
 
 	interaction_flags_machine = INTERACT_MACHINE_WIRES_IF_OPEN | INTERACT_MACHINE_ALLOW_SILICON | INTERACT_MACHINE_OPEN_SILICON | INTERACT_MACHINE_OPEN
 	interaction_flags_click = ALLOW_SILICON_REACH
@@ -116,6 +116,7 @@
 	var/obj/machinery/door/airlock/closeOther
 	var/list/obj/machinery/door/airlock/close_others = list()
 	var/obj/item/electronics/airlock/electronics
+	COOLDOWN_DECLARE(deniedbeepCooldown)
 	COOLDOWN_DECLARE(shockCooldown)
 	/// Any papers pinned to the airlock
 	var/obj/item/note
@@ -664,8 +665,9 @@
 			use_energy(50 JOULES)
 			playsound(src, soundin = doorClose, vol = 30, vary = TRUE)
 		if(DOOR_DENY_ANIMATION)
-			if(feedback)
+			if(feedback && COOLDOWN_FINISHED(src, deniedbeepCooldown))
 				playsound(src, soundin = doorDeni, vol = 50, vary = FALSE, extrarange = 3)
+				COOLDOWN_START(src, deniedbeepCooldown, AIRLOCK_DENY_ANIMATION_TIME)
 			addtimer(CALLBACK(src, PROC_REF(handle_deny_end)), AIRLOCK_DENY_ANIMATION_TIME)
 
 /obj/machinery/door/airlock/proc/handle_deny_end()
@@ -1264,7 +1266,13 @@
 			to_chat(user, span_warning("You need to be wielding [tool] to do that!"))
 			return
 
-		INVOKE_ASYNC(src, density ? PROC_REF(open) : PROC_REF(close), BYPASS_DOOR_CHECKS)
+		if(density)
+			var/pry_delay = 3.5 SECONDS
+			playsound(src, 'sound/machines/airlock/airlock_alien_prying.ogg', 75, TRUE)
+			if(tool.use_tool(src, user, pry_delay * tool.toolspeed, volume = 0))
+				INVOKE_ASYNC(src, density ? PROC_REF(open) : PROC_REF(close), BYPASS_DOOR_CHECKS)
+		else
+			INVOKE_ASYNC(src, density ? PROC_REF(open) : PROC_REF(close), BYPASS_DOOR_CHECKS)
 		return
 
 	if(!forced)
@@ -1931,6 +1939,12 @@
 	assemblytype = /obj/structure/door_assembly/door_assembly_sec
 	normal_integrity = 450
 
+/obj/machinery/door/airlock/law
+	name = "law and order airlock"
+	icon = 'icons/obj/doors/airlocks/station/law.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_sec
+	normal_integrity = 450
+
 /obj/machinery/door/airlock/engineering
 	name = "engineering airlock"
 	icon = 'icons/obj/doors/airlocks/station/engineering.dmi'
@@ -2024,6 +2038,12 @@
 
 /obj/machinery/door/airlock/security/glass
 	name = "security glass airlock"
+	opacity = FALSE
+	glass = TRUE
+	normal_integrity = 400
+
+/obj/machinery/door/airlock/law/glass
+	name = "law and order glass airlock"
 	opacity = FALSE
 	glass = TRUE
 	normal_integrity = 400
@@ -2168,22 +2188,22 @@
 /obj/machinery/door/airlock/uranium/glass/safe
 	actually_radioactive = FALSE
 
-/obj/machinery/door/airlock/plasma
-	name = "plasma airlock"
+/obj/machinery/door/airlock/phoron
+	name = "phoron airlock"
 	desc = "No way this can end badly."
-	icon = 'icons/obj/doors/airlocks/station/plasma.dmi'
-	assemblytype = /obj/structure/door_assembly/door_assembly_plasma
+	icon = 'icons/obj/doors/airlocks/station/phoron.dmi'
+	assemblytype = /obj/structure/door_assembly/door_assembly_phoron
 	material_flags = MATERIAL_EFFECTS
 	material_modifier = 0.25
 
-/obj/machinery/door/airlock/plasma/Initialize(mapload)
-	custom_materials = custom_materials ? custom_materials : list(/datum/material/plasma = SHEET_MATERIAL_AMOUNT * 10)
+/obj/machinery/door/airlock/phoron/Initialize(mapload)
+	custom_materials = custom_materials ? custom_materials : list(/datum/material/phoron = SHEET_MATERIAL_AMOUNT * 10)
 	. = ..()
 
-/obj/machinery/door/airlock/plasma/block_superconductivity() //we don't stop the heat~
+/obj/machinery/door/airlock/phoron/block_superconductivity() //we don't stop the heat~
 	return 0
 
-/obj/machinery/door/airlock/plasma/glass
+/obj/machinery/door/airlock/phoron/glass
 	opacity = FALSE
 	glass = TRUE
 

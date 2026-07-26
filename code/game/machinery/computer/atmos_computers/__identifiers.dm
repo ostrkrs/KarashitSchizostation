@@ -4,7 +4,7 @@
 // Don't put underscores here, we use them as delimiters.
 
 #define ATMOS_GAS_MONITOR_O2 GAS_O2
-#define ATMOS_GAS_MONITOR_PLAS GAS_PLASMA
+#define ATMOS_GAS_MONITOR_PHORON GAS_PHORON
 #define ATMOS_GAS_MONITOR_AIR GAS_AIR
 #define ATMOS_GAS_MONITOR_MIX "mix"
 #define ATMOS_GAS_MONITOR_N2O GAS_N2O
@@ -35,7 +35,7 @@
 // Human-readble names of these funny tags.
 GLOBAL_LIST_INIT(station_gas_chambers, list(
 	ATMOS_GAS_MONITOR_O2 = "Oxygen Supply",
-	ATMOS_GAS_MONITOR_PLAS = "Plasma Supply",
+	ATMOS_GAS_MONITOR_PHORON = "Phoron Supply",
 	ATMOS_GAS_MONITOR_AIR = "Mixed Air Supply",
 	ATMOS_GAS_MONITOR_N2O = "Nitrous Oxide Supply",
 	ATMOS_GAS_MONITOR_N2 = "Nitrogen Supply",

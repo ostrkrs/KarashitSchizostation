@@ -15,7 +15,7 @@
 
 /obj/item/clothing/head/collectable/petehat
 	name = "ultra rare Pete's hat!"
-	desc = "It smells faintly of plasma."
+	desc = "It smells faintly of phoron."
 	icon_state = "petehat"
 
 /obj/item/clothing/head/collectable/xenom
@@ -62,7 +62,7 @@
 	desc = "A collectable police officer's Hat. This hat emphasizes that you are THE LAW."
 	icon = 'icons/obj/clothing/head/hats.dmi'
 	worn_icon = 'icons/mob/clothing/head/hats.dmi'
-	icon_state = "policehelm"
+	icon_state = "wardenhat"
 	dog_fashion = /datum/dog_fashion/head/warden
 
 /obj/item/clothing/head/collectable/beret

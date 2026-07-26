@@ -1,7 +1,8 @@
 /obj/structure/frame/machine
 	name = "machine frame"
-	desc = "The standard frame for most station appliances. Its appearance and function is controlled by the inserted board."
+	desc = "The standard frame for most appliances. Its appearance and function is controlled by the inserted board."
 	board_type = /obj/item/circuitboard/machine
+	var/frame_type = MACHINE_FRAME_TYPE_DEFAULT
 	/// List of all compnents inside the frame contributing to its construction
 	var/list/components
 	/// List of all components required to construct the frame
@@ -138,6 +139,9 @@
 	req_component_names = null
 
 /obj/structure/frame/machine/install_board(mob/living/user, obj/item/circuitboard/machine/board, by_hand = TRUE)
+	if(frame_type != board.frame_type)
+		balloon_alert(user, "incompatible frame!")
+		return FALSE
 	if(state == FRAME_STATE_EMPTY)
 		balloon_alert(user, "needs wiring!")
 		return FALSE
@@ -351,6 +355,7 @@
 			if(used_amt && S.use(used_amt))
 				req_components[stock_part_path] -= used_amt
 				// No balloon alert here so they can look back and see what they added
+				playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)
 				to_chat(user, span_notice("You add [tool] to [src]."))
 			return
 
@@ -381,6 +386,7 @@
 
 		// No balloon alert here so they can look back and see what they added
 		to_chat(user, span_notice("You add [part_name] to [src]."))
+		playsound(src, 'sound/items/deconstruct.ogg', 50, TRUE)
 		req_components[stock_part_base]--
 		return TRUE
 
@@ -466,3 +472,13 @@
 	icon_state = "box_1"
 	state = FRAME_STATE_WIRED
 	anchored = TRUE
+
+/obj/structure/frame/machine/small
+	name = "small machine frame"
+	desc = "The miniature frame for most appliances. Its appearance and function is controlled by the inserted board."
+	icon_state = "mbox_0"
+	base_icon_state = "mbox_"
+	density = FALSE
+	frame_type = MACHINE_FRAME_TYPE_SMALL
+	max_integrity = 150
+	buildstackamount = 2

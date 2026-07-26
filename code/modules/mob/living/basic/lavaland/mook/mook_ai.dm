@@ -6,7 +6,7 @@ GLOBAL_LIST_INIT(mook_commands, list(
 
 /datum/ai_controller/basic_controller/mook
 	blackboard = list(
-		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic/mook,
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
 		BB_BLACKLIST_MINERAL_TURFS = list(/turf/closed/mineral/gibtonite, /turf/closed/mineral/strong),
 		BB_MAXIMUM_DISTANCE_TO_VILLAGE = 7,
 		BB_STORM_APPROACHING = FALSE,
@@ -28,13 +28,6 @@ GLOBAL_LIST_INIT(mook_commands, list(
 		/datum/ai_planning_subtree/wander_away_from_village,
 	)
 	can_idle = FALSE // these guys are intended to operate even if nobody's around
-
-///check for faction if not a ash walker, otherwise just attack
-/datum/targeting_strategy/basic/mook/faction_check(datum/ai_controller/controller, mob/living/living_mob, mob/living/the_target)
-	if(FACTION_ASHWALKER in living_mob.faction)
-		return FALSE
-
-	return ..()
 
 /datum/ai_planning_subtree/targeted_mob_ability/leap
 	ability_key = BB_MOOK_LEAP_ABILITY
@@ -212,7 +205,7 @@ GLOBAL_LIST_INIT(mook_commands, list(
 ///bard mook plays nice music for the village
 /datum/ai_controller/basic_controller/mook/bard
 	blackboard = list(
-		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic/mook,
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
 		BB_MAXIMUM_DISTANCE_TO_VILLAGE = 10,
 		BB_STORM_APPROACHING = FALSE,
 		BB_SONG_LINES = MOOK_SONG,
@@ -265,7 +258,7 @@ GLOBAL_LIST_INIT(mook_commands, list(
 ///healer mooks guard the village from intruders and heal the miner mooks when they come home
 /datum/ai_controller/basic_controller/mook/support
 	blackboard = list(
-		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic/mook,
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
 		BB_MAXIMUM_DISTANCE_TO_VILLAGE = 10,
 		BB_STORM_APPROACHING = FALSE,
 		BB_PET_TARGETING_STRATEGY = /datum/targeting_strategy/basic/not_friends,
@@ -324,7 +317,7 @@ GLOBAL_LIST_INIT(mook_commands, list(
 ///the chief would rather command his mooks to attack people than attack them himself
 /datum/ai_controller/basic_controller/mook/tribal_chief
 	blackboard = list(
-		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic/mook,
+		BB_TARGETING_STRATEGY = /datum/targeting_strategy/basic,
 		BB_STORM_APPROACHING = FALSE,
 	)
 	idle_behavior = /datum/idle_behavior/walk_near_target/mook_village

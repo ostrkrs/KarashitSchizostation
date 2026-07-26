@@ -81,6 +81,7 @@
 		/mob/living/basic/spider/maintenance,
 		/mob/living/basic/mouse,
 		/mob/living/basic/snail,
+		/mob/living/basic/mothroach,
 	)
 	return pick(mob_list)
 
@@ -226,7 +227,6 @@
 /datum/round_event/vent_clog/major/get_mob()
 	var/static/list/mob_list = list(
 		/mob/living/basic/bee,
-		/mob/living/basic/cockroach/hauberoach,
 		/mob/living/basic/spider/giant,
 		/mob/living/basic/mouse/rat,
 	)
@@ -264,45 +264,6 @@
 	var/static/list/mob_list = list(
 		/mob/living/basic/bee/toxin,
 		/mob/living/basic/carp,
-		/mob/living/basic/cockroach/glockroach,
-	)
-	return pick(mob_list)
-
-/datum/round_event_control/vent_clog/strange
-	name = "Ventilation Clog: Strange"
-	typepath = /datum/round_event/vent_clog/strange
-	weight = 5
-	max_occurrences = 2
-	description = "Strange mobs climb out of a vent, harmfulness varies."
-	min_wizard_trigger_potency = 0
-	max_wizard_trigger_potency = 7
-
-/datum/round_event/vent_clog/strange/setup()
-	. = ..()
-	end_when = rand(600, 900)
-	spawn_delay = rand(6, 25)
-	maximum_spawns = rand(MOB_SPAWN_MINIMUM, 10)
-	filth_spawn_types = list(
-		/obj/effect/decal/cleanable/blood/xeno,
-		/obj/effect/decal/cleanable/fuel_pool,
-		/obj/effect/decal/cleanable/greenglow,
-		/obj/effect/decal/cleanable/vomit,
-	)
-
-/datum/round_event/vent_clog/strange/announce(fake)
-	var/area/event_area = fake ? pick(GLOB.teleportlocs) : get_area_name(vent)
-	priority_announce("Unusual lifesign readings detected in the [event_area] ventilation network.", "Lifesign Alert", ANNOUNCER_ALIENS)
-
-/datum/round_event/vent_clog/strange/get_mob()
-	var/static/list/mob_list = list(
-		/mob/living/basic/bear,
-		/mob/living/basic/cockroach/glockroach/mobroach,
-		/mob/living/basic/goose,
-		/mob/living/basic/lightgeist,
-		/mob/living/basic/mothroach,
-		/mob/living/basic/mushroom,
-		/mob/living/basic/viscerator,
-		/mob/living/basic/pet/gondola,
 	)
 	return pick(mob_list)
 

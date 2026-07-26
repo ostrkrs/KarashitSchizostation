@@ -1244,500 +1244,372 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	icon_state = null
 	gender = NEUTER
 
-///////////////////////////
-// Underwear Definitions //
-///////////////////////////
 
-/datum/sprite_accessory/underwear
+//////////////////////////////////////
+// Clothing Accessories Definitions //
+//////////////////////////////////////
+
+/datum/sprite_accessory/clothing
+	/// Icon state in the digitigrade template file to use if the wearer is digitigrade.
+	/// If null, no special digitigrade handling is done.
+	var/digi_icon_state = FALSE
+
+/datum/sprite_accessory/clothing/proc/make_appearance(color = COLOR_WHITE, physique = MALE, bodyshape = BODYSHAPE_HUMANOID)
+	var/use_digi = digi_icon_state && (bodyshape & BODYSHAPE_DIGITIGRADE)
+	var/mutable_appearance/result
+
+	if(use_digi)
+		result = mutable_appearance(icon, "[initial(icon_state)]_d")
+	else
+		result = mutable_appearance(icon, icon_state)
+
+	result.layer = -BODY_LAYER
+	result.color = use_static ? null : color
+
+	return result
+
+//////////////////////////////////
+// Bottom Underwear Definitions //
+//////////////////////////////////
+
+/datum/sprite_accessory/clothing/underwear_bottom
 	icon = 'icons/mob/clothing/underwear.dmi'
 	use_static = FALSE
 	em_block = TRUE
 
-
 //MALE UNDERWEAR
-/datum/sprite_accessory/underwear/nude
+/datum/sprite_accessory/clothing/underwear_bottom/nude
 	name = "Nude"
 	icon_state = null
 	gender = NEUTER
 
-/datum/sprite_accessory/underwear/male_briefs
+/datum/sprite_accessory/clothing/underwear_bottom/male_briefs
 	name = "Briefs"
 	icon_state = "male_briefs"
 	gender = MALE
+	digi_icon_state = TRUE
 
-/datum/sprite_accessory/underwear/male_boxers
+/datum/sprite_accessory/clothing/underwear_bottom/male_boxers
 	name = "Boxers"
 	icon_state = "male_boxers"
 	gender = MALE
+	digi_icon_state = TRUE
 
-/datum/sprite_accessory/underwear/male_stripe
+/datum/sprite_accessory/clothing/underwear_bottom/male_stripe
 	name = "Striped Boxers"
 	icon_state = "male_stripe"
 	gender = MALE
+	digi_icon_state = TRUE
 
-/datum/sprite_accessory/underwear/male_midway
+/datum/sprite_accessory/clothing/underwear_bottom/male_midway
 	name = "Midway Boxers"
 	icon_state = "male_midway"
 	gender = MALE
+	digi_icon_state = TRUE
 
-/datum/sprite_accessory/underwear/male_longjohns
+/datum/sprite_accessory/clothing/underwear_bottom/male_longjohns
 	name = "Long Johns"
 	icon_state = "male_longjohns"
 	gender = MALE
-
-/datum/sprite_accessory/underwear/male_hearts
-	name = "Hearts Boxers"
-	icon_state = "male_hearts"
-	gender = MALE
-	use_static = TRUE
+	digi_icon_state = TRUE
 
 //FEMALE UNDERWEAR
-/datum/sprite_accessory/underwear/female_bikini
+/datum/sprite_accessory/clothing/underwear_bottom/female_panties
+	name = "Panties"
+	icon_state = "female_panties"
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_bottom/female_bikini
 	name = "Bikini"
 	icon_state = "female_bikini"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/female_lace
+/datum/sprite_accessory/clothing/underwear_bottom/female_lace_bikini
 	name = "Lace Bikini"
-	icon_state = "female_lace"
+	icon_state = "female_bikini_lace"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/female_bralette
-	name = "Bralette w/ Boyshorts"
-	icon_state = "female_bralette"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/female_sport
-	name = "Sports Bra w/ Boyshorts"
+/datum/sprite_accessory/clothing/underwear_bottom/female_boyshorts
+	name = "Boyshorts"
 	icon_state = "female_sport"
 	gender = FEMALE
+	digi_icon_state = TRUE
 
-/datum/sprite_accessory/underwear/female_thong
+/datum/sprite_accessory/clothing/underwear_bottom/female_boyshorts2
+	name = "Slim Boyshorts"
+	icon_state = "female_sport_slim"
+	gender = FEMALE
+	digi_icon_state = TRUE
+
+/datum/sprite_accessory/clothing/underwear_bottom/female_thong
 	name = "Thong"
 	icon_state = "female_thong"
 	gender = FEMALE
 
-/datum/sprite_accessory/underwear/female_strapless
-	name = "Strapless Bikini"
-	icon_state = "female_strapless"
-	gender = FEMALE
+///////////////////////////////
+// Top Underwear Definitions //
+///////////////////////////////
 
-/datum/sprite_accessory/underwear/female_babydoll
-	name = "Babydoll"
-	icon_state = "female_babydoll"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_onepiece
-	name = "One-Piece Swimsuit"
-	icon_state = "swim_onepiece"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_strapless_onepiece
-	name = "Strapless One-Piece Swimsuit"
-	icon_state = "swim_strapless_onepiece"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_twopiece
-	name = "Two-Piece Swimsuit"
-	icon_state = "swim_twopiece"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_strapless_twopiece
-	name = "Strapless Two-Piece Swimsuit"
-	icon_state = "swim_strapless_twopiece"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_stripe
-	name = "Strapless Striped Swimsuit"
-	icon_state = "swim_stripe"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/swimsuit_halter
-	name = "Halter Swimsuit"
-	icon_state = "swim_halter"
-	gender = FEMALE
-
-////////////////////////////
-// Undershirt Definitions //
-////////////////////////////
-
-/datum/sprite_accessory/undershirt
+/datum/sprite_accessory/clothing/underwear_top
 	icon = 'icons/mob/clothing/underwear.dmi'
 	em_block = TRUE
+	use_static = TRUE
 
-/datum/sprite_accessory/undershirt/nude
+/datum/sprite_accessory/clothing/underwear_top/nude
 	name = "Nude"
 	icon_state = null
 	gender = NEUTER
 
-// please make sure they're sorted alphabetically and categorized
-
-/datum/sprite_accessory/undershirt/bluejersey
-	name = "Jersey (Blue)"
-	icon_state = "shirt_bluejersey"
+/datum/sprite_accessory/clothing/underwear_top/shirt
+	name = "Shirt"
+	icon_state = "shirt"
+	use_static = FALSE
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/redjersey
-	name = "Jersey (Red)"
-	icon_state = "shirt_redjersey"
+/datum/sprite_accessory/clothing/underwear_top/shortsleeve
+	name = "Short-sleeved Shirt"
+	icon_state = "shortsleeve"
+	use_static = FALSE
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/bluepolo
-	name = "Polo Shirt (Blue)"
-	icon_state = "bluepolo"
+/datum/sprite_accessory/clothing/underwear_top/tanktop
+	name = "Tank Top"
+	icon_state = "tank_top"
+	use_static = FALSE
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/grayyellowpolo
-	name = "Polo Shirt (Gray-Yellow)"
-	icon_state = "grayyellowpolo"
+/datum/sprite_accessory/clothing/underwear_top/turtleneck
+	name = "Turtleneck"
+	icon_state = "turtleneck"
+	use_static = FALSE
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/redpolo
-	name = "Polo Shirt (Red)"
-	icon_state = "redpolo"
+/datum/sprite_accessory/clothing/underwear_top/turtleneck_smooth
+	name = "Turtleneck (Smooth)"
+	icon_state = "turtleneck_smooth"
+	use_static = FALSE
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/whitepolo
-	name = "Polo Shirt (White)"
-	icon_state = "whitepolo"
+/// FEMALE TOPS
+/datum/sprite_accessory/clothing/underwear_top/bra
+	name = "Bra"
+	icon_state = "bra"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/lace_bra
+	name = "Lace Bra"
+	icon_state = "lace_bra"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/bikini
+	name = "Bikini"
+	icon_state = "bikini"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/strapless_bra
+	name = "Strapless Bra"
+	icon_state = "strapless_bra"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/strapless_bra2
+	name = "Strapless Bra (Alt)"
+	icon_state = "strapless_bra_alt"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/strapless_bikini
+	name = "Strapless Bikini"
+	icon_state = "strapless_bikini"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/sports_bra
+	name = "Sports Bra"
+	icon_state = "sports_bra"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/sports_bra2
+	name = "Sports Bra (Alt)"
+	icon_state = "sports_bra_alt"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/halterneck_bra
+	name = "Halterneck Bra"
+	icon_state = "bra_halterneck"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/halterneck_bra2
+	name = "Halterneck Bra (Alt)"
+	icon_state = "bra_halterneck_alt"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/binder
+	name = "Binder"
+	icon_state = "binder"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/strapless_binder
+	name = "Strapless Binder"
+	icon_state = "strapless_binder"
+	use_static = FALSE
+	gender = FEMALE
+
+/datum/sprite_accessory/clothing/underwear_top/bandages
+	name = "Bandages"
+	icon_state = "bandages"
+	use_static = FALSE
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/alienshirt
+// Shirts
+/datum/sprite_accessory/clothing/underwear_top/alienshirt
 	name = "Shirt (Alien)"
 	icon_state = "shirt_alien"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/mondmondjaja
+/datum/sprite_accessory/clothing/underwear_top/mondmondjaja
 	name = "Shirt (Band)"
 	icon_state = "band"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/shirt_black
-	name = "Shirt (Black)"
-	icon_state = "shirt_black"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/blueshirt
-	name = "Shirt (Blue)"
-	icon_state = "shirt_blue"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/clownshirt
+/datum/sprite_accessory/clothing/underwear_top/clownshirt
 	name = "Shirt (Clown)"
 	icon_state = "shirt_clown"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/commie
+/datum/sprite_accessory/clothing/underwear_top/commie
 	name = "Shirt (Commie)"
 	icon_state = "shirt_commie"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/greenshirt
-	name = "Shirt (Green)"
-	icon_state = "shirt_green"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/shirt_grey
-	name = "Shirt (Grey)"
-	icon_state = "shirt_grey"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/ian
+/datum/sprite_accessory/clothing/underwear_top/ian
 	name = "Shirt (Ian)"
 	icon_state = "ian"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/lover
-	name = "Shirt (Lover)"
-	icon_state = "lover"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/meat
-	name = "Shirt (Meat)"
-	icon_state = "shirt_meat"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/peace
-	name = "Shirt (Peace)"
-	icon_state = "peace"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/pacman
-	name = "Shirt (Pogoman)"
-	icon_state = "pogoman"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/question
-	name = "Shirt (Question)"
-	icon_state = "shirt_question"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/redshirt
-	name = "Shirt (Red)"
-	icon_state = "shirt_red"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/skull
-	name = "Shirt (Skull)"
-	icon_state = "shirt_skull"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/ss13
+/datum/sprite_accessory/clothing/underwear_top/ss13
 	name = "Shirt (SS13)"
 	icon_state = "shirt_ss13"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/stripe
-	name = "Shirt (Striped)"
-	icon_state = "shirt_stripes"
+/datum/sprite_accessory/clothing/underwear_top/lover
+	name = "Shirt (Lover)"
+	icon_state = "lover"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/tiedye
-	name = "Shirt (Tie-dye)"
-	icon_state = "shirt_tiedye"
+/datum/sprite_accessory/clothing/underwear_top/meat
+	name = "Shirt (Meat)"
+	icon_state = "shirt_meat"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/shirt_white
-	name = "Shirt (White)"
-	icon_state = "shirt_white"
+/datum/sprite_accessory/clothing/underwear_top/peace
+	name = "Shirt (Peace)"
+	icon_state = "peace"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/blackshortsleeve
-	name = "Short-sleeved Shirt (Black)"
-	icon_state = "blackshortsleeve"
+/datum/sprite_accessory/clothing/underwear_top/pacman
+	name = "Shirt (Pogoman)"
+	icon_state = "pogoman"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/blueshortsleeve
-	name = "Short-sleeved Shirt (Blue)"
-	icon_state = "blueshortsleeve"
+/datum/sprite_accessory/clothing/underwear_top/question
+	name = "Shirt (Question)"
+	icon_state = "shirt_question"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/greenshortsleeve
-	name = "Short-sleeved Shirt (Green)"
-	icon_state = "greenshortsleeve"
+/datum/sprite_accessory/clothing/underwear_top/skull
+	name = "Shirt (Skull)"
+	icon_state = "shirt_skull"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/purpleshortsleeve
-	name = "Short-sleeved Shirt (Purple)"
-	icon_state = "purpleshortsleeve"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/whiteshortsleeve
-	name = "Short-sleeved Shirt (White)"
-	icon_state = "whiteshortsleeve"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/sports_bra
-	name = "Sports Bra"
-	icon_state = "sports_bra"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/sports_bra2
-	name = "Sports Bra (Alt)"
-	icon_state = "sports_bra_alt"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/blueshirtsport
-	name = "Sports Shirt (Blue)"
-	icon_state = "blueshirtsport"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/greenshirtsport
-	name = "Sports Shirt (Green)"
-	icon_state = "greenshirtsport"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/redshirtsport
-	name = "Sports Shirt (Red)"
-	icon_state = "redshirtsport"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/tank_black
-	name = "Tank Top (Black)"
-	icon_state = "tank_black"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/tankfire
+/datum/sprite_accessory/clothing/underwear_top/tankfire
 	name = "Tank Top (Fire)"
 	icon_state = "tank_fire"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/tank_grey
-	name = "Tank Top (Grey)"
-	icon_state = "tank_grey"
+/datum/sprite_accessory/clothing/underwear_top/stripe
+	name = "Shirt (Striped)"
+	icon_state = "shirt_stripes"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/female_midriff
-	name = "Tank Top (Midriff)"
-	icon_state = "tank_midriff"
-	gender = FEMALE
-
-/datum/sprite_accessory/undershirt/tank_red
-	name = "Tank Top (Red)"
-	icon_state = "tank_red"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/tankstripe
+/datum/sprite_accessory/clothing/underwear_top/tankstripe
 	name = "Tank Top (Striped)"
 	icon_state = "tank_stripes"
 	gender = NEUTER
 
-/datum/sprite_accessory/undershirt/tank_white
-	name = "Tank Top (White)"
-	icon_state = "tank_white"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/redtop
-	name = "Top (Red)"
-	icon_state = "redtop"
-	gender = FEMALE
-
-/datum/sprite_accessory/undershirt/whitetop
-	name = "Top (White)"
-	icon_state = "whitetop"
-	gender = FEMALE
-
-/datum/sprite_accessory/undershirt/tshirt_blue
-	name = "T-Shirt (Blue)"
-	icon_state = "blueshirt"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/tshirt_green
-	name = "T-Shirt (Green)"
-	icon_state = "greenshirt"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/tshirt_red
-	name = "T-Shirt (Red)"
-	icon_state = "redshirt"
-	gender = NEUTER
-
-/datum/sprite_accessory/undershirt/yellowshirt
-	name = "T-Shirt (Yellow)"
-	icon_state = "yellowshirt"
+/datum/sprite_accessory/clothing/underwear_top/tiedye
+	name = "Shirt (Tie-dye)"
+	icon_state = "shirt_tiedye"
 	gender = NEUTER
 
 ///////////////////////
 // Socks Definitions //
 ///////////////////////
 
-/datum/sprite_accessory/socks
+/datum/sprite_accessory/clothing/socks
 	icon = 'icons/mob/clothing/underwear.dmi'
 	em_block = TRUE
+	digi_icon_state = TRUE
+	use_static = FALSE
 
-/datum/sprite_accessory/socks/nude
+/datum/sprite_accessory/clothing/socks/nude
 	name = "Nude"
 	icon_state = null
+	digi_icon_state = FALSE
+	use_static = TRUE
 
 // please make sure they're sorted alphabetically and categorized
 
-/datum/sprite_accessory/socks/bee_knee
-	name = "Knee-high (Bee)"
-	icon_state = "bee_knee"
+/datum/sprite_accessory/clothing/socks/norm
+	name = "Normal"
+	icon_state = "socks_norm"
 
-/datum/sprite_accessory/socks/black_knee
-	name = "Knee-high (Black)"
-	icon_state = "black_knee"
+/datum/sprite_accessory/clothing/socks/short
+	name = "Short"
+	icon_state = "socks_short"
 
-/datum/sprite_accessory/socks/striped_knee
-	name = "Knee-high (Striped)"
-	icon_state = "striped_knee"
+/datum/sprite_accessory/clothing/socks/knee
+	name = "Knee-high"
+	icon_state = "socks_knee"
 
-/datum/sprite_accessory/socks/thin_knee
+/datum/sprite_accessory/clothing/socks/thigh
+	name = "Thigh-high"
+	icon_state = "socks_thigh"
+
+/datum/sprite_accessory/clothing/socks/thin_knee
 	name = "Knee-high (Thin)"
 	icon_state = "thin_knee"
 
-/datum/sprite_accessory/socks/white_knee
-	name = "Knee-high (White)"
-	icon_state = "white_knee"
-
-/datum/sprite_accessory/socks/fishnet_knee
-	name = "Knee-high (Fishnet)"
-	icon_state = "fishnet_knee"
-
-/datum/sprite_accessory/socks/black_norm
-	name = "Normal (Black)"
-	icon_state = "black_norm"
-
-/datum/sprite_accessory/socks/white_norm
-	name = "Normal (White)"
-	icon_state = "white_norm"
-
-/datum/sprite_accessory/socks/pantyhose
-	name = "Pantyhose"
-	icon_state = "pantyhose"
-
-/datum/sprite_accessory/socks/black_short
-	name = "Short (Black)"
-	icon_state = "black_short"
-
-/datum/sprite_accessory/socks/white_short
-	name = "Short (White)"
-	icon_state = "white_short"
-
-/datum/sprite_accessory/socks/stockings_blue
-	name = "Stockings (Blue)"
-	icon_state = "stockings_blue"
-
-/datum/sprite_accessory/socks/stockings_cyan
-	name = "Stockings (Cyan)"
-	icon_state = "stockings_cyan"
-
-/datum/sprite_accessory/socks/stockings_dpink
-	name = "Stockings (Dark Pink)"
-	icon_state = "stockings_dpink"
-
-/datum/sprite_accessory/socks/stockings_green
-	name = "Stockings (Green)"
-	icon_state = "stockings_green"
-
-/datum/sprite_accessory/socks/stockings_orange
-	name = "Stockings (Orange)"
-	icon_state = "stockings_orange"
-
-/datum/sprite_accessory/socks/stockings_programmer
-	name = "Stockings (Programmer)"
-	icon_state = "stockings_lpink"
-
-/datum/sprite_accessory/socks/stockings_purple
-	name = "Stockings (Purple)"
-	icon_state = "stockings_purple"
-
-/datum/sprite_accessory/socks/stockings_yellow
-	name = "Stockings (Yellow)"
-	icon_state = "stockings_yellow"
-
-/datum/sprite_accessory/socks/stockings_fishnet
-	name = "Stockings (Fishnet)"
-	icon_state = "fishnet_full"
-
-/datum/sprite_accessory/socks/bee_thigh
-	name = "Thigh-high (Bee)"
-	icon_state = "bee_thigh"
-
-/datum/sprite_accessory/socks/black_thigh
-	name = "Thigh-high (Black)"
-	icon_state = "black_thigh"
-
-/datum/sprite_accessory/socks/striped_thigh
-	name = "Thigh-high (Striped)"
-	icon_state = "striped_thigh"
-
-/datum/sprite_accessory/socks/thin_thigh
+/datum/sprite_accessory/clothing/socks/thin_thigh
 	name = "Thigh-high (Thin)"
 	icon_state = "thin_thigh"
 
-/datum/sprite_accessory/socks/white_thigh
-	name = "Thigh-high (White)"
-	icon_state = "white_thigh"
+/datum/sprite_accessory/clothing/socks/pantyhose
+	name = "Pantyhose"
+	icon_state = "pantyhose"
 
-/datum/sprite_accessory/socks/fishnet_thigh
-	name = "Thigh-high (Fishnet)"
-	icon_state = "fishnet_thigh"
+/datum/sprite_accessory/clothing/socks/striped_knee
+	name = "Knee-high (Striped)"
+	icon_state = "striped_knee"
+	use_static = TRUE
 
-/datum/sprite_accessory/socks/thocks
-	name = "Thocks"
-	icon_state = "thocks"
+/datum/sprite_accessory/clothing/socks/striped_thigh
+	name = "Thigh-high (Striped)"
+	icon_state = "striped_thigh"
+	use_static = TRUE
+
+/datum/sprite_accessory/clothing/socks/stockings_programmer
+	name = "Stockings (Programmer)"
+	icon_state = "stockings_lpink"
+	use_static = TRUE
 
 //////////.//////////////////
 // MutantParts Definitions //
@@ -1825,12 +1697,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	icon_state = "short"
 	spine_key = NONE
 
-/datum/sprite_accessory/tails/felinid/cat
-	name = "Cat"
-	icon = 'icons/mob/human/cat_features.dmi'
-	icon_state = "default"
-	color_src = HAIR_COLOR
-
 /datum/sprite_accessory/tails/monkey
 
 /datum/sprite_accessory/tails/monkey/none
@@ -1858,6 +1724,22 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	name = "Xeno Queen"
 	icon = 'icons/mob/human/species/alien/tail_xenomorph_queen.dmi'
 	dimension_x = 64
+
+/datum/sprite_accessory/tails/caver
+	icon = 'icons/mob/human/species/human_subtypes/caver/caver_tails.dmi'
+
+/datum/sprite_accessory/tails/caver/none
+	name = SPRITE_ACCESSORY_NONE
+	icon_state = "none"
+	natural_spawn = FALSE
+
+/datum/sprite_accessory/tails/caver/default
+	name = "Caver Tail"
+	icon_state = "default"
+
+/datum/sprite_accessory/tails/caver/snub
+	name = "Snub Caver Tail"
+	icon_state = "snub"
 
 /datum/sprite_accessory/pod_hair
 	icon = 'icons/mob/human/species/podperson_hair.dmi'
@@ -1924,32 +1806,45 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 	icon_state = "roundlight"
 
 /datum/sprite_accessory/horns
-	icon = 'icons/mob/human/species/lizard/lizard_misc.dmi'
 	em_block = TRUE
 
-/datum/sprite_accessory/horns/simple
+/datum/sprite_accessory/horns/lizard
+	icon = 'icons/mob/human/species/lizard/lizard_misc.dmi'
+
+/datum/sprite_accessory/horns/lizard/simple
 	name = "Simple"
 	icon_state = "simple"
 
-/datum/sprite_accessory/horns/short
+/datum/sprite_accessory/horns/lizard/short
 	name = "Short"
 	icon_state = "short"
 
-/datum/sprite_accessory/horns/curled
+/datum/sprite_accessory/horns/lizard/curled
 	name = "Curled"
 	icon_state = "curled"
 
-/datum/sprite_accessory/horns/ram
+/datum/sprite_accessory/horns/lizard/ram
 	name = "Ram"
 	icon_state = "ram"
 
-/datum/sprite_accessory/horns/angler
+/datum/sprite_accessory/horns/lizard/angler
 	name = "Angeler"
 	icon_state = "angler"
 
 /datum/sprite_accessory/ears
 	icon = 'icons/mob/human/cat_features.dmi'
 	em_block = TRUE
+
+/datum/sprite_accessory/horns/caver
+	icon = 'icons/mob/human/species/human_subtypes/caver/caver_boneplates.dmi'
+
+/datum/sprite_accessory/horns/caver/default
+	name = "Default"
+	icon_state = "default"
+
+/datum/sprite_accessory/horns/caver/broad
+	name = "Broad"
+	icon_state = "broad"
 
 /datum/sprite_accessory/ears/cat
 	name = "Cat"
@@ -2185,15 +2080,6 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/tail_spines/aquatic
 	name = "Aquatic"
 	icon_state = "aqua"
-
-/datum/sprite_accessory/caps
-	icon = 'icons/mob/human/species/mush_cap.dmi'
-	color_src = HAIR_COLOR
-	em_block = TRUE
-
-/datum/sprite_accessory/caps/round
-	name = "Round"
-	icon_state = "round"
 
 /datum/sprite_accessory/moth_wings
 	icon = 'icons/mob/human/species/moth/moth_wings.dmi'

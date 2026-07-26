@@ -70,7 +70,7 @@
 	new /obj/item/shovel(src)
 	new /obj/item/pickaxe/mini(src)
 	new /obj/item/radio/headset/headset_cargo/mining(src)
-	new /obj/item/flashlight/seclite(src)
+	new /obj/item/flashlight/cell_powered/seclite(src)
 	new /obj/item/storage/bag/plants(src)
 	new /obj/item/storage/bag/ore(src)
 	new /obj/item/mining_scanner(src)

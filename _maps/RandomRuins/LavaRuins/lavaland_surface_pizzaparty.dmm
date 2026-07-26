@@ -66,7 +66,7 @@
 "cb" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 10
 	},
 /turf/open/floor/iron/lavaland,
@@ -87,7 +87,7 @@
 /obj/effect/turf_decal/tile/yellow/diagonal_edge,
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron/diagonal/lavaland,
 /area/ruin/unpowered)
 "dR" = (
@@ -124,7 +124,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/plate,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 9
 	},
 /turf/open/floor/iron/lavaland,
@@ -133,7 +133,7 @@
 /obj/effect/turf_decal/tile/yellow/diagonal_edge,
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /turf/open/floor/iron/diagonal/lavaland,
@@ -192,7 +192,7 @@
 "lE" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 1
 	},
 /turf/open/floor/iron/lavaland,
@@ -226,7 +226,7 @@
 "og" = (
 /obj/effect/turf_decal/tile/yellow/diagonal_edge,
 /obj/effect/turf_decal/tile/neutral/diagonal_centre,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /turf/open/floor/iron/diagonal/lavaland,
@@ -254,7 +254,7 @@
 "pD" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/floor/iron/lavaland,
@@ -376,9 +376,6 @@
 /obj/item/storage/box/lights/bulbs,
 /obj/item/storage/toolbox/mechanical/old,
 /obj/item/gift{
-	contains_type = /obj/item/gun/ballistic/automatic/toy
-	},
-/obj/item/gift{
 	contains_type = /obj/item/gun/ballistic/automatic/pistol/toy
 	},
 /obj/item/ammo_box/foambox,
@@ -400,7 +397,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/ash/leaf_shroom,
-/obj/effect/turf_decal/siding/thinplating,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron/lavaland,
 /area/ruin/unpowered)
 "yJ" = (
@@ -436,7 +433,7 @@
 /area/ruin/unpowered)
 "zj" = (
 /obj/structure/mineral_door/wood,
-/obj/effect/turf_decal/siding/thinplating_new{
+/obj/effect/turf_decal/siding{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/bar/opposingcorners,
@@ -466,7 +463,7 @@
 /obj/structure/chair/plastic{
 	dir = 4
 	},
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/floor/iron/lavaland,
@@ -665,7 +662,7 @@
 "Uf" = (
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/siding/thinplating,
+/obj/effect/turf_decal/siding,
 /turf/open/floor/iron/lavaland,
 /area/ruin/unpowered)
 "VB" = (
@@ -720,7 +717,7 @@
 /obj/effect/turf_decal/tile/bar/opposingcorners,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood/old,
-/obj/effect/turf_decal/siding/thinplating{
+/obj/effect/turf_decal/siding{
 	dir = 8
 	},
 /turf/open/floor/iron/lavaland,

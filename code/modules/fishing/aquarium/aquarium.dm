@@ -248,11 +248,11 @@
 	force = min(2 + (GET_FISH_WEIGHT_RANK(current_summed_weight) * 3), 21)
 	throwforce = force
 
-///The lawyer's own pet goldfish's fish tank. It used to be an aquarium, but now it can be held and carried around.
-/obj/item/fish_tank/lawyer
+///The IAA's own pet goldfish's fish tank. It used to be an aquarium, but now it can be held and carried around.
+/obj/item/fish_tank/iaa
 	init_mode = AQUARIUM_MODE_SAFE
 
-/obj/item/fish_tank/lawyer/Initialize(mapload)
+/obj/item/fish_tank/iaa/Initialize(mapload)
 	. = ..()
 
 	new /obj/item/aquarium_prop/sand(src)

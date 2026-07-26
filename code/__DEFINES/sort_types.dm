@@ -1,7 +1,7 @@
 
 #define SORT_TYPE_WASTE 0
 ///All unwrapped items and untagged parcels get picked up by a junction with this sortType. Usually leads to the recycler.
-#define SORT_TYPE_DISPOSALS 1 
+#define SORT_TYPE_DISPOSALS 1
 #define SORT_TYPE_CARGO_BAY 2
 #define SORT_TYPE_QM_OFFICE 3
 #define SORT_TYPE_ENGINEERING 4
@@ -29,5 +29,10 @@
 #define SORT_TYPE_DORMITORIES 26
 #define SORT_TYPE_VIROLOGY 27
 #define SORT_TYPE_XENOBIOLOGY 28
-#define SORT_TYPE_LAW_OFFICE 29
-#define SORT_TYPE_DETECTIVES_OFFICE 30
+#define SORT_TYPE_IAA_OFFICE 29
+#define SORT_TYPE_CRIMINALIST_OFFICE 30
+#define SORT_TYPE_ISO_OFFICE 31
+#define SORT_TYPE_STEWARD_OFFICE 32
+#define SORT_TYPE_CAPTAIN_OFFICE 33
+#define SORT_TYPE_BRIDGE 34
+#define SORT_TYPE_COURTROOM 35

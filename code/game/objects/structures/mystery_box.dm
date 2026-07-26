@@ -20,31 +20,24 @@
 
 GLOBAL_LIST_INIT(mystery_box_guns, list(
 	/obj/item/gun/energy/recharge/ebow/large,
-	/obj/item/gun/energy/e_gun,
-	/obj/item/gun/energy/e_gun/nuclear,
 	/obj/item/gun/energy/laser,
 	/obj/item/gun/energy/laser/hellgun,
 	/obj/item/gun/energy/laser/captain,
 	/obj/item/gun/energy/laser/scatter,
 	/obj/item/gun/energy/temperature,
-	/obj/item/gun/ballistic/revolver/c38/detective,
+	/obj/item/gun/ballistic/revolver/c38/criminalist,
 	/obj/item/gun/ballistic/revolver/mateba,
-	/obj/item/gun/ballistic/automatic/pistol/deagle/camo,
-	/obj/item/gun/ballistic/automatic/pistol/suppressed,
+	/obj/item/gun/ballistic/automatic/pistol/wt23/suppressed,
 	/obj/item/gun/energy/pulse/carbine/taserless,
 	/obj/item/gun/energy/pulse/pistol/taserless,
 	/obj/item/gun/ballistic/shotgun/lethal,
 	/obj/item/gun/ballistic/shotgun/automatic/combat,
 	/obj/item/gun/ballistic/shotgun/bulldog/unrestricted,
 	/obj/item/gun/ballistic/rifle/boltaction,
-	/obj/item/gun/ballistic/automatic/ar,
-	/obj/item/gun/ballistic/automatic/proto/unrestricted,
-	/obj/item/gun/ballistic/automatic/c20r/unrestricted,
+	/obj/item/gun/ballistic/automatic/smg/c20r/unrestricted,
 	/obj/item/gun/ballistic/automatic/l6_saw/unrestricted,
-	/obj/item/gun/ballistic/automatic/m90/unrestricted,
-	/obj/item/gun/ballistic/automatic/tommygun,
-	/obj/item/gun/ballistic/automatic/wt550,
-	/obj/item/gun/ballistic/automatic/smartgun,
+	/obj/item/gun/ballistic/automatic/smg/wt550,
+	/obj/item/gun/ballistic/automatic/smg/smartgun,
 	/obj/item/gun/ballistic/rifle/sniper_rifle,
 	/obj/item/gun/ballistic/rifle/boltaction,
 ))
@@ -59,7 +52,6 @@ GLOBAL_LIST_INIT(mystery_box_extended, list(
 	/obj/item/knife/combat,
 	/obj/item/melee/baton/security/loaded,
 	/obj/item/reagent_containers/hypospray/combat,
-	/obj/item/defibrillator/compact/combat/loaded/nanotrasen,
 	/obj/item/melee/energy/sword/saber,
 	/obj/item/spear,
 	/obj/item/saw,
@@ -87,7 +79,6 @@ GLOBAL_LIST_INIT(mystery_magic, list(
 
 GLOBAL_LIST_INIT(mystery_fishing, list(
 	/obj/item/storage/toolbox/fishing/master,
-	/obj/item/storage/box/fish_revival_kit,
 	/obj/item/fishing_rod/telescopic/master,
 	/obj/item/bait_can/super_baits,
 	/obj/item/storage/fish_case/tiziran,
@@ -95,7 +86,6 @@ GLOBAL_LIST_INIT(mystery_fishing, list(
 	/obj/item/claymore/cutlass/old,
 	/obj/item/gun/energy/laser/retro/old,
 	/obj/item/gun/energy/laser/musket,
-	/obj/item/gun/energy/disabler/smoothbore,
 	/obj/item/gun/ballistic/rifle/boltaction/surplus,
 	/obj/item/food/rationpack,
 	/obj/item/food/canned/squid_ink,
@@ -309,7 +299,7 @@ GLOBAL_LIST_INIT(mystery_fishing, list(
 	uses_integrity = FALSE
 
 	/// The currently selected item. Constantly changes while choosing, determines what is spawned if the prize is claimed, and its current icon
-	var/selected_path = /obj/item/gun/ballistic/revolver/c38/detective
+	var/selected_path = /obj/item/gun/ballistic/revolver/c38/criminalist
 	/// The box that spawned this
 	var/obj/structure/mystery_box/parent_box
 	/// Whether this prize is currently claimable

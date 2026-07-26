@@ -22,7 +22,6 @@
 	mutantbrain = /obj/item/organ/brain/lizard
 	coldmod = 1.5
 	heatmod = 0.67
-	payday_modifier = 1.0
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 	species_cookie = /obj/item/food/meat/slab
 	meat = /obj/item/food/meat/slab/human/mutant/lizard
@@ -31,7 +30,6 @@
 	inert_mutation = /datum/mutation/firebreath
 	death_sound = 'sound/mobs/humanoids/lizard/deathsound.ogg'
 	species_language_holder = /datum/language_holder/lizard
-	digitigrade_customization = DIGITIGRADE_OPTIONAL
 
 	// Lizards are coldblooded and can stand a greater temperature range than humans
 	bodytemp_heat_damage_limit = BODYTEMP_HEAT_LAVALAND_SAFE
@@ -137,7 +135,7 @@
 
 		"Hailing from the arid world of Tizira, lizards were travelling the stars back when mankind was first discovering how neat trains could be. \
 		However, much like the space-fable of the space-tortoise and space-hare, lizards have rejected their kin's motto of \"slow and steady\" \
-		in favor of resting on their laurels and getting completely surpassed by 'bald apes', due in no small part to their lack of access to plasma.",
+		in favor of resting on their laurels and getting completely surpassed by 'bald apes', due in no small part to their lack of access to phoron.",
 
 		"The history between lizards and humans has resulted in many conflicts that lizards ended on the losing side of, \
 		with the finale being an explosive remodeling of their moon. Today's lizard-human relations are seeing the continuance of a record period of peace.",
@@ -164,36 +162,6 @@
 	))
 
 	return to_add
-
-/*
-Lizard subspecies: ASHWALKERS
-*/
-/datum/species/lizard/ashwalker
-	name = "Ash Walker"
-	id = SPECIES_LIZARD_ASH
-	examine_limb_id = SPECIES_LIZARD
-	mutantlungs = /obj/item/organ/lungs/lavaland
-	mutantbrain = /obj/item/organ/brain/primitive
-	inherent_traits = list(
-		TRAIT_MUTANT_COLORS,
-		TRAIT_VIRUSIMMUNE,
-	)
-	inherent_factions = list(FACTION_ASHWALKER)
-	species_language_holder = /datum/language_holder/lizard/ash
-	digitigrade_customization = DIGITIGRADE_FORCED
-	examine_limb_id = SPECIES_LIZARD
-	bodypart_overrides = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/lizard,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/lizard,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/arm/left/lizard/ashwalker,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/arm/right/lizard/ashwalker,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lizard,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lizard,
-	)
-
-/datum/species/lizard/ashwalker/get_physical_attributes()
-	return "Ash Walkers are identical to lizardpeople in almost all aspects. \
-		Unlike them, they're always digitigrade, they can breathe Lavaland's often noxious atmosphere and resist viruses. They are usually illiterate."
 
 /*
 Lizard subspecies: SILVER SCALED

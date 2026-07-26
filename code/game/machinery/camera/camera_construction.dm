@@ -131,7 +131,7 @@
 			else
 				to_chat(user, span_warning("[src] already has that upgrade!"))
 			return
-		else if(istype(attacking_item, /obj/item/stack/sheet/mineral/plasma))
+		else if(istype(attacking_item, /obj/item/stack/sheet/mineral/phoron))
 			if(!isEmpProof(TRUE)) //don't reveal it was already upgraded if was done via MALF AI Upgrade Camera Network ability
 				if(attacking_item.use_tool(src, user, 0, amount=1))
 					upgradeEmpProof(FALSE, TRUE)

@@ -47,13 +47,6 @@
 "# Spawn Positions" = 1
 "# Total Positions" = 1
 
-[BITRUNNER]
-"# Playtime Requirements" = 0
-"# Required Account Age" = 0
-"# Required Character Age" = 0
-"# Spawn Positions" = 3
-"# Total Positions" = 3
-
 [BOTANIST]
 "# Playtime Requirements" = 0
 "# Required Account Age" = 0
@@ -138,10 +131,10 @@
 "# Playtime Requirements" = 120
 "# Required Account Age" = 21
 "# Required Character Age" = 0
-"# Spawn Positions" = 3
-"# Total Positions" = 0
+"# Spawn Positions" = 2
+"# Total Positions" = 2
 
-[DETECTIVE]
+[CRIMINALIST]
 "# Playtime Requirements" = 300
 "# Required Account Age" = 7
 "# Required Character Age" = 0
@@ -178,7 +171,14 @@
 "# Spawn Positions" = 1
 "# Total Positions" = 2
 
-[LAWYER]
+[INTERNAL_AFFAIRS_AGENT]
+"# Playtime Requirements" = 0
+"# Required Account Age" = 0
+"# Required Character Age" = 0
+"# Spawn Positions" = 2
+"# Total Positions" = 2
+
+[INTERNAL_SECURITY_OPERATIVE]
 "# Playtime Requirements" = 0
 "# Required Account Age" = 0
 "# Required Character Age" = 0
@@ -278,8 +278,22 @@
 "# Spawn Positions" = 0
 "# Total Positions" = 0
 
+[VAGABOND]
+"# Playtime Requirements" = 120
+"# Required Account Age" = 21
+"# Required Character Age" = 0
+"# Spawn Positions" = 2
+"# Total Positions" = 0
+
 [WARDEN]
 "# Playtime Requirements" = 300
+"# Required Account Age" = 7
+"# Required Character Age" = 0
+"# Spawn Positions" = 1
+"# Total Positions" = 1
+
+[STEWARD]
+"# Playtime Requirements" = 0
 "# Required Account Age" = 7
 "# Required Character Age" = 0
 "# Spawn Positions" = 1

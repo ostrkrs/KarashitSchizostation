@@ -256,20 +256,27 @@
 				if(!clear_tile(user))
 					return
 				var/obj/structure/window/WD
-				if(istype(W, /obj/item/stack/sheet/plasmarglass))
-					WD = new/obj/structure/window/reinforced/plasma/fulltile(drop_location()) //reinforced plasma window
-				else if(istype(W, /obj/item/stack/sheet/plasmaglass))
-					WD = new/obj/structure/window/plasma/fulltile(drop_location()) //plasma window
+				if(istype(W, /obj/item/stack/sheet/phoron_rglass))
+					WD = new/obj/structure/window/reinforced/phoron/fulltile(drop_location())
+
+				else if(istype(W, /obj/item/stack/sheet/phoron_glass))
+					WD = new/obj/structure/window/phoron/fulltile(drop_location())
+
 				else if(istype(W, /obj/item/stack/sheet/rglass))
-					WD = new/obj/structure/window/reinforced/fulltile(drop_location()) //reinforced window
-				else if(istype(W, /obj/item/stack/sheet/titaniumglass))
+					WD = new/obj/structure/window/reinforced/fulltile(drop_location())
+
+				else if(istype(W, /obj/item/stack/sheet/titanium_glass))
 					WD = new/obj/structure/window/reinforced/shuttle(drop_location())
-				else if(istype(W, /obj/item/stack/sheet/plastitaniumglass))
-					WD = new/obj/structure/window/reinforced/plasma/plastitanium(drop_location())
+
+				else if(istype(W, /obj/item/stack/sheet/plastitanium_glass))
+					WD = new/obj/structure/window/reinforced/phoron/plastitanium(drop_location())
+
 				else if(istype(W, /obj/item/stack/sheet/bronze))
 					WD = new/obj/structure/window/bronze/fulltile(drop_location())
+
 				else
-					WD = new/obj/structure/window/fulltile(drop_location()) //normal window
+					WD = new/obj/structure/window/fulltile(drop_location())
+
 				WD.setDir(dir_to_set)
 				WD.set_anchored(FALSE)
 				WD.state = 0
