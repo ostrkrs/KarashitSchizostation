@@ -1,5 +1,6 @@
 /obj/machinery/chem_heater
 	name = "chemical thermoregulator"
+	desc = "A machine that lets chemists to set the temperature of reagents with precise. Label says \"Do NOT use as cooking stove\"."
 	icon = 'icons/obj/medical/chemical.dmi'
 	icon_state = "chemheater1"
 	base_icon_state = "chemheater"
@@ -38,17 +39,20 @@
 		update_appearance()
 
 /obj/machinery/chem_heater/add_context(atom/source, list/context, obj/item/held_item, mob/user)
-	if(isnull(held_item) || (held_item.item_flags & ABSTRACT) || (held_item.flags_1 & HOLOGRAM_1))
+	if((held_item.item_flags & ABSTRACT) || (held_item.flags_1 & HOLOGRAM_1))
 		return NONE
 
 	if(!QDELETED(beaker))
+		if(beaker && isnull(held_item))
+			context[SCREENTIP_CONTEXT_RMB] = "Eject beaker"
+			return CONTEXTUAL_SCREENTIP_SET
 		if(istype(held_item, /obj/item/reagent_containers/dropper) || istype(held_item, /obj/item/reagent_containers/syringe))
 			context[SCREENTIP_CONTEXT_LMB] = "Inject"
 			return CONTEXTUAL_SCREENTIP_SET
-		if(is_reagent_container(held_item)  && held_item.is_open_container())
+		if(is_reagent_container(held_item) && held_item.is_open_container())
 			context[SCREENTIP_CONTEXT_LMB] = "Replace beaker"
 			return CONTEXTUAL_SCREENTIP_SET
-	else if(is_reagent_container(held_item)  && held_item.is_open_container())
+	else if(is_reagent_container(held_item) && held_item.is_open_container())
 		context[SCREENTIP_CONTEXT_LMB] = "Insert beaker"
 		return CONTEXTUAL_SCREENTIP_SET
 
@@ -81,20 +85,20 @@
 /obj/machinery/chem_heater/update_overlays()
 	. = ..()
 
-	if(powered() && !(machine_stat & BROKEN))
+	if(!powered() && (machine_stat & BROKEN))
+		return
+
+	if(beaker)
+		LAZYADD(vis_contents, beaker)
+		beaker.flags_1 |= IS_ONTOP_1
+		beaker.vis_flags |= VIS_INHERIT_PLANE
+		beaker.pixel_y = 6
+
 		. += emissive_appearance(icon, "[base_icon_state]-light-mask", src, alpha = src.alpha)
+		. += mutable_appearance(icon, "[base_icon_state]-loaded")
 
-		var/beaker_overlay = mutable_appearance(beaker.icon, beaker.icon_state)
-		beaker_overlay.pixel_z = 4
-		if(beaker)
-			. += mutable_appearance(icon, "[base_icon_state]-loaded")
-			. += beaker_overlay
-
-		if(processing)
-			. += mutable_appearance(icon, "[base_icon_state]-process")
-
-		else
-			. += mutable_appearance(icon, "[base_icon_state]-powered")
+	else
+		LAZYNULL(vis_contents)
 
 /obj/machinery/chem_heater/RefreshParts()
 	. = ..()
@@ -133,7 +137,7 @@
 		return NONE
 
 	. = ITEM_INTERACT_BLOCKING
-	if(default_deconstruction_screwdriver(user, "[base_icon_state]1", "[base_icon_state]0", tool))
+	if(default_deconstruction_screwdriver(user, "[base_icon_state]0", "[base_icon_state]1", tool))
 		return ITEM_INTERACT_SUCCESS
 
 /obj/machinery/chem_heater/crowbar_act(mob/living/user, obj/item/tool)
@@ -173,12 +177,12 @@
 
 	if(!QDELETED(new_beaker))
 		if(!user.transferItemToLoc(new_beaker, src))
-			update_appearance()
 			return FALSE
 		beaker = new_beaker
 		RegisterSignal(beaker.reagents, COMSIG_REAGENTS_REACTION_STEP, PROC_REF(on_reaction_step))
 
 	update_appearance()
+	update_overlays()
 
 	return TRUE
 
@@ -396,7 +400,7 @@
 
 //Has a lot of buffer and is upgraded
 /obj/machinery/chem_heater/debug
-	name = "Debug Reaction Chamber"
+	name = "debug chemical thermoregulator"
 	desc = "Now with even more buffers!"
 
 /obj/machinery/chem_heater/debug/Initialize(mapload)
@@ -405,10 +409,6 @@
 	reagents.add_reagent(/datum/reagent/reaction_agent/basic_buffer, 1000)
 	reagents.add_reagent(/datum/reagent/reaction_agent/acidic_buffer, 1000)
 	heater_coefficient = 0.4 //hack way to upgrade
-
-//map load types
-/obj/machinery/chem_heater/withbuffer
-	desc = "This Reaction Chamber comes with a bit of buffer to help get you started."
 
 /obj/machinery/chem_heater/withbuffer/Initialize(mapload)
 	. = ..()
