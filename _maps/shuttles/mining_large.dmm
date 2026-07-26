@@ -6,147 +6,12 @@
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /turf/open/floor/plating,
 /area/shuttle/mining/large)
-"ac" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/toolbox/emergency,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"ad" = (
-/obj/machinery/computer/shuttle/mining,
-/obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/brown/half/contrasted,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"ae" = (
-/obj/structure/table/reinforced,
-/obj/item/clothing/mask/gas,
-/obj/item/tank/internals/emergency_oxygen,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"af" = (
-/obj/structure/table/reinforced,
-/obj/item/storage/medkit/regular,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"ag" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"ah" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"ai" = (
-/obj/structure/chair/comfy/shuttle{
-	dir = 1
-	},
-/obj/effect/turf_decal/bot_white,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
-	dir = 8
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"aj" = (
-/obj/structure/table/reinforced,
-/obj/item/stack/ore/iron{
-	pixel_x = 6;
-	pixel_y = 4
-	},
-/obj/item/stack/ore/iron{
-	pixel_x = -2;
-	pixel_y = -8
-	},
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
 "ak" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/mining/large)
-"al" = (
-/obj/structure/table/reinforced,
-/obj/item/folder/yellow,
-/obj/item/pen,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"am" = (
-/obj/effect/turf_decal/stripes/white/corner,
-/obj/machinery/light/small/directional/south,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
-	dir = 4
-	},
-/obj/effect/turf_decal/tile/brown{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"an" = (
-/obj/effect/turf_decal/stripes/white/line,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"ao" = (
-/obj/effect/turf_decal/stripes/white/corner{
-	dir = 8
-	},
-/obj/machinery/light/small/directional/south,
-/obj/item/radio/intercom{
-	pixel_y = -29
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/tile/neutral/anticorner/contrasted{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/brown,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"ap" = (
-/obj/structure/table/reinforced,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/stock_parts/power_store/cell/high,
-/obj/item/screwdriver{
-	pixel_y = 18
-	},
-/obj/effect/turf_decal/tile/brown/anticorner/contrasted{
-	dir = 8
-	},
-/turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "aq" = (
 /obj/machinery/status_display/evac,
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/shuttle/mining/large)
-"ar" = (
-/obj/machinery/door/airlock/mining{
-	name = "Mining Shuttle Cockpit"
-	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
 "as" = (
 /obj/item/clothing/suit/hazardvest{
@@ -238,13 +103,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
-"au" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
 "av" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 1
@@ -271,12 +129,6 @@
 /obj/effect/turf_decal/box/white/corners,
 /turf/open/floor/iron/dark,
 /area/shuttle/mining/large)
-"az" = (
-/obj/effect/turf_decal/stripes/white/line,
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/neutral/fourcorners,
-/turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
 "aA" = (
 /obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/box/white/corners{
@@ -289,16 +141,6 @@
 /obj/effect/turf_decal/box/white/corners,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/shuttle/mining/large)
-"aC" = (
-/obj/effect/turf_decal/stripes/white/line{
-	dir = 1
-	},
-/obj/structure/rack,
-/obj/item/crowbar/red,
-/obj/item/wrench,
-/obj/item/flashlight,
-/turf/open/floor/plating,
 /area/shuttle/mining/large)
 "aD" = (
 /obj/machinery/door/airlock/external/ruin{

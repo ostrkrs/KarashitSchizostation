@@ -714,7 +714,7 @@
 /obj/machinery/light/small/directional/north,
 /obj/structure/reagent_dispensers/wall/peppertank/directional/north,
 /obj/item/inspector,
-/obj/item/flashlight/seclite,
+/obj/item/flashlight/cell_powered/seclite,
 /turf/open/floor/iron,
 /area/shuttle/abandoned/pod)
 "xG" = (
