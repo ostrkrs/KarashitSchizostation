@@ -352,3 +352,13 @@
 	name = "MOD Soul Core"
 	icon_file = 'icons/obj/clothing/modsuit/mod_construction.dmi'
 	json_config = 'code/datums/greyscale/json_configs/mod_core_soul.json'
+
+/datum/greyscale_config/pill_bottle
+	name = "Pill Bottle"
+	icon_file = 'icons/obj/medical/chemical.dmi'
+	json_config = 'code/datums/greyscale/json_configs/pill_bottle.json'
+
+/datum/greyscale_config/patch_pack
+	name = "Patch Pack"
+	icon_file = 'icons/obj/medical/chemical.dmi'
+	json_config = 'code/datums/greyscale/json_configs/patch_pack.json'

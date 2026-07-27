@@ -164,7 +164,19 @@
 /datum/storage/pillbottle/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound)
 	. = ..()
 	set_holdable(list(
-		/obj/item/reagent_containers/applicator,
+		/obj/item/reagent_containers/applicator/pill,
+		/obj/item/food/bait/natural,
+	))
+
+///Patch pack
+/datum/storage/patchpack
+	allow_quick_gather = TRUE
+	open_sound = 'sound/items/handling/patch_pack_open.ogg'
+
+/datum/storage/patchpack/New(atom/parent, max_slots, max_specific_storage, max_total_storage, rustle_sound, remove_rustle_sound)
+	. = ..()
+	set_holdable(list(
+		/obj/item/reagent_containers/applicator/patch,
 		/obj/item/food/bait/natural,
 	))
 

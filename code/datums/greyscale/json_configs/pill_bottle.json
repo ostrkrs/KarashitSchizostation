@@ -1,0 +1,15 @@
+{
+	"pill_bottle": [
+		{
+			"type": "icon_state",
+			"icon_state": "pill_bottle",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "pill_bottle_colored",
+			"blend_mode": "overlay",
+			"color_ids": [1]
+		}
+	]
+}

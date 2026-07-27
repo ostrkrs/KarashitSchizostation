@@ -1,0 +1,15 @@
+{
+	"patch_pack": [
+		{
+			"type": "icon_state",
+			"icon_state": "patch_pack",
+			"blend_mode": "overlay"
+		},
+		{
+			"type": "icon_state",
+			"icon_state": "patch_pack_colored",
+			"blend_mode": "overlay",
+			"color_ids": [1]
+		}
+	]
+}

@@ -7,7 +7,7 @@
 	worn_icon_state = "nothing"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	volume = 50
+	volume = 20
 	/// How many "layers" we have remaining. Each layer equates to 1 second of digestion
 	var/layers_remaining = 3
 

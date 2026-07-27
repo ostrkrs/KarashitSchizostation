@@ -4,26 +4,23 @@
  */
 /obj/item/storage/pill_bottle
 	name = "pill bottle"
-	desc = "It's an airtight container for storing medication."
-	icon_state = "pill_canister"
-	icon = 'icons/obj/medical/chemical.dmi'
-	inhand_icon_state = "contsolid"
-	worn_icon_state = "nothing"
-	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
+	desc = "It's an airtight container for storing pills."
+	icon = 'icons/map_icons/items/_item.dmi'
+	icon_state = "/obj/item/storage/pill_bottle"
+	post_init_icon_state = "pill_bottle"
 	w_class = WEIGHT_CLASS_SMALL
 	pickup_sound = 'sound/items/handling/pill_bottle_pickup.ogg'
 	drop_sound = 'sound/items/handling/pill_bottle_place.ogg'
 	storage_type = /datum/storage/pillbottle
 
+	flags_1 = IS_PLAYER_COLORABLE_1
+	greyscale_config = /datum/greyscale_config/pill_bottle
+	greyscale_colors = COLOR_LIGHT_ORANGE
+
 	///Number of pills to spawn
 	VAR_PROTECTED/spawn_count
 	///Pill type to spawn
 	VAR_PROTECTED/obj/item/reagent_containers/applicator/pill/spawn_type
-
-/obj/item/storage/pill_bottle/suicide_act(mob/living/user)
-	user.visible_message(span_suicide("[user] is trying to get the cap off [src]! It looks like [user.p_theyre()] trying to commit suicide!"))
-	return TOXLOSS
 
 /obj/item/storage/pill_bottle/PopulateContents()
 	SHOULD_NOT_OVERRIDE(TRUE)
@@ -37,6 +34,7 @@
 /obj/item/storage/pill_bottle/multiver
 	name = "bottle of multiver pills"
 	desc = "Contains pills used to counter toxins."
+	greyscale_colors = COLOR_ASSEMBLY_GREEN
 	spawn_count = 7
 	spawn_type = /obj/item/reagent_containers/applicator/pill/multiver
 
@@ -46,6 +44,7 @@
 /obj/item/storage/pill_bottle/epinephrine
 	name = "bottle of epinephrine pills"
 	desc = "Contains pills used to stabilize patients."
+	greyscale_colors = COLOR_ASSEMBLY_LBLUE
 	spawn_count = 7
 	spawn_type = /obj/item/reagent_containers/applicator/pill/epinephrine
 
@@ -58,12 +57,14 @@
 /obj/item/storage/pill_bottle/potassiodide
 	name = "bottle of potassium iodide pills"
 	desc = "Contains pills used to reduce radiation damage."
+	greyscale_colors = COLOR_ASSEMBLY_YELLOW
 	spawn_count = 3
 	spawn_type = /obj/item/reagent_containers/applicator/pill/potassiodide
 
 /obj/item/storage/pill_bottle/probital
 	name = "bottle of probital pills"
 	desc = "Contains pills used to treat brute damage. The tag in the bottle states 'Eat before ingesting, may cause fatigue'."
+	greyscale_colors = COLOR_ASSEMBLY_RED
 	spawn_count = 4
 	spawn_type = /obj/item/reagent_containers/applicator/pill/probital
 
@@ -76,6 +77,7 @@
 /obj/item/storage/pill_bottle/mannitol
 	name = "bottle of mannitol pills"
 	desc = "Contains pills used to treat brain damage."
+	greyscale_colors = COLOR_ASSEMBLY_BGRAY
 	spawn_count = 7
 	spawn_type = /obj/item/reagent_containers/applicator/pill/mannitol
 
@@ -96,12 +98,6 @@
 	desc = "A bottle of pills developed by Interdyne Pharmaceuticals. They're used to treat Hereditary Manifold Sickness."
 	spawn_count = 6
 	spawn_type = /obj/item/reagent_containers/applicator/pill/sansufentanyl
-
-/obj/item/storage/pill_bottle/mining
-	name = "bottle of patches"
-	desc = "Contains patches used to treat brute and burn damage."
-	spawn_count = 3
-	spawn_type = /obj/item/reagent_containers/applicator/patch/libital
 
 /obj/item/storage/pill_bottle/zoom
 	name = "suspicious pill bottle"
@@ -184,12 +180,6 @@
 	desc = "Full of natural fish bait."
 	spawn_count = 7
 	spawn_type = /obj/item/food/bait/natural
-
-/obj/item/storage/pill_bottle/ondansetron
-	name = "ondansetron patches"
-	desc = "A bottle containing patches of ondansetron, a drug used to treat nausea and vomiting. May cause drowsiness."
-	spawn_count = 5
-	spawn_type = /obj/item/reagent_containers/applicator/patch/ondansetron
 
 /obj/item/storage/pill_bottle/immunodeficiency
 	name = "bottle of immune boosters"

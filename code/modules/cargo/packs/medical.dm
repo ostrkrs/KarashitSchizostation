@@ -105,7 +105,7 @@
 					/obj/item/storage/medkit/fire,
 					/obj/item/defibrillator/loaded,
 					/obj/item/reagent_containers/blood/o_minus,
-					/obj/item/storage/pill_bottle/mining,
+					/obj/item/storage/patch_pack/libital,
 					/obj/item/reagent_containers/applicator/pill/neurine,
 					/obj/item/stack/medical/bone_gel = 2,
 					/obj/item/vending_refill/medical,

@@ -5,7 +5,7 @@
 	icon_state = "bandaid_blank"
 	inhand_icon_state = null
 	possible_transfer_amounts = list()
-	volume = 40
+	volume = 20
 	apply_method = "apply"
 	embed_type = /datum/embedding/med_patch
 	// Quick to apply
@@ -196,21 +196,8 @@
 	desc = "Helps with brute and burn injuries. Slightly toxic. Three patches applied can restore a corpse husked by burns."
 	list_reagents = list(/datum/reagent/medicine/c2/synthflesh = 20)
 	list_reagents_purity = 1
-	icon_state = "bandaid_both"
+	icon_state = "bandaid5"
 	embed_type = /datum/embedding/med_patch/instant //synthflesh effects occur on the initial apply only, so we need to apply it all at once
-
-/obj/item/reagent_containers/applicator/patch/canconsume(mob/eater, mob/user)
-	. = ..()
-	if(!iscarbon(eater))
-		return
-	var/datum/reagent/medicine/c2/synthflesh/synthflesh_patch = reagents.has_reagent(/datum/reagent/medicine/c2/synthflesh)
-	if(!synthflesh_patch)
-		return
-	// Check mob damage for synthflesh unhusking
-	var/mob/living/carbon/carbies = eater
-	if(HAS_TRAIT_FROM(carbies, TRAIT_HUSK, BURN) && carbies.getFireLoss() > UNHUSK_DAMAGE_THRESHOLD * 2.5)
-		// give them a warning if the mob is a husk but synthflesh won't unhusk yet
-		carbies.visible_message(span_boldwarning("[carbies]'s burns need to be repaired first before synthflesh will unhusk it!"))
 
 /obj/item/reagent_containers/applicator/patch/ondansetron
 	name = "ondansetron patch"
@@ -222,41 +209,57 @@
 
 /obj/item/reagent_containers/applicator/patch/style
 	icon_state = "bandaid_blank"
+
 /obj/item/reagent_containers/applicator/patch/style/brute
-	icon_state = "bandaid_brute_2"
-/obj/item/reagent_containers/applicator/patch/style/burn
-	icon_state = "bandaid_burn_2"
-/obj/item/reagent_containers/applicator/patch/style/bruteburn
-	icon_state = "bandaid_both"
-/obj/item/reagent_containers/applicator/patch/style/toxin
-	icon_state = "bandaid_toxin_2"
-/obj/item/reagent_containers/applicator/patch/style/oxygen
-	icon_state = "bandaid_suffocation_2"
-/obj/item/reagent_containers/applicator/patch/style/omni
-	icon_state = "bandaid_mix"
-/obj/item/reagent_containers/applicator/patch/style/bruteplus
 	icon_state = "bandaid_brute"
-/obj/item/reagent_containers/applicator/patch/style/burnplus
+
+/obj/item/reagent_containers/applicator/patch/style/brute_mini
+	icon_state = "bandaid_brute_2"
+
+/obj/item/reagent_containers/applicator/patch/style/burn
 	icon_state = "bandaid_burn"
-/obj/item/reagent_containers/applicator/patch/style/toxinplus
+
+/obj/item/reagent_containers/applicator/patch/style/burn_mini
+	icon_state = "bandaid_burn_2"
+
+/obj/item/reagent_containers/applicator/patch/style/toxin
 	icon_state = "bandaid_toxin"
-/obj/item/reagent_containers/applicator/patch/style/oxygenplus
-	icon_state = "bandaid_suffocation"
-/obj/item/reagent_containers/applicator/patch/style/monkey
-	icon_state = "bandaid_monke"
-/obj/item/reagent_containers/applicator/patch/style/clown
-	icon_state = "bandaid_clown"
+
+/obj/item/reagent_containers/applicator/patch/style/toxin_mini
+	icon_state = "bandaid_toxin_2"
+
 /obj/item/reagent_containers/applicator/patch/style/one
-	icon_state = "bandaid_1"
+	icon_state = "bandaid1"
+
 /obj/item/reagent_containers/applicator/patch/style/two
-	icon_state = "bandaid_2"
+	icon_state = "bandaid2"
+
 /obj/item/reagent_containers/applicator/patch/style/three
-	icon_state = "bandaid_3"
+	icon_state = "bandaid3"
+
 /obj/item/reagent_containers/applicator/patch/style/four
-	icon_state = "bandaid_4"
-/obj/item/reagent_containers/applicator/patch/style/exclamation
-	icon_state = "bandaid_exclaimationpoint"
-/obj/item/reagent_containers/applicator/patch/style/question
-	icon_state = "bandaid_questionmark"
-/obj/item/reagent_containers/applicator/patch/style/colonthree
-	icon_state = "bandaid_colonthree"
+	icon_state = "bandaid4"
+
+/obj/item/reagent_containers/applicator/patch/style/five
+	icon_state = "bandaid5"
+
+/obj/item/reagent_containers/applicator/patch/style/six
+	icon_state = "bandaid6"
+
+/obj/item/reagent_containers/applicator/patch/style/seven
+	icon_state = "bandaid7"
+
+/obj/item/reagent_containers/applicator/patch/style/eight
+	icon_state = "bandaid8"
+
+/obj/item/reagent_containers/applicator/patch/style/nine
+	icon_state = "bandaid9"
+
+/obj/item/reagent_containers/applicator/patch/style/ten
+	icon_state = "bandaid10"
+
+/obj/item/reagent_containers/applicator/patch/style/eleven
+	icon_state = "bandaid11"
+
+/obj/item/reagent_containers/applicator/patch/style/twelve
+	icon_state = "bandaid12"
