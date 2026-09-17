@@ -22,8 +22,6 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/examine_limb_id
 	///This is the fluff name. They are displayed on health analyzers and in the character setup menu. Leave them generic for other servers to customize.
 	var/name
-	/// TRUE, if we want to sanitize names for this species from numbers
-	var/allow_numbers_in_names = FALSE
 	/**
 	 * The formatting of the name of the species in plural context. Defaults to "[name]\s" if unset.
 	 *  Ex "[Mothmen] are strong", "[Lizardpeople] don't like", "[Golems] hate"
@@ -54,8 +52,10 @@ GLOBAL_LIST_EMPTY(features_by_species)
 	var/meat = /obj/item/food/meat/slab/human
 	///What skin the species drops when gibbed by a gibber machine.
 	var/skinned_type
-	///flags for inventory slots the race can't equip stuff to. Golems cannot wear jumpsuits, for example.
+	///Flags for inventory slots the race can't equip stuff to. Golems cannot wear jumpsuits, for example.
 	var/no_equip_flags
+	///Used to generate names for this species
+	var/datum/culture/species_culture = /datum/culture/human_basic
 	/// What languages this species can understand and say.
 	/// Use a [language holder datum][/datum/language_holder] typepath in this var.
 	/// Should never be null.
@@ -69,6 +69,8 @@ GLOBAL_LIST_EMPTY(features_by_species)
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right,
 		BODY_ZONE_CHEST = /obj/item/bodypart/chest,
 	)
+	///Do we generate names for this species in our own way through /proc/generate_random_specied_name, without relying on language?
+	var/names_untied_from_language = FALSE
 	///Internal organs that are unique to this race, like a tail or other cosmetic organs. list(typepath of organ 1, typepath of organ 2 = "Round").
 	var/list/mutant_organs = list()
 	///Replaces default brain with a different organ
@@ -1925,7 +1927,7 @@ GLOBAL_LIST_EMPTY(features_by_species)
  */
 /datum/species/proc/create_pref_language_perk()
 
-	// Grab galactic common as a path, for comparisons
+	// Grab common as a path, for comparisons
 	var/datum/language/common_language = /datum/language/common
 
 	// Now let's find all the languages they can speak that aren't common

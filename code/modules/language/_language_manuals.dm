@@ -51,16 +51,6 @@
 		new /obj/item/book/manual/random(T)
 		qdel(src)
 
-/obj/item/language_manual/codespeak_manual
-	name = "codespeak manual"
-	desc = "The book's cover reads: \"Codespeak(tm) - Secure your communication with metaphors so elaborate, they seem randomly generated!\""
-	language = /datum/language/codespeak
-	flavour_text = "suddenly your mind is filled with codewords and responses"
-
-/obj/item/language_manual/codespeak_manual/unlimited
-	name = "deluxe codespeak manual"
-	charges = INFINITY
-
 /obj/item/language_manual/roundstart_species
 
 /obj/item/language_manual/roundstart_species/Initialize(mapload)
@@ -84,14 +74,6 @@
 /obj/item/language_manual/roundstart_species/five/Initialize(mapload)
 	. = ..()
 	name = "extended [initial(language.name)] manual"
-
-/obj/item/language_manual/piratespeak
-	name = "\improper Captain Pete's Guide to Pirate Lingo"
-	icon_state = "book_pirate"
-	desc = "A book containing all the knowledge, jargon and buzzwords to speak like a true old salt."
-	language = /datum/language/piratespeak
-	flavour_text = "Blimey! I feel less of a landlubber now."
-	charges = 5
 
 // So drones can teach borgs and AI dronespeak. For best effect, combine with mother drone lawset.
 /obj/item/language_manual/dronespeak_manual

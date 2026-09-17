@@ -302,7 +302,7 @@
 		to_chat(owner, span_warning("You take [skillchip] out of [src]."))
 		return
 
-	to_chat(owner, span_warning("Your brain is empty!")) // heh
+	to_chat(owner, span_warning("Your [src] is empty!")) // heh
 
 /obj/item/organ/cyberimp/brain/connector/emp_act(severity)
 	. = ..()

@@ -42,6 +42,7 @@
 	var/static/list/available_species = list(
 		SPECIES_HUMAN,
 		SPECIES_HUMAN_CAVER,
+		SPECIES_HUMAN_VATBORN,
 		SPECIES_LIZARD,
 		SPECIES_FLYPERSON,
 		SPECIES_MOTH,

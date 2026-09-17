@@ -37,7 +37,7 @@
 		examine_list += span_warning("There's a label on the side, but it's written in indecipherable gibberish. You have no idea what it means!")
 		return
 
-	examine_list += span_notice("There's a label written in codespeak on the side, saying that this item can be refunded for [refundable_tc] by applying it onto an uplink.")
+	examine_list += span_notice("There's a label saying that this item can be refunded for [refundable_tc] by applying it onto an uplink.")
 
 /datum/element/uplink_reimburse/proc/reimburse(obj/item/refund_item, mob/user, datum/component/uplink/uplink_comp)
 	SIGNAL_HANDLER

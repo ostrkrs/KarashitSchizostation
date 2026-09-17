@@ -52,7 +52,6 @@
 		/obj/item/lighter/greyscale = 4,
 		/obj/item/storage/fancy/rollingpapers = 5,
 	)
-	initial_language_holder = /datum/language_holder/syndicate
 	refill_canister = /obj/item/vending_refill/cigarette/syndicate
 
 /obj/item/vending_refill/cigarette/syndicate
@@ -81,7 +80,6 @@
 		/obj/item/vape = 5,
 		/obj/item/lighter = 3,
 	)
-	initial_language_holder = /datum/language_holder/beachbum
 	allow_custom = FALSE
 
 /obj/item/vending_refill/cigarette

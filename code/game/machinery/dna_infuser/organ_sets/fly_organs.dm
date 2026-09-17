@@ -64,7 +64,6 @@
 		"S" = "Z",
 	)
 
-
 /obj/item/organ/tongue/fly/Initialize(mapload)
 	. = ..()
 	AddComponent(/datum/component/speechmod, replacements = speech_replacements, should_modify_speech = CALLBACK(src, PROC_REF(should_modify_speech)))

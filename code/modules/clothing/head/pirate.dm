@@ -9,20 +9,6 @@
 	. = ..()
 	AddComponent(/datum/component/adjust_fishing_difficulty, -5)
 
-/obj/item/clothing/head/costume/pirate/equipped(mob/user, slot)
-	. = ..()
-	if(!(slot_flags & slot) || isdrone(user))
-		return
-	user.grant_language(/datum/language/piratespeak, source = LANGUAGE_HAT)
-	to_chat(user, span_boldnotice("You suddenly know how to speak like a pirate!"))
-
-/obj/item/clothing/head/costume/pirate/dropped(mob/user)
-	. = ..()
-	if(QDELETED(src)) //This can be called as a part of destroy
-		return
-	user.remove_language(/datum/language/piratespeak, source = LANGUAGE_HAT)
-	to_chat(user, span_boldnotice("You can no longer speak like a pirate."))
-
 /obj/item/clothing/head/costume/pirate/armored
 	armor_type = /datum/armor/pirate_armored
 	strip_delay = 4 SECONDS

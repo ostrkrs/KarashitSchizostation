@@ -590,7 +590,6 @@ Basically, we fill the time between now and 2s from now with hands based off the
 	var/list/speech_options = list(
 		/datum/mutation/swedish,
 		/datum/mutation/unintelligible,
-		/datum/mutation/stoner,
 		/datum/mutation/medieval,
 		/datum/mutation/wacky,
 		/datum/mutation/piglatin,

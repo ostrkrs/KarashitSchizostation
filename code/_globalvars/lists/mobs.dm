@@ -63,24 +63,30 @@ GLOBAL_LIST_EMPTY(suit_sensors_list) //all people with suit sensors on
 
 /// All alive mobs with clients.
 GLOBAL_LIST_EMPTY(alive_player_list)
-
 /// All dead mobs with clients. Does not include observers.
 GLOBAL_LIST_EMPTY(dead_player_list)
-
 /// All alive antags with clients.
 GLOBAL_LIST_EMPTY(current_living_antags)
-
 /// All observers with clients that joined as observers.
 GLOBAL_LIST_EMPTY(current_observers_list)
 
 /// All living mobs which can hear blob telepathy
 GLOBAL_LIST_EMPTY(blob_telepathy_mobs)
-
 /// All "living" (because revenants are in between mortal planes or whatever) mobs that can hear revenants
 GLOBAL_LIST_EMPTY(revenant_relay_mobs)
 
 ///underages who have been reported to security for trying to buy things they shouldn't, so they can't spam
 GLOBAL_LIST_EMPTY(narcd_underages)
+
+/// List of culture prototypes to reference, assoc [type] = prototype
+GLOBAL_LIST_INIT_TYPED(culture_datum_instances, /datum/culture, init_culture_prototypes())
+
+/proc/init_culture_prototypes()
+	var/list/culture_list = list()
+	for(var/datum/culture/culture_type as anything in typesof(/datum/culture))
+		culture_list[culture_type] = new culture_type()
+	return culture_list
+
 /// List of language prototypes to reference, assoc [type] = prototype
 GLOBAL_LIST_INIT_TYPED(language_datum_instances, /datum/language, init_language_prototypes())
 /// List if all language typepaths learnable, IE, those with keys

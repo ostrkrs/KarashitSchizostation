@@ -167,3 +167,22 @@
 
 /datum/dna_block/feature/horn/caver/apply_to_mob(mob/living/carbon/human/target, dna_hash)
 	target.dna.features[feature_key] = SSaccessories.boneplates_list[deconstruct_block(get_block(dna_hash), length(SSaccessories.boneplates_list))]
+
+/datum/dna_block/feature/vatborn_body_marking
+	feature_key = FEATURE_VATBORN_BODY_MARKINGS
+
+/datum/dna_block/feature/vatborn_body_marking/create_unique_block(mob/living/carbon/human/target)
+	return construct_block(SSaccessories.vatborn_body_markings_list.Find(target.dna.features[feature_key]), length(SSaccessories.vatborn_body_markings_list))
+
+/datum/dna_block/feature/vatborn_body_marking/apply_to_mob(mob/living/carbon/human/target, dna_hash)
+	target.dna.features[feature_key] = SSaccessories.vatborn_body_markings_list[deconstruct_block(get_block(dna_hash), length(SSaccessories.vatborn_body_markings_list))]
+
+/datum/dna_block/feature/vatborn_head_marking
+	feature_key = FEATURE_VATBORN_HEAD_MARKINGS
+
+/datum/dna_block/feature/vatborn_head_marking/create_unique_block(mob/living/carbon/human/target)
+	return construct_block(SSaccessories.vatborn_head_markings_list.Find(target.dna.features[feature_key]), length(SSaccessories.vatborn_head_markings_list))
+
+/datum/dna_block/feature/vatborn_head_marking/apply_to_mob(mob/living/carbon/human/target, dna_hash)
+	target.dna.features[feature_key] = SSaccessories.vatborn_head_markings_list[deconstruct_block(get_block(dna_hash), length(SSaccessories.vatborn_head_markings_list))]
+

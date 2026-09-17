@@ -59,17 +59,7 @@
 	input_two = /datum/mutation/stimmed
 	result = /datum/mutation/martyrdom
 
-/datum/generecipe/heckacious
-	input_one = /datum/mutation/wacky
-	input_two = /datum/mutation/stoner
-	result = /datum/mutation/heckacious
-
 /datum/generecipe/ork
 	input_one = /datum/mutation/hulk
 	input_two = /datum/mutation/clumsy
 	result = /datum/mutation/hulk/ork
-
-/datum/generecipe/rock_absorber
-	input_one = /datum/mutation/rock_eater
-	input_two = /datum/mutation/stoner
-	result = /datum/mutation/rock_absorber

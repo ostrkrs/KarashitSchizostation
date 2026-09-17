@@ -54,3 +54,17 @@
 
 /datum/bodypart_overlay/simple/body_marking/lizard/get_accessory(name)
 	return SSaccessories.lizard_markings_list[name]
+
+/datum/bodypart_overlay/simple/body_marking/vatborn_body
+	dna_feature_key = FEATURE_VATBORN_BODY_MARKINGS
+	applies_to = list(/obj/item/bodypart/chest)
+
+/datum/bodypart_overlay/simple/body_marking/vatborn_body/get_accessory(name)
+	return SSaccessories.vatborn_body_markings_list[name]
+
+/datum/bodypart_overlay/simple/body_marking/vatborn_head
+	dna_feature_key = FEATURE_VATBORN_HEAD_MARKINGS
+	applies_to = list(/obj/item/bodypart/head)
+
+/datum/bodypart_overlay/simple/body_marking/vatborn_head/get_accessory(name)
+	return SSaccessories.vatborn_head_markings_list[name]

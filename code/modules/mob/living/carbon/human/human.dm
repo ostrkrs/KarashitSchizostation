@@ -1077,8 +1077,8 @@
 /mob/living/carbon/human/species/cave_adapted
 	race = /datum/species/human/cave_adapted
 
-/mob/living/carbon/human/species/cave_adapted
-	race = /datum/species/human/cave_adapted
+/mob/living/carbon/human/species/vatborn
+	race = /datum/species/human/vatborn
 
 /mob/living/carbon/human/species/fly
 	race = /datum/species/fly

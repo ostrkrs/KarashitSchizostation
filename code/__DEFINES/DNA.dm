@@ -64,6 +64,8 @@
 #define FEATURE_TAIL_FISH "fish_tail"
 #define FEATURE_SNOUT "snout"
 #define FEATURE_LIZARD_MARKINGS "marking_lizard"
+#define FEATURE_VATBORN_BODY_MARKINGS "marking_vatborn_body"
+#define FEATURE_VATBORN_HEAD_MARKINGS "marking_vatborn_head"
 #define FEATURE_HORNS "horns"
 #define FEATURE_BONEPLATE "boneplate"
 #define FEATURE_FRILLS "frills"

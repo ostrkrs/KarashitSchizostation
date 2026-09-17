@@ -1,7 +1,7 @@
 // 'basic' language; spoken by default.
 /datum/language/common
-	name = "Galactic Common"
-	desc = "The common galactic tongue."
+	name = "Academ Standard"
+	desc = "The universally accepted human language."
 	key = "0"
 	flags = TONGUELESS_SPEECH | LANGUAGE_HIDE_ICON_IF_UNDERSTOOD
 	default_priority = 100
@@ -12,10 +12,7 @@
 	additional_syllable_low = 0
 	additional_syllable_high = 0
 
-	icon_state = "galcom"
-	// Default namelist is the human namelist, and common is the human language, so might as well.
-	// Feel free to remove this at some point because common can generate some pretty cool names.
-	always_use_default_namelist = TRUE
+	icon_state = "academ"
 	/**
 	 * This list really long, mainly because I can't make up my mind about which mandarin syllables should be removed,
 	 * and the english syllables had to be duplicated so that there is roughly a 50-50 weighting.
@@ -63,6 +60,5 @@
 	)
 
 	mutual_understanding = list(
-		/datum/language/beachbum = 33,
 		/datum/language/uncommon = 20,
 	)

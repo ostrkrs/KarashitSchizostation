@@ -24,7 +24,7 @@
 	var/sight_flags = NONE
 	/// How much innate tint these eyes have
 	var/tint = 0
-	/// How much innare flash protection these eyes have, usually paired with tint
+	/// How much innate flash protection these eyes have, usually paired with tint
 	var/flash_protect = FLASH_PROTECTION_NONE
 	/// How much more damage eyes take if flashed
 	var/flash_damage_mod = 1

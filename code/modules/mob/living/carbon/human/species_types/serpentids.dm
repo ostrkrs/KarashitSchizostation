@@ -72,7 +72,6 @@
 		TRAIT_SIGNER,
 		TRAIT_SPACER_BORN,
 	)
-	allow_numbers_in_names = TRUE
 	sexes = FALSE // these goobers don't know what sex is
 	mob_size = MOB_SIZE_LARGE
 	meat = /obj/item/food/meat/slab/bugmeat
@@ -85,6 +84,7 @@
 	payday_modifier = 0 // why do we pay salary to a literal biorobot
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	species_cookie = /obj/item/food/grown/cabbage
+	species_culture = /datum/culture/serpentid
 	species_language_holder = /datum/language_holder/serpentid
 	pressuremod = 0.5
 	bodytemp_normal = (BODYTEMP_NORMAL - 5)

@@ -5,8 +5,9 @@
 	value = 4
 	gain_text = span_notice("You feel CONNECTED.")
 	lose_text = span_danger("You don't feel so CONNECTED anymore.")
-	medical_record_text = "Patient has a cybernetic implant on their back of their head that lets them install and remove skillchips at will. Gross."
+	medical_record_text = "Patient has a cybernetic implant on their back of their head that lets them install and remove skillchips at will."
 	mail_goodies = list()
+	mob_trait = TRAIT_CHIP_CONNECTOR
 	var/obj/item/organ/cyberimp/brain/connector/connector
 
 /datum/quirk/chip_connector/New()

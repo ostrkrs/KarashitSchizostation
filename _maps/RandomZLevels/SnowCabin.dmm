@@ -3575,7 +3575,7 @@
 	},
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/cup/glass/bottle/vodka/badminka{
-	desc = "A fancy bottle of vodka. The name isn't in Galactic Common though.";
+	desc = "A fancy bottle of vodka. The name isn't in Academ Standard though.";
 	name = "Porosha Vodka"
 	},
 /obj/effect/light_emitter{

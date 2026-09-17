@@ -174,6 +174,7 @@
 // Humans and xenohumans
 #define SPECIES_HUMAN "human"
 #define SPECIES_HUMAN_CAVER "caver"
+#define SPECIES_HUMAN_VATBORN "vatborn"
 // Aliens
 #define SPECIES_ABDUCTOR "abductor"
 #define SPECIES_ANDROID "android"

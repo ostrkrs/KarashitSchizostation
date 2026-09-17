@@ -81,15 +81,9 @@
 	return list(
 		/datum/language/common,
 		/datum/language/uncommon,
-		/datum/language/spinwarder,
 		/datum/language/draconic,
-		/datum/language/codespeak,
 		/datum/language/monkey,
 		/datum/language/narsie,
-		/datum/language/beachbum,
-		/datum/language/aphasia,
-		/datum/language/piratespeak,
-		/datum/language/moffic,
 		/datum/language/sylvan,
 		/datum/language/shadowtongue,
 		/datum/language/terrum,
@@ -589,11 +583,6 @@
 	attack_verb_continuous = list("shocks", "jolts", "zaps")
 	attack_verb_simple = list("shock", "jolt", "zap")
 	voice_filter = @{"[0:a] asplit [out0][out2]; [out0] asetrate=%SAMPLE_RATE%*0.99,aresample=%SAMPLE_RATE%,volume=0.3 [p0]; [p0][out2] amix=inputs=2"}
-	languages_native = list(/datum/language/voltaic)
-
-// Ethereal tongues can speak all default + voltaic
-/obj/item/organ/tongue/ethereal/get_possible_languages()
-	return ..() + /datum/language/voltaic
 
 /obj/item/organ/tongue/jelly
 	name = "jelly tongue"
@@ -625,7 +614,6 @@
 	liked_foodtypes = VEGETABLES | DAIRY | CLOTH
 	disliked_foodtypes = FRUIT | GROSS | BUGS | GORE
 	toxic_foodtypes = MEAT | RAW | SEAFOOD
-	languages_native = list(/datum/language/moffic)
 
 /obj/item/organ/tongue/pod
 	name = "pod tongue"
@@ -653,7 +641,7 @@
 	name = "serpentid tongue"
 	icon_state = "tongueserpentid"
 	liked_foodtypes = RAW | GORE | MEAT | BUGS
-	disliked_foodtypes = CLOTH | FRIED | TOXIC | FRUIT
+	disliked_foodtypes = CLOTH | TOXIC | FRUIT
 	toxic_foodtypes = DAIRY | SUGAR | JUNKFOOD
 	modifies_speech = TRUE
 	voice_filter = @{"[0:a] asplit [out0][out2]; [out0] asetrate=%SAMPLE_RATE%*0.9,aresample=%SAMPLE_RATE%,atempo=1/0.9,aformat=channel_layouts=mono,volume=0.2 [p0]; [out2] asetrate=%SAMPLE_RATE%*1.1,aresample=%SAMPLE_RATE%,atempo=1/1.1,aformat=channel_layouts=mono,volume=0.2[p2]; [p0][0][p2] amix=inputs=3"}
@@ -680,6 +668,9 @@
 
 /obj/item/organ/tongue/caver
 	name = "caver tongue"
-	liked_foodtypes = FRIED | VEGETABLES
+	liked_foodtypes = FRIED | NUTS
 	disliked_foodtypes = GROSS | RAW | CLOTH | GORE
 	color = COLOR_PURPLE_GRAY
+
+/obj/item/organ/tongue/vatborn
+	liked_foodtypes = FRIED // vatborns aren't that spoiled for junkfood like baseliners

@@ -104,6 +104,24 @@ export const feature_caver_skincolor: FeatureChoiced = {
   },
 };
 
+export const feature_vatborn_body_markings: FeatureChoiced = {
+  name: 'Ports (Body)',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
+export const feature_vatborn_head_markings: FeatureChoiced = {
+  name: 'Ports (Head)',
+  component: (
+    props: FeatureValueProps<string, string, FeatureChoicedServerData>,
+  ) => {
+    return <FeatureDropdownInput buttons {...props} />;
+  },
+};
+
 export const feature_lizard_spines: FeatureChoiced = {
   name: 'Spines',
   component: (

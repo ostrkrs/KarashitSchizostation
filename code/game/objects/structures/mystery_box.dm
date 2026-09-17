@@ -91,7 +91,6 @@ GLOBAL_LIST_INIT(mystery_fishing, list(
 	/obj/item/food/canned/squid_ink,
 	/obj/item/reagent_containers/cup/glass/bottle/rum/aged,
 	/obj/item/storage/bag/money/dutchmen,
-	/obj/item/language_manual/piratespeak,
 	/obj/item/clothing/head/costume/pirate/armored,
 	/obj/item/clothing/suit/costume/pirate/armored,
 	/obj/structure/cannon/mystery_box,

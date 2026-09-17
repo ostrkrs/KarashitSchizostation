@@ -18,5 +18,3 @@
 	)
 	icon_state = "plant"
 	default_priority = 90
-	default_name_syllable_min = 2
-	default_name_syllable_max = 3

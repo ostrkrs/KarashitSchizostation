@@ -14,7 +14,8 @@
 	mutanttongue = /obj/item/organ/tongue/moth
 	mutanteyes = /obj/item/organ/eyes/moth
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
-	species_language_holder = /datum/language_holder/moth
+	species_culture = /datum/culture/moth
+	species_language_holder = /datum/language_holder/buzz
 	death_sound = 'sound/mobs/humanoids/moth/moth_death.ogg'
 	family_heirlooms = list(/obj/item/flashlight/lantern/heirloom_moth)
 

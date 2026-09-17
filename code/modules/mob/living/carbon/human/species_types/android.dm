@@ -23,7 +23,6 @@
 		TRAIT_RESISTLOWPRESSURE,
 		TRAIT_TOXIMMUNE,
 	)
-	allow_numbers_in_names = TRUE
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
 	exotic_bloodtype = BLOOD_TYPE_OIL
 	meat = null
@@ -36,6 +35,7 @@
 	mutantlungs = null
 	mutanteyes = /obj/item/organ/eyes/robotic
 	mutantears = /obj/item/organ/ears/cybernetic
+	species_culture = /datum/culture/machine
 	species_language_holder = /datum/language_holder/synthetic
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_PRIDE | MIRROR_MAGIC | RACE_SWAP | ERT_SPAWN | SLIME_EXTRACT
 

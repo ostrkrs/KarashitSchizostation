@@ -44,11 +44,6 @@
 	machine_name = "MedVend"
 	icon_state = "refill_medical"
 
-/obj/machinery/vending/medical/syndicate
-	name = "\improper SyndiMed"
-	initial_language_holder = /datum/language_holder/syndicate
-	allow_custom = FALSE
-
 /obj/machinery/vending/medical/infested_frigate
 	products = list(
 		/obj/item/stack/medical/gauze = 0,

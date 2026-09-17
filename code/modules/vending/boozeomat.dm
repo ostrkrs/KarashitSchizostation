@@ -91,10 +91,6 @@
 	payment_department = ACCOUNT_SRV
 	light_mask = "boozeomat-light-mask"
 
-/obj/machinery/vending/boozeomat/syndicate
-	initial_language_holder = /datum/language_holder/syndicate
-	allow_custom = FALSE
-
 /obj/item/vending_refill/boozeomat
 	machine_name = "Booze-O-Mat"
 	icon_state = "refill_booze"

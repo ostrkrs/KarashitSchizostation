@@ -15,4 +15,3 @@
 	default_priority = 20
 
 	icon_state = "drone"
-	always_use_default_namelist = TRUE // Nonsense language

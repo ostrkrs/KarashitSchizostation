@@ -247,7 +247,6 @@
 		/obj/item/grenade/c4 = 20,
 		/obj/item/implanter/freedom = 20,
 		/obj/item/clothing/mask/chameleon = 20,
-		/obj/item/language_manual/codespeak_manual/unlimited = 10,
 		/obj/item/storage/mail_counterfeit_device = 10,
 		/obj/item/clothing/glasses/thermal = 10,
 		/obj/item/gun/ballistic/automatic/pistol/wt23 = 10,

@@ -99,12 +99,6 @@
 	l_pocket = /obj/item/food/pizzaslice/dank
 	r_pocket = /obj/item/storage/wallet/random
 
-/datum/outfit/beachbum/post_equip(mob/living/carbon/human/bum, visuals_only = FALSE)
-	. = ..()
-	if(visuals_only)
-		return
-	bum.dna.add_mutation(/datum/mutation/stoner, MUTATION_SOURCE_GHOST_ROLE)
-
 /datum/outfit/beachbum/lifeguard
 	name = "Beach Lifeguard"
 	id_trim = /datum/id_trim/lifeguard
@@ -170,10 +164,6 @@
 	outfit = /datum/outfit/lavaland_syndicate
 	spawner_job_path = /datum/job/lavaland_syndicate
 	deletes_on_zero_uses_left = FALSE
-
-/obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/special(mob/living/new_spawn)
-	. = ..()
-	new_spawn.grant_language(/datum/language/codespeak, source = LANGUAGE_MIND)
 
 /obj/effect/mob_spawn/ghost_role/human/lavaland_syndicate/comms
 	name = "Syndicate Comms Agent"

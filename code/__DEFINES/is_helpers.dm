@@ -114,6 +114,10 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define isdummy(A) (istype(A, /mob/living/carbon/human/dummy))
 
 //Human sub-species
+#define isvatborn(A) (is_species(A, /datum/species/human/vatborn))
+#define iscaver(A) (is_species(A, /datum/species/human/cave_adapted))
+
+//Other species
 #define isabductor(A) (is_species(A, /datum/species/abductor))
 #define isghostspecies(A) (is_species(A, /datum/species/ghost))
 #define isgolem(A) (is_species(A, /datum/species/golem))
@@ -125,7 +129,6 @@ GLOBAL_LIST_INIT(turfs_pass_meteor, typecacheof(list(
 #define iszombie(A) (is_species(A, /datum/species/zombie))
 #define isskeleton(A) (is_species(A, /datum/species/skeleton))
 #define ismoth(A) (is_species(A, /datum/species/moth))
-#define iscaver(A) (is_species(A, /datum/species/human/cave_adapted))
 #define isethereal(A) (is_species(A, /datum/species/ethereal))
 #define isvampire(A) (is_species(A,/datum/species/human/vampire))
 #define ismonkey(A) (is_species(A, /datum/species/monkey))

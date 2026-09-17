@@ -66,24 +66,12 @@
 
 	/// The language that an atom knows with the highest "default_priority" is selected by default.
 	var/default_priority = 0
-	/// If TRUE, when generating names, we will always use the default human namelist, even if we have syllables set.
-	/// This is to be used for languages with very outlandish syllable lists (like pirates).
-	var/always_use_default_namelist = FALSE
+
 	/// Icon displayed in the chat window when speaking this language.
 	/// if you are seeing someone speak popcorn language, then something is wrong.
 	var/icon = 'icons/ui/chat/language.dmi'
 	/// Icon state displayed in the chat window when speaking this language.
 	var/icon_state = "unknown"
-
-	/// By default, random names picks this many names
-	var/default_name_count = 2
-	/// By default, random names picks this many syllables (min)
-	var/default_name_syllable_min = 2
-	/// By default, random names picks this many syllables (max)
-	var/default_name_syllable_max = 4
-	/// What char to place in between randomly generated names
-	var/random_name_spacer = " "
-
 	/**
 	 * Assoc Lazylist of other language types that would have a degree of mutual understanding with this language.
 	 * For example, you could do `list(/datum/language/common = 50)` to say that this language has a 50% chance to understand common words
@@ -123,56 +111,6 @@
 /datum/language/proc/get_icon()
 	var/datum/asset/spritesheet_batched/sheet = get_asset_datum(/datum/asset/spritesheet_batched/chat)
 	return sheet.icon_tag("language-[icon_state]")
-
-/// Simple helper for getting a default firstname lastname
-/datum/language/proc/default_name(gender = NEUTER)
-	if(gender != MALE && gender != FEMALE)
-		gender = pick(MALE, FEMALE)
-	if(gender == FEMALE)
-		return capitalize(pick(GLOB.first_names_female)) + " " + capitalize(pick(GLOB.last_names))
-	return capitalize(pick(GLOB.first_names_male)) + " " + capitalize(pick(GLOB.last_names))
-
-
-/**
- * Generates a random name this language would use.
- *
- * * gender: What gender to generate from, if neuter / plural coin flips between male and female
- * * name_count: How many names to generate in, by default 2, for firstname lastname
- * * syllable_count: How many syllables to generate in each name, min
- * * syllable_max: How many syllables to generate in each name, max
- * * force_use_syllables: If the name should be generated from the syllables list.
- * Only used for subtypes which implement custom name lists. Also requires the language has syllables set.
- */
-/datum/language/proc/get_random_name(
-	gender = NEUTER,
-	name_count = default_name_count,
-	syllable_min = default_name_syllable_min,
-	syllable_max = default_name_syllable_max,
-	force_use_syllables = FALSE,
-)
-	if(gender != MALE && gender != FEMALE)
-		gender = pick(MALE, FEMALE)
-	if(!length(syllables) || always_use_default_namelist)
-		return default_name(gender)
-
-	var/list/full_name = list()
-	for(var/i in 1 to name_count)
-		var/new_name = ""
-		for(var/j in 1 to rand(default_name_syllable_min, default_name_syllable_max))
-			new_name += pick_weight_recursive(syllables)
-		full_name += capitalize(LOWER_TEXT(new_name))
-
-	return jointext(full_name, random_name_spacer)
-
-/// Generates a random name, and attempts to ensure it is unique (IE, no other mob in the world has it)
-/datum/language/proc/get_random_unique_name(...)
-	var/result = get_random_name(arglist(args))
-	for(var/i in 1 to 10)
-		if(!findname(result))
-			break
-		result = get_random_name(arglist(args))
-
-	return result
 
 /// Checks the word cache for a word
 /datum/language/proc/read_word_cache(input)

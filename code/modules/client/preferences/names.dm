@@ -47,11 +47,8 @@
 	target.log_mob_tag("TAG: [target.tag] RENAMED: [key_name(target)]")
 
 /datum/preference/name/real_name/create_informed_default_value(datum/preferences/preferences)
-	return generate_random_name_species_based(
-		preferences.read_preference(/datum/preference/choiced/gender),
-		TRUE,
-		preferences.read_preference(/datum/preference/choiced/species),
-	)
+	var/datum/species/our_species = preferences.read_preference(/datum/preference/choiced/species)
+	return generate_random_name(preferences.read_preference(/datum/preference/choiced/gender), TRUE, list(our_species.species_culture = 1))
 
 /datum/preference/name/real_name/deserialize(input, datum/preferences/preferences)
 	input = ..(input)
@@ -59,15 +56,7 @@
 		return input
 
 	var/datum/species/species_type = preferences.read_preference(/datum/preference/choiced/species)
-
-	if (CONFIG_GET(flag/humans_need_surnames) && species_type == /datum/species/human)
-		var/first_space = findtext(input, " ")
-		if(!first_space) //we need a surname
-			input += " [pick(GLOB.last_names)]"
-		else if(first_space == length(input))
-			input += "[pick(GLOB.last_names)]"
-
-	if(!species_type.allow_numbers_in_names)
+	if(!species_type.species_culture.allow_numbers_in_names)
 		return reject_bad_name(input, allow_numbers = FALSE)
 	else
 		return reject_bad_name(input)

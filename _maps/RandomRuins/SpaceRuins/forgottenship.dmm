@@ -604,7 +604,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "ct" = (
-/obj/machinery/vending/medical/syndicate/cybersun,
+/obj/machinery/vending/medical/cybersun,
 /turf/open/floor/plastic,
 /area/ruin/space/has_grav/syndicate_forgotten_ship)
 "cu" = (
@@ -855,7 +855,6 @@
 /obj/structure/closet/crate/secure/gear{
 	req_access = list("syndicate")
 	},
-/obj/item/language_manual/codespeak_manual/unlimited,
 /turf/open/floor/pod/dark,
 /area/ruin/space/has_grav/powered/syndicate_forgotten_vault)
 "de" = (

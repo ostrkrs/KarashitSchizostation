@@ -7,7 +7,6 @@
 	default_priority = 70
 
 	flags = NO_STUTTER | TONGUELESS_SPEECH
-	always_use_default_namelist = TRUE
 	icon_state = "animal"
 
 /datum/language/serpentid/scramble_sentence(input, list/mutual_languages)
@@ -18,34 +17,6 @@
 	write_word_cache(input, sentence)
 
 	return sentence
-
-/datum/language/serpentid/get_random_name(
-	gender = NEUTER,
-	name_count = default_name_count,
-	syllable_min = default_name_syllable_min,
-	syllable_max = default_name_syllable_max,
-	unique = FALSE,
-	force_use_syllables = FALSE,
-)
-
-	if(force_use_syllables)
-		return ..()
-
-	var/rand_letter = "[ascii2text(rand(97, 122))]"
-	if(prob(50))
-		return "[pick(GLOB.serpentid_prefix)]-[rand(11, 99)]"
-	else
-		return "[rand_letter][capitalize(rand_letter)]-[rand(11, 99)]"
-
-/datum/language_holder/serpentid
-	understood_languages = list(
-		/datum/language/serpentid = list(LANGUAGE_MIND),
-		/datum/language/common = list(LANGUAGE_MIND),
-	)
-	spoken_languages = list(
-		/datum/language/serpentid = list(LANGUAGE_SPECIES),
-	)
-	selected_language = /datum/language/serpentid
 
 /obj/item/implant/serp_sol_speaker
 	name = "sol speech synthesizer implant"

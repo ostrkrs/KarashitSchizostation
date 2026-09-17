@@ -2353,3 +2353,38 @@ GLOBAL_LIST_EMPTY(blended_hair_icons_cache)
 /datum/sprite_accessory/moth_markings/dipped
 	name = "Dipped"
 	icon_state = "dipped"
+
+/datum/sprite_accessory/vatborn_markings
+	icon = 'icons/mob/human/species/human_subtypes/vatborn/body_ports.dmi'
+
+/datum/sprite_accessory/vatborn_markings/body/sides
+	name = "Sides"
+	icon_state = "sides"
+
+/datum/sprite_accessory/vatborn_markings/body/heart
+	name = "Heart"
+	icon_state = "heart"
+
+/datum/sprite_accessory/vatborn_markings/body/stomach
+	name = "Stomach"
+	icon_state = "stomach"
+
+/datum/sprite_accessory/vatborn_markings/body/spine
+	name = "Spine"
+	icon_state = "spine"
+
+/datum/sprite_accessory/vatborn_markings/head/round
+	name = "Round"
+	icon_state = "round"
+
+/datum/sprite_accessory/vatborn_markings/head/slim
+	name = "Slim"
+	icon_state = "slim"
+
+/datum/sprite_accessory/vatborn_markings/head/r_temple
+	name = "Temple (Right)"
+	icon_state = "r_temple"
+
+/datum/sprite_accessory/vatborn_markings/head/l_temple
+	name = "Temple (Left)"
+	icon_state = "l_temple"

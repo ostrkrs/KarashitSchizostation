@@ -18,17 +18,13 @@
 	if(owner.stat >= UNCONSCIOUS)
 		return
 	if(HAS_TRAIT(owner, TRAIT_RDS_SUPPRESSED))
-		owner.remove_language(/datum/language/aphasia, source = LANGUAGE_APHASIA)
 		owner.adjust_hallucinations(-10 SECONDS * seconds_per_tick)
 		return
 
-	owner.grant_language(/datum/language/aphasia, source = LANGUAGE_APHASIA)
 	owner.adjust_hallucinations_up_to(((uncapped ? 12 SECONDS : 5 SECONDS) * seconds_per_tick), (uncapped ? 240 SECONDS : 60 SECONDS))
 
 /datum/brain_trauma/mild/hallucinations/on_lose()
 	owner.remove_status_effect(/datum/status_effect/hallucination)
-	if(!QDELING(owner))
-		owner.remove_language(/datum/language/aphasia, source = LANGUAGE_APHASIA)
 	return ..()
 
 /datum/brain_trauma/mild/stuttering

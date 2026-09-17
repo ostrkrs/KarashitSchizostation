@@ -219,33 +219,6 @@
 			if(SPT_PROB(7.5, seconds_per_tick))
 				owner.visible_message("<b>[owner]</b> [pick("jiggles their hips", "rotates their hips", "gyrates their hips", "taps their foot", "dances to an imaginary song", "jiggles their legs", "snaps their fingers")]!")
 
-/datum/mutation/stoner
-	name = "Stoner"
-	desc = "A common mutation that severely decreases intelligence."
-	quality = NEGATIVE
-	text_gain_indication = span_notice("You feel...totally chill, man!")
-	text_lose_indication = span_notice("You feel like you have a better sense of time.")
-
-/datum/mutation/stoner/on_acquiring(mob/living/carbon/human/owner)
-	. = ..()
-	if(!.)
-		return
-	owner.grant_language(/datum/language/beachbum, source = LANGUAGE_STONER)
-	owner.add_blocked_language(subtypesof(/datum/language) - /datum/language/beachbum, source = LANGUAGE_STONER)
-
-/datum/mutation/stoner/on_losing(mob/living/carbon/human/owner)
-	..()
-	owner.remove_language(/datum/language/beachbum, source = LANGUAGE_STONER)
-	owner.remove_blocked_language(subtypesof(/datum/language) - /datum/language/beachbum, source = LANGUAGE_STONER)
-
-/datum/mutation/medieval
-	name = "Medieval"
-	desc = "A horrible mutation originating from the distant past, thought to have once been a common gene in all of old world Europe."
-	instability = NEGATIVE_STABILITY_MINI
-	quality = MINOR_NEGATIVE
-	text_gain_indication = span_notice("You feel like seeking the holy grail!")
-	text_lose_indication = span_notice("You no longer feel like seeking anything.")
-
 /datum/mutation/medieval/on_acquiring(mob/living/carbon/human/owner)
 	. = ..()
 	if(!.)

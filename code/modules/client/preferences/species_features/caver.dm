@@ -31,7 +31,6 @@
 	savefile_key = "feature_caver_skincolor"
 	savefile_identifier = PREFERENCE_CHARACTER
 	category = PREFERENCE_CATEGORY_SECONDARY_FEATURES
-	main_feature_name = "Skin color"
 
 /datum/preference/choiced/caver_color/has_relevant_feature(datum/preferences/preferences)
 	return current_species_has_savekey(preferences)

@@ -1,19 +1,16 @@
 /**
- * Generate a random name based off of one of the roundstart languages
+ * Generate a random name based off of one of the roundstart cultures
  *
  * * gender - What gender to pick from. Picks between male, female if not provided.
  * * unique - If the name should be unique, IE, avoid picking names that mobs already have.
- * * list/language_weights - A list of language weights to pick from.
- * If not provided, it will default to a list of roundstart languages, with common being the most likely.
+ * * list/culture_weights - A list of culture weights to pick from.
  */
-/proc/generate_random_name(gender, unique, list/language_weights)
-	if(isnull(language_weights))
-		language_weights = list()
-		for(var/lang_type in GLOB.uncommon_roundstart_languages)
-			language_weights[lang_type] = 1
-		language_weights[/datum/language/common] = 20
+/proc/generate_random_name(gender, unique, list/culture_weights)
+	if(isnull(culture_weights))
+		culture_weights = list()
+		culture_weights[/datum/culture/human_basic] = 1
 
-	var/datum/language/picked = GLOB.language_datum_instances[pick_weight(language_weights)]
+	var/datum/culture/picked = GLOB.culture_datum_instances[pick_weight(culture_weights)]
 	if(unique)
 		return picked.get_random_unique_name(gender)
 	return picked.get_random_name(gender)
@@ -57,19 +54,22 @@
 	return generate_random_name_species_based(gender, unique, /datum/species/human)
 
 /mob/living/carbon/generate_random_mob_name(unique)
-	return generate_random_name_species_based(gender, unique, dna?.species?.type || /datum/species/human)
+	return generate_random_name(gender, unique, list(dna?.species?.species_culture = 1))
+
+/mob/living/carbon/human/species/monkey/generate_random_mob_name(unique)
+	return "monkey ([rand(100, 999)])"
 
 /mob/living/silicon/generate_random_mob_name(unique)
-	return generate_random_name(gender, unique, list(/datum/language/machine = 1))
+	return generate_random_name(gender, unique, list(/datum/culture/machine = 1))
 
 /mob/living/basic/drone/generate_random_mob_name(unique)
-	return generate_random_name(gender, unique, list(/datum/language/machine = 1))
+	return generate_random_name(gender, unique, list(/datum/culture/machine = 1))
 
 /mob/living/basic/bot/generate_random_mob_name(unique)
-	return generate_random_name(gender, unique, list(/datum/language/machine = 1))
+	return generate_random_name(gender, unique, list(/datum/culture/machine = 1))
 
 /mob/living/simple_animal/bot/generate_random_mob_name(unique)
-	return generate_random_name(gender, unique, list(/datum/language/machine = 1))
+	return generate_random_name(gender, unique, list(/datum/culture/machine = 1))
 
 GLOBAL_VAR(command_name)
 /proc/command_name()

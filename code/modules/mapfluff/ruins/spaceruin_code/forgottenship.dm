@@ -13,7 +13,7 @@ GLOBAL_VAR_INIT(fscpassword, generate_password())
 	. = ..()
 	password = "[GLOB.fscpassword]"
 
-/obj/machinery/vending/medical/syndicate/cybersun
+/obj/machinery/vending/medical/cybersun
 	name = "\improper CyberMed ++"
 	desc = "An advanced vendor that dispenses medical drugs, both recreational and medicinal."
 	products = list(

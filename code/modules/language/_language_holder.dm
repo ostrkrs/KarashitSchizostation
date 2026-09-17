@@ -20,7 +20,7 @@ these will mess something up somewhere down the line.
 
 All atom movables have the initial_language_holder var which allows you to set the default language
 holder to create. For example, /datum/language_holder/alien will give you xenocommon and a block for
-galactic common. Human species also have a default language holder var that will be updated on
+academ standard. Human species also have a default language holder var that will be updated on
 species change, initial_species_holder.
 
 Key procs
@@ -474,16 +474,6 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 	for(var/lang in GLOB.uncommon_roundstart_languages)
 		grant_partial_language(lang, 66, LANGUAGE_ATOM)
 
-/datum/language_holder/moth
-	understood_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/moffic = list(LANGUAGE_ATOM),
-	)
-	spoken_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/moffic = list(LANGUAGE_ATOM),
-	)
-
 /datum/language_holder/skeleton
 	understood_languages = list(
 		/datum/language/common = list(LANGUAGE_ATOM),
@@ -492,16 +482,6 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 	spoken_languages = list(
 		/datum/language/common = list(LANGUAGE_ATOM),
 		/datum/language/calcic = list(LANGUAGE_ATOM),
-	)
-
-/datum/language_holder/ethereal
-	understood_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/voltaic = list(LANGUAGE_ATOM),
-	)
-	spoken_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/voltaic = list(LANGUAGE_ATOM),
 	)
 
 /datum/language_holder/golem
@@ -514,7 +494,7 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 		/datum/language/terrum = list(LANGUAGE_ATOM),
 	)
 
-/datum/language_holder/fly
+/datum/language_holder/buzz
 	understood_languages = list(
 		/datum/language/common = list(LANGUAGE_ATOM),
 		/datum/language/buzzwords = list(LANGUAGE_ATOM),
@@ -553,47 +533,6 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 		/datum/language/common = list(LANGUAGE_ATOM),
 		/datum/language/monkey = list(LANGUAGE_ATOM),
 	)
-
-/datum/language_holder/syndicate
-	understood_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/codespeak = list(LANGUAGE_ATOM),
-	)
-	spoken_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/codespeak = list(LANGUAGE_ATOM),
-	)
-
-/datum/language_holder/beachbum
-	understood_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/beachbum = list(LANGUAGE_ATOM),
-	)
-	spoken_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/beachbum = list(LANGUAGE_ATOM),
-	)
-	selected_language = /datum/language/beachbum
-
-/datum/language_holder/spinwarder
-	understood_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/spinwarder = list(LANGUAGE_ATOM),
-	)
-	spoken_languages = list(
-		/datum/language/common = list(LANGUAGE_ATOM),
-		/datum/language/spinwarder = list(LANGUAGE_ATOM),
-	)
-	selected_language = /datum/language/spinwarder
-
-/datum/language_holder/spinwarder_exclusive
-	understood_languages = list(
-		/datum/language/spinwarder = list(LANGUAGE_ATOM),
-	)
-	spoken_languages = list(
-		/datum/language/spinwarder = list(LANGUAGE_ATOM),
-	)
-	selected_language = /datum/language/spinwarder
 
 /datum/language_holder/speaking_machine
 	understood_languages = list(
@@ -635,6 +574,16 @@ GLOBAL_LIST_INIT(prototype_language_holders, init_language_holder_prototypes())
 	spoken_languages = list(
 		/datum/language/carptongue = list(LANGUAGE_ATOM),
 	)
+
+/datum/language_holder/serpentid
+	understood_languages = list(
+		/datum/language/serpentid = list(LANGUAGE_MIND),
+		/datum/language/common = list(LANGUAGE_MIND),
+	)
+	spoken_languages = list(
+		/datum/language/serpentid = list(LANGUAGE_SPECIES),
+	)
+	selected_language = /datum/language/serpentid
 
 // Given to atoms by default
 /datum/language_holder/atom_basic
